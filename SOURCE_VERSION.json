@@ -1,0 +1,40 @@
+{
+  "name": "Hua Tuo Medical & Biomedical Academy",
+  "nameZh": "華佗醫藥生醫學院",
+  "version": "1.0.0",
+  "date": "2026-10-14",
+  "basedOn": "MacGyver Engineering Academy v11 architecture (static-first academy, Python stdlib server, step-based curriculum, personalization, voice, commerce)",
+  "release": {
+    "topics": 2420,
+    "departments": 69,
+    "faculties": 5,
+    "allSteps": 17180,
+    "freeStages": 2420,
+    "internshipTopics": 726,
+    "flagshipTopics": 167,
+    "authoredCoreCourses": 14,
+    "acupoints": 396,
+    "classicalAcupoints": 361,
+    "herbs": 255,
+    "formulas": 176,
+    "nobelMedicine": 117,
+    "nobelChemistry": 35,
+    "researchTechniques": 56,
+    "uniqueIcons": 2420,
+    "interfaceLanguages": 36,
+    "completeInterfacePacks": 13,
+    "currencies": 65,
+    "offlineEntry": "index.html"
+  },
+  "backend": {
+    "runtime": "Python 3.10+ standard library",
+    "accounts": "username + password + e-mail + mobile; e-mail and SMS one-time codes (SMTP, Twilio, Mitake or webhook); dev mode on loopback",
+    "billing": "first section free; pass-30 NT$299, pass-365 NT$2490; Stripe Checkout (3DS), ECPay AioCheckOut, post-office transfer claims; payout account 700 / 0101034 / 0187821 registered at the gateway",
+    "ai": "llama.cpp / Ollama / OpenAI-compatible / OpenAI / Anthropic / Gemini routes with curriculum + local document retrieval",
+    "tests": "tests/run_tests.py (22 tests, pytest-compatible)"
+  },
+  "scripts": ["run-local.sh", "run-local.bat", "start-mac.command", "run-commerce.sh", "install-ai-models.sh", "run-ai-llamacpp.sh", "run-ai-ollama.sh", "run-ai-cloud.sh", "index-documents.sh", "rebuild-curriculum.sh", "build-offline.sh", "deploy-static.sh", "publish-github.sh", "update-and-upload.sh"],
+  "voiceLanguagePolicy": "Interface and narration follow the viewer's browser language preference (navigator.languages), never GPS/IP; both can be pinned manually. Currency follows the language region subtag or time zone and can be changed.",
+  "iconPolicy": "Original offline monoline SVG icon system; every topic has a unique descriptor verified at build time; no third-party icon sets.",
+  "scope": "Medical education only; not clinical protocols; supervised training and licensure required."
+}
