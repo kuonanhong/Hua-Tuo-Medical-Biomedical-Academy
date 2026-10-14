@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="zh-Hant" data-theme="light" data-layout="comfortable" data-sidebar="left">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#1f6f5f">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="description" content="華佗醫藥生醫學院 · Hua Tuo Medical & Biomedical Academy — 西醫手術、中醫針灸推拿、生醫基因、諾貝爾研究技術與 AlphaGo／AlphaFold 學理，2,400+ 門逐步課程。">
+<title>華佗醫藥生醫學院 · Hua Tuo Medical & Biomedical Academy</title>
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a href="#main" class="skip" data-t="skip">跳至主要內容</a>
+<div class="icon-mosaic" id="iconMosaic" aria-hidden="true"></div>
+
+<aside class="sidebar" id="sidebar" aria-label="Navigation">
+  <a class="brand" href="#home">
+    <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 64 64" width="40" height="40"><use href="#ht-logo"/></svg></span>
+    <span class="brand-text"><b data-t="brand">華佗醫藥生醫學院</b><small data-t="brandSub">HUA TUO MEDICAL ACADEMY</small></span>
+  </a>
+  <nav id="nav" class="nav">
+    <a href="#home" data-page="home"><i class="nv" aria-hidden="true">⌂</i><span data-t="navHome">首頁</span></a>
+    <a href="#catalog" data-page="catalog"><i class="nv" aria-hidden="true">▦</i><span data-t="navCatalog">探索課程</span></a>
+    <a href="#intern" data-page="intern"><i class="nv" aria-hidden="true">✚</i><span data-t="navIntern">實習門診</span></a>
+    <a href="#tcm" data-page="tcm"><i class="nv" aria-hidden="true">☯</i><span data-t="navTcm">中醫圖庫</span></a>
+    <a href="#nobel" data-page="nobel"><i class="nv" aria-hidden="true">✦</i><span data-t="navNobel">諾貝爾與技術</span></a>
+    <a href="#ai" data-page="ai"><i class="nv" aria-hidden="true">◉</i><span data-t="navAi">AlphaGo→AlphaFold</span></a>
+    <a href="#progress" data-page="progress"><i class="nv" aria-hidden="true">◷</i><span data-t="navProgress">我的進度</span></a>
+    <a href="#membership" data-page="membership"><i class="nv" aria-hidden="true">◈</i><span data-t="navMembership">會員與付費</span></a>
+    <a href="#sources" data-page="sources"><i class="nv" aria-hidden="true">▤</i><span data-t="navSources">來源與授權</span></a>
+  </nav>
+  <div class="side-note">
+    <span class="eyebrow" data-t="sideEyebrow">跟師傅學 · 再上臨床</span>
+    <p data-t="sideDesc">基本級跟師傅逐步學；實習級面對虛擬病人：望聞問切、量血壓、測血糖、判讀心電圖。</p>
+    <span class="edition">MEDICAL EDITION · V1</span>
+  </div>
+  <a class="side-help" href="help.html" data-t="guide">操作指南 ↗</a>
+</aside>
+
+<div class="shell">
+  <header class="topbar">
+    <button class="icon-btn mobile-menu" id="menuButton" aria-label="Menu" aria-controls="sidebar">☰</button>
+    <div class="breadcrumb"><span data-t="academy">醫學院</span><span class="sep">/</span><strong id="pageTitle" data-t="navHome">首頁</strong></div>
+    <div class="top-search"><input id="globalSearch" type="search" data-t-placeholder="searchPlaceholder" placeholder="搜尋 2,400+ 課程、穴位、方劑、手術…" autocomplete="off" aria-label="Search"></div>
+    <div class="top-actions">
+      <button id="mentorButton" class="button primary small" data-t="mentor">✳ AI 師傅</button>
+      <select id="language" aria-label="Language" data-no-translate></select>
+      <select id="currency" aria-label="Currency" data-no-translate class="currency-select"></select>
+      <button id="preferencesButton" class="icon-btn" type="button" aria-label="Workspace" title="Workspace">⚙</button>
+      <button id="accountButton" class="account" type="button"><span class="avatar" id="avatar">佗</span><span id="accountName" data-t="guest">訪客學徒</span></button>
+    </div>
+  </header>
+  <main id="main" tabindex="-1"><div class="loading" data-t="loading">正在開啟學院…</div></main>
+  <footer class="footer">
+    <span>HUA TUO MEDICAL &amp; BIOMEDICAL ACADEMY</span>
+    <span data-t="disclaimer">本站提供醫學教育資訊，不能取代個別診斷與治療；手術與針灸操作須在合格醫師監督下學習。</span>
+    <a href="#sources" data-t="navSources">來源與授權</a>
+  </footer>
+  <nav class="bottom-nav" aria-label="Mobile navigation">
+    <a href="#home" data-page="home"><i aria-hidden="true">⌂</i><span data-t="navHome">首頁</span></a>
+    <a href="#catalog" data-page="catalog"><i aria-hidden="true">▦</i><span data-t="navCatalog">課程</span></a>
+    <a href="#intern" data-page="intern"><i aria-hidden="true">✚</i><span data-t="navIntern">實習</span></a>
+    <a href="#progress" data-page="progress"><i aria-hidden="true">◷</i><span data-t="navProgress">進度</span></a>
+    <a href="#membership" data-page="membership"><i aria-hidden="true">◈</i><span data-t="navMembership">會員</span></a>
+  </nav>
+</div>
+
+<div id="toast" role="status" aria-live="polite"></div>
+<dialog id="dialog" class="dialog"><div class="dialog-head"><h2 id="dialogTitle"></h2><button id="closeDialog" class="icon-btn" aria-label="Close">×</button></div><div id="dialogBody"></div></dialog>
+<aside id="tutorPanel" class="tutor-panel" aria-label="AI mentor" hidden></aside>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="ht-logo" viewBox="0 0 64 64">
+    <circle cx="32" cy="32" r="30" fill="#1f6f5f"/>
+    <path d="M32 12v40M12 32h40" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+    <path d="M32 20c-7 0-11 5-11 12 0 8 11 14 11 14s11-6 11-14c0-7-4-12-11-12z" fill="none" stroke="#fff" stroke-width="2.5"/>
+    <circle cx="32" cy="32" r="3.5" fill="#fff"/>
+  </symbol>
+</svg>
+<noscript><p style="padding:24px">請啟用 JavaScript / Please enable JavaScript.</p></noscript>
+<script src="bootstrap.js" defer></script>
+</body>
+</html>

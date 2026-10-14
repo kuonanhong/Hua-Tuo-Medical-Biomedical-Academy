@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="zh-Hant" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>操作指南 · 華佗醫藥生醫學院 / Guide · Hua Tuo Medical Academy</title>
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+<style>
+  .doc{max-width:900px;margin:0 auto;padding:28px 20px 80px;position:relative;z-index:1}
+  .doc header{display:flex;align-items:center;gap:14px;margin-bottom:20px;flex-wrap:wrap}
+  .doc header h1{font-size:1.5rem;margin:0}
+  .doc section{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:20px 22px;margin:14px 0;box-shadow:var(--shadow)}
+  .doc h2{font-size:1.15rem;margin-top:0}
+  .doc .en{color:var(--muted);font-size:.93rem}
+  .doc ol,.doc ul{padding-left:22px}
+  .doc li{margin:.3em 0}
+  .doc kbd{border:1px solid var(--line-2);border-radius:6px;padding:1px 6px;font-size:.85em;background:var(--surface-2)}
+  .toc{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 10px}
+  .toc a{border:1px solid var(--line);border-radius:999px;padding:5px 12px;font-size:.88rem;background:var(--surface)}
+  table{border-collapse:collapse;width:100%;font-size:.93rem}
+  td,th{border-bottom:1px solid var(--line);padding:7px 8px;text-align:left;vertical-align:top}
+</style>
+<script>try{var p=JSON.parse(localStorage.getItem('ht-workspace-v1:guest')||'{}');if(p.theme==='dark'||(p.theme==='auto'&&matchMedia('(prefers-color-scheme: dark)').matches))document.documentElement.dataset.theme='dark';}catch(e){}</script>
+</head>
+<body>
+<main class="doc">
+<header>
+  <svg viewBox="0 0 64 64" width="44" height="44" aria-hidden="true"><circle cx="32" cy="32" r="30" fill="#1f6f5f"/><path d="M32 12v40M12 32h40" stroke="#fff" stroke-width="3" stroke-linecap="round"/><path d="M32 20c-7 0-11 5-11 12 0 8 11 14 11 14s11-6 11-14c0-7-4-12-11-12z" fill="none" stroke="#fff" stroke-width="2.5"/><circle cx="32" cy="32" r="3.5" fill="#fff"/></svg>
+  <div><span class="eyebrow">操作指南 · User guide</span><h1>華佗醫藥生醫學院 · Hua Tuo Medical &amp; Biomedical Academy</h1></div>
+  <a class="button small" href="index.html#home">← 回學院 / Back</a>
+</header>
+
+<nav class="toc" aria-label="Contents">
+  <a href="#start">開始使用</a><a href="#tiers">基本級與實習級</a><a href="#tcm">中醫圖庫</a><a href="#account">帳號與驗證</a><a href="#pay">付費與幣別</a><a href="#voice">語音與語系</a><a href="#workspace">個人桌面</a><a href="#ai">AI 師傅</a><a href="#offline">離線與安裝</a><a href="#faq">常見問題</a>
+</nav>
+
+<section id="start">
+  <h2>1. 開始使用 · Getting started</h2>
+  <ol>
+    <li>雙擊最外層 <code>index.html</code>（或開啟 <code>public/academy/index.html</code>）即可離線瀏覽全部 2,400+ 門課程；不需安裝任何軟體。</li>
+    <li>首頁背景會輪流播放每門課程專屬的圖示（每一門都不同）；按「免費試學」可直接開始任一門課的第一節。</li>
+    <li>「探索課程」可依學院（西醫外科、西醫內科、中醫、生醫基因、AI 與諾貝爾）、科別、種類（手術／技術／穴位／方劑／獎項…）、級別與是否免費篩選；上方搜尋列支援中文、英文、穴位代碼（如 <kbd>LI4</kbd>）、方劑名與手術名。</li>
+    <li>課程頁左側為章節（節），右側為步驟：目標 → 操作 → 觀察 → 失敗模式 → 驗收 → 知識點 → 測驗。完成步驟會記錄在「我的進度」。</li>
+  </ol>
+  <p class="en">Double-click <code>index.html</code> to browse all 2,400+ courses offline. The home background rotates through every course's own icon. Use “Explore courses” to filter by faculty, department, kind, tier and free status; the search box understands Chinese, English, point codes (LI4), formula and operation names. Each course page lists sections on the left and steps on the right (objective → action → observation → failure modes → acceptance → knowledge → quiz).</p>
+</section>
+
+<section id="tiers">
+  <h2>2. 基本級與實習級 · Basic and internship tiers</h2>
+  <ul>
+    <li><b>基本級（跟師傅學）</b>：逐步拆解每一項專業工藝——手術流程（如 DBS、CABG、全膝置換）、檢查技術、穴位、方劑、諾貝爾研究方法——每一步都有驗收標準與測驗。</li>
+    <li><b>實習級（面對病人）</b>：「實習門診」提供虛擬病人。中醫：望（舌象）、聞、問（主訴）、切（脈象訓練器，可用滑桿模擬舉按尋）、辨證、治法處方並評分；西醫：量血壓（按住充氣、Korotkoff 音）、測血糖、生命徵象、心電圖判讀、檢驗判讀與 SOAP 病歷。</li>
+    <li>每門課的第一節免費；其餘章節與實習級需要學習通行證（見第 5 節）。</li>
+  </ul>
+  <p class="en">Basic tier: learn each craft step by step from the master. Internship tier: virtual patients — TCM inspection, listening, inquiry, pulse (with a pressure slider) and tongue trainers, pattern differentiation and scored prescriptions; Western BP cuff, glucose, vitals, ECG rhythms, labs and SOAP notes. The first section of every course is free; the remaining sections and the internship tier need a learning pass.</p>
+</section>
+
+<section id="tcm">
+  <h2>3. 中醫圖庫 · TCM library</h2>
+  <p>「中醫圖庫」集中整理 361 個正經穴位＋經外奇穴（經絡、定位、主治、針法）、255 味常用中藥（性味歸經、功效、用量、注意）、176 首方劑（出處、組成、主治、加減）、經典著作（《黃帝內經》、《傷寒論》、《金匱要略》、《溫病條辨》、《針灸甲乙經》…）與推拿／泰式按摩手法。每個項目都連到對應課程。影片延伸學習可從課程「來源」區連到「子子中醫」等公開頻道。</p>
+  <p class="en">The TCM library gathers 361 classical acupoints plus extra points, 255 herbs, 176 formulas, the classics and manual-therapy techniques, each linked to its course.</p>
+</section>
+
+<section id="account">
+  <h2>4. 帳號與驗證 · Accounts and verification</h2>
+  <ol>
+    <li>按右上角「訪客學徒」→ 註冊。必填四項：<b>帳號、密碼（≥10 字元含字母與數字）、信箱、手機號碼（含國碼，如 +886912345678）</b>。</li>
+    <li>伺服器模式會寄送<b>信箱驗證碼</b>與<b>簡訊驗證碼</b>，兩組都輸入正確才完成註冊並自動登入。登入可用帳號或信箱。</li>
+    <li>離線（雙擊 index.html）或純靜態網頁（GitHub Pages）無法寄送驗證碼，只會建立「本機學習檔案」，進度存在瀏覽器；更換裝置前請在「我的進度」匯出 JSON。</li>
+  </ol>
+  <p class="en">Registration needs username, password, e-mail and mobile number. In server mode you receive an e-mail code and an SMS code; both are required. Offline/static editions create a browser-local profile instead.</p>
+</section>
+
+<section id="pay">
+  <h2>5. 付費與幣別 · Learning pass and currency</h2>
+  <ul>
+    <li>定價以新台幣計：<b>NT$299／30 天</b>、<b>NT$2,490／365 天</b>，一次付款不自動續扣。</li>
+    <li>顯示幣別依<b>瀏覽器語言的地區</b>（例如 ja-JP → JPY、de-DE → EUR）或時區判斷，並以最新匯率換算；可在右上角幣別選單手動切換。</li>
+    <li>付款方式：信用卡（Stripe Checkout，含 3-D Secure 驗證）、綠界 ECPay（台灣）、或轉帳至站長郵局帳戶（局號 0101034、帳號 0187821）後填寫轉帳時間與帳號末五碼，站長核對後開通。</li>
+    <li>卡號只在金流商頁面輸入；伺服器收到簽章通知並主動查單確認後才開通權限。</li>
+  </ul>
+  <p class="en">Prices are set in TWD and converted to your locale's currency using current exchange rates (changeable at the top right). Pay by card through Stripe (3-D Secure) or ECPay, or by transfer to the operator's post-office account followed by a claim form. Access opens only after the server verifies the gateway's signed notification.</p>
+</section>
+
+<section id="voice">
+  <h2>6. 語音與語系 · Voice and language</h2>
+  <table>
+    <tr><th>項目</th><th>行為</th></tr>
+    <tr><td>介面語言</td><td>首次開啟依<b>瀏覽器語言偏好</b>（<code>navigator.languages</code>）自動選擇，36 種語言可手動切換並記住。</td></tr>
+    <tr><td>語音朗讀語系</td><td>預設<b>跟隨目前介面語言</b>（即觀看者的瀏覽器語言），不是依 GPS 或 IP 位置；可在「個人桌面」改為固定某語系。</td></tr>
+    <tr><td>語音性別／音高／語速／風格</td><td>由瀏覽器提供的語音清單選擇；可選男聲、女聲、專業／親切／精簡風格，並試聽。</td></tr>
+    <tr><td>課程內容語言</td><td>中文與英文為原著核心；其他語言的課程內容需伺服器設定 AI 翻譯路線才會自動翻譯，否則保留原文。</td></tr>
+  </table>
+  <p class="en">Interface language follows the browser's language preference and can be changed. Narration language follows the interface language by default (not GPS/IP) and can be pinned. Voice gender, pitch, rate and style come from the browser's voice list.</p>
+</section>
+
+<section id="workspace">
+  <h2>7. 個人桌面 · Personal workspace</h2>
+  <p>按 ⚙ 可設定：淺色／深色／跟隨系統、舒適／緊湊版面、側欄左右、字體大小、主色、首頁圖示動畫、語言、幣別、語音。每位會員（或本機檔案）各自記住設定，並可匯出／匯入。</p>
+  <p class="en">⚙ opens theme (light/dark/system), layout density, sidebar side, font size, accent colour, home icon animation, language, currency and voice settings, remembered per member.</p>
+</section>
+
+<section id="ai">
+  <h2>8. AI 師傅 · AI mentor</h2>
+  <p>「✳ AI 師傅」以目前課程、相關課程步驟與站長索引的本地教材為依據回答學徒問題。伺服器需設定一條生成式 AI 路線（本機 llama.cpp／Ollama、OpenAI 相容服務、OpenAI、Anthropic 或 Gemini；見 <code>docs/AI_ROUTES_ZH.md</code>）。雲端路線需勾選同意後才會送出問題。未設定時只回傳教材摘要並標示「非生成式」。</p>
+  <p class="en">The mentor answers from the current course, related curriculum steps and the operator's indexed documents through a configured generative route (local llama.cpp/Ollama, OpenAI-compatible, OpenAI, Anthropic or Gemini). Cloud routes require consent; without a route the panel returns labelled curriculum summaries.</p>
+</section>
+
+<section id="offline">
+  <h2>9. 離線、安裝與更新 · Offline, install and update</h2>
+  <ul>
+    <li>手機／平板：以瀏覽器開啟網址後「加入主畫面」，即為 PWA；HTTPS 部署時會快取課程以供離線閱讀。</li>
+    <li>電腦：<code>bash run-local.sh</code>（macOS／Linux）、<code>run-local.bat</code>（Windows）啟動含帳號、付款與 AI 的伺服器；Python 3.10+ 即可，不需其他套件。</li>
+    <li>站長更新：<code>bash update-and-upload.sh --ssh user@host:/srv/huatuo</code> 會把本地更新的程式、新增的教材與模型權重上傳並可重啟遠端服務。</li>
+  </ul>
+  <p class="en">Add to home screen for a PWA on phones and tablets. <code>run-local.sh</code> / <code>run-local.bat</code> start the full server (Python 3.10+, no packages). <code>update-and-upload.sh</code> uploads local code updates, new documents and model weights.</p>
+</section>
+
+<section id="faq">
+  <h2>10. 常見問題 · FAQ</h2>
+  <p><b>看不到語音選項？</b> 部分瀏覽器（尤其 iOS Safari）需先與頁面互動後才載入語音清單；再按一次「試聽」。</p>
+  <p><b>圖示為何不是網路圖庫？</b> 全部 2,420 個圖示是本專案原創的離線 SVG 圖形系統，建置時驗證每一門課程的圖示描述都不重複，離線也能顯示。</p>
+  <p><b>內容可以當臨床依據嗎？</b> 不可以。本站提供醫學教育資訊，不能取代個別診斷與治療；手術、針灸與處方須在合格醫師監督下學習與執行。</p>
+  <p class="en">Voices may load only after you interact with the page (iOS Safari). All icons are an original offline SVG system verified unique at build time. The content is educational and never a substitute for individual diagnosis or treatment.</p>
+</section>
+<p class="small muted">© 2026 Hua Tuo Medical &amp; Biomedical Academy · <a href="terms.html">服務條款與退款 / Terms &amp; refunds</a> · <a href="index.html#sources">來源與授權 / Sources</a></p>
+</main>
+</body>
+</html>
