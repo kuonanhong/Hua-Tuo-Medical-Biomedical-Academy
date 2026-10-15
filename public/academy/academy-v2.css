@@ -1,0 +1,32 @@
+/* Focus the screen on the learning task, keeping touch controls within reach. */
+:focus-visible{outline:3px solid var(--primary);outline-offset:3px}
+.v2-paths{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:18px 0 26px}
+.v2-path{padding:22px;border:1px solid var(--line);border-radius:16px;background:var(--surface);color:var(--ink);display:flex;gap:14px;align-items:flex-start}
+.v2-path:hover{border-color:var(--primary);text-decoration:none;box-shadow:var(--shadow)}
+.v2-path .path-icon{display:grid;place-items:center;min-width:44px;height:44px;border-radius:12px;background:var(--primary-soft);font-size:1.45rem;color:var(--primary)}
+.v2-path strong{display:block;margin-bottom:5px}.v2-path small{display:block;color:var(--muted);line-height:1.6}
+.v2-scope{font-size:.84rem;color:var(--muted);max-width:900px;margin:14px 0}
+.page-workbench .icon-mosaic,.page-course .icon-mosaic,.page-intern .icon-mosaic{display:none}
+.page-workbench main{max-width:1480px;padding-top:12px}
+.page-workbench .section-head{margin-top:4px}
+.page-workbench .footer{margin-top:22px}
+.v2-legacy{margin:28px 0;padding:18px;border:1px solid var(--line);border-radius:14px;background:var(--surface)}
+.v2-legacy summary{cursor:pointer;font-weight:700;font-size:1.05rem}
+.v2-legacy[open] summary{margin-bottom:18px}
+.v2-action-menu{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
+@media(min-width:1180px){.page-workbench .top-search{max-width:280px}.page-workbench main{--pad:18px}}
+@media(max-width:1050px){.v2-paths{grid-template-columns:1fr}.v2-path{padding:16px}}
+@media(max-width:680px){
+ .page-workbench main,.page-intern main,.page-course main{padding:10px}
+ .topbar{padding:8px 10px;gap:7px}.top-actions{gap:5px}
+ .top-actions #language{max-width:110px}.top-actions .currency-select{display:none}
+ .page-workbench .topbar .breadcrumb{display:none}
+ .page-workbench .topbar{min-height:55px;height:auto;flex-wrap:nowrap}
+ .page-workbench .topbar .top-actions{flex:1;justify-content:flex-end}
+ .page-workbench .topbar #mentorButton{font-size:.8rem;padding:7px 10px}
+ .page-workbench .topbar #accountName{display:none}
+ .v2-scope{font-size:.8rem}.v2-paths{gap:8px;margin:12px 0 18px}
+ .v2-path .path-icon{min-width:36px;height:36px;font-size:1.2rem}
+ input,textarea,select{font-size:16px}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation:none!important;transition:none!important}}

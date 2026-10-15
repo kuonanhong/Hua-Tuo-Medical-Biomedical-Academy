@@ -40,7 +40,13 @@
     const flagship = CATALOG.filter(c => c.flagship && c.kind !== 'prize' && c.kind !== 'acupoint').slice(0, 9);
     const F = DEPTS.faculties;
     root.innerHTML = `<section class="hero"><span class="eyebrow">HUA TUO · MEDICAL & BIOMEDICAL ACADEMY</span><h1 data-t="heroTitle">${t('heroTitle')}</h1><p class="lead" data-t="heroLead">${t('heroLead')}</p><div class="actions"><a class="button primary" href="#catalog?free=1">${t('startFree')}</a><a class="button" href="#catalog">${t('exploreAll')}</a><a class="button light" href="#intern">${t('navIntern')}</a></div></section>
+      <div class="v2-paths">
+       <a class="v2-path" href="#parkinson"><span class="path-icon" aria-hidden="true">◎</span><span><strong>${zh() ? '巴金森與神經照護' : 'Parkinson’s & neurological care'}</strong><small>${zh() ? '完整免費主題教材、證據來源、照護測驗與進階課程入口。' : 'Free authored lessons, evidence sources, care quizzes and advanced course links.'}</small></span></a>
+       <a class="v2-path" href="#workbench"><span class="path-icon" aria-hidden="true">✋</span><span><strong>${zh() ? '跟師傅動手學' : 'Learn with the mentor'}</strong><small>${zh() ? '示範 → 雙手操作 → 收集證據 → 判斷 → 驗收；觸控與鍵盤皆可。' : 'Demonstrate → control both hands → gather evidence → reason → validate. Touch or keyboard.'}</small></span></a>
+       <a class="v2-path" href="#tcm"><span class="path-icon" aria-hidden="true">☯</span><span><strong>${zh() ? '金人穴位與本草圖書館' : 'Golden atlas & materia medica'}</strong><small>${zh() ? '搜尋穴位、中藥、方劑；對照部位示意與安全、來源資訊。' : 'Search points, herbs and formulas with regional diagrams, safety and source information.'}</small></span></a>
+      </div>
       <div class="grid cols-4"><div class="card stat"><b>${release.topics.toLocaleString()}</b><span>${t('statTopics')}</span></div><div class="card stat"><b>${release.steps.toLocaleString()}</b><span>${t('statSteps')}</span></div><div class="card stat"><b>${release.departments}</b><span>${t('statDepartments')}</span></div><div class="card stat"><b>${release.acupoints}</b><span>${t('statAcupoints')}</span></div></div>
+      <p class="v2-scope">${zh() ? '以上為既有主題目錄與教學步驟數；多數由教學模板整理，並非同等數量的獨立實驗或逐項經臨床審查的手術課。新增實作病例與來源可在各頁查看。' : 'These are curriculum topic and step counts. Most use teaching templates; they are not the same number of independently authored experiments or clinically reviewed operative courses. New authored cases and sources are labelled on their pages.'}</p>
       <div class="section-head"><div><span class="eyebrow">${t('faculties')}</span><h2>${zh() ? '五大學部，一個方法：先看示範，再動手，最後驗收。' : 'Five faculties, one method: watch, do, verify.'}</h2></div></div>
       <div class="faculty-strip">${Object.entries(F).map(([id, f]) => { const n = CATALOG.filter(c => c.faculty === id).length; return `<a class="faculty" href="#catalog?faculty=${id}"><span class="ic">${window.HT.icons.glyphOnly(f.icon, f.accent, 42)}</span><span><b>${esc(zh() ? f.zh : f.en)}</b><small>${n} ${t('statTopics')}</small></span></a>`; }).join('')}</div>
       <div class="section-head"><div><span class="eyebrow">${t('flagship')}</span><h2>${t('featured')}</h2></div><a class="button light small" href="#catalog?flagship=1">${t('viewAll')} →</a></div>
@@ -72,7 +78,13 @@
     $('#fFlag').onclick = () => set('flagship', flagship ? '' : '1');
     $('#pPrev').onclick = () => set('page', String(page - 1)); $('#pNext').onclick = () => set('page', String(page + 1));
   }
+  function workbenchPage(root, params) {
+    root.innerHTML = `<div class="section-head"><div><span class="eyebrow">MENTOR · PRACTICE · VERIFY</span><h1>${zh() ? '跟師傅動手學' : 'Learn with the mentor'}</h1></div><a class="button small" href="#intern?tab=tcm">${zh() ? '原有實習站' : 'Classic practice stations'} →</a></div><div id="activeWorkbench"></div>`;
+    const cleanup = window.HT.workbench.mount(root.querySelector('#activeWorkbench'), {caseId: params.get('case') || undefined});
+    if (typeof cleanup === 'function') pageCleanup = cleanup;
+  }
   function intern(root, params) {
+    if (!params.has('tab') && !params.has('sim')) { workbenchPage(root, params); return; }
     const tab = params.get('tab') || 'tcm';
     const sims = tab === 'tcm' ? [['clinic', t('tcmClinic'), window.HT.internTcm.clinic], ['pulse', t('pulseTrainer'), window.HT.internTcm.pulseTrainer], ['tongue', t('tongueTrainer'), window.HT.internTcm.tongueTrainer], ['locator', zh() ? '穴位定位訓練' : 'Acupoint locator', window.HT.internTcm.locator]] : [['bp', zh() ? '血壓測量（聽診）' : 'Blood pressure (auscultation)', window.HT.internWestern.bpStation], ['vitals', t('vitals'), window.HT.internWestern.vitalsStation], ['glucose', zh() ? '血糖站' : 'Glucose station', window.HT.internWestern.glucoseStation], ['ecg', zh() ? '心電圖判讀' : 'ECG rhythms', window.HT.internWestern.ecgStation], ['labs', zh() ? '檢驗判讀' : 'Lab panels', window.HT.internWestern.labStation], ['soap', zh() ? '臨床病例 SOAP' : 'SOAP case', window.HT.internWestern.soapStation]];
     const sim = params.get('sim') || sims[0][0];
@@ -100,14 +112,16 @@
   function sources(root) {
     const byDept = {}; CATALOG.forEach(c => { byDept[c.department] = (byDept[c.department] || 0) + 1; });
     root.innerHTML = `<div class="section-head"><div><span class="eyebrow">${t('navSources')}</span><h1>${zh() ? '來源、授權與內容界線' : 'Sources, licences and scope'}</h1></div></div>
-      <div class="card"><h3>${zh() ? '內容說明' : 'About the content'}</h3><ul><li>${zh() ? `全站 ${release.topics.toLocaleString()} 門課程由作者資料（主題、焦點、穴位定位、藥性、方劑組成、諾貝爾得獎研究）與依類型的教學模板生成；${CATALOG.filter(c => c.authored).length} 門旗艦手術另有逐步手寫核心步驟。` : `All ${release.topics.toLocaleString()} courses are generated from authored data (topics, focus, point locations, herb properties, formula composition, Nobel discoveries) and kind-specific teaching templates; ${CATALOG.filter(c => c.authored).length} flagship operations have hand-written core steps.`}</li><li>${zh() ? '每門課附 PubMed、維基百科與各科官方學會／WHO／衛福部連結；課程不是臨床指引、手術 SOP 或執照訓練。' : 'Every course links to PubMed, Wikipedia and the relevant society/WHO/MOHW pages; courses are not clinical guidelines, operative SOPs or licensure training.'}</li><li>${zh() ? '穴位定位依 WHO 西太平洋區標準（2008）教學摘要；中藥劑量為常用範圍，含毒藥材已標示。' : 'Point locations follow the WHO WPRO standard (2008) in abridged teaching form; herb doses are usual ranges with toxic materials flagged.'}</li><li>${zh() ? '圖示為本站原創 SVG 單線圖示系統，每門課一個唯一組合（基礎圖形＋科別色＋環段＋點位＋徽章），建置時驗證不重複；未使用第三方圖示庫。' : 'Icons are an original monoline SVG system; each course has a unique combination (glyph + accent + ring + dots + badge) verified at build time; no third-party icon sets are used.'}</li><li>${zh() ? '影片與社群資源（如子子中醫、聰動成長協會）只連結原發布者頁面，點擊後才連線。' : 'Video and community resources (e.g. Zizi TCM, Smart Action Association) link only to the original publishers and connect only when clicked.'}</li></ul></div>
-      <h2 style="margin-top:20px">${zh() ? '各科課程數' : 'Courses per department'}</h2><div class="grid cols-4">${DEPTS.departments.map(d => `<a class="dept-card card flat" href="#catalog?department=${d.id}"><span class="ic">${window.HT.icons.glyphOnly(d.glyph, d.accent, 40)}</span><span><b>${esc(pk(d, 'title'))}</b><small>${byDept[d.id] || 0}</small></span></a>`).join('')}</div>
+      <div class="card"><h3>${zh() ? '內容說明' : 'About the content'}</h3><ul><li>${zh() ? `全站 ${release.topics.toLocaleString()} 門課程由作者資料（主題、焦點、穴位定位、藥性、方劑組成、諾貝爾得獎研究）與依類型的教學模板生成；${CATALOG.filter(c => c.authored).length} 門課程另有獨立編寫的核心步驟與病例。` : `All ${release.topics.toLocaleString()} courses are generated from authored data (topics, focus, point locations, herb properties, formula composition, Nobel discoveries) and kind-specific teaching templates; ${CATALOG.filter(c => c.authored).length} courses have independently authored core steps or case material.`}</li><li>${zh() ? '每門課附 PubMed、維基百科與各科官方學會／WHO／衛福部連結；課程不是臨床指引、手術 SOP 或執照訓練。' : 'Every course links to PubMed, Wikipedia and the relevant society/WHO/MOHW pages; courses are not clinical guidelines, operative SOPs or licensure training.'}</li><li>${zh() ? '穴位目錄對照 WHO 命名架構，金人圖為部位索引示意，並非精確進針座標；舊版定位文字未逐條重新審核。中藥與方劑為本草教育，不能據此自行配藥。' : 'The point directory uses WHO nomenclature. The golden body is a regional educational index, not clinical needling coordinates; legacy location text has not been individually revalidated. Herbal entries are education, not self-prescribing instructions.'}</li><li>${zh() ? '圖示為本站原創 SVG 單線圖示系統，每門課一個唯一組合（基礎圖形＋科別色＋環段＋點位＋徽章），建置時驗證不重複；未使用第三方圖示庫。' : 'Icons are an original monoline SVG system; each course has a unique combination (glyph + accent + ring + dots + badge) verified at build time; no third-party icon sets are used.'}</li><li>${zh() ? '影片與社群資源（如子子中醫、聰動成長協會）只連結原發布者頁面，點擊後才連線。' : 'Video and community resources (e.g. Zizi TCM, Smart Action Association) link only to the original publishers and connect only when clicked.'}</li></ul></div>
+      <p class="v2-scope"><a href="#resources">${zh() ? '新版免費教材的逐項參考來源與查核狀態 →' : 'New lesson sources and verification status →'}</a></p><h2 style="margin-top:20px">${zh() ? '各科課程數' : 'Courses per department'}</h2><div class="grid cols-4">${DEPTS.departments.map(d => `<a class="dept-card card flat" href="#catalog?department=${d.id}"><span class="ic">${window.HT.icons.glyphOnly(d.glyph, d.accent, 40)}</span><span><b>${esc(pk(d, 'title'))}</b><small>${byDept[d.id] || 0}</small></span></a>`).join('')}</div>
       <h2 style="margin-top:20px">${zh() ? '軟體授權' : 'Software licence'}</h2><p class="small muted">${zh() ? '本專案程式碼以 MIT 授權釋出（見 LICENSES.md）；課程文字為本站編輯內容，可供個人學習；第三方連結內容各依其授權。' : 'Project code is released under the MIT licence (see LICENSES.md); course text is editorial content for personal learning; linked third-party content keeps its own licences.'}</p>`;
   }
 
   // ---------------------------------------------------------------- router
   async function route() {
     if (pageCleanup) { pageCleanup(); pageCleanup = null; }
+    if (window.HT.coursePlayer.current.cleanup) { window.HT.coursePlayer.current.cleanup(); window.HT.coursePlayer.current.cleanup = null; }
+    $('#main').classList.remove('course-workbench-first');
     window.HT.voice.stop();
     const hash = location.hash.slice(1) || 'home';
     const [pathRaw, query] = hash.split('?'); const params = new URLSearchParams(query || '');
@@ -116,13 +130,15 @@
     document.body.className = 'page-' + page;
     document.querySelectorAll('.nav a, .bottom-nav a').forEach(a => a.classList.toggle('active', a.dataset.page === page));
     $('#sidebar').classList.remove('open');
-    const titles = { home: 'navHome', catalog: 'navCatalog', intern: 'navIntern', tcm: 'navTcm', nobel: 'navNobel', ai: 'navAi', progress: 'navProgress', membership: 'navMembership', sources: 'navSources', course: 'navCatalog' };
+    const titles = { home: 'navHome', catalog: 'navCatalog', intern: 'navIntern', workbench: 'navWorkbench', parkinson: 'navParkinson', resources: 'navSources', tcm: 'navTcm', nobel: 'navNobel', ai: 'navAi', progress: 'navProgress', membership: 'navMembership', sources: 'navSources', course: 'navCatalog' };
     $('#pageTitle').textContent = t(titles[page] || 'navHome');
     try {
       if (page === 'home') home(main);
       else if (page === 'catalog') catalog(main, params);
       else if (page === 'course') await window.HT.coursePlayer.render(main, decodeURIComponent(parts[1] || ''), { tier: params.get('tier') || 'basic' });
       else if (page === 'intern') intern(main, params);
+      else if (page === 'workbench') workbenchPage(main, params);
+      else if (page === 'parkinson' || page === 'resources' || page === 'learn') { await window.HT.contentHub.ensure(); window.HT.contentHub.render(main, page === 'resources' ? 'resources' : 'parkinson', page === 'learn' ? decodeURIComponent(parts[1] || '') : undefined); }
       else if (page === 'tcm') { await window.HT.tcmLibrary.ensure(); window.HT.tcmLibrary.render(main, params.get('tab'), params.get('filter')); }
       else if (page === 'nobel') window.HT.explorer.nobel(main, params.get('which'));
       else if (page === 'ai') window.HT.explorer.aiPage(main);
@@ -145,6 +161,11 @@
     route();
   }
   function onAuthChange() {
+    window.HT.locale.clear();
+    window.HT_COURSES = {};
+    if (window.HT.coursePlayer.current.cleanup) window.HT.coursePlayer.current.cleanup();
+    Object.assign(window.HT.coursePlayer.current, {course:null, catalog:null, cleanup:null, stage:0, step:0});
+    if (window.HT.tutor.reset) window.HT.tutor.reset();
     const u = window.HT.account.user();
     $('#accountName').textContent = u ? (u.username || u.name) : t('guest');
     $('#avatar').textContent = u ? String(u.username || u.name || '佗').slice(0, 1).toUpperCase() : '佗';
@@ -167,7 +188,14 @@
     $('#currency').onchange = e => { window.HT.prefs.update({ currency: e.target.value }); applyLanguage(); };
     $('#preferencesButton').onclick = () => window.HT.prefs.open();
     $('#accountButton').onclick = () => window.HT.account.open();
-    $('#mentorButton').onclick = () => window.HT.tutor.toggle(window.HT.coursePlayer.current.catalog);
+    $('#mentorButton').onclick = () => {
+      const path = location.hash.split('?')[0];
+      const context = path.startsWith('#course/') ? window.HT.coursePlayer.current.catalog
+        : path.startsWith('#tcm') ? window.HT.tcmLibrary.currentContext
+        : path.startsWith('#learn/') || path === '#parkinson' ? window.HT.contentHub.currentContext
+        : window.HT.workbench.currentContext || null;
+      window.HT.tutor.toggle(context);
+    };
     $('#menuButton').onclick = () => $('#sidebar').classList.toggle('open');
     $('#closeDialog').onclick = closeDialog;
     $('#dialog').addEventListener('click', e => { if (e.target === $('#dialog')) closeDialog(); });

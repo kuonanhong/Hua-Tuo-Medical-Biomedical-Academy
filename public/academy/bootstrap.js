@@ -20,7 +20,7 @@
     const staticHost = /(^|\.)github\.io$/i.test(location.hostname || '') || /(^|\.)pages\.dev$/i.test(location.hostname || '') || /(^|\.)netlify\.app$/i.test(location.hostname || '');
     window.HT.staticMode = cfg.siteMode === 'static' || (cfg.siteMode !== 'server' && (isFile || staticHost));
     window.HT.fileMode = isFile;
-    for (const f of ['i18n.js', 'icons.js', 'data/departments.js', 'data/catalog.js', 'voice.js', 'personalization.js', 'locale.js', 'account.js', 'membership.js', 'tutor.js', 'intern-tcm.js', 'intern-western.js', 'tcm-library.js', 'nobel-explorer.js', 'course-player.js', 'app.js']) {
+    for (const f of ['i18n.js', 'icons.js', 'data/departments.js', 'data/catalog.js', 'voice.js', 'personalization.js', 'locale.js', 'account.js', 'membership.js', 'tutor.js', 'intern-tcm.js', 'intern-western.js', 'tcm-library.js', 'tcm-library-v2.js', 'nobel-explorer.js', 'workbench.js', 'content-hub.js', 'course-player.js', 'app.js']) {
       await load(f);
     }
   })().catch(error => {

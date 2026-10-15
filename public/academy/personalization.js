@@ -20,7 +20,7 @@
       voiceURI: typeof i.voiceURI === 'string' ? i.voiceURI.slice(0, 400) : '',
       voiceGender: ['auto', 'female', 'male'].includes(i.voiceGender) ? i.voiceGender : 'auto',
       rate: bounded(i.rate, 0.6, 1.5, 1), pitch: bounded(i.pitch, 0.6, 1.5, 1),
-      style: ['professional', 'friendly', 'brisk'].includes(i.style) ? i.style : 'professional',
+      style: ['professional', 'friendly', 'natural', 'brisk'].includes(i.style) ? i.style : 'professional',
       voiceLanguage: i.voiceLanguage === 'follow' || /^[a-z]{2,3}(-[A-Za-z0-9]{2,8})?$/.test(i.voiceLanguage || '') ? i.voiceLanguage : 'follow',
       language: typeof i.language === 'string' ? i.language.slice(0, 12) : 'auto',
       currency: /^[A-Z]{3}$/.test(i.currency || '') ? i.currency : 'auto',
@@ -75,17 +75,35 @@
       </div><p class="form-note">${i18n.isZh() ? '介面語言與幣別預設依瀏覽器語言／時區判斷，不使用 GPS 或 IP；可在此手動覆寫。' : 'Language and currency default to the browser language and time zone, never GPS or IP; override them here.'}</p></fieldset>
       <fieldset><legend>${t('voice')}</legend><div class="form-grid">
         <label>${t('voiceGender')}${sel('voiceGender', [['auto', t('auto')], ['female', t('female')], ['male', t('male')]])}</label>
-        <label>${t('style')}${sel('style', [['professional', t('professional')], ['friendly', t('friendly')], ['brisk', t('brisk')]])}</label>
+        <label>${t('style')}${sel('style', [['professional', t('professional')], ['friendly', t('friendly')], ['natural', t('natural')], ['brisk', t('brisk')]])}</label>
         <label>${t('language')}<select data-pref="voiceLanguage" data-no-translate><option value="follow" ${prefs.voiceLanguage === 'follow' ? 'selected' : ''}>${t('followBrowser')}</option>${[...new Set(['zh-TW', 'zh-CN', 'en-US', 'en-GB', 'ja-JP', 'ko-KR', 'es-ES', 'fr-FR', 'de-DE', 'pt-BR', ...window.HT.voice.voices().map(v => v.lang)])].sort().map(c => `<option value="${esc(c)}" ${prefs.voiceLanguage === c ? 'selected' : ''}>${esc(c)}</option>`).join('')}</select></label>
         <label>${t('voice')}<select data-pref="voiceURI" data-no-translate>${voiceOpts}</select></label>
         <label class="range-row">${t('rate')}<input type="range" min="0.6" max="1.5" step="0.05" value="${prefs.rate}" data-pref="rate"><output>${prefs.rate.toFixed(2)}×</output></label>
         <label class="range-row">${t('pitch')}<input type="range" min="0.6" max="1.5" step="0.05" value="${prefs.pitch}" data-pref="pitch"><output>${prefs.pitch.toFixed(2)}</output></label>
       </div>
-      <p class="form-note">${i18n.isZh() ? `本裝置有 ${vlist.length} 個相符語音。聲音性別由名稱推測（瀏覽器沒有標準欄位）；「專業精確」會放慢語速、降低音高並在段落間停頓。` : `${vlist.length} matching voices on this device. Gender is inferred from voice names (browsers expose no standard field); "Professional" slows the rate, lowers pitch and pauses between sections.`}</p>
-      <div class="row"><button type="button" class="button" data-voice-test>▶ ${t('preview')}</button><button type="button" class="button light" data-voice-stop>${t('stop')}</button></div></fieldset>
+      <p class="form-note" data-voice-inventory>${i18n.isZh() ? `本裝置有 ${vlist.length} 個相符語音。聲音性別由名稱推測（瀏覽器沒有標準欄位）；男／女聲偏好僅在裝置有相符聲音時有效。風格調整語速、音高及停頓，不能保證真人音質。` : `${vlist.length} matching voices on this device. Gender is inferred from voice names (browsers expose no standard field); the preference applies only when a matching voice exists. Style adjusts pace and pauses, not voice identity or neural quality.`}</p>
+      <div class="row"><button type="button" class="button" data-voice-test>▶ ${t('preview')}</button><button type="button" class="button light" data-voice-stop>${t('stop')}</button><button type="button" class="button light" data-voice-refresh>${i18n.isZh() ? '重新偵測聲音' : 'Refresh voices'}</button></div><p class="voice-diagnostics" data-voice-live role="status" aria-live="polite"></p></fieldset>
       <div class="dialog-actions"><button type="button" class="button light" data-pref-export>⤓ Export</button><label class="button light" style="cursor:pointer">⤒ Import<input type="file" accept="application/json,.json" data-pref-import hidden></label><button type="button" class="text-link" data-pref-reset>Reset</button></div>
     </form>`;
   }
+  function refreshVoiceOptions() {
+    const body = document.getElementById('dialogBody'); if (!body) return;
+    const select = body.querySelector('[data-pref="voiceURI"]'); if (!select) return;
+    const t = k => window.HT.i18n.t(k), z = window.HT.i18n.isZh();
+    const lang = prefs.voiceLanguage === 'follow' ? window.HT.i18n.current : prefs.voiceLanguage;
+    const items = window.HT.voice.list(lang);
+    select.innerHTML = `<option value="">${t('auto')}</option>` + items.map(v => `<option value="${esc(v.voice.voiceURI)}">${esc(v.voice.name)} · ${esc(v.voice.lang)} · ${v.gender === 'female' ? t('female') + (z ? '（推測）' : ' (inferred)') : v.gender === 'male' ? t('male') + (z ? '（推測）' : ' (inferred)') : (z ? '性別未知' : 'gender unknown')}${v.local ? '' : ' · ☁'}</option>`).join('');
+    const backend=window.HT.voice.state.backend;
+    const local=(backend && backend.voices || []).filter(v=>v.id && String(v.language).split('-')[0]===String(lang).split('-')[0]);
+    local.forEach(v=>{const option=document.createElement('option');option.value='server:'+v.id;option.textContent=v.label+' · '+v.language+' · '+(v.gender==='male'?t('male'):v.gender==='female'?t('female'):'?')+' · CPU';select.appendChild(option);});
+    select.value = items.some(v => v.voice.voiceURI === prefs.voiceURI) || local.some(v=>'server:'+v.id===prefs.voiceURI) ? prefs.voiceURI : '';
+    const note = body.querySelector('[data-voice-inventory]');
+    if(note) note.textContent = z ? `裝置 ${items.length} 個聲音；本機 CPU ${local.length} 個相符聲音。語音載入可能稍晚；請按試聽。男／女聲依實際聲音名稱推測，調音高不代表變更性別。` : `${items.length} device voices; ${local.length} matching local CPU voices. Loading may be delayed; tap Preview. Gender is inferred from voice names; changing pitch does not change voice identity.`;
+    const live = body.querySelector('[data-voice-live]');
+    if(live) { const s=window.HT.voice.state; live.dataset.state=s.phase; live.textContent = (z ? '狀態：' : 'Status: ') + s.phase + (s.backend ? (s.backend.available ? (z ? ' · 已安裝本機 CPU 語音' : ' · local CPU voice installed') : (z ? ' · 本機 CPU 語音尚未設定' : ' · local CPU TTS not configured')) : '') + (s.phase==='unavailable' || s.phase==='blocked' ? (z ? '。請在頁面語音列按「再試一次」；確認媒體音量與手機 TTS 語言包。' : '. Tap Retry in the voice bar; check media volume and your phone TTS language pack.') : ''); }
+  }
+  window.addEventListener('ht:voices', refreshVoiceOptions);
+  window.addEventListener('ht:voice-state', refreshVoiceOptions);
   function open() {
     const app = window.HT.app;
     app.dialog(window.HT.i18n.t('workspace'), dialogMarkup());
@@ -98,11 +116,15 @@
         update({ [k]: v, ...(k === 'voiceLanguage' ? { voiceURI: '' } : {}) });
         if (input.type === 'range') input.nextElementSibling.textContent = v.toFixed(2) + (k === 'rate' ? '×' : '');
         if (k === 'language' || k === 'currency') { app.applyLanguage(); }
-        if (k === 'voiceLanguage' || k === 'language') { body.querySelector('[data-pref="voiceURI"]').innerHTML = body.querySelector('[data-pref="voiceURI"]').innerHTML; open(); }
+        if (k === 'language') { open(); } else if (k === 'voiceLanguage') { refreshVoiceOptions(); }
       });
     });
     body.querySelector('[data-voice-test]').onclick = () => { const lang = prefs.voiceLanguage === 'follow' ? window.HT.i18n.current : prefs.voiceLanguage; const ok = window.HT.voice.speak(window.HT.voice.sample(lang), { lang, voiceURI: prefs.voiceURI, gender: prefs.voiceGender, rate: prefs.rate, pitch: prefs.pitch, style: prefs.style }); if (!ok) app.toast(window.HT.i18n.isZh() ? '此裝置沒有可用語音。' : 'No voice available on this device.'); };
     body.querySelector('[data-voice-stop]').onclick = () => window.HT.voice.stop();
+    body.querySelector('[data-voice-refresh]').onclick = () => { window.HT.voice.ensureVoices().then(refreshVoiceOptions); window.HT.voice.backendStatus().then(refreshVoiceOptions); refreshVoiceOptions(); };
+    refreshVoiceOptions();
+    window.HT.voice.ensureVoices().then(refreshVoiceOptions);
+    window.HT.voice.backendStatus().then(refreshVoiceOptions);
     body.querySelector('[data-pref-reset]').onclick = () => { update(Object.assign({}, DEFAULTS)); app.applyLanguage(); open(); };
     body.querySelector('[data-pref-export]').onclick = () => { const blob = new Blob([JSON.stringify({ format: 'huatuo-workspace', version: 1, preferences: prefs }, null, 2)], { type: 'application/json' }); const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = 'HuaTuo_Workspace_Preferences.json'; a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 1000); };
     body.querySelector('[data-pref-import]').onchange = async e => { const f = e.target.files && e.target.files[0]; if (!f) return; try { if (f.size > 20000) throw new Error('size'); const d = JSON.parse(await f.text()); if (d.format !== 'huatuo-workspace') throw new Error('format'); update(normalize(d.preferences)); app.applyLanguage(); open(); } catch (err) { app.toast('Import failed'); } };

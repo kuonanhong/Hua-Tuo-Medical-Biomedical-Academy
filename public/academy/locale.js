@@ -1,40 +1,90 @@
-/* Content translation for languages beyond the authored zh-TW/en core. Uses the server route
-   /api/translate (configured generative AI) with a bounded browser cache. Interface strings do
-   not need this (see i18n.js). Original text is always kept when translation is unavailable. */
-(function (window) {
+/* Authored course originals are Traditional Chinese and English. Optional AI translation is
+   labelled, reversible and never silently advertised as a complete authored language edition. */
+(function(window){
   'use strict';
-  const KEY = 'ht-translation-cache-v1', MAX = 2500;
-  let cache = new Map();
-  try { const saved = JSON.parse(localStorage.getItem(KEY) || '[]'); if (Array.isArray(saved)) saved.slice(-MAX).forEach(([k, v]) => cache.set(k, v)); } catch (e) { /* ignore */ }
-  function persist() { try { localStorage.setItem(KEY, JSON.stringify([...cache].slice(-MAX))); } catch (e) { /* ignore */ } }
-  const core = lang => lang === 'zh-TW' || lang === 'zh-CN' || lang === 'en';
-  function available() { return !window.HT.staticMode && window.HT.account && window.HT.account.user() && window.HT.account.aiAvailable(); }
-  async function translate(texts, lang) {
-    if (core(lang)) return texts;
-    const out = texts.map(t => cache.get(lang + '\u0000' + t));
-    const missing = texts.filter((t, i) => out[i] === undefined && t && t.trim());
-    if (missing.length && available()) {
-      try {
-        for (let i = 0; i < missing.length; i += 12) {
-          const batch = missing.slice(i, i + 12);
-          const r = await fetch((window.HT_CONFIG.apiBase || '') + '/api/translate', { method: 'POST', credentials: 'same-origin', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ language: lang, texts: batch }) });
-          if (!r.ok) break;
-          const d = await r.json();
-          if (Array.isArray(d.translations) && d.translations.length === batch.length) batch.forEach((t, j) => cache.set(lang + '\u0000' + t, d.translations[j]));
+  const KEY='ht-translation-cache-v2', MAX=2500;
+  let cache=new Map(), cloudConsent=false, report={requested:0,translated:0,error:''}, busy=false, timer=null;
+  const originals=new WeakMap(), rendered=new WeakMap(), attempted=new WeakMap();
+  try{const data=JSON.parse(localStorage.getItem(KEY)||'[]');if(Array.isArray(data))data.slice(-MAX).forEach(([k,v])=>{if(typeof k==='string'&&typeof v==='string')cache.set(k,v);});}catch(e){}
+  function persist(){try{localStorage.setItem(KEY,JSON.stringify([...cache].slice(-MAX)));}catch(e){}}
+  const core=lang=>['zh-TW','zh-CN','en'].includes(lang);
+  function routes(){return window.HT.account && window.HT.account.aiRoutes ? window.HT.account.aiRoutes():[];}
+  function route(){const r=routes();return r.find(x=>!x.cloud)||r[0];}
+  function available(){return !window.HT.staticMode && window.HT.account && window.HT.account.aiAvailable() && !!route();}
+  const key=(lang,text)=>lang+'\u0000'+text;
+  async function translate(texts,lang){
+    if(core(lang))return texts;
+    const input=texts.map(x=>String(x||'')), missing=[...new Set(input.filter(t=>t.trim()&&!cache.has(key(lang,t))))];
+    report={requested:missing.length,translated:0,error:''};
+    const selected=route();
+    if(missing.length && available() && (!selected.cloud || cloudConsent)){
+      try{
+        for(let i=0;i<missing.length;i+=12){
+          const batch=missing.slice(i,i+12);
+          const r=await fetch(String((window.HT_CONFIG||{}).apiBase||'').replace(/\/$/,'')+'/api/translate',{method:'POST',credentials:'same-origin',headers:{'Content-Type':'application/json'},body:JSON.stringify({language:lang,texts:batch,route:selected.id,cloudConsent:cloudConsent})});
+          if(!r.ok){report.error='translation-unavailable';break;}
+          const d=await r.json();
+          if(!Array.isArray(d.translations)||d.translations.length!==batch.length||d.translations.some(t=>typeof t!=='string')){report.error='invalid-translation';break;}
+          batch.forEach((t,j)=>{cache.set(key(lang,t),d.translations[j]);report.translated++;});
         }
         persist();
-      } catch (e) { /* keep originals */ }
+      }catch(e){report.error='translation-unavailable';}
+    }else if(missing.length){report.error=selected&&selected.cloud&&!cloudConsent?'cloud-consent-required':'local-model-not-connected';}
+    return input.map(t=>cache.get(key(lang,t))||t);
+  }
+  function pick(obj,field,lang){
+    lang=lang||window.HT.i18n.current;if(!obj)return '';
+    const text=lang.startsWith('zh')?(obj[field]||obj[field+'En']||''):(obj[field+'En']||obj[field]||'');
+    return !core(lang)?(cache.get(key(lang,text))||text):text;
+  }
+  function cached(text,lang){return cache.get(key(lang||window.HT.i18n.current,text))||text;}
+  function banner(){
+    if(!document.createElement)return;const main=document.getElementById('main');if(!main||!main.parentNode)return;
+    let el=document.getElementById('translationNotice');
+    if(!el){el=document.createElement('section');el.id='translationNotice';el.className='translation-notice';el.setAttribute('data-no-translate','');main.parentNode.insertBefore(el,main);}
+    const lang=window.HT.i18n.current;
+    el.hidden=core(lang);if(core(lang))return;
+    const c=window.HT.i18n.coverage?window.HT.i18n.coverage(lang):{translated:0,total:0};
+    el.innerHTML='';
+    const text=document.createElement('p');
+    text.textContent=(window.HT.i18n.names[lang]||lang)+' · '+c.translated+'/'+c.total+' interface labels. Course originals: 繁體中文 / English. '+(report.translated?'AI translation displayed; verify medical terms against the original. ':'Untranslated course text remains in its authored language. ')+(report.error?'Translation: '+report.error+'.':'');
+    el.appendChild(text);
+    const actions=document.createElement('div');actions.className='row';
+    if(routes().some(x=>x.cloud)){
+      const label=document.createElement('label');label.className='small';const input=document.createElement('input');input.type='checkbox';input.checked=cloudConsent;input.style.width='auto';
+      input.onchange=()=>{cloudConsent=input.checked;};label.append(input,document.createTextNode(' Allow cloud AI to translate visible course text'));actions.appendChild(label);
     }
-    return texts.map(t => cache.get(lang + '\u0000' + t) || t);
+    const button=document.createElement('button');button.type='button';button.className='button light small';button.textContent='Translate visible lesson / 重試翻譯';
+    button.onclick=()=>{const nodes=visibleNodes();nodes.forEach(n=>attempted.delete(n));schedule();};actions.appendChild(button);
+    const reset=document.createElement('button');reset.type='button';reset.className='text-link';reset.textContent='Show original / 顯示原文';reset.onclick=()=>{visibleNodes().forEach(n=>{const o=originals.get(n);if(o){n.nodeValue=o;rendered.set(n,o);attempted.set(n,lang);}});};actions.appendChild(reset);el.appendChild(actions);
   }
-  /* Pick the authored language field for the current UI language: zh-* → zh, otherwise en. */
-  function pick(obj, field, lang) {
-    lang = lang || window.HT.i18n.current;
-    if (!obj) return '';
-    const zh = obj[field], en = obj[field + 'En'];
-    if (lang.startsWith('zh')) return zh || en || '';
-    return en || zh || '';
+  function visibleNodes(){
+    if(!document.createTreeWalker||!window.NodeFilter)return [];
+    const out=[];
+    ['main','dialogBody'].forEach(id=>{
+      const root=document.getElementById(id);if(!root)return;
+      const walker=document.createTreeWalker(root,NodeFilter.SHOW_TEXT);let n;
+      while((n=walker.nextNode())){
+        const p=n.parentElement;if(!p||p.closest('[data-t],[data-no-translate],[hidden],script,style,option,code,pre,svg,textarea,input,.msg.user'))continue;
+        const text=n.nodeValue.trim();if(text.length<12||text.length>1500||/^(https?:|[\d\s.,/%+−=()]+$)/.test(text))continue;
+        out.push(n);
+      }
+    });return out;
   }
-  window.HT = window.HT || {};
-  window.HT.locale = { translate, pick, core, available, clear() { cache.clear(); persist(); } };
+  async function run(){
+    if(busy)return;banner();const lang=window.HT.i18n.current;
+    if(core(lang))return;
+    const nodes=visibleNodes().filter(n=>attempted.get(n)!==lang).slice(0,60);if(!nodes.length)return;
+    busy=true;
+    const texts=nodes.map(n=>{if(!originals.has(n)||rendered.get(n)!==n.nodeValue)originals.set(n,n.nodeValue);attempted.set(n,lang);return originals.get(n);});
+    const translated=await translate(texts,lang);
+    if(window.HT.i18n.current===lang)nodes.forEach((n,i)=>{if(n.isConnected){rendered.set(n,translated[i]);n.nodeValue=translated[i];}});
+    busy=false;banner();if(visibleNodes().some(n=>attempted.get(n)!==window.HT.i18n.current))schedule();
+  }
+  function schedule(){clearTimeout(timer);timer=setTimeout(run,250);}
+  window.HT=window.HT||{};
+  window.HT.locale={translate,pick,cached,core,available,schedule,get report(){return Object.assign({},report);},clear(){cache.clear();persist();}};
+  if(window.addEventListener){window.addEventListener('ht:language',schedule);window.addEventListener('hashchange',schedule);}
+  if(window.MutationObserver&&document.body)new MutationObserver(mutations=>{if(mutations.some(m=>m.target && m.target.closest ? !m.target.closest('#translationNotice,#voiceDock'):true))schedule();}).observe(document.body,{childList:true,subtree:true});
+  schedule();
 })(window);

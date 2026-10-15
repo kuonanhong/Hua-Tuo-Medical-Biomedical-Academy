@@ -1,0 +1,1112 @@
+{
+  "version": "2.0",
+  "reviewDate": "2026-10-15",
+  "sources": [
+    {
+      "id": "ninds",
+      "title": "NIH / NINDS · Parkinson’s disease",
+      "url": "https://www.ninds.nih.gov/health-information/disorders/parkinsons-disease",
+      "language": "en",
+      "type": "Government",
+      "accessed": "2026-10-15",
+      "verified": true
+    },
+    {
+      "id": "nice",
+      "title": "NICE NG71 · Parkinson’s disease in adults",
+      "url": "https://www.nice.org.uk/guidance/ng71/chapter/Recommendations",
+      "language": "en",
+      "type": "Clinical guideline",
+      "accessed": "2026-10-15",
+      "verified": true
+    },
+    {
+      "id": "nia",
+      "title": "NIH / NIA · Parkinson’s disease",
+      "url": "https://www.nia.nih.gov/health/parkinsons-disease/parkinsons-disease-causes-symptoms-and-treatments",
+      "language": "en",
+      "type": "Government",
+      "accessed": "2026-10-15",
+      "verified": true
+    },
+    {
+      "id": "nhs",
+      "title": "NHS · Parkinson’s treatment",
+      "url": "https://www.nhs.uk/conditions/parkinsons-disease/treatment/",
+      "language": "en",
+      "type": "Public health service",
+      "accessed": "2026-10-15",
+      "verified": true
+    },
+    {
+      "id": "exercise",
+      "title": "Parkinson’s Foundation / ACSM · Exercise",
+      "url": "https://www.parkinson.org/living-with-parkinsons/treatment/exercise",
+      "language": "en",
+      "type": "Patient organization / professional collaboration",
+      "accessed": "2026-10-15",
+      "verified": true
+    },
+    {
+      "id": "exercise2026",
+      "title": "Parkinson’s Foundation · 2026 exercise update",
+      "url": "https://www.parkinson.org/about-us/news/updated-exercise-recommendations",
+      "language": "en",
+      "type": "Patient organization",
+      "accessed": "2026-10-15",
+      "verified": true
+    },
+    {
+      "id": "hospital",
+      "title": "Parkinson’s Foundation · Hospital safety",
+      "url": "https://www.parkinson.org/library/fact-sheets/hospital-safety",
+      "language": "en",
+      "type": "Patient organization",
+      "accessed": "2026-10-15",
+      "verified": true
+    },
+    {
+      "id": "hospitalcare",
+      "title": "Parkinson’s Foundation · Hospital care recommendations",
+      "url": "https://www.parkinson.org/resources-support/professionals/our-care-strategy/hospital-care-initiative",
+      "language": "en",
+      "type": "Patient organization",
+      "accessed": "2026-10-15",
+      "verified": true
+    },
+    {
+      "id": "nonmotor",
+      "title": "Parkinson’s Foundation · Non-movement symptoms",
+      "url": "https://www.parkinson.org/understanding-parkinsons/non-movement-symptoms",
+      "language": "en",
+      "type": "Patient organization",
+      "accessed": "2026-10-15",
+      "verified": true
+    },
+    {
+      "id": "sleep",
+      "title": "Parkinson’s Foundation · Sleep",
+      "url": "https://www.parkinson.org/understanding-parkinsons/non-movement-symptoms/sleep-disorders",
+      "language": "en",
+      "type": "Patient organization",
+      "accessed": "2026-10-15",
+      "verified": true
+    },
+    {
+      "id": "cognition",
+      "title": "Parkinson’s Foundation · Cognitive changes",
+      "url": "https://www.parkinson.org/understanding-parkinsons/non-movement-symptoms/cognitive",
+      "language": "en",
+      "type": "Patient organization",
+      "accessed": "2026-10-15",
+      "verified": true
+    },
+    {
+      "id": "constipation",
+      "title": "Parkinson’s Foundation · Constipation / nausea",
+      "url": "https://www.parkinson.org/understanding-parkinsons/non-movement-symptoms/constipation",
+      "language": "en",
+      "type": "Patient organization",
+      "accessed": "2026-10-15",
+      "verified": true
+    },
+    {
+      "id": "stroke",
+      "title": "NIH / NINDS · Stroke warning signs",
+      "url": "https://www.ninds.nih.gov/health-information/stroke/signs-and-symptoms",
+      "language": "en",
+      "type": "Government",
+      "accessed": "2026-10-15",
+      "verified": true
+    },
+    {
+      "id": "tcm",
+      "title": "NIH / NCCIH · Traditional Chinese Medicine",
+      "url": "https://www.nccih.nih.gov/health/traditional-chinese-medicine-what-you-need-to-know",
+      "language": "en",
+      "type": "Government",
+      "accessed": "2026-10-15",
+      "verified": true
+    },
+    {
+      "id": "acu",
+      "title": "NIH / NCCIH · Acupuncture effectiveness and safety",
+      "url": "https://www.nccih.nih.gov/health/acupuncture-effectiveness-and-safety",
+      "language": "en",
+      "type": "Government",
+      "accessed": "2026-10-15",
+      "verified": true
+    },
+    {
+      "id": "who361",
+      "title": "WHO · Standard acupuncture nomenclature, 361 classical points",
+      "url": "https://www.who.int/publications/i/item/9290611057",
+      "language": "en",
+      "type": "International health organization",
+      "accessed": "2026-10-15",
+      "verified": true
+    },
+    {
+      "id": "hkbu",
+      "title": "Hong Kong Baptist University · Chinese Medicine Digital Projects",
+      "url": "https://scm.hkbu.edu.hk/en/knowledge-transfer/Chinese-Medicine-Digital-Project.html",
+      "language": "zh/en",
+      "type": "University",
+      "accessed": "2026-10-15",
+      "verified": true
+    },
+    {
+      "id": "herbs",
+      "title": "NIH / NCCIH · Herbs at a Glance",
+      "url": "https://www.nccih.nih.gov/health/herbsataglance",
+      "language": "en",
+      "type": "Government",
+      "accessed": "2026-10-15",
+      "verified": true
+    },
+    {
+      "id": "licorice",
+      "title": "NIH / NCCIH · Licorice root",
+      "url": "https://www.nccih.nih.gov/health/licorice-root",
+      "language": "en",
+      "type": "Government",
+      "accessed": "2026-10-15",
+      "verified": true
+    },
+    {
+      "id": "ginseng",
+      "title": "NIH / NCCIH · Asian ginseng",
+      "url": "https://www.nccih.nih.gov/health/asian-ginseng",
+      "language": "en",
+      "type": "Government",
+      "accessed": "2026-10-15",
+      "verified": true
+    },
+    {
+      "id": "mutong",
+      "title": "香港中醫藥管理委員會 · 木通、川木通與關木通鑑別",
+      "url": "https://www.cmchk.org.hk/pcm/pdf/pcm_newsletter1312bw.pdf",
+      "language": "zh",
+      "type": "Government",
+      "accessed": "2026-10-15",
+      "verified": true
+    },
+    {
+      "id": "ginger",
+      "title": "NIH / NCCIH · Ginger",
+      "url": "https://www.nccih.nih.gov/health/ginger/",
+      "language": "en",
+      "type": "Government",
+      "accessed": "2026-10-15",
+      "verified": true
+    },
+    {
+      "id": "astragalus",
+      "title": "NIH / NCCIH · Astragalus",
+      "url": "https://www.nccih.nih.gov/health/astragalus",
+      "language": "en",
+      "type": "Government",
+      "accessed": "2026-10-15",
+      "verified": true
+    },
+    {
+      "id": "ephedra",
+      "title": "NIH / NCCIH · Ephedra",
+      "url": "https://www.nccih.nih.gov/health/ephedra",
+      "language": "en",
+      "type": "Government",
+      "accessed": "2026-10-15",
+      "verified": true
+    },
+    {
+      "id": "toxic",
+      "title": "Hong Kong Department of Health · Toxic Chinese medicinals",
+      "url": "https://www.cmro.gov.hk/html/eng/useful_information/public_health/pamphlet/General_Knowledge_of_Toxic_Chinese_Herbal_Medicines.html",
+      "language": "zh/en",
+      "type": "Government",
+      "accessed": "2026-10-15",
+      "verified": true
+    },
+    {
+      "id": "aconite",
+      "title": "Hong Kong Centre for Health Protection · Aconitine poisoning",
+      "url": "https://www.chp.gov.hk/en/features/20931.html",
+      "language": "en",
+      "type": "Government",
+      "accessed": "2026-10-15",
+      "verified": true
+    },
+    {
+      "id": "alerts",
+      "title": "Hong Kong Department of Health · Current Chinese medicine safety alerts",
+      "url": "https://www.cmro.gov.hk/html/eng/whats_new/alert_on_chinese_medicines.html",
+      "language": "zh/en",
+      "type": "Government",
+      "accessed": "2026-10-15",
+      "verified": true
+    },
+    {
+      "id": "smartaction",
+      "title": "聰動成長協會 · SmartAction 測試網站",
+      "url": "https://kuonanhong.github.io/SmartAction/",
+      "language": "zh",
+      "type": "Community / user-provided; not independently verified",
+      "accessed": "2026-10-15",
+      "verified": false
+    },
+    {
+      "id": "actionai",
+      "title": "聰動 · ActionIntelligent-AI 測試網站",
+      "url": "https://kuonanhong.github.io/ActionIntelligent-AI-/",
+      "language": "zh",
+      "type": "Community / user-provided; not independently verified",
+      "accessed": "2026-10-15",
+      "verified": false
+    }
+  ],
+  "lessons": [
+    {
+      "id": "pd-first",
+      "category": "認識與診斷",
+      "title": "初診前：把困擾變成可討論的問題",
+      "titleEn": "Before the first visit: make symptoms discussable",
+      "summary": "巴金森氏症可同時影響動作、睡眠、情緒與自律神經。症狀出現的先後與速度因人而異；手抖不等於巴金森，沒有手抖也不能排除。診斷需要病史與神經學評估。",
+      "summaryEn": "Parkinson’s can affect movement, sleep, mood and autonomic function. The pattern varies. Tremor alone does not establish the diagnosis, and its absence does not exclude it. History and neurological examination matter.",
+      "practice": "建立四欄筆記：何時開始、影響哪件日常事、發生時正在做什麼、目前所有藥品。以「扣鈕扣變慢」取代只有「手不靈活」。",
+      "practiceEn": "Make four columns: onset, affected daily task, context and every current medicine. Write “buttoning takes longer” rather than only “my hand is awkward.”",
+      "escalation": "突然單側無力、說話異常或失去意識應走急症流程。",
+      "escalationEn": "Sudden one-sided weakness, abnormal speech or loss of consciousness needs emergency assessment.",
+      "question": "哪份資訊最有助初診？",
+      "questionEn": "Which information best supports the first visit?",
+      "options": [
+        "只記手抖幾次",
+        "症狀時間線、日常功能及完整藥單",
+        "自行停藥後再看"
+      ],
+      "optionsEn": [
+        "Tremor count only",
+        "Timeline, function and a complete medicine list",
+        "Stop medicines yourself first"
+      ],
+      "answer": 1,
+      "explanation": "可重現的例子能幫助醫師理解功能改變；網站量表不能自行確診。",
+      "explanationEn": "Concrete examples help explain functional change; a website score cannot diagnose you.",
+      "sources": [
+        "ninds",
+        "nia"
+      ],
+      "access": "free",
+      "minutes": 8
+    },
+    {
+      "id": "pd-differential",
+      "category": "認識與診斷",
+      "title": "類巴金森不是單一疾病",
+      "titleEn": "Parkinsonism is a syndrome, not one cause",
+      "summary": "本態性顫抖、藥物引起的類巴金森與非典型神經退化疾病可能出現重疊表現。影像與生物標記是輔助工具，不能把一張檢驗單等同病名。臨床診斷也需要定期回顧。",
+      "summaryEn": "Essential tremor, drug-induced parkinsonism and atypical disorders may overlap. Imaging and biomarkers support assessment; a result is not the whole diagnosis. Clinical conclusions may need review over time.",
+      "practice": "虛擬病史排序：先列新藥時間，再列動作變化，再列跌倒與自律神經症狀；把不確定處帶給神經內科。",
+      "practiceEn": "Sort a fictional history into new medicines, movement changes, falls and autonomic symptoms. Bring uncertainties to a neurologist.",
+      "escalation": "快速惡化或新出現明顯跌倒，請聯絡照護團隊重新評估。",
+      "escalationEn": "Rapid worsening or prominent new falls warrants reassessment.",
+      "question": "DaT 類影像能單獨區分所有非典型類巴金森嗎？",
+      "questionEn": "Can a dopamine transporter scan distinguish every atypical parkinsonian disorder?",
+      "options": [
+        "能",
+        "不能，需臨床整合",
+        "只看年齡即可"
+      ],
+      "optionsEn": [
+        "Yes",
+        "No; clinical interpretation is required",
+        "Age alone is enough"
+      ],
+      "answer": 1,
+      "explanation": "檢查有適用範圍與限制，應先問「這項檢查要回答什麼問題」。",
+      "explanationEn": "Every test has limits. First ask which clinical question it addresses.",
+      "sources": [
+        "nice",
+        "ninds"
+      ],
+      "access": "free",
+      "minutes": 8
+    },
+    {
+      "id": "pd-diary",
+      "category": "日常照護",
+      "title": "ON／OFF 與異動症日誌",
+      "titleEn": "An ON/OFF and dyskinesia diary",
+      "summary": "藥效波動是一天內症狀與功能隨時間變化；異動症是額外的不自主動作，與僵硬或震顫不同。描述功能與時間比只寫「今天很差」更有用。",
+      "summaryEn": "Fluctuations change function over the day. Dyskinesia is extra involuntary movement and differs from stiffness or tremor. Timing and function communicate more than “a bad day.”",
+      "practice": "用虛構資料填三個時點：服藥時間、能否起身行走、是否有額外扭動；記錄當時餐點及不適。交給團隊判讀。",
+      "practiceEn": "For three fictional time points record prescribed medicine time, ability to rise or walk, extra movements, meals and discomfort. Let the team interpret the pattern.",
+      "escalation": "不要依據日誌自行加減藥；突然不能動合併發熱需急評估。",
+      "escalationEn": "Do not change doses from the diary alone; abrupt immobility with fever needs urgent evaluation.",
+      "question": "日誌最適合用來？",
+      "questionEn": "What is the diary best used for?",
+      "options": [
+        "自行算新劑量",
+        "協助團隊看出時間模式",
+        "取代複診"
+      ],
+      "optionsEn": [
+        "Calculate your own dose",
+        "Help the team identify patterns",
+        "Replace follow-up"
+      ],
+      "answer": 1,
+      "explanation": "日誌是溝通工具，處方調整仍由專業團隊決定。",
+      "explanationEn": "A diary supports communication, while treatment decisions stay with the clinical team.",
+      "sources": [
+        "nice",
+        "nhs"
+      ],
+      "access": "free",
+      "minutes": 8
+    },
+    {
+      "id": "pd-medtime",
+      "category": "藥物安全",
+      "title": "精確藥名與準時服藥",
+      "titleEn": "Exact medicine names and prescribed times",
+      "summary": "不同製劑不一定能互換。住院時把居家藥單與實際服藥時刻交給醫療團隊；若吞嚥、禁食或腸胃吸收有問題，需及早安排替代方案。",
+      "summaryEn": "Formulations are not automatically interchangeable. Give hospital staff the exact home regimen and times. Swallowing difficulty, fasting or poor absorption needs an early clinician-led plan.",
+      "practice": "製作不含身分證號的隨身卡：學名／商品名、製劑、處方時刻、過敏史、照護團隊聯絡方式；請藥師核對。",
+      "practiceEn": "Prepare a card with generic/brand names, formulation, prescribed times, allergies and care-team contacts. Ask a pharmacist to reconcile it.",
+      "escalation": "不可突然停用抗巴金森藥物；漏藥或無法吞嚥時聯絡醫療團隊。",
+      "escalationEn": "Do not abruptly stop Parkinson’s medicines. Contact the team about missed doses or inability to swallow.",
+      "question": "入院最該先交代什麼？",
+      "questionEn": "What should be communicated on admission?",
+      "options": [
+        "只有「一天三次」",
+        "實際藥名、製劑與居家時刻",
+        "把藥全部停掉"
+      ],
+      "optionsEn": [
+        "Only “three times daily”",
+        "Exact products, formulations and home times",
+        "Stop everything"
+      ],
+      "answer": 1,
+      "explanation": "標準發藥時段可能不同於個人的居家處方時刻。",
+      "explanationEn": "Standard ward rounds may not match the person’s prescribed schedule.",
+      "sources": [
+        "hospital",
+        "hospitalcare"
+      ],
+      "access": "free",
+      "minutes": 8
+    },
+    {
+      "id": "pd-behavior",
+      "category": "藥物安全",
+      "title": "衝動行為、嗜睡與用藥溝通",
+      "titleEn": "Impulse changes, sleepiness and medicines",
+      "summary": "治療後若出現賭博、購物、飲食或性行為的失控，可能與藥物有關。白天突然睡著也會影響開車與操作機器的安全。用尊重且不責備的方式詢問。",
+      "summaryEn": "New loss of control over gambling, spending, eating or sexual behavior may be medicine-related. Sudden sleep can also make driving or machinery unsafe. Ask respectfully without blame.",
+      "practice": "練習一句通報：「最近開始某藥後，家人發現購物增加，想請團隊評估」，並記下時間與財務／安全影響。",
+      "practiceEn": "Practice: “Since this medicine started, spending increased; could the team review it?” Record timing and consequences.",
+      "escalation": "突然嗜睡先停止駕車等危險活動，盡快聯絡團隊；不要自行猛停藥。",
+      "escalationEn": "Avoid driving or hazardous activity with sudden sleep episodes and seek review; do not abruptly stop medication.",
+      "question": "出現新衝動行為應如何？",
+      "questionEn": "What is the best response to a new impulse problem?",
+      "options": [
+        "責怪病人",
+        "及早告知團隊並記錄變化",
+        "忽略它"
+      ],
+      "optionsEn": [
+        "Blame the person",
+        "Report and document it early",
+        "Ignore it"
+      ],
+      "answer": 1,
+      "explanation": "辨識副作用有助調整照護，並非道德評價。",
+      "explanationEn": "Recognizing an adverse effect supports care rather than moral judgment.",
+      "sources": [
+        "nice",
+        "nhs"
+      ],
+      "access": "free",
+      "minutes": 8
+    },
+    {
+      "id": "pd-exercise",
+      "category": "復健與活動",
+      "title": "把運動分成四種能力",
+      "titleEn": "Four components of activity",
+      "summary": "運動計畫包含有氧、肌力、平衡／功能與柔軟度。最新專業建議鼓勵朝每週合計至少150分鐘運動努力，但起點、強度與監督必須配合功能及風險。運動不是治癒宣稱。",
+      "summaryEn": "A program combines aerobic work, strength, balance/function and flexibility. Current professional recommendations encourage working toward at least 150 minutes weekly, with starting level, intensity and supervision tailored to ability and risk. This is not a cure claim.",
+      "practice": "在紙上安排一週四種活動，再圈出需要扶手、陪同或治療師評估的項目。先設定可達成的小目標。",
+      "practiceEn": "Plan a fictional week across the four domains. Circle activities needing support, supervision or therapist assessment. Start with a manageable goal.",
+      "escalation": "胸痛、暈厥、明顯喘或新神經症狀應停止活動並求助。",
+      "escalationEn": "Stop activity and seek help for chest pain, fainting, marked breathlessness or new neurological symptoms.",
+      "question": "運動計畫應如何決定？",
+      "questionEn": "How should an exercise plan be chosen?",
+      "options": [
+        "每個人一樣",
+        "依能力與風險逐步調整",
+        "只做一種越快越好"
+      ],
+      "optionsEn": [
+        "Identically for everyone",
+        "Progress to fit ability and risk",
+        "One activity as fast as possible"
+      ],
+      "answer": 1,
+      "explanation": "四種能力互補；安全篩檢與個別調整比追求數字更重要。",
+      "explanationEn": "The domains complement one another; screening and tailoring take priority over a number.",
+      "sources": [
+        "exercise",
+        "exercise2026"
+      ],
+      "access": "free",
+      "minutes": 8
+    },
+    {
+      "id": "pd-freezing",
+      "category": "復健與活動",
+      "title": "凍結步態：先辨識情境",
+      "titleEn": "Freezing: recognize the setting first",
+      "summary": "起步、轉彎、門口或同時說話時可能出現腳步突然像黏住。凍結不是故意不走。治療師可評估提示策略與輔具，應在安全環境練習。",
+      "summaryEn": "Freezing can appear at initiation, turns, doorways or during another task. It is not deliberate refusal. A therapist can assess cues and aids in a safe environment.",
+      "practice": "以房間平面圖標示三個容易卡住的位置；移除地毯與障礙，將「停下、穩住、求助」放在情境卡上。",
+      "practiceEn": "Mark three possible trigger areas on a room plan. Remove hazards and create a “pause, stabilize, ask for help” cue card.",
+      "escalation": "不要拉扯或推擠卡住的人；新出現頻繁跌倒需評估。",
+      "escalationEn": "Do not pull or push someone who is freezing. New recurrent falls need assessment.",
+      "question": "陪伴者較安全的反應？",
+      "questionEn": "Which care-partner response is safer?",
+      "options": [
+        "用力拉向前",
+        "留空間、保持穩定並依治療師教法提示",
+        "催促快點"
+      ],
+      "optionsEn": [
+        "Pull hard forward",
+        "Allow space and use an agreed therapist-taught cue",
+        "Urge speed"
+      ],
+      "answer": 1,
+      "explanation": "提示需要個別測試；照護者應避免把失衡風險放大。",
+      "explanationEn": "Cues need individual assessment; care partners should avoid adding instability.",
+      "sources": [
+        "ninds",
+        "exercise"
+      ],
+      "access": "free",
+      "minutes": 8
+    },
+    {
+      "id": "pd-falls",
+      "category": "復健與活動",
+      "title": "跌倒紀錄與居家動線",
+      "titleEn": "Falls and the home environment",
+      "summary": "跌倒往往涉及步態、視力、血壓、藥物及環境。只問有沒有跌倒會漏掉差點跌倒的事件。夜間廁所動線、照明與鞋子也是重要線索。",
+      "summaryEn": "Falls may involve gait, vision, blood pressure, medicines and surroundings. Near-falls matter too. Lighting, footwear and the night-time bathroom route provide useful clues.",
+      "practice": "用虛擬客廳找出鬆動地毯、電線、低矮家具與缺照明處；記錄一次事件的時間、位置、前一個動作與是否頭部撞擊。",
+      "practiceEn": "Identify loose rugs, cables, low furniture and poor lighting in a fictional room. Record an event’s time, place, preceding action and head impact.",
+      "escalation": "撞頭、無法負重、失去意識或正在用抗凝血藥時，及時就醫評估。",
+      "escalationEn": "Seek timely assessment after head injury, inability to bear weight, loss of consciousness or a fall while anticoagulated.",
+      "question": "哪一項也應記錄？",
+      "questionEn": "What else should be recorded?",
+      "options": [
+        "只有骨折",
+        "差點跌倒",
+        "只有別人看到才算"
+      ],
+      "optionsEn": [
+        "Fractures only",
+        "Near-falls",
+        "Only witnessed falls"
+      ],
+      "answer": 1,
+      "explanation": "早期辨識風險能協助治療師與職能治療師調整環境。",
+      "explanationEn": "Earlier risk recognition helps rehabilitation teams adapt the environment.",
+      "sources": [
+        "nhs",
+        "exercise"
+      ],
+      "access": "free",
+      "minutes": 8
+    },
+    {
+      "id": "pd-swallow",
+      "category": "吞嚥與溝通",
+      "title": "吞嚥警訊與轉介",
+      "titleEn": "Swallowing signs and referral",
+      "summary": "吃喝時咳嗽、濕濁聲、餐期延長、反覆胸部感染或體重減輕都值得評估。有些吸入不會咳嗽。網頁不能決定個人食物質地或安全吞嚥方式。",
+      "summaryEn": "Coughing with meals, a wet voice, long meals, recurrent chest infections or weight loss deserve assessment. Aspiration can be silent. A webpage cannot prescribe a safe texture or individual swallowing technique.",
+      "practice": "閱讀虛擬餐期紀錄，標出症狀、發生的質地、體重變化；安排語言治療師及團隊評估，不自行做喝水挑戰。",
+      "practiceEn": "Review a fictional meal record for symptoms, textures and weight change. Arrange speech-language and clinical review; do not run a home water challenge.",
+      "escalation": "無法呼吸或嚴重哽塞屬急症；反覆嗆咳與發熱需儘速評估。",
+      "escalationEn": "Inability to breathe or severe choking is an emergency; recurrent choking with fever needs prompt assessment.",
+      "question": "沒有咳嗽是否證明安全？",
+      "questionEn": "Does absence of cough prove safety?",
+      "options": [
+        "是",
+        "否，可能有無聲吸入",
+        "只要喝得快就好"
+      ],
+      "optionsEn": [
+        "Yes",
+        "No; aspiration may be silent",
+        "Only speed matters"
+      ],
+      "answer": 1,
+      "explanation": "吞嚥風險需要個別專業評估。",
+      "explanationEn": "Swallowing risk requires an individual professional assessment.",
+      "sources": [
+        "nice",
+        "hospital"
+      ],
+      "access": "free",
+      "minutes": 8
+    },
+    {
+      "id": "pd-speech",
+      "category": "吞嚥與溝通",
+      "title": "聲音變小時如何繼續參與",
+      "titleEn": "Communication when the voice becomes quieter",
+      "summary": "音量、語速、清晰度與臉部表情都可能改變。語言治療可協助溝通；助溝通工具也能保留選擇與自主。不能因聲音小就假定理解力差。",
+      "summaryEn": "Loudness, pace, clarity and facial expression may change. Speech-language therapy and communication tools can support participation. A quiet voice does not imply poor understanding.",
+      "practice": "在安靜環境練習輪流說話，先確認主題；用文字卡或平板補充。以「我聽到的是…對嗎？」核對。",
+      "practiceEn": "Practice turn-taking in a quiet setting and establish the topic. Supplement with a writing card or tablet. Check: “I heard … is that right?”",
+      "escalation": "突然口齒不清與平日不同，先排除急症。",
+      "escalationEn": "Sudden unfamiliar speech change needs emergency assessment.",
+      "question": "較合適的溝通方式？",
+      "questionEn": "Which approach supports communication?",
+      "options": [
+        "替病人回答全部",
+        "留時間並確認理解",
+        "大聲責備"
+      ],
+      "optionsEn": [
+        "Answer everything for them",
+        "Allow time and confirm meaning",
+        "Scold loudly"
+      ],
+      "answer": 1,
+      "explanation": "溝通支持的目標是參與與自主。",
+      "explanationEn": "Communication support aims to preserve participation and autonomy.",
+      "sources": [
+        "nhs",
+        "nice"
+      ],
+      "access": "free",
+      "minutes": 8
+    },
+    {
+      "id": "pd-constipation",
+      "category": "非動作症狀",
+      "title": "便祕不是只能忍耐",
+      "titleEn": "Constipation deserves a plan",
+      "summary": "腸道動作、飲水、活動及藥物都可能影響排便。突然嚴重便祕不應全部歸因巴金森。纖維與水分要配合吞嚥及心腎臟限制個別規畫。",
+      "summaryEn": "Bowel function can be affected by gut movement, fluid, activity and medicines. Abrupt severe constipation should not automatically be blamed on Parkinson’s. Fiber and fluids need tailoring to swallowing and heart/kidney constraints.",
+      "practice": "記錄一週排便頻率、糞便型態、用力程度及腹部不適，帶完整藥單給團隊；不自行混搭瀉藥與草藥。",
+      "practiceEn": "Record a week of bowel frequency, stool form, straining and discomfort. Bring all medicines; avoid mixing laxatives and herbs on your own.",
+      "escalation": "嚴重腹痛、嘔吐、腹脹或血便應及時就醫。",
+      "escalationEn": "Severe abdominal pain, vomiting, distension or blood in stool needs timely care.",
+      "question": "突然嚴重便祕應？",
+      "questionEn": "What about abrupt severe constipation?",
+      "options": [
+        "一律當作正常病程",
+        "聯絡團隊找其他原因",
+        "自行增加很多草藥"
+      ],
+      "optionsEn": [
+        "Always call it normal progression",
+        "Seek review for other causes",
+        "Add many herbs yourself"
+      ],
+      "answer": 1,
+      "explanation": "記錄可找線索，新的嚴重症狀仍要評估。",
+      "explanationEn": "A diary provides clues; new severe symptoms still need assessment.",
+      "sources": [
+        "constipation",
+        "nhs"
+      ],
+      "access": "free",
+      "minutes": 8
+    },
+    {
+      "id": "pd-orthostatic",
+      "category": "非動作症狀",
+      "title": "起身暈眩與血壓紀錄",
+      "titleEn": "Dizziness on standing and blood-pressure records",
+      "summary": "自律神經改變與藥物可能使起身時血壓下降。脫水、感染或其他心血管問題也可能造成暈眩。不能只靠感覺判斷血壓。",
+      "summaryEn": "Autonomic changes and medicines can contribute to a blood-pressure drop on standing. Dehydration, infection and cardiovascular causes also matter. Symptoms alone cannot identify the blood pressure.",
+      "practice": "在虛擬病歷中連結姿勢、測量時間、症狀與藥物；居家量測方式與是否需要陪同請先由團隊教導。",
+      "practiceEn": "Link posture, measurement time, symptoms and medicines in a fictional record. Ask the team to teach safe home measurement and supervision.",
+      "escalation": "昏厥、胸痛、黑便或跌倒後受傷需及時評估；勿自行加鹽或改藥。",
+      "escalationEn": "Fainting, chest pain, black stools or injury needs assessment; do not independently load salt or change medicines.",
+      "question": "第一步是？",
+      "questionEn": "What is the first step?",
+      "options": [
+        "自行把降壓藥停掉",
+        "整理症狀、姿勢與藥單並請團隊評估",
+        "忽略暈眩"
+      ],
+      "optionsEn": [
+        "Stop blood-pressure medicines",
+        "Document context and request review",
+        "Ignore dizziness"
+      ],
+      "answer": 1,
+      "explanation": "病因可能不只一個，措施要配合心腎臟病況。",
+      "explanationEn": "There may be several causes, and measures must fit heart and kidney health.",
+      "sources": [
+        "nia",
+        "nonmotor"
+      ],
+      "access": "free",
+      "minutes": 8
+    },
+    {
+      "id": "pd-sleep",
+      "category": "非動作症狀",
+      "title": "夜間睡不好與夢境動作",
+      "titleEn": "Sleep disruption and acting out dreams",
+      "summary": "睡眠困擾可能涉及夜尿、疼痛、動作、呼吸或藥物。夢中揮打、喊叫可能傷及自己或床伴；白天嗜睡也應主動討論。",
+      "summaryEn": "Sleep disruption may involve bladder symptoms, pain, movement, breathing or medicines. Dream-enactment behaviors can injure the person or bed partner; daytime sleepiness also deserves review.",
+      "practice": "建立七天睡眠紀錄：上床、醒來、午睡、夜間事件與當天用藥。先檢視床邊尖銳物與跌落風險。",
+      "practiceEn": "Keep a seven-day log of bedtime, waking, naps, night events and medicines. Review sharp bedside objects and fall hazards.",
+      "escalation": "睡著造成駕駛風險時停止駕車並求助；新意識改變不當作單純失眠。",
+      "escalationEn": "Avoid driving with sleep attacks; new altered awareness is not ordinary insomnia.",
+      "question": "記錄夢境動作的目的？",
+      "questionEn": "Why record dream-enactment events?",
+      "options": [
+        "當成故意行為",
+        "幫助評估與安全安排",
+        "證明一定是某病"
+      ],
+      "optionsEn": [
+        "Treat them as deliberate",
+        "Support assessment and safety planning",
+        "Prove one diagnosis"
+      ],
+      "answer": 1,
+      "explanation": "單一症狀不等同診斷，時間與事件描述能幫助評估。",
+      "explanationEn": "A symptom is not a diagnosis; timing and event details aid evaluation.",
+      "sources": [
+        "sleep",
+        "cognition"
+      ],
+      "access": "free",
+      "minutes": 8
+    },
+    {
+      "id": "pd-cognition",
+      "category": "非動作症狀",
+      "title": "慢慢想與突然混亂要分開",
+      "titleEn": "Distinguish slower thinking from sudden confusion",
+      "summary": "計畫、注意力與記憶可能改變；睡眠不足、情緒與藥物也可能影響表現。突然幾小時或幾天變混亂，需尋找感染、藥物及其他急性原因。",
+      "summaryEn": "Planning, attention and memory may change; sleep, mood and medicines can contribute. Confusion developing over hours or days needs assessment for infection, medicines and other acute causes.",
+      "practice": "把虛擬事件依「幾個月逐步」與「今天突然」分組，整理原本能做的事、最近改變及新藥。",
+      "practiceEn": "Sort fictional events into gradual change over months versus sudden change today. Describe baseline function, new changes and new medicines.",
+      "escalation": "突然混亂、發熱、跌倒或意識降低應及時評估。",
+      "escalationEn": "Sudden confusion, fever, falls or reduced consciousness needs prompt assessment.",
+      "question": "突然混亂能直接當失智惡化嗎？",
+      "questionEn": "Can sudden confusion simply be labeled dementia progression?",
+      "options": [
+        "可以",
+        "不可以，先找急性原因",
+        "只要休息不用評估"
+      ],
+      "optionsEn": [
+        "Yes",
+        "No; assess acute causes",
+        "Rest without review"
+      ],
+      "answer": 1,
+      "explanation": "時間尺度是重要線索。",
+      "explanationEn": "The time course is an important clue.",
+      "sources": [
+        "cognition",
+        "hospital"
+      ],
+      "access": "free",
+      "minutes": 8
+    },
+    {
+      "id": "pd-mood",
+      "category": "非動作症狀",
+      "title": "情緒、焦慮與冷漠",
+      "titleEn": "Mood, anxiety and apathy",
+      "summary": "情緒與動機改變可能是疾病的一部分，並非意志不足。焦慮、憂鬱與冷漠不同，但可能同時發生。照護者也需要支持。",
+      "summaryEn": "Mood and motivation changes may be part of illness rather than a failure of will. Anxiety, depression and apathy differ but can coexist. Care partners also need support.",
+      "practice": "以開放問題練習：「最近哪些事讓你擔心？還有什麼想做卻難開始？」記下持續多久及對生活的影響。",
+      "practiceEn": "Practice open questions: “What worries you lately? What would you like to do but find hard to start?” Record duration and impact.",
+      "escalation": "若有立即自傷或他傷危險，立即聯絡當地緊急服務與身邊可信任者。",
+      "escalationEn": "For immediate danger of harm, contact local emergency services and a trusted person nearby.",
+      "question": "較好的起手式？",
+      "questionEn": "What is a helpful opening?",
+      "options": [
+        "要求振作",
+        "不責備地詢問困擾與功能",
+        "當作懶惰"
+      ],
+      "optionsEn": [
+        "Demand willpower",
+        "Ask without blame about distress and function",
+        "Call it laziness"
+      ],
+      "answer": 1,
+      "explanation": "具體描述與支持能促進就醫與照護合作。",
+      "explanationEn": "Description and support make care easier to access.",
+      "sources": [
+        "nonmotor",
+        "nia"
+      ],
+      "access": "free",
+      "minutes": 8
+    },
+    {
+      "id": "pd-nutrition",
+      "category": "日常照護",
+      "title": "營養、體重與藥物餐點關係",
+      "titleEn": "Nutrition, weight and meal timing",
+      "summary": "體重減輕、餐期延長與吞嚥問題要一起看。蛋白質可能影響部分人的左多巴反應，但不應因此自行限制總蛋白質；需要醫療與營養團隊一起規畫。",
+      "summaryEn": "Weight loss, longer meals and swallowing problems belong in one review. Protein can affect levodopa response in some people, but total protein should not be cut independently; plan with clinical and dietetic teams.",
+      "practice": "把三天餐點、體重趨勢與症狀時段放在同一張紀錄表，列出要問營養師的三個問題。",
+      "practiceEn": "Put three days of meals, weight trend and symptom timing on one record. Prepare three questions for a dietitian.",
+      "escalation": "進食明顯不足、脫水或迅速減重請及時聯絡團隊。",
+      "escalationEn": "Contact the team for markedly reduced intake, dehydration or rapid weight loss.",
+      "question": "為了藥效是否自行少吃蛋白質？",
+      "questionEn": "Should you independently cut protein for medicine response?",
+      "options": [
+        "是",
+        "否，先做個別營養評估",
+        "一律只喝果汁"
+      ],
+      "optionsEn": [
+        "Yes",
+        "No; seek an individualized assessment",
+        "Use juice only"
+      ],
+      "answer": 1,
+      "explanation": "營養不足本身會帶來風險，不能只追求單一藥效指標。",
+      "explanationEn": "Malnutrition is a risk in itself; one medicine-response goal cannot replace overall nutrition.",
+      "sources": [
+        "nice",
+        "nhs"
+      ],
+      "access": "free",
+      "minutes": 8
+    },
+    {
+      "id": "pd-carepartner",
+      "category": "日常照護",
+      "title": "家屬分工與病人自主",
+      "titleEn": "Care-partner roles and autonomy",
+      "summary": "照護計畫應保留病人選擇，清楚分配服藥核對、交通、餐食、復健與聯絡任務。家屬疲憊不是失敗，提早安排輪替與喘息有助持續照顧。",
+      "summaryEn": "A care plan should preserve choices and allocate medicine checks, transport, meals, rehabilitation and contacts clearly. Fatigue is not failure; sharing duties and arranging respite supports sustainable care.",
+      "practice": "製作一頁團隊表，每項寫主要負責者、替補者及何時求助；先問當事人希望哪些事自己完成。",
+      "practiceEn": "Make a one-page role sheet with a lead, backup and escalation point for each task. Ask which tasks the person wants to keep doing.",
+      "escalation": "照顧量超出能力或出現不安全衝突時，尋求社工與照護團隊支援。",
+      "escalationEn": "Seek social-work and care-team support when workload exceeds capacity or conflict becomes unsafe.",
+      "question": "分工前先做什麼？",
+      "questionEn": "What comes before assigning tasks?",
+      "options": [
+        "全部替病人決定",
+        "詢問當事人的目標與選擇",
+        "只看誰有空"
+      ],
+      "optionsEn": [
+        "Decide everything for them",
+        "Ask the person’s goals and choices",
+        "Check free time only"
+      ],
+      "answer": 1,
+      "explanation": "支持以人為中心，也包含照護者的負荷。",
+      "explanationEn": "Person-centered support also considers care-partner workload.",
+      "sources": [
+        "nhs",
+        "hospital"
+      ],
+      "access": "free",
+      "minutes": 8
+    },
+    {
+      "id": "pd-dbs",
+      "category": "進階治療認識",
+      "title": "DBS 是共同決策，不是保證",
+      "titleEn": "DBS is a shared decision",
+      "summary": "深腦刺激可幫助特定病人的部分動作症狀，但不是治癒，也不是所有步態、認知或非動作困擾都能改善。候選評估需要多專業團隊、功能目標與風險討論。",
+      "summaryEn": "Deep brain stimulation can help selected people with some movement symptoms. It is not a cure and does not reliably solve every gait, cognitive or non-motor problem. Assessment needs a multidisciplinary team and explicit goals and risks.",
+      "practice": "用虛擬個案列三個目標：想改善的症狀、擔心的副作用、術後調整與回診負擔。把目標與期待分開。",
+      "practiceEn": "For a fictional case list target symptoms, feared harms and follow-up/programming burden. Separate goals from assumptions.",
+      "escalation": "有裝置者接受影像或其他治療前，應出示裝置資訊並請團隊核對相容性。",
+      "escalationEn": "Show device information before imaging or other procedures so compatibility can be checked.",
+      "question": "評估 DBS 時哪句較準確？",
+      "questionEn": "Which statement is more accurate?",
+      "options": [
+        "一定治癒",
+        "要比較特定目標、限制與負擔",
+        "所有人都適合"
+      ],
+      "optionsEn": [
+        "Guaranteed cure",
+        "Compare goals, limitations and burdens",
+        "Suitable for everyone"
+      ],
+      "answer": 1,
+      "explanation": "本課練習決策溝通，沒有植入、定位或參數設定教學。",
+      "explanationEn": "This lesson teaches decision communication, not implantation, targeting or programming.",
+      "sources": [
+        "ninds",
+        "hospitalcare"
+      ],
+      "access": "free",
+      "minutes": 8
+    },
+    {
+      "id": "pd-emergency",
+      "category": "急症辨識",
+      "title": "不要把新急症當成巴金森",
+      "titleEn": "Do not attribute every emergency to Parkinson’s",
+      "summary": "突然臉歪、單側無力、說話困難、視覺或步態突變都可能是中風；症狀即使消退也要立即評估。記住最後正常時間，聯絡當地緊急服務。",
+      "summaryEn": "Sudden facial weakness, one-sided weakness, speech problems or abrupt visual or walking changes may be stroke. Even symptoms that resolve need immediate assessment. Note the last-known-well time and call local emergency services.",
+      "practice": "閱讀虛擬電話紀錄，圈出「突然」與最後正常時間；在台灣緊急求助使用119，其他地區依當地號碼。",
+      "practiceEn": "Mark “sudden” and the last-known-well time in a fictional call record. Taiwan uses 119 for emergency rescue; elsewhere use the local number.",
+      "escalation": "急症時不要等 AI 回答或網站測驗完成。",
+      "escalationEn": "Do not wait for an AI answer or finish a website quiz during an emergency.",
+      "question": "突然單側無力應？",
+      "questionEn": "What about sudden one-sided weakness?",
+      "options": [
+        "等下次門診",
+        "立即求助並記時間",
+        "先看完課程"
+      ],
+      "optionsEn": [
+        "Wait for follow-up",
+        "Get emergency help and note time",
+        "Finish the lesson"
+      ],
+      "answer": 1,
+      "explanation": "搶時間交由急救體系評估，不能由既有病名解釋掉新急症。",
+      "explanationEn": "Emergency assessment takes priority over explaining the change by an existing diagnosis.",
+      "sources": [
+        "stroke",
+        "hospital"
+      ],
+      "access": "free",
+      "minutes": 8
+    },
+    {
+      "id": "pd-research",
+      "category": "證據與整合",
+      "title": "研究消息、試驗與「治癒」宣稱",
+      "titleEn": "Research news and cure claims",
+      "summary": "動物、細胞、早期試驗與已證實的日常療效是不同層級。看消息時先問對象、人數、比較組、追蹤多久與不良事件；自然或昂貴不代表有效。",
+      "summaryEn": "Cell findings, animal findings, early trials and established patient benefits are different levels of evidence. Ask who was studied, the sample, comparator, follow-up and harms. Natural or expensive does not establish efficacy.",
+      "practice": "比較兩張虛構廣告：「名人見證」與「公開試驗方法及限制」，寫出每張缺少哪三項證據。",
+      "practiceEn": "Compare two fictional adverts: a celebrity testimonial and a report with trial methods and limitations. List three missing evidence items.",
+      "escalation": "不要為參加未確認療程而突然停掉既有治療。",
+      "escalationEn": "Do not abruptly stop established treatment for an unverified intervention.",
+      "question": "「細胞實驗有效」是否等於病人有效？",
+      "questionEn": "Does a positive cell experiment establish benefit in patients?",
+      "options": [
+        "等於",
+        "不等於，需臨床驗證",
+        "看價格決定"
+      ],
+      "optionsEn": [
+        "Yes",
+        "No; clinical evaluation is needed",
+        "Price decides"
+      ],
+      "answer": 1,
+      "explanation": "模型與人類照護存在多個驗證階段。",
+      "explanationEn": "There are multiple validation stages between a model and human care.",
+      "sources": [
+        "tcm",
+        "ninds"
+      ],
+      "access": "free",
+      "minutes": 8
+    },
+    {
+      "id": "tcm-integration",
+      "category": "中醫與藥材",
+      "title": "中西醫整合：先對齊目標與藥單",
+      "titleEn": "Integrative care: align goals and medicines",
+      "summary": "針灸、太極及草藥不是同一種介入，證據不能相互套用。部分方法可能改善特定症狀；不能因此宣稱逆轉神經退化。中西醫團隊需知道所有用藥與保健品。",
+      "summaryEn": "Acupuncture, tai chi and herbs are different interventions; their evidence is not interchangeable. A possible symptom benefit does not establish reversal of neurodegeneration. All clinicians need the complete medicine and supplement list.",
+      "practice": "為虛構病人列一個可觀察目標、一段回顧時間與可能不良反應；先和原團隊討論再改變照護。",
+      "practiceEn": "For a fictional patient define one observable goal, a review period and harms to monitor. Discuss changes with the existing team.",
+      "escalation": "不應用補充療法延後診斷或中斷必要照護。",
+      "escalationEn": "Do not delay diagnosis or necessary care with a complementary therapy.",
+      "question": "某方法改善疼痛是否證明治癒巴金森？",
+      "questionEn": "Does pain relief prove a Parkinson’s cure?",
+      "options": [
+        "是",
+        "否，結果與疾病需分開",
+        "只看見證"
+      ],
+      "optionsEn": [
+        "Yes",
+        "No; outcome and disease claim differ",
+        "Testimonials decide"
+      ],
+      "answer": 1,
+      "explanation": "證據必須對準特定方法、對象與結果。",
+      "explanationEn": "Evidence must match the intervention, population and outcome.",
+      "sources": [
+        "tcm",
+        "acu"
+      ],
+      "access": "free",
+      "minutes": 8
+    },
+    {
+      "id": "herb-identity",
+      "category": "中醫與藥材",
+      "title": "藥材不是只有中文名字",
+      "titleEn": "A medicinal is more than a common name",
+      "summary": "同名異物、部位不同與炮製不同都可能改變風險。本庫含植物、礦物、動物及其他藥材，並非全世界所有草藥。拉丁藥材名也不必然等同植物學物種名。",
+      "summaryEn": "Shared names, different parts and processing can change risk. This collection includes plant, mineral, animal and other medicinals; it is not every herb worldwide. A Latin medicinal name is not always a botanical species name.",
+      "practice": "在虛擬標籤上核對中文名、藥材拉丁名、來源物種、使用部位、炮製狀態、供應商與批次；缺項先記為待確認。",
+      "practiceEn": "Check a fictional label for common name, medicinal Latin name, source species, part, processing, supplier and lot. Mark missing fields for clarification.",
+      "escalation": "不能靠照片或 AI 鑑定後採食；來源不明品項不要自行使用。",
+      "escalationEn": "Do not ingest a plant identified only by a photo or AI; avoid unknown-source products.",
+      "question": "只有中文俗名足夠嗎？",
+      "questionEn": "Is a common name sufficient?",
+      "options": [
+        "足夠",
+        "不足，還要來源、部位與炮製等",
+        "包裝漂亮就好"
+      ],
+      "optionsEn": [
+        "Yes",
+        "No; source, part and processing also matter",
+        "Good packaging is enough"
+      ],
+      "answer": 1,
+      "explanation": "辨識與品質管理比把功效背熟更早一步。",
+      "explanationEn": "Identity and quality control precede memorizing traditional uses.",
+      "sources": [
+        "hkbu",
+        "toxic"
+      ],
+      "access": "free",
+      "minutes": 8
+    },
+    {
+      "id": "herb-safety",
+      "category": "中醫與藥材",
+      "title": "草藥交互作用與不良反應",
+      "titleEn": "Herbal interactions and adverse events",
+      "summary": "天然不保證安全；肝腎損傷、心律、血壓與凝血風險要個別看。抗凝血藥、糖尿病藥、免疫抑制藥及孕哺狀態都需要專業核對。",
+      "summaryEn": "Natural does not guarantee safety. Liver/kidney injury, rhythm, blood-pressure and clotting risks need individual review. Anticoagulants, diabetes medicines, immunosuppressants and pregnancy/lactation deserve professional checks.",
+      "practice": "把虛擬病人的所有處方、成藥、茶飲及補充品列在同一表；填入開始時間與新症狀，交藥師與醫師核對。",
+      "practiceEn": "Put prescriptions, nonprescription products, teas and supplements on one list with start dates and new symptoms for pharmacist and clinician review.",
+      "escalation": "服用後胸悶、心悸、昏厥、呼吸困難或口唇麻木應立即就醫並攜帶包裝。",
+      "escalationEn": "Chest discomfort, palpitations, fainting, breathing difficulty or lip numbness after a product needs immediate care; take its packaging.",
+      "question": "發現疑似不良反應應？",
+      "questionEn": "What should you do with a suspected reaction?",
+      "options": [
+        "再加量試試",
+        "記錄產品與時間並求助",
+        "把包裝丟掉"
+      ],
+      "optionsEn": [
+        "Try more",
+        "Record product and timing and seek care",
+        "Discard packaging"
+      ],
+      "answer": 1,
+      "explanation": "保留包裝與批次有助查明暴露，不代表自行推定病因。",
+      "explanationEn": "Packaging and lot details help identify exposure without assuming the cause.",
+      "sources": [
+        "herbs",
+        "aconite",
+        "alerts"
+      ],
+      "access": "free",
+      "minutes": 8
+    },
+    {
+      "id": "acu-literacy",
+      "category": "穴位與證據",
+      "title": "讀懂金人：代碼、骨度與證據",
+      "titleEn": "Reading the golden figure: codes, landmarks and evidence",
+      "summary": "十四經361穴的代碼便於對照，但身體圖上的點是教學示意，不能當作刺入位置。骨度分寸不是固定公分，個別解剖、姿勢與安全風險需專業確認。",
+      "summaryEn": "Codes for 361 classical points support comparison, but dots on a teaching figure are not insertion locations. Proportional body measures are not fixed centimeters; anatomy, posture and risk need professional assessment.",
+      "practice": "先用代碼找名稱，再讀文字地標，最後查看資料來源與證據邊界。只在虛擬人像辨認區域，不在人身上針刺。",
+      "practiceEn": "Find code and name, read the textual landmarks, then inspect the source and evidence limits. Recognize regions on a virtual figure without needling a person.",
+      "escalation": "胸背、頸部等區域存在重要器官與神經血管風險；本圖不提供針刺深度、方向或電刺激操作。",
+      "escalationEn": "Trunk and neck regions contain important organs and neurovascular structures; this figure does not teach insertion depth, angle or electrical stimulation.",
+      "question": "圖上點可當臨床定位嗎？",
+      "questionEn": "Can a schematic dot be used as clinical localization?",
+      "options": [
+        "可以",
+        "不可以，需標準與專業解剖確認",
+        "放大就可以"
+      ],
+      "optionsEn": [
+        "Yes",
+        "No; standards and professional anatomy are needed",
+        "Only when zoomed"
+      ],
+      "answer": 1,
+      "explanation": "完整目錄與臨床定位的可信度是不同概念。",
+      "explanationEn": "Directory completeness and clinical localization accuracy are different properties.",
+      "sources": [
+        "who361",
+        "acu"
+      ],
+      "access": "free",
+      "minutes": 8
+    }
+  ],
+  "advanced": [
+    {
+      "id": "pd-advanced-review",
+      "title": "跨專業巴金森案例整合",
+      "titleEn": "Multidisciplinary Parkinson’s case review",
+      "goals": [
+        "比較動作波動、吞嚥、情緒與照護負荷",
+        "以虛構資料完成交班與共同決策",
+        "辨識資料不足時何時轉介"
+      ],
+      "goalsEn": [
+        "Compare motor fluctuations, swallowing, mood and care burden",
+        "Complete a handover and shared decision using fictional data",
+        "Escalate when evidence is insufficient"
+      ],
+      "courseId": "parkinsons-disease"
+    },
+    {
+      "id": "pd-advanced-dbs",
+      "title": "DBS 期待、風險與追蹤工作坊",
+      "titleEn": "DBS expectations, risks and follow-up workshop",
+      "goals": [
+        "區分可改善目標與非適應期待",
+        "製作問題清單與裝置安全交班",
+        "練習尊重病人價值的討論"
+      ],
+      "goalsEn": [
+        "Separate treatment targets from unrealistic expectations",
+        "Prepare questions and device-safety handover",
+        "Discuss the person’s values"
+      ],
+      "courseId": "deep-brain-stimulation"
+    },
+    {
+      "id": "tcm-advanced-quality",
+      "title": "中藥來源與品質稽核工作坊",
+      "titleEn": "Medicinal identity and quality audit",
+      "goals": [
+        "核對品名、物種、部位及炮製",
+        "檢視批次、污染與交互作用資訊",
+        "輸出待釐清事項，不做處方"
+      ],
+      "goalsEn": [
+        "Check names, species, parts and processing",
+        "Review lots, contamination and interactions",
+        "Report uncertainties without prescribing"
+      ],
+      "courseId": "tcm-herbal-safety"
+    }
+  ]
+}

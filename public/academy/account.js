@@ -18,7 +18,8 @@
   // ---- local profiles
   const profiles = () => { try { const v = JSON.parse(localStorage.getItem(PKEY) || '[]'); return Array.isArray(v) ? v : []; } catch (e) { return []; } };
   const saveProfiles = list => { try { localStorage.setItem(PKEY, JSON.stringify(list.slice(0, 50))); } catch (e) { /* ignore */ } };
-  function activeLocal() { const list = profiles(); const id = localStorage.getItem(AKEY); return list.find(p => p.id === id) || null; }
+  function profileView(p) { return p ? { id: p.id, username: p.username, email: p.email, phone: p.phone, createdAt: p.createdAt } : null; }
+  function activeLocal() { const list = profiles(); const id = localStorage.getItem(AKEY); return profileView(list.find(p => p.id === id)); }
 
   async function init() {
     if (state.authMode === 'local') { state.user = activeLocal(); return state; }
@@ -52,10 +53,11 @@
     if (state.user) {
       const u = state.user;
       const ent = state.billing && state.billing.entitlement;
-      app.dialog(t('profile'), `<div class="kv"><b>${t('username')}</b><span data-no-translate>${esc(u.username || u.name)}</span><b>${t('email')}</b><span data-no-translate>${esc(u.email || '')}${u.emailVerified ? ' ✓' : (state.authMode === 'server' ? ' (unverified)' : '')}</span><b>${t('phone')}</b><span data-no-translate>${esc(u.phone || '')}${u.phoneVerified ? ' ✓' : ''}</span><b>${t('plans')}</b><span>${ent ? `${t('active')} · ${t('expires')} ${new Date(ent.expiresAt * 1000).toLocaleDateString()}` : (zh ? '尚未啟用通行證（每門課第一節免費）' : 'No active pass (first section of every course is free)')}</span></div>
+      app.dialog(t('profile'), `<div class="kv"><b>${t('username')}</b><span data-no-translate>${esc(u.username || u.name)}</span><b>${t('email')}</b><span data-no-translate>${esc(u.email || '')}${u.emailVerified ? ' ✓' : (state.authMode === 'server' ? ' (unverified)' : '')}</span><b>${t('phone')}</b><span data-no-translate>${esc(u.phone || '')}${u.phoneVerified ? ' ✓' : ''}</span><b>${t('plans')}</b><span>${ent && ent.permanent ? (zh ? '站長永久權限 · 全部會員課程' : 'Site owner · permanent access to every member course') : ent ? `${t('active')} · ${t('expires')} ${new Date(ent.expiresAt * 1000).toLocaleDateString()}` : (zh ? '尚未啟用通行證（每門課第一節免費）' : 'No active pass (first section of every course is free)')}</span></div>
         <p class="form-note" style="margin-top:12px">${state.authMode === 'local' ? (zh ? '這是儲存在此瀏覽器的本機學習檔案，不會寄送驗證信；更換裝置前請在「我的進度」匯出 JSON。' : 'This is a browser-local learning profile without verification; export your progress JSON before changing devices.') : (zh ? '帳號與進度儲存於伺服器，可跨裝置登入。' : 'Account and progress are stored on the server and available on any device.')}</p>
-        <div class="dialog-actions"><a class="button primary" href="#membership">${t('plans')}</a><button class="button light" id="signOutBtn">${t('signOut')}</button>${state.authMode === 'local' ? `<button class="button light" id="switchBtn">${zh ? '切換／新增檔案' : 'Switch / add profile'}</button>` : ''}</div>`);
-      document.getElementById('signOutBtn').onclick = async () => { await signOut(); app.closeDialog(); };
+        <div class="dialog-actions"><a class="button primary" href="#membership">${t('plans')}</a>${u.role === 'root' ? `<button class="button light" id="memberDirectoryBtn">${zh ? '私人會員清單' : 'Private member directory'}</button>` : ''}<button class="button light" id="signOutBtn">${t('signOut')}</button>${state.authMode === 'local' ? `<button class="button light" id="switchBtn">${zh ? '切換／新增檔案' : 'Switch / add profile'}</button>` : ''}</div>`);
+      document.getElementById('signOutBtn').onclick = async () => { try { await signOut(); app.closeDialog(); } catch (error) { app.toast(error.message); } };
+      const directory = document.getElementById('memberDirectoryBtn'); if (directory) directory.onclick = () => window.HT.membership.showDirectory();
       const sw = document.getElementById('switchBtn'); if (sw) sw.onclick = () => { state.user = null; open(); };
       return;
     }
@@ -71,8 +73,10 @@
       try {
         if (state.authMode === 'local') {
           const p = profiles().find(x => x.username === f.get('login') || x.email === f.get('login'));
-          if (!p || p.pw !== hash(String(f.get('password')))) throw new Error(zh ? '帳號或密碼錯誤。' : 'Wrong username or password.');
-          localStorage.setItem(AKEY, p.id); state.user = p;
+          const entered = String(f.get('password'));
+          if (!p || !(p.pwSalt ? await localPassword(entered, p.pwSalt) === p.pw : p.pw === hash(entered))) throw new Error(zh ? '帳號或密碼錯誤。' : 'Wrong username or password.');
+          if (!p.pwSalt && window.crypto && crypto.subtle) { p.pwSalt = randomSalt(); p.pw = await localPassword(entered, p.pwSalt); saveProfiles(profiles().map(x => x.id === p.id ? p : x)); }
+          localStorage.setItem(AKEY, p.id); state.user = profileView(p);
         } else {
           const d = await request('/api/login', { login: f.get('login'), password: f.get('password') }); state.user = d.user; state.aiAvailable = !!d.aiAvailable; state.aiRoutes = d.aiRoutes || []; state.billing = d.billing || null;
         }
@@ -86,10 +90,11 @@
       try {
         if (state.authMode === 'local') {
           const list = profiles(); if (list.some(p => p.username === v.username)) throw new Error(zh ? '此帳號已存在。' : 'Username already exists.');
-          const p = { id: 'local-' + Math.random().toString(36).slice(2, 12), username: v.username, email: v.email, phone: v.phone, pw: hash(v.password), createdAt: Date.now() };
-          list.push(p); saveProfiles(list); localStorage.setItem(AKEY, p.id); state.user = p; app.closeDialog(); app.onAuthChange(); app.toast(zh ? '已建立本機學習檔案。' : 'Local profile created.');
+          const salt = randomSalt();
+          const p = { id: 'local-' + salt.slice(0, 24), username: v.username, email: v.email, phone: v.phone, pwSalt: salt, pw: await localPassword(v.password, salt), createdAt: Date.now() };
+          list.push(p); saveProfiles(list); localStorage.setItem(AKEY, p.id); state.user = profileView(p); app.closeDialog(); app.onAuthChange(); app.toast(zh ? '已建立本機學習檔案。' : 'Local profile created.');
         } else {
-          const d = await request('/api/register', v);
+          const d = await request('/api/register', Object.assign({ language: window.HT.i18n.current }, v));
           verifyDialog(d, v);
         }
       } catch (ex) { err.textContent = ex.message; }
@@ -105,7 +110,14 @@
     };
   }
   function hash(s) { let h = 2166136261; for (let i = 0; i < s.length; i++) { h ^= s.charCodeAt(i); h = Math.imul(h, 16777619); } return 'h' + (h >>> 0).toString(16) + s.length; }
-  async function signOut() { if (state.authMode === 'server') { try { await request('/api/logout', {}); } catch (e) { /* ignore */ } } else { localStorage.removeItem(AKEY); } state.user = null; state.billing = null; window.HT.app.onAuthChange(); }
+  function randomSalt() { if (!window.crypto || !crypto.subtle) throw new Error('Local account protection needs a current browser or the local Python server.'); return Array.from(crypto.getRandomValues(new Uint8Array(32)), b => b.toString(16).padStart(2, '0')).join(''); }
+  async function localPassword(password, salt) {
+    if (!window.crypto || !crypto.subtle) throw new Error('Use a current browser or start the local Python server to sign in.');
+    const key = await crypto.subtle.importKey('raw', new TextEncoder().encode(password), 'PBKDF2', false, ['deriveBits']);
+    const bytes = new Uint8Array(await crypto.subtle.deriveBits({ name: 'PBKDF2', hash: 'SHA-256', salt: Uint8Array.from(salt.match(/../g), b => parseInt(b, 16)), iterations: 600000 }, key, 256));
+    return Array.from(bytes, b => b.toString(16).padStart(2, '0')).join('');
+  }
+  async function signOut() { if (state.authMode === 'server') { await request('/api/logout', {}); } else { localStorage.removeItem(AKEY); } state.user = null; state.billing = null; window.HT_COURSES = {}; window.HT.app.onAuthChange(); }
 
   // ---- progress
   const progressKey = () => PROG + (state.user ? state.user.id : 'guest');

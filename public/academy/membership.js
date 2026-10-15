@@ -38,14 +38,26 @@
     return config;
   }
   function entitlement() { const b = window.HT.account.billing(); return b && b.entitlement && b.entitlement.expiresAt * 1000 > Date.now() ? b.entitlement : null; }
-  function hasAccess(course, stageIndex) { if (stageIndex === 0) return true; if (window.HT.staticMode) return !!localStorage.getItem('ht-owner-edition'); return !!entitlement(); }
+  function hasAccess(course, stageIndex) { if (stageIndex === 0 || (course && course.stages && course.stages[stageIndex] && course.stages[stageIndex].free === true)) return true; if (window.HT.staticMode) return false; return !!entitlement(); }
+
+  function directoryMarkup(members) {
+    const zh = window.HT.i18n.isZh();
+    return `<p class="form-note">${zh ? '僅站長登入後可讀取。清單只列帳號、信箱、手機號碼，不含密碼。第一筆為站長。' : 'Visible only to the signed-in site owner. The directory contains username, email and mobile only. The owner is listed first.'}</p><div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse"><thead><tr><th>${t('username')}</th><th>${t('email')}</th><th>${t('phone')}</th></tr></thead><tbody>${members.map(m => `<tr><td data-no-translate>${esc(m.username)}</td><td data-no-translate>${esc(m.email)}</td><td data-no-translate>${esc(m.phone)}</td></tr>`).join('')}</tbody></table></div>`;
+  }
+  async function showDirectory() {
+    const app = window.HT.app, zh = window.HT.i18n.isZh(), user = window.HT.account.user();
+    if (!user || user.role !== 'root' || window.HT.staticMode) return;
+    try { const data = await window.HT.account.request('/api/admin/members'); app.dialog(zh ? '私人會員清單' : 'Private member directory', directoryMarkup(data.members || [])); }
+    catch (error) { app.toast(error.message); }
+  }
 
   function pageMarkup() {
     const zh = window.HT.i18n.isZh(), cur = currency(), ent = entitlement(), user = window.HT.account.user();
     const plans = config.plans.map((p, i) => { const amt = convert(p.amountTwd, cur); const per = p.days >= 365 ? t('yearly') : t('monthly'); return `<div class="card plan ${i === 1 ? 'best' : ''}">${i === 1 ? `<span class="best-tag">${zh ? '最划算' : 'Best value'}</span>` : ''}<span class="eyebrow">${per} · ${p.days} ${zh ? '天' : 'days'}</span><div class="price">${format(amt, cur)}<small> / ${p.days >= 365 ? (zh ? '年' : 'yr') : (zh ? '月' : 'mo')}</small></div><p class="subtext">≈ NT$${p.amountTwd.toLocaleString()} · ${zh ? '一次付款，不自動續扣' : 'one-time payment, no auto-renewal'}</p><ul class="small" style="padding-left:18px;color:var(--muted)"><li>${zh ? '全部 2,400+ 門課程所有章節' : 'All sections of all 2,400+ courses'}</li><li>${zh ? '實習級虛擬病人與模擬器' : 'Internship-tier virtual patients and simulators'}</li><li>${zh ? 'AI 師傅問答（伺服器已設定時）' : 'AI mentor Q&A (when configured on the server)'}</li><li>${zh ? '完成證書申請' : 'Completion certificates'}</li></ul><button class="button primary" data-plan="${p.id}" ${!user ? 'data-need-login="1"' : ''}>${t('pay')}</button></div>`; }).join('');
     const tr = config.transfer || {};
     return `<div class="section-head"><div><span class="eyebrow">${t('plans')}</span><h1>${zh ? '每門課第一節免費，其餘章節由學習通行證解鎖' : 'The first section of every course is free; a learning pass unlocks the rest'}</h1><p class="subtext">${zh ? `價格以新台幣定價（NT$${config.plans[0].amountTwd}／30 天、NT$${config.plans[1].amountTwd}／365 天），依您的語系自動換算為 ${cur}（匯率更新：${ratesDate}）。可在右上角切換幣別。` : `Prices are set in TWD (NT$${config.plans[0].amountTwd} / 30 days, NT$${config.plans[1].amountTwd} / 365 days) and converted to ${cur} for your locale (rates updated ${ratesDate}). Change the currency at the top right.`}</p></div></div>
-      ${ent ? `<div class="notice">${t('active')} · ${t('expires')} ${new Date(ent.expiresAt * 1000).toLocaleDateString()}</div>` : ''}
+      ${ent ? `<div class="notice">${ent.permanent ? (zh ? '站長永久權限 · 全部會員課程永久開放，無須付款' : 'Site owner · permanent access to every member course, with no payment required') : `${t('active')} · ${t('expires')} ${new Date(ent.expiresAt * 1000).toLocaleDateString()}`}</div>` : ''}
+      ${user && user.role === 'root' ? `<div class="card"><h2>${zh ? '會員管理' : 'Member administration'}</h2><p>${zh ? '私人會員清單僅在您登入後，透過伺服器驗證站長身分才能讀取。' : 'The server verifies your site-owner session before returning the private member directory.'}</p><button class="button primary" id="privateMembersBtn">${zh ? '讀取私人會員清單' : 'Open private member directory'}</button></div>` : ''}
       ${!user ? `<div class="notice warn">${zh ? '請先登入或註冊（帳號、密碼、信箱、手機四項）再付款。' : 'Sign in or register (username, password, email, mobile) before paying.'}</div>` : ''}
       ${window.HT.staticMode ? `<div class="notice warn">${zh ? '目前為靜態／離線版：顯示價格與轉帳資訊，但無法線上刷卡。正式收費需部署 portable/server.py 並設定金流（見 docs/COMMERCE_ZH.md）。' : 'Static/offline edition: prices and transfer details are shown, but card checkout needs the deployed Python server with a configured gateway (see docs/COMMERCE_ZH.md).'}</div>` : (!config.checkoutAvailable ? `<div class="notice warn">${esc(config.reason || (zh ? '站長尚未啟用線上刷卡；可使用轉帳。' : 'Card checkout is not enabled by the operator; transfer is available.'))}</div>` : '')}
       <div class="grid cols-2">${plans}</div>
@@ -53,18 +65,21 @@
       <div class="pay-methods">
         <div class="pay-method ${config.methods.includes('stripe') ? '' : 'muted'}"><b>💳 ${t('payCard')} · Stripe</b><p class="small">${zh ? 'Visa／Mastercard／JCB／AMEX，含 3-D Secure 驗證；卡號只在 Stripe 付款頁輸入。' : 'Visa/Mastercard/JCB/AMEX with 3-D Secure; card numbers are entered only on Stripe’s hosted page.'}</p></div>
         <div class="pay-method ${config.methods.includes('ecpay') ? '' : 'muted'}"><b>💳 ${t('payCard')} · 綠界 ECPay</b><p class="small">${zh ? '台灣信用卡與行動支付；卡號只在綠界收銀台輸入。' : 'Taiwan cards and mobile payments via ECPay’s hosted cashier.'}</p></div>
-        <div class="pay-method"><b>🏧 ${t('payTransfer')}</b><p class="small">${zh ? '轉帳至站長郵局帳戶後填寫轉帳資料，站長核對後開通。' : 'Transfer to the operator’s post-office account, then submit the transfer details for confirmation.'}</p><div class="kv small" data-no-translate><b>${zh ? '銀行' : 'Bank'}</b><span>${esc(tr.bankName || '')}（${esc(tr.bankCode || '')}）</span><b>${zh ? '局號' : 'Branch no.'}</b><span>${esc(tr.branchNo || '')}</span><b>${zh ? '帳號' : 'Account no.'}</b><span>${esc(tr.accountNo || '')}</span></div></div>
+        ${config.transferAvailable ? `<div class="pay-method"><b>🏧 ${t('payTransfer')}</b><p class="small">${zh ? '轉帳至站長確認的帳戶後填寫轉帳資料，站長核對後開通。' : 'Transfer to the operator’s confirmed account, then submit the transfer details for confirmation.'}</p><div class="kv small" data-no-translate><b>${zh ? '銀行' : 'Bank'}</b><span>${esc(tr.bankName || '')}（${esc(tr.bankCode || '')}）</span><b>${zh ? '局號' : 'Branch no.'}</b><span>${esc(tr.branchNo || '')}</span><b>${zh ? '帳號' : 'Account no.'}</b><span>${esc(tr.accountNo || '')}</span><b>${zh ? '戶名' : 'Account holder'}</b><span>${esc(tr.accountName || '')}</span></div></div>` : `<div class="pay-method muted"><b>🏧 ${t('payTransfer')}</b><p>${zh ? '站長尚未設定已確認的收款帳戶，轉帳付款暫停。' : 'Transfer payments are paused until the operator configures a confirmed payout account.'}</p></div>`}
       </div>
       <p class="form-note" style="margin-top:14px">${zh ? '本站不儲存卡號。付款成功後由伺服器核對金流通知（Webhook 簽章 + 主動查單）才開通權限；收款結算至站長在金流商登記的郵局帳戶。退款與條款見' : 'Card numbers are never stored here. Access is granted only after the server verifies the gateway notification (signed webhook + order query); funds settle to the operator’s registered post-office account. Refunds and terms:'} <a href="terms.html" target="_blank" rel="noopener">terms.html</a>.</p>`;
   }
   function bind(root) {
     root.querySelectorAll('[data-plan]').forEach(b => b.onclick = () => { if (b.dataset.needLogin) { window.HT.account.open(); return; } checkout(b.dataset.plan); });
+    const directory = root.querySelector('#privateMembersBtn'); if (directory) directory.onclick = showDirectory;
   }
   function checkout(planId) {
     const app = window.HT.app, zh = window.HT.i18n.isZh(), cur = currency(), plan = config.plans.find(p => p.id === planId);
     if (!plan) return;
+    if (window.HT.staticMode) { app.toast(zh ? '付費會員需要學院會員伺服器；靜態預覽不接受付款。請先啟動本機伺服器或開啟正式會員網址。' : 'Paid membership needs the academy server. This static preview does not accept payments. Start the local server or open the official member site.'); return; }
     const amt = convert(plan.amountTwd, cur);
-    const methods = [...(config.methods || []), 'transfer'];
+    const methods = [...(config.methods || []), ...(config.transferAvailable ? ['transfer'] : [])];
+    if (!methods.length) { app.toast(config.reason || (zh ? '收款設定尚未完成，目前無法付款。' : 'Payments are unavailable until setup is complete.')); return; }
     app.dialog(t('pay'), `<p><b>${plan.days} ${zh ? '天通行證' : 'day pass'}</b> · ${format(amt, cur)} (≈ NT$${plan.amountTwd})</p>
       <div class="pay-methods">${methods.map(m => `<button class="pay-method" data-method="${m}"><b>${m === 'stripe' ? '💳 Stripe' : m === 'ecpay' ? '💳 ECPay 綠界' : '🏧 ' + t('payTransfer')}</b></button>`).join('')}</div>
       <p class="form-note" style="margin-top:10px">${zh ? '選擇付款方式後將前往金流商頁面完成驗證；轉帳則顯示帳戶資料與回報表單。' : 'Card methods open the gateway’s verified checkout; transfer shows account details and a claim form.'}</p>
@@ -92,5 +107,5 @@
     if (f) f.onsubmit = async e => { e.preventDefault(); const fd = new FormData(f); try { await window.HT.account.request('/api/billing/transfer/claim', { orderId: info.orderId, last5: fd.get('last5'), transferredAt: fd.get('at') }); app.closeDialog(); app.toast(zh ? '已送出，站長核對後開通。' : 'Submitted; access opens after the operator confirms.'); } catch (ex) { document.getElementById('claimError').textContent = ex.message; } };
   }
   window.HT = window.HT || {};
-  window.HT.membership = { load, config: () => config, currency, autoCurrency, convert, format, hasAccess, entitlement, pageMarkup, bind, checkout, rates: () => rates, currencies: () => Object.keys(rates) };
+  window.HT.membership = { load, config: () => config, currency, autoCurrency, convert, format, hasAccess, entitlement, pageMarkup, bind, checkout, showDirectory, rates: () => rates, currencies: () => Object.keys(rates) };
 })(window);
