@@ -21,3 +21,13 @@
  .wb-actionbar .button{min-height:44px}
 }
 @media(max-width:350px){.wb-controls{gap:4px;padding-left:0;padding-right:0}.wb-hand{padding-left:1px;padding-right:1px}.wb-dpad{grid-template-columns:repeat(3,minmax(40px,1fr));gap:1px}.wb-dpad .button{min-width:40px}}
+/* v3.3 — N-station boards, pitfall teaching, procedure library */
+.wb-tiles{grid-template-columns:repeat(var(--wb-cols,3),minmax(0,1fr));grid-template-rows:repeat(var(--wb-rows,2),minmax(0,1fr))}
+.wb-board.wb-dense .wb-tiles{gap:12px 8px}.wb-board.wb-dense .wb-tile{font-size:.8rem;padding:12px 4px 6px;line-height:1.3}.wb-board.wb-dense .wb-tile small{font-size:.62rem}
+.wb-tile.wb-done{border-color:#287a55;background:rgba(232,245,236,.92)}.wb-tile.wb-done::after{content:'✓';position:absolute;top:4px;left:7px;color:#287a55;font-weight:800;font-size:.8rem}
+.wb-pitfall{display:grid;gap:4px;margin:0 0 10px;padding:10px 12px;border-radius:8px;background:#fdecec;border-left:4px solid #c0392b;color:#5a1d16;font-size:.88rem;line-height:1.6}
+.wb-pitfall b{font-size:.8rem;letter-spacing:.04em}.wb-pitfall-note{border-left:4px solid #c48a2f;background:#fff6e6;padding:10px 12px;border-radius:6px;font-size:.88rem;line-height:1.6}
+.wb-meta{margin:-4px 0 8px}
+.wb-tiles-preview{position:static;display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px;margin:12px 0}.wb-tiles-preview .wb-tile{min-height:64px;font-size:.82rem;cursor:default}
+:root[data-theme="dark"] .wb-tile{background:rgba(22,29,32,.9);color:#e8edeb;border-color:#45675c}:root[data-theme="dark"] .wb-tile.wb-done{background:rgba(23,48,41,.9)}:root[data-theme="dark"] .wb-board{background:linear-gradient(135deg,#1d262a,#262416)}:root[data-theme="dark"] .wb-pitfall{background:#3a1f1a;color:#f5d9d4}:root[data-theme="dark"] .wb-pitfall-note{background:#3a2d14;color:#f3e4c6}:root[data-theme="dark"] .wb-feedback{background:#1d262a}:root[data-theme="dark"] .wb-feedback.ok{background:#173029}:root[data-theme="dark"] .wb-feedback.warn{background:#3a2d14}:root[data-theme="dark"] .wb-evidence{background:#173029}:root[data-theme="dark"] .wb-mentor{background:#1d262a}:root[data-theme="dark"] .wb-mentor-target{background:#3a2d14}:root[data-theme="dark"] .wb-options label.selected{background:#173029}:root[data-theme="dark"] .wb-reason-result{background:#173029}
+@media(max-width:600px){.wb-board.wb-dense .wb-tiles{gap:10px 5px}.wb-board.wb-dense .wb-tile{font-size:.66rem;padding:11px 2px 4px}.wb-board.wb-dense .wb-tile small{display:none}}

@@ -1,21 +1,38 @@
-/* Cache only the public application shell. Never persist authenticated content. */
-const CACHE = 'huatuo-v2-public-shell-20261015';
-const CORE = ['./', './index.html', './style.css', './bootstrap.js', './config.js', './i18n.js', './icons.js', './voice.js', './personalization.js', './locale.js', './account.js', './membership.js', './tutor.js', './intern-tcm.js', './intern-western.js', './tcm-library.js', './tcm-library-v2.js', './data/tcm-library.js', './data/tcm-v2.js', './data/content-v2.js', './nobel-explorer.js', './course-player.js', './app.js', './academy-v2.css', './voice-controls.css', './workbench.js', './workbench.css', './content-hub.js', './content-hub.css', './data/catalog.js', './data/departments.js', './assets/icon.svg'];
-self.addEventListener('install', event => event.waitUntil(caches.open(CACHE).then(async cache => {
-  await Promise.all(CORE.map(async url => {try {const response = await fetch(url,{cache:'reload'}); if(response.ok) await cache.put(url,response);} catch(_) { /* shell assets can retry online */ }}));
+/* Service worker (v3.3). Shell: cache-first with background refresh. Lazy modules, language packs and
+   public data chunks: stale-while-revalidate. Member content (/api, data/courses, data/procedures) is
+   never persisted. */
+const VERSION = '20261021';
+const SHELL_CACHE = 'huatuo-shell-' + VERSION;
+const LAZY_CACHE = 'huatuo-lazy-' + VERSION;
+const SHELL = ['./', './index.html', './style.css', './academy-v2.css', './voice-controls.css', './bootstrap.js', './config.js', './i18n.js', './icons.js', './personalization.js', './locale.js', './account.js', './membership.js', './safe-links.js', './app.js', './data/departments.js', './data/home-summary.js', './assets/icon.svg', './manifest.webmanifest'];
+const LAZY = /\/(?:i18n\/[a-zA-Z-]+\.js|data\/(?:catalog|tcm-library|tcm-v2|content-v2|acu-figure|acu-atlas|pharmacy-lab)\.(?:js|json)|(?:voice|tutor|workbench|procedures|course-player|intern-tcm|intern-western|tcm-library|tcm-library-v2|content-hub|acu-atlas|pharmacy-lab|nobel-explorer)\.js|(?:workbench|procedures|content-hub|acu-atlas|pharmacy-lab)\.css|help\.html|terms\.html)$/;
+const NEVER = /\/api(?:\/|$)|\/data\/courses(?:\/|$)|\/data\/procedures(?:\/|$)|\/private(?:\/|$)/;
+
+self.addEventListener('install', event => event.waitUntil(caches.open(SHELL_CACHE).then(async cache => {
+  await Promise.all(SHELL.map(async url => { try { const response = await fetch(url, { cache: 'reload' }); if (response.ok) await cache.put(url, response); } catch (_) { /* retry online */ } }));
 }).then(() => self.skipWaiting())));
-self.addEventListener('activate', event => event.waitUntil(caches.keys().then(keys => Promise.all(keys.filter(key => key.startsWith('huatuo-') && key !== CACHE).map(key => caches.delete(key)))).then(() => self.clients.claim())));
+self.addEventListener('activate', event => event.waitUntil(caches.keys().then(keys => Promise.all(keys.filter(key => key.startsWith('huatuo-') && key !== SHELL_CACHE && key !== LAZY_CACHE).map(key => caches.delete(key)))).then(() => self.clients.claim())));
+self.addEventListener('message', event => { if (event.data && event.data.type === 'SKIP_WAITING') self.skipWaiting(); });
 self.addEventListener('fetch', event => {
   const url = new URL(event.request.url);
   if (event.request.method !== 'GET' || url.origin !== self.location.origin) return;
-  if (/\/api(?:\/|$)|\/data\/courses(?:\/|$)|\/private(?:\/|$)/.test(url.pathname)) {
-    event.respondWith(fetch(event.request,{cache:'no-store'})); return;
+  if (NEVER.test(url.pathname)) { event.respondWith(fetch(event.request, { cache: 'no-store' })); return; }
+  const base = new URL('./', self.location.href).pathname;
+  const relative = './' + url.pathname.slice(base.length);
+  if (SHELL.includes(relative) || relative === './') {
+    event.respondWith(caches.open(SHELL_CACHE).then(async cache => {
+      const hit = await cache.match(event.request);
+      const refresh = fetch(event.request).then(response => { if (response.ok) cache.put(event.request, response.clone()); return response; }).catch(() => null);
+      return hit || (await refresh) || Response.error();
+    }));
+    return;
   }
-  // Only explicitly listed shell paths may enter Cache Storage.
-  const relative='./'+url.pathname.slice(new URL('./',self.location.href).pathname.length);
-  if (!CORE.includes(relative) && relative !== './') return;
-  event.respondWith(fetch(event.request).then(response => {
-    if(response.ok) {const copy=response.clone(); caches.open(CACHE).then(cache => cache.put(event.request,copy));}
-    return response;
-  }).catch(() => caches.match(event.request).then(hit => hit || Response.error())));
+  if (LAZY.test(url.pathname)) {
+    event.respondWith(caches.open(LAZY_CACHE).then(async cache => {
+      const hit = await cache.match(event.request);
+      const refresh = fetch(event.request).then(response => { if (response.ok) cache.put(event.request, response.clone()); return response; }).catch(() => null);
+      if (hit) { event.waitUntil(refresh); return hit; }
+      return (await refresh) || Response.error();
+    }));
+  }
 });

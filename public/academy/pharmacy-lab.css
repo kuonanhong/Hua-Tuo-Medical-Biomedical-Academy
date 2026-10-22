@@ -1,0 +1,22 @@
+/* Pharmacy lab */
+.ph-body{margin-top:12px}
+.ph-layout{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(280px,.9fr);gap:16px;align-items:start}
+.ph-left{display:grid;gap:12px}.ph-right{position:sticky;top:calc(var(--topbar-h) + 8px)}
+.ph-scenario h2{margin:0 0 6px}.ph-scenario h2 small{font-weight:400;color:var(--muted);font-size:.8em}.ph-scenario p{margin:0 0 4px;font-size:.92rem}
+.ph-flags{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-size:.82rem}.ph-flags .chip{min-height:30px;padding:3px 9px;display:inline-flex;align-items:center;gap:4px;cursor:pointer}.ph-flags .chip input{width:auto;margin:0}.ph-flags .chip.auto{border-style:dashed}
+.ph-tray{border:1px dashed var(--line-2);border-radius:12px;padding:12px;display:grid;gap:8px;background:var(--surface-2)}.ph-tray .row{gap:6px;flex-wrap:wrap}.ph-tray input{flex:1;min-width:200px}
+.ph-chip{display:inline-flex;align-items:center;gap:6px;border-left:5px solid var(--line-2)}.ph-chip small{color:var(--muted);font-size:.7rem}.ph-chip button{border:0;background:transparent;font-weight:800;cursor:pointer;color:inherit;padding:0 2px}
+.ph-chip.s-correct{border-color:#1f9a5f;background:#e6f4e9}.ph-chip.s-acceptable{border-color:#e0a800;background:#fff6dc}.ph-chip.s-wrong{border-color:#c0392b;background:#fdecec}.ph-chip.s-neutral{border-color:#8a8a8a}
+.ph-drugs summary{cursor:pointer;font-size:.85rem}.ph-drugs .row{gap:6px;flex-wrap:wrap;margin-top:6px}.ph-drugs .chip{min-height:30px;padding:3px 9px;display:inline-flex;gap:4px;align-items:center;cursor:pointer}.ph-drugs .chip input{width:auto;margin:0}
+.ph-result{border:1px solid var(--line);border-radius:12px;padding:12px;display:grid;gap:10px;background:var(--surface)}
+.ph-score{display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap}.ph-score b{font-size:1.3rem;color:var(--primary)}.ph-score span{color:var(--muted);font-size:.85rem}
+.ph-findings,.ph-items{list-style:none;margin:0;padding:0;display:grid;gap:6px}.ph-findings li,.ph-items li{border-left:5px solid #999;padding:8px 10px;border-radius:6px;background:var(--surface-2);font-size:.88rem;line-height:1.55}.ph-findings li p,.ph-items li p{margin:4px 0 0}
+.ph-findings li.sev-contraindicated{border-color:#ff3b3b;background:#2b0b0b;color:#fff}.ph-findings li.sev-major{border-color:#c0392b;background:#fdecec}.ph-findings li.sev-moderate{border-color:#e0a800;background:#fff6dc}.ph-findings li.sev-minor{border-color:#8a8a8a}.ph-findings li.sev-monitor{border-color:#2f6f8f;background:#e8f1f6}:root[data-theme="dark"] .ph-findings li.sev-monitor{background:#17292f}
+.ph-items li.s-correct{border-color:#1f9a5f;background:#e6f4e9}.ph-items li.s-acceptable{border-color:#e0a800;background:#fff6dc}.ph-items li.s-wrong{border-color:#c0392b;background:#fdecec}.ph-items li.s-neutral{border-color:#8a8a8a}
+.ph-ok{color:var(--ok);font-weight:700;margin:0}
+.ph-recs{border-top:1px solid var(--line);padding-top:8px}.ph-recs summary{cursor:pointer}.ph-rec{border:1px solid var(--line);border-radius:10px;padding:10px;margin-top:8px;display:grid;gap:6px}.ph-rec .row{gap:4px;flex-wrap:wrap}.ph-rec .chip em{font-style:normal;font-size:.68rem;margin-left:4px;padding:0 5px;border-radius:8px;background:var(--surface-2);color:var(--muted)}
+.ph-rec .chip.role-君{border-color:#c0392b;font-weight:700}.ph-rec .chip.role-臣{border-color:#d9a441}.ph-rec .chip.role-佐{border-color:#2f8f5f}.ph-rec .chip.role-使{border-color:#2f6f8f}
+.ph-wrong{margin-top:10px;font-size:.86rem}.ph-wrong ul{margin:6px 0 0;padding-left:18px}.ph-wrong li{margin:4px 0}
+.ph-list{max-height:62vh;overflow:auto;display:grid;gap:6px}.ph-list .point-choice small{white-space:normal;line-height:1.4}
+:root[data-theme="dark"] .ph-chip.s-correct,:root[data-theme="dark"] .ph-items li.s-correct{background:#173029}:root[data-theme="dark"] .ph-chip.s-acceptable,:root[data-theme="dark"] .ph-items li.s-acceptable,:root[data-theme="dark"] .ph-findings li.sev-moderate{background:#3a2d14}:root[data-theme="dark"] .ph-chip.s-wrong,:root[data-theme="dark"] .ph-items li.s-wrong,:root[data-theme="dark"] .ph-findings li.sev-major{background:#3a1f1a}
+@media(max-width:900px){.ph-layout{grid-template-columns:1fr}.ph-right{position:static}.ph-list{max-height:320px}}

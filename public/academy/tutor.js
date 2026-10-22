@@ -6,6 +6,7 @@
   const esc = v => String(v == null ? '' : v).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const t = k => window.HT.i18n.t(k);
   let panel, history = [], context = null, busy = false, generation = 0;
+  const autoConsent = () => !!(window.HT_CONFIG && window.HT_CONFIG.aiAutoConsent);
 
   function setContext(c) { context = c; const el = panel && panel.querySelector('[data-ctx]'); if (el) el.textContent = c ? (window.HT.locale.pick(c, 'title')) : ''; }
   function render() {
@@ -13,7 +14,7 @@
     const ai = window.HT.account.aiAvailable() && routes.length;
     panel.innerHTML = `<div class="tutor-head"><div><b>${t('mentor')}</b><small class="muted" style="display:block" data-ctx data-no-translate>${context ? esc(window.HT.locale.pick(context, 'title')) : ''}</small></div><div class="row"><select id="tutorRoute" style="width:auto" ${ai ? '' : 'hidden'}>${routes.map(r => `<option value="${esc(r.id)}">${esc(r.label)} · ${esc(r.model)}</option>`).join('')}</select><button class="icon-btn" id="tutorClose" aria-label="Close">×</button></div></div>
       <div class="tutor-body" id="tutorBody">${history.length ? '' : `<div class="msg ai">${zh ? '我是華佗學院的 AI 師傅。可以問我巴金森照護、就醫準備、課程原理、來源查核與虛擬病例推理。我會參照目前可讀取的教材；生成內容仍須核對來源，不能作為個人診斷、處方或真人操作指示。' : 'I am the academy’s AI mentor. Ask about Parkinson care, appointment preparation, course principles, source checking or virtual case reasoning. Generated answers use accessible curriculum and still need source verification; they are not individual diagnoses, prescriptions or instructions for real procedures.'}${ai ? '' : `<span class="src">${t('offlineNote')}</span>`}</div>`}</div>
-      <div class="tutor-foot"><textarea id="tutorInput" placeholder="${esc(t('placeholder'))}"></textarea><div class="row">${ai && routes.some(r => r.cloud) ? `<label class="small" style="font-weight:400"><input type="checkbox" id="cloudConsent" style="width:auto;margin-right:4px">${zh ? '同意將問題與課程脈絡送至雲端 AI' : 'Send my question and course context to the cloud AI'}</label>` : '<span></span>'}<button class="button primary small" id="tutorSend">${t('send')}</button></div></div>`;
+      <div class="tutor-foot"><textarea id="tutorInput" placeholder="${esc(t('placeholder'))}"></textarea><div class="row">${ai && routes.some(r => r.cloud) ? (autoConsent() ? `<label class="small muted" style="font-weight:400"><input type="checkbox" id="cloudConsent" style="width:auto;margin-right:4px" checked>${esc(t('autoConsentNote'))}</label>` : `<label class="small" style="font-weight:400"><input type="checkbox" id="cloudConsent" style="width:auto;margin-right:4px">${zh ? '同意將問題與課程脈絡送至雲端 AI' : 'Send my question and course context to the cloud AI'}</label>`) : '<span></span>'}<button class="button primary small" id="tutorSend">${t('send')}</button></div></div>`;
     const body = panel.querySelector('#tutorBody');
     history.forEach(m => body.appendChild(bubble(m)));
     panel.querySelector('#tutorClose').onclick = close;
@@ -47,9 +48,9 @@
     try {
       const routeSel = panel.querySelector('#tutorRoute'); const route = routeSel ? routeSel.value : undefined;
       const consent = panel.querySelector('#cloudConsent'); const r = window.HT.account.aiRoutes().find(x => x.id === route);
-      if (r && r.cloud && !(consent && consent.checked)) throw new Error(window.HT.i18n.isZh() ? '此路線為雲端 AI，請先勾選同意。' : 'This route is a cloud AI; please tick the consent box.');
+      if (r && r.cloud && !autoConsent() && !(consent && consent.checked)) throw new Error(window.HT.i18n.isZh() ? '此路線為雲端 AI，請先勾選同意。' : 'This route is a cloud AI; please tick the consent box.');
       const ctxText = context ? window.HT.coursePlayer.contextText(context) : '';
-      const d = await window.HT.account.request('/api/tutor', { question: q, context: ctxText, language: window.HT.i18n.current, route, cloudConsent: !!(consent && consent.checked), history: history.slice(-6).map(m => ({ role: m.role, text: m.text })) });
+      const d = await window.HT.account.request('/api/tutor', { question: q, context: ctxText, language: window.HT.i18n.current, route, cloudConsent: autoConsent() ? (consent ? consent.checked !== false : true) : !!(consent && consent.checked), history: history.slice(-6).map(m => ({ role: m.role, text: m.text })) });
       if (epoch !== generation) return;
       thinking.remove(); const a = { role: 'ai', text: d.answer, src: (d.generated === false ? t('offlineNote') : (d.model ? `${d.route} · ${d.model}` : '')) + (d.references && d.references.length ? ' · ' + d.references.map(x => x.source + (x.page ? ' p.' + x.page : '')).join('; ') : '') };
       history.push(a); body.appendChild(bubble(a));

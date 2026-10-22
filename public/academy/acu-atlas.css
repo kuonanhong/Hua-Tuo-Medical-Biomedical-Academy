@@ -1,0 +1,44 @@
+/* Interactive acupuncture atlas */
+.acu-layout{display:grid;grid-template-columns:minmax(300px,1.05fr) minmax(300px,1fr);gap:16px;align-items:start}
+.acu-figure-card{padding:12px;position:sticky;top:calc(var(--topbar-h) + 8px)}
+.acu-toolbar{display:grid;gap:6px;margin-bottom:8px}.acu-toolbar .row{gap:6px;flex-wrap:wrap;align-items:center}.acu-toolbar .chip{min-height:34px}.acu-toolbar input[type=range]{width:110px;vertical-align:middle}
+.acu-viewport{overflow:auto;max-height:min(78vh,900px);border-radius:12px;background:radial-gradient(120% 90% at 50% 10%,#fff8e3,#efe3bf 60%,#d9c89a);border:1px solid #cdb98a;touch-action:pan-x pan-y;scrollbar-width:thin}
+:root[data-theme="dark"] .acu-viewport{background:radial-gradient(120% 90% at 50% 10%,#3a2f14,#231b0c 60%,#15110a);border-color:#5a4a26}
+.acu-svg{display:block;min-width:100%;height:auto;user-select:none}
+.acu-body{fill:url(#acuBronze);stroke:none}.acu-limb{fill:none;stroke:url(#acuBronze);stroke-linecap:round;stroke-linejoin:round}.acu-body-outline{fill:#6e4a10;stroke:#6e4a10;stroke-width:4;stroke-linejoin:round}.acu-limb-outline{fill:none;stroke:#6e4a10;stroke-linecap:round;stroke-linejoin:round}
+.acu-line{fill:none;stroke:#7a5212;stroke-width:1.1;opacity:.45}
+.acu-organ{fill:var(--c);fill-opacity:0;stroke:var(--c);stroke-width:0;transition:fill-opacity .35s,stroke-width .35s}.acu-organ.on{fill-opacity:.32;stroke-width:1.5;animation:acuOrgan 1.6s ease-in-out infinite}.acu-organ.ring.on{fill-opacity:.08;stroke-dasharray:4 4}
+@keyframes acuOrgan{50%{fill-opacity:.5}}
+.acu-path{fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;opacity:.72;cursor:pointer;transition:opacity .25s,stroke-width .25s}.acu-path.on{stroke-width:3.4;opacity:1}.acu-path.dim{opacity:.12}
+.acu-flow{fill:none;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:7 12;opacity:.85;animation:acuDash 1.6s linear infinite;filter:url(#acuBlur)}
+@keyframes acuDash{to{stroke-dashoffset:-38}}
+.acu-qi{filter:drop-shadow(0 0 4px #fff)}
+.acu-ptg{cursor:pointer;outline:none}.acu-hit{fill:transparent}.acu-ptg:focus .acu-pt,.acu-ptg:hover .acu-pt{stroke:#fff;stroke-width:2;r:6}
+.acu-pt{stroke:#3b2607;stroke-width:.8;transition:r .15s}.acu-pt.dim{opacity:.2}.acu-pt.sel{stroke:#fff;stroke-width:2.5;filter:drop-shadow(0 0 5px #fff)}.acu-pt.picked{stroke:#1f6f5f;stroke-width:2.5}
+.acu-pt.s-correct{fill:#1f9a5f!important;stroke:#fff;stroke-width:2.5;animation:acuPulse 1.2s ease-in-out infinite}.acu-pt.s-acceptable{fill:#e0a800!important;stroke:#fff;stroke-width:2}.acu-pt.s-wrong{fill:#c0392b!important;stroke:#fff;stroke-width:2.5}.acu-pt.s-danger{fill:#000!important;stroke:#ff3b3b;stroke-width:3;animation:acuDanger .8s ease-in-out infinite}.acu-pt.s-missing{fill:transparent!important;stroke:#1f9a5f;stroke-width:2.5;stroke-dasharray:3 2}.acu-pt.s-neutral{fill:#8a8a8a!important;stroke:#fff;stroke-width:2}
+@keyframes acuPulse{50%{r:7}}@keyframes acuDanger{50%{stroke-width:6}}
+.acu-lbl{font-size:9px;font-weight:700;fill:#2b210b;paint-order:stroke;stroke:#fff6dc;stroke-width:2.5;stroke-linejoin:round;pointer-events:none}.acu-lbl.strong{font-size:11px}
+:root[data-theme="dark"] .acu-lbl{fill:#f5e9c8;stroke:#2a1f08}
+.acu-foot{font-size:8px;fill:#6b4a12;letter-spacing:.04em}:root[data-theme="dark"] .acu-foot{fill:#c9b07a}
+.acu-legend{display:grid;grid-template-columns:repeat(auto-fill,minmax(118px,1fr));gap:4px;margin-top:8px}
+.acu-leg{display:grid;grid-template-columns:12px 1fr auto;align-items:center;gap:6px;border:1px solid var(--line);background:var(--surface);border-radius:8px;padding:5px 7px;font:inherit;font-size:.74rem;cursor:pointer;color:inherit;text-align:left;min-height:34px}.acu-leg i{width:12px;height:12px;border-radius:50%;background:var(--c);display:block}.acu-leg small{color:var(--muted);font-size:.66rem}.acu-leg.on{border-color:var(--c);box-shadow:inset 0 0 0 1px var(--c);background:color-mix(in srgb,var(--c) 12%,var(--surface))}
+.acu-tabs button{flex:1}
+.acu-panel{display:grid;gap:12px}.acu-panel .card.flat{padding:14px}.acu-detail h2{margin:4px 0 8px}.acu-detail h2 small{font-weight:400;color:var(--muted);font-size:.8em}
+.acu-cats .tag{margin-right:4px}.acu-qi-note{border-left:3px solid var(--tcm);padding-left:10px;color:var(--muted)}
+.acu-here{font-weight:800;color:var(--primary)}
+.acu-risk p{margin:4px 0}
+.acu-list{max-height:380px;overflow:auto}
+.acu-patterns{margin:8px 0}.acu-pattern{display:grid;gap:10px}
+.acu-tray{border:1px dashed var(--line-2);border-radius:10px;padding:10px;display:grid;gap:8px;background:var(--surface-2)}.acu-tray .row{gap:6px;flex-wrap:wrap}.acu-tray input{flex:1;min-width:180px}
+.acu-chip{border-left:5px solid var(--c);display:inline-flex;align-items:center;gap:6px}.acu-chip button{border:0;background:transparent;font-weight:800;cursor:pointer;color:inherit;padding:0 2px}
+.acu-chip.s-correct{background:#e6f4e9;border-color:#1f9a5f}.acu-chip.s-acceptable{background:#fff6dc}.acu-chip.s-wrong{background:#fdecec;border-color:#c0392b}.acu-chip.s-danger{background:#2b0b0b;color:#fff;border-color:#ff3b3b}.acu-chip.s-neutral{background:#eee}
+.acu-result{border:1px solid var(--line);border-radius:12px;padding:12px;display:grid;gap:8px;background:var(--surface)}
+.acu-score{display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap}.acu-score b{font-size:1.3rem;color:var(--primary)}.acu-score span{color:var(--muted);font-size:.85rem}
+.acu-feedback{list-style:none;margin:0;padding:0;display:grid;gap:6px}.acu-feedback li{border-left:5px solid #999;padding:8px 10px;border-radius:6px;background:var(--surface-2);font-size:.88rem;line-height:1.55}.acu-feedback li p{margin:4px 0 0}
+.acu-feedback li.s-correct{border-color:#1f9a5f;background:#e6f4e9}.acu-feedback li.s-acceptable{border-color:#e0a800;background:#fff6dc}.acu-feedback li.s-wrong{border-color:#c0392b;background:#fdecec}.acu-feedback li.s-danger{border-color:#ff3b3b;background:#2b0b0b;color:#fff}.acu-feedback li.caution{border-style:double;border-width:0 0 0 6px}.acu-feedback li.s-missing{border-color:#1f9a5f;border-style:dashed;background:transparent}.acu-feedback li.s-neutral{border-color:#8a8a8a}
+:root[data-theme="dark"] .acu-feedback li.s-correct,:root[data-theme="dark"] .acu-chip.s-correct{background:#173029}:root[data-theme="dark"] .acu-feedback li.s-acceptable,:root[data-theme="dark"] .acu-chip.s-acceptable{background:#3a2d14}:root[data-theme="dark"] .acu-feedback li.s-wrong,:root[data-theme="dark"] .acu-chip.s-wrong{background:#3a1f1a}
+.acu-combos{border-top:1px solid var(--line);padding-top:8px}.acu-combos summary{cursor:pointer}.acu-combo{border:1px solid var(--line);border-radius:10px;padding:10px;margin-top:8px;display:grid;gap:6px}.acu-combo .row{gap:4px;flex-wrap:wrap}.acu-combo .chip{border-left:4px solid var(--c)}
+.acu-flow-list{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:6px;align-items:center}.acu-flow-list li{display:flex;align-items:center;gap:4px}.acu-flow-list em{color:var(--muted);font-style:normal}
+.acu-tour-note{border-left:4px solid var(--tcm)}
+.chip.small{padding:3px 8px;font-size:.74rem;min-height:26px}
+@media(max-width:900px){.acu-layout{grid-template-columns:1fr}.acu-figure-card{position:static}.acu-viewport{max-height:70vh}.acu-list{max-height:260px}}

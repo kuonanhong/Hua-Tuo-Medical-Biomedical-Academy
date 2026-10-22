@@ -18,4 +18,12 @@ window.HT_CONFIG = Object.assign({
   links: { ziziTcm: 'https://www.youtube.com/results?search_query=%E5%AD%90%E5%AD%90%E4%B8%AD%E9%86%AB', smartAction: 'https://kuonanhong.github.io/SmartAction/', actionIntelligent: 'https://kuonanhong.github.io/ActionIntelligent-AI-/' },
   // Optional Iconify online layer (department-level accents only). Off by default: all icons are original offline SVG.
   iconifyOnline: false,
+  // Generative AI: when true the learner is not asked to tick a consent box before a cloud route
+  // (OpenAI / Anthropic / Google) answers; a one-line notice is shown instead. The server mirrors this
+  // with AI_AUTO_CONSENT=1 in .env. Questions and course context are only ever sent to the configured provider.
+  aiAutoConsent: true,
+  // External links: trusted academic / governmental / society / AI-provider domains open directly; any
+  // other domain shows one interstitial so nobody is silently redirected to a scam or look-alike site.
+  externalLinkGuard: true,
+  trustedDomains: [],
 }, window.HT_CONFIG || {});

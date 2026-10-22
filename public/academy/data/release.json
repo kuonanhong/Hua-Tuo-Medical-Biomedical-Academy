@@ -1,6 +1,6 @@
 {
-  "version": "2.0.0",
-  "date": "2026-10-15",
+  "version": "3.3.0",
+  "date": "2026-10-21",
   "topics": 2423,
   "departments": 69,
   "faculties": 5,
@@ -20,7 +20,7 @@
   "uniqueIcons": 2423,
   "curriculumScope": "Educational decompositions generated from authored topic data and kind-specific templates; not clinical protocols, not a substitute for supervised training or licensure.",
   "iconScope": "Original monoline SVG icon system: every topic has a unique (glyph, accent, ring, dots, flip, badge) descriptor verified at build time. No third-party icon sets are bundled.",
-  "languageScope": "Traditional Chinese and English authored core; interface strings in 36 languages; other languages for content require the configured AI translation route.",
+  "languageScope": "Traditional Chinese and English authored core; interface strings in 56 languages (lazy-loaded packs, auto-selected from the browser language and region); other languages for content require the configured AI translation route.",
   "billingScope": "First section of every course is free; remaining sections require an active pass. Live checkout requires the operator's configured gateway.",
   "aiScope": "CPU generative model supported through llama.cpp or Ollama. Verified model weights delivered separately; small models require source checking.",
   "authoredV2MemberCourses": 3,
@@ -28,5 +28,19 @@
   "freeHubLessons": 24,
   "authoredWorkbenchCases": 6,
   "authoredWorkbenchStages": 29,
-  "atlasScope": "396-entry directory; regional schematic, not clinical needling coordinates. Legacy text not individually revalidated."
+  "atlasScope": "396-entry directory; interactive bronze figure orders every point along its channel path (teaching schematic, not clinical needling coordinates); qi-flow animation and condition-based point-selection trainer. No needling parameters.",
+  "procedureDepartments": 63,
+  "procedures": 1640,
+  "procedureStages": 12877,
+  "authoredProcedureDepartments": [
+    "神經外科",
+    "神經內科",
+    "心臟內科",
+    "心臟外科",
+    "血管外科",
+    "胸腔外科",
+    "骨科"
+  ],
+  "pharmacyScope": "Herbal formula and Western regimen trial-and-error lab: incompatibilities, pregnancy/toxicity rules, formula roles, drug and herb–drug interactions, patient-specific contraindications; no doses.",
+  "performanceScope": "Fast-start shell (~210 KB) with per-route lazy loading and idle prefetch; service worker caches the shell and public chunks only."
 }

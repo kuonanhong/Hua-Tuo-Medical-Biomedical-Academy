@@ -4,16 +4,28 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#1f6f5f">
+<meta name="color-scheme" content="light dark">
 <meta name="referrer" content="strict-origin-when-cross-origin">
-<meta name="description" content="華佗醫藥生醫學院 · Hua Tuo Medical & Biomedical Academy — 西醫手術、中醫針灸推拿、生醫基因、諾貝爾研究技術與 AlphaGo／AlphaFold 學理，2,400+ 門逐步課程。">
+<meta name="description" content="華佗醫藥生醫學院 · Hua Tuo Medical & Biomedical Academy — 西醫各科程序庫、中醫針灸銅人與配伍實驗室、生醫基因、諾貝爾研究技術與 AlphaGo／AlphaFold 學理，2,400+ 門逐步課程。">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="華佗學院">
 <title>華佗醫藥生醫學院 · Hua Tuo Medical & Biomedical Academy</title>
 <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/icon.svg">
 <link rel="manifest" href="manifest.webmanifest">
+<link rel="preload" href="style.css" as="style">
+<link rel="preload" href="bootstrap.js" as="script">
+<link rel="preload" href="config.js" as="script">
+<link rel="preload" href="i18n.js" as="script">
+<link rel="preload" href="app.js" as="script">
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="academy-v2.css">
 <link rel="stylesheet" href="voice-controls.css">
-<link rel="stylesheet" href="workbench.css">
-<link rel="stylesheet" href="content-hub.css">
+<style>
+/* Critical skeleton shown before any script arrives (replaced by app.js). */
+.skeleton{max-width:980px;margin:0 auto;padding:8px 0}.skeleton .sk-eyebrow{height:12px;width:260px;border-radius:6px;background:var(--surface-2,#eef2ef);margin-bottom:14px}.skeleton .sk-title{height:34px;width:72%;border-radius:8px;background:var(--surface-2,#eef2ef);margin-bottom:12px}.skeleton .sk-line{height:14px;border-radius:6px;background:var(--surface-2,#eef2ef);margin:8px 0}.skeleton .sk-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px;margin-top:22px}.skeleton .sk-card{height:120px;border-radius:14px;background:var(--surface-2,#eef2ef)}.skeleton *{animation:sk 1.2s ease-in-out infinite}@keyframes sk{50%{opacity:.55}}@media(prefers-reduced-motion:reduce){.skeleton *{animation:none}}
+</style>
 </head>
 <body>
 <a href="#main" class="skip" data-t="skip">跳至主要內容</a>
@@ -27,10 +39,13 @@
   <nav id="nav" class="nav">
     <a href="#home" data-page="home"><i class="nv" aria-hidden="true">⌂</i><span data-t="navHome">首頁</span></a>
     <a href="#catalog" data-page="catalog"><i class="nv" aria-hidden="true">▦</i><span data-t="navCatalog">探索課程</span></a>
+    <a href="#procedures" data-page="procedures"><i class="nv" aria-hidden="true">⚕</i><span data-t="navProcedures">科別程序庫</span></a>
+    <a href="#acu" data-page="acu"><i class="nv" aria-hidden="true">☯</i><span data-t="navAcu">針灸銅人</span></a>
+    <a href="#pharmacy" data-page="pharmacy"><i class="nv" aria-hidden="true">⚗</i><span data-t="navPharmacy">配伍實驗室</span></a>
     <a href="#parkinson" data-page="parkinson"><i class="nv" aria-hidden="true">◎</i><span data-t="navParkinson">巴金森與神經照護</span></a>
     <a href="#workbench" data-page="workbench"><i class="nv" aria-hidden="true">✋</i><span data-t="navWorkbench">跟師傅動手學</span></a>
     <a href="#intern" data-page="intern"><i class="nv" aria-hidden="true">✚</i><span data-t="navIntern">實習門診</span></a>
-    <a href="#tcm" data-page="tcm"><i class="nv" aria-hidden="true">☯</i><span data-t="navTcm">中醫圖庫</span></a>
+    <a href="#tcm" data-page="tcm"><i class="nv" aria-hidden="true">❖</i><span data-t="navTcm">中醫圖庫</span></a>
     <a href="#nobel" data-page="nobel"><i class="nv" aria-hidden="true">✦</i><span data-t="navNobel">諾貝爾與技術</span></a>
     <a href="#ai" data-page="ai"><i class="nv" aria-hidden="true">◉</i><span data-t="navAi">AlphaGo→AlphaFold</span></a>
     <a href="#progress" data-page="progress"><i class="nv" aria-hidden="true">◷</i><span data-t="navProgress">我的進度</span></a>
@@ -40,7 +55,7 @@
   <div class="side-note">
     <span class="eyebrow" data-t="sideEyebrow">跟師傅學 · 再上臨床</span>
     <p data-t="sideDesc">基本級跟師傅逐步學；實習級面對虛擬病人：望聞問切、量血壓、測血糖、判讀心電圖。</p>
-    <span class="edition">MEDICAL EDITION · V2</span>
+    <span class="edition">MEDICAL EDITION · V3.3</span>
   </div>
   <a class="side-help" href="help.html" data-t="guide">操作指南 ↗</a>
 </aside>
@@ -58,7 +73,10 @@
       <button id="accountButton" class="account" type="button"><span class="avatar" id="avatar">佗</span><span id="accountName" data-t="guest">訪客學徒</span></button>
     </div>
   </header>
-  <main id="main" tabindex="-1"><div class="loading" data-t="loading">正在開啟學院…</div></main>
+  <main id="main" tabindex="-1">
+    <div class="skeleton" aria-hidden="true"><div class="sk-eyebrow"></div><div class="sk-title"></div><div class="sk-line" style="width:88%"></div><div class="sk-line" style="width:64%"></div><div class="sk-cards"><div class="sk-card"></div><div class="sk-card"></div><div class="sk-card"></div></div></div>
+    <p class="loading" data-t="loading" style="position:absolute;left:-9999px">正在開啟學院…</p>
+  </main>
   <footer class="footer">
     <span>HUA TUO MEDICAL &amp; BIOMEDICAL ACADEMY</span>
     <span data-t="disclaimer">本站提供醫學教育資訊，不能取代個別診斷與治療；手術與針灸操作須在合格醫師監督下學習。</span>
@@ -66,10 +84,10 @@
   </footer>
   <nav class="bottom-nav" aria-label="Mobile navigation">
     <a href="#home" data-page="home"><i aria-hidden="true">⌂</i><span data-t="navHome">首頁</span></a>
+    <a href="#procedures" data-page="procedures"><i aria-hidden="true">⚕</i><span data-t="navProcedures">程序庫</span></a>
+    <a href="#acu" data-page="acu"><i aria-hidden="true">☯</i><span data-t="navAcu">針灸</span></a>
+    <a href="#pharmacy" data-page="pharmacy"><i aria-hidden="true">⚗</i><span data-t="navPharmacy">配伍</span></a>
     <a href="#catalog" data-page="catalog"><i aria-hidden="true">▦</i><span data-t="navCatalog">課程</span></a>
-    <a href="#intern" data-page="intern"><i aria-hidden="true">✚</i><span data-t="navIntern">實習</span></a>
-    <a href="#progress" data-page="progress"><i aria-hidden="true">◷</i><span data-t="navProgress">進度</span></a>
-    <a href="#membership" data-page="membership"><i aria-hidden="true">◈</i><span data-t="navMembership">會員</span></a>
   </nav>
 </div>
 

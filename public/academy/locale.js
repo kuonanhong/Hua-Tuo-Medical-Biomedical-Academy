@@ -3,7 +3,7 @@
 (function(window){
   'use strict';
   const KEY='ht-translation-cache-v2', MAX=2500;
-  let cache=new Map(), cloudConsent=false, report={requested:0,translated:0,error:''}, busy=false, timer=null;
+  let cache=new Map(), cloudConsent=!!((window.HT_CONFIG||{}).aiAutoConsent), report={requested:0,translated:0,error:''}, busy=false, timer=null;
   const originals=new WeakMap(), rendered=new WeakMap(), attempted=new WeakMap();
   try{const data=JSON.parse(localStorage.getItem(KEY)||'[]');if(Array.isArray(data))data.slice(-MAX).forEach(([k,v])=>{if(typeof k==='string'&&typeof v==='string')cache.set(k,v);});}catch(e){}
   function persist(){try{localStorage.setItem(KEY,JSON.stringify([...cache].slice(-MAX)));}catch(e){}}
