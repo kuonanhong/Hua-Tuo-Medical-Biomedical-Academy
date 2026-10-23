@@ -41,24 +41,27 @@
   // Route → modules. Each entry is loaded once, in order, only when that page is first opened.
   var MODULES = {
     catalog: ['data/catalog.js'],
-    course: ['data/catalog.js', 'voice.js', 'tutor.js', 'workbench.js', 'procedures.js', 'intern-tcm.js', 'intern-western.js', 'tcm-library.js', 'tcm-library-v2.js', 'course-player.js'],
-    intern: ['data/catalog.js', 'voice.js', 'tutor.js', 'workbench.js', 'procedures.js', 'intern-tcm.js', 'intern-western.js', 'tcm-library.js', 'tcm-library-v2.js'],
-    workbench: ['data/catalog.js', 'voice.js', 'tutor.js', 'workbench.js', 'procedures.js'],
-    procedures: ['data/catalog.js', 'voice.js', 'tutor.js', 'workbench.js', 'procedures.js'],
-    tcm: ['data/catalog.js', 'tcm-library.js', 'tcm-library-v2.js', 'content-hub.js'],
+    // The course page opens from its own ~6 KB preview chunk (catalogue entry included); the
+    // catalogue itself arrives through the idle prefetch.
+    course: ['voice.js', 'tutor.js', 'workbench.js', 'theatre.js', 'procedures.js', 'intern-tcm.js', 'intern-western.js', 'tcm-library.js', 'tcm-library-v2.js', 'course-player.js'],
+    intern: ['data/catalog.js', 'voice.js', 'tutor.js', 'workbench.js', 'theatre.js', 'procedures.js', 'intern-tcm.js', 'intern-western.js', 'tcm-library.js', 'tcm-library-v2.js'],
+    workbench: ['data/catalog.js', 'voice.js', 'tutor.js', 'workbench.js', 'theatre.js', 'procedures.js'],
+    procedures: ['data/catalog.js', 'voice.js', 'tutor.js', 'workbench.js', 'theatre.js', 'procedures.js'],
+    tcm: ['data/catalog.js', 'tcm-library.js', 'tcm-library-v2.js', 'content-hub.js', 'acu-atlas.js'],
     acu: ['voice.js', 'tutor.js', 'tcm-library.js', 'acu-atlas.js'],
     pharmacy: ['voice.js', 'tutor.js', 'pharmacy-lab.js'],
+    twins: ['voice.js', 'tutor.js', 'twins.js'],
     nobel: ['data/catalog.js', 'nobel-explorer.js'],
     ai: ['data/catalog.js', 'nobel-explorer.js'],
     parkinson: ['data/catalog.js', 'content-hub.js'],
     resources: ['data/catalog.js', 'content-hub.js'],
-    learn: ['data/catalog.js', 'content-hub.js', 'voice.js', 'tutor.js', 'workbench.js', 'procedures.js'],
+    learn: ['data/catalog.js', 'content-hub.js', 'voice.js', 'tutor.js', 'workbench.js', 'theatre.js', 'procedures.js'],
     progress: ['data/catalog.js'],
     sources: ['data/catalog.js'],
     membership: [],
     home: []
   };
-  var CSS = { workbench: ['workbench.css'], procedures: ['workbench.css', 'procedures.css'], course: ['workbench.css', 'procedures.css', 'content-hub.css'], intern: ['workbench.css', 'content-hub.css'], learn: ['workbench.css', 'content-hub.css'], tcm: ['content-hub.css'], parkinson: ['content-hub.css'], resources: ['content-hub.css'], acu: ['content-hub.css', 'acu-atlas.css'], pharmacy: ['pharmacy-lab.css'] };
+  var CSS = { workbench: ['workbench.css', 'theatre.css'], procedures: ['workbench.css', 'theatre.css', 'procedures.css'], course: ['workbench.css', 'theatre.css', 'procedures.css', 'content-hub.css'], intern: ['workbench.css', 'theatre.css', 'content-hub.css'], learn: ['workbench.css', 'theatre.css', 'content-hub.css'], tcm: ['content-hub.css', 'acu-atlas.css'], parkinson: ['content-hub.css'], resources: ['content-hub.css'], acu: ['content-hub.css', 'acu-atlas.css'], pharmacy: ['pharmacy-lab.css'], twins: ['twins.css'] };
 
   window.HT = window.HT || {};
   window.HT.loadScript = load;
@@ -76,7 +79,7 @@
       });
     },
     prefetch: function () {
-      var order = ['data/catalog.js', 'voice.js', 'tutor.js', 'workbench.js', 'procedures.js', 'course-player.js', 'intern-tcm.js', 'intern-western.js', 'tcm-library.js', 'tcm-library-v2.js', 'content-hub.js', 'acu-atlas.js', 'pharmacy-lab.js', 'nobel-explorer.js'];
+      var order = ['data/catalog.js', 'voice.js', 'tutor.js', 'workbench.js', 'theatre.js', 'procedures.js', 'course-player.js', 'intern-tcm.js', 'intern-western.js', 'tcm-library.js', 'tcm-library-v2.js', 'content-hub.js', 'acu-atlas.js', 'pharmacy-lab.js', 'twins.js', 'nobel-explorer.js'];
       var i = 0;
       function next() {
         if (i >= order.length) return;

@@ -8,6 +8,9 @@
   const t = k => window.HT.i18n.t(k);
   const zh = () => window.HT.i18n.isZh();
   const pk = (o, f) => window.HT.locale.pick(o, f);
+  // Catalogue kind label in the viewer's interface language (56 packs); English when the pack lacks it,
+  // the raw id only for a kind nobody has translated yet.
+  const kindLabel = k => { const v = t('kind_' + k); return v === 'kind_' + k ? k : v; };
   const DEPTS = window.HT_DEPARTMENTS;
   const SUMMARY = window.HT_HOME_SUMMARY || { release: { topics: 2423, steps: 0, departments: DEPTS.departments.length, acupoints: 396, procedures: 0, stages: 0 }, flagship: [], facultyCounts: {}, departmentCounts: {}, mosaic: [] };
   const cat = () => window.HT_CATALOG || [];
@@ -25,7 +28,7 @@
   function toast(msg) { const el = $('#toast'); el.textContent = msg; el.classList.add('show'); clearTimeout(toastTimer); toastTimer = setTimeout(() => el.classList.remove('show'), 3200); }
   function dialog(title, html) { const d = $('#dialog'); $('#dialogTitle').textContent = title; $('#dialogBody').innerHTML = html; if (!d.open) d.showModal(); }
   function closeDialog() { const d = $('#dialog'); if (d.open) d.close(); }
-  function courseCard(c, small) { return `<a class="course-card card ${small ? 'flat' : ''}" href="#course/${c.id}"><span class="ic">${window.HT.icons.render(c.icon, { size: 56, title: c.title })}</span><div style="min-width:0"><h3>${esc(pk(c, 'title'))}</h3><p class="en" data-no-translate>${esc(zh() ? c.titleEn : c.title)}</p><div class="meta"><span class="tag free">${t('free')}</span>${(c.tiers || []).includes('intern') ? `<span class="tag intern">${t('tierIntern').split(' ·')[0]}</span>` : ''}${c.flagship ? `<span class="tag flagship">${t('flagship')}</span>` : ''}<span>${c.stepCount} ${t('step')}</span></div><p class="desc">${esc(pk(c, 'summary'))}</p></div></a>`; }
+  function courseCard(c, small) { return `<a class="course-card card ${small ? 'flat' : ''}" href="#course/${c.id}"><span class="ic">${window.HT.icons.render(c.icon, { size: 56, title: c.title })}</span><div style="min-width:0"><h3>${esc(pk(c, 'title'))}</h3><p class="en" data-no-translate>${esc(zh() ? c.titleEn : c.title)}</p><div class="meta"><span class="tag kind">${esc(kindLabel(c.kind))}</span><span class="tag free">${t('free')}</span>${(c.tiers || []).includes('intern') ? `<span class="tag intern">${t('tierIntern').split(' ·')[0]}</span>` : ''}${c.flagship ? `<span class="tag flagship">${t('flagship')}</span>` : ''}<span>${c.stepCount} ${t('step')}</span></div><p class="desc">${esc(pk(c, 'summary'))}</p></div></a>`; }
   function recordSim(kind, score) { try { const k = 'ht-sim-v1:' + (window.HT.account.user() ? window.HT.account.user().id : 'guest'); const d = JSON.parse(localStorage.getItem(k) || '{}'); (d[kind] = d[kind] || []).push({ score, at: Date.now() }); d[kind] = d[kind].slice(-50); localStorage.setItem(k, JSON.stringify(d)); } catch (e) { /* ignore */ } }
   function simStats() { try { return JSON.parse(localStorage.getItem('ht-sim-v1:' + (window.HT.account.user() ? window.HT.account.user().id : 'guest')) || '{}'); } catch (e) { return {}; } }
   async function ensureCatalog() { if (!window.HT_CATALOG) await window.HT.loadScript('data/catalog.js'); return window.HT_CATALOG; }
@@ -84,7 +87,7 @@
     const kinds = [...new Set(CATALOG.map(c => c.kind))];
     const set = (k, v) => { const p = new URLSearchParams(params); if (v) p.set(k, v); else p.delete(k); if (k !== 'page') p.delete('page'); location.hash = '#catalog?' + p.toString(); };
     root.innerHTML = `<div class="section-head"><div><span class="eyebrow">${t('navCatalog')}</span><h1>${zh() ? '把醫學拆成可以學會的工序' : 'Medicine, broken into learnable steps'}</h1><p class="subtext">${t('free')} · ${t('section')} 1 ${zh() ? '每門課' : 'of every course'} · ${release.topics.toLocaleString()} ${t('statTopics')}</p></div></div>
-      <div class="filters"><input id="catSearch" type="search" value="${esc(params.get('q') || '')}" placeholder="${esc(t('searchPlaceholder'))}" style="flex:1;min-width:220px"><select id="fFaculty"><option value="">${t('allFaculties')}</option>${Object.entries(DEPTS.faculties).map(([id, f]) => `<option value="${id}" ${faculty === id ? 'selected' : ''}>${esc(zh() ? f.zh : f.en)}</option>`).join('')}</select><select id="fDept"><option value="">${t('allDepartments')}</option>${deps.map(d => `<option value="${d.id}" ${department === d.id ? 'selected' : ''}>${esc(pk(d, 'title'))}</option>`).join('')}</select><select id="fKind"><option value="">${t('allKinds')}</option>${kinds.map(k => `<option value="${k}" ${kind === k ? 'selected' : ''}>${k}</option>`).join('')}</select><select id="fTier"><option value="">${t('allTiers')}</option><option value="basic" ${tier === 'basic' ? 'selected' : ''}>${t('tierBasic')}</option><option value="intern" ${tier === 'intern' ? 'selected' : ''}>${t('tierIntern')}</option></select><button class="chip ${flagship ? 'active' : ''}" id="fFlag">★ ${t('flagship')}</button></div>
+      <div class="filters"><input id="catSearch" type="search" value="${esc(params.get('q') || '')}" placeholder="${esc(t('searchPlaceholder'))}" style="flex:1;min-width:220px"><select id="fFaculty"><option value="">${t('allFaculties')}</option>${Object.entries(DEPTS.faculties).map(([id, f]) => `<option value="${id}" ${faculty === id ? 'selected' : ''}>${esc(zh() ? f.zh : f.en)}</option>`).join('')}</select><select id="fDept"><option value="">${t('allDepartments')}</option>${deps.map(d => `<option value="${d.id}" ${department === d.id ? 'selected' : ''}>${esc(pk(d, 'title'))}</option>`).join('')}</select><select id="fKind"><option value="">${t('allKinds')}</option>${kinds.map(k => `<option value="${k}" ${kind === k ? 'selected' : ''}>${esc(kindLabel(k))}</option>`).join('')}</select><select id="fTier"><option value="">${t('allTiers')}</option><option value="basic" ${tier === 'basic' ? 'selected' : ''}>${t('tierBasic')}</option><option value="intern" ${tier === 'intern' ? 'selected' : ''}>${t('tierIntern')}</option></select><button class="chip ${flagship ? 'active' : ''}" id="fFlag">★ ${t('flagship')}</button></div>
       ${department ? `<div class="notice">${esc(pk(DEPTS.departments.find(d => d.id === department) || {}, 'intro'))} <a href="#procedures?department=${esc(department)}">${t('departmentLibrary')} →</a></div>` : ''}
       <p class="muted small">${total.toLocaleString()} ${t('results')}</p>
       ${slice.length ? `<div class="grid cols-3">${slice.map(c => courseCard(c)).join('')}</div>` : `<div class="notice">${t('noResults')}</div>`}
@@ -151,7 +154,7 @@
     document.body.className = 'page-' + page;
     document.querySelectorAll('.nav a, .bottom-nav a').forEach(a => a.classList.toggle('active', a.dataset.page === page));
     $('#sidebar').classList.remove('open');
-    const titles = { home: 'navHome', catalog: 'navCatalog', intern: 'navIntern', workbench: 'navWorkbench', procedures: 'navProcedures', acu: 'navAcu', pharmacy: 'navPharmacy', parkinson: 'navParkinson', resources: 'navSources', tcm: 'navTcm', nobel: 'navNobel', ai: 'navAi', progress: 'navProgress', membership: 'navMembership', sources: 'navSources', course: 'navCatalog', learn: 'navParkinson' };
+    const titles = { home: 'navHome', catalog: 'navCatalog', intern: 'navIntern', workbench: 'navWorkbench', procedures: 'navProcedures', acu: 'navAcu', pharmacy: 'navPharmacy', twins: 'navTwins', parkinson: 'navParkinson', resources: 'navSources', tcm: 'navTcm', nobel: 'navNobel', ai: 'navAi', progress: 'navProgress', membership: 'navMembership', sources: 'navSources', course: 'navCatalog', learn: 'navParkinson' };
     $('#pageTitle').textContent = t(titles[page] || 'navHome');
     try {
       if (page !== 'home' && window.HT.loader) {
@@ -169,8 +172,9 @@
       else if (page === 'procedures') { const r = await window.HT.procedures.render(main, params, decodeURIComponent(parts[1] || '')); if (typeof r === 'function') pageCleanup = r; }
       else if (page === 'acu') { const r = await window.HT.acuAtlas.render(main, params); if (typeof r === 'function') pageCleanup = r; }
       else if (page === 'pharmacy') { const r = await window.HT.pharmacyLab.render(main, params); if (typeof r === 'function') pageCleanup = r; }
+      else if (page === 'twins') { const r = await window.HT.twins.render(main, params); if (typeof r === 'function') pageCleanup = r; }
       else if (page === 'parkinson' || page === 'resources' || page === 'learn') { await window.HT.contentHub.ensure(); window.HT.contentHub.render(main, page === 'resources' ? 'resources' : 'parkinson', page === 'learn' ? decodeURIComponent(parts[1] || '') : undefined); }
-      else if (page === 'tcm') { await window.HT.tcmLibrary.ensure(); window.HT.tcmLibrary.render(main, params.get('tab'), params.get('filter')); }
+      else if (page === 'tcm') { await window.HT.tcmLibrary.ensure(); const r = window.HT.tcmLibrary.render(main, params.get('tab'), params.get('filter')); if (typeof r === 'function') pageCleanup = r; }
       else if (page === 'nobel') window.HT.explorer.nobel(main, params.get('which'));
       else if (page === 'ai') window.HT.explorer.aiPage(main);
       else if (page === 'progress') progressPage(main);
@@ -215,6 +219,7 @@
       : path.startsWith('#tcm') ? (window.HT.tcmLibrary && window.HT.tcmLibrary.currentContext)
       : path.startsWith('#acu') ? (window.HT.acuAtlas && window.HT.acuAtlas.currentContext)
       : path.startsWith('#pharmacy') ? (window.HT.pharmacyLab && window.HT.pharmacyLab.currentContext)
+      : path.startsWith('#twins') ? (window.HT.twins && window.HT.twins.currentContext)
       : path.startsWith('#procedures') ? ((window.HT.workbench && window.HT.workbench.currentContext) || (window.HT.procedures && window.HT.procedures.currentContext))
       : path.startsWith('#learn/') || path === '#parkinson' ? (window.HT.contentHub && window.HT.contentHub.currentContext)
       : (window.HT.workbench && window.HT.workbench.currentContext) || null;

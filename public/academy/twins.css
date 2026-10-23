@@ -1,0 +1,15 @@
+/* Digital twins */
+.tw-brain,.tw-heart{display:grid;grid-template-columns:minmax(320px,1.15fr) minmax(300px,.85fr);gap:16px;align-items:start}
+.tw-panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:14px;box-shadow:var(--shadow)}
+.tw-toolbar{display:grid;gap:8px;margin-bottom:10px}.tw-toolbar label{display:grid;gap:4px;font-size:.82rem}.tw-toolbar .row{gap:6px;flex-wrap:wrap}.tw-toolbar .chip{min-height:34px}
+.tw-canvas-row{display:grid;grid-template-columns:1fr;gap:10px}.tw-canvas-row:has(.tw-cmp:not([hidden])){grid-template-columns:1fr 1fr}
+.tw-canvas-wrap{position:relative;background:#05080c;border-radius:12px;overflow:hidden;aspect-ratio:1}.tw-canvas-wrap canvas{width:100%;height:100%;display:block;cursor:ns-resize}
+.tw-side-l,.tw-side-r{position:absolute;top:8px;font-size:.75rem;font-weight:800;color:#9fe;background:rgba(0,0,0,.5);padding:2px 6px;border-radius:6px}.tw-side-l{left:8px}.tw-side-r{right:8px}
+.tw-cap{position:absolute;left:8px;bottom:8px;font-size:.72rem;color:#9fe;background:rgba(0,0,0,.5);padding:2px 6px;border-radius:6px}
+.tw-slider{display:flex;align-items:center;gap:10px;margin-top:8px;font-size:.78rem;color:var(--muted)}.tw-slider input{flex:1}
+.tw-info h2{margin:4px 0 8px}.tw-findings{padding-left:18px;font-size:.9rem;line-height:1.6}.tw-therapies{gap:6px;flex-wrap:wrap}.tw-th{min-height:34px}.tw-th.drug.active{background:#1f9a5f;color:#fff;border-color:#1f9a5f}.tw-th.procedure.active{background:#2f6f8f;color:#fff;border-color:#2f6f8f}.tw-th.caution{border-color:#c48a2f}
+.tw-therapy{margin-top:10px;border-left:4px solid #1f9a5f;background:var(--surface-2);padding:10px 12px;border-radius:8px;font-size:.9rem;line-height:1.6}.tw-therapy p{margin:4px 0}
+.tw-heart-stage{display:grid;gap:8px}.tw-heart-svg{width:100%;height:auto;background:radial-gradient(circle at 50% 40%,#2a1216,#120709 70%);border-radius:12px;display:block}
+.tw-monitor{background:#061a10;border-radius:10px;padding:6px;display:grid;gap:4px}.tw-monitor canvas{width:100%;height:auto;display:block;border-radius:6px}
+.tw-vitals{display:flex;flex-wrap:wrap;gap:8px 14px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.86rem;color:#9fe;padding:2px 6px}.tw-vitals b{color:#fff;margin-right:4px}.tw-vitals .warn{color:#ffb020}.tw-vitals .ok{color:#4dff8f}
+@media(max-width:900px){.tw-brain,.tw-heart{grid-template-columns:1fr}}

@@ -17,6 +17,10 @@
 .acu-pt{stroke:#3b2607;stroke-width:.8;transition:r .15s}.acu-pt.dim{opacity:.2}.acu-pt.sel{stroke:#fff;stroke-width:2.5;filter:drop-shadow(0 0 5px #fff)}.acu-pt.picked{stroke:#1f6f5f;stroke-width:2.5}
 .acu-pt.s-correct{fill:#1f9a5f!important;stroke:#fff;stroke-width:2.5;animation:acuPulse 1.2s ease-in-out infinite}.acu-pt.s-acceptable{fill:#e0a800!important;stroke:#fff;stroke-width:2}.acu-pt.s-wrong{fill:#c0392b!important;stroke:#fff;stroke-width:2.5}.acu-pt.s-danger{fill:#000!important;stroke:#ff3b3b;stroke-width:3;animation:acuDanger .8s ease-in-out infinite}.acu-pt.s-missing{fill:transparent!important;stroke:#1f9a5f;stroke-width:2.5;stroke-dasharray:3 2}.acu-pt.s-neutral{fill:#8a8a8a!important;stroke:#fff;stroke-width:2}
 @keyframes acuPulse{50%{r:7}}@keyframes acuDanger{50%{stroke-width:6}}
+.acu-pulse{fill:none;stroke-width:2.2;pointer-events:none;animation:acuRing 1.5s ease-out infinite}
+@keyframes acuRing{0%{r:6;opacity:1}100%{r:18;opacity:0}}
+.acu-embed{display:grid;gap:6px}.acu-embed.compact .acu-toolbar .chip{min-height:30px;font-size:.76rem}.acu-embed.compact .acu-legend{grid-template-columns:repeat(auto-fill,minmax(104px,1fr))}.acu-embed.compact .acu-viewport{max-height:min(66vh,760px)}
+.atlas-layout .acu-embed .acu-viewport{background:radial-gradient(120% 90% at 50% 10%,#fff8e3,#efe3bf 60%,#d9c89a)}
 .acu-lbl{font-size:9px;font-weight:700;fill:#2b210b;paint-order:stroke;stroke:#fff6dc;stroke-width:2.5;stroke-linejoin:round;pointer-events:none}.acu-lbl.strong{font-size:11px}
 :root[data-theme="dark"] .acu-lbl{fill:#f5e9c8;stroke:#2a1f08}
 .acu-foot{font-size:8px;fill:#6b4a12;letter-spacing:.04em}:root[data-theme="dark"] .acu-foot{fill:#c9b07a}

@@ -1,11 +1,11 @@
 /* Service worker (v3.3). Shell: cache-first with background refresh. Lazy modules, language packs and
    public data chunks: stale-while-revalidate. Member content (/api, data/courses, data/procedures) is
    never persisted. */
-const VERSION = '20261021';
+const VERSION = '20261023b';
 const SHELL_CACHE = 'huatuo-shell-' + VERSION;
 const LAZY_CACHE = 'huatuo-lazy-' + VERSION;
 const SHELL = ['./', './index.html', './style.css', './academy-v2.css', './voice-controls.css', './bootstrap.js', './config.js', './i18n.js', './icons.js', './personalization.js', './locale.js', './account.js', './membership.js', './safe-links.js', './app.js', './data/departments.js', './data/home-summary.js', './assets/icon.svg', './manifest.webmanifest'];
-const LAZY = /\/(?:i18n\/[a-zA-Z-]+\.js|data\/(?:catalog|tcm-library|tcm-v2|content-v2|acu-figure|acu-atlas|pharmacy-lab)\.(?:js|json)|(?:voice|tutor|workbench|procedures|course-player|intern-tcm|intern-western|tcm-library|tcm-library-v2|content-hub|acu-atlas|pharmacy-lab|nobel-explorer)\.js|(?:workbench|procedures|content-hub|acu-atlas|pharmacy-lab)\.css|help\.html|terms\.html)$/;
+const LAZY = /\/(?:i18n\/[a-zA-Z-]+\.js|data\/(?:catalog|tcm-library|tcm-v2|content-v2|acu-figure|acu-atlas|pharmacy-lab)\.(?:js|json)|(?:voice|tutor|workbench|theatre|twins|procedures|course-player|intern-tcm|intern-western|tcm-library|tcm-library-v2|content-hub|acu-atlas|pharmacy-lab|nobel-explorer)\.js|(?:workbench|theatre|twins|procedures|content-hub|acu-atlas|pharmacy-lab)\.css|data\/twins\/.+|data\/preview\/[a-z0-9-]+\.js|help\.html|terms\.html)$/;
 const NEVER = /\/api(?:\/|$)|\/data\/courses(?:\/|$)|\/data\/procedures(?:\/|$)|\/private(?:\/|$)/;
 
 self.addEventListener('install', event => event.waitUntil(caches.open(SHELL_CACHE).then(async cache => {

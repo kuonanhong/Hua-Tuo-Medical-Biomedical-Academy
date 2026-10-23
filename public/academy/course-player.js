@@ -10,7 +10,18 @@
   const loaded = {};
   let current = { course: null, catalog: null, stage: 0, step: 0, tier: 'basic', cleanup: null };
 
-  async function loadCourse(cat) {
+  // Free-preview-first loading (v3.4). A course opens from its ~6 KB preview chunk
+  // (data/preview/<id>.js: the free section in full, member sections as titles) so the page paints
+  // at once on phones and static hosts. The full department file (member step bodies) is fetched
+  // only on the private server, in the background, and only upgrades the page when the server
+  // actually returned unlocked content for this signed-in learner.
+  const fullOk = dep => !!(window.HT_COURSES && window.HT_COURSES[dep]);
+  async function loadPreview(cat) {
+    if (window.HT_PREVIEW && window.HT_PREVIEW[cat.id]) return window.HT_PREVIEW[cat.id];
+    try { await window.HT.loadScript('data/preview/' + encodeURIComponent(cat.id) + '.js'); } catch (e) { /* fall back to the department file */ }
+    return window.HT_PREVIEW && window.HT_PREVIEW[cat.id] ? window.HT_PREVIEW[cat.id] : null;
+  }
+  async function loadFull(cat) {
     // Server responses enforce access and must never survive a logout in script cache.
     if (location.protocol !== 'file:') {
       const response = await fetch('data/' + cat.courseFile.replace(/\.js$/, '.json'), { credentials: 'same-origin', cache: 'no-store' });
@@ -21,10 +32,27 @@
       return courses.find(c => c.id === cat.id);
     }
     if (!loaded[cat.department]) {
-      if (!(window.HT_COURSES && window.HT_COURSES[cat.department])) await window.HT.loadScript('data/' + cat.courseFile);
+      if (!fullOk(cat.department)) await window.HT.loadScript('data/' + cat.courseFile);
       loaded[cat.department] = true;
     }
     return (window.HT_COURSES[cat.department] || []).find(c => c.id === cat.id);
+  }
+  const unlocked = course => !!(course && course.stages && course.stages.some((s, i) => i > 0 && s.free !== true && !s.locked && (s.steps || []).length));
+  async function loadCourse(cat) {
+    // Already holding full member content for this department (signed-in pass holder): use it.
+    if (fullOk(cat.department)) { const c = window.HT_COURSES[cat.department].find(x => x.id === cat.id); if (c) return { course: c, preview: !unlocked(c) }; }
+    const preview = await loadPreview(cat);
+    if (preview) return { course: preview, preview: true };
+    return { course: await loadFull(cat), preview: false };
+  }
+  // Background upgrade: only where member content can exist (private server, not static/file).
+  function upgradeLater(root, cat, token) {
+    if (window.HT.staticMode || location.protocol === 'file:') return;
+    if (!(window.HT.membership && window.HT.membership.entitlement && window.HT.membership.entitlement())) return;
+    loadFull(cat).then(full => {
+      if (!full || !unlocked(full) || current.renderToken !== token || !root.isConnected || !current.catalog || current.catalog.id !== cat.id) return;
+      render(root, cat.id, { keep: true, tier: current.tier, upgraded: true });
+    }).catch(() => { /* preview stays */ });
   }
   function internSim(dep) {
     const tcm = ['tcm-diagnosis', 'tcm-intern-clinic', 'tcm-internal', 'tcm-specialties', 'tcm-fundamentals', 'tcm-classics', 'tcm-diet'];
@@ -53,11 +81,20 @@
   async function render(root, id, opts) {
     opts = opts || {};
     if (current.cleanup) { current.cleanup(); current.cleanup = null; }
-    const cat = window.HT_CATALOG.find(c => c.id === id);
-    if (!cat) { root.innerHTML = `<div class="notice danger">Course not found: ${esc(id)}</div>`; return; }
     root.innerHTML = `<div class="loading">${t('loading')}</div>`;
-    const course = await loadCourse(cat);
+    const token = {}; current.renderToken = token;
+    // The catalogue entry comes from the catalogue when it is already here, otherwise from the
+    // preview chunk itself (so the first course opens without waiting for the 1.8 MB catalogue,
+    // which the shell prefetches while idle).
+    let cat = (window.HT_CATALOG || []).find(c => c.id === id);
+    if (!cat && /^[a-z0-9][a-z0-9-]{1,120}$/.test(id)) { const pv = await loadPreview({ id }); cat = pv && pv.catalog ? pv.catalog : null; }
+    if (current.renderToken !== token) return;
+    if (!cat) { root.innerHTML = `<div class="notice danger">Course not found: ${esc(id)}</div>`; return; }
+    const loadedCourse = await loadCourse(cat);
+    if (current.renderToken !== token) return;
+    const course = loadedCourse.course;
     if (!course) { root.innerHTML = `<div class="notice danger">Course data missing for ${esc(id)}. Run bash rebuild-curriculum.sh</div>`; return; }
+    if (loadedCourse.preview && !opts.upgraded) upgradeLater(root, cat, token);
     current.course = course; current.catalog = cat; current.tier = opts.tier || current.tier || 'basic';
     if (!opts.keep) { current.stage = 0; current.step = 0; }
     window.HT.tutor.setContext(cat);
@@ -66,7 +103,7 @@
     const doneCount = progress.completed.length;
     const dep = window.HT_DEPARTMENTS.departments.find(d => d.id === cat.department) || {};
     const hasIntern = cat.tiers.includes('intern');
-    const related = window.HT_CATALOG.filter(c => c.department === cat.department && c.id !== cat.id).slice(0, 6);
+    const related = window.HT_CATALOG ? window.HT_CATALOG.filter(c => c.department === cat.department && c.id !== cat.id).slice(0, 6) : (course.related || []);
     const stageNav = course.stages.map((st, si) => { const open = si === current.stage; const locked = !window.HT.membership.hasAccess(course, si); return `<details ${open ? 'open' : ''}><summary><span>${esc(pk(st, 'title'))}</span><span class="tag ${st.free ? 'free' : 'member'}">${st.free ? t('free') : t('member')}</span></summary><ol>${(st.steps || []).map((s, i) => `<li><button class="${si === current.stage && i === current.step ? 'active' : ''} ${progress.completed.includes(s.id) ? 'done' : ''} ${locked ? 'locked' : ''}" data-go="${si}:${i}"><span>${si + 1}.${i + 1}</span> ${esc(pk(s, 'title'))}</button></li>`).join('')}${locked && !(st.steps || []).length ? `<li><button class="locked" data-locked-stage="${si}">🔒 ${t('unlock')}</button></li>` : ''}</ol></details>`; }).join('');
     root.classList.add('course-workbench-first');
     root.innerHTML = `<div class="course-head"><span class="ic">${window.HT.icons.render(cat.icon, { size: 84, title: cat.title })}</span><div style="flex:1;min-width:260px"><span class="eyebrow"><a href="#catalog?department=${cat.department}">${esc(pk(dep, 'title') || cat.departmentTitle)}</a> · ${esc(cat.kind)}${cat.flagship ? ` · <span class="tag flagship">${t('flagship')}</span>` : ''}</span><h1>${esc(pk(cat, 'title'))}</h1><p class="muted" data-no-translate>${esc(zh() ? cat.titleEn : cat.title)}</p><p>${esc(pk(cat, 'summary'))}</p><div class="row"><span class="tag free">${t('free')} · ${t('section')} 1</span><span class="tag member">${course.stages.length - 1} ${t('section')} · ${t('member')}</span>${hasIntern ? `<span class="tag intern">${t('tierIntern')}</span>` : ''}<span class="muted small">${cat.stepCount} ${t('step')} · ≈${cat.estimatedMinutes} ${t('minutes')}</span></div><div class="progress-bar" style="margin-top:10px;max-width:420px"><i style="width:${Math.min(100,Math.round(100 * doneCount / (cat.stepCount || allSteps.length || 1)))}%"></i></div><p class="small muted">${doneCount}/${cat.stepCount || allSteps.length} ${t('done')}</p></div></div>
@@ -127,5 +164,5 @@
     view.querySelector('#nextStep').onclick=()=>{if(!practicePassed||!quizPassed){gate();view.querySelector('#completionGate').scrollIntoView({behavior:'smooth',block:'center'});return;}if(pos<flat.length-1)go(1);else if(course.stages.some(x=>x.locked)){location.hash='#membership';}else{window.HT.app.toast(zh()?'已完成本課目前可用的工序。':'All currently available steps in this course are complete.');}};
   }
   window.HT = window.HT || {};
-  window.HT.coursePlayer = { render, loadCourse, contextText, internSim, get current() { return current; } };
+  window.HT.coursePlayer = { render, loadCourse, loadFull, loadPreview, contextText, internSim, get current() { return current; } };
 })(window);

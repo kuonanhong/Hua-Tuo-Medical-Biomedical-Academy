@@ -26,7 +26,7 @@
   function summaryAnswer(q) {
     const zh = window.HT.i18n.isZh();
     const words = q.toLowerCase().split(/[\s,，。？?、]+/).filter(w => w.length > 1);
-    const hits = window.HT_CATALOG.map(c => { const hay = (c.title + ' ' + c.titleEn + ' ' + c.summary + ' ' + c.summaryEn).toLowerCase(); let s = 0; words.forEach(w => { if (hay.includes(w)) s += w.length; }); if (context && c.id === context.id) s += 5; return [s, c]; }).filter(x => x[0] > 0).sort((a, b) => b[0] - a[0]).slice(0, 3).map(x => x[1]);
+    const hits = (window.HT_CATALOG || []).map(c => { const hay = (c.title + ' ' + c.titleEn + ' ' + c.summary + ' ' + c.summaryEn).toLowerCase(); let s = 0; words.forEach(w => { if (hay.includes(w)) s += w.length; }); if (context && c.id === context.id) s += 5; return [s, c]; }).filter(x => x[0] > 0).sort((a, b) => b[0] - a[0]).slice(0, 3).map(x => x[1]);
     let text = '';
     if (context) text += (zh ? `目前課程「${context.title}」：${context.summary}\n\n` : `Current course "${context.titleEn}": ${context.summaryEn}\n\n`);
     if (hits.length) text += (zh ? '相關課程摘要：\n' : 'Related course summaries:\n') + hits.map(c => `• ${zh ? c.title : c.titleEn} — ${zh ? c.summary : c.summaryEn}`).join('\n');
