@@ -1,0 +1,20 @@
+/* Specialty imaging digital twins (builds on twins.css: .tw-panel, .tw-toolbar, .tw-canvas-wrap, .tw-info, .tw-therapy, .chip) */
+.sp-twin{display:grid;grid-template-columns:minmax(320px,1.2fr) minmax(280px,.8fr);gap:16px;align-items:start}
+.sp-views:empty{display:none}
+.sp-canvas-row{display:grid;grid-template-columns:1fr;gap:10px}.sp-canvas-row:has(.sp-cmp:not([hidden])){grid-template-columns:1fr 1fr}
+.sp-wrap{aspect-ratio:4/3;background:#06080a}.sp-wrap canvas{width:100%;height:100%;display:block;cursor:crosshair}.sp-wrap canvas:focus-visible{outline:3px solid var(--primary);outline-offset:-3px}
+.sp-slider{flex-wrap:wrap}.sp-slider label{min-width:120px;font-weight:600;color:var(--ink)}.sp-slider input{flex:1;min-width:140px}.sp-val{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;min-width:72px;text-align:right;color:var(--ink)}
+.sp-ui{gap:6px;flex-wrap:wrap;margin-top:8px}.sp-ui:empty{display:none}.sp-ui .chip{min-height:30px;font-size:.8rem}.sp-ui .chip.p1{border-color:#e9a23b;box-shadow:inset 0 0 0 2px rgba(233,162,59,.35)}.sp-ui .chip.p2{border-color:#d4463b;box-shadow:inset 0 0 0 2px rgba(212,70,59,.45)}
+.sp-note{margin:8px 0 0}
+.sp-info h3{font-size:.86rem;margin:14px 0 6px;color:var(--muted);letter-spacing:.02em}.sp-info h2{margin:4px 0 6px}
+.sp-rx{gap:6px}.sp-rx .chip{min-height:34px}
+.sp-compact{grid-template-columns:1fr;gap:10px}.sp-compact .tw-panel{padding:10px;box-shadow:none}.sp-compact .tw-toolbar{grid-template-columns:minmax(0,1fr) auto;align-items:end;gap:6px}.sp-compact .tw-toolbar .row:last-child{grid-column:1/-1}.sp-compact .tw-toolbar .chip{min-height:28px;font-size:.78rem;padding:3px 9px}.sp-compact .sp-info h2{font-size:1rem}.sp-compact .tw-findings{font-size:.82rem}.sp-compact .sp-note{display:none}.sp-compact .sp-info h3{margin-top:8px}
+@media(max-width:900px){.sp-twin{grid-template-columns:1fr}.sp-canvas-row:has(.sp-cmp:not([hidden])){grid-template-columns:1fr}}
+/* Fallbacks so the panel is styled where twins.css is not loaded (e.g. inside the theatre imaging panel). */
+.sp-twin .tw-panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:14px;box-shadow:var(--shadow)}
+.sp-twin .tw-toolbar{display:grid;gap:8px;margin-bottom:10px}.sp-twin .tw-toolbar label{display:grid;gap:4px;font-size:.82rem}.sp-twin .tw-toolbar .row{gap:6px;flex-wrap:wrap}.sp-twin .tw-toolbar .chip{min-height:34px}
+.sp-twin .tw-canvas-wrap{position:relative;background:#06080a;border-radius:12px;overflow:hidden;aspect-ratio:4/3}.sp-twin .tw-canvas-wrap canvas{width:100%;height:100%;display:block;cursor:crosshair}
+.sp-twin .tw-cap{position:absolute;left:8px;bottom:8px;font-size:.72rem;color:#9fe;background:rgba(0,0,0,.5);padding:2px 6px;border-radius:6px}
+.sp-twin .tw-slider{display:flex;align-items:center;gap:10px;margin-top:8px;font-size:.78rem;color:var(--muted)}
+.sp-twin .tw-findings{padding-left:18px;font-size:.9rem;line-height:1.6}.sp-twin .tw-therapies{gap:6px;flex-wrap:wrap}.sp-twin .tw-th.procedure.active{background:#2f6f8f;color:#fff;border-color:#2f6f8f}
+.sp-twin .tw-therapy{margin-top:10px;border-left:4px solid #2f6f8f;background:var(--surface-2);padding:10px 12px;border-radius:8px;font-size:.9rem;line-height:1.6}.sp-twin .tw-therapy p{margin:4px 0}

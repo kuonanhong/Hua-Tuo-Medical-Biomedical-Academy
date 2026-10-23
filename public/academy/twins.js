@@ -256,19 +256,35 @@
     return () => { disposed = true; if (raf) cancelAnimationFrame(raf); };
   }
 
+  // ================================================================ specialty imaging (specialty-twins.js, lazy)
+  async function ensureSpecialty() { if (window.HT.specialtyTwins) return true; try { await window.HT.loadCss('specialty-twins.css'); await window.HT.loadScript('specialty-twins.js'); } catch (e) { return false; } return !!window.HT.specialtyTwins; }
+  function specialtyPage(body, params) {
+    const sp = window.HT.specialtyTwins; const deps = sp.departments(); const dmeta = id => ((window.HT_DEPARTMENTS && window.HT_DEPARTMENTS.departments) || []).find(d => d.id === id);
+    let dept = params.get('department'); if (!deps.some(d => d.id === dept)) dept = deps[0] ? deps[0].id : '';
+    body.innerHTML = `<div class="tw-toolbar"><label>${say('科別', 'Department')}<select data-sp-dept>${deps.map(d => { const m = dmeta(d.id); return `<option value="${d.id}" ${d.id === dept ? 'selected' : ''}>${esc(m ? (zh() ? m.title : m.titleEn) : (zh() ? d.zh : d.en))}</option>`; }).join('')}</select></label></div><div data-sp-host></div><p class="small muted">${say('各科影像為程序化模擬（演算法依嚴重度即時繪製），用來解說病徵、判讀重點與治療後變化；不是真實病人影像。', 'Specialty images are procedural simulations drawn from a severity parameter to explain findings, reading points and post-treatment change; they are not real patient images.')}</p>`;
+    let inner = null; const host = body.querySelector('[data-sp-host]');
+    const show = id => { if (inner) inner(); inner = sp.render(host, { department: id, condition: params.get('condition') }); currentContext = { id: 'specialty-' + id, title: '各科影像孿生 · ' + id, titleEn: 'Specialty imaging twin · ' + id, summary: '程序化影像解說病徵與治療後變化；非真實病人影像。', summaryEn: 'Procedural imaging explaining findings and post-treatment change; not real patient images.' }; };
+    body.querySelector('[data-sp-dept]').onchange = e => show(e.target.value);
+    if (dept) show(dept);
+    return () => { if (inner) inner(); };
+  }
+
   // ================================================================ page
   async function render(root, params) {
     await ensureBrain();
-    const tab = params.get('tab') === 'heart' ? 'heart' : 'brain';
+    const tab = params.get('tab') === 'heart' ? 'heart' : params.get('tab') === 'specialty' ? 'specialty' : 'brain';
     root.innerHTML = `<div class="section-head"><div><span class="eyebrow">DIGITAL TWINS · REAL TEMPLATE + ALGORITHMS</span><h1>${t('twTitle')}</h1><p class="subtext">${say('內科不用唸的：在真實 MRI 模板上看萎縮、梗塞、病灶在哪裡；按下藥物或治療，看哪個腦區／路徑被作用；心臟孿生依心律引擎跳動，試試電擊、PCI、β 阻斷劑會怎樣。', 'Internal medicine you can see: on a real MRI template, find atrophy, infarcts and lesions; press a drug or therapy to see which region or pathway it acts on; the heart twin beats from a rhythm engine — try a shock, PCI or a beta-blocker.')}</p></div></div>
-      <div class="tier-tabs"><button data-twtab="brain" class="${tab === 'brain' ? 'active' : ''}">🧠 ${t('twBrain')}</button><button data-twtab="heart" class="${tab === 'heart' ? 'active' : ''}">❤ ${t('twHeart')}</button></div><div id="twBody"></div>
+      <div class="tier-tabs"><button data-twtab="brain" class="${tab === 'brain' ? 'active' : ''}">🧠 ${t('twBrain')}</button><button data-twtab="heart" class="${tab === 'heart' ? 'active' : ''}">❤ ${t('twHeart')}</button><button data-twtab="specialty" class="${tab === 'specialty' ? 'active' : ''}">🩻 ${say('各科影像', 'Specialty imaging')}</button></div><div id="twBody"></div>
       <p class="form-note">${say('腦影像來源：MNI ICBM152 2009a 非線性對稱模板（McConnell Brain Imaging Centre，可再散布）；病變為演算法模擬，不是任何病人的影像。心臟為程序化模型。所有內容為教學，不作個人診斷或用藥依據。', 'Brain images: MNI ICBM152 2009a nonlinear symmetric template (McConnell Brain Imaging Centre, redistributable); pathology is simulated and is not any patient’s image. The heart is a procedural model. Education only.')}</p>`;
     let cleanup = null;
-    const mount = which => { if (cleanup) cleanup(); cleanup = which === 'heart' ? heart(root.querySelector('#twBody'), { mode: params.get('mode') }) : brain(root.querySelector('#twBody'), { condition: params.get('condition') }); root.querySelectorAll('[data-twtab]').forEach(b => b.classList.toggle('active', b.dataset.twtab === which)); };
+    const mount = which => { if (cleanup) cleanup(); const body = root.querySelector('#twBody');
+      if (which === 'specialty') { cleanup = null; body.innerHTML = `<p class="muted small">${say('載入各科影像…', 'Loading specialty imaging…')}</p>`; ensureSpecialty().then(() => { if (!body.isConnected || !window.HT.specialtyTwins) { if (body.isConnected) body.innerHTML = `<div class="notice">${say('各科影像模組尚未安裝。', 'The specialty imaging module is not installed.')}</div>`; return; } cleanup = specialtyPage(body, params); }); }
+      else cleanup = which === 'heart' ? heart(body, { mode: params.get('mode') }) : brain(body, { condition: params.get('condition') });
+      root.querySelectorAll('[data-twtab]').forEach(b => b.classList.toggle('active', b.dataset.twtab === which)); };
     root.querySelectorAll('[data-twtab]').forEach(b => b.onclick = () => mount(b.dataset.twtab));
     mount(tab);
     return () => { if (cleanup) cleanup(); currentContext = null; };
   }
   window.HT = window.HT || {};
-  window.HT.twins = { ensureBrain, brain, heart, render, HEART_MODES, get currentContext() { return currentContext; } };
+  window.HT.twins = { ensureBrain, ensureSpecialty, brain, heart, render, HEART_MODES, get currentContext() { return currentContext; } };
 })(window);

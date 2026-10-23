@@ -9,3 +9,14 @@
 .proc-item.locked{opacity:.72}.proc-no{font-weight:800;color:var(--primary);font-size:.8rem;text-align:center}.proc-body{min-width:0}.proc-body b{display:block;font-size:.88rem;line-height:1.3}.proc-body small{display:block;color:var(--muted);font-size:.68rem;line-height:1.35;margin-top:2px}.proc-state{font-size:.78rem;font-weight:700;color:var(--ok);text-align:right}
 .proc-bench{min-width:0}.proc-bench .wb{margin:0}
 @media(max-width:900px){.proc-layout{grid-template-columns:1fr}.proc-list{position:static;max-height:300px}.proc-items{max-height:200px}}
+
+/* hospital floor map (v3.5) */
+.fm-card{padding:12px 14px;margin:14px 0}.fm-head{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:baseline;margin-bottom:8px}
+.fm-wrap{overflow:auto}.fm-svg{display:block;width:100%;min-width:900px;height:auto}
+.fm-floor{fill:#eef2ef}:root[data-theme="dark"] .fm-floor{fill:#1a2326}.fm-floorname{font-size:14px;font-weight:800;fill:#1f6f5f;letter-spacing:.04em}
+.fm-corridor{fill:#dfe6e1;stroke:#c7d3cb}:root[data-theme="dark"] .fm-corridor{fill:#243036;stroke:#36464d}
+.fm-room{cursor:pointer}.fm-wall{fill:#fff;stroke:#9fb5ab;stroke-width:2;transition:fill .15s,stroke .15s}.fm-room:hover .fm-wall,.fm-room:focus .fm-wall{fill:#eaf6f0;stroke:#1f6f5f;stroke-width:3}.fm-room.authored .fm-wall{stroke:#c9a227}
+:root[data-theme="dark"] .fm-wall{fill:#243036;stroke:#4a5c63}:root[data-theme="dark"] .fm-room:hover .fm-wall{fill:#2b3d44}
+.fm-door{fill:#8a5a2b}.fm-title{font-size:13px;font-weight:800;fill:#15202b}:root[data-theme="dark"] .fm-title{fill:#e8edeb}.fm-sub{font-size:10px;fill:#5c6b6a}:root[data-theme="dark"] .fm-sub{fill:#a9b8b5}
+.fm-star{font-size:16px;fill:#c9a227}.fm-bar{fill:rgba(0,0,0,.08)}.fm-fill{fill:#52b788}.fm-dot{fill:#ffd166;stroke:#fff}.fm-you{fill:#1f6f5f;stroke:#ffd166;stroke-width:2;animation:fmYou 1.4s ease-in-out infinite}
+@keyframes fmYou{50%{r:9}}

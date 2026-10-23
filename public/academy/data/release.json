@@ -30,8 +30,8 @@
   "authoredWorkbenchStages": 29,
   "atlasScope": "396-entry directory; interactive bronze figure orders every point along its channel path (teaching schematic, not clinical needling coordinates); qi-flow animation and condition-based point-selection trainer. No needling parameters.",
   "procedureDepartments": 63,
-  "procedures": 1640,
-  "procedureStages": 12877,
+  "procedures": 1850,
+  "procedureStages": 15045,
   "authoredProcedureDepartments": [
     "神經外科",
     "神經內科",
@@ -39,7 +39,14 @@
     "心臟外科",
     "血管外科",
     "胸腔外科",
-    "骨科"
+    "骨科",
+    "關節重建與運動醫學",
+    "脊椎外科",
+    "一般外科",
+    "泌尿科",
+    "耳鼻喉科",
+    "眼科",
+    "整形外科與燒傷"
   ],
   "pharmacyScope": "Herbal formula and Western regimen trial-and-error lab: incompatibilities, pregnancy/toxicity rules, formula roles, drug and herb–drug interactions, patient-specific contraindications; no doses.",
   "performanceScope": "Fast-start shell (~210 KB) with per-route lazy loading and idle prefetch; service worker caches the shell and public chunks only."
