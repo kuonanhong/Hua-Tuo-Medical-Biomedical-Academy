@@ -12,6 +12,7 @@
   'use strict';
   const esc = v => String(v == null ? '' : v).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const zh = () => !window.HT.i18n || window.HT.i18n.isZh();
+  const t = k => window.HT.i18n ? window.HT.i18n.t(k) : k;
   const say = (z, e) => zh() ? z : e;
   const pk = v => v && typeof v === 'object' ? (zh() ? v.zh : v.en) : String(v || '');
   const FILE = location.protocol === 'file:';
@@ -47,12 +48,12 @@
     const m = new THREE.SpriteMaterial({ map: tex(c), transparent: true, depthTest: !opts.overlay }); const s = new THREE.Sprite(m); const k = (opts.scale || 0.0045); s.scale.set(c.width * k, c.height * k, 1); s.renderOrder = 10; return s;
   }
   function floorTexture(type) {
-    const c = canvas(512, 512), g = c.getContext('2d'); const base = type === 'ward' ? '#d9d2c3' : type === 'er' ? '#cfd6d8' : '#c9d6d0'; g.fillStyle = base; g.fillRect(0, 0, 512, 512);
+    const c = canvas(512, 512), g = c.getContext('2d'); const base = type === 'ward' || type === 'clinic' ? '#d9d2c3' : type === 'er' ? '#cfd6d8' : '#c9d6d0'; g.fillStyle = base; g.fillRect(0, 0, 512, 512);
     for (let i = 0; i < 4000; i++) { g.fillStyle = `rgba(${Math.random() > 0.5 ? 255 : 0},${Math.random() > 0.5 ? 255 : 0},${Math.random() > 0.5 ? 255 : 0},${Math.random() * 0.06})`; g.fillRect(Math.random() * 512, Math.random() * 512, 2, 2); }
     g.strokeStyle = 'rgba(60,80,75,.22)'; g.lineWidth = 2; for (let i = 0; i <= 512; i += 128) { g.beginPath(); g.moveTo(i, 0); g.lineTo(i, 512); g.moveTo(0, i); g.lineTo(512, i); g.stroke(); }
     const t = tex(c); t.wrapS = t.wrapT = THREE.RepeatWrapping; t.repeat.set(ROOM.w / 1.2, ROOM.d / 1.2); return t;
   }
-  function wallTexture(type) { const c = canvas(256, 256), g = c.getContext('2d'); g.fillStyle = type === 'ward' ? '#efe9dc' : type === 'er' ? '#e4ebee' : '#dfe9e4'; g.fillRect(0, 0, 256, 256); g.fillStyle = 'rgba(255,255,255,.35)'; for (let i = 0; i < 256; i += 64) g.fillRect(0, i, 256, 2); const t = tex(c); t.wrapS = t.wrapT = THREE.RepeatWrapping; t.repeat.set(4, 1); return t; }
+  function wallTexture(type) { const c = canvas(256, 256), g = c.getContext('2d'); g.fillStyle = type === 'ward' || type === 'clinic' ? '#efe9dc' : type === 'er' ? '#e4ebee' : '#dfe9e4'; g.fillRect(0, 0, 256, 256); g.fillStyle = 'rgba(255,255,255,.35)'; for (let i = 0; i < 256; i += 64) g.fillRect(0, i, 256, 2); const t = tex(c); t.wrapS = t.wrapT = THREE.RepeatWrapping; t.repeat.set(4, 1); return t; }
   function screenCanvas(kind, ctx) {
     const c = canvas(512, 320), g = c.getContext('2d'); g.fillStyle = '#071015'; g.fillRect(0, 0, 512, 320);
     g.fillStyle = '#9fe'; g.font = '700 20px system-ui, "Noto Sans TC", sans-serif';
@@ -128,7 +129,13 @@
       case 'recovery': { const bed = box(2.0, 0.25, 0.95, '#f4f6f8', { rough: 0.6 }); bed.position.y = 0.6; g.add(bed); const frame = box(2.05, 0.08, 1.0, '#9aa5aa', { metal: 0.6 }); frame.position.y = 0.45; g.add(frame); const rail = box(2.0, 0.3, 0.03, '#aab4b8', { metal: 0.7 }); rail.position.set(0, 0.85, 0.5); g.add(rail); const pillow = box(0.4, 0.1, 0.5, '#ffffff'); pillow.position.set(-0.75, 0.77, 0); g.add(pillow); const mon = box(0.35, 0.25, 0.06, '#1d262c'); mon.position.set(-1.2, 1.5, -0.4); g.add(mon); const sc = screen(0.3, 0.2, canvas(512, 320), { glow: 1 }); sc.position.set(-1.2, 1.5, -0.365); g.add(sc); g.userData.screen = sc; g.userData.highlight = bed; break; }
       case 'door': { const frame = box(2.2, 2.4, 0.12, '#9aa5aa', { metal: 0.5 }); frame.position.y = 1.2; g.add(frame); [-0.5, 0.5].forEach(x => { const leaf = box(0.96, 2.2, 0.06, '#cfd8dc', { rough: 0.5 }); leaf.position.set(x, 1.15, 0.04); g.add(leaf); const win = box(0.4, 0.5, 0.07, '#9fd3e8', { opacity: 0.7, rough: 0.1, metal: 0.2 }); win.position.set(x, 1.6, 0.05); g.add(win); }); const sign = labelSprite(say('手術室 3 · 限制區', 'THEATRE 3 · RESTRICTED'), { size: 26, bg: 'rgba(192,57,43,.95)' }); sign.position.set(0, 2.6, 0.2); g.add(sign); g.userData.highlight = frame; break; }
       case 'device': {
-        if (/neurosurg|ophthalm|ent\b|plastic|dent/.test(d)) { // operating microscope
+        if (/dentist/.test(d)) { // dental chair + light + delivery unit
+          const base = box(0.6, 0.25, 0.9, '#9aa5aa', { metal: 0.5 }); base.position.y = 0.125; g.add(base); const seat = box(0.55, 0.14, 1.5, '#2a7a9c', { rough: 0.8 }); seat.position.set(0, 0.6, 0.15); seat.rotation.x = -0.15; g.add(seat); const back = box(0.55, 0.14, 0.7, '#2a7a9c', { rough: 0.8 }); back.position.set(0, 0.95, -0.45); back.rotation.x = 0.9; g.add(back); const arm = cyl(0.03, 0.03, 1.2, '#dfe4e7'); arm.position.set(0.5, 1.4, 0); arm.rotation.z = -0.4; g.add(arm); const lamp = cyl(0.16, 0.14, 0.08, '#e9eef2', { emissive: 0xfff4d6, ei: 1.8 }); lamp.position.set(0.85, 1.9, -0.2); g.add(lamp); const unit = box(0.4, 0.5, 0.3, '#f5f6f7'); unit.position.set(-0.7, 1.0, 0.3); g.add(unit); const sc = screen(0.3, 0.2, screenCanvas('imaging'), { glow: 0.9 }); sc.position.set(-0.7, 1.4, 0.3); g.add(sc); g.userData.highlight = seat; g.userData.name = say('牙科治療椅與診療台', 'Dental chair & delivery unit'); }
+        else if (/obstet|gynec/.test(d)) { // ultrasound machine + neonatal warmer
+          const cart = box(0.6, 1.0, 0.6, '#f5f6f7'); cart.position.y = 0.5; g.add(cart); const sc = screen(0.5, 0.34, screenCanvas('imaging'), { glow: 1 }); sc.position.set(0, 1.25, 0.1); sc.rotation.x = -0.25; g.add(sc); const probe = cyl(0.025, 0.035, 0.18, '#dfe4e7'); probe.position.set(0.38, 1.05, 0.2); probe.rotation.z = 0.6; g.add(probe); if (/obstet/.test(d)) { const warmer = box(0.7, 0.1, 0.5, '#ffffff'); warmer.position.set(1.1, 0.95, 0); g.add(warmer); const heat = box(0.5, 0.06, 0.3, '#e9eef2', { emissive: 0xffb347, ei: 0.9 }); heat.position.set(1.1, 1.9, 0); g.add(heat); const pole = cyl(0.03, 0.03, 1.0, '#dfe4e7'); pole.position.set(1.4, 1.4, -0.2); g.add(pole); } g.userData.highlight = cart; g.userData.name = /obstet/.test(d) ? say('超音波與新生兒保溫台', 'Ultrasound & neonatal warmer') : say('超音波機', 'Ultrasound machine'); }
+        else if (/anesth/.test(d)) { // difficult-airway cart + video laryngoscope
+          const cart = box(0.7, 1.0, 0.5, '#2a7a9c', { rough: 0.5 }); cart.position.y = 0.5; g.add(cart); for (let i = 0; i < 4; i++) { const dr = box(0.62, 0.17, 0.02, '#f5f6f7'); dr.position.set(0, 0.2 + i * 0.21, 0.26); g.add(dr); } const top = box(0.74, 0.04, 0.54, '#c9d3d8'); top.position.y = 1.04; g.add(top); const vl = box(0.22, 0.16, 0.03, '#1d262c'); vl.position.set(-0.15, 1.3, 0); g.add(vl); const vls = screen(0.2, 0.14, screenCanvas('info'), { glow: 1 }); vls.position.set(-0.15, 1.3, 0.02); g.add(vls); const mask = new THREE.Mesh(new THREE.SphereGeometry(0.08, 12, 10), new THREE.MeshStandardMaterial({ color: '#e8f4ff', transparent: true, opacity: 0.8 })); mask.position.set(0.2, 1.12, 0.1); g.add(mask); g.userData.highlight = cart; g.userData.name = say('困難氣道車與影像喉頭鏡', 'Difficult-airway cart & video laryngoscope'); }
+        else if (/neurosurg|ophthalm|ent\b|plastic/.test(d)) { // operating microscope
           const base = box(0.7, 0.2, 0.7, '#e9eef2'); base.position.y = 0.1; g.add(base); const col = cyl(0.08, 0.1, 1.9, '#dfe4e7'); col.position.y = 1.05; g.add(col); const arm = box(1.3, 0.1, 0.1, '#dfe4e7'); arm.position.set(0.55, 2.0, 0); g.add(arm); const arm2 = box(0.1, 0.8, 0.1, '#dfe4e7'); arm2.position.set(1.15, 1.6, 0); g.add(arm2); const head = box(0.3, 0.35, 0.3, '#2d3436', { rough: 0.4 }); head.position.set(1.15, 1.1, 0); g.add(head); const lens = cyl(0.06, 0.06, 0.1, '#111'); lens.position.set(1.15, 0.9, 0); g.add(lens); g.userData.highlight = head; g.userData.name = say('手術顯微鏡', 'Operating microscope'); }
         else if (/cardiac-surg/.test(d)) { const body = box(0.9, 1.0, 0.6, '#f5f6f7'); body.position.y = 0.5; g.add(body); for (let i = 0; i < 4; i++) { const pump = cyl(0.12, 0.12, 0.08, '#2a7a9c', { metal: 0.3 }); pump.rotation.x = Math.PI / 2; pump.position.set(-0.3 + i * 0.2, 1.1, 0.25); g.add(pump); } const res = cyl(0.12, 0.12, 0.4, '#e8f4ff', { opacity: 0.8 }); res.position.set(0.35, 1.3, -0.1); g.add(res); const sc = screen(0.4, 0.26, screenCanvas('anesthesia'), { glow: 0.9 }); sc.position.set(-0.15, 1.35, 0.31); g.add(sc); g.userData.highlight = body; g.userData.name = say('體外循環機', 'Heart-lung machine'); }
         else if (/ortho|spine|joint|vascular|cardiology|urolog|pain|radiolog/.test(d)) { const base = box(0.9, 0.3, 0.6, '#e9eef2'); base.position.y = 0.15; g.add(base); const col = box(0.3, 1.4, 0.3, '#dfe4e7'); col.position.set(-0.3, 1.0, 0); g.add(col); const arc = new THREE.Mesh(new THREE.TorusGeometry(0.9, 0.07, 10, 40, Math.PI), new THREE.MeshStandardMaterial({ color: '#f5f6f7', roughness: 0.4 })); arc.position.set(0.5, 1.2, 0); arc.rotation.z = Math.PI; arc.rotation.y = Math.PI / 2; g.add(arc); const src = box(0.3, 0.2, 0.3, '#2d3436'); src.position.set(0.5, 0.35, 0); g.add(src); const det = box(0.4, 0.1, 0.4, '#2d3436'); det.position.set(0.5, 2.05, 0); g.add(det); g.userData.highlight = arc; g.userData.name = /cardiology/.test(d) ? say('心導管 X 光機', 'Cath-lab C-arm') : say('C 臂 X 光機', 'C-arm fluoroscopy'); }
@@ -141,18 +148,46 @@
     return g;
   }
 
+  // Short "what is this / what to check" notes shown beside equipment when it is clicked (education only).
+  const INFO = {
+    field: ['手術台與病人', 'Operating table & patient', '確認病人身分、手術部位標記、擺位與受壓點保護；手術野依工序逐層顯示。', 'Confirm identity, site marking, positioning and pressure-point padding; the field reveals layers as the stages progress.'],
+    monitor: ['生理監視器', 'Patient monitor', '心電圖、血壓、血氧、呼氣末二氧化碳與體溫；先看趨勢與警報，再看單一數值。', 'ECG, blood pressure, SpO₂, EtCO₂ and temperature; read trends and alarms before single numbers.'],
+    anesthesia: ['麻醉機', 'Anaesthesia machine', '氣體供應、呼吸迴路、揮發器與呼吸器；每台刀前完成機器檢查，二氧化碳波形確認插管位置。', 'Gas supply, breathing circuit, vaporiser and ventilator; check before every case and confirm tube position with capnography.'],
+    tray: ['器械台', 'Instrument tray', '刷手護理師管理器械與紗布；關閉前器械、紗布、針頭計數必須相符。', 'The scrub nurse manages instruments and swabs; counts must match before closure.'],
+    cart: ['藥物車', 'Medication cart', '依標籤與雙人核對給藥；高警訊藥物分區存放；本站不提供劑量。', 'Give drugs by label with a two-person check; high-alert drugs are segregated; no doses are given here.'],
+    drains: ['引流／抽吸／點滴架', 'Drains, suction & IV pole', '記錄引流量與性狀；突然大量鮮紅引流是出血警訊。', 'Record drain volume and character; a sudden large bright-red output signals bleeding.'],
+    imaging: ['影像工作站', 'Imaging workstation', '核對病人與左右側，比較術前影像與正常對照；點開看本科影像孿生。', 'Check patient and side, compare pre-operative images with normal; open the specialty imaging twin.'],
+    lab: ['檢驗／血氣', 'Labs & blood gas', '血紅素、電解質、乳酸與凝血；異常值要回報並複驗。', 'Haemoglobin, electrolytes, lactate and coagulation; report and repeat abnormal values.'],
+    chart: ['病歷與同意書', 'Chart & consent', '病史、過敏、用藥、同意書與術前檢查；任何不一致先停下來澄清。', 'History, allergies, medicines, consent and pre-op tests; stop and clarify any mismatch.'],
+    whiteboard: ['白板／WHO 核對', 'Board / WHO checklist', '劃刀前團隊暫停：身分、手術、側別、過敏、失血與抗生素。', 'Time-out before incision: identity, procedure, side, allergy, blood loss and antibiotics.'],
+    huddle: ['團隊討論／交班', 'Huddle & handover', '以 SBAR 交班：情境、背景、評估、建議；確認接手者複述。', 'Hand over with SBAR; ask the receiver to read back.'],
+    recovery: ['恢復室／加護床', 'Recovery / ICU bed', '甦醒評估、疼痛、噁心、出血與呼吸；符合標準才轉出。', 'Assess emergence, pain, nausea, bleeding and breathing; discharge only when criteria are met.'],
+    door: ['門口／轉送', 'Door & transfer', '限制區管制、轉送前再次核對與監測、交接文件。', 'Restricted-zone control, re-check and monitoring before transfer, handover documents.'],
+    device: ['專科設備', 'Specialty device', '依科別：顯微鏡、體外循環機、C 臂、內視鏡塔、超音波、牙科治療椅或困難氣道車；使用前檢查與輻射／電燒安全。', 'By specialty: microscope, heart-lung machine, C-arm, endoscopy tower, ultrasound, dental chair or airway cart; pre-use checks and radiation / diathermy safety.']
+  };
+
   // ---------------------------------------------------------------- the scene
   function mount(host, api) {
     const el = document.createElement('div'); el.className = 'th3d'; host.appendChild(el);
     const cv = document.createElement('canvas'); el.appendChild(cv);
     const tip = document.createElement('div'); tip.className = 'th3d-tip'; tip.hidden = true; el.appendChild(tip);
     const hint = document.createElement('div'); hint.className = 'th3d-hint'; el.appendChild(hint);
+    const card = document.createElement('div'); card.className = 'th3d-card'; card.hidden = true; el.appendChild(card); let cardFor = null;
+    function showCard(id, ev) {
+      const o = objs[id]; const inf = INFO[id] || [id, id, '', '']; const name = (o && o.userData.name) || (zh() ? inf[0] : inf[1]);
+      cardFor = id; card.innerHTML = `<button type="button" class="th3d-x" aria-label="close">×</button><b>${esc(name)}</b><p>${esc(zh() ? inf[2] : inf[3])}</p><div class="th3d-card-row"><button type="button" class="chip small" data-c-open>${esc(t('equipDetails'))}</button><button type="button" class="chip small" data-c-fly>${esc(t('goThere'))}</button></div>`;
+      card.hidden = false; placeCard();
+      card.querySelector('.th3d-x').onclick = () => { card.hidden = true; cardFor = null; };
+      card.querySelector('[data-c-open]').onclick = () => { card.hidden = true; api.onHot(id); };
+      card.querySelector('[data-c-fly]').onclick = () => flyTo(id);
+    }
+    function placeCard() { if (card.hidden || !cardFor || !objs[cardFor]) return; const v = objs[cardFor].position.clone(); v.y = 1.6; v.project(camera); const w = el.clientWidth, h = el.clientHeight; const x = (v.x * 0.5 + 0.5) * w, y = (-v.y * 0.5 + 0.5) * h; const cw = Math.min(280, w - 16); card.style.width = cw + 'px'; const left = x + 18 + cw > w ? Math.max(8, x - 18 - cw) : x + 18; card.style.left = left + 'px'; card.style.top = Math.max(8, Math.min(h - card.offsetHeight - 8, y - 40)) + 'px'; card.style.opacity = v.z > 1 ? 0 : 1; }
     const handle = { el, api, dispose, update, setView, zoomBy, resize, flyTo };
     let renderer, scene, camera, raycaster, clock, raf = null, disposed = false;
     const objs = {}, people = {}, pins = [], rings = {}; let targetRing = null, arrow = null, bubbles = [], handMarkers = {}, mentorHome = null;
     const cam = { view: api.st.view || 'third', yaw: 0.2, pitch: -0.35, dist: 4.2, fov: 70, pan: new THREE.Vector3(0, 1.0, 0), pos: new THREE.Vector3(), look: new THREE.Vector3(), tPos: new THREE.Vector3(), tLook: new THREE.Vector3(), first: { yaw: -2.55, pitch: -0.62 } };
     const ecg = { c: canvas(512, 160), buf: [], t: 0 };
-    let brainTex = null, photo = null;
+    let brainTex = null, photo = null; const photoState = { tex: null, on: api.photoEnabled !== false, panorama: false, print: null, floorMat: null, bg: null };
 
     renderer = new THREE.WebGLRenderer({ canvas: cv, antialias: true, powerPreference: 'high-performance' });
     renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, window.innerWidth < 700 ? 1.5 : 2));
@@ -172,8 +207,16 @@
     for (let x = -3; x <= 3; x += 3) for (let z = -2.5; z <= 2.5; z += 2.5) { const p = new THREE.Mesh(new THREE.PlaneGeometry(1.2, 0.6), new THREE.MeshStandardMaterial({ color: 0xffffff, emissive: 0xffffff, emissiveIntensity: 0.9 })); p.rotation.x = Math.PI / 2; p.position.set(x, ROOM.h - 0.01, z); roomGroup.add(p); }
     // viewing window to the corridor on the far wall
     const win = new THREE.Mesh(new THREE.PlaneGeometry(3.2, 1.2), new THREE.MeshStandardMaterial({ color: 0x9fd3e8, emissive: 0x6fb3d8, emissiveIntensity: 0.35, roughness: 0.1, metalness: 0.3 })); win.position.set(3.2, 1.7, -ROOM.d / 2 + 0.02); roomGroup.add(win);
+    // image-based lighting: a small procedural "room" (bright ceiling panels, pale walls) prefiltered with PMREM gives
+    // metal and glossy surfaces believable reflections without any external HDR file.
+    try {
+      const envScene = new THREE.Scene(); const envBox = new THREE.Mesh(new THREE.BoxGeometry(12, 4, 10), new THREE.MeshBasicMaterial({ color: 0x9aa8a4, side: THREE.BackSide })); envScene.add(envBox);
+      [[-3, 1.9, -2], [3, 1.9, -2], [-3, 1.9, 2], [3, 1.9, 2], [0, 1.9, 0]].forEach(([x, y, z]) => { const pnl = new THREE.Mesh(new THREE.PlaneGeometry(1.6, 0.8), new THREE.MeshBasicMaterial({ color: 0xffffff })); pnl.position.set(x, y, z); pnl.rotation.x = Math.PI / 2; envScene.add(pnl); });
+      const win2 = new THREE.Mesh(new THREE.PlaneGeometry(3, 1.2), new THREE.MeshBasicMaterial({ color: 0xbfe3f2 })); win2.position.set(3, 0.4, -4.9); envScene.add(win2);
+      const pmrem = new THREE.PMREMGenerator(renderer); scene.environment = pmrem.fromScene(envScene, 0.04).texture; if ('environmentIntensity' in scene) scene.environmentIntensity = 0.35; pmrem.dispose(); envScene.traverse(o => { if (o.geometry) o.geometry.dispose(); if (o.material) o.material.dispose(); });
+    } catch (e) { /* older GPUs: fall back to the lights below */ }
     // lights
-    scene.add(new THREE.HemisphereLight(0xffffff, 0x8a9a95, 0.75));
+    scene.add(new THREE.HemisphereLight(0xffffff, 0x8a9a95, 0.5));
     const amb = new THREE.AmbientLight(0xffffff, 0.25); scene.add(amb);
     const lamps = [];
     if (type === 'or' || type === 'er' || type === 'imaging') {
@@ -189,7 +232,20 @@
     // hand markers
     ['left', 'right'].forEach(h => { const s = labelSprite(h === 'left' ? 'L' : 'R', { size: 34, bg: h === 'left' ? 'rgba(20,80,141,.95)' : 'rgba(113,80,33,.95)', border: '#fff', scale: 0.0032 }); s.visible = false; scene.add(s); handMarkers[h] = s; });
     // optional real photograph (licensed; http only — file:// images taint WebGL textures)
-    if (!FILE && api.photo) { const loader = new THREE.TextureLoader(); loader.load(api.photo.src, t => { if (disposed) return; t.colorSpace = THREE.SRGBColorSpace; if (api.photo.panorama) { t.mapping = THREE.EquirectangularReflectionMapping; scene.background = t; scene.environment = t; scene.fog = null; roomGroup.visible = false; floor.material = new THREE.ShadowMaterial({ opacity: 0.35 }); const cap = labelSprite(say('實景 360°・', '360° photo · ') + (api.photo.credit || ''), { size: 22, bg: 'rgba(16,28,32,.75)', scale: 0.003 }); cap.position.set(0, 0.25, 2.6); scene.add(cap); } else { const print = new THREE.Mesh(new THREE.PlaneGeometry(4.2, 2.6), new THREE.MeshStandardMaterial({ map: t, roughness: 0.6 })); print.position.set(-1.2, 1.75, -ROOM.d / 2 + 0.03); scene.add(print); const cap = labelSprite(say('實景參考 · ', 'Reference photo · ') + (api.photo.credit || ''), { size: 22, bg: 'rgba(16,28,32,.75)' }); cap.position.set(-1.2, 0.3, -ROOM.d / 2 + 0.1); scene.add(cap); } photo = t; }, undefined, () => {}); }
+    const photoGroup = new THREE.Group(); scene.add(photoGroup);
+    function applyPhoto(on) {
+      photoState.on = on; const t = photoState.tex; if (!t) return;
+      if (photoState.panorama) {
+        if (on) { if (!photoState.bg) { photoState.bg = scene.background; photoState.floorMat = floor.material; photoState.env = scene.environment; } scene.background = t; scene.environment = t; scene.fog = null; roomGroup.visible = false; floor.material = new THREE.ShadowMaterial({ opacity: 0.35 }); }
+        else { scene.background = photoState.bg || new THREE.Color(0x0f1a1e); scene.environment = photoState.env || null; scene.fog = new THREE.Fog(0x0f1a1e, 16, 34); roomGroup.visible = true; if (photoState.floorMat) floor.material = photoState.floorMat; }
+      }
+      photoGroup.visible = on;
+    }
+    if (!FILE && api.photo) { const loader = new THREE.TextureLoader(); loader.load(api.photo.src, t => { if (disposed) return; t.colorSpace = THREE.SRGBColorSpace; photoState.tex = t; photoState.panorama = !!api.photo.panorama; if (api.photo.panorama) { t.mapping = THREE.EquirectangularReflectionMapping; const cap = labelSprite(say('實景 360°・', '360° photo · ') + (api.photo.credit || ''), { size: 22, bg: 'rgba(16,28,32,.75)', scale: 0.003 }); cap.position.set(0, 0.25, 2.6); photoGroup.add(cap); } else { const print = new THREE.Mesh(new THREE.PlaneGeometry(4.2, 2.6), new THREE.MeshStandardMaterial({ map: t, roughness: 0.6 })); print.position.set(-1.2, 1.75, -ROOM.d / 2 + 0.03); photoGroup.add(print); const cap = labelSprite(say('實景參考 · ', 'Reference photo · ') + (api.photo.credit || ''), { size: 22, bg: 'rgba(16,28,32,.75)' }); cap.position.set(-1.2, 0.3, -ROOM.d / 2 + 0.1); photoGroup.add(cap); } photo = t; applyPhoto(photoState.on); }, undefined, () => {}); }
+    handle.setPhoto = applyPhoto; handle.showCard = showCard;
+    // test/automation helper: screen position (CSS px inside the 3D element) of an equipment item
+    handle.screenPos = (id, y) => { const o = objs[id]; if (!o) return null; const v = o.position.clone(); v.y = y == null ? 1.0 : y; v.project(camera); const r = el.getBoundingClientRect(); return { x: r.left + (v.x * 0.5 + 0.5) * r.width, y: r.top + (-v.y * 0.5 + 0.5) * r.height, visible: v.z < 1 && Math.abs(v.x) < 1 && Math.abs(v.y) < 1 }; };
+    window.__ht3d = handle;
     if (!FILE && api.brainSlice && objs.imaging && objs.imaging.userData.brainScreen) { new THREE.TextureLoader().load(api.brainSlice, t => { if (disposed) return; t.colorSpace = THREE.SRGBColorSpace; const sc = objs.imaging.userData.brainScreen; sc.material.map = t; sc.material.emissiveMap = t; sc.material.needsUpdate = true; brainTex = t; }, undefined, () => {}); }
 
     // ---- camera
@@ -215,7 +271,7 @@
     function pick(ev) { const r = cv.getBoundingClientRect(); const v = new THREE.Vector2(((ev.clientX - r.left) / r.width) * 2 - 1, -((ev.clientY - r.top) / r.height) * 2 + 1); raycaster.setFromCamera(v, camera); const hits = raycaster.intersectObjects(scene.children, true); for (const h of hits) { let o = h.object; while (o) { if (o.userData && (o.userData.hot || o.userData.zone !== undefined || o.userData.role)) return o.userData; o = o.parent; } } return null; }
     cv.addEventListener('pointerdown', e => { cv.setPointerCapture(e.pointerId); pointers.set(e.pointerId, e); ptr = { x: e.clientX, y: e.clientY, moved: 0, yaw: cam.view === 'first' ? cam.first.yaw : cam.yaw, pitch: cam.view === 'first' ? cam.first.pitch : cam.pitch, pan: cam.pan.clone(), btn: e.button, shift: e.shiftKey }; if (pointers.size === 2) { const [a, b] = [...pointers.values()]; pinchD = Math.hypot(a.clientX - b.clientX, a.clientY - b.clientY); } });
     cv.addEventListener('pointermove', e => { if (pointers.has(e.pointerId)) pointers.set(e.pointerId, e); if (pointers.size === 2) { const [a, b] = [...pointers.values()]; const d = Math.hypot(a.clientX - b.clientX, a.clientY - b.clientY); if (pinchD) zoomBy(pinchD / d); pinchD = d; return; } if (!ptr) { const u = pick(e); const id = u ? (u.hot || (u.zone !== undefined ? 'zone' + u.zone : u.role)) : null; if (id !== hoverId) { hoverId = id; cv.style.cursor = id ? 'pointer' : 'grab'; if (u) { tip.textContent = u.zone !== undefined ? `${u.zone + 1}. ${pk(api.c.tiles[u.zone])}` : u.hot ? (objs[u.hot].userData.name || pk(api.hotspots[u.hot])) + ' · ' + say('點擊查看', 'click for details') : pk((api.roles.find(r => r.id === u.role) || {})); tip.hidden = false; } else tip.hidden = true; } if (!tip.hidden) { const r = el.getBoundingClientRect(); tip.style.left = (e.clientX - r.left + 14) + 'px'; tip.style.top = (e.clientY - r.top + 14) + 'px'; } return; } const dx = e.clientX - ptr.x, dy = e.clientY - ptr.y; ptr.moved = Math.max(ptr.moved, Math.abs(dx) + Math.abs(dy)); if (cam.view === 'first') { cam.first.yaw = ptr.yaw - dx * 0.005; cam.first.pitch = Math.max(-1.2, Math.min(0.8, ptr.pitch + dy * 0.005)); } else if (ptr.btn === 2 || ptr.shift) { const right = new THREE.Vector3(Math.cos(cam.yaw), 0, -Math.sin(cam.yaw)); cam.pan.copy(ptr.pan).addScaledVector(right, -dx * 0.004 * cam.dist); cam.pan.y = Math.max(0.3, Math.min(2.2, ptr.pan.y + dy * 0.004 * cam.dist)); } else { cam.yaw = ptr.yaw - dx * 0.006; cam.pitch = Math.max(-1.35, Math.min(-0.05, ptr.pitch - dy * 0.006)); } });
-    const up = e => { pointers.delete(e.pointerId); if (pointers.size < 2) pinchD = 0; if (!ptr) return; const moved = ptr.moved; ptr = null; if (moved < 6) { const u = pick(e); if (u) { if (u.zone !== undefined) api.onZone(u.zone); else if (u.hot) api.onHot(u.hot); else if (u.role) api.onRole && api.onRole(u.role); } } };
+    const up = e => { pointers.delete(e.pointerId); if (pointers.size < 2) pinchD = 0; if (!ptr) return; const moved = ptr.moved; ptr = null; if (moved < 6) { const u = pick(e); if (u) { if (u.zone !== undefined) api.onZone(u.zone); else if (u.hot) { showCard(u.hot, e); if (api.onPick) api.onPick(u.hot); } else if (u.role) api.onRole && api.onRole(u.role); } } };
     cv.addEventListener('pointerup', up); cv.addEventListener('pointercancel', up); cv.addEventListener('pointerleave', e => { if (!pointers.size) { ptr = null; tip.hidden = true; } });
     cv.addEventListener('wheel', e => { e.preventDefault(); zoomBy(e.deltaY > 0 ? 1.1 : 0.9); }, { passive: false });
     cv.addEventListener('contextmenu', e => e.preventDefault());
@@ -251,7 +307,7 @@
     function drawEcg(dt) { const v = cur.vitals || { hr: 72 }; const rr = 60 / Math.max(30, v.hr || 72); ecg.t += dt; const ph = ecg.t % rr; const y = g(ph, 0.08, 0.02, 0.12) + g(ph, 0.2, 0.01, -0.1) + g(ph, 0.22, 0.012, 1.1) + g(ph, 0.25, 0.012, -0.25) + g(ph, 0.45, 0.05, 0.25); ecg.buf.push(y); if (ecg.buf.length > 500) ecg.buf.shift(); const x = ecg.c.getContext('2d'); x.fillStyle = '#061a10'; x.fillRect(0, 0, 512, 160); x.strokeStyle = '#4dff8f'; x.lineWidth = 3; x.beginPath(); ecg.buf.forEach((val, i) => { const px = i + 6, py = 92 - val * 50; if (i) x.lineTo(px, py); else x.moveTo(px, py); }); x.stroke(); x.fillStyle = '#4dff8f'; x.font = '700 28px system-ui'; x.fillText('HR ' + (v.hr || 72), 12, 36); x.fillStyle = '#ff6b6b'; x.fillText('BP ' + (v.bp || '118/72'), 150, 36); x.fillStyle = '#74c0fc'; x.fillText('SpO₂ ' + (v.spo2 || 98) + '%', 330, 36); x.fillStyle = '#ffd166'; x.font = '700 22px system-ui'; x.fillText('RR ' + (v.rr || 14) + '  T ' + (v.temp || 36.6) + '°', 12, 148); }
     function loop() { if (disposed) return; raf = requestAnimationFrame(loop); const dt = Math.min(0.05, clock.getDelta()); const now = clock.elapsedTime;
       if (!el.isConnected) return; if (document.hidden) return;
-      updateCamera(dt);
+      updateCamera(dt); placeCard();
       drawEcg(dt); ['monitor', 'recovery', 'imaging'].forEach(id => { const sc = objs[id] && objs[id].userData.screen; if (sc) { if (sc.material.map.image !== ecg.c) { sc.material.map.image = ecg.c; sc.material.emissiveMap = sc.material.map; } sc.material.map.needsUpdate = true; } });
       // target ring + arrow
       Object.keys(rings).forEach(id => { const r = rings[id]; const on = cur.target && cur.target.hotspot === id; r.material.opacity += ((on ? 0.6 + 0.3 * Math.sin(now * 5) : 0) - r.material.opacity) * Math.min(1, dt * 8); const s = on ? 1 + 0.08 * Math.sin(now * 5) : 1; r.scale.set(s, s, 1); });
@@ -276,5 +332,5 @@
   }
 
   window.HT = window.HT || {};
-  window.HT.theatre3d = { available, ensure, mount, POS, ROLE_POS };
+  window.HT.theatre3d = { available, ensure, mount, POS, ROLE_POS, INFO };
 })(window);

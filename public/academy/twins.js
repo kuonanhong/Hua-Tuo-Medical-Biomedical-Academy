@@ -257,7 +257,7 @@
   }
 
   // ================================================================ specialty imaging (specialty-twins.js, lazy)
-  async function ensureSpecialty() { if (window.HT.specialtyTwins) return true; try { await window.HT.loadCss('specialty-twins.css'); await window.HT.loadScript('specialty-twins.js'); } catch (e) { return false; } return !!window.HT.specialtyTwins; }
+  async function ensureSpecialty() { if (!window.HT.specialtyTwins) { try { await window.HT.loadCss('specialty-twins.css'); await window.HT.loadScript('specialty-twins.js'); } catch (e) { return false; } } if (window.HT.specialtyTwins && !window.HT.specialtyTwins._ext) { window.HT.specialtyTwins._ext = true; for (const f of ['specialty-twins-2.js', 'specialty-twins-3.js']) { try { await window.HT.loadScript(f); } catch (e) { /* optional extension */ } } } return !!window.HT.specialtyTwins; }
   function specialtyPage(body, params) {
     const sp = window.HT.specialtyTwins; const deps = sp.departments(); const dmeta = id => ((window.HT_DEPARTMENTS && window.HT_DEPARTMENTS.departments) || []).find(d => d.id === id);
     let dept = params.get('department'); if (!deps.some(d => d.id === dept)) dept = deps[0] ? deps[0].id : '';

@@ -1217,6 +1217,12 @@
   // ================================================================ public API
   const departments = () => D.map(d => ({ id: d.id, zh: d.zh, en: d.en, modalities: [...new Set(d.conds.flatMap(c => c.views.map(v => MOD[v.mod] || v.mod)))], conditions: d.conds.map(c => ({ id: c.id, zh: c.zh, en: c.en, views: c.views.map(v => v.id), therapies: c.rx.slice() })) }));
   const has = id => D.some(d => d.id === id);
+  // Extension hook (specialty-twins-2.js and later modules): register({ id, zh, en, rx, conds }) appends a department so
+  // departments()/has()/render()/embed() cover it; registerRenderer(name, fn) shares a drawing base; `bases` exposes the
+  // procedural primitives (chest X-ray, CT body, ultrasound fan, endoscope circle, OCT, chart frame, …) for reuse.
+  const bases = { W, H, TAU, PI, clamp, lerp, grey, rng, noise, film, grad, rgrad, curve, paint, shape, poly, ell, rect, line, txt, bone, soft, dots, labeler, hud, fan, scope, vessels, chart, cxr, ctBody, chestCT, oct, fundus, kneeSagMR, shoulderMR, spineSag, hydroUS, audiogram, say, bi, esc, P, sev, MOD, MODZH };
+  const register = d => { if (!d || !d.id || !Array.isArray(d.conds) || has(d.id)) return false; D.push({ id: d.id, zh: d.zh, en: d.en, rx: d.rx || {}, conds: d.conds }); return true; };
+  const registerRenderer = (name, fn) => { if (typeof fn === 'function' && !(name in bases)) bases[name] = fn; return bases[name]; };
   window.HT = window.HT || {};
-  window.HT.specialtyTwins = { departments, has, render: (root, opts) => panel(root, opts, false), embed: (root, opts) => panel(root, opts, true), MOD };
+  window.HT.specialtyTwins = { departments, has, render: (root, opts) => panel(root, opts, false), embed: (root, opts) => panel(root, opts, true), MOD, register, registerRenderer, bases };
 })(window);

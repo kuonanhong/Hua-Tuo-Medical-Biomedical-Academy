@@ -93,7 +93,7 @@
       if (cleanupBench) { cleanupBench(); cleanupBench = null; }
       const box = root.querySelector('#procBench'); if (!box || !selected) return;
       currentContext = { id: 'procedure-' + selected.id, title: pk(m, 'title') + ' · ' + selected.title.zh, titleEn: m.titleEn + ' · ' + selected.title.en, summary: selected.patient.zh + '\n工序站：' + selected.tiles.map(x => x.zh).join('、'), summaryEn: selected.patient.en + '\nStations: ' + selected.tiles.map(x => x.en).join(', ') };
-      cleanupBench = window.HT.workbench.mount(box, { spec: selected, library: cases, storageId: 'proc', hideSelector: false, onLocked: c => { window.HT.app.toast(say('此程序需學習通行證。', 'This procedure needs a learning pass.')); }, onProgress: () => drawList(), onComplete: () => { drawList(); window.HT.app.recordSim('procedure-' + selected.id, 100); } });
+      cleanupBench = window.HT.workbench.mount(box, { spec: selected, library: cases, storageId: 'proc', hideSelector: false, onLocked: c => { window.HT.app.toast(say('此程序需學習通行證。', 'This procedure needs a learning pass.')); }, onProgress: () => drawList(), onSelectCase: c => { selected = c; history.replaceState(null, '', `#procedures/${encodeURIComponent(c.id)}?department=${dept}`); drawList(); }, onComplete: () => { drawList(); window.HT.app.recordSim('procedure-' + selected.id, 100); } });
       box.querySelector('[data-case]')?.addEventListener('change', e => { const c = cases.find(x => x.id === e.target.value); if (c && !c.locked) { selected = c; history.replaceState(null, '', `#procedures/${encodeURIComponent(c.id)}?department=${dept}`); drawList(); } });
     }
     root.querySelector('#procSearch').oninput = e => { state.q = e.target.value; drawList(); };
