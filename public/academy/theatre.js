@@ -197,20 +197,37 @@
   }
 
   // ---------------------------------------------------------------- mount / render
-  function state(board) { let st = states.get(board); if (!st) { st = { view: 'third', zoom: 1, pan: { x: 0, y: 0 }, panel: null, log: [], logged: {}, clock: 8 * 60, twinCleanup: null, lastStage: -1, ecgRaf: null, three: null, mode3d: prefer3d(), failed3d: false, renderToken: null, caseId: null, realCleanup: null }; states.set(board, st); } return st; }
+  function state(board) { let st = states.get(board); if (!st) { st = { view: 'third', zoom: 1, pan: { x: 0, y: 0 }, panel: null, photoOpen: false, log: [], logged: {}, clock: 8 * 60, twinCleanup: null, lastStage: -1, ecgRaf: null, three: null, mode3d: prefer3d(), failed3d: false, renderToken: null, caseId: null, realCleanup: null }; states.set(board, st); } return st; }
   function photoPref() { try { return localStorage.getItem('ht-theatre-photo') !== '0'; } catch (e) { return true; } }
   function prefer3d() { try { const v = localStorage.getItem('ht-theatre-3d'); if (v === '0') return false; if (v === '1') return true; } catch (e) { /* ignore */ } return !!(window.HT.theatre3d && window.HT.theatre3d.available()) && !(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches); }
   function brainSliceFor(c) { const t = pk(c.title); const cond = /中風|stroke|取栓|thrombect/i.test(t) ? 'stroke-mca' : /出血|h(a)?emorrh/i.test(t) ? 'hemorrhage' : /膠質|glioma|腫瘤|tumou?r/i.test(t) ? 'glioma' : /水腦|hydroceph|分流|shunt|ETV/i.test(t) ? 'hydrocephalus' : /巴金森|帕金森|parkinson|DBS/i.test(t) ? 'parkinson' : /失智|dementia|阿茲|alzheimer/i.test(t) ? 'alzheimer' : /硬化|sclerosis|MS\b/i.test(t) ? 'ms' : /癲癇|epilep|顳葉/i.test(t) ? 'tle-hs' : 'normal'; return `data/twins/brain/${cond}/axial-05.png`; }
   let scenesTried = false;
   function loadScenes(ctx) { if (scenesTried || window.HT_SCENE_PHOTOS || !window.HT.loadScript) return; scenesTried = true; window.HT.loadScript('assets/scenes/scenes.js').then(() => { if (window.HT_SCENE_PHOTOS && window.HT_SCENE_PHOTOS.scenes && window.HT_SCENE_PHOTOS.scenes.length) ctx.rerender(); }).catch(() => {}); }
-  function scenePhoto(c) { const list = window.HT_SCENE_PHOTOS && window.HT_SCENE_PHOTOS.scenes; if (!list || !list.length) return null; const room = roomType(c), d = c.department || ''; const byDept = list.filter(p => p.department === d), byRoom = list.filter(p => p.room === room); const pick = byDept.find(p => p.panorama) || byDept[0] || byRoom.find(p => p.panorama) || byRoom[0] || null; return pick ? { src: 'assets/scenes/' + pick.file, panorama: !!pick.panorama, credit: pick.credit || '' } : null; }
+  function scenePhoto(c) {
+    const entries = window.HT_SCENE_PHOTOS && window.HT_SCENE_PHOTOS.scenes;
+    if (!Array.isArray(entries)) return null;
+    const list = entries.filter(p => p && /^[a-z0-9][a-z0-9._-]*\.(?:jpe?g|png|webp)$/i.test(p.file || ''));
+    const room = roomType(c), d = c.department || '';
+    const byDept = d ? list.filter(p => p.department === d) : [];
+    const byRoom = list.filter(p => !p.department && p.room === room);
+    const pick = byDept.find(p => p.panorama) || byDept[0] || byRoom.find(p => p.panorama) || byRoom[0];
+    if (!pick) return null;
+    const label = pick.label && typeof pick.label === 'object' ? [pick.label.zh, pick.label.en].filter(Boolean).join(' / ') : pick.label || pick.title || '實景照片 / Real scene reference';
+    const source = /^https?:\/\/[^\s<>"']+$/i.test(pick.source || '') ? pick.source : '';
+    const authorUrl = /^https?:\/\/[^\s<>"']+$/i.test(pick.authorUrl || '') ? pick.authorUrl : '';
+    return { src: 'assets/scenes/' + pick.file, panorama: !!pick.panorama, credit: pick.credit || '', label, source, authorUrl, author: pick.author || '', width: Number(pick.storedWidth || pick.width) || 0, height: Number(pick.storedHeight || pick.height) || 0 };
+  }
+  function sceneReferenceHtml(photo, open) {
+    if (!photo) return '';
+    return `<details class="th-scene-reference" data-th-scene-reference${open ? ' open' : ''}><summary><span aria-hidden="true">📷</span> 實景照片 / Real scene reference</summary><figure><img loading="lazy" decoding="async" src="${esc(photo.src)}" alt="${esc(photo.label)}"><figcaption><strong>${esc(photo.label)}</strong><p>${esc(photo.credit)}</p><p class="small">實際環境與設備參考，與本教學病例分開。 / Real settings and equipment, separate from this teaching case.</p><div class="th-scene-links">${photo.authorUrl ? `<a href="${esc(photo.authorUrl)}" target="_blank" rel="noopener noreferrer">${esc(photo.author || '作者 / Author')}</a>` : ''}${photo.source ? `<a href="${esc(photo.source)}" target="_blank" rel="noopener noreferrer">原始來源 / Original source</a>` : ''}<a href="scene-credits.html" target="_blank" rel="noopener noreferrer">照片與授權 / Photos and licences</a></div></figcaption></figure></details>`;
+  }
   function viewBox(st, c) { if (st.view === 'second') { const w = 760 / st.zoom, h = 456 / st.zoom; return `${640 - w / 2 + st.pan.x} ${340 - h / 2 + st.pan.y} ${w} ${h}`; } return `0 0 1200 720`; }
   function logEvent(st, text, kind) { const hh = Math.floor(st.clock / 60), mm = st.clock % 60; st.log.unshift({ t: `${String(hh).padStart(2, '0')}:${String(mm).padStart(2, '0')}`, text, kind: kind || '' }); st.log = st.log.slice(0, 40); }
 
   function mountBoard(board, ctx) {
     const holder = ctx.root || board; const st = state(holder); const c = ctx.c, engine = ctx.engine, s = engine.step; const map = assign(c); const roles = team(c);
     states.set(board, st); st.ctx = ctx;
-    if (st.caseId !== c.id) { dispose(holder); st.caseId = c.id; st.log = []; st.logged = {}; st.lastStage = -1; st.panel = null; }
+    if (st.caseId !== c.id) { dispose(holder); st.caseId = c.id; st.log = []; st.logged = {}; st.lastStage = -1; st.panel = null; st.photoOpen = false; }
     const renderToken = {}; st.renderToken = renderToken;
     const doneStations = new Set((engine.history || []).map(h => c.stages[h.stage]?.zone).filter(z => z !== undefined));
     const perStage = Math.max(2, Math.round((c.minutes || 20) / Math.max(1, c.stages.length)));
@@ -235,13 +252,16 @@
     const hud = `<div class="th-hud"><div class="th-views"><button type="button" class="chip ${st.view === 'first' ? 'active' : ''}" data-view="first">${t('viewFirst')}</button><button type="button" class="chip ${st.view === 'second' ? 'active' : ''}" data-view="second">${t('viewSecond')}</button><button type="button" class="chip ${st.view === 'third' ? 'active' : ''}" data-view="third">${t('viewThird')}</button><label class="small ${st.view === 'second' || use3d ? '' : 'dim'}">${t('zoomIn')} <input type="range" data-zoom min="1" max="3" step=".25" value="${st.zoom}" ${st.view === 'second' || use3d ? '' : 'disabled'}></label>${window.HT.theatre3d && window.HT.theatre3d.available() ? `<button type="button" class="chip ${use3d ? 'active' : ''}" data-th-3d title="${esc(say('3D 數位孿生／2D 示意圖', '3D digital twin / 2D schematic'))}">${use3d ? '3D' : '2D'}</button>${use3d && scenePhoto(c) ? `<button type="button" class="chip ${photoPref() ? 'active' : ''}" data-th-photo title="${esc(t('photoBackdrop'))}">📷</button>` : ''}` : ''}</div><div class="th-assist">${ctx.assist ? `<button type="button" class="chip assist" data-th-assist-step title="${esc(say('輔助：幫我做下一個動作（示範→移手→觀察→選答→提交）', 'Assist: do the next action for me (demo → hand → observe → answer → submit)'))}">✨ ${t('assistNext')}</button><button type="button" class="chip assist" data-th-assist-stage title="${esc(say('輔助完成本工序（會註記使用輔助）', 'Complete this stage with assistance (recorded as assisted)'))}">⚡ ${t('assistStage')}</button>` : ''}</div><div class="th-play"><button type="button" class="chip" data-th-demo title="${t('mentorDemo')}">▶ ${t('tour')}</button><button type="button" class="chip" data-th-stop>⏸</button><button type="button" class="chip" data-th-replay>↻</button><button type="button" class="chip" data-th-speak>🔊</button><span class="th-progress">${String(engine.index + 1).padStart(2, '0')}/${String(c.stages.length).padStart(2, '0')}</span></div></div>`;
     const log = `<aside class="th-log"><div class="th-log-head"><b>${t('theatreLog')}</b><span>${window.HT.xp ? window.HT.xp.widget() : ''} ${roles.length} ${t('staff')} · ${roomType(c).toUpperCase()}</span></div><ul>${st.log.slice(0, 8).map(l => `<li class="${l.kind}"><time>${l.t}</time>${esc(l.text)}</li>`).join('')}</ul><div class="th-team">${roles.map(r => `<span class="th-role ${lines.some(l => l.role === r.id) ? 'speaking' : ''}" style="--c:${r.cap}">${esc(pk(r))}</span>`).join('')}</div></aside>`;
     const panel = st.panel ? `<section class="th-panel" data-th-panel><button type="button" class="th-close" data-th-close aria-label="close">×</button>${panelHtml(st.panel, ctx, st)}</section>` : '';
-    board.innerHTML = `${hud}<div class="th-stage">${scene}</div>${log}${panel}`;
+    board.innerHTML = `${hud}<div class="th-stage">${scene}</div>${sceneReferenceHtml(scenePhoto(c), st.photoOpen)}${log}${panel}`;
     // ---- events
+    const sceneReference = board.querySelector('[data-th-scene-reference]');
+    if (sceneReference) sceneReference.ontoggle = () => { st.photoOpen = sceneReference.open; };
+    // The same real-photo reference is available on SVG-only and WebGL devices.
+    loadScenes(ctx);
     const onZone = i => ctx.onZone(i);
     const onHot = id => { if (id === 'imaging' && window.HT.xp) window.HT.xp.record({ kind: 'imaging' }); const m = map.find(x => x.hotspot === id && (x.station === s.zone || x.station === s.secondZone)) || map.find(x => x.hotspot === id); if (m) onZone(m.station); if (HOTSPOTS[id].panel === 'field') { if (!use3d) st.view = 'first'; st.panel = 'field'; } else st.panel = HOTSPOTS[id].panel; ctx.rerender(); };
     const host = board.querySelector('[data-th-3d-host]');
     if (host) {
-      loadScenes(ctx);
       const api3 = { c, engine, s, st, map, roles, target, second, mentorK: ctx.mentorAt && target ? Math.max(0, Math.min(1, (ctx.mentorAt.x - 8) / Math.max(1, (engine.anchors[s.zone][0] - 8)))) : 0, lines, vitals: vitalsFor(c, s, engine.phase), progress, fieldType: fieldType(c), roomType: roomType(c), hotspots: HOTSPOTS, playerId: 'player', doneStations, singleStage: !!ctx.singleStage, onZone, onHot, onPick: id => { const m = map.find(x => x.hotspot === id && (x.station === s.zone || x.station === s.secondZone)); if (m) onZone(m.station); if (id === 'imaging' && window.HT.xp) window.HT.xp.record({ kind: 'imaging' }); }, onRole: id => { const r = roles.find(x => x.id === id); if (r) { const l = lines.find(x => x.role === id); if (window.HT.app && window.HT.app.toast) window.HT.app.toast(pk(r) + (l ? '：' + l.text : '')); } }, brainSlice: brainSliceFor(c), photo: scenePhoto(c), photoEnabled: photoPref() };
       const current = () => st.renderToken === renderToken && host.isConnected;
       const fallback = () => {

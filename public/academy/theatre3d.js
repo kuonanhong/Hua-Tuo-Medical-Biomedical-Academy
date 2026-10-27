@@ -18,6 +18,13 @@
   const FILE = location.protocol === 'file:';
   let THREE = null, loading = null, webglAvailable;
 
+  function photoPlaneSize(width, height) {
+    const w = Number(width), h = Number(height);
+    if (!Number.isFinite(w) || !Number.isFinite(h) || w <= 0 || h <= 0) return [4.2, 2.6];
+    const ratio = w / h;
+    return ratio > 4.2 / 2.6 ? [4.2, 4.2 / ratio] : [2.6 * ratio, 2.6];
+  }
+
   // Probe once, then release the probe. Repeated probes can evict the live canvas on Safari/mobile.
   function available() {
     if (webglAvailable !== undefined) return webglAvailable;
@@ -327,7 +334,7 @@
       }
       photoGroup.visible = on;
     }
-    if (!FILE && api.photo) { const loader = new THREE.TextureLoader(); loader.load(api.photo.src, t => { if (disposed) { t.dispose(); return; } t.colorSpace = THREE.SRGBColorSpace; photoState.tex = t; photoState.panorama = !!api.photo.panorama; if (api.photo.panorama) { t.mapping = THREE.EquirectangularReflectionMapping; const cap = labelSprite(say('實景 360°・', '360° photo · ') + (api.photo.credit || ''), { size: 22, bg: 'rgba(16,28,32,.75)', scale: 0.003 }); cap.position.set(0, 0.25, 2.6); photoGroup.add(cap); } else { const print = new THREE.Mesh(new THREE.PlaneGeometry(4.2, 2.6), new THREE.MeshStandardMaterial({ map: t, roughness: 0.6 })); print.position.set(-1.2, 1.75, -ROOM.d / 2 + 0.03); photoGroup.add(print); const cap = labelSprite(say('實景參考 · ', 'Reference photo · ') + (api.photo.credit || ''), { size: 22, bg: 'rgba(16,28,32,.75)' }); cap.position.set(-1.2, 0.3, -ROOM.d / 2 + 0.1); photoGroup.add(cap); } photo = t; applyPhoto(photoState.on); }, undefined, () => {}); }
+    if (!FILE && api.photo) { const loader = new THREE.TextureLoader(); loader.load(api.photo.src, t => { if (disposed) { t.dispose(); return; } t.colorSpace = THREE.SRGBColorSpace; photoState.tex = t; photoState.panorama = !!api.photo.panorama; if (api.photo.panorama) { t.mapping = THREE.EquirectangularReflectionMapping; const cap = labelSprite(say('實景 360°・', '360° photo · ') + (api.photo.credit || ''), { size: 22, bg: 'rgba(16,28,32,.75)', scale: 0.003 }); cap.position.set(0, 0.25, 2.6); photoGroup.add(cap); } else { const image = t.image || {}, size = photoPlaneSize(image.naturalWidth || image.width || api.photo.width, image.naturalHeight || image.height || api.photo.height); const print = new THREE.Mesh(new THREE.PlaneGeometry(size[0], size[1]), new THREE.MeshStandardMaterial({ map: t, roughness: 0.6 })); print.position.set(-1.2, 1.75, -ROOM.d / 2 + 0.03); photoGroup.add(print); const cap = labelSprite(say('實景參考 · ', 'Reference photo · ') + (api.photo.credit || ''), { size: 22, bg: 'rgba(16,28,32,.75)' }); cap.position.set(-1.2, 0.3, -ROOM.d / 2 + 0.1); photoGroup.add(cap); } photo = t; applyPhoto(photoState.on); }, undefined, () => {}); }
     handle.setPhoto = applyPhoto; handle.showCard = showCard;
     // test/automation helper: screen position (CSS px inside the 3D element) of an equipment item
     handle.screenPos = (id, y) => { const o = objs[id]; if (!o) return null; const v = o.position.clone(); v.y = y == null ? 1.0 : y; v.project(camera); const r = el.getBoundingClientRect(); return { x: r.left + (v.x * 0.5 + 0.5) * r.width, y: r.top + (-v.y * 0.5 + 0.5) * r.height, visible: v.z < 1 && Math.abs(v.x) < 1 && Math.abs(v.y) < 1 }; };

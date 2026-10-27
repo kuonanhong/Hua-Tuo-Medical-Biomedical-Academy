@@ -1,7 +1,7 @@
 /* Service worker (v3.3). Shell: cache-first with background refresh. Lazy modules, language packs and
    public data chunks: stale-while-revalidate. Member content (/api, data/courses, data/procedures) is
    never persisted. */
-const VERSION = 'v37-20261026-r1';
+const VERSION = 'v372-scenes-20261027-r1';
 const SHELL_CACHE = 'huatuo-shell-' + VERSION;
 const LAZY_CACHE = 'huatuo-lazy-' + VERSION;
 const SHELL = ['./', './index.html', './style.css', './academy-v2.css', './voice-controls.css', './bootstrap.js', './config.js', './i18n.js', './icons.js', './personalization.js', './locale.js', './account.js', './membership.js', './safe-links.js', './app.js', './data/departments.js', './data/home-summary.js', './assets/icon.svg', './manifest.webmanifest'];
