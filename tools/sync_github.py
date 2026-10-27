@@ -240,20 +240,29 @@ def source_root(value):
 
 
 def ensure_public_safe(snapshot):
-    forbidden = {'.env', 'owner-seed.json', 'owner-setup.json', 'members.json'}
-    blocked_suffixes = ('.gguf','.onnx','.pth','.safetensors','.sqlite','.sqlite3','.pem','.key','.part')
+    forbidden = {'.env', 'owner-bootstrap.json', 'owner-seed.json', 'owner-setup.json', 'members.json'}
+    blocked_suffixes = ('.gguf','.onnx','.pth','.pt','.safetensors','.sqlite','.sqlite3','.pem','.key','.part','.huatuo-owner','.htowner')
     for path in snapshot.rglob('*'):
         if path.is_symlink():
             raise ValueError('Public export contains a symlink: ' + str(path))
         if not path.is_file():
             continue
         rel = path.relative_to(snapshot).as_posix()
-        if path.name in forbidden or path.name.endswith(blocked_suffixes) or any(p in {'models','private','data-private','runtime'} for p in path.relative_to(snapshot).parts):
+        if path.name.lower() in forbidden or path.name.lower().endswith(blocked_suffixes) or any(p.lower() in {'models','private','data-private','runtime'} for p in path.relative_to(snapshot).parts):
             raise ValueError('Private/resource file in public export: ' + rel)
-        if path.suffix in {'.js','.json','.html','.txt'}:
+        if path.suffix.lower() in {'.js','.json','.html','.txt'}:
             content = path.read_text(encoding='utf-8')
             if re.search(r'(?:github_pat_[A-Za-z0-9_]{20,}|gh[pousr]_[A-Za-z0-9]{20,}|-----BEGIN (?:RSA |OPENSSH |EC )?PRIVATE KEY-----)', content):
                 raise ValueError('Credential-like content in public export: ' + rel)
+            # Renaming an encrypted owner pack to JSON must not make it public.
+            # Runtime JavaScript may legitimately reference these format names.
+            if content.lstrip().startswith('{'):
+                try:
+                    obj = json.loads(content)
+                except json.JSONDecodeError:
+                    obj = None
+                if isinstance(obj, dict) and (obj.get('format') in {'huatuo-owner-learning-v1', 'huatuo-owner-curriculum-v1'} or {'passwordHash', 'passwordSalt'}.issubset(obj)):
+                    raise ValueError('Private owner learning data in public export: ' + rel)
     for path in (snapshot / 'data' / 'procedures').glob('*.json') if (snapshot / 'data' / 'procedures').is_dir() else []:
         if path.stem == 'index':
             continue
@@ -471,6 +480,8 @@ def model_resources(source):
         if path.is_symlink():
             raise ValueError('Model symlinks must be replaced with real files: ' + rel.as_posix())
         if path.is_file() and not path.name.endswith(('.part','.tmp','.download','.pyc')):
+            if path.name.lower().endswith(('.huatuo-owner','.htowner')) or path.name.lower() in {'owner-bootstrap.json','owner-seed.json','owner-setup.json','members.json'}:
+                raise ValueError('Owner learning/account data is not a model resource: ' + rel.as_posix())
             files.append(path)
     return files
 
@@ -665,7 +676,7 @@ def main(argv=None):
         raise ValueError('Cloud settings symlink is not allowed.')
     settings = json.loads(settings_path.read_text(encoding='utf-8')) if settings_path.is_file() else {'version':1}
     configured_backend = backend_url(a.backend_url if a.backend_url is not None else settings.get('backend_url',''))
-    if a.backend_url is not None:
+    if a.backend_url is not None and not a.dry_run:
         settings['backend_url'] = configured_backend
         settings_path.write_bytes(json_bytes(settings))
     if not 1 <= a.chunk_mib <= 48:
@@ -686,7 +697,7 @@ def main(argv=None):
         public = private = None
         public_data = private_data = None
         if not a.models_only:
-            print('公開網站：完整抓取目前版本（v3.7.1 獨立快取），比對時不逐檔補抓。', flush=True)
+            print('公開網站：完整抓取目前版本（沿用已修正的獨立快取），比對時不逐檔補抓。', flush=True)
             print('讀取：' + read_repo(a.public_repo, True) + '\n推送：' + a.public_repo, flush=True)
             public = connect(a.public_repo, complete_objects=True)
             public_data = public_plan(public, source, temp/'free-site', configured_backend)

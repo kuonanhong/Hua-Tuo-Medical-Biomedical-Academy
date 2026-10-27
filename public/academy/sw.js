@@ -1,12 +1,12 @@
 /* Service worker (v3.3). Shell: cache-first with background refresh. Lazy modules, language packs and
    public data chunks: stale-while-revalidate. Member content (/api, data/courses, data/procedures) is
    never persisted. */
-const VERSION = 'v372-scenes-20261027-r1';
+const VERSION = 'v380-owner-curriculum-20261027-r2';
 const SHELL_CACHE = 'huatuo-shell-' + VERSION;
 const LAZY_CACHE = 'huatuo-lazy-' + VERSION;
 const SHELL = ['./', './index.html', './style.css', './academy-v2.css', './voice-controls.css', './bootstrap.js', './config.js', './i18n.js', './icons.js', './personalization.js', './locale.js', './account.js', './membership.js', './safe-links.js', './app.js', './data/departments.js', './data/home-summary.js', './assets/icon.svg', './manifest.webmanifest'];
-const LAZY = /\/(?:i18n\/[a-zA-Z-]+\.js|data\/(?:catalog|tcm-library|tcm-v2|content-v2|acu-figure|acu-atlas|pharmacy-lab)\.(?:js|json)|(?:real-imaging|voice|tutor|xp|workbench|theatre|theatre3d|twins|specialty-twins|specialty-twins-2|specialty-twins-3|procedures|course-player|intern-tcm|intern-western|tcm-library|tcm-library-v2|content-hub|acu-atlas|pharmacy-lab|nobel-explorer)\.js|(?:real-imaging|workbench|theatre|twins|specialty-twins|specialty-twins-2|specialty-twins-3|procedures|content-hub|acu-atlas|pharmacy-lab)\.css|vendor\/three\.js|assets\/scenes\/.+|assets\/medical\/.+|data\/real-imaging\.(?:js|json)|data\/real-imaging\/[^/]+\.(?:png|jpg)|data\/twins\/.+|data\/preview\/[a-z0-9-]+\.js|help\.html|terms\.html)$/;
-const NEVER = /\/api(?:\/|$)|\/data\/courses(?:\/|$)|\/data\/procedures(?:\/|$)|\/private(?:\/|$)/;
+const LAZY = /\/(?:i18n\/[a-zA-Z-]+\.js|data\/(?:catalog|tcm-library|tcm-v2|content-v2|acu-figure|acu-atlas|pharmacy-lab)\.(?:js|json)|(?:owner-vault|learning-media|real-imaging|voice|tutor|xp|workbench|theatre|theatre3d|twins|specialty-twins|specialty-twins-2|specialty-twins-3|procedures|course-player|intern-tcm|intern-western|tcm-library|tcm-library-v2|content-hub|acu-atlas|pharmacy-lab|nobel-explorer)\.js|(?:learning-media|real-imaging|workbench|theatre|twins|specialty-twins|specialty-twins-2|specialty-twins-3|procedures|content-hub|acu-atlas|pharmacy-lab)\.css|vendor\/three\.js|assets\/scenes\/.+|assets\/medical\/.+|data\/real-imaging\.(?:js|json)|data\/real-imaging\/(?:v38\/)?[^/]+\.(?:png|jpg|jpeg)|data\/twins\/.+|data\/preview\/[a-z0-9-]+\.js|help\.html|terms\.html)$/;
+const NEVER = /\/api(?:\/|$)|\/data\/courses(?:\/|$)|\/data\/procedures(?:\/|$)|\/private(?:\/|$)|\.(?:huatuo-owner|htowner)$/;
 
 self.addEventListener('install', event => event.waitUntil(caches.open(SHELL_CACHE).then(async cache => {
   await Promise.all(SHELL.map(async url => { try { const response = await fetch(url, { cache: 'reload' }); if (response.ok) await cache.put(url, response); } catch (_) { /* retry online */ } }));

@@ -13,7 +13,8 @@ from pathlib import Path, PurePosixPath
 
 MANIFEST = '.huatuo-managed-public.json'
 BLOCKED_PARTS = {'private', 'models', 'portable', 'tools', 'runtime', 'logs', '.git', '.github', 'node_modules', '__pycache__'}
-BLOCKED_SUFFIXES = ('.py', '.sh', '.bat', '.command', '.gguf', '.onnx', '.pth', '.safetensors', '.sqlite', '.sqlite3', '.pem', '.key', '.part')
+BLOCKED_SUFFIXES = ('.py', '.sh', '.bat', '.command', '.gguf', '.onnx', '.pth', '.pt', '.safetensors', '.sqlite', '.sqlite3', '.pem', '.key', '.part', '.huatuo-owner', '.htowner')
+BLOCKED_NAMES = {'owner-bootstrap.json', 'owner-seed.json', 'owner-setup.json', 'members.json'}
 
 
 def safe_site_path(value):
@@ -22,7 +23,7 @@ def safe_site_path(value):
     parts = value.split('/')
     if not value or PurePosixPath(value).is_absolute() or '\\' in value or '\x00' in value or any(p in ('', '.', '..') for p in parts):
         raise ValueError('Unsafe website path: ' + repr(value))
-    if any(p in BLOCKED_PARTS or (p.startswith('.') and p not in {'.nojekyll', '.huatuo-static-export'}) for p in parts) or value.lower().endswith(BLOCKED_SUFFIXES):
+    if any(p.lower() in BLOCKED_PARTS or p.lower() in BLOCKED_NAMES or (p.startswith('.') and p not in {'.nojekyll', '.huatuo-static-export'}) for p in parts) or value.lower().endswith(BLOCKED_SUFFIXES):
         raise ValueError('Non-website/private path cannot enter the Pages artifact: ' + value)
     return value
 

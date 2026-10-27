@@ -21,15 +21,22 @@
   function profileView(p) { return p ? { id: p.id, username: p.username, email: p.email, phone: p.phone, createdAt: p.createdAt } : null; }
   function activeLocal() { const list = profiles(); const id = localStorage.getItem(AKEY); return profileView(list.find(p => p.id === id)); }
 
+  async function ownerVault() {
+    if (!window.HT.ownerVault) await window.HT.loadScript('owner-vault.js');
+    await window.HT.ownerVault.init();
+    return window.HT.ownerVault;
+  }
+  const isOwnerLocal = () => state.user?.role === 'owner-local' && !!window.HT.ownerVault?.hasAccess();
+  function ownerBilling() { return { entitlement: { mode: 'owner-local', orderId: 'private-owner-pack', scope: 'imported-owner-content', permanent: true, expiresAt: 253402300799 } }; }
   async function init() {
-    if (state.authMode === 'local') { state.user = activeLocal(); return state; }
+    if (state.authMode === 'local') { state.user = activeLocal(); await ownerVault().catch(() => {}); return state; }
     try {
       const r = await fetch(api + '/api/me', { credentials: 'same-origin', cache: 'no-store' });
       if (r.status === 404 || r.status === 405 || !(r.headers.get('content-type') || '').includes('json')) throw new Error('no-api');
       const d = await r.json(); state.user = d.user; state.aiAvailable = !!d.aiAvailable; state.aiRoutes = d.aiRoutes || []; state.billing = d.billing || null;
     } catch (e) {
       // No backend at this origin (plain static host): fall back to browser-local profiles.
-      state.authMode = 'local'; window.HT.staticMode = true; state.user = activeLocal();
+      state.authMode = 'local'; window.HT.staticMode = true; state.user = activeLocal(); await ownerVault().catch(() => {});
     }
     return state;
   }
@@ -53,27 +60,53 @@
     if (state.user) {
       const u = state.user;
       const ent = state.billing && state.billing.entitlement;
-      app.dialog(t('profile'), `<div class="kv"><b>${t('username')}</b><span data-no-translate>${esc(u.username || u.name)}</span><b>${t('email')}</b><span data-no-translate>${esc(u.email || '')}${u.emailVerified ? ' ✓' : (state.authMode === 'server' ? ' (unverified)' : '')}</span><b>${t('phone')}</b><span data-no-translate>${esc(u.phone || '')}${u.phoneVerified ? ' ✓' : ''}</span><b>${t('plans')}</b><span>${ent && ent.permanent ? (zh ? '站長永久權限 · 全部會員課程' : 'Site owner · permanent access to every member course') : ent ? `${t('active')} · ${t('expires')} ${new Date(ent.expiresAt * 1000).toLocaleDateString()}` : (zh ? '尚未啟用通行證（每門課第一節免費）' : 'No active pass (first section of every course is free)')}</span></div>
-        <p class="form-note" style="margin-top:12px">${state.authMode === 'local' ? (zh ? '這是儲存在此瀏覽器的本機學習檔案，不會寄送驗證信；更換裝置前請在「我的進度」匯出 JSON。' : 'This is a browser-local learning profile without verification; export your progress JSON before changing devices.') : (zh ? '帳號與進度儲存於伺服器，可跨裝置登入。' : 'Account and progress are stored on the server and available on any device.')}</p>
-        <div class="dialog-actions"><a class="button primary" href="#membership">${t('plans')}</a>${u.role === 'root' ? `<button class="button light" id="memberDirectoryBtn">${zh ? '私人會員清單' : 'Private member directory'}</button>` : ''}<button class="button light" id="signOutBtn">${t('signOut')}</button>${state.authMode === 'local' ? `<button class="button light" id="switchBtn">${zh ? '切換／新增檔案' : 'Switch / add profile'}</button>` : ''}</div>`);
+      app.dialog(t('profile'), `<div class="kv"><b>${t('username')}</b><span data-no-translate>${esc(u.username || u.name)}</span><b>${t('email')}</b><span data-no-translate>${esc(u.email || '')}${u.emailVerified ? ' ✓' : (state.authMode === 'server' ? ' (unverified)' : '')}</span><b>${t('phone')}</b><span data-no-translate>${esc(u.phone || '')}${u.phoneVerified ? ' ✓' : ''}</span><b>${t('plans')}</b><span>${ent && ent.permanent ? (isOwnerLocal() ? (zh ? '站長私人教材 · 永久免付費閱讀' : 'Private owner curriculum · permanent no-payment access') : (zh ? '站長永久權限 · 全部會員課程' : 'Site owner · permanent access to every member course')) : ent ? `${t('active')} · ${t('expires')} ${new Date(ent.expiresAt * 1000).toLocaleDateString()}` : (zh ? '尚未啟用通行證（每門課第一節免費）' : 'No active pass (first section of every course is free)')}</span></div>
+        <p class="form-note" style="margin-top:12px">${state.authMode === 'local' ? (isOwnerLocal() ? (zh ? '已解鎖您匯入的完整私人教材；課程只在此瀏覽器記憶體解密。重新開頁需再次登入；不具有遠端會員管理權限。' : 'Your imported private curriculum is decrypted only in this browser memory. Sign in again after reopening. This does not grant remote member administration.') : (zh ? '這是儲存在此瀏覽器的本機學習檔案，不會寄送驗證信；更換裝置前請在「我的進度」匯出 JSON。' : 'This is a browser-local learning profile without verification; export your progress JSON before changing devices.')) : (zh ? '帳號與進度儲存於伺服器，可跨裝置登入。' : 'Account and progress are stored on the server and available on any device.')}</p>
+        <div class="dialog-actions"><a class="button primary" href="#membership">${t('plans')}</a>${u.role === 'root' ? `<button class="button light" id="memberDirectoryBtn">${zh ? '私人會員清單' : 'Private member directory'}</button>` : ''}<button class="button light" id="signOutBtn">${t('signOut')}</button>${state.authMode === 'local' && !isOwnerLocal() ? `<button class="button light" id="switchBtn">${zh ? '切換／新增檔案' : 'Switch / add profile'}</button>` : ''}</div>`);
       document.getElementById('signOutBtn').onclick = async () => { try { await signOut(); app.closeDialog(); } catch (error) { app.toast(error.message); } };
       const directory = document.getElementById('memberDirectoryBtn'); if (directory) directory.onclick = () => window.HT.membership.showDirectory();
       const sw = document.getElementById('switchBtn'); if (sw) sw.onclick = () => { state.user = null; open(); };
       return;
     }
     const localList = state.authMode === 'local' ? profiles() : [];
+    const vault = window.HT.ownerVault?.status() || { installed: false };
+    const modeNotice = state.authMode === 'local' ? `<div class="notice" role="status"><strong>${zh ? '目前：靜態網站／此裝置登入' : 'Current mode: static website / this device'}</strong><p>${zh ? '這個網址沒有會員伺服器，無法查詢站長或付費會員帳號。站長可先匯入私人教材包，再用自己的帳號與密碼閱讀所有已匯入課程；也可執行 start-owner.sh 開啟本機完整版。' : 'This address has no membership server and cannot look up owner or paid-member accounts. Owners can import their private learning pack and sign in to read all imported content, or run start-owner.sh for the local full academy.'}</p></div>` : `<p class="notice">${zh ? '目前：會員伺服器登入；站長永久免付費。' : 'Current mode: membership-server sign-in. The owner has permanent access without payment.'}</p>`;
+    const ownerImport = state.authMode === 'local' ? `<fieldset><legend>${zh ? '站長私人教材' : 'Private owner curriculum'}</legend><p>${vault.installed ? (zh ? '已匯入版本 ' : 'Imported version ') + esc(vault.version) + ' · ' + esc(vault.username) + (vault.persistent ? '' : (zh ? '（僅此分頁）' : ' (this tab only)')) : (zh ? '第一次使用：從完整包 private 資料夾選取 .huatuo-owner 檔案。此檔案不會上傳到網路。' : 'First use: select the .huatuo-owner file in the complete package’s private folder. It is not uploaded.')}</p><label>${zh ? '匯入／更新私人教材包' : 'Import / update private learning pack'}<input id="ownerPackFile" type="file" accept=".huatuo-owner,.htowner,application/json"></label><p class="form-note">${zh ? '匯入後，請在下方以站長帳號及密碼登入。一般會員請使用正式會員伺服器。' : 'After import, sign in below with the owner username and password. Other members should use the official membership server.'}</p><p id="ownerPackError" class="form-error" role="status"></p></fieldset>` : '';
     app.dialog(t('signIn') + ' / ' + t('register'), `
+      ${modeNotice}${ownerImport}
       ${localList.length ? `<fieldset><legend>${zh ? '此裝置的學習檔案' : 'Profiles on this device'}</legend><div class="row">${localList.map(p => `<button class="chip" data-switch="${esc(p.id)}" data-no-translate>${esc(p.username)}</button>`).join('')}</div></fieldset>` : ''}
       <fieldset><legend>${t('signIn')}</legend><form id="loginForm"><div class="form-grid"><label>${t('username')} / ${t('email')}<input name="login" required autocomplete="username"></label><label>${t('password')}<input name="password" type="password" required autocomplete="current-password"></label></div><p class="form-error" id="loginError"></p><button class="button primary" type="submit">${t('signIn')}</button></form></fieldset>
       <fieldset><legend>${t('register')}</legend><form id="registerForm">${fieldsMarkup(true)}<p class="form-note">${zh ? '註冊需四項：帳號、密碼、信箱、手機。伺服器模式會寄送信箱與簡訊驗證碼；靜態／離線模式僅建立本機檔案。' : 'Four fields are required: username, password, email, mobile. Server mode sends email and SMS codes; static/offline mode only creates a local profile.'}</p><p class="form-error" id="registerError"></p><button class="button primary" type="submit">${t('register')}</button></form></fieldset>`);
     const body = document.getElementById('dialogBody');
+    const packInput = document.getElementById('ownerPackFile');
+    if (packInput) packInput.onchange = async () => {
+      const file = packInput.files && packInput.files[0]; if (!file) return;
+      const err = document.getElementById('ownerPackError');
+      err.textContent = zh ? '正在讀取加密教材包…' : 'Reading the encrypted learning pack…';
+      try {
+        const vault = await ownerVault(), meta = await vault.importFile(file);
+        state.user = null; state.billing = null; localStorage.removeItem(AKEY);
+        window.HT_COURSES = {}; window.HT.procedures?.reset?.();
+        open();
+        const login = document.querySelector('#loginForm input[name="login"]'); if (login) login.value = meta.username;
+        document.getElementById('ownerPackError').textContent = zh ? '已匯入，請輸入站長密碼登入。' : 'Imported. Enter your owner password to sign in.';
+      } catch (error) { err.textContent = error.message; }
+    };
     body.querySelectorAll('[data-switch]').forEach(b => b.onclick = () => { localStorage.setItem(AKEY, b.dataset.switch); state.user = activeLocal(); app.closeDialog(); app.onAuthChange(); });
     document.getElementById('loginForm').onsubmit = async e => {
       e.preventDefault(); const f = new FormData(e.target); const err = document.getElementById('loginError'); err.textContent = '';
       try {
         if (state.authMode === 'local') {
-          const p = profiles().find(x => x.username === f.get('login') || x.email === f.get('login'));
-          const entered = String(f.get('password'));
+          const login = String(f.get('login') || '').trim(), entered = String(f.get('password'));
+          const vault = await ownerVault();
+          if (vault.status().installed && login.toLowerCase() === vault.status().username.toLowerCase()) {
+            err.textContent = zh ? '正在解鎖完整私人教材，請稍候…' : 'Unlocking your complete private curriculum…';
+            state.user = await vault.unlock(login, entered); state.billing = ownerBilling();
+            localStorage.removeItem(AKEY);
+            app.closeDialog(); app.onAuthChange(); return;
+          }
+          if (['root', 'admin', 'administrator', 'kuonanhong'].includes(login.toLowerCase())) throw new Error(zh ? '此靜態網站尚未匯入站長私人教材包。請先使用上方匯入功能，或執行 start-owner.sh 後登入本機完整版。' : 'Import the owner learning pack above first, or run start-owner.sh and sign in to the local full academy.');
+          const p = profiles().find(x => x.username.toLowerCase() === login.toLowerCase() || x.email.toLowerCase() === login.toLowerCase());
           if (!p || !(p.pwSalt ? await localPassword(entered, p.pwSalt) === p.pw : p.pw === hash(entered))) throw new Error(zh ? '帳號或密碼錯誤。' : 'Wrong username or password.');
           if (!p.pwSalt && window.crypto && crypto.subtle) { p.pwSalt = randomSalt(); p.pw = await localPassword(entered, p.pwSalt); saveProfiles(profiles().map(x => x.id === p.id ? p : x)); }
           localStorage.setItem(AKEY, p.id); state.user = profileView(p);
@@ -89,7 +122,8 @@
       for (const k of ['username', 'password', 'email', 'phone']) if (!validate[k](v[k])) { err.textContent = (zh ? '格式不正確：' : 'Invalid: ') + t(k); return; }
       try {
         if (state.authMode === 'local') {
-          const list = profiles(); if (list.some(p => p.username === v.username)) throw new Error(zh ? '此帳號已存在。' : 'Username already exists.');
+          if (['root', 'admin', 'administrator', 'kuonanhong'].includes(v.username.toLowerCase())) throw new Error(zh ? '此帳號保留給站長；請使用私人教材包或會員伺服器登入。' : 'This username is reserved for the owner; use the private learning pack or membership server.');
+          const list = profiles(); if (list.some(p => p.username.toLowerCase() === v.username.toLowerCase())) throw new Error(zh ? '此帳號已存在。' : 'Username already exists.');
           const salt = randomSalt();
           const p = { id: 'local-' + salt.slice(0, 24), username: v.username, email: v.email, phone: v.phone, pwSalt: salt, pw: await localPassword(v.password, salt), createdAt: Date.now() };
           list.push(p); saveProfiles(list); localStorage.setItem(AKEY, p.id); state.user = profileView(p); app.closeDialog(); app.onAuthChange(); app.toast(zh ? '已建立本機學習檔案。' : 'Local profile created.');
@@ -117,7 +151,7 @@
     const bytes = new Uint8Array(await crypto.subtle.deriveBits({ name: 'PBKDF2', hash: 'SHA-256', salt: Uint8Array.from(salt.match(/../g), b => parseInt(b, 16)), iterations: 600000 }, key, 256));
     return Array.from(bytes, b => b.toString(16).padStart(2, '0')).join('');
   }
-  async function signOut() { if (state.authMode === 'server') { await request('/api/logout', {}); } else { localStorage.removeItem(AKEY); } state.user = null; state.billing = null; window.HT_COURSES = {}; window.HT.app.onAuthChange(); }
+  async function signOut() { window.HT.ownerVault?.lock(); if (state.authMode === 'server') { await request('/api/logout', {}); } else { localStorage.removeItem(AKEY); } state.user = null; state.billing = null; window.HT_COURSES = {}; window.HT.app.onAuthChange(); }
 
   // ---- progress
   const progressKey = () => PROG + (state.user ? state.user.id : 'guest');

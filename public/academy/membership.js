@@ -37,8 +37,8 @@
     } catch (e) { /* static or offline */ }
     return config;
   }
-  function entitlement() { const b = window.HT.account.billing(); return b && b.entitlement && b.entitlement.expiresAt * 1000 > Date.now() ? b.entitlement : null; }
-  function hasAccess(course, stageIndex) { if (stageIndex === 0 || (course && course.stages && course.stages[stageIndex] && course.stages[stageIndex].free === true)) return true; if (window.HT.staticMode) return false; return !!entitlement(); }
+  function entitlement() { const b = window.HT.account.billing(); if (b?.entitlement?.scope === 'imported-owner-content') return window.HT.ownerVault?.hasAccess() ? b.entitlement : null; return b && b.entitlement && (b.entitlement.permanent || b.entitlement.expiresAt * 1000 > Date.now()) ? b.entitlement : null; }
+  function hasAccess(course, stageIndex) { if (stageIndex === 0 || (course && course.stages && course.stages[stageIndex] && course.stages[stageIndex].free === true)) return true; if (window.HT.staticMode) return !!window.HT.ownerVault?.hasAccess() && (!course || window.HT.ownerVault.hasCourse(course.id)); return !!entitlement(); }
 
   function directoryMarkup(members) {
     const zh = window.HT.i18n.isZh();
@@ -53,6 +53,7 @@
 
   function pageMarkup() {
     const zh = window.HT.i18n.isZh(), cur = currency(), ent = entitlement(), user = window.HT.account.user();
+    if (ent?.permanent) return `<div class="section-head"><div><span class="eyebrow">${t('plans')}</span><h1>${zh ? '站長永久免付費權限' : 'Permanent no-payment owner access'}</h1></div></div><div class="notice"><strong>${zh ? '已開放全部課程與完整程序' : 'All courses and full procedures are available'}</strong><p>${user?.role === 'owner-local' ? (zh ? '目前閱讀您匯入此裝置的私人教材。加密教材包保留在此瀏覽器，解密內容僅留在記憶體；重新開頁後再次登入即可。' : 'You are reading the private curriculum imported into this device. Only the encrypted pack is saved; decrypted content stays in memory. Sign in again after reopening.') : (zh ? '伺服器已確認您的站長身分，權限沒有到期日，不需要購買通行證。' : 'The server has verified the owner account. Access does not expire and no pass purchase is needed.')}</p></div><div class="row"><a class="button primary" href="#catalog">${t('navCatalog')}</a><a class="button" href="#procedures">${t('departmentLibrary')}</a><button class="button" id="ownerProfileBtn">${t('profile')}</button></div>${user?.role === 'root' ? `<div class="card"><h2>${zh ? '會員管理' : 'Member administration'}</h2><button class="button" id="privateMembersBtn">${zh ? '讀取私人會員清單' : 'Open private member directory'}</button></div>` : ''}`;
     const plans = config.plans.map((p, i) => { const amt = convert(p.amountTwd, cur); const per = p.days >= 365 ? t('yearly') : t('monthly'); return `<div class="card plan ${i === 1 ? 'best' : ''}">${i === 1 ? `<span class="best-tag">${zh ? '最划算' : 'Best value'}</span>` : ''}<span class="eyebrow">${per} · ${p.days} ${zh ? '天' : 'days'}</span><div class="price">${format(amt, cur)}<small> / ${p.days >= 365 ? (zh ? '年' : 'yr') : (zh ? '月' : 'mo')}</small></div><p class="subtext">≈ NT$${p.amountTwd.toLocaleString()} · ${zh ? '一次付款，不自動續扣' : 'one-time payment, no auto-renewal'}</p><ul class="small" style="padding-left:18px;color:var(--muted)"><li>${zh ? '全部 2,400+ 門課程所有章節' : 'All sections of all 2,400+ courses'}</li><li>${zh ? '實習級虛擬病人與模擬器' : 'Internship-tier virtual patients and simulators'}</li><li>${zh ? 'AI 師傅問答（伺服器已設定時）' : 'AI mentor Q&A (when configured on the server)'}</li><li>${zh ? '完成證書申請' : 'Completion certificates'}</li></ul><button class="button primary" data-plan="${p.id}" ${!user ? 'data-need-login="1"' : ''}>${t('pay')}</button></div>`; }).join('');
     const tr = config.transfer || {};
     return `<div class="section-head"><div><span class="eyebrow">${t('plans')}</span><h1>${zh ? '每門課第一節免費，其餘章節由學習通行證解鎖' : 'The first section of every course is free; a learning pass unlocks the rest'}</h1><p class="subtext">${zh ? `價格以新台幣定價（NT$${config.plans[0].amountTwd}／30 天、NT$${config.plans[1].amountTwd}／365 天），依您的語系自動換算為 ${cur}（匯率更新：${ratesDate}）。可在右上角切換幣別。` : `Prices are set in TWD (NT$${config.plans[0].amountTwd} / 30 days, NT$${config.plans[1].amountTwd} / 365 days) and converted to ${cur} for your locale (rates updated ${ratesDate}). Change the currency at the top right.`}</p></div></div>
@@ -70,6 +71,7 @@
       <p class="form-note" style="margin-top:14px">${zh ? '本站不儲存卡號。付款成功後由伺服器核對金流通知（Webhook 簽章 + 主動查單）才開通權限；收款結算至站長在金流商登記的郵局帳戶。退款與條款見' : 'Card numbers are never stored here. Access is granted only after the server verifies the gateway notification (signed webhook + order query); funds settle to the operator’s registered post-office account. Refunds and terms:'} <a href="terms.html" target="_blank" rel="noopener">terms.html</a>.</p>`;
   }
   function bind(root) {
+    const ownerProfile = root.querySelector('#ownerProfileBtn'); if (ownerProfile) ownerProfile.onclick = () => window.HT.account.open();
     root.querySelectorAll('[data-plan]').forEach(b => b.onclick = () => { if (b.dataset.needLogin) { window.HT.account.open(); return; } checkout(b.dataset.plan); });
     const directory = root.querySelector('#privateMembersBtn'); if (directory) directory.onclick = showDirectory;
   }

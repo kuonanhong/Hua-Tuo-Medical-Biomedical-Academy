@@ -4,6 +4,7 @@
 (function (window) {
   'use strict';
   const esc = v => String(v == null ? '' : v).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const safeSourceUrl = value => {try{if(typeof value!=='string'||/[\u0000-\u0020\u007f]/.test(value))return '';const url=new URL(value);return ['https:','http:'].includes(url.protocol)&&!url.username&&!url.password?url.href:'';}catch(e){return '';}};
   const t = k => window.HT.i18n.t(k);
   const zh = () => window.HT.i18n.isZh();
   const say = (z, e) => zh() ? z : e;
@@ -27,14 +28,14 @@
     if (!pending[dept]) {
       const epoch=loadEpoch;
       pending[dept] = (async () => {
-        let raw = null;
-        if (location.protocol !== 'file:') {
+        let raw = window.HT.ownerVault?.procedures(dept) || null;
+        if (!raw && location.protocol !== 'file:') {
           try { raw = await fetch('data/procedures/' + dept + '.json', { credentials: 'same-origin', cache: 'no-store' }).then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); }); } catch (e) { raw = null; }
         }
         if (!raw) { await window.HT.loadScript('data/procedures/' + dept + '.js'); raw = window.HT_PROCEDURES && window.HT_PROCEDURES[dept]; }
         if (!raw || !Array.isArray(raw.procedures)) throw new Error(say('此科別尚無程序庫。', 'No procedure library for this department yet.'));
         const entitled = window.HT.membership.hasAccess(null, 1);
-        const cases = raw.procedures.map((p, i) => { const c = window.HT.workbench.fromProcedure(p, dept);c.generated=p.generated===true||raw.generatedOnly===true;if (!entitled && i >= FREE_PER_DEPARTMENT) c.locked = true; if (!c.stages.length) c.locked = true; c.order = i; return c; });
+        const cases = raw.procedures.map((p, i) => { const c = window.HT.workbench.fromProcedure(p, dept);c.generated=p.generated===true||raw.generatedOnly===true;c.mediaTags=Array.isArray(p.mediaTags)?p.mediaTags:[];if (!entitled && i >= FREE_PER_DEPARTMENT) c.locked = true; if (!c.stages.length) c.locked = true; c.order = i; return c; });
         if(epoch!==loadEpoch)throw new Error('Procedure access changed; reload required');
         libraries[dept] = { meta: raw, cases };
         return libraries[dept];
@@ -98,12 +99,12 @@
     const cats = []; cases.forEach(c => { const k = c.category.zh + '|' + c.category.en; if (!cats.some(x => x.k === k)) cats.push({ k, zh: c.category.zh, en: c.category.en, n: 0 }); cats.find(x => x.k === k).n++; });
     const state = { cat: params.get('cat') || '', q: '' };
     let selected = cases.find(c => c.id === procId) || cases.find(c => !c.locked) || cases[0];
-    let cleanupBench = null;
+    let cleanupBench = null, cleanupMedia = null;
     root.innerHTML = `<div class="section-head"><div><span class="eyebrow"><a href="#procedures">${t('departmentLibrary')}</a> · ${esc(lib.meta.authored === false ? say('模板生成', 'template-generated') : say('編者撰寫', 'authored'))}</span><h1>${esc(pk(m, 'title'))} <small class="muted" data-no-translate>${esc(zh() ? m.titleEn : m.title)}</small></h1><p class="subtext">${esc(pk(lib.meta, 'intro') || pk(m, 'intro'))}</p></div><div class="row"><a class="button small" href="#catalog?department=${esc(dept)}">${t('navCatalog')} →</a></div></div>
       <div class="notice"><b>${courseCount===null?say('課程主題數待載入','Course topics loading'):courseCount+' '+say('門課程主題','course topics')} · ${trackInfo.authoredCount} ${say('道編者病例','authored cases')} ＋ ${trackInfo.generatedCount} ${say('道課程模板','course-derived templates')} · ${trackInfo.totalCount} ${say('道程序合計','procedures in total')}</b><p>${say('課程主題、編者病例與課程模板是不同計數。預設使用編者病例；可切換全部病例與模板。主輔助鍵完成目前這道程序，工序選單可直接跳到中段。','Course topics, authored cases and course-derived templates are different counts. Authored cases are the default; switch to all cases and templates when needed. Main assistance completes the current procedure, and the stage selector opens intermediate steps.')}</p><a class="button small" href="#imaging?department=${esc(dept)}">${t('navImaging')} →</a></div>
       <div class="filters"><label>${say('病例／課程模板','Cases / course templates')} <select id="procTrack" aria-label="${say('選擇病例或全部課程模板','Choose authored cases or all templates')}">${trackInfo.authoredCount?`<option value="authored" ${track==='authored'?'selected':''}>${say('編者病例','Authored cases')} · ${trackInfo.authoredCount}</option>`:''}<option value="all" ${track==='all'?'selected':''}>${say('全部病例＋課程模板','All cases + course templates')} · ${trackInfo.totalCount}</option></select></label><span class="small muted">${say('目前路線','Current track')}：${cases.length} ${t('proceduresUnit')} · ${cases.reduce((n,c)=>n+(c.stageCount||c.stages.length),0)} ${t('stagesUnit')}</span></div>
-      <div class="proc-layout"><aside class="proc-list card" aria-label="${say('程序清單', 'Procedure list')}"><div class="proc-tools"><input type="search" id="procSearch" placeholder="${esc(t('search'))}" aria-label="${esc(t('search'))}"><select id="procCat" aria-label="${esc(t('filterCategory'))}"><option value="">${t('filterCategory')} · ${cases.length}</option>${cats.map(c => `<option value="${esc(c.k)}" ${state.cat === c.k ? 'selected' : ''}>${esc(zh() ? c.zh : c.en)} · ${c.n}</option>`).join('')}</select></div><ol id="procItems" class="proc-items"></ol><p class="small muted">${cases.length} ${t('proceduresUnit')} · ${cases.reduce((n, c) => n + (c.stageCount || c.stages.length), 0)} ${t('stagesUnit')}</p></aside><section class="proc-bench" id="procBench"></section></div>
-      <details class="card panel" style="margin-top:16px"><summary><b>${t('sources')}</b></summary><ul class="source-list">${(lib.meta.sources || []).map(u => `<li><a href="${esc(u)}" target="_blank" rel="noopener noreferrer">${esc(u.replace(/^https?:\/\//, '').split('/')[0])} ↗</a></li>`).join('')}</ul><p class="form-note">${say('程序庫為教學拆解與安全判斷訓練，不是手術 SOP 或臨床指引。', 'Educational decomposition and safety-judgement training, not an operative SOP or clinical guideline.')}</p></details>`;
+      <div class="proc-layout"><aside class="proc-list card" aria-label="${say('程序清單', 'Procedure list')}"><div class="proc-tools"><input type="search" id="procSearch" placeholder="${esc(t('search'))}" aria-label="${esc(t('search'))}"><select id="procCat" aria-label="${esc(t('filterCategory'))}"><option value="">${t('filterCategory')} · ${cases.length}</option>${cats.map(c => `<option value="${esc(c.k)}" ${state.cat === c.k ? 'selected' : ''}>${esc(zh() ? c.zh : c.en)} · ${c.n}</option>`).join('')}</select></div><ol id="procItems" class="proc-items"></ol><p class="small muted">${cases.length} ${t('proceduresUnit')} · ${cases.reduce((n, c) => n + (c.stageCount || c.stages.length), 0)} ${t('stagesUnit')}</p></aside><div class="proc-main"><section class="proc-bench" id="procBench"></section><div id="procLearningMedia"></div></div></div>
+      <details class="card panel" style="margin-top:16px"><summary><b>${t('sources')}</b></summary><ul class="source-list">${(lib.meta.sources || []).map(u => {const url=safeSourceUrl(u);return url?`<li><a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(new URL(url).hostname)} ↗</a></li>`:'';}).join('')}</ul><p class="form-note">${say('程序庫為教學拆解與安全判斷訓練，不是手術 SOP 或臨床指引。', 'Educational decomposition and safety-judgement training, not an operative SOP or clinical guideline.')}</p></details>`;
     const items = root.querySelector('#procItems');
     function drawList() {
       if(token!==renderEpoch)return;
@@ -112,18 +113,19 @@
       items.innerHTML = vis.map(c => { const n=c.stageCount||c.stages.length;const pr=progressOf(c.id,n,c.stages); return `<li><button type="button" class="proc-item ${selected && selected.id === c.id ? 'active' : ''} ${c.locked ? 'locked' : ''}" data-proc="${esc(c.id)}"><span class="proc-no">${cases.indexOf(c)+1}</span><span class="proc-body"><b>${esc(bl(c.title))}</b><small>${esc(bl(c.category))} · ${esc(c.kind)} · ${c.tiles.length} ${t('stations')} · ${n} ${t('stagesUnit')}${c.minutes ? ' · ≈' + c.minutes + ' min' : ''}</small></span><span class="proc-state">${c.locked ? '🔒' : pr && pr.done ? '✓' : pr ? Math.round(100 * pr.completed / Math.max(1, n)) + '%' : ''}</span></button></li>`; }).join('') || `<li class="muted small">${t('noResults')}</li>`;
       items.querySelectorAll('[data-proc]').forEach(b => b.onclick = () => { selected = cases.find(c => c.id === b.dataset.proc); location.hash = `#procedures/${encodeURIComponent(selected.id)}?department=${dept}&track=${track}${state.cat ? '&cat=' + encodeURIComponent(state.cat) : ''}`; });
     }
+    function mountMedia(){if(cleanupMedia){cleanupMedia();cleanupMedia=null;}const box=root.querySelector('#procLearningMedia');if(box&&selected&&window.HT.learningMedia)cleanupMedia=window.HT.learningMedia.mount(box,{department:dept,title:selected.title,summary:selected.patient,kind:selected.kind,id:selected.id,mediaTags:selected.mediaTags});}
     function mountBench() {
       if (cleanupBench) { cleanupBench(); cleanupBench = null; }
       const box = root.querySelector('#procBench'); if (!box || !selected) return;
       currentContext = { id: 'procedure-' + selected.id, title: pk(m, 'title') + ' · ' + selected.title.zh, titleEn: m.titleEn + ' · ' + selected.title.en, summary: selected.patient.zh + '\n工序站：' + selected.tiles.map(x => x.zh).join('、'), summaryEn: selected.patient.en + '\nStations: ' + selected.tiles.map(x => x.en).join(', ') };
-      cleanupBench = window.HT.workbench.mount(box, { spec: selected, library: cases, storageId: 'proc', hideSelector: false, stageIndex: Math.max(0, Number(params.get('stage') || 1)-1), onStageChange: i => { history.replaceState(null, '', `#procedures/${encodeURIComponent(selected.id)}?department=${dept}&track=${track}&stage=${i+1}`); drawList(); }, onLocked: c => { window.HT.app.toast(say('此程序需學習通行證。', 'This procedure needs a learning pass.')); }, onProgress: () => drawList(), onSelectCase: c => { selected = c; history.replaceState(null, '', `#procedures/${encodeURIComponent(c.id)}?department=${dept}&track=${track}`); drawList(); }, onComplete: snapshot => {if(token!==renderEpoch||snapshot.caseId!==selected.id||snapshot.fullyCompleted!==true)return;drawList();const assisted = (snapshot.history || []).some(h => h.assisted); window.HT.app.recordSim('procedure-' + selected.id, assisted ? 60 : 100); } });
-      box.querySelector('[data-case]')?.addEventListener('change', e => { const c = cases.find(x => x.id === e.target.value); if (c && !c.locked) { selected = c; history.replaceState(null, '', `#procedures/${encodeURIComponent(c.id)}?department=${dept}&track=${track}`); drawList(); } });
+      cleanupBench = window.HT.workbench.mount(box, { spec: selected, library: cases, storageId: 'proc', hideSelector: false, stageIndex: Math.max(0, Number(params.get('stage') || 1)-1), onStageChange: i => { history.replaceState(null, '', `#procedures/${encodeURIComponent(selected.id)}?department=${dept}&track=${track}&stage=${i+1}`); drawList(); }, onLocked: c => { window.HT.app.toast(say('此程序需學習通行證。', 'This procedure needs a learning pass.')); }, onProgress: () => drawList(), onSelectCase: c => { selected = c; history.replaceState(null, '', `#procedures/${encodeURIComponent(c.id)}?department=${dept}&track=${track}`); drawList(); mountMedia(); }, onComplete: snapshot => {if(token!==renderEpoch||snapshot.caseId!==selected.id||snapshot.fullyCompleted!==true)return;drawList();const assisted = (snapshot.history || []).some(h => h.assisted); window.HT.app.recordSim('procedure-' + selected.id, assisted ? 60 : 100); } });
+      box.querySelector('[data-case]')?.addEventListener('change', e => { const c = cases.find(x => x.id === e.target.value); if (c && !c.locked) { selected = c; history.replaceState(null, '', `#procedures/${encodeURIComponent(c.id)}?department=${dept}&track=${track}`); drawList(); mountMedia(); } });
     }
     root.querySelector('#procTrack').onchange=e=>{const nextTrack=e.target.value==='all'?'all':'authored';const nextCase=nextTrack==='authored'&&selected?.generated?lib.cases.find(c=>!c.generated):selected;location.hash=`#procedures${nextCase?'/'+encodeURIComponent(nextCase.id):''}?department=${dept}&track=${nextTrack}`;};
     root.querySelector('#procSearch').oninput = e => { state.q = e.target.value; drawList(); };
     root.querySelector('#procCat').onchange = e => { state.cat = e.target.value; drawList(); };
-    drawList(); mountBench();
-    const dispose=()=>{if(cleanupBench){cleanupBench();cleanupBench=null;}if(token===renderEpoch)currentContext=null;};
+    drawList(); mountBench(); mountMedia();
+    const dispose=()=>{if(cleanupMedia){cleanupMedia();cleanupMedia=null;}if(cleanupBench){cleanupBench();cleanupBench=null;}if(token===renderEpoch)currentContext=null;};
     activeDispose=dispose;return ()=>{if(activeDispose===dispose)activeDispose=null;dispose();};
   }
 

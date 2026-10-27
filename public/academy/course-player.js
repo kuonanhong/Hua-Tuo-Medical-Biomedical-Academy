@@ -4,13 +4,14 @@
 (function (window) {
   'use strict';
   const esc = v => String(v == null ? '' : v).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const safeSourceUrl = value => {try{if(typeof value!=='string'||/[\u0000-\u0020\u007f]/.test(value))return '';const url=new URL(value);return ['https:','http:'].includes(url.protocol)&&!url.username&&!url.password?url.href:'';}catch(e){return '';}};
   const t = k => window.HT.i18n.t(k);
   const zh = () => window.HT.i18n.isZh();
   const pk = (o, f) => window.HT.locale.pick(o, f);
   const loaded = {};
-  let current = { course: null, catalog: null, stage: 0, step: 0, tier: 'basic', cleanup: null };
+  let current = { course: null, catalog: null, stage: 0, step: 0, tier: 'basic', cleanup: null, mediaCleanup: null };
 
-  function dispose(){current.renderToken={};current.benchToken={};if(current.cleanup){current.cleanup();current.cleanup=null;}}
+  function dispose(){if(current.mediaCleanup){current.mediaCleanup();current.mediaCleanup=null;}current.renderToken={};current.benchToken={};if(current.cleanup){current.cleanup();current.cleanup=null;}}
 
   // Free-preview-first loading (v3.4). A course opens from its ~6 KB preview chunk
   // (data/preview/<id>.js: the free section in full, member sections as titles) so the page paints
@@ -24,6 +25,8 @@
     return window.HT_PREVIEW && window.HT_PREVIEW[cat.id] ? window.HT_PREVIEW[cat.id] : null;
   }
   async function loadFull(cat) {
+    const owned=window.HT.ownerVault?.courses(cat.department);
+    if(Array.isArray(owned)){const course=owned.find(c=>c.id===cat.id);if(course)return course;}
     // Server responses enforce access and must never survive a logout in script cache.
     if (location.protocol !== 'file:') {
       const cacheToken=current.renderToken;
@@ -41,6 +44,8 @@
   }
   const unlocked = course => !!(course && course.stages && course.stages.some((s, i) => i > 0 && s.free !== true && !s.locked && (s.steps || []).length));
   async function loadCourse(cat) {
+    const owned=window.HT.ownerVault?.courses(cat.department);
+    if(Array.isArray(owned)){const course=owned.find(c=>c.id===cat.id);if(course)return{course,preview:false};}
     // Already holding full member content for this department (signed-in pass holder): use it.
     if (fullOk(cat.department)) { const c = window.HT_COURSES[cat.department].find(x => x.id === cat.id); if (c) return { course: c, preview: !unlocked(c) }; }
     const preview = await loadPreview(cat);
@@ -111,10 +116,12 @@
     root.innerHTML = `<div class="course-head"><span class="ic">${window.HT.icons.render(cat.icon, { size: 84, title: cat.title })}</span><div style="flex:1;min-width:260px"><span class="eyebrow"><a href="#catalog?department=${cat.department}">${esc(pk(dep, 'title') || cat.departmentTitle)}</a> · ${esc(cat.kind)}${cat.flagship ? ` · <span class="tag flagship">${t('flagship')}</span>` : ''}</span><h1>${esc(pk(cat, 'title'))}</h1><p class="muted" data-no-translate>${esc(zh() ? cat.titleEn : cat.title)}</p><p>${esc(pk(cat, 'summary'))}</p><div class="row"><span class="tag free">${t('free')} · ${t('section')} 1</span><span class="tag member">${course.stages.length - 1} ${t('section')} · ${t('member')}</span>${hasIntern ? `<span class="tag intern">${t('tierIntern')}</span>` : ''}<span class="muted small">${cat.stepCount} ${t('step')} · ≈${cat.estimatedMinutes} ${t('minutes')}</span></div><div class="progress-bar" style="margin-top:10px;max-width:420px"><i style="width:${Math.min(100,Math.round(100 * doneCount / (cat.stepCount || allSteps.length || 1)))}%"></i></div><p class="small muted">${doneCount}/${cat.stepCount || allSteps.length} ${t('done')}</p></div></div>
       <div class="tier-tabs"><button class="${current.tier === 'basic' ? 'active' : ''}" data-tier="basic">${t('tierBasic')}</button>${hasIntern ? `<button class="${current.tier === 'intern' ? 'active' : ''}" data-tier="intern">${t('tierIntern')}</button>` : ''}</div>
       <div class="mentor-strip"><span>✳</span><span>${zh() ? '先在主畫面看師傅示範，再移動雙手取得證據、通過判讀。技術解說與來源在後段。有疑問可問 AI 師傅。' : 'Watch the mentor, move the hand cursors, collect evidence and pass the reasoning check. Technical explanations and sources follow the workspace. Ask the AI mentor anytime.'}</span><button class="button small" id="askStep">${t('ask')}</button></div>
+      <div id="courseLearningMedia"></div>
       ${current.tier === 'intern' ? `<div id="internArea"></div>` : `<div class="course-layout"><nav class="stage-nav" aria-label="Sections">${stageNav}</nav><section class="step-view card" id="stepView"></section></div>`}
-      <h2 style="margin-top:28px">${t('sources')}</h2><ul class="source-list">${course.sources.map(s => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.title)} ↗</a></li>`).join('')}</ul>
+      <h2 style="margin-top:28px">${t('sources')}</h2><ul class="source-list">${course.sources.map(s => {const url=safeSourceUrl(s.url);return `<li>${url?`<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(s.title)} ↗</a>`:`<span>${esc(s.title)}</span>`}</li>`;}).join('')}</ul>
       <p class="form-note">${zh() ? '本課程為教學拆解（模板＋作者資料），不是臨床指引或手術 SOP；實際操作須在合格醫師監督與機構規範下進行。' : 'This course is an educational decomposition (templates plus authored data), not a clinical guideline or operative SOP; real practice requires qualified supervision and institutional protocols.'}</p>
       ${related.length ? `<h2>${t('related')}</h2><div class="grid cols-3">${related.map(c => `<a class="course-card card flat" href="#course/${c.id}"><span class="ic" style="flex-basis:44px;width:44px;height:44px">${window.HT.icons.render(c.icon, { size: 44 })}</span><div><h3 style="font-size:.95rem">${esc(pk(c, 'title'))}</h3><p class="desc">${esc(pk(c, 'summary'))}</p></div></a>`).join('')}</div>` : ''}`;
+    if(window.HT.learningMedia)current.mediaCleanup=window.HT.learningMedia.mount(root.querySelector('#courseLearningMedia'),{...cat,mediaTags:course.mediaTags||cat.mediaTags||[]});
     root.querySelectorAll('[data-locked-stage]').forEach(b => b.onclick = () => { current.stage=Number(b.dataset.lockedStage);current.step=0;renderStep(root,cat,course); });
     root.querySelectorAll('[data-tier]').forEach(b => b.onclick = () => render(root, id, { tier: b.dataset.tier, keep: true }));
     root.querySelector('#askStep').onclick = () => window.HT.tutor.open(cat);

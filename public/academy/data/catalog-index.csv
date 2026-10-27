@@ -2422,3 +2422,770 @@ fx-tongqiao-huoxue-tang,通竅活血湯（Tongqiao Huoxue Tang）,Tongqiao Huoxu
 pd-v2-motor-review,巴金森進階：波動日誌、鑑別與交班,"Advanced Parkinson’s: fluctuation diary, differential and handover",western,neurology,case,basic+intern,11,1
 pd-v2-dbs-decision,巴金森進階：DBS共同決策與裝置安全,Advanced Parkinson’s: DBS decisions and device safety,western,neurology,case,basic+intern,11,1
 pd-v2-team-care,巴金森進階：吞嚥、跌倒與跨專業照護,"Advanced Parkinson’s: swallowing, falls and coordinated care",western,neurology,case,basic+intern,11,1
+hematology-v38-iron-loss,缺鐵來源的追查與補鐵後評估,Tracing iron loss and reassessing after replacement,western,hematology,concept,basic+intern,9,0
+hematology-v38-b12-neurology,維生素 B12 與神經表現,Vitamin B12 and neurological findings,western,hematology,concept,basic+intern,9,0
+hematology-v38-reticulocyte,網狀紅血球與骨髓反應,Reticulocytes and marrow response,western,hematology,concept,basic+intern,9,0
+hematology-v38-smear-quality,周邊血抹片的品質與判讀陷阱,Blood-film quality and interpretation pitfalls,western,hematology,concept,basic+intern,9,0
+hematology-v38-hemolysis-panel,溶血檢驗的整合判讀,Integrating haemolysis investigations,western,hematology,concept,basic+intern,9,0
+hematology-v38-g6pd,G6PD 缺乏與誘發性溶血,G6PD deficiency and triggered haemolysis,western,hematology,concept,basic+intern,9,0
+hematology-v38-aplastic-triage,全血球減少與再生不良性貧血,Pancytopenia and aplastic anaemia,western,hematology,concept,basic+intern,9,0
+hematology-v38-platelet-artifact,假性血小板減少與採樣驗證,Pseudothrombocytopenia and sample verification,western,hematology,concept,basic+intern,9,0
+hematology-v38-itp-shared,ITP 的出血風險與共同決策,Bleeding risk and shared decisions in ITP,western,hematology,concept,basic+intern,9,0
+hematology-v38-microangiopathy,血栓性微血管病變的辨識,Recognising thrombotic microangiopathy,western,hematology,concept,basic+intern,9,0
+hematology-v38-dic-trends,DIC 的動態凝血趨勢,Dynamic coagulation trends in DIC,western,hematology,concept,basic+intern,9,0
+hematology-v38-vwd-history,von Willebrand 病與出血病史,von Willebrand disease and bleeding history,western,hematology,concept,basic+intern,9,0
+hematology-v38-thrombosis-cancer,癌症相關血栓與出血權衡,Cancer-associated thrombosis and bleeding trade-offs,western,hematology,concept,basic+intern,9,0
+hematology-v38-transfusion-identification,輸血身分核對與近失事件,Transfusion identity checks and near misses,western,hematology,concept,basic+intern,9,0
+hematology-v38-transfusion-symptoms,輸血期間新症狀的鑑別,New symptoms during transfusion,western,hematology,concept,basic+intern,9,0
+hematology-v38-lymphocytosis,持續淋巴球增多與觀察策略,Persistent lymphocytosis and observation,western,hematology,concept,basic+intern,9,0
+hematology-v38-monoclonal-protein,單株蛋白：MGUS 到骨髓瘤,Monoclonal proteins from MGUS to myeloma,western,hematology,concept,basic+intern,9,0
+hematology-v38-leukemia-molecular,白血病分子報告與分類,Leukaemia molecular reports and classification,western,hematology,concept,basic+intern,9,0
+hematology-v38-neutropenia-safety,嗜中性球低下的感染安全網,Infection safety-netting in neutropenia,western,hematology,concept,basic+intern,9,0
+hematology-v38-cart-neurology,CAR-T 後發燒與神經狀態追蹤,Fever and neurological monitoring after CAR-T,western,hematology,concept,basic+intern,9,0
+hematology-v38-marrow-report,骨髓報告：細胞比例與資料整合,Bone marrow reports and integrated interpretation,western,hematology,concept,basic+intern,9,0
+hematology-v38-hematology-pregnancy,妊娠期貧血與出血評估,Anaemia and bleeding assessment in pregnancy,western,hematology,concept,basic+intern,9,0
+oncology-v38-pathology-concordance,病理、影像與臨床資料一致性,Pathology imaging and clinical concordance,western,oncology,concept,basic+intern,9,0
+oncology-v38-biomarker-preanalytics,生物標記的檢體品質,Specimen quality for biomarkers,western,oncology,concept,basic+intern,9,0
+oncology-v38-germline-somatic,體細胞與生殖系變異,Somatic and germline variants,western,oncology,concept,basic+intern,9,0
+oncology-v38-unknown-primary,原發不明癌的診斷整合,Integrating an unknown-primary work-up,western,oncology,concept,basic+intern,9,0
+oncology-v38-lung-pathways,肺癌病理與分子分型路徑,Lung cancer pathology and molecular pathways,western,oncology,concept,basic+intern,9,0
+oncology-v38-pancreatic-workup,胰臟腫瘤診斷與營養需求,Pancreatic tumour assessment and nutrition,western,oncology,concept,basic+intern,9,0
+oncology-v38-hepatobiliary,肝膽癌與器官功能評估,Hepatobiliary cancer and organ function,western,oncology,concept,basic+intern,9,0
+oncology-v38-gastric-esophageal,胃食道癌的分期與吞嚥照護,Gastric and oesophageal staging and swallowing care,western,oncology,concept,basic+intern,9,0
+oncology-v38-renal-bladder,腎臟與泌尿道癌的治療目標,Treatment goals in renal and urothelial cancer,western,oncology,concept,basic+intern,9,0
+oncology-v38-ovarian-cervical,婦癌跨專科治療與生育考量,Gynaecological cancer and fertility considerations,western,oncology,concept,basic+intern,9,0
+oncology-v38-melanoma-biology,黑色素瘤病理與全身治療概念,Melanoma pathology and systemic-treatment concepts,western,oncology,concept,basic+intern,9,0
+oncology-v38-sarcoma-mdt,肉瘤診斷與多專科轉介,Sarcoma diagnosis and specialist referral,western,oncology,concept,basic+intern,9,0
+oncology-v38-geriatric-oncology,老年腫瘤的功能與脆弱性,Function and vulnerability in older adults with cancer,western,oncology,concept,basic+intern,9,0
+oncology-v38-performance-status,體能狀態與病人回報結果,Performance status and patient-reported outcomes,western,oncology,concept,basic+intern,9,0
+oncology-v38-response-assessment,治療反應：影像與症狀不一致,Response assessment when imaging and symptoms differ,western,oncology,concept,basic+intern,9,0
+oncology-v38-immune-diarrhea,免疫治療後腹瀉的風險辨識,Risk recognition in diarrhoea after immunotherapy,western,oncology,concept,basic+intern,9,0
+oncology-v38-immune-endocrine,免疫治療與內分泌警訊,Immunotherapy and endocrine warning signs,western,oncology,concept,basic+intern,9,0
+oncology-v38-tumor-lysis,腫瘤溶解與代謝趨勢,Tumour lysis and metabolic trends,western,oncology,concept,basic+intern,9,0
+oncology-v38-cord-warning,癌症背痛與脊髓壓迫警訊,Cancer back pain and spinal-cord warning signs,western,oncology,concept,basic+intern,9,0
+oncology-v38-fertility-planning,癌症治療前生育規劃,Fertility planning before cancer treatment,western,oncology,concept,basic+intern,9,0
+oncology-v38-financial-navigation,癌症照護的費用與可近性,Costs and access in cancer care,western,oncology,concept,basic+intern,9,0
+oncology-v38-nutrition-cachexia,體重下降、食慾與癌症惡病質,Weight loss appetite and cancer cachexia,western,oncology,concept,basic+intern,9,0
+oncology-v38-rehab-neuropathy,治療後神經病變與功能復健,Post-treatment neuropathy and rehabilitation,western,oncology,concept,basic+intern,9,0
+oncology-v38-advance-goals,治療目標、緩和照護與預立討論,Treatment goals palliative care and advance discussion,western,oncology,concept,basic+intern,9,0
+radiation-oncology-v38-rt-intent,放射治療的根治、輔助與緩和目標,Curative adjuvant and palliative radiotherapy intent,western,radiation-oncology,concept,basic+intern,9,0
+radiation-oncology-v38-rt-identification,照射前病人、部位與計畫核對,Patient site and plan verification,western,radiation-oncology,concept,basic+intern,9,0
+radiation-oncology-v38-rt-targets,GTV、CTV、PTV 與不確定性,GTV CTV PTV and uncertainty,western,radiation-oncology,concept,basic+intern,9,0
+radiation-oncology-v38-rt-oar,危及器官與計畫取捨,Organs at risk and planning trade-offs,western,radiation-oncology,concept,basic+intern,9,0
+radiation-oncology-v38-rt-registration,影像配準與左右方向核對,Image registration and laterality checks,western,radiation-oncology,concept,basic+intern,9,0
+radiation-oncology-v38-rt-motion,呼吸移動與治療重現性,Breathing motion and reproducibility,western,radiation-oncology,concept,basic+intern,9,0
+radiation-oncology-v38-rt-breathhold,乳癌放療的呼吸配合與心臟保護,Breathing cooperation and heart protection in breast RT,western,radiation-oncology,concept,basic+intern,9,0
+radiation-oncology-v38-rt-adaptive,解剖變化與適應性放療,Anatomical changes and adaptive radiotherapy,western,radiation-oncology,concept,basic+intern,9,0
+radiation-oncology-v38-rt-peer-review,輪廓與計畫的同儕複核,Peer review of contours and plans,western,radiation-oncology,concept,basic+intern,9,0
+radiation-oncology-v38-rt-qa,病人專屬品質保證與放行,Patient-specific QA and release,western,radiation-oncology,concept,basic+intern,9,0
+radiation-oncology-v38-rt-interruption,治療中斷與跨團隊溝通,Treatment interruptions and team communication,western,radiation-oncology,concept,basic+intern,9,0
+radiation-oncology-v38-rt-device,心律調節器與植入裝置評估,Cardiac and other implanted-device assessment,western,radiation-oncology,concept,basic+intern,9,0
+radiation-oncology-v38-rt-pregnancy,妊娠可能性與放射安全溝通,Pregnancy possibility and radiation safety,western,radiation-oncology,concept,basic+intern,9,0
+radiation-oncology-v38-rt-reirradiation,再次放療與既往紀錄,Re-irradiation and previous-treatment records,western,radiation-oncology,concept,basic+intern,9,0
+radiation-oncology-v38-rt-brain-effects,腦部放療後影像變化,Imaging changes after brain radiotherapy,western,radiation-oncology,concept,basic+intern,9,0
+radiation-oncology-v38-rt-bone-palliation,骨轉移放療與功能目標,Bone-metastasis RT and functional goals,western,radiation-oncology,concept,basic+intern,9,0
+radiation-oncology-v38-rt-spine-urgent,脊椎轉移的急迫評估,Urgent assessment of spinal metastases,western,radiation-oncology,concept,basic+intern,9,0
+radiation-oncology-v38-rt-headneck,頭頸放療與口腔營養照護,Head-and-neck RT oral and nutritional care,western,radiation-oncology,concept,basic+intern,9,0
+radiation-oncology-v38-rt-lung-injury,胸部放療後咳嗽與喘促,Cough and dyspnoea after chest RT,western,radiation-oncology,concept,basic+intern,9,0
+radiation-oncology-v38-rt-pelvic-bowel,骨盆放療的腸道症狀,Bowel symptoms after pelvic RT,western,radiation-oncology,concept,basic+intern,9,0
+radiation-oncology-v38-rt-urinary,骨盆放療的泌尿與性健康,Urinary and sexual health after pelvic RT,western,radiation-oncology,concept,basic+intern,9,0
+radiation-oncology-v38-rt-skin-care,放射皮膚反應與變化紀錄,Radiation skin reactions and documentation,western,radiation-oncology,concept,basic+intern,9,0
+radiation-oncology-v38-rt-fatigue,放療疲倦與可逆因素,Radiotherapy fatigue and reversible factors,western,radiation-oncology,concept,basic+intern,9,0
+radiation-oncology-v38-rt-late-followup,放療遲發效應與存活者計畫,Late effects and survivorship plans,western,radiation-oncology,concept,basic+intern,9,0
+radiation-oncology-v38-rt-childhood,兒童放療與成長後追蹤,Childhood RT and later follow-up,western,radiation-oncology,concept,basic+intern,9,0
+radiation-oncology-v38-rt-radiopharm,放射性藥物治療與生活安排,Radiopharmaceutical therapy and daily arrangements,western,radiation-oncology,concept,basic+intern,9,0
+radiation-oncology-v38-rt-incident-learning,放療近失事件與系統改進,Radiotherapy near misses and system improvement,western,radiation-oncology,concept,basic+intern,9,0
+radiation-oncology-v38-rt-shared-decisions,放療選擇的共同決策與可近性,Shared radiotherapy decisions and access,western,radiation-oncology,concept,basic+intern,9,0
+infectious-disease-v38-tb-active-latent,活動性與潛伏結核的分辨,Active versus latent tuberculosis,western,infectious-disease,concept,basic+intern,9,0
+infectious-disease-v38-tb-contact-care,結核接觸者與跨團隊追蹤,TB contact investigation and continuity,western,infectious-disease,concept,basic+intern,9,0
+infectious-disease-v38-hbv-panel,B 型肝炎三合一血清學判讀,Interpreting the hepatitis B triple panel,western,infectious-disease,concept,basic+intern,9,0
+infectious-disease-v38-hcv-rna,C 型肝炎抗體與 RNA 的差別,HCV antibody versus RNA,western,infectious-disease,concept,basic+intern,9,0
+infectious-disease-v38-hiv-window,急性 HIV 與檢驗空窗期,Acute HIV and diagnostic windows,western,infectious-disease,concept,basic+intern,9,0
+infectious-disease-v38-ocular-syphilis,梅毒合併視聽覺或神經症狀,"Syphilis with ocular, auditory or neurological symptoms",western,infectious-disease,concept,basic+intern,9,0
+infectious-disease-v38-candida-bloodstream,念珠菌血流感染與感染源評估,Candidemia and source assessment,western,infectious-disease,concept,basic+intern,9,0
+infectious-disease-v38-asymptomatic-bacteriuria,無症狀菌尿與過度治療,Asymptomatic bacteriuria and overtreatment,western,infectious-disease,concept,basic+intern,9,0
+infectious-disease-v38-culture-contamination,培養污染與真正菌血症,Culture contamination versus bloodstream infection,western,infectious-disease,concept,basic+intern,9,0
+infectious-disease-v38-antibiotic-timeout,抗生素重新評估與縮窄治療,Antibiotic review and narrowing,western,infectious-disease,concept,basic+intern,9,0
+infectious-disease-v38-antibiotic-allergy-history,抗生素過敏標籤的病史核對,Reviewing antibiotic allergy labels,western,infectious-disease,concept,basic+intern,9,0
+infectious-disease-v38-infection-source-control,感染源控制的跨科決策,Multidisciplinary source-control decisions,western,infectious-disease,concept,basic+intern,9,0
+infectious-disease-v38-meningitis-recognition,腦膜炎線索與緊急升級,Meningitis clues and urgent escalation,western,infectious-disease,concept,basic+intern,9,0
+infectious-disease-v38-sepsis-host-context,宿主狀態如何改變感染風險,How host factors change infection risk,western,infectious-disease,concept,basic+intern,9,0
+infectious-disease-v38-pneumonia-followup,肺炎不改善：重新打開鑑別診斷,Non-resolving pneumonia: reopen the differential,western,infectious-disease,concept,basic+intern,9,0
+infectious-disease-v38-diabetic-foot-infection,糖尿病足感染的深度與灌流,Diabetic foot infection: depth and perfusion,western,infectious-disease,concept,basic+intern,9,0
+infectious-disease-v38-dengue-transition,登革熱退燒期的警訊,Dengue warning signs around defervescence,western,infectious-disease,concept,basic+intern,9,0
+infectious-disease-v38-malaria-test-limits,返國發燒與瘧疾檢驗限制,Returned-traveller fever and malaria testing limits,western,infectious-disease,concept,basic+intern,9,0
+infectious-disease-v38-cdiff-carriage,困難梭狀桿菌：帶菌與疾病,C. difficile colonisation versus disease,western,infectious-disease,concept,basic+intern,9,0
+infectious-disease-v38-infection-communication,隔離期間的病人溝通與污名,Communication and stigma during isolation,western,infectious-disease,concept,basic+intern,9,0
+infectious-disease-v38-microbiology-timeline,微生物報告的時間與可信度,Microbiology reporting timelines and confidence,western,infectious-disease,concept,basic+intern,9,0
+infectious-disease-v38-infection-handover,感染症交班與待報結果追蹤,Infection handover and pending-result tracking,western,infectious-disease,concept,basic+intern,9,0
+infectious-disease-v38-fungal-host-risk,侵襲性黴菌感染的宿主與檢體,Host and specimen context in invasive fungal disease,western,infectious-disease,concept,basic+intern,9,0
+dermatology-v38-bcc-patterns,基底細胞癌的外觀與評估,Basal cell carcinoma: appearance and assessment,western,dermatology,concept,basic+intern,9,0
+dermatology-v38-scc-risk,皮膚鱗狀細胞癌與高風險線索,Cutaneous squamous cell carcinoma risk clues,western,dermatology,concept,basic+intern,9,0
+dermatology-v38-acral-nail-pigment,肢端與甲下色素病灶,Acral and nail-unit pigmentation,western,dermatology,concept,basic+intern,9,0
+dermatology-v38-changing-lesion,改變中的皮膚病灶與照片追蹤,Changing lesions and serial photography,western,dermatology,concept,basic+intern,9,0
+dermatology-v38-psoriatic-joints,乾癬合併關節症狀,Psoriasis with joint symptoms,western,dermatology,concept,basic+intern,9,0
+dermatology-v38-psoriasis-impact,乾癬嚴重度與生活品質,Psoriasis severity and quality of life,western,dermatology,concept,basic+intern,9,0
+dermatology-v38-erythroderma,紅皮症與全身風險,Erythroderma and systemic risk,western,dermatology,concept,basic+intern,9,0
+dermatology-v38-contact-allergen,接觸性皮膚炎與暴露地圖,Contact dermatitis and exposure mapping,western,dermatology,concept,basic+intern,9,0
+dermatology-v38-occupational-hand,職業性手部濕疹與防護,Occupational hand eczema and protection,western,dermatology,concept,basic+intern,9,0
+dermatology-v38-eczema-infection,濕疹惡化：感染還是發炎？,Worsening eczema: infection or inflammation?,western,dermatology,concept,basic+intern,9,0
+dermatology-v38-dress-reaction,DRESS 與藥物時間線,DRESS and the medication timeline,western,dermatology,concept,basic+intern,9,0
+dermatology-v38-fixed-drug-eruption,固定型藥疹與重複暴露,Fixed drug eruption and repeat exposure,western,dermatology,concept,basic+intern,9,0
+dermatology-v38-angioedema-red-flags,血管性水腫與呼吸警訊,Angioedema and airway warning signs,western,dermatology,concept,basic+intern,9,0
+dermatology-v38-urticarial-vasculitis,持續風團與血管炎鑑別,Persistent wheals and vasculitis differential,western,dermatology,concept,basic+intern,9,0
+dermatology-v38-bullous-pemphigoid,類天皰瘡：水泡、免疫病理與照護,"Bullous pemphigoid: blisters, immunopathology and care",western,dermatology,concept,basic+intern,9,0
+dermatology-v38-hs-tunnels,化膿性汗腺炎：復發、隧道與疼痛,"Hidradenitis: recurrence, tunnels and pain",western,dermatology,concept,basic+intern,9,0
+dermatology-v38-scabies-household,疥瘡與接觸者評估,Scabies and contact assessment,western,dermatology,concept,basic+intern,9,0
+dermatology-v38-nail-differential,變色增厚指甲的鑑別診斷,Differential diagnosis of discoloured thick nails,western,dermatology,concept,basic+intern,9,0
+dermatology-v38-scarring-alopecia,疤痕性落髮的早期線索,Early clues to scarring alopecia,western,dermatology,concept,basic+intern,9,0
+dermatology-v38-telogen-shedding,休止期落髮與誘因時間線,Telogen shedding and trigger timelines,western,dermatology,concept,basic+intern,9,0
+dermatology-v38-skin-tone-assessment,不同膚色的發炎與色素判讀,Inflammation and pigmentation across skin tones,western,dermatology,concept,basic+intern,9,0
+dermatology-v38-pruritus-systemic,無明顯原發疹的全身搔癢,Generalised itch without a primary rash,western,dermatology,concept,basic+intern,9,0
+dermatology-v38-skin-immunosuppression,免疫抑制者的皮膚監測,Skin surveillance during immunosuppression,western,dermatology,concept,basic+intern,9,0
+dermatology-v38-psychodermatology,皮膚病、睡眠與心理支持,"Skin disease, sleep and psychological support",western,dermatology,concept,basic+intern,9,0
+cardiac-surgery-v38-acute-kidney-injury-after-cardiac-surgery,心臟手術後急性腎損傷：從趨勢找原因,Acute kidney injury after cardiac surgery,western,cardiac-surgery,concept,basic+intern,9,0
+cardiac-surgery-v38-atrial-fibrillation-after-cardiac-surgery,心臟手術後心房顫動與共同決策,Atrial fibrillation after cardiac surgery,western,cardiac-surgery,concept,basic+intern,9,0
+cardiac-surgery-v38-bleeding-and-blood-management-in-cardiac-surgery,心臟手術出血與病人血液管理,Bleeding and blood management in cardiac surgery,western,cardiac-surgery,concept,basic+intern,9,0
+cardiac-surgery-v38-imaging-review-before-repeat-sternotomy,再次胸骨切開的影像風險會議,Imaging review before repeat sternotomy,western,cardiac-surgery,concept,basic+intern,9,0
+cardiac-surgery-v38-surgical-team-decisions-in-endocarditis,感染性心內膜炎的外科團隊討論,Surgical team decisions in endocarditis,western,cardiac-surgery,concept,basic+intern,9,0
+cardiac-surgery-v38-patient-prosthesis-mismatch-interpretation,人工瓣膜與病人不匹配的判讀,Patient-prosthesis mismatch interpretation,western,cardiac-surgery,concept,basic+intern,9,0
+cardiac-surgery-v38-imaging-differential-of-prosthetic-valve-dysfunction,人工瓣膜功能異常的影像鑑別,Imaging differential of prosthetic valve dysfunction,western,cardiac-surgery,concept,basic+intern,9,0
+cardiac-surgery-v38-postoperative-low-cardiac-output-differential,低心輸出症候群的術後鑑別,Postoperative low cardiac output differential,western,cardiac-surgery,concept,basic+intern,9,0
+cardiac-surgery-v38-postpericardiotomy-syndrome-and-effusion-follow-up,心包切開後症候群與積液追蹤,Postpericardiotomy syndrome and effusion follow-up,western,cardiac-surgery,concept,basic+intern,9,0
+cardiac-surgery-v38-quality-of-life-after-cardiac-surgery,心臟手術後生活品質與功能回復,Quality of life after cardiac surgery,western,cardiac-surgery,concept,basic+intern,9,0
+vascular-surgery-v38-carotid-stenosis-and-cerebrovascular-risk,頸動脈狹窄與腦血管事件風險,Carotid stenosis and cerebrovascular risk,western,vascular-surgery,concept,basic+intern,9,0
+vascular-surgery-v38-perioperative-assessment-for-carotid-endarterectomy,頸動脈內膜切除的圍術期評估,Perioperative assessment for carotid endarterectomy,western,vascular-surgery,concept,basic+intern,9,0
+vascular-surgery-v38-selection-and-follow-up-for-carotid-stenting,頸動脈支架治療的選擇與追蹤,Selection and follow-up for carotid stenting,western,vascular-surgery,concept,basic+intern,9,0
+vascular-surgery-v38-endoleak-classification-after-aortic-stenting,主動脈支架術後內漏分型,Endoleak classification after aortic stenting,western,vascular-surgery,concept,basic+intern,9,0
+vascular-surgery-v38-aneurysm-surveillance-and-shared-decisions,主動脈瘤追蹤與共同決策,Aneurysm surveillance and shared decisions,western,vascular-surgery,concept,basic+intern,9,0
+vascular-surgery-v38-femoral-pseudoaneurysm-recognition,股動脈假性動脈瘤的辨識,Femoral pseudoaneurysm recognition,western,vascular-surgery,concept,basic+intern,9,0
+vascular-surgery-v38-limb-viability-in-acute-ischemia,急性肢體缺血的存活性評估,Limb viability in acute ischemia,western,vascular-surgery,concept,basic+intern,9,0
+vascular-surgery-v38-popliteal-aneurysm-and-distal-embolization,膕動脈瘤與遠端栓塞,Popliteal aneurysm and distal embolization,western,vascular-surgery,concept,basic+intern,9,0
+vascular-surgery-v38-incidentally-detected-visceral-aneurysms,內臟動脈瘤的偶然發現,Incidentally detected visceral aneurysms,western,vascular-surgery,concept,basic+intern,9,0
+vascular-surgery-v38-infected-aneurysms-and-vascular-graft-infection,感染性動脈瘤與血管移植物感染,Infected aneurysms and vascular graft infection,western,vascular-surgery,concept,basic+intern,9,0
+vascular-surgery-v38-venous-ulcers-and-compression-safety,慢性靜脈潰瘍與壓迫安全,Venous ulcers and compression safety,western,vascular-surgery,concept,basic+intern,9,0
+vascular-surgery-v38-iliac-vein-compression-and-unilateral-swelling,髂靜脈壓迫與單側腫脹,Iliac vein compression and unilateral swelling,western,vascular-surgery,concept,basic+intern,9,0
+vascular-surgery-v38-triggers-of-upper-extremity-venous-thrombosis,上肢靜脈血栓的誘因分析,Triggers of upper-extremity venous thrombosis,western,vascular-surgery,concept,basic+intern,9,0
+vascular-surgery-v38-lymphedema-versus-other-swelling,淋巴水腫與其他腫脹的鑑別,Lymphedema versus other swelling,western,vascular-surgery,concept,basic+intern,9,0
+vascular-surgery-v38-duplex-surveillance-of-bypass-grafts,繞道血管超音波監測,Duplex surveillance of bypass grafts,western,vascular-surgery,concept,basic+intern,9,0
+vascular-surgery-v38-dialysis-access-steal-syndrome,透析通路竊血症候群,Dialysis access steal syndrome,western,vascular-surgery,concept,basic+intern,9,0
+vascular-surgery-v38-high-flow-dialysis-access-and-cardiac-load,高流量透析通路與心臟負荷,High-flow dialysis access and cardiac load,western,vascular-surgery,concept,basic+intern,9,0
+vascular-surgery-v38-chronic-mesenteric-ischemia-and-meal-related-pain,慢性腸繫膜缺血與進食疼痛,Chronic mesenteric ischemia and meal-related pain,western,vascular-surgery,concept,basic+intern,9,0
+vascular-surgery-v38-antithrombotic-handover-for-vascular-surgery,血管手術的抗血栓藥物交班,Antithrombotic handover for vascular surgery,western,vascular-surgery,concept,basic+intern,9,0
+vascular-surgery-v38-organ-monitoring-after-limb-reperfusion,肢體再灌流後的器官監測,Organ monitoring after limb reperfusion,western,vascular-surgery,concept,basic+intern,9,0
+thoracic-surgery-v38-pulmonary-nodule-risk-and-surveillance,肺結節的風險分層與追蹤,Pulmonary nodule risk and surveillance,western,thoracic-surgery,concept,basic+intern,9,0
+thoracic-surgery-v38-ground-glass-nodules-and-solid-components,毛玻璃結節與實心成分,Ground-glass nodules and solid components,western,thoracic-surgery,concept,basic+intern,9,0
+thoracic-surgery-v38-pulmonary-and-exercise-testing-before-resection,肺切除前的肺功能與運動測試,Pulmonary and exercise testing before resection,western,thoracic-surgery,concept,basic+intern,9,0
+thoracic-surgery-v38-evidence-integration-in-mediastinal-staging,肺癌縱膈分期的證據整合,Evidence integration in mediastinal staging,western,thoracic-surgery,concept,basic+intern,9,0
+thoracic-surgery-v38-choosing-a-lung-nodule-sampling-route,肺結節取樣途徑的選擇,Choosing a lung nodule sampling route,western,thoracic-surgery,concept,basic+intern,9,0
+thoracic-surgery-v38-margins-and-frozen-sections-in-lung-resection,肺切除邊緣與冰凍切片判讀,Margins and frozen sections in lung resection,western,thoracic-surgery,concept,basic+intern,9,0
+thoracic-surgery-v38-persistent-air-leak-after-lung-surgery,肺手術後持續漏氣的觀察,Persistent air leak after lung surgery,western,thoracic-surgery,concept,basic+intern,9,0
+thoracic-surgery-v38-clues-to-bronchopleural-fistula,支氣管胸膜瘻的線索,Clues to bronchopleural fistula,western,thoracic-surgery,concept,basic+intern,9,0
+thoracic-surgery-v38-imaging-after-pneumonectomy,全肺切除後的特殊影像,Imaging after pneumonectomy,western,thoracic-surgery,concept,basic+intern,9,0
+thoracic-surgery-v38-chylothorax-differential-and-nutrition,乳糜胸的鑑別與營養評估,Chylothorax differential and nutrition,western,thoracic-surgery,concept,basic+intern,9,0
+thoracic-surgery-v38-symptom-led-decisions-for-malignant-effusion,惡性胸水的症狀導向決策,Symptom-led decisions for malignant effusion,western,thoracic-surgery,concept,basic+intern,9,0
+thoracic-surgery-v38-multidisciplinary-review-of-pleural-tumors,胸膜腫瘤的多專科討論,Multidisciplinary review of pleural tumors,western,thoracic-surgery,concept,basic+intern,9,0
+thoracic-surgery-v38-early-clues-to-esophageal-anastomotic-leak,食道吻合口漏的早期線索,Early clues to esophageal anastomotic leak,western,thoracic-surgery,concept,basic+intern,9,0
+thoracic-surgery-v38-swallowing-and-nutrition-after-esophageal-surgery,食道手術後吞嚥與營養,Swallowing and nutrition after esophageal surgery,western,thoracic-surgery,concept,basic+intern,9,0
+thoracic-surgery-v38-compartment-based-mediastinal-mass-differential,縱膈腫塊的分區鑑別,Compartment-based mediastinal mass differential,western,thoracic-surgery,concept,basic+intern,9,0
+thoracic-surgery-v38-chest-wall-trauma-and-flail-chest,胸壁創傷與連枷胸評估,Chest wall trauma and flail chest,western,thoracic-surgery,concept,basic+intern,9,0
+thoracic-surgery-v38-diaphragm-paralysis-and-dyspnea,橫膈麻痺與呼吸困難,Diaphragm paralysis and dyspnea,western,thoracic-surgery,concept,basic+intern,9,0
+thoracic-surgery-v38-surgical-selection-for-pulmonary-metastases,肺轉移病灶的外科選擇,Surgical selection for pulmonary metastases,western,thoracic-surgery,concept,basic+intern,9,0
+thoracic-surgery-v38-prehabilitation-and-frailty-in-thoracic-surgery,胸腔手術前復健與脆弱度,Prehabilitation and frailty in thoracic surgery,western,thoracic-surgery,concept,basic+intern,9,0
+thoracic-surgery-v38-cross-checking-thoracic-drainage-data,胸腔引流數據與病況交叉核對,Cross-checking thoracic drainage data,western,thoracic-surgery,concept,basic+intern,9,0
+thoracic-surgery-v38-imaging-and-function-in-tracheal-stenosis,氣管狹窄的影像與功能評估,Imaging and function in tracheal stenosis,western,thoracic-surgery,concept,basic+intern,9,0
+thoracic-surgery-v38-infection-versus-rejection-after-lung-transplant,肺移植後感染與排斥的鑑別,Infection versus rejection after lung transplant,western,thoracic-surgery,concept,basic+intern,9,0
+orthopedics-v38-fracture-liaison-care-and-secondary-prevention,骨折聯合照護與次級預防,Fracture liaison care and secondary prevention,western,orthopedics,concept,basic+intern,9,0
+orthopedics-v38-localising-postoperative-peripheral-nerve-deficits,骨科術後周邊神經缺損定位,Localising postoperative peripheral nerve deficits,western,orthopedics,concept,basic+intern,9,0
+orthopedics-v38-urgent-differentials-in-a-limping-child,兒童跛行的危急鑑別,Urgent differentials in a limping child,western,orthopedics,concept,basic+intern,9,0
+orthopedics-v38-pathological-fractures-on-orthopedic-imaging,骨科影像中的病理性骨折,Pathological fractures on orthopedic imaging,western,orthopedics,concept,basic+intern,9,0
+orthopedics-v38-falls-and-home-safety-after-orthopedic-surgery,骨科術後跌倒與居家環境,Falls and home safety after orthopedic surgery,western,orthopedics,concept,basic+intern,9,0
+joint-reconstruction-v38-spinopelvic-mobility-and-hip-stability,脊椎骨盆活動與髖關節穩定,Spinopelvic mobility and hip stability,western,joint-reconstruction,concept,basic+intern,9,0
+joint-reconstruction-v38-patient-reported-outcomes-after-arthroplasty,關節置換後的病人回報成效,Patient-reported outcomes after arthroplasty,western,joint-reconstruction,concept,basic+intern,9,0
+joint-reconstruction-v38-metal-implants-and-local-tissue-reaction,金屬植入物與局部組織反應,Metal implants and local tissue reaction,western,joint-reconstruction,concept,basic+intern,9,0
+joint-reconstruction-v38-instability-and-nerve-problems-after-shoulder-arthroplasty,肩關節置換後不穩定與神經問題,Instability and nerve problems after shoulder arthroplasty,western,joint-reconstruction,concept,basic+intern,9,0
+joint-reconstruction-v38-psychological-readiness-for-return-to-sport,運動回場的心理準備與風險溝通,Psychological readiness for return to sport,western,joint-reconstruction,concept,basic+intern,9,0
+joint-reconstruction-v38-nutrition-and-anemia-before-arthroplasty,關節置換的術前營養與貧血,Nutrition and anemia before arthroplasty,western,joint-reconstruction,concept,basic+intern,9,0
+joint-reconstruction-v38-extra-articular-causes-of-painful-arthroplasty,疼痛人工關節的非關節來源,Extra-articular causes of painful arthroplasty,western,joint-reconstruction,concept,basic+intern,9,0
+spine-v38-recognising-cauda-equina-symptom-clusters,馬尾症候群的症狀群辨識,Recognising cauda equina symptom clusters,western,spine,concept,basic+intern,9,0
+spine-v38-cervical-myelopathy-versus-peripheral-neuropathy,頸髓病變與周邊神經病變,Cervical myelopathy versus peripheral neuropathy,western,spine,concept,basic+intern,9,0
+spine-v38-localisation-in-cervical-radiculopathy,頸椎神經根病變的定位,Localisation in cervical radiculopathy,western,spine,concept,basic+intern,9,0
+spine-v38-lumbar-spondylolisthesis-and-dynamic-instability,腰椎滑脫與動態不穩定,Lumbar spondylolisthesis and dynamic instability,western,spine,concept,basic+intern,9,0
+spine-v38-neurogenic-versus-vascular-claudication,神經性與血管性跛行,Neurogenic versus vascular claudication,western,spine,concept,basic+intern,9,0
+spine-v38-foraminal-stenosis-and-symptom-correlation,椎間孔狹窄與症狀對應,Foraminal stenosis and symptom correlation,western,spine,concept,basic+intern,9,0
+spine-v38-postoperative-dural-injury-and-headache,脊椎術後硬膜破損與頭痛,Postoperative dural injury and headache,western,spine,concept,basic+intern,9,0
+spine-v38-clues-to-postoperative-epidural-hematoma,脊椎術後硬膜外血腫線索,Clues to postoperative epidural hematoma,western,spine,concept,basic+intern,9,0
+spine-v38-reassessing-persistent-pain-after-spinal-surgery,脊椎手術後持續疼痛的重評估,Reassessing persistent pain after spinal surgery,western,spine,concept,basic+intern,9,0
+spine-v38-adjacent-segment-disease-and-revision-review,鄰近節段病變與再手術評估,Adjacent segment disease and revision review,western,spine,concept,basic+intern,9,0
+spine-v38-spinal-pseudarthrosis-and-implant-loosening,脊椎假關節與植入物鬆動,Spinal pseudarthrosis and implant loosening,western,spine,concept,basic+intern,9,0
+spine-v38-bone-quality-in-spinal-reconstruction,骨質疏鬆對脊椎重建的影響,Bone quality in spinal reconstruction,western,spine,concept,basic+intern,9,0
+spine-v38-low-energy-trauma-in-an-ankylosed-spine,僵直性脊椎的低能量創傷,Low-energy trauma in an ankylosed spine,western,spine,concept,basic+intern,9,0
+spine-v38-geriatric-decisions-in-odontoid-fracture,齒突骨折的老年照護取捨,Geriatric decisions in odontoid fracture,western,spine,concept,basic+intern,9,0
+spine-v38-spinal-tuberculosis-versus-pyogenic-infection,脊椎結核與化膿性感染,Spinal tuberculosis versus pyogenic infection,western,spine,concept,basic+intern,9,0
+spine-v38-vertebral-hemangioma-and-incidental-lesions,椎體血管瘤與偶發骨病灶,Vertebral hemangioma and incidental lesions,western,spine,concept,basic+intern,9,0
+spine-v38-growth-monitoring-in-childhood-scoliosis,兒童脊椎側彎的成長追蹤,Growth monitoring in childhood scoliosis,western,spine,concept,basic+intern,9,0
+spine-v38-interpreting-intraoperative-spinal-monitoring,脊椎術中神經監測的訊號判讀,Interpreting intraoperative spinal monitoring,western,spine,concept,basic+intern,9,0
+spine-v38-metal-artifacts-in-spinal-imaging,脊椎影像金屬偽影與判讀限制,Metal artifacts in spinal imaging,western,spine,concept,basic+intern,9,0
+spine-v38-smoking-and-modifiable-spinal-surgery-risks,脊椎手術的吸菸與可改善風險,Smoking and modifiable spinal surgery risks,western,spine,concept,basic+intern,9,0
+spine-v38-return-to-work-after-spinal-surgery,脊椎術後復工與負荷調整,Return to work after spinal surgery,western,spine,concept,basic+intern,9,0
+spine-v38-syringomyelia-and-intramedullary-lesions,脊髓空洞症與脊髓內病灶,Syringomyelia and intramedullary lesions,western,spine,concept,basic+intern,9,0
+urology-v38-risk-based-assessment-of-painless-hematuria,無痛性血尿的分層評估,Risk-based assessment of painless hematuria,western,urology,concept,basic+intern,9,0
+urology-v38-retention-and-post-obstructive-diuresis,急性尿滯留與阻塞後利尿,Retention and post-obstructive diuresis,western,urology,concept,basic+intern,9,0
+urology-v38-renal-protection-in-neurogenic-bladder,神經性膀胱的腎臟保護,Renal protection in neurogenic bladder,western,urology,concept,basic+intern,9,0
+urology-v38-infection-with-obstructing-urinary-stones,泌尿道結石合併感染的警訊,Infection with obstructing urinary stones,western,urology,concept,basic+intern,9,0
+urology-v38-differential-of-bladder-pain-syndrome,膀胱疼痛症候群的鑑別,Differential of bladder pain syndrome,western,urology,concept,basic+intern,9,0
+urology-v38-active-surveillance-in-prostate-cancer,攝護腺癌主動監測,Active surveillance in prostate cancer,western,urology,concept,basic+intern,9,0
+urology-v38-nephron-sparing-decisions-for-small-renal-masses,腎臟小腫塊的保腎決策,Nephron-sparing decisions for small renal masses,western,urology,concept,basic+intern,9,0
+urology-v38-grade-stage-and-surveillance-after-bladder-tumor-treatment,膀胱癌術後分級分期與追蹤,Grade stage and surveillance after bladder tumor treatment,western,urology,concept,basic+intern,9,0
+urology-v38-hydronephrosis-and-obstruction-assessment,腎積水與阻塞程度判讀,Hydronephrosis and obstruction assessment,western,urology,concept,basic+intern,9,0
+urology-v38-ureteric-stent-symptoms-and-removal-tracking,輸尿管支架症狀與移除追蹤,Ureteric stent symptoms and removal tracking,western,urology,concept,basic+intern,9,0
+urology-v38-urinary-stoma-skin-and-daily-adjustment,泌尿造口皮膚與生活調適,Urinary stoma skin and daily adjustment,western,urology,concept,basic+intern,9,0
+urology-v38-penile-curvature-and-sexual-quality-of-life,陰莖彎曲與性生活品質,Penile curvature and sexual quality of life,western,urology,concept,basic+intern,9,0
+urology-v38-follow-up-of-childhood-vesicoureteral-reflux,兒童膀胱輸尿管逆流追蹤,Follow-up of childhood vesicoureteral reflux,western,urology,concept,basic+intern,9,0
+urology-v38-frailty-and-overtreatment-in-urology,泌尿科衰弱老人與過度治療,Frailty and overtreatment in urology,western,urology,concept,basic+intern,9,0
+ent-v38-positional-vertigo-and-central-warning-signs,良性陣發性姿勢性眩暈與中樞警訊,Positional vertigo and central warning signs,western,ent,concept,basic+intern,9,0
+ent-v38-meniere-disease-and-fluctuating-hearing,梅尼爾氏症與波動性聽力,Meniere disease and fluctuating hearing,western,ent,concept,basic+intern,9,0
+ent-v38-tinnitus-history-and-important-differentials,耳鳴的病史與危急鑑別,Tinnitus history and important differentials,western,ent,concept,basic+intern,9,0
+ent-v38-ototoxicity-and-hearing-baseline-monitoring,耳毒性與聽力基線監測,Ototoxicity and hearing baseline monitoring,western,ent,concept,basic+intern,9,0
+ent-v38-age-related-hearing-loss-and-communication,老年性聽損與溝通支持,Age-related hearing loss and communication,western,ent,concept,basic+intern,9,0
+ent-v38-test-discordance-in-auditory-neuropathy,聽覺神經病變的檢查差異,Test discordance in auditory neuropathy,western,ent,concept,basic+intern,9,0
+ent-v38-smell-loss-and-taste-complaints,嗅覺喪失與味覺抱怨,Smell loss and taste complaints,western,ent,concept,basic+intern,9,0
+ent-v38-inflammatory-phenotypes-in-chronic-sinus-disease,慢性鼻竇炎的發炎表型,Inflammatory phenotypes in chronic sinus disease,western,ent,concept,basic+intern,9,0
+ent-v38-orbital-and-intracranial-sinus-complications,鼻竇炎的眼眶與顱內併發症,Orbital and intracranial sinus complications,western,ent,concept,basic+intern,9,0
+ent-v38-risk-assessment-of-adult-neck-masses,成人頸部腫塊的分層診斷,Risk assessment of adult neck masses,western,ent,concept,basic+intern,9,0
+ent-v38-dysphagia-and-aspiration-risk,吞嚥困難與吸入風險,Dysphagia and aspiration risk,western,ent,concept,basic+intern,9,0
+ent-v38-investigating-unilateral-vocal-fold-paralysis,單側聲帶麻痺的病因追查,Investigating unilateral vocal fold paralysis,western,ent,concept,basic+intern,9,0
+ent-v38-salivary-stones-and-recurrent-swelling,唾液腺結石與反覆腫脹,Salivary stones and recurrent swelling,western,ent,concept,basic+intern,9,0
+ent-v38-swallowing-and-voice-after-head-neck-cancer,頭頸癌治療後的吞嚥與發聲,Swallowing and voice after head-neck cancer,western,ent,concept,basic+intern,9,0
+ent-v38-childhood-snoring-and-daytime-behavior,兒童鼾聲與白天行為,Childhood snoring and daytime behavior,western,ent,concept,basic+intern,9,0
+ophthalmology-v38-imaging-follow-up-in-macular-degeneration,年齡相關黃斑部退化的影像追蹤,Imaging follow-up in macular degeneration,western,ophthalmology,concept,basic+intern,9,0
+ophthalmology-v38-dry-eye-and-ocular-surface-function,乾眼症與眼表功能評估,Dry eye and ocular surface function,western,ophthalmology,concept,basic+intern,9,0
+ophthalmology-v38-infectious-keratitis-and-contact-lenses,感染性角膜炎與隱形眼鏡,Infectious keratitis and contact lenses,western,ophthalmology,concept,basic+intern,9,0
+ophthalmology-v38-optic-neuritis-and-neuro-ophthalmic-clues,視神經炎與神經眼科線索,Optic neuritis and neuro-ophthalmic clues,western,ophthalmology,concept,basic+intern,9,0
+ophthalmology-v38-disc-swelling-and-intracranial-pressure,視乳頭水腫與顱內壓問題,Disc swelling and intracranial pressure,western,ophthalmology,concept,basic+intern,9,0
+ophthalmology-v38-thyroid-eye-disease-and-optic-nerve-risk,甲狀腺眼病與視神經風險,Thyroid eye disease and optic nerve risk,western,ophthalmology,concept,basic+intern,9,0
+ophthalmology-v38-risk-assessment-in-retinal-vein-occlusion,視網膜靜脈阻塞的風險評估,Risk assessment in retinal vein occlusion,western,ophthalmology,concept,basic+intern,9,0
+ophthalmology-v38-retinal-artery-occlusion-and-acute-visual-loss,視網膜動脈阻塞與急性視力喪失,Retinal artery occlusion and acute visual loss,western,ophthalmology,concept,basic+intern,9,0
+ophthalmology-v38-early-amblyopia-detection-and-family-cooperation,弱視的早期發現與家庭合作,Early amblyopia detection and family cooperation,western,ophthalmology,concept,basic+intern,9,0
+ophthalmology-v38-differential-of-childhood-leukocoria,兒童白瞳症的鑑別,Differential of childhood leukocoria,western,ophthalmology,concept,basic+intern,9,0
+ophthalmology-v38-inherited-retinal-disease-and-genetic-counselling,遺傳性視網膜病變與遺傳諮詢,Inherited retinal disease and genetic counselling,western,ophthalmology,concept,basic+intern,9,0
+ophthalmology-v38-postoperative-endophthalmitis-warning-signs,眼內炎的術後警訊,Postoperative endophthalmitis warning signs,western,ophthalmology,concept,basic+intern,9,0
+ophthalmology-v38-low-vision-rehabilitation-and-daily-tasks,低視能復健與生活任務,Low-vision rehabilitation and daily tasks,western,ophthalmology,concept,basic+intern,9,0
+ophthalmology-v38-monitoring-drug-related-retinal-toxicity,藥物相關視網膜毒性監測,Monitoring drug-related retinal toxicity,western,ophthalmology,concept,basic+intern,9,0
+ophthalmology-v38-ocular-chemical-injury-severity-assessment,眼部化學傷與傷害程度評估,Ocular chemical injury severity assessment,western,ophthalmology,concept,basic+intern,9,0
+plastic-surgery-v38-inhalation-injury-and-burn-respiratory-risk,吸入性損傷與燒傷呼吸風險,Inhalation injury and burn respiratory risk,western,plastic-surgery,concept,basic+intern,9,0
+plastic-surgery-v38-deep-injury-clues-in-electrical-burns,電燒傷的深層損傷線索,Deep injury clues in electrical burns,western,plastic-surgery,concept,basic+intern,9,0
+plastic-surgery-v38-chemical-burns-and-exposure-history,化學燒傷與暴露資訊,Chemical burns and exposure history,western,plastic-surgery,concept,basic+intern,9,0
+plastic-surgery-v38-burn-nutrition-and-muscle-loss,燒傷營養與肌肉流失,Burn nutrition and muscle loss,western,plastic-surgery,concept,basic+intern,9,0
+plastic-surgery-v38-interpreting-free-flap-monitoring-changes,游離皮瓣監測的變化判讀,Interpreting free-flap monitoring changes,western,plastic-surgery,concept,basic+intern,9,0
+plastic-surgery-v38-shared-decisions-after-mastectomy,乳房切除後重建的共同決策,Shared decisions after mastectomy,western,plastic-surgery,concept,basic+intern,9,0
+plastic-surgery-v38-breast-implant-complications-and-follow-up,乳房植入物併發症與追蹤,Breast implant complications and follow-up,western,plastic-surgery,concept,basic+intern,9,0
+plastic-surgery-v38-dynamic-reconstruction-in-facial-paralysis,顏面神經麻痺的動態重建,Dynamic reconstruction in facial paralysis,western,plastic-surgery,concept,basic+intern,9,0
+plastic-surgery-v38-craniosynostosis-and-childhood-head-shape,顱縫早閉與兒童頭形評估,Craniosynostosis and childhood head shape,western,plastic-surgery,concept,basic+intern,9,0
+plastic-surgery-v38-functional-assessment-of-congenital-hand-differences,先天性手部差異的功能評估,Functional assessment of congenital hand differences,western,plastic-surgery,concept,basic+intern,9,0
+plastic-surgery-v38-sensory-re-education-after-hand-nerve-repair,手部神經修復後的感覺再教育,Sensory re-education after hand nerve repair,western,plastic-surgery,concept,basic+intern,9,0
+plastic-surgery-v38-necrotizing-infection-and-misleading-wound-appearance,壞死性軟組織感染與傷口外觀落差,Necrotizing infection and misleading wound appearance,western,plastic-surgery,concept,basic+intern,9,0
+plastic-surgery-v38-pre-reconstruction-review-of-diabetic-wounds,糖尿病慢性傷口的重建前評估,Pre-reconstruction review of diabetic wounds,western,plastic-surgery,concept,basic+intern,9,0
+plastic-surgery-v38-pathological-scars-and-patient-concerns,病理性疤痕與病人困擾,Pathological scars and patient concerns,western,plastic-surgery,concept,basic+intern,9,0
+plastic-surgery-v38-donor-site-function-in-reconstruction,重建手術的供區功能代價,Donor-site function in reconstruction,western,plastic-surgery,concept,basic+intern,9,0
+plastic-surgery-v38-expectations-and-body-image-in-plastic-surgery,整形手術期待與身體意象,Expectations and body image in plastic surgery,western,plastic-surgery,concept,basic+intern,9,0
+obstetrics-v38-preconception-medicines-and-chronic-disease,孕前用藥與慢性病準備,Preconception medicines and chronic disease,western,obstetrics,concept,basic+intern,9,0
+obstetrics-v38-home-monitoring-in-pregnancy-hypertension,妊娠高血壓的居家追蹤,Home monitoring in pregnancy hypertension,western,obstetrics,concept,basic+intern,9,0
+obstetrics-v38-recognising-venous-thrombosis-in-pregnancy,孕期靜脈血栓的辨識,Recognising venous thrombosis in pregnancy,western,obstetrics,concept,basic+intern,9,0
+obstetrics-v38-fetal-growth-restriction-and-placental-function,胎兒生長受限與胎盤功能,Fetal growth restriction and placental function,western,obstetrics,concept,basic+intern,9,0
+obstetrics-v38-history-and-assessment-of-reduced-fetal-movements,胎動減少的病史與評估,History and assessment of reduced fetal movements,western,obstetrics,concept,basic+intern,9,0
+obstetrics-v38-ruptured-membranes-and-infection-clues,早期破水與感染線索,Ruptured membranes and infection clues,western,obstetrics,concept,basic+intern,9,0
+obstetrics-v38-placenta-previa-and-pregnancy-bleeding,前置胎盤與孕期出血,Placenta previa and pregnancy bleeding,western,obstetrics,concept,basic+intern,9,0
+obstetrics-v38-multifaceted-clues-to-placental-abruption,胎盤早期剝離的多面向線索,Multifaceted clues to placental abruption,western,obstetrics,concept,basic+intern,9,0
+obstetrics-v38-chorionicity-in-twin-pregnancy,雙胎妊娠的絨毛膜性,Chorionicity in twin pregnancy,western,obstetrics,concept,basic+intern,9,0
+obstetrics-v38-pregnancy-cholestasis-and-itching,妊娠膽汁鬱積與搔癢,Pregnancy cholestasis and itching,western,obstetrics,concept,basic+intern,9,0
+obstetrics-v38-hyperemesis-and-dehydration-assessment,妊娠劇吐與脫水評估,Hyperemesis and dehydration assessment,western,obstetrics,concept,basic+intern,9,0
+obstetrics-v38-anemia-and-iron-deficiency-in-pregnancy,孕期貧血與鐵缺乏,Anemia and iron deficiency in pregnancy,western,obstetrics,concept,basic+intern,9,0
+obstetrics-v38-thyroid-disease-and-pregnancy-test-interpretation,孕期甲狀腺疾病與檢驗解讀,Thyroid disease and pregnancy test interpretation,western,obstetrics,concept,basic+intern,9,0
+obstetrics-v38-heart-disease-and-exercise-tolerance-in-pregnancy,孕期心臟病與活動耐受,Heart disease and exercise tolerance in pregnancy,western,obstetrics,concept,basic+intern,9,0
+obstetrics-v38-birth-choices-after-previous-cesarean,剖腹產後再次生產的選擇,Birth choices after previous cesarean,western,obstetrics,concept,basic+intern,9,0
+obstetrics-v38-prenatal-infection-screening-and-newborn-protection,孕期感染篩檢與新生兒保護,Prenatal infection screening and newborn protection,western,obstetrics,concept,basic+intern,9,0
+obstetrics-v38-postpartum-depression-and-psychological-safety,產後憂鬱與心理安全,Postpartum depression and psychological safety,western,obstetrics,concept,basic+intern,9,0
+obstetrics-v38-peripartum-cardiomyopathy-and-respiratory-symptoms,產後心肌病變與呼吸症狀,Peripartum cardiomyopathy and respiratory symptoms,western,obstetrics,concept,basic+intern,9,0
+obstetrics-v38-postpartum-wounds-and-infection-follow-up,產後傷口與感染追蹤,Postpartum wounds and infection follow-up,western,obstetrics,concept,basic+intern,9,0
+obstetrics-v38-pelvic-floor-function-after-childbirth,生產後骨盆底與日常功能,Pelvic floor function after childbirth,western,obstetrics,concept,basic+intern,9,0
+gynecology-v38-risk-assessment-of-postmenopausal-bleeding,停經後出血的風險評估,Risk assessment of postmenopausal bleeding,western,gynecology,concept,basic+intern,9,0
+gynecology-v38-ovarian-torsion-and-acute-pelvic-pain,卵巢扭轉與急性骨盆痛,Ovarian torsion and acute pelvic pain,western,gynecology,concept,basic+intern,9,0
+gynecology-v38-pelvic-infection-and-reproductive-consequences,骨盆腔感染與生殖後果,Pelvic infection and reproductive consequences,western,gynecology,concept,basic+intern,9,0
+gynecology-v38-adenomyosis-and-menstrual-pain,子宮腺肌症與月經疼痛,Adenomyosis and menstrual pain,western,gynecology,concept,basic+intern,9,0
+gynecology-v38-multisystem-differential-of-chronic-pelvic-pain,慢性骨盆痛的多系統鑑別,Multisystem differential of chronic pelvic pain,western,gynecology,concept,basic+intern,9,0
+gynecology-v38-vulvar-lichen-sclerosus-and-skin-changes,外陰硬化性苔癬與皮膚變化,Vulvar lichen sclerosus and skin changes,western,gynecology,concept,basic+intern,9,0
+gynecology-v38-vulvar-pain-and-sexual-communication,外陰疼痛與性生活溝通,Vulvar pain and sexual communication,western,gynecology,concept,basic+intern,9,0
+gynecology-v38-genitourinary-syndrome-of-menopause,更年期泌尿生殖症候群,Genitourinary syndrome of menopause,western,gynecology,concept,basic+intern,9,0
+gynecology-v38-primary-ovarian-insufficiency,早發性卵巢功能不全,Primary ovarian insufficiency,western,gynecology,concept,basic+intern,9,0
+gynecology-v38-hirsutism-and-androgen-excess-differential,多毛症與高雄性素鑑別,Hirsutism and androgen excess differential,western,gynecology,concept,basic+intern,9,0
+gynecology-v38-structured-assessment-of-primary-amenorrhea,原發性無月經的分層評估,Structured assessment of primary amenorrhea,western,gynecology,concept,basic+intern,9,0
+gynecology-v38-heavy-adolescent-menstruation-and-bleeding-disorders,青少女大量月經與凝血問題,Heavy adolescent menstruation and bleeding disorders,western,gynecology,concept,basic+intern,9,0
+gynecology-v38-genetic-risk-counselling-in-gynecologic-cancer,婦科腫瘤的遺傳風險諮詢,Genetic risk counselling in gynecologic cancer,western,gynecology,concept,basic+intern,9,0
+gynecology-v38-imaging-risk-assessment-of-adnexal-masses,附件腫塊的影像風險分層,Imaging risk assessment of adnexal masses,western,gynecology,concept,basic+intern,9,0
+gynecology-v38-tubal-factors-in-infertility,不孕症中的輸卵管因素,Tubal factors in infertility,western,gynecology,concept,basic+intern,9,0
+gynecology-v38-ovarian-hyperstimulation-warning-signs,卵巢過度刺激症候群的警訊,Ovarian hyperstimulation warning signs,western,gynecology,concept,basic+intern,9,0
+gynecology-v38-evidence-based-review-of-recurrent-pregnancy-loss,反覆流產的證據分層,Evidence-based review of recurrent pregnancy loss,western,gynecology,concept,basic+intern,9,0
+gynecology-v38-survivorship-after-gynecologic-cancer,婦科癌症治療後的生存照護,Survivorship after gynecologic cancer,western,gynecology,concept,basic+intern,9,0
+gynecology-v38-trauma-informed-gynecologic-communication,婦科處置的創傷知情溝通,Trauma-informed gynecologic communication,western,gynecology,concept,basic+intern,9,0
+pediatric-surgery-v38-bilious-vomiting-and-intestinal-malrotation,膽汁性嘔吐與腸旋轉不良,Bilious vomiting and intestinal malrotation,western,pediatric-surgery,concept,basic+intern,9,0
+pediatric-surgery-v38-duodenal-atresia-and-neonatal-obstruction,十二指腸閉鎖與新生兒阻塞,Duodenal atresia and neonatal obstruction,western,pediatric-surgery,concept,basic+intern,9,0
+pediatric-surgery-v38-jejunoileal-atresia-and-bowel-function,空腸迴腸閉鎖的腸道功能,Jejunoileal atresia and bowel function,western,pediatric-surgery,concept,basic+intern,9,0
+pediatric-surgery-v38-meckel-diverticulum-and-childhood-bleeding,梅克爾憩室與兒童腸出血,Meckel diverticulum and childhood bleeding,western,pediatric-surgery,concept,basic+intern,9,0
+pediatric-surgery-v38-childhood-appendicitis-and-atypical-pain,兒童闌尾炎與非典型腹痛,Childhood appendicitis and atypical pain,western,pediatric-surgery,concept,basic+intern,9,0
+pediatric-surgery-v38-imaging-of-enteric-duplication-cysts,消化道重複囊腫的影像,Imaging of enteric duplication cysts,western,pediatric-surgery,concept,basic+intern,9,0
+pediatric-surgery-v38-biliary-cysts-and-childhood-jaundice,膽道囊腫與兒童黃疸,Biliary cysts and childhood jaundice,western,pediatric-surgery,concept,basic+intern,9,0
+pediatric-surgery-v38-short-bowel-syndrome-and-intestinal-adaptation,兒童短腸症候群與腸適應,Short bowel syndrome and intestinal adaptation,western,pediatric-surgery,concept,basic+intern,9,0
+pediatric-surgery-v38-pediatric-gastrostomy-and-home-nutrition,兒童胃造口與家庭營養照護,Pediatric gastrostomy and home nutrition,western,pediatric-surgery,concept,basic+intern,9,0
+pediatric-surgery-v38-surgical-choices-in-pediatric-reflux,兒童胃食道逆流的外科選擇,Surgical choices in pediatric reflux,western,pediatric-surgery,concept,basic+intern,9,0
+pediatric-surgery-v38-information-handover-in-neonatal-surgical-transfer,新生兒外科轉送的資訊交班,Information handover in neonatal surgical transfer,western,pediatric-surgery,concept,basic+intern,9,0
+pediatric-surgery-v38-temperature-and-fluid-monitoring-in-pediatric-surgery,小兒手術的保溫與體液監測,Temperature and fluid monitoring in pediatric surgery,western,pediatric-surgery,concept,basic+intern,9,0
+pediatric-surgery-v38-gastrointestinal-foreign-bodies-and-button-batteries,兒童消化道異物與鈕扣電池,Gastrointestinal foreign bodies and button batteries,western,pediatric-surgery,concept,basic+intern,9,0
+pediatric-surgery-v38-caustic-exposure-and-swallowing-changes-in-children,兒童腐蝕物暴露與吞嚥變化,Caustic exposure and swallowing changes in children,western,pediatric-surgery,concept,basic+intern,9,0
+pediatric-surgery-v38-adolescent-pilonidal-disease-and-wound-care,青少年藏毛竇與傷口照護,Adolescent pilonidal disease and wound care,western,pediatric-surgery,concept,basic+intern,9,0
+pediatric-surgery-v38-branchial-anomalies-and-childhood-neck-masses,鰓裂異常與兒童頸部腫塊,Branchial anomalies and childhood neck masses,western,pediatric-surgery,concept,basic+intern,9,0
+pediatric-surgery-v38-thyroglossal-cysts-and-midline-masses,甲狀舌管囊腫與中線腫塊,Thyroglossal cysts and midline masses,western,pediatric-surgery,concept,basic+intern,9,0
+pediatric-surgery-v38-extent-assessment-in-lymphatic-malformations,淋巴管畸形的範圍評估,Extent assessment in lymphatic malformations,western,pediatric-surgery,concept,basic+intern,9,0
+pediatric-surgery-v38-pectus-carinatum-and-chest-wall-growth,雞胸與胸壁成長,Pectus carinatum and chest wall growth,western,pediatric-surgery,concept,basic+intern,9,0
+pediatric-surgery-v38-surveillance-of-congenital-pulmonary-airway-malformations,先天性肺氣道畸形的追蹤,Surveillance of congenital pulmonary airway malformations,western,pediatric-surgery,concept,basic+intern,9,0
+pediatric-surgery-v38-swallowing-follow-up-after-esophageal-atresia-repair,食道閉鎖修補後的吞嚥追蹤,Swallowing follow-up after esophageal atresia repair,western,pediatric-surgery,concept,basic+intern,9,0
+pediatric-surgery-v38-bowel-function-after-anorectal-malformation,肛門直腸畸形後的排便功能,Bowel function after anorectal malformation,western,pediatric-surgery,concept,basic+intern,9,0
+pediatric-surgery-v38-surgical-review-in-pediatric-inflammatory-bowel-disease,小兒發炎性腸病的外科會議,Surgical review in pediatric inflammatory bowel disease,western,pediatric-surgery,concept,basic+intern,9,0
+pediatric-surgery-v38-observation-trends-in-pediatric-splenic-injury,兒童脾臟創傷的觀察趨勢,Observation trends in pediatric splenic injury,western,pediatric-surgery,concept,basic+intern,9,0
+pediatric-surgery-v38-ultrasound-follow-up-of-neonatal-ovarian-cysts,新生兒卵巢囊腫的超音波追蹤,Ultrasound follow-up of neonatal ovarian cysts,western,pediatric-surgery,concept,basic+intern,9,0
+pediatric-surgery-v38-acute-differential-of-neonatal-scrotal-swelling,新生兒陰囊腫脹的急性鑑別,Acute differential of neonatal scrotal swelling,western,pediatric-surgery,concept,basic+intern,9,0
+anesthesiology-v38-postoperative-delirium-and-cognitive-baseline,術後譫妄與認知基線,Postoperative delirium and cognitive baseline,western,anesthesiology,concept,basic+intern,9,0
+anesthesiology-v38-residual-neuromuscular-block-and-recovery,殘餘神經肌肉阻斷與恢復,Residual neuromuscular block and recovery,western,anesthesiology,concept,basic+intern,9,0
+anesthesiology-v38-postoperative-opioid-related-respiratory-depression,術後鴉片相關呼吸抑制,Postoperative opioid-related respiratory depression,western,anesthesiology,concept,basic+intern,9,0
+anesthesiology-v38-perioperative-care-in-sleep-apnea,睡眠呼吸中止的圍術期照護,Perioperative care in sleep apnea,western,anesthesiology,concept,basic+intern,9,0
+anesthesiology-v38-anesthetic-physiology-in-obesity,肥胖患者的麻醉生理,Anesthetic physiology in obesity,western,anesthesiology,concept,basic+intern,9,0
+anesthesiology-v38-timeline-analysis-in-perioperative-allergy,圍術期過敏反應的時間線,Timeline analysis in perioperative allergy,western,anesthesiology,concept,basic+intern,9,0
+anesthesiology-v38-awareness-under-anesthesia-and-postoperative-communication,麻醉中知覺與術後溝通,Awareness under anesthesia and postoperative communication,western,anesthesiology,concept,basic+intern,9,0
+anesthesiology-v38-principles-of-intraoperative-temperature-management,手術中的體溫管理原理,Principles of intraoperative temperature management,western,anesthesiology,concept,basic+intern,9,0
+anesthesiology-v38-team-prevention-of-operating-room-fires,手術室火災的團隊預防,Team prevention of operating room fires,western,anesthesiology,concept,basic+intern,9,0
+anesthesiology-v38-positioning-and-peripheral-nerve-protection,麻醉體位與周邊神經保護,Positioning and peripheral nerve protection,western,anesthesiology,concept,basic+intern,9,0
+anesthesiology-v38-fluid-responsiveness-and-volume-assessment,輸液反應性與容量判讀,Fluid responsiveness and volume assessment,western,anesthesiology,concept,basic+intern,9,0
+anesthesiology-v38-arterial-waveforms-and-measurement-artifacts,動脈壓波形與量測偽差,Arterial waveforms and measurement artifacts,western,anesthesiology,concept,basic+intern,9,0
+anesthesiology-v38-fasting-information-and-aspiration-risk-review,禁食資訊與吸入風險會議,Fasting information and aspiration risk review,western,anesthesiology,concept,basic+intern,9,0
+anesthesiology-v38-medication-reconciliation-for-anesthesia,術前藥物核對與麻醉計畫,Medication reconciliation for anesthesia,western,anesthesiology,concept,basic+intern,9,0
+anesthesiology-v38-anticoagulation-and-regional-anesthesia-review,抗凝血與區域麻醉的共同評估,Anticoagulation and regional anesthesia review,western,anesthesiology,concept,basic+intern,9,0
+anesthesiology-v38-pre-extubation-assessment-and-failure-risk,拔管前評估與失敗風險,Pre-extubation assessment and failure risk,western,anesthesiology,concept,basic+intern,9,0
+anesthesiology-v38-human-factors-and-handover-in-anesthesia-crises,麻醉危機中的人因與交班,Human factors and handover in anesthesia crises,western,anesthesiology,concept,basic+intern,9,0
+pain-medicine-v38-life-impact-of-postherpetic-neuralgia,帶狀疱疹後神經痛的生活影響,Life impact of postherpetic neuralgia,western,pain-medicine,concept,basic+intern,9,0
+pain-medicine-v38-painful-diabetic-neuropathy,糖尿病疼痛性神經病變,Painful diabetic neuropathy,western,pain-medicine,concept,basic+intern,9,0
+pain-medicine-v38-phantom-versus-residual-limb-pain,幻肢痛與殘肢痛鑑別,Phantom versus residual limb pain,western,pain-medicine,concept,basic+intern,9,0
+pain-medicine-v38-persistent-pain-after-breast-surgery,乳房手術後持續疼痛,Persistent pain after breast surgery,western,pain-medicine,concept,basic+intern,9,0
+pain-medicine-v38-post-thoracotomy-pain-and-respiratory-function,開胸後持續疼痛與呼吸功能,Post-thoracotomy pain and respiratory function,western,pain-medicine,concept,basic+intern,9,0
+pain-medicine-v38-pain-medicine-approach-to-chronic-pelvic-pain,慢性骨盆疼痛的疼痛醫學觀點,Pain-medicine approach to chronic pelvic pain,western,pain-medicine,concept,basic+intern,9,0
+pain-medicine-v38-neural-versus-dental-orofacial-pain,口顏面疼痛的神經與牙源鑑別,Neural versus dental orofacial pain,western,pain-medicine,concept,basic+intern,9,0
+pain-medicine-v38-radicular-versus-referred-pain-localisation,神經根痛與轉移痛定位,Radicular versus referred pain localisation,western,pain-medicine,concept,basic+intern,9,0
+pain-medicine-v38-chronic-primary-versus-secondary-pain,慢性原發與次發疼痛分類,Chronic primary versus secondary pain,western,pain-medicine,concept,basic+intern,9,0
+pain-medicine-v38-bidirectional-pain-sleep-relationships,疼痛與睡眠的雙向關係,Bidirectional pain-sleep relationships,western,pain-medicine,concept,basic+intern,9,0
+pain-medicine-v38-joint-care-for-pain-anxiety-and-depression,疼痛與焦慮憂鬱的共同照護,Joint care for pain anxiety and depression,western,pain-medicine,concept,basic+intern,9,0
+pain-medicine-v38-reassessment-of-opioid-induced-hyperalgesia,鴉片誘發痛覺過敏的重評估,Reassessment of opioid-induced hyperalgesia,western,pain-medicine,concept,basic+intern,9,0
+pain-medicine-v38-shared-tapering-in-long-term-opioid-therapy,長期鴉片治療的共同減量,Shared tapering in long-term opioid therapy,western,pain-medicine,concept,basic+intern,9,0
+pain-medicine-v38-pain-care-with-substance-use-disorder,疼痛照護與物質使用障礙,Pain care with substance use disorder,western,pain-medicine,concept,basic+intern,9,0
+pain-medicine-v38-analgesic-related-constipation-and-function,止痛藥相關便秘與功能,Analgesic-related constipation and function,western,pain-medicine,concept,basic+intern,9,0
+pain-medicine-v38-pain-medicine-review-in-renal-hepatic-impairment,腎肝功能不全的疼痛用藥檢視,Pain medicine review in renal-hepatic impairment,western,pain-medicine,concept,basic+intern,9,0
+pain-medicine-v38-pain-and-falls-in-older-adults,老年疼痛與跌倒風險,Pain and falls in older adults,western,pain-medicine,concept,basic+intern,9,0
+pain-medicine-v38-expression-and-assessment-of-childhood-pain,兒童疼痛的表達與評估,Expression and assessment of childhood pain,western,pain-medicine,concept,basic+intern,9,0
+pain-medicine-v38-pain-clues-in-nonverbal-patients,無法言語病人的疼痛線索,Pain clues in nonverbal patients,western,pain-medicine,concept,basic+intern,9,0
+pain-medicine-v38-goals-of-cognitive-behavioral-pain-therapy,疼痛認知行為治療的目標,Goals of cognitive behavioral pain therapy,western,pain-medicine,concept,basic+intern,9,0
+pain-medicine-v38-graded-activity-and-pain-avoidance,漸進活動與疼痛回避,Graded activity and pain avoidance,western,pain-medicine,concept,basic+intern,9,0
+pain-medicine-v38-acceptance-and-values-in-pain-care,疼痛中的接納與價值導向,Acceptance and values in pain care,western,pain-medicine,concept,basic+intern,9,0
+pain-medicine-v38-candidate-assessment-for-spinal-cord-stimulation,脊髓刺激的候選者評估,Candidate assessment for spinal cord stimulation,western,pain-medicine,concept,basic+intern,9,0
+pain-medicine-v38-educational-assessment-of-peripheral-nerve-stimulation,周邊神經刺激的教育性評估,Educational assessment of peripheral nerve stimulation,western,pain-medicine,concept,basic+intern,9,0
+pain-medicine-v38-infection-warnings-in-implanted-pain-devices,植入式止痛裝置的感染警訊,Infection warnings in implanted pain devices,western,pain-medicine,concept,basic+intern,9,0
+pain-medicine-v38-breakthrough-versus-persistent-cancer-pain,癌痛突破痛與持續痛,Breakthrough versus persistent cancer pain,western,pain-medicine,concept,basic+intern,9,0
+pain-medicine-v38-work-and-social-participation-in-pain-care,疼痛門診中的工作與社會參與,Work and social participation in pain care,western,pain-medicine,concept,basic+intern,9,0
+pain-medicine-v38-contextual-effects-and-evidence-in-pain-treatment,疼痛治療的安慰劑脈絡與證據,Contextual effects and evidence in pain treatment,western,pain-medicine,concept,basic+intern,9,0
+dentistry-v38-caries-risk-and-remineralization,齲齒風險分層與再礦化,Caries risk and remineralization,western,dentistry,concept,basic+intern,9,0
+dentistry-v38-pulpitis-versus-apical-disease,牙髓炎與根尖病變的鑑別,Pulpitis versus apical disease,western,dentistry,concept,basic+intern,9,0
+dentistry-v38-dental-trauma-and-avulsion-history,牙外傷與脫落牙的急診資訊,Dental trauma and avulsion history,western,dentistry,concept,basic+intern,9,0
+dentistry-v38-cracked-teeth-and-biting-pain,裂齒與咬合疼痛,Cracked teeth and biting pain,western,dentistry,concept,basic+intern,9,0
+dentistry-v38-periodontal-staging-grading-and-risk,牙周分期分級與風險,Periodontal staging grading and risk,western,dentistry,concept,basic+intern,9,0
+dentistry-v38-peri-implantitis-and-maintenance,植體周圍炎與維護,Peri-implantitis and maintenance,western,dentistry,concept,basic+intern,9,0
+dentistry-v38-dry-mouth-and-salivary-function,口乾症與唾液功能,Dry mouth and salivary function,western,dentistry,concept,basic+intern,9,0
+dentistry-v38-differential-of-burning-mouth-syndrome,口腔灼熱症候群的鑑別,Differential of burning mouth syndrome,western,dentistry,concept,basic+intern,9,0
+dentistry-v38-oral-leukoplakia-erythroplakia-and-pathology,口腔白斑紅斑與病理評估,Oral leukoplakia erythroplakia and pathology,western,dentistry,concept,basic+intern,9,0
+dentistry-v38-timing-and-morphology-of-oral-ulcers,口腔潰瘍的時間與型態,Timing and morphology of oral ulcers,western,dentistry,concept,basic+intern,9,0
+dentistry-v38-medication-related-osteonecrosis-of-the-jaw,藥物相關顎骨壞死,Medication-related osteonecrosis of the jaw,western,dentistry,concept,basic+intern,9,0
+dentistry-v38-oral-care-after-head-neck-radiotherapy,頭頸放療後的口腔照護,Oral care after head-neck radiotherapy,western,dentistry,concept,basic+intern,9,0
+dentistry-v38-antithrombotics-and-dental-procedures,抗血栓藥物與牙科處置,Antithrombotics and dental procedures,western,dentistry,concept,basic+intern,9,0
+dentistry-v38-dental-infection-and-deep-neck-spread,牙源性感染與深頸部擴散,Dental infection and deep neck spread,western,dentistry,concept,basic+intern,9,0
+dentistry-v38-justification-of-dental-imaging,牙科影像的輻射正當性,Justification of dental imaging,western,dentistry,concept,basic+intern,9,0
+dentistry-v38-anatomy-and-artifacts-in-cone-beam-ct,錐狀束斷層的解剖與偽影,Anatomy and artifacts in cone-beam CT,western,dentistry,concept,basic+intern,9,0
+dentistry-v38-bruxism-and-tooth-wear,磨牙症與牙齒耗損,Bruxism and tooth wear,western,dentistry,concept,basic+intern,9,0
+dentistry-v38-dental-erosion-and-dietary-gastric-factors,酸蝕與飲食胃食道因素,Dental erosion and dietary-gastric factors,western,dentistry,concept,basic+intern,9,0
+dentistry-v38-oral-function-and-nutrition-in-older-adults,老年口腔功能與營養,Oral function and nutrition in older adults,western,dentistry,concept,basic+intern,9,0
+dentistry-v38-accessible-dental-care-in-disability,身心障礙者的牙科可近性,Accessible dental care in disability,western,dentistry,concept,basic+intern,9,0
+dentistry-v38-dental-anxiety-and-child-centered-guidance,兒童牙科焦慮與行為引導,Dental anxiety and child-centered guidance,western,dentistry,concept,basic+intern,9,0
+dentistry-v38-oral-mucosa-and-systemic-immune-disease,口腔黏膜與全身免疫疾病,Oral mucosa and systemic immune disease,western,dentistry,concept,basic+intern,9,0
+dentistry-v38-reassessing-evidence-after-root-canal-failure,根管治療後失敗的證據重評估,Reassessing evidence after root canal failure,western,dentistry,concept,basic+intern,9,0
+dentistry-v38-dental-infection-control-and-instrument-traceability,牙科感染控制與器械追溯,Dental infection control and instrument traceability,western,dentistry,concept,basic+intern,9,0
+emergency-v38-syncope-risk,暈厥與短暫意識喪失,Syncope and transient loss of consciousness,western,emergency,concept,basic+intern,9,0
+emergency-v38-acute-vertigo,急性眩暈與步態不穩,Acute vertigo and gait instability,western,emergency,concept,basic+intern,9,0
+emergency-v38-red-eye-emergency,急診紅眼與視力驟降,Emergency red eye and sudden visual loss,western,emergency,concept,basic+intern,9,0
+emergency-v38-testicular-pain,急性陰囊疼痛,Acute scrotal pain,western,emergency,concept,basic+intern,9,0
+emergency-v38-pregnancy-bleeding,早孕腹痛與出血,Early pregnancy pain and bleeding,western,emergency,concept,basic+intern,9,0
+emergency-v38-cauda-equina,背痛與馬尾症候群警訊,Back pain and cauda equina warning signs,western,emergency,concept,basic+intern,9,0
+emergency-v38-thunderclap-headache,雷擊性頭痛,Thunderclap headache,western,emergency,concept,basic+intern,9,0
+emergency-v38-carbon-monoxide,一氧化碳暴露辨識,Recognition of carbon monoxide exposure,western,emergency,concept,basic+intern,9,0
+emergency-v38-electrical-injury,電擊傷與隱藏損傷,Electrical injury and concealed injury,western,emergency,concept,basic+intern,9,0
+emergency-v38-foreign-body-ingestion,異物吞入與電池危害,Foreign body ingestion and battery hazards,western,emergency,concept,basic+intern,9,0
+emergency-v38-acute-agitation,急性躁動的身體病因,Medical causes of acute agitation,western,emergency,concept,basic+intern,9,0
+emergency-v38-limb-ischemia,急性肢體缺血辨識,Recognition of acute limb ischemia,western,emergency,concept,basic+intern,9,0
+emergency-v38-emergency-discharge,急診出院與安全網,Emergency discharge and safety-netting,western,emergency,concept,basic+intern,9,0
+critical-care-v38-ventilator-waveforms,呼吸器波形與不同步,Ventilator waveforms and dyssynchrony,western,critical-care,concept,basic+intern,9,0
+critical-care-v38-icu-acquired-weakness,加護病房後肌無力,ICU-acquired weakness,western,critical-care,concept,basic+intern,9,0
+critical-care-v38-post-intensive-care,加護治療後症候群,Post-intensive care syndrome,western,critical-care,concept,basic+intern,9,0
+critical-care-v38-icu-communication,加護病房共同決策,Shared decisions in intensive care,western,critical-care,concept,basic+intern,9,0
+critical-care-v38-organ-donation,器官捐贈與死亡判定倫理,Organ donation and death determination ethics,western,critical-care,concept,basic+intern,9,0
+critical-care-v38-intra-abdominal-pressure,腹內高壓與器官灌流,Intra-abdominal hypertension and organ perfusion,western,critical-care,concept,basic+intern,9,0
+critical-care-v38-right-ventricular-failure,重症右心衰竭,Right ventricular failure in critical illness,western,critical-care,concept,basic+intern,9,0
+critical-care-v38-critical-arrhythmia,重症心律異常的可逆因素,Reversible causes of ICU arrhythmias,western,critical-care,concept,basic+intern,9,0
+critical-care-v38-icu-pulmonary-embolism,重症肺栓塞的風險判讀,Pulmonary embolism risk in critical illness,western,critical-care,concept,basic+intern,9,0
+critical-care-v38-aspiration-syndrome,吸入性肺傷害,Aspiration-related lung injury,western,critical-care,concept,basic+intern,9,0
+critical-care-v38-icu-fungal-infection,重症侵襲性黴菌感染,Invasive fungal infection in critical illness,western,critical-care,concept,basic+intern,9,0
+critical-care-v38-critical-drug-clearance,重症藥物清除變化,Drug clearance during critical illness,western,critical-care,concept,basic+intern,9,0
+critical-care-v38-icu-stress-ulcer,壓力性黏膜病變風險,Stress-related mucosal disease risk,western,critical-care,concept,basic+intern,9,0
+critical-care-v38-icu-thromboprophylaxis,重症血栓與出血平衡,Thrombosis and bleeding balance in ICU,western,critical-care,concept,basic+intern,9,0
+critical-care-v38-icu-hypernatremia,重症高血鈉的資料整合,Integrating evidence in ICU hypernatremia,western,critical-care,concept,basic+intern,9,0
+critical-care-v38-icu-refeeding,再餵食症候群警覺,Recognizing refeeding syndrome risk,western,critical-care,concept,basic+intern,9,0
+critical-care-v38-icu-liver-failure,急性肝衰竭與腦病變,Acute liver failure and encephalopathy,western,critical-care,concept,basic+intern,9,0
+critical-care-v38-icu-status-epilepticus,重症持續性癲癇辨識,Recognizing status epilepticus in ICU,western,critical-care,concept,basic+intern,9,0
+critical-care-v38-icu-maternal,孕產婦重症評估,Maternal critical illness assessment,western,critical-care,concept,basic+intern,9,0
+critical-care-v38-icu-device-infection,重症裝置相關感染,Device-associated ICU infection,western,critical-care,concept,basic+intern,9,0
+critical-care-v38-icu-transport,重症病人院內轉運,Intrahospital transport of critically ill patients,western,critical-care,concept,basic+intern,9,0
+gastroenterology-v38-dysphagia-pattern,吞嚥困難的定位,Localizing dysphagia,western,gastroenterology,concept,basic+intern,9,0
+gastroenterology-v38-chronic-diarrhea,慢性腹瀉的分層評估,Structured assessment of chronic diarrhea,western,gastroenterology,concept,basic+intern,9,0
+gastroenterology-v38-constipation-defecation,便秘與排便障礙,Constipation and defecatory disorders,western,gastroenterology,concept,basic+intern,9,0
+gastroenterology-v38-fecal-incontinence,糞便失禁與功能評估,Fecal incontinence and functional assessment,western,gastroenterology,concept,basic+intern,9,0
+gastroenterology-v38-chronic-pancreatitis,慢性胰臟炎與外分泌不足,Chronic pancreatitis and exocrine insufficiency,western,gastroenterology,concept,basic+intern,9,0
+gastroenterology-v38-pancreatic-cyst,胰臟囊腫的風險溝通,Risk communication for pancreatic cysts,western,gastroenterology,concept,basic+intern,9,0
+gastroenterology-v38-biliary-obstruction,膽道阻塞與膽管炎,Biliary obstruction and cholangitis,western,gastroenterology,concept,basic+intern,9,0
+gastroenterology-v38-psc-pbc,自體免疫性膽道疾病,Autoimmune cholestatic disorders,western,gastroenterology,concept,basic+intern,9,0
+gastroenterology-v38-hemochromatosis-liver,鐵過載與肝臟評估,Iron overload and liver assessment,western,gastroenterology,concept,basic+intern,9,0
+gastroenterology-v38-wilson-disease,威爾森氏症的跨系統線索,Multisystem clues to Wilson disease,western,gastroenterology,concept,basic+intern,9,0
+gastroenterology-v38-intestinal-ischemia,腸道缺血的辨識,Recognizing intestinal ischemia,western,gastroenterology,concept,basic+intern,9,0
+gastroenterology-v38-short-bowel,短腸症候群與腸衰竭,Short bowel syndrome and intestinal failure,western,gastroenterology,concept,basic+intern,9,0
+gastroenterology-v38-microscopic-colitis,顯微性結腸炎,Microscopic colitis,western,gastroenterology,concept,basic+intern,9,0
+gastroenterology-v38-foodborne-gastroenteritis,食源性腸胃炎與群聚,Foodborne gastroenteritis and clusters,western,gastroenterology,concept,basic+intern,9,0
+gastroenterology-v38-liver-transplant-followup,肝移植後的追蹤閱讀,Interpreting follow-up after liver transplantation,western,gastroenterology,concept,basic+intern,9,0
+gastroenterology-v38-endoscopy-quality,消化內視鏡品質與後續追蹤,Endoscopy quality and follow-up,western,gastroenterology,concept,basic+intern,9,0
+pulmonology-v38-chronic-cough,慢性咳嗽的證據整理,Evidence gathering for chronic cough,western,pulmonology,concept,basic+intern,9,0
+pulmonology-v38-hemoptysis,咳血的定位與風險,Localization and risk in hemoptysis,western,pulmonology,concept,basic+intern,9,0
+pulmonology-v38-pulmonary-hypertension,肺高壓的分型思路,Classification reasoning in pulmonary hypertension,western,pulmonology,concept,basic+intern,9,0
+pulmonology-v38-sarcoidosis,類肉瘤病的肺外線索,Extrapulmonary clues in sarcoidosis,western,pulmonology,concept,basic+intern,9,0
+pulmonology-v38-occupational-lung,職業性肺病與暴露史,Occupational lung disease and exposure history,western,pulmonology,concept,basic+intern,9,0
+pulmonology-v38-hypersensitivity-pneumonitis,過敏性肺炎與環境,Hypersensitivity pneumonitis and environment,western,pulmonology,concept,basic+intern,9,0
+pulmonology-v38-alpha1-antitrypsin,α1 抗胰蛋白酶缺乏,Alpha-1 antitrypsin deficiency,western,pulmonology,concept,basic+intern,9,0
+pulmonology-v38-pneumothorax-followup,自發性氣胸與復發風險,Spontaneous pneumothorax and recurrence,western,pulmonology,concept,basic+intern,9,0
+pulmonology-v38-pleural-effusion-analysis,肋膜液的整合判讀,Integrated pleural fluid interpretation,western,pulmonology,concept,basic+intern,9,0
+pulmonology-v38-lung-abscess,肺膿瘍與空洞病灶,Lung abscess and cavitary lesions,western,pulmonology,concept,basic+intern,9,0
+pulmonology-v38-opportunistic-pneumonia,免疫低下者肺炎,Pneumonia in immunocompromised hosts,western,pulmonology,concept,basic+intern,9,0
+pulmonology-v38-eosinophilic-lung,嗜酸性球肺疾病,Eosinophilic lung disorders,western,pulmonology,concept,basic+intern,9,0
+pulmonology-v38-obesity-hypoventilation,肥胖低通氣症候群,Obesity hypoventilation syndrome,western,pulmonology,concept,basic+intern,9,0
+pulmonology-v38-neuromuscular-breathing,神經肌肉疾病的呼吸評估,Respiratory assessment in neuromuscular disease,western,pulmonology,concept,basic+intern,9,0
+pulmonology-v38-central-sleep-apnea,中樞型睡眠呼吸中止,Central sleep apnea,western,pulmonology,concept,basic+intern,9,0
+pulmonology-v38-long-covid-respiratory,感染後持續呼吸症狀,Persistent respiratory symptoms after infection,western,pulmonology,concept,basic+intern,9,0
+pulmonology-v38-pulmonary-vascular-imaging,肺血管影像的陷阱,Pitfalls in pulmonary vascular imaging,western,pulmonology,concept,basic+intern,9,0
+pulmonology-v38-lung-transplant-followup,肺移植後監測,Monitoring after lung transplantation,western,pulmonology,concept,basic+intern,9,0
+pulmonology-v38-inhaler-technique,吸入器技巧與回述,Inhaler technique and teach-back,western,pulmonology,concept,basic+intern,9,0
+pulmonology-v38-respiratory-exposure-prevention,呼吸暴露與風險減量,Respiratory exposures and risk reduction,western,pulmonology,concept,basic+intern,9,0
+nephrology-v38-proteinuria-evaluation,蛋白尿的定量與型態,Quantifying and characterizing proteinuria,western,nephrology,concept,basic+intern,9,0
+nephrology-v38-hematuria-pattern,血尿的來源判讀,Interpreting the source of hematuria,western,nephrology,concept,basic+intern,9,0
+nephrology-v38-nephrotic-syndrome,腎病症候群與併發症,Nephrotic syndrome and complications,western,nephrology,concept,basic+intern,9,0
+nephrology-v38-iga-nephropathy,IgA 腎病變,IgA nephropathy,western,nephrology,concept,basic+intern,9,0
+nephrology-v38-membranous-nephropathy,膜性腎病變,Membranous nephropathy,western,nephrology,concept,basic+intern,9,0
+nephrology-v38-minimal-change-fsgs,微小病變與局部節段硬化,Minimal change disease and FSGS,western,nephrology,concept,basic+intern,9,0
+nephrology-v38-anti-gbm-disease,抗腎絲球基底膜疾病,Anti-GBM disease,western,nephrology,concept,basic+intern,9,0
+nephrology-v38-interstitial-nephritis,急性間質性腎炎,Acute interstitial nephritis,western,nephrology,concept,basic+intern,9,0
+nephrology-v38-renal-tubular-acidosis,腎小管性酸中毒,Renal tubular acidosis,western,nephrology,concept,basic+intern,9,0
+nephrology-v38-fanconi-syndrome,近端腎小管功能障礙,Proximal tubular dysfunction,western,nephrology,concept,basic+intern,9,0
+nephrology-v38-obstructive-nephropathy,阻塞性腎病變,Obstructive nephropathy,western,nephrology,concept,basic+intern,9,0
+nephrology-v38-cardiorenal-syndrome,心腎症候群,Cardiorenal syndrome,western,nephrology,concept,basic+intern,9,0
+nephrology-v38-hepatorenal-assessment,肝病中的腎功能惡化,Kidney deterioration in liver disease,western,nephrology,concept,basic+intern,9,0
+nephrology-v38-myeloma-kidney,單株蛋白相關腎損傷,Monoclonal protein-related kidney injury,western,nephrology,concept,basic+intern,9,0
+nephrology-v38-thrombotic-microangiopathy,腎臟血栓性微血管病變,Renal thrombotic microangiopathy,western,nephrology,concept,basic+intern,9,0
+nephrology-v38-renal-infarction,腎梗塞與腎血管事件,Renal infarction and vascular events,western,nephrology,concept,basic+intern,9,0
+nephrology-v38-kidney-transplant-selection,腎移植評估與共同決策,Kidney transplant evaluation and shared decisions,western,nephrology,concept,basic+intern,9,0
+nephrology-v38-kidney-transplant-followup,腎移植後功能變化,Changes in kidney graft function,western,nephrology,concept,basic+intern,9,0
+nephrology-v38-dialysis-symptom-burden,透析症狀與生活品質,Dialysis symptoms and quality of life,western,nephrology,concept,basic+intern,9,0
+nephrology-v38-conservative-kidney-care,保守腎臟照護與目標,Conservative kidney management and goals,western,nephrology,concept,basic+intern,9,0
+nephrology-v38-ckd-bone-mineral,慢性腎病骨礦物異常,CKD mineral and bone disorder,western,nephrology,concept,basic+intern,9,0
+nephrology-v38-ckd-anemia,慢性腎病貧血評估,Anemia assessment in CKD,western,nephrology,concept,basic+intern,9,0
+nephrology-v38-pregnancy-kidney,妊娠與腎臟風險,Pregnancy and kidney risks,western,nephrology,concept,basic+intern,9,0
+nephrology-v38-kidney-estimation-bias,腎功能估計的偏差,Bias in kidney-function estimation,western,nephrology,concept,basic+intern,9,0
+endocrinology-v38-thyroid-nodule-risk,甲狀腺結節風險判讀,Thyroid nodule risk interpretation,western,endocrinology,concept,basic+intern,9,0
+endocrinology-v38-thyroiditis,甲狀腺炎的時間變化,Temporal patterns of thyroiditis,western,endocrinology,concept,basic+intern,9,0
+endocrinology-v38-subclinical-thyroid,亞臨床甲狀腺功能異常,Subclinical thyroid dysfunction,western,endocrinology,concept,basic+intern,9,0
+endocrinology-v38-thyroid-test-interference,甲狀腺檢驗干擾,Interference in thyroid testing,western,endocrinology,concept,basic+intern,9,0
+endocrinology-v38-adrenal-incidentaloma,腎上腺偶發腫塊,Adrenal incidentaloma,western,endocrinology,concept,basic+intern,9,0
+endocrinology-v38-hypoglycemia-without-diabetes,非糖尿病低血糖,Hypoglycemia without diabetes,western,endocrinology,concept,basic+intern,9,0
+endocrinology-v38-hyponatremia-endocrine,內分泌性低血鈉,Endocrine causes of hyponatremia,western,endocrinology,concept,basic+intern,9,0
+endocrinology-v38-diabetes-insipidus,多尿與尿崩症,Polyuria and diabetes insipidus,western,endocrinology,concept,basic+intern,9,0
+endocrinology-v38-pcos,多囊性卵巢症候群,Polycystic ovary syndrome,western,endocrinology,concept,basic+intern,9,0
+endocrinology-v38-hirsutism-virilization,多毛與男性化表現,Hirsutism and virilization,western,endocrinology,concept,basic+intern,9,0
+endocrinology-v38-puberty-disorders,青春期提早與延遲,Early and delayed puberty,western,endocrinology,concept,basic+intern,9,0
+endocrinology-v38-endocrine-short-stature,身材矮小的內分泌評估,Endocrine evaluation of short stature,western,endocrinology,concept,basic+intern,9,0
+endocrinology-v38-hypoparathyroidism,副甲狀腺低下與低血鈣,Hypoparathyroidism and hypocalcemia,western,endocrinology,concept,basic+intern,9,0
+endocrinology-v38-hypercalcemia-malignancy,腫瘤相關高血鈣,Malignancy-associated hypercalcemia,western,endocrinology,concept,basic+intern,9,0
+endocrinology-v38-osteomalacia,骨軟化與維生素D問題,Osteomalacia and vitamin D disorders,western,endocrinology,concept,basic+intern,9,0
+endocrinology-v38-paget-bone,骨佩吉特氏病,Paget disease of bone,western,endocrinology,concept,basic+intern,9,0
+endocrinology-v38-lipid-disorders-endocrine,內分泌與繼發性血脂異常,Endocrine and secondary lipid disorders,western,endocrinology,concept,basic+intern,9,0
+endocrinology-v38-endocrine-tumor-syndromes,神經內分泌腫瘤症候群,Neuroendocrine tumor syndromes,western,endocrinology,concept,basic+intern,9,0
+endocrinology-v38-pituitary-incidentaloma,腦下垂體偶發病灶,Pituitary incidentaloma,western,endocrinology,concept,basic+intern,9,0
+endocrinology-v38-endocrine-immune-therapy,免疫治療的內分泌不良反應,Endocrine adverse effects of immunotherapy,western,endocrinology,concept,basic+intern,9,0
+rheumatology-v38-polymyalgia-rheumatica,風濕性多發肌痛,Polymyalgia rheumatica,western,rheumatology,concept,basic+intern,9,0
+rheumatology-v38-giant-cell-arteritis,巨細胞動脈炎,Giant cell arteritis,western,rheumatology,concept,basic+intern,9,0
+rheumatology-v38-takayasu-arteritis,高安氏動脈炎,Takayasu arteritis,western,rheumatology,concept,basic+intern,9,0
+rheumatology-v38-behcet-disease,貝賽特氏症,Behcet disease,western,rheumatology,concept,basic+intern,9,0
+rheumatology-v38-relapsing-polychondritis,復發性多軟骨炎,Relapsing polychondritis,western,rheumatology,concept,basic+intern,9,0
+rheumatology-v38-adult-still-disease,成人史迪爾氏症,Adult-onset Still disease,western,rheumatology,concept,basic+intern,9,0
+rheumatology-v38-macrophage-activation,巨噬細胞活化症候群,Macrophage activation syndrome,western,rheumatology,concept,basic+intern,9,0
+rheumatology-v38-igg4-disease,IgG4相關疾病,IgG4-related disease,western,rheumatology,concept,basic+intern,9,0
+rheumatology-v38-cryoglobulinemia,冷凝球蛋白血症,Cryoglobulinemia,western,rheumatology,concept,basic+intern,9,0
+rheumatology-v38-cppd,焦磷酸鈣結晶沉積,Calcium pyrophosphate deposition,western,rheumatology,concept,basic+intern,9,0
+rheumatology-v38-septic-joint-differential,發炎關節與感染鑑別,Inflamed joints and infection differential,western,rheumatology,concept,basic+intern,9,0
+rheumatology-v38-osteoarthritis-person,骨關節炎的整體評估,Whole-person assessment of osteoarthritis,western,rheumatology,concept,basic+intern,9,0
+rheumatology-v38-fibromyalgia,纖維肌痛與症狀理解,Fibromyalgia and symptom understanding,western,rheumatology,concept,basic+intern,9,0
+rheumatology-v38-hypermobility,關節過度活動與功能,Joint hypermobility and function,western,rheumatology,concept,basic+intern,9,0
+rheumatology-v38-raynaud,雷諾現象的風險分類,Risk classification in Raynaud phenomenon,western,rheumatology,concept,basic+intern,9,0
+rheumatology-v38-rheumatic-pregnancy,風濕疾病與妊娠規劃,Pregnancy planning in rheumatic disease,western,rheumatology,concept,basic+intern,9,0
+rheumatology-v38-juvenile-arthritis-transition,兒童關節炎與成人轉銜,Juvenile arthritis and transition to adult care,western,rheumatology,concept,basic+intern,9,0
+rheumatology-v38-autoinflammatory-fever,自體發炎與週期性發燒,Autoinflammation and periodic fever,western,rheumatology,concept,basic+intern,9,0
+rheumatology-v38-rheumatic-lung,風濕疾病相關肺部表現,Pulmonary manifestations of rheumatic disease,western,rheumatology,concept,basic+intern,9,0
+rheumatology-v38-rheumatic-neurology,風濕疾病的神經症狀,Neurological symptoms in rheumatic disease,western,rheumatology,concept,basic+intern,9,0
+rheumatology-v38-complement-disorders,補體異常與免疫風險,Complement abnormalities and immune risks,western,rheumatology,concept,basic+intern,9,0
+rheumatology-v38-mast-cell-disorders,肥大細胞疾病辨識,Recognizing mast cell disorders,western,rheumatology,concept,basic+intern,9,0
+rheumatology-v38-drug-hypersensitivity,藥物過敏與標籤釐清,Drug hypersensitivity and label clarification,western,rheumatology,concept,basic+intern,9,0
+rheumatology-v38-rheumatic-infection-mimics,感染模仿風濕疾病,Infections mimicking rheumatic disease,western,rheumatology,concept,basic+intern,9,0
+psychiatry-v38-capacity-assessment,醫療決策能力評估,Assessment of decision-making capacity,western,psychiatry,concept,basic+intern,9,0
+psychiatry-v38-perinatal-mental-health,周產期心理健康,Perinatal mental health,western,psychiatry,concept,basic+intern,9,0
+psychiatry-v38-postpartum-psychosis,產後精神病的緊急辨識,Urgent recognition of postpartum psychosis,western,psychiatry,concept,basic+intern,9,0
+psychiatry-v38-catatonia,緊張症的辨識,Recognizing catatonia,western,psychiatry,concept,basic+intern,9,0
+psychiatry-v38-neuroleptic-malignant,抗精神病藥相關惡性症候群,Neuroleptic malignant syndrome recognition,western,psychiatry,concept,basic+intern,9,0
+psychiatry-v38-serotonin-toxicity,血清素毒性辨識,Recognizing serotonin toxicity,western,psychiatry,concept,basic+intern,9,0
+psychiatry-v38-functional-neurological,功能性神經症狀溝通,Communication about functional neurological symptoms,western,psychiatry,concept,basic+intern,9,0
+psychiatry-v38-somatic-distress,身體症狀困擾與照護,Somatic symptom distress and care,western,psychiatry,concept,basic+intern,9,0
+psychiatry-v38-illness-anxiety,疾病焦慮與不確定性,Illness anxiety and uncertainty,western,psychiatry,concept,basic+intern,9,0
+psychiatry-v38-dissociation,解離症狀的評估,Assessment of dissociative symptoms,western,psychiatry,concept,basic+intern,9,0
+psychiatry-v38-personality-patterns,人格功能與關係困難,Personality functioning and relationship difficulties,western,psychiatry,concept,basic+intern,9,0
+psychiatry-v38-borderline-crisis,邊緣型特質的危機支持,Crisis support for borderline personality features,western,psychiatry,concept,basic+intern,9,0
+psychiatry-v38-complicated-grief,延長哀傷與喪失支持,Prolonged grief and bereavement support,western,psychiatry,concept,basic+intern,9,0
+psychiatry-v38-adjustment-disorder,適應障礙與壓力脈絡,Adjustment disorders and stress context,western,psychiatry,concept,basic+intern,9,0
+psychiatry-v38-insomnia-assessment,失眠的精神與身體因素,Psychiatric and medical factors in insomnia,western,psychiatry,concept,basic+intern,9,0
+psychiatry-v38-gambling-disorder,賭博障礙與生活影響,Gambling disorder and life impacts,western,psychiatry,concept,basic+intern,9,0
+psychiatry-v38-internet-gaming,遊戲使用與功能受損,Gaming behavior and functional impairment,western,psychiatry,concept,basic+intern,9,0
+psychiatry-v38-cannabis-mental-health,大麻使用與心理症狀,Cannabis use and mental health symptoms,western,psychiatry,concept,basic+intern,9,0
+psychiatry-v38-alcohol-withdrawal-risk,酒精戒斷風險辨識,Recognizing alcohol withdrawal risk,western,psychiatry,concept,basic+intern,9,0
+psychiatry-v38-mental-health-older-adult,高齡精神症狀的鑑別,Differential assessment of mental symptoms in older adults,western,psychiatry,concept,basic+intern,9,0
+psychiatry-v38-cultural-formulation,文化脈絡與精神評估,Cultural context in psychiatric assessment,western,psychiatry,concept,basic+intern,9,0
+psychiatry-v38-measurement-based-care,量表與精神照護追蹤,Measurement-based mental health follow-up,western,psychiatry,concept,basic+intern,9,0
+psychiatry-v38-trauma-informed-care,創傷知情照護,Trauma-informed care,western,psychiatry,concept,basic+intern,9,0
+pediatrics-v38-pediatric-meningitis,兒童腦膜炎警訊,Warning signs of pediatric meningitis,western,pediatrics,concept,basic+intern,9,0
+pediatrics-v38-pediatric-uti,兒童泌尿道感染,Urinary tract infection in children,western,pediatrics,concept,basic+intern,9,0
+pediatrics-v38-child-nephrotic,兒童腎病症候群,Childhood nephrotic syndrome,western,pediatrics,concept,basic+intern,9,0
+pediatrics-v38-pediatric-hus,兒童溶血尿毒症候群,Hemolytic uremic syndrome in children,western,pediatrics,concept,basic+intern,9,0
+pediatrics-v38-intussusception,腸套疊的辨識,Recognizing intussusception,western,pediatrics,concept,basic+intern,9,0
+pediatrics-v38-pyloric-stenosis,嬰兒肥厚性幽門狹窄,Infantile hypertrophic pyloric stenosis,western,pediatrics,concept,basic+intern,9,0
+pediatrics-v38-child-celiac,兒童乳糜瀉與成長,Celiac disease and childhood growth,western,pediatrics,concept,basic+intern,9,0
+pediatrics-v38-child-constipation,兒童便秘與排便行為,Childhood constipation and toileting behavior,western,pediatrics,concept,basic+intern,9,0
+pediatrics-v38-food-allergy-child,兒童食物過敏評估,Assessment of food allergy in children,western,pediatrics,concept,basic+intern,9,0
+pediatrics-v38-child-eczema,兒童異位性皮膚炎照護,Care for childhood atopic dermatitis,western,pediatrics,concept,basic+intern,9,0
+pediatrics-v38-pediatric-anemia,兒童貧血的型態,Patterns of childhood anemia,western,pediatrics,concept,basic+intern,9,0
+pediatrics-v38-child-itp,兒童免疫性血小板減少,Immune thrombocytopenia in children,western,pediatrics,concept,basic+intern,9,0
+pediatrics-v38-child-leukemia-warning,兒童白血病的初期線索,Early clues to childhood leukemia,western,pediatrics,concept,basic+intern,9,0
+pediatrics-v38-pediatric-headache,兒童反覆頭痛,Recurrent headache in children,western,pediatrics,concept,basic+intern,9,0
+pediatrics-v38-pediatric-limp,兒童跛行與髖部疼痛,Childhood limp and hip pain,western,pediatrics,concept,basic+intern,9,0
+pediatrics-v38-child-sleep,兒童睡眠問題,Sleep problems in children,western,pediatrics,concept,basic+intern,9,0
+pediatrics-v38-child-hearing-vision,兒童視聽篩檢與學習,Childhood sensory screening and learning,western,pediatrics,concept,basic+intern,9,0
+pediatrics-v38-pediatric-obesity,兒童肥胖與家庭環境,Childhood obesity and family environment,western,pediatrics,concept,basic+intern,9,0
+pediatrics-v38-complex-child-care,複雜照護兒童的轉銜,Transitions for children with complex care needs,western,pediatrics,concept,basic+intern,9,0
+pediatrics-v38-pediatric-assent,兒童同意參與與醫療溝通,Child assent and medical communication,western,pediatrics,concept,basic+intern,9,0
+rehabilitation-v38-cardiac-rehabilitation,心臟復健與回歸生活,Cardiac rehabilitation and return to life,western,rehabilitation,concept,basic+intern,9,0
+rehabilitation-v38-pulmonary-function-rehab,呼吸疾病的活動調適,Activity adaptation in respiratory disease,western,rehabilitation,concept,basic+intern,9,0
+rehabilitation-v38-parkinson-rehab,巴金森氏症的功能策略,Functional strategies in Parkinson disease,western,rehabilitation,concept,basic+intern,9,0
+rehabilitation-v38-multiple-sclerosis-rehab,多發性硬化症復能,Rehabilitation in multiple sclerosis,western,rehabilitation,concept,basic+intern,9,0
+rehabilitation-v38-neuropathy-rehab,周邊神經病變復能,Rehabilitation in peripheral neuropathy,western,rehabilitation,concept,basic+intern,9,0
+rehabilitation-v38-facial-weakness-rehab,顏面無力與功能,Facial weakness and function,western,rehabilitation,concept,basic+intern,9,0
+rehabilitation-v38-hand-rehabilitation,手部傷害後功能重建,Functional recovery after hand injury,western,rehabilitation,concept,basic+intern,9,0
+rehabilitation-v38-burn-rehabilitation,燒傷後復健與疤痕,Rehabilitation and scars after burns,western,rehabilitation,concept,basic+intern,9,0
+rehabilitation-v38-amputation-adjustment,截肢後身體與心理調適,Physical and psychological adjustment after amputation,western,rehabilitation,concept,basic+intern,9,0
+rehabilitation-v38-pelvic-floor-rehab,骨盆底功能復健,Pelvic floor rehabilitation,western,rehabilitation,concept,basic+intern,9,0
+rehabilitation-v38-chronic-pain-rehab,慢性疼痛的功能取向,Function-oriented chronic pain care,western,rehabilitation,concept,basic+intern,9,0
+rehabilitation-v38-concussion-return,腦震盪後回學與活動,Return to learning and activity after concussion,western,rehabilitation,concept,basic+intern,9,0
+rehabilitation-v38-cognitive-rehabilitation,認知復健與代償策略,Cognitive rehabilitation and compensation,western,rehabilitation,concept,basic+intern,9,0
+rehabilitation-v38-aphasia-communication,失語症與支持性溝通,Aphasia and supported communication,western,rehabilitation,concept,basic+intern,9,0
+rehabilitation-v38-apraxia-neglect,失用症與半側忽略,Apraxia and hemispatial neglect,western,rehabilitation,concept,basic+intern,9,0
+rehabilitation-v38-wheelchair-seating,輪椅坐姿與壓力分布,Wheelchair seating and pressure distribution,western,rehabilitation,concept,basic+intern,9,0
+rehabilitation-v38-home-accessibility,居家無障礙與生活動線,Home accessibility and daily routes,western,rehabilitation,concept,basic+intern,9,0
+rehabilitation-v38-driving-assessment,疾病後駕駛能力評估,Driving assessment after illness,western,rehabilitation,concept,basic+intern,9,0
+rehabilitation-v38-vocational-rehabilitation,職業復健與回工,Vocational rehabilitation and return to work,western,rehabilitation,concept,basic+intern,9,0
+rehabilitation-v38-rehab-telehealth,遠距復健的可近性,Access and safety in telerehabilitation,western,rehabilitation,concept,basic+intern,9,0
+rehabilitation-v38-rehab-caregiver-training,照顧者訓練與負荷,Caregiver training and burden,western,rehabilitation,concept,basic+intern,9,0
+rehabilitation-v38-rehab-fatigue,疲倦與能量分配,Fatigue and energy allocation,western,rehabilitation,concept,basic+intern,9,0
+rehabilitation-v38-rehab-sexual-health,失能與性健康溝通,Disability and sexual health communication,western,rehabilitation,concept,basic+intern,9,0
+rehabilitation-v38-rehab-outcome-meaning,復健成效與有意義變化,Meaningful change in rehabilitation outcomes,western,rehabilitation,concept,basic+intern,9,0
+geriatrics-family-v38-older-weight-loss,高齡非預期體重減輕,Unintentional weight loss in older adults,western,geriatrics-family,concept,basic+intern,9,0
+geriatrics-family-v38-older-dizziness,高齡頭暈與姿勢性症狀,Dizziness and postural symptoms in older adults,western,geriatrics-family,concept,basic+intern,9,0
+geriatrics-family-v38-older-hearing,高齡聽力與溝通,Hearing and communication in older adults,western,geriatrics-family,concept,basic+intern,9,0
+geriatrics-family-v38-older-vision,高齡視力與生活功能,Vision and daily function in older adults,western,geriatrics-family,concept,basic+intern,9,0
+geriatrics-family-v38-older-oral-health,高齡口腔健康與營養,Oral health and nutrition in older adults,western,geriatrics-family,concept,basic+intern,9,0
+geriatrics-family-v38-older-sleep,高齡睡眠困擾,Sleep difficulties in older adults,western,geriatrics-family,concept,basic+intern,9,0
+geriatrics-family-v38-older-constipation,高齡便秘與糞便嵌塞,Constipation and fecal impaction in older adults,western,geriatrics-family,concept,basic+intern,9,0
+geriatrics-family-v38-older-dehydration,高齡脫水與水分平衡,Dehydration and fluid balance in older adults,western,geriatrics-family,concept,basic+intern,9,0
+geriatrics-family-v38-older-pain,高齡疼痛的表達,Pain expression in older adults,western,geriatrics-family,concept,basic+intern,9,0
+geriatrics-family-v38-older-depression,高齡憂鬱與孤獨,Depression and loneliness in later life,western,geriatrics-family,concept,basic+intern,9,0
+geriatrics-family-v38-elder-abuse,長者受虐與財務剝削,Elder abuse and financial exploitation,western,geriatrics-family,concept,basic+intern,9,0
+geriatrics-family-v38-caregiver-burnout,照顧者耗竭與喘息,Caregiver burnout and respite,western,geriatrics-family,concept,basic+intern,9,0
+geriatrics-family-v38-transitional-care,出院轉銜與再入院,Transitions of care and readmission,western,geriatrics-family,concept,basic+intern,9,0
+geriatrics-family-v38-multimorbidity-priorities,多重慢性病的優先順序,Priorities in multimorbidity,western,geriatrics-family,concept,basic+intern,9,0
+geriatrics-family-v38-older-diabetes-goals,高齡糖尿病的個別目標,Individual goals for diabetes in older adults,western,geriatrics-family,concept,basic+intern,9,0
+geriatrics-family-v38-older-blood-pressure,高齡血壓與站立耐受,Blood pressure and standing tolerance in older adults,western,geriatrics-family,concept,basic+intern,9,0
+geriatrics-family-v38-osteoporotic-fracture-care,脆弱性骨折後的整合照護,Integrated care after fragility fracture,western,geriatrics-family,concept,basic+intern,9,0
+geriatrics-family-v38-cognitive-complaint,主觀認知困擾與評估,Subjective cognitive concerns and assessment,western,geriatrics-family,concept,basic+intern,9,0
+geriatrics-family-v38-primary-care-headache,基層頭痛的追蹤,Headache follow-up in primary care,western,geriatrics-family,concept,basic+intern,9,0
+geriatrics-family-v38-primary-care-fatigue,基層疲倦的分層,Structured assessment of fatigue in primary care,western,geriatrics-family,concept,basic+intern,9,0
+geriatrics-family-v38-primary-care-cough,基層咳嗽與持續症狀,Cough and persistent symptoms in primary care,western,geriatrics-family,concept,basic+intern,9,0
+geriatrics-family-v38-travel-health,旅遊健康與返國發燒,Travel health and post-travel fever,western,geriatrics-family,concept,basic+intern,9,0
+geriatrics-family-v38-family-genogram,家庭圖與支持網絡,Family genograms and support networks,western,geriatrics-family,concept,basic+intern,9,0
+geriatrics-family-v38-health-literacy,健康識能與可理解說明,Health literacy and understandable explanations,western,geriatrics-family,concept,basic+intern,9,0
+geriatrics-family-v38-social-prescribing,社會需求與資源轉介,Social needs and community resource referral,western,geriatrics-family,concept,basic+intern,9,0
+radiology-v38-image-artifacts,醫學影像偽影辨識,Recognition of imaging artifacts,western,radiology,concept,basic+intern,9,0
+radiology-v38-mri-safety,MRI安全與植入物核對,MRI safety and implant checks,western,radiology,concept,basic+intern,9,0
+radiology-v38-pediatric-imaging,兒童影像的選擇,Choosing imaging for children,western,radiology,concept,basic+intern,9,0
+radiology-v38-pregnancy-imaging,妊娠影像的風險溝通,Risk communication for imaging in pregnancy,western,radiology,concept,basic+intern,9,0
+radiology-v38-cardiac-ct-mri,心臟CT與MRI的互補,Complementary cardiac CT and MRI,western,radiology,concept,basic+intern,9,0
+radiology-v38-liver-lesion-imaging,肝臟局灶病灶影像,Imaging focal liver lesions,western,radiology,concept,basic+intern,9,0
+radiology-v38-renal-mass-imaging,腎臟腫塊與囊腫影像,Imaging renal masses and cysts,western,radiology,concept,basic+intern,9,0
+radiology-v38-adrenal-imaging,腎上腺影像與生化,Adrenal imaging and biochemistry,western,radiology,concept,basic+intern,9,0
+radiology-v38-pelvic-ultrasound,骨盆超音波的定位,Localization with pelvic ultrasound,western,radiology,concept,basic+intern,9,0
+radiology-v38-scrotal-ultrasound,陰囊都卜勒影像,Scrotal Doppler imaging,western,radiology,concept,basic+intern,9,0
+radiology-v38-vascular-ultrasound,周邊血管超音波,Peripheral vascular ultrasound,western,radiology,concept,basic+intern,9,0
+radiology-v38-spinal-imaging,脊椎MRI與神經症狀,Spinal MRI and neurological symptoms,western,radiology,concept,basic+intern,9,0
+radiology-v38-trauma-imaging,創傷全身影像的優先,Priorities in trauma imaging,western,radiology,concept,basic+intern,9,0
+radiology-v38-incidental-findings,偶發影像發現的追蹤,Follow-up of incidental findings,western,radiology,concept,basic+intern,9,0
+radiology-v38-radiology-reporting,結構化影像報告與溝通,Structured radiology reporting and communication,western,radiology,concept,basic+intern,9,0
+radiology-v38-dicom-anonymization,DICOM去識別與資料治理,DICOM de-identification and data governance,western,radiology,concept,basic+intern,9,0
+radiology-v38-imaging-registration,影像配準與數位孿生,Image registration and digital twins,western,radiology,concept,basic+intern,9,0
+radiology-v38-radiomics-validation,影像組學與驗證,Radiomics and validation,western,radiology,concept,basic+intern,9,0
+pathology-lab-v38-preanalytical-errors,檢體前分析誤差,Preanalytical specimen errors,western,pathology-lab,concept,basic+intern,9,0
+pathology-lab-v38-hemolysis-interference,溶血脂血與黃疸干擾,Hemolysis lipemia and icterus interference,western,pathology-lab,concept,basic+intern,9,0
+pathology-lab-v38-critical-values,危急值通報與閉環,Critical values and closed-loop reporting,western,pathology-lab,concept,basic+intern,9,0
+pathology-lab-v38-blood-smear-patterns,周邊血液抹片型態,Peripheral blood smear patterns,western,pathology-lab,concept,basic+intern,9,0
+pathology-lab-v38-coagulation-mixing,凝血檢驗與混合試驗,Coagulation testing and mixing studies,western,pathology-lab,concept,basic+intern,9,0
+pathology-lab-v38-hemoglobin-analysis,血紅素分析與遺傳線索,Hemoglobin analysis and inherited clues,western,pathology-lab,concept,basic+intern,9,0
+pathology-lab-v38-csf-analysis,腦脊髓液整合判讀,Integrated cerebrospinal fluid interpretation,western,pathology-lab,concept,basic+intern,9,0
+pathology-lab-v38-body-fluid-analysis,體腔液與滑液檢驗,Body cavity and synovial fluid testing,western,pathology-lab,concept,basic+intern,9,0
+pathology-lab-v38-urine-microscopy,尿沉渣顯微鏡,Urine sediment microscopy,western,pathology-lab,concept,basic+intern,9,0
+pathology-lab-v38-parasitology-specimens,寄生蟲檢體與辨識,Parasitology specimens and recognition,western,pathology-lab,concept,basic+intern,9,0
+pathology-lab-v38-antimicrobial-susceptibility,抗菌藥敏感性判讀,Interpreting antimicrobial susceptibility,western,pathology-lab,concept,basic+intern,9,0
+pathology-lab-v38-serology-timing,血清學與感染時間,Serology and infection timing,western,pathology-lab,concept,basic+intern,9,0
+pathology-lab-v38-flow-cytometry,流式細胞儀的閱讀,Reading flow cytometry,western,pathology-lab,concept,basic+intern,9,0
+pathology-lab-v38-molecular-contamination,分子實驗室污染控制,Contamination control in molecular laboratories,western,pathology-lab,concept,basic+intern,9,0
+pathology-lab-v38-histology-artifacts,組織切片偽影,Histological artifacts,western,pathology-lab,concept,basic+intern,9,0
+pathology-lab-v38-margin-assessment,手術切緣與病理報告,Surgical margins and pathology reports,western,pathology-lab,concept,basic+intern,9,0
+pathology-lab-v38-grading-staging,病理分級與分期的差別,Differences between pathological grade and stage,western,pathology-lab,concept,basic+intern,9,0
+pathology-lab-v38-biobanking-consent,生物資料庫與檢體同意,Biobanking and specimen consent,western,pathology-lab,concept,basic+intern,9,0
+pathology-lab-v38-lab-autoverification,實驗室自動審核,Laboratory autoverification,western,pathology-lab,concept,basic+intern,9,0
+pathology-lab-v38-pathology-concordance,病理與影像臨床一致性,Pathology imaging and clinical concordance,western,pathology-lab,concept,basic+intern,9,0
+nursing-v38-nursing-teach-back,護理衛教與回述,Nursing education and teach-back,western,nursing,concept,basic+intern,9,0
+nursing-v38-nursing-skin-assessment,膚色差異與皮膚評估,Skin assessment across skin tones,western,nursing,concept,basic+intern,9,0
+nursing-v38-nursing-fluid-balance,護理出入量與趨勢,Nursing fluid balance and trends,western,nursing,concept,basic+intern,9,0
+nursing-v38-nursing-nutrition,營養風險與進食協助,Nutrition risk and eating assistance,western,nursing,concept,basic+intern,9,0
+nursing-v38-nursing-mouth-care,口腔照護與吸入風險,Oral care and aspiration risk,western,nursing,concept,basic+intern,9,0
+nursing-v38-nursing-delirium-prevention,譫妄預防與定向支持,Delirium prevention and orientation support,western,nursing,concept,basic+intern,9,0
+nursing-v38-nursing-restraint-alternatives,限制措施的替代方案,Alternatives to restrictive measures,western,nursing,concept,basic+intern,9,0
+nursing-v38-nursing-specimen-identity,檢體身份與床邊核對,Specimen identity and bedside verification,western,nursing,concept,basic+intern,9,0
+nursing-v38-nursing-infection-isolation,隔離與防護溝通,Isolation and protective communication,western,nursing,concept,basic+intern,9,0
+nursing-v38-nursing-med-error,給藥近失與錯誤回報,Medication near misses and reporting,western,nursing,concept,basic+intern,9,0
+nursing-v38-nursing-discharge,護理出院準備,Nursing preparation for discharge,western,nursing,concept,basic+intern,9,0
+nursing-v38-nursing-health-equity,護理可近性與公平,Access and equity in nursing care,western,nursing,concept,basic+intern,9,0
+nursing-v38-nursing-moral-distress,護理倫理困境與支持,Nursing moral distress and support,western,nursing,concept,basic+intern,9,0
+nursing-v38-nursing-sleep-care,住院睡眠與夜間照護,Inpatient sleep and nighttime care,western,nursing,concept,basic+intern,9,0
+nursing-v38-nursing-digital-documentation,護理數位紀錄品質,Quality in digital nursing documentation,western,nursing,concept,basic+intern,9,0
+pharmacology-v38-medication-label-reading,藥品仿單與證據閱讀,Reading medication labels and evidence,western,pharmacology,concept,basic+intern,9,0
+pharmacology-v38-biosimilar-switching,生物相似藥與替換溝通,Biosimilars and switching communication,western,pharmacology,concept,basic+intern,9,0
+pharmacology-v38-pregnancy-lactation-drugs,妊娠哺乳用藥資訊,Medication information in pregnancy and lactation,western,pharmacology,concept,basic+intern,9,0
+pharmacology-v38-geriatric-deprescribing,高齡減藥評估,Deprescribing assessment in older adults,western,pharmacology,concept,basic+intern,9,0
+pharmacology-v38-high-alert-medicines,高警訊藥物的系統防護,System safeguards for high-alert medicines,western,pharmacology,concept,basic+intern,9,0
+pharmacology-v38-qt-drug-risk,藥物與QT延長風險,Medication-related QT risk,western,pharmacology,concept,basic+intern,9,0
+pharmacology-v38-anticholinergic-burden,抗膽鹼藥物負荷,Anticholinergic medication burden,western,pharmacology,concept,basic+intern,9,0
+pharmacology-v38-opioid-stewardship,鴉片類藥物的監測,Monitoring of opioid medicines,western,pharmacology,concept,basic+intern,9,0
+pharmacology-v38-benzodiazepine-risk,鎮靜安眠藥的長期風險,Long-term risks of sedative-hypnotics,western,pharmacology,concept,basic+intern,9,0
+pharmacology-v38-steroid-safety,全身性類固醇的安全追蹤,Safety follow-up for systemic corticosteroids,western,pharmacology,concept,basic+intern,9,0
+pharmacology-v38-antifungal-interactions,抗黴菌藥與交互作用,Antifungal medicines and interactions,western,pharmacology,concept,basic+intern,9,0
+pharmacology-v38-antiviral-resistance,抗病毒藥與抗藥性,Antiviral medicines and resistance,western,pharmacology,concept,basic+intern,9,0
+pharmacology-v38-inhaled-drug-delivery,吸入藥物的遞送差異,Differences in inhaled drug delivery,western,pharmacology,concept,basic+intern,9,0
+pharmacology-v38-transdermal-formulations,貼片與緩釋劑型安全,Transdermal and modified-release safety,western,pharmacology,concept,basic+intern,9,0
+pharmacology-v38-enteral-drug-delivery,管灌病人的藥物評估,Medication assessment for enteral feeding,western,pharmacology,concept,basic+intern,9,0
+pharmacology-v38-pharmacovigilance-signals,藥物警戒訊號的閱讀,Reading pharmacovigilance signals,western,pharmacology,concept,basic+intern,9,0
+pharmacology-v38-medication-shortage,藥品短缺與替代評估,Medication shortages and substitution assessment,western,pharmacology,concept,basic+intern,9,0
+pharmacology-v38-renal-toxic-drugs,藥物性腎損傷,Drug-associated kidney injury,western,pharmacology,concept,basic+intern,9,0
+pharmacology-v38-hepatic-drug-injury,藥物性肝損傷,Drug-induced liver injury,western,pharmacology,concept,basic+intern,9,0
+pharmacology-v38-placebo-nocebo,安慰劑反安慰劑與溝通,Placebo nocebo and communication,western,pharmacology,concept,basic+intern,9,0
+public-health-v38-one-health,健康一體與跨物種風險,One Health and cross-species risks,western,public-health,concept,basic+intern,9,0
+public-health-v38-climate-health,氣候變遷與健康,Climate change and health,western,public-health,concept,basic+intern,9,0
+public-health-v38-air-pollution-health,空氣污染與健康指標,Air pollution and health indicators,western,public-health,concept,basic+intern,9,0
+public-health-v38-water-sanitation,飲水衛生與疾病預防,Water sanitation and disease prevention,western,public-health,concept,basic+intern,9,0
+public-health-v38-food-safety-systems,食品安全與系統追溯,Food safety and traceability systems,western,public-health,concept,basic+intern,9,0
+public-health-v38-vaccine-confidence,疫苗信任與風險溝通,Vaccine confidence and risk communication,western,public-health,concept,basic+intern,9,0
+public-health-v38-immunization-programs,疫苗計畫與涵蓋率,Immunization programs and coverage,western,public-health,concept,basic+intern,9,0
+public-health-v38-antimicrobial-resistance-health,抗微生物抗藥性治理,Governance of antimicrobial resistance,western,public-health,concept,basic+intern,9,0
+public-health-v38-health-misinformation,健康錯誤資訊辨識,Recognizing health misinformation,western,public-health,concept,basic+intern,9,0
+public-health-v38-risk-communication-crisis,危機風險溝通,Crisis risk communication,western,public-health,concept,basic+intern,9,0
+public-health-v38-health-equity-measurement,健康不平等的量測,Measuring health inequities,western,public-health,concept,basic+intern,9,0
+public-health-v38-social-determinants,健康社會決定因素,Social determinants of health,western,public-health,concept,basic+intern,9,0
+public-health-v38-community-engagement,社區參與與共同設計,Community engagement and co-design,western,public-health,concept,basic+intern,9,0
+public-health-v38-disability-inclusion,障礙融合與公共服務,Disability inclusion in public services,western,public-health,concept,basic+intern,9,0
+public-health-v38-migrant-health,移民健康與服務可近性,Migrant health and service access,western,public-health,concept,basic+intern,9,0
+public-health-v38-injury-prevention,傷害預防與安全設計,Injury prevention and safety design,western,public-health,concept,basic+intern,9,0
+public-health-v38-road-safety,道路安全與系統思考,Road safety and systems thinking,western,public-health,concept,basic+intern,9,0
+public-health-v38-occupational-surveillance,職業健康監測,Occupational health surveillance,western,public-health,concept,basic+intern,9,0
+public-health-v38-preparedness-exercises,公共衛生應變演練,Public health preparedness exercises,western,public-health,concept,basic+intern,9,0
+public-health-v38-causal-inference,公共衛生因果推論,Causal reasoning in public health,western,public-health,concept,basic+intern,9,0
+public-health-v38-implementation-science,實施科學與服務落差,Implementation science and service gaps,western,public-health,concept,basic+intern,9,0
+public-health-v38-registry-data-quality,登錄資料品質與連結,Registry data quality and linkage,western,public-health,concept,basic+intern,9,0
+public-health-v38-privacy-public-health,公共衛生資料隱私,Privacy in public health data,western,public-health,concept,basic+intern,9,0
+public-health-v38-program-evaluation,健康計畫成效評估,Evaluation of health programs,western,public-health,concept,basic+intern,9,0
+medical-genetics-v38-penetrance-expressivity,外顯率與表現差異,Penetrance and variable expression,western,medical-genetics,concept,basic+intern,9,0
+medical-genetics-v38-mosaicism,鑲嵌現象與檢測限制,Mosaicism and testing limitations,western,medical-genetics,concept,basic+intern,9,0
+medical-genetics-v38-imprinting,基因印記與親源效應,Genomic imprinting and parent-of-origin effects,western,medical-genetics,concept,basic+intern,9,0
+medical-genetics-v38-repeat-expansion,重複序列擴增,Repeat expansion disorders,western,medical-genetics,concept,basic+intern,9,0
+medical-genetics-v38-copy-number-variants,拷貝數變異與劑量效應,Copy-number variants and dosage effects,western,medical-genetics,concept,basic+intern,9,0
+medical-genetics-v38-structural-variants,染色體結構重排,Chromosomal structural rearrangements,western,medical-genetics,concept,basic+intern,9,0
+medical-genetics-v38-variant-reclassification,變異重新分類與追蹤,Variant reclassification and follow-up,western,medical-genetics,concept,basic+intern,9,0
+medical-genetics-v38-segregation-analysis,家系共分離分析,Family segregation analysis,western,medical-genetics,concept,basic+intern,9,0
+medical-genetics-v38-functional-assays,功能實驗與變異解讀,Functional assays in variant interpretation,western,medical-genetics,concept,basic+intern,9,0
+medical-genetics-v38-secondary-findings,次要發現與結果選擇,Secondary findings and result choices,western,medical-genetics,concept,basic+intern,9,0
+medical-genetics-v38-carrier-screening,帶因篩檢與伴侶溝通,Carrier screening and partner communication,western,medical-genetics,concept,basic+intern,9,0
+medical-genetics-v38-predictive-testing,成人預測性基因檢測,Predictive genetic testing in adults,western,medical-genetics,concept,basic+intern,9,0
+medical-genetics-v38-child-genetic-testing,兒童基因檢測的倫理,Ethics of genetic testing in children,western,medical-genetics,concept,basic+intern,9,0
+medical-genetics-v38-consanguinity-counseling,近親關係與遺傳諮詢,Consanguinity and genetic counseling,western,medical-genetics,concept,basic+intern,9,0
+medical-genetics-v38-polygenic-risk,多基因風險分數,Polygenic risk scores,western,medical-genetics,concept,basic+intern,9,0
+medical-genetics-v38-population-genetics,族群遺傳與變異頻率,Population genetics and variant frequencies,western,medical-genetics,concept,basic+intern,9,0
+medical-genetics-v38-long-read-sequencing,長讀長定序的應用,Applications of long-read sequencing,western,medical-genetics,concept,basic+intern,9,0
+medical-genetics-v38-rna-diagnostics,RNA檢查與剪接變異,RNA testing and splice variants,western,medical-genetics,concept,basic+intern,9,0
+medical-genetics-v38-methylation-testing,甲基化與表觀遺傳檢測,Methylation and epigenetic testing,western,medical-genetics,concept,basic+intern,9,0
+medical-genetics-v38-genetic-privacy,遺傳資料隱私與分享,Genetic data privacy and sharing,western,medical-genetics,concept,basic+intern,9,0
+medical-genetics-v38-undiagnosed-disease,未確診疾病與重分析,Undiagnosed disease and reanalysis,western,medical-genetics,concept,basic+intern,9,0
+medical-genetics-v38-phenotype-ontology,表型詞彙與精準描述,Phenotype terminology and precise description,western,medical-genetics,concept,basic+intern,9,0
+medical-genetics-v38-connective-tissue-genetics,遺傳性結締組織疾病,Inherited connective tissue disorders,western,medical-genetics,concept,basic+intern,9,0
+medical-genetics-v38-inherited-cardiac,遺傳性心肌與心律疾病,Inherited cardiomyopathy and arrhythmia,western,medical-genetics,concept,basic+intern,9,0
+medical-genetics-v38-inherited-neuropathy,遺傳性周邊神經病變,Inherited peripheral neuropathy,western,medical-genetics,concept,basic+intern,9,0
+medical-genetics-v38-hearing-genetics,遺傳性聽力障礙,Inherited hearing impairment,western,medical-genetics,concept,basic+intern,9,0
+medical-genetics-v38-retinal-genetics,遺傳性視網膜疾病,Inherited retinal disorders,western,medical-genetics,concept,basic+intern,9,0
+medical-genetics-v38-genome-editing-ethics,基因編輯的風險與倫理,Risks and ethics of genome editing,western,medical-genetics,concept,basic+intern,9,0
+foundations-v38-homeostasis-feedback,恆定與回饋迴路,Homeostasis and feedback loops,western,foundations,concept,basic+intern,9,0
+foundations-v38-membrane-transport,細胞膜運輸與滲透,Membrane transport and osmosis,western,foundations,concept,basic+intern,9,0
+foundations-v38-receptor-signaling,受體與細胞訊息傳遞,Receptors and cell signaling,western,foundations,concept,basic+intern,9,0
+foundations-v38-wound-healing,傷口癒合與組織修復,Wound healing and tissue repair,western,foundations,concept,basic+intern,9,0
+foundations-v38-cell-injury-death,細胞傷害與死亡,Cell injury and death,western,foundations,concept,basic+intern,9,0
+foundations-v38-hemodynamics-basics,血流動力學與阻力,Hemodynamics and resistance,western,foundations,concept,basic+intern,9,0
+foundations-v38-oxygen-transport,氧氣運輸與組織利用,Oxygen transport and tissue use,western,foundations,concept,basic+intern,9,0
+foundations-v38-nutrition-metabolism,營養代謝與能量平衡,Nutrition metabolism and energy balance,western,foundations,concept,basic+intern,9,0
+foundations-v38-measurement-uncertainty,醫學量測與不確定性,Medical measurement and uncertainty,western,foundations,concept,basic+intern,9,0
+foundations-v38-probability-updating,檢查結果與機率更新,Test results and probability updating,western,foundations,concept,basic+intern,9,0
+foundations-v38-simulation-validity,醫學模擬的效度與限制,Validity and limitations of medical simulation,western,foundations,concept,basic+intern,9,0
