@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""SSH incremental publisher: free web previews and private, resumable model resources.
+"""Incremental publisher: free web previews and private, resumable model resources.
 
 No existing local Git working tree is modified. Only exact known legacy files or
 unchanged files previously managed by this tool may be deleted. Public content
@@ -31,7 +31,7 @@ PRIVATE_MANIFEST = PRIVATE_PREFIX + '/model-manifest.json'
 MAX_CHUNK = 48 * 1024 * 1024
 CHUNK_SIZE = 40 * 1024 * 1024
 MODEL_FORMAT = 'huatuo-private-resources-v1'
-SSH_ENV = dict(os.environ, GIT_SSH_COMMAND='ssh -o BatchMode=yes -o StrictHostKeyChecking=yes -o ConnectTimeout=20 -o ServerAliveInterval=15 -o ServerAliveCountMax=3', GIT_TERMINAL_PROMPT='0')
+SSH_ENV = dict(os.environ, GIT_SSH_COMMAND='ssh -o BatchMode=yes -o StrictHostKeyChecking=yes -o ControlMaster=no -o ControlPath=none -o ControlPersist=no -o ClearAllForwardings=yes -o ConnectTimeout=20 -o ServerAliveInterval=15 -o ServerAliveCountMax=3', GIT_TERMINAL_PROMPT='0')
 
 
 def safe_path(value):
@@ -64,30 +64,58 @@ def now():
 def check_repo(value, allow_local=False):
     if re.fullmatch(r'git@github\.com:[A-Za-z0-9][\w.-]*/[A-Za-z0-9][\w.-]*(?:\.git)?', value):
         return value
+    if re.fullmatch(r'https://github\.com/[A-Za-z0-9][\w.-]*/[A-Za-z0-9][\w.-]*(?:\.git)?', value):
+        return value
     if allow_local and Path(value).is_absolute() and Path(value).is_dir():
         return value
-    raise ValueError('Use an SSH repository URL: git@github.com:OWNER/REPO.git (no token in URLs).')
+    raise ValueError('Use git@github.com:OWNER/REPO.git or https://github.com/OWNER/REPO.git (no token in URLs).')
+
+
+def read_repo(repo, complete_objects=False):
+    # This exception is only for the known PUBLIC academy, never PRIVATE-MODELS.
+    if complete_objects and repo == PUBLIC_REPO:
+        return 'https://github.com/kuonanhong/Hua-Tuo-Medical-Biomedical-Academy.git'
+    return repo
+
+
+def cache_key(repo, branch, complete_objects=False):
+    if not complete_objects:
+        # Preserve resumable private model caches from v3.7.
+        return hashlib.sha256((repo+'\0'+branch).encode()).hexdigest()[:16]
+    identity = '\0'.join(('public-full-v371', read_repo(repo, True), repo, branch))
+    return 'public-full-v371-' + hashlib.sha256(identity.encode()).hexdigest()[:16]
 
 
 class Remote:
     """Bare, cached Git index: preserve every unmodified foreign tree entry."""
-    def __init__(self, repo, branch, cache, allow_local=False):
+    def __init__(self, repo, branch, cache, allow_local=False, complete_objects=False):
         self.repo = check_repo(repo, allow_local)
+        self.fetch_repo = read_repo(self.repo, complete_objects)
+        self.complete_objects = complete_objects
         self.branch = branch
         self.cache = Path(cache)
         self.cache.mkdir(parents=True, exist_ok=True)
         self.run(['check-ref-format', '--branch', branch])
         if not (self.cache / 'HEAD').exists():
             self.run(['init', '--bare', '-q', str(self.cache)])
-        old = self.run(['remote', 'get-url', 'origin'], check=False).stdout.strip()
-        if old and old != repo:
+        old = self.run(['config', '--get', 'remote.origin.url'], check=False).stdout.strip()
+        if old and old != self.fetch_repo:
             raise ValueError('Cache belongs to a different remote; use a different --cache directory.')
         if not old:
-            self.run(['remote', 'add', 'origin', repo])
+            self.run(['remote', 'add', 'origin', self.fetch_repo])
+        old_push = self.run(['config', '--get', 'remote.origin.pushurl'], check=False).stdout.strip()
+        if old_push and old_push != self.repo:
+            raise ValueError('Cache has a different push destination; use a different --cache directory.')
+        self.run(['config', 'remote.origin.pushurl', self.repo])
+        if complete_objects:
+            promisor = self.run(['config', '--get', 'remote.origin.promisor'], check=False).stdout.strip()
+            if promisor.lower() == 'true' or any((self.cache/'objects'/'pack').glob('*.promisor')):
+                raise ValueError('Public cache is incomplete. Select a fresh --cache directory; existing cache was preserved.')
         refs = self.run(['ls-remote', '--heads', 'origin', branch]).stdout.strip()
         self.head = None
         if refs:
-            self.run(['fetch', '--quiet', '--depth=1', '--filter=blob:none', 'origin', 'refs/heads/' + branch])
+            fetch_mode = ['--no-filter', '--no-tags'] if complete_objects else ['--filter=blob:none']
+            self.run(['fetch', '--quiet', '--depth=1'] + fetch_mode + ['origin', 'refs/heads/' + branch])
             self.head = self.run(['rev-parse', 'FETCH_HEAD']).stdout.strip()
         else:
             # A failed ls-remote is an error; it is never interpreted as empty.
@@ -101,10 +129,11 @@ class Remote:
         env.update({'GIT_AUTHOR_NAME':'Hua Tuo Sync','GIT_AUTHOR_EMAIL':'huatuo-sync@users.noreply.github.com','GIT_COMMITTER_NAME':'Hua Tuo Sync','GIT_COMMITTER_EMAIL':'huatuo-sync@users.noreply.github.com'})
         if extra_env:
             env.update(extra_env)
-        result = subprocess.run(['git', '--git-dir=' + str(self.cache)] + args, input=data, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=text, env=env)
+        # Scope HTTP compatibility to this process; never rewrite global Git config.
+        result = subprocess.run(['git', '-c', 'http.version=HTTP/1.1', '--git-dir=' + str(self.cache)] + args, input=data, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=text, env=env)
         if check and result.returncode:
             error = result.stderr if text else result.stderr.decode(errors='replace')
-            raise RuntimeError('git ' + args[0] + ' failed: ' + error.strip())
+            raise RuntimeError('git ' + args[0] + ' failed for ' + self.fetch_repo + ': ' + error.strip())
         return result
 
     def refresh_tree(self):
@@ -146,11 +175,15 @@ class Remote:
             result = self.run(['push', '--porcelain', 'origin', commit + ':refs/heads/' + self.branch], check=False)
             if result.returncode == 0:
                 return
-            if 'rejected' in result.stderr.lower() or 'fetch first' in result.stderr.lower() or 'non-fast-forward' in result.stderr.lower():
-                raise RuntimeError('Remote changed concurrently. Run the command again; no force push was attempted.\n' + result.stderr.strip())
+            detail = (result.stdout + '\n' + result.stderr).strip()
+            if 'fetch first' in detail.lower() or 'non-fast-forward' in detail.lower():
+                raise RuntimeError('Remote changed concurrently: ' + self.repo + '. Run again; no force push was attempted.\n' + detail)
+            if 'rejected' in detail.lower():
+                raise RuntimeError('Push rejected by ' + self.repo + '; no force push was attempted.\n' + detail)
             if attempt < 2:
                 time.sleep(1 + attempt * 2)
-        raise RuntimeError('SSH upload interrupted. Run the same command again to resume.\n' + result.stderr.strip())
+        protocol = 'HTTPS' if self.repo.startswith('https://') else 'SSH' if self.repo.startswith('git@') else 'local Git'
+        raise RuntimeError(protocol + ' push failed for ' + self.repo + '. Run the same command again to resume.\n' + detail)
 
     def commit(self, updates, deletions, message):
         if not updates and not deletions:
@@ -221,6 +254,13 @@ def ensure_public_safe(snapshot):
             content = path.read_text(encoding='utf-8')
             if re.search(r'(?:github_pat_[A-Za-z0-9_]{20,}|gh[pousr]_[A-Za-z0-9]{20,}|-----BEGIN (?:RSA |OPENSSH |EC )?PRIVATE KEY-----)', content):
                 raise ValueError('Credential-like content in public export: ' + rel)
+    for path in (snapshot / 'data' / 'procedures').glob('*.json') if (snapshot / 'data' / 'procedures').is_dir() else []:
+        if path.stem == 'index':
+            continue
+        doc = json.loads(path.read_text(encoding='utf-8'))
+        for number, procedure in enumerate(doc.get('procedures', [])):
+            if number >= 4 and procedure.get('stages'):
+                raise ValueError('Member procedure payload in public export: ' + path.name)
     # Paid stage payloads must be removed in BOTH JSON and JS by exporter.
     for path in (snapshot / 'data' / 'courses').glob('*.json'):
         for course in json.loads(path.read_text(encoding='utf-8')):
@@ -248,7 +288,7 @@ def backend_url(value):
 def private_visibility(repo, override=False, allow_local=False):
     if allow_local and Path(repo).is_absolute():
         return {'method':'local-test-fixture','private':True}
-    match = re.fullmatch(r'git@github\.com:([^/]+)/(.+?)(?:\.git)?', repo)
+    match = re.fullmatch(r'(?:git@github\.com:|https://github\.com/)([^/]+)/(.+?)(?:\.git)?', repo)
     if not match:
         raise ValueError('Cannot inspect private repository visibility.')
     url = 'https://api.github.com/repos/' + match[1] + '/' + match[2]
@@ -261,8 +301,8 @@ def private_visibility(repo, override=False, allow_local=False):
         return {'method':'github-rest','private':True}
     except HTTPError as exc:
         if exc.code == 404:
-            # Called only AFTER successful authenticated SSH ls-remote/fetch.
-            return {'method':'unauthenticated-rest-404-and-authenticated-ssh-success','private':True}
+            # Called only AFTER successful authenticated Git ls-remote/fetch.
+            return {'method':'unauthenticated-rest-404-and-authenticated-git-success','private':True}
         message = 'GitHub REST visibility check failed with HTTP ' + str(exc.code)
     except (URLError, TimeoutError, OSError) as exc:
         message = 'Cannot verify model repository visibility: ' + str(exc)
@@ -330,6 +370,13 @@ def public_plan(remote, source, snapshot, configured_backend=''):
     ensure_public_safe(snapshot)
     baseline_path = KIT / 'tools' / 'legacy-v1-baseline.json'
     baseline = json.loads(baseline_path.read_text(encoding='utf-8'))['files'] if baseline_path.exists() else {}
+    # v3.6 push_site.py dropped these unchanged cloud helpers from its managed
+    # manifest. Only exact audited cloud hashes recorded with their source commit
+    # may be adopted; arbitrary remote edits still conflict instead of being lost.
+    previous_tools = KIT / 'tools' / 'legacy-v36-baseline.json'
+    if previous_tools.is_file():
+        for path, digest in json.loads(previous_tools.read_text(encoding='utf-8'))['files'].items():
+            baseline.setdefault(safe_path(path), digest)
     old = read_manifest(remote, PUBLIC_MANIFEST, 'huatuo-managed-public-v1') or {'files': {}}
     desired = {}
     # The user's existing repository has the original raw-source layout.
@@ -357,7 +404,7 @@ def public_plan(remote, source, snapshot, configured_backend=''):
     license_file = source / 'LICENSES.md'
     if license_file.exists():
         desired['LICENSES.md'] = (license_file, '100644')
-    for name in ('huatuo-sync.sh', 'huatuo-private-ai.sh', 'tools/python-runtime.sh', 'tools/sync_github.py', 'tools/private_models.py', 'tools/legacy-v1-baseline.json'):
+    for name in ('huatuo-sync.sh', 'huatuo-private-ai.sh', 'tools/python-runtime.sh', 'tools/sync_github.py', 'tools/private_models.py', 'tools/legacy-v1-baseline.json', 'tools/legacy-v36-baseline.json'):
         path = KIT / name
         if path.is_file():
             desired[name] = (path, '100755' if name.endswith('.sh') else '100644')
@@ -366,6 +413,18 @@ def public_plan(remote, source, snapshot, configured_backend=''):
         path = KIT / name
         if path.is_file():
             desired[name] = (path, '100644')
+    retained_scene_assets = []
+    # A source update archive can omit photos fetched by the owner's older upload
+    # script. Missing bytes are not evidence that these licensed images are
+    # obsolete scripts. Retain exact previously managed scene images in Git, but
+    # do not include them in the new Pages artifact unless present in the export.
+    # This narrow rule leaves normal obsolete-source/script pruning intact.
+    for path, expected in old['files'].items():
+        if path in desired or path not in remote.tree:
+            continue
+        if re.fullmatch(r'(?:public/academy/)?assets/scenes/[^/]+\.(?:jpg|jpeg|png|webp)', path, flags=re.IGNORECASE) and remote.digest(path) == expected:
+            desired[path] = (remote.read(path), remote.tree[path][0])
+            retained_scene_assets.append({'path':path,'reason':'previously managed scene photo omitted from local package; retained in Git, excluded from current Pages artifact','sha256':expected})
     updates, deletions, changes, preserved, conflicts, hashes = {}, [], [], [], [], {}
     for path, (content, mode) in desired.items():
         data = content.read_bytes() if isinstance(content, Path) else content
@@ -394,7 +453,7 @@ def public_plan(remote, source, snapshot, configured_backend=''):
     raw = json_bytes(manifest)
     if remote.read(PUBLIC_MANIFEST) != raw:
         updates[PUBLIC_MANIFEST] = (raw, '100644')
-    report = {'repo':remote.repo,'branch':remote.branch,'base_commit':remote.head,'layout':prefix or './','changes':changes,'preserved_custom_files':preserved,'conflicts':conflicts}
+    report = {'repo':remote.repo,'branch':remote.branch,'base_commit':remote.head,'layout':prefix or './','changes':changes,'preserved_custom_files':preserved,'retained_scene_assets':retained_scene_assets,'conflicts':conflicts}
     return report, updates, deletions
 
 
@@ -618,16 +677,18 @@ def main(argv=None):
     # Avoid credentials in the report/remote config by validating before creating any cache.
     check_repo(a.public_repo, a.allow_local_remotes)
     check_repo(a.private_repo, a.allow_local_remotes)
-    def connect(repo):
-        key = hashlib.sha256((repo+'\0'+a.branch).encode()).hexdigest()[:16]
-        return Remote(repo, a.branch, cache/key, a.allow_local_remotes)
+    def connect(repo, complete_objects=False):
+        key = cache_key(repo, a.branch, complete_objects)
+        return Remote(repo, a.branch, cache/key, a.allow_local_remotes, complete_objects=complete_objects)
     report = {'format':'huatuo-cloud-comparison-v1','generated_at':now(),'dry_run':a.dry_run,'source':str(source)}
     with tempfile.TemporaryDirectory(prefix='huatuo-sync-') as tmpdir:
         temp = Path(tmpdir)
         public = private = None
         public_data = private_data = None
         if not a.models_only:
-            public = connect(a.public_repo)
+            print('公開網站：完整抓取目前版本（v3.7.1 獨立快取），比對時不逐檔補抓。', flush=True)
+            print('讀取：' + read_repo(a.public_repo, True) + '\n推送：' + a.public_repo, flush=True)
+            public = connect(a.public_repo, complete_objects=True)
             public_data = public_plan(public, source, temp/'free-site', configured_backend)
             report['public'] = public_data[0]
         if not a.public_only:
@@ -645,6 +706,8 @@ def main(argv=None):
         if public_data:
             summary = public_data[0]
             print(f'公開網站: {len(summary["changes"])} 個新增/更新/刪除，保留 {len(summary["preserved_custom_files"])} 個自行修改檔，衝突 {len(summary["conflicts"])} 個。')
+            if summary.get('retained_scene_assets'):
+                print(f'另保留 {len(summary["retained_scene_assets"])} 張本機未附的既有場景照片於 Git；未列入本次 Pages 畫面。')
             if summary['preserved_custom_files']:
                 print('保留的舊來源檔請依 JSON 清單檢查是否仍適合公開；本程式不會刪除自行修改檔。')
         if private_data:

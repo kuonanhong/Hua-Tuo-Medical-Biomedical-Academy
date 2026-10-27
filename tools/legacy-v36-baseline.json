@@ -1,0 +1,13 @@
+{
+  "format": "huatuo-known-v36-public-tools",
+  "source": "Audited public helper files from main at known commit; all match supplied v3.6 package except sync_github.py missing the later procedure-payload guard. v3.7 restores that guard.",
+  "verified_remote_commit": "e86521e9480d0ae7cfa4beebd1452380aed23ad2",
+  "files": {
+    "tools/sync_github.py": "1bad2492301c803ef7d09ef9562c29ec4fbf13c0a461e61ea1d344e3c62fd2c2",
+    "tools/private_models.py": "6b17333c61fd8a7b647c660b46d4d3731ab821a72ba67009d99fa0c14affc098",
+    "tools/python-runtime.sh": "63e9bcb2ac31807f287a514d3b19d3849905dd2d8e5315ecf45845ce1fd94410",
+    "huatuo-sync.sh": "677708c1db7c47d53d80dddd4954f95130119f417046837541dbb8f3a55d3dce",
+    "huatuo-private-ai.sh": "ab4d5e981de8f0c4ff7ad9a2906ddc4c1520e6352427b77635aae8b27f47b8c6",
+    "tools/legacy-v1-baseline.json": "d0db27d92755393a697a96f4d72b46d91a38a2e892d00355d02a1d35ea2f0ea7"
+  }
+}

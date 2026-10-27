@@ -16,14 +16,26 @@
   const say = (z, e) => zh() ? z : e;
   const pk = v => v && typeof v === 'object' ? (zh() ? v.zh : v.en) : String(v || '');
   const FILE = location.protocol === 'file:';
-  let THREE = null, loading = null;
+  let THREE = null, loading = null, webglAvailable;
 
+  // Probe once, then release the probe. Repeated probes can evict the live canvas on Safari/mobile.
   function available() {
-    try { const c = document.createElement('canvas'); return !!(window.WebGLRenderingContext && (c.getContext('webgl2') || c.getContext('webgl'))); } catch (e) { return false; }
+    if (webglAvailable !== undefined) return webglAvailable;
+    let gl = null;
+    try {
+      const c = document.createElement('canvas');
+      gl = (window.WebGLRenderingContext || window.WebGL2RenderingContext) && (c.getContext('webgl2') || c.getContext('webgl'));
+      webglAvailable = !!gl;
+    } catch (e) { webglAvailable = false; }
+    finally { try { const ext = gl && gl.getExtension('WEBGL_lose_context'); if (ext) ext.loseContext(); } catch (e) {} }
+    return webglAvailable;
   }
   function ensure() {
     if (window.THREE) { THREE = window.THREE; return Promise.resolve(THREE); }
-    if (!loading) loading = window.HT.loadScript('vendor/three.js').then(() => { THREE = window.THREE; return THREE; });
+    if (!loading) loading = window.HT.loadScript('vendor/three.js').then(() => {
+      if (!window.THREE || !window.THREE.WebGLRenderer) throw new Error('3D library unavailable');
+      THREE = window.THREE; return THREE;
+    }).catch(error => { loading = null; throw error; });
     return loading;
   }
 
@@ -66,6 +78,14 @@
   }
   function fieldCanvas(type, progress) {
     const c = canvas(512, 384), g = c.getContext('2d'); const p = Math.max(0, Math.min(1, progress || 0));
+    if (/^bedside/.test(type)) {
+      g.fillStyle = '#dcebf0'; g.fillRect(0, 0, 512, 384);
+      g.fillStyle = '#f2c9a0'; g.beginPath(); g.ellipse(125, 170, 54, 65, 0, 0, Math.PI * 2); g.fill();
+      g.fillStyle = '#a4c9d8'; g.fillRect(182, 105, 270, 155);
+      g.fillStyle = '#163e48'; g.font = '700 22px system-ui'; g.fillText(say('床邊評估・非侵入性示意', 'Bedside assessment · schematic'), 16, 40);
+      g.font = '18px system-ui'; g.fillText(say('觀察 → 核對證據 → 團隊判讀', 'Observe → verify evidence → review'), 20, 320);
+      return c;
+    }
     g.fillStyle = '#e8c4a0'; g.fillRect(0, 0, 512, 384); // skin
     const grd = g.createRadialGradient(256, 192, 40, 256, 192, 260); grd.addColorStop(0, 'rgba(255,230,210,.25)'); grd.addColorStop(1, 'rgba(120,70,40,.35)'); g.fillStyle = grd; g.fillRect(0, 0, 512, 384);
     g.fillStyle = 'rgba(40,110,150,.55)'; g.fillRect(0, 0, 512, 56); g.fillRect(0, 328, 512, 56); g.fillRect(0, 0, 60, 384); g.fillRect(452, 0, 60, 384); // drapes
@@ -135,6 +155,39 @@
           const cart = box(0.6, 1.0, 0.6, '#f5f6f7'); cart.position.y = 0.5; g.add(cart); const sc = screen(0.5, 0.34, screenCanvas('imaging'), { glow: 1 }); sc.position.set(0, 1.25, 0.1); sc.rotation.x = -0.25; g.add(sc); const probe = cyl(0.025, 0.035, 0.18, '#dfe4e7'); probe.position.set(0.38, 1.05, 0.2); probe.rotation.z = 0.6; g.add(probe); if (/obstet/.test(d)) { const warmer = box(0.7, 0.1, 0.5, '#ffffff'); warmer.position.set(1.1, 0.95, 0); g.add(warmer); const heat = box(0.5, 0.06, 0.3, '#e9eef2', { emissive: 0xffb347, ei: 0.9 }); heat.position.set(1.1, 1.9, 0); g.add(heat); const pole = cyl(0.03, 0.03, 1.0, '#dfe4e7'); pole.position.set(1.4, 1.4, -0.2); g.add(pole); } g.userData.highlight = cart; g.userData.name = /obstet/.test(d) ? say('超音波與新生兒保溫台', 'Ultrasound & neonatal warmer') : say('超音波機', 'Ultrasound machine'); }
         else if (/anesth/.test(d)) { // difficult-airway cart + video laryngoscope
           const cart = box(0.7, 1.0, 0.5, '#2a7a9c', { rough: 0.5 }); cart.position.y = 0.5; g.add(cart); for (let i = 0; i < 4; i++) { const dr = box(0.62, 0.17, 0.02, '#f5f6f7'); dr.position.set(0, 0.2 + i * 0.21, 0.26); g.add(dr); } const top = box(0.74, 0.04, 0.54, '#c9d3d8'); top.position.y = 1.04; g.add(top); const vl = box(0.22, 0.16, 0.03, '#1d262c'); vl.position.set(-0.15, 1.3, 0); g.add(vl); const vls = screen(0.2, 0.14, screenCanvas('info'), { glow: 1 }); vls.position.set(-0.15, 1.3, 0.02); g.add(vls); const mask = new THREE.Mesh(new THREE.SphereGeometry(0.08, 12, 10), new THREE.MeshStandardMaterial({ color: '#e8f4ff', transparent: true, opacity: 0.8 })); mask.position.set(0.2, 1.12, 0.1); g.add(mask); g.userData.highlight = cart; g.userData.name = say('困難氣道車與影像喉頭鏡', 'Difficult-airway cart & video laryngoscope'); }
+        else if (/emergency|critical-care/.test(d)) {
+          const unit = box(0.75, 1.0, 0.55, '#a33339'); unit.position.y = 0.5; g.add(unit);
+          const sc = screen(0.56, 0.33, screenCanvas('info'), { glow: 0.9 }); sc.position.set(0, 1.22, 0.2); g.add(sc);
+          for (const x of [-0.22,0.22]) { const pad = box(0.16,0.06,0.26,'#343f46'); pad.position.set(x,1.04,0.1); g.add(pad); }
+          const bag = new THREE.Mesh(new THREE.SphereGeometry(0.16,16,12), new THREE.MeshStandardMaterial({color:'#8dd8c6'})); bag.position.set(0.48,1.1,0); g.add(bag);
+          g.userData.highlight = unit; g.userData.name = /critical/.test(d) ? say('重症監測與復甦車', 'Critical-care monitoring & resuscitation cart') : say('急診復甦車', 'Emergency resuscitation cart');
+        }
+        else if (/nephrology/.test(d)) {
+          const unit = box(0.64,1.35,0.55,'#e7edf1'); unit.position.y = 0.675; g.add(unit);
+          const sc = screen(0.5,0.32,screenCanvas('info'),{glow:0.8}); sc.position.set(0,1.24,0.28); g.add(sc);
+          const filter = cyl(0.065,0.065,0.46,'#bad8df'); filter.position.set(0.45,0.98,0.08); g.add(filter);
+          for (const [x,color] of [[-0.18,'#b45252'],[0.18,'#527eac']]) { const loop = new THREE.Mesh(new THREE.TorusGeometry(0.17,0.012,8,24),new THREE.MeshStandardMaterial({color})); loop.position.set(x,0.66,0.3); g.add(loop); }
+          g.userData.highlight=unit; g.userData.name=say('透析機與管路辨識', 'Dialysis machine & circuit recognition');
+        }
+        else if (/pulmonology/.test(d)) {
+          const stand=box(0.6,0.85,0.5,'#cedfe6');stand.position.y=0.425;g.add(stand);
+          const sc=screen(0.48,0.3,screenCanvas('info'),{glow:0.8});sc.position.set(0,1.05,0.26);g.add(sc);
+          const sensor=cyl(0.06,0.06,0.24,'#f7f7f2');sensor.rotation.z=Math.PI/2;sensor.position.set(0.45,0.9,0.18);g.add(sensor);
+          g.userData.highlight=stand;g.userData.name=say('肺功能檢查與血氧監測', 'Spirometry & pulse oximetry');
+        }
+        else if (/endocrinology/.test(d)) {
+          const table=box(0.8,0.8,0.6,'#d9e4dc');table.position.y=0.4;g.add(table);
+          const meter=box(0.13,0.04,0.22,'#345f82');meter.position.set(-0.18,0.84,0.1);g.add(meter);
+          const panel=screen(0.5,0.3,screenCanvas('info'),{glow:0.7});panel.position.set(0,1.17,-0.08);g.add(panel);
+          const scale=box(0.4,0.06,0.4,'#9faeb4');scale.position.set(0.65,0.04,0);g.add(scale);
+          g.userData.highlight=table;g.userData.name=say('血糖紀錄與代謝評估台', 'Glucose records & metabolic assessment');
+        }
+        else if (/rheumatology/.test(d)) {
+          const cart=box(0.6,0.9,0.55,'#f0ece2');cart.position.y=0.45;g.add(cart);
+          const sc=screen(0.52,0.35,screenCanvas('imaging'),{glow:0.8});sc.position.set(0,1.18,0.13);g.add(sc);
+          const probe=box(0.13,0.16,0.05,'#b9c7d0');probe.position.set(0.4,0.98,0.2);g.add(probe);
+          g.userData.highlight=cart;g.userData.name=say('肌骨超音波與關節評估', 'Musculoskeletal ultrasound & joint assessment');
+        }
         else if (/neurosurg|ophthalm|ent\b|plastic/.test(d)) { // operating microscope
           const base = box(0.7, 0.2, 0.7, '#e9eef2'); base.position.y = 0.1; g.add(base); const col = cyl(0.08, 0.1, 1.9, '#dfe4e7'); col.position.y = 1.05; g.add(col); const arm = box(1.3, 0.1, 0.1, '#dfe4e7'); arm.position.set(0.55, 2.0, 0); g.add(arm); const arm2 = box(0.1, 0.8, 0.1, '#dfe4e7'); arm2.position.set(1.15, 1.6, 0); g.add(arm2); const head = box(0.3, 0.35, 0.3, '#2d3436', { rough: 0.4 }); head.position.set(1.15, 1.1, 0); g.add(head); const lens = cyl(0.06, 0.06, 0.1, '#111'); lens.position.set(1.15, 0.9, 0); g.add(lens); g.userData.highlight = head; g.userData.name = say('手術顯微鏡', 'Operating microscope'); }
         else if (/cardiac-surg/.test(d)) { const body = box(0.9, 1.0, 0.6, '#f5f6f7'); body.position.y = 0.5; g.add(body); for (let i = 0; i < 4; i++) { const pump = cyl(0.12, 0.12, 0.08, '#2a7a9c', { metal: 0.3 }); pump.rotation.x = Math.PI / 2; pump.position.set(-0.3 + i * 0.2, 1.1, 0.25); g.add(pump); } const res = cyl(0.12, 0.12, 0.4, '#e8f4ff', { opacity: 0.8 }); res.position.set(0.35, 1.3, -0.1); g.add(res); const sc = screen(0.4, 0.26, screenCanvas('anesthesia'), { glow: 0.9 }); sc.position.set(-0.15, 1.35, 0.31); g.add(sc); g.userData.highlight = body; g.userData.name = say('體外循環機', 'Heart-lung machine'); }
@@ -168,6 +221,8 @@
 
   // ---------------------------------------------------------------- the scene
   function mount(host, api) {
+    THREE = window.THREE || THREE;
+    if (!THREE || !THREE.WebGLRenderer) throw new Error('3D library not ready');
     const el = document.createElement('div'); el.className = 'th3d'; host.appendChild(el);
     const cv = document.createElement('canvas'); el.appendChild(cv);
     const tip = document.createElement('div'); tip.className = 'th3d-tip'; tip.hidden = true; el.appendChild(tip);
@@ -179,19 +234,50 @@
       card.hidden = false; placeCard();
       card.querySelector('.th3d-x').onclick = () => { card.hidden = true; cardFor = null; };
       card.querySelector('[data-c-open]').onclick = () => { card.hidden = true; api.onHot(id); };
-      card.querySelector('[data-c-fly]').onclick = () => flyTo(id);
+      card.querySelector('[data-c-fly]').onclick = () => handle.flyTo(id);
     }
     function placeCard() { if (card.hidden || !cardFor || !objs[cardFor]) return; const v = objs[cardFor].position.clone(); v.y = 1.6; v.project(camera); const w = el.clientWidth, h = el.clientHeight; const x = (v.x * 0.5 + 0.5) * w, y = (-v.y * 0.5 + 0.5) * h; const cw = Math.min(280, w - 16); card.style.width = cw + 'px'; const left = x + 18 + cw > w ? Math.max(8, x - 18 - cw) : x + 18; card.style.left = left + 'px'; card.style.top = Math.max(8, Math.min(h - card.offsetHeight - 8, y - 40)) + 'px'; card.style.opacity = v.z > 1 ? 0 : 1; }
-    const handle = { el, api, dispose, update, setView, zoomBy, resize, flyTo };
-    let renderer, scene, camera, raycaster, clock, raf = null, disposed = false;
+    const handle = { el, api, dispose, disposed: false };
+    let renderer, scene, camera, raycaster, clock, resize, raf = null, ro = null, disposed = false, failed = false;
     const objs = {}, people = {}, pins = [], rings = {}; let targetRing = null, arrow = null, bubbles = [], handMarkers = {}, mentorHome = null;
     const cam = { view: api.st.view || 'third', yaw: 0.2, pitch: -0.35, dist: 4.2, fov: 70, pan: new THREE.Vector3(0, 1.0, 0), pos: new THREE.Vector3(), look: new THREE.Vector3(), tPos: new THREE.Vector3(), tLook: new THREE.Vector3(), first: { yaw: -2.55, pitch: -0.62 } };
     const ecg = { c: canvas(512, 160), buf: [], t: 0 };
-    let brainTex = null, photo = null; const photoState = { tex: null, on: api.photoEnabled !== false, panorama: false, print: null, floorMat: null, bg: null };
+    let brainTex = null, photo = null; const photoState = { tex: null, on: api.photoEnabled !== false, panorama: false, print: null, floorMat: null, shadowMat: null, bg: null };
 
+    function fail(reason) {
+      if (disposed || failed) return;
+      failed = true;
+      if (raf) cancelAnimationFrame(raf);
+      // The owning workbench replaces the scene with an interactive SVG, preserving progress.
+      if (typeof api.onFatal === 'function') api.onFatal(reason);
+    }
+    function contextLost(event) { event.preventDefault(); fail('context-lost'); }
+    function dispose() {
+      if (disposed) return;
+      disposed = true; handle.disposed = true;
+      if (raf) cancelAnimationFrame(raf);
+      if (ro) ro.disconnect();
+      if (resize) window.removeEventListener('resize', resize);
+      cv.removeEventListener('webglcontextlost', contextLost, false);
+      const materials = new Set(), textures = new Set(), geometries = new Set();
+      if (scene) {
+        scene.traverse(o => { if (o.geometry) geometries.add(o.geometry); if (o.material) (Array.isArray(o.material) ? o.material : [o.material]).forEach(m => materials.add(m)); });
+        if (scene.environment && scene.environment.dispose) textures.add(scene.environment);
+      }
+      [brainTex, photo, photoState.env].forEach(t => { if (t) textures.add(t); });
+      [photoState.floorMat, photoState.shadowMat].forEach(m => { if (m) materials.add(m); });
+      materials.forEach(m => { Object.values(m).forEach(v => { if (v && v.isTexture) textures.add(v); }); m.dispose(); });
+      textures.forEach(t => t.dispose()); geometries.forEach(g => g.dispose());
+      if (renderer) { renderer.dispose(); if (renderer.forceContextLoss) renderer.forceContextLoss(); }
+      if (el.parentNode) el.parentNode.removeChild(el);
+      if (window.__ht3d === handle) window.__ht3d = null;
+    }
+
+    try {
     renderer = new THREE.WebGLRenderer({ canvas: cv, antialias: true, powerPreference: 'high-performance' });
     renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, window.innerWidth < 700 ? 1.5 : 2));
     renderer.shadowMap.enabled = true; renderer.shadowMap.type = THREE.PCFSoftShadowMap; renderer.toneMapping = THREE.ACESFilmicToneMapping; renderer.toneMappingExposure = 0.95; renderer.outputColorSpace = THREE.SRGBColorSpace;
+    cv.addEventListener('webglcontextlost', contextLost, false);
     scene = new THREE.Scene(); scene.background = new THREE.Color(0x0f1a1e); scene.fog = new THREE.Fog(0x0f1a1e, 16, 34);
     camera = new THREE.PerspectiveCamera(70, 16 / 9, 0.05, 80); raycaster = new THREE.Raycaster(); clock = new THREE.Clock(); scene.add(camera);
     const fpHands = new THREE.Group(); [[-0.22, -0.26, -0.55, 0.3], [0.22, -0.26, -0.55, -0.3]].forEach(([x, y, z, rz]) => { const h = new THREE.Group(); const palm = new THREE.Mesh(new THREE.SphereGeometry(0.07, 14, 12), new THREE.MeshStandardMaterial({ color: '#dfe8e6', roughness: 0.55 })); palm.scale.set(1, 0.6, 1.2); h.add(palm); const cuff = cyl(0.075, 0.09, 0.22, '#1f6f5f', { rough: 0.9 }); cuff.rotation.x = Math.PI / 2; cuff.position.z = 0.17; h.add(cuff); h.position.set(x, y, z); h.rotation.z = rz; h.rotation.x = 0.35; fpHands.add(h); }); fpHands.visible = false; camera.add(fpHands);
@@ -236,17 +322,17 @@
     function applyPhoto(on) {
       photoState.on = on; const t = photoState.tex; if (!t) return;
       if (photoState.panorama) {
-        if (on) { if (!photoState.bg) { photoState.bg = scene.background; photoState.floorMat = floor.material; photoState.env = scene.environment; } scene.background = t; scene.environment = t; scene.fog = null; roomGroup.visible = false; floor.material = new THREE.ShadowMaterial({ opacity: 0.35 }); }
+        if (on) { if (!photoState.bg) { photoState.bg = scene.background; photoState.floorMat = floor.material; photoState.env = scene.environment; } scene.background = t; scene.environment = t; scene.fog = null; roomGroup.visible = false; floor.material = photoState.shadowMat || (photoState.shadowMat = new THREE.ShadowMaterial({ opacity: 0.35 })); }
         else { scene.background = photoState.bg || new THREE.Color(0x0f1a1e); scene.environment = photoState.env || null; scene.fog = new THREE.Fog(0x0f1a1e, 16, 34); roomGroup.visible = true; if (photoState.floorMat) floor.material = photoState.floorMat; }
       }
       photoGroup.visible = on;
     }
-    if (!FILE && api.photo) { const loader = new THREE.TextureLoader(); loader.load(api.photo.src, t => { if (disposed) return; t.colorSpace = THREE.SRGBColorSpace; photoState.tex = t; photoState.panorama = !!api.photo.panorama; if (api.photo.panorama) { t.mapping = THREE.EquirectangularReflectionMapping; const cap = labelSprite(say('實景 360°・', '360° photo · ') + (api.photo.credit || ''), { size: 22, bg: 'rgba(16,28,32,.75)', scale: 0.003 }); cap.position.set(0, 0.25, 2.6); photoGroup.add(cap); } else { const print = new THREE.Mesh(new THREE.PlaneGeometry(4.2, 2.6), new THREE.MeshStandardMaterial({ map: t, roughness: 0.6 })); print.position.set(-1.2, 1.75, -ROOM.d / 2 + 0.03); photoGroup.add(print); const cap = labelSprite(say('實景參考 · ', 'Reference photo · ') + (api.photo.credit || ''), { size: 22, bg: 'rgba(16,28,32,.75)' }); cap.position.set(-1.2, 0.3, -ROOM.d / 2 + 0.1); photoGroup.add(cap); } photo = t; applyPhoto(photoState.on); }, undefined, () => {}); }
+    if (!FILE && api.photo) { const loader = new THREE.TextureLoader(); loader.load(api.photo.src, t => { if (disposed) { t.dispose(); return; } t.colorSpace = THREE.SRGBColorSpace; photoState.tex = t; photoState.panorama = !!api.photo.panorama; if (api.photo.panorama) { t.mapping = THREE.EquirectangularReflectionMapping; const cap = labelSprite(say('實景 360°・', '360° photo · ') + (api.photo.credit || ''), { size: 22, bg: 'rgba(16,28,32,.75)', scale: 0.003 }); cap.position.set(0, 0.25, 2.6); photoGroup.add(cap); } else { const print = new THREE.Mesh(new THREE.PlaneGeometry(4.2, 2.6), new THREE.MeshStandardMaterial({ map: t, roughness: 0.6 })); print.position.set(-1.2, 1.75, -ROOM.d / 2 + 0.03); photoGroup.add(print); const cap = labelSprite(say('實景參考 · ', 'Reference photo · ') + (api.photo.credit || ''), { size: 22, bg: 'rgba(16,28,32,.75)' }); cap.position.set(-1.2, 0.3, -ROOM.d / 2 + 0.1); photoGroup.add(cap); } photo = t; applyPhoto(photoState.on); }, undefined, () => {}); }
     handle.setPhoto = applyPhoto; handle.showCard = showCard;
     // test/automation helper: screen position (CSS px inside the 3D element) of an equipment item
     handle.screenPos = (id, y) => { const o = objs[id]; if (!o) return null; const v = o.position.clone(); v.y = y == null ? 1.0 : y; v.project(camera); const r = el.getBoundingClientRect(); return { x: r.left + (v.x * 0.5 + 0.5) * r.width, y: r.top + (-v.y * 0.5 + 0.5) * r.height, visible: v.z < 1 && Math.abs(v.x) < 1 && Math.abs(v.y) < 1 }; };
     window.__ht3d = handle;
-    if (!FILE && api.brainSlice && objs.imaging && objs.imaging.userData.brainScreen) { new THREE.TextureLoader().load(api.brainSlice, t => { if (disposed) return; t.colorSpace = THREE.SRGBColorSpace; const sc = objs.imaging.userData.brainScreen; sc.material.map = t; sc.material.emissiveMap = t; sc.material.needsUpdate = true; brainTex = t; }, undefined, () => {}); }
+    if (!FILE && api.brainSlice && objs.imaging && objs.imaging.userData.brainScreen) { new THREE.TextureLoader().load(api.brainSlice, t => { if (disposed) { t.dispose(); return; } t.colorSpace = THREE.SRGBColorSpace; const sc = objs.imaging.userData.brainScreen; sc.material.map = t; sc.material.emissiveMap = t; sc.material.needsUpdate = true; brainTex = t; }, undefined, () => {}); }
 
     // ---- camera
     function presetFor(view) {
@@ -279,6 +365,7 @@
     cv.style.cursor = 'grab'; cv.setAttribute('role', 'img'); cv.setAttribute('aria-label', say('3D 數位孿生手術室：拖曳環視、滾輪或雙指縮放、點選儀器', '3D digital-twin theatre: drag to look, wheel or pinch to zoom, tap equipment'));
 
     // ---- per-render update from theatre.js
+    handle.setMentor = k => { cur.mentorK = Math.max(0, Math.min(1, Number(k) || 0)); };
     let cur = { target: null, second: null, mentorK: 0, lines: [], vitals: null, stations: [], hands: null, progress: 0 };
     function update(a) {
       api = a; handle.api = a; cur.target = a.target; cur.second = a.second; cur.mentorK = a.mentorK || 0; cur.lines = a.lines || []; cur.vitals = a.vitals; cur.progress = a.progress || 0;
@@ -286,7 +373,7 @@
       if (a.st.view === 'second') cam.dist = Math.max(1.2, Math.min(7, 4.6 / (a.st.zoom || 1)));
       // pins per station
       pins.forEach(drop); pins.length = 0;
-      a.map.forEach(m => { const hs = POS[m.hotspot]; if (!hs) return; const isT = m.station === a.s.zone || m.station === a.s.secondZone, done = m.station < a.engine.index && !a.singleStage; const sp = labelSprite(String(m.station + 1), { size: 30, bg: isT ? 'rgba(192,57,43,.96)' : done ? 'rgba(40,122,85,.92)' : 'rgba(31,111,95,.92)', border: '#fff', scale: 0.0028 }); sp.position.set(hs[0] + (m.slot % 3) * 0.28 - 0.28, 2.0 + Math.floor(m.slot / 3) * 0.26, hs[2]); sp.userData.zone = m.station; scene.add(sp); pins.push(sp); if (isT) { const name = labelSprite(pk(a.c.tiles[m.station]), { size: 24, bg: 'rgba(122,28,36,.92)', scale: 0.003 }); name.position.set(hs[0], 1.72, hs[2]); name.userData.zone = m.station; scene.add(name); pins.push(name); } });
+      a.map.forEach(m => { const hs = POS[m.hotspot]; if (!hs) return; const isT = m.station === a.s.zone || m.station === a.s.secondZone, done = !!(a.doneStations && a.doneStations.has(m.station)); const sp = labelSprite(String(m.station + 1), { size: 30, bg: isT ? 'rgba(192,57,43,.96)' : done ? 'rgba(40,122,85,.92)' : 'rgba(31,111,95,.92)', border: '#fff', scale: 0.0028 }); sp.position.set(hs[0] + (m.slot % 3) * 0.28 - 0.28, 2.0 + Math.floor(m.slot / 3) * 0.26, hs[2]); sp.userData.zone = m.station; scene.add(sp); pins.push(sp); if (isT) { const name = labelSprite(pk(a.c.tiles[m.station]), { size: 24, bg: 'rgba(122,28,36,.92)', scale: 0.003 }); name.position.set(hs[0], 1.72, hs[2]); name.userData.zone = m.station; scene.add(name); pins.push(name); } });
       // highlight target equipment
       Object.keys(objs).forEach(id => { const h = objs[id].userData.highlight; if (h && h.material) { const on = a.target && a.target.hotspot === id; h.material.emissive = new THREE.Color(on ? 0xc0392b : 0x000000); h.material.emissiveIntensity = on ? 0.35 : 1; } });
       // field progress texture
@@ -305,8 +392,9 @@
     // ---- animation
     const g = (t, m, w, a) => a * Math.exp(-((t - m) ** 2) / (2 * w * w));
     function drawEcg(dt) { const v = cur.vitals || { hr: 72 }; const rr = 60 / Math.max(30, v.hr || 72); ecg.t += dt; const ph = ecg.t % rr; const y = g(ph, 0.08, 0.02, 0.12) + g(ph, 0.2, 0.01, -0.1) + g(ph, 0.22, 0.012, 1.1) + g(ph, 0.25, 0.012, -0.25) + g(ph, 0.45, 0.05, 0.25); ecg.buf.push(y); if (ecg.buf.length > 500) ecg.buf.shift(); const x = ecg.c.getContext('2d'); x.fillStyle = '#061a10'; x.fillRect(0, 0, 512, 160); x.strokeStyle = '#4dff8f'; x.lineWidth = 3; x.beginPath(); ecg.buf.forEach((val, i) => { const px = i + 6, py = 92 - val * 50; if (i) x.lineTo(px, py); else x.moveTo(px, py); }); x.stroke(); x.fillStyle = '#4dff8f'; x.font = '700 28px system-ui'; x.fillText('HR ' + (v.hr || 72), 12, 36); x.fillStyle = '#ff6b6b'; x.fillText('BP ' + (v.bp || '118/72'), 150, 36); x.fillStyle = '#74c0fc'; x.fillText('SpO₂ ' + (v.spo2 || 98) + '%', 330, 36); x.fillStyle = '#ffd166'; x.font = '700 22px system-ui'; x.fillText('RR ' + (v.rr || 14) + '  T ' + (v.temp || 36.6) + '°', 12, 148); }
-    function loop() { if (disposed) return; raf = requestAnimationFrame(loop); const dt = Math.min(0.05, clock.getDelta()); const now = clock.elapsedTime;
+    function loop() { if (disposed || failed) return; raf = requestAnimationFrame(loop); const dt = Math.min(0.05, clock.getDelta()); const now = clock.elapsedTime;
       if (!el.isConnected) return; if (document.hidden) return;
+      try {
       updateCamera(dt); placeCard();
       drawEcg(dt); ['monitor', 'recovery', 'imaging'].forEach(id => { const sc = objs[id] && objs[id].userData.screen; if (sc) { if (sc.material.map.image !== ecg.c) { sc.material.map.image = ecg.c; sc.material.emissiveMap = sc.material.map; } sc.material.map.needsUpdate = true; } });
       // target ring + arrow
@@ -322,13 +410,14 @@
       lamps.forEach(l => { l.intensity = 28 + 0.8 * Math.sin(now * 30); });
       // name tags fade out when the camera is right next to someone (second person close-ups)
       Object.values(people).forEach(p => { const tg = p.userData.tag; if (tg) { const d = camera.position.distanceTo(tg.getWorldPosition(new THREE.Vector3())); tg.visible = d > 1.3 && p.visible; } });
-      renderer.render(scene, camera); }
-    function resize() { const w = Math.max(240, el.clientWidth), h = Math.max(200, el.clientHeight); renderer.setSize(w, h, false); camera.aspect = w / h; camera.updateProjectionMatrix(); }
-    const ro = window.ResizeObserver ? new ResizeObserver(resize) : null; if (ro) ro.observe(el); window.addEventListener('resize', resize);
-    function dispose() { disposed = true; if (raf) cancelAnimationFrame(raf); if (ro) ro.disconnect(); window.removeEventListener('resize', resize); scene.traverse(o => { if (o.geometry) o.geometry.dispose(); if (o.material) { (Array.isArray(o.material) ? o.material : [o.material]).forEach(m => { if (m.map) m.map.dispose(); m.dispose(); }); } }); renderer.dispose(); if (el.parentNode) el.parentNode.removeChild(el); }
+      renderer.render(scene, camera); } catch (error) { fail('render'); } }
+    resize = function () { const w = Math.max(240, el.clientWidth), h = Math.max(200, el.clientHeight); renderer.setSize(w, h, false); camera.aspect = w / h; camera.updateProjectionMatrix(); }
+    ro = window.ResizeObserver ? new window.ResizeObserver(resize) : null; if (ro) ro.observe(el); window.addEventListener('resize', resize);
 
     setView(cam.view); cam.pos.set(8, 6, 9); cam.look.set(0, 1, 0); update(api); resize(); loop();
+    Object.assign(handle, { update, setView, zoomBy, resize, flyTo });
     return handle;
+    } catch (error) { dispose(); throw error; }
   }
 
   window.HT = window.HT || {};

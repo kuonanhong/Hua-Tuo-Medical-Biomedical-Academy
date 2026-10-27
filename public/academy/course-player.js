@@ -10,6 +10,8 @@
   const loaded = {};
   let current = { course: null, catalog: null, stage: 0, step: 0, tier: 'basic', cleanup: null };
 
+  function dispose(){current.renderToken={};current.benchToken={};if(current.cleanup){current.cleanup();current.cleanup=null;}}
+
   // Free-preview-first loading (v3.4). A course opens from its ~6 KB preview chunk
   // (data/preview/<id>.js: the free section in full, member sections as titles) so the page paints
   // at once on phones and static hosts. The full department file (member step bodies) is fetched
@@ -24,11 +26,11 @@
   async function loadFull(cat) {
     // Server responses enforce access and must never survive a logout in script cache.
     if (location.protocol !== 'file:') {
+      const cacheToken=current.renderToken;
       const response = await fetch('data/' + cat.courseFile.replace(/\.js$/, '.json'), { credentials: 'same-origin', cache: 'no-store' });
       if (!response.ok) throw new Error('Course load failed (' + response.status + ')');
       const courses = await response.json();
-      window.HT_COURSES = window.HT_COURSES || {};
-      window.HT_COURSES[cat.department] = courses;
+      if(current.renderToken===cacheToken){window.HT_COURSES=window.HT_COURSES||{};window.HT_COURSES[cat.department]=courses;}
       return courses.find(c => c.id === cat.id);
     }
     if (!loaded[cat.department]) {
@@ -80,7 +82,7 @@
   }
   async function render(root, id, opts) {
     opts = opts || {};
-    if (current.cleanup) { current.cleanup(); current.cleanup = null; }
+    dispose();
     root.innerHTML = `<div class="loading">${t('loading')}</div>`;
     const token = {}; current.renderToken = token;
     // The catalogue entry comes from the catalogue when it is already here, otherwise from the
@@ -88,10 +90,10 @@
     // which the shell prefetches while idle).
     let cat = (window.HT_CATALOG || []).find(c => c.id === id);
     if (!cat && /^[a-z0-9][a-z0-9-]{1,120}$/.test(id)) { const pv = await loadPreview({ id }); cat = pv && pv.catalog ? pv.catalog : null; }
-    if (current.renderToken !== token) return;
+    if (current.renderToken !== token || root.isConnected === false) return;
     if (!cat) { root.innerHTML = `<div class="notice danger">Course not found: ${esc(id)}</div>`; return; }
     const loadedCourse = await loadCourse(cat);
-    if (current.renderToken !== token) return;
+    if (current.renderToken !== token || root.isConnected === false) return;
     const course = loadedCourse.course;
     if (!course) { root.innerHTML = `<div class="notice danger">Course data missing for ${esc(id)}. Run bash rebuild-curriculum.sh</div>`; return; }
     if (loadedCourse.preview && !opts.upgraded) upgradeLater(root, cat, token);
@@ -121,15 +123,17 @@
     renderStep(root, cat, course);
   }
   function renderIntern(area, cat) {
+    const renderToken=current.renderToken;let modeGeneration=0;
     const sims = ['workbench', ...internSim(cat.department)];
     const labels = { workbench: zh() ? '師徒動手工作台' : 'Mentor-led workbench', clinic: t('tcmClinic'), pulse: t('pulseTrainer'), tongue: t('tongueTrainer'), locator: zh() ? '穴位定位訓練' : 'Acupoint locator', bp: zh() ? '血壓測量' : 'Blood pressure', glucose: zh() ? '血糖' : 'Glucose', vitals: t('vitals'), ecg: zh() ? '心電圖判讀' : 'ECG rhythms', labs: zh() ? '檢驗判讀' : 'Lab panels', soap: zh() ? '臨床病例 SOAP' : 'SOAP case' };
     area.innerHTML = `<div class="notice">${zh() ? '實習級：面對虛擬病人實作本科相關技能。免費試學含第一個模擬器；其餘需通行證。' : 'Internship tier: practise this department’s skills on virtual patients. The first simulator is free; the rest need a pass.'}</div><div class="tier-tabs" id="simTabs">${sims.map((s, i) => `<button class="${i === 0 ? 'active' : ''}" data-sim="${s}">${labels[s]}</button>`).join('')}</div><div id="simArea"></div>`;
-    const mount = s => { if (current.cleanup) { current.cleanup(); current.cleanup = null; } const box = area.querySelector('#simArea'); const idx = sims.indexOf(s); if (idx > 0 && !window.HT.membership.hasAccess(null, 1)) { box.innerHTML = lockMarkup(); return; } if(s === 'workbench'){ const run = spec => { if (!box.isConnected && box.isConnected !== undefined) return; current.cleanup=window.HT.workbench.mount(box,{spec: spec || undefined, department:cat.department,course:cat}); }; if (window.HT.procedures && window.HT.procedures.caseForCourse) window.HT.procedures.caseForCourse(cat).then(run).catch(() => run(null)); else run(null); return; } const fn = ({ clinic: window.HT.internTcm.clinic, pulse: window.HT.internTcm.pulseTrainer, tongue: window.HT.internTcm.tongueTrainer, locator: window.HT.internTcm.locator, bp: window.HT.internWestern.bpStation, glucose: window.HT.internWestern.glucoseStation, vitals: window.HT.internWestern.vitalsStation, ecg: window.HT.internWestern.ecgStation, labs: window.HT.internWestern.labStation, soap: window.HT.internWestern.soapStation })[s]; const r = fn(box); if (typeof r === 'function') current.cleanup = r; };
+    const mount = s => { if(current.renderToken!==renderToken||area.isConnected===false)return;modeGeneration++;const benchToken={};current.benchToken=benchToken;if (current.cleanup) { current.cleanup(); current.cleanup = null; } const box = area.querySelector('#simArea'); const idx = sims.indexOf(s); if (idx > 0 && !window.HT.membership.hasAccess(null, 1)) { box.innerHTML = lockMarkup(); return; } if(s === 'workbench'){ const run = spec => { if(current.benchToken!==benchToken||current.renderToken!==renderToken||box.isConnected===false)return; current.cleanup=window.HT.workbench.mount(box,{spec: spec || undefined, department:cat.department,course:cat}); }; if (window.HT.procedures && window.HT.procedures.caseForCourse) window.HT.procedures.caseForCourse(cat).then(run).catch(() => run(null)); else run(null); return; } const fn = ({ clinic: window.HT.internTcm.clinic, pulse: window.HT.internTcm.pulseTrainer, tongue: window.HT.internTcm.tongueTrainer, locator: window.HT.internTcm.locator, bp: window.HT.internWestern.bpStation, glucose: window.HT.internWestern.glucoseStation, vitals: window.HT.internWestern.vitalsStation, ecg: window.HT.internWestern.ecgStation, labs: window.HT.internWestern.labStation, soap: window.HT.internWestern.soapStation })[s]; const r = fn(box); if (typeof r === 'function') current.cleanup = r; };
     area.querySelectorAll('[data-sim]').forEach(b => b.onclick = () => { area.querySelectorAll('[data-sim]').forEach(x => x.classList.toggle('active', x === b)); mount(b.dataset.sim); });
-    if (sims.includes('locator')) window.HT.tcmLibrary.ensure().then(() => mount(sims[0])); else mount(sims[0]);
+    if (sims.includes('locator')) window.HT.tcmLibrary.ensure().then(() => {if(modeGeneration===0)mount(sims[0]);}); else mount(sims[0]);
   }
   function lockMarkup() { return `<div class="lock-overlay"><div style="font-size:2rem">🔒</div><h3>${t('locked')}</h3><p class="muted">${t('lockedDesc')}</p><a class="button primary" href="#membership">${t('unlock')}</a></div>`; }
   function renderStep(root, cat, course) {
+    const token={};current.benchToken=token;const renderToken=current.renderToken;
     const view = root.querySelector('#stepView'); if (!view) return;
     if(current.cleanup){current.cleanup();current.cleanup=null;}
     window.HT.voice.stop();
@@ -143,7 +147,8 @@
     const block = (cls, label, text) => `<div class="block ${cls}"><h4>${label}</h4><p style="margin:0">${esc(text)}</p></div>`;
     const mapped = window.HT.workbench.mappedCase(cat.department,cat.id), fallbackSpec=window.HT.workbench.CASES.find(c=>c.id===mapped);
     view.innerHTML = `<span class="eyebrow">${esc(pk(st, 'title'))} · ${t('step')} ${si + 1}.${current.step + 1}</span><h2>${esc(pk(s, 'title'))}</h2>
-      <p class="small muted">${zh() ? '本步搭配本科程序庫中最相關的多站工序（或已編寫的安全個案）實作；完整程序庫見「科別程序庫」。' : 'This step practises the most relevant multi-station workflow from this department’s procedure library (or an authored safety case); see the department library for the full set.'} <a href="#procedures?department=${esc(cat.department)}">${t('departmentLibrary')} →</a></p>
+      <p class="small muted">${zh() ? '下方為本科相關病例的完整程序。主要輔助鍵完成整道程序；可直接選工序，或切換下一道病例。課程知識步驟與病例工序並非一對一。' : 'Practise a complete related case below. The main assist completes the entire procedure. Select any stage or switch cases. Lesson knowledge steps and case stages are not one-to-one.'} <a href="#procedures?department=${esc(cat.department)}">${t('departmentLibrary')} →</a></p>
+      <label class="course-jump">${zh()?'跳選課程知識步驟（不需先通過驗收）':'Jump to a lesson step (no prior check required)'}<select id="courseJump">${flat.map(([a,b],i)=>`<option value="${a}:${b}" ${i===pos?'selected':''} ${course.stages[a].locked||!window.HT.membership.hasAccess(course,a)?'disabled':''}>${a+1}.${b+1} ${esc(pk(course.stages[a].steps[b],'title'))}</option>`).join('')}</select></label><p class="small muted">${zh()?'跳選與下一步只供瀏覽；完成紀錄仍需通過實作與本課驗收。':'Jumping and Next only browse. Completion still requires practice and the lesson check.'}</p>
       <div id="courseWorkbench"></div>
       <div class="notice" id="completionGate" aria-live="polite"></div>
       <details class="card panel" style="margin-top:16px"><summary><b>${zh() ? '本課技術解說、學習目標與知識點' : 'Lesson explanation, objectives and knowledge'}</b></summary><div class="row" style="margin:12px 0"><button class="button small" id="narrate">${t('narrate')}</button><button class="button light small" id="stopNarrate">${t('stop')}</button></div>
@@ -151,18 +156,34 @@
       <h3 style="margin-top:16px">${t('knowledge')}</h3><div class="knowledge">${(s.knowledge || []).map(k => `<div class="k"><b>${esc(pk(k, 'title'))}</b>${esc(pk(k, 'text'))}</div>`).join('')}</div></details>
       <h3 style="margin-top:16px">${t('quiz')}</h3><div class="quiz" id="quiz"><p>${esc(pk(s.quiz, 'question'))}</p>${(zh() ? s.quiz.options : s.quiz.optionsEn).map((o, i) => `<label class="opt"><input type="radio" name="q" value="${i}" style="width:auto">${esc(o)}</label>`).join('')}<button class="button small" id="quizSubmit">${t('submit')}</button><p id="quizResult" style="margin-top:8px"></p></div>
       <div class="row" style="margin-top:18px;justify-content:space-between"><button class="button light" id="prevStep" ${pos <= 0 ? 'disabled' : ''}>← ${t('prev')}</button><button class="button primary" id="nextStep">${t('next')} →</button></div>`;
-    const gate=async()=>{const n=view.querySelector('#completionGate');if(!n)return;if(practicePassed&&quizPassed){n.textContent=zh()?'✓ 主畫面實作與本課驗收均已通過，完成紀錄已保存。':'✓ Workspace practice and lesson check passed; the completion record is saved.';if(!done){done=true;await window.HT.account.progress.markDone(cat.id,s.id,true);}}else{n.textContent=zh()?`待完成：${practicePassed?'':'師徒主畫面實作'}${!practicePassed&&!quizPassed?'、':''}${quizPassed?'':'本課驗收題'}。`:`Pending: ${practicePassed?'':'workspace practice'}${!practicePassed&&!quizPassed?' and ':''}${quizPassed?'':'lesson check'}.`;}};
-    const token = {}; current.benchToken = token;
-    const mountBench = spec => { if (current.benchToken !== token || !view.isConnected) return; if (current.cleanup) { current.cleanup(); current.cleanup = null; } const box = view.querySelector('#courseWorkbench'); if (!box) return; current.cleanup=window.HT.workbench.mount(box,{spec:spec && spec.stages && spec.stages.length ? spec : undefined,caseId:mapped,department:cat.department,course:cat,storageId:cat.id+':'+s.id,stageIndex:Math.max(0,pos)%((spec && spec.stages && spec.stages.length) || fallbackSpec.stages.length),singleStage:true,hideSelector:true,onComplete:()=>{practicePassed=true;gate();}}); };
-    if (window.HT.procedures && window.HT.procedures.caseForCourse) window.HT.procedures.caseForCourse(cat).then(c => mountBench(c || fallbackSpec)).catch(() => mountBench(fallbackSpec)); else mountBench(fallbackSpec);
+    const isCurrent=()=>current.benchToken===token&&current.renderToken===renderToken&&view.isConnected!==false&&root.querySelector('#stepView')===view;
+    const gate=async()=>{if(!isCurrent())return;const n=view.querySelector('#completionGate');if(!n)return;if(practicePassed&&quizPassed){n.textContent=zh()?'✓ 主畫面實作與本課驗收均已通過，完成紀錄已保存。':'✓ Workspace practice and lesson check passed; the completion record is saved.';if(!done){done=true;await window.HT.account.progress.markDone(cat.id,s.id,true);}}else{n.textContent=zh()?`待完成：${practicePassed?'':'師徒主畫面實作'}${!practicePassed&&!quizPassed?'、':''}${quizPassed?'':'本課驗收題'}。`:`Pending: ${practicePassed?'':'workspace practice'}${!practicePassed&&!quizPassed?' and ':''}${quizPassed?'':'lesson check'}.`;}};
+    let requiredCaseId=null;
+    const mountBench = (spec, library) => {
+      if(!isCurrent())return;
+      if(current.cleanup){current.cleanup();current.cleanup=null;}
+      const box=view.querySelector('#courseWorkbench');if(!box)return;
+      const initialSpec=spec&&spec.stages&&spec.stages.length?spec:fallbackSpec;
+      requiredCaseId=initialSpec?.id||mapped;
+      const track=window.HT.procedures?.libraryTrack?.(library||[initialSpec],requiredCaseId);
+      const authored=(library||[]).filter(c=>!c.generated);
+      const selectedLibrary=track?.cases||(initialSpec?.generated?library:(authored.length?authored:library))||[initialSpec];
+      current.cleanup=window.HT.workbench.mount(box,{spec:initialSpec,caseId:mapped,department:cat.department,course:cat,library:selectedLibrary,storageId:'proc',stageIndex:0,singleStage:false,hideSelector:false,
+        onComplete:snapshot=>{if(!isCurrent()||snapshot.caseId!==requiredCaseId||snapshot.fullyCompleted!==true)return;practicePassed=true;gate();}});
+    };
+    if(window.HT.procedures&&window.HT.procedures.caseForCourse){
+      const library=window.HT.procedures.loadLibrary?window.HT.procedures.loadLibrary(cat.department).catch(()=>null):Promise.resolve(null);
+      Promise.all([window.HT.procedures.caseForCourse(cat),library]).then(([c,lib])=>mountBench(c||fallbackSpec,lib?.cases)).catch(()=>mountBench(fallbackSpec));
+    }else mountBench(fallbackSpec);
     gate();
     view.querySelector('#narrate').onclick = () => window.HT.voice.speak(narration(s), window.HT.prefs.speechOptions());
     view.querySelector('#stopNarrate').onclick = () => window.HT.voice.stop();
     view.querySelector('#quizSubmit').onclick = () => { const r = view.querySelector('input[name=q]:checked'); if (!r) return; const ok = Number(r.value) === s.quiz.answer; quizPassed=ok;view.querySelectorAll('.opt').forEach((o, i) => { o.classList.toggle('correct', i === s.quiz.answer); o.classList.toggle('wrong', i === Number(r.value) && !ok); }); view.querySelector('#quizResult').innerHTML = `<b>${ok ? t('correct') : t('incorrect')}</b> ${esc(pk(s.quiz, 'explanation'))}`;gate(); };
     const go = d => { const target=flat[pos+d];if(!target)return;const [a,b]=target;current.stage=a;current.step=b;render(root,cat.id,{keep:true,tier:'basic'});view.scrollIntoView({behavior:'smooth',block:'start'}); };
+    view.querySelector('#courseJump').onchange=e=>{const [a,b]=e.target.value.split(':').map(Number);if(!flat.some(([x,y])=>x===a&&y===b)||course.stages[a].locked||!window.HT.membership.hasAccess(course,a))return;current.stage=a;current.step=b;render(root,cat.id,{keep:true,tier:'basic'});};
     view.querySelector('#prevStep').onclick=()=>go(-1);
-    view.querySelector('#nextStep').onclick=()=>{if(!practicePassed||!quizPassed){gate();view.querySelector('#completionGate').scrollIntoView({behavior:'smooth',block:'center'});return;}if(pos<flat.length-1)go(1);else if(course.stages.some(x=>x.locked)){location.hash='#membership';}else{window.HT.app.toast(zh()?'已完成本課目前可用的工序。':'All currently available steps in this course are complete.');}};
+    view.querySelector('#nextStep').onclick=()=>{if(pos<flat.length-1)go(1);else if(course.stages.some(x=>x.locked)){location.hash='#membership';}else{window.HT.app.toast(zh()?'已到本課最後可瀏覽步驟；未驗收的步驟仍保留未完成。':'This is the last available lesson step. Unverified steps remain incomplete.');}};
   }
   window.HT = window.HT || {};
-  window.HT.coursePlayer = { render, loadCourse, loadFull, loadPreview, contextText, internSim, get current() { return current; } };
+  window.HT.coursePlayer = { render, dispose, loadCourse, loadFull, loadPreview, contextText, internSim, get current() { return current; } };
 })(window);

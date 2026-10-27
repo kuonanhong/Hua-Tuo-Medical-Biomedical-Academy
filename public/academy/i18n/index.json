@@ -23,319 +23,319 @@
    "name": "Afrikaans",
    "rtl": false,
    "region": "ZA",
-   "complete": true
+   "complete": false
   },
   "am": {
    "name": "አማርኛ",
    "rtl": false,
    "region": "ET",
-   "complete": true
+   "complete": false
   },
   "ar": {
    "name": "العربية",
    "rtl": true,
    "region": "SA",
-   "complete": true
+   "complete": false
   },
   "az": {
    "name": "Azərbaycanca",
    "rtl": false,
    "region": "AZ",
-   "complete": true
+   "complete": false
   },
   "bg": {
    "name": "Български",
    "rtl": false,
    "region": "BG",
-   "complete": true
+   "complete": false
   },
   "bn": {
    "name": "বাংলা",
    "rtl": false,
    "region": "BD",
-   "complete": true
+   "complete": false
   },
   "ca": {
    "name": "Català",
    "rtl": false,
    "region": "ES",
-   "complete": true
+   "complete": false
   },
   "cs": {
    "name": "Čeština",
    "rtl": false,
    "region": "CZ",
-   "complete": true
+   "complete": false
   },
   "da": {
    "name": "Dansk",
    "rtl": false,
    "region": "DK",
-   "complete": true
+   "complete": false
   },
   "de": {
    "name": "Deutsch",
    "rtl": false,
    "region": "DE",
-   "complete": true
+   "complete": false
   },
   "el": {
    "name": "Ελληνικά",
    "rtl": false,
    "region": "GR",
-   "complete": true
+   "complete": false
   },
   "es": {
    "name": "Español",
    "rtl": false,
    "region": "ES",
-   "complete": true
+   "complete": false
   },
   "et": {
    "name": "Eesti",
    "rtl": false,
    "region": "EE",
-   "complete": true
+   "complete": false
   },
   "fa": {
    "name": "فارسی",
    "rtl": true,
    "region": "IR",
-   "complete": true
+   "complete": false
   },
   "fi": {
    "name": "Suomi",
    "rtl": false,
    "region": "FI",
-   "complete": true
+   "complete": false
   },
   "fil": {
    "name": "Filipino",
    "rtl": false,
    "region": "PH",
-   "complete": true
+   "complete": false
   },
   "fr": {
    "name": "Français",
    "rtl": false,
    "region": "FR",
-   "complete": true
+   "complete": false
   },
   "he": {
    "name": "עברית",
    "rtl": true,
    "region": "IL",
-   "complete": true
+   "complete": false
   },
   "hi": {
    "name": "हिन्दी",
    "rtl": false,
    "region": "IN",
-   "complete": true
+   "complete": false
   },
   "hr": {
    "name": "Hrvatski",
    "rtl": false,
    "region": "HR",
-   "complete": true
+   "complete": false
   },
   "hu": {
    "name": "Magyar",
    "rtl": false,
    "region": "HU",
-   "complete": true
+   "complete": false
   },
   "id": {
    "name": "Bahasa Indonesia",
    "rtl": false,
    "region": "ID",
-   "complete": true
+   "complete": false
   },
   "it": {
    "name": "Italiano",
    "rtl": false,
    "region": "IT",
-   "complete": true
+   "complete": false
   },
   "ja": {
    "name": "日本語",
    "rtl": false,
    "region": "JP",
-   "complete": true
+   "complete": false
   },
   "ka": {
    "name": "ქართული",
    "rtl": false,
    "region": "GE",
-   "complete": true
+   "complete": false
   },
   "kk": {
    "name": "Қазақша",
    "rtl": false,
    "region": "KZ",
-   "complete": true
+   "complete": false
   },
   "km": {
    "name": "ខ្មែរ",
    "rtl": false,
    "region": "KH",
-   "complete": true
+   "complete": false
   },
   "ko": {
    "name": "한국어",
    "rtl": false,
    "region": "KR",
-   "complete": true
+   "complete": false
   },
   "lo": {
    "name": "ລາວ",
    "rtl": false,
    "region": "LA",
-   "complete": true
+   "complete": false
   },
   "lt": {
    "name": "Lietuvių",
    "rtl": false,
    "region": "LT",
-   "complete": true
+   "complete": false
   },
   "lv": {
    "name": "Latviešu",
    "rtl": false,
    "region": "LV",
-   "complete": true
+   "complete": false
   },
   "mn": {
    "name": "Монгол",
    "rtl": false,
    "region": "MN",
-   "complete": true
+   "complete": false
   },
   "ms": {
    "name": "Bahasa Melayu",
    "rtl": false,
    "region": "MY",
-   "complete": true
+   "complete": false
   },
   "my": {
    "name": "မြန်မာ",
    "rtl": false,
    "region": "MM",
-   "complete": true
+   "complete": false
   },
   "ne": {
    "name": "नेपाली",
    "rtl": false,
    "region": "NP",
-   "complete": true
+   "complete": false
   },
   "nl": {
    "name": "Nederlands",
    "rtl": false,
    "region": "NL",
-   "complete": true
+   "complete": false
   },
   "no": {
    "name": "Norsk",
    "rtl": false,
    "region": "NO",
-   "complete": true
+   "complete": false
   },
   "pl": {
    "name": "Polski",
    "rtl": false,
    "region": "PL",
-   "complete": true
+   "complete": false
   },
   "pt": {
    "name": "Português",
    "rtl": false,
    "region": "BR",
-   "complete": true
+   "complete": false
   },
   "ro": {
    "name": "Română",
    "rtl": false,
    "region": "RO",
-   "complete": true
+   "complete": false
   },
   "ru": {
    "name": "Русский",
    "rtl": false,
    "region": "RU",
-   "complete": true
+   "complete": false
   },
   "si": {
    "name": "සිංහල",
    "rtl": false,
    "region": "LK",
-   "complete": true
+   "complete": false
   },
   "sk": {
    "name": "Slovenčina",
    "rtl": false,
    "region": "SK",
-   "complete": true
+   "complete": false
   },
   "sr": {
    "name": "Српски",
    "rtl": false,
    "region": "RS",
-   "complete": true
+   "complete": false
   },
   "sv": {
    "name": "Svenska",
    "rtl": false,
    "region": "SE",
-   "complete": true
+   "complete": false
   },
   "sw": {
    "name": "Kiswahili",
    "rtl": false,
    "region": "KE",
-   "complete": true
+   "complete": false
   },
   "ta": {
    "name": "தமிழ்",
    "rtl": false,
    "region": "IN",
-   "complete": true
+   "complete": false
   },
   "th": {
    "name": "ไทย",
    "rtl": false,
    "region": "TH",
-   "complete": true
+   "complete": false
   },
   "tr": {
    "name": "Türkçe",
    "rtl": false,
    "region": "TR",
-   "complete": true
+   "complete": false
   },
   "uk": {
    "name": "Українська",
    "rtl": false,
    "region": "UA",
-   "complete": true
+   "complete": false
   },
   "ur": {
    "name": "اردو",
    "rtl": true,
    "region": "PK",
-   "complete": true
+   "complete": false
   },
   "uz": {
    "name": "Oʻzbekcha",
    "rtl": false,
    "region": "UZ",
-   "complete": true
+   "complete": false
   },
   "vi": {
    "name": "Tiếng Việt",
    "rtl": false,
    "region": "VN",
-   "complete": true
+   "complete": false
   }
  }
 }

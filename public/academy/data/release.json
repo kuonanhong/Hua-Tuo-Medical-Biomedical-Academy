@@ -1,5 +1,5 @@
 {
-  "version": "3.6.0",
+  "version": "3.7.0",
   "date": "2026-10-26",
   "topics": 2423,
   "departments": 69,
@@ -30,7 +30,7 @@
   "authoredWorkbenchStages": 29,
   "atlasScope": "396-entry directory; interactive bronze figure orders every point along its channel path (teaching schematic, not clinical needling coordinates); qi-flow animation and condition-based point-selection trainer. No needling parameters.",
   "procedureDepartments": 63,
-  "procedures": 2031,
+  "procedures": 2087,
   "procedureStages": 16932,
   "authoredProcedureDepartments": [
     "神經外科",
@@ -55,5 +55,6 @@
     "牙科與口腔顎面外科"
   ],
   "pharmacyScope": "Herbal formula and Western regimen trial-and-error lab: incompatibilities, pregnancy/toxicity rules, formula roles, drug and herb–drug interactions, patient-specific contraindications; no doses.",
-  "performanceScope": "Fast-start shell (~210 KB) with per-route lazy loading and idle prefetch; service worker caches the shell and public chunks only."
+  "performanceScope": "Fast-start shell (~210 KB) with per-route lazy loading and idle prefetch; service worker caches the shell and public chunks only.",
+  "stages": 17100
 }

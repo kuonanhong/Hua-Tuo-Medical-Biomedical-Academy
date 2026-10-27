@@ -1,12 +1,12 @@
-# 整合包 v3.2：雲端操作
+# 整合包 v3.7：雲端操作
 
 日常上傳只需在完整整合包內執行：
 
 ```bash
-bash upload-everything.sh
+bash upload.sh
 ```
 
-先看差異則加`--dry-run`；模型ZIP位置不同則加`--model-archives "/模型ZIP資料夾"`。自動還原模型、公開網站差異發布、私人模型分塊同步都由同一入口執行。完整最短步驟見根目錄`README.md`。
+先看差異則加`--dry-run`；模型ZIP位置不同則加`--model-archives "/模型ZIP資料夾"`。有提供四份模型包時自動還原；網站差異發布、既有完整模型分塊同步都由同一入口執行。本機沒有模型時可只更新網站，保留私有庫原有模型。完整最短步驟見根目錄`README.md`。
 
 ## 私有模型的使用
 
@@ -32,14 +32,14 @@ bash huatuo-private-ai.sh \
 後端可用後，再從本機更新公開入口：
 
 ```bash
-bash upload-everything.sh --backend-url https://academy.example.org
+bash upload.sh --backend-url https://academy.example.org
 ```
 
 網站AI／會員入口將前往完整後端，模型權重不會傳到訪客瀏覽器。未配置後端網址的公開頁面只提供免費靜態預覽。後續後端更新可省略`--setup-runtime`。
 
 ## 進階入口
 
-`huatuo-sync.sh`是內部差異同步器；已準備完整模型時可獨立執行`--public-only`或`--models-only`。一般使用者請使用`upload-everything.sh`，以免漏掉模型匯入步驟。
+`huatuo-sync.sh`是內部差異同步器；已準備完整模型時可獨立執行`--public-only`或`--models-only`。一般使用者請使用`upload.sh`，以免漏掉模型匯入步驟。
 
 模型庫必須維持Private。若GitHub API限流，請在GitHub確認私人庫仍為Private後才使用`--private-visibility-confirmed`；程式不會略過已確認為Public的情況。個別模型本機缺少時，同步器保留原有雲端模型，不做整庫鏡像刪除。
 
