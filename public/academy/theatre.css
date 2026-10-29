@@ -57,3 +57,10 @@
 .th-scene-links{display:flex;flex-wrap:wrap;gap:6px 18px}.th-scene-links a{display:inline-flex;align-items:center;min-height:44px;color:#006d5b;text-decoration:underline}
 :root[data-theme="dark"] .th-scene-reference{background:#161d20;color:#e8edeb}:root[data-theme="dark"] .th-scene-links a{color:#9fe}
 @media(prefers-reduced-motion:reduce){.th-hot.target circle,.th-pin.target .th-arrow,.wb-options label.assist-hint{animation:none}}
+
+/* v3.9 imaging & digital-twin entry points (panel styles live in table-imaging.css) */
+.th-hud .chip.th-bodymap,.th-panel .chip.th-bodymap{background:#24435a;border-color:#4f86ad;color:#fff;font-weight:700}.th-hud .chip.th-bodymap:hover,.th-panel .chip.th-bodymap:hover{background:#2e5878}
+.th3d-card .chip.th-img-chip{background:#e6f3ef;border-color:#2b8f7a;color:#14493e;font-weight:700}
+.th3d-card small{display:block;color:#5a6b70;font-size:.72rem;margin-top:1px}:root[data-theme="dark"] .th3d-card small{color:#9fb3b0}
+.th-patient-hit{cursor:pointer;outline:none}.th-patient-hit:hover,.th-patient-hit:focus-visible{fill:rgba(79,134,173,.16);stroke:#4f86ad;stroke-width:3;stroke-dasharray:8 6}
+@media(max-width:600px){.th-hud .chip.th-bodymap{flex:1 1 100%}}

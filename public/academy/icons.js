@@ -114,6 +114,36 @@
     return `<svg viewBox="0 0 64 64" width="${size || 24}" height="${size || 24}" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><g fill="none" stroke="${color || 'currentColor'}" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" style="color:${color || 'currentColor'}">${G[name] || G.stethoscope}</g></svg>`;
   }
 
+  // v3.9 — real medical images for departments and courses (assets/dept-icons/, credits in manifest.js and
+  // docs/V39_DEPARTMENT_ICON_CREDITS.md). The SVG glyph stays underneath as the fallback if a photo is missing.
+  const photoIndex = () => (window.HT_DEPT_ICON_INDEX || {});
+  function hash(s) { let h = 2166136261; for (const ch of String(s || '')) { h ^= ch.codePointAt(0); h = Math.imul(h, 16777619); } return h >>> 0; }
+  function photoFile(dept, seed) {
+    const list = photoIndex()[dept];
+    if (!Array.isArray(list) || !list.length) return '';
+    const file = list[seed ? hash(seed) % list.length : 0];
+    return /^[a-z0-9-]+\.jpg$/.test(file) ? 'assets/dept-icons/' + file : '';
+  }
+  function photo(dept, opts) {
+    const o = Object.assign({ size: 56, seed: '', badge: '', accent: '#3b7a9e', title: '', fallback: '' }, opts || {});
+    const file = photoFile(dept, o.seed);
+    if (!file) return o.fallback;
+    const accent = /^#[0-9a-fA-F]{6}$/.test(o.accent || '') ? o.accent : '#3b7a9e';
+    const zh = /^zh/i.test(document.documentElement.lang || '');
+    const tip = (o.title ? o.title + ' · ' : '') + (zh ? '真實醫學影像（授權見來源頁）' : 'Real medical image (licence on the sources page)');
+    return `<span class="ic-photo" style="--ic-size:${o.size}px;--ic-accent:${accent}" title="${esc(tip)}">${o.fallback ? `<span class="ic-photo-fallback" aria-hidden="true">${o.fallback}</span>` : ''}<img src="${file}" alt="" width="${o.size}" height="${o.size}" loading="lazy" decoding="async">${o.badge ? `<b class="ic-badge">${esc(o.badge).slice(0, 4)}</b>` : ''}</span>`;
+  }
+  function course(c, opts) {
+    const o = Object.assign({ size: 56 }, opts || {});
+    const svg = render(c && c.icon, { size: o.size, title: o.title || (c && c.title) || '' });
+    if (!c || !c.department) return svg;
+    return photo(c.department, { size: o.size, seed: c.id, badge: c.icon && c.icon.b, accent: c.icon && c.icon.a, title: o.title || c.title || '', fallback: svg }) || svg;
+  }
+  function dept(id, accent, glyph, size) {
+    const svg = glyphOnly(glyph, accent, size);
+    return photo(id, { size: size || 44, accent, fallback: svg }) || svg;
+  }
+
   window.HT = window.HT || {};
-  window.HT.icons = { render, glyphOnly, glyphs: Object.keys(G), library: G };
+  window.HT.icons = { render, glyphOnly, photo, photoFile, course, dept, glyphs: Object.keys(G), library: G };
 })(window);

@@ -292,3 +292,11 @@ html[dir="rtl"] .timeline li::before{left:auto;right:-7px}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 @media print{.sidebar,.topbar,.footer,.bottom-nav,.tutor-panel,.icon-mosaic,#toast{display:none!important}.shell{margin:0}main{max-width:none}}
+/* v3.9 real-image department and course icons */
+.ic-photo{position:relative;display:block;width:var(--ic-size,56px);height:var(--ic-size,56px);border-radius:28%;overflow:hidden;background:#eaf1f4;box-shadow:0 0 0 2px #9fb7c4,0 2px 6px rgba(0,0,0,.18);background:color-mix(in srgb,var(--ic-accent,#3b7a9e) 14%,#fff);box-shadow:0 0 0 2px color-mix(in srgb,var(--ic-accent,#3b7a9e) 55%,transparent),0 2px 6px rgba(0,0,0,.18);flex:0 0 auto}
+.ic-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.ic-photo-fallback{position:absolute;inset:0;display:block}.ic-photo-fallback svg{width:100%;height:100%}
+.ic-badge{position:absolute;right:3px;bottom:3px;min-width:18px;padding:1px 4px;border-radius:6px;background:var(--ic-accent,#3b7a9e);color:#fff;font:700 9.5px/1.35 Inter,system-ui,sans-serif;text-align:center;letter-spacing:.02em;box-shadow:0 1px 2px rgba(0,0,0,.35)}
+.course-head .ic-photo .ic-badge{font-size:12px;right:5px;bottom:5px}
+.ic .ic-photo{width:100%;height:100%}
+

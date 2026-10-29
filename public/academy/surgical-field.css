@@ -1,0 +1,73 @@
+/* v3.9 術野精細操作 · precision operative field (teaching simulation). Lazy-loaded by the workbench. */
+.sf{--sf-bg:#10191c;--sf-panel:#18252a;--sf-line:#2c3f45;--sf-ink:#e8f0ef;--sf-muted:#9fb3b1;--sf-L:#2a74d4;--sf-R:#cf7a17;--sf-ok:#2f9e63;--sf-warn:#d49522;--sf-danger:#e0483b;
+  background:var(--sf-bg);color:var(--sf-ink);border-radius:14px;padding:10px;margin:0 0 6px;border:2px solid #0b1214;box-shadow:0 6px 24px rgba(0,0,0,.25);outline:none;font-size:.9rem;line-height:1.45;min-width:0}
+.sf:focus-visible{outline:3px solid #4fb3ff;outline-offset:2px}
+.sf button{font:inherit;color:inherit;cursor:pointer;touch-action:manipulation}
+.sf button:focus-visible,.sf summary:focus-visible,.sf canvas:focus-visible{outline:3px solid #4fb3ff;outline-offset:2px}
+.sf-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:6px}
+.sf-titles{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px;min-width:0}
+.sf-titles b{font-size:1.02rem;letter-spacing:.02em}
+.sf-sim{font-size:.72rem;color:#ffd58a;border:1px solid #6d5a2c;border-radius:999px;padding:1px 8px;background:#2a2412}
+.sf-x{border:1px solid var(--sf-line);background:var(--sf-panel);border-radius:10px;min-width:44px;min-height:40px;font-size:1.05rem}
+.sf-drills{display:flex;gap:6px;overflow-x:auto;padding-bottom:4px;scrollbar-width:thin}
+.sf-chip{flex:0 0 auto;border:1px solid var(--sf-line);background:var(--sf-panel);border-radius:999px;padding:6px 12px;font-size:.8rem;min-height:36px;white-space:nowrap}
+.sf-chip.on{background:#21434b;border-color:#5cc2d1;box-shadow:inset 0 0 0 1px #5cc2d1}
+.sf-g{display:inline-block;min-width:1.4em;text-align:center;border-radius:6px;padding:0 4px;margin-left:2px;font-size:.74rem;background:#33474c}
+.sf-g-S{background:#7b5ad1}.sf-g-A{background:#2f9e63}.sf-g-B{background:#2a74d4}.sf-g-C{background:#b8862a}.sf-g-D{background:#9b3b33}.sf-g-assisted{background:#55626a}
+.sf-goal{margin:6px 0 2px;font-size:.82rem;color:var(--sf-muted)}
+.sf-step{margin:2px 0 6px;font-weight:600;font-size:.92rem;min-height:1.4em}
+.sf-stage{position:relative;width:100%;border-radius:12px;overflow:hidden;background:#000;border:1px solid #071012;line-height:0}
+.sf-canvas{display:block;width:100%;touch-action:none;user-select:none;-webkit-user-select:none;cursor:crosshair}
+.sf-read{display:flex;flex-wrap:wrap;gap:4px 10px;margin:6px 0;font-size:.78rem;font-variant-numeric:tabular-nums;color:var(--sf-muted)}
+.sf-r{padding:2px 8px;border-radius:7px;background:var(--sf-panel);border-left:4px solid var(--hc,#55626a)}
+.sf-r.on{color:var(--sf-ink);box-shadow:inset 0 0 0 1px var(--hc,#55626a)}
+.sf-r b{color:var(--hc,#fff)}
+.sf-tray{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin:4px 0}
+.sf-hand{background:var(--sf-panel);border:1px solid var(--sf-line);border-radius:10px;padding:5px 6px;min-width:0}
+.sf-hand.on{border-color:#5cc2d1}
+.sf-hand>span{display:block;font-size:.72rem;font-weight:700;margin:0 0 3px;cursor:pointer}
+.sf-hl{color:#8fc0ff}.sf-hr{color:#ffc27a}
+.sf-hand>div{display:flex;flex-wrap:wrap;gap:4px}
+.sf-tool{border:1px solid var(--sf-line);background:#22343a;border-radius:8px;padding:4px 8px;font-size:.74rem;min-height:34px;text-align:left}
+.sf-tool.on{background:#2c5560;border-color:#7fd6e2}
+.sf-acts{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:6px 0}
+.sf-btn{border:1px solid var(--sf-line);background:var(--sf-panel);border-radius:10px;padding:7px 11px;min-height:42px;font-size:.8rem}
+.sf-btn:disabled{opacity:.45;cursor:not-allowed}
+.sf-btn[aria-pressed="true"]{background:#2c5560;border-color:#7fd6e2}
+.sf-act-l{border-color:var(--sf-L);background:#14304f}.sf-act-r{border-color:var(--sf-R);background:#3b2710}
+.sf-assist{background:#2b4a35;border-color:#4fb37a}
+.sf-zoom{display:inline-flex;align-items:center;gap:4px}.sf-zoom b{min-width:3.2em;text-align:center;font-variant-numeric:tabular-nums}
+.sf-zoom .sf-btn{min-width:42px;font-size:1rem;padding:6px}
+.sf-msg{margin:4px 0;padding:7px 10px;border-radius:8px;font-size:.84rem;min-height:2.4em;background:#1b2a2f;border-left:4px solid #527288}
+.sf-msg.ok{border-color:var(--sf-ok);background:#163024}.sf-msg.warn{border-color:var(--sf-warn);background:#33280f}.sf-msg.danger{border-color:var(--sf-danger);background:#3a1714;color:#ffe3df}
+.sf-result{display:grid;grid-template-columns:auto 1fr;gap:12px;align-items:start;margin:8px 0;padding:10px;border-radius:12px;background:#1a2a2f;border:1px solid var(--sf-line)}
+.sf-result[hidden]{display:none}
+.sf-grade{font-size:2.6rem;font-weight:800;line-height:1;min-width:1.4em;text-align:center;border-radius:12px;padding:8px 10px;background:#33474c}
+.sf-grade.sf-g-S{background:#7b5ad1}.sf-grade.sf-g-A{background:#2f9e63}.sf-grade.sf-g-B{background:#2a74d4}.sf-grade.sf-g-C{background:#b8862a}.sf-grade.sf-g-D{background:#9b3b33}
+.sf-metrics{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:6px 12px;margin:8px 0;font-size:.8rem}.sf-metrics>div{min-width:0}
+.sf-metrics dt{color:var(--sf-muted)}.sf-metrics dd{margin:0 0 4px;font-weight:700;font-variant-numeric:tabular-nums}
+.sf-tips{margin:4px 0 8px;padding-left:18px;font-size:.82rem}
+.sf-res-acts{display:flex;gap:6px;flex-wrap:wrap}
+.sf-legend{margin-top:6px;font-size:.78rem;color:var(--sf-muted)}
+.sf-legend summary{cursor:pointer;min-height:36px;display:flex;align-items:center;color:var(--sf-ink)}
+.sf-legend ul{margin:4px 0;padding-left:18px}.sf-legend li{margin:3px 0}
+.sf-kL{color:#8fc0ff}.sf-kR{color:#ffc27a}
+@media (max-width:600px){
+  .sf{padding:7px;border-radius:10px;font-size:.84rem}
+  .sf-titles b{font-size:.94rem}
+  .sf-goal{font-size:.76rem}
+  .sf-tray{grid-template-columns:1fr}
+  .sf-acts{gap:5px}
+  .sf-btn{flex:1 1 auto;padding:7px 8px;font-size:.76rem;min-height:44px}
+  .sf-act-l,.sf-act-r{flex-basis:46%}
+  .sf-zoom{flex:1 1 100%;justify-content:center}
+  .sf-result{grid-template-columns:1fr}
+  .sf-grade{justify-self:start}
+}
+@media (prefers-reduced-motion:reduce){.sf *{transition:none!important;animation:none!important}}
+:root[data-theme="light"] .sf{--sf-bg:#10191c}
+/* Tablets and phones: keep the canvas and its readout last, directly above the workbench D-pads that drive it. */
+@media (max-width:900px){
+  .sf{display:flex;flex-direction:column}
+  .sf-head{order:0}.sf-drills{order:1}.sf-goal{order:2}.sf-tray{order:3}.sf-acts{order:4}.sf-result{order:5}.sf-legend{order:6}.sf-step{order:7}.sf-msg{order:8}.sf-stage{order:9}.sf-read{order:10;margin-bottom:0}
+}

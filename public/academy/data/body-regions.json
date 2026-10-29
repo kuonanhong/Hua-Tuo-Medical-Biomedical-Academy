@@ -1,0 +1,2713 @@
+{
+ "format": "huatuo-body-regions-v1",
+ "version": "3.9",
+ "_comment": "Body regions, operating-table parts and theatre equipment mapped to the licensed real teaching images in data/real-imaging.json and to the procedural digital twins. Edit this JSON, then rebuild the file:// wrapper data/body-regions.js with: python3 -c \"import json,pathlib as p;d=json.load(open('public/academy/data/body-regions.json',encoding='utf-8'));p.Path('public/academy/data/body-regions.js').write_text('window.HT=window.HT||{};window.HT.bodyRegionsData='+json.dumps(d,ensure_ascii=False,separators=(',',':'))+';\\n',encoding='utf-8')\". Images are teaching references, never the virtual patient’s own study; credits come from real-imaging.json.",
+ "ranking": [
+  "same region + same department",
+  "same region",
+  "same department",
+  "any other licensed image"
+ ],
+ "regions": [
+  {
+   "id": "head",
+   "key": "tiRHead",
+   "icon": "🧠",
+   "name": {
+    "zh": "頭部／腦",
+    "en": "Head / brain"
+   },
+   "keywords": [
+    "腦",
+    "顱",
+    "頭",
+    "brain",
+    "skull",
+    "cranial",
+    "cerebral",
+    "stroke",
+    "meningitis"
+   ],
+   "images": [
+    "v38-brain",
+    "v38-stroke",
+    "v38-crypto"
+   ],
+   "twin": {
+    "kind": "brain",
+    "condition": "auto"
+   },
+   "alt": [
+    {
+     "kind": "specialty",
+     "department": "radiology",
+     "condition": "acute-stroke"
+    }
+   ]
+  },
+  {
+   "id": "face",
+   "key": "tiRFace",
+   "icon": "👁",
+   "name": {
+    "zh": "臉部／眼睛",
+    "en": "Face / eyes"
+   },
+   "keywords": [
+    "眼",
+    "視網膜",
+    "臉",
+    "眼眶",
+    "eye",
+    "retina",
+    "fundus",
+    "orbit",
+    "face",
+    "facial"
+   ],
+   "images": [
+    "v38-retina",
+    "v38-bcc"
+   ],
+   "twin": {
+    "kind": "specialty",
+    "department": "ophthalmology",
+    "condition": "dr"
+   },
+   "alt": [
+    {
+     "kind": "specialty",
+     "department": "plastic-surgery",
+     "condition": "orbital-floor"
+    }
+   ]
+  },
+  {
+   "id": "neck",
+   "key": "tiRNeck",
+   "icon": "🗣",
+   "name": {
+    "zh": "耳鼻喉／頸部／甲狀腺",
+    "en": "ENT / neck / thyroid"
+   },
+   "keywords": [
+    "耳",
+    "鼻",
+    "喉",
+    "頸",
+    "甲狀腺",
+    "淋巴結",
+    "ear",
+    "nose",
+    "throat",
+    "neck",
+    "thyroid",
+    "lymph node",
+    "larynx"
+   ],
+   "images": [
+    "thyroid-colloid",
+    "v38-lymphoma",
+    "v38-pet"
+   ],
+   "twin": {
+    "kind": "specialty",
+    "department": "endocrinology",
+    "condition": "thyroid-nodule"
+   },
+   "alt": [
+    {
+     "kind": "specialty",
+     "department": "ent",
+     "condition": "neck-abscess"
+    }
+   ]
+  },
+  {
+   "id": "mouth",
+   "key": "tiRMouth",
+   "icon": "🦷",
+   "name": {
+    "zh": "口腔／牙齒",
+    "en": "Mouth / teeth"
+   },
+   "keywords": [
+    "口",
+    "牙",
+    "齒",
+    "顎",
+    "氣道",
+    "mouth",
+    "teeth",
+    "tooth",
+    "dental",
+    "jaw",
+    "airway",
+    "oral"
+   ],
+   "images": [
+    "v38-dental"
+   ],
+   "twin": {
+    "kind": "specialty",
+    "department": "dentistry",
+    "condition": "third-molar"
+   },
+   "alt": [
+    {
+     "kind": "specialty",
+     "department": "anesthesiology",
+     "condition": "airway"
+    }
+   ]
+  },
+  {
+   "id": "chest",
+   "key": "tiRChest",
+   "icon": "🫁",
+   "name": {
+    "zh": "胸部／心臟／肺",
+    "en": "Chest / heart / lungs"
+   },
+   "keywords": [
+    "胸",
+    "心",
+    "肺",
+    "縱膈",
+    "chest",
+    "heart",
+    "lung",
+    "thorax",
+    "cardiac",
+    "pulmonary",
+    "mediastinum"
+   ],
+   "images": [
+    "pneumothorax",
+    "pneumonia",
+    "ards",
+    "v38-cardio",
+    "v38-tb",
+    "v38-lung",
+    "v38-pet"
+   ],
+   "twin": {
+    "kind": "heart",
+    "mode": "auto"
+   },
+   "alt": [
+    {
+     "kind": "specialty",
+     "department": "thoracic-surgery",
+     "condition": "pneumothorax"
+    },
+    {
+     "kind": "specialty",
+     "department": "pulmonology",
+     "condition": "pneumonia"
+    }
+   ]
+  },
+  {
+   "id": "breast",
+   "key": "tiRBreast",
+   "icon": "🎗",
+   "name": {
+    "zh": "乳房",
+    "en": "Breast"
+   },
+   "keywords": [
+    "乳",
+    "breast",
+    "mammo",
+    "axilla"
+   ],
+   "images": [
+    "v38-breast"
+   ],
+   "twin": {
+    "kind": "specialty",
+    "department": "general-surgery",
+    "condition": "breast-ca"
+   },
+   "alt": [
+    {
+     "kind": "specialty",
+     "department": "plastic-surgery",
+     "condition": "flap"
+    }
+   ]
+  },
+  {
+   "id": "abdomen-upper",
+   "key": "tiRAbdUpper",
+   "icon": "🫃",
+   "name": {
+    "zh": "上腹部",
+    "en": "Upper abdomen"
+   },
+   "keywords": [
+    "胃",
+    "肝",
+    "膽",
+    "胰",
+    "腎",
+    "脾",
+    "stomach",
+    "liver",
+    "gallbladder",
+    "pancreas",
+    "kidney",
+    "spleen",
+    "upper abdomen",
+    "gastric"
+   ],
+   "images": [
+    "gastric-ulcer",
+    "hydronephrosis",
+    "v38-aneurysm",
+    "mouse-kidney"
+   ],
+   "twin": {
+    "kind": "specialty",
+    "department": "general-surgery",
+    "condition": "cholecystitis"
+   },
+   "alt": [
+    {
+     "kind": "specialty",
+     "department": "nephrology",
+     "condition": "hydronephrosis"
+    }
+   ]
+  },
+  {
+   "id": "abdomen-lower",
+   "key": "tiRAbdLower",
+   "icon": "🩺",
+   "name": {
+    "zh": "下腹部",
+    "en": "Lower abdomen"
+   },
+   "keywords": [
+    "闌尾",
+    "結腸",
+    "腸",
+    "主動脈",
+    "子宮",
+    "appendix",
+    "colon",
+    "bowel",
+    "aorta",
+    "lower abdomen",
+    "caesarean",
+    "fetus"
+   ],
+   "images": [
+    "v38-appendix",
+    "v38-colon",
+    "v38-fetal",
+    "v38-aneurysm"
+   ],
+   "twin": {
+    "kind": "specialty",
+    "department": "general-surgery",
+    "condition": "appendicitis"
+   },
+   "alt": [
+    {
+     "kind": "specialty",
+     "department": "vascular-surgery",
+     "condition": "aaa"
+    }
+   ]
+  },
+  {
+   "id": "pelvis",
+   "key": "tiRPelvis",
+   "icon": "⚕",
+   "name": {
+    "zh": "骨盆／泌尿生殖／子宮",
+    "en": "Pelvis / urogenital / uterus"
+   },
+   "keywords": [
+    "骨盆",
+    "膀胱",
+    "攝護腺",
+    "前列腺",
+    "子宮",
+    "卵巢",
+    "髖",
+    "pelvis",
+    "bladder",
+    "prostate",
+    "uterus",
+    "ovary",
+    "urogenital",
+    "hip"
+   ],
+   "images": [
+    "v38-ovary",
+    "v38-prostate",
+    "v38-fetal",
+    "v38-hip",
+    "v38-myeloma",
+    "hydronephrosis"
+   ],
+   "twin": {
+    "kind": "specialty",
+    "department": "gynecology",
+    "condition": "fibroid"
+   },
+   "alt": [
+    {
+     "kind": "specialty",
+     "department": "urology",
+     "condition": "bph"
+    }
+   ]
+  },
+  {
+   "id": "spine",
+   "key": "tiRSpine",
+   "icon": "🦴",
+   "name": {
+    "zh": "脊椎／背部",
+    "en": "Spine / back"
+   },
+   "keywords": [
+    "脊",
+    "腰",
+    "背",
+    "椎",
+    "spine",
+    "spinal",
+    "lumbar",
+    "back",
+    "vertebra",
+    "disc"
+   ],
+   "images": [
+    "v38-spine",
+    "v38-myeloma",
+    "v38-crypto"
+   ],
+   "twin": {
+    "kind": "specialty",
+    "department": "spine",
+    "condition": "lumbar-hnp"
+   },
+   "alt": [
+    {
+     "kind": "specialty",
+     "department": "pain-medicine",
+     "condition": "epidural-injection"
+    }
+   ]
+  },
+  {
+   "id": "upper-limb",
+   "key": "tiRUpperLimb",
+   "icon": "✋",
+   "name": {
+    "zh": "上肢／手",
+    "en": "Upper limb / hand"
+   },
+   "keywords": [
+    "手",
+    "腕",
+    "肘",
+    "肩",
+    "臂",
+    "hand",
+    "wrist",
+    "elbow",
+    "shoulder",
+    "arm",
+    "finger",
+    "venepuncture"
+   ],
+   "images": [
+    "rheumatoid-wrist",
+    "v38-eczema",
+    "v38-tinea",
+    "v38-sickle",
+    "v38-iron",
+    "v38-cll",
+    "v38-aml",
+    "v38-malaria"
+   ],
+   "twin": {
+    "kind": "specialty",
+    "department": "orthopedics",
+    "condition": "distal-radius"
+   },
+   "alt": [
+    {
+     "kind": "specialty",
+     "department": "pathology-lab",
+     "condition": "iron-deficiency"
+    }
+   ]
+  },
+  {
+   "id": "lower-limb",
+   "key": "tiRLowerLimb",
+   "icon": "🦵",
+   "name": {
+    "zh": "下肢／髖／膝",
+    "en": "Lower limb / hip / knee"
+   },
+   "keywords": [
+    "腿",
+    "膝",
+    "髖",
+    "股骨",
+    "足",
+    "leg",
+    "knee",
+    "hip",
+    "femur",
+    "tibia",
+    "foot",
+    "ankle"
+   ],
+   "images": [
+    "v38-hip"
+   ],
+   "twin": {
+    "kind": "specialty",
+    "department": "joint-reconstruction",
+    "condition": "knee-oa"
+   },
+   "alt": [
+    {
+     "kind": "specialty",
+     "department": "orthopedics",
+     "condition": "femoral-neck"
+    },
+    {
+     "kind": "specialty",
+     "department": "vascular-surgery",
+     "condition": "dvt"
+    }
+   ]
+  },
+  {
+   "id": "skin",
+   "key": "tiRSkin",
+   "icon": "🖐",
+   "name": {
+    "zh": "皮膚",
+    "en": "Skin"
+   },
+   "keywords": [
+    "皮膚",
+    "皮",
+    "痣",
+    "疹",
+    "skin",
+    "rash",
+    "mole",
+    "lesion",
+    "dermis",
+    "wound"
+   ],
+   "images": [
+    "v38-melanoma",
+    "v38-bcc",
+    "v38-scc",
+    "v38-psoriasis",
+    "v38-eczema",
+    "v38-tinea",
+    "v38-staph",
+    "human-mitosis"
+   ],
+   "twin": {
+    "kind": "specialty",
+    "department": "dermatology",
+    "condition": "melanoma"
+   },
+   "alt": [
+    {
+     "kind": "specialty",
+     "department": "plastic-surgery",
+     "condition": "burn"
+    }
+   ]
+  }
+ ],
+ "imageNotes": {
+  "v38-sickle": {
+   "zh": "周邊血液抹片：血液通常由手臂靜脈採檢。",
+   "en": "Peripheral blood smear: blood is usually drawn from an arm vein."
+  },
+  "v38-iron": {
+   "zh": "周邊血液抹片：血液通常由手臂靜脈採檢。",
+   "en": "Peripheral blood smear: blood is usually drawn from an arm vein."
+  },
+  "v38-cll": {
+   "zh": "周邊血液抹片：血液通常由手臂靜脈採檢。",
+   "en": "Peripheral blood smear: blood is usually drawn from an arm vein."
+  },
+  "v38-aml": {
+   "zh": "周邊血液抹片：血液通常由手臂靜脈採檢。",
+   "en": "Peripheral blood smear: blood is usually drawn from an arm vein."
+  },
+  "v38-malaria": {
+   "zh": "周邊血液抹片：血液通常由手臂靜脈或指尖採檢。",
+   "en": "Thin blood film: blood is usually taken from an arm vein or fingertip."
+  },
+  "v38-myeloma": {
+   "zh": "骨髓抹片：骨髓檢體通常取自後髂骨嵴（骨盆後方）。",
+   "en": "Marrow film: marrow is usually aspirated from the posterior iliac crest (back of the pelvis)."
+  },
+  "v38-crypto": {
+   "zh": "墨汁染色常用於腦脊髓液；腦脊髓液經腰椎穿刺取得。",
+   "en": "India ink is typically applied to cerebrospinal fluid, which is obtained by lumbar puncture."
+  },
+  "v38-staph": {
+   "zh": "金黃色葡萄球菌是皮膚與傷口感染的常見菌；此為實驗室標準菌株，不是病人檢體。",
+   "en": "S. aureus is a common skin and wound pathogen; this is a laboratory reference strain, not a patient sample."
+  },
+  "human-mitosis": {
+   "zh": "細胞層級參考：皮膚基底層靠有絲分裂持續更新；這是研究資料集影像，不是病理切片。",
+   "en": "Cell-level reference: the epidermal basal layer renews by mitosis; this is a research dataset image, not a pathology slide."
+  },
+  "mouse-kidney": {
+   "zh": "腎臟位於上腹部後方；這是小鼠研究影像，不是人類診斷影像。",
+   "en": "The kidneys lie at the back of the upper abdomen; this is mouse research imaging, not human diagnostic imaging."
+  },
+  "v38-lymphoma": {
+   "zh": "頸部淋巴結是常見的細針抽吸部位。",
+   "en": "Neck lymph nodes are a common fine-needle aspiration site."
+  },
+  "v38-pet": {
+   "zh": "PET/CT 涵蓋頸部與縱膈淋巴結。",
+   "en": "PET/CT covers the neck and mediastinal nodes."
+  },
+  "v38-bcc": {
+   "zh": "基底細胞癌好發於日曬的臉部；此皮膚鏡圖未標示部位。",
+   "en": "Basal-cell carcinoma favours sun-exposed facial skin; this dermoscopy image does not state its site."
+  },
+  "v38-fetal": {
+   "zh": "妊娠子宮由骨盆上升至下腹部。",
+   "en": "The pregnant uterus rises from the pelvis into the lower abdomen."
+  },
+  "hydronephrosis": {
+   "zh": "腎臟與輸尿管屬泌尿道：上腹部後方延伸至骨盆。",
+   "en": "Kidney and ureter belong to the urinary tract, running from the back of the upper abdomen to the pelvis."
+  },
+  "v38-hip": {
+   "zh": "髖關節連接骨盆與下肢。",
+   "en": "The hip joins the pelvis to the lower limb."
+  },
+  "v38-aneurysm": {
+   "zh": "腹主動脈貫穿上、下腹部。",
+   "en": "The abdominal aorta runs through the upper and lower abdomen."
+  },
+  "v38-eczema": {
+   "zh": "來源照片為兒童手臂的局部皮膚。",
+   "en": "The source photograph shows localized skin on a child’s arm."
+  },
+  "v38-tinea": {
+   "zh": "來源照片為手臂皮膚。",
+   "en": "The source photograph shows arm skin."
+  }
+ },
+ "groups": {
+  "radiograph": [
+   "pneumothorax",
+   "ards",
+   "pneumonia",
+   "rheumatoid-wrist",
+   "v38-tb",
+   "v38-cardio",
+   "v38-hip",
+   "v38-dental"
+  ],
+  "cross": [
+   "v38-brain",
+   "v38-stroke",
+   "v38-spine",
+   "v38-aneurysm",
+   "v38-pet",
+   "thyroid-colloid"
+  ],
+  "ultrasound": [
+   "v38-appendix",
+   "v38-ovary",
+   "hydronephrosis",
+   "v38-fetal",
+   "thyroid-colloid"
+  ],
+  "endoscopy": [
+   "gastric-ulcer"
+  ],
+  "histology": [
+   "v38-lung",
+   "v38-colon",
+   "v38-breast",
+   "v38-prostate",
+   "v38-scc",
+   "v38-melanoma",
+   "gastric-ulcer",
+   "v38-lymphoma"
+  ],
+  "smear": [
+   "v38-sickle",
+   "v38-iron",
+   "v38-cll",
+   "v38-aml",
+   "v38-myeloma",
+   "v38-malaria",
+   "v38-crypto",
+   "v38-staph"
+  ],
+  "microscopy": [
+   "human-mitosis",
+   "mouse-kidney"
+  ],
+  "photo": [
+   "v38-retina",
+   "v38-eczema",
+   "v38-psoriasis",
+   "v38-tinea",
+   "v38-bcc",
+   "v38-melanoma"
+  ]
+ },
+ "tableParts": [
+  {
+   "id": "headrest",
+   "key": "tiPHeadrest",
+   "icon": "🛏",
+   "region": "head",
+   "name": {
+    "zh": "頭架／頭墊",
+    "en": "Headrest"
+   },
+   "info": {
+    "what": {
+     "zh": "可拆卸、可調角度的頭段，配凝膠頭圈；開顱手術改用三點頭釘固定架。",
+     "en": "A detachable, angle-adjustable head section with a gel ring; craniotomy swaps it for a three-pin skull clamp."
+    },
+    "use": {
+     "zh": "擺位後確認頭頸中立、眼睛不受壓、氣管內管與呼吸迴路沒有被拉扯；調整角度前由麻醉醫師與術者口頭確認。",
+     "en": "After positioning keep the head and neck neutral, the eyes free of pressure and the tube and circuit free of tension; every angle change is called out between anaesthetist and surgeon."
+    },
+    "risk": {
+     "zh": "眼球受壓可造成缺血性視神經病變甚至失明；頸部過度屈曲或旋轉阻礙靜脈回流；頭釘鬆脫會撕裂頭皮或讓頭部滑動。",
+     "en": "Pressure on the eye can cause ischaemic optic neuropathy and blindness; excess neck flexion or rotation obstructs venous return; a loose pin holder can tear the scalp or let the head slip."
+    }
+   }
+  },
+  {
+   "id": "arm-board",
+   "key": "tiPArmBoard",
+   "icon": "💪",
+   "region": "upper-limb",
+   "name": {
+    "zh": "手臂板與綁帶",
+    "en": "Arm board & strap"
+   },
+   "info": {
+    "what": {
+     "zh": "卡在側軌上的托臂板，有軟墊與綁帶，也承載靜脈管路、血壓袖帶與血氧探頭。",
+     "en": "A padded board clamped to the side rail with a strap; it also carries the IV line, blood-pressure cuff and pulse-oximeter probe."
+    },
+    "use": {
+     "zh": "手臂外展不超過約九十度、掌心朝上或中立、肘部墊空保護尺神經；綁帶可伸入兩指；確認卡榫鎖緊。",
+     "en": "Keep abduction under about ninety degrees with the palm up or neutral and the elbow padded to protect the ulnar nerve; the strap admits two fingers; check the clamp is locked."
+    },
+    "risk": {
+     "zh": "過度外展牽拉臂神經叢；肘部受壓造成尺神經麻痺；托臂板鬆脫時手臂垂落、管路被拉出。",
+     "en": "Over-abduction stretches the brachial plexus; elbow pressure causes ulnar palsy; a loose board drops the arm and pulls out lines."
+    }
+   }
+  },
+  {
+   "id": "table-top",
+   "key": "tiPTableTop",
+   "icon": "🧩",
+   "region": null,
+   "name": {
+    "zh": "分節台面",
+    "en": "Articulated table top"
+   },
+   "info": {
+    "what": {
+     "zh": "由頭段、背段、坐段與腿段組成，電動調整高度、頭低腳高（Trendelenburg）、側傾與背板折角。",
+     "en": "Head, back, seat and leg sections that motor up and down, tilt head-down (Trendelenburg), roll sideways and flex at the back joint."
+    },
+    "use": {
+     "zh": "移動前先告知全隊，確認病人已固定、管線留有餘裕；每次傾斜後重新檢查受壓點與氣道；煞車鎖定後才移位病人。",
+     "en": "Announce every movement, confirm the patient is secured and lines have slack; recheck pressure points and the airway after any tilt; transfer the patient only with the brakes locked."
+    },
+    "risk": {
+     "zh": "未固定就傾斜可讓病人滑落；台面撞到周邊設備或夾傷手指；折角處擠壓皮膚。",
+     "en": "Tilting an unsecured patient lets them slide off; the top can hit nearby equipment or trap fingers; the hinge can pinch skin."
+    }
+   }
+  },
+  {
+   "id": "leg-section",
+   "key": "tiPLegSection",
+   "icon": "🦵",
+   "region": "lower-limb",
+   "name": {
+    "zh": "腿板／腳架",
+    "en": "Leg section / stirrups"
+   },
+   "info": {
+    "what": {
+     "zh": "可下折、分開或拆除的腿段，可換裝截石位腳架或骨科牽引架。",
+     "en": "A leg section that drops, splits or comes off, replaced by lithotomy stirrups or an orthopaedic traction frame."
+    },
+    "use": {
+     "zh": "兩腿同時、緩慢抬放以免髖部受傷與血壓驟變；膝外側腓骨頭處墊空保護腓總神經；長時間手術定時檢查。",
+     "en": "Raise and lower both legs together and slowly to protect the hips and blood pressure; pad the fibular head to protect the common peroneal nerve; recheck during long cases."
+    },
+    "risk": {
+     "zh": "腓總神經受壓造成足下垂；腔室症候群與深部靜脈血栓；單側抬腿拉傷髖部與下背。",
+     "en": "Peroneal compression causes foot drop; compartment syndrome and deep-vein thrombosis; lifting one leg alone strains the hip and lower back."
+    }
+   }
+  },
+  {
+   "id": "column",
+   "key": "tiPColumn",
+   "icon": "🎛",
+   "region": null,
+   "name": {
+    "zh": "立柱、底座與手控器",
+    "en": "Column, base & hand control"
+   },
+   "info": {
+    "what": {
+     "zh": "中央立柱內有電動或油壓升降機構，外覆伸縮護套；底座有煞車與移動輪，手控器與備援面板控制所有動作。",
+     "en": "The central column hides the electric or hydraulic lift under a bellows cover; the base carries brakes and castors, and the pendant hand control plus a backup panel drive every movement."
+    },
+    "use": {
+     "zh": "術前測試每個動作與煞車；手控線放在不會被踩到或被液體噴濺的地方；知道停電時的備援方式。",
+     "en": "Test every movement and the brakes before the case; route the hand-control cable where it cannot be trodden on or splashed; know the backup method in a power failure."
+    },
+    "risk": {
+     "zh": "煞車未鎖讓台面移動；液體滲入手控器造成誤動作；升降時夾到腳、腳踏或纜線。",
+     "en": "Unlocked brakes let the table roll; fluid in the hand control causes unintended movement; lifting can crush feet, pedals or cables."
+    }
+   }
+  },
+  {
+   "id": "side-rail",
+   "key": "tiPSideRail",
+   "icon": "🔩",
+   "region": null,
+   "name": {
+    "zh": "側軌與夾具",
+    "en": "Side rails & clamps"
+   },
+   "info": {
+    "what": {
+     "zh": "台面兩側的不鏽鋼側軌，用夾具固定托臂板、腳架、拉鉤固定器、麻醉屏架與各種配件。",
+     "en": "Stainless rails on both sides; clamps hold arm boards, stirrups, retractor posts, the anaesthesia screen and other accessories."
+    },
+    "use": {
+     "zh": "每個夾具完全扣緊並逐一檢查；有負載的配件不要懸空過長；病人皮膚不可直接碰觸金屬側軌。",
+     "en": "Close and check every clamp; avoid long unsupported loads; keep the patient’s skin off the metal rails."
+    },
+    "risk": {
+     "zh": "夾具滑脫使配件掉落或肢體滑出；皮膚接觸金屬可經替代路徑造成電燒灼傷。",
+     "en": "A slipping clamp drops accessories or limbs; skin touching metal can carry diathermy current and burn by an alternate path."
+    }
+   }
+  },
+  {
+   "id": "radiolucent-top",
+   "key": "tiPRadiolucent",
+   "icon": "☢",
+   "region": "chest",
+   "group": "radiograph",
+   "name": {
+    "zh": "可透 X 光碳纖維台面",
+    "en": "X-ray-translucent carbon top"
+   },
+   "info": {
+    "what": {
+     "zh": "碳纖維台面讓 C 臂與術中攝影可穿透，減少金屬遮擋。",
+     "en": "A carbon-fibre top lets the C-arm and intra-operative films pass through with less metal in the way."
+    },
+    "use": {
+     "zh": "先規劃 C 臂可到達的範圍並避開台面下的金屬底座；全員穿鉛衣、保持距離、只在必要時透視。",
+     "en": "Plan where the C-arm must reach and keep the metal base out of the beam; everyone wears lead, keeps distance and screens only when needed."
+    },
+    "risk": {
+     "zh": "底座或金屬配件擋住影像需重複照射；擺位不佳增加病人與團隊的輻射暴露；碳纖維邊緣承重有限。",
+     "en": "A base or metal accessory in the beam forces repeat exposures; poor positioning raises radiation to patient and team; the carbon edge has limited load capacity."
+    }
+   }
+  },
+  {
+   "id": "pad",
+   "key": "tiPPad",
+   "icon": "🧽",
+   "region": "skin",
+   "name": {
+    "zh": "台墊與防壓墊",
+    "en": "Pads & pressure care"
+   },
+   "info": {
+    "what": {
+     "zh": "黏彈性凝膠或泡棉台墊、頭圈、胸墊與足跟墊，用來分散壓力。",
+     "en": "Viscoelastic gel or foam mattress, head ring, chest rolls and heel pads that spread pressure."
+    },
+    "use": {
+     "zh": "擺位後逐一檢查骨突處（枕部、肩胛、薦骨、足跟）；保持乾燥平整，皺摺與管線不在身下；高風險病人記錄受壓評估。",
+     "en": "After positioning check every bony point (occiput, scapulae, sacrum, heels); keep the pad dry and flat with no folds or lines underneath; document pressure risk for vulnerable patients."
+    },
+    "risk": {
+     "zh": "長時間受壓造成手術相關壓力性損傷；消毒液積在身下造成化學性或電燒灼傷。",
+     "en": "Prolonged pressure causes surgery-related pressure injury; pooled prep solution under the patient causes chemical or diathermy burns."
+    }
+   }
+  }
+ ],
+ "equipment": [
+  {
+   "id": "lightbox",
+   "key": "tiELightbox",
+   "icon": "🩻",
+   "name": {
+    "zh": "X 光看片燈／牆面影像",
+    "en": "X-ray lightbox / wall viewer"
+   },
+   "info": {
+    "what": {
+     "zh": "牆面看片燈或 PACS 大螢幕，術中對照影像。",
+     "en": "A wall lightbox or large PACS screen for checking images during the case."
+    },
+    "use": {
+     "zh": "先核對病人姓名、日期與左右標記，影像方向掛正，再和術前計畫比對。",
+     "en": "Check name, date and the left/right marker, hang the image the right way round, then compare with the plan."
+    },
+    "risk": {
+     "zh": "掛錯病人或左右顛倒可導致錯側手術；看到舊片而不是最新影像。",
+     "en": "The wrong patient’s film or a reversed image leads to wrong-side surgery; an old study is mistaken for the latest."
+    }
+   },
+   "group": "radiograph"
+  },
+  {
+   "id": "imaging",
+   "key": "tiEImaging",
+   "icon": "🖥",
+   "name": {
+    "zh": "影像工作站（PACS）",
+    "en": "Imaging workstation (PACS)"
+   },
+   "info": {
+    "what": {
+     "zh": "讀取 CT、MRI、超音波與 X 光的工作站，可調窗寬窗位、測量與比較。",
+     "en": "A workstation for CT, MRI, ultrasound and radiographs with windowing, measurement and comparison."
+    },
+    "use": {
+     "zh": "先確認病人、檢查日期與序列，再和正常對照及前次影像比較；判讀寫入紀錄。",
+     "en": "Confirm patient, study date and series, compare with normal and prior images, and document the reading."
+    },
+    "risk": {
+     "zh": "只看單一切面或錯誤序列；把影像產物誤判為病灶；未比較前片。",
+     "en": "Reading a single slice or the wrong series; mistaking artefacts for disease; not comparing with prior studies."
+    }
+   },
+   "group": "cross"
+  },
+  {
+   "id": "carm",
+   "key": "tiECarm",
+   "icon": "☢",
+   "name": {
+    "zh": "C 臂透視機",
+    "en": "C-arm fluoroscopy"
+   },
+   "info": {
+    "what": {
+     "zh": "可移動的 X 光透視機：C 形臂一端是射源、另一端是影像接收器，旁有顯示器推車。",
+     "en": "A mobile fluoroscope: the C-shaped arm carries the X-ray tube at one end and the detector at the other, with a monitor cart beside it."
+    },
+    "use": {
+     "zh": "套無菌套並規劃動線；全員鉛衣與甲狀腺護具、遠離射源、儘量縮短透視；射源在下、接收器貼近病人。",
+     "en": "Drape it and plan its path; everyone wears lead and thyroid shields, stays away from the tube and keeps screening short; tube below, detector close to the patient."
+    },
+    "risk": {
+     "zh": "不必要的透視增加輻射；C 臂撞到無菌區或病人；影像左右方向弄錯。",
+     "en": "Unneeded screening adds radiation; the C-arm bumps the sterile field or patient; the image orientation is reversed."
+    }
+   },
+   "group": "radiograph"
+  },
+  {
+   "id": "us",
+   "key": "tiEUltrasound",
+   "icon": "📡",
+   "name": {
+    "zh": "超音波推車",
+    "en": "Ultrasound cart"
+   },
+   "info": {
+    "what": {
+     "zh": "超音波主機、線性／凸陣／心臟／陰道探頭與螢幕，可床邊即時檢查。",
+     "en": "An ultrasound console with linear, curved, cardiac and endocavity probes for real-time bedside scanning."
+    },
+    "use": {
+     "zh": "核對病人與探頭方向標記；無菌操作使用無菌探頭套與凝膠；探頭依規範清潔消毒。",
+     "en": "Confirm the patient and probe orientation marker; use a sterile sleeve and gel for sterile work; clean and disinfect probes to protocol."
+    },
+    "risk": {
+     "zh": "方向標記弄反；探頭消毒不當造成交叉感染；把正常構造或影像產物誤判為病灶。",
+     "en": "A reversed marker; poorly reprocessed probes spread infection; normal structures or artefacts are misread as disease."
+    }
+   },
+   "group": "ultrasound"
+  },
+  {
+   "id": "endo",
+   "key": "tiEEndoscopy",
+   "icon": "🔭",
+   "name": {
+    "zh": "內視鏡／腹腔鏡塔",
+    "en": "Endoscopy / laparoscopy tower"
+   },
+   "info": {
+    "what": {
+     "zh": "推車上疊放攝影主機、冷光源、氣腹機、錄影與螢幕。",
+     "en": "A cart stacking the camera unit, cold light source, insufflator, recorder and monitor."
+    },
+    "use": {
+     "zh": "白平衡與對焦後才進入體內；光纖接頭不放在病人或鋪單上；確認氣腹警報開啟。",
+     "en": "White-balance and focus before entering the body; never rest the light cable on the patient or drapes; check insufflator alarms are on."
+    },
+    "risk": {
+     "zh": "光纖頭燙傷鋪單或皮膚；氣腹引起氣體栓塞或血壓變化；螢幕位置不佳造成操作錯誤。",
+     "en": "A hot light cable burns drapes or skin; insufflation can cause gas embolism or haemodynamic change; a badly placed screen causes handling errors."
+    }
+   },
+   "group": "endoscopy"
+  },
+  {
+   "id": "microscope",
+   "key": "tiEMicroscope",
+   "icon": "🔬",
+   "name": {
+    "zh": "手術顯微鏡",
+    "en": "Operating microscope"
+   },
+   "info": {
+    "what": {
+     "zh": "落地式顯微鏡，含光源、主刀雙目鏡、助手鏡與錄影。",
+     "en": "A floor-stand microscope with light source, surgeon and assistant binoculars and video."
+    },
+    "use": {
+     "zh": "套無菌套、平衡懸臂並鎖定煞車；距離越近越要把光源調低，以免灼傷組織。",
+     "en": "Drape it, balance the arm and lock the brakes; turn the light down as the working distance shortens to avoid thermal injury."
+    },
+    "risk": {
+     "zh": "懸臂未平衡突然下墜；強光造成熱傷；只看鏡下而忽略術野外的出血或器械。",
+     "en": "An unbalanced arm drops; intense light causes heat injury; tunnel vision misses bleeding or instruments outside the view."
+    }
+   },
+   "group": "histology"
+  },
+  {
+   "id": "lab",
+   "key": "tiELab",
+   "icon": "🧪",
+   "name": {
+    "zh": "檢驗、血氣與病理站",
+    "en": "Labs, blood gas & pathology"
+   },
+   "info": {
+    "what": {
+     "zh": "血氣分析儀、檢體管、顯微鏡與玻片：血液抹片、革蘭氏染色與組織切片在這裡判讀。",
+     "en": "Blood-gas analyser, sample tubes, microscope and slides: blood smears, Gram stains and tissue sections are read here."
+    },
+    "use": {
+     "zh": "檢體立即標示病人身分與時間，雙人核對；異常值回報並複驗；病理切片由病理醫師判讀。",
+     "en": "Label every sample with identity and time and double-check; report and repeat abnormal values; tissue sections are reported by a pathologist."
+    },
+    "risk": {
+     "zh": "標示錯誤讓結果套到別人身上；溶血或延遲送檢造成假性異常；只看單一數值不看趨勢。",
+     "en": "Mislabelling attaches results to the wrong person; haemolysis or delay creates false abnormalities; single values are read without the trend."
+    }
+   },
+   "group": "histology",
+   "twin": {
+    "kind": "specialty",
+    "department": "pathology-lab",
+    "condition": "auto"
+   }
+  },
+  {
+   "id": "specimen",
+   "key": "tiESpecimen",
+   "icon": "🧫",
+   "name": {
+    "zh": "標本容器",
+    "en": "Specimen containers"
+   },
+   "info": {
+    "what": {
+     "zh": "標本罐、固定液與標籤，把組織送到病理科做切片。",
+     "en": "Specimen pots, fixative and labels that carry tissue to pathology for sectioning."
+    },
+    "use": {
+     "zh": "標本離體立即標示病人、部位、側別與離體時間並雙人核對；需冷凍切片時新鮮送檢。",
+     "en": "Label patient, site, side and time out of the body immediately and double-check; send fresh when a frozen section is needed."
+    },
+    "risk": {
+     "zh": "標示錯誤或遺失使診斷無法挽回；固定液濺到眼睛或皮膚。",
+     "en": "A mislabelled or lost specimen can never be replaced; fixative splashes injure eyes and skin."
+    }
+   },
+   "group": "histology",
+   "twin": {
+    "kind": "specialty",
+    "department": "pathology-lab",
+    "condition": "colon-adenoma"
+   }
+  },
+  {
+   "id": "monitor",
+   "key": "tiEMonitor",
+   "icon": "📈",
+   "name": {
+    "zh": "生理監視器",
+    "en": "Patient monitor"
+   },
+   "info": {
+    "what": {
+     "zh": "顯示心電圖、血氧容積圖、動脈壓、呼氣末二氧化碳與體溫的監視器。",
+     "en": "Shows ECG, pleth, arterial pressure, end-tidal CO₂ and temperature."
+    },
+    "use": {
+     "zh": "開機自檢、確認導程與探頭位置、警報開啟且聽得到；先看趨勢與波形品質，再看數字。",
+     "en": "Self-test, confirm leads and probe positions, alarms on and audible; read trends and waveform quality before numbers."
+    },
+    "risk": {
+     "zh": "雜訊或探頭脫落被誤判為心律不整；警報被靜音或音量過低延誤處置。",
+     "en": "Artefact or a loose probe is mistaken for arrhythmia; silenced or quiet alarms delay action."
+    }
+   },
+   "group": "radiograph",
+   "region": "chest",
+   "twin": {
+    "kind": "heart",
+    "mode": "auto"
+   }
+  },
+  {
+   "id": "anesthesia",
+   "key": "tiEAnesthesia",
+   "icon": "🫁",
+   "name": {
+    "zh": "麻醉機",
+    "en": "Anaesthesia machine"
+   },
+   "info": {
+    "what": {
+     "zh": "供氣、流量計、揮發罐、呼吸迴路、二氧化碳吸收罐、風箱式呼吸器與監測整合在一台。",
+     "en": "Gas supply, flowmeters, vaporisers, breathing circuit, CO₂ absorber, bellows ventilator and monitoring in one machine."
+    },
+    "use": {
+     "zh": "每台刀前完成機器檢查並備好手動甦醒球與氧氣鋼瓶；用二氧化碳波形確認氣管內管位置；迴路接頭固定。",
+     "en": "Check the machine before every case with a self-inflating bag and oxygen cylinder ready; confirm tube position by capnography; secure every circuit connection."
+    },
+    "risk": {
+     "zh": "迴路脫落或漏氣、吸收罐耗竭、揮發罐空罐或裝錯、低氧混合氣。",
+     "en": "Disconnection or leaks, exhausted absorbent, an empty or wrong vaporiser, a hypoxic gas mixture."
+    }
+   },
+   "group": "radiograph",
+   "region": "chest",
+   "twin": {
+    "kind": "specialty",
+    "department": "anesthesiology",
+    "condition": "capnography"
+   }
+  },
+  {
+   "id": "tray",
+   "key": "tiETray",
+   "icon": "🧰",
+   "name": {
+    "zh": "Mayo 器械托盤",
+    "en": "Mayo instrument stand"
+   },
+   "info": {
+    "what": {
+     "zh": "跨在病人上方的可升降托盤，放當下最常用的器械：刀柄、剪刀、鑷子、持針器、止血鉗與紗布。",
+     "en": "A height-adjustable tray over the patient holding the instruments in use: scalpels, scissors, forceps, needle holders, clamps and swabs."
+    },
+    "use": {
+     "zh": "器械依使用順序排列；銳器放固定區並經「中性區」傳遞；術中隨時清點。",
+     "en": "Lay instruments out in order of use; keep sharps in one place and pass them through a neutral zone; count throughout."
+    },
+    "risk": {
+     "zh": "托盤壓到病人腿部；傳遞刀片時割傷；器械或紗布遺留體內。",
+     "en": "The tray presses on the legs; blades cut during passing; an instrument or swab is retained."
+    }
+   },
+   "group": "histology"
+  },
+  {
+   "id": "backtable",
+   "key": "tiEBackTable",
+   "icon": "🗄",
+   "name": {
+    "zh": "器械後台",
+    "en": "Back table"
+   },
+   "info": {
+    "what": {
+     "zh": "鋪無菌單的大桌，擺放整套器械、盆、紗布、縫線與專科器械組。",
+     "en": "A large draped table holding the full instrument set, basins, swabs, sutures and specialty sets."
+    },
+    "use": {
+     "zh": "開包前確認滅菌指示與包裝完整；只有刷手人員可碰觸無菌區；術前、關閉前與關閉後都要計數。",
+     "en": "Check sterility indicators and wrapping before opening; only scrubbed staff touch the field; count before, during and after closure."
+    },
+    "risk": {
+     "zh": "無菌單潮濕就失去屏障；計數不符必須停下來尋找，必要時照 X 光。",
+     "en": "A wet drape stops being a barrier; a count discrepancy means stop, search and X-ray if needed."
+    }
+   },
+   "group": "histology"
+  },
+  {
+   "id": "esu",
+   "key": "tiEEsu",
+   "icon": "⚡",
+   "name": {
+    "zh": "電燒主機",
+    "en": "Electrosurgical unit"
+   },
+   "info": {
+    "what": {
+     "zh": "以高頻電流切割與凝血的主機，接單極電燒筆、雙極鑷與迴路電極板。",
+     "en": "Cuts and coagulates with high-frequency current through the monopolar pencil, bipolar forceps and a return electrode pad."
+    },
+    "use": {
+     "zh": "迴路電極板貼在乾淨、肌肉豐厚、靠近術野的皮膚；電燒筆不用時放回絕緣套；含酒精消毒液完全乾燥後才使用。",
+     "en": "Place the return pad on clean, well-muscled skin near the field; holster the pencil when not in use; let alcohol prep dry completely before activating."
+    },
+    "risk": {
+     "zh": "迴路電極貼附不良造成燒傷；酒精蒸氣或富氧環境起火；手術煙霧吸入。",
+     "en": "A poorly applied return pad burns skin; alcohol vapour or oxygen-rich air catches fire; surgical smoke is inhaled."
+    }
+   }
+  },
+  {
+   "id": "drains",
+   "key": "tiEDrains",
+   "icon": "🧴",
+   "name": {
+    "zh": "抽吸罐與引流",
+    "en": "Suction & drains"
+   },
+   "info": {
+    "what": {
+     "zh": "壁式抽吸接收集罐與 Yankauer 吸頭；術後引流管接引流袋。",
+     "en": "Wall suction feeds collection canisters and the Yankauer tip; post-operative drains run to drainage bags."
+    },
+    "use": {
+     "zh": "術前測試吸力並備好第二條抽吸；記錄失血量與引流性狀；收集罐滿之前更換。",
+     "en": "Test suction and have a second line ready; record blood loss and drain character; change canisters before they fill."
+    },
+    "risk": {
+     "zh": "抽吸失效時視野被血遮蔽；忽略突然大量鮮紅引流（出血警訊）。",
+     "en": "Failed suction leaves the field flooded; a sudden bright-red drain output (a bleeding warning) is missed."
+    }
+   },
+   "region": "abdomen-upper"
+  },
+  {
+   "id": "ivpole",
+   "key": "tiEIvPole",
+   "icon": "💧",
+   "name": {
+    "zh": "點滴架與輸液幫浦",
+    "en": "IV pole & infusion pumps"
+   },
+   "info": {
+    "what": {
+     "zh": "點滴袋、輸液管、輸液幫浦與注射幫浦。",
+     "en": "Fluid bags, giving sets, volumetric and syringe pumps."
+    },
+    "use": {
+     "zh": "每次核對病人、藥名與管路走向並標示管路；空氣與阻塞警報開啟。本站不提供任何速率。",
+     "en": "Check patient, drug and line route every time and label lines; keep air and occlusion alarms on. No rates are given here."
+    },
+    "risk": {
+     "zh": "管路接錯、空氣栓塞、藥物滲漏到組織。",
+     "en": "Misconnected lines, air embolism, extravasation into tissue."
+    }
+   },
+   "region": "upper-limb"
+  },
+  {
+   "id": "warmer",
+   "key": "tiEWarmer",
+   "icon": "🌡",
+   "name": {
+    "zh": "保溫機（熱風毯）",
+    "en": "Forced-air warmer"
+   },
+   "info": {
+    "what": {
+     "zh": "強制熱風保溫機，以軟管把暖風送進一次性保溫毯。",
+     "en": "A forced-air unit that blows warm air through a hose into a disposable blanket."
+    },
+    "use": {
+     "zh": "軟管一定接在保溫毯上，絕不直接吹向皮膚；監測核心體溫；缺血的肢體不要加溫。",
+     "en": "Always connect the hose to a blanket, never blow it straight onto skin; monitor core temperature; do not warm an ischaemic limb."
+    },
+    "risk": {
+     "zh": "軟管直吹（free-hosing）造成燙傷；低體溫增加出血、感染與甦醒延遲。",
+     "en": "“Free-hosing” causes burns; hypothermia increases bleeding, infection and delayed recovery."
+    }
+   },
+   "region": "skin"
+  },
+  {
+   "id": "kick",
+   "key": "tiEKick",
+   "icon": "🪣",
+   "name": {
+    "zh": "踢桶（紗布桶）",
+    "en": "Kick bucket"
+   },
+   "info": {
+    "what": {
+     "zh": "有輪子的不鏽鋼桶，收集用過的紗布。",
+     "en": "A wheeled steel bucket that collects used swabs."
+    },
+    "use": {
+     "zh": "紗布展開分組掛在計數袋讓全隊看得見；器械與標本不可丟入。",
+     "en": "Unfold used swabs and hang them in count bags so the team can see them; never drop instruments or specimens in."
+    },
+    "risk": {
+     "zh": "紗布被遺漏造成計數錯誤；標本被誤丟。",
+     "en": "A swab is missed and the count is wrong; a specimen is thrown away."
+    }
+   }
+  },
+  {
+   "id": "sink",
+   "key": "tiESink",
+   "icon": "🚰",
+   "name": {
+    "zh": "刷手槽",
+    "en": "Scrub sink"
+   },
+   "info": {
+    "what": {
+     "zh": "手術室門外的刷手槽，感應或膝控水龍頭。",
+     "en": "A sensor- or knee-operated scrub sink outside the theatre door."
+    },
+    "use": {
+     "zh": "刷手前移除飾品、修短指甲；依院內流程完成外科手部消毒；手高於手肘、不碰水槽。",
+     "en": "Remove jewellery and keep nails short; complete surgical hand antisepsis to local protocol; hands above elbows, never touching the sink."
+    },
+    "risk": {
+     "zh": "刷手不完整或碰到污染需重刷；手套破損未發現。",
+     "en": "Incomplete scrubbing or a touch means starting again; an unnoticed glove puncture."
+    }
+   },
+   "region": "upper-limb",
+   "twin": {
+    "kind": "specialty",
+    "department": "infectious-disease",
+    "condition": "mrsa-bacteraemia"
+   }
+  },
+  {
+   "id": "lights",
+   "key": "tiELights",
+   "icon": "💡",
+   "name": {
+    "zh": "多燈頭 LED 無影燈",
+    "en": "Multi-pod LED surgical lights"
+   },
+   "info": {
+    "what": {
+     "zh": "懸吊式多燈頭 LED 手術燈，懸臂可調，中央無菌把手讓刷手人員調整。",
+     "en": "Ceiling-mounted multi-pod LED lights on spring arms; a sterile central handle lets the scrub team aim them."
+    },
+    "use": {
+     "zh": "開刀前定位並測試；只有套無菌把手套的把手可由刷手人員觸碰；深部手術加頭燈或光纖補光。",
+     "en": "Position and test before the case; scrubbed staff touch only the sterile handle cover; add a headlight or fibre-optic light for deep cavities."
+    },
+    "risk": {
+     "zh": "燈頭撞到人或設備；強光直射眼睛；把手套未更換造成污染。",
+     "en": "The head strikes people or equipment; glare into eyes; an unchanged handle cover contaminates the field."
+    }
+   }
+  },
+  {
+   "id": "cart",
+   "key": "tiECart",
+   "icon": "💊",
+   "name": {
+    "zh": "藥物車",
+    "en": "Medication cart"
+   },
+   "info": {
+    "what": {
+     "zh": "分格的麻醉藥物車，含標籤、條碼與高警訊藥物分區。",
+     "en": "A compartmented anaesthesia drug cart with labels, barcodes and segregated high-alert drugs."
+    },
+    "use": {
+     "zh": "依標籤與雙人核對給藥，藥名、濃度、途徑口頭覆誦；本站不提供劑量。",
+     "en": "Give drugs by label with a two-person check and read-back of name, concentration and route; no doses are given here."
+    },
+    "risk": {
+     "zh": "外觀相似的藥瓶拿錯；注射器未標示；過敏史未核對。",
+     "en": "Look-alike vials are swapped; unlabelled syringes; allergy history unchecked."
+    }
+   },
+   "region": "upper-limb",
+   "twin": {
+    "kind": "specialty",
+    "department": "anesthesiology",
+    "condition": "anaphylaxis"
+   }
+  },
+  {
+   "id": "chart",
+   "key": "tiEChart",
+   "icon": "📋",
+   "name": {
+    "zh": "病歷與同意書",
+    "en": "Chart & consent"
+   },
+   "info": {
+    "what": {
+     "zh": "病史、過敏、用藥、同意書與術前檢查。",
+     "en": "History, allergies, medicines, consent and pre-operative tests."
+    },
+    "use": {
+     "zh": "與病人和腕帶核對身分與手術；任何不一致先停下來澄清。",
+     "en": "Match identity and procedure with the patient and wristband; stop and clarify any mismatch."
+    },
+    "risk": {
+     "zh": "同意書與排程不符、過敏未註記、檢查結果未看。",
+     "en": "Consent and schedule disagree, allergies are not flagged, results are unread."
+    }
+   }
+  },
+  {
+   "id": "whiteboard",
+   "key": "tiEBoard",
+   "icon": "🗒",
+   "name": {
+    "zh": "白板／WHO 核對",
+    "en": "Board / WHO checklist"
+   },
+   "info": {
+    "what": {
+     "zh": "團隊暫停與手術安全核對表。",
+     "en": "The team time-out and surgical safety checklist."
+    },
+    "use": {
+     "zh": "劃刀前全隊停下：身分、手術、側別、過敏、失血風險與預防性抗生素。",
+     "en": "Everyone stops before incision: identity, procedure, side, allergy, blood-loss risk and prophylaxis."
+    },
+    "risk": {
+     "zh": "流於形式的核對漏掉錯側或過敏。",
+     "en": "A box-ticking time-out misses the wrong side or an allergy."
+    }
+   }
+  },
+  {
+   "id": "huddle",
+   "key": "tiEHuddle",
+   "icon": "🗣",
+   "name": {
+    "zh": "團隊討論與交班",
+    "en": "Huddle & handover"
+   },
+   "info": {
+    "what": {
+     "zh": "以 SBAR 結構交班的團隊區。",
+     "en": "The team area for structured SBAR handover."
+    },
+    "use": {
+     "zh": "情境、背景、評估、建議；請接手者複述。",
+     "en": "Situation, background, assessment, recommendation; ask the receiver to read back."
+    },
+    "risk": {
+     "zh": "資訊遺漏或未複述造成接手錯誤。",
+     "en": "Omitted information or no read-back leads to handover errors."
+    }
+   }
+  },
+  {
+   "id": "recovery",
+   "key": "tiERecovery",
+   "icon": "🛏",
+   "name": {
+    "zh": "恢復室／加護床",
+    "en": "Recovery / ICU bed"
+   },
+   "info": {
+    "what": {
+     "zh": "術後甦醒與監測的病床，有床欄、監視器與供氧。",
+     "en": "A monitored bed with rails and oxygen for emergence and recovery."
+    },
+    "use": {
+     "zh": "評估意識、氣道、疼痛、噁心與出血；符合標準才轉出。",
+     "en": "Assess consciousness, airway, pain, nausea and bleeding; discharge only when criteria are met."
+    },
+    "risk": {
+     "zh": "呼吸抑制或出血太晚發現；床欄未拉起造成跌落。",
+     "en": "Respiratory depression or bleeding found late; rails left down and the patient falls."
+    }
+   },
+   "region": "chest"
+  },
+  {
+   "id": "door",
+   "key": "tiEDoor",
+   "icon": "🚪",
+   "name": {
+    "zh": "門口與轉送",
+    "en": "Door & transfer"
+   },
+   "info": {
+    "what": {
+     "zh": "手術室限制區入口與病人轉送動線。",
+     "en": "The restricted-zone entrance and patient transfer route."
+    },
+    "use": {
+     "zh": "保持門關閉以維持氣流；轉送前再次核對並帶著監測。",
+     "en": "Keep doors closed to preserve airflow; re-check and keep monitoring during transfer."
+    },
+    "risk": {
+     "zh": "頻繁開門增加感染風險；轉送中監測中斷。",
+     "en": "Frequent door opening raises infection risk; monitoring stops during transfer."
+    }
+   }
+  },
+  {
+   "id": "cpb",
+   "key": "tiECpb",
+   "icon": "🫀",
+   "name": {
+    "zh": "體外循環機",
+    "en": "Heart-lung machine"
+   },
+   "info": {
+    "what": {
+     "zh": "由體外循環師操作的人工心肺：滾輪或離心幫浦、氧合器、儲血槽與熱交換器。",
+     "en": "The perfusionist’s heart-lung machine: roller or centrifugal pumps, oxygenator, reservoir and heat exchanger."
+    },
+    "use": {
+     "zh": "插管與啟動前全隊確認抗凝與管路；術者、麻醉與體外循環師持續口頭溝通。",
+     "en": "The whole team confirms anticoagulation and circuit before cannulation and start; surgeon, anaesthetist and perfusionist keep talking."
+    },
+    "risk": {
+     "zh": "空氣進入管路、管路扭折或脫落、抗凝不足造成血栓。",
+     "en": "Air in the circuit, kinked or disconnected lines, inadequate anticoagulation causing clots."
+    }
+   },
+   "region": "chest",
+   "twin": {
+    "kind": "heart",
+    "mode": "auto"
+   }
+  },
+  {
+   "id": "dentalchair",
+   "key": "tiEDentalChair",
+   "icon": "🦷",
+   "name": {
+    "zh": "牙科治療椅與診療台",
+    "en": "Dental chair & delivery unit"
+   },
+   "info": {
+    "what": {
+     "zh": "可躺式治療椅、手機（牙鑽）、三用噴槍、吸唾管與口腔燈。",
+     "en": "A reclining chair with handpieces, air-water syringe, saliva ejector and operating light."
+    },
+    "use": {
+     "zh": "治療前核對牙位；保護眼睛與呼吸道（橡皮障、高速吸引）；器械依規範滅菌。",
+     "en": "Confirm the tooth before treatment; protect eyes and airway (rubber dam, high-volume suction); sterilise instruments to standard."
+    },
+    "risk": {
+     "zh": "拔錯牙；小器械或碎片掉入呼吸道；水路污染。",
+     "en": "The wrong tooth; small instruments or fragments fall into the airway; contaminated waterlines."
+    }
+   },
+   "region": "mouth"
+  },
+  {
+   "id": "airwaycart",
+   "key": "tiEAirwayCart",
+   "icon": "🫁",
+   "name": {
+    "zh": "困難氣道車",
+    "en": "Difficult-airway cart"
+   },
+   "info": {
+    "what": {
+     "zh": "喉頭鏡、影像喉頭鏡、各式氣管內管、喉罩、探條與緊急頸前通氣器材。",
+     "en": "Laryngoscopes, video laryngoscope, tubes, supraglottic airways, bougies and front-of-neck access kit."
+    },
+    "use": {
+     "zh": "每天檢查完整性；依計畫 A–D 準備並在誘導前口頭說明；以二氧化碳波形確認位置。",
+     "en": "Check daily; prepare plans A to D and brief them before induction; confirm placement with capnography."
+    },
+    "risk": {
+     "zh": "器材缺件或電池沒電；反覆嘗試同一方法而延誤氧合。",
+     "en": "Missing items or flat batteries; repeated attempts with one technique delay oxygenation."
+    }
+   },
+   "region": "mouth",
+   "twin": {
+    "kind": "specialty",
+    "department": "anesthesiology",
+    "condition": "airway"
+   }
+  },
+  {
+   "id": "resus",
+   "key": "tiEResus",
+   "icon": "🚑",
+   "name": {
+    "zh": "急救復甦車",
+    "en": "Resuscitation cart"
+   },
+   "info": {
+    "what": {
+     "zh": "除顫器、氣道與急救藥物的復甦車。",
+     "en": "Defibrillator, airway kit and emergency drugs on one cart."
+    },
+    "use": {
+     "zh": "每班檢查並簽名；除顫前大聲確認「全員離開」；團隊分工明確。",
+     "en": "Check and sign every shift; call “stand clear” before every shock; assign clear roles."
+    },
+    "risk": {
+     "zh": "除顫時有人碰觸病人；藥物或電池過期；分工不清延誤處置。",
+     "en": "Someone touching the patient during a shock; expired drugs or batteries; unclear roles delay care."
+    }
+   },
+   "region": "chest",
+   "twin": {
+    "kind": "specialty",
+    "department": "emergency",
+    "condition": "vf-arrest"
+   }
+  },
+  {
+   "id": "dialysis",
+   "key": "tiEDialysis",
+   "icon": "🩸",
+   "name": {
+    "zh": "透析機",
+    "en": "Dialysis machine"
+   },
+   "info": {
+    "what": {
+     "zh": "血液透析機：血液幫浦、透析器（人工腎）、壓力監測與空氣偵測。",
+     "en": "A haemodialysis machine: blood pump, dialyser, pressure monitors and air detector."
+    },
+    "use": {
+     "zh": "核對病人與處方由專責人員設定；管路連接處可見並固定；警報不可略過。",
+     "en": "The prescription is set by the responsible team; keep connections visible and secured; never override alarms."
+    },
+    "risk": {
+     "zh": "管路脫落大量失血、空氣栓塞、血管通路感染。",
+     "en": "Disconnection with major blood loss, air embolism, access infection."
+    }
+   },
+   "region": "upper-limb",
+   "twin": {
+    "kind": "specialty",
+    "department": "nephrology",
+    "condition": "hd-circuit"
+   }
+  },
+  {
+   "id": "spirometry",
+   "key": "tiESpirometry",
+   "icon": "🌬",
+   "name": {
+    "zh": "肺功能與血氧監測",
+    "en": "Spirometry & oximetry"
+   },
+   "info": {
+    "what": {
+     "zh": "肺量計與脈搏血氧儀。",
+     "en": "A spirometer and pulse oximeter."
+    },
+    "use": {
+     "zh": "示範正確吹氣並重複可再現的曲線；同時看病人狀態。",
+     "en": "Coach a correct manoeuvre and repeat for reproducible curves; watch the patient too."
+    },
+    "risk": {
+     "zh": "用力不足的曲線被誤判；指甲油或低灌流讓血氧讀數不準。",
+     "en": "A sub-maximal effort is misread; nail polish or poor perfusion gives false oximetry."
+    }
+   },
+   "region": "chest",
+   "twin": {
+    "kind": "specialty",
+    "department": "pulmonology",
+    "condition": "copd"
+   }
+  },
+  {
+   "id": "glucose",
+   "key": "tiEGlucose",
+   "icon": "🩸",
+   "name": {
+    "zh": "血糖紀錄與代謝評估",
+    "en": "Glucose & metabolic station"
+   },
+   "info": {
+    "what": {
+     "zh": "血糖機、連續血糖監測紀錄與體重身高量測。",
+     "en": "Glucometer, continuous-glucose records and height/weight measurement."
+    },
+    "use": {
+     "zh": "看趨勢與時間在目標範圍，不只看單點；校正與試紙效期。",
+     "en": "Read trends and time in range rather than single points; check calibration and strip expiry."
+    },
+    "risk": {
+     "zh": "試紙過期或手指污染造成假值；忽略低血糖趨勢。",
+     "en": "Expired strips or contaminated fingers give false values; a hypoglycaemic trend is missed."
+    }
+   },
+   "region": "upper-limb",
+   "twin": {
+    "kind": "specialty",
+    "department": "endocrinology",
+    "condition": "diabetes"
+   }
+  }
+ ],
+ "departments": {
+  "neurosurgery": {
+   "home": "head",
+   "twins": {
+    "head": {
+     "kind": "brain",
+     "condition": "auto"
+    },
+    "spine": {
+     "kind": "specialty",
+     "department": "spine",
+     "condition": "lumbar-hnp"
+    },
+    "neck": {
+     "kind": "specialty",
+     "department": "spine",
+     "condition": "cervical-myelopathy"
+    }
+   }
+  },
+  "neurology": {
+   "home": "head",
+   "twins": {
+    "head": {
+     "kind": "brain",
+     "condition": "auto"
+    },
+    "upper-limb": {
+     "kind": "specialty",
+     "department": "neurology",
+     "condition": "gbs"
+    },
+    "lower-limb": {
+     "kind": "specialty",
+     "department": "neurology",
+     "condition": "gbs"
+    },
+    "face": {
+     "kind": "specialty",
+     "department": "neurology",
+     "condition": "stroke-deficit"
+    }
+   }
+  },
+  "cardiology": {
+   "home": "chest",
+   "twins": {
+    "chest": {
+     "kind": "heart",
+     "mode": "auto"
+    },
+    "upper-limb": {
+     "kind": "specialty",
+     "department": "cardiology",
+     "condition": "lad-stenosis"
+    }
+   }
+  },
+  "cardiac-surgery": {
+   "home": "chest",
+   "twins": {
+    "chest": {
+     "kind": "heart",
+     "mode": "auto"
+    },
+    "lower-limb": {
+     "kind": "specialty",
+     "department": "cardiac-surgery",
+     "condition": "lad-stenosis"
+    }
+   }
+  },
+  "vascular-surgery": {
+   "home": "abdomen-lower",
+   "twins": {
+    "abdomen-lower": {
+     "kind": "specialty",
+     "department": "vascular-surgery",
+     "condition": "aaa"
+    },
+    "abdomen-upper": {
+     "kind": "specialty",
+     "department": "vascular-surgery",
+     "condition": "aaa"
+    },
+    "neck": {
+     "kind": "specialty",
+     "department": "vascular-surgery",
+     "condition": "carotid"
+    },
+    "lower-limb": {
+     "kind": "specialty",
+     "department": "vascular-surgery",
+     "condition": "pad"
+    }
+   }
+  },
+  "thoracic-surgery": {
+   "home": "chest",
+   "twins": {
+    "chest": {
+     "kind": "specialty",
+     "department": "thoracic-surgery",
+     "condition": "lung-ca"
+    }
+   }
+  },
+  "orthopedics": {
+   "home": "lower-limb",
+   "twins": {
+    "lower-limb": {
+     "kind": "specialty",
+     "department": "orthopedics",
+     "condition": "femoral-neck"
+    },
+    "upper-limb": {
+     "kind": "specialty",
+     "department": "orthopedics",
+     "condition": "distal-radius"
+    },
+    "pelvis": {
+     "kind": "specialty",
+     "department": "orthopedics",
+     "condition": "femoral-neck"
+    }
+   }
+  },
+  "joint-reconstruction": {
+   "home": "lower-limb",
+   "twins": {
+    "lower-limb": {
+     "kind": "specialty",
+     "department": "joint-reconstruction",
+     "condition": "knee-oa"
+    },
+    "pelvis": {
+     "kind": "specialty",
+     "department": "joint-reconstruction",
+     "condition": "hip-oa"
+    },
+    "upper-limb": {
+     "kind": "specialty",
+     "department": "joint-reconstruction",
+     "condition": "cuff-tear"
+    }
+   }
+  },
+  "spine": {
+   "home": "spine",
+   "twins": {
+    "spine": {
+     "kind": "specialty",
+     "department": "spine",
+     "condition": "lumbar-hnp"
+    },
+    "neck": {
+     "kind": "specialty",
+     "department": "spine",
+     "condition": "cervical-myelopathy"
+    }
+   }
+  },
+  "general-surgery": {
+   "home": "abdomen-upper",
+   "twins": {
+    "abdomen-upper": {
+     "kind": "specialty",
+     "department": "general-surgery",
+     "condition": "cholecystitis"
+    },
+    "abdomen-lower": {
+     "kind": "specialty",
+     "department": "general-surgery",
+     "condition": "appendicitis"
+    },
+    "breast": {
+     "kind": "specialty",
+     "department": "general-surgery",
+     "condition": "breast-ca"
+    },
+    "chest": {
+     "kind": "specialty",
+     "department": "general-surgery",
+     "condition": "pneumoperitoneum"
+    },
+    "pelvis": {
+     "kind": "specialty",
+     "department": "general-surgery",
+     "condition": "colon-ca"
+    }
+   }
+  },
+  "urology": {
+   "home": "pelvis",
+   "twins": {
+    "pelvis": {
+     "kind": "specialty",
+     "department": "urology",
+     "condition": "bph"
+    },
+    "abdomen-upper": {
+     "kind": "specialty",
+     "department": "urology",
+     "condition": "hydronephrosis"
+    },
+    "abdomen-lower": {
+     "kind": "specialty",
+     "department": "urology",
+     "condition": "ureteric-stone"
+    },
+    "spine": {
+     "kind": "specialty",
+     "department": "urology",
+     "condition": "hydronephrosis"
+    }
+   }
+  },
+  "ent": {
+   "home": "neck",
+   "twins": {
+    "neck": {
+     "kind": "specialty",
+     "department": "ent",
+     "condition": "neck-abscess"
+    },
+    "face": {
+     "kind": "specialty",
+     "department": "ent",
+     "condition": "sinusitis"
+    },
+    "mouth": {
+     "kind": "specialty",
+     "department": "ent",
+     "condition": "cord-lesion"
+    },
+    "head": {
+     "kind": "specialty",
+     "department": "ent",
+     "condition": "cholesteatoma"
+    }
+   }
+  },
+  "ophthalmology": {
+   "home": "face",
+   "twins": {
+    "face": {
+     "kind": "specialty",
+     "department": "ophthalmology",
+     "condition": "dr"
+    },
+    "head": {
+     "kind": "specialty",
+     "department": "ophthalmology",
+     "condition": "chiasm"
+    }
+   }
+  },
+  "plastic-surgery": {
+   "home": "skin",
+   "twins": {
+    "skin": {
+     "kind": "specialty",
+     "department": "plastic-surgery",
+     "condition": "burn"
+    },
+    "upper-limb": {
+     "kind": "specialty",
+     "department": "plastic-surgery",
+     "condition": "tendon"
+    },
+    "face": {
+     "kind": "specialty",
+     "department": "plastic-surgery",
+     "condition": "orbital-floor"
+    },
+    "breast": {
+     "kind": "specialty",
+     "department": "plastic-surgery",
+     "condition": "flap"
+    },
+    "chest": {
+     "kind": "specialty",
+     "department": "plastic-surgery",
+     "condition": "flap"
+    },
+    "spine": {
+     "kind": "specialty",
+     "department": "plastic-surgery",
+     "condition": "pressure-injury"
+    },
+    "lower-limb": {
+     "kind": "specialty",
+     "department": "plastic-surgery",
+     "condition": "pressure-injury"
+    }
+   }
+  },
+  "obstetrics": {
+   "home": "abdomen-lower",
+   "twins": {
+    "abdomen-lower": {
+     "kind": "specialty",
+     "department": "obstetrics",
+     "condition": "fgr"
+    },
+    "pelvis": {
+     "kind": "specialty",
+     "department": "obstetrics",
+     "condition": "labour"
+    },
+    "abdomen-upper": {
+     "kind": "specialty",
+     "department": "obstetrics",
+     "condition": "breech"
+    }
+   }
+  },
+  "gynecology": {
+   "home": "pelvis",
+   "twins": {
+    "pelvis": {
+     "kind": "specialty",
+     "department": "gynecology",
+     "condition": "fibroid"
+    },
+    "abdomen-lower": {
+     "kind": "specialty",
+     "department": "gynecology",
+     "condition": "ovarian-cyst"
+    }
+   }
+  },
+  "pediatric-surgery": {
+   "home": "abdomen-upper",
+   "twins": {
+    "abdomen-upper": {
+     "kind": "specialty",
+     "department": "pediatric-surgery",
+     "condition": "pyloric-stenosis"
+    },
+    "abdomen-lower": {
+     "kind": "specialty",
+     "department": "pediatric-surgery",
+     "condition": "intussusception"
+    },
+    "chest": {
+     "kind": "specialty",
+     "department": "pediatric-surgery",
+     "condition": "cdh"
+    },
+    "neck": {
+     "kind": "specialty",
+     "department": "pediatric-surgery",
+     "condition": "oa-tof"
+    }
+   }
+  },
+  "anesthesiology": {
+   "home": "mouth",
+   "twins": {
+    "mouth": {
+     "kind": "specialty",
+     "department": "anesthesiology",
+     "condition": "airway"
+    },
+    "neck": {
+     "kind": "specialty",
+     "department": "anesthesiology",
+     "condition": "airway"
+    },
+    "chest": {
+     "kind": "specialty",
+     "department": "anesthesiology",
+     "condition": "capnography"
+    },
+    "upper-limb": {
+     "kind": "specialty",
+     "department": "anesthesiology",
+     "condition": "nmb"
+    },
+    "spine": {
+     "kind": "specialty",
+     "department": "anesthesiology",
+     "condition": "last"
+    }
+   }
+  },
+  "pain-medicine": {
+   "home": "spine",
+   "twins": {
+    "spine": {
+     "kind": "specialty",
+     "department": "pain-medicine",
+     "condition": "epidural-injection"
+    },
+    "lower-limb": {
+     "kind": "specialty",
+     "department": "pain-medicine",
+     "condition": "radiculopathy"
+    }
+   }
+  },
+  "dentistry": {
+   "home": "mouth",
+   "twins": {
+    "mouth": {
+     "kind": "specialty",
+     "department": "dentistry",
+     "condition": "third-molar"
+    },
+    "face": {
+     "kind": "specialty",
+     "department": "dentistry",
+     "condition": "mandible-fracture"
+    }
+   }
+  },
+  "emergency": {
+   "home": "chest",
+   "twins": {
+    "chest": {
+     "kind": "specialty",
+     "department": "emergency",
+     "condition": "pneumothorax"
+    },
+    "abdomen-upper": {
+     "kind": "specialty",
+     "department": "emergency",
+     "condition": "haemoperitoneum"
+    },
+    "abdomen-lower": {
+     "kind": "specialty",
+     "department": "emergency",
+     "condition": "haemoperitoneum"
+    },
+    "head": {
+     "kind": "brain",
+     "condition": "auto"
+    }
+   }
+  },
+  "critical-care": {
+   "home": "chest",
+   "twins": {
+    "chest": {
+     "kind": "specialty",
+     "department": "critical-care",
+     "condition": "ards-plateau"
+    },
+    "head": {
+     "kind": "specialty",
+     "department": "critical-care",
+     "condition": "raised-icp"
+    },
+    "upper-limb": {
+     "kind": "specialty",
+     "department": "critical-care",
+     "condition": "arterial-line"
+    }
+   }
+  },
+  "gastroenterology": {
+   "home": "abdomen-upper",
+   "twins": {
+    "abdomen-upper": {
+     "kind": "specialty",
+     "department": "general-surgery",
+     "condition": "cholecystitis"
+    },
+    "abdomen-lower": {
+     "kind": "specialty",
+     "department": "general-surgery",
+     "condition": "colon-ca"
+    }
+   },
+   "images": {
+    "abdomen-upper": [
+     "gastric-ulcer"
+    ]
+   }
+  },
+  "pulmonology": {
+   "home": "chest",
+   "twins": {
+    "chest": {
+     "kind": "specialty",
+     "department": "pulmonology",
+     "condition": "pneumonia"
+    },
+    "neck": {
+     "kind": "specialty",
+     "department": "pulmonology",
+     "condition": "upper-airway"
+    },
+    "mouth": {
+     "kind": "specialty",
+     "department": "pulmonology",
+     "condition": "osa"
+    }
+   }
+  },
+  "nephrology": {
+   "home": "abdomen-upper",
+   "twins": {
+    "abdomen-upper": {
+     "kind": "specialty",
+     "department": "nephrology",
+     "condition": "hydronephrosis"
+    },
+    "upper-limb": {
+     "kind": "specialty",
+     "department": "nephrology",
+     "condition": "hd-circuit"
+    },
+    "pelvis": {
+     "kind": "specialty",
+     "department": "nephrology",
+     "condition": "hydronephrosis"
+    }
+   },
+   "images": {
+    "abdomen-upper": [
+     "hydronephrosis",
+     "mouse-kidney"
+    ]
+   }
+  },
+  "endocrinology": {
+   "home": "neck",
+   "twins": {
+    "neck": {
+     "kind": "specialty",
+     "department": "endocrinology",
+     "condition": "thyroid-nodule"
+    },
+    "head": {
+     "kind": "specialty",
+     "department": "endocrinology",
+     "condition": "pituitary-adenoma"
+    },
+    "abdomen-upper": {
+     "kind": "specialty",
+     "department": "endocrinology",
+     "condition": "adrenal-incidentaloma"
+    },
+    "spine": {
+     "kind": "specialty",
+     "department": "endocrinology",
+     "condition": "osteoporosis"
+    },
+    "face": {
+     "kind": "specialty",
+     "department": "ophthalmology",
+     "condition": "dr"
+    }
+   }
+  },
+  "rheumatology": {
+   "home": "upper-limb",
+   "twins": {
+    "upper-limb": {
+     "kind": "specialty",
+     "department": "joint-reconstruction",
+     "condition": "cuff-tear"
+    },
+    "lower-limb": {
+     "kind": "specialty",
+     "department": "joint-reconstruction",
+     "condition": "knee-oa"
+    },
+    "skin": {
+     "kind": "specialty",
+     "department": "dermatology",
+     "condition": "psoriasis"
+    },
+    "spine": {
+     "kind": "specialty",
+     "department": "spine",
+     "condition": "lumbar-stenosis"
+    }
+   },
+   "images": {
+    "upper-limb": [
+     "rheumatoid-wrist"
+    ]
+   }
+  },
+  "hematology": {
+   "home": "upper-limb",
+   "twins": {
+    "upper-limb": {
+     "kind": "specialty",
+     "department": "pathology-lab",
+     "condition": "auto"
+    },
+    "pelvis": {
+     "kind": "specialty",
+     "department": "pathology-lab",
+     "condition": "acute-leukaemia"
+    },
+    "spine": {
+     "kind": "specialty",
+     "department": "pathology-lab",
+     "condition": "acute-leukaemia"
+    }
+   },
+   "images": {
+    "upper-limb": [
+     "v38-sickle",
+     "v38-iron",
+     "v38-cll",
+     "v38-aml",
+     "v38-malaria"
+    ]
+   }
+  },
+  "oncology": {
+   "home": "chest",
+   "twins": {
+    "chest": {
+     "kind": "specialty",
+     "department": "thoracic-surgery",
+     "condition": "lung-ca"
+    },
+    "breast": {
+     "kind": "specialty",
+     "department": "general-surgery",
+     "condition": "breast-ca"
+    },
+    "abdomen-lower": {
+     "kind": "specialty",
+     "department": "general-surgery",
+     "condition": "colon-ca"
+    },
+    "pelvis": {
+     "kind": "specialty",
+     "department": "urology",
+     "condition": "prostate-ca"
+    },
+    "head": {
+     "kind": "brain",
+     "condition": "glioma"
+    },
+    "neck": {
+     "kind": "specialty",
+     "department": "ent",
+     "condition": "laryngeal-ca"
+    },
+    "skin": {
+     "kind": "specialty",
+     "department": "dermatology",
+     "condition": "melanoma"
+    }
+   },
+   "images": {
+    "chest": [
+     "v38-lung",
+     "v38-pet"
+    ]
+   }
+  },
+  "radiation-oncology": {
+   "home": "chest",
+   "twins": {
+    "chest": {
+     "kind": "specialty",
+     "department": "thoracic-surgery",
+     "condition": "lung-ca"
+    },
+    "breast": {
+     "kind": "specialty",
+     "department": "general-surgery",
+     "condition": "breast-ca"
+    },
+    "pelvis": {
+     "kind": "specialty",
+     "department": "urology",
+     "condition": "prostate-ca"
+    },
+    "head": {
+     "kind": "brain",
+     "condition": "glioma"
+    },
+    "neck": {
+     "kind": "specialty",
+     "department": "ent",
+     "condition": "laryngeal-ca"
+    }
+   },
+   "images": {
+    "chest": [
+     "v38-lung",
+     "v38-pet"
+    ]
+   }
+  },
+  "infectious-disease": {
+   "home": "chest",
+   "twins": {
+    "chest": {
+     "kind": "specialty",
+     "department": "infectious-disease",
+     "condition": "tb"
+    },
+    "upper-limb": {
+     "kind": "specialty",
+     "department": "infectious-disease",
+     "condition": "malaria"
+    },
+    "skin": {
+     "kind": "specialty",
+     "department": "infectious-disease",
+     "condition": "mrsa-bacteraemia"
+    },
+    "pelvis": {
+     "kind": "specialty",
+     "department": "infectious-disease",
+     "condition": "esbl-sepsis"
+    }
+   },
+   "images": {
+    "chest": [
+     "v38-tb",
+     "pneumonia"
+    ]
+   }
+  },
+  "dermatology": {
+   "home": "skin",
+   "twins": {
+    "skin": {
+     "kind": "specialty",
+     "department": "dermatology",
+     "condition": "melanoma"
+    },
+    "face": {
+     "kind": "specialty",
+     "department": "dermatology",
+     "condition": "bcc"
+    },
+    "upper-limb": {
+     "kind": "specialty",
+     "department": "dermatology",
+     "condition": "atopic-dermatitis"
+    },
+    "lower-limb": {
+     "kind": "specialty",
+     "department": "dermatology",
+     "condition": "psoriasis"
+    }
+   }
+  },
+  "psychiatry": {
+   "home": "head",
+   "twins": {
+    "head": {
+     "kind": "brain",
+     "condition": "auto"
+    }
+   },
+   "images": {
+    "head": [
+     "v38-stroke"
+    ]
+   }
+  },
+  "pediatrics": {
+   "home": "abdomen-lower",
+   "twins": {
+    "abdomen-lower": {
+     "kind": "specialty",
+     "department": "pediatric-surgery",
+     "condition": "intussusception"
+    },
+    "chest": {
+     "kind": "specialty",
+     "department": "pulmonology",
+     "condition": "pneumonia"
+    },
+    "skin": {
+     "kind": "specialty",
+     "department": "dermatology",
+     "condition": "atopic-dermatitis"
+    },
+    "upper-limb": {
+     "kind": "specialty",
+     "department": "pathology-lab",
+     "condition": "sickle"
+    }
+   },
+   "images": {
+    "abdomen-lower": [
+     "v38-appendix"
+    ],
+    "skin": [
+     "v38-eczema"
+    ]
+   }
+  },
+  "rehabilitation": {
+   "home": "lower-limb",
+   "twins": {
+    "lower-limb": {
+     "kind": "specialty",
+     "department": "orthopedics",
+     "condition": "bone-healing"
+    },
+    "head": {
+     "kind": "brain",
+     "condition": "stroke-mca"
+    },
+    "spine": {
+     "kind": "specialty",
+     "department": "spine",
+     "condition": "lumbar-stenosis"
+    },
+    "upper-limb": {
+     "kind": "specialty",
+     "department": "neurology",
+     "condition": "stroke-deficit"
+    }
+   }
+  },
+  "geriatrics-family": {
+   "home": "lower-limb",
+   "twins": {
+    "lower-limb": {
+     "kind": "specialty",
+     "department": "orthopedics",
+     "condition": "femoral-neck"
+    },
+    "head": {
+     "kind": "brain",
+     "condition": "alzheimer"
+    },
+    "face": {
+     "kind": "specialty",
+     "department": "ophthalmology",
+     "condition": "cataract"
+    },
+    "spine": {
+     "kind": "specialty",
+     "department": "endocrinology",
+     "condition": "osteoporosis"
+    }
+   }
+  },
+  "radiology": {
+   "home": "chest",
+   "twins": {
+    "head": {
+     "kind": "specialty",
+     "department": "radiology",
+     "condition": "acute-stroke"
+    },
+    "chest": {
+     "kind": "specialty",
+     "department": "radiology",
+     "condition": "pe"
+    },
+    "abdomen-upper": {
+     "kind": "specialty",
+     "department": "radiology",
+     "condition": "active-bleed"
+    },
+    "abdomen-lower": {
+     "kind": "specialty",
+     "department": "radiology",
+     "condition": "active-bleed"
+    }
+   }
+  },
+  "pathology-lab": {
+   "home": "abdomen-lower",
+   "twins": {
+    "abdomen-lower": {
+     "kind": "specialty",
+     "department": "pathology-lab",
+     "condition": "colon-adenoma"
+    },
+    "upper-limb": {
+     "kind": "specialty",
+     "department": "pathology-lab",
+     "condition": "iron-deficiency"
+    },
+    "chest": {
+     "kind": "specialty",
+     "department": "pathology-lab",
+     "condition": "troponin"
+    },
+    "pelvis": {
+     "kind": "specialty",
+     "department": "pathology-lab",
+     "condition": "urine-sediment"
+    },
+    "skin": {
+     "kind": "specialty",
+     "department": "pathology-lab",
+     "condition": "gram-stain"
+    }
+   }
+  },
+  "nursing": {
+   "home": "upper-limb",
+   "twins": {
+    "upper-limb": {
+     "kind": "specialty",
+     "department": "critical-care",
+     "condition": "arterial-line"
+    },
+    "spine": {
+     "kind": "specialty",
+     "department": "plastic-surgery",
+     "condition": "pressure-injury"
+    },
+    "skin": {
+     "kind": "specialty",
+     "department": "plastic-surgery",
+     "condition": "pressure-injury"
+    },
+    "chest": {
+     "kind": "heart",
+     "mode": "auto"
+    }
+   }
+  },
+  "pharmacology": {
+   "home": "upper-limb",
+   "twins": {
+    "upper-limb": {
+     "kind": "specialty",
+     "department": "infectious-disease",
+     "condition": "mrsa-bacteraemia"
+    },
+    "skin": {
+     "kind": "specialty",
+     "department": "infectious-disease",
+     "condition": "mrsa-bacteraemia"
+    }
+   },
+   "images": {
+    "skin": [
+     "v38-staph",
+     "v38-tinea"
+    ]
+   }
+  },
+  "public-health": {
+   "home": "chest",
+   "twins": {
+    "chest": {
+     "kind": "specialty",
+     "department": "infectious-disease",
+     "condition": "tb"
+    },
+    "upper-limb": {
+     "kind": "specialty",
+     "department": "infectious-disease",
+     "condition": "malaria"
+    }
+   },
+   "images": {
+    "chest": [
+     "v38-tb"
+    ]
+   }
+  },
+  "medical-genetics": {
+   "home": "upper-limb",
+   "twins": {
+    "upper-limb": {
+     "kind": "specialty",
+     "department": "pathology-lab",
+     "condition": "sickle"
+    },
+    "skin": {
+     "kind": "specialty",
+     "department": "pathology-lab",
+     "condition": "sickle"
+    }
+   },
+   "images": {
+    "upper-limb": [
+     "v38-sickle"
+    ],
+    "skin": [
+     "human-mitosis"
+    ]
+   }
+  },
+  "foundations": {
+   "home": "chest",
+   "twins": {
+    "chest": {
+     "kind": "heart",
+     "mode": "auto"
+    },
+    "upper-limb": {
+     "kind": "specialty",
+     "department": "pathology-lab",
+     "condition": "sickle"
+    },
+    "skin": {
+     "kind": "specialty",
+     "department": "pathology-lab",
+     "condition": "gram-stain"
+    }
+   },
+   "images": {
+    "chest": [
+     "v38-cardio"
+    ]
+   }
+  }
+ }
+}

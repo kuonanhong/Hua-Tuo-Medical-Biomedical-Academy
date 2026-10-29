@@ -45,3 +45,10 @@
 .wb-stage-navigation>p{overflow-wrap:anywhere;line-height:1.55}
 @media(max-width:600px){.wb-stage-navigation .wb-progress li{flex-basis:52px}.wb-stage-navigation>label{font-size:.82rem}}
 @media(prefers-reduced-motion:reduce){.wb-stage-navigation .wb-progress{scroll-behavior:auto}}
+/* v3.9 — precision operative field mounted in place of the workspace; the D-pads below drive its instruments. */
+.wb-main.wb-field-open>.wb-board{display:none}
+.wb-field{min-width:0;margin:0 0 4px}
+.wb-main.wb-field-open .wb-controls{margin-top:0;border-top:1px solid var(--line,#ccd8ce);border-radius:14px;box-shadow:0 0 0 2px #2a74d455 inset}
+.wb-main.wb-field-open .wb-hand:first-child legend button{color:#1f5fb8}.wb-main.wb-field-open .wb-hand:last-child legend button{color:#a85e0c}
+.wb-actionbar .wb-field-btn{font-weight:700}
+:root[data-theme="dark"] .wb-main.wb-field-open .wb-hand:first-child legend button{color:#8fc0ff}:root[data-theme="dark"] .wb-main.wb-field-open .wb-hand:last-child legend button{color:#ffc27a}

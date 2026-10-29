@@ -80,7 +80,7 @@
       });
     },
     prefetch: function () {
-      var order = ['data/catalog.js', 'voice.js', 'tutor.js', 'xp.js', 'workbench.js', 'theatre.js', 'theatre3d.js', 'learning-media.js', 'procedures.js', 'course-player.js', 'intern-tcm.js', 'intern-western.js', 'tcm-library.js', 'tcm-library-v2.js', 'content-hub.js', 'acu-atlas.js', 'pharmacy-lab.js', 'twins.js', 'nobel-explorer.js'];
+      var order = ['data/catalog.js', 'voice.js', 'tutor.js', 'xp.js', 'workbench.js', 'surgical-field.js', 'theatre.js', 'theatre3d.js', 'table-imaging.js', 'learning-media.js', 'procedures.js', 'course-player.js', 'intern-tcm.js', 'intern-western.js', 'tcm-library.js', 'tcm-library-v2.js', 'content-hub.js', 'acu-atlas.js', 'pharmacy-lab.js', 'twins.js', 'nobel-explorer.js'];
       var i = 0;
       function next() {
         if (i >= order.length) return;
@@ -105,7 +105,7 @@
       window.HT.fileMode = isFile;
       window.HT.bootStartedAt = start;
       // Shell only: ~160 KB raw instead of the former 2.6 MB synchronous chain.
-      return series(['i18n.js', 'icons.js', 'personalization.js', 'locale.js', 'account.js', 'membership.js', 'safe-links.js', 'data/departments.js', 'data/home-summary.js', 'app.js']);
+      return series(['i18n.js', 'icons.js', function () { return load('assets/dept-icons/index.js').catch(function () { /* icons fall back to glyphs */ }); }, 'personalization.js', 'locale.js', 'account.js', 'membership.js', 'safe-links.js', 'data/departments.js', 'data/home-summary.js', 'app.js']);
     }).catch(function (error) {
       var main = document.getElementById('main');
       if (!main) return;

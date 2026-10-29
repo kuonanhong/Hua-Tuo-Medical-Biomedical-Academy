@@ -65,7 +65,7 @@
     el.setAttribute('aria-label',tr('languageCoverage'));
     el.innerHTML='';
     const text=document.createElement('p');
-    text.textContent=(window.HT.i18n.names[lang]||lang)+' · '+c.translated+'/'+c.total+' interface labels. '+tr('courseOriginals')+'. '+tr(c.mode==='machine-translation'?'machineTranslationNotice':'sourceFallbackNotice');
+    text.textContent=(window.HT.i18n.names[lang]||lang)+' · '+tr('languageCoverage')+' '+c.translated+'/'+c.total+'. '+tr('courseOriginals')+'. '+tr(c.mode==='machine-translation'?'machineTranslationNotice':'sourceFallbackNotice');
     el.appendChild(text);
     // Simplified Chinese has a translated interface, but course sources remain Traditional Chinese.
     if(core(lang))return;
