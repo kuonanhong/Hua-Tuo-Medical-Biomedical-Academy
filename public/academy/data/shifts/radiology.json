@@ -1,0 +1,293 @@
+{
+  "format": "huatuo-shift-v1",
+  "department": "radiology",
+  "title": {"zh": "影像醫學科值班日", "en": "A shift in radiology"},
+  "tagline": {"zh": "判讀室的黑暗、CT 的一通電話、磁場區的髮夾", "en": "The dark of the reading room, a call from CT, a hairpin at the magnet door"},
+  "room": "reading",
+  "minutes": 25,
+  "roles": [
+    {"id": "resident", "zh": "放射科住院醫師", "en": "Radiology resident",
+     "desc": {"zh": "跟著羅主治判讀、量病灶、做床邊超音波、打危急發現的電話。", "en": "Read with Dr Lo, measure lesions, scan at the bedside and make the critical-finding call."}},
+    {"id": "radiographer", "zh": "放射師", "en": "Radiographer",
+     "desc": {"zh": "擺位、掃描、MRI 安全篩檢與急救車的位置都在你手上。磁場區是你守的。", "en": "Positioning, scanning, MRI safety screening and knowing where the crash cart is are yours. You guard the magnet zone."}}
+  ],
+  "cast": {
+    "attending": {"name": {"zh": "羅主治", "en": "Dr Lo"}, "role": {"zh": "放射科主治醫師（師傅）", "en": "Radiologist (mentor)"}, "tag": "ATT", "color": "#81296d", "body": "mentor",
+                  "about": {"zh": "在黑暗裡用三台螢幕看世界。保溫瓶永遠是空的，但他堅持帶著。", "en": "Sees the world through three monitors in the dark. His thermos is always empty, but he insists on bringing it."}},
+    "ct-nurse": {"name": {"zh": "潘護理師", "en": "Nurse Pan"}, "role": {"zh": "影像科護理師", "en": "Imaging nurse"}, "tag": "RN", "color": "#3b8f6a", "body": "nurse",
+                 "about": {"zh": "管顯影劑、靜脈留置針和急救車。她說：打之前先知道車在哪。", "en": "Runs the contrast, the cannulas and the crash cart. Her rule: know where the cart is before you inject."}},
+    "jiang": {"name": {"zh": "江先生", "en": "Mr Jiang"}, "role": {"zh": "顯影 CT，單上寫「顯影劑過敏」", "en": "Contrast CT; the form says “contrast allergy”"}, "tag": "CT", "color": "#c2703a", "body": "patient",
+              "about": {"zh": "虛構教學個案。退休老師，隨身一本寫滿問題的筆記本。", "en": "Fictional teaching case. A retired teacher with a notebook full of questions."}},
+    "amei": {"name": {"zh": "阿梅姨", "en": "Auntie Mei"}, "role": {"zh": "MRI，體內有不明型號植入物", "en": "MRI, implant of unknown model"}, "tag": "MRI", "color": "#b5651d", "body": "patient",
+             "about": {"zh": "虛構教學個案。緊張就唱歌。頭上有一支媽媽留下的髮夾。", "en": "Fictional teaching case. Sings when nervous. Wears a hairpin her mother left her."}},
+    "porter": {"name": {"zh": "阿忠", "en": "Zhong"}, "role": {"zh": "傳送員", "en": "Porter"}, "tag": "PT", "color": "#6b7f3a", "body": "porter",
+               "about": {"zh": "推床推了二十年，知道每一台咖啡機在哪裡。", "en": "Twenty years of pushing trolleys. Knows where every coffee machine in the hospital is."}},
+    "er-doc": {"name": {"zh": "急診醫師", "en": "ER doctor"}, "role": {"zh": "急診住院醫師（電話）", "en": "ER resident (by phone)"}, "tag": "ER", "color": "#c0392b", "phoneOnly": true,
+               "about": {"zh": "電話開頭永遠是「我要一個 CT」。後來學會先說問題。", "en": "Every call starts with “I need a CT”. By evening he has learned to start with the question."}},
+    "ward-doc": {"name": {"zh": "病房住院醫師", "en": "Ward resident"}, "role": {"zh": "內科住院醫師（電話）", "en": "Medical resident (by phone)"}, "tag": "WD", "color": "#3f6fa8", "phoneOnly": true,
+                 "about": {"zh": "接危急發現電話的人。他會複誦。", "en": "The one who takes the critical-finding call. He reads back."}}
+  },
+  "places": {
+    "pacs": {"name": {"zh": "PACS 判讀工作站", "en": "PACS reading station"}, "hot": "workstation"},
+    "lightbox": {"name": {"zh": "看片燈", "en": "Lightbox"}, "hot": "lightbox"},
+    "ct-console": {"name": {"zh": "CT 控制台", "en": "CT console"}, "hot": "imaging"},
+    "mri-door": {"name": {"zh": "磁場區門口", "en": "Magnet zone door"}, "hot": "door"},
+    "bed": {"name": {"zh": "檢查床", "en": "Scanner couch"}, "hot": "bed"},
+    "desk": {"name": {"zh": "櫃台電話", "en": "Front desk phone"}, "hot": "desk"}
+  },
+  "glossary": [
+    {"term": {"zh": "PACS", "en": "PACS"}, "plain": {"zh": "醫院的影像儲存與傳輸系統，所有片子都在裡面，可以和舊片並排比較。", "en": "The hospital's picture archiving system; every image lives there and can be compared side by side with old ones."}},
+    {"term": {"zh": "投照方式", "en": "projection"}, "plain": {"zh": "X 光從哪個方向穿過身體：站著後前位或躺著前後位，心臟看起來的大小會不同。", "en": "Which way the X-ray beam passes through the body: standing back-to-front or lying front-to-back changes how big the heart looks."}},
+    {"term": {"zh": "吸氣不足", "en": "poor inspiration"}, "plain": {"zh": "拍胸片時沒有吸飽氣，肺看起來比較白、心臟比較大，容易被誤認為病變。", "en": "Not breathing in fully for a chest film makes the lungs look whiter and the heart larger, mimicking disease."}},
+    {"term": {"zh": "顯影劑", "en": "contrast medium"}, "plain": {"zh": "注射進血管讓血管和器官在影像上變亮的藥劑；少數人會過敏。", "en": "A liquid injected into a vein that brightens vessels and organs on the scan; a few people react to it."}},
+    {"term": {"zh": "蕁麻疹", "en": "urticaria"}, "plain": {"zh": "皮膚突然冒出會癢的紅疹塊，是過敏反應的常見早期表現。", "en": "Itchy raised red weals that appear suddenly; a common early sign of an allergic reaction."}},
+    {"term": {"zh": "血氧", "en": "oxygen saturation"}, "plain": {"zh": "夾在手指上的感測器讀出血液帶氧的比例；往下掉就是呼吸或循環出了問題。", "en": "The finger-clip reading of how much oxygen the blood carries; a fall means breathing or circulation is in trouble."}},
+    {"term": {"zh": "超音波", "en": "ultrasound"}, "plain": {"zh": "用聲波看體內，沒有輻射，可以推到床邊做。", "en": "Imaging with sound waves, no radiation, and the machine can be wheeled to the bedside."}},
+    {"term": {"zh": "長軸", "en": "long axis"}, "plain": {"zh": "病灶最長的那一條線；短軸與它垂直。追蹤要用同一個切面量。", "en": "The longest line across a lesion; the short axis is perpendicular to it. Follow-up measurements use the same slice."}},
+    {"term": {"zh": "磁場區", "en": "magnet zone"}, "plain": {"zh": "MRI 磁鐵周圍的管制區，任何鐵磁性物品都會被吸飛，進門前要篩檢。", "en": "The controlled area around the MRI magnet; anything ferromagnetic becomes a projectile, so everyone is screened at the door."}},
+    {"term": {"zh": "植入物", "en": "implant"}, "plain": {"zh": "放在體內的金屬或裝置，如骨釘、心臟節律器；做 MRI 前要有文件證明安全。", "en": "A metal or electronic device inside the body, such as bone screws or a pacemaker; MRI needs documents proving it is safe."}},
+    {"term": {"zh": "危急發現", "en": "critical finding"}, "plain": {"zh": "影像上看到可能立刻危及生命的東西，放射科醫師必須直接打電話告知臨床醫師。", "en": "Something on the images that may be immediately life-threatening; the radiologist must telephone the clinician directly."}},
+    {"term": {"zh": "複誦", "en": "read-back"}, "plain": {"zh": "接電話的人把病人、檢查與發現重複一遍，確認聽對了。", "en": "The person taking the call repeats the patient, the study and the finding to confirm it was heard correctly."}},
+    {"term": {"zh": "骨窗", "en": "bone window"}, "plain": {"zh": "CT 的一種顯示設定，讓骨頭的細節清楚，用來找骨折。", "en": "A CT display setting that brings out bone detail, used to find fractures."}},
+    {"term": {"zh": "中線偏移", "en": "midline shift"}, "plain": {"zh": "腦部 CT 上左右中線被推歪，代表一側有東西在壓迫。", "en": "On a head CT, the midline pushed to one side, meaning something is pressing from the other."}}
+  ],
+  "codex": [
+    {"id": "pacs-ws", "kind": "equipment", "name": {"zh": "PACS 判讀工作站", "en": "PACS reading station"}, "text": {"zh": "三台螢幕、一支口述麥克風。先核對姓名、日期、左右，再開始看。", "en": "Three monitors and a dictation mic. Check name, date and side before you look at anything else."}, "hot": "workstation"},
+    {"id": "ct-console", "kind": "equipment", "name": {"zh": "CT 控制台", "en": "CT console"}, "text": {"zh": "掃描範圍、呼吸指令、顯影劑時相都在這裡設定。本站不提供參數。", "en": "Scan range, breathing commands and contrast timing are set here. No parameters are given on this site."}, "hot": "imaging"},
+    {"id": "mri-magnet", "kind": "equipment", "name": {"zh": "MRI 磁鐵", "en": "MRI magnet"}, "text": {"zh": "磁場永遠開著，即使半夜。氧氣瓶、輪椅、髮夾都飛過。", "en": "The field is always on, even at midnight. Oxygen cylinders, wheelchairs and hairpins have all flown."}, "hot": "device"},
+    {"id": "metal-detector", "kind": "equipment", "name": {"zh": "磁場區金屬探測門", "en": "Magnet zone metal detector"}, "text": {"zh": "最後一道防線，不是第一道。問卷與文件在它前面。", "en": "The last line of defence, not the first. The questionnaire and the documents come before it."}, "hot": "door"},
+    {"id": "crash-cart", "kind": "equipment", "name": {"zh": "急救車", "en": "Crash cart"}, "text": {"zh": "打顯影劑之前先知道它在哪裡。封條完整、每日檢查。", "en": "Know where it is before any contrast injection. Seal intact, checked daily."}, "hot": "crash-cart"},
+    {"id": "injector", "kind": "equipment", "name": {"zh": "顯影劑注射器", "en": "Contrast injector"}, "text": {"zh": "注射中有人在旁邊看病人，不是只看螢幕。", "en": "Someone watches the patient during injection, not just the screen."}, "hot": "drugs"},
+    {"id": "hairpin", "kind": "item", "name": {"zh": "被攔下的髮夾", "en": "The intercepted hairpin"}, "text": {"zh": "阿梅姨媽媽留下的。在磁場區門口被攔下來，檢查後完璧歸趙。", "en": "Left to Auntie Mei by her mother. Stopped at the magnet zone door and returned after the scan."}},
+    {"id": "critical-call", "kind": "concept", "name": {"zh": "危急發現通報", "en": "Critical finding call"}, "text": {"zh": "直接電話、對方複誦、記錄時間與姓名、報告註明。四步都要。", "en": "Direct call, read-back, time and names recorded, noted in the report. All four."}},
+    {"id": "zone-system", "kind": "concept", "name": {"zh": "磁場區分級", "en": "MRI zone system"}, "text": {"zh": "從候診到磁鐵室分四區，越靠近磁鐵管制越嚴；第四區只有篩檢過的人和物。", "en": "Four zones from the waiting area to the magnet room, tighter with every step; zone four admits only screened people and objects."}}
+  ],
+  "segs": [
+    {"id": "reading", "name": {"zh": "判讀室", "en": "Reading room"}, "sub": {"zh": "07:45 · PACS 工作站", "en": "07:45 · PACS station"}, "t": 465, "mood": "day",
+     "note": {"zh": "晨間判讀：先核對投照", "en": "Morning reads: check the projection first"},
+     "beats": [
+      {"id": "r1", "to": "place:pacs", "guide": {"zh": "到 PACS 工作站", "en": "Go to the PACS station"},
+       "lines": [
+        ["sys", {"zh": "判讀室很暗，三台螢幕亮著。羅主治的保溫瓶放在旁邊，空的。", "en": "The reading room is dark; three monitors glow. Dr Lo's thermos sits beside them, empty."}],
+        ["attending", {"zh": "早。昨晚的胸片，同一個人兩張，看起來不一樣。你先看哪裡？", "en": "Morning. Two chest films from last night, same patient, and they look different. Where do you look first?"}],
+        ["me", {"zh": "先看拍攝資訊：日期、身分、投照方式。", "en": "The acquisition details first: date, identity, projection."}],
+        ["attending", {"zh": "在 PACS 上做給我看。", "en": "Show me on PACS."}]
+       ],
+       "mini": {"type": "stage", "case": "radiology-v38-chest-quality", "stage": 0},
+       "post": [
+        ["attending", {"zh": "先核對，再比較。影像不會自己告訴你它是怎麼拍的。", "en": "Verify, then compare. An image never volunteers how it was taken."}]
+       ]},
+      {"id": "r2", "to": "place:lightbox", "guide": {"zh": "到看片燈比較兩張片", "en": "Compare the two films at the lightbox"},
+       "lines": [
+        ["attending", {"zh": "來，兩張並排。為什麼這張心臟看起來比較大？", "en": "Side by side. Why does the heart look bigger on this one?"}]
+       ],
+       "mini": {"type": "imaging", "region": "chest",
+                "question": {"zh": "同一個人的兩張胸片，為什麼一張的心臟看起來比較大？", "en": "Two chest films of the same person: why does the heart look bigger on one?"},
+                "answer": {"zh": "躺著的前後投照與吸氣不足都會放大心影、讓肺野變白。先看投照方式與吸氣深度，再判斷是不是真的變化。", "en": "A supine front-to-back projection and poor inspiration both magnify the heart and whiten the lungs. Check the projection and the depth of breath before calling it a real change."}},
+       "post": [
+        ["attending", {"zh": "技術差異要寫進報告的限制，不然臨床會當成惡化。", "en": "Technical differences go into the report's limitations, or the ward will read it as deterioration."}]
+       ]}
+     ]},
+    {"id": "ct", "name": {"zh": "CT 室：江先生", "en": "CT: Mr Jiang"}, "sub": {"zh": "08:30 · CT 控制台", "en": "08:30 · CT console"}, "t": 510, "mood": "day",
+     "note": {"zh": "一個過敏標籤變成一段病史", "en": "An allergy label became a history"},
+     "beats": [
+      {"id": "c1", "to": "jiang", "guide": {"zh": "去 CT 室看江先生", "en": "See Mr Jiang in CT"},
+       "lines": [
+        ["porter", {"zh": "江老師到。他的問題比我的早餐還多。", "en": "Mr Jiang, delivered. He has more questions than I have breakfast."}],
+        ["jiang", {"zh": "醫師，單上寫我對顯影劑過敏。可是我也不確定那次是什麼。", "en": "Doctor, the form says I'm allergic to contrast medium. But I'm not sure myself what happened that time."}],
+        ["ct-nurse", {"zh": "單子只寫「顯影劑過敏」，沒有時間、沒有症狀、沒有產品。", "en": "The form just says “contrast allergy”. No date, no symptoms, no product."}]
+       ],
+       "mini": {"type": "choice", "q": {"zh": "檢查單只有一個過敏標籤，你怎麼做？", "en": "The request has one allergy label and nothing else. What do you do?"},
+                "options": [
+                 {"zh": "補問反應細節與時間，交放射科醫師決定", "en": "Ask for the reaction details and timing; the radiologist decides", "ok": true, "set": {"contrast-asked": true},
+                  "why": {"zh": "標籤不是病史。反應是什麼、多嚴重、哪種產品，決定一切。", "en": "A label is not a history. What the reaction was, how severe, and which product decide everything."}},
+                 {"zh": "直接取消檢查", "en": "Cancel the scan", "ok": false, "set": {"contrast-asked": false},
+                  "why": {"zh": "臨床問題還在。取消也要有理由。", "en": "The clinical question still stands. Even cancelling needs a reason."}},
+                 {"zh": "照常打，大家都這樣寫", "en": "Inject as usual, everyone writes that", "ok": false, "set": {"contrast-asked": false},
+                  "why": {"zh": "不知道上次是什麼反應，就不能說這次安全。", "en": "Not knowing the last reaction means you cannot call this one safe."}}
+                ]},
+       "post": [
+        ["jiang", {"zh": "那次是在別家醫院做別的檢查，起了一點疹子，沒喘。", "en": "It was at another hospital, a different test. A bit of a rash, no breathing trouble."}],
+        ["attending", {"zh": "別家、別的檢查、輕度皮膚反應。依規範準備，觀察時間拉長，急救車在旁。", "en": "Different hospital, different study, mild skin reaction. Prepare per protocol, extend the observation, cart at hand."}]
+       ]},
+      {"id": "c2", "roles": ["radiographer"], "to": "place:ct-console", "guide": {"zh": "注射前確認急救車", "en": "Locate the crash cart before injecting"},
+       "lines": [
+        ["ct-nurse", {"zh": "打之前，先知道車在哪。", "en": "Before you inject, know where the cart is."}],
+        ["me", {"zh": "江老師，雙手舉過頭，等一下聽指令吸氣憋住。我先去確認一樣東西。", "en": "Mr Jiang, arms above your head; in a moment you'll hear the breath-hold command. I need to check one thing first."}]
+       ],
+       "mini": {"type": "find", "hot": "crash-cart", "q": {"zh": "找到急救車", "en": "Find the crash cart"}},
+       "post": [
+        ["ct-nurse", {"zh": "封條完整。好，可以開始。", "en": "Seal intact. Right, we can start."}]
+       ]},
+      {"id": "c3", "roles": ["resident"], "to": "place:pacs", "guide": {"zh": "量江先生的追蹤病灶", "en": "Measure Mr Jiang's follow-up lesion"},
+       "lines": [
+        ["attending", {"zh": "江先生的肝臟追蹤病灶。量長軸與垂直短軸，和上次同一個切面。", "en": "Mr Jiang's liver lesion on follow-up. Long axis and perpendicular short axis, on the same slice as last time."}]
+       ],
+       "mini": {"type": "drill", "template": "radiology", "drill": "measure"},
+       "post": [
+        ["attending", {"zh": "同一切面、同一視窗，數字才能比。", "en": "Same slice, same window, or the numbers cannot be compared."}]
+       ]}
+     ]},
+    {"id": "er-call", "name": {"zh": "急診來電", "en": "The ER calls"}, "sub": {"zh": "10:30 · 櫃台電話", "en": "10:30 · front desk phone"}, "t": 630, "mood": "day",
+     "note": {"zh": "先問問題，再選影像", "en": "Question first, then the modality"},
+     "beats": [
+      {"id": "e1", "to": "place:desk", "guide": {"zh": "到櫃台接急診電話", "en": "Take the ER call at the desk"},
+       "ring": {"title": {"zh": "急診來電", "en": "ER calling"}, "sub": {"zh": "「我要一個 CT，他痛。」", "en": "“I need a CT. He hurts.”"}, "call": true, "from": "er-doc"},
+       "lines": [
+        ["er-doc", {"zh": "喂，影像科嗎？我要排一個 CT，病人痛。", "en": "Hello, radiology? I need to book a CT, the patient's in pain."}],
+        ["me", {"zh": "哪裡痛、多久了？你希望影像回答什麼問題？", "en": "Where, and for how long? What question do you want the imaging to answer?"}],
+        ["er-doc", {"zh": "……等我一下。", "en": "…hang on."}],
+        ["attending", {"zh": "沒有問題，就沒有正確的檢查。", "en": "Without a question there is no right test."}]
+       ],
+       "mini": {"type": "stage", "case": "radiology-v38-modality-question", "stage": 0},
+       "post": [
+        ["er-doc", {"zh": "右上腹痛三天、發燒。問題是膽道有沒有阻塞。", "en": "Right upper quadrant pain for three days, fever. The question is whether the bile duct is blocked."}],
+        ["me", {"zh": "那先超音波，CT 不一定是第一步。推過來，我們一起看。", "en": "Then ultrasound first; CT is not necessarily step one. Bring him over and we'll look together."}]
+       ]},
+      {"id": "e2", "roles": ["resident"], "to": "place:bed", "guide": {"zh": "床邊超音波找肝膽", "en": "Bedside ultrasound of the liver"},
+       "lines": [
+        ["porter", {"zh": "急診的到了。順便說，三樓的咖啡機修好了。", "en": "The ER patient's here. Also, the third-floor coffee machine is fixed."}],
+        ["me", {"zh": "探頭方向標記朝頭側。先找到病灶，再說話。", "en": "Probe marker towards the head. Find the lesion first, then talk."}]
+       ],
+       "mini": {"type": "drill", "template": "radiology", "drill": "us:liver"},
+       "post": [
+        ["attending", {"zh": "找到了就描述它：位置、大小、邊緣、後方。不要先寫診斷。", "en": "Once found, describe it: site, size, margin, what lies behind. No diagnosis yet."}]
+       ]}
+     ]},
+    {"id": "mri", "name": {"zh": "MRI：阿梅姨", "en": "MRI: Auntie Mei"}, "sub": {"zh": "12:00 · 磁場區門口", "en": "12:00 · magnet zone door"}, "t": 720, "mood": "day",
+     "note": {"zh": "植入物沒有文件，就不猜", "en": "No implant documents means no guessing"},
+     "beats": [
+      {"id": "m1", "to": "amei", "guide": {"zh": "去 MRI 候診區看阿梅姨", "en": "See Auntie Mei in the MRI waiting area"},
+       "lines": [
+        ["sys", {"zh": "阿梅姨在候診區小聲唱歌。她緊張就唱。", "en": "Auntie Mei is singing softly in the waiting area. She sings when she is nervous."}],
+        ["amei", {"zh": "醫師，我身體裡有一片鐵，什麼牌子我不知道。做 MRI 會不會飛出來？", "en": "Doctor, I've got a bit of metal inside me, no idea what make. Will the MRI pull it out?"}],
+        ["me", {"zh": "阿梅姨，沒有文件以前，我們不猜。植入物要查清楚。", "en": "Auntie Mei, until we have the documents we don't guess. The implant has to be identified."}]
+       ],
+       "mini": {"type": "stage", "case": "radiology-v38-mri-implant", "stage": 0},
+       "post": [
+        ["attending", {"zh": "MRI 安全由安全團隊核實，不靠記憶，也不靠外觀。", "en": "MRI safety is verified by the safety team, not from memory or appearance."}]
+       ]},
+      {"id": "m2", "roles": ["radiographer"], "to": "place:mri-door", "guide": {"zh": "做 MRI 安全篩檢", "en": "Run the MRI safety screening"},
+       "lines": [
+        ["me", {"zh": "阿梅姨，進磁場區前我們一步一步來。", "en": "Auntie Mei, before the magnet zone we go step by step."}]
+       ],
+       "mini": {"type": "order", "q": {"zh": "MRI 安全篩檢順序", "en": "MRI safety screening sequence"},
+                "steps": [
+                 {"zh": "核對身分與檢查單", "en": "Confirm identity and the request"},
+                 {"zh": "逐項填寫安全問卷", "en": "Complete the safety questionnaire item by item"},
+                 {"zh": "移除所有金屬物品、更衣", "en": "Remove all metal objects and change"},
+                 {"zh": "植入物文件由安全團隊核實", "en": "Implant documents verified by the safety team"},
+                 {"zh": "進磁場區前再次確認", "en": "Final check before entering the magnet zone"}
+                ]},
+       "post": [
+        ["sys", {"zh": "金屬探測門響了。阿梅姨頭上的髮夾。", "en": "The metal detector sounds. Auntie Mei's hairpin."}]
+       ]},
+      {"id": "m3", "to": "amei", "guide": {"zh": "處理髮夾與密閉感", "en": "The hairpin and the claustrophobia"},
+       "lines": [
+        ["amei", {"zh": "那支髮夾是我媽留給我的！", "en": "That hairpin was my mother's!"}],
+        ["me", {"zh": "會還您，只是不能進磁場區。我幫您收好。", "en": "You'll get it back; it just cannot go into the magnet zone. I'll keep it safe."}],
+        ["amei", {"zh": "還有，那個管子很窄，我會怕。", "en": "And that tube is so narrow. I get scared."}],
+        ["me", {"zh": "耳機、鏡子、手上的呼叫球，門外有人陪。您可以唱歌。", "en": "Headphones, a mirror, a call ball in your hand, someone just outside. And you can sing."}],
+        ["sys", {"zh": "後來整個 MRI 室都聽到她唱完了兩首歌。文件也到了：植入物可以安全掃描。", "en": "Later the whole MRI suite hears her finish two songs. The documents arrive too: the implant is safe to scan."}]
+       ],
+       "item": "hairpin"}
+     ]},
+    {"id": "critical", "name": {"zh": "危急發現", "en": "Critical finding"}, "sub": {"zh": "15:00 · PACS 工作站", "en": "15:00 · PACS station"}, "t": 900, "mood": "day",
+     "note": {"zh": "危急發現：直接電話、複誦、記錄", "en": "Critical finding: direct call, read-back, record"},
+     "beats": [
+      {"id": "k1", "to": "place:pacs", "guide": {"zh": "回 PACS 看剛做完的 CT", "en": "Back to PACS for the fresh CT"},
+       "lines": [
+        ["attending", {"zh": "剛做完的胸部 CT。看這裡。", "en": "The chest CT that just finished. Look here."}],
+        ["sys", {"zh": "肺動脈裡有一個不該在那裡的充填缺損。", "en": "There is a filling defect in a pulmonary artery that should not be there."}],
+        ["attending", {"zh": "危急發現。報告可以等五分鐘，病房不能。接下來？", "en": "Critical finding. The report can wait five minutes; the ward cannot. Next?"}]
+       ],
+       "mini": {"type": "order", "q": {"zh": "危急發現通報順序", "en": "Critical finding notification sequence"},
+                "steps": [
+                 {"zh": "確認接聽者與病人身分", "en": "Confirm who is answering and the patient's identity"},
+                 {"zh": "說明檢查與關鍵發現", "en": "State the study and the key finding"},
+                 {"zh": "請對方複誦", "en": "Ask for a read-back"},
+                 {"zh": "記錄時間、對象與內容", "en": "Record the time, the person and what was said"},
+                 {"zh": "報告中註明已通知", "en": "Note the notification in the report"}
+                ]},
+       "post": [
+        ["ward-doc", {"zh": "病房，我是住院醫師。", "en": "Ward, resident speaking."}],
+        ["me", {"zh": "影像科。你的病人胸部 CT 有危急發現，肺動脈充填缺損。請複誦。", "en": "Radiology. Your patient's chest CT has a critical finding, a pulmonary artery filling defect. Please read back."}],
+        ["ward-doc", {"zh": "複誦：胸部 CT，肺動脈充填缺損，我現在去看病人。", "en": "Read-back: chest CT, pulmonary artery filling defect. I'm going to the patient now."}],
+        ["attending", {"zh": "時間、名字，寫進報告。", "en": "Time and name, into the report."}]
+       ]}
+     ]},
+    {"id": "reaction", "name": {"zh": "顯影劑反應", "en": "Contrast reaction"}, "sub": {"zh": "16:00 · CT 室", "en": "16:00 · CT room"}, "t": 960, "mood": "day",
+     "note": {"zh": "江先生的反應：人、藥、車都在", "en": "Mr Jiang reacts: people, drugs and cart ready"},
+     "beats": [
+      {"id": "x1", "to": "jiang", "guide": {"zh": "馬上到 CT 室", "en": "To the CT room, now"},
+       "ring": {"title": {"zh": "潘護理師訊息", "en": "Message from Nurse Pan"}, "sub": {"zh": "江先生打完顯影劑，臉紅、喘", "en": "Mr Jiang after contrast: flushed and short of breath"}, "call": false, "from": "ct-nurse"},
+       "lines": [
+        ["ct-nurse", {"zh": "注射後幾分鐘，臉紅、蕁麻疹，開始喘。血氧往下掉。", "en": "A few minutes after the injection: flushing, urticaria, now wheezy. Oxygen saturation is dropping."}],
+        ["jiang", {"zh": "我……喉嚨緊。", "en": "My… throat feels tight."}]
+       ],
+       "mini": {"type": "vitals", "event": "desaturation",
+                "options": [
+                 {"zh": "停注射、叫人、依醫囑給氧、急救車到旁", "en": "Stop the injection, call for help, oxygen per order, cart to the bedside", "ok": true,
+                  "why": {"zh": "中重度反應：人、氧氣、急救車同時到，主治到場依規範處置。", "en": "A moderate to severe reaction: people, oxygen and the cart arrive together; the attending treats per protocol."}},
+                 {"zh": "先掃完再處理", "en": "Finish the scan first", "ok": false,
+                  "why": {"zh": "影像可以重做，呼吸道不能等。", "en": "A scan can be repeated. An airway cannot wait."}},
+                 {"zh": "請他深呼吸，等一下看看", "en": "Ask him to breathe deeply and wait", "ok": false,
+                  "why": {"zh": "喉嚨緊加血氧下降，不是等得起的組合。", "en": "A tight throat plus falling saturation is not a combination that waits."}}
+                ]},
+       "post": [
+        ["ct-nurse", {"zh": "主治到了，依醫囑處置中。血氧回來了。", "en": "The attending's here, treating per order. Saturation is coming back."}]
+       ]},
+      {"id": "x1y", "when": {"flag": "contrast-asked", "is": true},
+       "lines": [
+        ["attending", {"zh": "你早上問過了。我們知道他上次是輕度皮膚反應，所以人、藥、車先備好，觀察時間也拉長。", "en": "You asked this morning. We knew his last reaction was mild skin, so people, drugs and cart were ready and the observation was extended."}],
+        ["jiang", {"zh": "……我的筆記本上又多一個問題。", "en": "…That's another question for my notebook."}]
+       ]},
+      {"id": "x1n", "when": {"flag": "contrast-asked", "is": false},
+       "lines": [
+        ["attending", {"zh": "沒有人知道他上次是什麼反應。今天我們是沒有地圖在開車。", "en": "Nobody knew what his last reaction was. Today we drove without a map."}],
+        ["me", {"zh": "我早上應該問清楚的。", "en": "I should have asked properly this morning."}],
+        ["attending", {"zh": "是。下次你會。", "en": "Yes. Next time you will."}]
+       ]},
+      {"id": "x2", "to": "ct-nurse", "guide": {"zh": "完成反應後的三件事", "en": "The three things after a reaction"},
+       "lines": [
+        ["attending", {"zh": "處理完還有三件事：記錄、通報、寫進過敏史，寫清楚是什麼反應、哪種顯影劑。", "en": "After treating, three more things: document, report, and write it into his allergy history with the reaction and the exact contrast medium."}],
+        ["ct-nurse", {"zh": "下次不會再只剩一個標籤了。", "en": "Next time it won't be just a label."}]
+       ],
+       "set": {"reaction-documented": true}}
+     ]},
+    {"id": "handover", "name": {"zh": "交班", "en": "Handover"}, "sub": {"zh": "17:30 · 判讀室", "en": "17:30 · reading room"}, "t": 1050, "mood": "eve",
+     "note": {"zh": "交班：未報告、已通知、觀察中", "en": "Handover: unreported, notified, under observation"},
+     "beats": [
+      {"id": "h1", "to": "attending", "guide": {"zh": "向羅主治交班", "en": "Hand over to Dr Lo"},
+       "lines": [
+        ["me", {"zh": "交班：三個未報告的檢查、一個已通知的危急發現、江先生觀察中。", "en": "Handover: three studies unreported, one critical finding notified, Mr Jiang under observation."}],
+        ["attending", {"zh": "今天四件事都不是影像本身：投照、標籤、問題、文件。", "en": "None of today's four lessons was the image itself: projection, label, question, documents."}],
+        ["attending", {"zh": "影像回答問題。沒有問題，它就只是一張照片。", "en": "Imaging answers questions. Without a question it is just a photograph."}],
+        ["sys", {"zh": "他拿起保溫瓶，搖了搖。還是空的。", "en": "He picks up the thermos and shakes it. Still empty."}],
+        ["porter", {"zh": "三樓的咖啡機修好了，我說過了。", "en": "Third-floor coffee machine's fixed. I did say."}]
+       ]}
+     ]},
+    {"id": "night", "name": {"zh": "夜間急診 CT", "en": "Night ER CT"}, "sub": {"zh": "22:30 · PACS 工作站", "en": "22:30 · PACS station"}, "t": 1350, "mood": "night",
+     "note": {"zh": "夜裡的頭部 CT：出血、中線、骨窗", "en": "Night head CT: bleed, midline, bone window"},
+     "beats": [
+      {"id": "n1", "to": "place:pacs", "guide": {"zh": "回 PACS 判讀急診 CT", "en": "Read the ER CT on PACS"},
+       "ring": {"title": {"zh": "急診夜間來電", "en": "ER calling, night"}, "sub": {"zh": "機車車禍，頭部 CT 做完了，請判讀", "en": "Motorbike crash, head CT done, please read"}, "call": true, "from": "er-doc"},
+       "lines": [
+        ["er-doc", {"zh": "機車車禍，頭部 CT 剛做完。問題：有沒有出血、要不要叫神外。", "en": "Motorbike crash, head CT just finished. Question: is there a bleed, and do I call neurosurgery?"}],
+        ["me", {"zh": "你學會先說問題了。", "en": "You've learned to lead with the question."}],
+        ["er-doc", {"zh": "白天被你電過。", "en": "You drilled it into me this morning."}]
+       ],
+       "mini": {"type": "imaging", "region": "head",
+                "question": {"zh": "外傷頭部 CT 先看什麼？", "en": "What do you look at first on a trauma head CT?"},
+                "answer": {"zh": "先看有沒有出血與中線偏移，再用骨窗看骨折；每一個視窗各看一次，不要只看一種。", "en": "First any bleed and any midline shift, then the bone window for fractures; look through every window once, never just one."}},
+       "post": [
+        ["me", {"zh": "口頭先給：無出血、無中線偏移、骨窗再確認一次。書面馬上出。", "en": "Verbal first: no bleed, no midline shift, bone window to be re-checked. Written report follows now."}],
+        ["er-doc", {"zh": "複誦：無出血、無中線偏移、骨窗再看。謝了。", "en": "Read-back: no bleed, no midline shift, bone window pending. Thanks."}],
+        ["sys", {"zh": "判讀室又安靜下來。三台螢幕，一個空保溫瓶，和一支還給阿梅姨的髮夾留下的回憶。", "en": "The reading room goes quiet again. Three monitors, an empty thermos, and the memory of a hairpin returned to Auntie Mei."}]
+       ],
+       "end": true}
+     ]}
+  ],
+  "ending": {"title": {"zh": "下班了", "en": "End of shift"}, "sub": {"zh": "影像回答問題；沒有問題就只是照片", "en": "Imaging answers questions; without one it is just a photo"},
+             "stats": ["stages", "drills", "imaging", "calls", "items", "time"]}
+}

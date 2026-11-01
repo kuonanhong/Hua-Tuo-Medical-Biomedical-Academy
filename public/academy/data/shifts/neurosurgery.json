@@ -1,0 +1,1835 @@
+{
+ "format": "huatuo-shift-v1",
+ "department": "neurosurgery",
+ "title": {
+  "zh": "神經外科值班日",
+  "en": "A shift in neurosurgery"
+ },
+ "tagline": {
+  "zh": "清醒開顱：病人一邊數大洲，我們一邊找邊界",
+  "en": "Awake craniotomy: he names continents while we find the edge"
+ },
+ "room": "or",
+ "minutes": 25,
+ "roles": [
+  {
+   "id": "resident",
+   "zh": "神經外科住院醫師",
+   "en": "Neurosurgery resident",
+   "desc": {
+    "zh": "第二年住院醫師。擺位、開顱、寫紀錄、接 ICU 電話，今天還要跟清醒的病人聊天。",
+    "en": "Second-year resident. Positioning, opening, notes, ICU calls, and today a conversation with a patient who is awake under the drapes."
+   }
+  },
+  {
+   "id": "neurophys",
+   "zh": "神經生理監測師",
+   "en": "Neurophysiologist",
+   "desc": {
+    "zh": "電極、刺激器、後放電都歸你。病人說不出「澳洲」的那一秒，是你要抓到的。",
+    "en": "Electrodes, stimulator and after-discharges are yours. The second he cannot say 'Australia' is the second you must catch."
+   }
+  }
+ ],
+ "cast": {
+  "attending": {
+   "name": {
+    "zh": "許主治",
+    "en": "Dr Hsu"
+   },
+   "role": {
+    "zh": "主治醫師（師傅）",
+    "en": "Attending (mentor)"
+   },
+   "tag": "ATT",
+   "color": "#3f6fa8",
+   "body": "mentor",
+   "about": {
+    "zh": "顯微鏡下三小時不說話，離開顯微鏡後只問問題。呼叫器永遠別在左口袋。",
+    "en": "Three silent hours under the microscope, then nothing but questions. The pager always lives in the left pocket."
+   }
+  },
+  "night-res": {
+   "name": {
+    "zh": "佳怡學姊",
+    "en": "Dr Chia-yi"
+   },
+   "role": {
+    "zh": "夜班住院醫師",
+    "en": "Night resident"
+   },
+   "tag": "NR",
+   "color": "#2f6f9f",
+   "body": "resident",
+   "about": {
+    "zh": "值完夜班還能把白板寫得像教科書。",
+    "en": "Still writes the whiteboard like a textbook after a night on call."
+   }
+  },
+  "anaes": {
+   "name": {
+    "zh": "高醫師",
+    "en": "Dr Kao"
+   },
+   "role": {
+    "zh": "麻醉醫師",
+    "en": "Anaesthetist"
+   },
+   "tag": "AN",
+   "color": "#3b8f6a",
+   "body": "anaesthetist",
+   "about": {
+    "zh": "清醒開顱的麻醉像調音：病人要舒服、要清醒、要能說話。",
+    "en": "Anaesthesia for an awake craniotomy is like tuning an instrument: comfortable, awake, able to talk."
+   }
+  },
+  "scrub": {
+   "name": {
+    "zh": "阿珍",
+    "en": "Chen"
+   },
+   "role": {
+    "zh": "刷手護理師",
+    "en": "Scrub nurse"
+   },
+   "tag": "SN",
+   "color": "#c27a2c",
+   "body": "scrub",
+   "about": {
+    "zh": "你還沒開口，雙極電凝已經在你手上。",
+    "en": "The bipolar is in your hand before you have asked for it."
+   }
+  },
+  "patient": {
+   "name": {
+    "zh": "陳老師",
+    "en": "Mr Chen"
+   },
+   "role": {
+    "zh": "病人・45 歲地理老師",
+    "en": "Patient, 45, geography teacher"
+   },
+   "tag": "PT",
+   "color": "#6b7280",
+   "body": "patient",
+   "about": {
+    "zh": "左額葉語言區旁的膠質瘤。右撇子，靠說話吃飯。他說：「把我的大洲留給我。」",
+    "en": "A glioma next to the language area of the left frontal lobe. Right-handed, talks for a living. He said: 'Leave me my continents.'"
+   }
+  },
+  "wife": {
+   "name": {
+    "zh": "陳太太",
+    "en": "Mrs Chen"
+   },
+   "role": {
+    "zh": "家屬",
+    "en": "Family"
+   },
+   "tag": "FAM",
+   "color": "#b45309",
+   "body": "family",
+   "about": {
+    "zh": "帶了一疊地圖卡片來，說是給他術中練習用的。",
+    "en": "Brought a stack of map flashcards 'for him to practise with during the operation'."
+   }
+  },
+  "icu-nurse": {
+   "name": {
+    "zh": "淑華",
+    "en": "Shu-hua"
+   },
+   "role": {
+    "zh": "加護病房護理師",
+    "en": "ICU nurse"
+   },
+   "tag": "RN",
+   "color": "#9d4b7a",
+   "body": "nurse",
+   "about": {
+    "zh": "她說「瞳孔怪怪的」，就要跑。",
+    "en": "When she says 'the pupil looks odd', you run."
+   }
+  }
+ },
+ "places": {
+  "whiteboard": {
+   "name": {
+    "zh": "刀表白板",
+    "en": "Theatre whiteboard"
+   },
+   "hot": "whiteboard"
+  },
+  "scrub-sink": {
+   "name": {
+    "zh": "刷手台",
+    "en": "Scrub sink"
+   },
+   "hot": "sink"
+  },
+  "table": {
+   "name": {
+    "zh": "手術台",
+    "en": "Operating table"
+   },
+   "hot": "field"
+  },
+  "microscope": {
+   "name": {
+    "zh": "手術顯微鏡",
+    "en": "Operating microscope"
+   },
+   "hot": "microscope"
+  },
+  "navigation": {
+   "name": {
+    "zh": "導航主機",
+    "en": "Navigation station"
+   },
+   "hot": "device"
+  },
+  "monitor": {
+   "name": {
+    "zh": "監測螢幕",
+    "en": "Monitoring screen"
+   },
+   "hot": "monitor"
+  },
+  "imaging": {
+   "name": {
+    "zh": "影像工作站",
+    "en": "Imaging workstation"
+   },
+   "hot": "imaging"
+  },
+  "icu": {
+   "name": {
+    "zh": "加護病房",
+    "en": "ICU"
+   },
+   "hot": "recovery"
+  },
+  "bed": {
+   "name": {
+    "zh": "病床",
+    "en": "Ward bed"
+   },
+   "hot": "bed"
+  },
+  "desk": {
+   "name": {
+    "zh": "紀錄桌",
+    "en": "Notes desk"
+   },
+   "hot": "desk"
+  }
+ },
+ "glossary": [
+  {
+   "term": {
+    "zh": "時間暫停",
+    "en": "time-out"
+   },
+   "plain": {
+    "zh": "劃刀前全隊停下來，核對病人、左右側、手術名稱、影像與過敏。腦部手術的左右，錯一次就是一輩子。",
+    "en": "Before the incision the whole team stops to confirm patient, side, operation, images and allergies. In brain surgery the wrong side is for life."
+   }
+  },
+  {
+   "term": {
+    "zh": "清醒開顱",
+    "en": "awake craniotomy"
+   },
+   "plain": {
+    "zh": "病人在手術中段醒著，一邊說話、動手，一邊讓我們知道哪裡不能切。",
+    "en": "The patient is awake for the middle of the operation, talking and moving so the team learns where not to cut."
+   }
+  },
+  {
+   "term": {
+    "zh": "語言定位",
+    "en": "language mapping"
+   },
+   "plain": {
+    "zh": "用微弱電流輕碰腦表面，病人唸圖卡時卡住或說錯，那一點就是語言區。",
+    "en": "A tiny current touched to the brain surface; if the patient stumbles or errs while naming pictures, that spot is language cortex."
+   }
+  },
+  {
+   "term": {
+    "zh": "後放電",
+    "en": "after-discharge"
+   },
+   "plain": {
+    "zh": "刺激停了，腦波還在自己放電。這是癲癇發作前的警告。",
+    "en": "Brain-wave discharges that continue after the stimulation stops: the warning sign before a seizure."
+   }
+  },
+  {
+   "term": {
+    "zh": "導航",
+    "en": "neuronavigation"
+   },
+   "plain": {
+    "zh": "像腦部的 GPS：把術前影像對到病人的頭上，探針指到哪裡，螢幕就顯示在哪裡。",
+    "en": "GPS for the brain: pre-operative scans are matched to the patient's head so the screen shows where the probe is pointing."
+   }
+  },
+  {
+   "term": {
+    "zh": "腦位移",
+    "en": "brain shift"
+   },
+   "plain": {
+    "zh": "打開頭骨、放掉腦脊髓液後，腦會動一點，導航就不再完全準。",
+    "en": "Once the skull is open and fluid drains away, the brain moves slightly and the navigation is no longer exact."
+   }
+  },
+  {
+   "term": {
+    "zh": "頭架",
+    "en": "head clamp"
+   },
+   "plain": {
+    "zh": "三根釘子把頭固定住的架子。開腦時頭一動都不能動。",
+    "en": "A frame with three pins that holds the head perfectly still; the head must not move at all during brain surgery."
+   }
+  },
+  {
+   "term": {
+    "zh": "冰生理食鹽水",
+    "en": "cold saline"
+   },
+   "plain": {
+    "zh": "術中腦皮質開始抽搐時，直接用冰的生理食鹽水沖洗腦表面，常常就停了。",
+    "en": "When the exposed brain starts to seize during surgery, cold salt water poured on the surface often stops it."
+   }
+  },
+  {
+   "term": {
+    "zh": "GCS",
+    "en": "GCS"
+   },
+   "plain": {
+    "zh": "格拉斯哥昏迷指數：睜眼、說話、動作三項加總，描述一個人有多清醒。",
+    "en": "Glasgow Coma Scale: eye opening, speech and movement added together to describe how awake someone is."
+   }
+  },
+  {
+   "term": {
+    "zh": "庫欣反應",
+    "en": "Cushing response"
+   },
+   "plain": {
+    "zh": "顱內壓太高時身體的求救訊號：血壓升高、心跳變慢、呼吸不規則。",
+    "en": "The body's distress signal when pressure inside the skull is too high: rising blood pressure, slowing pulse, irregular breathing."
+   }
+  },
+  {
+   "term": {
+    "zh": "5-ALA 螢光",
+    "en": "5-ALA fluorescence"
+   },
+   "plain": {
+    "zh": "術前喝下的藥讓腫瘤在藍光下發出粉紅色螢光，幫外科醫師看到腫瘤的邊。",
+    "en": "A drink taken before surgery makes the tumour glow pink under blue light, helping the surgeon see its edge."
+   }
+  },
+  {
+   "term": {
+    "zh": "硬腦膜",
+    "en": "dura"
+   },
+   "plain": {
+    "zh": "包在腦外面最韌的一層膜。關顱時要縫到不漏水。",
+    "en": "The tough outer membrane around the brain. It is sewn watertight at the end."
+   }
+  }
+ ],
+ "codex": [
+  {
+   "id": "microscope",
+   "kind": "equipment",
+   "name": {
+    "zh": "手術顯微鏡",
+    "en": "Operating microscope"
+   },
+   "hot": "microscope",
+   "text": {
+    "zh": "放大與照明的眼睛。可切換藍光模式看 5-ALA 螢光。",
+    "en": "The team's magnified, illuminated eyes. Switches to blue light to show 5-ALA fluorescence."
+   }
+  },
+  {
+   "id": "navigation",
+   "kind": "equipment",
+   "name": {
+    "zh": "導航主機",
+    "en": "Neuronavigation station"
+   },
+   "hot": "device",
+   "text": {
+    "zh": "紅外線攝影機追蹤探針與頭架上的參考架。註冊誤差要先檢查，開顱後要記得腦位移。",
+    "en": "An infrared camera tracks the probe and the reference frame on the head clamp. Check registration error first, and remember brain shift after opening."
+   }
+  },
+  {
+   "id": "head-clamp",
+   "kind": "equipment",
+   "name": {
+    "zh": "三釘頭架",
+    "en": "Three-pin head clamp"
+   },
+   "hot": "field",
+   "text": {
+    "zh": "釘子避開顳肌薄處與舊的開顱孔。清醒的病人，釘點要先局部麻醉。",
+    "en": "Pins avoid the thin temporal bone and old burr holes. In an awake patient the pin sites are numbed first."
+   }
+  },
+  {
+   "id": "stimulator",
+   "kind": "equipment",
+   "name": {
+    "zh": "皮質刺激器",
+    "en": "Cortical stimulator"
+   },
+   "hot": "monitor",
+   "text": {
+    "zh": "雙極探頭輕觸腦表面。刺激強度依醫囑由低往上，同時盯著後放電。",
+    "en": "A bipolar probe touched to the brain surface. Intensity rises stepwise per protocol while the team watches for after-discharges."
+   }
+  },
+  {
+   "id": "bipolar",
+   "kind": "equipment",
+   "name": {
+    "zh": "雙極電凝",
+    "en": "Bipolar forceps"
+   },
+   "hot": "instruments",
+   "text": {
+    "zh": "電流只在兩個尖端之間流動，腦部止血的標準工具。",
+    "en": "Current flows only between the two tips: the standard tool for stopping bleeding in the brain."
+   }
+  },
+  {
+   "id": "specimen-tumour",
+   "kind": "item",
+   "name": {
+    "zh": "腫瘤標本罐",
+    "en": "Tumour specimen pot"
+   },
+   "text": {
+    "zh": "送病理與分子檢測的腫瘤。標籤寫清楚部位與「邊界／中心」。",
+    "en": "Tumour for pathology and molecular testing. Label the site and whether it is 'edge' or 'centre'."
+   }
+  },
+  {
+   "id": "map-cards",
+   "kind": "item",
+   "name": {
+    "zh": "陳太太的地圖卡",
+    "en": "Mrs Chen's map cards"
+   },
+   "text": {
+    "zh": "術中語言定位真的用上了：七大洲、五大洋，一張都沒說錯。",
+    "en": "Actually used for language mapping: seven continents, five oceans, not one named wrong."
+   }
+  },
+  {
+   "id": "eloquent",
+   "kind": "concept",
+   "name": {
+    "zh": "功能區",
+    "en": "Eloquent cortex"
+   },
+   "text": {
+    "zh": "控制語言、動作、視覺的腦區。切除腫瘤的目標是「盡量多，但不碰功能區」。",
+    "en": "Brain areas for speech, movement and vision. The goal is 'as much tumour as possible, without touching eloquent cortex'."
+   }
+  },
+  {
+   "id": "cushing",
+   "kind": "concept",
+   "name": {
+    "zh": "庫欣反應",
+    "en": "Cushing response"
+   },
+   "text": {
+    "zh": "血壓高、心跳慢、呼吸亂。看到這個組合，先想顱內壓，不是先想心臟。",
+    "en": "High pressure, slow pulse, irregular breathing. See this triad and think of intracranial pressure before the heart."
+   }
+  }
+ ],
+ "segs": [
+  {
+   "id": "handover",
+   "name": {
+    "zh": "晨間交班",
+    "en": "Morning handover"
+   },
+   "sub": {
+    "zh": "07:30 · 刀表白板",
+    "en": "07:30 · theatre whiteboard"
+   },
+   "t": 450,
+   "mood": "day",
+   "note": {
+    "zh": "交班：清醒開顱與 ICU 3 床",
+    "en": "Handover: awake craniotomy and ICU bed 3"
+   },
+   "beats": [
+    {
+     "id": "h1",
+     "to": "night-res",
+     "guide": {
+      "zh": "找佳怡學姊交班",
+      "en": "Find Dr Chia-yi for handover"
+     },
+     "lines": [
+      [
+       "night-res",
+       {
+        "zh": "早。ICU 3 床昨天動脈瘤夾閉，整夜穩定，但今早比較嗜睡。",
+        "en": "Morning. ICU bed 3, aneurysm clipping yesterday, stable overnight but drowsier this morning."
+       }
+      ],
+      [
+       "night-res",
+       {
+        "zh": "第一台陳老師，清醒開顱加語言定位。他太太帶了一疊地圖卡。",
+        "en": "First case is Mr Chen, awake craniotomy with language mapping. His wife brought a stack of map cards."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "3 床嗜睡要盯。地圖卡……真的要用嗎？",
+        "en": "Bed 3 drowsiness needs watching. The map cards... are we really using them?"
+       }
+      ],
+      [
+       "night-res",
+       {
+        "zh": "許主治說「為什麼不」。明天還有一台 5-ALA，病房會打來問避光。",
+        "en": "Dr Hsu said 'why not'. And there's a 5-ALA case tomorrow; the ward will call about the light precautions."
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "白板：08:00 左額清醒開顱（陳老師）。ICU 3 床：嗜睡，追 CT。",
+        "en": "Whiteboard: 08:00 left frontal awake craniotomy (Mr Chen). ICU bed 3: drowsy, CT to follow."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "h1r",
+     "roles": [
+      "resident"
+     ],
+     "to": "place:desk",
+     "guide": {
+      "zh": "翻 3 床的夜間紀錄",
+      "en": "Read bed 3's overnight notes"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "病歷：夜間 GCS 由 15 降到 14，瞳孔等大，血壓依醫囑控制。",
+        "en": "Notes: GCS drifted from 15 to 14 overnight, pupils equal, blood pressure controlled per protocol."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "一分的變化也要寫下來、追 CT、交給白天的人盯。",
+        "en": "Even a one-point change gets written down, a CT booked, and handed to the day team to watch."
+       }
+      ],
+      [
+       "night-res",
+       {
+        "zh": "對。嗜睡是腦在小聲說話，不要等它大叫。",
+        "en": "Right. Drowsiness is the brain whispering. Don't wait for it to shout."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "h2",
+     "to": "attending",
+     "guide": {
+      "zh": "去找許主治",
+      "en": "Find Dr Hsu"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "早。陳老師的腫瘤在哪一側？",
+        "en": "Morning. Which side is Mr Chen's tumour?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "左額葉，語言區前方。影像、同意書、頭皮標記都是左邊。",
+        "en": "Left frontal, in front of the language area. Scans, consent and scalp mark all say left."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "為什麼清醒？",
+        "en": "Why awake?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "因為他的語言區只有他自己知道在哪裡。",
+        "en": "Because only he knows exactly where his language area is."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "好答案。呼叫器收好，今天會響。",
+        "en": "Good answer. Keep the pager close; it will go off today."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "first-case",
+   "name": {
+    "zh": "第一台：清醒開顱",
+    "en": "First case: awake craniotomy"
+   },
+   "sub": {
+    "zh": "08:00 · 開刀房",
+    "en": "08:00 · operating theatre"
+   },
+   "t": 480,
+   "mood": "day",
+   "note": {
+    "zh": "語言定位完成，大洲都還在",
+    "en": "Language mapped; all continents intact"
+   },
+   "beats": [
+    {
+     "id": "c1",
+     "to": "patient",
+     "guide": {
+      "zh": "跟陳老師核對並建立語言基線",
+      "en": "Check identity and take a language baseline"
+     },
+     "lines": [
+      [
+       "patient",
+       {
+        "zh": "醫師，我太太說要考我地理。你們是外科還是教務處？",
+        "en": "Doctor, my wife says you'll test me on geography. Is this surgery or the exam office?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "都是。先確認：姓名、生日、哪一側？",
+        "en": "Both. First, confirm: name, birthday, which side?"
+       }
+      ],
+      [
+       "patient",
+       {
+        "zh": "陳文彥，左邊。左邊這裡，標記還在。",
+        "en": "Chen Wen-yen, left side. The mark's still here on the left."
+       }
+      ],
+      [
+       "wife",
+       {
+        "zh": "卡片給你們。他唸錯「澳洲」你們就要停喔。",
+        "en": "Here are the cards. If he gets 'Australia' wrong, you stop."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "阿姨，這就是我們今天的計畫。",
+        "en": "That is exactly today's plan."
+       }
+      ]
+     ],
+     "item": "map-cards"
+    },
+    {
+     "id": "c1n",
+     "roles": [
+      "neurophys"
+     ],
+     "to": "place:monitor",
+     "guide": {
+      "zh": "記錄術前語言基線",
+      "en": "Record the pre-op language baseline"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "基線：圖卡命名二十張，數數到三十，一張都沒錯，語速正常。",
+        "en": "Baseline: twenty picture cards named, counting to thirty, no errors, normal speed."
+       }
+      ],
+      [
+       "anaes",
+       {
+        "zh": "記下來。等一下他講慢了，我們要知道是藥還是腦。",
+        "en": "Write it down. If he slows later we need to know whether it's the drugs or the brain."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "基線存檔。刺激器與腦電圖條狀電極準備好了。",
+        "en": "Baseline saved. Stimulator and strip electrodes ready."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "c2",
+     "to": "place:table",
+     "guide": {
+      "zh": "時間暫停：劃刀前",
+      "en": "Time-out before incision"
+     },
+     "lines": [
+      [
+       "scrub",
+       {
+        "zh": "時間暫停。陳文彥，左額開顱，清醒定位，過敏無，抗生素依醫囑。",
+        "en": "Time-out. Chen Wen-yen, left frontal craniotomy, awake mapping, no allergies, antibiotics per protocol."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "影像在螢幕上是左邊嗎？導航註冊誤差？",
+        "en": "Is the scan on the screen showing the left? Navigation registration error?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "左邊，誤差在可接受範圍內。關鍵步驟：定位、切除、止血。",
+        "en": "Left; error within range. Critical steps: mapping, resection, haemostasis."
+       }
+      ],
+      [
+       "anaes",
+       {
+        "zh": "清醒階段我會叫他。有癲癇，冰生理食鹽水在旁邊。",
+        "en": "I'll wake him for the mapping phase. If he seizes, cold saline is right here."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "neurosurgery-preop-who-checklist",
+      "stage": 7
+     }
+    },
+    {
+     "id": "c3",
+     "to": "place:microscope",
+     "guide": {
+      "zh": "擺位、頭架、顯微鏡就位",
+      "en": "Position, head clamp, bring in the microscope"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "頭高、頸不要折，靜脈回流要順。頭架釘點先局部麻醉。",
+        "en": "Head up, neck not kinked, venous return free. Numb the head clamp pin sites first."
+       }
+      ],
+      [
+       "patient",
+       {
+        "zh": "有點壓力，不痛。",
+        "en": "Some pressure, no pain."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "顯微鏡拉過來，等一下定位完就要用。",
+        "en": "Bring the microscope over; we'll need it right after the mapping."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "find",
+      "hot": "microscope",
+      "q": {
+       "zh": "點一下手術顯微鏡，把它拉到定位",
+       "en": "Tap the operating microscope to bring it into position"
+      }
+     }
+    },
+    {
+     "id": "c4",
+     "roles": [
+      "neurophys"
+     ],
+     "to": "place:monitor",
+     "guide": {
+      "zh": "放置條狀電極，盯後放電",
+      "en": "Place the strip electrode and watch for after-discharges"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "條狀電極在暴露皮質邊緣，腦電圖乾淨。刺激強度依醫囑從低開始。",
+        "en": "Strip electrode on the edge of the exposed cortex, EEG clean. Stimulation starts low, per protocol."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "後放電一出現就喊。你比我先看到。",
+        "en": "Call it the moment an after-discharge appears. You'll see it before I do."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "喊的是我。好。",
+        "en": "I'll be the one shouting. Understood."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "c5",
+     "to": "place:table",
+     "guide": {
+      "zh": "語言定位：唸圖卡",
+      "en": "Language mapping: naming the cards"
+     },
+     "lines": [
+      [
+       "anaes",
+       {
+        "zh": "陳老師，醒了嗎？看卡片。",
+        "en": "Mr Chen, awake? Look at the card."
+       }
+      ],
+      [
+       "patient",
+       {
+        "zh": "非洲。南美洲。這是……這是……",
+        "en": "Africa. South America. This is... this is..."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "停。這一點標記。再來一次。",
+        "en": "Stop. Mark this spot. Again."
+       }
+      ],
+      [
+       "patient",
+       {
+        "zh": "澳洲！剛剛那秒我知道卻說不出來。",
+        "en": "Australia! For a second I knew it and couldn't say it."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "那一秒就是我們要的。這一點不碰。",
+        "en": "That second is what we came for. This spot we leave alone."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "neurosurgery-awake-craniotomy-mapping",
+      "stage": 6
+     }
+    },
+    {
+     "id": "c6",
+     "to": "attending",
+     "guide": {
+      "zh": "後放電出現，決定怎麼做",
+      "en": "After-discharges appear: decide"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "螢幕上的腦電圖在刺激停止後還在放電。病人的右手開始抽動。",
+        "en": "On the screen the EEG keeps firing after the stimulation stops. The patient's right hand starts to twitch."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "後放電。你現在做什麼？",
+        "en": "After-discharge. What do you do right now?"
+       }
+      ]
+     ],
+     "mini": {
+      "type": "choice",
+      "q": {
+       "zh": "皮質刺激後出現後放電、手抽動，第一步？",
+       "en": "After-discharges and hand twitching after cortical stimulation. First step?"
+      },
+      "options": [
+       {
+        "zh": "停止刺激，冰生理食鹽水沖皮質，通知麻醉",
+        "en": "Stop stimulating, cold saline on the cortex, tell anaesthesia",
+        "ok": true,
+        "set": {
+         "seizure": "saline"
+        },
+        "why": {
+         "zh": "對。停、沖、通知。大多數會在幾秒內停下來。",
+         "en": "Right. Stop, irrigate, inform. Most settle within seconds."
+        }
+       },
+       {
+        "zh": "加快把定位做完再處理",
+        "en": "Hurry and finish the mapping first",
+        "ok": false,
+        "set": {
+         "seizure": "pushed"
+        },
+        "why": {
+         "zh": "後放電不停會變成全身大發作，清醒病人的氣道會出事。先停。",
+         "en": "Unchecked after-discharges become a generalised seizure, and an awake patient's airway is at risk. Stop first."
+        }
+       },
+       {
+        "zh": "立刻改全身麻醉插管",
+        "en": "Convert to general anaesthesia and intubate now",
+        "ok": false,
+        "set": {
+         "seizure": "ga"
+        },
+        "why": {
+         "zh": "這是最後手段。先沖冰生理食鹽水，大部分不需要走到那一步。",
+         "en": "That is the last resort. Cold saline first; most never need to go that far."
+        }
+       }
+      ]
+     },
+     "post": [
+      [
+       "anaes",
+       {
+        "zh": "停了。陳老師，還好嗎？",
+        "en": "It's stopped. Mr Chen, all right?"
+       }
+      ],
+      [
+       "patient",
+       {
+        "zh": "手剛剛自己動了……我還能說話嗎？歐洲、亞洲、北美洲。",
+        "en": "My hand moved on its own... can I still talk? Europe, Asia, North America."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "可以。繼續，但刺激強度不再往上。",
+        "en": "You can. We continue, but the intensity goes no higher."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "c7",
+     "to": "place:microscope",
+     "guide": {
+      "zh": "顯微鏡下沿邊界切除",
+      "en": "Resect along the boundary under the microscope"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "功能區標記好了。腫瘤和正常腦之間的那一層，用顯微剝離慢慢走。",
+        "en": "Eloquent spots are marked. Now microdissection, slowly, along the plane between tumour and brain."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "導航現在會騙你。開顱後有腦位移，相信你的眼睛和他的嘴巴。",
+        "en": "The navigation will lie to you now: brain shift after opening. Trust your eyes and his speech."
+       }
+      ],
+      [
+       "patient",
+       {
+        "zh": "太平洋、大西洋、印度洋、北極海、南極海。",
+        "en": "Pacific, Atlantic, Indian, Arctic, Southern."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "drill",
+      "template": "neurosurgery",
+      "drill": "micro"
+     },
+     "post": [
+      [
+       "attending",
+       {
+        "zh": "標本分「邊界」和「中心」兩罐，病理要知道哪個是哪個。",
+        "en": "Two specimen pots, 'edge' and 'centre'; pathology needs to know which is which."
+       }
+      ],
+      [
+       "scrub",
+       {
+        "zh": "標本兩罐，標好。紗布、棉片數目正確。",
+        "en": "Two pots, labelled. Swabs and patties correct."
+       }
+      ]
+     ],
+     "item": "specimen-tumour"
+    },
+    {
+     "id": "c8",
+     "to": "place:table",
+     "guide": {
+      "zh": "止血確認與關顱",
+      "en": "Confirm haemostasis and close"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "關硬腦膜之前，請麻醉做 Valsalva，看哪裡會滲。",
+        "en": "Before closing the dura, ask anaesthesia for a Valsalva and watch for oozing."
+       }
+      ],
+      [
+       "anaes",
+       {
+        "zh": "Valsalva 中。",
+        "en": "Valsalva now."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "一個小點，雙極電凝處理。乾了。",
+        "en": "One small spot, bipolar. Dry."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "硬腦膜水密縫合，骨瓣復位。他的大洲都還在。",
+        "en": "Watertight dura, bone flap back. His continents are all still there."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "neurosurgery-craniotomy-fundamentals",
+      "stage": 6
+     }
+    },
+    {
+     "id": "c8n",
+     "roles": [
+      "neurophys"
+     ],
+     "to": "place:monitor",
+     "guide": {
+      "zh": "整理監測紀錄",
+      "en": "File the monitoring record"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "紀錄：正向語言點兩處、運動點一處、後放電一次、冰生理食鹽水後停止。",
+        "en": "Record: two positive language sites, one motor site, one after-discharge, settled with cold saline."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "把後放電出現時的強度寫上去。下次的人會感謝你。",
+        "en": "Note the intensity at which the after-discharge appeared. The next team will thank you."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "c9",
+     "roles": [
+      "resident"
+     ],
+     "to": "place:desk",
+     "guide": {
+      "zh": "寫手術紀錄與 ICU 交接",
+      "en": "Op note and ICU handover"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "紀錄寫：定位結果、切除範圍、那次癲癇、怎麼處理的。",
+        "en": "The note states: mapping results, extent of resection, the seizure, how it was handled."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "ICU 交接：每小時神經學檢查、GCS、瞳孔、語言。血壓目標依醫囑。",
+        "en": "ICU handover: hourly neuro checks, GCS, pupils, speech. Blood pressure target per protocol."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "還有一句：他叫陳文彥，是地理老師。ICU 要知道他在乎什麼。",
+        "en": "And one more line: his name is Chen Wen-yen and he teaches geography. ICU should know what he cares about."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ward-call",
+   "name": {
+    "zh": "病房來電",
+    "en": "Ward call"
+   },
+   "sub": {
+    "zh": "10:30 · 明天的 5-ALA 病人",
+    "en": "10:30 · tomorrow's 5-ALA patient"
+   },
+   "t": 630,
+   "mood": "day",
+   "note": {
+    "zh": "5-ALA 時程與避光交代清楚",
+    "en": "5-ALA timing and light precautions explained"
+   },
+   "beats": [
+    {
+     "id": "w1",
+     "ring": {
+      "title": {
+       "zh": "病房來電",
+       "en": "Ward calling"
+      },
+      "sub": {
+       "zh": "明天 5-ALA 病人：藥什麼時候喝、燈要不要關？",
+       "en": "Tomorrow's 5-ALA patient: when to drink it, lights off?"
+      },
+      "call": true,
+      "from": "icu-nurse"
+     },
+     "lines": [
+      [
+       "icu-nurse",
+       {
+        "zh": "醫師，病房問明天 5-ALA 那位，口服藥幾點喝？喝完要避光是真的嗎？",
+        "en": "Doctor, the ward is asking about tomorrow's 5-ALA patient: what time does he drink it, and is the light avoidance real?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "真的。依醫囑在手術前固定時段喝，之後皮膚和眼睛避強光，窗簾拉上。",
+        "en": "It's real. He drinks it at the set time before surgery per protocol, then skin and eyes stay out of bright light, curtains drawn."
+       }
+      ],
+      [
+       "icu-nurse",
+       {
+        "zh": "家屬問為什麼。",
+        "en": "The family asks why."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "因為藥會讓腫瘤在藍光下發出 5-ALA 螢光，同時皮膚也會對光敏感。",
+        "en": "Because the drug makes the tumour show 5-ALA fluorescence under blue light, and it also makes the skin light-sensitive."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "neurosurgery-glioma-5ala-resection",
+      "stage": 1
+     }
+    }
+   ]
+  },
+  {
+   "id": "imaging-noon",
+   "name": {
+    "zh": "影像討論",
+    "en": "Imaging review"
+   },
+   "sub": {
+    "zh": "12:00 · ICU 3 床的 CT",
+    "en": "12:00 · ICU bed 3's CT"
+   },
+   "t": 720,
+   "mood": "day",
+   "note": {
+    "zh": "3 床 CT：腫脹，先盯",
+    "en": "Bed 3 CT: swelling, watch closely"
+   },
+   "beats": [
+    {
+     "id": "n1",
+     "to": "place:imaging",
+     "guide": {
+      "zh": "和許主治看 3 床的 CT",
+      "en": "Review bed 3's CT with Dr Hsu"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "3 床，夾閉術後第一天，比昨天嗜睡。CT 你報。",
+        "en": "Bed 3, day one after clipping, drowsier than yesterday. You read the CT."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "先比對昨天的片子，再看新東西。",
+        "en": "Compare with yesterday's scan first, then look for anything new."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "imaging",
+      "region": "head",
+      "question": {
+       "zh": "術後第一天變嗜睡，頭部 CT 先找哪四樣？",
+       "en": "Drowsier on post-op day one: what four things do you look for on the head CT?"
+      },
+      "answer": {
+       "zh": "新的出血、腦腫脹與中線偏移、腦室變大（水腦）、以及缺血性變化。",
+       "en": "New bleeding, swelling with midline shift, enlarged ventricles (hydrocephalus), and ischaemic change."
+      }
+     },
+     "post": [
+      [
+       "attending",
+       {
+        "zh": "有腫脹，中線還好，腦室沒大。所以？",
+        "en": "Some swelling, midline acceptable, ventricles not enlarged. So?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "床頭抬高、血壓與鈉依醫囑、每小時 GCS 和瞳孔。有變化就再掃。",
+        "en": "Head up, pressure and sodium per protocol, GCS and pupils hourly. Any change, rescan."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "對。「比昨天嗜睡」四個字，永遠不要自己吞下去。去吃飯。",
+        "en": "Right. 'Drowsier than yesterday' is never something you keep to yourself. Go and eat."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "afternoon",
+   "name": {
+    "zh": "病房：陳老師",
+    "en": "Ward: Mr Chen"
+   },
+   "sub": {
+    "zh": "14:00 · 病房",
+    "en": "14:00 · ward"
+   },
+   "t": 840,
+   "mood": "day",
+   "note": {
+    "zh": "陳老師術後語言完整",
+    "en": "Mr Chen's speech intact after surgery"
+   },
+   "beats": [
+    {
+     "id": "a1",
+     "to": "place:bed",
+     "guide": {
+      "zh": "去看陳老師",
+      "en": "Go and see Mr Chen"
+     },
+     "lines": [
+      [
+       "patient",
+       {
+        "zh": "醫師，考我。",
+        "en": "Doctor, test me."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "世界最長的河？",
+        "en": "Longest river in the world?"
+       }
+      ],
+      [
+       "patient",
+       {
+        "zh": "尼羅河。有人說亞馬遜河，我們課堂上會吵這個。",
+        "en": "The Nile. Some say the Amazon; we argue about it in class."
+       }
+      ],
+      [
+       "wife",
+       {
+        "zh": "他回來了。",
+        "en": "He's back."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "右手握力、臉部對稱、語言流暢。今晚還會有人每小時來吵你。",
+        "en": "Right grip strong, face symmetric, speech fluent. Someone will still wake you every hour tonight."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "a1n",
+     "roles": [
+      "neurophys"
+     ],
+     "to": "patient",
+     "guide": {
+      "zh": "術後語言評估",
+      "en": "Post-op language assessment"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "同一套圖卡再來一次，和早上的基線比。",
+        "en": "Same set of cards again, compared with this morning's baseline."
+       }
+      ],
+      [
+       "patient",
+       {
+        "zh": "二十張，全對。你們早上也是這樣在我頭裡考試？",
+        "en": "Twenty cards, all right. Was that what you were doing inside my head this morning?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "差不多。你是我們考過最會的學生。",
+        "en": "More or less. You're the best student we've examined."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "icu-call",
+   "name": {
+    "zh": "ICU 緊急",
+    "en": "ICU emergency"
+   },
+   "sub": {
+    "zh": "16:00 · 加護病房 3 床",
+    "en": "16:00 · ICU bed 3"
+   },
+   "t": 960,
+   "mood": "day",
+   "note": {
+    "zh": "3 床庫欣反應，回開刀房",
+    "en": "Bed 3 Cushing response, back to theatre"
+   },
+   "beats": [
+    {
+     "id": "e1",
+     "ring": {
+      "title": {
+       "zh": "ICU 來電",
+       "en": "ICU calling"
+      },
+      "sub": {
+       "zh": "3 床心跳變慢、血壓升高、右瞳孔怪怪的",
+       "en": "Bed 3: pulse slowing, pressure rising, right pupil looks odd"
+      },
+      "call": true,
+      "from": "icu-nurse"
+     },
+     "to": "place:icu",
+     "guide": {
+      "zh": "接電話，衝去 ICU",
+      "en": "Take the call and run to ICU"
+     },
+     "lines": [
+      [
+       "icu-nurse",
+       {
+        "zh": "醫師，3 床心跳越來越慢，血壓越來越高，右邊瞳孔變大了，叫不太醒。",
+        "en": "Doctor, bed 3's pulse is getting slower, pressure higher, the right pupil is bigger and he's hard to rouse."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "庫欣反應。床頭抬高，通知許主治，叫 CT 準備，我十秒到。",
+        "en": "Cushing response. Head up, call Dr Hsu, warn CT, I'm there in ten seconds."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "vitals",
+      "event": "bradycardia",
+      "options": [
+       {
+        "zh": "瞳孔與 GCS、通知主治、準備急 CT 與回開刀房",
+        "en": "Pupils and GCS, call the attending, prepare urgent CT and theatre",
+        "ok": true,
+        "why": {
+         "zh": "心跳慢加血壓高加瞳孔變化，是顱內壓升高，不是心臟問題。要減壓。",
+         "en": "Slow pulse plus high pressure plus a pupil change means raised intracranial pressure, not a heart problem. It needs decompression."
+        }
+       },
+       {
+        "zh": "先給提升心跳的藥，觀察",
+        "en": "Give a drug to raise the heart rate and observe",
+        "ok": false,
+        "why": {
+         "zh": "把心跳拉上來不會把顱內壓降下來。這是腦在求救。",
+         "en": "Raising the pulse does not lower the pressure in the skull. This is the brain calling for help."
+        }
+       },
+       {
+        "zh": "等明早再掃一次 CT",
+        "en": "Rescan tomorrow morning",
+        "ok": false,
+        "why": {
+         "zh": "瞳孔變大是以分鐘計算的急症。",
+         "en": "A blown pupil is an emergency counted in minutes."
+        }
+       }
+      ]
+     }
+    },
+    {
+     "id": "e2",
+     "to": "attending",
+     "guide": {
+      "zh": "向許主治報告",
+      "en": "Report to Dr Hsu"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "3 床，GCS 從 14 掉到 9，右瞳孔放大，心跳慢、血壓高。急 CT 顯示新的出血壓迫。",
+        "en": "Bed 3, GCS down from 14 to 9, right pupil dilated, slow pulse, high pressure. Urgent CT shows new bleeding with mass effect."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "你已經做了什麼？",
+        "en": "What have you done already?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "床頭抬高、通知麻醉、開刀房已經在準備，血品依醫囑。",
+        "en": "Head elevated, anaesthesia informed, theatre is being prepared, blood products per protocol."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "很好。這個不是你的錯，但處理得像是你的病人。走。",
+        "en": "Good. This isn't your fault, but you handled it as your patient. Let's go."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "evening",
+   "name": {
+    "zh": "交班與回顧",
+    "en": "Handover and debrief"
+   },
+   "sub": {
+    "zh": "18:00 · 開刀房外",
+    "en": "18:00 · outside theatre"
+   },
+   "t": 1080,
+   "mood": "eve",
+   "note": {
+    "zh": "交給夜班；師傅的三個問題",
+    "en": "Handed to the night team; the mentor's three questions"
+   },
+   "beats": [
+    {
+     "id": "d1",
+     "to": "night-res",
+     "guide": {
+      "zh": "向夜班交班",
+      "en": "Hand over to the night team"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "陳老師術後語言完整，每小時神經學檢查。3 床再次開顱清除血塊，回 ICU，瞳孔已縮回。",
+        "en": "Mr Chen: speech intact, hourly neuro checks. Bed 3: re-opened, clot evacuated, back in ICU, pupil reactive again."
+       }
+      ],
+      [
+       "night-res",
+       {
+        "zh": "5-ALA 那位？",
+        "en": "And the 5-ALA patient?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "時程與避光都交代了，窗簾已經拉上。",
+        "en": "Timing and light precautions explained; curtains already drawn."
+       }
+      ],
+      [
+       "night-res",
+       {
+        "zh": "收到。你今天跑得比呼叫器還快。",
+        "en": "Received. You ran faster than the pager today."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "d1b",
+     "when": {
+      "flag": "seizure",
+      "is": "pushed"
+     },
+     "to": "attending",
+     "guide": {
+      "zh": "許主治提起早上那次後放電",
+      "en": "Dr Hsu brings up this morning's after-discharge"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "早上後放電的時候，你想先把定位做完。",
+        "en": "This morning, when the after-discharge came, you wanted to finish the mapping first."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "對。高醫師直接沖了冰生理食鹽水。",
+        "en": "I did. Dr Kao poured the cold saline straight away."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "記住那個順序：停、沖、通知。清醒的病人，氣道是借來的。",
+        "en": "Remember the order: stop, irrigate, inform. In an awake patient the airway is on loan."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "d2",
+     "to": "attending",
+     "guide": {
+      "zh": "師傅的回顧",
+      "en": "The mentor's debrief"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "三個問題。早上為什麼清醒？",
+        "en": "Three questions. Why awake this morning?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "因為語言區只有他知道。",
+        "en": "Because only he knows where his language is."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "中午那句「比昨天嗜睡」，你有沒有吞下去？下午誰先看到瞳孔？",
+        "en": "At noon, 'drowsier than yesterday': did you swallow it? And who saw the pupil first this afternoon?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "沒有。是淑華。",
+        "en": "I didn't. And it was Shu-hua."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "對。記得謝她。呼叫器今天響了幾次？",
+        "en": "Right. Thank her. How many times did the pager go off today?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "我沒數。",
+        "en": "I didn't count."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "好現象。去吃飯。",
+        "en": "A good sign. Go and eat."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "night",
+   "name": {
+    "zh": "值班夜",
+    "en": "On call tonight"
+   },
+   "sub": {
+    "zh": "22:00 · 病房",
+    "en": "22:00 · ward"
+   },
+   "t": 1320,
+   "mood": "night",
+   "note": {
+    "zh": "夜裡的頭痛，檢查過了",
+    "en": "A headache at night, properly examined"
+   },
+   "beats": [
+    {
+     "id": "x1",
+     "ring": {
+      "title": {
+       "zh": "病房來電",
+       "en": "Ward calling"
+      },
+      "sub": {
+       "zh": "陳老師說頭痛，太太很緊張",
+       "en": "Mr Chen has a headache; his wife is anxious"
+      },
+      "call": true,
+      "from": "icu-nurse"
+     },
+     "lines": [
+      [
+       "icu-nurse",
+       {
+        "zh": "醫師，陳老師說頭痛，太太很緊張，問是不是又出血。",
+        "en": "Doctor, Mr Chen says his head hurts. His wife is anxious, asking if it's bleeding again."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "GCS、瞳孔、說話和早上一樣嗎？",
+        "en": "GCS, pupils and speech the same as this morning?"
+       }
+      ],
+      [
+       "icu-nurse",
+       {
+        "zh": "GCS 滿分，瞳孔等大，說話流暢。就是頭痛。",
+        "en": "Full GCS, pupils equal, speech fluent. Just the headache."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "choice",
+      "q": {
+       "zh": "開顱當晚頭痛、神經學檢查正常，你會？",
+       "en": "Headache the night after a craniotomy with a normal neuro exam. You...?"
+      },
+      "options": [
+       {
+        "zh": "親自去檢查，止痛依醫囑，交代變化就叫我",
+        "en": "Examine him yourself, analgesia per protocol, call me for any change",
+        "ok": true,
+        "set": {
+         "night": "seen"
+        },
+        "why": {
+         "zh": "開顱後頭痛很常見，但「正常」要自己看過才算。",
+         "en": "Headache after a craniotomy is common, but 'normal' only counts once you have seen it yourself."
+        }
+       },
+       {
+        "zh": "電話開止痛，明早再看",
+        "en": "Prescribe analgesia by phone, see him in the morning",
+        "ok": false,
+        "set": {
+         "night": "phone"
+        },
+        "why": {
+         "zh": "今天你才看過瞳孔在幾分鐘內變大。走一趟。",
+         "en": "You watched a pupil change in minutes today. Walk over."
+        }
+       },
+       {
+        "zh": "直接叫急 CT",
+        "en": "Order an urgent CT straight away",
+        "ok": false,
+        "set": {
+         "night": "ct"
+        },
+        "why": {
+         "zh": "神經學檢查正常時，先看人再決定要不要掃。",
+         "en": "With a normal neuro exam, see the patient first, then decide on the scan."
+        }
+       }
+      ]
+     }
+    },
+    {
+     "id": "x2",
+     "to": "patient",
+     "guide": {
+      "zh": "去看陳老師",
+      "en": "Go and see Mr Chen"
+     },
+     "lines": [
+      [
+       "patient",
+       {
+        "zh": "醫師，頭痛。我是不是又要被考地理？",
+        "en": "Doctor, my head hurts. Am I about to get another geography test?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "先看瞳孔、握力、笑一個。都好。傷口沒腫。這是開顱後正常的痛。",
+        "en": "Pupils, grip, give me a smile. All fine. Wound not swollen. This is a normal post-craniotomy ache."
+       }
+      ],
+      [
+       "wife",
+       {
+        "zh": "謝謝你跑這一趟。",
+        "en": "Thank you for coming over."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "這是我今天最輕鬆的一趟。",
+        "en": "Easiest trip I've made all day."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "x3",
+     "ring": {
+      "title": {
+       "zh": "許主治訊息",
+       "en": "Message from Dr Hsu"
+      },
+      "sub": {
+       "zh": "「3 床醒了，會握手。明天早點來。」",
+       "en": "'Bed 3 is awake and squeezing hands. Come early tomorrow.'"
+      },
+      "call": false,
+      "from": "attending"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "一台清醒開顱，一次後放電，一個瞳孔，一個頭痛。呼叫器終於安靜了。",
+        "en": "One awake craniotomy, one after-discharge, one pupil, one headache. The pager is finally quiet."
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "值班結束。走廊盡頭，陳太太的地圖卡還放在護理站上。",
+        "en": "End of shift. At the end of the corridor, Mrs Chen's map cards still sit on the nurses' station."
+       }
+      ]
+     ],
+     "end": true
+    }
+   ]
+  }
+ ],
+ "ending": {
+  "title": {
+   "zh": "下班了",
+   "en": "End of shift"
+  },
+  "sub": {
+   "zh": "大洲都還在",
+   "en": "All the continents are still there"
+  },
+  "stats": [
+   "stages",
+   "grades",
+   "choices",
+   "calls",
+   "items",
+   "time"
+  ]
+ }
+}

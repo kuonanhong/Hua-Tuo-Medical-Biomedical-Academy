@@ -1,0 +1,1519 @@
+{
+ "format": "huatuo-shift-v1",
+ "department": "dentistry",
+ "title": {
+  "zh": "牙科值班日",
+  "en": "A shift in dentistry"
+ },
+ "tagline": {
+  "zh": "一面口鏡，看見整個人",
+  "en": "One mouth mirror, the whole person"
+ },
+ "room": "dental",
+ "minutes": 25,
+ "roles": [
+  {
+   "id": "resident",
+   "zh": "牙科住院醫師",
+   "en": "Dental resident",
+   "desc": {
+    "zh": "診間的主治手。你問病史、檢查、決定要不要照片子、下診斷、解釋。",
+    "en": "The hands in the chair. You take the history, examine, decide whether to X-ray, diagnose and explain."
+   }
+  },
+  {
+   "id": "assistant",
+   "zh": "牙科助理",
+   "en": "Dental assistant",
+   "desc": {
+    "zh": "四手牙科的另外兩隻手。器械盤、吸唾管、橡皮障、感染控制，還有讓小孩不哭。",
+    "en": "The other two hands of four-handed dentistry: the tray, the suction, the rubber dam, infection control, and keeping children calm."
+   }
+  }
+ ],
+ "cast": {
+  "attending": {
+   "name": {
+    "zh": "郭主治",
+    "en": "Dr Kuo"
+   },
+   "role": {
+    "zh": "牙科主治醫師（師傅）",
+    "en": "Consultant dentist (mentor)"
+   },
+   "tag": "ATT",
+   "color": "#81296d",
+   "about": {
+    "zh": "馬克杯上印著 ALARA。每一張 X 光都會問「為什麼要照」。口頭禪：「先看軟組織，再看牙。」",
+    "en": "Her mug says ALARA. Asks 'why this film?' of every X-ray. Catchphrase: 'Soft tissue first, teeth second.'"
+   },
+   "body": "mentor"
+  },
+  "a-fen": {
+   "name": {
+    "zh": "阿芬",
+    "en": "A-Fen"
+   },
+   "role": {
+    "zh": "資深牙科助理",
+    "en": "Senior dental assistant"
+   },
+   "tag": "DA",
+   "color": "#3b8f6a",
+   "about": {
+    "zh": "她遞器械的時候你從來不用低頭。小孩看到她就不哭了，原因不明。",
+    "en": "You never have to look down when she passes an instrument. Children stop crying when they see her; nobody knows why."
+   },
+   "body": "tech"
+  },
+  "mr-chen": {
+   "name": {
+    "zh": "陳先生",
+    "en": "Mr Chen"
+   },
+   "role": {
+    "zh": "病人：全口檢查",
+    "en": "Patient: full examination"
+   },
+   "tag": "P1",
+   "color": "#c2453d",
+   "about": {
+    "zh": "六十六歲退休漁夫，抽了四十年的菸。填表的時候寫「沒病沒藥」，口袋裡有三種藥。",
+    "en": "Sixty-six, retired fisherman, forty years of smoking. Wrote 'no illnesses, no medicines' on the form; three kinds of pills in his pocket."
+   },
+   "body": "patient"
+  },
+  "hsiao-yu": {
+   "name": {
+    "zh": "小妤",
+    "en": "Hsiao-Yu"
+   },
+   "role": {
+    "zh": "病人：九歲，檢查",
+    "en": "Patient: nine, check-up"
+   },
+   "tag": "P2",
+   "color": "#b8742c",
+   "about": {
+    "zh": "九歲，怕牙醫但更怕媽媽知道她怕。最愛的東西：草莓牙膏和阿芬。",
+    "en": "Nine, scared of the dentist but more scared her mother will find out. Favourite things: strawberry toothpaste and A-Fen."
+   },
+   "body": "patient"
+  },
+  "mother": {
+   "name": {
+    "zh": "小妤媽媽",
+    "en": "Hsiao-Yu's mum"
+   },
+   "role": {
+    "zh": "家長",
+    "en": "Parent"
+   },
+   "tag": "FAM",
+   "color": "#8a5a2b",
+   "about": {
+    "zh": "想一次把所有 X 光都照完，「這樣比較安心」。",
+    "en": "Wants every X-ray done in one go, 'for peace of mind'."
+   },
+   "body": "family"
+  },
+  "mr-lin": {
+   "name": {
+    "zh": "林先生",
+    "en": "Mr Lin"
+   },
+   "role": {
+    "zh": "病人：劇烈牙痛",
+    "en": "Patient: severe toothache"
+   },
+   "tag": "P3",
+   "color": "#6a8f3b",
+   "about": {
+    "zh": "四十歲工程師，三天沒睡好，指不出是哪一顆牙。進門第一句話：「給我抗生素就好。」",
+    "en": "Forty, engineer, three nights without sleep, cannot point to the tooth. First words: 'Just give me antibiotics.'"
+   },
+   "body": "patient"
+  },
+  "reception": {
+   "name": {
+    "zh": "小美",
+    "en": "Mei"
+   },
+   "role": {
+    "zh": "櫃台",
+    "en": "Reception"
+   },
+   "tag": "REC",
+   "color": "#4d6d8e",
+   "about": {
+    "zh": "櫃台的過濾器。病人要什麼她先問一次「為什麼」，再轉給你。",
+    "en": "The front-desk filter. Asks the patient 'why' once before she passes the call to you."
+   },
+   "phoneOnly": true
+  },
+  "er-doc": {
+   "name": {
+    "zh": "急診黃醫師",
+    "en": "Dr Huang (ER)"
+   },
+   "role": {
+    "zh": "急診醫師",
+    "en": "Emergency physician"
+   },
+   "tag": "ER",
+   "color": "#d9534f",
+   "about": {
+    "zh": "半夜的牙齒問題都會變成他的問題，然後變成你的。",
+    "en": "Every midnight tooth becomes his problem, and then yours."
+   },
+   "phoneOnly": true
+  }
+ },
+ "places": {
+  "chair": {
+   "name": {
+    "zh": "牙科治療椅",
+    "en": "Dental chair"
+   },
+   "hot": "field"
+  },
+  "tray": {
+   "name": {
+    "zh": "器械盤",
+    "en": "Instrument tray"
+   },
+   "hot": "instruments"
+  },
+  "xray": {
+   "name": {
+    "zh": "X 光機",
+    "en": "X-ray unit"
+   },
+   "hot": "device"
+  },
+  "viewer": {
+   "name": {
+    "zh": "看片螢幕",
+    "en": "Image viewer"
+   },
+   "hot": "imaging"
+  },
+  "sink": {
+   "name": {
+    "zh": "洗手台",
+    "en": "Hand-wash sink"
+   },
+   "hot": "sink"
+  },
+  "desk": {
+   "name": {
+    "zh": "病歷電腦",
+    "en": "Charting workstation"
+   },
+   "hot": "workstation"
+  },
+  "door": {
+   "name": {
+    "zh": "診間門口",
+    "en": "Surgery door"
+   },
+   "hot": "door"
+  }
+ },
+ "glossary": [
+  {
+   "term": {
+    "zh": "口鏡",
+    "en": "mouth mirror"
+   },
+   "plain": {
+    "zh": "牙醫手上那面小圓鏡。用來看、用來撥開臉頰舌頭，也用來反光。",
+    "en": "The small round mirror in the dentist's hand, for seeing round corners, holding the cheek and tongue aside, and reflecting light."
+   }
+  },
+  {
+   "term": {
+    "zh": "探針",
+    "en": "explorer"
+   },
+   "plain": {
+    "zh": "尖尖的彎鉤，用來感覺牙面的粗糙和窩溝。現代用法是輕輕滑，不是用力戳。",
+    "en": "The fine curved hook that feels surface roughness and fissures. Used lightly today, never forced in."
+   }
+  },
+  {
+   "term": {
+    "zh": "ICDAS",
+    "en": "ICDAS"
+   },
+   "plain": {
+    "zh": "一套用眼睛看、分成幾級的齲齒分類。從最早的白斑到明顯的洞。",
+    "en": "A visual grading system for tooth decay, from the earliest white spot to an obvious cavity."
+   }
+  },
+  {
+   "term": {
+    "zh": "咬翼片",
+    "en": "bitewing"
+   },
+   "plain": {
+    "zh": "病人咬住一個小翼片拍的 X 光，同時看到上下後牙的鄰接面。最會找藏起來的蛀牙。",
+    "en": "An X-ray taken while biting on a small tab, showing the surfaces between upper and lower back teeth. Best at finding hidden decay."
+   }
+  },
+  {
+   "term": {
+    "zh": "根尖片",
+    "en": "periapical radiograph"
+   },
+   "plain": {
+    "zh": "照一整顆牙到牙根尖的 X 光。看牙根、看根尖的病變。",
+    "en": "An X-ray of a whole tooth down to the root tip, for roots and lesions around them."
+   }
+  },
+  {
+   "term": {
+    "zh": "ALARA",
+    "en": "ALARA"
+   },
+   "plain": {
+    "zh": "合理可行的最低劑量：每一張 X 光都要能改變處置，否則不照。",
+    "en": "As low as reasonably achievable: every X-ray must be able to change the plan, or it is not taken."
+   }
+  },
+  {
+   "term": {
+    "zh": "正當化",
+    "en": "justification"
+   },
+   "plain": {
+    "zh": "照 X 光前先回答：這張片子會告訴我什麼、會改變什麼？沒有答案就不照。",
+    "en": "Before any X-ray: what will this film tell me and what will it change? No answer, no film."
+   }
+  },
+  {
+   "term": {
+    "zh": "橡皮障",
+    "en": "rubber dam"
+   },
+   "plain": {
+    "zh": "一張薄橡皮膜，只露出要治療的牙。隔離口水、保護呼吸道、看得更清楚。",
+    "en": "A thin rubber sheet that isolates the tooth being treated: keeps saliva out, protects the airway, improves the view."
+   }
+  },
+  {
+   "term": {
+    "zh": "牙髓炎",
+    "en": "pulpitis"
+   },
+   "plain": {
+    "zh": "牙齒裡面的神經血管組織發炎。不可逆的牙髓炎會痛醒，需要根管治療。",
+    "en": "Inflammation of the nerve and vessels inside the tooth. Irreversible pulpitis wakes you at night and needs root-canal treatment."
+   }
+  },
+  {
+   "term": {
+    "zh": "牙髓測試",
+    "en": "pulp test"
+   },
+   "plain": {
+    "zh": "用冷、熱或電刺激，看每一顆牙的反應，找出是哪一顆在痛。",
+    "en": "Cold, heat or a tiny electric stimulus applied tooth by tooth to find which one is the culprit."
+   }
+  },
+  {
+   "term": {
+    "zh": "白斑",
+    "en": "white patch"
+   },
+   "plain": {
+    "zh": "口腔黏膜上擦不掉的白色病變。兩週不消失，就要轉診切片。",
+    "en": "A white lesion on the lining of the mouth that cannot be wiped off. If it has not gone in two weeks, refer for biopsy."
+   }
+  },
+  {
+   "term": {
+    "zh": "迷走神經性昏厥",
+    "en": "vasovagal syncope"
+   },
+   "plain": {
+    "zh": "緊張、疼痛或看到針，心跳變慢血壓下降，眼前一黑。椅子放平就會好。",
+    "en": "Fear, pain or the sight of a needle slows the heart and drops the pressure, and the world goes dark. Lying flat fixes it."
+   }
+  },
+  {
+   "term": {
+    "zh": "最小侵入性",
+    "en": "minimally invasive"
+   },
+   "plain": {
+    "zh": "能不磨就不磨，能再礦化就不補。只拿掉壞掉的部分，留下健康的牙。",
+    "en": "Drill as little as possible, remineralise where you can, remove only what is diseased and keep the healthy tooth."
+   }
+  }
+ ],
+ "codex": [
+  {
+   "id": "chair",
+   "kind": "equipment",
+   "name": {
+    "zh": "牙科治療椅",
+    "en": "Dental chair"
+   },
+   "text": {
+    "zh": "椅子、燈、水、氣、吸引全在一起。昏厥的時候第一件事：放平。",
+    "en": "Seat, light, water, air and suction in one. First response to a faint: lie it flat."
+   },
+   "hot": "field"
+  },
+  {
+   "id": "xray-unit",
+   "kind": "equipment",
+   "name": {
+    "zh": "牙科 X 光機",
+    "en": "Dental X-ray unit"
+   },
+   "text": {
+    "zh": "小小的管球，照一兩顆牙。照之前先問：這張片子會改變什麼？",
+    "en": "A small tube head for one or two teeth. Before pressing the button: what will this film change?"
+   },
+   "hot": "device"
+  },
+  {
+   "id": "mirror-explorer",
+   "kind": "equipment",
+   "name": {
+    "zh": "口鏡與探針",
+    "en": "Mirror and explorer"
+   },
+   "text": {
+    "zh": "牙科最基本的兩件工具。一面看，一支感覺。",
+    "en": "The two most basic tools in dentistry: one to see, one to feel."
+   },
+   "hot": "instruments"
+  },
+  {
+   "id": "dam-kit",
+   "kind": "equipment",
+   "name": {
+    "zh": "橡皮障組",
+    "en": "Rubber-dam kit"
+   },
+   "text": {
+    "zh": "橡皮膜、打洞器、夾子、框架。放對了，根管治療就成功一半。",
+    "en": "Sheet, punch, clamp, frame. Placed well, a root canal is half done."
+   },
+   "hot": "instruments"
+  },
+  {
+   "id": "chart-chen",
+   "kind": "item",
+   "name": {
+    "zh": "陳先生的牙科記錄表",
+    "en": "Mr Chen's charting sheet"
+   },
+   "text": {
+    "zh": "每一顆牙的狀態、牙周篩檢、舌側緣白斑的位置和照片。兩週後要對照。",
+    "en": "Every tooth's status, the periodontal screen, and the position and photo of the white patch on the tongue. To compare in two weeks."
+   }
+  },
+  {
+   "id": "bitewing-yu",
+   "kind": "item",
+   "name": {
+    "zh": "小妤的咬翼片",
+    "en": "Hsiao-Yu's bitewing"
+   },
+   "text": {
+    "zh": "一張小片子，答了一個問題：鄰接面沒有蛀。所以其他的片子不用照。",
+    "en": "One small film that answered one question: no decay between the teeth. So no other films were needed."
+   }
+  },
+  {
+   "id": "alara",
+   "kind": "concept",
+   "name": {
+    "zh": "ALARA",
+    "en": "ALARA"
+   },
+   "text": {
+    "zh": "合理可行的最低劑量。不是「少照」，是「每一張都有理由」。",
+    "en": "As low as reasonably achievable. Not 'fewer films' but 'every film with a reason'."
+   }
+  }
+ ],
+ "segs": [
+  {
+   "id": "opening",
+   "name": {
+    "zh": "開診準備",
+    "en": "Opening the surgery"
+   },
+   "sub": {
+    "zh": "08:00 · 診間",
+    "en": "08:00 · the surgery"
+   },
+   "t": 480,
+   "mood": "day",
+   "note": {
+    "zh": "診間準備完成",
+    "en": "Surgery ready"
+   },
+   "beats": [
+    {
+     "id": "h1",
+     "to": "place:desk",
+     "guide": {
+      "zh": "看今天的預約",
+      "en": "Check today's bookings"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "螢幕上：08:30 陳先生全口檢查；11:00 小妤檢查；下午留了空檔給急診。",
+        "en": "On screen: 08:30 Mr Chen, full examination; 11:00 Hsiao-Yu, check-up; the afternoon kept open for emergencies."
+       }
+      ],
+      [
+       "a-fen",
+       {
+        "zh": "早。陳先生的初診表填了「沒病沒藥」。我不太信。",
+        "en": "Morning. Mr Chen's form says 'no illnesses, no medicines'. I do not believe it."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "我也不信。等一下再問一次。",
+        "en": "Neither do I. I will ask again."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "h2",
+     "to": "place:sink",
+     "guide": {
+      "zh": "感染控制：開診順序",
+      "en": "Infection control: the order"
+     },
+     "lines": [
+      [
+       "a-fen",
+       {
+        "zh": "開診的順序，你排。每一個病人之間都要重來一次。",
+        "en": "The opening sequence: you put it in order. It restarts between every patient."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "order",
+      "q": {
+       "zh": "開診前的感染控制順序？",
+       "en": "Order the infection-control steps before a patient."
+      },
+      "steps": [
+       {
+        "zh": "手部衛生",
+        "en": "Hand hygiene"
+       },
+       {
+        "zh": "鋪設表面防護膜",
+        "en": "Barrier film on surfaces"
+       },
+       {
+        "zh": "打開滅菌器械包",
+        "en": "Open the sterile instrument pack"
+       },
+       {
+        "zh": "接上吸唾管與三用噴槍頭",
+        "en": "Fit the saliva ejector and syringe tip"
+       },
+       {
+        "zh": "戴手套、口罩、護目鏡",
+        "en": "Gloves, mask, eye protection"
+       }
+      ]
+     },
+     "roles": [
+      "assistant"
+     ]
+    },
+    {
+     "id": "h3",
+     "to": "attending",
+     "guide": {
+      "zh": "找郭主治",
+      "en": "Find Dr Kuo"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "早。今天第一位病人，檢查的時候你會先看哪裡？",
+        "en": "Morning. First patient today: where do you look first?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "牙齒……不對，先看軟組織，再看牙。",
+        "en": "The teeth... no. Soft tissue first, teeth second."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "對。而且「沒病沒藥」這四個字，你要自己問一遍。",
+        "en": "Right. And 'no illnesses, no medicines': you ask that again yourself."
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "她的馬克杯上印著 ALARA。",
+        "en": "Her mug says ALARA."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mr-chen",
+   "name": {
+    "zh": "陳先生：全口檢查",
+    "en": "Mr Chen: full examination"
+   },
+   "sub": {
+    "zh": "08:30 · 牙科治療椅",
+    "en": "08:30 · dental chair"
+   },
+   "t": 510,
+   "mood": "day",
+   "note": {
+    "zh": "陳先生的檢查與記錄完成",
+    "en": "Mr Chen examined and charted"
+   },
+   "beats": [
+    {
+     "id": "c1",
+     "to": "mr-chen",
+     "guide": {
+      "zh": "再問一次病史",
+      "en": "Ask the history again"
+     },
+     "lines": [
+      [
+       "mr-chen",
+       {
+        "zh": "我沒病沒藥啦。就是想洗個牙。",
+        "en": "No illnesses, no pills. I just want a clean."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "陳先生，口袋裡那三包是什麼？",
+        "en": "Mr Chen, what are the three packets in your pocket?"
+       }
+      ],
+      [
+       "mr-chen",
+       {
+        "zh": "喔，這個是血壓的、這個是糖尿病的、這個是心臟科說不能停的。",
+        "en": "Oh, this one is for blood pressure, this one for diabetes, and this one the heart doctor says I must not stop."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "dentistry-comprehensive-oral-exam-charting",
+      "stage": 0
+     },
+     "post": [
+      [
+       "attending",
+       {
+        "zh": "「不能停的」通常就是抗凝血劑。拔牙以前要知道。",
+        "en": "'Must not stop' is usually an anticoagulant. You need to know before any extraction."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "c2",
+     "to": "place:chair",
+     "guide": {
+      "zh": "口鏡與探針：檢查順序",
+      "en": "Mirror and explorer: the sequence"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "軟組織看完了，換牙。口鏡和探針，照順序，一顆都不要跳。",
+        "en": "Soft tissue done; now the teeth. Mirror and explorer, in sequence, skip nothing."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "drill",
+      "template": "dentistry",
+      "drill": "dental"
+     },
+     "post": [
+      [
+       "me",
+       {
+        "zh": "右下後牙咬合面有粗糙感，但探針不勾。牙周篩檢有兩區出血。",
+        "en": "The lower right molar's occlusal surface feels rough but the explorer does not catch. Two sextants bleed on periodontal screening."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "c3",
+     "to": "mr-chen",
+     "guide": {
+      "zh": "舌側緣的斑塊",
+      "en": "The patch on the tongue"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "你請陳先生伸舌頭往右邊。左側舌緣有一塊擦不掉的白斑，大約指甲大小。",
+        "en": "You ask Mr Chen to stick his tongue out to the right. On the left border there is a white patch the size of a fingernail that will not wipe off."
+       }
+      ],
+      [
+       "mr-chen",
+       {
+        "zh": "那個喔，有一陣子了。不痛。",
+        "en": "Oh, that. It has been there a while. Does not hurt."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "choice",
+      "q": {
+       "zh": "擦不掉、不痛、抽菸四十年的白斑，你怎麼做？",
+       "en": "A painless, non-wipeable white patch in a forty-year smoker: what do you do?"
+      },
+      "options": [
+       {
+        "zh": "拍照記錄、兩週後複查，不消失就轉診切片",
+        "en": "Photograph, review in two weeks, refer for biopsy if it persists",
+        "ok": true,
+        "why": {
+         "zh": "不痛的白斑最危險。記錄位置和大小，兩週後對照，沒有消失一定轉診。",
+         "en": "The painless white patch is the dangerous one. Record its site and size, compare in two weeks, and refer if it has not gone."
+        },
+        "set": {
+         "lesion": "review"
+        }
+       },
+       {
+        "zh": "開抗黴菌藥膏，應該是念珠菌",
+        "en": "Antifungal cream; probably candida",
+        "ok": false,
+        "why": {
+         "zh": "念珠菌通常擦得掉。擦不掉的白斑不能用藥膏打發。",
+         "en": "Candida usually wipes off. A patch that does not cannot be dismissed with a cream."
+        },
+        "set": {
+         "lesion": "cream"
+        }
+       },
+       {
+        "zh": "不痛就先不管，洗牙比較重要",
+        "en": "It does not hurt; the clean matters more",
+        "ok": false,
+        "why": {
+         "zh": "今天最重要的發現就是這一塊。洗牙可以等，白斑不能。",
+         "en": "This patch is the most important finding of the day. The clean can wait; the patch cannot."
+        },
+        "set": {
+         "lesion": "ignore"
+        }
+       }
+      ]
+     },
+     "post": [
+      [
+       "attending",
+       {
+        "zh": "先看軟組織，再看牙。就是為了這一塊。",
+        "en": "Soft tissue first, teeth second. This is why."
+       }
+      ]
+     ],
+     "item": "chart-chen"
+    },
+    {
+     "id": "c4",
+     "to": "place:desk",
+     "guide": {
+      "zh": "完成牙科記錄",
+      "en": "Complete the charting"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "你把每一顆牙的狀態、牙周篩檢、白斑的照片和尺寸都記進去。兩週後要對照。",
+        "en": "You chart every tooth, the periodontal screen, and the patch's photo and size. To compare in two weeks."
+       }
+      ]
+     ],
+     "roles": [
+      "resident"
+     ]
+    },
+    {
+     "id": "c4b",
+     "to": "place:tray",
+     "guide": {
+      "zh": "換器械、重新鋪膜",
+      "en": "Change instruments; re-barrier"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "用過的器械進回收盒，表面膜撕掉重鋪。陳先生跟阿芬聊起了他的船。",
+        "en": "Used instruments to the return box, barrier film off and on again. Mr Chen tells A-Fen about his boat."
+       }
+      ]
+     ],
+     "roles": [
+      "assistant"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "reception-call",
+   "name": {
+    "zh": "櫃台電話",
+    "en": "Reception calls"
+   },
+   "sub": {
+    "zh": "10:30 · 診間電話",
+    "en": "10:30 · surgery phone"
+   },
+   "t": 630,
+   "mood": "day",
+   "note": {
+    "zh": "全口 X 光的要求有了答案",
+    "en": "The full-mouth X-ray request answered"
+   },
+   "beats": [
+    {
+     "id": "k1",
+     "ring": {
+      "title": {
+       "zh": "櫃台來電",
+       "en": "Reception calling"
+      },
+      "sub": {
+       "zh": "初診病人要求先照全口 X 光",
+       "en": "New patient wants a full-mouth X-ray first"
+      },
+      "call": true,
+      "from": "reception"
+     },
+     "lines": [
+      [
+       "reception",
+       {
+        "zh": "醫師，一位初診的小姐說她每年都照一次全口 X 光，問今天可不可以先照再進去。我問她為什麼，她說「比較安心」。",
+        "en": "Doctor, a new patient says she has a full-mouth X-ray every year and asks whether she can have it before coming in. I asked why; she said 'peace of mind'."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "謝謝你先問了為什麼。「安心」不是正當化的理由。我先檢查，再決定要不要照、照哪一種。",
+        "en": "Thank you for asking why. 'Peace of mind' is not a justification. I examine first, then decide whether to X-ray and which film."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "dentistry-dental-radiography-selection-justification",
+      "stage": 0
+     },
+     "post": [
+      [
+       "attending",
+       {
+        "zh": "（舉起馬克杯）ALARA。",
+        "en": "(raising her mug) ALARA."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "hsiao-yu",
+   "name": {
+    "zh": "小妤：檢查",
+    "en": "Hsiao-Yu: check-up"
+   },
+   "sub": {
+    "zh": "11:00 · 牙科治療椅",
+    "en": "11:00 · dental chair"
+   },
+   "t": 660,
+   "mood": "day",
+   "note": {
+    "zh": "小妤的齲齒診斷與處置完成",
+    "en": "Hsiao-Yu's caries assessed and treated"
+   },
+   "beats": [
+    {
+     "id": "y1",
+     "to": "hsiao-yu",
+     "guide": {
+      "zh": "請小妤上椅子",
+      "en": "Hsiao-Yu into the chair"
+     },
+     "lines": [
+      [
+       "hsiao-yu",
+       {
+        "zh": "我不怕。阿芬在嗎？",
+        "en": "I am not scared. Is A-Fen here?"
+       }
+      ],
+      [
+       "a-fen",
+       {
+        "zh": "在。今天用草莓的。",
+        "en": "I am. Strawberry today."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "ICDAS 視診，先吹乾再看。白斑和洞是兩回事。",
+        "en": "ICDAS visual grading: dry the tooth first, then look. A white spot and a cavity are two different things."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "dentistry-caries-diagnosis-minimally-invasive-restoration",
+      "stage": 1
+     },
+     "post": [
+      [
+       "me",
+       {
+        "zh": "下顎第一大臼齒窩溝有一個早期的褐色病變，吹乾看得更清楚。",
+        "en": "An early brown fissure lesion on the lower first molar, clearer once dried."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "y2",
+     "to": "mother",
+     "guide": {
+      "zh": "媽媽問：全部照一照？",
+      "en": "Mum asks: X-ray everything?"
+     },
+     "lines": [
+      [
+       "mother",
+       {
+        "zh": "醫師，可以全部照一次 X 光嗎？這樣比較安心。",
+        "en": "Doctor, can you X-ray everything? For peace of mind."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "imaging",
+      "region": "mouth",
+      "question": {
+       "zh": "九歲孩子後牙之間的鄰接面，哪一種片子最合適？",
+       "en": "For the surfaces between a nine-year-old's back teeth, which film?"
+      },
+      "answer": {
+       "zh": "咬翼片。一張就能看到上下後牙的鄰接面，劑量最低、正當化最明確。全口或環口攝影要有具體理由。",
+       "en": "A bitewing. One film shows the contact surfaces of upper and lower back teeth with the lowest dose and the clearest justification. Full-mouth or panoramic films need a specific reason."
+      }
+     },
+     "post": [
+      [
+       "me",
+       {
+        "zh": "媽媽，一張咬翼片回答我們今天的問題就夠了。其他的片子沒有理由就不照。",
+        "en": "Mum, one bitewing answers today's question. Other films without a reason are not taken."
+       }
+      ],
+      [
+       "mother",
+       {
+        "zh": "……比較安心的是這句話。",
+        "en": "...That sentence is the peace of mind."
+       }
+      ]
+     ],
+     "item": "bitewing-yu"
+    },
+    {
+     "id": "y3",
+     "to": "place:chair",
+     "guide": {
+      "zh": "最小侵入性：窩洞外形",
+      "en": "Minimally invasive: the outline"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "咬翼片沒有鄰接面蛀牙。窩溝那個病變，你覺得要磨嗎？",
+        "en": "The bitewing shows no interproximal decay. The fissure lesion: do you drill?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "已經有洞了，但很小。最小侵入性：只沿著窩溝拿掉壞掉的部分。",
+        "en": "There is a cavity, but tiny. Minimally invasive: remove only the diseased part along the fissure."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "drill",
+      "template": "dentistry",
+      "drill": "cavity"
+     },
+     "post": [
+      [
+       "hsiao-yu",
+       {
+        "zh": "結束了？我都沒哭耶。",
+        "en": "Done? I did not even cry."
+       }
+      ],
+      [
+       "a-fen",
+       {
+        "zh": "我知道。草莓的功勞。",
+        "en": "I know. The strawberry did it."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mr-lin",
+   "name": {
+    "zh": "林先生：劇烈牙痛",
+    "en": "Mr Lin: severe toothache"
+   },
+   "sub": {
+    "zh": "15:30 · 牙科治療椅",
+    "en": "15:30 · dental chair"
+   },
+   "t": 930,
+   "mood": "day",
+   "note": {
+    "zh": "林先生的診斷與急症處置完成",
+    "en": "Mr Lin diagnosed and treated"
+   },
+   "beats": [
+    {
+     "id": "l1",
+     "to": "mr-lin",
+     "guide": {
+      "zh": "林先生在門口",
+      "en": "Mr Lin at the door"
+     },
+     "ring": {
+      "title": {
+       "zh": "櫃台訊息",
+       "en": "Message from reception"
+      },
+      "sub": {
+       "zh": "林先生掛急診：牙痛三天",
+       "en": "Walk-in Mr Lin: toothache for three days"
+      },
+      "call": false
+     },
+     "lines": [
+      [
+       "mr-lin",
+       {
+        "zh": "醫師，給我抗生素就好。我三天沒睡，痛到整邊臉，不知道是哪一顆。",
+        "en": "Doctor, just give me antibiotics. Three nights without sleep, the whole side of my face hurts, I cannot tell which tooth."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "抗生素治不了牙髓炎。先找出是哪一顆，再把痛的原因拿掉。",
+        "en": "Antibiotics do not treat pulpitis. First we find the tooth, then we remove the cause of the pain."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "找不到哪顆牙的時候，你有什麼工具？",
+        "en": "When you cannot find the tooth, what tools do you have?"
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "dentistry-pulpitis-root-canal-treatment",
+      "stage": 1
+     },
+     "post": [
+      [
+       "me",
+       {
+        "zh": "牙髓測試：右下第二大臼齒對冷的反應延長而且持續痛。根尖片確認。是它。",
+        "en": "Pulp test: the lower right second molar has a prolonged, lingering response to cold. Periapical radiograph confirms. That is the one."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "l1b",
+     "to": "place:viewer",
+     "guide": {
+      "zh": "判讀根尖片",
+      "en": "Read the periapical film"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "根尖片：右下第二大臼齒深齲接近牙髓，根尖周圍有一圈透亮區。這張片子有理由，也改變了處置。",
+        "en": "Periapical film: deep caries close to the pulp in the lower right second molar, with a radiolucent halo around the root tip. This film had a reason, and it changed the plan."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "照得對。寫下來你為什麼照這一張。",
+        "en": "The right film. Write down why you took it."
+       }
+      ]
+     ],
+     "roles": [
+      "resident"
+     ]
+    },
+    {
+     "id": "l2",
+     "to": "place:chair",
+     "guide": {
+      "zh": "局部麻醉前",
+      "en": "Before the local anaesthetic"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "你拿起針筒。林先生看見了。他的臉色變白，額頭出汗，說「我有點……」",
+        "en": "You pick up the syringe. Mr Lin sees it. He goes pale and sweaty and says 'I feel a bit...'"
+       }
+      ]
+     ],
+     "mini": {
+      "type": "vitals",
+      "event": "bradycardia",
+      "options": [
+       {
+        "zh": "椅子放平、抬腿、確認呼吸脈搏、鬆開領口",
+        "en": "Chair flat, legs up, check breathing and pulse, loosen the collar",
+        "ok": true,
+        "why": {
+         "zh": "迷走神經性昏厥：看到針、心跳變慢、血壓掉。放平是最好的治療，幾分鐘就回來。",
+         "en": "Vasovagal syncope: the sight of the needle slows the heart and drops the pressure. Lying flat is the treatment; he will be back in minutes."
+        }
+       },
+       {
+        "zh": "快點打完麻藥再說",
+        "en": "Get the injection done quickly",
+        "ok": false,
+        "why": {
+         "zh": "在昏厥中的病人身上打針，只會更糟。先處理昏厥。",
+         "en": "Injecting a fainting patient only makes it worse. Deal with the faint first."
+        }
+       },
+       {
+        "zh": "叫他坐起來深呼吸",
+        "en": "Sit him up and breathe deeply",
+        "ok": false,
+        "why": {
+         "zh": "坐起來腦部血流更少。要的是躺平，不是坐直。",
+         "en": "Sitting up reduces blood flow to the brain further. Flat, not upright."
+        }
+       }
+      ]
+     },
+     "post": [
+      [
+       "mr-lin",
+       {
+        "zh": "……抱歉。我平常不會這樣。",
+        "en": "...Sorry. I am not usually like this."
+       }
+      ],
+      [
+       "a-fen",
+       {
+        "zh": "每個人都這樣說。躺著休息一下，我們不急。",
+        "en": "Everyone says that. Rest there a moment; we are in no hurry."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "l3",
+     "to": "place:tray",
+     "guide": {
+      "zh": "準備橡皮障",
+      "en": "Prepare the rubber dam"
+     },
+     "lines": [
+      [
+       "a-fen",
+       {
+        "zh": "麻藥打好了，要上橡皮障。打洞器、夾子、框架。你找。",
+        "en": "Anaesthetic is in; rubber dam next. Punch, clamp, frame. Find them."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "find",
+      "hot": "instruments",
+      "q": {
+       "zh": "點選放橡皮障組的器械盤。",
+       "en": "Tap the tray that holds the rubber-dam kit."
+      }
+     },
+     "post": [
+      [
+       "attending",
+       {
+        "zh": "橡皮障不是選配。它保護呼吸道，也保護你的視野。",
+        "en": "The rubber dam is not optional. It protects the airway and your view."
+       }
+      ]
+     ],
+     "roles": [
+      "assistant"
+     ]
+    },
+    {
+     "id": "l4",
+     "to": "mr-lin",
+     "guide": {
+      "zh": "急症處置與解釋",
+      "en": "Emergency treatment and explanation"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "開髓、減壓、臨時封填。林先生的肩膀慢慢放下來。",
+        "en": "Access, decompress, temporary seal. Mr Lin's shoulders slowly drop."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "今天把痛的來源處理掉了，不是抗生素。根管治療要再來兩三次，別失蹤。",
+        "en": "Today we dealt with the source of the pain, not with antibiotics. Root-canal treatment needs two or three more visits; do not disappear."
+       }
+      ],
+      [
+       "mr-lin",
+       {
+        "zh": "我會來。我想睡覺。",
+        "en": "I will come. I want to sleep."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "closing",
+   "name": {
+    "zh": "收診",
+    "en": "Closing the surgery"
+   },
+   "sub": {
+    "zh": "17:30 · 病歷電腦",
+    "en": "17:30 · charting workstation"
+   },
+   "t": 1050,
+   "mood": "eve",
+   "note": {
+    "zh": "收診與反思完成",
+    "en": "Surgery closed; debrief done"
+   },
+   "beats": [
+    {
+     "id": "v1",
+     "to": "place:desk",
+     "guide": {
+      "zh": "收診前的紀錄",
+      "en": "Notes before closing"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "三份紀錄：一塊白斑、一張咬翼片、一顆找了很久的牙。",
+        "en": "Three records: one white patch, one bitewing, one tooth that took finding."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "v2",
+     "to": "attending",
+     "guide": {
+      "zh": "郭主治的反思",
+      "en": "Dr Kuo's debrief"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "陳先生的白斑你處理得對。兩週後他回來，是你自己看。",
+        "en": "You handled Mr Chen's patch correctly. When he comes back in two weeks, you see him yourself."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "今天最重要的一件事不是磨牙，是伸舌頭。回家吧。",
+        "en": "The most important thing today was not drilling; it was 'stick out your tongue'. Go home."
+       }
+      ]
+     ],
+     "when": {
+      "flag": "lesion",
+      "is": "review"
+     }
+    },
+    {
+     "id": "v2b",
+     "to": "attending",
+     "guide": {
+      "zh": "郭主治的反思",
+      "en": "Dr Kuo's debrief"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "陳先生的白斑，我把藥膏改成了兩週複查加口腔外科轉診。藥膏會讓你們兩個都以為事情解決了。",
+        "en": "Mr Chen's patch: I changed the cream to a two-week review and an oral-surgery referral. A cream makes both of you believe it is dealt with."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "……謝謝。我記住了。",
+        "en": "...Thank you. I will remember."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "今天最重要的一件事不是磨牙，是伸舌頭。回家吧。",
+        "en": "The most important thing today was not drilling; it was 'stick out your tongue'. Go home."
+       }
+      ]
+     ],
+     "when": {
+      "flag": "lesion",
+      "is": "cream"
+     }
+    },
+    {
+     "id": "v2c",
+     "to": "attending",
+     "guide": {
+      "zh": "郭主治的反思",
+      "en": "Dr Kuo's debrief"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "陳先生的白斑，我打電話請他兩週後回來，並且轉了口腔外科。不痛的那一塊，才是最危險的。",
+        "en": "Mr Chen's patch: I phoned him to come back in two weeks and referred him to oral surgery. The painless one is the dangerous one."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "……謝謝。我記住了。",
+        "en": "...Thank you. I will remember."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "今天最重要的一件事不是磨牙，是伸舌頭。回家吧。",
+        "en": "The most important thing today was not drilling; it was 'stick out your tongue'. Go home."
+       }
+      ]
+     ],
+     "when": {
+      "flag": "lesion",
+      "is": "ignore"
+     }
+    }
+   ]
+  },
+  {
+   "id": "night",
+   "name": {
+    "zh": "夜間值班",
+    "en": "Night on call"
+   },
+   "sub": {
+    "zh": "21:30 · 值班電話",
+    "en": "21:30 · on-call phone"
+   },
+   "t": 1290,
+   "mood": "night",
+   "note": {
+    "zh": "拔牙後出血處理完成",
+    "en": "Post-extraction bleeding handled"
+   },
+   "beats": [
+    {
+     "id": "x1",
+     "ring": {
+      "title": {
+       "zh": "急診來電",
+       "en": "ER calling"
+      },
+      "sub": {
+       "zh": "拔牙後出血不止，有吃抗凝血劑",
+       "en": "Bleeding after an extraction, on an anticoagulant"
+      },
+      "call": true,
+      "from": "er-doc"
+     },
+     "lines": [
+      [
+       "er-doc",
+       {
+        "zh": "牙科嗎？六十多歲男性，下午在別處拔牙，現在還在滲血，有吃抗凝血劑。生命徵象穩定。",
+        "en": "Dentistry? Man in his sixties, extraction elsewhere this afternoon, still oozing, on an anticoagulant. Observations stable."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "choice",
+      "q": {
+       "zh": "你怎麼指示急診？",
+       "en": "What do you tell the ER?"
+      },
+      "options": [
+       {
+        "zh": "紗布捲咬緊加壓、坐直、不要漱口，我下去看局部止血",
+        "en": "Firm pressure on a rolled gauze, sit upright, no rinsing; I will come and do local haemostasis",
+        "ok": true,
+        "why": {
+         "zh": "拔牙後出血絕大多數靠局部處理：加壓、縫合、局部止血材料。抗凝血劑不用停。",
+         "en": "Almost all post-extraction bleeding is managed locally: pressure, sutures, local haemostatic material. The anticoagulant is not stopped."
+        }
+       },
+       {
+        "zh": "請他停抗凝血劑三天",
+        "en": "Tell him to stop the anticoagulant for three days",
+        "ok": false,
+        "why": {
+         "zh": "停抗凝血劑的風險是中風和血栓。這是局部問題，用局部方法。",
+         "en": "Stopping the anticoagulant risks stroke and clots. A local problem gets a local solution."
+        }
+       },
+       {
+        "zh": "叫他用力漱口把血塊漱掉",
+        "en": "Have him rinse hard to clear the clot",
+        "ok": false,
+        "why": {
+         "zh": "血塊就是止血的東西。漱掉它，出血會重新開始。",
+         "en": "The clot is what stops the bleeding. Rinse it away and it starts again."
+        }
+       }
+      ]
+     },
+     "post": [
+      [
+       "er-doc",
+       {
+        "zh": "好，紗布咬著了，坐直了。等你。",
+        "en": "Right, gauze in, sitting up. Waiting for you."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "x2",
+     "to": "place:door",
+     "guide": {
+      "zh": "出門前",
+      "en": "Before you leave"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "你拿了縫合包和局部止血材料，關上診間的燈。郭主治的馬克杯還在桌上，杯口朝著門。",
+        "en": "You pick up a suture pack and local haemostatic material and switch off the surgery light. Dr Kuo's mug is still on the desk, facing the door."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "（訊息）急診說你沒有叫他停藥。對。局部的事，局部解決。明天見。",
+        "en": "(message) The ER says you did not tell him to stop his tablets. Correct. Local problem, local solution. See you tomorrow."
+       }
+      ]
+     ],
+     "t": 1310,
+     "end": true
+    }
+   ]
+  }
+ ],
+ "ending": {
+  "title": {
+   "zh": "收診了",
+   "en": "Surgery closed"
+  },
+  "sub": {
+   "zh": "一面口鏡、一張片子、一個放平的椅子",
+   "en": "A mirror, one film and a chair laid flat"
+  },
+  "stats": [
+   "stages",
+   "drills",
+   "choices",
+   "calls",
+   "items",
+   "time"
+  ]
+ }
+}

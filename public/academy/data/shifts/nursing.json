@@ -1,0 +1,334 @@
+{
+  "format": "huatuo-shift-v1",
+  "department": "nursing",
+  "title": {"zh": "護理值班日", "en": "A nursing shift"},
+  "tagline": {"zh": "趨勢不是最後一筆，停下來的三十秒最值錢", "en": "A trend is not the last reading, and the thirty seconds you stop are worth the most"},
+  "room": "ward",
+  "minutes": 25,
+  "roles": [
+    {"id": "nurse", "zh": "新進護理師", "en": "New graduate nurse",
+     "desc": {"zh": "跟著柯學姊給藥、換藥、接 ISBAR、回報病況；條碼掃不過的時候，決定的人是你。", "en": "Give medicines and change dressings with Nurse Ko, take the ISBAR handover, report deterioration; when the barcode will not scan, the decision is yours."}},
+    {"id": "aide", "zh": "照顧服務員", "en": "Nursing aide",
+     "desc": {"zh": "翻身、洗手、推急救車、陪家屬；病人身上最早的變化你最先摸到。", "en": "Turning, hand hygiene, the crash cart and the families are yours; you are the first to feel a change in a patient."}}
+  ],
+  "cast": {
+    "preceptor": {"name": {"zh": "柯學姊", "en": "Nurse Ko"}, "role": {"zh": "臨床教師（師傅）", "en": "Clinical preceptor (mentor)"}, "tag": "PRE", "color": "#81296d", "body": "mentor",
+                  "about": {"zh": "十五年病房資歷。永遠在找她的筆，永遠借你的。", "en": "Fifteen years on the wards. Forever looking for her pen, forever borrowing yours."}},
+    "charge": {"name": {"zh": "阿萍", "en": "Ping"}, "role": {"zh": "小組長", "en": "Charge nurse"}, "tag": "CN", "color": "#3b8f6a", "body": "nurse",
+               "about": {"zh": "整個病房的節拍器。急救車封條號碼她背得出來。", "en": "The ward's metronome. Knows the crash cart seal number by heart."}},
+    "resident-doc": {"name": {"zh": "葉醫師", "en": "Dr Yeh"}, "role": {"zh": "外科住院醫師", "en": "Surgical resident"}, "tag": "R1", "color": "#3f6fa8", "body": "resident",
+                     "about": {"zh": "被叫來的時候先說「說」。喜歡聽到完整的 ISBAR。", "en": "Arrives saying “Go.” Likes a complete ISBAR."}},
+    "pharmacist": {"name": {"zh": "阿偉", "en": "Wei"}, "role": {"zh": "病房藥師", "en": "Ward pharmacist"}, "tag": "RPH", "color": "#2f6f8f", "body": "pharmacist",
+                   "about": {"zh": "每天中午帶著兩份清單出現。他看得到系統裡每一筆手動覆寫。", "en": "Appears every noon with two lists. He can see every manual override in the system."}},
+    "axiong": {"name": {"zh": "阿雄伯（7 床）", "en": "Uncle Hsiung (bed 7)"}, "role": {"zh": "腹部手術後第二天", "en": "Second day after abdominal surgery"}, "tag": "P7", "color": "#c2703a", "body": "patient",
+               "about": {"zh": "虛構教學個案。還不太能動，手卻沒停過：用藥袋紙摺紙鶴。", "en": "Fictional teaching case. Cannot move much yet, but his hands never stop: he folds paper cranes from medicine bags."}},
+    "xiuying": {"name": {"zh": "秀英姨（12 床）", "en": "Auntie Hsiu-Ying (bed 12)"}, "role": {"zh": "今早從加護病房轉出", "en": "Transferred from ICU this morning"}, "tag": "P12", "color": "#b5651d", "body": "patient",
+                "about": {"zh": "虛構教學個案。兩份用藥清單，一袋家裡的藥。說話輕，變化也輕。", "en": "Fictional teaching case. Two medication lists and a bag from home. Speaks softly; deteriorates softly too."}},
+    "son": {"name": {"zh": "秀英姨的兒子", "en": "Hsiu-Ying's son"}, "role": {"zh": "家屬", "en": "Family"}, "tag": "FAM", "color": "#8a6d3b", "body": "family",
+            "about": {"zh": "帶了一台家用血壓計，量了兩次，得到兩個答案。", "en": "Brought a home blood pressure machine, measured twice, got two answers."}},
+    "icu-nurse": {"name": {"zh": "加護病房護理師", "en": "ICU nurse"}, "role": {"zh": "ICU 護理師（電話）", "en": "ICU nurse (by phone)"}, "tag": "ICU", "color": "#c0392b", "phoneOnly": true,
+                  "about": {"zh": "交班一定用 ISBAR，講完一定要你複誦。", "en": "Always hands over in ISBAR and always waits for your read-back."}}
+  },
+  "places": {
+    "board": {"name": {"zh": "交班板", "en": "Handover board"}, "hot": "whiteboard"},
+    "station": {"name": {"zh": "護理站電話", "en": "Station phone"}, "hot": "handover"},
+    "cart": {"name": {"zh": "藥車", "en": "Medication cart"}, "hot": "drugs"},
+    "bed7": {"name": {"zh": "7 床", "en": "Bed 7"}, "hot": "bed"},
+    "bed12": {"name": {"zh": "12 床", "en": "Bed 12"}, "hot": "bed"},
+    "sink": {"name": {"zh": "洗手台", "en": "Hand-wash sink"}, "hot": "sink"},
+    "crash": {"name": {"zh": "急救車", "en": "Crash cart"}, "hot": "crash-cart"},
+    "ws": {"name": {"zh": "影像工作站", "en": "Imaging workstation"}, "hot": "imaging"}
+  },
+  "glossary": [
+    {"term": {"zh": "給藥五對", "en": "five rights"}, "plain": {"zh": "每次給藥都要對的五件事：病人對、藥物對、劑量對、途徑對、時間對；很多單位加上記錄對。", "en": "Five things to confirm at every medicine round: right patient, drug, dose, route and time; many units add right documentation."}},
+    {"term": {"zh": "手圈", "en": "wristband"}, "plain": {"zh": "病人手腕上的身分帶，印著姓名、病歷號與條碼；核對身分的第一個依據。", "en": "The identity band on a patient's wrist with name, record number and barcode; the first basis for checking identity."}},
+    {"term": {"zh": "條碼", "en": "barcode"}, "plain": {"zh": "掃手圈與藥袋上的條碼，系統自動核對病人與藥；掃不過就是停下來的訊號。", "en": "Scanning the band and the medicine label lets the system match patient and drug; a failed scan is the signal to stop."}},
+    {"term": {"zh": "無菌非觸碰技術", "en": "aseptic non-touch technique"}, "plain": {"zh": "換藥、打針時保護「關鍵部位」不被碰到的一套做法，不需要整個無菌環境。", "en": "A way of protecting the “key parts” from being touched during dressings and injections, without needing a fully sterile field."}},
+    {"term": {"zh": "關鍵部位", "en": "key parts"}, "plain": {"zh": "會直接接觸傷口或進入身體的部分：敷料內面、針頭、接頭。只能碰無菌的。", "en": "The parts that will touch the wound or enter the body: the inside of a dressing, needle tips, connectors. Only sterile touches sterile."}},
+    {"term": {"zh": "壓力性損傷", "en": "pressure injury"}, "plain": {"zh": "長時間壓迫讓皮膚和底下組織缺血受傷；骨頭突出處最常見。", "en": "Damage to skin and the tissue beneath from prolonged pressure cutting off blood flow; bony prominences are the usual sites."}},
+    {"term": {"zh": "趨勢", "en": "trend"}, "plain": {"zh": "一段時間內數值的走向。最後一筆正常，不代表前幾個小時也正常。", "en": "The direction readings take over time. A normal last reading says nothing about the hours before it."}},
+    {"term": {"zh": "ISBAR", "en": "ISBAR"}, "plain": {"zh": "交班與回報的固定順序：身分、情境、背景、評估、建議，最後複誦。", "en": "The fixed order for handover and escalation: Identity, Situation, Background, Assessment, Recommendation, then read back."}},
+    {"term": {"zh": "複誦", "en": "read-back"}, "plain": {"zh": "把聽到的內容重複一遍給對方確認，電話交班與口頭醫囑都要。", "en": "Repeating what you heard back to the speaker; required for telephone handovers and verbal orders."}},
+    {"term": {"zh": "袖帶", "en": "cuff"}, "plain": {"zh": "血壓計綁在上臂的那一圈；太小會量出偏高，手臂位置也會影響數值。", "en": "The band of the blood pressure machine around the upper arm; too small reads high, and arm position changes the number."}},
+    {"term": {"zh": "血氧", "en": "oxygen saturation"}, "plain": {"zh": "指夾感測器讀出的血液帶氧比例；下降時先看病人，再看機器。", "en": "The finger-clip reading of how much oxygen the blood carries; when it drops, look at the patient before the machine."}},
+    {"term": {"zh": "急救車", "en": "crash cart"}, "plain": {"zh": "裝著急救藥物與器材的推車，封條完整、每天檢查，所有人都要知道它在哪裡。", "en": "The trolley holding emergency drugs and equipment; seal intact, checked daily, and everyone knows where it is."}},
+    {"term": {"zh": "異常通報", "en": "incident report"}, "plain": {"zh": "把差點出錯或已出錯的事寫下來交給單位，目的是讓系統改善，不是處罰個人。", "en": "Writing up a near miss or an error for the unit, so the system can improve; it is not about punishing a person."}},
+    {"term": {"zh": "用藥整合", "en": "medication reconciliation"}, "plain": {"zh": "把所有來源的藥單和實際吃法對成一份正確清單，轉床、入院、出院時都要做。", "en": "Matching every medicine list and the actual use into one correct list; done on every transfer, admission and discharge."}}
+  ],
+  "codex": [
+    {"id": "med-cart", "kind": "equipment", "name": {"zh": "藥車", "en": "Medication cart"}, "text": {"zh": "一床一格、上鎖、掃描器掛在側邊。五對從推車開始。", "en": "One drawer per bed, locked, scanner on the side. The five rights begin at the cart."}, "hot": "drugs"},
+    {"id": "scanner", "kind": "equipment", "name": {"zh": "條碼掃描器", "en": "Barcode scanner"}, "text": {"zh": "掃手圈、掃藥袋，系統核對。掃不過不是故障，是停下來的提示。", "en": "Scan the band, scan the label, the system matches them. A failed scan is not a fault; it is a prompt to stop."}, "hot": "device"},
+    {"id": "crash-cart", "kind": "equipment", "name": {"zh": "急救車", "en": "Crash cart"}, "text": {"zh": "封條號碼、檢查表、每日簽名。模擬演練時推它的人，真的時候也推它。", "en": "Seal number, checklist, daily signature. Whoever pushes it in the drill pushes it for real."}, "hot": "crash-cart"},
+    {"id": "bp-cuff", "kind": "equipment", "name": {"zh": "血壓計", "en": "Blood pressure cuff"}, "text": {"zh": "休息後量、坐好、手臂與心臟同高、袖帶合尺寸。兩個數字都記，條件也記。", "en": "After rest, seated, arm at heart level, correctly sized cuff. Record both numbers, and the conditions."}, "hot": "monitor"},
+    {"id": "dressing-pack", "kind": "equipment", "name": {"zh": "敷料包", "en": "Dressing pack"}, "text": {"zh": "打開的順序就是無菌的順序。關鍵部位只碰無菌的。", "en": "The order you open it is the order of asepsis. Key parts touch only sterile."}, "hot": "instruments"},
+    {"id": "handover-board", "kind": "equipment", "name": {"zh": "交班板", "en": "Handover board"}, "text": {"zh": "床號、重點、待辦、通知了誰。寫了名字的待辦才會有人做。", "en": "Bed, key points, to-dos, who was told. A to-do with a name on it gets done."}, "hot": "whiteboard"},
+    {"id": "paper-crane", "kind": "item", "name": {"zh": "藥袋紙鶴", "en": "Medicine-bag paper crane"}, "text": {"zh": "阿雄伯用藥袋紙摺的。翅膀上還印著「飯後」。", "en": "Folded by Uncle Hsiung from a medicine bag. One wing still says “after meals”."}},
+    {"id": "five-rights", "kind": "concept", "name": {"zh": "給藥五對與停下來", "en": "Five rights and stopping"}, "text": {"zh": "五對是流程，停下來是文化。條碼掃不過、名字不對、藥長得不一樣，都是停下來的理由。", "en": "The five rights are a process; stopping is a culture. A failed scan, a wrong name or a tablet that looks different are all reasons to stop."}},
+    {"id": "isbar", "kind": "concept", "name": {"zh": "ISBAR 回報", "en": "ISBAR escalation"}, "text": {"zh": "身分、情境、背景、評估、建議。評估要講趨勢，建議要講你要對方做什麼。", "en": "Identity, Situation, Background, Assessment, Recommendation. Assessment gives the trend; Recommendation says what you want the listener to do."}}
+  ],
+  "segs": [
+    {"id": "handover", "name": {"zh": "晨間交班", "en": "Morning handover"}, "sub": {"zh": "07:00 · 外科病房交班板", "en": "07:00 · surgical ward board"}, "t": 420, "mood": "day",
+     "note": {"zh": "交班：趨勢與一通 ICU 電話", "en": "Handover: the trend and a call from ICU"},
+     "beats": [
+      {"id": "h1", "to": "place:board", "guide": {"zh": "到交班板", "en": "Go to the handover board"},
+       "lines": [
+        ["sys", {"zh": "外科病房，早上七點。交班板前站了一排人，柯學姊在找她的筆。", "en": "The surgical ward, seven in the morning. A row of people at the board; Nurse Ko is looking for her pen."}],
+        ["preceptor", {"zh": "筆借我。今天你跟我：7 床阿雄伯、12 床秀英姨。", "en": "Lend me your pen. You're with me today: bed 7, Uncle Hsiung; bed 12, Auntie Hsiu-Ying."}],
+        ["charge", {"zh": "12 床早上從 ICU 轉來，ICU 等一下會打來交班。", "en": "Bed 12 came up from ICU this morning; they'll ring to hand over shortly."}],
+        ["preceptor", {"zh": "交班單只印最後一筆。病人不是只有最後一筆。先看趨勢。", "en": "The handover sheet prints only the last reading. A patient is more than a last reading. Look at the trend first."}]
+       ]},
+      {"id": "h2", "to": "place:station", "guide": {"zh": "到護理站接 ICU 電話", "en": "Take the ICU call at the station"},
+       "ring": {"title": {"zh": "加護病房來電", "en": "ICU calling"}, "sub": {"zh": "12 床秀英姨轉出交班", "en": "Bed 12, Auntie Hsiu-Ying: transfer handover"}, "call": true, "from": "icu-nurse"},
+       "lines": [
+        ["icu-nurse", {"zh": "我用 ISBAR 交。準備好了嗎？", "en": "I'll hand over in ISBAR. Ready?"}],
+        ["me", {"zh": "好了，請說。", "en": "Ready, go ahead."}]
+       ],
+       "mini": {"type": "order", "q": {"zh": "接收 ISBAR 交班的順序", "en": "The order of an ISBAR handover"},
+                "steps": [
+                 {"zh": "身分：病人、床號、交班者", "en": "Identity: patient, bed, who is handing over"},
+                 {"zh": "情境：轉出原因與現況", "en": "Situation: reason for transfer and current state"},
+                 {"zh": "背景：病史、手術、過敏", "en": "Background: history, operations, allergies"},
+                 {"zh": "評估：趨勢、管路、傷口", "en": "Assessment: trends, lines, wounds"},
+                 {"zh": "建議：待辦與注意事項", "en": "Recommendation: to-dos and watch-points"},
+                 {"zh": "複誦確認", "en": "Read back to confirm"}
+                ]},
+       "post": [
+        ["icu-nurse", {"zh": "複誦正確。還有，她家裡的藥袋和我們的清單不一樣，兒子帶來了。", "en": "Read-back correct. One more thing: her medicines from home don't match our list. Her son brought them in."}],
+        ["me", {"zh": "記下來，中午請藥師一起對。", "en": "Noted. The pharmacist and I will reconcile them at noon."}]
+       ]}
+     ]},
+    {"id": "meds", "name": {"zh": "給藥", "en": "Medicine round"}, "sub": {"zh": "08:30 · 藥車與 7 床", "en": "08:30 · the cart and bed 7"}, "t": 510, "mood": "day",
+     "note": {"zh": "給藥五對；一個掃不過的條碼", "en": "Five rights; one barcode that would not scan"},
+     "beats": [
+      {"id": "m1", "to": "place:cart", "guide": {"zh": "推藥車開始給藥", "en": "Start the round at the cart"},
+       "lines": [
+        ["preceptor", {"zh": "給藥五對。你說。", "en": "The five rights. Say them."}],
+        ["me", {"zh": "病人對、藥物對、劑量對、途徑對、時間對。", "en": "Right patient, right drug, right dose, right route, right time."}],
+        ["preceptor", {"zh": "第六對：記錄對。推車走。", "en": "Sixth right: right documentation. Push the cart."}]
+       ],
+       "mini": {"type": "order", "q": {"zh": "床邊給藥流程", "en": "Bedside medicine administration sequence"},
+                "steps": [
+                 {"zh": "核對病人：姓名、病歷號、手圈", "en": "Confirm the patient: name, record number, wristband"},
+                 {"zh": "核對藥物與醫囑單", "en": "Match the drug to the order"},
+                 {"zh": "核對劑量（依醫囑）", "en": "Confirm the dose (per order)"},
+                 {"zh": "核對途徑", "en": "Confirm the route"},
+                 {"zh": "核對時間", "en": "Confirm the time"},
+                 {"zh": "給藥後立即記錄", "en": "Document immediately after giving"}
+                ]},
+       "post": [
+        ["preceptor", {"zh": "每一對都是一次停下來的機會。", "en": "Every right is a chance to stop."}]
+       ]},
+      {"id": "m2", "to": "axiong", "guide": {"zh": "到 7 床給藥", "en": "Give bed 7's medicines"},
+       "lines": [
+        ["sys", {"zh": "你掃阿雄伯的手圈。嗶。再掃。嗶。條碼掃不過。", "en": "You scan Uncle Hsiung's wristband. Beep. Again. Beep. The barcode will not scan."}],
+        ["axiong", {"zh": "昨天擦澡弄濕了啦。我是阿雄沒錯。", "en": "It got wet in the bed bath yesterday. I'm Hsiung, honest."}]
+       ],
+       "mini": {"type": "choice", "q": {"zh": "條碼掃不過，你怎麼做？", "en": "The barcode will not scan. What do you do?"},
+                "options": [
+                 {"zh": "停下，口頭核對兩項身分，換新手圈再給", "en": "Stop, verify two identifiers verbally, replace the band, then give", "ok": true, "set": {"barcode-fixed": true},
+                  "why": {"zh": "掃不過是停下來的訊號，不是繞過去的理由。", "en": "A failed scan is a signal to stop, not a reason to go around."}},
+                 {"zh": "手動輸入病歷號繼續給", "en": "Type the record number manually and carry on", "ok": false, "set": {"barcode-fixed": false},
+                  "why": {"zh": "手動覆寫跳過了系統最後一道防線。", "en": "A manual override skips the system's last line of defence."}},
+                 {"zh": "先給藥，等一下回來補掃", "en": "Give now, scan later", "ok": false, "set": {"barcode-fixed": false},
+                  "why": {"zh": "先給再補，就是沒有核對。", "en": "Give first and check later is no check at all."}}
+                ]},
+       "post": [
+        ["preceptor", {"zh": "停下來的那三十秒，比什麼都值錢。", "en": "Those thirty seconds you stop are worth more than anything."}]
+       ]},
+      {"id": "m3", "roles": ["aide"], "to": "axiong", "guide": {"zh": "幫阿雄伯翻身", "en": "Turn Uncle Hsiung"},
+       "lines": [
+        ["me", {"zh": "阿雄伯，兩個小時到了，翻身囉。床頭搖低、拉單、兩個人一起。", "en": "Uncle Hsiung, two hours are up, time to turn. Head of the bed down, draw sheet, two of us together."}],
+        ["axiong", {"zh": "你們比鬧鐘還準。", "en": "You lot are more punctual than my alarm clock."}],
+        ["me", {"zh": "翻身表上簽名、寫時間、寫方向。", "en": "Sign the turning chart: time and which side."}]
+       ],
+       "set": {"turned": true}},
+      {"id": "m4", "roles": ["nurse"], "to": "place:cart", "guide": {"zh": "完成給藥記錄", "en": "Complete the medication record"},
+       "lines": [
+        ["preceptor", {"zh": "給完立刻記。記錄不是給自己看的，是給下一班看的。", "en": "Document the moment you give. The record is not for you; it is for the next shift."}],
+        ["me", {"zh": "時間、藥名、途徑、簽名。還有剛才換手圈的事。", "en": "Time, drug, route, signature. And the replaced wristband."}]
+       ]}
+     ]},
+    {"id": "dressing", "name": {"zh": "換藥與皮膚", "en": "Dressing and skin"}, "sub": {"zh": "10:30 · 7 床", "en": "10:30 · bed 7"}, "t": 630, "mood": "day",
+     "note": {"zh": "換藥完成；皮膚觀察有時間有部位", "en": "Dressing done; skin check with time and site"},
+     "beats": [
+      {"id": "d1", "roles": ["nurse"], "to": "axiong", "guide": {"zh": "幫阿雄伯換藥", "en": "Change Uncle Hsiung's dressing"},
+       "lines": [
+        ["preceptor", {"zh": "無菌非觸碰技術。關鍵部位是什麼？", "en": "Aseptic non-touch technique. What are the key parts?"}],
+        ["me", {"zh": "敷料內面、傷口、任何會碰到傷口的東西。", "en": "The inside of the dressing, the wound, anything that will touch the wound."}],
+        ["preceptor", {"zh": "對。洗手、鋪盤、不碰關鍵部位。開始。", "en": "Right. Hands, field, never touch a key part. Go."}]
+       ],
+       "mini": {"type": "drill", "template": "nursing", "drill": "aseptic"},
+       "post": [
+        ["axiong", {"zh": "你們換藥像在拆禮物。", "en": "You change dressings like you're unwrapping presents."}]
+       ]},
+      {"id": "d1a", "roles": ["aide"], "to": "place:sink", "guide": {"zh": "換藥前先洗手", "en": "Hand hygiene before the dressing"},
+       "lines": [
+        ["preceptor", {"zh": "換藥我來，你準備推車、洗手，然後幫我扶阿雄伯。", "en": "I'll do the dressing. You set up the trolley, wash your hands, then help me hold Uncle Hsiung."}]
+       ],
+       "mini": {"type": "find", "hot": "sink", "q": {"zh": "找到洗手台", "en": "Find the hand-wash sink"}},
+       "post": [
+        ["preceptor", {"zh": "洗完手不碰別的東西，直接過來。", "en": "Hands washed, touch nothing else, straight over."}]
+       ]},
+      {"id": "d2", "to": "axiong", "guide": {"zh": "檢查阿雄伯的皮膚", "en": "Check Uncle Hsiung's skin"},
+       "lines": [
+        ["preceptor", {"zh": "換完藥，看尾椎和腳跟。夜班傳了一張照片，紅紅的一塊。", "en": "Dressing done, now the tailbone and heels. Nights sent a photo: a red patch."}],
+        ["me", {"zh": "照片沒寫部位、時間、大小。", "en": "The photo has no site, no time, no size."}],
+        ["preceptor", {"zh": "那就不算評估。先補足觀察條件。", "en": "Then it is not an assessment. Fill in the observation conditions first."}]
+       ],
+       "mini": {"type": "stage", "case": "nursing-v38-skin-observation", "stage": 0},
+       "post": [
+        ["preceptor", {"zh": "壓力性損傷的照片要有尺、有部位、有時間，壓下去會不會變白也要寫。", "en": "A pressure injury photo needs a ruler, a site, a time, and whether it blanches."}]
+       ]},
+      {"id": "d3", "to": "place:ws", "guide": {"zh": "到工作站看好發部位", "en": "Pressure sites at the workstation"},
+       "lines": [
+        ["preceptor", {"zh": "躺著跟坐著，壓的地方不一樣。看圖。", "en": "Lying and sitting load different places. Look."}]
+       ],
+       "mini": {"type": "imaging", "region": "skin",
+                "question": {"zh": "哪些部位最容易發生壓力性損傷？", "en": "Which sites are most prone to pressure injury?"},
+                "answer": {"zh": "骨頭突出、肉少的地方：薦骨尾椎、腳跟、坐骨、股骨大轉子、肩胛、後腦。躺著和坐著的好發點不同。", "en": "Bony, poorly padded places: sacrum and tailbone, heels, ischial tuberosities, greater trochanters, shoulder blades, back of the head. Lying and sitting have different hot spots."}},
+       "post": [
+        ["preceptor", {"zh": "翻身表上每一格都是一次預防。", "en": "Every box on the turning chart is one prevention."}]
+       ]}
+     ]},
+    {"id": "noon", "name": {"zh": "藥師與血壓", "en": "Pharmacist and a blood pressure"}, "sub": {"zh": "12:30 · 藥車與 12 床", "en": "12:30 · the cart and bed 12"}, "t": 750, "mood": "day",
+     "note": {"zh": "用藥整合；兩個血壓數字", "en": "Reconciliation; two blood pressure readings"},
+     "beats": [
+      {"id": "n1", "to": "pharmacist", "guide": {"zh": "到藥車找藥師阿偉", "en": "Meet Wei the pharmacist at the cart"},
+       "lines": [
+        ["pharmacist", {"zh": "12 床，兩份清單、一袋家裡的藥。用藥整合開始。", "en": "Bed 12: two lists and a bag from home. Medication reconciliation, let's go."}]
+       ]},
+      {"id": "n1y", "when": {"flag": "barcode-fixed", "is": true},
+       "lines": [
+        ["pharmacist", {"zh": "早上你換手圈的事，小組長跟我說了。系統裡乾乾淨淨。", "en": "Ping told me about the wristband this morning. The system is spotless."}],
+        ["preceptor", {"zh": "乾淨的系統是停下來換來的。", "en": "A clean system is what stopping buys you."}]
+       ]},
+      {"id": "n1n", "when": {"flag": "barcode-fixed", "is": false},
+       "lines": [
+        ["pharmacist", {"zh": "藥局系統查到一筆手動覆寫的給藥。我們一起看是怎麼回事。", "en": "Pharmacy picked up a manual override on a dose. Let's look at it together."}],
+        ["me", {"zh": "7 床的手圈掃不過，我手動輸入了。", "en": "Bed 7's band wouldn't scan. I typed it in."}],
+        ["preceptor", {"zh": "填一份異常通報。不是處罰，是讓系統學到。", "en": "File an incident report. Not a punishment; it is how the system learns."}]
+       ]},
+      {"id": "n2", "to": "pharmacist", "guide": {"zh": "對 12 床的兩份清單", "en": "Reconcile bed 12's two lists"},
+       "lines": [
+        ["pharmacist", {"zh": "兩份清單日期不同，家裡的藥袋又是第三個版本。從哪裡開始？", "en": "The two lists have different dates and the bag from home is a third version. Where do we start?"}]
+       ],
+       "mini": {"type": "stage", "case": "nursing-v38-medication-reconcile", "stage": 0},
+       "post": [
+        ["pharmacist", {"zh": "開立、停用、實際使用，三欄。沒確認的，留空，不要猜。", "en": "Prescribed, stopped, actually taken: three columns. Anything unconfirmed stays blank; no guessing."}]
+       ]},
+      {"id": "n3", "to": "xiuying", "guide": {"zh": "去 12 床看血壓", "en": "Check the blood pressure at bed 12"},
+       "ring": {"title": {"zh": "秀英姨兒子的訊息", "en": "Message from Hsiu-Ying's son"}, "sub": {"zh": "媽媽說頭暈，血壓量兩次不一樣", "en": "Mum feels dizzy; two readings, two answers"}, "call": false, "from": "son"},
+       "lines": [
+        ["son", {"zh": "我用家裡的機器幫她量兩次，一次高一次低。哪個才對？", "en": "I measured her twice with our machine, one high, one low. Which one is right?"}],
+        ["me", {"zh": "第一次量的時候，她剛做什麼？", "en": "What was she doing just before the first reading?"}],
+        ["son", {"zh": "剛從廁所走回來。", "en": "She'd just walked back from the toilet."}],
+        ["xiuying", {"zh": "我沒事，只是有點暈。", "en": "I'm fine, just a little dizzy."}]
+       ],
+       "mini": {"type": "stage", "case": "nursing-v38-bp-technique", "stage": 0},
+       "post": [
+        ["preceptor", {"zh": "休息五分鐘、坐好、手臂與心臟同高、袖帶合尺寸，再量。兩個數字都記，條件也記。", "en": "Five minutes' rest, seated, arm at heart level, correctly sized cuff, then measure. Record both numbers and the conditions."}],
+        ["preceptor", {"zh": "還有，她說暈。暈要回報，不是只重量到數字好看。", "en": "And she said dizzy. Dizzy gets reported; you don't just re-measure until the number looks nice."}]
+       ]}
+     ]},
+    {"id": "mock", "name": {"zh": "模擬急救演練", "en": "Mock code"}, "sub": {"zh": "14:30 · 急救車前", "en": "14:30 · at the crash cart"}, "t": 870, "mood": "day",
+     "note": {"zh": "模擬演練：每個人都有位置", "en": "Mock code: everyone has a place"},
+     "beats": [
+      {"id": "k1", "to": "charge", "guide": {"zh": "到小組長那裡集合", "en": "Gather with the charge nurse"},
+       "lines": [
+        ["charge", {"zh": "每月模擬急救，今天輪到我們。假設 12 床無反應。第一步？", "en": "Monthly mock code, our turn today. Suppose bed 12 is unresponsive. First step?"}],
+        ["me", {"zh": "叫人、按鈴、推急救車。", "en": "Call for help, hit the bell, get the crash cart."}],
+        ["charge", {"zh": "那車在哪裡？", "en": "And where is the cart?"}]
+       ]},
+      {"id": "k1a", "roles": ["aide"], "to": "place:crash", "guide": {"zh": "找到急救車", "en": "Find the crash cart"},
+       "lines": [
+        ["charge", {"zh": "演練時推車的人，真的時候也推車。", "en": "Whoever pushes the cart in the drill pushes it for real."}]
+       ],
+       "mini": {"type": "find", "hot": "crash-cart", "q": {"zh": "找到急救車並檢查封條", "en": "Find the crash cart and check the seal"}},
+       "post": [
+        ["charge", {"zh": "封條號碼和檢查表對得上。好。", "en": "Seal number matches the checklist. Good."}]
+       ]},
+      {"id": "k2", "roles": ["nurse"], "to": "place:bed12", "guide": {"zh": "在假人上做胸外按壓", "en": "Compressions on the manikin"},
+       "lines": [
+        ["preceptor", {"zh": "位置、深度、節奏。假人會告訴你對不對。", "en": "Position, depth, rate. The manikin will tell you."}]
+       ],
+       "mini": {"type": "drill", "template": "nursing", "drill": "cpr"},
+       "post": [
+        ["preceptor", {"zh": "手不離胸骨，兩分鐘換手，換手時間越短越好。", "en": "Hands stay on the sternum, swap every two minutes, and make the swap fast."}]
+       ]},
+      {"id": "k3", "to": "charge", "guide": {"zh": "聽演練檢討", "en": "Drill debrief"},
+       "lines": [
+        ["charge", {"zh": "檢討：叫人花了多久、車幾秒到、誰記時間、誰顧家屬。", "en": "Debrief: how long to call, seconds to the cart, who kept time, who looked after the family."}],
+        ["me", {"zh": "記時間的人沒有。", "en": "Nobody kept the time."}],
+        ["charge", {"zh": "下次有了。每個人都有位置，包括拿筆的那個。", "en": "Next time there will be. Everyone has a place, including the one with the pen."}],
+        ["preceptor", {"zh": "筆借我。", "en": "Lend me your pen."}]
+       ],
+       "set": {"mock-done": true}}
+     ]},
+    {"id": "desat", "name": {"zh": "病況變化", "en": "Deterioration"}, "sub": {"zh": "16:00 · 12 床", "en": "16:00 · bed 12"}, "t": 960, "mood": "day",
+     "note": {"zh": "12 床血氧下降，ISBAR 回報", "en": "Bed 12 desaturates; ISBAR escalation"},
+     "beats": [
+      {"id": "s1", "to": "xiuying", "guide": {"zh": "馬上到 12 床", "en": "To bed 12, now"},
+       "ring": {"title": {"zh": "小組長訊息", "en": "Message from the charge nurse"}, "sub": {"zh": "12 床警報，血氧往下掉", "en": "Bed 12 alarm: oxygen saturation falling"}, "call": false, "from": "charge"},
+       "lines": [
+        ["sys", {"zh": "監視器的警報在響。秀英姨呼吸變快，嘴唇顏色不對。", "en": "The monitor alarm is sounding. Auntie Hsiu-Ying is breathing fast and her lips are the wrong colour."}],
+        ["son", {"zh": "她剛剛還好好的！", "en": "She was fine a minute ago!"}]
+       ],
+       "mini": {"type": "vitals", "event": "desaturation",
+                "options": [
+                 {"zh": "坐起、看病人、依醫囑給氧、叫醫師、ISBAR", "en": "Sit her up, look at her, oxygen per order, call the doctor, ISBAR", "ok": true,
+                  "why": {"zh": "先看人、再看機器；給氧依醫囑；回報要帶趨勢。", "en": "Patient before machine; oxygen per order; escalate with the trend."}},
+                 {"zh": "把警報關掉再觀察幾分鐘", "en": "Silence the alarm and watch for a few minutes", "ok": false,
+                  "why": {"zh": "關掉的是警報，不是問題。", "en": "You silenced the alarm, not the problem."}},
+                 {"zh": "先量體溫再說", "en": "Take a temperature first", "ok": false,
+                  "why": {"zh": "呼吸與血氧優先於其他數字。", "en": "Breathing and saturation come before any other number."}}
+                ]},
+       "post": [
+        ["resident-doc", {"zh": "我到了。說。", "en": "I'm here. Go."}]
+       ]},
+      {"id": "s2", "to": "resident-doc", "guide": {"zh": "向葉醫師 ISBAR 回報", "en": "ISBAR to Dr Yeh"},
+       "lines": [
+        ["me", {"zh": "12 床秀英姨。情境：呼吸快、血氧下降。背景：今早 ICU 轉出。", "en": "Bed 12, Auntie Hsiu-Ying. Situation: fast breathing, falling saturation. Background: transferred from ICU this morning."}],
+        ["me", {"zh": "評估：三小時內血氧趨勢往下，右下肺呼吸音減弱。建議：請您看病人，依醫囑安排檢查。", "en": "Assessment: saturation trending down over three hours, reduced breath sounds right base. Recommendation: please see her and order investigations."}],
+        ["resident-doc", {"zh": "複誦：12 床、血氧下降趨勢、右下減弱。我看病人，開檢查。", "en": "Read-back: bed 12, downward saturation trend, right base reduced. I'll examine her and order the tests."}],
+        ["preceptor", {"zh": "你剛剛講的是趨勢，不是最後一筆。", "en": "You just gave him the trend, not the last reading."}]
+       ],
+       "set": {"escalated": true}}
+     ]},
+    {"id": "evening", "name": {"zh": "晚班交班", "en": "Evening handover"}, "sub": {"zh": "19:00 · 交班板", "en": "19:00 · handover board"}, "t": 1140, "mood": "eve",
+     "note": {"zh": "交班：通知了誰、幾點、還有什麼沒做", "en": "Handover: who was told, when, and what remains"},
+     "beats": [
+      {"id": "e1", "to": "place:board", "guide": {"zh": "到交班板交晚班", "en": "Hand over to the evening shift"},
+       "lines": [
+        ["preceptor", {"zh": "交班三樣：你通知了誰、幾點、還有什麼沒做。", "en": "Three things: who you told, when, and what is still open."}],
+        ["me", {"zh": "12 床：血氧下降趨勢，十六點通知葉醫師，檢查已排，待結果；7 床：換藥完成，翻身表到十八點。", "en": "Bed 12: downward saturation trend, Dr Yeh informed at sixteen hundred, tests ordered, results pending. Bed 7: dressing done, turning chart complete to eighteen hundred."}],
+        ["charge", {"zh": "這份交班，我願意接。", "en": "That is a handover I'll take."}]
+       ]},
+      {"id": "e2", "to": "preceptor", "guide": {"zh": "聽柯學姊的結語", "en": "Nurse Ko's debrief"},
+       "lines": [
+        ["preceptor", {"zh": "今天四件事：趨勢不是最後一筆、停下來的三十秒、關鍵部位不碰、通知了誰要寫名字。", "en": "Four things today: the trend is not the last reading, the thirty seconds you stop, never touch a key part, and name who you told."}],
+        ["preceptor", {"zh": "筆還你。", "en": "Here's your pen back."}],
+        ["sys", {"zh": "她從口袋裡摸出自己的筆，看了一眼，沒說話。", "en": "She finds her own pen in her pocket, looks at it, and says nothing."}]
+       ]},
+      {"id": "e3", "to": "axiong", "guide": {"zh": "跟阿雄伯說晚安", "en": "Say goodnight to Uncle Hsiung"},
+       "lines": [
+        ["axiong", {"zh": "這個給你。", "en": "This is for you."}],
+        ["sys", {"zh": "一隻紙鶴，用藥袋紙摺的，翅膀上印著「飯後」。", "en": "A paper crane folded from a medicine bag; one wing says “after meals”."}],
+        ["me", {"zh": "我放在護理站。明天換藥見。", "en": "It's going on the station desk. See you at tomorrow's dressing."}]
+       ],
+       "item": "paper-crane"}
+     ]},
+    {"id": "night", "name": {"zh": "夜班巡房", "en": "Night round"}, "sub": {"zh": "23:30 · 病房走廊", "en": "23:30 · ward corridor"}, "t": 1410, "mood": "night",
+     "note": {"zh": "夜裡看三樣：呼吸、點滴、床欄", "en": "At night, three things: breathing, drip, bed rails"},
+     "beats": [
+      {"id": "x1", "to": "place:bed12", "guide": {"zh": "巡到 12 床", "en": "Round to bed 12"},
+       "ring": {"title": {"zh": "柯學姊的訊息", "en": "Message from Nurse Ko"}, "sub": {"zh": "夜裡看三樣：呼吸、點滴、床欄", "en": "At night, check three things: breathing, drip, bed rails"}, "call": false, "from": "preceptor"},
+       "lines": [
+        ["sys", {"zh": "手電筒照地不照臉。秀英姨睡著了，呼吸平穩，血氧回到她的趨勢線上。", "en": "Torch on the floor, never the face. Auntie Hsiu-Ying is asleep, breathing evenly, her saturation back on its trend line."}],
+        ["sys", {"zh": "7 床的床頭櫃上，又多了一隻紙鶴。", "en": "On the locker at bed 7, there is one more paper crane."}]
+       ],
+       "end": true}
+     ]}
+  ],
+  "ending": {"title": {"zh": "下班了", "en": "End of shift"}, "sub": {"zh": "停下來的三十秒，比什麼都值錢", "en": "The thirty seconds you stop are worth the most"},
+             "stats": ["stages", "drills", "choices", "calls", "items", "time"]}
+}

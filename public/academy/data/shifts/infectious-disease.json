@@ -1,0 +1,1594 @@
+{
+ "format": "huatuo-shift-v1",
+ "department": "infectious-disease",
+ "title": {
+  "zh": "感染科值班日",
+  "en": "A shift in infectious diseases"
+ },
+ "tagline": {
+  "zh": "從一張陰性報告到隔離病房的門",
+  "en": "From one negative result to the isolation-room door"
+ },
+ "room": "ward",
+ "minutes": 25,
+ "roles": [
+  {
+   "id": "intern",
+   "zh": "實習醫師",
+   "en": "Intern",
+   "desc": {
+    "zh": "問暴露史、讀整組血清、不被單一檢驗帶走、把保密做對。檢驗回答你問的問題，不是你以為的問題。",
+    "en": "Take the exposure history, read the whole serology, refuse to be led by a single test, get confidentiality right. A test answers the question you asked, not the one you assumed."
+   }
+  },
+  {
+   "id": "icn",
+   "zh": "感染管制護理師",
+   "en": "Infection control nurse",
+   "desc": {
+    "zh": "隔離室、防護裝備、接觸者追蹤、衛生單位聯繫。門是你的，壓差是你的，大家的手也是你的。",
+    "en": "Isolation rooms, protective equipment, contact tracing, the public-health liaison. The door is yours, the pressure gauge is yours, and so is everyone's hand hygiene."
+   }
+  }
+ ],
+ "cast": {
+  "attending": {
+   "name": {
+    "zh": "郭主治",
+    "en": "Dr Kuo"
+   },
+   "role": {
+    "zh": "主治醫師（師傅）",
+    "en": "Attending (mentor)"
+   },
+   "tag": "ATT",
+   "color": "#2f7f5f",
+   "body": "mentor",
+   "about": {
+    "zh": "感染科主治，每到一個病房先數乾洗手機有幾台，查房前一定當眾洗一次手。口頭禪：「檢驗回答的是你問的問題。」",
+    "en": "Infectious-disease physician who counts the hand-rub dispensers on every ward and washes his hands in front of everyone before each round. Refrain: 'A test answers the question you asked.'"
+   }
+  },
+  "nurse-lan": {
+   "name": {
+    "zh": "小蘭",
+    "en": "Nurse Lan"
+   },
+   "role": {
+    "zh": "感染管制護理師",
+    "en": "Infection control nurse"
+   },
+   "tag": "ICN",
+   "color": "#3b8f6a",
+   "body": "nurse",
+   "about": {
+    "zh": "感管師。口袋裡有壓差計的照片、接觸者名單和衛生局的電話。脫防護裝備的順序她可以倒背。",
+    "en": "The infection control nurse, with the pressure-gauge photo, the contact list and the public-health number in her pocket. Can recite the doffing sequence backwards."
+   }
+  },
+  "patient-chang": {
+   "name": {
+    "zh": "張先生",
+    "en": "Mr Chang"
+   },
+   "role": {
+    "zh": "隔離室病人",
+    "en": "Isolation-room patient"
+   },
+   "tag": "PC",
+   "color": "#b8762e",
+   "body": "patient",
+   "about": {
+    "zh": "54 歲客運調度員，咳嗽四週、夜間盜汗、體重掉。因為類風濕性關節炎在吃免疫抑制藥。去年和一位結核病的堂哥同住過。IGRA 陰性。（虛擬個案）",
+    "en": "A 54-year-old bus dispatcher: four weeks of cough, night sweats, weight loss. On immunosuppressants for rheumatoid arthritis. Lived with a cousin who had tuberculosis last year. IGRA negative. (Fictional.)"
+   }
+  },
+  "family-chang": {
+   "name": {
+    "zh": "張太太",
+    "en": "Mrs Chang"
+   },
+   "role": {
+    "zh": "張先生的太太",
+    "en": "Mr Chang's wife"
+   },
+   "tag": "FAM",
+   "color": "#c9596a",
+   "body": "family",
+   "about": {
+    "zh": "在隔離室門外站了一早上，覺得「關進去就是確診了」。",
+    "en": "Has stood outside the isolation room all morning, convinced that 'being put in there means it is confirmed'."
+   }
+  },
+  "patient-wei": {
+   "name": {
+    "zh": "阿偉",
+    "en": "Wei"
+   },
+   "role": {
+    "zh": "門診病人",
+    "en": "Clinic patient"
+   },
+   "tag": "PV",
+   "color": "#8a6ac4",
+   "body": "patient",
+   "about": {
+    "zh": "27 歲工程師，十天前有一次可能的暴露，自己買了快篩是陰性。現在發燒、喉嚨痛、起疹子。最在意的是誰會知道。（虛擬個案）",
+    "en": "A 27-year-old engineer with a possible exposure ten days ago and a self-bought negative rapid test. Now feverish, sore-throated and covered in a rash. What he cares about most is who will find out. (Fictional.)"
+   }
+  },
+  "patient-wang": {
+   "name": {
+    "zh": "王伯",
+    "en": "Mr Wang"
+   },
+   "role": {
+    "zh": "外科病房病人",
+    "en": "Surgical ward patient"
+   },
+   "tag": "PW",
+   "color": "#6a9c3a",
+   "body": "patient",
+   "about": {
+    "zh": "71 歲，腸道手術後靠中央靜脈導管打營養，術後第九天。今天下午發抖、血壓掉。（虛擬個案）",
+    "en": "A 71-year-old on central-line nutrition nine days after bowel surgery. This afternoon he had a rigor and his blood pressure fell. (Fictional.)"
+   }
+  },
+  "rheum-np": {
+   "name": {
+    "zh": "風濕科阿珍",
+    "en": "Chen (rheumatology)"
+   },
+   "role": {
+    "zh": "風濕科專科護理師",
+    "en": "Rheumatology nurse practitioner"
+   },
+   "tag": "NP",
+   "color": "#5b6abf",
+   "body": "nurse",
+   "phoneOnly": true,
+   "about": {
+    "zh": "風濕科的專師，打電話來問一句話：「B 肝陰性，可以開始生物製劑了嗎？」",
+    "en": "Rheumatology's nurse practitioner, calling with one question: 'Hepatitis B negative, can we start the biologic?'"
+   }
+  },
+  "ward-nurse": {
+   "name": {
+    "zh": "病房小方",
+    "en": "Nurse Fang"
+   },
+   "role": {
+    "zh": "病房護理師",
+    "en": "Ward nurse"
+   },
+   "tag": "WN",
+   "color": "#2e8aa8",
+   "body": "nurse",
+   "phoneOnly": true,
+   "about": {
+    "zh": "外科病房的護理師。導管出口她每班都看，看到不對就打給感染科。",
+    "en": "Surgical ward nurse who inspects every line exit site every shift and phones infectious diseases the moment something looks wrong."
+   }
+  }
+ },
+ "places": {
+  "whiteboard": {
+   "name": {
+    "zh": "交班白板",
+    "en": "Handover board"
+   },
+   "hot": "whiteboard"
+  },
+  "iso-room": {
+   "name": {
+    "zh": "負壓隔離室",
+    "en": "Negative-pressure room"
+   },
+   "hot": "bed"
+  },
+  "anteroom": {
+   "name": {
+    "zh": "前室門",
+    "en": "Anteroom door"
+   },
+   "hot": "door"
+  },
+  "sink": {
+   "name": {
+    "zh": "洗手台",
+    "en": "Hand-wash sink"
+   },
+   "hot": "sink"
+  },
+  "ppe-station": {
+   "name": {
+    "zh": "防護裝備站",
+    "en": "PPE station"
+   },
+   "hot": "handover"
+  },
+  "pacs": {
+   "name": {
+    "zh": "PACS 讀片站",
+    "en": "PACS workstation"
+   },
+   "hot": "imaging"
+  },
+  "monitor": {
+   "name": {
+    "zh": "床邊監視器",
+    "en": "Bedside monitor"
+   },
+   "hot": "monitor"
+  },
+  "dressing-trolley": {
+   "name": {
+    "zh": "換藥車",
+    "en": "Dressing trolley"
+   },
+   "hot": "instruments"
+  },
+  "desk": {
+   "name": {
+    "zh": "診間桌",
+    "en": "Clinic desk"
+   },
+   "hot": "desk"
+  }
+ },
+ "glossary": [
+  {
+   "term": {
+    "zh": "空氣隔離",
+    "en": "airborne isolation"
+   },
+   "plain": {
+    "zh": "懷疑會經空氣傳播的病（像結核）時，病人住負壓房，進去的人戴 N95。是依「疑似」就啟動，不等確診。",
+    "en": "For diseases that may spread through the air, such as tuberculosis: the patient in a negative-pressure room, everyone entering in an N95. Started on suspicion, not on confirmation."
+   }
+  },
+  {
+   "term": {
+    "zh": "負壓隔離室",
+    "en": "negative-pressure room"
+   },
+   "plain": {
+    "zh": "房間裡的氣壓比外面低，空氣只會往裡流、再經過濾排出。門口的壓差表要每天看。",
+    "en": "A room kept at lower pressure than outside so air flows in, never out, and leaves through a filter. The gauge by the door is read every day."
+   }
+  },
+  {
+   "term": {
+    "zh": "IGRA",
+    "en": "IGRA"
+   },
+   "plain": {
+    "zh": "一種抽血的結核感染檢驗。它回答「身體有沒有被結核菌感染過」，不回答「現在有沒有活動性結核」，免疫抑制的人更可能假陰性。",
+    "en": "A blood test for tuberculosis infection. It answers 'has this body ever met the TB germ', not 'is there active disease now', and it is more often falsely negative in immunosuppressed people."
+   }
+  },
+  {
+   "term": {
+    "zh": "活動性結核",
+    "en": "active tuberculosis"
+   },
+   "plain": {
+    "zh": "結核菌正在肺裡繁殖、會傳染的狀態。要靠痰液的抹片、培養或核酸檢驗確認，不是靠抽血。",
+    "en": "Tuberculosis germs multiplying in the lung and able to spread. Confirmed by sputum smear, culture or nucleic-acid testing, not by a blood test."
+   }
+  },
+  {
+   "term": {
+    "zh": "痰抹片",
+    "en": "sputum smear"
+   },
+   "plain": {
+    "zh": "把痰塗在玻片上染色找結核菌。連續三套、清晨最好。陽性代表傳染力高。",
+    "en": "Sputum spread on a slide and stained to look for TB germs. Three sets, early-morning samples are best. A positive means highly infectious."
+   }
+  },
+  {
+   "term": {
+    "zh": "空洞",
+    "en": "cavity"
+   },
+   "plain": {
+    "zh": "肺部影像上一個挖空的洞，常是結核把組織破壞掉的痕跡。空洞病人的痰裡通常有很多菌。",
+    "en": "A hollowed-out hole on a lung image, often tissue destroyed by tuberculosis. Patients with cavities usually have many germs in their sputum."
+   }
+  },
+  {
+   "term": {
+    "zh": "免疫抑制",
+    "en": "immunosuppression"
+   },
+   "plain": {
+    "zh": "藥物把免疫系統壓低。感染更容易、症狀更不典型、檢驗更容易假陰性。",
+    "en": "Medicines holding the immune system down. Infections come easier, present less typically, and tests go falsely negative more often."
+   }
+  },
+  {
+   "term": {
+    "zh": "空窗期",
+    "en": "window period"
+   },
+   "plain": {
+    "zh": "感染之後到檢驗測得出來之前的那段時間。在空窗期裡的陰性不是真的陰性，要依暴露日期安排複查。",
+    "en": "The gap between infection and when a test can detect it. A negative inside the window is not a true negative; retesting is timed from the exposure date."
+   }
+  },
+  {
+   "term": {
+    "zh": "快篩",
+    "en": "rapid test"
+   },
+   "plain": {
+    "zh": "幾分鐘出結果的篩檢。不同快篩偵測的東西不同、能偵測的時間點也不同，陽性還要確認檢驗。",
+    "en": "A screening test with a result in minutes. Different rapid tests detect different things at different times, and a positive still needs a confirmatory test."
+   }
+  },
+  {
+   "term": {
+    "zh": "確認檢驗",
+    "en": "confirmatory test"
+   },
+   "plain": {
+    "zh": "初篩有反應之後做的第二種檢驗，用來確定結果。在它回來之前，不說「確診」。",
+    "en": "The second, different test done after a reactive screen to establish the result. Until it is back, nobody says 'confirmed'."
+   }
+  },
+  {
+   "term": {
+    "zh": "保密",
+    "en": "confidentiality"
+   },
+   "plain": {
+    "zh": "病人的暴露史和檢驗結果只有照護他的人知道。關上門問，用病人選的方式聯絡。",
+    "en": "The patient's exposure history and results are known only to those caring for them. Ask behind a closed door; contact them the way they choose."
+   }
+  },
+  {
+   "term": {
+    "zh": "B 肝核心抗體",
+    "en": "hepatitis B core antibody"
+   },
+   "plain": {
+    "zh": "代表身體曾經遇過 B 型肝炎病毒。即使表面抗原陰性，病毒可能還躲在肝細胞裡，免疫抑制時可能再活化。",
+    "en": "Shows the body has met the hepatitis B virus. Even with a negative surface antigen, virus may still hide in liver cells and reactivate under immunosuppression."
+   }
+  },
+  {
+   "term": {
+    "zh": "再活化",
+    "en": "reactivation"
+   },
+   "plain": {
+    "zh": "躲著的病毒在免疫被壓低時重新繁殖。可以預防，但前提是有人讀完整組血清，而不是只讀一格。",
+    "en": "Hidden virus multiplying again when immunity is lowered. Preventable, provided someone reads the whole panel instead of one box."
+   }
+  },
+  {
+   "term": {
+    "zh": "手部衛生",
+    "en": "hand hygiene"
+   },
+   "plain": {
+    "zh": "乾洗手或濕洗手，六個步驟、五個時機。是醫院裡最便宜也最有效的感染管制。",
+    "en": "Hand rub or hand wash, six steps, five moments. The cheapest and most effective infection control in the hospital."
+   }
+  },
+  {
+   "term": {
+    "zh": "個人防護裝備",
+    "en": "personal protective equipment"
+   },
+   "plain": {
+    "zh": "手套、隔離衣、口罩、護目鏡。穿的順序保護病人，脫的順序保護你自己。",
+    "en": "Gloves, gown, mask, eye protection. The order you put them on protects the patient; the order you take them off protects you."
+   }
+  }
+ ],
+ "codex": [
+  {
+   "id": "neg-room",
+   "kind": "equipment",
+   "name": {
+    "zh": "負壓隔離室",
+    "en": "Negative-pressure room"
+   },
+   "text": {
+    "zh": "前室、兩道門、門口的壓差表。門不能同時開。每天記錄壓差，壓差不對就不是隔離室，只是一間普通病房。",
+    "en": "An anteroom, two doors, a pressure gauge by the entrance. The doors are never open at once. The pressure is logged daily; without the right pressure it is not an isolation room, just a room."
+   },
+   "hot": "bed"
+  },
+  {
+   "id": "ppe",
+   "kind": "equipment",
+   "name": {
+    "zh": "防護裝備站",
+    "en": "PPE station"
+   },
+   "text": {
+    "zh": "N95、隔離衣、手套、護目鏡，和牆上那張穿脫順序圖。小蘭說：「穿錯保護不到病人，脫錯保護不到你。」",
+    "en": "N95s, gowns, gloves, eye protection, and the donning-doffing poster on the wall. Nurse Lan says: 'Don it wrong and the patient is unprotected; doff it wrong and you are.'"
+   },
+   "hot": "handover"
+  },
+  {
+   "id": "hand-rub",
+   "kind": "equipment",
+   "name": {
+    "zh": "洗手台與乾洗手機",
+    "en": "Sink and hand-rub dispenser"
+   },
+   "text": {
+    "zh": "郭主治每到一個病房先數有幾台。接觸病人前、無菌操作前、體液暴露後、接觸病人後、接觸環境後。五個時機，六個步驟。",
+    "en": "Dr Kuo counts the dispensers on every ward. Before touching a patient, before an aseptic task, after body-fluid exposure, after touching a patient, after touching the surroundings. Five moments, six steps."
+   },
+   "hot": "sink"
+  },
+  {
+   "id": "pacs",
+   "kind": "equipment",
+   "name": {
+    "zh": "PACS 讀片站",
+    "en": "PACS workstation"
+   },
+   "text": {
+    "zh": "胸片上葉的空洞會把問題定位，但不會告訴你是哪一種菌。影像提出問題，病原學回答問題。",
+    "en": "An upper-lobe cavity on the chest film locates the problem but never names the germ. Imaging poses the question; microbiology answers it."
+   },
+   "hot": "imaging"
+  },
+  {
+   "id": "monitor",
+   "kind": "equipment",
+   "name": {
+    "zh": "床邊監視器",
+    "en": "Bedside monitor"
+   },
+   "text": {
+    "zh": "導管感染的病人先發抖、再發燒、然後血壓掉。監視器上這三件事的順序，是敗血症在走路。",
+    "en": "A patient with a line infection shivers first, then spikes, then the pressure falls. That sequence on the monitor is sepsis walking."
+   },
+   "hot": "monitor"
+  },
+  {
+   "id": "dressing-trolley",
+   "kind": "equipment",
+   "name": {
+    "zh": "換藥車",
+    "en": "Dressing trolley"
+   },
+   "text": {
+    "zh": "導管出口的敷料要用無菌非觸碰技術換。換的時候就是檢查的時候：紅、腫、膿、壓痛，拍照記錄。",
+    "en": "Line-site dressings are changed with aseptic non-touch technique. The change is also the inspection: redness, swelling, pus, tenderness, photographed and documented."
+   },
+   "hot": "instruments"
+  },
+  {
+   "id": "sputum-set",
+   "kind": "item",
+   "name": {
+    "zh": "張先生的三套痰液",
+    "en": "Mr Chang's three sputum sets"
+   },
+   "text": {
+    "zh": "三個標好姓名、日期、時間的痰盒，第一套是今天清晨的。抹片、培養、核酸檢驗一起送。IGRA 回答不了的問題，它們來回答。",
+    "en": "Three pots labelled with name, date and time, the first from early this morning. Smear, culture and nucleic-acid test together. They answer what the IGRA could not."
+   }
+  },
+  {
+   "id": "question-asked",
+   "kind": "concept",
+   "name": {
+    "zh": "檢驗回答你問的問題",
+    "en": "A test answers the question you asked"
+   },
+   "text": {
+    "zh": "IGRA 問「感染過嗎」，不問「現在發病嗎」。快篩問「抗體出現了嗎」，不問「感染了嗎」。核心抗體問「遇過病毒嗎」，不問「安全嗎」。先弄清楚你在問什麼。",
+    "en": "The IGRA asks 'ever infected?', not 'disease now?'. A rapid test asks 'antibodies yet?', not 'infected?'. The core antibody asks 'ever met the virus?', not 'safe?'. Know what you are asking first."
+   }
+  },
+  {
+   "id": "precaution-by-risk",
+   "kind": "concept",
+   "name": {
+    "zh": "防護依疑似，不依確診",
+    "en": "Precautions follow suspicion, not confirmation"
+   },
+   "text": {
+    "zh": "隔離不是判決，是保護。依疑似風險啟動，待報檢驗回來再解除或升級。要讓病人和家屬聽懂這句話。",
+    "en": "Isolation is not a verdict; it is protection. Started on the suspected risk, lifted or escalated when the pending tests return. The patient and family must hear that sentence and understand it."
+   }
+  }
+ ],
+ "segs": [
+  {
+   "id": "handover",
+   "name": {
+    "zh": "晨間交班",
+    "en": "Morning handover"
+   },
+   "sub": {
+    "zh": "07:30 · 病房白板",
+    "en": "07:30 · ward whiteboard"
+   },
+   "t": 450,
+   "mood": "day",
+   "note": {
+    "zh": "接下隔離室的張先生",
+    "en": "Took over Mr Chang in isolation"
+   },
+   "beats": [
+    {
+     "id": "h1",
+     "to": "place:sink",
+     "guide": {
+      "zh": "先跟郭主治洗手",
+      "en": "Hand hygiene with Dr Kuo first"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "早。這層樓有七台乾洗手機，我數過了。查房之前，先洗給大家看。六步驟。",
+        "en": "Morning. Seven dispensers on this floor; I counted. Before the round, hands first, where everyone can see. Six steps."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "drill",
+      "template": "infectious-disease",
+      "drill": "hygiene"
+     },
+     "post": [
+      [
+       "attending",
+       {
+        "zh": "好。感染科最有效的藥就這一罐。現在說說隔離室那位。",
+        "en": "Good. The most effective drug in infectious diseases is in that bottle. Now, the gentleman in isolation."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "h2",
+     "to": "place:whiteboard",
+     "guide": {
+      "zh": "到白板聽交班",
+      "en": "Hear the handover at the board"
+     },
+     "lines": [
+      [
+       "nurse-lan",
+       {
+        "zh": "負壓室張先生，54 歲，咳嗽四週、盜汗、體重掉，吃免疫抑制藥。去年和結核的堂哥同住。昨晚入院，IGRA 陰性。",
+        "en": "Mr Chang in the negative-pressure room, 54: four weeks of cough, night sweats, weight loss, on immunosuppressants. Lived with a cousin with tuberculosis last year. Admitted last night; IGRA negative."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "IGRA 陰性，那結核應該可以排除了？",
+        "en": "IGRA negative, so tuberculosis can be ruled out?"
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "IGRA 問的是「感染過嗎」。你想問的是「現在發病嗎」。這兩個問題一樣嗎？",
+        "en": "The IGRA asks 'ever infected?'. You want to ask 'disease now?'. Are those the same question?"
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "infectious-disease-v38-tb-negative-infection-test",
+      "stage": 0
+     },
+     "post": [
+      [
+       "attending",
+       {
+        "zh": "對。暴露、宿主、持續症狀，三個互相加強。一張陰性報告拉不回來。",
+        "en": "Right. Exposure, host and persistent symptoms reinforce one another. One negative report does not pull that back."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "h3",
+     "to": "place:desk",
+     "guide": {
+      "zh": "到護理站處理醫囑",
+      "en": "Sort the orders at the station"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "醫囑系統跳出提示：負壓隔離室明天有另一位病人要用。隔離解除的按鈕就在旁邊。",
+        "en": "The order system flashes a notice: the negative-pressure room is needed for another patient tomorrow. The 'discontinue isolation' button sits right beside it."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "choice",
+      "q": {
+       "zh": "IGRA 陰性、症狀四週、有暴露史。隔離怎麼辦？",
+       "en": "IGRA negative, four weeks of symptoms, a known exposure. What about isolation?"
+      },
+      "options": [
+       {
+        "zh": "維持空氣隔離，送三套痰液抹片培養",
+        "en": "Keep airborne isolation; send three sputum sets",
+        "ok": true,
+        "set": {
+         "isolation": true
+        },
+        "why": {
+         "zh": "防護依疑似風險，不依確診。有症狀、有暴露、免疫抑制，痰液才能回答問題。",
+         "en": "Precautions follow suspicion, not confirmation. Symptoms, exposure, immunosuppression: the sputum answers the question."
+        }
+       },
+       {
+        "zh": "IGRA 陰性，解除隔離把房間讓出來",
+        "en": "IGRA negative; lift isolation and free the room",
+        "ok": false,
+        "set": {
+         "isolation": false
+        },
+        "why": {
+         "zh": "免疫抑制的人 IGRA 常假陰性。解除隔離的代價是整層樓的接觸者。",
+         "en": "The IGRA is often falsely negative in immunosuppressed patients. The price of lifting isolation is a floor full of contacts."
+        }
+       },
+       {
+        "zh": "等胸片報告出來再決定",
+        "en": "Wait for the formal chest-film report",
+        "ok": false,
+        "set": {
+         "isolation": false
+        },
+        "why": {
+         "zh": "等報告的這幾個小時，隔離是維持還是解除？不決定也是一種決定。",
+         "en": "During the hours you wait, is isolation on or off? Not deciding is a decision."
+        }
+       }
+      ]
+     }
+    },
+    {
+     "id": "h4",
+     "to": "place:anteroom",
+     "guide": {
+      "zh": "確認負壓室的門與壓差",
+      "en": "Check the anteroom door and pressure"
+     },
+     "roles": [
+      "icn"
+     ],
+     "lines": [
+      [
+       "nurse-lan",
+       {
+        "zh": "每天早上第一件事：前室的門，壓差表。壓差不對，它就不是隔離室。去找到那扇門。",
+        "en": "First thing every morning: the anteroom door and the pressure gauge. Without the right pressure it is not an isolation room. Go and find that door."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "find",
+      "hot": "door",
+      "q": {
+       "zh": "找到負壓隔離室的前室門",
+       "en": "Find the negative-pressure room's anteroom door"
+      }
+     },
+     "post": [
+      [
+       "nurse-lan",
+       {
+        "zh": "壓差正常，今天記錄了。兩道門不能同時開，進去之前穿好，出來之前脫對。",
+        "en": "Pressure normal, logged for today. Never both doors open at once; don before you go in, doff correctly before you come out."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "iso-round",
+   "name": {
+    "zh": "隔離室查房",
+    "en": "Isolation round"
+   },
+   "sub": {
+    "zh": "08:30 · 負壓隔離室",
+    "en": "08:30 · negative-pressure room"
+   },
+   "t": 510,
+   "mood": "day",
+   "note": {
+    "zh": "向張先生夫婦說明隔離",
+    "en": "Explained isolation to the Changs"
+   },
+   "beats": [
+    {
+     "id": "r1",
+     "to": "patient-chang",
+     "guide": {
+      "zh": "穿好裝備，進去看張先生",
+      "en": "Don PPE and see Mr Chang"
+     },
+     "lines": [
+      [
+       "patient-chang",
+       {
+        "zh": "醫師，我被關在這裡，是不是就是確診了？我太太在外面哭。",
+        "en": "Doctor, being shut in here means it is confirmed, doesn't it? My wife is crying outside."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "張先生，隔離不是判決，是保護。我們懷疑，所以保護；痰液的結果回來，再決定解除或繼續。",
+        "en": "Mr Chang, isolation is not a verdict; it is protection. We suspect, so we protect; when the sputum results return we decide whether to lift it or continue."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "你的痰今天清晨那一套是最重要的。三套都要，抹片、培養、核酸檢驗。它們回答 IGRA 回答不了的問題。",
+        "en": "Your early-morning sputum today is the most important one. All three sets: smear, culture and nucleic-acid test. They answer what the IGRA could not."
+       }
+      ],
+      [
+       "patient-chang",
+       {
+        "zh": "……那你們可以跟我太太說一次嗎？用你剛剛那句話。",
+        "en": "...Would you say that to my wife as well? The same sentence you just used."
+       }
+      ]
+     ],
+     "item": "sputum-set"
+    },
+    {
+     "id": "r2",
+     "to": "place:ppe-station",
+     "guide": {
+      "zh": "出隔離室：脫除防護裝備",
+      "en": "Leaving isolation: doff the PPE"
+     },
+     "roles": [
+      "icn"
+     ],
+     "lines": [
+      [
+       "nurse-lan",
+       {
+        "zh": "脫的順序保護的是你自己。最髒的先脫，臉上的最後脫，中間要洗手。排給我看。",
+        "en": "The doffing order protects you. Dirtiest first, face last, hand hygiene in between. Lay it out."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "order",
+      "q": {
+       "zh": "把脫除個人防護裝備的順序排對",
+       "en": "Put the PPE doffing sequence in order"
+      },
+      "steps": [
+       {
+        "zh": "脫手套",
+        "en": "Remove gloves"
+       },
+       {
+        "zh": "脫隔離衣",
+        "en": "Remove gown"
+       },
+       {
+        "zh": "手部衛生",
+        "en": "Hand hygiene"
+       },
+       {
+        "zh": "離開隔離室後脫護目鏡",
+        "en": "Outside the room, remove eye protection"
+       },
+       {
+        "zh": "脫 N95 口罩",
+        "en": "Remove the N95"
+       },
+       {
+        "zh": "再做一次手部衛生",
+        "en": "Hand hygiene again"
+       }
+      ]
+     },
+     "post": [
+      [
+       "nurse-lan",
+       {
+        "zh": "對。N95 在負壓室外面才脫。順序對的人，十年不會把病帶回家。",
+        "en": "Right. The N95 comes off only outside the negative-pressure room. Get the order right and in ten years you never take anything home."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "r3",
+     "to": "family-chang",
+     "guide": {
+      "zh": "到門外跟張太太說明",
+      "en": "Speak to Mrs Chang outside"
+     },
+     "lines": [
+      [
+       "family-chang",
+       {
+        "zh": "醫師，他被關起來了，是不是很嚴重？我要不要也去檢查？小孩呢？",
+        "en": "Doctor, he is locked in there; is it very serious? Should I get tested too? And the children?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "張太太，隔離是保護，不是判決。我們懷疑所以先保護，結果回來再決定。妳和小孩的檢查，小蘭會依規範安排，不用今天慌。",
+        "en": "Mrs Chang, isolation is protection, not a verdict. We suspect, so we protect first, and decide when the results return. Nurse Lan will arrange testing for you and the children per protocol; no need to panic today."
+       }
+      ],
+      [
+       "nurse-lan",
+       {
+        "zh": "接觸者評估我來做，衛生單位的流程我來聯繫。妳只要記得一件事：有症狀就來，沒有症狀也會有人通知妳。",
+        "en": "I will do the contact assessment and liaise with public health. You need to remember one thing: come if you have symptoms, and someone will contact you even if you do not."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "r4",
+     "to": "place:desk",
+     "guide": {
+      "zh": "寫張先生的入院紀錄",
+      "en": "Write Mr Chang's admission note"
+     },
+     "roles": [
+      "intern"
+     ],
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "你寫下：暴露日期與對象、免疫抑制藥名與起始時間、症狀四週的時間線、IGRA 的限制、三套痰液的送檢時間、隔離狀態。",
+        "en": "You write: exposure date and contact, the immunosuppressant and when it started, the four-week symptom timeline, the limits of the IGRA, dispatch times of the three sputum sets, isolation status."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "（經過）IGRA 那一行這樣寫：「陰性，不排除活動性結核」。少一個字，意思就反了。",
+        "en": "(Passing) Write the IGRA line like this: 'negative; does not exclude active tuberculosis'. Drop one word and the meaning flips."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "rheum-call",
+   "name": {
+    "zh": "風濕科來電",
+    "en": "Rheumatology calling"
+   },
+   "sub": {
+    "zh": "10:30 · 診間桌",
+    "en": "10:30 · clinic desk"
+   },
+   "t": 630,
+   "mood": "day",
+   "note": {
+    "zh": "讀完劉女士的整組 B 肝血清",
+    "en": "Read Mrs Liu's whole hepatitis B panel"
+   },
+   "beats": [
+    {
+     "id": "c1",
+     "to": "place:desk",
+     "guide": {
+      "zh": "接風濕科的電話",
+      "en": "Take the rheumatology call"
+     },
+     "ring": {
+      "title": {
+       "zh": "風濕科來電",
+       "en": "Rheumatology calling"
+      },
+      "sub": {
+       "zh": "劉女士「B 肝陰性」，可以開始生物製劑嗎",
+       "en": "Mrs Liu is 'hepatitis B negative'; can the biologic start?"
+      },
+      "call": true,
+      "from": "rheum-np"
+     },
+     "lines": [
+      [
+       "rheum-np",
+       {
+        "zh": "風濕科阿珍。劉女士 61 歲，下週要開始生物製劑，轉診單寫 B 肝陰性。你們感染科簽個字就好？",
+        "en": "Chen from rheumatology. Mrs Liu, 61, starts a biologic next week; the referral says hepatitis B negative. Can infectious diseases just sign off?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "「陰性」是哪一格陰性？表面抗原、核心抗體、表面抗體，三個數值我都要看。",
+        "en": "'Negative' in which box? Surface antigen, core antibody, surface antibody: I need all three values."
+       }
+      ],
+      [
+       "rheum-np",
+       {
+        "zh": "……我查一下。表面抗原陰性，核心抗體陽性，表面抗體陽性。",
+        "en": "...Let me look. Surface antigen negative, core antibody positive, surface antibody positive."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "（在旁邊）聽到了嗎？轉診單寫一格，檢驗其實有三格。你來讀這一組。",
+        "en": "(Beside you) Did you hear? The referral wrote one box; the test has three. You read this panel."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "infectious-disease-v38-hbv-triple-panel",
+      "stage": 0
+     },
+     "post": [
+      [
+       "me",
+       {
+        "zh": "阿珍，B 肝核心抗體陽性加表面抗體陽性，是既往感染的型態，不是「陰性」。",
+        "en": "Chen, a positive hepatitis B core antibody with a positive surface antibody is the pattern of past infection, not 'negative'."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "免疫抑制下有再活化風險，要由治療團隊評估監測或預防。請把三項數值和日期附在轉診單上。",
+        "en": "There is a reactivation risk under immunosuppression; the treating team must assess monitoring or prophylaxis. Please attach all three values and dates to the referral."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "還有一件事：請她不要自己停掉任何治療，由原團隊協調。",
+        "en": "One more thing: tell her not to stop any treatment on her own; the original team coordinates."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "reading",
+   "name": {
+    "zh": "午間讀片",
+    "en": "Midday film review"
+   },
+   "sub": {
+    "zh": "12:00 · PACS 讀片站",
+    "en": "12:00 · PACS workstation"
+   },
+   "t": 720,
+   "mood": "day",
+   "note": {
+    "zh": "張先生的上葉空洞",
+    "en": "Mr Chang's upper-lobe cavity"
+   },
+   "beats": [
+    {
+     "id": "i1",
+     "to": "place:pacs",
+     "guide": {
+      "zh": "到 PACS 看張先生的胸片",
+      "en": "Review Mr Chang's chest film on PACS"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "先核對姓名日期。然後告訴我：這張片回答了什麼，沒回答什麼。",
+        "en": "Name and date first. Then tell me what this film answers, and what it does not."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "imaging",
+      "region": "chest",
+      "question": {
+       "zh": "IGRA 陰性，胸片右上葉有空洞樣病灶。影像能排除或確認結核嗎？",
+       "en": "IGRA negative, a cavitating lesion in the right upper lobe. Can the image exclude or confirm tuberculosis?"
+      },
+      "answer": {
+       "zh": "都不能。影像把問題定位、提高疑慮，但其他感染和腫瘤也會造成空洞。病原學（痰抹片、培養、核酸檢驗）才是不同層次的證據。防護依疑似風險維持。",
+       "en": "Neither. The image locates the problem and raises suspicion, but other infections and tumours also cavitate. Microbiology (sputum smear, culture, nucleic-acid test) is evidence of a different order. Precautions stay, based on the suspected risk."
+      }
+     },
+     "post": [
+      [
+       "attending",
+       {
+        "zh": "空洞加免疫抑制加暴露史。今天清晨那套痰，檢驗室答應下午給抹片結果。",
+        "en": "A cavity, immunosuppression and an exposure. The lab has promised the smear result on this morning's sputum this afternoon."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "i2",
+     "to": "nurse-lan",
+     "guide": {
+      "zh": "跟小蘭核對接觸者",
+      "en": "Check contacts with Nurse Lan"
+     },
+     "when": {
+      "flag": "isolation",
+      "is": true
+     },
+     "lines": [
+      [
+       "nurse-lan",
+       {
+        "zh": "隔離從入院就沒斷過，壓差正常，接觸者只有家人和幾位有戴 N95 的同仁。名單在這裡，很短。",
+        "en": "Isolation has been unbroken since admission, pressure normal, contacts are the family and a few colleagues who wore N95s. The list is here, and it is short."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "短名單是你早上那個決定買來的。記住這個感覺。",
+        "en": "That short list was bought by your decision this morning. Remember how this feels."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "i3",
+     "to": "nurse-lan",
+     "guide": {
+      "zh": "跟小蘭核對接觸者",
+      "en": "Check contacts with Nurse Lan"
+     },
+     "when": {
+      "flag": "isolation",
+      "is": false
+     },
+     "lines": [
+      [
+       "nurse-lan",
+       {
+        "zh": "早上隔離被解除了兩個小時，他在走廊跟三位病人聊天、去了一趟超商。我現在要追二十幾個接觸者。",
+        "en": "Isolation was lifted for two hours this morning; he chatted with three patients in the corridor and went to the convenience store. I now have over twenty contacts to trace."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "是我按的。對不起。接觸者名單我跟妳一起做。",
+        "en": "I pressed it. I am sorry. I will build the contact list with you."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "沒有人受傷，所以這是一堂課，不是一個處分。但這二十幾個人，每一個你都要記得。",
+        "en": "Nobody was harmed, so this is a lesson, not a sanction. But those twenty-odd people: remember every one."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "clinic",
+   "name": {
+    "zh": "午後門診",
+    "en": "Afternoon clinic"
+   },
+   "sub": {
+    "zh": "14:00 · 診間（關上門）",
+    "en": "14:00 · clinic, door closed"
+   },
+   "t": 840,
+   "mood": "day",
+   "note": {
+    "zh": "阿偉：空窗期裡的陰性",
+    "en": "Wei: a negative inside the window"
+   },
+   "beats": [
+    {
+     "id": "k1",
+     "to": "patient-wei",
+     "guide": {
+      "zh": "關上門，請阿偉坐",
+      "en": "Close the door and seat Wei"
+     },
+     "lines": [
+      [
+       "patient-wei",
+       {
+        "zh": "醫師……可以關門嗎？我十天前有一次可能的暴露。我自己買了快篩，陰性。可是我現在發燒、喉嚨痛、身上有疹子。",
+        "en": "Doctor... could you close the door? I had a possible exposure ten days ago. I bought a rapid test myself: negative. But now I have a fever, a sore throat and a rash."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "門關了，這裡說的話只有照顧你的人知道。你買的快篩是哪一種？測抗體還是抗原加抗體？",
+        "en": "The door is closed; what is said here stays with the people caring for you. Which rapid test did you buy: antibody only, or antigen and antibody?"
+       }
+      ],
+      [
+       "patient-wei",
+       {
+        "zh": "……盒子上寫抗體。",
+        "en": "...The box said antibody."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "（輕聲）十天、抗體快篩、陰性。這張陰性回答了什麼？",
+        "en": "(Quietly) Ten days, an antibody rapid test, negative. What did that negative answer?"
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "infectious-disease-v38-hiv-window",
+      "stage": 1
+     },
+     "post": [
+      [
+       "me",
+       {
+        "zh": "阿偉，十天還在空窗期裡，抗體快篩的陰性不是真的陰性。我們依暴露日期安排合適的檢驗和複查。症狀也可能是其他病毒，兩邊都查。",
+        "en": "Wei, ten days is still inside the window period; a negative antibody rapid test is not a true negative. We will time the right tests and the retest from the exposure date. The symptoms could also be another virus; we check both."
+       }
+      ],
+      [
+       "patient-wei",
+       {
+        "zh": "……結果會怎麼通知我？我不想家人知道。",
+        "en": "...How will I get the result? I do not want my family to know."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "你選方式：電話、簡訊、回診，寫在這裡。保密是我們的責任，不是你的請求。",
+        "en": "You choose: phone, text or a visit; write it here. Confidentiality is our duty, not your request."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "k2",
+     "to": "place:desk",
+     "guide": {
+      "zh": "寫門診紀錄與檢驗安排",
+      "en": "Write the note and the testing plan"
+     },
+     "roles": [
+      "intern"
+     ],
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "你寫下：暴露日期、快篩種類與日期、今天送的檢驗、複查日期、阿偉選的聯絡方式、支持資源。病歷存取設為限制。",
+        "en": "You write: exposure date, rapid-test type and date, today's tests, the retest date, Wei's chosen contact method, support resources. Chart access set to restricted."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "consult",
+   "name": {
+    "zh": "外科病房急會診",
+    "en": "Urgent surgical consult"
+   },
+   "sub": {
+    "zh": "16:00 · 外科病房",
+    "en": "16:00 · surgical ward"
+   },
+   "t": 960,
+   "mood": "eve",
+   "note": {
+    "zh": "王伯：導管感染與敗血症",
+    "en": "Mr Wang: line infection and sepsis"
+   },
+   "beats": [
+    {
+     "id": "s1",
+     "to": "place:monitor",
+     "guide": {
+      "zh": "接電話，衝去外科病房",
+      "en": "Take the call, run to the surgical ward"
+     },
+     "ring": {
+      "title": {
+       "zh": "外科病房來電",
+       "en": "Surgical ward calling"
+      },
+      "sub": {
+       "zh": "王伯發抖發燒，血壓在掉，導管出口有膿",
+       "en": "Mr Wang rigoring and febrile, pressure falling, pus at the line site"
+      },
+      "call": true,
+      "from": "ward-nurse"
+     },
+     "lines": [
+      [
+       "ward-nurse",
+       {
+        "zh": "病房小方。王伯，術後第九天，靠中央靜脈導管打營養。剛剛發抖、發燒，血壓在掉，導管出口有膿。",
+        "en": "Fang on the ward. Mr Wang, day nine post-op, on central-line nutrition. Just had a rigor and a fever, pressure falling, pus at the line exit."
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "你到床邊。王伯嘴唇發白，監視器的血壓數字在往下走。",
+        "en": "You reach the bedside. Mr Wang's lips are pale and the pressure on the monitor is sliding."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "vitals",
+      "event": "hypotension",
+      "options": [
+       {
+        "zh": "培養含導管血、輸液抗生素依醫囑、叫師傅",
+        "en": "Cultures including line blood, fluids and antibiotics per orders, call the mentor",
+        "ok": true,
+        "why": {
+         "zh": "發抖、發燒、低血壓、出口有膿：導管就是來源。培養在抗生素之前，導管去留由團隊今晚決定，不是明天。",
+         "en": "Rigor, fever, hypotension, pus at the exit: the line is the source. Cultures before antibiotics; the team decides on the line tonight, not tomorrow."
+        }
+       },
+       {
+        "zh": "先換敷料觀察，明天再抽血",
+        "en": "Change the dressing, observe, bloods tomorrow",
+        "ok": false,
+        "why": {
+         "zh": "血壓正在掉。敷料換得再漂亮，敗血症不會等到明天。",
+         "en": "The pressure is falling now. However neat the dressing, sepsis does not wait until tomorrow."
+        }
+       },
+       {
+        "zh": "直接拔掉導管就好，不用培養",
+        "en": "Just pull the line; no need for cultures",
+        "ok": false,
+        "why": {
+         "zh": "拔管可能是對的，但沒有培養，你永遠不知道是哪一種菌、該用什麼藥。",
+         "en": "Removing the line may be right, but without cultures you never learn which germ it was or what to treat it with."
+        }
+       }
+      ]
+     }
+    },
+    {
+     "id": "s2",
+     "to": "place:dressing-trolley",
+     "guide": {
+      "zh": "檢查並更換導管出口敷料",
+      "en": "Inspect and redress the line exit"
+     },
+     "roles": [
+      "icn"
+     ],
+     "lines": [
+      [
+       "nurse-lan",
+       {
+        "zh": "出口要看、要拍、要培養，然後用無菌非觸碰技術重新蓋好。關鍵部位不碰。來。",
+        "en": "The exit site is inspected, photographed and swabbed, then re-covered with aseptic non-touch technique. Key parts untouched. Go."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "drill",
+      "template": "infectious-disease",
+      "drill": "aseptic"
+     },
+     "post": [
+      [
+       "nurse-lan",
+       {
+        "zh": "紅、腫、膿、壓痛，全部有。照片進病歷。導管今晚拔不拔，郭主治和外科在談。",
+        "en": "Red, swollen, pus, tender: all four. Photo in the chart. Whether the line comes out tonight, Dr Kuo and surgery are discussing now."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "s3",
+     "to": "attending",
+     "guide": {
+      "zh": "跟師傅決定導管去留",
+      "en": "Decide the line with the mentor"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "培養兩套，一套從導管、一套從周邊，抗生素依醫囑上了。外科同意：來源控制，導管今晚拔，尖端送培養。",
+        "en": "Two sets of cultures, one from the line and one peripheral; antibiotics are up per orders. Surgery agrees: source control, the line comes out tonight, tip to culture."
+       }
+      ],
+      [
+       "patient-wang",
+       {
+        "zh": "醫師……那條管子打了九天營養，拔掉我吃什麼？",
+        "en": "Doctor... that tube has fed me for nine days. If you pull it, what do I eat?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "王伯，先把感染的來源拿掉，營養的路明天外科會重新安排。今晚的工作是把血壓撐住。",
+        "en": "Mr Wang, first we remove the source of the infection; surgery will re-plan your nutrition tomorrow. Tonight's job is to hold your blood pressure."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "end-of-day",
+   "name": {
+    "zh": "交班與下班",
+    "en": "Handover and home"
+   },
+   "sub": {
+    "zh": "17:30 · 病房白板",
+    "en": "17:30 · ward whiteboard"
+   },
+   "t": 1050,
+   "mood": "eve",
+   "note": {
+    "zh": "完成晚間交班",
+    "en": "Evening handover done"
+   },
+   "beats": [
+    {
+     "id": "e1",
+     "to": "place:whiteboard",
+     "guide": {
+      "zh": "到白板交班給夜班",
+      "en": "Hand over to the night team"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "負壓室張先生：疑似活動性結核，空氣隔離維持，三套痰已送，第一套抹片結果今晚會回，暴露日期與免疫抑制藥都在交班單。",
+        "en": "Mr Chang in the negative-pressure room: suspected active tuberculosis, airborne isolation maintained, three sputum sets sent, first smear result due tonight; exposure date and immunosuppressants on the sheet."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "王伯：導管相關敗血症，培養兩套，導管已拔、尖端送培養，今晚看血壓與尿量。",
+        "en": "Mr Wang: line-related sepsis, two culture sets, line removed and tip cultured, blood pressure and urine output tonight."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "劉女士：B 肝既往感染型態，已回覆風濕科。阿偉：複查日期與聯絡方式在限制病歷裡。",
+        "en": "Mrs Liu: past hepatitis B pattern, rheumatology informed. Wei: retest date and contact method in the restricted chart."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "張先生那條，誰負責跟衛生單位聯繫？",
+        "en": "For Mr Chang, who owns the public-health liaison?"
+       }
+      ],
+      [
+       "nurse-lan",
+       {
+        "zh": "我。抹片一回來就啟動通報流程。接觸者名單已經準備好了。",
+        "en": "Me. The moment the smear is back I start the notification process. The contact list is ready."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "e2",
+     "to": "place:ppe-station",
+     "guide": {
+      "zh": "跟小蘭補防護裝備",
+      "en": "Restock the PPE station with Nurse Lan"
+     },
+     "roles": [
+      "icn"
+     ],
+     "lines": [
+      [
+       "nurse-lan",
+       {
+        "zh": "N95 補到夠夜班用，壓差表今天三次都正常，穿脫順序圖我又換了一張新的。有人把舊的那張畫了鬍子。",
+        "en": "N95s restocked for the night shift, pressure normal on all three checks today, and I have put up a fresh donning-doffing poster. Someone drew a moustache on the old one."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "……不是我。",
+        "en": "...It was not me."
+       }
+      ],
+      [
+       "nurse-lan",
+       {
+        "zh": "我知道。你今天脫的順序是對的。",
+        "en": "I know. Your doffing order was right today."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "e3",
+     "to": "attending",
+     "guide": {
+      "zh": "聽師傅的下班總結",
+      "en": "The mentor's debrief"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "今天四張報告：一張陰性 IGRA、一張「B 肝陰性」、一張陰性快篩、一張還沒回來的培養。沒有一張是你以為的意思。",
+        "en": "Four reports today: a negative IGRA, a 'hepatitis B negative', a negative rapid test and a culture not yet back. Not one meant what it seemed to."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "檢驗回答的是你問的問題。先弄清楚你在問什麼，再決定相信什麼。",
+        "en": "A test answers the question you asked. Know what you are asking before you decide what to believe."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "師傅，這層樓的乾洗手機，我也數過了。七台。",
+        "en": "Dr Kuo, I counted the dispensers on this floor too. Seven."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "八台。護理站後面還有一台。明天再數。",
+        "en": "Eight. There is one behind the nurses' station. Count again tomorrow."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "night",
+   "name": {
+    "zh": "夜間一通電話",
+    "en": "One call at night"
+   },
+   "sub": {
+    "zh": "22:00 · 值班室",
+    "en": "22:00 · on-call room"
+   },
+   "t": 1320,
+   "mood": "night",
+   "note": {
+    "zh": "夜間：抹片結果回來了",
+    "en": "Night: the smear is back"
+   },
+   "beats": [
+    {
+     "id": "x1",
+     "to": "place:iso-room",
+     "guide": {
+      "zh": "接電話，去隔離室",
+      "en": "Take the call, go to isolation"
+     },
+     "ring": {
+      "title": {
+       "zh": "病房來電",
+       "en": "Ward calling"
+      },
+      "sub": {
+       "zh": "檢驗室：張先生第一套痰抹片陽性",
+       "en": "Lab: Mr Chang's first sputum smear is positive"
+      },
+      "call": true,
+      "from": "ward-nurse"
+     },
+     "lines": [
+      [
+       "ward-nurse",
+       {
+        "zh": "小方。檢驗室剛打來，張先生第一套痰抹片陽性，請你複誦並記錄。他還醒著，問結果。",
+        "en": "Fang. The lab has just phoned: Mr Chang's first sputum smear is positive; please read it back and record it. He is awake and asking."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "張先生第一套痰抹片陽性，通知時間記錄了。隔離維持，N95 不變。我通知郭主治和小蘭。",
+        "en": "Mr Chang, first sputum smear positive, time recorded. Isolation continues, N95 unchanged. I am informing Dr Kuo and Nurse Lan."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "通報流程明天一早依規範啟動。我現在穿上個人防護裝備進去，親自跟他說。",
+        "en": "Notification starts first thing tomorrow per protocol. I am putting on personal protective equipment now to go in and tell him myself."
+       }
+      ],
+      [
+       "patient-chang",
+       {
+        "zh": "……所以是真的。醫師，我太太和小孩……",
+        "en": "...So it is real. Doctor, my wife and the children..."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "是真的，而且可以治療。你一早就在隔離室裡，這保護了很多人，包括他們。",
+        "en": "It is real, and it is treatable. You were in isolation from this morning, and that protected many people, including them."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "接觸者評估小蘭明天就開始。今晚先睡，你不是一個人。",
+        "en": "Nurse Lan starts the contact assessment tomorrow. Sleep tonight; you are not alone in this."
+       }
+      ]
+     ],
+     "end": true
+    }
+   ]
+  }
+ ],
+ "ending": {
+  "title": {
+   "zh": "下班了",
+   "en": "End of shift"
+  },
+  "sub": {
+   "zh": "檢驗回答的是你問的問題",
+   "en": "A test answers the question you asked"
+  },
+  "stats": [
+   "stages",
+   "drills",
+   "choices",
+   "calls",
+   "items",
+   "time"
+  ]
+ }
+}

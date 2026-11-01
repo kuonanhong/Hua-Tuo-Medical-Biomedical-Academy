@@ -1,0 +1,302 @@
+{
+  "format": "huatuo-shift-v1",
+  "department": "orthopedics",
+  "title": {"zh": "骨科值班日", "en": "A shift in orthopaedics"},
+  "tagline": {"zh": "一支髖、一條脛骨、一個不成比例的痛", "en": "A hip, a tibia and a pain out of proportion"},
+  "room": "or",
+  "minutes": 25,
+  "roles": [
+    {"id": "resident", "zh": "骨科住院醫師", "en": "Orthopaedic resident", "desc": {"zh": "創傷日。早上一支髖，下午一條開放性脛骨，傍晚一通「他痛得不正常」的電話。摸脈搏，再摸一次。", "en": "Trauma day. A hip in the morning, an open tibia in the afternoon, and at dusk a phone call that says 'his pain isn't normal'. Feel the pulse, then feel it again."}},
+    {"id": "scrub", "zh": "刷手護理師", "en": "Scrub nurse", "desc": {"zh": "植入物托盤、電鑽、鋼釘尺寸、紗布清點。骨科的器械台比別科重三倍，你全記得。", "en": "Implant trays, the power drill, pin sizes, swab counts. An orthopaedic instrument table weighs three times anyone else's, and you know every piece."}}
+  ],
+  "cast": {
+    "attending": {"name": {"zh": "劉主治", "en": "Dr Liu"}, "role": {"zh": "主治醫師（師傅）", "en": "Attending (mentor)"}, "tag": "ATT", "color": "#92400e", "body": "mentor",
+      "about": {"zh": "呼叫器別在手術帽上，說這樣才聽得到。口頭禪：「摸脈搏，再摸一次。」", "en": "Clips his pager to his theatre cap so he can hear it. Catchphrase: 'Feel the pulse, then feel it again.'"}},
+    "chief": {"name": {"zh": "阿強學長", "en": "Dr Chiang"}, "role": {"zh": "總醫師", "en": "Chief resident"}, "tag": "CR", "color": "#2f6f9f", "body": "resident",
+      "about": {"zh": "清晨六點在急診替小魏沖洗傷口、上夾板，然後來交班。", "en": "Washed out Wei's wound and splinted it in the ER at six, then came to hand over."}},
+    "radiographer": {"name": {"zh": "阿正", "en": "Cheng"}, "role": {"zh": "放射師", "en": "Radiographer"}, "tag": "RT", "color": "#7c3aed", "body": "radiographer",
+      "about": {"zh": "C 臂正面、側面一次到位。鉛衣沒穿他不按。", "en": "C-arm AP and lateral in one go. No lead apron, no exposure."}},
+    "patient1": {"name": {"zh": "李阿嬤", "en": "Grandma Li"}, "role": {"zh": "病人・82 歲", "en": "Patient, 82"}, "tag": "PT1", "color": "#6b7280", "body": "patient",
+      "about": {"zh": "昨晚在浴室跌倒，右股骨頸骨折。記得每個孫子的生日，下週有一個她一定要到。", "en": "Fell in the bathroom last night: right femoral neck fracture. Remembers every grandchild's birthday, and there is one next week she must attend."}},
+    "daughter": {"name": {"zh": "李阿嬤的女兒", "en": "Grandma Li's daughter"}, "role": {"zh": "家屬", "en": "Family"}, "tag": "FAM", "color": "#b45309", "body": "family",
+      "about": {"zh": "帶了阿嬤的眼鏡和助聽器來，說「她沒戴會亂」。她說得對。", "en": "Brought Grandma's glasses and hearing aid, saying 'she gets muddled without them'. She is right."}},
+    "patient2": {"name": {"zh": "小魏", "en": "Wei"}, "role": {"zh": "病人・24 歲外送員", "en": "Patient, 24, delivery rider"}, "tag": "PT2", "color": "#8a6d3b", "body": "patient",
+      "about": {"zh": "清晨送早餐時被轉彎的車撞倒，右小腿開放性骨折。第一句話：「餐盒還在嗎？」", "en": "Knocked off his scooter delivering breakfast: open fracture of the right shin. First words: 'Is the food box OK?'"}},
+    "ward-nurse": {"name": {"zh": "佩珊", "en": "Pei-shan"}, "role": {"zh": "病房護理師", "en": "Ward nurse"}, "tag": "RN", "color": "#9d4b7a", "body": "nurse",
+      "about": {"zh": "她說「這個痛不對」，就是不對。", "en": "When she says 'this pain is wrong', it is wrong."}},
+    "er-doc": {"name": {"zh": "急診周醫師", "en": "Dr Chou (ER)"}, "role": {"zh": "急診醫師", "en": "Emergency physician"}, "tag": "ER", "color": "#dc2626", "phoneOnly": true,
+      "about": {"zh": "照片先傳，電話再打。", "en": "Sends the photo first, calls second."}}
+  },
+  "places": {
+    "whiteboard": {"name": {"zh": "刀表白板", "en": "Theatre whiteboard"}, "hot": "whiteboard"},
+    "scrub-sink": {"name": {"zh": "刷手台", "en": "Scrub sink"}, "hot": "sink"},
+    "table": {"name": {"zh": "手術台", "en": "Operating table"}, "hot": "field"},
+    "carm": {"name": {"zh": "C 臂", "en": "C-arm"}, "hot": "carm"},
+    "implants": {"name": {"zh": "植入物與器械台", "en": "Implant and instrument table"}, "hot": "instruments"},
+    "imaging": {"name": {"zh": "影像工作站", "en": "Imaging workstation"}, "hot": "imaging"},
+    "lightbox": {"name": {"zh": "看片燈箱", "en": "Lightbox"}, "hot": "lightbox"},
+    "bed": {"name": {"zh": "病床", "en": "Ward bed"}, "hot": "bed"},
+    "recovery": {"name": {"zh": "恢復室", "en": "Recovery room"}, "hot": "recovery"},
+    "desk": {"name": {"zh": "紀錄桌", "en": "Notes desk"}, "hot": "desk"}
+  },
+  "glossary": [
+    {"term": {"zh": "時間暫停", "en": "time-out"}, "plain": {"zh": "劃刀前全隊停下來核對病人、左右側、手術與植入物。骨科的左右腳，錯了就是錯一條腿。", "en": "Before the incision the whole team stops to confirm patient, side, operation and implants. In orthopaedics the wrong side is the wrong leg."}},
+    {"term": {"zh": "股骨頸骨折", "en": "femoral neck fracture"}, "plain": {"zh": "大腿骨最上端、靠近髖關節的地方斷了。老人家跌倒最常見的嚴重骨折，通常要盡快手術。", "en": "A break at the very top of the thigh bone, next to the hip joint. The commonest serious fracture after a fall in older people; usually operated on promptly."}},
+    {"term": {"zh": "半人工髖關節", "en": "hemiarthroplasty"}, "plain": {"zh": "只換掉股骨頭那一半，保留原來的髖臼。移位的股骨頸骨折常用這個方法。", "en": "Replacing only the ball of the hip and keeping the natural socket. A common operation for a displaced femoral neck fracture."}},
+    {"term": {"zh": "神經阻斷", "en": "nerve block"}, "plain": {"zh": "把局部麻醉藥打在大腿的神經旁邊，讓髖部骨折在手術前就不那麼痛，少用嗎啡類藥物。", "en": "Local anaesthetic placed beside the nerves of the thigh so a hip fracture hurts less before surgery, with fewer opioid drugs."}},
+    {"term": {"zh": "開放性骨折", "en": "open fracture"}, "plain": {"zh": "斷骨的地方有傷口通到外面，細菌可以進去。要早給抗生素、早清創。", "en": "A broken bone with a wound that connects it to the outside, letting bacteria in. Early antibiotics and early debridement."}},
+    {"term": {"zh": "Gustilo 分級", "en": "Gustilo classification"}, "plain": {"zh": "開放性骨折的分級：傷口大小、軟組織受損程度、能不能蓋起來、血管有沒有傷到。分級決定處理。", "en": "A grading for open fractures by wound size, soft-tissue damage, whether it can be covered and whether vessels are injured. The grade decides the treatment."}},
+    {"term": {"zh": "清創", "en": "debridement"}, "plain": {"zh": "在開刀房把壞死的組織、髒東西與沒有血供的碎骨拿掉，再大量沖洗。", "en": "In theatre, removing dead tissue, dirt and bone fragments without blood supply, then washing the wound out thoroughly."}},
+    {"term": {"zh": "外固定", "en": "external fixation"}, "plain": {"zh": "用鋼釘穿過皮膚鎖進骨頭，體外用支架固定。開放性骨折常先這樣暫時固定。", "en": "Pins through the skin into the bone, joined by a frame outside the leg. Often used to hold an open fracture temporarily."}},
+    {"term": {"zh": "骨筋膜室症候群", "en": "compartment syndrome"}, "plain": {"zh": "小腿肌肉被緊緊的筋膜包著，受傷腫脹後裡面壓力太高，血進不去，肌肉與神經會壞死。是急症。", "en": "Leg muscles sit in tight compartments; after injury the swelling raises the pressure until blood cannot get in and muscle and nerve die. An emergency."}},
+    {"term": {"zh": "不成比例的疼痛", "en": "pain out of proportion"}, "plain": {"zh": "痛得比傷勢該有的程度嚴重很多、止痛越來越沒效、被動拉伸腳趾會劇痛。骨筋膜室症候群最早的訊號。", "en": "Pain far worse than the injury should cause, needing more and more analgesia, and severe pain when the toes are passively stretched. The earliest sign of compartment syndrome."}},
+    {"term": {"zh": "筋膜切開", "en": "fasciotomy"}, "plain": {"zh": "把包住肌肉的筋膜切開，讓壓力釋放。傷口先開著，之後再關。", "en": "Cutting open the tight sheath around the muscles to release the pressure. The wounds are left open and closed later."}},
+    {"term": {"zh": "譫妄", "en": "delirium"}, "plain": {"zh": "老人家手術後忽然變得混亂、日夜顛倒、拔管子。找原因：疼痛、尿滯留、缺氧、藥物、沒戴眼鏡助聽器。", "en": "Sudden confusion after surgery in an older person: muddled, day and night reversed, pulling at lines. Look for a cause: pain, urinary retention, low oxygen, drugs, missing glasses or hearing aid."}},
+    {"term": {"zh": "C 臂", "en": "C-arm"}, "plain": {"zh": "可以移動、轉角度的 X 光機，手術中即時看骨頭與植入物的位置。", "en": "A mobile X-ray machine shaped like a C that shows bone and implant positions live during surgery."}}
+  ],
+  "codex": [
+    {"id": "c-arm", "kind": "equipment", "name": {"zh": "C 臂", "en": "C-arm"}, "hot": "carm", "text": {"zh": "鋪單前先擺好位置、試拍一次。正面、側面都要能進來。", "en": "Position it and take a test shot before draping. It must reach both the AP and the lateral."}},
+    {"id": "traction-table", "kind": "equipment", "name": {"zh": "牽引床", "en": "Traction table"}, "hot": "field", "text": {"zh": "固定骨盆、拉住腳，讓骨折在 X 光下復位。會陰柱要墊好，對側腳要保護。", "en": "Holds the pelvis and pulls on the foot so the fracture reduces under X-ray. Pad the perineal post and protect the other leg."}},
+    {"id": "power-drill", "kind": "equipment", "name": {"zh": "骨科電鑽", "en": "Orthopaedic power drill"}, "hot": "instruments", "text": {"zh": "鑽頭垂直骨面、穿過兩層皮質、用測深尺量長度。鑽的時候要沖水降溫。", "en": "Drill perpendicular to the bone, through both cortices, then measure with the depth gauge. Irrigate while drilling to keep the bone cool."}},
+    {"id": "implant-tray", "kind": "equipment", "name": {"zh": "植入物托盤", "en": "Implant tray"}, "hot": "instruments", "text": {"zh": "股骨頭尺寸、柄的號數、外固定的鋼釘與夾頭。每一件植入物的序號都要貼進病歷。", "en": "Head sizes, stem numbers, external-fixator pins and clamps. Every implant's serial sticker goes into the notes."}},
+    {"id": "gustilo-card", "kind": "item", "name": {"zh": "Gustilo 分級卡", "en": "Gustilo pocket card"}, "text": {"zh": "劉主治口袋裡的小卡，今天給了你。真正的分級要在開刀房清創時才定案。", "en": "The pocket card from Dr Liu's scrubs, handed to you today. The real grade is decided at debridement in theatre."}},
+    {"id": "hearing-aid", "kind": "item", "name": {"zh": "阿嬤的助聽器", "en": "Grandma's hearing aid"}, "text": {"zh": "女兒帶來的。戴上去之後，阿嬤才聽得見我們在說什麼，譫妄也少一半。", "en": "Brought by her daughter. With it in, Grandma can hear us, and the risk of delirium halves."}},
+    {"id": "compartment", "kind": "concept", "name": {"zh": "骨筋膜室症候群", "en": "Compartment syndrome"}, "text": {"zh": "不要等脈搏消失，那是最晚的徵象。痛、被動拉伸痛、止痛需求上升，就要鬆開一切、叫人。", "en": "Do not wait for the pulse to vanish; that is the last sign. Pain, pain on passive stretch, rising analgesic need: release everything and call."}},
+    {"id": "orthogeriatric", "kind": "concept", "name": {"zh": "老年髖部骨折路徑", "en": "Hip fracture pathway"}, "text": {"zh": "早手術、神經阻斷、老年醫學共同照護、譫妄預防、早期下床、骨鬆與跌倒預防。骨頭只是其中一項。", "en": "Early surgery, nerve block, shared geriatric care, delirium prevention, early mobilisation, bone and falls prevention. The bone is only one item on the list."}}
+  ],
+  "segs": [
+    {"id": "handover", "name": {"zh": "晨間交班", "en": "Morning handover"}, "sub": {"zh": "07:30 · 刀表白板", "en": "07:30 · theatre whiteboard"}, "t": 450, "mood": "day",
+     "note": {"zh": "交班：一支髖、一條脛骨", "en": "Handover: a hip and a tibia"},
+     "beats": [
+      {"id": "h1", "to": "chief", "guide": {"zh": "找阿強學長交班", "en": "Find Dr Chiang for handover"},
+       "lines": [
+        ["chief", {"zh": "早。李阿嬤，82 歲，昨晚浴室跌倒，右股骨頸骨折移位。神經阻斷打了，第一台。", "en": "Morning. Grandma Li, 82, fell in the bathroom last night, displaced right femoral neck fracture. Nerve block done; she's first."}],
+        ["chief", {"zh": "小魏，24 歲外送員，清晨車禍，右脛骨開放性骨折。急診沖洗、夾板、抗生素與破傷風依醫囑都給了，下午清創。", "en": "Wei, 24, delivery rider, scooter crash at dawn, open right tibia. Washed, splinted, antibiotics and tetanus per protocol in the ER; debridement this afternoon."}],
+        ["me", {"zh": "小魏的脈搏？", "en": "Wei's pulses?"}],
+        ["chief", {"zh": "足背、脛後都有，六點摸的。劉主治會叫你再摸一次。", "en": "Dorsalis pedis and posterior tibial both present, felt at six. Dr Liu will tell you to feel them again."}],
+        ["sys", {"zh": "白板：08:00 右髖半人工關節（李阿嬤）。14:00 右脛骨清創＋外固定（小魏）。", "en": "Whiteboard: 08:00 right hip hemiarthroplasty (Grandma Li). 14:00 right tibia debridement + external fixation (Wei)."}]
+       ]},
+      {"id": "h2", "to": "attending", "guide": {"zh": "和劉主治決定阿嬤的術式", "en": "Decide Grandma Li's operation with Dr Liu"},
+       "lines": [
+        ["attending", {"zh": "早。移位的股骨頸骨折，82 歲，術前能走到巷口。做什麼？", "en": "Morning. Displaced femoral neck fracture, 82, walked to the corner shop before the fall. What do we do?"}],
+        ["me", {"zh": "半人工髖關節。要固定的話，老人家移位的骨折癒合不好。", "en": "Hemiarthroplasty. Fixation heals poorly in a displaced fracture at her age."}],
+        ["attending", {"zh": "骨水泥還是不用？她心肺怎麼樣？", "en": "Cemented or not? How are her heart and lungs?"}],
+        ["me", {"zh": "骨質疏鬆，心肺還可以。骨水泥，但要先跟麻醉說一聲。", "en": "Osteoporotic, heart and lungs reasonable. Cemented, but warn anaesthesia first."}]
+       ],
+       "mini": {"type": "stage", "case": "orthopedics-hip-fracture-pathway", "stage": 5},
+       "post": [["attending", {"zh": "好。二十四小時內開，這是路徑的第一條。去刷手。", "en": "Good. Within twenty-four hours: first rule of the pathway. Go and scrub."}]]}
+     ]},
+    {"id": "first-case", "name": {"zh": "第一台：髖", "en": "First case: the hip"}, "sub": {"zh": "08:00 · 開刀房", "en": "08:00 · operating theatre"}, "t": 480, "mood": "day",
+     "note": {"zh": "阿嬤的半人工髖關節，長度對了", "en": "Grandma's hemiarthroplasty; leg lengths equal"},
+     "beats": [
+      {"id": "c1", "to": "patient1", "guide": {"zh": "跟李阿嬤核對身分與左右", "en": "Confirm identity and side with Grandma Li"},
+       "lines": [
+        ["patient1", {"zh": "醫師，右邊。下禮拜三我孫子生日，我要去。", "en": "Doctor, the right side. My grandson's birthday is next Wednesday; I'm going."}],
+        ["me", {"zh": "阿嬤，姓名、生日說一次。右邊的箭頭還在。", "en": "Grandma, name and birthday once for me. The arrow on the right is still there."}],
+        ["daughter", {"zh": "醫師，眼鏡和助聽器我帶來了。她沒戴會亂。", "en": "Doctor, I brought her glasses and hearing aid. She gets muddled without them."}],
+        ["me", {"zh": "恢復室一醒來就戴上。這比任何藥都有用。", "en": "They go on the moment she wakes in recovery. Better than any drug."}]
+       ],
+       "item": "hearing-aid"},
+      {"id": "c2", "to": "place:table", "guide": {"zh": "時間暫停，C 臂先擺好", "en": "Time-out, then position the C-arm"},
+       "lines": [
+        ["radiographer", {"zh": "鋪單前 C 臂先擺好，試拍一張。", "en": "C-arm in position and a test shot before draping."}],
+        ["chief", {"zh": "時間暫停。李阿嬤，右側半人工髖關節，骨水泥，過敏無，抗生素依醫囑。植入物尺寸在？", "en": "Time-out. Grandma Li, right hemiarthroplasty, cemented, no allergies, antibiotics per protocol. Implant sizes available?"}],
+        ["attending", {"zh": "骨水泥的時候我會先喊，麻醉要知道。", "en": "I'll call out before the cement goes in; anaesthesia must know."}]
+       ],
+       "mini": {"type": "find", "hot": "carm", "q": {"zh": "點一下 C 臂，把它擺到能拍正面與側面的位置", "en": "Tap the C-arm and park it where it can take both the AP and the lateral"}}},
+      {"id": "c3", "roles": ["scrub"], "to": "place:implants", "guide": {"zh": "核對植入物托盤與清點", "en": "Check the implant tray and count"},
+       "lines": [
+        ["me", {"zh": "股骨頭尺寸一整排、柄的號數齊、骨水泥與混合器到了。紗布十、針四。", "en": "Full run of head sizes, all stem numbers, cement and mixer here. Swabs ten, needles four."}],
+        ["attending", {"zh": "試用頭先給我，正式的等我量完。", "en": "Trial head first; the real one after I measure."}],
+        ["me", {"zh": "植入物的序號貼紙我會貼進病歷。", "en": "The implant serial stickers go into the notes; I'll see to it."}]
+       ]},
+      {"id": "c4", "to": "place:table", "guide": {"zh": "暴露、截骨、試復位", "en": "Exposure, neck cut, trial reduction"},
+       "lines": [
+        ["attending", {"zh": "骨頭拿出來了。量直徑，選頭。試復位，看長度和穩定度。", "en": "Head's out. Measure the diameter, pick the head. Trial reduction: check length and stability."}],
+        ["me", {"zh": "兩腳長度對齊、各方向都穩。骨水泥，麻醉請注意。", "en": "Leg lengths equal, stable in all directions. Cement going in; anaesthesia, please note."}],
+        ["sys", {"zh": "C 臂拍了正面與側面：柄居中，頭在髖臼裡。", "en": "The C-arm shows AP and lateral: stem central, head seated in the socket."}],
+        ["attending", {"zh": "關。她禮拜三要去吃蛋糕。", "en": "Close. She has a cake to get to on Wednesday."}]
+       ]},
+      {"id": "c5", "roles": ["resident"], "to": "place:desk", "guide": {"zh": "寫紀錄與老年照護醫囑", "en": "Op note and orthogeriatric orders"},
+       "lines": [
+        ["attending", {"zh": "紀錄：術式、頭的尺寸、柄的號數、骨水泥、穩定度、長度。醫囑呢？", "en": "Note: procedure, head size, stem number, cement, stability, length. And the orders?"}],
+        ["me", {"zh": "老年醫學共同照護、明天下床、譫妄預防、骨鬆評估、眼鏡助聽器一醒來就戴。", "en": "Shared geriatric care, out of bed tomorrow, delirium prevention, bone health assessment, glasses and hearing aid on at wake-up."}],
+        ["attending", {"zh": "骨頭只是清單上的一項。很好。", "en": "The bone is one item on the list. Good."}]
+       ]}
+     ]},
+    {"id": "er-call", "name": {"zh": "急診來電", "en": "ER call"}, "sub": {"zh": "10:30 · 小魏的脛骨", "en": "10:30 · Wei's tibia"}, "t": 630, "mood": "day",
+     "note": {"zh": "小魏：開放性骨折分級與計畫", "en": "Wei: open fracture graded and planned"},
+     "beats": [
+      {"id": "w1", "ring": {"title": {"zh": "急診來電", "en": "ER calling"}, "sub": {"zh": "小魏的 X 光傳給你了，過來看傷口", "en": "Wei's X-rays are sent; come and see the wound"}, "call": true, "from": "er-doc"},
+       "lines": [
+        ["er-doc", {"zh": "骨科嗎？小魏的片子傳過去了。傷口我拍了照、蓋起來了，別一直掀。", "en": "Orthopaedics? Wei's films are through. I photographed the wound and covered it; stop everyone lifting the dressing."}],
+        ["me", {"zh": "收到。我用結構化的方式跟劉主治報告：機轉、部位、型態、移位、開放、神經血管。", "en": "Got it. I'll present to Dr Liu in a structured way: mechanism, site, pattern, displacement, open or not, neurovascular status."}],
+        ["er-doc", {"zh": "他一直問餐盒在不在。", "en": "He keeps asking about the food box."}]
+       ],
+       "mini": {"type": "stage", "case": "orthopedics-fracture-description-xray", "stage": 8}},
+      {"id": "w2", "to": "place:imaging", "guide": {"zh": "看小魏的 X 光", "en": "Read Wei's X-rays"},
+       "lines": [["attending", {"zh": "片子上來。先說骨折，再說傷口。", "en": "Films up. Fracture first, then the wound."}]],
+       "mini": {"type": "imaging", "region": "lower-limb",
+        "question": {"zh": "怎麼有系統地描述這個脛骨骨折？", "en": "How do you describe this tibial fracture systematically?"},
+        "answer": {"zh": "部位（脛骨中段）、型態（橫向帶楔形碎片）、移位與成角的方向、腓骨是否也斷、關節有沒有被波及，再加上「開放性」。", "en": "Site (mid-shaft tibia), pattern (transverse with a wedge fragment), direction of displacement and angulation, whether the fibula is also broken, any joint involvement, and the word 'open'."}},
+       "post": [["attending", {"zh": "描述得像在跟電話另一頭的人講。很好。傷口呢？", "en": "Described as if to someone on the other end of a phone. Good. And the wound?"}]]},
+      {"id": "w3", "to": "patient2", "guide": {"zh": "去急診看小魏的傷口與脈搏", "en": "Go to the ER: Wei's wound and pulses"},
+       "lines": [
+        ["patient2", {"zh": "醫師，餐盒還在嗎？還有……我的腳會不會沒了？", "en": "Doctor, is the food box OK? And... am I going to lose my leg?"}],
+        ["me", {"zh": "餐盒我不知道，腳我知道：腳趾會動、有感覺、脈搏摸得到。傷口不大，但要在開刀房清創。", "en": "I don't know about the box. The leg I do: toes move, sensation intact, pulses present. The wound isn't big, but it needs debridement in theatre."}],
+        ["attending", {"zh": "分級？", "en": "Grade?"}],
+        ["me", {"zh": "傷口不到十公分、中度污染、沒有血管傷害——先暫定第二級，真正的分級在清創時定。", "en": "Wound under ten centimetres, moderate contamination, no vascular injury: provisionally Gustilo classification grade two, with the real grade decided at debridement."}]
+       ],
+       "mini": {"type": "stage", "case": "orthopedics-open-fracture-gustilo", "stage": 3},
+       "item": "gustilo-card"}
+     ]},
+    {"id": "recovery-noon", "name": {"zh": "恢復室", "en": "Recovery room"}, "sub": {"zh": "12:00 · 阿嬤血壓偏低", "en": "12:00 · Grandma's pressure is low"}, "t": 720, "mood": "day",
+     "note": {"zh": "阿嬤恢復室低血壓，找到原因", "en": "Grandma's recovery hypotension explained"},
+     "beats": [
+      {"id": "n1", "ring": {"title": {"zh": "恢復室來電", "en": "Recovery calling"}, "sub": {"zh": "李阿嬤血壓偏低，有點迷糊", "en": "Grandma Li's pressure is low and she's a little muddled"}, "call": true, "from": "ward-nurse"},
+       "to": "place:recovery", "guide": {"zh": "去恢復室看阿嬤", "en": "Go to recovery and see Grandma"},
+       "lines": [
+        ["ward-nurse", {"zh": "醫師，阿嬤血壓比術前低、心跳偏快，人有點迷糊，助聽器還沒戴。", "en": "Doctor, Grandma's pressure is below her pre-op level, pulse a bit fast, she's muddled, and the hearing aid isn't in yet."}],
+        ["me", {"zh": "先戴助聽器。傷口和引流看一下，抽血比對血色素，依醫囑輸液。我到了。", "en": "Hearing aid in first. Check the wound and drain, send a haemoglobin, fluids per protocol. I'm here."}]
+       ],
+       "mini": {"type": "vitals", "event": "hypotension",
+        "options": [
+         {"zh": "查傷口與引流、依醫囑輸液、驗血色素、叫主治", "en": "Check wound and drain, fluids per protocol, haemoglobin, call the attending", "ok": true,
+          "why": {"zh": "對。術後低血壓先找出血、再想麻醉與神經阻斷的殘餘效果、再想心臟。", "en": "Right. Post-op hypotension: look for bleeding first, then residual anaesthetic and block, then the heart."}},
+         {"zh": "沒事，老人家血壓本來就低", "en": "It's fine; older people run low", "ok": false,
+          "why": {"zh": "「本來就低」要跟她自己的術前比。比術前低加心跳快，要查。", "en": "'Runs low' is measured against her own baseline. Below baseline with a fast pulse needs looking at."}},
+         {"zh": "給鎮靜讓她不要亂動", "en": "Sedate her so she stops fidgeting", "ok": false,
+          "why": {"zh": "迷糊是低血壓與沒戴助聽器的結果，鎮靜會把兩個都蓋住。", "en": "The muddle comes from low pressure and no hearing aid; sedation hides both."}}
+        ]},
+       "post": [
+        ["patient1", {"zh": "……啊，聽到了。醫師，禮拜三。", "en": "...ah, now I can hear. Doctor: Wednesday."}],
+        ["me", {"zh": "阿嬤，禮拜三。血色素回來只掉一點，傷口乾，輸液之後血壓回來了。", "en": "Grandma, Wednesday. Haemoglobin down only a little, wound dry, pressure back up with fluids."}]
+       ]}
+     ]},
+    {"id": "second-case", "name": {"zh": "第二台：脛骨", "en": "Second case: the tibia"}, "sub": {"zh": "14:00 · 開刀房", "en": "14:00 · operating theatre"}, "t": 840, "mood": "day",
+     "note": {"zh": "小魏清創與外固定完成", "en": "Wei's debridement and external fixator done"},
+     "beats": [
+      {"id": "s1", "to": "place:table", "guide": {"zh": "時間暫停：開放性骨折", "en": "Time-out: open fracture"},
+       "lines": [
+        ["chief", {"zh": "時間暫停。小魏，右脛骨開放性骨折清創加外固定，右側，破傷風與抗生素依醫囑已給。", "en": "Time-out. Wei, right open tibia: debridement and external fixation, right side, tetanus and antibiotics per protocol given."}],
+        ["attending", {"zh": "止血帶上了但先不充氣。清創要看哪裡在流血，流血的骨頭才是活的。", "en": "Tourniquet on but not inflated. In debridement you want to see what bleeds; bleeding bone is living bone."}],
+        ["me", {"zh": "脈搏術前再摸一次：都在。", "en": "Pulses once more before we start: both present."}]
+       ]},
+      {"id": "s2", "to": "place:table", "guide": {"zh": "清創與沖洗", "en": "Debridement and irrigation"},
+       "lines": [
+        ["attending", {"zh": "傷口延長到看得見整個骨折。壞死的皮、髒的肌肉、沒有軟組織連著的碎骨，拿掉。", "en": "Extend the wound until the whole fracture is visible. Dead skin, contaminated muscle, bone fragments with no soft-tissue attachment: out."}],
+        ["me", {"zh": "一塊碎骨完全游離，拿掉。大量生理食鹽水低壓沖洗。", "en": "One fragment completely free: removed. Copious low-pressure saline irrigation."}],
+        ["attending", {"zh": "現在分級才算數。你說？", "en": "Now the grade counts. Your call?"}],
+        ["me", {"zh": "軟組織還蓋得住，沒有血管傷害。第二級成立。", "en": "Soft tissue still covers it, no vascular injury. Grade two stands."}]
+       ],
+       "mini": {"type": "stage", "case": "orthopedics-open-fracture-gustilo", "stage": 7}},
+      {"id": "s3", "to": "place:carm", "guide": {"zh": "外固定：鑽釘要垂直、雙皮質", "en": "External fixator: pins perpendicular and bicortical"},
+       "lines": [
+        ["attending", {"zh": "外固定的鋼釘，離骨折遠一點、避開之後要放鋼板的地方。鑽頭垂直骨面，穿過兩層皮質就停。", "en": "Fixator pins away from the fracture and clear of where a plate will go later. Drill perpendicular to the bone, stop once through both cortices."}],
+        ["radiographer", {"zh": "正面、側面，我來。", "en": "AP and lateral, I've got it."}]
+       ],
+       "mini": {"type": "drill", "template": "orthopedics", "drill": "drillBone"},
+       "post": [["attending", {"zh": "支架鎖緊，對線可以。傷口不縫死，明後天再看。", "en": "Frame tightened, alignment acceptable. Wound left open; second look in a day or two."}]]},
+      {"id": "s4", "roles": ["scrub"], "to": "place:implants", "guide": {"zh": "最後清點與鋼釘紀錄", "en": "Final count and pin record"},
+       "lines": [
+        ["me", {"zh": "紗布十、針四、刀片二，數目正確。鋼釘四支，尺寸與序號記下。", "en": "Swabs ten, needles four, blades two, correct. Four pins; sizes and serials recorded."}],
+        ["attending", {"zh": "釘孔的敷料怎麼換，病房要知道。", "en": "The ward needs to know how the pin-site dressings are done."}],
+        ["me", {"zh": "我寫在交班單上，附照片。", "en": "I'll put it on the handover sheet, with a photo."}]
+       ]},
+      {"id": "s5", "roles": ["resident"], "to": "patient2", "guide": {"zh": "恢復室跟小魏說明", "en": "Explain to Wei in recovery"},
+       "lines": [
+        ["patient2", {"zh": "醫師……腿上這是什麼架子？", "en": "Doctor... what's this frame on my leg?"}],
+        ["me", {"zh": "外固定。先把骨頭撐住，等傷口乾淨再換成裡面的固定。腳趾動一下給我看。", "en": "An external fixator. It holds the bone until the wound is clean, then we switch to internal fixation. Wiggle your toes for me."}],
+        ["patient2", {"zh": "會動。痛，但還好。", "en": "They move. It hurts, but it's OK."}],
+        ["me", {"zh": "痛如果越來越誇張、止痛越來越沒用，馬上按鈴。這句話很重要。", "en": "If the pain gets wildly worse and the painkillers stop working, ring the bell at once. That sentence matters."}]
+       ]}
+     ]},
+    {"id": "ward-call", "name": {"zh": "病房緊急", "en": "Ward emergency"}, "sub": {"zh": "16:30 · 這個痛不對", "en": "16:30 · this pain is wrong"}, "t": 990, "mood": "day",
+     "note": {"zh": "小魏骨筋膜室症候群，筋膜切開", "en": "Wei: compartment syndrome, fasciotomy"},
+     "beats": [
+      {"id": "e1", "ring": {"title": {"zh": "病房來電", "en": "Ward calling"}, "sub": {"zh": "小魏痛得不成比例，止痛沒效", "en": "Wei's pain is out of proportion; analgesia isn't working"}, "call": true, "from": "ward-nurse"},
+       "to": "place:bed", "guide": {"zh": "接電話，趕去看小魏", "en": "Take the call and hurry to Wei"},
+       "lines": [
+        ["ward-nurse", {"zh": "醫師，小魏這個痛不對。止痛加了兩次都沒用，小腿硬硬的，我動他腳趾他就叫。", "en": "Doctor, Wei's pain is wrong. Two extra doses of analgesia did nothing, the calf is tight, and he screams when I move his toes."}],
+        ["me", {"zh": "不成比例的疼痛加被動拉伸痛。把敷料和夾板全部鬆到皮膚，腳放心臟同高，通知劉主治。我在路上。", "en": "Pain out of proportion plus pain on passive stretch. Release every dressing and the splint down to skin, leg level with the heart, call Dr Liu. I'm on my way."}]
+       ],
+       "mini": {"type": "choice", "q": {"zh": "懷疑骨筋膜室症候群，第一步？", "en": "You suspect compartment syndrome. First step?"},
+        "options": [
+         {"zh": "鬆開一切敷料到皮膚、腳與心臟同高、叫主治", "en": "Release all dressings to skin, leg at heart level, call the attending", "ok": true, "set": {"cs": "release"},
+          "why": {"zh": "對。先移除所有壓迫。然後臨床判斷，必要時量壓力，準備筋膜切開。", "en": "Right. Remove every constriction first. Then clinical judgement, pressure measurement if needed, and prepare for fasciotomy."}},
+         {"zh": "再加止痛，觀察一小時", "en": "More analgesia and observe for an hour", "ok": false, "set": {"cs": "analgesia"},
+          "why": {"zh": "止痛會蓋掉最重要的訊號，一小時可以讓肌肉壞死。", "en": "Analgesia hides the most important sign, and an hour is enough for muscle to die."}},
+         {"zh": "把腳抬高消腫", "en": "Elevate the leg to reduce swelling", "ok": false, "set": {"cs": "elevate"},
+          "why": {"zh": "抬高會降低灌流壓，讓情況更糟。腳跟心臟同高就好。", "en": "Elevation lowers the perfusion pressure and makes it worse. Heart level, no higher."}}
+        ]}},
+      {"id": "e2", "to": "attending", "guide": {"zh": "和劉主治決定筋膜切開", "en": "Decide on fasciotomy with Dr Liu"},
+       "lines": [
+        ["me", {"zh": "鬆開之後還是硬、還是痛、被動拉伸痛明顯。脈搏還在，但那是最晚的徵象。", "en": "Still tight after release, still painful, clear pain on passive stretch. Pulses present, but that is the last sign."}],
+        ["attending", {"zh": "脈搏在不代表安全。你的決定？", "en": "A pulse does not mean safety. Your decision?"}],
+        ["me", {"zh": "臨床診斷成立，不等壓力測量。現在回開刀房，四個腔室都切開。", "en": "Clinical diagnosis made; we do not wait for pressure measurement. Back to theatre now, all four compartments."}],
+        ["attending", {"zh": "對。叫開刀房。摸脈搏，再摸一次，然後走。", "en": "Right. Call theatre. Feel the pulse, feel it again, then go."}]
+       ],
+       "mini": {"type": "stage", "case": "orthopedics-compartment-syndrome", "stage": 6},
+       "post": [["sys", {"zh": "筋膜切開：肌肉從切口鼓出來，顏色慢慢紅回來。傷口先開著。", "en": "Fasciotomy: the muscle bulges out of the incision and slowly pinks up. The wounds stay open."}]]}
+     ]},
+    {"id": "evening", "name": {"zh": "交班與回顧", "en": "Handover and debrief"}, "sub": {"zh": "18:30 · 開刀房外", "en": "18:30 · outside theatre"}, "t": 1110, "mood": "eve",
+     "note": {"zh": "交給夜班；師傅的三件事", "en": "Handed to the night team; the mentor's three things"},
+     "beats": [
+      {"id": "d1", "to": "chief", "guide": {"zh": "向夜班交班", "en": "Hand over to the night team"},
+       "lines": [
+        ["me", {"zh": "李阿嬤半人工髖關節，恢復室低血壓已處理，助聽器戴著。小魏清創加外固定，傍晚骨筋膜室症候群，筋膜切開，傷口開放。", "en": "Grandma Li: hemiarthroplasty, recovery hypotension sorted, hearing aid in. Wei: debridement and ex-fix, compartment syndrome this evening, fasciotomy, wounds open."}],
+        ["chief", {"zh": "小魏今晚？", "en": "Wei tonight?"}],
+        ["me", {"zh": "每小時神經血管檢查、腳趾被動拉伸、腳跟心臟同高、兩天後二次清創。", "en": "Hourly neurovascular checks, passive toe stretch, leg at heart level, second look in two days."}],
+        ["chief", {"zh": "收到。佩珊說的「這個痛不對」，你聽進去了。", "en": "Received. Pei-shan said 'this pain is wrong' and you listened."}]
+       ]},
+      {"id": "d1b", "when": {"flag": "cs", "is": "analgesia"}, "to": "attending", "guide": {"zh": "劉主治提起那一小時", "en": "Dr Liu brings up that hour"},
+       "lines": [
+        ["attending", {"zh": "電話裡你本來想先加止痛、觀察一小時。", "en": "On the phone you first wanted more analgesia and an hour's observation."}],
+        ["me", {"zh": "對。佩珊已經把夾板鬆開了。", "en": "I did. Pei-shan had already released the splint."}],
+        ["attending", {"zh": "記住：止痛沒效，本身就是診斷。護理師救了那條小腿一小時。", "en": "Remember: analgesia not working is itself the diagnosis. The nurse bought that calf an hour."}]
+       ]},
+      {"id": "d2", "to": "attending", "guide": {"zh": "師傅的回顧", "en": "The mentor's debrief"},
+       "lines": [
+        ["attending", {"zh": "今天三件事。阿嬤的助聽器，你放進醫囑了。", "en": "Three things today. Grandma's hearing aid: you put it in the orders."}],
+        ["attending", {"zh": "小魏的分級，你等到清創才定案。筋膜切開，你沒有等脈搏消失。", "en": "Wei's grade: you waited for debridement to decide. The fasciotomy: you did not wait for the pulse to disappear."}],
+        ["me", {"zh": "呼叫器今天在帽子上響了幾次？", "en": "How many times did the pager on your cap go off today?"}],
+        ["attending", {"zh": "每一次我都聽到了。去吃飯。", "en": "I heard every one. Go and eat."}]
+       ]}
+     ]},
+    {"id": "night", "name": {"zh": "值班夜", "en": "On call tonight"}, "sub": {"zh": "22:30 · 病房", "en": "22:30 · ward"}, "t": 1350, "mood": "night",
+     "note": {"zh": "阿嬤夜裡的混亂，找到原因", "en": "Grandma's night-time confusion, cause found"},
+     "beats": [
+      {"id": "x1", "ring": {"title": {"zh": "病房來電", "en": "Ward calling"}, "sub": {"zh": "李阿嬤混亂、想拔點滴、說要回家煮飯", "en": "Grandma Li is confused, pulling at her drip, says she's going home to cook"}, "call": true, "from": "ward-nurse"},
+       "lines": [
+        ["ward-nurse", {"zh": "醫師，阿嬤混亂了，要拔點滴、說孫子在門口等。助聽器在，眼鏡掉了。", "en": "Doctor, Grandma's confused, pulling at the drip, says her grandson is waiting at the door. Hearing aid in, glasses fell off."}],
+        ["me", {"zh": "譫妄。先找原因：痛？尿？氧氣？藥？", "en": "Delirium. Find the cause first: pain? bladder? oxygen? drugs?"}],
+        ["ward-nurse", {"zh": "膀胱掃描脹的。", "en": "Bladder scan shows she's full."}]
+       ],
+       "mini": {"type": "choice", "q": {"zh": "術後老人家夜裡譫妄，怎麼處理？", "en": "An older patient becomes delirious the night after surgery. What do you do?"},
+        "options": [
+         {"zh": "找原因處理、眼鏡戴上、家屬陪、燈光與時鐘", "en": "Treat the cause, glasses on, family present, light and a clock", "ok": true, "set": {"delirium": "cause"},
+          "why": {"zh": "對。尿滯留依醫囑處理、止痛評估、重新定向。不綁、不隨便鎮靜。", "en": "Right. Retention managed per protocol, pain reviewed, reorientation. No restraints, no casual sedation."}},
+         {"zh": "約束帶綁起來以免拔管", "en": "Restrain her so she can't pull the lines", "ok": false, "set": {"delirium": "restrain"},
+          "why": {"zh": "約束會讓譫妄更嚴重、更久。先找原因。", "en": "Restraints make delirium worse and longer. Find the cause first."}},
+         {"zh": "鎮靜藥讓她睡到天亮", "en": "Sedate her until morning", "ok": false, "set": {"delirium": "sedate"},
+          "why": {"zh": "鎮靜蓋掉原因，明早她更混亂，也更晚下床。", "en": "Sedation hides the cause; she wakes more confused and gets out of bed later."}}
+        ]}},
+      {"id": "x2", "to": "patient1", "guide": {"zh": "去看李阿嬤", "en": "Go and see Grandma Li"},
+       "lines": [
+        ["patient1", {"zh": "你是誰？我孫子呢？", "en": "Who are you? Where's my grandson?"}],
+        ["me", {"zh": "阿嬤，我是今天幫你開刀的醫師。眼鏡戴上。現在是晚上，這裡是醫院，孫子禮拜三見。", "en": "Grandma, I'm the doctor who operated on you today. Glasses on. It's night, you're in hospital, your grandson is Wednesday."}],
+        ["daughter", {"zh": "媽，我在這裡。", "en": "Mum, I'm here."}],
+        ["patient1", {"zh": "……禮拜三。醫師，我要尿尿。", "en": "...Wednesday. Doctor, I need the toilet."}],
+        ["me", {"zh": "這就是原因。依醫囑處理，等一下就舒服了。", "en": "And that's the cause. Per protocol; you'll feel better shortly."}]
+       ]},
+      {"id": "x3", "ring": {"title": {"zh": "劉主治訊息", "en": "Message from Dr Liu"}, "sub": {"zh": "「小魏腳趾會動，腿是暖的。明早 07:00 再摸一次。」", "en": "'Wei's toes move and the leg is warm. 07:00 tomorrow: feel it again.'"}, "call": false, "from": "attending"},
+       "lines": [
+        ["me", {"zh": "一支髖、一條脛骨、一次筋膜切開、一個助聽器。脈搏都在。", "en": "One hip, one tibia, one fasciotomy, one hearing aid. All the pulses present."}],
+        ["sys", {"zh": "值班結束。走廊盡頭，小魏的餐盒放在護理站上——急診送過來的。", "en": "End of shift. At the end of the corridor, Wei's food box sits on the nurses' station, sent up from the ER."}]
+       ],
+       "end": true}
+     ]}
+  ],
+  "ending": {"title": {"zh": "下班了", "en": "End of shift"}, "sub": {"zh": "摸脈搏，再摸一次", "en": "Feel the pulse, then feel it again"},
+    "stats": ["stages", "grades", "choices", "calls", "items", "time"]}
+}

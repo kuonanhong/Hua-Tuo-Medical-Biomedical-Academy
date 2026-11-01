@@ -1,0 +1,1784 @@
+{
+ "format": "huatuo-shift-v1",
+ "department": "ent",
+ "title": {
+  "zh": "耳鼻喉科值班日",
+  "en": "A shift in ENT"
+ },
+ "tagline": {
+  "zh": "一個響起的監測器、一個時間窗、一支通氣管",
+  "en": "A monitor that alarms, a treatment window and a grommet"
+ },
+ "room": "or",
+ "minutes": 25,
+ "roles": [
+  {
+   "id": "resident",
+   "zh": "耳鼻喉科住院醫師",
+   "en": "ENT resident",
+   "desc": {
+    "zh": "顯微鏡下磨乳突、音叉敲一敲、小朋友的鼓膜、夜裡一隻糖尿病人的耳朵。耳朵先看乾淨，再說話。",
+    "en": "Drilling a mastoid under the microscope, tuning forks, a child's eardrum, a diabetic ear at night. Clean the ear and look before you speak."
+   }
+  },
+  {
+   "id": "audiologist",
+   "zh": "聽力師",
+   "en": "Audiologist",
+   "desc": {
+    "zh": "鼓室圖、純音聽力圖、術前術後的比較。外科醫師看得到耳朵，你聽得到它。",
+    "en": "Tympanograms, pure-tone audiograms, before-and-after comparisons. The surgeons see the ear; you hear it."
+   }
+  }
+ ],
+ "cast": {
+  "attending": {
+   "name": {
+    "zh": "杜主治",
+    "en": "Dr Tu"
+   },
+   "role": {
+    "zh": "主治醫師（師傅）",
+    "en": "Attending (mentor)"
+   },
+   "tag": "ATT",
+   "color": "#7c2d12",
+   "body": "mentor",
+   "about": {
+    "zh": "會哼出音叉的音高。口頭禪：「耳朵先看乾淨，再說話。」",
+    "en": "Can hum the pitch of a tuning fork. Catchphrase: 'Clean the ear and look before you speak.'"
+   }
+  },
+  "chief": {
+   "name": {
+    "zh": "阿凡學長",
+    "en": "Dr Fan"
+   },
+   "role": {
+    "zh": "總醫師",
+    "en": "Chief resident"
+   },
+   "tag": "CR",
+   "color": "#2f6f9f",
+   "body": "resident",
+   "about": {
+    "zh": "夜裡用耳鏡看過七隻耳朵，每一隻都畫了圖。",
+    "en": "Looked in seven ears overnight and drew every one."
+   }
+  },
+  "scrub": {
+   "name": {
+    "zh": "佳佳",
+    "en": "Chia-chia"
+   },
+   "role": {
+    "zh": "刷手護理師",
+    "en": "Scrub nurse"
+   },
+   "tag": "SN",
+   "color": "#c27a2c",
+   "body": "scrub",
+   "about": {
+    "zh": "鑽頭從粗到細排好，沖水管永遠對準鑽頭。",
+    "en": "Burrs lined up from coarse to fine; the irrigation always aimed at the burr."
+   }
+  },
+  "patient1": {
+   "name": {
+    "zh": "阿傑",
+    "en": "Jie"
+   },
+   "role": {
+    "zh": "病人・34 歲吉他手",
+    "en": "Patient, 34, guitarist"
+   },
+   "tag": "PT1",
+   "color": "#6b7280",
+   "body": "patient",
+   "about": {
+    "zh": "左耳流膿多年、聽力變差，CT 看到膽脂瘤。他最怕的不是聽力，是臉。",
+    "en": "Years of a discharging left ear and worsening hearing; CT shows a cholesteatoma. What he fears most is not his hearing but his face."
+   }
+  },
+  "patient2": {
+   "name": {
+    "zh": "小寶",
+    "en": "Bao"
+   },
+   "role": {
+    "zh": "病人・5 歲",
+    "en": "Patient, 5"
+   },
+   "tag": "PT2",
+   "color": "#8a6d3b",
+   "body": "patient",
+   "about": {
+    "zh": "雙耳積液半年，電視越開越大聲，說話也慢了。今天放通氣管。他帶了恐龍。",
+    "en": "Six months of fluid in both ears; the television keeps getting louder and his speech has slowed. Grommets today. He brought a dinosaur."
+   }
+  },
+  "mother": {
+   "name": {
+    "zh": "小寶媽媽",
+    "en": "Bao's mother"
+   },
+   "role": {
+    "zh": "家屬",
+    "en": "Family"
+   },
+   "tag": "FAM",
+   "color": "#b45309",
+   "body": "family",
+   "about": {
+    "zh": "問了「游泳可以嗎」三次。這是正確的問題。",
+    "en": "Asked 'can he swim' three times. It is the right question."
+   }
+  },
+  "clinic-pt": {
+   "name": {
+    "zh": "林先生",
+    "en": "Mr Lin"
+   },
+   "role": {
+    "zh": "門診病人・48 歲",
+    "en": "Clinic patient, 48"
+   },
+   "tag": "PT3",
+   "color": "#0f766e",
+   "body": "patient",
+   "about": {
+    "zh": "兩天前早上醒來左耳忽然聽不到，有耳鳴。以為是耳屎，自己挖了兩天。",
+    "en": "Woke two mornings ago with sudden deafness in the left ear and ringing. Thought it was wax and poked at it for two days."
+   }
+  },
+  "ward-nurse": {
+   "name": {
+    "zh": "小芳",
+    "en": "Fang"
+   },
+   "role": {
+    "zh": "病房與恢復室護理師",
+    "en": "Ward and recovery nurse"
+   },
+   "tag": "RN",
+   "color": "#9d4b7a",
+   "body": "nurse",
+   "about": {
+    "zh": "小朋友醒來哭，她放心；不哭、不動，她就按鈴。",
+    "en": "A child crying on waking reassures her; a child silent and still makes her press the bell."
+   }
+  }
+ },
+ "places": {
+  "whiteboard": {
+   "name": {
+    "zh": "刀表白板",
+    "en": "Theatre whiteboard"
+   },
+   "hot": "whiteboard"
+  },
+  "scrub-sink": {
+   "name": {
+    "zh": "刷手台",
+    "en": "Scrub sink"
+   },
+   "hot": "sink"
+  },
+  "table": {
+   "name": {
+    "zh": "手術台",
+    "en": "Operating table"
+   },
+   "hot": "field"
+  },
+  "microscope": {
+   "name": {
+    "zh": "耳科顯微鏡",
+    "en": "Otology microscope"
+   },
+   "hot": "microscope"
+  },
+  "monitor": {
+   "name": {
+    "zh": "顏面神經監測器",
+    "en": "Facial nerve monitor"
+   },
+   "hot": "monitor"
+  },
+  "booth": {
+   "name": {
+    "zh": "聽力檢查室",
+    "en": "Audiology booth"
+   },
+   "hot": "device"
+  },
+  "imaging": {
+   "name": {
+    "zh": "影像工作站",
+    "en": "Imaging workstation"
+   },
+   "hot": "imaging"
+  },
+  "recovery": {
+   "name": {
+    "zh": "恢復室",
+    "en": "Recovery room"
+   },
+   "hot": "recovery"
+  },
+  "clinic-desk": {
+   "name": {
+    "zh": "門診桌",
+    "en": "Clinic desk"
+   },
+   "hot": "desk"
+  },
+  "er-door": {
+   "name": {
+    "zh": "急診入口",
+    "en": "ER entrance"
+   },
+   "hot": "door"
+  }
+ },
+ "glossary": [
+  {
+   "term": {
+    "zh": "時間暫停",
+    "en": "time-out"
+   },
+   "plain": {
+    "zh": "劃刀前全隊停下來核對病人、左右耳、手術與監測器。耳朵只有兩隻，左右錯不得。",
+    "en": "Before the incision the whole team stops to confirm patient, which ear, operation and monitoring. There are only two ears; the side cannot be wrong."
+   }
+  },
+  {
+   "term": {
+    "zh": "膽脂瘤",
+    "en": "cholesteatoma"
+   },
+   "plain": {
+    "zh": "皮膚長進中耳與乳突裡，像一顆會慢慢侵蝕骨頭的珍珠。會傷聽小骨、顏面神經，甚至腦。要用手術拿掉。",
+    "en": "Skin growing into the middle ear and mastoid, like a pearl that slowly eats bone. It damages the hearing bones, the facial nerve and even the brain; it is removed surgically."
+   }
+  },
+  {
+   "term": {
+    "zh": "乳突切除術",
+    "en": "mastoidectomy"
+   },
+   "plain": {
+    "zh": "在顯微鏡下用鑽頭磨開耳後的乳突骨，把膽脂瘤清乾淨。",
+    "en": "Drilling open the mastoid bone behind the ear under the microscope to clear out the cholesteatoma."
+   }
+  },
+  {
+   "term": {
+    "zh": "顏面神經監測",
+    "en": "facial nerve monitoring"
+   },
+   "plain": {
+    "zh": "臉上貼電極，手術中神經一被碰到，監測器就響。麻醉不能用肌肉鬆弛劑，否則它會沉默。",
+    "en": "Electrodes on the face sound an alarm whenever the nerve is touched during surgery. Anaesthesia must avoid muscle relaxants, or the monitor falls silent."
+   }
+  },
+  {
+   "term": {
+    "zh": "純音聽力圖",
+    "en": "pure-tone audiogram"
+   },
+   "plain": {
+    "zh": "在隔音室裡聽不同音高的嗶聲，畫出每個頻率最小聽得到的音量。術前術後都要有。",
+    "en": "In a soundproof booth you listen for beeps of different pitches; the quietest level heard at each pitch is plotted. Needed before and after surgery."
+   }
+  },
+  {
+   "term": {
+    "zh": "鼓室圖",
+    "en": "tympanogram"
+   },
+   "plain": {
+    "zh": "耳道加一點壓力，看鼓膜動不動。平的曲線代表中耳有積液。",
+    "en": "A little pressure in the ear canal shows whether the eardrum moves. A flat curve means fluid behind the drum."
+   }
+  },
+  {
+   "term": {
+    "zh": "積液性中耳炎",
+    "en": "otitis media with effusion"
+   },
+   "plain": {
+    "zh": "中耳積水但沒有急性發炎，小朋友聽不清楚、說話變慢。很多會自己好，持續太久就放通氣管。",
+    "en": "Fluid in the middle ear without acute infection; children hear poorly and speech slows. Many clear on their own; if it persists, grommets."
+   }
+  },
+  {
+   "term": {
+    "zh": "通氣管",
+    "en": "grommet"
+   },
+   "plain": {
+    "zh": "放在鼓膜上的小管子，讓中耳通氣、積液流出。幾個月到一年多會自己掉出來。",
+    "en": "A tiny tube set in the eardrum to ventilate the middle ear and let fluid drain. It falls out by itself after months to a year or more."
+   }
+  },
+  {
+   "term": {
+    "zh": "突發性聽損",
+    "en": "sudden hearing loss"
+   },
+   "plain": {
+    "zh": "幾小時到三天內一耳忽然聽不到，耳鏡正常。這是急症，越早開始治療越有機會恢復。",
+    "en": "Sudden deafness in one ear over hours to three days with a normal-looking eardrum. An emergency: the sooner treatment starts, the better the chance of recovery."
+   }
+  },
+  {
+   "term": {
+    "zh": "音叉測試",
+    "en": "tuning fork tests"
+   },
+   "plain": {
+    "zh": "音叉放額頭中間與耳後，幾秒鐘分辨是傳導性還是感音神經性聽損。",
+    "en": "A tuning fork on the middle of the forehead and behind the ear tells within seconds whether a hearing loss is conductive or sensorineural."
+   }
+  },
+  {
+   "term": {
+    "zh": "惡性外耳炎",
+    "en": "malignant otitis externa"
+   },
+   "plain": {
+    "zh": "不是癌症，是糖尿病或免疫差的人外耳道感染吃進顱底骨頭。劇痛、耳道底有肉芽、顏面神經可能受影響。要住院。",
+    "en": "Not a cancer: an ear canal infection in a diabetic or immunocompromised person that eats into the skull base. Severe pain, granulation tissue in the canal floor, the facial nerve at risk. Needs admission."
+   }
+  },
+  {
+   "term": {
+    "zh": "喉頭痙攣",
+    "en": "laryngospasm"
+   },
+   "plain": {
+    "zh": "麻醉醒來時聲帶忽然夾緊、吸不到氣，小朋友特別容易。要立刻叫麻醉、下顎推舉、正壓給氧。",
+    "en": "On waking from anaesthesia the vocal cords clamp shut and no air gets in; commonest in children. Call anaesthesia at once, jaw thrust, positive-pressure oxygen."
+   }
+  },
+  {
+   "term": {
+    "zh": "耳鏡",
+    "en": "otoscope"
+   },
+   "plain": {
+    "zh": "看耳道與鼓膜的小燈。耳廓往後上方拉直耳道，才看得到鼓膜。",
+    "en": "The little light for looking at the canal and eardrum. Pull the ear up and back to straighten the canal, or you will not see the drum."
+   }
+  }
+ ],
+ "codex": [
+  {
+   "id": "otology-microscope",
+   "kind": "equipment",
+   "name": {
+    "zh": "耳科顯微鏡",
+    "en": "Otology microscope"
+   },
+   "hot": "microscope",
+   "text": {
+    "zh": "乳突手術的眼睛。鑽頭、吸引沖水、顯微鉗都在它的視野裡。",
+    "en": "The eyes of mastoid surgery. Burr, suction-irrigation and micro-forceps all live inside its field."
+   }
+  },
+  {
+   "id": "nerve-monitor",
+   "kind": "equipment",
+   "name": {
+    "zh": "顏面神經監測器",
+    "en": "Facial nerve monitor"
+   },
+   "hot": "monitor",
+   "text": {
+    "zh": "眼輪匝肌與口輪匝肌各一對電極。響了就停手。沒有肌肉鬆弛劑，它才會說話。",
+    "en": "A pair of electrodes each on the eye and mouth muscles. When it sounds, hands stop. Without muscle relaxant, it can speak."
+   }
+  },
+  {
+   "id": "tympanometer",
+   "kind": "equipment",
+   "name": {
+    "zh": "鼓室圖儀",
+    "en": "Tympanometer"
+   },
+   "hot": "device",
+   "text": {
+    "zh": "探頭塞住耳道，幾秒鐘畫出鼓膜的順應性。小朋友不用配合也能做。",
+    "en": "A probe seals the canal and plots the eardrum's compliance in seconds. Works even on a child who will not cooperate."
+   }
+  },
+  {
+   "id": "otoscope-item",
+   "kind": "equipment",
+   "name": {
+    "zh": "耳鏡",
+    "en": "Otoscope"
+   },
+   "hot": "instruments",
+   "text": {
+    "zh": "最大的耳鏡頭、耳廓往後上拉、燈光對準。看不到鼓膜，就先清耳道。",
+    "en": "Largest speculum that fits, ear pulled up and back, light on target. If you cannot see the drum, clear the canal first."
+   }
+  },
+  {
+   "id": "grommet-item",
+   "kind": "item",
+   "name": {
+    "zh": "一支通氣管",
+    "en": "A grommet"
+   },
+   "text": {
+    "zh": "比米粒還小的管子。放在鼓膜前下象限，避開聽小骨。小寶問可不可以帶回家。",
+    "en": "A tube smaller than a grain of rice, set in the front-lower quarter of the drum, away from the hearing bones. Bao asked if he could take one home."
+   }
+  },
+  {
+   "id": "tuning-fork",
+   "kind": "item",
+   "name": {
+    "zh": "杜主治的音叉",
+    "en": "Dr Tu's tuning fork"
+   },
+   "text": {
+    "zh": "額頭中間、耳後乳突、耳前。三個位置，兩個測試，幾秒鐘的答案。",
+    "en": "Middle of the forehead, behind the ear, in front of the ear. Three positions, two tests, an answer in seconds."
+   }
+  },
+  {
+   "id": "window",
+   "kind": "concept",
+   "name": {
+    "zh": "時間窗",
+    "en": "The treatment window"
+   },
+   "text": {
+    "zh": "突發性聽損的治療越早越好。「以為是耳屎」常常用掉最寶貴的幾天。",
+    "en": "Treatment for sudden hearing loss works best early. 'I thought it was wax' often spends the most valuable days."
+   }
+  },
+  {
+   "id": "ear-red-flags",
+   "kind": "concept",
+   "name": {
+    "zh": "耳痛的紅旗",
+    "en": "Red flags in ear pain"
+   },
+   "text": {
+    "zh": "糖尿病、老人、痛到睡不著、耳道底有肉芽、臉歪。這不是「普通外耳炎」。",
+    "en": "Diabetes, old age, pain that prevents sleep, granulation on the canal floor, a drooping face. This is not 'ordinary' otitis externa."
+   }
+  }
+ ],
+ "segs": [
+  {
+   "id": "handover",
+   "name": {
+    "zh": "晨間交班",
+    "en": "Morning handover"
+   },
+   "sub": {
+    "zh": "07:30 · 刀表白板",
+    "en": "07:30 · theatre whiteboard"
+   },
+   "t": 450,
+   "mood": "day",
+   "note": {
+    "zh": "交班：乳突、通氣管、一通門診電話",
+    "en": "Handover: a mastoid, grommets and a clinic call to come"
+   },
+   "beats": [
+    {
+     "id": "h1",
+     "to": "chief",
+     "guide": {
+      "zh": "找阿凡學長交班",
+      "en": "Find Dr Fan for handover"
+     },
+     "lines": [
+      [
+       "chief",
+       {
+        "zh": "早。第一台阿傑，左耳膽脂瘤乳突切除術，顏面神經監測，麻醉已經知道不用肌肉鬆弛劑。",
+        "en": "Morning. First case Jie, left cholesteatoma mastoidectomy with facial nerve monitoring; anaesthesia knows no muscle relaxant."
+       }
+      ],
+      [
+       "chief",
+       {
+        "zh": "下午小寶雙耳通氣管。門診說有個兩天前忽然聽不到的人，會打來。",
+        "en": "This afternoon Bao, bilateral grommets. Clinic says a man who went suddenly deaf two days ago will be calling."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "兩天前。時間窗還在。",
+        "en": "Two days ago. The window is still open."
+       }
+      ],
+      [
+       "chief",
+       {
+        "zh": "對，所以今天就要處理。杜主治的音叉在桌上。",
+        "en": "Right, which is why it gets dealt with today. Dr Tu's tuning fork is on the desk."
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "白板：08:00 左乳突切除（阿傑）。14:00 雙耳通氣管（小寶）。門診：突發性聽損。",
+        "en": "Whiteboard: 08:00 left mastoidectomy (Jie). 14:00 bilateral grommets (Bao). Clinic: sudden hearing loss."
+       }
+      ]
+     ],
+     "item": "tuning-fork"
+    },
+    {
+     "id": "h2",
+     "to": "attending",
+     "guide": {
+      "zh": "去找杜主治",
+      "en": "Find Dr Tu"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "早。阿傑最怕什麼？",
+        "en": "Morning. What is Jie most afraid of?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "臉。他是吉他手，上台要笑。顏面神經是今天的第一優先。",
+        "en": "His face. He plays guitar on stage and has to smile. The facial nerve is today's first priority."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "第二？",
+        "en": "Second?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "把膽脂瘤清乾淨。聽力是第三，可以之後重建。",
+        "en": "Clearing the cholesteatoma completely. Hearing is third; it can be reconstructed later."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "順序對了。去刷手。耳朵先看乾淨，再說話。",
+        "en": "Right order. Go and scrub. Clean the ear and look before you speak."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "first-case",
+   "name": {
+    "zh": "第一台：乳突",
+    "en": "First case: the mastoid"
+   },
+   "sub": {
+    "zh": "08:00 · 開刀房",
+    "en": "08:00 · operating theatre"
+   },
+   "t": 480,
+   "mood": "day",
+   "note": {
+    "zh": "監測器響了一次，臉是對稱的",
+    "en": "The monitor sounded once; the face is symmetric"
+   },
+   "beats": [
+    {
+     "id": "c1",
+     "to": "patient1",
+     "guide": {
+      "zh": "跟阿傑核對身分與左右耳",
+      "en": "Confirm identity and which ear with Jie"
+     },
+     "lines": [
+      [
+       "patient1",
+       {
+        "zh": "醫師，左耳。我昨晚沒睡，一直想臉會不會歪。",
+        "en": "Doctor, the left ear. I didn't sleep; kept thinking about whether my face will droop."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "姓名、生日說一次。左耳的標記還在。手術中你的臉會有監測器幫我們看著。",
+        "en": "Name and birthday once for me. The mark on the left ear is still there. During surgery a monitor watches your face for us."
+       }
+      ],
+      [
+       "patient1",
+       {
+        "zh": "醒來第一件事我要笑給你看。",
+        "en": "First thing when I wake, I'll smile for you."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "這是我今天最期待的事。",
+        "en": "That's the thing I'm most looking forward to today."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "c1b",
+     "to": "place:monitor",
+     "guide": {
+      "zh": "測試顏面神經監測器",
+      "en": "Test the facial nerve monitor"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "電極貼好了。測試之前，先問麻醉一句話。",
+        "en": "Electrodes are on. Before you test it, one question for anaesthesia."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "沒有用肌肉鬆弛劑嗎？",
+        "en": "No muscle relaxant given?"
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "麻醉點頭。輕敲臉頰，監測器應該要叫。",
+        "en": "Anaesthesia nods. A tap on the cheek, and the monitor should answer."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "find",
+      "hot": "monitor",
+      "q": {
+       "zh": "點一下顏面神經監測器，確認輕敲臉頰有訊號",
+       "en": "Tap the facial nerve monitor to confirm a signal when the cheek is tapped"
+      }
+     },
+     "post": [
+      [
+       "attending",
+       {
+        "zh": "它會說話了。現在可以開始。",
+        "en": "It can speak now. We may begin."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "c2",
+     "to": "place:table",
+     "guide": {
+      "zh": "時間暫停、擺位、監測器",
+      "en": "Time-out, positioning, the monitor"
+     },
+     "lines": [
+      [
+       "scrub",
+       {
+        "zh": "時間暫停。阿傑，左耳乳突切除，膽脂瘤，顏面神經監測，無肌肉鬆弛劑，過敏無。",
+        "en": "Time-out. Jie, left mastoidectomy for cholesteatoma, facial nerve monitoring, no muscle relaxant, no allergies."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "頭轉向右、左耳朝上。監測器電極貼好了嗎？測試過嗎？",
+        "en": "Head turned right, left ear up. Monitor electrodes on? Tested?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "眼輪匝肌、口輪匝肌各一對，輕敲臉頰有訊號。CT 在螢幕上，是左耳。",
+        "en": "One pair at the eye, one at the mouth; a tap on the cheek gives a signal. The CT is on the screen: left ear."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "ent-cholesteatoma-mastoidectomy",
+      "stage": 7
+     }
+    },
+    {
+     "id": "c2a",
+     "roles": [
+      "audiologist"
+     ],
+     "to": "place:booth",
+     "guide": {
+      "zh": "核對術前純音聽力圖",
+      "en": "Check the pre-op pure-tone audiogram"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "術前純音聽力圖：左耳傳導性聽損為主，氣骨導差距明顯，右耳正常。",
+        "en": "Pre-op pure-tone audiogram: left ear mainly conductive loss with a clear air-bone gap, right ear normal."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "為什麼術前一定要有？",
+        "en": "Why must we have it before surgery?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "術後要比較。沒有術前的圖，就沒有人知道我們做得好不好——或是有沒有弄壞。",
+        "en": "For the post-op comparison. Without it nobody knows whether we did well, or whether we did harm."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "ent-cholesteatoma-mastoidectomy",
+      "stage": 3
+     }
+    },
+    {
+     "id": "c3",
+     "to": "place:microscope",
+     "guide": {
+      "zh": "顯微鏡下沿組織層面剝離",
+      "en": "Dissect along the plane under the microscope"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "乳突皮質磨開了。膽脂瘤的囊壁和骨頭之間有一層面，沿著它走，不要戳破。",
+        "en": "Mastoid cortex is open. There is a plane between the cholesteatoma sac and the bone; follow it, don't puncture it."
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "顯微鏡下，白色珍珠樣的囊壁一點一點從骨頭上剝下來。",
+        "en": "Under the microscope the pearly white sac peels off the bone, millimetre by millimetre."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "鑽頭靠近顏面神經管的時候，沖水要多、轉速依規範、方向平行。",
+        "en": "Near the facial canal: plenty of irrigation, speed per protocol, burr parallel to the nerve."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "drill",
+      "template": "ent",
+      "drill": "dissect"
+     }
+    },
+    {
+     "id": "c4",
+     "to": "place:monitor",
+     "guide": {
+      "zh": "監測器響了：你的第一個動作",
+      "en": "The monitor sounds: your first move"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "一聲尖銳的嗶。顏面神經監測器的螢幕上跳出一串波形。",
+        "en": "A sharp beep. A burst of waveforms leaps across the facial nerve monitor."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "停。你現在做什麼？",
+        "en": "Stop. What do you do right now?"
+       }
+      ]
+     ],
+     "mini": {
+      "type": "choice",
+      "q": {
+       "zh": "顏面神經監測器響了，第一步？",
+       "en": "The facial nerve monitor sounds. First step?"
+      },
+      "options": [
+       {
+        "zh": "停手、確認沒肌鬆劑、看位置、沖溫水、低強度探測",
+        "en": "Hands off, confirm no relaxant, check position, warm irrigation, low-current probe",
+        "ok": true,
+        "set": {
+         "alarm": "stop"
+        },
+        "why": {
+         "zh": "對。響了就是神經在說話。先停，再找原因：機械刺激、冷水、或是神經已經露出來。",
+         "en": "Right. The alarm is the nerve speaking. Stop first, then find the reason: mechanical touch, cold water, or an exposed nerve."
+        }
+       },
+       {
+        "zh": "應該是雜訊，繼續磨",
+        "en": "Probably noise; keep drilling",
+        "ok": false,
+        "set": {
+         "alarm": "continue"
+        },
+        "why": {
+         "zh": "把真的訊號當雜訊，是臉歪最常見的開頭。先停。",
+         "en": "Treating a real signal as noise is the commonest start of a facial palsy. Stop first."
+        }
+       },
+       {
+        "zh": "直接把監測器關掉",
+        "en": "Switch the monitor off",
+        "ok": false,
+        "set": {
+         "alarm": "mute"
+        },
+        "why": {
+         "zh": "關掉警報不會讓神經安全，只會讓你聽不到它。",
+         "en": "Silencing the alarm does not protect the nerve; it only stops you hearing it."
+        }
+       }
+      ]
+     },
+     "post": [
+      [
+       "attending",
+       {
+        "zh": "鑽頭碰到了神經管上的一層薄骨。低強度探測：神經完整。換小鑽頭、方向平行、沖水。",
+        "en": "The burr touched the thin bone over the canal. Low-current probe: nerve intact. Smaller burr, parallel, irrigate."
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "膽脂瘤整塊出來了。外耳道後壁保留。",
+        "en": "The cholesteatoma comes out in one piece. The canal wall is preserved."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "關之前再測一次顏面神經：訊號正常。",
+        "en": "Test the facial nerve once more before closing: signal normal."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "c5",
+     "roles": [
+      "resident"
+     ],
+     "to": "place:recovery",
+     "guide": {
+      "zh": "恢復室：看臉、寫紀錄",
+      "en": "Recovery: check the face, write the note"
+     },
+     "lines": [
+      [
+       "patient1",
+       {
+        "zh": "醫師……",
+        "en": "Doctor..."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "阿傑，笑一個。閉眼。皺眉。鼓臉。",
+        "en": "Jie, smile for me. Close your eyes. Frown. Puff your cheeks."
+       }
+      ],
+      [
+       "patient1",
+       {
+        "zh": "……對稱嗎？",
+        "en": "...symmetric?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "對稱。紀錄我這樣寫：膽脂瘤完整切除、後壁保留、監測器響一次、神經完整、術後顏面功能正常。",
+        "en": "Symmetric. The note reads: cholesteatoma removed complete, canal wall preserved, one monitor event, nerve intact, facial function normal post-op."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "clinic-call",
+   "name": {
+    "zh": "門診來電",
+    "en": "Clinic call"
+   },
+   "sub": {
+    "zh": "10:30 · 兩天前忽然聽不到",
+    "en": "10:30 · suddenly deaf two days ago"
+   },
+   "t": 630,
+   "mood": "day",
+   "note": {
+    "zh": "林先生：突發性聽損，今天開始治療",
+    "en": "Mr Lin: sudden hearing loss, treatment started today"
+   },
+   "beats": [
+    {
+     "id": "w1",
+     "ring": {
+      "title": {
+       "zh": "門診來電",
+       "en": "Clinic calling"
+      },
+      "sub": {
+       "zh": "48 歲男性，左耳兩天前忽然聽不到",
+       "en": "Man of 48, sudden left deafness two days ago"
+      },
+      "call": true,
+      "from": "ward-nurse"
+     },
+     "lines": [
+      [
+       "ward-nurse",
+       {
+        "zh": "醫師，門診轉過來：48 歲，兩天前早上醒來左耳聽不到，有耳鳴，不暈。他以為是耳屎，自己挖了兩天。",
+        "en": "Doctor, forwarded from clinic: 48, woke two mornings ago deaf in the left ear with tinnitus, no vertigo. Thought it was wax and poked at it for two days."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "這是急症。耳鏡先看，耳屎清掉，音叉測試，馬上做純音聽力圖。我十分鐘到門診。",
+        "en": "This is an emergency. Otoscope first, clear any wax, tuning fork tests, pure-tone audiogram straight away. I'm in clinic in ten minutes."
+       }
+      ],
+      [
+       "ward-nurse",
+       {
+        "zh": "聽力師已經在隔音室等了。",
+        "en": "The audiologist is already waiting in the booth."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "w2",
+     "roles": [
+      "resident"
+     ],
+     "to": "clinic-pt",
+     "guide": {
+      "zh": "耳鏡與音叉測試",
+      "en": "Otoscope and tuning fork tests"
+     },
+     "lines": [
+      [
+       "clinic-pt",
+       {
+        "zh": "醫師，是不是耳屎？我挖了兩天。",
+        "en": "Doctor, is it wax? I've been poking at it for two days."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "先看。耳道有點抓傷，鼓膜完整、正常。所以不是耳屎。音叉：放額頭中間，哪一邊比較大聲？",
+        "en": "Let me look. The canal is a little scratched; the drum is intact and normal. So not wax. Tuning fork on the middle of your forehead: which side is louder?"
+       }
+      ],
+      [
+       "clinic-pt",
+       {
+        "zh": "右邊。",
+        "en": "The right."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "偏向好的耳朵。左耳是感音神經性的突發性聽損。耳鏡正常，正是這個診斷的特徵。",
+        "en": "Lateralises to the good ear. Sensorineural sudden hearing loss on the left. A normal eardrum is exactly the point."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "w2a",
+     "roles": [
+      "audiologist"
+     ],
+     "to": "place:booth",
+     "guide": {
+      "zh": "做純音聽力圖",
+      "en": "Run the pure-tone audiogram"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "林先生，聽到嗶聲就按，再小聲都按。先右耳，再左耳，骨導也做。",
+        "en": "Mr Lin, press whenever you hear a beep, however faint. Right ear first, then left, then bone conduction."
+       }
+      ],
+      [
+       "clinic-pt",
+       {
+        "zh": "左邊……幾乎沒有。",
+        "en": "The left... almost nothing."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "左耳全頻率感音神經性聽損，右耳正常。圖馬上給醫師，這張圖決定接下來的每一步。",
+        "en": "Left ear sensorineural loss across the frequencies, right normal. The chart goes to the doctor now; it decides every next step."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "ent-sudden-sensorineural-hearing-loss",
+      "stage": 3
+     }
+    },
+    {
+     "id": "w3",
+     "to": "attending",
+     "guide": {
+      "zh": "治療決策：時間窗",
+      "en": "Treatment decision: the window"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "兩天前發病、感音神經性、耳鏡正常。你的計畫？",
+        "en": "Onset two days ago, sensorineural, normal drum. Your plan?"
+       }
+      ]
+     ],
+     "mini": {
+      "type": "choice",
+      "q": {
+       "zh": "確診突發性聽損第二天，怎麼做？",
+       "en": "Sudden hearing loss confirmed on day two. What do you do?"
+      },
+      "options": [
+       {
+        "zh": "今天依醫囑開始治療、安排 MRI、一週內回診",
+        "en": "Start treatment today per protocol, book an MRI, review within a week",
+        "ok": true,
+        "set": {
+         "window": "today"
+        },
+        "why": {
+         "zh": "對。時間窗內開始治療，MRI 排除聽神經瘤，追蹤聽力圖。",
+         "en": "Right. Treatment inside the window, an MRI to exclude an acoustic neuroma, and follow-up audiograms."
+        }
+       },
+       {
+        "zh": "兩週後門診看有沒有自己好",
+        "en": "Review in two weeks to see if it recovers",
+        "ok": false,
+        "set": {
+         "window": "late"
+        },
+        "why": {
+         "zh": "有些會自己好，但等兩週會把能治療的窗口關掉。",
+         "en": "Some recover alone, but waiting two weeks closes the treatable window."
+        }
+       },
+       {
+        "zh": "先開耳藥水",
+        "en": "Ear drops first",
+        "ok": false,
+        "set": {
+         "window": "drops"
+        },
+        "why": {
+         "zh": "問題在內耳，耳藥水到不了。",
+         "en": "The problem is in the inner ear; drops never reach it."
+        }
+       }
+      ]
+     },
+     "post": [
+      [
+       "attending",
+       {
+        "zh": "也跟他說：以後聽不到不要挖，直接來。去吃飯之前先看阿傑的 CT。",
+        "en": "And tell him: next time he can't hear, don't poke, come in. Jie's CT before you eat."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "imaging-noon",
+   "name": {
+    "zh": "影像討論",
+    "en": "Imaging review"
+   },
+   "sub": {
+    "zh": "12:00 · 阿傑的顳骨 CT",
+    "en": "12:00 · Jie's temporal bone CT"
+   },
+   "t": 720,
+   "mood": "day",
+   "note": {
+    "zh": "CT 回顧：膽脂瘤的範圍與危險區",
+    "en": "CT review: extent of the cholesteatoma and the danger zones"
+   },
+   "beats": [
+    {
+     "id": "n1",
+     "to": "place:imaging",
+     "guide": {
+      "zh": "和杜主治回看顳骨 CT",
+      "en": "Review the temporal bone CT with Dr Tu"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "開完再看一次 CT。今天監測器響的那個位置，在片子上找出來。",
+        "en": "Look at the CT again after the case. Find on the scan the spot where the monitor sounded today."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "顏面神經管水平段那裡的骨頭本來就薄。",
+        "en": "The bone over the horizontal segment of the facial canal was thin to begin with."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "imaging",
+      "region": "head",
+      "question": {
+       "zh": "膽脂瘤的顳骨 CT 要確認哪些危險區？",
+       "en": "Which danger zones must a temporal bone CT for cholesteatoma check?"
+      },
+      "answer": {
+       "zh": "顏面神經管是否裸露、外半規管有沒有瘻管、鼓室蓋（腦板）是否完整、乙狀竇位置、聽小骨侵蝕程度與疾病範圍。",
+       "en": "Whether the facial canal is dehiscent, a fistula in the lateral semicircular canal, an intact tegmen (the plate under the brain), the position of the sigmoid sinus, ossicular erosion and the extent of disease."
+      }
+     },
+     "post": [
+      [
+       "attending",
+       {
+        "zh": "神經管薄，片子早就說了。今天監測器證實了。去吃飯。",
+        "en": "A thin canal; the scan said so all along. Today the monitor confirmed it. Go and eat."
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "杜主治走開時哼著一個音。聽力師說那是音叉的音高。",
+        "en": "Dr Tu walks off humming a single note. The audiologist says it is the tuning fork's pitch."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "second-case",
+   "name": {
+    "zh": "第二台：通氣管",
+    "en": "Second case: grommets"
+   },
+   "sub": {
+    "zh": "14:00 · 開刀房",
+    "en": "14:00 · operating theatre"
+   },
+   "t": 840,
+   "mood": "day",
+   "note": {
+    "zh": "小寶的通氣管，恐龍陪著",
+    "en": "Bao's grommets, dinosaur in attendance"
+   },
+   "beats": [
+    {
+     "id": "s1",
+     "to": "patient2",
+     "guide": {
+      "zh": "跟小寶和媽媽核對",
+      "en": "Check with Bao and his mother"
+     },
+     "lines": [
+      [
+       "patient2",
+       {
+        "zh": "恐龍可以一起進去嗎？",
+        "en": "Can the dinosaur come in?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "可以，牠負責看著你的耳朵。媽媽，小寶的全名、生日，兩邊耳朵都要放，對嗎？",
+        "en": "He can; he's in charge of watching your ears. Mum, Bao's full name and birthday, and it's both ears, correct?"
+       }
+      ],
+      [
+       "mother",
+       {
+        "zh": "對，兩邊。放了以後游泳可以嗎？",
+        "en": "Yes, both. Can he swim afterwards?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "可以，大多數情況不用耳塞，髒水和潛水除外。這是對的問題，等一下再說一次給您聽。",
+        "en": "He can; in most cases no earplugs needed, except dirty water and diving. That's the right question; I'll go through it again afterwards."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "s2",
+     "to": "place:microscope",
+     "guide": {
+      "zh": "時間暫停與鼓膜切開的位置",
+      "en": "Time-out and the myringotomy site"
+     },
+     "lines": [
+      [
+       "scrub",
+       {
+        "zh": "時間暫停。小寶，五歲，雙耳通氣管，過敏無。",
+        "en": "Time-out. Bao, five, bilateral grommets, no allergies."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "顯微鏡下。切哪裡？",
+        "en": "Under the microscope. Where do you cut?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "前下象限，放射狀小切口，避開後上象限的聽小骨。先吸掉積液，再放管。",
+        "en": "Anterior-inferior quadrant, a small radial incision, away from the ossicles in the posterior-superior quadrant. Suck the fluid, then place the tube."
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "膠狀的積液被吸出來。一支比米粒還小的管子坐進鼓膜。",
+        "en": "Glue-like fluid is suctioned away. A tube smaller than a grain of rice seats itself in the drum."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "ent-acute-otitis-media-grommets",
+      "stage": 8
+     },
+     "item": "grommet-item"
+    },
+    {
+     "id": "s2a",
+     "roles": [
+      "audiologist"
+     ],
+     "to": "place:booth",
+     "guide": {
+      "zh": "術前鼓室圖歸檔、安排術後聽力",
+      "en": "File the pre-op tympanogram and book post-op hearing"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "術前鼓室圖兩耳都是平的，符合積液性中耳炎。術後六週回來做純音聽力圖和鼓室圖。",
+        "en": "Pre-op tympanogram flat in both ears, consistent with otitis media with effusion. Back in six weeks for a pure-tone audiogram and tympanogram."
+       }
+      ],
+      [
+       "mother",
+       {
+        "zh": "他說話會變快嗎？",
+        "en": "Will his speech speed up?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "聽得清楚之後，很多孩子幾週內就追上來。我們會量，不用猜。",
+        "en": "Once they hear clearly, many children catch up within weeks. We'll measure it rather than guess."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "recovery-call",
+   "name": {
+    "zh": "恢復室緊急",
+    "en": "Recovery emergency"
+   },
+   "sub": {
+    "zh": "16:00 · 小寶不哭了",
+    "en": "16:00 · Bao has gone quiet"
+   },
+   "t": 960,
+   "mood": "day",
+   "note": {
+    "zh": "恢復室喉頭痙攣，處理得快",
+    "en": "Laryngospasm in recovery, handled fast"
+   },
+   "beats": [
+    {
+     "id": "e1",
+     "ring": {
+      "title": {
+       "zh": "恢復室來電",
+       "en": "Recovery calling"
+      },
+      "sub": {
+       "zh": "小寶醒來時忽然吸不到氣，血氧往下掉",
+       "en": "Bao suddenly can't draw breath on waking; saturation falling"
+      },
+      "call": true,
+      "from": "ward-nurse"
+     },
+     "to": "place:recovery",
+     "guide": {
+      "zh": "接電話，衝去恢復室",
+      "en": "Take the call and run to recovery"
+     },
+     "lines": [
+      [
+       "ward-nurse",
+       {
+        "zh": "醫師，小寶剛醒，忽然胸口往內吸、沒有聲音，血氧一直掉。麻醉我已經按鈴了。",
+        "en": "Doctor, Bao just woke, chest sucking in, no sound, saturation dropping. I've already rung for anaesthesia."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "喉頭痙攣。下顎推舉、面罩正壓給氧依醫囑、抽吸口咽，麻醉接手。我到了。",
+        "en": "Laryngospasm. Jaw thrust, positive-pressure oxygen per protocol, suction the mouth, anaesthesia takes over. I'm here."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "vitals",
+      "event": "desaturation",
+      "options": [
+       {
+        "zh": "叫麻醉、下顎推舉、正壓給氧、抽吸、備藥依醫囑",
+        "en": "Call anaesthesia, jaw thrust, positive-pressure oxygen, suction, drugs ready per protocol",
+        "ok": true,
+        "why": {
+         "zh": "對。喉頭痙攣的順序：叫人、打開氣道、正壓、抽吸、必要時藥物依醫囑。幾十秒內要做完。",
+         "en": "Right. The laryngospasm sequence: call, open the airway, positive pressure, suction, drugs per protocol if needed. It all happens within seconds."
+        }
+       },
+       {
+        "zh": "搖醒他、叫他深呼吸",
+        "en": "Shake him and tell him to breathe deeply",
+        "ok": false,
+        "why": {
+         "zh": "聲帶夾緊的時候，他想吸也吸不到。要靠手法與正壓。",
+         "en": "With the cords clamped he cannot breathe however hard he tries. It takes manoeuvres and pressure."
+        }
+       },
+       {
+        "zh": "給一點氧氣，觀察一分鐘",
+        "en": "A little oxygen and watch for a minute",
+        "ok": false,
+        "why": {
+         "zh": "一分鐘對五歲的孩子太久。",
+         "en": "A minute is far too long for a five-year-old."
+        }
+       }
+      ]
+     },
+     "post": [
+      [
+       "sys",
+       {
+        "zh": "下顎推舉、正壓。幾秒鐘後，一聲嘶啞的哭聲。血氧回來了。",
+        "en": "Jaw thrust, positive pressure. A few seconds later, a hoarse cry. The saturation climbs back."
+       }
+      ],
+      [
+       "ward-nurse",
+       {
+        "zh": "哭了。哭了就好。",
+        "en": "He's crying. Crying is good."
+       }
+      ],
+      [
+       "mother",
+       {
+        "zh": "醫師……",
+        "en": "Doctor..."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "媽媽，醒來時聲帶夾了一下，已經過了。他現在很生氣，這是好事。恐龍也沒事。",
+        "en": "Mum, his vocal cords clamped for a moment as he woke; it's over. He's furious now, which is good. The dinosaur is fine too."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "evening",
+   "name": {
+    "zh": "交班與回顧",
+    "en": "Handover and debrief"
+   },
+   "sub": {
+    "zh": "18:00 · 開刀房外",
+    "en": "18:00 · outside theatre"
+   },
+   "t": 1080,
+   "mood": "eve",
+   "note": {
+    "zh": "交給夜班；師傅的三件事",
+    "en": "Handed to the night team; the mentor's three things"
+   },
+   "beats": [
+    {
+     "id": "d1",
+     "to": "chief",
+     "guide": {
+      "zh": "向夜班交班",
+      "en": "Hand over to the night team"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "阿傑乳突切除術，監測器響一次，神經完整。林先生今天開始治療，MRI 排了。小寶通氣管，喉頭痙攣已處理，留觀。",
+        "en": "Jie: mastoidectomy, one monitor event, nerve intact. Mr Lin: treatment started today, MRI booked. Bao: grommets, laryngospasm resolved, staying overnight."
+       }
+      ],
+      [
+       "chief",
+       {
+        "zh": "阿傑今晚？",
+        "en": "Jie tonight?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "每班看臉的對稱、敷料鬆緊、有沒有暈。",
+        "en": "Facial symmetry, dressing tightness and any vertigo, every shift."
+       }
+      ],
+      [
+       "chief",
+       {
+        "zh": "收到。今天你聽到監測器的時候，手停了。",
+        "en": "Received. When the monitor spoke today, your hands stopped."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "d1b",
+     "when": {
+      "flag": "window",
+      "is": "late"
+     },
+     "to": "attending",
+     "guide": {
+      "zh": "杜主治提起那兩週",
+      "en": "Dr Tu brings up those two weeks"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "林先生你本來想兩週後再看。",
+        "en": "You wanted to see Mr Lin again in two weeks."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "對。您說窗口會關。",
+        "en": "I did. You said the window would close."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "突發性聽損的「觀察」，就是不治療。今天他開始了，這是對的。",
+        "en": "'Observing' sudden hearing loss is the same as not treating it. He started today, and that is right."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "d2",
+     "to": "attending",
+     "guide": {
+      "zh": "師傅的回顧",
+      "en": "The mentor's debrief"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "今天三件事。監測器響，你停了。林先生，你沒有讓他等。",
+        "en": "Three things today. The monitor sounded and you stopped. Mr Lin: you did not make him wait."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "小寶的喉頭痙攣，你跑得比我快。",
+        "en": "Bao's laryngospasm: you ran faster than I did."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "您今天哼的那個音，是幾赫茲？",
+        "en": "That note you hum: what frequency is it?"
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "音叉的。去吃飯。",
+        "en": "The tuning fork's. Go and eat."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "night",
+   "name": {
+    "zh": "值班夜",
+    "en": "On call tonight"
+   },
+   "sub": {
+    "zh": "22:00 · 急診",
+    "en": "22:00 · emergency department"
+   },
+   "t": 1320,
+   "mood": "night",
+   "note": {
+    "zh": "夜裡一隻糖尿病人的耳朵：不是普通外耳炎",
+    "en": "A diabetic ear at night: not ordinary otitis externa"
+   },
+   "beats": [
+    {
+     "id": "x1",
+     "ring": {
+      "title": {
+       "zh": "急診來電",
+       "en": "ER calling"
+      },
+      "sub": {
+       "zh": "75 歲糖尿病，耳朵痛到睡不著，耳道有肉芽",
+       "en": "Diabetic of 75: ear pain that stops sleep, granulation in the canal"
+      },
+      "call": true,
+      "from": "ward-nurse"
+     },
+     "lines": [
+      [
+       "ward-nurse",
+       {
+        "zh": "醫師，急診轉：75 歲糖尿病阿公，左耳痛三週越來越嚴重，晚上痛醒，耳道底有肉芽，急診想開耳藥水回家。",
+        "en": "Doctor, from the ER: a diabetic man of 75, three weeks of worsening left ear pain, wakes at night with it, granulation on the canal floor; the ER wants to send him home with drops."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "糖尿病、老人、痛到睡不著、耳道底肉芽——紅旗全部到齊。這不是普通外耳炎。",
+        "en": "Diabetic, elderly, pain that wakes him, granulation on the canal floor: every red flag present. This is not ordinary otitis externa."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "choice",
+      "q": {
+       "zh": "糖尿病老人、劇烈耳痛、耳道底肉芽，怎麼處理？",
+       "en": "An elderly diabetic with severe ear pain and granulation on the canal floor. What do you do?"
+      },
+      "options": [
+       {
+        "zh": "收住院、腦神經檢查、培養、依醫囑抗生素、影像",
+        "en": "Admit, cranial nerve exam, cultures, antibiotics per protocol, imaging",
+        "ok": true,
+        "set": {
+         "moe": "admit"
+        },
+        "why": {
+         "zh": "對。惡性外耳炎要當成顱底骨髓炎處理：住院、長期治療、追蹤顏面神經。",
+         "en": "Right. Malignant otitis externa is treated as skull-base osteomyelitis: admission, prolonged treatment, facial nerve surveillance."
+        }
+       },
+       {
+        "zh": "耳藥水，一週後門診",
+        "en": "Ear drops, clinic in a week",
+        "ok": false,
+        "set": {
+         "moe": "drops"
+        },
+        "why": {
+         "zh": "耳藥水治不了吃進骨頭的感染。一週後可能是臉歪。",
+         "en": "Drops cannot treat an infection that has entered bone. In a week it may be a facial palsy."
+        }
+       },
+       {
+        "zh": "把肉芽清掉就好",
+        "en": "Just clean out the granulation",
+        "ok": false,
+        "set": {
+         "moe": "clean"
+        },
+        "why": {
+         "zh": "肉芽是訊號，不是病。清掉訊號，病還在骨頭裡。",
+         "en": "Granulation is the signal, not the disease. Remove the signal and the disease is still in the bone."
+        }
+       }
+      ]
+     }
+    },
+    {
+     "id": "x2",
+     "to": "place:er-door",
+     "guide": {
+      "zh": "去急診用耳鏡看阿公的耳朵",
+      "en": "Go to the ER and look in his ear with the otoscope"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "阿公坐在急診床上，手一直按著左耳。耳道腫，要把耳廓往後上拉直才看得進去。",
+        "en": "He sits on the ER trolley with a hand pressed to his left ear. The canal is swollen; the ear must be pulled up and back to see in."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "阿公，我要拉一下耳朵，會有點痛。耳道底真的有肉芽。笑一個給我看——臉還對稱。",
+        "en": "I need to pull your ear a little; it will hurt. Yes, granulation on the canal floor. Smile for me: the face is still symmetric."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "drill",
+      "template": "ent",
+      "drill": "oto"
+     },
+     "post": [
+      [
+       "me",
+       {
+        "zh": "收住院。腦神經檢查正常先記下來，之後每天比。培養抽了，抗生素依醫囑，影像明早。",
+        "en": "Admit him. Cranial nerves normal tonight, documented, compared daily from now. Cultures taken, antibiotics per protocol, imaging in the morning."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "x3",
+     "ring": {
+      "title": {
+       "zh": "杜主治訊息",
+       "en": "Message from Dr Tu"
+      },
+      "sub": {
+       "zh": "「收得對。明早 07:30，帶音叉。」",
+       "en": "'Right call to admit. 07:30 tomorrow; bring the fork.'"
+      },
+      "call": false,
+      "from": "attending"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "一顆膽脂瘤、一聲嗶、一個時間窗、一支通氣管、一隻不普通的耳朵。臉都是對稱的。",
+        "en": "One cholesteatoma, one beep, one window, one grommet, one ear that was not ordinary. Every face symmetric."
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "值班結束。恢復室裡，小寶抱著恐龍睡著了，通氣管在耳朵裡安靜地通著氣。",
+        "en": "End of shift. In recovery, Bao sleeps holding the dinosaur, a grommet in each ear quietly letting the air in."
+       }
+      ]
+     ],
+     "end": true
+    }
+   ]
+  }
+ ],
+ "ending": {
+  "title": {
+   "zh": "下班了",
+   "en": "End of shift"
+  },
+  "sub": {
+   "zh": "耳朵先看乾淨，再說話",
+   "en": "Clean the ear and look before you speak"
+  },
+  "stats": [
+   "stages",
+   "grades",
+   "choices",
+   "calls",
+   "items",
+   "time"
+  ]
+ }
+}

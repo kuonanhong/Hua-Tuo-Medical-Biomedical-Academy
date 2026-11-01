@@ -61,6 +61,28 @@
     }catch(e){return null;}
   }
   function deptMeta(id) { return (window.HT_DEPARTMENTS.departments || []).find(d => d.id === id) || { id, title: id, titleEn: id, glyph: 'stethoscope', accent: '#2f6f8f', faculty: 'western' }; }
+  // v4.0 值班模式 (shift.js): departments listed in data/shifts/index.js get a "▶ 全螢幕值班" entry.
+  let shiftIndexP = null;
+  function shiftIndex() { if (window.HT_SHIFT_INDEX) return Promise.resolve(window.HT_SHIFT_INDEX); if (!window.HT.loadScript) return Promise.resolve({ shifts: [] }); if (!shiftIndexP) shiftIndexP = window.HT.loadScript('data/shifts/index.js').then(() => window.HT_SHIFT_INDEX || { shifts: [] }).catch(() => { shiftIndexP = null; return { shifts: [] }; }); return shiftIndexP; }
+  const shiftLabel = () => { const v = t('shiftStart'); return v && v !== 'shiftStart' ? v : say('全螢幕值班', 'Full-screen shift'); };
+  function shiftAffordances(root, token) {
+    shiftIndex().then(idx => {
+      if (token !== renderEpoch || !root.isConnected) return;
+      const listed = new Set((idx.shifts || []).map(s => s.department)); if (!listed.size) return;
+      const NS = 'http://www.w3.org/2000/svg', XL = 'http://www.w3.org/1999/xlink';
+      root.querySelectorAll('.fm-room').forEach(room => {
+        const m = /department=([a-z0-9-]+)/.exec(room.getAttribute('href') || ''); if (!m || !listed.has(m[1]) || room.querySelector('.fm-shift')) return;
+        const wall = room.querySelector('.fm-wall'); const W = Number(wall && wall.getAttribute('width')) || 160;
+        const a = document.createElementNS(NS, 'a'); a.setAttribute('class', 'fm-shift'); a.setAttribute('href', '#shift?department=' + m[1]); a.setAttributeNS(XL, 'xlink:href', '#shift?department=' + m[1]); a.setAttribute('role', 'link'); a.setAttribute('aria-label', shiftLabel());
+        const title = document.createElementNS(NS, 'title'); title.textContent = '▶ ' + shiftLabel(); a.appendChild(title);
+        const c = document.createElementNS(NS, 'circle'); c.setAttribute('cx', String(W - 22)); c.setAttribute('cy', '62'); c.setAttribute('r', '13'); c.setAttribute('fill', '#1f6f5f'); c.setAttribute('stroke', '#fff'); c.setAttribute('stroke-width', '2'); a.appendChild(c);
+        const tx = document.createElementNS(NS, 'text'); tx.setAttribute('x', String(W - 20.5)); tx.setAttribute('y', '66.5'); tx.setAttribute('text-anchor', 'middle'); tx.setAttribute('font-size', '11'); tx.setAttribute('font-weight', '800'); tx.setAttribute('fill', '#fff'); tx.textContent = '▶'; a.appendChild(tx);
+        a.style.cursor = 'pointer';
+        a.addEventListener('click', e => { e.preventDefault(); e.stopPropagation(); location.hash = '#shift?department=' + m[1]; });
+        room.appendChild(a);
+      });
+    });
+  }
 
   // ---------------------------------------------------------------- department grid
   function hub(root, idx, params) {
@@ -74,6 +96,7 @@
       <div class="grid cols-3 proc-grid">${list.map(d => { const m = deptMeta(d.id); return `<a class="card dept-card proc-card" href="#procedures?department=${esc(d.id)}"><span class="ic">${window.HT.icons.dept(d.id, m.accent, m.glyph, 44)}</span><span><b>${esc(pk(m, 'title'))}${d.authored ? ' <span class="tag flagship">★</span>' : ''}</b><small>${d.procedures} ${t('proceduresUnit')} · ${d.stages} ${t('stagesUnit')} · ${(d.categories || []).length} ${t('category')}</small><small class="proc-cats">${(d.categories || []).slice(0, 4).map(c => esc(zh() ? c.zh : c.en)).join(' · ')}</small></span></a>`; }).join('')}</div>
       <p class="form-note">${say('程序庫為教學拆解與安全判斷訓練，不是手術 SOP、臨床指引或執照訓練；真實操作須在合格醫師監督與機構規範下進行。每科前四道程序免費。', 'The library is an educational decomposition and safety-judgement trainer, not an operative SOP, clinical guideline or licensure training; real practice requires qualified supervision and institutional protocols. The first four procedures of each department are free.')}</p>`;
     root.querySelector('#procFaculty').onchange = e => { location.hash = '#procedures' + (e.target.value ? '?faculty=' + e.target.value : ''); };
+    shiftAffordances(root, renderEpoch);
   }
 
   // ---------------------------------------------------------------- hospital floor map (walk into a department)
@@ -125,6 +148,7 @@
     root.querySelector('#procSearch').oninput = e => { state.q = e.target.value; drawList(); };
     root.querySelector('#procCat').onchange = e => { state.cat = e.target.value; drawList(); };
     drawList(); mountBench(); mountMedia();
+    shiftIndex().then(idx=>{if(token!==renderEpoch||!root.isConnected||!(idx.shifts||[]).some(s=>s.department===dept))return;const row=root.querySelector('.section-head .row');if(!row||row.querySelector('[data-shift-link]'))return;const a=document.createElement('a');a.className='button small primary';a.setAttribute('data-shift-link','');a.href='#shift?department='+encodeURIComponent(dept);a.textContent='▶ '+shiftLabel();row.insertBefore(a,row.firstChild);});
     const dispose=()=>{if(cleanupMedia){cleanupMedia();cleanupMedia=null;}if(cleanupBench){cleanupBench();cleanupBench=null;}if(token===renderEpoch)currentContext=null;};
     activeDispose=dispose;return ()=>{if(activeDispose===dispose)activeDispose=null;dispose();};
   }

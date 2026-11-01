@@ -1,0 +1,1659 @@
+{
+ "format": "huatuo-shift-v1",
+ "department": "obstetrics",
+ "title": {
+  "zh": "產科值班日",
+  "en": "A shift on the labour ward"
+ },
+ "tagline": {
+  "zh": "從一個頭痛到第一聲哭",
+  "en": "From a headache to a first cry"
+ },
+ "room": "ward",
+ "minutes": 25,
+ "roles": [
+  {
+   "id": "resident",
+   "zh": "產科住院醫師",
+   "en": "Obstetric resident",
+   "desc": {
+    "zh": "產房的第一線醫師。你問症狀、判讀檢驗、寫醫囑、在手術台上當第一助手。",
+    "en": "First-line doctor on the labour ward. You take the history, read the bloods, write the orders and first-assist in theatre."
+   }
+  },
+  {
+   "id": "midwife",
+   "zh": "助產師",
+   "en": "Midwife",
+   "desc": {
+    "zh": "產婦最信任的人。你量血壓、綁胎心監測器、做觸診，抽搐時第一個按鈴。",
+    "en": "The person the mother trusts most. You take the blood pressure, strap on the CTG, palpate, and are first on the bell when she fits."
+   }
+  }
+ ],
+ "cast": {
+  "attending": {
+   "name": {
+    "zh": "許主治",
+    "en": "Dr Hsu"
+   },
+   "role": {
+    "zh": "產科主治醫師（師傅）",
+    "en": "Consultant obstetrician (mentor)"
+   },
+   "tag": "ATT",
+   "color": "#81296d",
+   "about": {
+    "zh": "走路很快，口袋永遠有一支都卜勒。口頭禪：「先量第二次。」",
+    "en": "Walks fast, always has a Doppler in her pocket. Catchphrase: 'Measure it a second time first.'"
+   },
+   "body": "mentor"
+  },
+  "yu-jie": {
+   "name": {
+    "zh": "玉姐",
+    "en": "Yu-jie"
+   },
+   "role": {
+    "zh": "資深助產師",
+    "en": "Senior midwife"
+   },
+   "tag": "MW",
+   "color": "#3b8f6a",
+   "about": {
+    "zh": "接生過的孩子比這棟樓的人還多。不說大話，手永遠是暖的。",
+    "en": "Has delivered more babies than there are people in this building. No big words; always warm hands."
+   },
+   "body": "nurse"
+  },
+  "anaes": {
+   "name": {
+    "zh": "柯醫師",
+    "en": "Dr Ko"
+   },
+   "role": {
+    "zh": "產科麻醉醫師",
+    "en": "Obstetric anaesthetist"
+   },
+   "tag": "ANA",
+   "color": "#2f6f9f",
+   "about": {
+    "zh": "產房的麻醉醫師，隨時待命。最在意的兩件事：氣道和血壓。",
+    "en": "The labour-ward anaesthetist, always on standby. Two things on his mind: the airway and the blood pressure."
+   },
+   "body": "anaesthetist"
+  },
+  "hsiao-wen": {
+   "name": {
+    "zh": "小雯",
+    "en": "Hsiao-Wen"
+   },
+   "role": {
+    "zh": "病人：三床，三十六週",
+    "en": "Patient: bed 3, thirty-six weeks"
+   },
+   "tag": "P3",
+   "color": "#c2453d",
+   "about": {
+    "zh": "二十九歲鋼琴老師，第一胎。凌晨四點因為頭痛和血壓高入院，戒指已經拔不下來了。",
+    "en": "Twenty-nine, piano teacher, first pregnancy. Admitted at four this morning with a headache and high blood pressure; her ring no longer comes off."
+   },
+   "body": "patient"
+  },
+  "husband": {
+   "name": {
+    "zh": "阿哲",
+    "en": "A-Je"
+   },
+   "role": {
+    "zh": "小雯的先生",
+    "en": "Hsiao-Wen's husband"
+   },
+   "tag": "FAM",
+   "color": "#b8742c",
+   "about": {
+    "zh": "一直在走廊上走來走去。問題很多，其實只想聽到「她會沒事」。",
+    "en": "Pacing the corridor. Many questions; really he just wants to hear 'she will be all right'."
+   },
+   "body": "family"
+  },
+  "clinic-nurse": {
+   "name": {
+    "zh": "陳護理師",
+    "en": "Nurse Chen"
+   },
+   "role": {
+    "zh": "產檢門診護理師",
+    "en": "Antenatal-clinic nurse"
+   },
+   "tag": "CL",
+   "color": "#6a8f3b",
+   "about": {
+    "zh": "門診的定海神針。病人哭的時候，她先遞面紙，再打電話給你。",
+    "en": "The clinic's anchor. When a patient cries she hands over the tissues first, then phones you."
+   },
+   "phoneOnly": true
+  },
+  "pn-nurse": {
+   "name": {
+    "zh": "阿芳",
+    "en": "A-Fang"
+   },
+   "role": {
+    "zh": "產後病房護理師",
+    "en": "Postnatal-ward nurse"
+   },
+   "tag": "PN",
+   "color": "#8a5a2b",
+   "about": {
+    "zh": "夜班。產後的血壓她比誰都認真量，因為她知道子癇產後還會發生。",
+    "en": "Night shift. Nobody takes postnatal blood pressures more seriously; she knows eclampsia can still happen after birth."
+   },
+   "phoneOnly": true
+  }
+ },
+ "places": {
+  "board": {
+   "name": {
+    "zh": "產房白板",
+    "en": "Labour-ward board"
+   },
+   "hot": "whiteboard"
+  },
+  "bed3": {
+   "name": {
+    "zh": "三床",
+    "en": "Bed 3"
+   },
+   "hot": "bed"
+  },
+  "ctg": {
+   "name": {
+    "zh": "胎心監測器",
+    "en": "CTG monitor"
+   },
+   "hot": "monitor"
+  },
+  "scan": {
+   "name": {
+    "zh": "超音波機",
+    "en": "Ultrasound machine"
+   },
+   "hot": "ultrasound"
+  },
+  "desk": {
+   "name": {
+    "zh": "護理站",
+    "en": "Nurses' station"
+   },
+   "hot": "desk"
+  },
+  "cart": {
+   "name": {
+    "zh": "急救車",
+    "en": "Crash cart"
+   },
+   "hot": "crash-cart"
+  },
+  "theatre-door": {
+   "name": {
+    "zh": "產房手術室門口",
+    "en": "Theatre door"
+   },
+   "hot": "door"
+  }
+ },
+ "glossary": [
+  {
+   "term": {
+    "zh": "子癇前症",
+    "en": "pre-eclampsia"
+   },
+   "plain": {
+    "zh": "懷孕後半期出現高血壓加上蛋白尿或器官受影響。根源在胎盤，生產才會好。",
+    "en": "High blood pressure in the second half of pregnancy with protein in the urine or organ effects. It comes from the placenta and only birth cures it."
+   }
+  },
+  {
+   "term": {
+    "zh": "子癇",
+    "en": "eclampsia"
+   },
+   "plain": {
+    "zh": "子癇前症的孕婦發生抽搐。是產科最緊急的狀況之一。",
+    "en": "A seizure in a woman with pre-eclampsia. One of the true obstetric emergencies."
+   }
+  },
+  {
+   "term": {
+    "zh": "蛋白尿",
+    "en": "proteinuria"
+   },
+   "plain": {
+    "zh": "尿裡有蛋白質，表示腎臟被影響了。用試紙先篩，再送檢驗確認。",
+    "en": "Protein in the urine, a sign the kidneys are affected. Screened with a dipstick, confirmed by the lab."
+   }
+  },
+  {
+   "term": {
+    "zh": "嚴重特徵",
+    "en": "severe features"
+   },
+   "plain": {
+    "zh": "血壓非常高、頭痛、視力模糊、上腹痛、血小板低或肝腎異常。有這些就要加快腳步。",
+    "en": "Very high pressure, headache, visual disturbance, upper abdominal pain, low platelets or liver and kidney changes. Any of these speeds everything up."
+   }
+  },
+  {
+   "term": {
+    "zh": "胎心監測器",
+    "en": "CTG"
+   },
+   "plain": {
+    "zh": "綁在肚子上的兩個探頭，一個聽胎兒心跳，一個感覺宮縮，畫成一條長長的紙帶。",
+    "en": "Two probes strapped to the abdomen, one for the baby's heartbeat and one for contractions, drawn as a long paper strip."
+   }
+  },
+  {
+   "term": {
+    "zh": "初產婦",
+    "en": "primigravida"
+   },
+   "plain": {
+    "zh": "第一次懷孕的女性。子癇前症在第一胎比較常見。",
+    "en": "A woman in her first pregnancy. Pre-eclampsia is more common the first time."
+   }
+  },
+  {
+   "term": {
+    "zh": "非整倍體篩檢",
+    "en": "aneuploidy screening"
+   },
+   "plain": {
+    "zh": "用抽血加超音波估計染色體數目異常的機率。是機率，不是診斷。",
+    "en": "A blood test plus ultrasound that estimates the chance of a chromosome-number problem. A probability, not a diagnosis."
+   }
+  },
+  {
+   "term": {
+    "zh": "NIPT",
+    "en": "NIPT"
+   },
+   "plain": {
+    "zh": "從媽媽血液裡的胎兒 DNA 片段做的篩檢。很準，但仍然是篩檢。",
+    "en": "A screening test on fragments of fetal DNA in the mother's blood. Very accurate, but still a screen."
+   }
+  },
+  {
+   "term": {
+    "zh": "羊膜穿刺",
+    "en": "amniocentesis"
+   },
+   "plain": {
+    "zh": "用細針抽一點羊水做染色體檢查。能確診，但有很小的流產風險。",
+    "en": "Drawing a little amniotic fluid with a fine needle for chromosome testing. Diagnostic, with a small risk of miscarriage."
+   }
+  },
+  {
+   "term": {
+    "zh": "Leopold 四步觸診",
+    "en": "Leopold manoeuvres"
+   },
+   "plain": {
+    "zh": "用雙手摸肚子的四個步驟，判斷胎兒的位置、背朝哪邊、頭有沒有下去。",
+    "en": "Four steps of palpating the abdomen with both hands to work out how the baby lies, where its back is and whether the head has engaged."
+   }
+  },
+  {
+   "term": {
+    "zh": "羊水",
+    "en": "amniotic fluid"
+   },
+   "plain": {
+    "zh": "包住胎兒的液體。太少常常代表胎盤功能不好。",
+    "en": "The fluid around the baby. Too little often means the placenta is not doing well."
+   }
+  },
+  {
+   "term": {
+    "zh": "第一類緊急剖腹",
+    "en": "category-1 caesarean"
+   },
+   "plain": {
+    "zh": "母親或胎兒有立即生命危險時的剖腹產，決定後要在最短時間內開始。",
+    "en": "A caesarean for immediate threat to the mother's or baby's life, started as fast as possible once decided."
+   }
+  },
+  {
+   "term": {
+    "zh": "時間暫停",
+    "en": "time-out"
+   },
+   "plain": {
+    "zh": "劃刀前全隊停下來，核對病人、手術、過敏和備血。",
+    "en": "Before the incision the whole team stops to confirm patient, operation, allergies and blood."
+   }
+  }
+ ],
+ "codex": [
+  {
+   "id": "ctg-machine",
+   "kind": "equipment",
+   "name": {
+    "zh": "胎心監測器",
+    "en": "CTG machine"
+   },
+   "text": {
+    "zh": "兩個探頭、一條紙帶。看基準心率、變異性、加速和減速，還有宮縮的關係。",
+    "en": "Two probes and a paper strip. Read baseline rate, variability, accelerations and decelerations, and how they relate to contractions."
+   },
+   "hot": "monitor"
+  },
+  {
+   "id": "doppler",
+   "kind": "equipment",
+   "name": {
+    "zh": "手持都卜勒",
+    "en": "Hand-held Doppler"
+   },
+   "text": {
+    "zh": "許主治口袋裡那支。抹上凝膠，先聽到的是媽媽的脈搏還是寶寶的，要分得出來。",
+    "en": "The one in Dr Hsu's pocket. Gel on, and you must tell the mother's pulse from the baby's."
+   },
+   "hot": "device"
+  },
+  {
+   "id": "bp-cuff",
+   "kind": "equipment",
+   "name": {
+    "zh": "血壓計與合適的壓脈帶",
+    "en": "Sphygmomanometer and the right cuff"
+   },
+   "text": {
+    "zh": "手臂粗的人用太小的壓脈帶，血壓會量得偏高。坐著、休息、量兩次。",
+    "en": "Too small a cuff on a large arm reads high. Seated, rested, measured twice."
+   },
+   "hot": "bed"
+  },
+  {
+   "id": "us-machine",
+   "kind": "equipment",
+   "name": {
+    "zh": "超音波機",
+    "en": "Ultrasound machine"
+   },
+   "text": {
+    "zh": "產房裡用來看胎頭位置、胎盤和羊水。沒有游離輻射。",
+    "en": "Used on the labour ward for the head position, the placenta and the fluid. No ionising radiation."
+   },
+   "hot": "ultrasound"
+  },
+  {
+   "id": "dipstick",
+   "kind": "item",
+   "name": {
+    "zh": "尿液試紙",
+    "en": "Urine dipstick"
+   },
+   "text": {
+    "zh": "小雯早上那一條。蛋白的格子變色了，你把它貼進病歷。",
+    "en": "Hsiao-Wen's strip from this morning. The protein square changed colour; you stuck it in the chart."
+   }
+  },
+  {
+   "id": "ctg-strip",
+   "kind": "item",
+   "name": {
+    "zh": "抽搐後的那段胎心圖",
+    "en": "The CTG strip after the fit"
+   },
+   "text": {
+    "zh": "一段減速，然後慢慢回來。許主治說：先穩定母親，胎兒通常會跟著好。",
+    "en": "A deceleration, then a slow recovery. Dr Hsu said: stabilise the mother and the baby usually follows."
+   }
+  },
+  {
+   "id": "placental-disease",
+   "kind": "concept",
+   "name": {
+    "zh": "子癇前症是胎盤的病",
+    "en": "Pre-eclampsia is a placental disease"
+   },
+   "text": {
+    "zh": "血壓只是表面。胎盤出問題，全身血管跟著反應。所以唯一的根治是生產。",
+    "en": "The blood pressure is only the surface. The placenta misbehaves and the whole circulation reacts, which is why birth is the only cure."
+   }
+  },
+  {
+   "id": "crash-cart",
+   "kind": "equipment",
+   "name": {
+    "zh": "急救車與子癇急救包",
+    "en": "Crash cart and eclampsia box"
+   },
+   "text": {
+    "zh": "產房的急救車上有一個專用的子癇急救包，東西固定放，閉著眼睛也拿得到。",
+    "en": "The labour-ward crash cart carries a dedicated eclampsia box, always packed the same way so it can be found blind."
+   },
+   "hot": "crash-cart"
+  }
+ ],
+ "segs": [
+  {
+   "id": "handover",
+   "name": {
+    "zh": "晨間交班",
+    "en": "Morning handover"
+   },
+   "sub": {
+    "zh": "07:30 · 產房白板",
+    "en": "07:30 · labour-ward board"
+   },
+   "t": 450,
+   "mood": "day",
+   "note": {
+    "zh": "交班完成，三床要先看",
+    "en": "Handover done; bed 3 first"
+   },
+   "beats": [
+    {
+     "id": "h1",
+     "to": "place:board",
+     "guide": {
+      "zh": "到白板前交班",
+      "en": "Go to the board"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "白板上七張床。三床的名字旁邊畫了一個紅色的驚嘆號。",
+        "en": "Seven beds on the board. Beside bed 3 someone has drawn a red exclamation mark."
+       }
+      ],
+      [
+       "yu-jie",
+       {
+        "zh": "三床小雯，初產婦，三十六週，凌晨四點頭痛加血壓高入院。夜班量了兩次都高。",
+        "en": "Bed 3, Hsiao-Wen, primigravida, thirty-six weeks, in at four with a headache and high blood pressure. Two high readings overnight."
+       }
+      ],
+      [
+       "yu-jie",
+       {
+        "zh": "試紙蛋白有反應，抽血送了還沒回來。先生在走廊走來走去，別被他嚇到。",
+        "en": "Dipstick positive for protein, bloods sent but not back. Husband pacing the corridor; do not let him rattle you."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "收到。三床先看。",
+        "en": "Got it. Bed 3 first."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "h2",
+     "to": "attending",
+     "guide": {
+      "zh": "找許主治",
+      "en": "Find Dr Hsu"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "早。三床你覺得是什麼？",
+        "en": "Morning. Bed 3: what do you think it is?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "三十六週，初產婦，血壓高加蛋白尿，還有頭痛。我擔心子癇前症。",
+        "en": "Thirty-six weeks, primigravida, high pressure with proteinuria and a headache. I am worried about pre-eclampsia."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "擔心是對的。但一句話先問清楚：症狀。去問，不要先看數字。",
+        "en": "Right to worry. But one thing first: the symptoms. Go and ask; do not start with the numbers."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "h3",
+     "to": "place:desk",
+     "guide": {
+      "zh": "翻初診紀錄找基礎血壓",
+      "en": "Find the booking blood pressure"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "她產檢初診的基礎血壓是多少？沒有基準，你怎麼知道「高」是多高。",
+        "en": "What was her blood pressure at booking? Without a baseline you cannot say how high 'high' is."
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "你翻到初診那一頁：基礎血壓正常，體重、尿液都沒有異常。",
+        "en": "You find the booking page: normal baseline pressure, nothing abnormal in weight or urine."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "初診血壓正常。所以今天這個是新發生的。",
+        "en": "Normal at booking. So today's is new."
+       }
+      ]
+     ],
+     "roles": [
+      "resident"
+     ]
+    },
+    {
+     "id": "h4",
+     "to": "place:ctg",
+     "guide": {
+      "zh": "準備胎心監測器",
+      "en": "Set up the CTG"
+     },
+     "lines": [
+      [
+       "yu-jie",
+       {
+        "zh": "胎心監測器綁好，紙帶換新的。寶寶的心跳和媽媽的脈搏，你要同時摸著確認。",
+        "en": "CTG on, fresh paper. Baby's heartbeat and mother's pulse: feel both at once to be sure which is which."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "好。壓脈帶我拿大一號的，她手臂有水腫。",
+        "en": "Will do. I am taking the larger cuff; her arms are swollen."
+       }
+      ]
+     ],
+     "roles": [
+      "midwife"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bed3",
+   "name": {
+    "zh": "三床評估",
+    "en": "Assessing bed 3"
+   },
+   "sub": {
+    "zh": "08:00 · 三床",
+    "en": "08:00 · bed 3"
+   },
+   "t": 480,
+   "mood": "day",
+   "note": {
+    "zh": "小雯留院觀察，檢驗送出",
+    "en": "Hsiao-Wen kept in; bloods sent"
+   },
+   "beats": [
+    {
+     "id": "b1",
+     "to": "hsiao-wen",
+     "guide": {
+      "zh": "去三床問症狀",
+      "en": "Ask Hsiao-Wen about symptoms"
+     },
+     "lines": [
+      [
+       "hsiao-wen",
+       {
+        "zh": "醫師，頭痛從昨天晚上就沒停。剛剛看天花板的燈，旁邊有一圈一圈的閃光。",
+        "en": "Doctor, the headache has not stopped since last night. Just now the ceiling light had rings of flashing around it."
+       }
+      ],
+      [
+       "husband",
+       {
+        "zh": "她的戒指拔不下來了。這正常嗎？",
+        "en": "Her ring will not come off. Is that normal?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "我一個一個問，小雯。你照著回答就好。",
+        "en": "I will go through them one by one, Hsiao-Wen. Just answer as they come."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "obstetrics-hypertension-preeclampsia-pathway",
+      "stage": 0
+     },
+     "post": [
+      [
+       "attending",
+       {
+        "zh": "頭痛、閃光、上腹呢？你問了沒？",
+        "en": "Headache, flashes. And the upper abdomen? Did you ask?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "問了。右上腹有一點悶，她以為是寶寶踢的。",
+        "en": "I did. A dull ache under the right ribs; she thought it was the baby kicking."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "b2",
+     "to": "place:ctg",
+     "guide": {
+      "zh": "看血壓與監視器",
+      "en": "Check pressure and monitor"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "第二次血壓量出來了。比第一次更高。",
+        "en": "The second blood pressure is up. Higher than the first."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "vitals",
+      "event": "hypertension",
+      "options": [
+       {
+        "zh": "複測、驗尿、抽血、通知主治、持續胎心監測",
+        "en": "Repeat, dipstick, bloods, call the consultant, continuous CTG",
+        "ok": true,
+        "why": {
+         "zh": "子癇前症要同時看母親和胎兒。數字確認、器官檢查、胎兒監測，一起啟動。",
+         "en": "Pre-eclampsia means watching mother and baby at once: confirm the numbers, check the organs, monitor the baby."
+        }
+       },
+       {
+        "zh": "給止痛藥，讓她睡一下再量",
+        "en": "Painkiller and let her sleep before re-measuring",
+        "ok": false,
+        "why": {
+         "zh": "頭痛本身就是警訊，壓下去只是遮住它。",
+         "en": "The headache is itself a warning sign; treating it only hides it."
+        }
+       },
+       {
+        "zh": "血壓高是因為緊張，先請先生出去",
+        "en": "It is anxiety; ask the husband to step out",
+        "ok": false,
+        "why": {
+         "zh": "兩次都高、有蛋白尿、有症狀。這不是白袍高血壓。",
+         "en": "High twice, with proteinuria and symptoms. This is not white-coat hypertension."
+        }
+       }
+      ]
+     },
+     "item": "dipstick"
+    },
+    {
+     "id": "b3",
+     "to": "husband",
+     "guide": {
+      "zh": "回答阿哲的問題",
+      "en": "Answer A-Je"
+     },
+     "lines": [
+      [
+       "husband",
+       {
+        "zh": "醫師，她可以先回家休息嗎？家裡比較好睡，我們明天再來門診。",
+        "en": "Doctor, can she go home to rest? She sleeps better at home; we can come to clinic tomorrow."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "choice",
+      "q": {
+       "zh": "你怎麼回答？",
+       "en": "What do you say?"
+      },
+      "options": [
+       {
+        "zh": "留院觀察，等檢驗和主治評估",
+        "en": "Stay in for bloods and the consultant's review",
+        "ok": true,
+        "why": {
+         "zh": "有症狀的子癇前症可能在幾小時內惡化。回家等於拿掉所有的眼睛。",
+         "en": "Symptomatic pre-eclampsia can worsen within hours; going home removes every pair of eyes."
+        },
+        "set": {
+         "stayed": true
+        }
+       },
+       {
+        "zh": "可以回家，明天門診再量",
+        "en": "She can go home and re-check in clinic tomorrow",
+        "ok": false,
+        "why": {
+         "zh": "這個選項很誘人，也很危險。幸好玉姐會攔住她。",
+         "en": "Tempting and dangerous. Fortunately Yu-jie will stop her at the door."
+        },
+        "set": {
+         "stayed": false
+        }
+       },
+       {
+        "zh": "先問許主治再說",
+        "en": "Let me ask Dr Hsu first",
+        "ok": true,
+        "why": {
+         "zh": "不確定就問，這永遠不是錯的。但答案還是：留下來。",
+         "en": "Asking when unsure is never wrong. The answer will still be: she stays."
+        },
+        "set": {
+         "stayed": true
+        }
+       }
+      ]
+     },
+     "post": [
+      [
+       "hsiao-wen",
+       {
+        "zh": "阿哲，你坐下來好不好。你走來走去我頭更痛。",
+        "en": "A-Je, sit down, would you. Your pacing makes my head worse."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "clinic-call",
+   "name": {
+    "zh": "門診來電",
+    "en": "Clinic calling"
+   },
+   "sub": {
+    "zh": "09:30 · 護理站電話",
+    "en": "09:30 · the station phone"
+   },
+   "t": 570,
+   "mood": "day",
+   "note": {
+    "zh": "篩檢結果的告知與諮詢完成",
+    "en": "Screening result explained"
+   },
+   "beats": [
+    {
+     "id": "k1",
+     "ring": {
+      "title": {
+       "zh": "產檢門診來電",
+       "en": "Antenatal clinic calling"
+      },
+      "sub": {
+       "zh": "篩檢結果高風險，病人在哭",
+       "en": "High-risk screen; the patient is crying"
+      },
+      "call": true,
+      "from": "clinic-nurse"
+     },
+     "lines": [
+      [
+       "clinic-nurse",
+       {
+        "zh": "醫師，一位十三週的產婦，非整倍體篩檢回來是高風險。她在櫃台哭，許主治在開刀，你可以下來一下嗎？",
+        "en": "Doctor, a woman at thirteen weeks: her aneuploidy screening has come back high risk. She is crying at the desk and Dr Hsu is in theatre. Can you come down?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "我五分鐘到。先帶她到諮詢室，不要在櫃台。",
+        "en": "Five minutes. Take her into the counselling room first, not at the desk."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "k2",
+     "to": "place:desk",
+     "guide": {
+      "zh": "想好怎麼說，再開口",
+      "en": "Think before you speak"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "諮詢室很小。她把報告握得皺皺的。你先坐下來，和她一樣高。",
+        "en": "The counselling room is small. She has crumpled the report in her hand. You sit down first, at her level."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "這是一個機率，不是診斷。我們一步一步來講。",
+        "en": "This is a probability, not a diagnosis. Let us go through it one step at a time."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "obstetrics-aneuploidy-screening-anomaly-scan",
+      "stage": 1
+     },
+     "post": [
+      [
+       "attending",
+       {
+        "zh": "（訊息）聽說你去了。記得：NIPT 很準但仍是篩檢，羊膜穿刺才是診斷。決定是她的。",
+        "en": "(message) I hear you went. Remember: NIPT is accurate but still a screen; amniocentesis is the diagnosis. The decision is hers."
+       }
+      ]
+     ],
+     "t": 580
+    }
+   ]
+  },
+  {
+   "id": "scan",
+   "name": {
+    "zh": "超音波與觸診",
+    "en": "Scan and palpation"
+   },
+   "sub": {
+    "zh": "11:00 · 三床旁的超音波機",
+    "en": "11:00 · ultrasound beside bed 3"
+   },
+   "t": 660,
+   "mood": "day",
+   "note": {
+    "zh": "胎兒評估完成",
+    "en": "Fetal assessment done"
+   },
+   "beats": [
+    {
+     "id": "s1",
+     "to": "place:scan",
+     "guide": {
+      "zh": "推超音波到三床",
+      "en": "Wheel the scanner to bed 3"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "母親看完了，看胎兒。三件事：胎頭在哪、胎盤在哪、羊水多不多。",
+        "en": "Mother done; now the baby. Three things: where is the head, where is the placenta, how much fluid."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "drill",
+      "template": "obstetrics",
+      "drill": "us:fetal"
+     },
+     "post": [
+      [
+       "attending",
+       {
+        "zh": "羊水偏少。這跟血壓是同一個故事：胎盤。",
+        "en": "Amniotic fluid on the low side. Same story as the blood pressure: the placenta."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "s2",
+     "to": "hsiao-wen",
+     "guide": {
+      "zh": "用雙手做 Leopold 四步觸診",
+      "en": "Leopold manoeuvres by hand"
+     },
+     "lines": [
+      [
+       "yu-jie",
+       {
+        "zh": "機器看完了，手也要摸。Leopold 四步觸診，你來。",
+        "en": "The machine has looked; now the hands. Leopold manoeuvres: your turn."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "drill",
+      "template": "obstetrics",
+      "drill": "leopold"
+     },
+     "post": [
+      [
+       "me",
+       {
+        "zh": "頭位，背在左邊，胎頭還沒固定。",
+        "en": "Cephalic, back on the left, head not yet engaged."
+       }
+      ]
+     ],
+     "roles": [
+      "midwife"
+     ]
+    },
+    {
+     "id": "s3",
+     "to": "place:scan",
+     "guide": {
+      "zh": "阿哲問：要不要照 X 光",
+      "en": "A-Je asks about X-rays"
+     },
+     "lines": [
+      [
+       "husband",
+       {
+        "zh": "醫師，要不要照個 X 光或電腦斷層看清楚一點？我自費。",
+        "en": "Doctor, should we do an X-ray or a CT to see more clearly? I will pay."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "imaging",
+      "region": "abdomen-lower",
+      "question": {
+       "zh": "孕婦的下腹部，哪一種影像最先選？",
+       "en": "For a pregnant abdomen, which imaging comes first?"
+      },
+      "answer": {
+       "zh": "超音波。沒有游離輻射，能看胎兒、胎盤和羊水。X 光和電腦斷層只在有明確理由、權衡過後才用。",
+       "en": "Ultrasound. No ionising radiation, and it shows the baby, the placenta and the fluid. X-ray and CT only with a clear reason, after weighing the risks."
+      }
+     },
+     "post": [
+      [
+       "me",
+       {
+        "zh": "阿哲，超音波已經是最好的了。省下那筆錢買嬰兒床。",
+        "en": "A-Je, ultrasound is already the best tool here. Spend that money on a cot."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "results",
+   "name": {
+    "zh": "檢驗結果",
+    "en": "The bloods are back"
+   },
+   "sub": {
+    "zh": "12:30 · 護理站",
+    "en": "12:30 · nurses' station"
+   },
+   "t": 750,
+   "mood": "day",
+   "note": {
+    "zh": "分類完成，生產計畫確定",
+    "en": "Classified; birth plan agreed"
+   },
+   "beats": [
+    {
+     "id": "r1",
+     "to": "attending",
+     "guide": {
+      "zh": "和許主治看檢驗",
+      "en": "Go through the bloods with Dr Hsu"
+     },
+     "ring": {
+      "title": {
+       "zh": "檢驗科訊息",
+       "en": "Message from the lab"
+      },
+      "sub": {
+       "zh": "三床血小板偏低、肝指數上升",
+       "en": "Bed 3: platelets low, liver enzymes up"
+      },
+      "call": false
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "抽血回來了。你先讀，再告訴我她是哪一類。",
+        "en": "Bloods are back. You read them first, then tell me which category she is."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "obstetrics-hypertension-preeclampsia-pathway",
+      "stage": 2
+     },
+     "post": [
+      [
+       "me",
+       {
+        "zh": "血小板偏低、肝指數上升、尿蛋白比值高。三十六週加上嚴重特徵。",
+        "en": "Platelets down, liver enzymes up, protein ratio high. Thirty-six weeks with severe features."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "所以生產時機？",
+        "en": "So, timing of birth?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "穩定母親之後就生，不用等到三十七週。",
+        "en": "Deliver once the mother is stable; no reason to wait for thirty-seven weeks."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "對。降壓依醫囑、麻醉科先知道、血庫先知道。去跟小雯說。",
+        "en": "Yes. Antihypertensives per protocol, anaesthesia informed, blood bank informed. Go and tell Hsiao-Wen."
+       }
+      ]
+     ],
+     "set": {
+      "plan": "deliver"
+     }
+    },
+    {
+     "id": "r2",
+     "to": "hsiao-wen",
+     "guide": {
+      "zh": "告訴小雯計畫",
+      "en": "Tell Hsiao-Wen the plan"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "小雯，檢驗告訴我們胎盤在撐了。寶寶已經夠大，我們準備讓他出來。",
+        "en": "Hsiao-Wen, the bloods tell us the placenta is struggling. The baby is big enough; we are getting ready to deliver."
+       }
+      ],
+      [
+       "hsiao-wen",
+       {
+        "zh": "今天？我還沒把學生的課調開……",
+        "en": "Today? I have not rearranged my students' lessons..."
+       }
+      ],
+      [
+       "yu-jie",
+       {
+        "zh": "學生會原諒你的。來，先把這杯水喝了，然後我們聊怎麼生。",
+        "en": "Your students will forgive you. Here, drink this water, and then we talk about how."
+       }
+      ],
+      [
+       "anaes",
+       {
+        "zh": "我是麻醉科柯醫師。先問幾個問題，等一下不管怎麼生，我都在。",
+        "en": "Dr Ko, anaesthetics. A few questions now; whichever way this goes, I will be there."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "seizure",
+   "name": {
+    "zh": "三床抽搐",
+    "en": "Bed 3 is fitting"
+   },
+   "sub": {
+    "zh": "15:30 · 三床",
+    "en": "15:30 · bed 3"
+   },
+   "t": 930,
+   "mood": "day",
+   "note": {
+    "zh": "子癇處置完成，進手術室",
+    "en": "Eclampsia managed; to theatre"
+   },
+   "beats": [
+    {
+     "id": "z1",
+     "to": "place:bed3",
+     "guide": {
+      "zh": "跑去三床！",
+      "en": "Run to bed 3!"
+     },
+     "lines": [
+      [
+       "yu-jie",
+       {
+        "zh": "三床抽搐！按鈴！",
+        "en": "Bed 3 is fitting! Bell!"
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "小雯的手臂僵直，接著規律地抽動。阿哲在門口喊她的名字。",
+        "en": "Hsiao-Wen's arms go rigid, then jerk rhythmically. A-Je is shouting her name from the door."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "vitals",
+      "event": "seizure",
+      "options": [
+       {
+        "zh": "呼救、側臥、保護頭部、計時，不塞東西",
+        "en": "Call for help, left lateral, protect the head, time it, nothing in the mouth",
+        "ok": true,
+        "why": {
+         "zh": "抽搐的第一分鐘：安全和時間。叫人、側躺避免嗆到、不要壓制四肢。",
+         "en": "The first minute of a fit: safety and the clock. Get help, on her side so she does not aspirate, do not restrain the limbs."
+        }
+       },
+       {
+        "zh": "壓住她的手腳不要讓她動",
+        "en": "Hold her arms and legs still",
+        "ok": false,
+        "why": {
+         "zh": "壓制會造成骨折和受傷，對抽搐本身沒有幫助。",
+         "en": "Restraint causes fractures and injuries and does nothing for the seizure."
+        }
+       },
+       {
+        "zh": "先去拿超音波看胎兒",
+        "en": "Fetch the scanner to check the baby",
+        "ok": false,
+        "why": {
+         "zh": "先母親，後胎兒。母親安全了，胎兒才有機會。",
+         "en": "Mother first, then baby. Only a safe mother gives the baby a chance."
+        }
+       }
+      ]
+     }
+    },
+    {
+     "id": "z2",
+     "to": "place:cart",
+     "guide": {
+      "zh": "去拿急救車",
+      "en": "Get the crash cart"
+     },
+     "lines": [
+      [
+       "yu-jie",
+       {
+        "zh": "急救車！子癇急救包在上層左邊。",
+        "en": "Crash cart! The eclampsia box is top shelf, left."
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "你一把拉開急救車，子癇急救包就在玉姐說的位置。閉著眼睛也拿得到。",
+        "en": "You pull the crash cart over; the eclampsia box is exactly where Yu-jie said. You could find it blind."
+       }
+      ]
+     ],
+     "roles": [
+      "midwife"
+     ]
+    },
+    {
+     "id": "z3",
+     "to": "attending",
+     "guide": {
+      "zh": "打電話叫人：說什麼？",
+      "en": "The call for help: what to say"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "抽搐停了，大約一分半。小雯呼吸很重，還沒醒。你拿起電話。",
+        "en": "The fit stops after about a minute and a half. Hsiao-Wen is breathing heavily, not yet awake. You pick up the phone."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "產房三床，三十六週子癇前症，剛抽搐一分半已停，意識未恢復。請麻醉科、主治、新生兒科立刻到。",
+        "en": "Labour ward bed 3, thirty-six weeks, pre-eclampsia, a fit of ninety seconds just stopped, not yet responsive. Anaesthetics, consultant and neonatal team now, please."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "好的呼叫：在哪裡、是誰、發生什麼、要誰來。一句話講完。",
+        "en": "A good call: where, who, what happened, who you need. One breath."
+       }
+      ],
+      [
+       "anaes",
+       {
+        "zh": "我到了。氣道我接手。側臥維持，氧氣依醫囑。",
+        "en": "I am here. I have the airway. Keep her lateral; oxygen per protocol."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "止痙與預防依醫囑開始。接下來的順序，你排。",
+        "en": "Anticonvulsant and prophylaxis per protocol. The next steps: you put them in order."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "z4",
+     "to": "place:bed3",
+     "guide": {
+      "zh": "抽搐後的順序",
+      "en": "After the fit: the order"
+     },
+     "mini": {
+      "type": "order",
+      "q": {
+       "zh": "子癇抽搐後，接下來的順序？",
+       "en": "After an eclamptic fit, what order?"
+      },
+      "steps": [
+       {
+        "zh": "呼救、側臥、保護、計時",
+        "en": "Call for help, lateral, protect, time it"
+       },
+       {
+        "zh": "抽搐後氣道與氧氣",
+        "en": "Airway and oxygen after the fit"
+       },
+       {
+        "zh": "依醫囑止痙與預防再發",
+        "en": "Anticonvulsant and prophylaxis per protocol"
+       },
+       {
+        "zh": "血壓控制依醫囑",
+        "en": "Blood-pressure control per protocol"
+       },
+       {
+        "zh": "胎心評估，再決定生產",
+        "en": "Assess the fetal heart, then decide on birth"
+       }
+      ]
+     },
+     "post": [
+      [
+       "sys",
+       {
+        "zh": "胎心監測器上一段長長的減速，然後慢慢回來。",
+        "en": "On the CTG a long deceleration, then a slow climb back."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "先穩定母親。胎兒通常會跟著回來。你看，回來了。",
+        "en": "Stabilise the mother. The baby usually follows. See, it is coming back."
+       }
+      ]
+     ],
+     "item": "ctg-strip"
+    },
+    {
+     "id": "z5",
+     "to": "attending",
+     "guide": {
+      "zh": "決定生產",
+      "en": "Decide on birth"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "早上你差點讓她回家。想像這一幕發生在她家的浴室。",
+        "en": "This morning you nearly sent her home. Picture this happening in her bathroom."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "……我記住了。",
+        "en": "...I will not forget."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "好。母親穩定了，胎心回來了。第一類緊急剖腹，走。",
+        "en": "Good. Mother stable, fetal heart recovered. Category-1 caesarean, go."
+       }
+      ]
+     ],
+     "when": {
+      "flag": "stayed",
+      "is": false
+     }
+    },
+    {
+     "id": "z5b",
+     "to": "attending",
+     "guide": {
+      "zh": "決定生產",
+      "en": "Decide on birth"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "幸好早上你把她留下來了。想像這一幕發生在她家的浴室。",
+        "en": "Good thing you kept her in this morning. Picture this happening in her bathroom."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "母親穩定了，胎心回來了。第一類緊急剖腹，走。",
+        "en": "Mother stable, fetal heart recovered. Category-1 caesarean, go."
+       }
+      ]
+     ],
+     "when": {
+      "flag": "stayed",
+      "is": true
+     }
+    },
+    {
+     "id": "z6",
+     "to": "place:theatre-door",
+     "guide": {
+      "zh": "推進手術室，時間暫停",
+      "en": "Into theatre: time-out"
+     },
+     "lines": [
+      [
+       "anaes",
+       {
+        "zh": "她醒了但很迷糊，血壓還高。麻醉決策我來，你們準備。",
+        "en": "She is awake but confused, pressure still high. The anaesthetic decision is mine; you get ready."
+       }
+      ],
+      [
+       "yu-jie",
+       {
+        "zh": "各位，時間暫停。小雯，第一類緊急剖腹，備血已到。",
+        "en": "Everyone, time-out. Hsiao-Wen, category-1 caesarean, blood is here."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "drill",
+      "template": "obstetrics",
+      "drill": "timeout"
+     },
+     "post": [
+      [
+       "sys",
+       {
+        "zh": "幾分鐘後，一聲哭。玉姐把寶寶放到小雯臉旁。阿哲在門外哭得比寶寶還大聲。",
+        "en": "A few minutes later, a cry. Yu-jie lays the baby beside Hsiao-Wen's face. Outside the door A-Je cries louder than the baby."
+       }
+      ]
+     ],
+     "t": 975
+    }
+   ]
+  },
+  {
+   "id": "evening",
+   "name": {
+    "zh": "傍晚交班",
+    "en": "Evening handover"
+   },
+   "sub": {
+    "zh": "17:30 · 產房白板",
+    "en": "17:30 · labour-ward board"
+   },
+   "t": 1050,
+   "mood": "eve",
+   "note": {
+    "zh": "交班給夜班，產後監測交代清楚",
+    "en": "Night team briefed on postnatal monitoring"
+   },
+   "beats": [
+    {
+     "id": "v1",
+     "to": "place:board",
+     "guide": {
+      "zh": "交班給夜班",
+      "en": "Hand over to the night team"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "三床小雯：子癇前症併子癇，今天剖腹，母嬰平安。止痙依醫囑延續，血壓和尿量持續監測。",
+        "en": "Bed 3, Hsiao-Wen: pre-eclampsia with eclampsia, caesarean today, mother and baby well. Anticonvulsant continues per protocol; pressure and urine output monitored."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "產後還是會抽搐。頭痛、視力、反射都要問。",
+        "en": "She can still fit after birth. Ask about headache, vision, reflexes."
+       }
+      ],
+      [
+       "yu-jie",
+       {
+        "zh": "阿哲去買雞湯了。他說要請整層樓。",
+        "en": "A-Je has gone to buy chicken soup. For the whole floor, he says."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "v2",
+     "to": "place:desk",
+     "guide": {
+      "zh": "補完紀錄與回顧",
+      "en": "Finish the notes and the review"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "你把時間線寫清楚：抽搐開始、停止、給藥、胎心、決定、劃刀、出生。每一個時間都重要。",
+        "en": "You write the timeline: fit start, fit stop, drugs, fetal heart, decision, knife, birth. Every time matters."
+       }
+      ]
+     ],
+     "roles": [
+      "resident"
+     ]
+    },
+    {
+     "id": "v2b",
+     "to": "place:ctg",
+     "guide": {
+      "zh": "整理胎心圖與交接",
+      "en": "File the CTG and hand over"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "你把那段胎心圖貼好、簽名，把壓脈帶尺寸寫在交班單上。小事，但下一個人會感謝你。",
+        "en": "You file and sign the CTG strip and write the cuff size on the handover sheet. Small things the next person will thank you for."
+       }
+      ]
+     ],
+     "roles": [
+      "midwife"
+     ]
+    },
+    {
+     "id": "v3",
+     "to": "attending",
+     "guide": {
+      "zh": "許主治的反思",
+      "en": "Dr Hsu's debrief"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "今天最重要的一個決定是什麼？",
+        "en": "What was the most important decision today?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "早上把她留下來。",
+        "en": "Keeping her in this morning."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "對。不是手術，不是藥。是早上那個不起眼的「留下來」。",
+        "en": "Yes. Not the operation, not the drugs. That unremarkable 'she stays' this morning."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "回去睡。阿哲的雞湯我幫你留一碗。",
+        "en": "Go and sleep. I will save you a bowl of A-Je's soup."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "night",
+   "name": {
+    "zh": "夜間值班",
+    "en": "Night on call"
+   },
+   "sub": {
+    "zh": "21:30 · 值班室電話",
+    "en": "21:30 · on-call phone"
+   },
+   "t": 1290,
+   "mood": "night",
+   "note": {
+    "zh": "產後血壓處理完成",
+    "en": "Postnatal pressure handled"
+   },
+   "beats": [
+    {
+     "id": "x1",
+     "ring": {
+      "title": {
+       "zh": "產後病房來電",
+       "en": "Postnatal ward calling"
+      },
+      "sub": {
+       "zh": "小雯又頭痛，血壓再升",
+       "en": "Hsiao-Wen's headache is back, pressure rising"
+      },
+      "call": true,
+      "from": "pn-nurse"
+     },
+     "lines": [
+      [
+       "pn-nurse",
+       {
+        "zh": "醫師，小雯說頭又痛，血壓比下午高。反射我試了，有點活躍。",
+        "en": "Doctor, Hsiao-Wen says the headache is back and her pressure is higher than this afternoon. I checked her reflexes: a little brisk."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "謝謝你有檢查反射。產後還是子癇的範圍，我現在處理。",
+        "en": "Thank you for checking the reflexes. Postpartum is still eclampsia territory; I am on it."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "obstetrics-eclampsia-emergency",
+      "stage": 8
+     },
+     "post": [
+      [
+       "pn-nurse",
+       {
+        "zh": "好，依醫囑調整，我每十五分鐘量一次，有變化再打。",
+        "en": "Right, adjusting per the orders. I will measure every fifteen minutes and call if anything changes."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "x2",
+     "to": "place:desk",
+     "guide": {
+      "zh": "半小時後",
+      "en": "Half an hour later"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "半小時後，血壓回到安全範圍，頭痛減輕。寶寶在嬰兒室睡著，阿哲也是。",
+        "en": "Half an hour later the pressure is back in range and the headache easing. The baby is asleep in the nursery; so is A-Je."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "（訊息）阿芳說你有問反射、有看尿量，沒有只調血壓。這就是產科。晚安。",
+        "en": "(message) A-Fang says you asked about reflexes and checked the urine output, not just the pressure. That is obstetrics. Good night."
+       }
+      ]
+     ],
+     "t": 1320,
+     "end": true
+    }
+   ]
+  }
+ ],
+ "ending": {
+  "title": {
+   "zh": "下班了",
+   "en": "End of shift"
+  },
+  "sub": {
+   "zh": "一個頭痛、一次抽搐、一聲哭",
+   "en": "A headache, a fit, and a first cry"
+  },
+  "stats": [
+   "stages",
+   "drills",
+   "choices",
+   "calls",
+   "items",
+   "time"
+  ]
+ }
+}

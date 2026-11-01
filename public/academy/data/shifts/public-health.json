@@ -1,0 +1,316 @@
+{
+  "format": "huatuo-shift-v1",
+  "department": "public-health",
+  "title": {"zh": "公共衛生疫調日", "en": "An outbreak investigation day"},
+  "tagline": {"zh": "先把分母找回來，再找兇手", "en": "Recover the denominator before you hunt the culprit"},
+  "room": "clinic",
+  "minutes": 25,
+  "roles": [
+    {"id": "trainee", "zh": "公衛醫師（受訓）", "en": "Public-health physician trainee",
+     "desc": {"zh": "跟著田主任建立病例定義、排疫調步驟、看混雜、接記者的電話。", "en": "Build the case definition with Director Tien, sequence the investigation, spot confounding, take the reporter's call."}},
+    {"id": "phn", "zh": "公衛護理師", "en": "Public-health nurse",
+     "desc": {"zh": "病例訪談、採檢、防護裝備與接觸者衛教都在你手上；便當店的事你最先聽到。", "en": "Case interviews, specimen collection, protective equipment and contact education are yours; you are the first to hear about the lunch-box shop."}}
+  ],
+  "cast": {
+    "mentor": {"name": {"zh": "田主任", "en": "Director Tien"}, "role": {"zh": "衛生所主任、流行病學師傅", "en": "Health centre director, epidemiologist (mentor)"}, "tag": "DIR", "color": "#81296d", "body": "mentor",
+               "about": {"zh": "任何平面都能畫流行曲線。白板筆永遠是乾的，所以她改用原子筆。", "en": "Draws epidemic curves on any surface. The whiteboard markers are always dry, so she uses a ballpoint."}},
+    "inspector": {"name": {"zh": "小古", "en": "Ku"}, "role": {"zh": "食品衛生稽查員", "en": "Food safety inspector"}, "tag": "INS", "color": "#3f6fa8", "body": "tech",
+                  "about": {"zh": "拍下廚房裡每一樣東西，包括冰箱的溫度計。", "en": "Photographs everything in a kitchen, including the fridge thermometer."}},
+    "chief": {"name": {"zh": "林里長", "en": "Chief Lin"}, "role": {"zh": "里長，宴會主辦人", "en": "Village chief, host of the banquet"}, "tag": "VC", "color": "#8a6d3b", "body": "family",
+              "about": {"zh": "手上有一百個人的電話。想要一個答案，最好是今天。", "en": "Has a hundred phone numbers. Wants one answer, ideally today."}},
+    "azhong": {"name": {"zh": "阿忠", "en": "Zhong"}, "role": {"zh": "病例，便當店員工", "en": "A case; works at a lunch-box shop"}, "tag": "C1", "color": "#c2703a", "body": "patient",
+               "about": {"zh": "虛構教學個案。吃了沙拉，也喝了那桶飲料。今天中午本來要上班。", "en": "Fictional teaching case. Ate the salad and drank from the drinks barrel. Was due at work this lunchtime."}},
+    "lab": {"name": {"zh": "檢驗科", "en": "Laboratory"}, "role": {"zh": "檢驗科醫檢師（電話）", "en": "Lab scientist (by phone)"}, "tag": "LAB", "color": "#2f8f8f", "phoneOnly": true,
+            "about": {"zh": "要更多檢體、更早的檢體，和食物留樣。", "en": "Wants more specimens, earlier specimens, and the retained food samples."}},
+    "reporter": {"name": {"zh": "記者", "en": "Reporter"}, "role": {"zh": "地方新聞記者（電話）", "en": "Local news reporter (by phone)"}, "tag": "NEWS", "color": "#c0392b", "phoneOnly": true,
+                 "about": {"zh": "截稿在下午四點。想要一個食物的名字。", "en": "Deadline at four. Wants the name of a dish."}},
+    "hosp-nurse": {"name": {"zh": "醫院感管護理師", "en": "Hospital infection control nurse"}, "role": {"zh": "感染管制（電話）", "en": "Infection control (by phone)"}, "tag": "ICN", "color": "#3b8f6a", "phoneOnly": true,
+                   "about": {"zh": "有一位賓客住院了。來訪談請穿好防護。", "en": "Has one guest admitted. Come and interview, properly protected."}}
+  },
+  "places": {
+    "board": {"name": {"zh": "流行曲線板", "en": "Epi-curve board"}, "hot": "whiteboard"},
+    "desk": {"name": {"zh": "疫調桌電話", "en": "Investigation desk phone"}, "hot": "desk"},
+    "couch": {"name": {"zh": "檢查床", "en": "Examination couch"}, "hot": "bed"},
+    "kit": {"name": {"zh": "採檢箱", "en": "Sampling kit"}, "hot": "lab"},
+    "sink": {"name": {"zh": "洗手台", "en": "Hand-wash sink"}, "hot": "sink"},
+    "ws": {"name": {"zh": "衛教影像站", "en": "Health education screen"}, "hot": "imaging"},
+    "door": {"name": {"zh": "出發門口", "en": "Front door"}, "hot": "door"}
+  },
+  "glossary": [
+    {"term": {"zh": "疫調", "en": "outbreak investigation"}, "plain": {"zh": "一群人同時生病時，有系統地找出誰、何時、何地、為什麼，並阻止更多人生病。", "en": "When a group falls ill together, systematically working out who, when, where and why, and stopping more people getting sick."}},
+    {"term": {"zh": "病例定義", "en": "case definition"}, "plain": {"zh": "一條清楚的規則：什麼時間、什麼地點、哪些症狀才算這次事件的病例。", "en": "A clear rule for which time, place and symptoms count as a case in this event."}},
+    {"term": {"zh": "分母", "en": "denominator"}, "plain": {"zh": "一共有多少人暴露。只知道生病的人數，算不出風險。", "en": "How many people were exposed in total. Knowing only how many got sick tells you nothing about risk."}},
+    {"term": {"zh": "罹病率", "en": "attack rate"}, "plain": {"zh": "吃了某樣東西的人裡，有幾分之幾生病；要和沒吃的人比。", "en": "The fraction of people who ate something and fell ill, compared with those who did not eat it."}},
+    {"term": {"zh": "流行曲線", "en": "epidemic curve"}, "plain": {"zh": "把每個病例的發病時間畫成長條圖，形狀會透露是一次暴露還是人傳人。", "en": "A bar chart of when each case fell ill; its shape hints whether it was one exposure or person-to-person spread."}},
+    {"term": {"zh": "暴露", "en": "exposure"}, "plain": {"zh": "接觸到可能致病的東西：某道菜、某桶飲料、某個人。", "en": "Contact with something that may cause disease: a dish, a drinks barrel, a person."}},
+    {"term": {"zh": "混雜", "en": "confounding"}, "plain": {"zh": "兩種暴露總是一起出現，讓無辜的那個看起來像兇手。", "en": "Two exposures that always travel together, making the innocent one look guilty."}},
+    {"term": {"zh": "糞口途徑", "en": "faecal-oral route"}, "plain": {"zh": "病原從排泄物經手、食物或水進到別人的嘴裡。洗手切斷這條路。", "en": "Germs travelling from faeces via hands, food or water into someone else's mouth. Hand-washing breaks the chain."}},
+    {"term": {"zh": "食物從業人員", "en": "food handler"}, "plain": {"zh": "處理別人要吃的食物的人。帶病工作，一個人可以傳給一整家店的客人。", "en": "Anyone who prepares food for others. Working while ill, one person can infect a whole shop's customers."}},
+    {"term": {"zh": "採檢", "en": "specimen collection"}, "plain": {"zh": "採集糞便、食物或環境樣本送驗，越早採越有機會找到病原。", "en": "Collecting stool, food or environmental samples for testing; the earlier, the better the chance of finding the germ."}},
+    {"term": {"zh": "隔離", "en": "isolation"}, "plain": {"zh": "把會傳染的人和其他人分開，直到不再具傳染力。", "en": "Keeping an infectious person apart from others until they are no longer contagious."}},
+    {"term": {"zh": "個人防護裝備", "en": "PPE"}, "plain": {"zh": "手套、隔離衣、口罩、面罩。穿的順序重要，脫的順序更重要。", "en": "Gloves, gown, mask, face shield. The order you put them on matters; the order you take them off matters more."}},
+    {"term": {"zh": "乾洗手", "en": "hand rub"}, "plain": {"zh": "用酒精性乾洗手液按六步驟搓手，沒有明顯髒污時可以代替洗手。", "en": "Rubbing alcohol-based hand rub in six steps; replaces washing when hands are not visibly soiled."}},
+    {"term": {"zh": "通報", "en": "notification"}, "plain": {"zh": "把疫情依法通知衛生主管機關，讓更多資源進來。", "en": "Reporting the outbreak to the health authority as the law requires, so more resources can come in."}},
+    {"term": {"zh": "接種率", "en": "coverage"}, "plain": {"zh": "應該接種的人裡，完成接種的比例。平均很好，不代表每一區都好。", "en": "The share of people due a vaccine who have had it. A good average does not mean every district is covered."}}
+  ],
+  "codex": [
+    {"id": "epi-board", "kind": "equipment", "name": {"zh": "流行曲線板", "en": "Epi-curve board"}, "text": {"zh": "橫軸時間、縱軸人數、一格一人。住院的用不同顏色。", "en": "Time along the bottom, people up the side, one box per case. Admissions in a different colour."}, "hot": "whiteboard"},
+    {"id": "sampling-kit", "kind": "equipment", "name": {"zh": "採檢箱", "en": "Sampling kit"}, "text": {"zh": "糞便採檢管、冰寶、送驗單、手套。回來先補貨。", "en": "Stool tubes, ice packs, request forms, gloves. Restock the moment you are back."}, "hot": "lab"},
+    {"id": "ppe-station", "kind": "equipment", "name": {"zh": "防護裝備穿脫區", "en": "PPE donning and doffing area"}, "text": {"zh": "鏡子、垃圾桶、乾洗手液。脫的時候最容易污染自己。", "en": "A mirror, a bin and hand rub. Taking it off is when you contaminate yourself."}, "hot": "door"},
+    {"id": "hand-rub", "kind": "equipment", "name": {"zh": "乾洗手液", "en": "Alcohol hand rub"}, "text": {"zh": "六步驟、搓到乾。疫調做再好，手沒洗等於零。", "en": "Six steps, rub until dry. The best investigation counts for nothing with unwashed hands."}, "hot": "sink"},
+    {"id": "case-database", "kind": "equipment", "name": {"zh": "疫調資料庫", "en": "Case database"}, "text": {"zh": "每一位病例一列：發病時間、吃了什麼、喝了什麼、嚴重度、聯絡方式。去重複才能算分母。", "en": "One row per case: onset time, what they ate and drank, severity, contact. De-duplicate before you count a denominator."}, "hot": "workstation"},
+    {"id": "epi-curve", "kind": "item", "name": {"zh": "流行曲線草圖", "en": "The epi-curve sketch"}, "text": {"zh": "田主任用原子筆畫在影印紙背面的。一個尖峰，單一暴露的形狀。", "en": "Drawn by Director Tien in ballpoint on the back of a photocopy. One sharp peak: the shape of a single exposure."}},
+    {"id": "two-by-two", "kind": "concept", "name": {"zh": "二乘二表", "en": "The two-by-two table"}, "text": {"zh": "吃／沒吃、病／沒病四格。比的是比例，不是人數。小分母要保留限制。", "en": "Ate or not, ill or not, four cells. Compare proportions, not counts, and keep the small-denominator caveat."}},
+    {"id": "confounding", "kind": "concept", "name": {"zh": "混雜與共同暴露", "en": "Confounding and shared exposure"}, "text": {"zh": "吃沙拉的人幾乎都喝了同一桶飲料。沙拉看起來有罪，可能只是陪坐。", "en": "Almost everyone who ate the salad also drank from the barrel. The salad looks guilty; it may just have been sitting next to the culprit."}},
+    {"id": "risk-comms", "kind": "concept", "name": {"zh": "風險溝通", "en": "Risk communication"}, "text": {"zh": "說已知、說未知、說正在做什麼、說下次更新時間。沉默會被謠言填滿。", "en": "Say what is known, what is unknown, what is being done and when the next update comes. Silence gets filled by rumour."}}
+  ],
+  "segs": [
+    {"id": "alert", "name": {"zh": "疫情通報", "en": "The alert"}, "sub": {"zh": "08:00 · 衛生所流行曲線板", "en": "08:00 · health centre board"}, "t": 480, "mood": "day",
+     "note": {"zh": "病例定義建立", "en": "Case definition set"},
+     "beats": [
+      {"id": "a1", "to": "place:board", "guide": {"zh": "到流行曲線板集合", "en": "Gather at the epi-curve board"},
+       "lines": [
+        ["sys", {"zh": "衛生所，早上八點。電話從七點半就沒停過。白板筆又乾了。", "en": "The health centre, eight in the morning. The phone has not stopped since half past seven. The whiteboard marker is dry again."}],
+        ["mentor", {"zh": "昨晚一場一百人的社區宴會。到現在二十四個人說肚子不舒服，網路上已經在說是沙拉。", "en": "A community banquet last night, a hundred people. Twenty-four so far say their stomachs are off, and the internet has already decided it was the salad."}],
+        ["chief", {"zh": "主任，到底是不是沙拉？", "en": "Director, was it the salad or not?"}],
+        ["mentor", {"zh": "里長，先別急著找兇手。疫調第一步是什麼？", "en": "Chief, let's not hunt the culprit yet. What is the first step of an outbreak investigation?"}],
+        ["me", {"zh": "建立病例定義。宴會前就不舒服的，和只說「怪怪的」的，先分開。", "en": "A case definition. Those who were ill before the banquet, and those who just “feel odd”, get separated first."}]
+       ],
+       "mini": {"type": "stage", "case": "public-health-v38-banquet-denominator", "stage": 0},
+       "post": [
+        ["mentor", {"zh": "時、地、症狀。符合的才算病例；不符合的也要記下來，之後可能改定義。", "en": "Time, place, symptoms. Only those who fit count as cases; record the rest too, because the definition may change."}]
+       ]},
+      {"id": "a2", "roles": ["trainee"], "to": "mentor", "guide": {"zh": "排出疫調的步驟", "en": "Sequence the investigation"},
+       "lines": [
+        ["chief", {"zh": "那接下來呢？", "en": "And then what?"}],
+        ["mentor", {"zh": "你來排。", "en": "You lay it out."}]
+       ],
+       "mini": {"type": "order", "q": {"zh": "疫調的步驟", "en": "Steps of an outbreak investigation"},
+                "steps": [
+                 {"zh": "確認疫情真的存在", "en": "Confirm an outbreak exists"},
+                 {"zh": "建立病例定義", "en": "Set the case definition"},
+                 {"zh": "找出病例，描述時地人", "en": "Find cases; describe time, place, person"},
+                 {"zh": "提出假說", "en": "Form a hypothesis"},
+                 {"zh": "檢驗假說並採取防治", "en": "Test it and act to control"},
+                 {"zh": "通報與對外溝通", "en": "Notify and communicate"}
+                ]},
+       "post": [
+        ["chief", {"zh": "聽起來很慢。", "en": "Sounds slow."}],
+        ["mentor", {"zh": "比抓錯兇手快。", "en": "Faster than blaming the wrong dish."}]
+       ]}
+     ]},
+    {"id": "interview", "name": {"zh": "病例訪談", "en": "Case interview"}, "sub": {"zh": "09:00 · 檢查床旁", "en": "09:00 · by the couch"}, "t": 540, "mood": "day",
+     "note": {"zh": "阿忠：病例、採檢、便當店", "en": "Zhong: case, specimen, lunch-box shop"},
+     "beats": [
+      {"id": "i1", "to": "azhong", "guide": {"zh": "訪談阿忠", "en": "Interview Zhong"},
+       "lines": [
+        ["azhong", {"zh": "昨天半夜開始拉，早上吐。我有吃沙拉，也喝了那桶飲料。", "en": "Diarrhoea since midnight, vomiting this morning. I had the salad, and I drank from the barrel."}],
+        ["me", {"zh": "幾點開始的？同桌的人呢？今天本來要做什麼？", "en": "What time did it start? Who was at your table? What were you meant to do today?"}],
+        ["azhong", {"zh": "中午要去便當店上班。我做便當的。", "en": "Work at the lunch-box shop at noon. I make the lunch boxes."}],
+        ["sys", {"zh": "一位食物從業人員，正在拉肚子。", "en": "A food handler, with diarrhoea."}]
+       ],
+       "mini": {"type": "choice", "q": {"zh": "阿忠在便當店處理食物。你怎麼做？", "en": "Zhong handles food at a lunch-box shop. What do you do?"},
+                "options": [
+                 {"zh": "請他暫停處理食物直到排除，通知雇主", "en": "Have him stop handling food until cleared; notify the employer", "ok": true, "set": {"handler-excluded": true},
+                  "why": {"zh": "帶病處理食物是第二波感染的來源。", "en": "A food handler working while ill is where the second wave comes from."}},
+                 {"zh": "等檢驗結果出來再說", "en": "Wait for the lab result", "ok": false, "set": {"handler-excluded": false},
+                  "why": {"zh": "檢驗要幾天，便當店今天中午就開門。", "en": "The lab takes days; the shop opens at noon today."}},
+                 {"zh": "公布他的名字提醒大家", "en": "Publish his name as a warning", "ok": false, "set": {"handler-excluded": false},
+                  "why": {"zh": "通報不等於公開。隱私也是公共衛生的一部分。", "en": "Notification is not publication. Privacy is part of public health too."}}
+                ]},
+       "post": [
+        ["azhong", {"zh": "老闆會不高興……", "en": "My boss won't be happy…"}],
+        ["me", {"zh": "我們會用公文通知。這是保護你，也保護客人。", "en": "We'll notify him formally. This protects you, and it protects the customers."}]
+       ]},
+      {"id": "i2", "roles": ["phn"], "to": "place:kit", "guide": {"zh": "幫阿忠採檢", "en": "Collect Zhong's specimen"},
+       "lines": [
+        ["mentor", {"zh": "採檢越早越好。順序你來。", "en": "The earlier the specimen the better. Your sequence."}]
+       ],
+       "mini": {"type": "order", "q": {"zh": "糞便採檢的步驟", "en": "Stool specimen collection steps"},
+                "steps": [
+                 {"zh": "說明採檢目的並取得同意", "en": "Explain the purpose and obtain consent"},
+                 {"zh": "戴手套、準備採檢箱", "en": "Gloves on, open the sampling kit"},
+                 {"zh": "採集糞便檢體", "en": "Collect the stool specimen"},
+                 {"zh": "標示姓名、時間，冷藏", "en": "Label with name and time; refrigerate"},
+                 {"zh": "填寫送驗單並送檢", "en": "Complete the request form and dispatch"}
+                ]},
+       "post": [
+        ["me", {"zh": "阿忠，回家後洗手、分開用毛巾，症狀解除後再回報我。", "en": "Zhong, at home: wash hands, separate towels, and call me once the symptoms settle."}]
+       ]},
+      {"id": "i3", "roles": ["trainee"], "to": "place:board", "guide": {"zh": "把阿忠畫上流行曲線", "en": "Plot Zhong on the epi curve"},
+       "lines": [
+        ["me", {"zh": "發病時間：宴會後約八小時。畫在曲線上。", "en": "Onset about eight hours after the banquet. On the curve it goes."}],
+        ["mentor", {"zh": "一個尖峰正在長出來。那是單一暴露的形狀。", "en": "A single peak is forming. That is the shape of one exposure."}]
+       ],
+       "set": {"curve-started": true}},
+      {"id": "i4", "to": "azhong", "guide": {"zh": "阿忠站起來了", "en": "Zhong gets up"},
+       "lines": [
+        ["sys", {"zh": "阿忠起身要走，扶著牆。額頭很燙，嘴唇很乾。", "en": "Zhong stands to leave and steadies himself on the wall. His forehead is hot, his lips are dry."}],
+        ["azhong", {"zh": "我沒事……只是有點暈。", "en": "I'm fine… just a bit dizzy."}]
+       ],
+       "mini": {"type": "vitals", "event": "fever",
+                "options": [
+                 {"zh": "評估脫水與意識、安排就醫、衛教隔離與洗手", "en": "Assess hydration and alertness, arrange medical care, teach isolation and hand-washing", "ok": true,
+                  "why": {"zh": "病例也是病人。先顧人，再顧資料。", "en": "A case is also a patient. Person first, data second."}},
+                 {"zh": "給他退燒藥叫他回去上班", "en": "Give him a fever tablet and send him to work", "ok": false,
+                  "why": {"zh": "他不能上班，也不該帶著發燒和脫水離開。", "en": "He cannot work, and he should not leave feverish and dry."}},
+                 {"zh": "先把問卷問完", "en": "Finish the questionnaire first", "ok": false,
+                  "why": {"zh": "問卷可以等，暈倒不能。", "en": "The questionnaire can wait. Fainting cannot."}}
+                ]},
+       "post": [
+        ["mentor", {"zh": "安排他就醫。順便請醫院也採一管，兩邊檢體互相印證。", "en": "Get him seen. And ask the hospital to take a specimen too; two sources corroborate each other."}]
+       ]}
+     ]},
+    {"id": "lab-call", "name": {"zh": "檢驗科來電", "en": "The lab calls"}, "sub": {"zh": "10:30 · 疫調桌", "en": "10:30 · investigation desk"}, "t": 630, "mood": "day",
+     "note": {"zh": "分母一百；糞口途徑衛教", "en": "Denominator of a hundred; faecal-oral teaching"},
+     "beats": [
+      {"id": "l1", "to": "place:desk", "guide": {"zh": "到疫調桌接電話", "en": "Take the call at the desk"},
+       "ring": {"title": {"zh": "檢驗科來電", "en": "Laboratory calling"}, "sub": {"zh": "需要更多檢體，越早採越好", "en": "More specimens needed, the earlier the better"}, "call": true, "from": "lab"},
+       "lines": [
+        ["lab", {"zh": "目前三份檢體。要找病原至少還要幾份，請在發病後盡早採。餐廳的食物留樣也送來了。", "en": "Three specimens so far. We need several more to identify the pathogen, collected as soon after onset as possible. The restaurant's retained food samples arrived too."}],
+        ["me", {"zh": "今天會再採。", "en": "We'll collect more today."}],
+        ["mentor", {"zh": "分母呢？里長的名單拿到了嗎？", "en": "And the denominator? Do we have the chief's list?"}],
+        ["chief", {"zh": "一百個人，我都有電話。", "en": "A hundred people. I have every number."}],
+        ["mentor", {"zh": "好。吃沙拉的八十人裡二十人病，沒吃的二十人裡四人病。罹病率要比，但二十人的分母很小，保留限制。", "en": "Good. Twenty of eighty who ate the salad are ill; four of twenty who did not. Compare the attack rate in each group, but twenty is a small denominator, so keep the caveat."}]
+       ]},
+      {"id": "l2", "to": "place:ws", "guide": {"zh": "到衛教影像站", "en": "Go to the health education screen"},
+       "lines": [
+        ["mentor", {"zh": "等名單的時候，複習一下：病原怎麼從手進到嘴？", "en": "While we wait for the list, a refresher: how do germs get from hands to mouth?"}]
+       ],
+       "mini": {"type": "imaging", "region": "mouth",
+                "question": {"zh": "病原怎麼經由手進到身體？", "en": "How do germs get from hands into the body?"},
+                "answer": {"zh": "糞口途徑：手摸到污染的表面或食物，再碰到嘴。洗手切斷這條路，所以疫調和洗手永遠一起做。", "en": "The faecal-oral route: hands touch a contaminated surface or food, then the mouth. Hand-washing breaks the chain, which is why investigation and hand hygiene always go together."}},
+       "post": [
+        ["mentor", {"zh": "這就是為什麼便當店的事不能等。", "en": "And that is why the lunch-box shop could not wait."}]
+       ]}
+     ]},
+    {"id": "kitchen", "name": {"zh": "廚房稽查回報", "en": "Kitchen inspection report"}, "sub": {"zh": "12:00 · 疫調桌", "en": "12:00 · investigation desk"}, "t": 720, "mood": "day",
+     "note": {"zh": "沙拉與飲料桶重疊；記者來電", "en": "Salad and barrel overlap; the reporter calls"},
+     "beats": [
+      {"id": "k1", "to": "inspector", "guide": {"zh": "聽小古的廚房回報", "en": "Hear Ku's kitchen report"},
+       "lines": [
+        ["inspector", {"zh": "沙拉和飲料桶放同一個冰箱。飲料桶的水龍頭有問題。吃沙拉的人幾乎都喝了那桶飲料。", "en": "The salad and the drinks barrel were in the same fridge. The barrel's tap is faulty. Almost everyone who ate salad also drank from the barrel."}],
+        ["me", {"zh": "兩種暴露高度重疊。", "en": "Two exposures almost completely overlapping."}],
+        ["mentor", {"zh": "第一個被指認的食物，不一定是真兇。", "en": "The first dish accused is not necessarily the guilty one."}]
+       ],
+       "mini": {"type": "stage", "case": "public-health-v38-banquet-denominator", "stage": 2},
+       "post": [
+        ["mentor", {"zh": "混雜。把飲料也放進分析，等環境檢驗。小古，水龍頭的照片給檢驗科。", "en": "Confounding. Put the drink into the analysis and wait for the environmental tests. Ku, send the tap photos to the lab."}]
+       ]},
+      {"id": "k2", "to": "place:desk", "guide": {"zh": "接記者的電話", "en": "Take the reporter's call"},
+       "ring": {"title": {"zh": "記者來電", "en": "Reporter calling"}, "sub": {"zh": "「是不是沙拉？可以直接說嗎？」", "en": "“Was it the salad? Can you confirm?”"}, "call": true, "from": "reporter"},
+       "lines": [
+        ["reporter", {"zh": "網路都說是沙拉，衛生所可以證實嗎？我四點截稿。", "en": "Everyone online says the salad. Can the health centre confirm? My deadline is four."}]
+       ],
+       "mini": {"type": "choice", "q": {"zh": "記者要你證實是沙拉。你怎麼回？", "en": "The reporter wants you to confirm the salad. What do you say?"},
+                "options": [
+                 {"zh": "說明已知、未知、正在做的檢驗與下次更新", "en": "State what is known, unknown, the tests under way and the next update", "ok": true, "set": {"comms-careful": true},
+                  "why": {"zh": "透明，但不過早定論。", "en": "Transparent, without premature conclusions."}},
+                 {"zh": "證實是沙拉，先讓大家安心", "en": "Confirm the salad to reassure people", "ok": false, "set": {"comms-careful": false},
+                  "why": {"zh": "調查沒完。說錯了，收回比說出去難十倍。", "en": "The investigation is not finished. Retracting is ten times harder than saying."}},
+                 {"zh": "無可奉告", "en": "No comment", "ok": false, "set": {"comms-careful": false},
+                  "why": {"zh": "沉默會被謠言填滿。", "en": "Silence gets filled by rumour."}}
+                ]},
+       "post": [
+        ["mentor", {"zh": "記者不是敵人，謠言才是。給她下次更新的時間，她就會等。", "en": "The reporter is not the enemy; the rumour is. Give her the time of the next update and she will wait."}]
+       ]},
+      {"id": "k3", "to": "place:sink", "guide": {"zh": "到洗手台示範乾洗手", "en": "Demonstrate hand rub at the sink"},
+       "lines": [
+        ["mentor", {"zh": "說到洗手，自己先做一次。乾洗手六步驟。", "en": "Speaking of hands, do it yourself first. Hand rub, six steps."}]
+       ],
+       "mini": {"type": "drill", "template": "public-health", "drill": "hygiene"},
+       "post": [
+        ["inspector", {"zh": "我拍下來做衛教海報。你的手比我的照片好看。", "en": "I'm filming this for the poster. Your hands photograph better than my kitchens."}]
+       ]}
+     ]},
+    {"id": "hospital", "name": {"zh": "醫院住院個案", "en": "The hospitalised case"}, "sub": {"zh": "15:00 · 出發門口", "en": "15:00 · front door"}, "t": 900, "mood": "day",
+     "note": {"zh": "住院個案訪談：防護穿脫", "en": "Hospital interview: PPE on and off"},
+     "beats": [
+      {"id": "h1", "to": "place:door", "guide": {"zh": "準備出發到醫院", "en": "Get ready to go to the hospital"},
+       "ring": {"title": {"zh": "醫院感管來電", "en": "Infection control calling"}, "sub": {"zh": "一位賓客住院了，請來訪談並穿好防護", "en": "One guest is admitted; come and interview, properly protected"}, "call": true, "from": "hosp-nurse"},
+       "lines": [
+        ["hosp-nurse", {"zh": "七十八歲賓客，脫水住院，隔離中。你們來訪談請穿好個人防護裝備。", "en": "A seventy-eight-year-old guest, admitted dehydrated, in isolation. Come and interview, but wear full PPE."}],
+        ["me", {"zh": "我們過去。訪談完，脫除的順序最重要。", "en": "On our way. After the interview, the doffing order is what matters most."}]
+       ]},
+      {"id": "h2", "roles": ["phn"], "to": "place:door", "guide": {"zh": "練習脫除防護裝備", "en": "Practise doffing PPE"},
+       "lines": [
+        ["mentor", {"zh": "穿的時候保護你，脫的時候最容易污染你。先練一次。", "en": "Donning protects you; doffing is when you contaminate yourself. Run through it once."}]
+       ],
+       "mini": {"type": "drill", "template": "public-health", "drill": "ppe"},
+       "post": [
+        ["mentor", {"zh": "每脫一件，乾洗手一次。", "en": "Hand rub after every item removed."}]
+       ]},
+      {"id": "h3", "roles": ["trainee"], "to": "place:board", "guide": {"zh": "標記住院個案的嚴重度", "en": "Mark the admission's severity"},
+       "lines": [
+        ["me", {"zh": "住院個案在曲線上用另一個顏色，嚴重度和輕症分開記。", "en": "The admission goes on the curve in a different colour; severity recorded separately from the mild cases."}],
+        ["mentor", {"zh": "對。不要把所有通報合成同一種病。", "en": "Right. Never merge every report into one disease."}]
+       ],
+       "set": {"severity-marked": true}},
+      {"id": "h4", "to": "mentor", "guide": {"zh": "訪談後回報", "en": "Report back after the interview"},
+       "lines": [
+        ["sys", {"zh": "一小時後你回到衛生所，手還有乾洗手液的味道。", "en": "An hour later you are back at the centre, hands still smelling of alcohol rub."}],
+        ["me", {"zh": "她坐在飲料桶旁邊那一桌，沒吃沙拉。", "en": "She sat at the table next to the drinks barrel. She did not eat the salad."}],
+        ["mentor", {"zh": "沒吃沙拉。記下來。這一筆比二十筆都重要。", "en": "No salad. Write that down. This one row is worth twenty."}]
+       ],
+       "set": {"no-salad-case": true}}
+     ]},
+    {"id": "brief", "name": {"zh": "疫調會議", "en": "Investigation meeting"}, "sub": {"zh": "17:00 · 流行曲線板", "en": "17:00 · epi-curve board"}, "t": 1020, "mood": "eve",
+     "note": {"zh": "交接：定義、曲線、分母、混雜、待驗", "en": "Handover: definition, curve, denominator, confounding, pending tests"},
+     "beats": [
+      {"id": "b1", "to": "place:board", "guide": {"zh": "到流行曲線板開會", "en": "Meet at the epi-curve board"},
+       "lines": [
+        ["me", {"zh": "病例定義第二版、流行曲線單峰、分母一百、沙拉與飲料重疊、檢驗待回。負責人：我。", "en": "Case definition version two, single-peak curve, denominator one hundred, salad and barrel overlapping, lab results pending. Lead: me."}],
+        ["mentor", {"zh": "很好。小古，便當店呢？", "en": "Good. Ku, the lunch-box shop?"}]
+       ]},
+      {"id": "b1y", "when": {"flag": "handler-excluded", "is": true},
+       "lines": [
+        ["inspector", {"zh": "便當店今天沒開，老闆收到公文了。目前沒有第二波。", "en": "The shop stayed shut today; the owner got the notice. No second wave so far."}],
+        ["mentor", {"zh": "沒有發生的事，就是公共衛生最好的成績。", "en": "The thing that did not happen is public health's best result."}]
+       ]},
+      {"id": "b1n", "when": {"flag": "handler-excluded", "is": false},
+       "lines": [
+        ["inspector", {"zh": "便當店中午照常營業。剛剛三通電話，吃了便當的人開始拉。", "en": "The shop opened at noon as usual. Three calls just now: people who ate the lunch boxes are getting ill."}],
+        ["mentor", {"zh": "第二波。這就是為什麼食物從業人員要先停。明天這三個也要訪談。", "en": "A second wave. This is why a food handler stops first. Those three get interviewed tomorrow too."}]
+       ]},
+      {"id": "b1c", "when": {"flag": "comms-careful", "is": false},
+       "lines": [
+        ["chief", {"zh": "新聞寫「衛生所證實是沙拉」。餐廳老闆說要告，可是飲料桶……", "en": "The news says “health centre confirms the salad”. The restaurant owner is threatening to sue, and the barrel…"}],
+        ["mentor", {"zh": "說出去的話收不回來。明早記者會更正，由你來說。", "en": "Words cannot be unsaid. Correction at tomorrow's press briefing, and you will deliver it."}]
+       ]},
+      {"id": "b1d", "when": {"flag": "comms-careful", "is": true},
+       "lines": [
+        ["chief", {"zh": "新聞寫「調查中，明早更新」。沒人罵，連餐廳老闆都說謝謝。", "en": "The news says “under investigation, update tomorrow morning”. Nobody is angry; even the restaurant owner said thank you."}]
+       ]},
+      {"id": "b2", "to": "chief", "guide": {"zh": "回答里長的接種率問題", "en": "Answer the chief's coverage question"},
+       "lines": [
+        ["chief", {"zh": "對了主任，我們里的接種率報表出來了，八成五，很好吧？", "en": "By the way, Director, our vaccination coverage report is out: eighty-five percent. Good, isn't it?"}],
+        ["mentor", {"zh": "平均很好。誰還沒被服務到？", "en": "A good average. Who is still unreached?"}]
+       ],
+       "mini": {"type": "stage", "case": "public-health-v38-coverage-equity", "stage": 0},
+       "post": [
+        ["mentor", {"zh": "分區看，才看得到被平均藏起來的人。這也是疫調：找出還沒被看見的人。", "en": "Look by district and you see the people the average hides. That is investigation too: finding who has not yet been seen."}]
+       ]},
+      {"id": "b3", "to": "mentor", "guide": {"zh": "聽田主任的結語", "en": "Director Tien's debrief"},
+       "lines": [
+        ["mentor", {"zh": "今天四件事：分母、混雜、隱私、溝通。", "en": "Four things today: denominator, confounding, privacy, communication."}],
+        ["mentor", {"zh": "流行病學不是找兇手，是找出下一個不會生病的人。", "en": "Epidemiology is not about finding the culprit. It is about finding the next person who will not get sick."}],
+        ["mentor", {"zh": "這張草圖給你。白板筆乾了，我用原子筆畫的。", "en": "This sketch is yours. The marker was dry, so it is in ballpoint."}]
+       ],
+       "item": "epi-curve"}
+     ]},
+    {"id": "night", "name": {"zh": "夜間訊息", "en": "A night message"}, "sub": {"zh": "21:00 · 回家路上", "en": "21:00 · on the way home"}, "t": 1260, "mood": "night",
+     "note": {"zh": "初步結果：是飲料桶", "en": "Preliminary result: the barrel"},
+     "beats": [
+      {"id": "n1",
+       "ring": {"title": {"zh": "檢驗科訊息", "en": "Message from the lab"}, "sub": {"zh": "初步結果出來了", "en": "Preliminary results are in"}, "call": false, "from": "lab"},
+       "lines": [
+        ["lab", {"zh": "初步：病例檢體與飲料桶留樣驗出同一種病毒性腸胃炎病原。沙拉留樣陰性。", "en": "Preliminary: the case specimens and the barrel sample show the same viral gastroenteritis pathogen. The salad sample is negative."}],
+        ["me", {"zh": "是飲料桶。明早八點更新給記者和里長，病例定義不變，持續追蹤。", "en": "The barrel. Update to the reporter and the chief at eight tomorrow; case definition unchanged, follow-up continues."}],
+        ["sys", {"zh": "你把那張原子筆畫的流行曲線夾進筆記本。單一尖峰，正在往下走。", "en": "You tuck the ballpoint epi curve into your notebook. One peak, now on its way down."}]
+       ],
+       "end": true}
+     ]}
+  ],
+  "ending": {"title": {"zh": "下班了", "en": "End of shift"}, "sub": {"zh": "沒有發生的事，是最好的成績", "en": "The thing that did not happen is the best result"},
+             "stats": ["stages", "drills", "choices", "calls", "items", "time"]}
+}

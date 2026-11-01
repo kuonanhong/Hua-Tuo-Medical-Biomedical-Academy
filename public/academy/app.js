@@ -32,6 +32,18 @@
   function recordSim(kind, score) { try { const k = 'ht-sim-v1:' + (window.HT.account.user() ? window.HT.account.user().id : 'guest'); const d = JSON.parse(localStorage.getItem(k) || '{}'); (d[kind] = d[kind] || []).push({ score, at: Date.now() }); d[kind] = d[kind].slice(-50); localStorage.setItem(k, JSON.stringify(d)); } catch (e) { /* ignore */ } }
   function simStats() { try { return JSON.parse(localStorage.getItem('ht-sim-v1:' + (window.HT.account.user() ? window.HT.account.user().id : 'guest')) || '{}'); } catch (e) { return {}; } }
   async function ensureCatalog() { if (!window.HT_CATALOG) await window.HT.loadScript('data/catalog.js'); return window.HT_CATALOG; }
+  // v4.0 值班模式: the tiny shift index (data/shifts/index.js) tells which departments have a one-shift game.
+  let shiftIndexP = null;
+  function shiftIndex() { if (window.HT_SHIFT_INDEX) return Promise.resolve(window.HT_SHIFT_INDEX); if (!shiftIndexP) shiftIndexP = window.HT.loadScript('data/shifts/index.js').then(() => window.HT_SHIFT_INDEX || { shifts: [] }).catch(() => { shiftIndexP = null; return { shifts: [] }; }); return shiftIndexP; }
+  function shiftCard(root, token) {
+    const host = root.querySelector('[data-shift-card]'); if (!host) return;
+    shiftIndex().then(idx => {
+      if (token !== routeToken || !host.isConnected) return;
+      const PREF = ['general-surgery', 'emergency', 'cardiology', 'neurosurgery', 'orthopedics', 'obstetrics'];
+      const all = idx.shifts || []; const list = PREF.map(id => all.find(s => s.department === id)).filter(Boolean).concat(all.filter(s => !PREF.includes(s.department))).slice(0, 6); if (!list.length) { host.remove(); return; }
+      host.innerHTML = `<div class="section-head"><div><span class="eyebrow">${t('shiftTitle')}</span><h2>${esc(t('shiftHomeCard'))}</h2><p class="subtext">${esc(t('shiftHomeSub'))}</p></div><a class="button light small" href="#shift">${esc(t('shiftAllDepts'))} →</a></div><div class="grid cols-3">${list.map(s => { const m = DEPTS.departments.find(d => d.id === s.department) || { id: s.department, title: s.department, titleEn: s.department, accent: '#2f6f8f', glyph: 'stethoscope' }; return `<a class="card dept-card" href="#shift?department=${esc(s.department)}"><span class="ic">${window.HT.icons.dept ? window.HT.icons.dept(m.id, m.accent, m.glyph, 44) : ''}</span><span style="min-width:0"><b>▶ ${esc(pk(m, 'title'))}</b><small>${esc(zh() ? (s.title && s.title.zh) || '' : (s.title && s.title.en) || '')} · ≈${s.minutes || 25} ${esc(t('shiftMinutes'))}</small></span></a>`; }).join('')}</div>`;
+    });
+  }
 
   // ---------------------------------------------------------------- icon mosaic (icons from the summary chunk; the catalogue is not needed)
   function startMosaic() {
@@ -64,6 +76,7 @@
        <a class="v2-path" href="#workbench"><span class="path-icon" aria-hidden="true">✋</span><span><strong>${zh() ? '跟師傅動手學' : 'Learn with the mentor'}</strong><small>${zh() ? '示範 → 雙手操作 → 收集證據 → 判斷 → 驗收；觸控與鍵盤皆可。' : 'Demonstrate → control both hands → gather evidence → reason → validate. Touch or keyboard.'}</small></span></a>
        <a class="v2-path" href="#tcm"><span class="path-icon" aria-hidden="true">❖</span><span><strong>${zh() ? '金人穴位與本草圖書館' : 'Golden atlas & materia medica'}</strong><small>${zh() ? '搜尋穴位、中藥、方劑；對照部位示意與安全、來源資訊。' : 'Search points, herbs and formulas with regional diagrams, safety and source information.'}</small></span></a>
       </div>
+      <section data-shift-card aria-label="${esc(t('shiftTitle'))}"></section>
       <div class="grid cols-4"><div class="card stat"><b>${release.topics.toLocaleString()}</b><span>${t('statTopics')}</span></div><div class="card stat"><b>${release.steps.toLocaleString()}</b><span>${t('statSteps')}</span></div><div class="card stat"><b>${release.departments}</b><span>${t('statDepartments')}</span></div><div class="card stat"><b>${(release.stages || 0).toLocaleString()}</b><span>${t('stagesUnit')}</span></div></div>
       <p class="v2-scope">${zh() ? '以上為既有主題目錄與教學步驟數；多數由教學模板整理，並非同等數量的獨立實驗或逐項經臨床審查的手術課。新增實作病例與來源可在各頁查看。' : 'These are curriculum topic and step counts. Most use teaching templates; they are not the same number of independently authored experiments or clinically reviewed operative courses. New authored cases and sources are labelled on their pages.'}</p>
       <div class="section-head"><div><span class="eyebrow">${t('faculties')}</span><h2>${zh() ? '五大學部，一個方法：先看示範，再動手，最後驗收。' : 'Five faculties, one method: watch, do, verify.'}</h2></div></div>
@@ -73,6 +86,7 @@
       <div class="section-head"><div><span class="eyebrow">${t('navIntern')}</span><h2>${zh() ? '實習級：真實情境、虛擬病人' : 'Internship tier: real scenarios, virtual patients'}</h2></div></div>
       <div class="grid cols-2"><a class="card dept-card" href="#intern?tab=tcm"><span class="ic">${window.HT.icons.glyphOnly('tongue', '#b5432f', 44)}</span><span><b>${t('tcmClinic')}</b><small>${zh() ? '望、聞、問、切 → 把脈 → 看舌苔 → 主訴 → 辨證 → 開方與針灸' : 'Inspect, listen, ask, palpate → pulse → tongue → chief complaint → pattern → prescription'}</small></span></a><a class="card dept-card" href="#intern?tab=western"><span class="ic">${window.HT.icons.glyphOnly('monitor', '#2f6f8f', 44)}</span><span><b>${t('westernClinic')}</b><small>${zh() ? '量血壓（Korotkoff 音）、測血糖、生命徵象、心電圖、檢驗判讀、SOAP' : 'Blood pressure with Korotkoff sounds, glucose, vital signs, ECG, labs, SOAP'}</small></span></a></div>
       <div class="notice" style="margin-top:20px">${t('disclaimer')} ${zh() ? '每門課第一節免費；其餘章節需學習通行證（台灣 NT$299／月起，其他地區依匯率換算）。' : 'The first section of every course is free; the remaining sections need a learning pass (from NT$299/month in Taiwan, converted elsewhere).'}</div>`;
+    shiftCard(root, routeToken);
   }
   function catalog(root, params) {
     const CATALOG = cat();
@@ -100,6 +114,7 @@
     $('#fDept').onchange = e => set('department', e.target.value); $('#fKind').onchange = e => set('kind', e.target.value); $('#fTier').onchange = e => set('tier', e.target.value);
     $('#fFlag').onclick = () => set('flagship', flagship ? '' : '1');
     $('#pPrev').onclick = () => set('page', String(page - 1)); $('#pNext').onclick = () => set('page', String(page + 1));
+    if (department) { const token = routeToken; shiftIndex().then(idx => { const row = root.querySelector('.section-head'); if (token !== routeToken || !row || !(idx.shifts || []).some(s => s.department === department)) return; const a = document.createElement('a'); a.className = 'button small primary'; a.href = '#shift?department=' + encodeURIComponent(department); a.textContent = '▶ ' + t('shiftStart'); row.appendChild(a); }); }
   }
   function workbenchPage(root, params) {
     root.innerHTML = `<div class="section-head"><div><span class="eyebrow">MENTOR · PRACTICE · VERIFY</span><h1>${zh() ? '跟師傅動手學' : 'Learn with the mentor'}</h1></div><div class="row"><a class="button small primary" href="#procedures">${t('departmentLibrary')} →</a><a class="button small" href="#intern?tab=tcm">${zh() ? '原有實習站' : 'Classic practice stations'} →</a></div></div><div id="activeWorkbench"></div>`;
@@ -160,7 +175,7 @@
     document.body.className = 'page-' + page;
     document.querySelectorAll('.nav a, .bottom-nav a').forEach(a => a.classList.toggle('active', a.dataset.page === page));
     $('#sidebar').classList.remove('open');
-    const titles = { home: 'navHome', catalog: 'navCatalog', intern: 'navIntern', workbench: 'navWorkbench', procedures: 'navProcedures', acu: 'navAcu', pharmacy: 'navPharmacy', twins: 'navTwins', imaging: 'navImaging', parkinson: 'navParkinson', resources: 'navSources', tcm: 'navTcm', nobel: 'navNobel', ai: 'navAi', progress: 'navProgress', membership: 'navMembership', sources: 'navSources', course: 'navCatalog', learn: 'navParkinson' };
+    const titles = { home: 'navHome', catalog: 'navCatalog', intern: 'navIntern', workbench: 'navWorkbench', procedures: 'navProcedures', acu: 'navAcu', pharmacy: 'navPharmacy', twins: 'navTwins', imaging: 'navImaging', parkinson: 'navParkinson', resources: 'navSources', tcm: 'navTcm', nobel: 'navNobel', ai: 'navAi', progress: 'navProgress', membership: 'navMembership', sources: 'navSources', course: 'navCatalog', learn: 'navParkinson', shift: 'shiftTitle' };
     $('#pageTitle').textContent = t(titles[page] || 'navHome');
     try {
       if (page !== 'home' && window.HT.loader) {
@@ -187,6 +202,7 @@
       else if (page === 'progress') progressPage(main);
       else if (page === 'membership') { await window.HT.membership.load(); main.innerHTML = window.HT.membership.pageMarkup(); window.HT.membership.bind(main); }
       else if (page === 'sources') sources(main);
+      else if (page === 'shift') { if (!window.HT.shift) { window.HT.loadCss('shift.css'); await window.HT.loadScript('shift.js'); } else window.HT.loadCss('shift.css'); if (token !== routeToken) return; const r = window.HT.shift.mount(main, params); if (typeof r === 'function') pageCleanup = r; }
       else home(main);
       if (window.HT.safeLinks) window.HT.safeLinks.scan(main);
     } catch (e) { main.innerHTML = `<div class="notice danger">${esc(e.message)}</div>`; console.error(e); }

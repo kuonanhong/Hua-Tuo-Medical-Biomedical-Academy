@@ -1,0 +1,1802 @@
+{
+ "format": "huatuo-shift-v1",
+ "department": "plastic-surgery",
+ "title": {
+  "zh": "整形外科與燒傷值班日",
+  "en": "A shift in plastic surgery and burns"
+ },
+ "tagline": {
+  "zh": "從一顆小痣到一鍋熱湯",
+  "en": "From a small mole to a pot of soup"
+ },
+ "room": "or",
+ "minutes": 25,
+ "roles": [
+  {
+   "id": "resident",
+   "zh": "整形外科住院醫師",
+   "en": "Plastics resident",
+   "desc": {
+    "zh": "第一台刀的助手、燒傷評估的第一線。你寫手術紀錄、畫燒傷圖、打電話。",
+    "en": "First assistant for the morning case and first on the scene for every burn. You write the op note, draw the burn chart and make the calls."
+   }
+  },
+  {
+   "id": "burn-nurse",
+   "zh": "燒傷護理師",
+   "en": "Burn nurse",
+   "desc": {
+    "zh": "燒傷中心的靈魂。你負責冷卻、保暖、敷料、尿量，還有讓病人安心。",
+    "en": "The soul of the burn centre. Cooling, warming, dressings, urine output, and keeping the patient calm are yours."
+   }
+  }
+ ],
+ "cast": {
+  "attending": {
+   "name": {
+    "zh": "周主治",
+    "en": "Dr Chou"
+   },
+   "role": {
+    "zh": "燒傷中心主任（師傅）",
+    "en": "Burn-centre director (mentor)"
+   },
+   "tag": "ATT",
+   "color": "#81296d",
+   "about": {
+    "zh": "說話慢、問題多。辦公桌上那杯咖啡從沒喝完過。",
+    "en": "Speaks slowly, asks a lot. The coffee on her desk is never finished."
+   },
+   "body": "mentor"
+  },
+  "anaes": {
+   "name": {
+    "zh": "吳醫師",
+    "en": "Dr Wu"
+   },
+   "role": {
+    "zh": "麻醉科醫師",
+    "en": "Anaesthetist"
+   },
+   "tag": "ANA",
+   "color": "#2f6f9f",
+   "about": {
+    "zh": "氣道的守門人。對燒傷病人的氣道特別敏感，一聽到「聲音沙啞」就站起來。",
+    "en": "Guardian of the airway. Stands up the moment anyone says 'hoarse voice'."
+   },
+   "body": "anaesthetist"
+  },
+  "circ": {
+   "name": {
+    "zh": "小鄭",
+    "en": "Jheng"
+   },
+   "role": {
+    "zh": "流動護理師",
+    "en": "Circulating nurse"
+   },
+   "tag": "RN",
+   "color": "#3b8f6a",
+   "about": {
+    "zh": "手術室裡走最多步的人。記得每一件器械的名字和每一個人的生日。",
+    "en": "Walks the most steps of anyone in theatre. Knows every instrument and everyone's birthday."
+   },
+   "body": "circulating"
+  },
+  "mr-chen": {
+   "name": {
+    "zh": "陳伯伯",
+    "en": "Mr Chen"
+   },
+   "role": {
+    "zh": "病人：臉頰病灶",
+    "en": "Patient: cheek lesion"
+   },
+   "tag": "P1",
+   "color": "#b8742c",
+   "about": {
+    "zh": "七十二歲，退休裁縫，合唱團男低音。臉頰上的小痣這半年變大、會流血。他最擔心的是疤。",
+    "en": "Seventy-two, retired tailor, bass in the church choir. A small mole on his cheek has grown and bled for six months. His main worry is the scar."
+   },
+   "body": "patient"
+  },
+  "a-hai": {
+   "name": {
+    "zh": "阿海",
+    "en": "A-Hai"
+   },
+   "role": {
+    "zh": "病人：熱湯燙傷",
+    "en": "Patient: scald burn"
+   },
+   "tag": "P2",
+   "color": "#c2453d",
+   "about": {
+    "zh": "五十八歲麵攤老闆，一鍋大骨湯翻了。胸口和右手臂起水泡，還在想中午誰顧攤。",
+    "en": "Fifty-eight, runs a noodle stall. A pot of bone broth tipped over his chest and right arm. He is still wondering who will mind the stall at lunch."
+   },
+   "body": "patient"
+  },
+  "a-kai": {
+   "name": {
+    "zh": "阿凱",
+    "en": "A-Kai"
+   },
+   "role": {
+    "zh": "病人：廚房火災",
+    "en": "Patient: kitchen fire"
+   },
+   "tag": "P3",
+   "color": "#8a5a2b",
+   "about": {
+    "zh": "十九歲學徒，油鍋起火時衝回去關瓦斯。鼻毛燒焦、聲音沙啞、咳出黑痰。",
+    "en": "Nineteen, kitchen apprentice. Ran back to turn off the gas when the oil caught fire. Singed nasal hair, hoarse voice, black sputum."
+   },
+   "body": "patient"
+  },
+  "er-doc": {
+   "name": {
+    "zh": "林醫師",
+    "en": "Dr Lin"
+   },
+   "role": {
+    "zh": "急診醫師",
+    "en": "Emergency physician"
+   },
+   "tag": "ER",
+   "color": "#d9534f",
+   "about": {
+    "zh": "急診的總機兼守門員。講話快，用 ISBAR 交班從不漏項。",
+    "en": "The emergency department's switchboard and goalkeeper. Talks fast; never skips an ISBAR item."
+   },
+   "phoneOnly": true
+  },
+  "ward-nurse": {
+   "name": {
+    "zh": "阿美",
+    "en": "Mei"
+   },
+   "role": {
+    "zh": "燒傷病房護理師",
+    "en": "Burn-ward nurse"
+   },
+   "tag": "WN",
+   "color": "#6a8f3b",
+   "about": {
+    "zh": "夜班的眼睛。每小時量一次尿量，數字不對就打電話，從不猶豫。",
+    "en": "The night shift's eyes. Measures urine output every hour and phones the moment a number is wrong."
+   },
+   "phoneOnly": true
+  }
+ },
+ "places": {
+  "whiteboard": {
+   "name": {
+    "zh": "交班白板",
+    "en": "Handover board"
+   },
+   "hot": "whiteboard"
+  },
+  "scrub-sink": {
+   "name": {
+    "zh": "刷手台",
+    "en": "Scrub sink"
+   },
+   "hot": "sink"
+  },
+  "table": {
+   "name": {
+    "zh": "手術台",
+    "en": "Operating table"
+   },
+   "hot": "field"
+  },
+  "instruments": {
+   "name": {
+    "zh": "器械桌",
+    "en": "Instrument trolley"
+   },
+   "hot": "instruments"
+  },
+  "door": {
+   "name": {
+    "zh": "手術室門口",
+    "en": "Theatre door"
+   },
+   "hot": "door"
+  },
+  "monitor": {
+   "name": {
+    "zh": "監視器",
+    "en": "Monitor"
+   },
+   "hot": "monitor"
+  },
+  "chart": {
+   "name": {
+    "zh": "病歷桌",
+    "en": "Chart desk"
+   },
+   "hot": "chart"
+  },
+  "recovery": {
+   "name": {
+    "zh": "恢復區",
+    "en": "Recovery bay"
+   },
+   "hot": "recovery"
+  }
+ },
+ "glossary": [
+  {
+   "term": {
+    "zh": "皮紋",
+    "en": "skin tension lines"
+   },
+   "plain": {
+    "zh": "皮膚上天然的張力方向。順著皮紋切，疤痕最不明顯。",
+    "en": "The natural lines of tension in the skin. Cutting along them gives the least visible scar."
+   }
+  },
+  {
+   "term": {
+    "zh": "梭形切除",
+    "en": "fusiform excision"
+   },
+   "plain": {
+    "zh": "把病灶連同一圈安全邊緣切成兩頭尖的橄欖形，縫起來才平整。",
+    "en": "Removing a lesion with a margin of normal skin in a lens shape, so the wound closes flat."
+   }
+  },
+  {
+   "term": {
+    "zh": "時間暫停",
+    "en": "time-out"
+   },
+   "plain": {
+    "zh": "劃刀前全隊停下來，核對病人、部位、手術名稱和過敏。",
+    "en": "Before the incision the whole team stops to confirm patient, site, operation and allergies."
+   }
+  },
+  {
+   "term": {
+    "zh": "器械清點",
+    "en": "instrument count"
+   },
+   "plain": {
+    "zh": "手術前後把每一件器械、紗布、縫針數清楚，確保沒有留在病人體內。",
+    "en": "Counting every instrument, swab and needle before and after surgery so nothing is left behind."
+   }
+  },
+  {
+   "term": {
+    "zh": "九分法",
+    "en": "rule of nines"
+   },
+   "plain": {
+    "zh": "把身體分成幾個約百分之九的區塊，快速估算燒傷面積。",
+    "en": "Dividing the body into regions of roughly nine percent each to estimate burn size quickly."
+   }
+  },
+  {
+   "term": {
+    "zh": "部分層燒傷",
+    "en": "partial-thickness burn"
+   },
+   "plain": {
+    "zh": "燒到真皮層。會起水泡、底部粉紅、很痛，多半能自己長回來。",
+    "en": "A burn into the dermis: blisters, a pink base, very painful, usually heals by itself."
+   }
+  },
+  {
+   "term": {
+    "zh": "全層燒傷",
+    "en": "full-thickness burn"
+   },
+   "plain": {
+    "zh": "整層皮膚都燒壞了。看起來蠟白或焦黑、不痛、不會自己癒合。",
+    "en": "The whole skin is destroyed: waxy white or charred, painless, will not heal on its own."
+   }
+  },
+  {
+   "term": {
+    "zh": "燒傷圖",
+    "en": "burn chart"
+   },
+   "plain": {
+    "zh": "一張人形圖，把燒傷的位置和深度塗上去，算面積、記錄變化。",
+    "en": "A body outline on which the burned areas and depths are shaded to calculate size and track change."
+   }
+  },
+  {
+   "term": {
+    "zh": "尿量",
+    "en": "urine output"
+   },
+   "plain": {
+    "zh": "每小時排出多少尿。燒傷輸液夠不夠，就看這個最可靠。",
+    "en": "How much urine is passed each hour: the most reliable guide to whether burn fluids are enough."
+   }
+  },
+  {
+   "term": {
+    "zh": "吸入性損傷",
+    "en": "inhalation injury"
+   },
+   "plain": {
+    "zh": "吸進熱氣、煙和有毒氣體，傷到氣道和肺。可能幾小時後才腫起來。",
+    "en": "Damage to the airway and lungs from hot gas, smoke and toxic fumes. Swelling may appear hours later."
+   }
+  },
+  {
+   "term": {
+    "zh": "ISBAR",
+    "en": "ISBAR"
+   },
+   "plain": {
+    "zh": "打電話交班的順序：我是誰、情況、背景、評估、建議。",
+    "en": "The order for a handover call: identify, situation, background, assessment, recommendation."
+   }
+  },
+  {
+   "term": {
+    "zh": "破傷風",
+    "en": "tetanus"
+   },
+   "plain": {
+    "zh": "傷口感染一種細菌造成的嚴重肌肉痙攣。燒傷要確認疫苗狀態。",
+    "en": "Severe muscle spasms from a bacterium that infects wounds. Every burn needs the vaccination status checked."
+   }
+  },
+  {
+   "term": {
+    "zh": "焦痂切開",
+    "en": "escharotomy"
+   },
+   "plain": {
+    "zh": "環狀全層燒傷會像束帶一樣勒住肢體或胸廓，必要時切開硬痂減壓。",
+    "en": "A circumferential full-thickness burn can tighten like a band; cutting the hard eschar releases it."
+   }
+  }
+ ],
+ "codex": [
+  {
+   "id": "diathermy",
+   "kind": "equipment",
+   "name": {
+    "zh": "電燒",
+    "en": "Diathermy"
+   },
+   "text": {
+    "zh": "用電流止血或切割組織。臉部精細手術用低功率、細尖頭。",
+    "en": "Uses electric current to seal bleeding or cut tissue. Fine facial work uses a low setting and a needle tip."
+   },
+   "hot": "instruments"
+  },
+  {
+   "id": "warming-blanket",
+   "kind": "equipment",
+   "name": {
+    "zh": "保溫毯",
+    "en": "Warming blanket"
+   },
+   "text": {
+    "zh": "燒傷病人失去皮膚保溫，會很快失溫。冷卻傷口、保暖病人，兩件事同時做。",
+    "en": "Burned skin cannot hold heat, so patients cool quickly. Cool the wound, warm the patient: both at once."
+   },
+   "hot": "bed"
+  },
+  {
+   "id": "pulse-ox",
+   "kind": "equipment",
+   "name": {
+    "zh": "脈搏血氧儀",
+    "en": "Pulse oximeter"
+   },
+   "text": {
+    "zh": "夾在手指上量血氧。一氧化碳中毒時數字會騙人，看起來正常其實缺氧。",
+    "en": "Clips on a finger to read oxygen saturation. With carbon monoxide poisoning it lies and reads normal."
+   },
+   "hot": "monitor"
+  },
+  {
+   "id": "specimen-cheek",
+   "kind": "item",
+   "name": {
+    "zh": "檢體瓶：臉頰病灶",
+    "en": "Specimen jar: cheek lesion"
+   },
+   "text": {
+    "zh": "切下來的病灶泡在固定液裡送病理。方向要標記，病理科才知道哪一邊邊緣不夠。",
+    "en": "The excised lesion goes to pathology in fixative. Mark its orientation so pathology can say which margin is close."
+   }
+  },
+  {
+   "id": "burn-chart-item",
+   "kind": "item",
+   "name": {
+    "zh": "阿海的燒傷圖",
+    "en": "A-Hai's burn chart"
+   },
+   "text": {
+    "zh": "你親手畫的那張。胸前和右上臂塗成部分層，面積寫在角落。",
+    "en": "The one you drew yourself: chest and right upper arm shaded partial-thickness, the total in the corner."
+   }
+  },
+  {
+   "id": "rule-of-nines",
+   "kind": "concept",
+   "name": {
+    "zh": "九分法",
+    "en": "Rule of nines"
+   },
+   "text": {
+    "zh": "頭頸九、每隻手臂九、每隻腿十八、軀幹前後各十八。只算部分層以上，一度不算。",
+    "en": "Head and neck nine, each arm nine, each leg eighteen, front and back of trunk eighteen each. Count only partial thickness or deeper."
+   }
+  },
+  {
+   "id": "isbar-card",
+   "kind": "concept",
+   "name": {
+    "zh": "ISBAR 卡",
+    "en": "ISBAR card"
+   },
+   "text": {
+    "zh": "電話旁那張小卡。每一通轉診電話照著唸，對方就不會漏聽。",
+    "en": "The small card by the phone. Read every referral call off it and nothing gets missed."
+   }
+  }
+ ],
+ "segs": [
+  {
+   "id": "handover",
+   "name": {
+    "zh": "晨間交班",
+    "en": "Morning handover"
+   },
+   "sub": {
+    "zh": "07:30 · 手術室白板前",
+    "en": "07:30 · at the theatre whiteboard"
+   },
+   "t": 450,
+   "mood": "day",
+   "note": {
+    "zh": "交班完成",
+    "en": "Handover done"
+   },
+   "beats": [
+    {
+     "id": "h1",
+     "to": "place:whiteboard",
+     "guide": {
+      "zh": "到白板前交班",
+      "en": "Go to the whiteboard"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "手術室的燈剛亮。白板上寫著今天的刀表，旁邊貼著一張 ISBAR 卡。",
+        "en": "The theatre lights have just come on. Today's list is on the whiteboard, an ISBAR card taped beside it."
+       }
+      ],
+      [
+       "circ",
+       {
+        "zh": "早。第一台是陳伯伯，左臉頰病灶切除，局部麻醉加鎮靜。",
+        "en": "Morning. First case is Mr Chen, left cheek lesion excision under local with sedation."
+       }
+      ],
+      [
+       "circ",
+       {
+        "zh": "燒傷病房五床昨晚尿量在邊緣，夜班有調整過了。阿美說她會盯。",
+        "en": "Burn ward bed five had borderline urine output overnight; the night team adjusted. Mei says she is watching it."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "收到。五床我等一下去看。",
+        "en": "Got it. I will look in on bed five later."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "h2",
+     "to": "attending",
+     "guide": {
+      "zh": "去找周主治",
+      "en": "Find Dr Chou"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "早。咖啡幫我放桌上，我大概又喝不到。",
+        "en": "Morning. Leave the coffee on my desk; I probably will not get to it again."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "陳伯伯的病灶在臉頰。你會怎麼決定切口的方向？",
+        "en": "Mr Chen's lesion is on the cheek. How would you decide the direction of the incision?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "順著皮紋，做梭形切除，長軸跟張力線平行。",
+        "en": "Along the skin tension lines: a fusiform excision with its long axis parallel to them."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "好。那病理科要知道什麼？",
+        "en": "Good. And what does pathology need to know?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "檢體的方向，還有臨床懷疑什麼。",
+        "en": "Which way the specimen is oriented, and what we suspect clinically."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "記住這兩句，下午會用到。",
+        "en": "Remember both of those. You will need them this afternoon."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "h3",
+     "to": "mr-chen",
+     "guide": {
+      "zh": "到門口接陳伯伯",
+      "en": "Meet Mr Chen at the door"
+     },
+     "lines": [
+      [
+       "mr-chen",
+       {
+        "zh": "醫師，我下個月有演出。這個疤會不會很明顯？",
+        "en": "Doctor, I have a concert next month. Will the scar be very obvious?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "我們會順著您臉上自然的紋路切，疤會藏在裡面。先確認一下，是左臉這一顆對嗎？",
+        "en": "We will cut along the natural lines of your face so the scar hides in them. Let me confirm: it is this one on the left cheek?"
+       }
+      ],
+      [
+       "mr-chen",
+       {
+        "zh": "對，就是這顆。會流血的那顆。",
+        "en": "Yes, that one. The one that bleeds."
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "你在病灶旁用記號筆做了部位標記，請他再看一次同意書。",
+        "en": "You mark the site beside the lesion with the skin marker and ask him to read the consent form once more."
+       }
+      ]
+     ],
+     "roles": [
+      "resident"
+     ],
+     "set": {
+      "site-marked": true
+     }
+    },
+    {
+     "id": "h4",
+     "to": "place:instruments",
+     "guide": {
+      "zh": "檢查器械桌與保溫毯",
+      "en": "Check the trolley and blanket"
+     },
+     "lines": [
+      [
+       "circ",
+       {
+        "zh": "臉部細器械一套、電燒細尖頭、縫線都在。保溫毯你要先開嗎？",
+        "en": "Fine facial set, needle-tip diathermy, sutures all here. Do you want the warming blanket on already?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "先開。局部麻醉的病人躺久也會冷。",
+        "en": "Yes. Patients get cold lying still even under local."
+       }
+      ]
+     ],
+     "roles": [
+      "burn-nurse"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "first-case",
+   "name": {
+    "zh": "第一台：臉頰病灶",
+    "en": "First case: cheek lesion"
+   },
+   "sub": {
+    "zh": "08:00 · 手術台",
+    "en": "08:00 · operating table"
+   },
+   "t": 480,
+   "mood": "day",
+   "note": {
+    "zh": "陳伯伯的病灶切除完成",
+    "en": "Mr Chen's lesion excised"
+   },
+   "beats": [
+    {
+     "id": "c2",
+     "to": "place:table",
+     "guide": {
+      "zh": "刷完手，到手術台設計切口",
+      "en": "Scrub, then design the incision"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "刷手台的水溫剛好。你從指尖刷到手肘，心裡默數，走向手術台。",
+        "en": "The scrub-sink water is just right. You scrub from fingertips to elbows, counting, and walk to the table."
+       }
+      ],
+      [
+       "anaes",
+       {
+        "zh": "陳伯伯鎮靜好了，還聽得到我們說話。講話小聲一點。",
+        "en": "Mr Chen is sedated but can still hear us. Keep your voices down."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "先畫再切。你來設計這個梭形，我看。",
+        "en": "Draw before you cut. You design the ellipse; I will watch."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "drill",
+      "template": "plastic-surgery",
+      "drill": "ellipse"
+     },
+     "post": [
+      [
+       "attending",
+       {
+        "zh": "長軸是短軸的三倍左右，兩端才不會皺起來。可以。",
+        "en": "Long axis about three times the short one, so the ends do not pucker. That will do."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "c3",
+     "to": "attending",
+     "guide": {
+      "zh": "劃刀前的時間暫停",
+      "en": "Time-out before the incision"
+     },
+     "lines": [
+      [
+       "circ",
+       {
+        "zh": "各位，時間暫停。",
+        "en": "Everyone, time-out."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "陳伯伯，左臉頰病灶梭形切除，部位已標記，無已知過敏。",
+        "en": "Mr Chen, fusiform excision of a left cheek lesion, site marked, no known allergies."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "drill",
+      "template": "plastic-surgery",
+      "drill": "timeout"
+     },
+     "post": [
+      [
+       "anaes",
+       {
+        "zh": "麻醉這邊沒有疑慮。",
+        "en": "No concerns from anaesthesia."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "開始。",
+        "en": "Begin."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "c4",
+     "to": "place:instruments",
+     "guide": {
+      "zh": "清點器械與紗布",
+      "en": "Count instruments and swabs"
+     },
+     "lines": [
+      [
+       "circ",
+       {
+        "zh": "跟我一起數：紗布十、縫針三、刀片一。",
+        "en": "Count with me: swabs ten, needles three, blade one."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "紗布十、縫針三、刀片一。器械清點正確。",
+        "en": "Swabs ten, needles three, blade one. Instrument count correct."
+       }
+      ]
+     ],
+     "roles": [
+      "burn-nurse"
+     ]
+    },
+    {
+     "id": "c5",
+     "to": "place:table",
+     "guide": {
+      "zh": "病灶切下來了：標記檢體",
+      "en": "Lesion out: label the specimen"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "切下來了。邊緣看起來乾淨。檢體你打算怎麼送？",
+        "en": "It is out. The margins look clean. How are you sending the specimen?"
+       }
+      ]
+     ],
+     "mini": {
+      "type": "choice",
+      "q": {
+       "zh": "病理檢體要怎麼處理？",
+       "en": "How should the specimen go to pathology?"
+      },
+      "options": [
+       {
+        "zh": "縫一針標記十二點鐘方向，寫上臨床懷疑",
+        "en": "Stitch to mark twelve o'clock, note the suspicion",
+        "ok": true,
+        "why": {
+         "zh": "有方向，病理科才能告訴你哪一邊邊緣不夠，需要補切。",
+         "en": "With an orientation mark pathology can tell you which margin is close and needs re-excision."
+        },
+        "set": {
+         "specimen-marked": true
+        }
+       },
+       {
+        "zh": "直接放進固定液送出",
+        "en": "Straight into fixative and send",
+        "ok": false,
+        "why": {
+         "zh": "沒有方向的檢體，如果邊緣不夠，你不知道要補哪一邊。",
+         "en": "Without orientation you will not know which side to re-excise if a margin is involved."
+        },
+        "set": {
+         "specimen-marked": false
+        }
+       },
+       {
+        "zh": "放生理食鹽水裡等下午一起送",
+        "en": "Keep it in saline until the afternoon batch",
+        "ok": false,
+        "why": {
+         "zh": "檢體要立刻進固定液，泡在食鹽水會影響判讀。",
+         "en": "Specimens go into fixative at once; soaking in saline degrades them."
+        },
+        "set": {
+         "specimen-marked": false
+        }
+       }
+      ]
+     },
+     "item": "specimen-cheek"
+    },
+    {
+     "id": "c6",
+     "to": "place:table",
+     "guide": {
+      "zh": "縫合：間斷縫合",
+      "en": "Close with interrupted sutures"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "臉上的縫線要細、要密、要平。來。",
+        "en": "Facial sutures: fine, close together, everted. Go."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "drill",
+      "template": "plastic-surgery",
+      "drill": "suture"
+     },
+     "post": [
+      [
+       "mr-chen",
+       {
+        "zh": "……醫師，結束了嗎？我剛剛在心裡唱了兩首歌。",
+        "en": "...Doctor, is it over? I sang two songs in my head."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "結束了，陳伯伯。下週回來拆線。",
+        "en": "All done, Mr Chen. Back next week for the sutures."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "er-call",
+   "name": {
+    "zh": "急診來電：燙傷",
+    "en": "ER calls: a scald"
+   },
+   "sub": {
+    "zh": "10:30 · 電話與手術室門口",
+    "en": "10:30 · the phone and the theatre door"
+   },
+   "t": 630,
+   "mood": "day",
+   "note": {
+    "zh": "阿海的燙傷評估完成",
+    "en": "A-Hai's scald assessed"
+   },
+   "beats": [
+    {
+     "id": "e1",
+     "ring": {
+      "title": {
+       "zh": "急診來電",
+       "en": "ER calling"
+      },
+      "sub": {
+       "zh": "麵攤老闆熱湯燙傷",
+       "en": "Noodle-stall owner scalded by soup"
+      },
+      "call": true,
+      "from": "er-doc"
+     },
+     "lines": [
+      [
+       "er-doc",
+       {
+        "zh": "整形外科嗎？我是急診林醫師。五十八歲男性，大骨湯翻倒，胸前和右臂燙傷。",
+        "en": "Plastics? Dr Lin, emergency. Fifty-eight-year-old man, bone broth tipped over his chest and right arm."
+       }
+      ],
+      [
+       "er-doc",
+       {
+        "zh": "有水泡，很痛，意識清楚，氣道沒問題。你要我們現在先做什麼？",
+        "en": "Blisters, very painful, fully alert, airway fine. What do you want us to do right now?"
+       }
+      ]
+     ],
+     "mini": {
+      "type": "choice",
+      "q": {
+       "zh": "你請急診先做什麼？",
+       "en": "What do you ask the ER to do first?"
+      },
+      "options": [
+       {
+        "zh": "流動冷水沖、移除衣物、保暖、送上來",
+        "en": "Running water, remove clothing, keep warm, send up",
+        "ok": true,
+        "why": {
+         "zh": "流動的涼水降低組織溫度，同時脫掉吸了熱湯的衣服，並且幫病人保暖。",
+         "en": "Cool running water lowers tissue temperature; the soaked clothes come off; and the patient stays warm."
+        },
+        "set": {
+         "cooled": "water"
+        }
+       },
+       {
+        "zh": "冰塊敷在傷口上",
+        "en": "Pack the wound in ice",
+        "ok": false,
+        "why": {
+         "zh": "冰會讓血管收縮，傷口變得更深，而且病人很快失溫。",
+         "en": "Ice constricts vessels, deepens the wound, and the patient becomes hypothermic fast."
+        },
+        "set": {
+         "cooled": "ice"
+        }
+       },
+       {
+        "zh": "先塗燙傷藥膏再轉",
+        "en": "Apply burn ointment before transfer",
+        "ok": false,
+        "why": {
+         "zh": "藥膏會蓋住傷口，我們上面就看不清深度，還得洗掉。",
+         "en": "Ointment hides the wound; we cannot judge depth and have to wash it off again."
+        },
+        "set": {
+         "cooled": "water"
+        }
+       }
+      ]
+     },
+     "post": [
+      [
+       "me",
+       {
+        "zh": "我是整形外科住院醫師，請直接送燒傷中心，我在門口等。",
+        "en": "Plastics resident here. Send him straight to the burn centre; I will be at the door."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "e2",
+     "to": "place:door",
+     "guide": {
+      "zh": "到門口接阿海，估面積",
+      "en": "Meet A-Hai, estimate the size"
+     },
+     "lines": [
+      [
+       "a-hai",
+       {
+        "zh": "醫師，我沒事啦，就是痛。中午誰顧攤啊……",
+        "en": "Doctor, I am fine, it just hurts. Who is going to mind the stall at lunch..."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "攤子先放著，阿海。先清潔，再評估。",
+        "en": "The stall can wait, A-Hai. Clean first, then assess."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "機轉是熱湯，不是火。想想這對深度代表什麼。然後用九分法：胸前一片、右上臂一圈。",
+        "en": "The mechanism is soup, not flame; think what that means for depth. Then the rule of nines: a patch on the chest, a band round the right upper arm."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "plastic-surgery-burn-tbsa-depth-assessment",
+      "stage": 2
+     },
+     "post": [
+      [
+       "attending",
+       {
+        "zh": "記得：一度不計入。只算起水泡以上的。",
+        "en": "Remember: first degree does not count. Only blistered or deeper."
+       }
+      ]
+     ],
+     "t": 660
+    },
+    {
+     "id": "e2b",
+     "to": "a-hai",
+     "guide": {
+      "zh": "看傷口邊緣",
+      "en": "Look at the wound edge"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "急診用了冰。你看邊緣，比中央還蒼白，而且他在發抖。",
+        "en": "The ER used ice. Look at the edge: paler than the centre, and he is shivering."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "保溫毯，現在。冰敷讓邊緣變深了。",
+        "en": "Warming blanket, now. The ice has deepened the margin."
+       }
+      ]
+     ],
+     "when": {
+      "flag": "cooled",
+      "is": "ice"
+     }
+    },
+    {
+     "id": "e4",
+     "to": "a-hai",
+     "guide": {
+      "zh": "判斷深度",
+      "en": "Judge the depth"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "水泡、底部粉紅、壓了會變白、很痛。",
+        "en": "Blisters, pink base, blanches on pressure, very painful."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "imaging",
+      "region": "skin",
+      "question": {
+       "zh": "這是哪一種深度的燒傷？",
+       "en": "What depth of burn is this?"
+      },
+      "answer": {
+       "zh": "淺層部分層燒傷。底部粉紅、會變白、感覺完整。深部分層會偏白、不太變白、感覺變鈍。",
+       "en": "A superficial partial-thickness burn. Pink base, blanches, sensation intact. Deep partial-thickness is paler, blanches poorly and feels dull."
+      }
+     },
+     "post": [
+      [
+       "attending",
+       {
+        "zh": "四十八小時後再看一次。燒傷會「變深」，不是你看錯。",
+        "en": "Look again at forty-eight hours. Burns 'convert' deeper; it is not that you misjudged."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "e5",
+     "to": "place:table",
+     "guide": {
+      "zh": "覆蓋前的順序",
+      "en": "Sequence before covering"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "阿美交班的時候會問你順序。你來排。",
+        "en": "Mei will ask you the sequence at handover. You put it in order."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "order",
+      "q": {
+       "zh": "燒傷第一線處置的順序？",
+       "en": "Order the first steps for a burn."
+      },
+      "steps": [
+       {
+        "zh": "停止燒灼、確保自身安全",
+        "en": "Stop the burning, keep yourself safe"
+       },
+       {
+        "zh": "移除衣物與飾品",
+        "en": "Remove clothing and jewellery"
+       },
+       {
+        "zh": "流動冷水沖洗",
+        "en": "Cool with running water"
+       },
+       {
+        "zh": "保暖病人",
+        "en": "Keep the patient warm"
+       },
+       {
+        "zh": "乾淨敷料暫時覆蓋",
+        "en": "Cover with a clean dressing"
+       }
+      ]
+     },
+     "roles": [
+      "burn-nurse"
+     ]
+    },
+    {
+     "id": "e6",
+     "to": "attending",
+     "guide": {
+      "zh": "要不要啟動公式輸液？",
+      "en": "Start formula fluids?"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "面積算出來了。那他需要公式輸液嗎？你自己判斷。",
+        "en": "You have the size. Does he need formula resuscitation? You decide."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "面積超過啟動門檻，而且是成人軀幹加上肢。我會啟動，起算時間從燙傷那一刻。",
+        "en": "The area is over the threshold, trunk plus a limb in an adult. I would start, timed from the moment of the scald."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "破傷風狀態問了嗎？止痛呢？",
+        "en": "Tetanus status asked? Analgesia?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "都依醫囑給了。破傷風十年內有打過。",
+        "en": "Both given per the orders. Tetanus within ten years."
+       }
+      ],
+      [
+       "a-hai",
+       {
+        "zh": "醫師，你們這裡的湯比較沒有味道。",
+        "en": "Doctor, the soup here has less flavour."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "noon",
+   "name": {
+    "zh": "中午：病理與燒傷圖",
+    "en": "Noon: pathology and the chart"
+   },
+   "sub": {
+    "zh": "12:30 · 病歷桌",
+    "en": "12:30 · chart desk"
+   },
+   "t": 750,
+   "mood": "day",
+   "note": {
+    "zh": "燒傷圖畫好、病理檢體送出",
+    "en": "Burn chart drawn, specimen sent"
+   },
+   "beats": [
+    {
+     "id": "n1",
+     "ring": {
+      "title": {
+       "zh": "病理科訊息",
+       "en": "Message from pathology"
+      },
+      "sub": {
+       "zh": "關於陳伯伯的檢體",
+       "en": "About Mr Chen's specimen"
+      },
+      "call": false
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "病理科：「臉頰檢體沒有方向標記。若邊緣不足，將無法指出位置。」",
+        "en": "Pathology: 'Cheek specimen arrived without an orientation mark. If a margin is involved we cannot say which.'"
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "就是早上說的那兩句。下次縫一針，三十秒。",
+        "en": "Those two sentences from this morning. Next time one stitch, thirty seconds."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "記住了。",
+        "en": "Noted."
+       }
+      ]
+     ],
+     "when": {
+      "flag": "specimen-marked",
+      "is": false
+     }
+    },
+    {
+     "id": "n1b",
+     "ring": {
+      "title": {
+       "zh": "病理科訊息",
+       "en": "Message from pathology"
+      },
+      "sub": {
+       "zh": "關於陳伯伯的檢體",
+       "en": "About Mr Chen's specimen"
+      },
+      "call": false
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "病理科：「臉頰檢體已收到，方向標記清楚，謝謝。」",
+        "en": "Pathology: 'Cheek specimen received, orientation clearly marked, thank you.'"
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "你看，三十秒的一針，省掉一通電話。",
+        "en": "See: a thirty-second stitch saves a phone call."
+       }
+      ]
+     ],
+     "when": {
+      "flag": "specimen-marked",
+      "is": true
+     }
+    },
+    {
+     "id": "n2",
+     "to": "place:chart",
+     "guide": {
+      "zh": "畫阿海的燒傷圖",
+      "en": "Draw A-Hai's burn chart"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "燒傷圖自己畫。塗的時候再想一次：哪裡是部分層、哪裡只是紅。",
+        "en": "Draw the burn chart yourself. As you shade, think again: which parts are partial thickness and which are just red."
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "你把胸前和右上臂塗上斜線，在角落寫下面積和時間。",
+        "en": "You hatch the chest and right upper arm and write the total and the time in the corner."
+       }
+      ],
+      [
+       "circ",
+       {
+        "zh": "周主治，你的咖啡……我幫你換一杯熱的？",
+        "en": "Dr Chou, your coffee... shall I get you a hot one?"
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "放著，它有陪伴的功能。對了，阿海右上臂是整圈燒到嗎？",
+        "en": "Leave it; it is there for company. By the way, is A-Hai's right upper arm burned all the way round?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "差一點。內側有一條沒燒到。",
+        "en": "Almost. A strip on the inner side is spared."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "整圈的全層燒傷會像束帶。每小時摸遠端脈搏；整圈變硬，就是想焦痂切開的時候。",
+        "en": "A circumferential full-thickness burn acts like a band. Feel the distal pulse hourly; tight all round is when to think about escharotomy."
+       }
+      ]
+     ],
+     "item": "burn-chart-item"
+    }
+   ]
+  },
+  {
+   "id": "afternoon",
+   "name": {
+    "zh": "下午：廚房火災",
+    "en": "Afternoon: kitchen fire"
+   },
+   "sub": {
+    "zh": "14:30 · 手術室門口與監視器",
+    "en": "14:30 · theatre door and the monitor"
+   },
+   "t": 870,
+   "mood": "day",
+   "note": {
+    "zh": "阿凱的氣道決策完成",
+    "en": "A-Kai's airway decision made"
+   },
+   "beats": [
+    {
+     "id": "a1",
+     "ring": {
+      "title": {
+       "zh": "急診來電",
+       "en": "ER calling"
+      },
+      "sub": {
+       "zh": "同一家麵攤，油鍋起火",
+       "en": "Same noodle stall, oil fire"
+      },
+      "call": true,
+      "from": "er-doc"
+     },
+     "lines": [
+      [
+       "er-doc",
+       {
+        "zh": "又是我。阿海的學徒，十九歲，油鍋起火時衝回去關瓦斯。",
+        "en": "Me again. A-Hai's apprentice, nineteen, ran back to turn off the gas when the oil caught."
+       }
+      ],
+      [
+       "er-doc",
+       {
+        "zh": "臉有點紅，燒傷面積不大。但他聲音沙啞，鼻毛燒焦，咳黑痰。血氧儀顯示正常。",
+        "en": "Face a little red, small burn area. But hoarse voice, singed nasal hair, black sputum. Oximeter reads normal."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "血氧儀在這種情況會騙人。請直接送上來，我通知麻醉科。",
+        "en": "The oximeter can lie in this setting. Send him straight up; I will call anaesthesia."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "a2",
+     "to": "a-kai",
+     "guide": {
+      "zh": "到門口評估阿凱",
+      "en": "Assess A-Kai at the door"
+     },
+     "lines": [
+      [
+       "a-kai",
+       {
+        "zh": "我沒燒到多少啦……只是喉嚨怪怪的。",
+        "en": "I am barely burned... my throat just feels weird."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "面積小，但你要看的不是面積。徵象辨識，一個一個來。",
+        "en": "Small area, but area is not what you are looking at. Recognise the signs, one by one."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "密閉空間、臉部燒傷、鼻毛燒焦、聲音沙啞、黑痰。吸入性損傷的徵象他幾乎全中。",
+        "en": "Enclosed space, facial burn, singed nasal hair, hoarse voice, black sputum. He has nearly every sign of inhalation injury."
+       }
+      ],
+      [
+       "anaes",
+       {
+        "zh": "聲音沙啞加黑痰，我就不會等。",
+        "en": "Hoarse voice plus black sputum: I do not wait."
+       }
+      ]
+     ],
+     "t": 885
+    },
+    {
+     "id": "a3",
+     "to": "place:monitor",
+     "guide": {
+      "zh": "看監視器",
+      "en": "Watch the monitor"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "阿凱說話越來越費力。吸氣時有一點高音。",
+        "en": "A-Kai's speech is getting more effortful. There is a faint high note on inspiration."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "vitals",
+      "event": "desaturation",
+      "options": [
+       {
+        "zh": "給氧、請麻醉科現在就來評估早期插管",
+        "en": "Oxygen; anaesthesia to assess for early intubation now",
+        "ok": true,
+        "why": {
+         "zh": "吸入性損傷的氣道會在幾小時內腫起來，越晚插越難。",
+         "en": "An inhalation-injured airway swells over hours; the later you intubate, the harder it gets."
+        }
+       },
+       {
+        "zh": "先照胸部 X 光再說",
+        "en": "Chest X-ray first",
+        "ok": false,
+        "why": {
+         "zh": "早期的 X 光多半正常，等結果只會浪費氣道還能通過的時間。",
+         "en": "Early films are usually normal; waiting wastes the time the airway is still passable."
+        }
+       },
+       {
+        "zh": "觀察，叫他少講話",
+        "en": "Observe and tell him to talk less",
+        "ok": false,
+        "why": {
+         "zh": "聲音沙啞加喘鳴已經是警訊，不是觀察的時候。",
+         "en": "Hoarseness plus stridor is already a warning, not something to watch."
+        }
+       }
+      ]
+     }
+    },
+    {
+     "id": "a4",
+     "to": "anaes",
+     "guide": {
+      "zh": "跟吳醫師做氣道決策",
+      "en": "Airway decision with Dr Wu"
+     },
+     "lines": [
+      [
+       "anaes",
+       {
+        "zh": "你來講：現在插，還是再等？理由。",
+        "en": "You tell me: intubate now, or wait? Reasons."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "plastic-surgery-inhalation-injury-airway",
+      "stage": 3
+     },
+     "post": [
+      [
+       "anaes",
+       {
+        "zh": "對。而且是由最有經驗的人來插，不是在走廊上插。",
+        "en": "Right. And the most experienced person does it, not in a corridor."
+       }
+      ],
+      [
+       "a-hai",
+       {
+        "zh": "阿凱！你這個笨蛋，瓦斯關不關有什麼關係！",
+        "en": "A-Kai! You idiot, who cares about the gas!"
+       }
+      ],
+      [
+       "a-kai",
+       {
+        "zh": "……老闆，湯沒事。",
+        "en": "...Boss, the soup is fine."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "a5",
+     "to": "place:recovery",
+     "guide": {
+      "zh": "安置阿凱並通知加護病房",
+      "en": "Settle A-Kai, call the ICU"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "管路固定好了，你用膠布之外再加一條綁帶——臉部燒傷的膠布會黏不住。",
+        "en": "The tube is secured; you add a tie as well as tape, because tape will not hold on burned skin."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "加護病房嗎？我用 ISBAR 交班：十九歲男性，吸入性損傷，已插管……",
+        "en": "ICU? Handing over by ISBAR: nineteen-year-old man, inhalation injury, intubated..."
+       }
+      ]
+     ],
+     "roles": [
+      "burn-nurse"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "evening",
+   "name": {
+    "zh": "傍晚交班",
+    "en": "Evening handover"
+   },
+   "sub": {
+    "zh": "17:30 · 白板前",
+    "en": "17:30 · at the whiteboard"
+   },
+   "t": 1050,
+   "mood": "eve",
+   "note": {
+    "zh": "白天交班給夜班",
+    "en": "Day handed over to the night team"
+   },
+   "beats": [
+    {
+     "id": "v1",
+     "to": "place:whiteboard",
+     "guide": {
+      "zh": "交班給夜班",
+      "en": "Hand over to the night team"
+     },
+     "lines": [
+      [
+       "circ",
+       {
+        "zh": "夜班到了。你來講。",
+        "en": "The night team is here. Your handover."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "陳伯伯：左臉頰病灶切除，檢體已送，下週拆線。",
+        "en": "Mr Chen: left cheek lesion excised, specimen sent, sutures out next week."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "阿海：胸前與右上臂部分層燙傷，公式輸液中，每小時尿量，右臂每小時脈搏。",
+        "en": "A-Hai: partial-thickness scald to chest and right upper arm, on formula fluids, hourly urine output, hourly pulse in the right arm."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "阿凱：吸入性損傷，已插管，在加護病房。",
+        "en": "A-Kai: inhalation injury, intubated, in the ICU."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "v2",
+     "to": "place:chart",
+     "guide": {
+      "zh": "補齊紀錄",
+      "en": "Complete the notes"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "陳伯伯的手術紀錄：切口方向、邊緣寬度、檢體方向、縫合方式。",
+        "en": "Mr Chen's op note: incision direction, margin width, specimen orientation, closure."
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "阿海的輸液起算時間寫清楚：從燙傷的那一刻算，不是從到院。",
+        "en": "A-Hai's fluid start time written clearly: from the moment of the scald, not from arrival."
+       }
+      ]
+     ],
+     "roles": [
+      "resident"
+     ]
+    },
+    {
+     "id": "v2b",
+     "to": "place:recovery",
+     "guide": {
+      "zh": "交接敷料與尿量表",
+      "en": "Hand over dressings and output chart"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "你把敷料更換時間、尿量表和保溫毯設定交給阿美。她點點頭，筆已經在動了。",
+        "en": "You hand Mei the dressing schedule, the output chart and the blanket settings. She nods; her pen is already moving."
+       }
+      ]
+     ],
+     "roles": [
+      "burn-nurse"
+     ]
+    },
+    {
+     "id": "v3",
+     "to": "attending",
+     "guide": {
+      "zh": "周主治的反思",
+      "en": "Dr Chou's debrief"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "今天三個病人。哪一個最小，哪一個最危險？",
+        "en": "Three patients today. Which was the smallest, and which the most dangerous?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "阿凱的面積最小，也最危險。",
+        "en": "A-Kai had the smallest burn and was the most dangerous."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "對。面積是數字，氣道是時間。今天你兩個都看見了。",
+        "en": "Yes. Area is a number; the airway is time. Today you saw both."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "回家吧。那杯咖啡我帶回去當紀念。",
+        "en": "Go home. I am taking that coffee home as a souvenir."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "night",
+   "name": {
+    "zh": "夜間值班",
+    "en": "Night on call"
+   },
+   "sub": {
+    "zh": "21:30 · 值班室的電話",
+    "en": "21:30 · the on-call phone"
+   },
+   "t": 1290,
+   "mood": "night",
+   "note": {
+    "zh": "夜間尿量處理完成",
+    "en": "Night urine-output call handled"
+   },
+   "beats": [
+    {
+     "id": "x1",
+     "ring": {
+      "title": {
+       "zh": "燒傷病房來電",
+       "en": "Burn ward calling"
+      },
+      "sub": {
+       "zh": "阿海的尿量連續兩小時偏低",
+       "en": "A-Hai's urine output low two hours running"
+      },
+      "call": true,
+      "from": "ward-nurse"
+     },
+     "lines": [
+      [
+       "ward-nurse",
+       {
+        "zh": "醫師，阿海的尿量連續兩小時低於目標。血壓還好，心跳偏快，他說口渴。",
+        "en": "Doctor, A-Hai's urine output has been below target for two hours. Pressure is fine, pulse a little fast, he says he is thirsty."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "謝謝你打來。我現在看。",
+        "en": "Thank you for calling. Looking now."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "plastic-surgery-burn-fluid-resuscitation-urine-output",
+      "stage": 4
+     },
+     "post": [
+      [
+       "ward-nurse",
+       {
+        "zh": "好，依醫囑調整，一小時後我再回報。",
+        "en": "Right, adjusting per the orders. I will report back in an hour."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "x2",
+     "to": "place:monitor",
+     "guide": {
+      "zh": "一小時後看數字",
+      "en": "Check the numbers an hour later"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "一小時後，尿量回到目標範圍。阿海睡了，右手的脈搏清楚。",
+        "en": "An hour later the output is back in range. A-Hai is asleep; the pulse in his right hand is clear."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "（訊息）阿美跟我說了。你沒有只加水，你有先摸脈搏、看腹部。很好。",
+        "en": "(message) Mei told me. You did not just add fluid; you felt the pulse and checked the abdomen first. Good."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "（訊息）明天早上，咖啡我請。這次我會喝。",
+        "en": "(message) Coffee is on me tomorrow morning. This time I will drink it."
+       }
+      ]
+     ],
+     "t": 1350,
+     "end": true
+    }
+   ]
+  }
+ ],
+ "ending": {
+  "title": {
+   "zh": "下班了",
+   "en": "End of shift"
+  },
+  "sub": {
+   "zh": "一顆痣、兩個燒傷、一杯沒喝的咖啡",
+   "en": "One mole, two burns and a cup of coffee no one drank"
+  },
+  "stats": [
+   "stages",
+   "drills",
+   "choices",
+   "calls",
+   "items",
+   "time"
+  ]
+ }
+}

@@ -1,0 +1,1505 @@
+{
+ "format": "huatuo-shift-v1",
+ "department": "rheumatology",
+ "title": {
+  "zh": "風濕免疫科值班日",
+  "en": "A shift in rheumatology"
+ },
+ "tagline": {
+  "zh": "從雙手的晨僵到一顆發燙的膝蓋",
+  "en": "From stiff hands at dawn to one hot knee"
+ },
+ "room": "clinic",
+ "minutes": 25,
+ "roles": [
+  {
+   "id": "intern",
+   "zh": "實習醫師",
+   "en": "Intern",
+   "desc": {
+    "zh": "摸關節、問「持續多久」、接急診電話、寫轉介信。抗體陰性不是結案。",
+    "en": "Palpate joints, ask 'for how long', take the ER calls, write the referrals. A negative antibody is not a discharge."
+   }
+  },
+  {
+   "id": "physio",
+   "zh": "物理治療師",
+   "en": "Physiotherapist",
+   "desc": {
+    "zh": "量角器、關節活動度、功能評估。病人說「好多了」的時候，你量給大家看。",
+    "en": "Goniometer, range of motion, function. When a patient says 'much better', you measure it for everyone to see."
+   }
+  }
+ ],
+ "cast": {
+  "attending": {
+   "name": {
+    "zh": "吳主治",
+    "en": "Dr Wu"
+   },
+   "role": {
+    "zh": "主治醫師（師傅）",
+    "en": "Attending (mentor)"
+   },
+   "tag": "ATT",
+   "color": "#7a3b8f",
+   "body": "mentor",
+   "about": {
+    "zh": "風濕免疫科主治，白袍口袋裡永遠有一支量角器。每個病人他都會問同一句：「持續多久？」",
+    "en": "Rheumatologist with a goniometer permanently in his coat pocket. He asks every patient the same question: 'For how long?'"
+   }
+  },
+  "pt-yeh": {
+   "name": {
+    "zh": "小葉",
+    "en": "PT Yeh"
+   },
+   "role": {
+    "zh": "物理治療師",
+    "en": "Physiotherapist"
+   },
+   "tag": "PT",
+   "color": "#3b8f6a",
+   "body": "physio",
+   "about": {
+    "zh": "治療區的主人。相信數字，不相信「大概」。量角器放的位置差兩公分，她會重量。",
+    "en": "Runs the treatment area. Believes in numbers, not in 'roughly'. Two centimetres off with the goniometer and she measures again."
+   }
+  },
+  "patient-fang": {
+   "name": {
+    "zh": "方小姐",
+    "en": "Ms Fang"
+   },
+   "role": {
+    "zh": "門診新病人",
+    "en": "New clinic patient"
+   },
+   "tag": "PF",
+   "color": "#b8762e",
+   "body": "patient",
+   "about": {
+    "zh": "39 歲鋼琴老師，兩個月來早上手僵一個多小時，雙手好幾個小關節腫。外面驗了類風濕因子是陰性，被告知「沒事」。（虛擬個案）",
+    "en": "A 39-year-old piano teacher: stiff hands for over an hour every morning for two months, several small joints swollen in both hands. A rheumatoid factor elsewhere was negative and she was told 'nothing is wrong'. (Fictional.)"
+   }
+  },
+  "patient-chen": {
+   "name": {
+    "zh": "陳伯",
+    "en": "Mr Chen"
+   },
+   "role": {
+    "zh": "急診會診病人",
+    "en": "ER consult patient"
+   },
+   "tag": "PC",
+   "color": "#8a6ac4",
+   "body": "patient",
+   "about": {
+    "zh": "70 歲，痛風十年，每次發作「吃藥就好」。這次左膝紅腫熱痛到不能踩地，還發燒。（虛擬個案）",
+    "en": "A 70-year-old with ten years of gout, every flare 'fixed with tablets'. This time the left knee is red, hot, swollen, cannot bear weight, and he has a fever. (Fictional.)"
+   }
+  },
+  "patient-ling": {
+   "name": {
+    "zh": "阿玲",
+    "en": "Ling"
+   },
+   "role": {
+    "zh": "狼瘡追蹤病人",
+    "en": "Lupus follow-up patient"
+   },
+   "tag": "PL",
+   "color": "#c9596a",
+   "body": "patient",
+   "about": {
+    "zh": "29 歲設計師，狼瘡兩年，皮疹最近好很多，很開心。但腳腫了，尿有泡泡，昨天開始有點發燒。（虛擬個案）",
+    "en": "A 29-year-old designer with lupus for two years, delighted that her rash has improved. But her legs are swollen, her urine is foamy, and she has had a slight fever since yesterday. (Fictional.)"
+   }
+  },
+  "patient-lin": {
+   "name": {
+    "zh": "林先生",
+    "en": "Mr Lin"
+   },
+   "role": {
+    "zh": "痛風追蹤病人",
+    "en": "Gout follow-up patient"
+   },
+   "tag": "PN",
+   "color": "#6a9c3a",
+   "body": "patient",
+   "about": {
+    "zh": "52 歲貨車司機，一年發作四次，現在不痛了，想「不痛就不用來」。有腎病，曾自己停藥。（虛擬個案）",
+    "en": "A 52-year-old lorry driver with four flares a year, currently pain-free and keen to 'stop coming when it does not hurt'. Has kidney disease and has stopped his medicines before. (Fictional.)"
+   }
+  },
+  "er-doc": {
+   "name": {
+    "zh": "急診阿澤",
+    "en": "Dr Tse (ER)"
+   },
+   "role": {
+    "zh": "急診值班醫師",
+    "en": "ER doctor"
+   },
+   "tag": "ER",
+   "color": "#5b6abf",
+   "body": "resident",
+   "phoneOnly": true,
+   "about": {
+    "zh": "急診的會診電話。開頭永遠是「他有痛風病史」。",
+    "en": "The ER consult call. It always opens with 'he has a history of gout'."
+   }
+  },
+  "ward-nurse": {
+   "name": {
+    "zh": "病房阿如",
+    "en": "Nurse Ju"
+   },
+   "role": {
+    "zh": "病房護理師",
+    "en": "Ward nurse"
+   },
+   "tag": "WN",
+   "color": "#2e8aa8",
+   "body": "nurse",
+   "phoneOnly": true,
+   "about": {
+    "zh": "病房護理師，體溫表她看趨勢不看單點。",
+    "en": "Ward nurse who reads the temperature chart as a trend, never as a single point."
+   }
+  }
+ },
+ "places": {
+  "whiteboard": {
+   "name": {
+    "zh": "晨會白板",
+    "en": "Morning board"
+   },
+   "hot": "whiteboard"
+  },
+  "exam-bed": {
+   "name": {
+    "zh": "診間檢查床",
+    "en": "Examination couch"
+   },
+   "hot": "bed"
+  },
+  "us-cart": {
+   "name": {
+    "zh": "關節超音波",
+    "en": "Joint ultrasound"
+   },
+   "hot": "ultrasound"
+  },
+  "pacs": {
+   "name": {
+    "zh": "PACS 讀片站",
+    "en": "PACS workstation"
+   },
+   "hot": "imaging"
+  },
+  "bench": {
+   "name": {
+    "zh": "檢體處理台",
+    "en": "Specimen bench"
+   },
+   "hot": "bench"
+  },
+  "scope": {
+   "name": {
+    "zh": "偏光顯微鏡",
+    "en": "Polarised microscope"
+   },
+   "hot": "microscope"
+  },
+  "treatment": {
+   "name": {
+    "zh": "治療區",
+    "en": "Treatment area"
+   },
+   "hot": "recovery"
+  },
+  "monitor": {
+   "name": {
+    "zh": "病房監視器",
+    "en": "Ward monitor"
+   },
+   "hot": "monitor"
+  },
+  "desk": {
+   "name": {
+    "zh": "診間桌",
+    "en": "Clinic desk"
+   },
+   "hot": "desk"
+  }
+ },
+ "glossary": [
+  {
+   "term": {
+    "zh": "晨僵",
+    "en": "morning stiffness"
+   },
+   "plain": {
+    "zh": "早上起床關節僵硬、動不開。超過一小時，比較像發炎造成的，不像單純磨損。",
+    "en": "Joints that are stiff and will not move on waking. Lasting over an hour, it points to inflammation rather than simple wear and tear."
+   }
+  },
+  {
+   "term": {
+    "zh": "滑膜炎",
+    "en": "synovitis"
+   },
+   "plain": {
+    "zh": "關節內襯的滑膜發炎，摸起來腫腫軟軟、有壓痛。這是用手和超音波就能確認的，不需要抽血。",
+    "en": "Inflammation of the joint lining, felt as a soft, boggy, tender swelling. It is confirmed by hands and ultrasound, not by a blood test."
+   }
+  },
+  {
+   "term": {
+    "zh": "類風濕因子",
+    "en": "rheumatoid factor"
+   },
+   "plain": {
+    "zh": "一種抗體檢驗。陽性會支持類風濕性關節炎，但陰性不能排除，很多病人一開始是陰性的。",
+    "en": "An antibody test. A positive supports rheumatoid arthritis, but a negative does not exclude it; many patients start out negative."
+   }
+  },
+  {
+   "term": {
+    "zh": "侵蝕",
+    "en": "erosions"
+   },
+   "plain": {
+    "zh": "發炎把關節邊緣的骨頭啃掉一小塊。X 光看得到的時候，通常已經晚了。",
+    "en": "Small bites taken out of the bone at the joint margin by inflammation. By the time an X-ray shows them, it is usually late."
+   }
+  },
+  {
+   "term": {
+    "zh": "感染性關節炎",
+    "en": "septic arthritis"
+   },
+   "plain": {
+    "zh": "細菌跑進關節。幾天就能毀掉一個關節，是風濕科少數要在今天處理的急症。",
+    "en": "Bacteria inside a joint. It can destroy the joint within days and is one of rheumatology's few same-day emergencies."
+   }
+  },
+  {
+   "term": {
+    "zh": "痛風",
+    "en": "gout"
+   },
+   "plain": {
+    "zh": "尿酸結晶掉進關節引起的劇烈發炎。看起來和感染一模一樣，而且兩個可以同時發生。",
+    "en": "Fierce inflammation set off by uric-acid crystals in a joint. It looks exactly like an infection, and the two can happen at the same time."
+   }
+  },
+  {
+   "term": {
+    "zh": "關節液",
+    "en": "synovial fluid"
+   },
+   "plain": {
+    "zh": "從腫起來的關節抽出來的液體。它能回答「是晶體還是細菌」，這是任何抽血都回答不了的。",
+    "en": "The fluid drawn from a swollen joint. It answers 'crystals or bacteria', which no blood test can."
+   }
+  },
+  {
+   "term": {
+    "zh": "晶體",
+    "en": "crystals"
+   },
+   "plain": {
+    "zh": "在偏光顯微鏡下，關節液裡像針一樣會發光的尿酸結晶。看到晶體證明有痛風，但不證明沒有感染。",
+    "en": "Needle-shaped uric-acid crystals that light up in synovial fluid under the polarised microscope. Seeing them proves gout; it does not disprove infection."
+   }
+  },
+  {
+   "term": {
+    "zh": "革蘭氏染色",
+    "en": "Gram stain"
+   },
+   "plain": {
+    "zh": "檢驗室一小時內能給你的初步答案：關節液裡有沒有看到細菌。培養要等幾天，染色今天就有。",
+    "en": "The lab's answer within the hour: are bacteria visible in the fluid? Cultures take days; the stain is back today."
+   }
+  },
+  {
+   "term": {
+    "zh": "狼瘡",
+    "en": "lupus"
+   },
+   "plain": {
+    "zh": "免疫系統攻擊自己身體的疾病，皮膚、關節、腎臟、血球都可能中。皮膚好了，腎臟不一定好。",
+    "en": "A disease in which the immune system attacks the body itself: skin, joints, kidneys and blood cells can all be hit. A better rash does not mean a better kidney."
+   }
+  },
+  {
+   "term": {
+    "zh": "泡泡尿",
+    "en": "foamy urine"
+   },
+   "plain": {
+    "zh": "尿裡有太多蛋白質時會起泡不散。在狼瘡病人身上，這是腎臟受累的警訊。",
+    "en": "Urine that froths and the froth will not settle: too much protein. In a lupus patient it is a warning that the kidney is involved."
+   }
+  },
+  {
+   "term": {
+    "zh": "免疫治療",
+    "en": "immunosuppression"
+   },
+   "plain": {
+    "zh": "壓住過度活躍免疫系統的藥。副作用是感染變得容易，而且發燒時分不清是疾病活動還是感染。",
+    "en": "Medicines that hold back an overactive immune system. The price is easier infections, and a fever that could be either the disease or a germ."
+   }
+  },
+  {
+   "term": {
+    "zh": "量角器",
+    "en": "goniometer"
+   },
+   "plain": {
+    "zh": "量關節彎到幾度的尺。中心對準關節轉軸，兩臂沿著骨頭。「好多了」變成一個數字。",
+    "en": "A ruler for how far a joint bends. Centre on the joint's axis, arms along the bones. 'Much better' becomes a number."
+   }
+  },
+  {
+   "term": {
+    "zh": "尿酸",
+    "en": "uric acid"
+   },
+   "plain": {
+    "zh": "身體代謝的產物，太多會結晶。痛風不痛的時候，尿酸還在；長期控制它才是治療。",
+    "en": "A waste product that crystallises when there is too much. Between gout attacks the uric acid is still there; controlling it long term is the real treatment."
+   }
+  }
+ ],
+ "codex": [
+  {
+   "id": "joint-us",
+   "kind": "equipment",
+   "name": {
+    "zh": "關節超音波",
+    "en": "Joint ultrasound"
+   },
+   "text": {
+    "zh": "高頻探頭，看手指關節裡有沒有滑膜增厚和積液，還能看到血流訊號。X 光看不到的早期發炎，它看得到。",
+    "en": "A high-frequency probe that shows thickened lining and fluid inside finger joints, and even the blood flow of inflammation. It sees the early disease an X-ray cannot."
+   },
+   "hot": "ultrasound"
+  },
+  {
+   "id": "goniometer",
+   "kind": "equipment",
+   "name": {
+    "zh": "量角器",
+    "en": "Goniometer"
+   },
+   "text": {
+    "zh": "兩支透明尺和一個圓心。膝關節屈曲：圓心對股骨外髁，固定臂沿大腿，移動臂沿小腿。小葉說差兩公分就重量。",
+    "en": "Two clear arms and a pivot. Knee flexion: pivot on the lateral femoral condyle, fixed arm along the thigh, moving arm along the shin. Two centimetres off and PT Yeh measures again."
+   },
+   "hot": "device"
+  },
+  {
+   "id": "polarised-scope",
+   "kind": "equipment",
+   "name": {
+    "zh": "偏光顯微鏡",
+    "en": "Polarised microscope"
+   },
+   "text": {
+    "zh": "關節液滴在玻片上，轉動偏光片，尿酸晶體會像針一樣發亮。但看到晶體，培養還是要等。",
+    "en": "A drop of fluid on a slide, rotate the polariser, and uric-acid crystals light up like needles. Seeing them does not excuse you from waiting for the culture."
+   },
+   "hot": "microscope"
+  },
+  {
+   "id": "pacs",
+   "kind": "equipment",
+   "name": {
+    "zh": "PACS 讀片站",
+    "en": "PACS workstation"
+   },
+   "text": {
+    "zh": "雙手 X 光是風濕科的基準線。今天正常，是為了和兩年後比。先核對姓名、日期、左右。",
+    "en": "Hand X-rays are rheumatology's baseline. Normal today exists to be compared with two years from now. Name, date and side first."
+   },
+   "hot": "imaging"
+  },
+  {
+   "id": "monitor",
+   "kind": "equipment",
+   "name": {
+    "zh": "病房監視器",
+    "en": "Ward monitor"
+   },
+   "text": {
+    "zh": "體溫趨勢、心跳、血壓。感染性關節炎的病人，體溫曲線往上爬的時候，關節裡的時鐘也在走。",
+    "en": "Temperature trend, pulse, pressure. In septic arthritis, while the temperature curve climbs, a clock is also running inside the joint."
+   },
+   "hot": "monitor"
+  },
+  {
+   "id": "synovial-tubes",
+   "kind": "item",
+   "name": {
+    "zh": "陳伯的關節液檢體",
+    "en": "Mr Chen's synovial fluid"
+   },
+   "text": {
+    "zh": "三管：晶體檢查、細胞計數、培養。每管都貼著陳伯的雙識別標籤，在抗生素之前抽的，立即送檢。",
+    "en": "Three tubes: crystals, cell count, culture. Each labelled with Mr Chen's two identifiers, drawn before antibiotics, sent at once."
+   }
+  },
+  {
+   "id": "negative-not-nothing",
+   "kind": "concept",
+   "name": {
+    "zh": "陰性不等於沒事",
+    "en": "Negative is not nothing"
+   },
+   "text": {
+    "zh": "類風濕因子陰性、X 光正常，但手上有八週的滑膜炎。臨床發現比抗體早、比影像早。轉介的理由是腫脹和功能，不是數字。",
+    "en": "A negative rheumatoid factor and a normal X-ray, but eight weeks of synovitis in the hands. Clinical findings come before antibodies and before images. The referral stands on swelling and function, not on a number."
+   }
+  },
+  {
+   "id": "gout-and-infection",
+   "kind": "concept",
+   "name": {
+    "zh": "痛風與感染可以共存",
+    "en": "Gout and infection can coexist"
+   },
+   "text": {
+    "zh": "有痛風病史的紅腫熱痛關節，仍然要抽關節液排除感染。看到晶體不是結案，培養回來之前，感染沒有被排除。",
+    "en": "A hot joint in a patient with gout still gets aspirated to exclude infection. Seeing crystals is not the end; until the culture is back, infection has not been excluded."
+   }
+  }
+ ],
+ "segs": [
+  {
+   "id": "morning",
+   "name": {
+    "zh": "晨會",
+    "en": "Morning meeting"
+   },
+   "sub": {
+    "zh": "07:45 · 晨會白板",
+    "en": "07:45 · morning board"
+   },
+   "t": 465,
+   "mood": "day",
+   "note": {
+    "zh": "晨會：今天的名單",
+    "en": "Morning meeting: today's list"
+   },
+   "beats": [
+    {
+     "id": "m1",
+     "to": "place:whiteboard",
+     "guide": {
+      "zh": "到白板看今天的名單",
+      "en": "Check today's list at the board"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "早。今天門診三十個，一個新病人：手腫兩個月，外面驗了類風濕因子陰性，被說沒事。",
+        "en": "Morning. Thirty in clinic, one new: hands swollen for two months, rheumatoid factor negative elsewhere, told nothing is wrong."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "陰性……那她為什麼還來？",
+        "en": "Negative... so why is she still coming?"
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "因為她的手還是腫的。檢驗不會腫，病人會。等一下你先摸，再說話。",
+        "en": "Because her hands are still swollen. Tests do not swell; patients do. You palpate first and speak after."
+       }
+      ],
+      [
+       "pt-yeh",
+       {
+        "zh": "下午林先生回來量膝蓋，吳主治，量角器借我，你口袋那支比較準。",
+        "en": "Mr Lin is back this afternoon for his knee. Dr Wu, lend me the goniometer; the one in your pocket is better."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "clinic",
+   "name": {
+    "zh": "新病人門診",
+    "en": "New-patient clinic"
+   },
+   "sub": {
+    "zh": "08:30 · 診間",
+    "en": "08:30 · consulting room"
+   },
+   "t": 510,
+   "mood": "day",
+   "note": {
+    "zh": "評估方小姐的滑膜炎",
+    "en": "Assessed Ms Fang's synovitis"
+   },
+   "beats": [
+    {
+     "id": "c1",
+     "to": "patient-fang",
+     "guide": {
+      "zh": "請方小姐進診間",
+      "en": "Call Ms Fang into the room"
+     },
+     "lines": [
+      [
+       "patient-fang",
+       {
+        "zh": "醫師，我早上手要一個多小時才能動。我教鋼琴，現在連八度都按不下去。可是上一家說我沒事。",
+        "en": "Doctor, it takes over an hour each morning before my hands move. I teach piano and I cannot reach an octave any more. But the last place said nothing was wrong."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "持續多久？",
+        "en": "For how long?"
+       }
+      ],
+      [
+       "patient-fang",
+       {
+        "zh": "八週。我有記，因為那天是學生的發表會。",
+        "en": "Eight weeks. I remember, because it was the day of my students' recital."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "八週。來，先摸，掌指關節和近端指間關節，一個一個。",
+        "en": "Eight weeks. Now palpate: knuckles and middle finger joints, one at a time."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "drill",
+      "template": "rheumatology",
+      "drill": "joints"
+     },
+     "post": [
+      [
+       "attending",
+       {
+        "zh": "軟軟的、腫、壓痛，兩手對稱。這叫滑膜炎。你現在還覺得「陰性所以沒事」嗎？",
+        "en": "Boggy, swollen, tender, symmetrical in both hands. That is synovitis. Do you still think 'negative, so nothing is wrong'?"
+       }
+      ]
+     ]
+    },
+    {
+     "id": "c2",
+     "to": "attending",
+     "guide": {
+      "zh": "跟吳主治決定下一步",
+      "en": "Decide the next step with Dr Wu"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "晨僵超過一小時、多個小關節、對稱、八週。類風濕因子陰性不能排除。",
+        "en": "Morning stiffness over an hour, several small joints, symmetrical, eight weeks. A negative rheumatoid factor cannot exclude it."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "那你的轉介理由寫什麼？",
+        "en": "Then what does your referral say?"
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "rheumatology-v37-inflammatory-joints",
+      "stage": 0
+     },
+     "post": [
+      [
+       "attending",
+       {
+        "zh": "對。理由是臨床滑膜炎，不是數字。關節超音波排了，手部 X 光也拍，當基準線。",
+        "en": "Right. The reason is clinical synovitis, not a number. Joint ultrasound booked, and hand X-rays as a baseline."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "c3",
+     "to": "place:pacs",
+     "guide": {
+      "zh": "到 PACS 看雙手 X 光",
+      "en": "Review the hand X-rays on PACS"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "片子回來了。先核對姓名、日期、左右。然後告訴我，正常的片子代表什麼。",
+        "en": "The films are back. Name, date, side first. Then tell me what a normal film means."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "imaging",
+      "region": "upper-limb",
+      "question": {
+       "zh": "雙手 X 光看起來正常。這能排除發炎性關節炎嗎？",
+       "en": "The hand X-rays look normal. Does that exclude inflammatory arthritis?"
+      },
+      "answer": {
+       "zh": "不能。侵蝕在 X 光上出現通常已經晚了；早期滑膜炎靠觸診和關節超音波。今天的正常片是基準線，是為了和以後比。",
+       "en": "No. Erosions appear on X-ray late; early synovitis is found by palpation and joint ultrasound. Today's normal film is a baseline, there to be compared with later."
+      }
+     },
+     "post": [
+      [
+       "patient-fang",
+       {
+        "zh": "所以……我不是沒事，只是還沒到片子看得到的時候？",
+        "en": "So... it is not that nothing is wrong, just that it is too early for the film to show?"
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "對。而且我們希望它永遠不要到那時候。",
+        "en": "Exactly. And we intend to keep it from ever getting there."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "er-call",
+   "name": {
+    "zh": "急診會診電話",
+    "en": "ER consult call"
+   },
+   "sub": {
+    "zh": "10:30 · 診間桌",
+    "en": "10:30 · clinic desk"
+   },
+   "t": 630,
+   "mood": "day",
+   "note": {
+    "zh": "會診陳伯的發燙膝蓋",
+    "en": "Consulted on Mr Chen's hot knee"
+   },
+   "beats": [
+    {
+     "id": "e1",
+     "to": "place:desk",
+     "guide": {
+      "zh": "接急診的電話",
+      "en": "Take the ER call"
+     },
+     "ring": {
+      "title": {
+       "zh": "急診來電",
+       "en": "ER calling"
+      },
+      "sub": {
+       "zh": "70 歲痛風病史，左膝紅腫熱痛加發燒",
+       "en": "70-year-old with gout: hot, red left knee and a fever"
+      },
+      "call": true,
+      "from": "er-doc"
+     },
+     "lines": [
+      [
+       "er-doc",
+       {
+        "zh": "急診阿澤。陳伯，70 歲，他有痛風病史，左膝紅腫熱痛，今天不能踩地，還發燒。痛風發作吧？給藥就可以回家？",
+        "en": "Tse in the ER. Mr Chen, 70, he has a history of gout, hot red swollen left knee, cannot bear weight today, and a fever. A gout flare, yes? Treat and send home?"
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "（在旁邊，小聲）持續多久？能不能踩地？發燒？你聽到三個東西了。",
+        "en": "(Beside you, quietly) For how long? Weight-bearing? Fever? You have heard three things."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "choice",
+      "q": {
+       "zh": "有痛風病史的發燙膝蓋加發燒，你跟急診說什麼？",
+       "en": "A hot knee with a fever in a man with gout. What do you tell the ER?"
+      },
+      "options": [
+       {
+        "zh": "抗生素前先抽關節液送晶體與培養",
+        "en": "Aspirate the joint for crystals and culture before any antibiotic",
+        "ok": true,
+        "set": {
+         "aspirate": true
+        },
+        "why": {
+         "zh": "痛風和感染長得一樣，而且可以同時存在。關節液是唯一能分辨的檢體。",
+         "en": "Gout and infection look identical and can coexist. The fluid is the only specimen that tells them apart."
+        }
+       },
+       {
+        "zh": "有痛風病史，直接當痛風治療回家",
+        "en": "He has gout; treat as a flare and discharge",
+        "ok": false,
+        "set": {
+         "aspirate": false
+        },
+        "why": {
+         "zh": "不能負重加發燒的單關節，當痛風放回家，是風濕科最常見的致殘錯誤之一。",
+         "en": "A single non-weight-bearing joint with a fever sent home as gout is one of rheumatology's classic joint-destroying mistakes."
+        }
+       },
+       {
+        "zh": "先驗尿酸，高就是痛風",
+        "en": "Check the uric acid; if high, it is gout",
+        "ok": false,
+        "set": {
+         "aspirate": false
+        },
+        "why": {
+         "zh": "發作時尿酸可以正常，而且高尿酸也不排除感染。",
+         "en": "Uric acid can be normal during a flare, and a high level does not exclude infection."
+        }
+       }
+      ]
+     },
+     "post": [
+      [
+       "attending",
+       {
+        "zh": "（拿過電話）阿澤，我是吳主治。請骨科或我們的人現在抽關節液，三管，抗生素之前。他今天不回家。",
+        "en": "(Taking the phone) Tse, Dr Wu here. Have orthopaedics or our team aspirate the knee now, three tubes, before any antibiotic. He is not going home today."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "e3",
+     "to": "place:desk",
+     "guide": {
+      "zh": "寫電話會診紀錄",
+      "en": "Document the phone consult"
+     },
+     "roles": [
+      "intern"
+     ],
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "你寫下：來電者、時間、病人、你聽到的三件事、你的建議、吳主治的決定。電話會診也是醫療紀錄。",
+        "en": "You write: caller, time, patient, the three things you heard, your advice, Dr Wu's decision. A phone consult is a medical record too."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "（經過）加一行：關節液抽取時間，和第一劑抗生素的時間。兩個時間的先後，以後會有人問。",
+        "en": "(Passing) Add one line: the time of aspiration and the time of the first antibiotic. Someone will ask which came first."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "e2",
+     "to": "place:bench",
+     "guide": {
+      "zh": "到檢體處理台處理關節液",
+      "en": "Handle the synovial fluid at the bench"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "關節液送上來了，混濁、淡黃。三支管子在你面前，還沒貼標籤。",
+        "en": "The fluid arrives: cloudy, straw-coloured. Three tubes in front of you, not yet labelled."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "順序錯一步，這管液體就白抽了。排給我看。",
+        "en": "One step out of order and this fluid was drawn for nothing. Show me the sequence."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "order",
+      "q": {
+       "zh": "把關節液檢體的處理順序排對",
+       "en": "Put the synovial fluid handling steps in order"
+      },
+      "steps": [
+       {
+        "zh": "床邊核對病人雙識別並貼標籤",
+        "en": "Two identifiers at the bedside, label the tubes"
+       },
+       {
+        "zh": "分裝：晶體、細胞計數、培養",
+        "en": "Split: crystals, cell count, culture"
+       },
+       {
+        "zh": "培養管以無菌方式接種",
+        "en": "Inoculate the culture aseptically"
+       },
+       {
+        "zh": "立即送檢並通知檢驗室",
+        "en": "Send at once and phone the lab"
+       },
+       {
+        "zh": "記錄抽取時間與抗生素時間",
+        "en": "Document aspiration and antibiotic times"
+       }
+      ]
+     },
+     "item": "synovial-tubes",
+     "post": [
+      [
+       "attending",
+       {
+        "zh": "偏光顯微鏡看一眼：有針狀晶體。所以是痛風。那感染排除了嗎？",
+        "en": "A glance under the polarised microscope: needle-shaped crystals. So it is gout. Is infection excluded?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "沒有。晶體證明有痛風，不證明沒有細菌。革蘭氏染色和培養還沒回來。",
+        "en": "No. Crystals prove gout; they do not disprove bacteria. The Gram stain and culture are still out."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "noon",
+   "name": {
+    "zh": "午間檢驗討論",
+    "en": "Midday results"
+   },
+   "sub": {
+    "zh": "12:00 · 診間桌",
+    "en": "12:00 · clinic desk"
+   },
+   "t": 720,
+   "mood": "day",
+   "note": {
+    "zh": "阿玲的狼瘡與泡泡尿",
+    "en": "Ling's lupus and foamy urine"
+   },
+   "beats": [
+    {
+     "id": "n1",
+     "to": "patient-ling",
+     "guide": {
+      "zh": "阿玲提早來了",
+      "en": "Ling has come in early"
+     },
+     "lines": [
+      [
+       "patient-ling",
+       {
+        "zh": "醫師你看！皮疹幾乎沒了。我可以減藥了嗎？……喔，腳有點腫，尿尿會起泡，應該是水喝太多。",
+        "en": "Doctor, look! The rash is almost gone. Can I cut down the medicines? ...Oh, my legs are a bit swollen and my urine froths, probably from drinking too much water."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "皮膚好了，我也很高興。但狼瘡不是只有一個器官。尿檢結果在這裡。",
+        "en": "I am glad about the skin too. But lupus is not one organ. The urine results are here."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "蛋白加血尿，肌酸酐還正常。",
+        "en": "Protein and blood in the urine; creatinine still normal."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "rheumatology-v37-lupus-kidney",
+      "stage": 0
+     },
+     "post": [
+      [
+       "attending",
+       {
+        "zh": "對。皮膚和腎臟的活動度可以不一樣。阿玲，現在不是減藥的時候。還有，妳昨天說有點發燒？",
+        "en": "Right. Skin and kidney activity can differ. Ling, this is not the time to cut down. And you said a slight fever since yesterday?"
+       }
+      ],
+      [
+       "patient-ling",
+       {
+        "zh": "一點點而已……免疫治療的時候發燒很正常吧？",
+        "en": "Just a little... fever is normal on immunosuppression, isn't it?"
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "正常的是「要查」。疾病活動和感染可以同時存在，今天兩個都查。",
+        "en": "What is normal is 'we check'. Disease activity and infection can coexist; today we look for both."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "treatment",
+   "name": {
+    "zh": "治療區",
+    "en": "Treatment area"
+   },
+   "sub": {
+    "zh": "14:00 · 治療區",
+    "en": "14:00 · treatment area"
+   },
+   "t": 840,
+   "mood": "day",
+   "note": {
+    "zh": "量林先生的膝蓋",
+    "en": "Measured Mr Lin's knee"
+   },
+   "beats": [
+    {
+     "id": "t1",
+     "to": "patient-lin",
+     "guide": {
+      "zh": "到治療區見林先生",
+      "en": "Meet Mr Lin in the treatment area"
+     },
+     "lines": [
+      [
+       "patient-lin",
+       {
+        "zh": "醫師，我不痛了欸。不痛是不是就不用吃藥、不用回來？我開貨車很難請假。",
+        "en": "Doctor, it does not hurt any more. If it does not hurt, I do not need the tablets or the visits, right? Hard to get time off when you drive a lorry."
+       }
+      ],
+      [
+       "pt-yeh",
+       {
+        "zh": "不痛不等於好。來，膝蓋彎給我量，上次是這個數字。",
+        "en": "Not hurting is not the same as well. Bend the knee for me; last time it was this number."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "t2",
+     "to": "place:treatment",
+     "guide": {
+      "zh": "用量角器量膝關節屈曲",
+      "en": "Measure knee flexion with the goniometer"
+     },
+     "roles": [
+      "physio"
+     ],
+     "lines": [
+      [
+       "pt-yeh",
+       {
+        "zh": "圓心對股骨外髁，固定臂沿大腿，移動臂沿小腿。差兩公分我就重量，你知道的。",
+        "en": "Pivot on the lateral femoral condyle, fixed arm along the thigh, moving arm along the shin. Two centimetres off and I measure again, you know that."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "drill",
+      "template": "rheumatology",
+      "drill": "gonio"
+     },
+     "post": [
+      [
+       "pt-yeh",
+       {
+        "zh": "比上次少。林先生，一年四次發作，每次都在吃掉你的膝蓋。這就是「不痛」的代價。",
+        "en": "Less than last time. Mr Lin, four flares a year and each one eats a little of your knee. That is the price of 'it does not hurt'."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "t3",
+     "to": "attending",
+     "guide": {
+      "zh": "跟吳主治談長期計畫",
+      "en": "Discuss the long-term plan with Dr Wu"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "林先生，急性的痛和長期的尿酸是兩件事。你有腎病，又停過藥。這才是我們今天要談的。",
+        "en": "Mr Lin, the acute pain and the long-term uric acid are two different things. You have kidney disease and you have stopped medicines before. That is today's conversation."
+       }
+      ],
+      [
+       "patient-lin",
+       {
+        "zh": "……所以不痛的時候，反而要來？",
+        "en": "...So I should come precisely when it does not hurt?"
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "rheumatology-v37-gout-followup",
+      "stage": 0
+     },
+     "post": [
+      [
+       "attending",
+       {
+        "zh": "對。發作是火災，尿酸是瓦斯。我們要關的是瓦斯。回診時間配合你的班表，小葉會排。",
+        "en": "Right. The flare is the fire; the uric acid is the gas. We are here to turn off the gas. PT Yeh will fit the visits around your shifts."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "t4",
+     "to": "place:desk",
+     "guide": {
+      "zh": "寫方小姐的轉介與檢查單",
+      "en": "Write Ms Fang's referral and requests"
+     },
+     "roles": [
+      "intern"
+     ],
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "你寫下：關節分布、持續時間、晨僵長度、滑膜炎的部位、功能受限（八度按不下去）。類風濕因子陰性寫在最後一行，不是第一行。",
+        "en": "You write: joint distribution, duration, length of morning stiffness, the sites of synovitis, the loss of function (the octave). The negative rheumatoid factor goes on the last line, not the first."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "（經過）「八度按不下去」留著。那一行比任何數字都說明問題。",
+        "en": "(Passing) Keep 'cannot reach an octave'. That line explains more than any number."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ward-call",
+   "name": {
+    "zh": "病房來電",
+    "en": "Ward calling"
+   },
+   "sub": {
+    "zh": "16:00 · 病房",
+    "en": "16:00 · the ward"
+   },
+   "t": 960,
+   "mood": "eve",
+   "note": {
+    "zh": "陳伯確認感染性關節炎",
+    "en": "Mr Chen: septic arthritis confirmed"
+   },
+   "beats": [
+    {
+     "id": "w1",
+     "to": "place:monitor",
+     "guide": {
+      "zh": "接電話，上病房",
+      "en": "Take the call, go up to the ward"
+     },
+     "ring": {
+      "title": {
+       "zh": "病房來電",
+       "en": "Ward calling"
+      },
+      "sub": {
+       "zh": "陳伯體溫一直往上，檢驗室打來了",
+       "en": "Mr Chen's temperature keeps climbing; the lab has phoned"
+      },
+      "call": true,
+      "from": "ward-nurse"
+     },
+     "lines": [
+      [
+       "ward-nurse",
+       {
+        "zh": "病房阿如。陳伯體溫趨勢一直往上，心跳也快。檢驗室剛打來：關節液革蘭氏染色看到細菌。",
+        "en": "Ju on the ward. Mr Chen's temperature trend keeps climbing and his pulse is up. The lab has just phoned: bacteria seen on the Gram stain of the fluid."
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "你到床邊。陳伯的膝蓋更腫了，監視器上的體溫在閃。",
+        "en": "You reach the bedside. Mr Chen's knee is more swollen; the temperature on the monitor is flashing."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "vitals",
+      "event": "fever",
+      "options": [
+       {
+        "zh": "血液培養、依醫囑抗生素、通知骨科沖洗、監測",
+        "en": "Blood cultures, antibiotics per orders, call orthopaedics for washout, monitor",
+        "ok": true,
+        "why": {
+         "zh": "晶體加細菌，兩個都是真的。感染性關節炎是今天的急症，關節裡的時鐘在走。",
+         "en": "Crystals and bacteria, both real. Septic arthritis is today's emergency; a clock is running inside the joint."
+        }
+       },
+       {
+        "zh": "痛風發燒很常見，退燒觀察",
+        "en": "Fever is common in gout; antipyretic and observe",
+        "ok": false,
+        "why": {
+         "zh": "染色已經看到細菌了。退燒藥會把唯一的警訊蓋掉。",
+         "en": "The stain has already shown bacteria. The antipyretic would hide the only warning you have."
+        }
+       },
+       {
+        "zh": "等培養確認菌種再給抗生素",
+        "en": "Wait for the culture to identify the organism",
+        "ok": false,
+        "why": {
+         "zh": "培養要幾天。幾天之後關節就不在了。",
+         "en": "The culture takes days. In a few days the joint is gone."
+        }
+       }
+      ]
+     }
+    },
+    {
+     "id": "w2",
+     "to": "attending",
+     "guide": {
+      "zh": "向師傅回報",
+      "en": "Report to the mentor"
+     },
+     "when": {
+      "flag": "aspirate",
+      "is": true
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "早上你堅持先抽關節液，而且在抗生素之前。所以培養會長得出來，我們知道敵人是誰。骨科今晚沖洗。",
+        "en": "This morning you insisted on aspirating first, before antibiotics. So the culture will grow and we will know the enemy. Orthopaedics wash out tonight."
+       }
+      ],
+      [
+       "patient-chen",
+       {
+        "zh": "醫師，我以前每次都吃藥就好……",
+        "en": "Doctor, every other time the tablets just fixed it..."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "陳伯，這次有痛風，也有細菌。兩個都是真的，所以今天不一樣。",
+        "en": "Mr Chen, this time there is gout and there are bacteria. Both are real, which is why today is different."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "w3",
+     "to": "attending",
+     "guide": {
+      "zh": "向師傅回報",
+      "en": "Report to the mentor"
+     },
+     "when": {
+      "flag": "aspirate",
+      "is": false
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "早上你想直接當痛風治療放他回家。如果我沒有接過電話，他現在在家裡發燒，關節在爛。記住這通電話。",
+        "en": "This morning you wanted to treat it as gout and send him home. Had I not taken the phone, he would be at home with a fever and a dissolving joint. Remember this call."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "我記住了。痛風和感染可以共存。",
+        "en": "I will. Gout and infection can coexist."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "好。骨科今晚沖洗。你去跟陳伯解釋為什麼這次不一樣。",
+        "en": "Good. Orthopaedics wash out tonight. Go and explain to Mr Chen why this time is different."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "end-of-day",
+   "name": {
+    "zh": "交班與下班",
+    "en": "Handover and home"
+   },
+   "sub": {
+    "zh": "17:30 · 晨會白板",
+    "en": "17:30 · the board"
+   },
+   "t": 1050,
+   "mood": "eve",
+   "note": {
+    "zh": "完成晚間交班",
+    "en": "Evening handover done"
+   },
+   "beats": [
+    {
+     "id": "d1",
+     "to": "place:whiteboard",
+     "guide": {
+      "zh": "到白板交班給值班醫師",
+      "en": "Hand over to the on-call doctor"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "陳伯：痛風加感染性關節炎，染色陽性，培養待回，抗生素依醫囑，骨科今晚沖洗。阿玲：狼瘡腎臟受累待查，發燒兩條線都在查。",
+        "en": "Mr Chen: gout plus septic arthritis, stain positive, culture pending, antibiotics per orders, orthopaedic washout tonight. Ling: possible lupus kidney involvement, fever being worked up on both lines."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "陳伯那句，接班的人應該記住哪一個判斷？",
+        "en": "For Mr Chen, which judgement must the night team hold on to?"
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "rheumatology-v37-hot-joint",
+      "stage": 2
+     },
+     "post": [
+      [
+       "attending",
+       {
+        "zh": "對。「痛風病史」不是結案理由，培養回來之前，感染的追蹤要有名字。你的名字。",
+        "en": "Right. 'History of gout' never closes a case; until the culture is back, the infection follow-up needs a name on it. Yours."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "d2",
+     "to": "pt-yeh",
+     "guide": {
+      "zh": "跟小葉收治療區",
+      "en": "Close the treatment area with PT Yeh"
+     },
+     "roles": [
+      "physio"
+     ],
+     "lines": [
+      [
+       "pt-yeh",
+       {
+        "zh": "林先生的膝蓋數字我記進追蹤表了，三個月後再量。他走的時候說，不痛的時候反而要來。",
+        "en": "Mr Lin's knee number is in the tracking sheet; we measure again in three months. On his way out he said he should come precisely when it does not hurt."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "他聽懂了。",
+        "en": "He got it."
+       }
+      ],
+      [
+       "pt-yeh",
+       {
+        "zh": "數字比話有用。量角器還吳主治。",
+        "en": "Numbers work better than words. Goniometer back to Dr Wu."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "d3",
+     "to": "attending",
+     "guide": {
+      "zh": "聽師傅的下班總結",
+      "en": "The mentor's debrief"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "今天四個病人，一句話：既有的標籤不能替新的問題回答。",
+        "en": "Four patients, one sentence: an old label cannot answer a new question."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "方小姐的「陰性」、陳伯的「痛風史」、阿玲的「皮疹好了」、林先生的「不痛了」。",
+        "en": "Ms Fang's 'negative', Mr Chen's 'history of gout', Ling's 'rash is better', Mr Lin's 'it does not hurt'."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "你今天問了幾次「持續多久」？",
+        "en": "How many times did you ask 'for how long' today?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "每一個都問了。",
+        "en": "Every one of them."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "那就夠了。量角器收好，回家。",
+        "en": "Then that is enough. Put the goniometer away and go home."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "night",
+   "name": {
+    "zh": "夜間一通電話",
+    "en": "One call at night"
+   },
+   "sub": {
+    "zh": "22:30 · 值班室",
+    "en": "22:30 · on-call room"
+   },
+   "t": 1350,
+   "mood": "night",
+   "note": {
+    "zh": "夜間：沖洗後的陳伯",
+    "en": "Night: Mr Chen after washout"
+   },
+   "beats": [
+    {
+     "id": "x1",
+     "to": "place:monitor",
+     "guide": {
+      "zh": "接電話，去看陳伯",
+      "en": "Take the call, see Mr Chen"
+     },
+     "ring": {
+      "title": {
+       "zh": "病房來電",
+       "en": "Ward calling"
+      },
+      "sub": {
+       "zh": "陳伯沖洗回來，體溫趨勢問你",
+       "en": "Mr Chen is back from washout; a question about his temperature trend"
+      },
+      "call": true,
+      "from": "ward-nurse"
+     },
+     "lines": [
+      [
+       "ward-nurse",
+       {
+        "zh": "阿如。陳伯骨科沖洗回來了，還有點燒，但趨勢比傍晚平。心跳慢下來了。你要來看嗎？",
+        "en": "Ju. Mr Chen is back from the orthopaedic washout, still a little febrile, but the trend is flatter than this evening. Pulse coming down. Do you want to see him?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "要。沖洗後第一晚還會燒，趨勢往下才是重點。引流量、疼痛、關節再腫起來都要記，抗生素依醫囑繼續，培養明天追。",
+        "en": "Yes. The first night after washout he will still spike; the downward trend is what matters. Chart drain output, pain and any re-swelling, antibiotics continue per orders, and I chase the culture tomorrow."
+       }
+      ],
+      [
+       "patient-chen",
+       {
+        "zh": "醫師……膝蓋還會好嗎？我想繼續去公園下棋。",
+        "en": "Doctor... will the knee be all right? I want to keep playing chess in the park."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "我們今天就處理，就是為了那盤棋。",
+        "en": "We dealt with it today precisely for the sake of that chess game."
+       }
+      ]
+     ],
+     "end": true
+    }
+   ]
+  }
+ ],
+ "ending": {
+  "title": {
+   "zh": "下班了",
+   "en": "End of shift"
+  },
+  "sub": {
+   "zh": "既有的標籤不能替新的問題回答",
+   "en": "An old label cannot answer a new question"
+  },
+  "stats": [
+   "stages",
+   "drills",
+   "choices",
+   "calls",
+   "items",
+   "time"
+  ]
+ }
+}

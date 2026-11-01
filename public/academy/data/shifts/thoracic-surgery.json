@@ -1,0 +1,1741 @@
+{
+ "format": "huatuo-shift-v1",
+ "department": "thoracic-surgery",
+ "title": {
+  "zh": "胸腔外科值班日",
+  "en": "A shift in thoracic surgery"
+ },
+ "tagline": {
+  "zh": "一邊肺先休息，另一邊替它呼吸",
+  "en": "One lung rests while the other breathes for both"
+ },
+ "room": "or",
+ "minutes": 25,
+ "roles": [
+  {
+   "id": "resident",
+   "zh": "胸腔外科住院醫師",
+   "en": "Thoracic surgery resident",
+   "desc": {
+    "zh": "第三年住院醫師。打孔、扶鏡、分肺門、放胸管，病房每一個水封瓶的氣泡都要認得。",
+    "en": "Third-year resident. Ports, camera, hilum, chest drains; you know every bubbling underwater seal on the ward by name."
+   }
+  },
+  {
+   "id": "anaes-nurse",
+   "zh": "麻醉護理師",
+   "en": "Anaesthesia nurse",
+   "desc": {
+    "zh": "雙腔氣管內管、單肺通氣、翻身擺位、血氧的每一次下滑。外科醫師看螢幕，你看病人。",
+    "en": "Double-lumen tube, one-lung ventilation, turning and positioning, every dip in the oxygen. The surgeons watch the screen; you watch the patient."
+   }
+  }
+ ],
+ "cast": {
+  "attending": {
+   "name": {
+    "zh": "鄭主治",
+    "en": "Dr Cheng"
+   },
+   "role": {
+    "zh": "主治醫師（師傅）",
+    "en": "Attending (mentor)"
+   },
+   "tag": "ATT",
+   "color": "#1d4ed8",
+   "body": "mentor",
+   "about": {
+    "zh": "口頭禪：「先找動脈，再談速度。」每用一支縫合器就大聲數一次。",
+    "en": "Catchphrase: 'Find the artery first, then talk about speed.' Counts every stapler reload out loud."
+   }
+  },
+  "chief": {
+   "name": {
+    "zh": "阿彬學長",
+    "en": "Dr Bin"
+   },
+   "role": {
+    "zh": "總醫師",
+    "en": "Chief resident"
+   },
+   "tag": "CR",
+   "color": "#2f6f9f",
+   "body": "resident",
+   "about": {
+    "zh": "夜裡聽過每一個水封瓶。他說氣泡有自己的語言。",
+    "en": "Listened to every underwater seal overnight. He says bubbles have their own language."
+   }
+  },
+  "anaes-doc": {
+   "name": {
+    "zh": "林醫師",
+    "en": "Dr Lin"
+   },
+   "role": {
+    "zh": "麻醉醫師",
+    "en": "Anaesthetist"
+   },
+   "tag": "AN",
+   "color": "#3b8f6a",
+   "body": "anaesthetist",
+   "about": {
+    "zh": "放雙腔管像停車入庫，一次到位，再用支氣管鏡確認。",
+    "en": "Places a double-lumen tube like parking in one move, then confirms it with the bronchoscope."
+   }
+  },
+  "scrub": {
+   "name": {
+    "zh": "小芸",
+    "en": "Yun"
+   },
+   "role": {
+    "zh": "刷手護理師",
+    "en": "Scrub nurse"
+   },
+   "tag": "SN",
+   "color": "#c27a2c",
+   "body": "scrub",
+   "about": {
+    "zh": "縫合器的釘匣顏色她比外科醫師還熟。",
+    "en": "Knows the stapler cartridge colours better than the surgeons."
+   }
+  },
+  "patient": {
+   "name": {
+    "zh": "林老師",
+    "en": "Ms Lin"
+   },
+   "role": {
+    "zh": "病人・63 歲退休國中老師",
+    "en": "Patient, 63, retired teacher"
+   },
+   "tag": "PT",
+   "color": "#6b7280",
+   "body": "patient",
+   "about": {
+    "zh": "從不抽菸，健檢發現右上葉一顆腫瘤。帶著學生寫的卡片來住院，說要貼在床頭。",
+    "en": "Never smoked; a tumour in the right upper lobe found at a health check. Brought a card her students wrote, to stick above the bed."
+   }
+  },
+  "daughter": {
+   "name": {
+    "zh": "林老師的女兒",
+    "en": "Ms Lin's daughter"
+   },
+   "role": {
+    "zh": "家屬",
+    "en": "Family"
+   },
+   "tag": "FAM",
+   "color": "#b45309",
+   "body": "family",
+   "about": {
+    "zh": "問了三次「為什麼不抽菸也會」，第四次沒再問，只握著媽媽的手。",
+    "en": "Asked three times 'how, if she never smoked', then stopped asking and just held her mother's hand."
+   }
+  },
+  "patient2": {
+   "name": {
+    "zh": "吳先生",
+    "en": "Mr Wu"
+   },
+   "role": {
+    "zh": "病人・60 歲卡車司機",
+    "en": "Patient, 60, truck driver"
+   },
+   "tag": "PT2",
+   "color": "#8a6d3b",
+   "body": "patient",
+   "about": {
+    "zh": "抽了四十年菸，縱膈淋巴結腫大，下午做 EBUS 分期。他說：「先告訴我能不能再開車。」",
+    "en": "Forty years of smoking, enlarged mediastinal nodes, EBUS staging this afternoon. He says: 'First tell me if I can still drive.'"
+   }
+  },
+  "ward-nurse": {
+   "name": {
+    "zh": "怡君",
+    "en": "Yi-chun"
+   },
+   "role": {
+    "zh": "病房護理師",
+    "en": "Ward nurse"
+   },
+   "tag": "RN",
+   "color": "#9d4b7a",
+   "body": "nurse",
+   "about": {
+    "zh": "水封瓶的氣泡一變，她的電話就來。",
+    "en": "The moment a bubble pattern changes, she calls."
+   }
+  }
+ },
+ "places": {
+  "whiteboard": {
+   "name": {
+    "zh": "刀表白板",
+    "en": "Theatre whiteboard"
+   },
+   "hot": "whiteboard"
+  },
+  "scrub-sink": {
+   "name": {
+    "zh": "刷手台",
+    "en": "Scrub sink"
+   },
+   "hot": "sink"
+  },
+  "table": {
+   "name": {
+    "zh": "手術台",
+    "en": "Operating table"
+   },
+   "hot": "field"
+  },
+  "anaesthesia": {
+   "name": {
+    "zh": "麻醉機",
+    "en": "Anaesthesia machine"
+   },
+   "hot": "anaesthesia"
+  },
+  "tower": {
+   "name": {
+    "zh": "胸腔鏡主機塔",
+    "en": "Thoracoscopy tower"
+   },
+   "hot": "endoscopy"
+  },
+  "imaging": {
+   "name": {
+    "zh": "影像工作站",
+    "en": "Imaging workstation"
+   },
+   "hot": "imaging"
+  },
+  "drain": {
+   "name": {
+    "zh": "胸管水封瓶",
+    "en": "Chest drain bottle"
+   },
+   "hot": "drain"
+  },
+  "bed": {
+   "name": {
+    "zh": "病床",
+    "en": "Ward bed"
+   },
+   "hot": "bed"
+  },
+  "desk": {
+   "name": {
+    "zh": "紀錄桌",
+    "en": "Notes desk"
+   },
+   "hot": "desk"
+  }
+ },
+ "glossary": [
+  {
+   "term": {
+    "zh": "時間暫停",
+    "en": "time-out"
+   },
+   "plain": {
+    "zh": "劃刀前全隊停下來核對病人、左右側、手術與影像。胸腔手術的左右，錯了就是錯一邊肺。",
+    "en": "Before the incision the whole team stops to confirm patient, side, operation and imaging. In chest surgery the wrong side is the wrong lung."
+   }
+  },
+  {
+   "term": {
+    "zh": "胸腔鏡",
+    "en": "VATS"
+   },
+   "plain": {
+    "zh": "從肋骨之間的小孔放鏡頭與器械做肺部手術，不用把肋骨撐開。",
+    "en": "Lung surgery through small holes between the ribs with a camera and instruments, without spreading the ribs."
+   }
+  },
+  {
+   "term": {
+    "zh": "單肺通氣",
+    "en": "one-lung ventilation"
+   },
+   "plain": {
+    "zh": "讓開刀那一側的肺暫時不呼吸、縮下去，外科醫師才有空間；另一側的肺負責全部的氧氣。",
+    "en": "The lung being operated on is left to collapse while the other lung does all the breathing, giving the surgeon room to work."
+   }
+  },
+  {
+   "term": {
+    "zh": "雙腔氣管內管",
+    "en": "double-lumen tube"
+   },
+   "plain": {
+    "zh": "有兩條通道的呼吸管，一條到左肺一條到右肺，可以分別控制。位置要用支氣管鏡確認。",
+    "en": "A breathing tube with two channels, one to each lung, so they can be ventilated separately. Its position is checked with a bronchoscope."
+   }
+  },
+  {
+   "term": {
+    "zh": "肺門",
+    "en": "hilum"
+   },
+   "plain": {
+    "zh": "血管與支氣管進出肺的地方。肺葉切除就是在這裡一條一條處理：靜脈、動脈、支氣管。",
+    "en": "Where the vessels and airway enter the lung. A lobectomy deals with them here one by one: vein, artery, bronchus."
+   }
+  },
+  {
+   "term": {
+    "zh": "冷凍切片",
+    "en": "frozen section"
+   },
+   "plain": {
+    "zh": "手術中送給病理科，幾十分鐘內用急速冷凍的切片告訴我們邊緣乾不乾淨、淋巴結有沒有癌。",
+    "en": "Tissue sent to pathology during the operation; a rapidly frozen slice tells us within minutes whether the margin is clear and the nodes are free."
+   }
+  },
+  {
+   "term": {
+    "zh": "漏氣測試",
+    "en": "air-leak test"
+   },
+   "plain": {
+    "zh": "關胸前把胸腔灌滿水、請麻醉把肺吹起來，看哪裡冒泡，就是哪裡漏氣。",
+    "en": "Before closing, the chest is filled with water and the lung inflated; wherever bubbles rise, air is leaking."
+   }
+  },
+  {
+   "term": {
+    "zh": "胸管",
+    "en": "chest drain"
+   },
+   "plain": {
+    "zh": "放在肋膜腔的管子，把空氣和液體引出來，讓肺重新貼著胸壁張開。",
+    "en": "A tube in the space around the lung that lets air and fluid out so the lung can re-expand against the chest wall."
+   }
+  },
+  {
+   "term": {
+    "zh": "水封瓶",
+    "en": "underwater seal"
+   },
+   "plain": {
+    "zh": "胸管接的瓶子，管口泡在水裡，空氣只能出不能進。有氣泡代表還在漏氣，水面隨呼吸擺動代表管子通。",
+    "en": "The bottle a chest drain connects to; the tube end sits under water so air can leave but not return. Bubbles mean a leak; a swinging water level means the tube is open."
+   }
+  },
+  {
+   "term": {
+    "zh": "安全三角",
+    "en": "safe triangle"
+   },
+   "plain": {
+    "zh": "腋下由胸大肌外緣、背闊肌前緣與乳頭高度圍成的區域，放胸管最安全的地方。",
+    "en": "The area under the arm bounded by the pectoralis major, the latissimus dorsi and the nipple line: the safest place to put a chest drain."
+   }
+  },
+  {
+   "term": {
+    "zh": "轉開胸",
+    "en": "conversion to thoracotomy"
+   },
+   "plain": {
+    "zh": "胸腔鏡做不安全時改成傳統開胸。器械要一直準備在房間裡。",
+    "en": "Switching from keyhole to an open chest when keyhole is not safe. The open set stays ready in the room."
+   }
+  },
+  {
+   "term": {
+    "zh": "EBUS",
+    "en": "EBUS"
+   },
+   "plain": {
+    "zh": "支氣管內超音波：從氣管裡用超音波看旁邊的淋巴結，用細針取樣，不用開刀就能分期。",
+    "en": "Endobronchial ultrasound: an ultrasound inside the airway looks at the lymph nodes next to it and samples them with a fine needle, staging without an operation."
+   }
+  }
+ ],
+ "codex": [
+  {
+   "id": "thoraco-tower",
+   "kind": "equipment",
+   "name": {
+    "zh": "胸腔鏡主機塔",
+    "en": "Thoracoscopy tower"
+   },
+   "hot": "endoscopy",
+   "text": {
+    "zh": "光源、攝影機、螢幕。鏡頭跟著器械走，看肺裂與肺門。",
+    "en": "Light source, camera, screen. The camera follows the instruments into the fissure and the hilum."
+   }
+  },
+  {
+   "id": "stapler",
+   "kind": "equipment",
+   "name": {
+    "zh": "內視鏡縫合器",
+    "en": "Endoscopic stapler"
+   },
+   "hot": "instruments",
+   "text": {
+    "zh": "一次釘三排、中間切開。血管、支氣管、肺裂各用不同釘匣。鄭主治每用一支就數一次。",
+    "en": "Fires three rows of staples and cuts between them. Different cartridges for vessels, bronchus and fissure. Dr Cheng counts every one."
+   }
+  },
+  {
+   "id": "dlt",
+   "kind": "equipment",
+   "name": {
+    "zh": "雙腔氣管內管",
+    "en": "Double-lumen tube"
+   },
+   "hot": "anaesthesia",
+   "text": {
+    "zh": "左右肺分開通氣的鑰匙。翻身後位置會跑，要再用支氣管鏡看一次。",
+    "en": "The key to ventilating each lung separately. It can move when the patient is turned, so it is rechecked with the bronchoscope."
+   }
+  },
+  {
+   "id": "underwater-seal",
+   "kind": "equipment",
+   "name": {
+    "zh": "水封瓶",
+    "en": "Underwater seal bottle"
+   },
+   "hot": "drain",
+   "text": {
+    "zh": "永遠低於胸部。看三件事：有沒有擺動、有沒有氣泡、引流了多少。正在冒泡的胸管不能夾。",
+    "en": "Always below chest level. Watch three things: swing, bubbles, output. A bubbling drain is never clamped."
+   }
+  },
+  {
+   "id": "bronchoscope",
+   "kind": "equipment",
+   "name": {
+    "zh": "支氣管鏡",
+    "en": "Bronchoscope"
+   },
+   "hot": "device",
+   "text": {
+    "zh": "確認雙腔管位置、清痰、做 EBUS。氣道的眼睛。",
+    "en": "Confirms the double-lumen tube, clears secretions, performs EBUS. The eyes of the airway."
+   }
+  },
+  {
+   "id": "lobe-specimen",
+   "kind": "item",
+   "name": {
+    "zh": "肺葉標本袋",
+    "en": "Lobe specimen bag"
+   },
+   "text": {
+    "zh": "右上葉裝在袋子裡從最大的孔取出。淋巴結分站編號，一站一罐。",
+    "en": "The right upper lobe comes out in a bag through the largest port. Lymph nodes are potted by station, one pot each."
+   }
+  },
+  {
+   "id": "student-card",
+   "kind": "item",
+   "name": {
+    "zh": "學生寫的卡片",
+    "en": "The students' card"
+   },
+   "text": {
+    "zh": "林老師的學生寫的：「老師，深呼吸，我們等妳回來。」貼在床頭。",
+    "en": "From Ms Lin's students: 'Teacher, breathe deep, we'll wait for you.' Stuck above the bed."
+   }
+  },
+  {
+   "id": "safe-triangle",
+   "kind": "concept",
+   "name": {
+    "zh": "安全三角",
+    "en": "Safe triangle"
+   },
+   "text": {
+    "zh": "胸管放在這裡，避開橫膈、肝脾、乳房組織與長胸神經。先定位，再消毒，再下刀。",
+    "en": "A drain placed here avoids the diaphragm, liver, spleen, breast tissue and the long thoracic nerve. Landmark first, then prep, then incise."
+   }
+  },
+  {
+   "id": "olv",
+   "kind": "concept",
+   "name": {
+    "zh": "單肺通氣",
+    "en": "One-lung ventilation"
+   },
+   "text": {
+    "zh": "血氧掉的時候：先確認管子位置，再想肺復張、再想調整。外科醫師要知道、要等。",
+    "en": "When the oxygen falls: check the tube position first, then re-expansion, then adjustments. The surgeon must know, and wait."
+   }
+  }
+ ],
+ "segs": [
+  {
+   "id": "handover",
+   "name": {
+    "zh": "晨間交班",
+    "en": "Morning handover"
+   },
+   "sub": {
+    "zh": "07:30 · 刀表白板",
+    "en": "07:30 · theatre whiteboard"
+   },
+   "t": 450,
+   "mood": "day",
+   "note": {
+    "zh": "交班：右上葉切除與 5 床的氣泡",
+    "en": "Handover: a right upper lobectomy and bed 5's bubbles"
+   },
+   "beats": [
+    {
+     "id": "h1",
+     "to": "chief",
+     "guide": {
+      "zh": "找阿彬學長交班",
+      "en": "Find Dr Bin for handover"
+     },
+     "lines": [
+      [
+       "chief",
+       {
+        "zh": "早。5 床肺葉切除術後第二天，胸管還在冒泡，咳嗽時比較多。",
+        "en": "Morning. Bed 5, day two after lobectomy, drain still bubbling, more when he coughs."
+       }
+      ],
+      [
+       "chief",
+       {
+        "zh": "第一台林老師，胸腔鏡右上葉切除。下午吳先生 EBUS 分期。",
+        "en": "First case Ms Lin, VATS right upper lobectomy. This afternoon Mr Wu for EBUS staging."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "5 床的氣泡，X 光今天要看。林老師的肺功能？",
+        "en": "Bed 5's bubbles need an X-ray today. Ms Lin's lung function?"
+       }
+      ],
+      [
+       "chief",
+       {
+        "zh": "預估術後肺功能夠。鄭主治會問你怎麼算的。",
+        "en": "Predicted post-op lung function is adequate. Dr Cheng will ask you how it was worked out."
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "白板：08:00 胸腔鏡右上葉切除（林老師）。14:00 EBUS（吳先生）。5 床：漏氣。",
+        "en": "Whiteboard: 08:00 VATS right upper lobectomy (Ms Lin). 14:00 EBUS (Mr Wu). Bed 5: air leak."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "h2",
+     "to": "attending",
+     "guide": {
+      "zh": "去找鄭主治",
+      "en": "Find Dr Cheng"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "早。林老師切掉右上葉之後，剩下的肺夠用嗎？",
+        "en": "Morning. After Ms Lin loses her right upper lobe, is what's left enough?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "用肺功能乘上剩餘肺段比例估算，預估值在安全範圍。她還能爬四層樓。",
+        "en": "Lung function scaled by the remaining segments gives a predicted value in the safe range. She still climbs four flights."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "爬樓梯那句最有價值。今天第一句口訣？",
+        "en": "The stairs are the most valuable sentence. Today's first rule?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "先找動脈，再談速度。",
+        "en": "Find the artery first, then talk about speed."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "thoracic-surgery-lung-cancer-staging-fitness",
+      "stage": 7
+     },
+     "post": [
+      [
+       "attending",
+       {
+        "zh": "去刷手。",
+        "en": "Go and scrub."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "first-case",
+   "name": {
+    "zh": "第一台：右上葉",
+    "en": "First case: right upper lobe"
+   },
+   "sub": {
+    "zh": "08:00 · 開刀房",
+    "en": "08:00 · operating theatre"
+   },
+   "t": 480,
+   "mood": "day",
+   "note": {
+    "zh": "肺門出血壓住了，右上葉順利取出",
+    "en": "Hilar bleed controlled; right upper lobe out"
+   },
+   "beats": [
+    {
+     "id": "c1",
+     "to": "patient",
+     "guide": {
+      "zh": "跟林老師核對身分與左右",
+      "en": "Confirm identity and side with Ms Lin"
+     },
+     "lines": [
+      [
+       "patient",
+       {
+        "zh": "醫師，右邊，上面那一葉。我自己也做了功課。",
+        "en": "Doctor, right side, the upper lobe. I did my homework too."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "姓名、生日說一次。右側的標記還在。",
+        "en": "Name and birthday once for me. The mark on the right is still there."
+       }
+      ],
+      [
+       "daughter",
+       {
+        "zh": "醫師，卡片可以貼床頭嗎？她的學生寫的。",
+        "en": "Doctor, can the card go above the bed? Her students wrote it."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "可以。「深呼吸」這三個字，手術後很有用。",
+        "en": "It can. 'Breathe deep' will be very useful after the operation."
+       }
+      ]
+     ],
+     "item": "student-card"
+    },
+    {
+     "id": "c2",
+     "to": "place:table",
+     "guide": {
+      "zh": "時間暫停：術前核對",
+      "en": "Time-out: pre-op checks"
+     },
+     "lines": [
+      [
+       "scrub",
+       {
+        "zh": "時間暫停。林老師，胸腔鏡右上葉切除，右側，過敏無，抗生素依醫囑。",
+        "en": "Time-out. Ms Lin, VATS right upper lobectomy, right side, no allergies, antibiotics per protocol."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "螢幕上的電腦斷層是右邊嗎？開胸器械在房間裡？",
+        "en": "Is the CT on the screen the right side? Is the open set in the room?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "右邊，腫瘤在右上葉後段。開胸器械在後面的桌上，血品備妥依醫囑。",
+        "en": "Right side, tumour in the posterior segment of the right upper lobe. The thoracotomy set is on the back table; blood per protocol."
+       }
+      ],
+      [
+       "anaes-doc",
+       {
+        "zh": "雙腔氣管內管在位，翻身後我會再看一次。",
+        "en": "Double-lumen tube in; I'll recheck after turning."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "thoracic-surgery-vats-lobectomy",
+      "stage": 0
+     }
+    },
+    {
+     "id": "c3a",
+     "roles": [
+      "anaes-nurse"
+     ],
+     "to": "place:anaesthesia",
+     "guide": {
+      "zh": "翻身後確認單肺通氣",
+      "en": "Confirm one-lung ventilation after turning"
+     },
+     "lines": [
+      [
+       "anaes-doc",
+       {
+        "zh": "翻側躺了。支氣管鏡再進去看一次。",
+        "en": "She's on her side now. Bronchoscope in again."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "左側支氣管套囊位置正確，右肺隔離。夾測試：右側沒有呼吸音。",
+        "en": "Left bronchial cuff correctly placed, right lung isolated. Clamp test: no breath sounds on the right."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "血氧掉的時候，我要第一個知道。",
+        "en": "If the saturation falls, I'm the first to know."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "你會比螢幕晚半秒知道。",
+        "en": "You'll know half a second after the monitor."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "thoracic-surgery-vats-lobectomy",
+      "stage": 1
+     }
+    },
+    {
+     "id": "c3r",
+     "roles": [
+      "resident"
+     ],
+     "to": "place:table",
+     "guide": {
+      "zh": "擺位與孔位",
+      "en": "Positioning and port placement"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "側躺、腰橋升起、手臂固定。孔位怎麼擺？",
+        "en": "Lateral, table flexed, arm secured. Where do the ports go?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "鏡頭孔在低位，工作孔對著肺門，三個孔形成三角，器械才不會打架。",
+        "en": "Camera port low, utility port facing the hilum, three ports in a triangle so the instruments don't fight."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "畫完線再下刀。",
+        "en": "Draw the lines before you cut."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "thoracic-surgery-vats-lobectomy",
+      "stage": 2
+     }
+    },
+    {
+     "id": "c4",
+     "to": "place:tower",
+     "guide": {
+      "zh": "胸腔探查：肺裂與淋巴結",
+      "en": "Thoracoscopy: fissure and lymph nodes"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "鏡頭進去。先看整個胸腔，再看肺裂發育，再看淋巴結。",
+        "en": "Camera in. Whole chest first, then how complete the fissure is, then the nodes."
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "右肺慢慢縮下去，螢幕上出現粉紅色、帶一點黑斑的肺表面。",
+        "en": "The right lung slowly collapses; on the screen, a pink lung surface with a few dark flecks."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "不抽菸的肺。你扶鏡，跟著我的器械。",
+        "en": "A non-smoker's lung. You hold the camera; follow my instrument."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "drill",
+      "template": "thoracic-surgery",
+      "drill": "lap:thorax"
+     }
+    },
+    {
+     "id": "c5",
+     "to": "attending",
+     "guide": {
+      "zh": "肺門出血：你的第一個動作",
+      "en": "Hilar bleeding: your first move"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "靜脈處理好了。動脈這條分支——",
+        "en": "Vein done. This arterial branch—"
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "螢幕忽然一片紅。肺動脈的一條小分支在滲血，視野在消失。",
+        "en": "The screen floods red. A small pulmonary artery branch is bleeding and the view is disappearing."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "你現在做什麼？",
+        "en": "What do you do right now?"
+       }
+      ]
+     ],
+     "mini": {
+      "type": "choice",
+      "q": {
+       "zh": "胸腔鏡下肺動脈分支出血，第一個動作？",
+       "en": "A pulmonary artery branch bleeds during VATS. First move?"
+      },
+      "options": [
+       {
+        "zh": "海綿棒壓住，叫人、備血、開胸器械上桌",
+        "en": "Press with a sponge stick, call for help, blood, open set on the table",
+        "ok": true,
+        "set": {
+         "bleed": "pressure"
+        },
+        "why": {
+         "zh": "對。壓住就不急了。看清楚再決定縫、夾或轉開胸。",
+         "en": "Right. Pressure buys calm. Then decide whether to suture, clip or convert, with a clear view."
+        }
+       },
+       {
+        "zh": "立刻用鉗子夾住出血點",
+        "en": "Grab the bleeder with a clamp immediately",
+        "ok": false,
+        "set": {
+         "bleed": "clamp"
+        },
+        "why": {
+         "zh": "看不清楚時盲目夾，常把小洞夾成大洞。先壓。",
+         "en": "A blind clamp in a red field often turns a small hole into a big one. Press first."
+        }
+       },
+       {
+        "zh": "馬上轉開胸",
+        "en": "Convert to thoracotomy at once",
+        "ok": false,
+        "set": {
+         "bleed": "convert"
+        },
+        "why": {
+         "zh": "轉開胸是選項，但先壓住。壓著的時候開胸，比噴著血開胸好。",
+         "en": "Conversion to thoracotomy is an option, but press first. Opening the chest with pressure on is better than opening it while it sprays."
+        }
+       }
+      ]
+     },
+     "post": [
+      [
+       "attending",
+       {
+        "zh": "壓住了。血壓穩。看清楚了：一個小破口，縫兩針。",
+        "en": "Pressure on. Pressure stable. Now I can see: a small tear, two stitches."
+       }
+      ],
+      [
+       "anaes-doc",
+       {
+        "zh": "血氧穩，血品在旁邊沒用上。",
+        "en": "Saturation steady; blood at hand, not needed."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "先找動脈，再談速度。縫合器，第四支。",
+        "en": "Find the artery first, then talk about speed. Stapler, number four."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "c6",
+     "to": "place:table",
+     "guide": {
+      "zh": "漏氣測試與胸管",
+      "en": "Air-leak test and chest drain"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "右上葉在袋子裡了。灌水，請麻醉把肺吹起來。看哪裡冒泡。",
+        "en": "Right upper lobe is in the bag. Fill with water; ask anaesthesia to inflate. Watch for bubbles."
+       }
+      ],
+      [
+       "anaes-doc",
+       {
+        "zh": "雙肺通氣，慢慢吹。",
+        "en": "Both lungs, inflating slowly."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "釘線一排小泡，壓一下就停。放胸管，接水封瓶。",
+        "en": "A line of small bubbles along the staple line, settles with pressure. Chest drain in, connected to the underwater seal."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "淋巴結分站，一站一罐。標本袋寫清楚。",
+        "en": "Nodes by station, one pot each. Label the specimen bag properly."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "thoracic-surgery-vats-lobectomy",
+      "stage": 10
+     },
+     "item": "lobe-specimen"
+    },
+    {
+     "id": "c7",
+     "roles": [
+      "resident"
+     ],
+     "to": "place:desk",
+     "guide": {
+      "zh": "寫手術紀錄",
+      "en": "Write the operation note"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "紀錄：孔位、肺裂、那條動脈分支怎麼處理的、縫合器用了幾支、淋巴結站別、漏氣測試結果。",
+        "en": "Note: ports, fissure, how the arterial branch was handled, stapler count, node stations, air-leak test result."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "還有胸管的位置與水封瓶狀態。病房今晚要跟這個比。",
+        "en": "Plus drain position and the underwater seal status. The ward compares against it tonight."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "數字我數了五支，你數到幾支？",
+        "en": "I counted five staplers. How many did you count?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "五支。",
+        "en": "Five."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "path-call",
+   "name": {
+    "zh": "病理科來電",
+    "en": "Pathology call"
+   },
+   "sub": {
+    "zh": "10:30 · 冷凍切片",
+    "en": "10:30 · frozen section"
+   },
+   "t": 630,
+   "mood": "day",
+   "note": {
+    "zh": "冷凍切片：邊緣乾淨，淋巴結陰性",
+    "en": "Frozen section: margin clear, nodes negative"
+   },
+   "beats": [
+    {
+     "id": "p1",
+     "ring": {
+      "title": {
+       "zh": "病理科來電",
+       "en": "Pathology calling"
+      },
+      "sub": {
+       "zh": "林老師的冷凍切片結果",
+       "en": "Ms Lin's frozen section result"
+      },
+      "call": true
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "病理科：「支氣管切緣沒有腫瘤。送來的淋巴結站別，冷凍切片都沒看到癌細胞。」",
+        "en": "Pathology: 'Bronchial margin free of tumour. The node stations you sent are negative on frozen section.'"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "收到，謝謝。站別和罐號我再對一次：都對。",
+        "en": "Received, thank you. Let me match station to pot number again: all correct."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "邊緣乾淨，不用再切。去跟女兒說一聲，然後 5 床的 X 光。",
+        "en": "Margin clear, nothing more to take. Tell the daughter, then bed 5's X-ray."
+       }
+      ],
+      [
+       "daughter",
+       {
+        "zh": "醫師……都拿乾淨了？",
+        "en": "Doctor... it's all out?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "冷凍切片說乾淨。正式報告要幾天，但今天是好消息。",
+        "en": "The frozen section says clear. The final report takes days, but today is good news."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "imaging-noon",
+   "name": {
+    "zh": "影像討論",
+    "en": "Imaging review"
+   },
+   "sub": {
+    "zh": "12:00 · 5 床的胸部 X 光",
+    "en": "12:00 · bed 5's chest X-ray"
+   },
+   "t": 720,
+   "mood": "day",
+   "note": {
+    "zh": "5 床：肺張開了，胸管位置好",
+    "en": "Bed 5: lung up, drain well placed"
+   },
+   "beats": [
+    {
+     "id": "n1",
+     "to": "place:imaging",
+     "guide": {
+      "zh": "和鄭主治看 5 床的 X 光",
+      "en": "Review bed 5's X-ray with Dr Cheng"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "5 床，術後第二天還在漏氣。X 光你看什麼？",
+        "en": "Bed 5, still leaking on day two. What do you look for on the film?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "先看肺有沒有完全張開，再看胸管。",
+        "en": "Whether the lung is fully up first, then the drain."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "imaging",
+      "region": "chest",
+      "question": {
+       "zh": "胸管持續漏氣的病人，胸部 X 光要確認什麼？",
+       "en": "A patient whose chest drain keeps bubbling: what must the chest X-ray confirm?"
+      },
+      "answer": {
+       "zh": "肺是否完全貼回胸壁、有沒有殘餘氣胸、胸管最後一個側孔是否在胸腔內、有沒有皮下氣腫、縱膈有沒有偏移。",
+       "en": "Whether the lung is fully against the chest wall, any residual pneumothorax, whether the drain's last side hole is inside the chest, any surgical emphysema, and whether the mediastinum has shifted."
+      }
+     },
+     "post": [
+      [
+       "attending",
+       {
+        "zh": "肺貼好了，側孔在裡面。小漏氣，等它自己好。他可以下床走。",
+        "en": "Lung up, side hole inside. A small leak; let it settle. He can walk."
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "走廊傳來鄭主治數縫合器的聲音——他在跟隔壁房間講電話。",
+        "en": "From the corridor, Dr Cheng's voice counting staplers; he is on the phone to the next theatre."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ebus",
+   "name": {
+    "zh": "下午：EBUS 分期",
+    "en": "Afternoon: EBUS staging"
+   },
+   "sub": {
+    "zh": "14:00 · 內視鏡室",
+    "en": "14:00 · endoscopy room"
+   },
+   "t": 840,
+   "mood": "day",
+   "note": {
+    "zh": "吳先生 EBUS：取樣順序正確",
+    "en": "Mr Wu's EBUS: sampled in the right order"
+   },
+   "beats": [
+    {
+     "id": "a1",
+     "to": "patient2",
+     "guide": {
+      "zh": "跟吳先生說明 EBUS",
+      "en": "Explain EBUS to Mr Wu"
+     },
+     "lines": [
+      [
+       "patient2",
+       {
+        "zh": "醫師，先告訴我：能不能再開車？",
+        "en": "Doctor, first tell me: can I still drive?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "今天先知道淋巴結裡有沒有東西。鎮靜之後今天不能開車，明天可以。",
+        "en": "Today we find out what's in the lymph nodes. No driving today after the sedation; tomorrow, yes."
+       }
+      ],
+      [
+       "patient2",
+       {
+        "zh": "從喉嚨進去用超音波看淋巴結、拿一點出來。我同意書簽了。",
+        "en": "Down the throat, ultrasound on the nodes, take a bit out. I've signed the consent."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "對。取樣有順序，從離腫瘤最遠的開始。",
+        "en": "Right. And there's an order to the sampling: farthest from the tumour first."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "a1n",
+     "roles": [
+      "anaes-nurse"
+     ],
+     "to": "place:anaesthesia",
+     "guide": {
+      "zh": "EBUS 的鎮靜與氣道安全",
+      "en": "Sedation and airway safety for EBUS"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "鎮靜依醫囑、鼻導管氧氣、二氧化碳波形監測、抽吸器在手邊、翻身用的側躺計畫。",
+        "en": "Sedation per protocol, nasal oxygen, capnography on, suction within reach, and a plan to turn him on his side."
+       }
+      ],
+      [
+       "anaes-doc",
+       {
+        "zh": "支氣管鏡在氣道裡的時候，血氧會先掉一點。什麼時候喊停？",
+        "en": "With the scope in the airway the saturation dips a little. When do you call a stop?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "往下掉而且不回來、二氧化碳波形變平、他開始躁動。三個之一就喊。",
+        "en": "Falling and not recovering, a flattening capnograph, or he starts to struggle. Any one of the three and I call it."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "a2",
+     "to": "place:tower",
+     "guide": {
+      "zh": "決定 EBUS 取樣順序",
+      "en": "Decide the EBUS sampling order"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "為什麼從遠的開始？",
+        "en": "Why start with the farthest?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "同一支針先扎過有癌的淋巴結，再去扎乾淨的，會把分期弄髒。",
+        "en": "If the same needle goes through a cancerous node first and then a clean one, it contaminates the staging."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "order",
+      "q": {
+       "zh": "EBUS 淋巴結取樣的正確順序",
+       "en": "The correct order for EBUS lymph node sampling"
+      },
+      "steps": [
+       {
+        "zh": "對側縱膈淋巴結（N3）",
+        "en": "Contralateral mediastinal nodes (N3)"
+       },
+       {
+        "zh": "同側縱膈淋巴結（N2）",
+        "en": "Ipsilateral mediastinal nodes (N2)"
+       },
+       {
+        "zh": "肺門淋巴結（N1）",
+        "en": "Hilar nodes (N1)"
+       },
+       {
+        "zh": "最後才是原發腫瘤",
+        "en": "The primary tumour last"
+       }
+      ]
+     },
+     "post": [
+      [
+       "attending",
+       {
+        "zh": "現場細胞學說檢體足夠。吳先生明天可以開車，下週來聽結果。",
+        "en": "Rapid on-site cytology says the samples are adequate. Mr Wu drives tomorrow and hears the result next week."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ward-call",
+   "name": {
+    "zh": "病房緊急",
+    "en": "Ward emergency"
+   },
+   "sub": {
+    "zh": "16:00 · 5 床血氧往下掉",
+    "en": "16:00 · bed 5 desaturating"
+   },
+   "t": 960,
+   "mood": "day",
+   "note": {
+    "zh": "5 床胸管脫出，在安全三角重放",
+    "en": "Bed 5's drain fell out; re-sited in the safe triangle"
+   },
+   "beats": [
+    {
+     "id": "e1",
+     "ring": {
+      "title": {
+       "zh": "病房來電",
+       "en": "Ward calling"
+      },
+      "sub": {
+       "zh": "5 床血氧往下掉，脖子腫腫的",
+       "en": "Bed 5 desaturating, neck looks puffy"
+      },
+      "call": true,
+      "from": "ward-nurse"
+     },
+     "to": "place:bed",
+     "guide": {
+      "zh": "接電話，趕去 5 床",
+      "en": "Take the call and hurry to bed 5"
+     },
+     "lines": [
+      [
+       "ward-nurse",
+       {
+        "zh": "醫師，5 床走路回來血氧一直掉，脖子和胸口摸起來像踩雪，水封瓶不擺動了。",
+        "en": "Doctor, bed 5 came back from walking and his saturation keeps dropping. Neck and chest feel like crunching snow, and the bottle has stopped swinging."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "皮下氣腫加胸管不通——先看管子是不是脫出來了。坐起來，氧氣依醫囑，不要夾管。我到了。",
+        "en": "Surgical emphysema plus a blocked drain: first check whether the tube has slipped out. Sit him up, oxygen per protocol, do not clamp. I'm here."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "vitals",
+      "event": "desaturation",
+      "options": [
+       {
+        "zh": "坐起、給氧、查胸管與水封瓶、叫主治、X 光",
+        "en": "Sit up, oxygen per protocol, check drain and bottle, call the attending, X-ray",
+        "ok": true,
+        "why": {
+         "zh": "對。漏氣的肺加上不通的管子，空氣只好往皮下跑。找到管子的問題就找到答案。",
+         "en": "Right. A leaking lung and a blocked tube send air under the skin. Find the tube's problem and you find the answer."
+        }
+       },
+       {
+        "zh": "夾住胸管，免得空氣跑進去",
+        "en": "Clamp the drain so air can't get in",
+        "ok": false,
+        "why": {
+         "zh": "正在漏氣的肺，夾住胸管會變成張力性氣胸。絕對不夾。",
+         "en": "Clamping the drain of a leaking lung makes a tension pneumothorax. Never."
+        }
+       },
+       {
+        "zh": "加止痛讓他休息，明早再看",
+        "en": "Analgesia and rest, review in the morning",
+        "ok": false,
+        "why": {
+         "zh": "血氧往下掉不是休息能解決的。",
+         "en": "A falling saturation is not something rest fixes."
+        }
+       }
+      ]
+     }
+    },
+    {
+     "id": "e2",
+     "to": "attending",
+     "guide": {
+      "zh": "在安全三角重放胸管",
+      "en": "Re-site the drain in the safe triangle"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "胸管最後一個側孔滑到皮下了，X 光上肺又掉下來一點。要重放。",
+        "en": "The drain's last side hole has slipped into the subcutaneous tissue; the lung has dropped a little on the film. It needs re-siting."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "位置先定出來給我看。安全三角的三個邊？",
+        "en": "Show me the landmarks first. The three sides of the safe triangle?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "胸大肌外緣、背闊肌前緣、乳頭高度的水平線。手臂抬起來，先定位再消毒。",
+        "en": "Lateral edge of pectoralis major, anterior edge of latissimus dorsi, the nipple line. Arm up; landmark before prepping."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "drill",
+      "template": "thoracic-surgery",
+      "drill": "safetri"
+     },
+     "post": [
+      [
+       "attending",
+       {
+        "zh": "新的胸管在擺動了。血氧回來。他今天走太遠了，但走得對。",
+        "en": "The new drain is swinging. Saturation back. He walked too far today, but walking was right."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "evening",
+   "name": {
+    "zh": "交班與回顧",
+    "en": "Handover and debrief"
+   },
+   "sub": {
+    "zh": "17:30 · 開刀房外",
+    "en": "17:30 · outside theatre"
+   },
+   "t": 1050,
+   "mood": "eve",
+   "note": {
+    "zh": "交給夜班；師傅的三件事",
+    "en": "Handed to the night team; the mentor's three things"
+   },
+   "beats": [
+    {
+     "id": "d1",
+     "to": "chief",
+     "guide": {
+      "zh": "向夜班交班",
+      "en": "Hand over to the night team"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "林老師右上葉切除，肺門出血已縫合，冷凍切片乾淨，胸管小漏氣。5 床胸管重放，水封瓶擺動。吳先生 EBUS 完成。",
+        "en": "Ms Lin: right upper lobectomy, hilar bleed sutured, frozen section clear, small leak on the drain. Bed 5: drain re-sited, swinging. Mr Wu: EBUS done."
+       }
+      ],
+      [
+       "chief",
+       {
+        "zh": "水封瓶今晚誰看？",
+        "en": "Who watches the bottles tonight?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "怡君每兩小時看擺動、氣泡、量，變化就打。",
+        "en": "Yi-chun checks swing, bubbles and output every two hours and calls on any change."
+       }
+      ],
+      [
+       "chief",
+       {
+        "zh": "收到。氣泡的語言，你今天學了一課。",
+        "en": "Received. You had a lesson in the language of bubbles today."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "d1b",
+     "when": {
+      "flag": "bleed",
+      "is": "clamp"
+     },
+     "to": "attending",
+     "guide": {
+      "zh": "鄭主治提起那條動脈",
+      "en": "Dr Cheng brings up that artery"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "早上動脈出血的時候，你想直接夾。",
+        "en": "When the artery bled this morning, you wanted to clamp straight away."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "對。您先壓住了。",
+        "en": "I did. You pressed first."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "紅色的視野裡，鉗子是最危險的東西。先壓，再看，再決定。",
+        "en": "In a red field the clamp is the most dangerous thing in the room. Press, look, then decide."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "d2",
+     "to": "attending",
+     "guide": {
+      "zh": "師傅的回顧",
+      "en": "The mentor's debrief"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "今天三件事。肺門出血，房間裡沒有人慌。",
+        "en": "Three things today. The hilar bleed: nobody in the room panicked."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "EBUS 你從遠的開始取。5 床，你沒有夾胸管。",
+        "en": "EBUS: you sampled from the far side in. Bed 5: you did not clamp the drain."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "縫合器今天總共幾支？",
+        "en": "How many staplers today in total?"
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "五支。你數對了。去吃飯。",
+        "en": "Five. You counted right. Go and eat."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "night",
+   "name": {
+    "zh": "值班夜",
+    "en": "On call tonight"
+   },
+   "sub": {
+    "zh": "22:00 · 病房",
+    "en": "22:00 · ward"
+   },
+   "t": 1320,
+   "mood": "night",
+   "note": {
+    "zh": "水封瓶倒了，接回去了",
+    "en": "A bottle knocked over, reconnected"
+   },
+   "beats": [
+    {
+     "id": "x1",
+     "ring": {
+      "title": {
+       "zh": "病房來電",
+       "en": "Ward calling"
+      },
+      "sub": {
+       "zh": "林老師的水封瓶被踢倒，管子脫開了",
+       "en": "Ms Lin's drain bottle was kicked over and the tubing came apart"
+      },
+      "call": true,
+      "from": "ward-nurse"
+     },
+     "lines": [
+      [
+       "ward-nurse",
+       {
+        "zh": "醫師，林老師下床時水封瓶倒了，接頭脫開。她現在有點喘。",
+        "en": "Doctor, Ms Lin's bottle went over when she got up and the connector came apart. She's a bit breathless now."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "管子脫開多久？",
+        "en": "How long has it been open?"
+       }
+      ],
+      [
+       "ward-nurse",
+       {
+        "zh": "剛剛。",
+        "en": "Just now."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "choice",
+      "q": {
+       "zh": "胸管接頭脫開、水封瓶倒了，第一步？",
+       "en": "The drain connector has come apart and the bottle is over. First step?"
+      },
+      "options": [
+       {
+        "zh": "立刻換新水封瓶接回、看病人、照 X 光",
+        "en": "Reconnect to a new underwater seal now, assess her, X-ray",
+        "ok": true,
+        "set": {
+         "bottle": "reconnected"
+        },
+        "why": {
+         "zh": "對。開放的胸管要盡快重新密封。然後看人、看片。",
+         "en": "Right. An open drain is resealed as quickly as possible. Then look at the patient and the film."
+        }
+       },
+       {
+        "zh": "先夾住胸管，等天亮再處理",
+        "en": "Clamp the drain and sort it out in the morning",
+        "ok": false,
+        "set": {
+         "bottle": "clamped"
+        },
+        "why": {
+         "zh": "她的肺還在小漏氣。夾住等於把漏出來的空氣關在胸腔裡。",
+         "en": "Her lung still has a small leak. Clamping traps that air inside the chest."
+        }
+       },
+       {
+        "zh": "乾脆把胸管拔掉",
+        "en": "Just take the drain out",
+        "ok": false,
+        "set": {
+         "bottle": "removed"
+        },
+        "why": {
+         "zh": "拔胸管是白天、沒漏氣、X 光確認後的事。",
+         "en": "Drains come out in daylight, with no leak, after an X-ray."
+        }
+       }
+      ]
+     }
+    },
+    {
+     "id": "x2",
+     "to": "patient",
+     "guide": {
+      "zh": "去看林老師",
+      "en": "Go and see Ms Lin"
+     },
+     "lines": [
+      [
+       "patient",
+       {
+        "zh": "醫師，對不起，我想自己走去廁所。",
+        "en": "Doctor, I'm sorry, I wanted to walk to the bathroom myself."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "想走是好事。新的水封瓶接好了，在擺動，氣泡跟下午一樣少。X 光等一下照。",
+        "en": "Wanting to walk is good. New bottle connected, swinging, bubbles as few as this afternoon. X-ray shortly."
+       }
+      ],
+      [
+       "patient",
+       {
+        "zh": "深呼吸？",
+        "en": "Breathe deep?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "對，卡片上寫的。學生等妳回去。",
+        "en": "Yes, like the card says. Your students are waiting."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "x3",
+     "ring": {
+      "title": {
+       "zh": "鄭主治訊息",
+       "en": "Message from Dr Cheng"
+      },
+      "sub": {
+       "zh": "「X 光肺張開。明早 07:30，數縫合器。」",
+       "en": "'X-ray: lung up. 07:30 tomorrow; bring your stapler count.'"
+      },
+      "call": false,
+      "from": "attending"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "一片肺葉、一條動脈、一個順序、兩個水封瓶。全部都在擺動。",
+        "en": "One lobe, one artery, one sampling order, two underwater seals. All of them swinging."
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "值班結束。病房裡，每一個水封瓶安靜地隨呼吸上下。",
+        "en": "End of shift. On the ward every bottle rises and falls quietly with each breath."
+       }
+      ]
+     ],
+     "end": true
+    }
+   ]
+  }
+ ],
+ "ending": {
+  "title": {
+   "zh": "下班了",
+   "en": "End of shift"
+  },
+  "sub": {
+   "zh": "先找動脈，再談速度",
+   "en": "Find the artery first, then talk about speed"
+  },
+  "stats": [
+   "stages",
+   "grades",
+   "choices",
+   "calls",
+   "items",
+   "time"
+  ]
+ }
+}

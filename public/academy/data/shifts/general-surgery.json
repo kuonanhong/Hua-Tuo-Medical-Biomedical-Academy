@@ -1,0 +1,332 @@
+{
+  "format": "huatuo-shift-v1",
+  "department": "general-surgery",
+  "title": {"zh": "一般外科值班日", "en": "A shift in general surgery"},
+  "tagline": {"zh": "從交班到最後一台刀——簡單的闌尾，從來不簡單", "en": "From handover to the last case: the simple appendix never is"},
+  "room": "or",
+  "minutes": 25,
+  "roles": [
+    {"id": "intern", "zh": "實習醫師", "en": "Intern", "desc": {"zh": "第一次跟一般外科的刀。扶鏡、寫紀錄、接病房電話，什麼都要學。", "en": "Your first week scrubbing in general surgery: hold the camera, write the notes, answer the ward phone."}},
+    {"id": "scrub", "zh": "刷手護理師", "en": "Scrub nurse", "desc": {"zh": "器械台是你的領土。清點、遞器械、標本標示，少一塊紗布刀就不能關。", "en": "The instrument table is your territory: counts, passing instruments, labelling specimens. One missing swab and nobody closes."}}
+  ],
+  "cast": {
+    "attending": {"name": {"zh": "林主治", "en": "Dr Lin"}, "role": {"zh": "主治醫師（師傅）", "en": "Attending (mentor)"}, "tag": "ATT", "color": "#81296d", "body": "mentor",
+      "about": {"zh": "刀快話少，教人只用問句。桌上永遠有一杯沒喝完的咖啡。", "en": "Fast hands, few words, teaches only in questions. There is always an unfinished coffee on the desk."}},
+    "chief": {"name": {"zh": "阿凱學長", "en": "Dr Kai"}, "role": {"zh": "總醫師", "en": "Chief resident"}, "tag": "CR", "color": "#2f6f9f", "body": "resident",
+      "about": {"zh": "值了一整夜還在笑。白板是他的第二本病歷。", "en": "Still smiling after a night on call. The whiteboard is his second set of notes."}},
+    "anaes": {"name": {"zh": "小潔", "en": "Jie"}, "role": {"zh": "麻醉護理師", "en": "Anaesthesia nurse"}, "tag": "AN", "color": "#3b8f6a", "body": "anaesthetist",
+      "about": {"zh": "坐在布簾另一邊，看得比誰都清楚。", "en": "Sits on the other side of the drape and sees more than anyone."}},
+    "circ": {"name": {"zh": "美玲姐", "en": "Mei-ling"}, "role": {"zh": "流動護理師", "en": "Circulating nurse"}, "tag": "CN", "color": "#c27a2c", "body": "circulating",
+      "about": {"zh": "開刀房的管家。時間暫停由她喊，清點由她核。", "en": "Housekeeper of the theatre. She calls the time-out and verifies the counts."}},
+    "patient1": {"name": {"zh": "小宇", "en": "Yu"}, "role": {"zh": "病人・19 歲大學生", "en": "Patient, 19, student"}, "tag": "PT1", "color": "#6b7280", "body": "patient",
+      "about": {"zh": "後天期中考。昨晚開始右下腹痛，一直問能不能今天出院。", "en": "Mid-terms the day after tomorrow. Right lower abdominal pain since last night; keeps asking to go home today."}},
+    "patient2": {"name": {"zh": "王阿姨", "en": "Mrs Wang"}, "role": {"zh": "病人・52 歲早餐店老闆娘", "en": "Patient, 52, runs a breakfast shop"}, "tag": "PT2", "color": "#8a6d3b", "body": "patient",
+      "about": {"zh": "右上腹痛三天還在煎蛋餅，發燒了才肯來。最擔心明天的早餐攤。", "en": "Three days of right upper abdominal pain and still flipping egg crêpes; came in only when the fever started. Worries about tomorrow's shop."}},
+    "ward-nurse": {"name": {"zh": "曉芬", "en": "Hsiao-fen"}, "role": {"zh": "病房護理師", "en": "Ward nurse"}, "tag": "RN", "color": "#9d4b7a", "body": "nurse",
+      "about": {"zh": "病房的眼睛。她打電話來，通常有道理。", "en": "The ward's eyes. When she phones, there is usually a reason."}},
+    "mother": {"name": {"zh": "小宇的媽媽", "en": "Yu's mother"}, "role": {"zh": "家屬", "en": "Family"}, "tag": "FAM", "color": "#b45309", "body": "family",
+      "about": {"zh": "在門口等了一早上，手裡握著兒子的學生證。", "en": "Waited by the door all morning, holding her son's student card."}}
+  },
+  "places": {
+    "whiteboard": {"name": {"zh": "刀表白板", "en": "Theatre whiteboard"}, "hot": "whiteboard"},
+    "scrub-sink": {"name": {"zh": "刷手台", "en": "Scrub sink"}, "hot": "sink"},
+    "table": {"name": {"zh": "手術台", "en": "Operating table"}, "hot": "field"},
+    "instruments": {"name": {"zh": "器械台", "en": "Instrument table"}, "hot": "instruments"},
+    "imaging": {"name": {"zh": "影像工作站", "en": "Imaging workstation"}, "hot": "imaging"},
+    "recovery": {"name": {"zh": "恢復室", "en": "Recovery room"}, "hot": "recovery"},
+    "desk": {"name": {"zh": "紀錄桌", "en": "Notes desk"}, "hot": "desk"},
+    "bed": {"name": {"zh": "病床", "en": "Ward bed"}, "hot": "bed"}
+  },
+  "glossary": [
+    {"term": {"zh": "時間暫停", "en": "time-out"}, "plain": {"zh": "劃刀前全隊停下來，大聲核對病人、部位、手術名稱與過敏。", "en": "Before the incision the whole team stops and confirms the patient, the site, the operation and allergies out loud."}},
+    {"term": {"zh": "麥氏點", "en": "McBurney's point"}, "plain": {"zh": "右下腹肚臍與骨盆前上棘連線外三分之一處，闌尾炎最典型的壓痛位置。", "en": "A spot in the right lower abdomen, a third of the way from the hip bone to the navel, where appendicitis typically hurts to press."}},
+    {"term": {"zh": "氣腹", "en": "pneumoperitoneum"}, "plain": {"zh": "把二氧化碳打進腹腔撐出空間，腹腔鏡才看得到、動得了。", "en": "Carbon dioxide blown into the abdomen to make room so the laparoscope can see and the instruments can move."}},
+    {"term": {"zh": "闌尾根部", "en": "appendix base"}, "plain": {"zh": "闌尾連到盲腸的地方。切除要在這裡處理乾淨，否則會漏。", "en": "Where the appendix joins the caecum. It must be closed securely here, or it leaks."}},
+    {"term": {"zh": "標本", "en": "specimen"}, "plain": {"zh": "切下來要送病理檢查的組織，罐子上一定要有姓名、病歷號與部位。", "en": "Tissue removed for the pathologist; the pot must carry the name, record number and site."}},
+    {"term": {"zh": "器械清點", "en": "instrument count"}, "plain": {"zh": "開刀前、關閉前、關完後，紗布、針、器械要數到一樣，才可以關。", "en": "Swabs, needles and instruments are counted before the operation, before closing and after; the numbers must match before anyone closes."}},
+    {"term": {"zh": "Tokyo 分級", "en": "Tokyo grade"}, "plain": {"zh": "急性膽囊炎的嚴重度分級，依局部發炎、全身反應與器官功能分成三級。", "en": "A severity grading for acute cholecystitis in three grades, based on local inflammation, systemic response and organ function."}},
+    {"term": {"zh": "安全關鍵視野", "en": "critical view of safety"}, "plain": {"zh": "腹腔鏡膽囊切除前的三個條件：清掉三角脂肪、膽囊離開肝床、只剩兩條結構進膽囊。", "en": "Three conditions before cutting anything in a gallbladder operation: fat cleared from the triangle, gallbladder freed from the liver bed, only two structures entering it."}},
+    {"term": {"zh": "膽管炎", "en": "cholangitis"}, "plain": {"zh": "膽管被結石塞住又感染，發燒、黃疸、右上腹痛，會很快變成敗血症，要盡快引流。", "en": "A blocked, infected bile duct: fever, jaundice and right upper abdominal pain that can turn into sepsis fast; it needs drainage soon."}},
+    {"term": {"zh": "ISBAR", "en": "ISBAR"}, "plain": {"zh": "電話報告的順序：身分、情境、背景、評估、建議。讓對方三十秒內知道該做什麼。", "en": "The order for a phone report: identity, situation, background, assessment, recommendation, so the listener knows what to do within thirty seconds."}},
+    {"term": {"zh": "轉開腹", "en": "conversion to open"}, "plain": {"zh": "腹腔鏡做不安全時改成傳統開腹，是判斷力，不是失敗。", "en": "Switching from keyhole to an open operation when keyhole is not safe. It is judgement, not failure."}},
+    {"term": {"zh": "恢復室", "en": "recovery room"}, "plain": {"zh": "麻醉醒來的地方，護理師盯著呼吸、血壓與疼痛，穩定了才回病房。", "en": "Where patients wake from anaesthesia, watched for breathing, blood pressure and pain before going back to the ward."}}
+  ],
+  "codex": [
+    {"id": "lap-tower", "kind": "equipment", "name": {"zh": "腹腔鏡主機塔", "en": "Laparoscopy tower"}, "hot": "endoscopy", "text": {"zh": "光源、攝影機、螢幕與錄影疊成一座塔。鏡頭的畫面就是整間房的眼睛。", "en": "Light source, camera unit, screen and recorder stacked in one tower. The camera picture is the whole room's eyes."}},
+    {"id": "insufflator", "kind": "equipment", "name": {"zh": "氣腹機", "en": "Insufflator"}, "hot": "device", "text": {"zh": "把二氧化碳打進腹腔並維持壓力的機器。壓力與流量依醫囑與機器設定。", "en": "Pumps carbon dioxide into the abdomen and holds the pressure. Pressure and flow follow the protocol and the machine's settings."}},
+    {"id": "diathermy", "kind": "equipment", "name": {"zh": "電燒機", "en": "Diathermy unit"}, "hot": "instruments", "text": {"zh": "用電流切割與止血。回路貼片要貼在肌肉多的地方，離金屬植入物遠一點。", "en": "Cuts and seals with electric current. The return pad goes on a muscular area, away from metal implants."}},
+    {"id": "clip-applier", "kind": "equipment", "name": {"zh": "夾子施夾器", "en": "Clip applier"}, "hot": "instruments", "text": {"zh": "把小金屬夾夾在膽囊管與膽囊動脈上。看清楚是什麼，才夾。", "en": "Places small metal clips on the cystic duct and artery. Know what it is before you clip it."}},
+    {"id": "ultrasound", "kind": "equipment", "name": {"zh": "超音波機", "en": "Ultrasound machine"}, "hot": "ultrasound", "text": {"zh": "膽囊炎的第一線影像：看膽囊壁、周圍積液、結石與壓痛。", "en": "First-line imaging for cholecystitis: wall thickness, fluid around the gallbladder, stones and tenderness under the probe."}},
+    {"id": "specimen-appendix", "kind": "item", "name": {"zh": "闌尾標本罐", "en": "Appendix specimen pot"}, "text": {"zh": "裝在標本袋裡拉出來的闌尾，泡在福馬林裡送病理。標籤：姓名、病歷號、部位、日期。", "en": "The appendix, retrieved in a bag and sent to pathology in formalin. Label: name, record number, site, date."}},
+    {"id": "count-sheet", "kind": "item", "name": {"zh": "器械清點單", "en": "Count sheet"}, "text": {"zh": "紗布、針、器械的數目三次核對的紀錄。數不對，刀不關，先找，再照 X 光。", "en": "The record of three counts of swabs, needles and instruments. If the numbers disagree nobody closes: search first, then X-ray."}},
+    {"id": "cvs", "kind": "concept", "name": {"zh": "安全關鍵視野", "en": "Critical view of safety"}, "text": {"zh": "不是一個角度，是三個條件同時成立。做不到就換策略：膽道攝影、次全切除或轉開腹。", "en": "Not a camera angle but three conditions met together. If you cannot get it, change strategy: cholangiogram, subtotal cholecystectomy or conversion."}}
+  ],
+  "segs": [
+    {"id": "handover", "name": {"zh": "晨間交班", "en": "Morning handover"}, "sub": {"zh": "07:30 · 開刀房外白板", "en": "07:30 · whiteboard outside theatre"}, "t": 450, "mood": "day",
+     "note": {"zh": "交班完成，兩台腹腔鏡", "en": "Handover done: two laparoscopic cases"},
+     "beats": [
+      {"id": "h1", "to": "chief", "guide": {"zh": "找阿凱學長交班", "en": "Find Dr Kai for handover"},
+       "lines": [
+        ["chief", {"zh": "早。昨晚兩台急刀，我快被白板吃掉了。", "en": "Morning. Two emergencies overnight; the whiteboard nearly ate me."}],
+        ["chief", {"zh": "今天第一台小宇，19 歲，闌尾炎。下午王阿姨，膽囊炎。", "en": "First case today is Yu, 19, appendicitis. This afternoon Mrs Wang, cholecystitis."}],
+        ["chief", {"zh": "還有 7 床疝氣術後，今早還沒排尿，幫我盯一下。", "en": "And bed 7, post hernia repair, hasn't passed urine this morning. Keep an eye on him."}],
+        ["me", {"zh": "收到。闌尾、膽囊、7 床。", "en": "Got it. Appendix, gallbladder, bed 7."}],
+        ["sys", {"zh": "白板上：08:00 腹腔鏡闌尾切除；14:00 腹腔鏡膽囊切除。", "en": "On the whiteboard: 08:00 laparoscopic appendicectomy; 14:00 laparoscopic cholecystectomy."}]
+       ]},
+      {"id": "h2", "to": "attending", "guide": {"zh": "去找林主治", "en": "Find Dr Lin"},
+       "lines": [
+        ["attending", {"zh": "早。小宇的評分看了嗎？", "en": "Morning. Did you look at Yu's score?"}],
+        ["me", {"zh": "Alvarado 高分，麥氏點壓痛，超音波也符合。", "en": "High Alvarado score, tender at McBurney's point, ultrasound fits."}],
+        ["attending", {"zh": "評分是幫你想，不是幫你決定。檢驗與妊娠試驗呢？", "en": "A score helps you think; it doesn't decide for you. Bloods and the pregnancy test?"}],
+        ["me", {"zh": "白血球高、CRP 高。男生，不用驗孕。", "en": "White cells and CRP raised. He's male, so no pregnancy test."}],
+        ["attending", {"zh": "對，但每次都要問自己一次。", "en": "Right, but ask yourself every single time."}],
+        ["attending", {"zh": "好。我去泡杯咖啡——先放著。", "en": "Good. I'll make a coffee and leave it there."}],
+        ["sys", {"zh": "那杯咖啡會在桌上放一整天。", "en": "That coffee will sit on the desk all day."}]
+       ]}
+     ]},
+    {"id": "first-case", "name": {"zh": "第一台：闌尾", "en": "First case: appendix"}, "sub": {"zh": "08:00 · 開刀房", "en": "08:00 · operating theatre"}, "t": 480, "mood": "day",
+     "note": {"zh": "闌尾根部壞死，處理妥當", "en": "Necrotic appendix base, managed"},
+     "beats": [
+      {"id": "c1", "to": "patient1", "guide": {"zh": "核對身分，跟小宇聊兩句", "en": "Check identity and talk to Yu"},
+       "lines": [
+        ["patient1", {"zh": "醫師，我後天期中考……今天可以出院嗎？", "en": "Doctor, my mid-terms are the day after tomorrow... can I go home today?"}],
+        ["me", {"zh": "先把闌尾處理好。姓名、生日、哪裡痛，再跟我說一次。", "en": "Let's deal with the appendix first. Name, birthday and where it hurts, once more for me."}],
+        ["patient1", {"zh": "右下腹，昨晚開始，按下去再放開更痛。", "en": "Right lower side since last night. Worse when you let go than when you press."}],
+        ["mother", {"zh": "醫師，他從小怕打針。拜託你們了。", "en": "Doctor, he's been scared of needles since he was small. Please look after him."}],
+        ["me", {"zh": "阿姨，等一下恢復室見。您先坐。", "en": "We'll see you in the recovery room. Please sit down for now."}]
+       ]},
+      {"id": "c2", "to": "place:scrub-sink", "guide": {"zh": "去刷手", "en": "Scrub up"},
+       "lines": [
+        ["sys", {"zh": "刷手台。指尖到手肘，水往手肘流，不要回頭碰水龍頭。", "en": "The scrub sink. Fingertips to elbows, water running towards the elbows, never touch the tap again."}],
+        ["circ", {"zh": "新來的，順序說一遍再動手。", "en": "New one: say the order before you start."}]
+       ],
+       "mini": {"type": "order", "q": {"zh": "外科刷手與穿戴的正確順序", "en": "The correct order of scrubbing and gowning"},
+        "steps": [
+         {"zh": "戴好帽子與口罩", "en": "Cap and mask on"},
+         {"zh": "外科刷手至手肘", "en": "Surgical scrub to the elbows"},
+         {"zh": "無菌毛巾擦乾", "en": "Dry with a sterile towel"},
+         {"zh": "穿無菌手術衣", "en": "Put on the sterile gown"},
+         {"zh": "閉合式戴無菌手套", "en": "Closed gloving"}
+        ]},
+       "post": [["circ", {"zh": "可以。手舉著，別亂碰。", "en": "Fine. Hands up, touch nothing."}]]},
+      {"id": "c3", "to": "place:table", "guide": {"zh": "時間暫停：劃刀前", "en": "Time-out before incision"},
+       "lines": [
+        ["circ", {"zh": "時間暫停。病人小宇，腹腔鏡闌尾切除，過敏無，抗生素依醫囑已給。", "en": "Time-out. Patient Yu, laparoscopic appendicectomy, no allergies, antibiotics given per protocol."}],
+        ["attending", {"zh": "預期的問題？", "en": "Anticipated problems?"}],
+        ["me", {"zh": "沒有特別的——但闌尾炎永遠有驚喜。", "en": "Nothing specific. But appendicitis always has a surprise."}],
+        ["anaes", {"zh": "麻醉這邊穩定，可以開始。", "en": "Anaesthesia stable; you may start."}]
+       ],
+       "mini": {"type": "stage", "case": "general-surgery-lap-appendicectomy", "stage": 0}},
+      {"id": "c4", "roles": ["scrub"], "to": "place:instruments", "guide": {"zh": "清點紗布、針與器械", "en": "Count swabs, needles and instruments"},
+       "lines": [
+        ["circ", {"zh": "開刀前器械清點。紗布、針、器械，你唸我核。", "en": "Pre-op instrument count. Swabs, needles, instruments; you call, I verify."}],
+        ["me", {"zh": "紗布十、針三、套管四、抓鉗兩支、施夾器一。", "en": "Swabs ten, needles three, ports four, graspers two, clip applier one."}],
+        ["circ", {"zh": "數目正確。器械清點單簽名。", "en": "Counts correct. Sign the count sheet."}]
+       ],
+       "mini": {"type": "find", "hot": "instruments", "q": {"zh": "點一下器械台，確認清點單放在那裡", "en": "Tap the instrument table to confirm the count sheet is there"}},
+       "item": "count-sheet"},
+      {"id": "c5", "to": "place:table", "guide": {"zh": "建立氣腹，探查，找根部", "en": "Pneumoperitoneum, explore, find the base"},
+       "lines": [
+        ["attending", {"zh": "氣腹建好了。鏡頭進去，先看什麼？", "en": "Pneumoperitoneum is in. Camera's in; what do you look at first?"}],
+        ["me", {"zh": "先全腹探查，再沿盲腸的結腸帶找到闌尾根部。", "en": "Whole abdomen first, then follow the taenia of the caecum down to the appendix base."}],
+        ["attending", {"zh": "很好。咦——", "en": "Good. Hm..."}],
+        ["sys", {"zh": "螢幕上，闌尾根部的顏色不對：發黑、發軟。", "en": "On the screen the appendix base looks wrong: dark and soft."}]
+       ],
+       "mini": {"type": "stage", "case": "general-surgery-lap-appendicectomy", "stage": 6},
+       "post": [["attending", {"zh": "「簡單的闌尾」，從來不簡單。", "en": "'The simple appendix' never is."}]]},
+      {"id": "c6", "to": "attending", "guide": {"zh": "根部壞死，決定怎麼關", "en": "Necrotic base: decide how to close it"},
+       "lines": [["attending", {"zh": "根部壞死到盲腸邊。你會怎麼關？", "en": "The base is necrotic right up to the caecum. How would you close it?"}]],
+       "mini": {"type": "choice", "q": {"zh": "闌尾根部壞死，最安全的處理？", "en": "The appendix base is necrotic. The safest way to close it?"},
+        "options": [
+         {"zh": "縫合器切在健康的盲腸壁上", "en": "Staple across healthy caecal wall", "ok": true, "set": {"stump": "stapler"},
+          "why": {"zh": "對。壞死的組織夾不住，要退到健康的盲腸壁才牢。", "en": "Right. Necrotic tissue won't hold; go back to healthy caecal wall."}},
+         {"zh": "直接用套圈結紮壞死處", "en": "Endoloop the necrotic part", "ok": false, "set": {"stump": "ligate"},
+          "why": {"zh": "套圈綁在壞死組織上會漏。等一下紀錄會寫成實際的處理。", "en": "A loop on necrotic tissue leaks. The note will record what was actually done."}},
+         {"zh": "什麼都不看，立刻轉開腹", "en": "Convert to open right away", "ok": false, "set": {"stump": "open"},
+          "why": {"zh": "轉開腹是備案，不是反射動作。先評估腹腔鏡下能不能安全處理。", "en": "Conversion is a backup plan, not a reflex. First assess whether it can be done safely by laparoscopy."}}
+        ]},
+       "post": [
+        ["attending", {"zh": "標本袋裝好再拉出來，不要讓它碰到傷口。", "en": "Into the retrieval bag before it comes out; don't let it touch the wound."}],
+        ["circ", {"zh": "關閉前清點：紗布十、針三，數目正確。", "en": "Closing count: swabs ten, needles three, correct."}]
+       ],
+       "item": "specimen-appendix"},
+      {"id": "c7", "roles": ["intern"], "to": "place:desk", "guide": {"zh": "寫手術紀錄", "en": "Write the operation note"},
+       "lines": [
+        ["attending", {"zh": "手術紀錄你寫，我簽。根部怎麼處理的，寫實際做的。", "en": "You write the op note, I sign. Record exactly how the base was dealt with."}],
+        ["me", {"zh": "發現、處理、標本、清點、引流有無、術後指示。", "en": "Findings, procedure, specimen, counts, drain or not, post-op instructions."}],
+        ["attending", {"zh": "還有一句：給下一個讀它的人看得懂。", "en": "And one more thing: write it so the next reader understands."}]
+       ]},
+      {"id": "c8", "roles": ["intern"], "to": "place:recovery", "guide": {"zh": "恢復室，跟媽媽說明", "en": "Recovery room: update Yu's mother"},
+       "lines": [
+        ["mother", {"zh": "醫師！他還好嗎？", "en": "Doctor! Is he all right?"}],
+        ["me", {"zh": "開完了，闌尾已經切掉。根部發炎得比較厲害，我們多做了一步。", "en": "It's done; the appendix is out. The base was quite inflamed, so we took an extra step."}],
+        ["mother", {"zh": "那期中考……", "en": "And his mid-terms..."}],
+        ["me", {"zh": "他醒來會先問這個。我們明天再談。", "en": "That'll be his first question when he wakes. Let's talk tomorrow."}]
+       ]}
+     ]},
+    {"id": "ward-call", "name": {"zh": "病房來電", "en": "Ward call"}, "sub": {"zh": "10:30 · 7 床", "en": "10:30 · bed 7"}, "t": 630, "mood": "day",
+     "note": {"zh": "7 床術後尿滯留處理", "en": "Bed 7: post-op urinary retention sorted"},
+     "beats": [
+      {"id": "w1", "ring": {"title": {"zh": "病房來電", "en": "Ward calling"}, "sub": {"zh": "7 床術後還沒排尿，肚子脹", "en": "Bed 7 hasn't passed urine, abdomen distended"}, "call": true, "from": "ward-nurse"},
+       "to": "ward-nurse", "guide": {"zh": "接電話，然後去看 7 床", "en": "Take the call, then see bed 7"},
+       "lines": [
+        ["ward-nurse", {"zh": "醫師，ISBAR：7 床，疝氣術後六小時沒尿，下腹脹，有點躁。", "en": "Doctor, ISBAR: bed 7, six hours after hernia repair, no urine, lower abdomen distended, restless."}],
+        ["me", {"zh": "生命徵象？膀胱掃描做了嗎？", "en": "Vitals? Have you done a bladder scan?"}],
+        ["ward-nurse", {"zh": "血壓心跳正常。掃描顯示膀胱很脹。", "en": "Blood pressure and pulse fine. Scan shows a very full bladder."}],
+        ["me", {"zh": "術後尿滯留。先試坐起、走動，不行就依醫囑導尿，記錄尿量。我過去。", "en": "Post-op retention. Try sitting up and walking; if not, catheterise per protocol and record the volume. I'm coming."}],
+        ["ward-nurse", {"zh": "收到。對了，他一直問能不能回家煮飯。", "en": "Got it. By the way, he keeps asking if he can go home and cook dinner."}]
+       ]}
+     ]},
+    {"id": "imaging-noon", "name": {"zh": "影像討論", "en": "Imaging review"}, "sub": {"zh": "12:00 · 影像工作站", "en": "12:00 · imaging workstation"}, "t": 720, "mood": "day",
+     "note": {"zh": "王阿姨：膽囊炎 Tokyo 分級", "en": "Mrs Wang: cholecystitis graded"},
+     "beats": [
+      {"id": "n1", "to": "place:imaging", "guide": {"zh": "和林主治看王阿姨的超音波", "en": "Review Mrs Wang's ultrasound with Dr Lin"},
+       "lines": [
+        ["attending", {"zh": "王阿姨，52 歲，右上腹痛三天，發燒。超音波你來報。", "en": "Mrs Wang, 52, three days of right upper abdominal pain, fever. You present the ultrasound."}],
+        ["me", {"zh": "先看膽囊壁、周圍有沒有積液、結石卡在哪裡。", "en": "Gallbladder wall first, any fluid around it, where the stone is stuck."}]
+       ],
+       "mini": {"type": "imaging", "region": "abdomen-upper",
+        "question": {"zh": "超音波上急性膽囊炎的三個線索是什麼？", "en": "What are the three ultrasound clues to acute cholecystitis?"},
+        "answer": {"zh": "膽囊壁增厚、膽囊周圍積液、結石嵌頓在頸部，加上探頭壓下去的超音波墨菲氏徵象。", "en": "Thickened gallbladder wall, fluid around the gallbladder, a stone impacted at the neck, plus pain under the probe (sonographic Murphy's sign)."}},
+       "post": [
+        ["attending", {"zh": "Tokyo 分級幾級？", "en": "What Tokyo grade?"}],
+        ["me", {"zh": "發燒、白血球高、局部腹膜炎，沒有器官衰竭。第二級。", "en": "Fever, raised white cells, local peritonism, no organ failure. Grade two."}],
+        ["attending", {"zh": "那手術時機？", "en": "So when do we operate?"}],
+        ["me", {"zh": "早期手術。就今天下午。", "en": "Early surgery. This afternoon."}],
+        ["attending", {"zh": "去吃飯。十分鐘。", "en": "Go and eat. Ten minutes."}],
+        ["sys", {"zh": "桌上的咖啡已經冷了，一口都沒少。", "en": "The coffee on the desk has gone cold, untouched."}]
+       ]}
+     ]},
+    {"id": "second-case", "name": {"zh": "第二台：膽囊", "en": "Second case: gallbladder"}, "sub": {"zh": "14:00 · 開刀房", "en": "14:00 · operating theatre"}, "t": 840, "mood": "day",
+     "note": {"zh": "安全關鍵視野達成，一條膽管被救了", "en": "Critical view achieved; a bile duct saved"},
+     "beats": [
+      {"id": "s1", "to": "patient2", "guide": {"zh": "術前再看王阿姨", "en": "See Mrs Wang before the case"},
+       "lines": [
+        ["patient2", {"zh": "醫師，我店裡明天要出攤，明天能出院嗎？", "en": "Doctor, the shop opens tomorrow. Can I be discharged tomorrow?"}],
+        ["me", {"zh": "先把膽囊拿掉，再談早餐店。您知道今天要做什麼手術嗎？", "en": "Gallbladder first, breakfast shop after. Do you know what operation you're having today?"}],
+        ["patient2", {"zh": "腹腔鏡拿膽囊，四個小洞。同意書我簽了，我女兒說你們很厲害。", "en": "Keyhole, take the gallbladder out, four small holes. I signed the consent; my daughter says you're very good."}],
+        ["attending", {"zh": "王阿姨，壓力給我們就好。", "en": "Mrs Wang, leave the worrying to us."}]
+       ]},
+      {"id": "s2", "to": "place:table", "guide": {"zh": "時間暫停，鏡頭置中", "en": "Time-out, then centre the camera"},
+       "lines": [
+        ["circ", {"zh": "時間暫停：王阿姨，腹腔鏡膽囊切除，過敏無，設備已測。", "en": "Time-out: Mrs Wang, laparoscopic cholecystectomy, no allergies, equipment checked."}],
+        ["attending", {"zh": "膽道攝影的 C 臂先叫好。不一定用，但要在。", "en": "Have the C-arm ready for a cholangiogram. We may not use it, but it has to be there."}],
+        ["attending", {"zh": "你扶鏡。鏡頭跟著器械走，不是跟著我的脾氣走。", "en": "You hold the camera. It follows the instruments, not my temper."}]
+       ],
+       "mini": {"type": "drill", "template": "general-surgery", "drill": "lap:chole"}},
+      {"id": "s3", "to": "place:table", "guide": {"zh": "建立安全關鍵視野", "en": "Establish the critical view of safety"},
+       "lines": [
+        ["attending", {"zh": "停。安全關鍵視野三個條件，說。", "en": "Stop. The three conditions of the critical view of safety. Go."}],
+        ["me", {"zh": "肝膽三角清乾淨；膽囊下三分之一離開肝床；只有兩條結構進膽囊。", "en": "Triangle cleared; lower third of the gallbladder off the liver bed; only two structures entering it."}],
+        ["attending", {"zh": "三條都有，才剪。沒有，就不剪。", "en": "All three, then cut. Not all three, no cutting."}]
+       ],
+       "mini": {"type": "stage", "case": "general-surgery-cholecystitis-lap-chole-cvs", "stage": 8},
+       "post": [
+        ["attending", {"zh": "等等——這條比預期粗。", "en": "Wait. This one is thicker than it should be."}],
+        ["me", {"zh": "這是膽囊管，還是總膽管？", "en": "Is that the cystic duct, or the common bile duct?"}],
+        ["attending", {"zh": "不確定就不夾。退一步，換角度再剝離；還不行就膽道攝影或轉開腹。", "en": "Not sure, don't clip. Step back, change the angle, dissect again; if still unsure, cholangiogram or conversion to open."}],
+        ["sys", {"zh": "多剝離幾分鐘後，真正的膽囊管從後面出現了。", "en": "A few more minutes of dissection and the real cystic duct appears from behind."}],
+        ["attending", {"zh": "你那個問題問出來，就救了一條膽管。", "en": "Asking that question just saved a bile duct."}]
+       ]},
+      {"id": "s4", "roles": ["scrub"], "to": "place:instruments", "guide": {"zh": "最後清點與標本標示", "en": "Final count and specimen labelling"},
+       "lines": [
+        ["circ", {"zh": "最後清點。", "en": "Final count."}],
+        ["me", {"zh": "紗布十、針三、夾子數對。標本：膽囊一個，福馬林。", "en": "Swabs ten, needles three, clips accounted for. Specimen: one gallbladder, in formalin."}],
+        ["attending", {"zh": "標本袋上姓名、病歷號、部位寫完整再送。", "en": "Name, record number and site complete on the specimen bag before it goes."}]
+       ]},
+      {"id": "s5", "to": "place:recovery", "guide": {"zh": "恢復室看王阿姨", "en": "Check on Mrs Wang in recovery"},
+       "lines": [
+        ["patient2", {"zh": "醫師……開完了？", "en": "Doctor... is it over?"}],
+        ["me", {"zh": "開完了，膽囊很乖地出來了。", "en": "It's over. The gallbladder came out very politely."}],
+        ["patient2", {"zh": "那我明天……", "en": "So tomorrow..."}],
+        ["me", {"zh": "明天再說。先睡。", "en": "Tomorrow we'll talk. Sleep now."}]
+       ]}
+     ]},
+    {"id": "consult", "name": {"zh": "病房急會診", "en": "Urgent ward review"}, "sub": {"zh": "16:00 · 12 床", "en": "16:00 · bed 12"}, "t": 960, "mood": "day",
+     "note": {"zh": "12 床膽管炎，沒有等到明天", "en": "Bed 12 cholangitis: did not wait for tomorrow"},
+     "beats": [
+      {"id": "e1", "ring": {"title": {"zh": "病房來電", "en": "Ward calling"}, "sub": {"zh": "12 床發燒、黃疸、血壓往下掉", "en": "Bed 12: fever, jaundice, pressure dropping"}, "call": true, "from": "ward-nurse"},
+       "to": "place:bed", "guide": {"zh": "接電話，趕去 12 床", "en": "Take the call and hurry to bed 12"},
+       "lines": [
+        ["ward-nurse", {"zh": "醫師，12 床總膽管結石等 ERCP 那位，發燒畏寒，皮膚更黃，血壓往下掉。", "en": "Doctor, bed 12, the bile-duct stone waiting for ERCP: fever and rigors, more jaundiced, blood pressure dropping."}],
+        ["me", {"zh": "收到。兩套血液培養先抽，依醫囑輸液，我馬上到。", "en": "Got it. Two sets of blood cultures now, fluids per protocol, I'm on my way."}]
+       ],
+       "mini": {"type": "vitals", "event": "fever",
+        "options": [
+         {"zh": "血液培養、依醫囑輸液與抗生素、通知主治", "en": "Cultures, fluids and antibiotics per protocol, call the attending", "ok": true,
+          "why": {"zh": "敗血症路徑：培養先抽，抗生素與輸液依醫囑，上級要知道。", "en": "Sepsis pathway: cultures first, antibiotics and fluids per protocol, and the senior must know."}},
+         {"zh": "先退燒，觀察到明天早上", "en": "Antipyretic and watch until morning", "ok": false,
+          "why": {"zh": "發燒、黃疸加低血壓不是「觀察」的組合。", "en": "Fever, jaundice and hypotension are not a 'watch and wait' combination."}},
+         {"zh": "直接推去開刀房開膽囊", "en": "Straight to theatre for the gallbladder", "ok": false,
+          "why": {"zh": "問題在膽管不在膽囊。先復甦，再引流膽管。", "en": "The problem is the duct, not the gallbladder. Resuscitate first, then drain the duct."}}
+        ]}},
+      {"id": "e2", "to": "attending", "guide": {"zh": "向林主治報告", "en": "Report to Dr Lin"},
+       "lines": [
+        ["me", {"zh": "發燒、黃疸、右上腹痛，加上低血壓。膽管炎，而且在惡化。", "en": "Fever, jaundice, right upper quadrant pain, plus hypotension. Cholangitis, and getting worse."}],
+        ["attending", {"zh": "膽管炎要什麼？", "en": "What does cholangitis need?"}],
+        ["me", {"zh": "引流。今晚就聯絡消化科做 ERCP，不等明天。", "en": "Drainage. Call gastroenterology for an ERCP tonight, not tomorrow."}],
+        ["attending", {"zh": "對。這種病人不等明天。", "en": "Right. This patient does not wait for tomorrow."}]
+       ],
+       "mini": {"type": "stage", "case": "general-surgery-choledocholithiasis-pathway", "stage": 8}}
+     ]},
+    {"id": "evening", "name": {"zh": "交班與回顧", "en": "Handover and debrief"}, "sub": {"zh": "17:30 · 開刀房外", "en": "17:30 · outside theatre"}, "t": 1050, "mood": "eve",
+     "note": {"zh": "交給夜班，師傅的三件事", "en": "Handed to the night team; the mentor's three things"},
+     "beats": [
+      {"id": "d1", "to": "chief", "guide": {"zh": "用 ISBAR 向夜班交班", "en": "Hand over to the night team in ISBAR"},
+       "lines": [
+        ["me", {"zh": "小宇術後，根部壞死已處理。王阿姨術後，順利。12 床膽管炎，今晚 ERCP。", "en": "Yu post-op, necrotic base dealt with. Mrs Wang post-op, uneventful. Bed 12 cholangitis, ERCP tonight."}],
+        ["chief", {"zh": "7 床呢？", "en": "And bed 7?"}],
+        ["me", {"zh": "導尿後舒服了，問能不能回家煮飯。", "en": "Comfortable after the catheter; asking if he can go home and cook."}],
+        ["chief", {"zh": "全院都想回家煮飯。收到。", "en": "The whole hospital wants to go home and cook. Received."}]
+       ]},
+      {"id": "d1b", "when": {"flag": "stump", "is": "ligate"}, "to": "chief", "guide": {"zh": "學長問起闌尾根部", "en": "Dr Kai asks about the base"},
+       "lines": [
+        ["chief", {"zh": "早上你本來想用套圈綁壞死根部？", "en": "This morning you wanted to loop the necrotic base?"}],
+        ["me", {"zh": "對。林主治改成縫合器切在健康盲腸壁。", "en": "I did. Dr Lin switched to stapling across healthy caecal wall."}],
+        ["chief", {"zh": "好。那今晚我會多看他一次肚子。", "en": "Fine. Then I'll check his abdomen once more tonight."}]
+       ]},
+      {"id": "d2", "to": "attending", "guide": {"zh": "師傅的回顧", "en": "The mentor's debrief"},
+       "lines": [
+        ["attending", {"zh": "今天三件事。闌尾根部，你有停下來看。", "en": "Three things today. The appendix base: you stopped and looked."}],
+        ["attending", {"zh": "膽囊那條粗的結構，你有問。膽管炎，你沒等。", "en": "The thick structure in the gallbladder: you asked. The cholangitis: you didn't wait."}],
+        ["me", {"zh": "咖啡你一口都沒喝。", "en": "You never touched your coffee."}],
+        ["attending", {"zh": "明天再喝。去吃飯。", "en": "Tomorrow. Go and eat."}]
+       ]}
+     ]},
+    {"id": "night", "name": {"zh": "值班夜", "en": "On call tonight"}, "sub": {"zh": "21:30 · 病房走廊", "en": "21:30 · ward corridor"}, "t": 1290, "mood": "night",
+     "note": {"zh": "肩膀痛的真相", "en": "The truth about the shoulder pain"},
+     "beats": [
+      {"id": "x1", "ring": {"title": {"zh": "病房來電", "en": "Ward calling"}, "sub": {"zh": "小宇說右肩膀很痛", "en": "Yu says his right shoulder hurts"}, "call": true, "from": "ward-nurse"},
+       "lines": [
+        ["ward-nurse", {"zh": "醫師，小宇說右肩膀痛，很緊張，問是不是開壞了。", "en": "Doctor, Yu says his right shoulder hurts. He's anxious, asking if the operation went wrong."}],
+        ["me", {"zh": "呼吸、血壓、傷口都好嗎？", "en": "Breathing, pressure and wound all fine?"}],
+        ["ward-nurse", {"zh": "都正常。就是肩膀。", "en": "All normal. Just the shoulder."}]
+       ],
+       "mini": {"type": "choice", "q": {"zh": "腹腔鏡術後第一晚的肩膀痛，最可能是？", "en": "Shoulder pain on the first night after laparoscopy is most likely...?"},
+        "options": [
+         {"zh": "氣腹殘留的氣體刺激橫膈膜的轉移痛", "en": "Referred pain from leftover gas irritating the diaphragm", "ok": true, "set": {"shoulder": "explained"},
+          "why": {"zh": "對。氣腹的二氧化碳刺激橫膈，痛會轉移到肩膀，走動、翻身會好。", "en": "Right. Carbon dioxide from the pneumoperitoneum irritates the diaphragm; the pain refers to the shoulder and settles with moving about."}},
+         {"zh": "心肌梗塞，啟動急救", "en": "Heart attack, call the arrest team", "ok": false, "set": {"shoulder": "panic"},
+          "why": {"zh": "19 歲、生命徵象正常、腹腔鏡剛做完——先想最常見的。評估，不要嚇病人。", "en": "Nineteen, normal vitals, fresh laparoscopy: think of the common thing first. Assess, don't frighten him."}},
+         {"zh": "叫他別想太多，明天再說", "en": "Tell him not to overthink it", "ok": false, "set": {"shoulder": "ignored"},
+          "why": {"zh": "病人害怕的時候，解釋就是治療。去看他。", "en": "When a patient is scared, an explanation is treatment. Go and see him."}}
+        ]}},
+      {"id": "x2", "to": "patient1", "guide": {"zh": "去看小宇", "en": "Go and see Yu"},
+       "lines": [
+        ["patient1", {"zh": "醫師，我肩膀痛……是不是你們開到什麼？", "en": "Doctor, my shoulder hurts... did you cut something you shouldn't have?"}],
+        ["me", {"zh": "是氣腹留下的氣體刺激橫膈膜，痛會跑到肩膀。走一走、翻個身就會好。", "en": "It's the gas left from the pneumoperitoneum irritating your diaphragm; the pain travels to the shoulder. Walk a little, turn over, it settles."}],
+        ["patient1", {"zh": "那……期中考？", "en": "So... mid-terms?"}],
+        ["me", {"zh": "睡覺。", "en": "Sleep."}],
+        ["sys", {"zh": "走廊安靜下來。手機震了一下。", "en": "The corridor goes quiet. Your phone buzzes."}]
+       ]},
+      {"id": "x3", "ring": {"title": {"zh": "林主治訊息", "en": "Message from Dr Lin"}, "sub": {"zh": "「明天 07:30。咖啡我請。」", "en": "'Tomorrow 07:30. Coffee's on me.'"}, "call": false, "from": "attending"},
+       "lines": [
+        ["me", {"zh": "一台闌尾，一台膽囊，一個膽管炎，一個肩膀。今天也算學會了一些事。", "en": "One appendix, one gallbladder, one cholangitis, one shoulder. Learned a few things today."}],
+        ["sys", {"zh": "值班結束。桌上的咖啡，明天會換一杯新的。", "en": "End of shift. Tomorrow there will be a fresh coffee on the desk."}]
+       ],
+       "end": true}
+     ]}
+  ],
+  "ending": {"title": {"zh": "下班了", "en": "End of shift"}, "sub": {"zh": "簡單的闌尾，從來不簡單", "en": "The simple appendix never is"},
+    "stats": ["stages", "grades", "choices", "calls", "items", "time"]}
+}

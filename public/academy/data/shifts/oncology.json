@@ -1,0 +1,1526 @@
+{
+ "format": "huatuo-shift-v1",
+ "department": "oncology",
+ "title": {
+  "zh": "腫瘤醫學科值班日",
+  "en": "A shift in medical oncology"
+ },
+ "tagline": {
+  "zh": "從一份切片報告到一場多專科會議",
+  "en": "From a biopsy report to the tumour board"
+ },
+ "room": "ward",
+ "minutes": 25,
+ "roles": [
+  {
+   "id": "intern",
+   "zh": "實習醫師",
+   "en": "Intern",
+   "desc": {
+    "zh": "核對資料身分、讀懂報告用語、準備多專科會議、在餐巾紙上畫圖解釋。",
+    "en": "Verify whose data it is, read the report wording, prepare the tumour board, explain things on paper napkins."
+   }
+  },
+  {
+   "id": "navigator",
+   "zh": "腫瘤個管師",
+   "en": "Oncology nurse navigator",
+   "desc": {
+    "zh": "導管照護、檢體追蹤、會議協調、出院後的追蹤電話。病人記得的名字通常是你的。",
+    "en": "Line care, specimen tracking, board coordination, the follow-up calls after discharge. The name patients remember is usually yours."
+   }
+  }
+ ],
+ "cast": {
+  "attending": {
+   "name": {
+    "zh": "洪主治",
+    "en": "Dr Hung"
+   },
+   "role": {
+    "zh": "主治醫師（師傅）",
+    "en": "Attending (mentor)"
+   },
+   "tag": "ATT",
+   "color": "#6b3fa0",
+   "body": "mentor",
+   "about": {
+    "zh": "腫瘤科主治，解釋任何事都要畫圖，紙不夠就用餐巾紙。開會第一句永遠是：「先核對這是誰的資料。」",
+    "en": "Oncologist who explains everything with a drawing, on a napkin if no paper is to hand. Opens every meeting with: 'First, whose data is this?'"
+   }
+  },
+  "nurse-chia": {
+   "name": {
+    "zh": "佳佳",
+    "en": "Nurse Chia"
+   },
+   "role": {
+    "zh": "腫瘤個管師",
+    "en": "Nurse navigator"
+   },
+   "tag": "NAV",
+   "color": "#3b8f6a",
+   "body": "nurse",
+   "about": {
+    "zh": "病房的個管師，手機裡存著每個病人的名字和他們家狗的名字。換敷料的時候，整個病房會安靜下來。",
+    "en": "The ward's navigator, with every patient's name and their dog's name in her phone. When she changes a dressing, the whole ward goes quiet."
+   }
+  },
+  "patient-chou": {
+   "name": {
+    "zh": "周女士",
+    "en": "Mrs Chou"
+   },
+   "role": {
+    "zh": "新轉診病人",
+    "en": "New referral"
+   },
+   "tag": "PC",
+   "color": "#b8762e",
+   "body": "patient",
+   "about": {
+    "zh": "63 歲，退休會計。右上肺腫塊，在兩家醫院各做了一部分檢查，帶著兩個資料夾來。影像報告和切片報告說的不太一樣。（虛擬個案）",
+    "en": "A 63-year-old retired accountant with a right-upper-lobe mass, investigated partly at two hospitals and arriving with two folders. The imaging report and the biopsy report do not quite agree. (Fictional.)"
+   }
+  },
+  "patient-mei": {
+   "name": {
+    "zh": "阿美",
+    "en": "Mei"
+   },
+   "role": {
+    "zh": "6 床病人",
+    "en": "Patient, bed 6"
+   },
+   "tag": "P6",
+   "color": "#c9596a",
+   "body": "patient",
+   "about": {
+    "zh": "38 歲，淋巴瘤化療中，手臂有一條中央靜脈導管。今天下午要做分期的骨髓檢查。很怕打針，卻很會安慰別人。（虛擬個案）",
+    "en": "A 38-year-old on chemotherapy for lymphoma, with a central line in her arm and a staging marrow this afternoon. Terrified of needles, wonderful at comforting other people. (Fictional.)"
+   }
+  },
+  "patient-wang": {
+   "name": {
+    "zh": "王先生",
+    "en": "Mr Wang"
+   },
+   "role": {
+    "zh": "門診病人",
+    "en": "Clinic patient"
+   },
+   "tag": "PW",
+   "color": "#8a6ac4",
+   "body": "patient",
+   "about": {
+    "zh": "54 歲，新診斷肺癌。腫瘤檢測報告有好幾格空白，他把空白理解成「沒有」。兒子陪他來，問題比他多。（虛擬個案）",
+    "en": "A 54-year-old with newly diagnosed lung cancer. His tumour-testing table has several blanks, which he reads as 'none'. His son, who has more questions than he does, has come along. (Fictional.)"
+   }
+  },
+  "patient-lin": {
+   "name": {
+    "zh": "林伯",
+    "en": "Mr Lin"
+   },
+   "role": {
+    "zh": "4 床病人",
+    "en": "Patient, bed 4"
+   },
+   "tag": "P4",
+   "color": "#6a9c3a",
+   "body": "patient",
+   "about": {
+    "zh": "60 歲，大腸腫瘤術後。昨晚在病歷上讀到「高分級」和「區域淋巴結」，以為都代表末期。一夜沒睡。（虛擬個案）",
+    "en": "A 60-year-old after colon surgery. Last night he read 'high grade' and 'regional lymph nodes' in his chart and took both to mean terminal. Did not sleep. (Fictional.)"
+   }
+  },
+  "family-lin": {
+   "name": {
+    "zh": "小雯",
+    "en": "Wen"
+   },
+   "role": {
+    "zh": "林伯的女兒",
+    "en": "Mr Lin's daughter"
+   },
+   "tag": "FAM",
+   "color": "#d08a3a",
+   "body": "family",
+   "about": {
+    "zh": "護理系學生，昨晚陪爸爸查了一整晚的名詞，越查越怕。",
+    "en": "A nursing student who spent last night looking up terms with her father and got more frightened with every search."
+   }
+  },
+  "ward-nurse": {
+   "name": {
+    "zh": "病房小潘",
+    "en": "Nurse Pan"
+   },
+   "role": {
+    "zh": "病房護理師",
+    "en": "Ward nurse"
+   },
+   "tag": "WN",
+   "color": "#2e8aa8",
+   "body": "nurse",
+   "phoneOnly": true,
+   "about": {
+    "zh": "化療病房的夜班護理師，體溫計永遠在口袋裡。",
+    "en": "Night nurse on the chemotherapy ward; the thermometer never leaves her pocket."
+   }
+  }
+ },
+ "places": {
+  "whiteboard": {
+   "name": {
+    "zh": "交班白板",
+    "en": "Handover board"
+   },
+   "hot": "whiteboard"
+  },
+  "bed6": {
+   "name": {
+    "zh": "6 床",
+    "en": "Bed 6"
+   },
+   "hot": "bed"
+  },
+  "dressing-trolley": {
+   "name": {
+    "zh": "換藥車",
+    "en": "Dressing trolley"
+   },
+   "hot": "instruments"
+  },
+  "pacs": {
+   "name": {
+    "zh": "PACS 讀片站",
+    "en": "PACS workstation"
+   },
+   "hot": "imaging"
+  },
+  "board-room": {
+   "name": {
+    "zh": "多專科會議室",
+    "en": "Tumour board room"
+   },
+   "hot": "workstation"
+  },
+  "scope": {
+   "name": {
+    "zh": "病理複核顯微鏡",
+    "en": "Pathology review microscope"
+   },
+   "hot": "microscope"
+  },
+  "monitor": {
+   "name": {
+    "zh": "床邊監視器",
+    "en": "Bedside monitor"
+   },
+   "hot": "monitor"
+  },
+  "proc-room": {
+   "name": {
+    "zh": "治療室",
+    "en": "Procedure room"
+   },
+   "hot": "recovery"
+  },
+  "desk": {
+   "name": {
+    "zh": "護理站桌",
+    "en": "Station desk"
+   },
+   "hot": "desk"
+  }
+ },
+ "glossary": [
+  {
+   "term": {
+    "zh": "切片",
+    "en": "biopsy"
+   },
+   "plain": {
+    "zh": "從腫塊取一小塊組織去化驗。取的位置、大小和品質，決定報告能回答多少。",
+    "en": "A small piece of tissue taken from a lump for the laboratory. Where it was taken, how big and how good it is decide how much the report can answer."
+   }
+  },
+  {
+   "term": {
+    "zh": "病理報告",
+    "en": "pathology report"
+   },
+   "plain": {
+    "zh": "病理醫師在顯微鏡下看完組織寫的報告。要和申請單、影像、病人身分對得起來才有意義。",
+    "en": "What the pathologist writes after examining the tissue under the microscope. It only means something when it lines up with the request form, the imaging and the patient."
+   }
+  },
+  {
+   "term": {
+    "zh": "檢體代表性",
+    "en": "representative specimen"
+   },
+   "plain": {
+    "zh": "這一小塊組織能不能代表整個腫塊。太小、壞死太多，報告會註記「判讀受限」。",
+    "en": "Whether the small piece truly stands for the whole lump. Too small or too necrotic, and the report says 'interpretation limited'."
+   }
+  },
+  {
+   "term": {
+    "zh": "多專科會議",
+    "en": "tumour board"
+   },
+   "plain": {
+    "zh": "腫瘤科、外科、放射科、病理科坐在一起看同一個病人的所有資料，一起決定下一步。",
+    "en": "Oncology, surgery, radiology and pathology at one table looking at everything about one patient and deciding the next step together."
+   }
+  },
+  {
+   "term": {
+    "zh": "生物標記",
+    "en": "biomarker"
+   },
+   "plain": {
+    "zh": "腫瘤上可以檢測的特徵，幫忙選擇治療。它幫助選擇，不保證個別病人一定有效。",
+    "en": "A measurable feature of the tumour that helps choose treatment. It guides the choice; it does not guarantee that treatment works for one person."
+   }
+  },
+  {
+   "term": {
+    "zh": "未檢出",
+    "en": "not detected"
+   },
+   "plain": {
+    "zh": "檢測做了、品質足夠、沒有找到。這和「沒做成」完全不同。",
+    "en": "The test was done, the quality was adequate, and nothing was found. Entirely different from 'the test failed'."
+   }
+  },
+  {
+   "term": {
+    "zh": "無法判讀",
+    "en": "uninterpretable"
+   },
+   "plain": {
+    "zh": "腫瘤細胞太少或品質不夠，檢測沒有成立。空白不是陰性。",
+    "en": "Too few tumour cells or inadequate quality, so the test never properly happened. A blank is not a negative."
+   }
+  },
+  {
+   "term": {
+    "zh": "分期",
+    "en": "stage"
+   },
+   "plain": {
+    "zh": "疾病擴散到哪裡：腫瘤多大、區域淋巴結有沒有、遠端器官有沒有。描述範圍。",
+    "en": "How far the disease has spread: tumour size, regional nodes, distant organs. It describes extent."
+   }
+  },
+  {
+   "term": {
+    "zh": "分級",
+    "en": "grade"
+   },
+   "plain": {
+    "zh": "顯微鏡下細胞長得多不像正常細胞。描述細胞的樣子，不是擴散的範圍。",
+    "en": "How abnormal the cells look under the microscope. It describes appearance, not spread."
+   }
+  },
+  {
+   "term": {
+    "zh": "區域淋巴結",
+    "en": "regional lymph nodes"
+   },
+   "plain": {
+    "zh": "腫瘤附近、手術時一起拿掉的淋巴結。有癌細胞是分期的一部分，不等於遠端轉移。",
+    "en": "The lymph nodes near the tumour, removed at surgery. Cancer cells in them are part of the stage; they are not distant spread."
+   }
+  },
+  {
+   "term": {
+    "zh": "遠端轉移",
+    "en": "distant metastasis"
+   },
+   "plain": {
+    "zh": "癌細胞跑到遠處的器官，像肝或肺。這要靠全身影像評估，不是看淋巴結。",
+    "en": "Cancer cells in a distant organ such as the liver or lung. Assessed by whole-body imaging, not by the regional nodes."
+   }
+  },
+  {
+   "term": {
+    "zh": "回述",
+    "en": "teach-back"
+   },
+   "plain": {
+    "zh": "請病人用自己的話把剛才聽到的講一遍。講錯的地方，就是還沒講清楚的地方。",
+    "en": "Asking the patient to repeat what they heard in their own words. Where they get it wrong is where it was not yet explained."
+   }
+  },
+  {
+   "term": {
+    "zh": "中央靜脈導管",
+    "en": "central line"
+   },
+   "plain": {
+    "zh": "放在大靜脈裡的細管，化療藥從這裡給。出口處要每次用無菌技術照顧，紅、腫、痛都是警訊。",
+    "en": "A fine tube sitting in a large vein, through which chemotherapy is given. The exit site is cared for aseptically every time; redness, swelling or pain are warnings."
+   }
+  },
+  {
+   "term": {
+    "zh": "無菌非觸碰技術",
+    "en": "aseptic non-touch technique"
+   },
+   "plain": {
+    "zh": "換敷料時不用手碰任何會接觸傷口的關鍵部位。手套不是重點，不碰才是。",
+    "en": "Changing a dressing without the hands touching any key part that will meet the wound. The gloves are not the point; not touching is."
+   }
+  },
+  {
+   "term": {
+    "zh": "發燒性嗜中性球低下",
+    "en": "febrile neutropenia"
+   },
+   "plain": {
+    "zh": "化療後白血球很低時發燒。身體沒有兵，小感染會在幾小時內變敗血症，是腫瘤科的急症。",
+    "en": "A fever while the white cells are low after chemotherapy. With no defenders, a small infection becomes sepsis in hours: oncology's emergency."
+   }
+  }
+ ],
+ "codex": [
+  {
+   "id": "central-line",
+   "kind": "equipment",
+   "name": {
+    "zh": "中央靜脈導管",
+    "en": "Central venous line"
+   },
+   "text": {
+    "zh": "阿美手臂上那條。每次給藥前沖洗、每週依規範換敷料、每天看出口。發燒時，導管永遠是第一個嫌疑犯。",
+    "en": "The line in Mei's arm. Flushed before every drug, dressing changed per protocol, exit site inspected daily. When a fever comes, the line is always the first suspect."
+   },
+   "hot": "device"
+  },
+  {
+   "id": "dressing-trolley",
+   "kind": "equipment",
+   "name": {
+    "zh": "換藥車",
+    "en": "Dressing trolley"
+   },
+   "text": {
+    "zh": "上層乾淨、下層廢棄。無菌包、消毒液、透明敷料、固定裝置。佳佳換敷料的順序二十年沒變過。",
+    "en": "Clean on top, waste below. Sterile pack, antiseptic, transparent dressing, securement device. Nurse Chia's order of work has not changed in twenty years."
+   },
+   "hot": "instruments"
+  },
+  {
+   "id": "pacs",
+   "kind": "equipment",
+   "name": {
+    "zh": "PACS 讀片站",
+    "en": "PACS workstation"
+   },
+   "text": {
+    "zh": "兩家醫院的影像要在這裡並排。先核對姓名、出生日期、檢查日期，再比較。看不同院的片子，日期比名字更容易弄錯。",
+    "en": "Images from two hospitals sit side by side here. Check name, date of birth and study date before comparing. With outside studies, the date is mistaken more often than the name."
+   },
+   "hot": "imaging"
+  },
+  {
+   "id": "review-scope",
+   "kind": "equipment",
+   "name": {
+    "zh": "病理複核顯微鏡",
+    "en": "Pathology review microscope"
+   },
+   "text": {
+    "zh": "外院借來的玻片在會議前由本院病理醫師複看。同一張玻片，第二雙眼睛，是多專科會議的規矩。",
+    "en": "Slides borrowed from the outside hospital are reviewed by our pathologist before the board. The same slide, a second pair of eyes: a rule of the tumour board."
+   },
+   "hot": "microscope"
+  },
+  {
+   "id": "monitor",
+   "kind": "equipment",
+   "name": {
+    "zh": "床邊監視器",
+    "en": "Bedside monitor"
+   },
+   "text": {
+    "zh": "化療病房的監視器最常響的是體溫。嗜中性球低的病人，一次發燒就是一個時鐘開始走。",
+    "en": "On the chemotherapy ward the alarm that sounds most often is the temperature. For a neutropenic patient, one fever starts a clock."
+   },
+   "hot": "monitor"
+  },
+  {
+   "id": "napkin",
+   "kind": "item",
+   "name": {
+    "zh": "洪主治的餐巾紙圖",
+    "en": "Dr Hung's napkin diagram"
+   },
+   "text": {
+    "zh": "一張餐巾紙：左邊畫「分級」是細胞的長相，右邊畫「分期」是地圖，淋巴結是地圖上的鄰居，遠端轉移是另一座城市。林伯把它收進皮夾。",
+    "en": "One napkin: on the left, 'grade' as what cells look like; on the right, 'stage' as a map, with lymph nodes as the neighbours and distant metastasis as another city. Mr Lin put it in his wallet."
+   }
+  },
+  {
+   "id": "whose-data",
+   "kind": "concept",
+   "name": {
+    "zh": "先核對是誰的資料",
+    "en": "Whose data is this?"
+   },
+   "text": {
+    "zh": "兩家醫院、兩個資料夾、一個病人。影像寫右上肺，病理申請單只寫「肺部組織」。資料對應正確之前，討論都沒有意義。",
+    "en": "Two hospitals, two folders, one patient. The imaging says right upper lobe; the pathology form says only 'lung tissue'. Until the data correspond, discussion is meaningless."
+   }
+  },
+  {
+   "id": "stage-vs-grade",
+   "kind": "concept",
+   "name": {
+    "zh": "分期不是分級",
+    "en": "Stage is not grade"
+   },
+   "text": {
+    "zh": "分級說細胞長什麼樣，分期說疾病跑到哪裡，淋巴結是分期裡的 N，遠端轉移是 M。三個不同的問題，病人常常把它們聽成一句話。",
+    "en": "Grade says what the cells look like; stage says where the disease has gone; nodes are the N and distant spread is the M. Three different questions that patients often hear as one sentence."
+   }
+  }
+ ],
+ "segs": [
+  {
+   "id": "handover",
+   "name": {
+    "zh": "晨間交班",
+    "en": "Morning handover"
+   },
+   "sub": {
+    "zh": "07:30 · 病房白板",
+    "en": "07:30 · ward whiteboard"
+   },
+   "t": 450,
+   "mood": "day",
+   "note": {
+    "zh": "接下周女士的兩個資料夾",
+    "en": "Took over Mrs Chou's two folders"
+   },
+   "beats": [
+    {
+     "id": "h1",
+     "to": "place:whiteboard",
+     "guide": {
+      "zh": "到白板聽交班",
+      "en": "Hear the handover at the board"
+     },
+     "lines": [
+      [
+       "nurse-chia",
+       {
+        "zh": "周女士，63 歲，右上肺腫塊，兩家醫院各做了一半。今天中午多專科會議要討論她。這是兩個資料夾。",
+        "en": "Mrs Chou, 63, right-upper-lobe mass, half investigated at each of two hospitals. She is on the tumour board at noon. Here are the two folders."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "開會之前，先核對這是誰的資料。影像報告寫什麼？病理申請單寫什麼？",
+        "en": "Before the board, whose data is this? What does the imaging report say? What does the pathology request say?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "影像：右上肺腫塊。病理申請單……只寫「肺部組織」。",
+        "en": "Imaging: right-upper-lobe mass. The pathology request... just says 'lung tissue'."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "oncology-v38-discordant-biopsy",
+      "stage": 0
+     },
+     "post": [
+      [
+       "attending",
+       {
+        "zh": "對。病人、檢體部位、採樣日期，三個對上之前，這份報告還不是她的。打電話去外院。",
+        "en": "Right. Patient, specimen site, sampling date: until all three match, this report is not yet hers. Phone the outside hospital."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "h2",
+     "to": "place:desk",
+     "guide": {
+      "zh": "安排外院玻片複核",
+      "en": "Arrange the outside-slide review"
+     },
+     "roles": [
+      "intern"
+     ],
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "外院的玻片今天早上會送到。中午之前要讓本院病理醫師複看。順序錯了，會議上就只能說「等一下」。",
+        "en": "The outside slides arrive this morning. Our pathologist must review them before noon. Get the order wrong and all you can say at the board is 'please wait'."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "order",
+      "q": {
+       "zh": "把外院玻片借閱與複核的流程排對",
+       "en": "Put the outside-slide review process in order"
+      },
+      "steps": [
+       {
+        "zh": "核對病人雙識別與外院編號",
+        "en": "Match two identifiers and the outside number"
+       },
+       {
+        "zh": "確認檢體部位與採樣日期",
+        "en": "Confirm specimen site and date"
+       },
+       {
+        "zh": "玻片與報告一起送病理複核",
+        "en": "Send slides and report for review"
+       },
+       {
+        "zh": "登錄追蹤單與負責人",
+        "en": "Log the tracker and the owner"
+       },
+       {
+        "zh": "會議前確認複核結果已回",
+        "en": "Confirm the review is back before the board"
+       }
+      ]
+     },
+     "post": [
+      [
+       "attending",
+       {
+        "zh": "（經過）負責人那一欄寫你的名字。追蹤不是一個動作，是一個人。",
+        "en": "(Passing) Put your name in the owner column. Tracking is not an action; it is a person."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "line-care",
+   "name": {
+    "zh": "導管照護",
+    "en": "Line care"
+   },
+   "sub": {
+    "zh": "08:30 · 6 床",
+    "en": "08:30 · bed 6"
+   },
+   "t": 510,
+   "mood": "day",
+   "note": {
+    "zh": "阿美換敷料，出口處發紅",
+    "en": "Mei's dressing: red exit site"
+   },
+   "beats": [
+    {
+     "id": "c1",
+     "to": "patient-mei",
+     "guide": {
+      "zh": "去 6 床看阿美",
+      "en": "See Mei at bed 6"
+     },
+     "lines": [
+      [
+       "patient-mei",
+       {
+        "zh": "醫師早。下午要做骨髓那個對不對？我很怕。但 4 床林伯昨晚更怕，我陪他聊到兩點。",
+        "en": "Morning, doctor. The marrow thing is this afternoon, right? I am scared. But Mr Lin in bed 4 was more scared last night; I sat with him till two."
+       }
+      ],
+      [
+       "nurse-chia",
+       {
+        "zh": "阿美，先換敷料。手臂給我，不要動，這五分鐘整個病房都會安靜。",
+        "en": "Mei, dressing first. Arm to me and keep still; the whole ward goes quiet for these five minutes."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "c2",
+     "to": "place:dressing-trolley",
+     "guide": {
+      "zh": "用無菌非觸碰技術換敷料",
+      "en": "Change the dressing with aseptic non-touch technique"
+     },
+     "roles": [
+      "navigator"
+     ],
+     "lines": [
+      [
+       "nurse-chia",
+       {
+        "zh": "無菌非觸碰技術：關鍵部位不碰。手套不是重點，不碰才是。來。",
+        "en": "Aseptic non-touch technique: key parts are never touched. The gloves are not the point; not touching is. Go."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "drill",
+      "template": "oncology",
+      "drill": "aseptic"
+     },
+     "post": [
+      [
+       "nurse-chia",
+       {
+        "zh": "敷料好了。等等，出口旁邊這一圈有點紅。你看到了嗎？",
+        "en": "Dressing done. Wait. This ring around the exit site is a little red. Do you see it?"
+       }
+      ]
+     ]
+    },
+    {
+     "id": "c3",
+     "to": "attending",
+     "guide": {
+      "zh": "出口處有點紅，你怎麼辦？",
+      "en": "A red exit site: what do you do?"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "出口處一圈淡淡的紅，沒有分泌物。阿美說不痛。她的白血球這週很低。",
+        "en": "A faint ring of redness at the exit site, no discharge. Mei says it does not hurt. Her white cells are very low this week."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "choice",
+      "q": {
+       "zh": "化療中、白血球低、導管出口微紅。你怎麼處理？",
+       "en": "On chemotherapy, low white cells, a slightly red line exit. What do you do?"
+      },
+      "options": [
+       {
+        "zh": "記錄、拍照、拭子培養、通知師傅、加強觀察",
+        "en": "Document, photograph, swab for culture, inform the mentor, watch closely",
+        "ok": true,
+        "set": {
+         "line-flag": true
+        },
+        "why": {
+         "zh": "嗜中性球低的病人不會有明顯的發炎反應。一圈淡紅可能是今晚發燒的預告。",
+         "en": "A neutropenic patient cannot mount a proper inflammatory response. A faint ring of red may be tonight's fever announcing itself."
+        }
+       },
+       {
+        "zh": "應該是膠帶過敏，換個敷料就好",
+        "en": "Probably tape allergy; just change the dressing",
+        "ok": false,
+        "set": {
+         "line-flag": false
+        },
+        "why": {
+         "zh": "可能真的是過敏。但在沒有兵的身體裡，你沒有資格「應該」。",
+         "en": "It may well be an allergy. But in a body with no defenders, you do not get to say 'probably'."
+        }
+       },
+       {
+        "zh": "直接拔掉導管比較安全",
+        "en": "Safer to pull the line now",
+        "ok": false,
+        "set": {
+         "line-flag": false
+        },
+        "why": {
+         "zh": "沒有發燒、沒有分泌物就拔，是過度反應。先記錄、培養、觀察，由團隊決定。",
+         "en": "Pulling a line with no fever and no discharge is an over-reaction. Document, culture, observe, and let the team decide."
+        }
+       }
+      ]
+     },
+     "post": [
+      [
+       "attending",
+       {
+        "zh": "阿美，這一圈紅我們記下來了。今天任何時候覺得冷、發抖、不舒服，立刻按鈴，不要等體溫計。",
+        "en": "Mei, that ring of red is on record. At any point today, if you feel cold, shivery or unwell, press the bell at once; do not wait for the thermometer."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ward-call",
+   "name": {
+    "zh": "病房來電",
+    "en": "Ward calling"
+   },
+   "sub": {
+    "zh": "10:30 · 4 床",
+    "en": "10:30 · bed 4"
+   },
+   "t": 630,
+   "mood": "day",
+   "note": {
+    "zh": "用餐巾紙跟林伯解釋分期",
+    "en": "Explained staging to Mr Lin on a napkin"
+   },
+   "beats": [
+    {
+     "id": "w1",
+     "to": "patient-lin",
+     "guide": {
+      "zh": "接電話，去 4 床",
+      "en": "Take the call, go to bed 4"
+     },
+     "ring": {
+      "title": {
+       "zh": "病房來電",
+       "en": "Ward calling"
+      },
+      "sub": {
+       "zh": "4 床林伯一夜沒睡，說自己是末期",
+       "en": "Bed 4, Mr Lin, has not slept and says he is terminal"
+      },
+      "call": true,
+      "from": "ward-nurse"
+     },
+     "lines": [
+      [
+       "ward-nurse",
+       {
+        "zh": "小潘。4 床林伯昨晚看了病歷，讀到「高分級」和「區域淋巴結」，整晚沒睡，女兒也在哭。你可以來嗎？",
+        "en": "Pan. Bed 4, Mr Lin, read his chart last night, saw 'high grade' and 'regional lymph nodes', has not slept, and his daughter is crying. Can you come?"
+       }
+      ],
+      [
+       "patient-lin",
+       {
+        "zh": "醫師，不用瞞我。高分級、淋巴結都有，就是末期了對不對？",
+        "en": "Doctor, do not hide it from me. High grade and lymph nodes: that means terminal, doesn't it?"
+       }
+      ],
+      [
+       "family-lin",
+       {
+        "zh": "我查了一整晚……每個網站說的都不一樣。",
+        "en": "I searched all night... every website says something different."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "（拿出一張餐巾紙）林伯，這是三個不同的問題，我們一個一個畫。",
+        "en": "(Producing a napkin) Mr Lin, these are three different questions. We draw them one at a time."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "w2",
+     "to": "attending",
+     "guide": {
+      "zh": "請林伯用自己的話說一遍",
+      "en": "Ask Mr Lin to say it back in his own words"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "左邊：分級，是細胞長得像不像正常細胞。右邊：分期，是地圖。淋巴結是地圖上的鄰居，遠端轉移是另一座城市，還在用影像看。",
+        "en": "Left: grade, how much the cells resemble normal cells. Right: stage, a map. Lymph nodes are the neighbours on the map; distant metastasis is another city, still being checked by imaging."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "林伯，可以用您自己的話，跟小雯講一遍嗎？",
+        "en": "Mr Lin, could you explain it back to Wen in your own words?"
+       }
+      ],
+      [
+       "patient-lin",
+       {
+        "zh": "高分級是細胞長得醜……淋巴結是鄰居……所以淋巴結，還是末期？",
+        "en": "High grade means ugly cells... nodes are neighbours... so the nodes, that is still terminal?"
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "oncology-v38-stage-not-grade",
+      "stage": 3
+     },
+     "item": "napkin",
+     "post": [
+      [
+       "attending",
+       {
+        "zh": "聽到了嗎？他講對了兩個，第三個還混著。所以回述不是考試，是找出我們還沒講清楚的地方。再畫一次。",
+        "en": "Did you hear? Two right, the third still tangled. Teach-back is not a test; it finds what we have not yet made clear. Draw it again."
+       }
+      ],
+      [
+       "patient-lin",
+       {
+        "zh": "……鄰居不是另一座城市。另一座城市還在看。我懂了。這張紙我可以留著嗎？",
+        "en": "...The neighbours are not another city. The other city is still being checked. I understand. May I keep this?"
+       }
+      ],
+      [
+       "family-lin",
+       {
+        "zh": "爸，我幫你放皮夾。",
+        "en": "Dad, I will put it in your wallet."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "board",
+   "name": {
+    "zh": "多專科會議",
+    "en": "Tumour board"
+   },
+   "sub": {
+    "zh": "12:00 · 會議室",
+    "en": "12:00 · board room"
+   },
+   "t": 720,
+   "mood": "day",
+   "note": {
+    "zh": "會議：周女士的不一致",
+    "en": "Board: Mrs Chou's discordance"
+   },
+   "beats": [
+    {
+     "id": "b1",
+     "to": "place:pacs",
+     "guide": {
+      "zh": "會議前到 PACS 並排兩院影像",
+      "en": "Before the board: both hospitals' images side by side"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "先核對：姓名、出生日期、兩個檢查日期。然後告訴我這張片要回答什麼問題。",
+        "en": "Check first: name, date of birth, both study dates. Then tell me what question this image has to answer."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "imaging",
+      "region": "chest",
+      "question": {
+       "zh": "影像寫右上肺腫塊，病理申請單只寫「肺部組織」。看片的時候你要確認什麼？",
+       "en": "Imaging says a right-upper-lobe mass; the pathology form says only 'lung tissue'. What must you confirm on the image?"
+      },
+      "answer": {
+       "zh": "腫塊的位置與切片的路徑或標記是否對應：外院的切片是從這顆腫塊取的嗎？還是取到了旁邊的發炎區？資料對應正確，病理才是她的病理。",
+       "en": "Whether the mass and the biopsy path or marker correspond: was the outside biopsy taken from this mass, or from the inflamed tissue beside it? Only when the data correspond is the pathology truly hers."
+      }
+     },
+     "post": [
+      [
+       "attending",
+       {
+        "zh": "切片路徑在腫塊邊緣，外院報告又註記「檢體小、壞死多」。這不是有檢體代表性的切片。",
+        "en": "The biopsy track skims the edge of the mass, and the outside report notes 'small specimen, mostly necrotic'. That is not a representative specimen."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "b2",
+     "to": "place:board-room",
+     "guide": {
+      "zh": "進會議室報告周女士",
+      "en": "Present Mrs Chou at the board"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "外科、放射科、病理科都到了。本院病理複核：細胞太少，判讀受限。所有人看著你。",
+        "en": "Surgery, radiology and pathology are all here. Our pathology review: too few cells, interpretation limited. Everyone looks at you."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "報告的時候，限制要說在結論前面，不是後面。",
+        "en": "When you present, state the limitations before the conclusion, not after."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "oncology-v38-discordant-biopsy",
+      "stage": 1
+     },
+     "post": [
+      [
+       "attending",
+       {
+        "zh": "會議決定：再次採樣，由放射科導引取腫塊中心。暫定分類記錄，待確認項目標清楚。負責追蹤的人？",
+        "en": "Board decision: repeat sampling, radiology-guided, from the centre of the mass. Provisional classification recorded, pending items clearly marked. Who owns the follow-up?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "我。周女士下午會問為什麼要再做一次，我去解釋。",
+        "en": "Me. Mrs Chou will ask this afternoon why it must be done again; I will explain."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "clinic",
+   "name": {
+    "zh": "午後門診",
+    "en": "Afternoon clinic"
+   },
+   "sub": {
+    "zh": "14:00 · 門診",
+    "en": "14:00 · outpatient clinic"
+   },
+   "t": 840,
+   "mood": "day",
+   "note": {
+    "zh": "王先生：空白不是陰性",
+    "en": "Mr Wang: a blank is not a negative"
+   },
+   "beats": [
+    {
+     "id": "k1",
+     "to": "patient-wang",
+     "guide": {
+      "zh": "請王先生進診間",
+      "en": "Call Mr Wang into the room"
+     },
+     "lines": [
+      [
+       "patient-wang",
+       {
+        "zh": "醫師，報告這幾格是空的，就是沒有那些標記吧？所以那些新藥都用不到？",
+        "en": "Doctor, these boxes on the report are blank, so I do not have those markers, right? So none of the new drugs apply?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "王先生，空白和「未檢出」不一樣。報告下面有一行字：腫瘤細胞量不足。",
+        "en": "Mr Wang, a blank is not the same as 'not detected'. There is a line at the bottom: insufficient tumour cells."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "這一行字決定整份生物標記報告能不能成立。你來講，哪些是真的陰性，哪些是無法判讀。",
+        "en": "That line decides whether the biomarker report stands at all. You explain which are true negatives and which are uninterpretable."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "oncology-v38-biomarker-inconclusive",
+      "stage": 0
+     },
+     "post": [
+      [
+       "attending",
+       {
+        "zh": "對。下一步不是盲目重送，是問病理科剩下的組織夠不夠、補哪一項會改變治療。",
+        "en": "Right. The next step is not resending blindly; it is asking pathology whether enough tissue remains and which test would actually change treatment."
+       }
+      ],
+      [
+       "patient-wang",
+       {
+        "zh": "所以我不是「沒有」，是「還不知道」。……這樣反而比較好睡。",
+        "en": "So it is not 'none', it is 'not yet known'. ...Oddly, I will sleep better with that."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "k2",
+     "to": "place:desk",
+     "guide": {
+      "zh": "寫門診紀錄與病理詢問單",
+      "en": "Write the note and the pathology query"
+     },
+     "roles": [
+      "intern"
+     ],
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "你把報告的每一格分成三類：陰性、陽性、未完成。病理詢問單上寫：剩餘組織是否足夠補測，若不足，建議的下一步。",
+        "en": "You sort every box of the report into three columns: negative, positive, not done. The pathology query reads: is enough tissue left for the additional test, and if not, what is recommended."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "marrow",
+   "name": {
+    "zh": "骨髓檢查",
+    "en": "Marrow examination"
+   },
+   "sub": {
+    "zh": "15:00 · 治療室",
+    "en": "15:00 · procedure room"
+   },
+   "t": 900,
+   "mood": "day",
+   "note": {
+    "zh": "阿美的骨髓檢查定位",
+    "en": "Landmarked Mei's marrow site"
+   },
+   "beats": [
+    {
+     "id": "p1",
+     "to": "place:proc-room",
+     "guide": {
+      "zh": "到治療室幫阿美定位",
+      "en": "Landmark Mei's marrow site in the procedure room"
+     },
+     "lines": [
+      [
+       "patient-mei",
+       {
+        "zh": "我趴好了。可以一直跟我講話嗎？講什麼都好。林伯的餐巾紙也可以。",
+        "en": "I am lying down. Could you keep talking to me the whole time? Anything. Mr Lin's napkin, even."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "可以。你負責定位後上髂棘，穿刺是我的。阿美，我們來講林伯的鄰居和另一座城市。",
+        "en": "We can. You landmark the posterior superior iliac spine; the needle is mine. Mei, let us talk about Mr Lin's neighbours and the other city."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "drill",
+      "template": "oncology",
+      "drill": "marrow"
+     },
+     "post": [
+      [
+       "nurse-chia",
+       {
+        "zh": "定位對了，標記好。阿美，結束之後出口那一圈紅我再看一次。",
+        "en": "Landmark right, marked. Mei, when this is done I am looking at that ring of red again."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fever",
+   "name": {
+    "zh": "病況變化",
+    "en": "Deterioration"
+   },
+   "sub": {
+    "zh": "16:00 · 6 床",
+    "en": "16:00 · bed 6"
+   },
+   "t": 960,
+   "mood": "eve",
+   "note": {
+    "zh": "阿美發燒：嗜中性球低下急症",
+    "en": "Mei febrile: neutropenic emergency"
+   },
+   "beats": [
+    {
+     "id": "f1",
+     "to": "place:monitor",
+     "guide": {
+      "zh": "接電話，衝回 6 床",
+      "en": "Take the call, run back to bed 6"
+     },
+     "ring": {
+      "title": {
+       "zh": "病房來電",
+       "en": "Ward calling"
+      },
+      "sub": {
+       "zh": "阿美發抖、發燒，白血球很低",
+       "en": "Mei shivering and febrile; white cells very low"
+      },
+      "call": true,
+      "from": "ward-nurse"
+     },
+     "lines": [
+      [
+       "ward-nurse",
+       {
+        "zh": "小潘。6 床阿美剛剛發抖，體溫上來了。她這週嗜中性球非常低。心跳快，血壓還好。",
+        "en": "Pan. Bed 6, Mei, has just had a rigor and her temperature is up. Her neutrophils are very low this week. Pulse fast, pressure holding."
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "阿美裹著被子在抖，監視器上的體溫在閃。導管出口那一圈紅，比早上更紅。",
+        "en": "Mei is shaking under the blanket; the temperature on the monitor flashes. The ring around the line exit is redder than this morning."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "vitals",
+      "event": "fever",
+      "options": [
+       {
+        "zh": "培養含導管、一小時內抗生素、叫師傅",
+        "en": "Cultures including the line, antibiotics within the hour, call the mentor",
+        "ok": true,
+        "why": {
+         "zh": "沒有兵的身體裡，一小時就是差別。培養要在抗生素之前，而且導管那一管不能漏。",
+         "en": "In a body with no defenders, an hour is the difference. Cultures before the antibiotic, and the line culture must not be missed."
+        }
+       },
+       {
+        "zh": "先退燒觀察，等培養結果",
+        "en": "Antipyretic and wait for the cultures",
+        "ok": false,
+        "why": {
+         "zh": "培養要兩天。嗜中性球低的敗血症不會等兩天。",
+         "en": "Cultures take two days. Neutropenic sepsis does not wait two days."
+        }
+       },
+       {
+        "zh": "應該是骨髓檢查後的反應，觀察",
+        "en": "Probably a reaction to the marrow procedure; observe",
+        "ok": false,
+        "why": {
+         "zh": "「應該」又來了。白血球低的時候，每一次發燒都當感染，直到證明不是。",
+         "en": "There is that 'probably' again. With low white cells every fever is infection until proven otherwise."
+        }
+       }
+      ]
+     }
+    },
+    {
+     "id": "f2",
+     "to": "attending",
+     "guide": {
+      "zh": "向師傅回報",
+      "en": "Report to the mentor"
+     },
+     "when": {
+      "flag": "line-flag",
+      "is": true
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "早上你把那一圈紅記下來、拍了照、送了拭子。現在培養已經在跑，導管是第一嫌疑犯，而我們有早上的照片可以比。做得對。",
+        "en": "This morning you documented the ring, photographed it and swabbed it. The culture is already running, the line is the prime suspect, and we have this morning's photo to compare. Well done."
+       }
+      ],
+      [
+       "patient-mei",
+       {
+        "zh": "醫師……我早上就說不痛。",
+        "en": "Doctor... I did say it did not hurt this morning."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "阿美，妳的身體這週不會喊痛，所以我們替它多看一眼。抗生素依醫囑上了。",
+        "en": "Mei, your body cannot shout this week, so we look a little harder on its behalf. Antibiotics are up, per orders."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "f3",
+     "to": "attending",
+     "guide": {
+      "zh": "向師傅回報",
+      "en": "Report to the mentor"
+     },
+     "when": {
+      "flag": "line-flag",
+      "is": false
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "早上那一圈紅，你說是膠帶過敏。現在沒有早上的照片、沒有早上的拭子，培養從現在開始算。八個小時不見了。",
+        "en": "That ring of red this morning, you called tape allergy. Now there is no morning photo, no morning swab, and the culture clock starts now. Eight hours lost."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "記住了。白血球低的時候，沒有「應該」。抗生素依醫囑上了，導管培養送了。",
+        "en": "Noted. With low white cells there is no 'probably'. Antibiotics are up per orders and the line culture is sent."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "好。今晚盯著她的血壓。",
+        "en": "Good. Watch her blood pressure tonight."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "end-of-day",
+   "name": {
+    "zh": "交班與下班",
+    "en": "Handover and home"
+   },
+   "sub": {
+    "zh": "17:30 · 病房白板",
+    "en": "17:30 · ward whiteboard"
+   },
+   "t": 1050,
+   "mood": "eve",
+   "note": {
+    "zh": "完成晚間交班",
+    "en": "Evening handover done"
+   },
+   "beats": [
+    {
+     "id": "e1",
+     "to": "place:whiteboard",
+     "guide": {
+      "zh": "到白板交班給夜班",
+      "en": "Hand over to the night team"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "6 床阿美：發燒性嗜中性球低下，培養含導管已送，抗生素依醫囑，今晚看血壓與尿量。",
+        "en": "Bed 6, Mei: febrile neutropenia, cultures including the line sent, antibiotics per orders, blood pressure and urine output tonight."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "周女士：會議決定再次採樣，檢體代表性不足，暫定分類已標，追蹤負責人是我。",
+        "en": "Mrs Chou: the board decided on repeat sampling as the specimen was not representative; provisional classification marked, I own the follow-up."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "4 床林伯：分期與分級已說明，回述到第三次才對，遠端影像待回。王先生：三項生物標記無法判讀，病理詢問單已送。",
+        "en": "Bed 4, Mr Lin: stage and grade explained, teach-back correct on the third try, distant imaging pending. Mr Wang: three biomarkers uninterpretable, pathology query sent."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "每一個都有「待確認」和「負責人」。這就是腫瘤科的交班。",
+        "en": "Every one has a 'pending' and an 'owner'. That is an oncology handover."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "e2",
+     "to": "nurse-chia",
+     "guide": {
+      "zh": "跟佳佳核對追蹤電話名單",
+      "en": "Go through the follow-up call list with Chia"
+     },
+     "roles": [
+      "navigator"
+     ],
+     "lines": [
+      [
+       "nurse-chia",
+       {
+        "zh": "明天的追蹤電話：周女士再次採樣的時間、王先生病理的回覆、林伯女兒問的那三個名詞。我都記在這裡。",
+        "en": "Tomorrow's calls: Mrs Chou's repeat sampling time, pathology's reply for Mr Wang, and the three terms Mr Lin's daughter asked about. All in here."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "阿美呢？",
+        "en": "And Mei?"
+       }
+      ],
+      [
+       "nurse-chia",
+       {
+        "zh": "阿美我不用打電話，我今晚就睡在護理站。",
+        "en": "Mei needs no phone call. I am sleeping at the station tonight."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "e3",
+     "to": "attending",
+     "guide": {
+      "zh": "聽師傅的下班總結",
+      "en": "The mentor's debrief"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "今天四個病人，沒有一個的答案在病理報告的第一行。",
+        "en": "Four patients today, and not one answer was on the first line of a pathology report."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "周女士的在申請單上，王先生的在最後一行小字，林伯的在他自己的嘴裡，阿美的在一圈淡紅裡。",
+        "en": "Mrs Chou's was on the request form, Mr Wang's in the small print at the bottom, Mr Lin's in his own mouth, Mei's in a faint ring of red."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "先核對是誰的資料，再讀清楚每一個字，然後讓病人講一遍。這三件事比任何新藥都老，也比任何新藥都重要。",
+        "en": "Verify whose data it is, read every word, then let the patient say it back. Three things older than any new drug, and more important than any."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "師傅，餐巾紙還有嗎？",
+        "en": "Dr Hung, any napkins left?"
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "一疊。明天用得到。",
+        "en": "A whole stack. You will need them tomorrow."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "night",
+   "name": {
+    "zh": "夜間一通電話",
+    "en": "One call at night"
+   },
+   "sub": {
+    "zh": "23:00 · 值班室",
+    "en": "23:00 · on-call room"
+   },
+   "t": 1380,
+   "mood": "night",
+   "note": {
+    "zh": "夜間：阿美的血壓",
+    "en": "Night: Mei's blood pressure"
+   },
+   "beats": [
+    {
+     "id": "x1",
+     "to": "place:bed6",
+     "guide": {
+      "zh": "接電話，回 6 床",
+      "en": "Take the call, back to bed 6"
+     },
+     "ring": {
+      "title": {
+       "zh": "病房來電",
+       "en": "Ward calling"
+      },
+      "sub": {
+       "zh": "阿美血壓比傍晚低一點",
+       "en": "Mei's blood pressure a little lower than this evening"
+      },
+      "call": true,
+      "from": "ward-nurse"
+     },
+     "lines": [
+      [
+       "ward-nurse",
+       {
+        "zh": "小潘。阿美抗生素上了幾個小時，體溫下來一點，但血壓比傍晚低，尿量這兩小時少。她說還好。",
+        "en": "Pan. Mei is a few hours into antibiotics, temperature slightly down, but her pressure is lower than this evening and urine output is down these two hours. She says she is fine."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "嗜中性球低的病人說「還好」不算數。血壓趨勢加少尿，這是敗血症在走。依醫囑輸液、重評、通知洪主治和重症團隊，我現在過去。",
+        "en": "'Fine' from a neutropenic patient does not count. A falling pressure trend with oliguria is sepsis on the move. Fluids per orders, reassess, inform Dr Hung and the critical-care team; I am on my way."
+       }
+      ],
+      [
+       "patient-mei",
+       {
+        "zh": "醫師，你來得好快。林伯說你們畫圖很慢，跑步很快。",
+        "en": "Doctor, you came fast. Mr Lin says you people draw slowly and run quickly."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "今晚我們兩個都會。",
+        "en": "Tonight we do both."
+       }
+      ]
+     ],
+     "end": true
+    }
+   ]
+  }
+ ],
+ "ending": {
+  "title": {
+   "zh": "下班了",
+   "en": "End of shift"
+  },
+  "sub": {
+   "zh": "先核對是誰的資料，再讓病人講一遍",
+   "en": "Verify whose data it is, then let the patient say it back"
+  },
+  "stats": [
+   "stages",
+   "drills",
+   "choices",
+   "calls",
+   "items",
+   "time"
+  ]
+ }
+}

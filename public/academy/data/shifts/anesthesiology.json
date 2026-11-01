@@ -1,0 +1,1600 @@
+{
+ "format": "huatuo-shift-v1",
+ "department": "anesthesiology",
+ "title": {
+  "zh": "麻醉科值班日",
+  "en": "A shift in anaesthesia"
+ },
+ "tagline": {
+  "zh": "睡著很容易，安全醒來才是功夫",
+  "en": "Going to sleep is easy; waking safely is the craft"
+ },
+ "room": "or",
+ "minutes": 25,
+ "roles": [
+  {
+   "id": "resident",
+   "zh": "麻醉科住院醫師",
+   "en": "Anaesthesia resident",
+   "desc": {
+    "zh": "術前評估、氣道計畫、麻醉紀錄，還有在外科醫師問「可以開始了嗎」時說「還沒」。",
+    "en": "Preoperative assessment, the airway plan, the anaesthetic record, and saying 'not yet' when the surgeon asks 'can we start?'"
+   }
+  },
+  {
+   "id": "na",
+   "zh": "麻醉護理師",
+   "en": "Nurse anaesthetist",
+   "desc": {
+    "zh": "麻醉機是你開的，困難氣道推車是你推的，每一支藥、每一條管路都經過你的手。",
+    "en": "You check the machine, you bring the difficult-airway trolley, and every drug and every line passes through your hands."
+   }
+  }
+ ],
+ "cast": {
+  "attending": {
+   "name": {
+    "zh": "方主治",
+    "en": "Dr Fang"
+   },
+   "role": {
+    "zh": "麻醉科主治醫師（師傅）",
+    "en": "Consultant anaesthetist (mentor)"
+   },
+   "tag": "ATT",
+   "color": "#81296d",
+   "about": {
+    "zh": "預充氧的時候會哼歌。口袋裡永遠有一張自己寫的檢核卡。口頭禪：「想計畫 A 之前，先想計畫 D。」",
+    "en": "Hums while pre-oxygenating. Always carries a hand-written checklist card. Catchphrase: 'Before plan A, think about plan D.'"
+   },
+   "body": "mentor"
+  },
+  "surgeon": {
+   "name": {
+    "zh": "杜醫師",
+    "en": "Dr Tu"
+   },
+   "role": {
+    "zh": "一般外科主治醫師",
+    "en": "General surgeon"
+   },
+   "tag": "SUR",
+   "color": "#b8742c",
+   "about": {
+    "zh": "手很快，耐心很短。每隔三分鐘問一次「可以開始了嗎？」",
+    "en": "Fast hands, short patience. Asks 'can we start?' every three minutes."
+   },
+   "body": "specialist"
+  },
+  "circ": {
+   "name": {
+    "zh": "阿倫",
+    "en": "A-Lun"
+   },
+   "role": {
+    "zh": "流動護理師",
+    "en": "Circulating nurse"
+   },
+   "tag": "RN",
+   "color": "#3b8f6a",
+   "about": {
+    "zh": "念 WHO 檢核表的聲音全手術室最清楚。沒有人敢在他念的時候講話。",
+    "en": "Reads the WHO checklist louder and clearer than anyone. Nobody talks over him."
+   },
+   "body": "circulating"
+  },
+  "mr-wang": {
+   "name": {
+    "zh": "王先生",
+    "en": "Mr Wang"
+   },
+   "role": {
+    "zh": "病人：腹腔鏡膽囊切除",
+    "en": "Patient: laparoscopic cholecystectomy"
+   },
+   "tag": "P1",
+   "color": "#c2453d",
+   "about": {
+    "zh": "六十四歲退休公車司機，脖子粗、鬍子濃、嘴巴張不大，打鼾打到太太搬去客廳。是太太逼他來的。",
+    "en": "Sixty-four, retired bus driver, thick neck, full beard, small mouth opening, snores so loudly his wife moved to the sofa. She made him come."
+   },
+   "body": "patient"
+  },
+  "mrs-li": {
+   "name": {
+    "zh": "李阿姨",
+    "en": "Mrs Li"
+   },
+   "role": {
+    "zh": "病人：髖部骨折",
+    "en": "Patient: hip fracture"
+   },
+   "tag": "P2",
+   "color": "#8a5a2b",
+   "about": {
+    "zh": "七十一歲，在菜園跌倒。有心房顫動在吃抗凝血劑。最怕的一句話：「我會不會醒不來？」",
+    "en": "Seventy-one, fell in her vegetable garden. Atrial fibrillation, on an anticoagulant. Her biggest fear: 'What if I do not wake up?'"
+   },
+   "body": "patient"
+  },
+  "pacu-nurse": {
+   "name": {
+    "zh": "小安",
+    "en": "An"
+   },
+   "role": {
+    "zh": "恢復室護理師",
+    "en": "Recovery nurse"
+   },
+   "tag": "PAC",
+   "color": "#6a8f3b",
+   "about": {
+    "zh": "病人醒來第一個看到的人。交班沒說清楚，她會追到走廊問。",
+    "en": "The first face patients see when they wake. Leave a gap in the handover and she will chase you down the corridor."
+   },
+   "body": "nurse"
+  },
+  "preop-nurse": {
+   "name": {
+    "zh": "游護理師",
+    "en": "Nurse Yu"
+   },
+   "role": {
+    "zh": "術前評估門診護理師",
+    "en": "Pre-assessment clinic nurse"
+   },
+   "tag": "PRE",
+   "color": "#4d6d8e",
+   "about": {
+    "zh": "明天的病人今天就被她看過一遍。聽到心雜音就打電話。",
+    "en": "Tomorrow's patients have already been through her today. A murmur and she dials."
+   },
+   "phoneOnly": true
+  },
+  "ward-nurse": {
+   "name": {
+    "zh": "阿珍",
+    "en": "A-Jen"
+   },
+   "role": {
+    "zh": "外科病房護理師",
+    "en": "Surgical-ward nurse"
+   },
+   "tag": "WN",
+   "color": "#8c5a9e",
+   "about": {
+    "zh": "夜班。病人半夜偷吃餅乾，她一定知道，也一定會告訴你。",
+    "en": "Night shift. If a patient sneaks a biscuit at midnight she knows, and she tells you."
+   },
+   "phoneOnly": true
+  }
+ },
+ "places": {
+  "whiteboard": {
+   "name": {
+    "zh": "刀表白板",
+    "en": "List board"
+   },
+   "hot": "whiteboard"
+  },
+  "machine": {
+   "name": {
+    "zh": "麻醉機",
+    "en": "Anaesthetic machine"
+   },
+   "hot": "anaesthesia"
+  },
+  "head": {
+   "name": {
+    "zh": "病人頭端",
+    "en": "Head of the table"
+   },
+   "hot": "field"
+  },
+  "monitor": {
+   "name": {
+    "zh": "監視器",
+    "en": "Monitor"
+   },
+   "hot": "monitor"
+  },
+  "trolley": {
+   "name": {
+    "zh": "困難氣道推車",
+    "en": "Difficult-airway trolley"
+   },
+   "hot": "instruments"
+  },
+  "drugs": {
+   "name": {
+    "zh": "藥車",
+    "en": "Drug trolley"
+   },
+   "hot": "drugs"
+  },
+  "door": {
+   "name": {
+    "zh": "手術室門口",
+    "en": "Theatre door"
+   },
+   "hot": "door"
+  },
+  "recovery": {
+   "name": {
+    "zh": "恢復室",
+    "en": "Recovery room"
+   },
+   "hot": "recovery"
+  },
+  "chart": {
+   "name": {
+    "zh": "麻醉紀錄桌",
+    "en": "Record desk"
+   },
+   "hot": "chart"
+  }
+ },
+ "glossary": [
+  {
+   "term": {
+    "zh": "ASA 分級",
+    "en": "ASA class"
+   },
+   "plain": {
+    "zh": "麻醉前用來描述病人整體健康狀況的一到六級。數字越大，風險越高。",
+    "en": "A one-to-six scale describing a patient's overall health before anaesthesia. The higher the number, the higher the risk."
+   }
+  },
+  {
+   "term": {
+    "zh": "困難氣道",
+    "en": "difficult airway"
+   },
+   "plain": {
+    "zh": "預期用面罩、喉鏡或插管會有困難的病人。要事先準備，不是臨場才發現。",
+    "en": "A patient in whom mask ventilation, laryngoscopy or intubation is expected to be hard. Planned for in advance, not discovered on the day."
+   }
+  },
+  {
+   "term": {
+    "zh": "預充氧",
+    "en": "pre-oxygenation"
+   },
+   "plain": {
+    "zh": "睡著之前先吸幾分鐘純氧，讓肺裡存滿氧氣，插管時才有時間。",
+    "en": "Breathing pure oxygen for a few minutes before going to sleep fills the lungs with oxygen and buys time for intubation."
+   }
+  },
+  {
+   "term": {
+    "zh": "喉鏡",
+    "en": "laryngoscope"
+   },
+   "plain": {
+    "zh": "插管時用來撥開舌頭、看見聲帶的工具。影像喉鏡在尖端有一個鏡頭。",
+    "en": "The tool that lifts the tongue so the vocal cords can be seen. A videolaryngoscope has a camera at its tip."
+   }
+  },
+  {
+   "term": {
+    "zh": "聲門上呼吸道",
+    "en": "supraglottic airway"
+   },
+   "plain": {
+    "zh": "放在喉嚨裡、蓋住聲門上方的軟管，不進氣管也能通氣。計畫 B 的主角。",
+    "en": "A soft device that sits in the throat above the vocal cords and ventilates without entering the windpipe. The star of plan B."
+   }
+  },
+  {
+   "term": {
+    "zh": "計畫 A 到 D",
+    "en": "plans A to D"
+   },
+   "plain": {
+    "zh": "困難氣道的四層計畫：插管、聲門上呼吸道、面罩通氣、頸部切開。每一層失敗就宣告下一層。",
+    "en": "The four layers of a difficult-airway plan: intubation, supraglottic airway, mask ventilation, front-of-neck access. When one fails, you declare the next."
+   }
+  },
+  {
+   "term": {
+    "zh": "時間暫停",
+    "en": "time-out"
+   },
+   "plain": {
+    "zh": "劃刀前全隊停下來，核對病人、手術、過敏和氣道計畫。",
+    "en": "Before the incision the whole team stops to confirm patient, operation, allergies and the airway plan."
+   }
+  },
+  {
+   "term": {
+    "zh": "脊椎麻醉",
+    "en": "spinal anaesthesia"
+   },
+   "plain": {
+    "zh": "從腰椎之間打一針到脊髓液，讓下半身暫時沒有感覺。病人是醒著的。",
+    "en": "An injection between the lumbar vertebrae into the spinal fluid that numbs the lower body. The patient stays awake."
+   }
+  },
+  {
+   "term": {
+    "zh": "禁食",
+    "en": "fasting"
+   },
+   "plain": {
+    "zh": "麻醉前一段時間不能吃不能喝，避免睡著後胃裡的東西跑進肺裡。",
+    "en": "Not eating or drinking for a period before anaesthesia, so stomach contents cannot enter the lungs once asleep."
+   }
+  },
+  {
+   "term": {
+    "zh": "抗凝血劑",
+    "en": "anticoagulant"
+   },
+   "plain": {
+    "zh": "讓血比較不會凝固的藥。做脊椎麻醉之前，一定要知道最後一次吃是什麼時候。",
+    "en": "A medicine that makes blood clot less easily. Before a spinal you must know when the last dose was taken."
+   }
+  },
+  {
+   "term": {
+    "zh": "心雜音",
+    "en": "heart murmur"
+   },
+   "plain": {
+    "zh": "聽診器聽到的額外聲音，可能是瓣膜有問題。加上爬樓梯會喘，手術前要查清楚。",
+    "en": "An extra sound heard with the stethoscope, possibly a valve problem. With breathlessness on stairs it must be investigated before surgery."
+   }
+  },
+  {
+   "term": {
+    "zh": "功能容量",
+    "en": "functional capacity"
+   },
+   "plain": {
+    "zh": "病人平常能做多少事：能不能爬兩層樓不喘。這比很多檢查更能預測風險。",
+    "en": "How much a patient can do day to day, such as two flights of stairs without stopping. Predicts risk better than many tests."
+   }
+  },
+  {
+   "term": {
+    "zh": "氣道警示卡",
+    "en": "airway alert card"
+   },
+   "plain": {
+    "zh": "給困難氣道病人帶回家的卡片，寫著這次用了什麼方法。下一位麻醉醫師會感謝它。",
+    "en": "A card the patient takes home stating what worked for the airway this time. The next anaesthetist will be grateful."
+   }
+  }
+ ],
+ "codex": [
+  {
+   "id": "machine",
+   "kind": "equipment",
+   "name": {
+    "zh": "麻醉機",
+    "en": "Anaesthetic machine"
+   },
+   "text": {
+    "zh": "氣體、揮發器、呼吸器、監視器合在一台。每天第一件事：照清單檢查。",
+    "en": "Gases, vaporiser, ventilator and monitors in one unit. First thing every day: check it against the list."
+   },
+   "hot": "anaesthesia"
+  },
+  {
+   "id": "vl",
+   "kind": "equipment",
+   "name": {
+    "zh": "影像喉鏡",
+    "en": "Videolaryngoscope"
+   },
+   "text": {
+    "zh": "尖端有鏡頭的喉鏡，螢幕上看聲帶。看得到不等於插得進。",
+    "en": "A laryngoscope with a camera at the tip and the cords on a screen. Seeing is not the same as passing the tube."
+   },
+   "hot": "device"
+  },
+  {
+   "id": "da-trolley",
+   "kind": "equipment",
+   "name": {
+    "zh": "困難氣道推車",
+    "en": "Difficult-airway trolley"
+   },
+   "text": {
+    "zh": "計畫 A 到 D 的工具各一層。抽屜的順序就是計畫的順序。",
+    "en": "One drawer per plan, A to D. The order of the drawers is the order of the plan."
+   },
+   "hot": "instruments"
+  },
+  {
+   "id": "capno",
+   "kind": "concept",
+   "name": {
+    "zh": "二氧化碳波形",
+    "en": "Capnography"
+   },
+   "text": {
+    "zh": "呼出氣體的二氧化碳曲線。有波形才算管子在氣管裡；沒有波形就是沒有。",
+    "en": "The curve of carbon dioxide in exhaled gas. A waveform means the tube is in the airway; no waveform means it is not."
+   }
+  },
+  {
+   "id": "alert-card",
+   "kind": "item",
+   "name": {
+    "zh": "王先生的氣道警示卡",
+    "en": "Mr Wang's airway alert card"
+   },
+   "text": {
+    "zh": "你親手寫的：喉鏡視野差、聲門上呼吸道通氣良好、最後用的方法。",
+    "en": "In your handwriting: poor laryngoscopic view, good ventilation through the supraglottic airway, and what finally worked."
+   }
+  },
+  {
+   "id": "pocket-card",
+   "kind": "item",
+   "name": {
+    "zh": "方主治的口袋檢核卡",
+    "en": "Dr Fang's pocket card"
+   },
+   "text": {
+    "zh": "一張手寫的小卡：病人、過敏、禁食、氣道、計畫 D 在哪裡。她送了你一張。",
+    "en": "A small hand-written card: patient, allergies, fasting, airway, where plan D lives. She gave you one."
+   }
+  },
+  {
+   "id": "vortex",
+   "kind": "concept",
+   "name": {
+    "zh": "Vortex 思考",
+    "en": "The Vortex"
+   },
+   "text": {
+    "zh": "三條路通往氧氣：面罩、聲門上呼吸道、氣管內管。每條最多試幾次，都不行就往漏斗中心：頸部切開。",
+    "en": "Three routes to oxygen: mask, supraglottic airway, tracheal tube. A few best attempts at each, then the centre of the funnel: the neck."
+   }
+  }
+ ],
+ "segs": [
+  {
+   "id": "handover",
+   "name": {
+    "zh": "晨間準備",
+    "en": "Morning set-up"
+   },
+   "sub": {
+    "zh": "07:15 · 刀表白板與麻醉機",
+    "en": "07:15 · list board and machine"
+   },
+   "t": 435,
+   "mood": "day",
+   "note": {
+    "zh": "機器檢查完成，氣道計畫確定",
+    "en": "Machine checked; airway plan set"
+   },
+   "beats": [
+    {
+     "id": "h1",
+     "to": "place:whiteboard",
+     "guide": {
+      "zh": "到白板看今天的刀表",
+      "en": "Check today's list"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "白板：08:00 王先生，腹腔鏡膽囊切除，備註「氣道？」。13:30 李阿姨，髖部骨折，脊椎麻醉。",
+        "en": "Board: 08:00 Mr Wang, laparoscopic cholecystectomy, note 'airway?'. 13:30 Mrs Li, hip fracture, spinal."
+       }
+      ],
+      [
+       "circ",
+       {
+        "zh": "早。杜醫師已經到了，問了兩次可不可以開始。",
+        "en": "Morning. Dr Tu is in already and has asked twice whether we can start."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "還沒。先看王先生的氣道。",
+        "en": "Not yet. Mr Wang's airway first."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "h2",
+     "to": "attending",
+     "guide": {
+      "zh": "找方主治談王先生的氣道",
+      "en": "Dr Fang on Mr Wang's airway"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "早。王先生的術前評估你看了。ASA 分級是多少？氣道預測怎麼樣？",
+        "en": "Morning. You have read Mr Wang's pre-assessment. What ASA class, and what does the airway prediction say?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "ASA 分級第二級：控制良好的高血壓。但氣道是另一回事。",
+        "en": "ASA class two: well-controlled hypertension. The airway is another matter."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "脖子粗、鬍子濃、張口小、打鼾、牙齒前突。好幾個預測困難氣道的指標。",
+        "en": "Thick neck, full beard, small mouth opening, snoring, prominent teeth. Several predictors of a difficult airway."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "所以你的計畫 A 到 D 是什麼？想計畫 A 之前，先想計畫 D 在哪裡。",
+        "en": "So what are your plans A to D? Before plan A, think about where plan D lives."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "影像喉鏡、聲門上呼吸道在手邊、面罩兩人法、頸部切開的組合在推車最下層。",
+        "en": "Videolaryngoscope, supraglottic airway at hand, two-person mask technique, and the front-of-neck kit in the bottom drawer."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "好。等一下團隊簡報你來講。",
+        "en": "Good. You give the team brief."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "h3",
+     "to": "place:machine",
+     "guide": {
+      "zh": "照清單檢查麻醉機",
+      "en": "Check the machine against the list"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "電源、氣源、揮發器、漏氣測試、呼吸器、抽吸、備用氧氣筒。一項一項打勾。",
+        "en": "Power, gas supply, vaporiser, leak test, ventilator, suction, backup oxygen cylinder. Tick, tick, tick."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "find",
+      "hot": "anaesthesia",
+      "q": {
+       "zh": "點選麻醉機，完成每日檢查。",
+       "en": "Tap the anaesthetic machine to complete the daily check."
+      }
+     },
+     "post": [
+      [
+       "me",
+       {
+        "zh": "麻醉機檢查完成，抽吸有力，備用氧氣筒滿。",
+        "en": "Machine check complete, suction strong, backup cylinder full."
+       }
+      ]
+     ],
+     "roles": [
+      "na"
+     ]
+    },
+    {
+     "id": "h4",
+     "to": "mr-wang",
+     "guide": {
+      "zh": "到門口見王先生",
+      "en": "Meet Mr Wang at the door"
+     },
+     "lines": [
+      [
+       "mr-wang",
+       {
+        "zh": "醫師，我打鼾很大聲，會不會影響？我太太說我像卡車。",
+        "en": "Doctor, I snore very loudly. Does that matter? My wife says I sound like a truck."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "會，而且很重要。所以我們今天多準備了幾樣工具，讓你睡得安全、醒得安全。",
+        "en": "It does, and it matters a lot. That is why we have extra equipment ready today, so you sleep safely and wake safely."
+       }
+      ],
+      [
+       "mr-wang",
+       {
+        "zh": "醒得安全就好。卡車的事我回去再處理。",
+        "en": "Waking safely is what counts. I will deal with the truck later."
+       }
+      ]
+     ],
+     "roles": [
+      "resident"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "first-case",
+   "name": {
+    "zh": "第一台：困難氣道",
+    "en": "First case: the airway"
+   },
+   "sub": {
+    "zh": "08:00 · 病人頭端",
+    "en": "08:00 · head of the table"
+   },
+   "t": 480,
+   "mood": "day",
+   "note": {
+    "zh": "王先生的氣道安全建立",
+    "en": "Mr Wang's airway secured"
+   },
+   "beats": [
+    {
+     "id": "c1",
+     "to": "place:trolley",
+     "guide": {
+      "zh": "團隊簡報與設備",
+      "en": "Team brief and equipment"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "大家過來。住院醫師來簡報氣道計畫，每個人都要知道自己在計畫 B 的時候做什麼。",
+        "en": "Everyone over here. The resident will brief the airway plan; each of you needs to know your job when we reach plan B."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "anesthesiology-difficult-airway-das-plan-a-to-d",
+      "stage": 1
+     },
+     "post": [
+      [
+       "surgeon",
+       {
+        "zh": "……所以可以開始了嗎？",
+        "en": "...So can we start?"
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "還沒，杜醫師。你剛剛聽到的那段，是為了讓你等一下可以開始。",
+        "en": "Not yet, Dr Tu. What you just heard is what lets you start later."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "c2",
+     "to": "place:head",
+     "guide": {
+      "zh": "簽入與時間暫停",
+      "en": "Sign-in and time-out"
+     },
+     "lines": [
+      [
+       "circ",
+       {
+        "zh": "各位，時間暫停。",
+        "en": "Everyone, time-out."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "王先生，腹腔鏡膽囊切除，無過敏，禁食確認。預期困難氣道，計畫 A 到 D 已簡報，推車在旁。",
+        "en": "Mr Wang, laparoscopic cholecystectomy, no allergies, fasting confirmed. Anticipated difficult airway, plans A to D briefed, trolley at hand."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "drill",
+      "template": "anesthesiology",
+      "drill": "timeout"
+     }
+    },
+    {
+     "id": "c3",
+     "to": "place:head",
+     "guide": {
+      "zh": "擺位與預充氧",
+      "en": "Position and pre-oxygenate"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "頭墊高，耳朵對胸骨。預充氧，面罩密合。然後我們等。",
+        "en": "Ramp him up, ear to sternal notch. Pre-oxygenation, a good mask seal. Then we wait."
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "方主治開始哼歌。監視器上的呼氣末氧氣慢慢爬上去。",
+        "en": "Dr Fang starts humming. The end-tidal oxygen on the monitor climbs slowly."
+       }
+      ],
+      [
+       "mr-wang",
+       {
+        "zh": "這首歌我太太也會哼。",
+        "en": "My wife hums this one too."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "c4",
+     "to": "place:head",
+     "guide": {
+      "zh": "計畫 A：喉鏡",
+      "en": "Plan A: laryngoscopy"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "睡了，肌肉鬆了。計畫 A，你來。左手上提，不是翹。",
+        "en": "He is asleep and relaxed. Plan A: you. Lift with the left hand; do not lever."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "drill",
+      "template": "anesthesiology",
+      "drill": "airway"
+     },
+     "post": [
+      [
+       "me",
+       {
+        "zh": "視野不好。只看得到會厭的尖端。",
+        "en": "Poor view. I can see only the tip of the epiglottis."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "c5",
+     "to": "place:monitor",
+     "guide": {
+      "zh": "看監視器",
+      "en": "Watch the monitor"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "血氧開始往下走。方主治的歌停了。",
+        "en": "The saturation starts to fall. Dr Fang stops humming."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "vitals",
+      "event": "desaturation",
+      "options": [
+       {
+        "zh": "宣告計畫 A 失敗，進入計畫 B：聲門上呼吸道",
+        "en": "Declare plan A failed; plan B: supraglottic airway",
+        "ok": true,
+        "why": {
+         "zh": "困難氣道最危險的不是插不到，是一直試。宣告、換計畫、恢復氧合。",
+         "en": "The danger in a difficult airway is not failing to intubate; it is trying again and again. Declare, move on, restore oxygen."
+        }
+       },
+       {
+        "zh": "再試一次喉鏡，這次用力一點",
+        "en": "One more go at laryngoscopy, harder this time",
+        "ok": false,
+        "why": {
+         "zh": "固著是最常見的錯誤。每一次嘗試都在吃掉預充氧買來的時間。",
+         "en": "Fixation is the commonest error. Every attempt burns the time pre-oxygenation bought."
+        }
+       },
+       {
+        "zh": "叫外科醫師先開始，等一下再處理",
+        "en": "Let the surgeon start while we sort it out",
+        "ok": false,
+        "why": {
+         "zh": "沒有氧氣，沒有手術。",
+         "en": "No oxygen, no operation."
+        }
+       }
+      ]
+     }
+    },
+    {
+     "id": "c6",
+     "to": "attending",
+     "guide": {
+      "zh": "計畫 B",
+      "en": "Plan B"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "宣告了。計畫 B，聲門上呼吸道。護理師，推車第二層。",
+        "en": "Declared. Plan B, supraglottic airway. Nurse, drawer two."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "anesthesiology-difficult-airway-das-plan-a-to-d",
+      "stage": 5
+     },
+     "post": [
+      [
+       "sys",
+       {
+        "zh": "聲門上呼吸道放進去了。二氧化碳波形回來，血氧慢慢爬回去。全手術室一起吐氣。",
+        "en": "The supraglottic airway goes in. The capnography trace returns and the saturation climbs back. The whole theatre exhales."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "好。現在我們有氧氣了，才有時間想下一步。",
+        "en": "Good. Now we have oxygen, we have time to think."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "c7",
+     "to": "attending",
+     "guide": {
+      "zh": "下一步怎麼走？",
+      "en": "What next?"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "聲門上呼吸道通氣良好。腹腔鏡要氣腹、要頭高腳低。你會怎麼做？",
+        "en": "Ventilation through the supraglottic airway is good. Laparoscopy needs gas and head-up tilt. What would you do?"
+       }
+      ]
+     ],
+     "mini": {
+      "type": "choice",
+      "q": {
+       "zh": "氧合恢復之後，怎麼處理這個氣道？",
+       "en": "Oxygenation restored: what now with the airway?"
+      },
+      "options": [
+       {
+        "zh": "經聲門上呼吸道以纖維鏡插入氣管內管",
+        "en": "Fibreoptic intubation through the supraglottic airway",
+        "ok": true,
+        "why": {
+         "zh": "在有氧氣、有時間的情況下，把氣道升級成確定氣道，腹腔鏡才安全。",
+         "en": "With oxygen and time on your side, convert to a definitive airway so the laparoscopy is safe."
+        },
+        "set": {
+         "airway-plan": "fibre"
+        }
+       },
+       {
+        "zh": "停下來，叫醒病人，改天再來",
+        "en": "Stop, wake him up, come back another day",
+        "ok": true,
+        "why": {
+         "zh": "完全合理。醒來是永遠的選項，尤其是擇期手術。",
+         "en": "Entirely reasonable. Waking up is always an option, especially for elective surgery."
+        },
+        "set": {
+         "airway-plan": "wake"
+        }
+       },
+       {
+        "zh": "就用聲門上呼吸道做腹腔鏡",
+        "en": "Do the laparoscopy on the supraglottic airway",
+        "ok": false,
+        "why": {
+         "zh": "氣腹和頭高腳低會讓聲門上呼吸道漏氣、胃脹、逆流。不是這個病人。",
+         "en": "Gas and tilt make a supraglottic airway leak, distend the stomach and risk reflux. Not in this patient."
+        },
+        "set": {
+         "airway-plan": "fibre"
+        }
+       }
+      ]
+     },
+     "post": [
+      [
+       "surgeon",
+       {
+        "zh": "……那現在呢？",
+        "en": "...And now?"
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "現在，杜醫師，再等一下下。",
+        "en": "Now, Dr Tu, just a little longer."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "preop-call",
+   "name": {
+    "zh": "術前門診來電",
+    "en": "Pre-assessment calls"
+   },
+   "sub": {
+    "zh": "10:30 · 電話",
+    "en": "10:30 · the phone"
+   },
+   "t": 630,
+   "mood": "day",
+   "note": {
+    "zh": "明天的心雜音病人處理完成",
+    "en": "Tomorrow's murmur patient sorted"
+   },
+   "beats": [
+    {
+     "id": "p1",
+     "ring": {
+      "title": {
+       "zh": "術前評估門診來電",
+       "en": "Pre-assessment clinic calling"
+      },
+      "sub": {
+       "zh": "明天的病人有心雜音，爬樓梯會喘",
+       "en": "Tomorrow's patient: murmur and breathless on stairs"
+      },
+      "call": true,
+      "from": "preop-nurse"
+     },
+     "lines": [
+      [
+       "preop-nurse",
+       {
+        "zh": "醫師，明天第一台疝氣的伯伯，我聽到心雜音，他說最近爬一層樓就要停。之前沒人記錄過。",
+        "en": "Doctor, tomorrow's first case, the hernia gentleman: I hear a murmur and he says lately he stops after one flight. Nobody has documented it before."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "謝謝你聽出來。新的心雜音加上功能容量下降，這要查。",
+        "en": "Thank you for picking it up. A new heart murmur plus reduced functional capacity needs investigating."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "anesthesiology-preoperative-cardiac-risk-investigations",
+      "stage": 2
+     },
+     "post": [
+      [
+       "attending",
+       {
+        "zh": "（走過來）延期不是失敗。明天少開一台，比開到一半停機好。",
+        "en": "(walking over) Postponing is not failure. One case fewer tomorrow beats one that stops halfway."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mrs-li",
+   "name": {
+    "zh": "午間：李阿姨",
+    "en": "Midday: Mrs Li"
+   },
+   "sub": {
+    "zh": "12:00 · 手術室門口",
+    "en": "12:00 · theatre door"
+   },
+   "t": 720,
+   "mood": "day",
+   "note": {
+    "zh": "李阿姨的脊椎麻醉計畫確定",
+    "en": "Mrs Li's spinal planned"
+   },
+   "beats": [
+    {
+     "id": "m1",
+     "to": "mrs-li",
+     "guide": {
+      "zh": "到門口見李阿姨",
+      "en": "Meet Mrs Li at the door"
+     },
+     "ring": {
+      "title": {
+       "zh": "骨科病房訊息",
+       "en": "Message from the orthopaedic ward"
+      },
+      "sub": {
+       "zh": "李阿姨已送到手術室門口",
+       "en": "Mrs Li has arrived at the theatre door"
+      },
+      "call": false
+     },
+     "lines": [
+      [
+       "mrs-li",
+       {
+        "zh": "醫師，我會不會醒不來？我鄰居說她表哥……",
+        "en": "Doctor, what if I do not wake up? My neighbour said her cousin..."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "李阿姨，我們計畫用脊椎麻醉，你會是醒著的。想睡的話我們讓你小睡，想聊天我們陪你聊。",
+        "en": "Mrs Li, we are planning a spinal anaesthesia, so you will be awake. If you want to doze we can help; if you want to chat, we will chat."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "抗凝血劑最後一次是什麼時候吃的？這決定我們什麼時候可以打針。",
+        "en": "When was your last anticoagulant dose? That decides when we can do the injection."
+       }
+      ],
+      [
+       "mrs-li",
+       {
+        "zh": "跌倒前一天早上。之後骨科就叫我先停。",
+        "en": "The morning before I fell. Orthopaedics told me to stop after that."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "很好，時間夠了。禁食也確認了。",
+        "en": "Good, enough time has passed. Fasting confirmed too."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "m2",
+     "to": "attending",
+     "guide": {
+      "zh": "為什麼打在腰椎下段？",
+      "en": "Why the lower lumbar spine?"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "脊椎麻醉為什麼要打在腰椎下段的間隙？拿影像來說。",
+        "en": "Why does a spinal go into a lower lumbar space? Use the images."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "imaging",
+      "region": "spine",
+      "question": {
+       "zh": "成人的脊髓終止在哪裡？這對穿刺位置有什麼意義？",
+       "en": "Where does the adult spinal cord end, and what does it mean for the needle?"
+      },
+      "answer": {
+       "zh": "成人脊髓大約終止在第一、二腰椎交界。在更下面的腰椎間隙穿刺，針碰到的是馬尾神經根而不是脊髓本體。",
+       "en": "The adult cord ends around the junction of the first and second lumbar vertebrae. A lower lumbar space puts the needle among the mobile cauda equina roots rather than the cord itself."
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "second-case",
+   "name": {
+    "zh": "第二台：脊椎麻醉",
+    "en": "Second case: the spinal"
+   },
+   "sub": {
+    "zh": "13:30 · 病人頭端",
+    "en": "13:30 · head of the table"
+   },
+   "t": 810,
+   "mood": "day",
+   "note": {
+    "zh": "李阿姨的脊椎麻醉完成",
+    "en": "Mrs Li's spinal done"
+   },
+   "beats": [
+    {
+     "id": "s1",
+     "to": "place:head",
+     "guide": {
+      "zh": "定位腰椎節段",
+      "en": "Find the lumbar level"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "坐姿，彎腰像抱一顆球。先用手摸，找到節段，再消毒。",
+        "en": "Sitting, curled round a ball. Hands first: find the level, then prep."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "drill",
+      "template": "anesthesiology",
+      "drill": "lumbar"
+     },
+     "post": [
+      [
+       "mrs-li",
+       {
+        "zh": "你們在我背上畫什麼？",
+        "en": "What are you drawing on my back?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "一張地圖，李阿姨。",
+        "en": "A map, Mrs Li."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "s2",
+     "to": "place:drugs",
+     "guide": {
+      "zh": "雙人核對藥物",
+      "en": "Two-person drug check"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "脊椎麻醉用的每一支藥，兩個人一起念標籤、濃度、有效期限。沒有例外。",
+        "en": "Every ampoule for the spinal is read aloud by two people: label, strength, expiry. No exceptions."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "核對無誤。",
+        "en": "Checked and correct."
+       }
+      ]
+     ],
+     "roles": [
+      "na"
+     ]
+    },
+    {
+     "id": "s3",
+     "to": "place:monitor",
+     "guide": {
+      "zh": "打完之後，看監視器",
+      "en": "After the spinal: the monitor"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "針打好了，李阿姨躺平。幾分鐘後，她說有點想吐，手有點麻。",
+        "en": "Spinal in, Mrs Li lies back. A few minutes later she says she feels a little sick and her hands tingle."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "vitals",
+      "event": "hypotension",
+      "options": [
+       {
+        "zh": "升壓與輸液依醫囑、給氧、檢查阻斷高度",
+        "en": "Vasopressor and fluid per protocol, oxygen, check the block height",
+        "ok": true,
+        "why": {
+         "zh": "脊椎麻醉後血壓下降很常見。想吐常常是血壓低的第一個訊號。手麻表示阻斷偏高。",
+         "en": "Hypotension after a spinal is common; nausea is often its first sign. Tingling hands mean the block is riding high."
+        }
+       },
+       {
+        "zh": "先給止吐藥",
+        "en": "Antiemetic first",
+        "ok": false,
+        "why": {
+         "zh": "先處理原因：血壓。止吐是後面的事。",
+         "en": "Treat the cause first: the pressure. Antiemetics come after."
+        }
+       },
+       {
+        "zh": "把床頭搖高讓她舒服一點",
+        "en": "Sit her up to make her comfortable",
+        "ok": false,
+        "why": {
+         "zh": "頭高會讓血壓更低。要的是處理血壓，不是改變姿勢。",
+         "en": "Head-up drops the pressure further. Manage the pressure, not the posture."
+        }
+       }
+      ]
+     },
+     "post": [
+      [
+       "mrs-li",
+       {
+        "zh": "……好多了。你們剛剛是不是在緊張？",
+        "en": "...Much better. Were you all nervous just now?"
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "我們只是在做事。來，骨科可以開始了。",
+        "en": "We were just working. Right, orthopaedics may begin."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "recovery",
+   "name": {
+    "zh": "恢復室",
+    "en": "Recovery"
+   },
+   "sub": {
+    "zh": "16:00 · 恢復室",
+    "en": "16:00 · recovery room"
+   },
+   "t": 960,
+   "mood": "day",
+   "note": {
+    "zh": "恢復室交班完成",
+    "en": "Recovery handover done"
+   },
+   "beats": [
+    {
+     "id": "r1",
+     "to": "pacu-nurse",
+     "guide": {
+      "zh": "交班給小安",
+      "en": "Hand over to An"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "王先生：預期困難氣道，計畫 A 視野差，計畫 B 聲門上呼吸道通氣良好，最後經纖維鏡插管。手術順利。",
+        "en": "Mr Wang: anticipated difficult airway, poor view at plan A, good ventilation at plan B, finally fibreoptic intubation. Surgery uneventful."
+       }
+      ],
+      [
+       "pacu-nurse",
+       {
+        "zh": "拔管後氣道有風險，我盯緊。警示卡寫了嗎？",
+        "en": "Airway at risk after extubation; I am watching. Alert card written?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "寫好了，等一下跟他解釋。",
+        "en": "Written. I will explain it to him shortly."
+       }
+      ]
+     ],
+     "when": {
+      "flag": "airway-plan",
+      "is": "fibre"
+     },
+     "item": "alert-card"
+    },
+    {
+     "id": "r1b",
+     "to": "pacu-nurse",
+     "guide": {
+      "zh": "交班給小安",
+      "en": "Hand over to An"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "王先生：預期困難氣道，計畫 A 視野差，計畫 B 聲門上呼吸道通氣良好，我們選擇叫醒，手術改期。",
+        "en": "Mr Wang: anticipated difficult airway, poor view at plan A, good ventilation at plan B; we chose to wake him and rebook."
+       }
+      ],
+      [
+       "pacu-nurse",
+       {
+        "zh": "改期的病人更要寫警示卡，下一次才知道怎麼做。",
+        "en": "A rebooked patient needs the alert card even more, so next time knows what to do."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "寫好了，等一下跟他解釋。",
+        "en": "Written. I will explain it to him shortly."
+       }
+      ]
+     ],
+     "when": {
+      "flag": "airway-plan",
+      "is": "wake"
+     },
+     "item": "alert-card"
+    },
+    {
+     "id": "r2",
+     "to": "mr-wang",
+     "guide": {
+      "zh": "跟王先生解釋警示卡",
+      "en": "Explain the card to Mr Wang"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "王先生，這張氣道警示卡請你放在皮夾裡。下次任何手術，先拿給麻醉醫師看。",
+        "en": "Mr Wang, keep this airway alert card in your wallet. Before any future operation, show it to the anaesthetist first."
+       }
+      ],
+      [
+       "mr-wang",
+       {
+        "zh": "比駕照還重要？",
+        "en": "More important than my driving licence?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "對你的喉嚨來說，是。",
+        "en": "For your throat, yes."
+       }
+      ],
+      [
+       "mrs-li",
+       {
+        "zh": "（隔壁床）醫師，我醒了嗎？我剛剛有睡著嗎？",
+        "en": "(next bed) Doctor, am I awake? Did I fall asleep?"
+       }
+      ],
+      [
+       "pacu-nurse",
+       {
+        "zh": "李阿姨，你從頭到尾都醒著，還跟我聊了菜園。",
+        "en": "Mrs Li, you were awake the whole time and told me all about your vegetable garden."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "evening",
+   "name": {
+    "zh": "傍晚交班",
+    "en": "Evening handover"
+   },
+   "sub": {
+    "zh": "17:30 · 麻醉紀錄桌",
+    "en": "17:30 · record desk"
+   },
+   "t": 1050,
+   "mood": "eve",
+   "note": {
+    "zh": "交班給夜班",
+    "en": "Handed over to the night team"
+   },
+   "beats": [
+    {
+     "id": "v1",
+     "to": "place:chart",
+     "guide": {
+      "zh": "補完麻醉紀錄",
+      "en": "Complete the records"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "王先生的紀錄要寫得讓下一位麻醉醫師一看就懂：視野分級、用了什麼、什麼有效。",
+        "en": "Mr Wang's record must be instantly clear to the next anaesthetist: the view grade, what was used, what worked."
+       }
+      ]
+     ],
+     "roles": [
+      "resident"
+     ]
+    },
+    {
+     "id": "v1b",
+     "to": "place:trolley",
+     "guide": {
+      "zh": "補齊困難氣道推車",
+      "en": "Restock the airway trolley"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "第二層用掉的聲門上呼吸道補上，纖維鏡送消，每一層再對一次清單。",
+        "en": "Replace the supraglottic airway from drawer two, send the fibrescope for sterilising, check every drawer against the list again."
+       }
+      ]
+     ],
+     "roles": [
+      "na"
+     ]
+    },
+    {
+     "id": "v2",
+     "to": "attending",
+     "guide": {
+      "zh": "方主治的反思",
+      "en": "Dr Fang's debrief"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "今天救了王先生的是什麼？",
+        "en": "What saved Mr Wang today?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "早上的那張計畫，還有宣告計畫 A 失敗的那一秒。",
+        "en": "This morning's plan, and the second we declared plan A failed."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "對。不是手技，是停下來的勇氣。這張口袋檢核卡送你。",
+        "en": "Yes. Not the technique: the courage to stop. This pocket card is yours."
+       }
+      ]
+     ],
+     "item": "pocket-card"
+    }
+   ]
+  },
+  {
+   "id": "night",
+   "name": {
+    "zh": "夜間值班",
+    "en": "Night on call"
+   },
+   "sub": {
+    "zh": "21:30 · 值班室電話",
+    "en": "21:30 · on-call phone"
+   },
+   "t": 1290,
+   "mood": "night",
+   "note": {
+    "zh": "夜間禁食問題處理完成",
+    "en": "Night fasting question handled"
+   },
+   "beats": [
+    {
+     "id": "x1",
+     "ring": {
+      "title": {
+       "zh": "外科病房來電",
+       "en": "Surgical ward calling"
+      },
+      "sub": {
+       "zh": "明天第一台的病人偷吃餅乾",
+       "en": "Tomorrow's first case ate biscuits"
+      },
+      "call": true,
+      "from": "ward-nurse"
+     },
+     "lines": [
+      [
+       "ward-nurse",
+       {
+        "zh": "醫師，明天第一台的陳先生剛剛吃了兩片餅乾，還問早上的血壓藥要不要吃。",
+        "en": "Doctor, Mr Chen, tomorrow's first case, just ate two biscuits and wants to know about his morning blood-pressure pills."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "謝謝你看到。禁食的原則我們算一下，藥的事我一起回答。",
+        "en": "Thanks for catching it. Let us work out the fasting rule, and I will answer the pill question too."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "anesthesiology-fasting-premedication-medications",
+      "stage": 0
+     },
+     "post": [
+      [
+       "ward-nurse",
+       {
+        "zh": "好，我寫在交班單上，早上再提醒他一次。",
+        "en": "Right, I will put it on the handover sheet and remind him in the morning."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "x2",
+     "to": "place:chart",
+     "guide": {
+      "zh": "睡前最後一件事",
+      "en": "Last thing before sleep"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "你把陳先生的禁食時間和用藥指示寫進明天的麻醉計畫，然後把口袋檢核卡放進白袍。",
+        "en": "You write Mr Chen's fasting times and medication instructions into tomorrow's plan, and slip the pocket card into your coat."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "（訊息）阿珍說你沒有直接說「取消」，而是先算時間。這就是麻醉科。晚安。",
+        "en": "(message) A-Jen says you did not just say 'cancel'; you worked out the times first. That is anaesthesia. Good night."
+       }
+      ]
+     ],
+     "t": 1320,
+     "end": true
+    }
+   ]
+  }
+ ],
+ "ending": {
+  "title": {
+   "zh": "下班了",
+   "en": "End of shift"
+  },
+  "sub": {
+   "zh": "兩個氣道、一針脊椎、一張警示卡",
+   "en": "Two airways, one spinal, one alert card"
+  },
+  "stats": [
+   "stages",
+   "drills",
+   "choices",
+   "calls",
+   "items",
+   "time"
+  ]
+ }
+}

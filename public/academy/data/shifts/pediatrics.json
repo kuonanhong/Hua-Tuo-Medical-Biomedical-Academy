@@ -1,0 +1,342 @@
+{
+  "format": "huatuo-shift-v1",
+  "department": "pediatrics",
+  "title": {"zh": "小兒科值班日", "en": "A shift in paediatrics"},
+  "tagline": {"zh": "從晨間交班到一張恐龍貼紙", "en": "From morning handover to a dinosaur sticker"},
+  "room": "ward",
+  "minutes": 25,
+  "roles": [
+    {"id": "intern", "zh": "小兒科實習醫師", "en": "Paediatric intern",
+     "desc": {"zh": "跟著吳主治查房、接電話、寫出入量表；聽診與耳鏡由你來。", "en": "Round with Dr Wu, take the calls, keep the intake and output chart; auscultation and the otoscope are yours."}},
+    {"id": "nurse", "zh": "兒科病房護理師", "en": "Paediatric ward nurse",
+     "desc": {"zh": "體重、尿布、洗手與床邊觀察都在你手上；孩子的安靜你最先發現。", "en": "Weights, nappies, hand hygiene and bedside observation are yours; you are the first to notice a quiet child."}}
+  ],
+  "cast": {
+    "attending": {"name": {"zh": "吳主治", "en": "Dr Wu"}, "role": {"zh": "小兒科主治醫師（師傅）", "en": "Paediatric attending (mentor)"}, "tag": "ATT", "color": "#81296d", "body": "mentor",
+                  "about": {"zh": "用問題教學的師傅。口袋永遠有貼紙，桌上永遠有一杯沒喝的咖啡。", "en": "Teaches by asking. Always has stickers in her pocket and an undrunk coffee on her desk."}},
+    "resident": {"name": {"zh": "陳住院醫師", "en": "Dr Chen"}, "role": {"zh": "第二年住院醫師", "en": "Second-year resident"}, "tag": "R2", "color": "#3f6fa8", "body": "resident",
+                 "about": {"zh": "剛下夜班還在撐。呼叫器比他媽媽還常找他。", "en": "Just off nights and still standing. His pager calls him more often than his mother does."}},
+    "nurse-lin": {"name": {"zh": "林護理師", "en": "Nurse Lin"}, "role": {"zh": "兒科病房資深護理師", "en": "Senior paediatric ward nurse"}, "tag": "RN", "color": "#3b8f6a", "body": "nurse",
+                  "about": {"zh": "病房的眼睛。孩子安靜下來的那一刻，她已經在床邊。", "en": "The eyes of the ward. The moment a child goes quiet, she is already at the bedside."}},
+    "xiaoyu": {"name": {"zh": "小宇（7 床）", "en": "Xiao-Yu (bed 7)"}, "role": {"zh": "三歲，腹瀉第二天", "en": "Three years old, second day of diarrhoea"}, "tag": "P7", "color": "#c2703a", "body": "patient",
+               "about": {"zh": "虛構教學個案。喜歡恐龍，暴龍掉了尾巴也照樣抱著。", "en": "Fictional teaching case. Loves dinosaurs; still hugs the T. rex that lost its tail."}},
+    "mother": {"name": {"zh": "小宇媽媽", "en": "Xiao-Yu's mother"}, "role": {"zh": "照顧者", "en": "Caregiver"}, "tag": "MUM", "color": "#8a6d3b", "body": "family",
+               "about": {"zh": "手機裡有尿布紀錄，只是時間寫得亂。白天都是她在陪。", "en": "Keeps a nappy log on her phone, with the times in a muddle. She does the day shift."}},
+    "grandma": {"name": {"zh": "小宇阿嬤", "en": "Xiao-Yu's grandmother"}, "role": {"zh": "夜間照顧者（電話）", "en": "Night caregiver (by phone)"}, "tag": "GM", "color": "#a0522d", "phoneOnly": true,
+                "about": {"zh": "晚上接手照顧。她的版本和媽媽的版本不太一樣。", "en": "Takes over at night. Her version of events differs from the mother's."}},
+    "lab": {"name": {"zh": "檢驗科", "en": "Core laboratory"}, "role": {"zh": "醫檢師（電話）", "en": "Laboratory scientist (by phone)"}, "tag": "LAB", "color": "#2f6f8f", "phoneOnly": true,
+            "about": {"zh": "危急值一出來就打電話，而且一定要你複誦。", "en": "Calls the moment a critical value appears, and always asks for a read-back."}}
+  },
+  "places": {
+    "board": {"name": {"zh": "交班板", "en": "Handover board"}, "hot": "whiteboard"},
+    "station": {"name": {"zh": "護理站", "en": "Nurses' station"}, "hot": "desk"},
+    "bed7": {"name": {"zh": "7 床", "en": "Bed 7"}, "hot": "bed"},
+    "scale": {"name": {"zh": "體重計", "en": "Scales"}, "hot": "device"},
+    "imaging-ws": {"name": {"zh": "影像工作站", "en": "Imaging workstation"}, "hot": "imaging"},
+    "sink": {"name": {"zh": "洗手台", "en": "Hand-wash sink"}, "hot": "sink"},
+    "exam": {"name": {"zh": "門診檢查床", "en": "Clinic couch"}, "hot": "bed"}
+  },
+  "glossary": [
+    {"term": {"zh": "出入量", "en": "intake and output"}, "plain": {"zh": "喝進去多少、尿出來和吐掉多少，連同時間一起記，才看得出身體缺不缺水。", "en": "How much goes in (drinks) and comes out (urine, vomit), always with the time, so you can see whether the body is short of water."}},
+    {"term": {"zh": "交班", "en": "handover"}, "plain": {"zh": "一班結束時，把病人的狀況、還沒解決的問題和誰負責追蹤，交給下一班。", "en": "At the end of a shift, passing on each patient's condition, the open problems and who follows them up to the next team."}},
+    {"term": {"zh": "危急值", "en": "critical value"}, "plain": {"zh": "檢驗結果異常到可能立刻危害生命，實驗室必須馬上打電話通知。", "en": "A laboratory result so abnormal it may be immediately dangerous; the lab must telephone it at once."}},
+    {"term": {"zh": "複誦", "en": "read-back"}, "plain": {"zh": "接到口頭訊息後，把聽到的病人、床號、項目重複一遍給對方確認。", "en": "Repeating a spoken message (patient, bed, item) back to the caller so both sides know it was heard correctly."}},
+    {"term": {"zh": "微血管回填", "en": "capillary refill"}, "plain": {"zh": "壓一下指甲或皮膚放開，看顏色多快回來；回得慢表示循環不好。", "en": "Press a nail or the skin and let go; how fast the colour returns tells you about circulation. Slow is a warning."}},
+    {"term": {"zh": "皮膚彈性", "en": "skin turgor"}, "plain": {"zh": "輕輕捏起皮膚放開，缺水時會慢慢才彈回去。", "en": "Gently pinch the skin and release; when the body is dry it springs back slowly."}},
+    {"term": {"zh": "脫水", "en": "dehydration"}, "plain": {"zh": "身體流失的水和鹽分多於補充，嚴重時影響血壓和意識。", "en": "The body loses more water and salts than it takes in; severe cases affect blood pressure and alertness."}},
+    {"term": {"zh": "電解質", "en": "electrolytes"}, "plain": {"zh": "血液裡的鈉、鉀等鹽分，腹瀉時會跟著水一起流失。", "en": "Salts such as sodium and potassium in the blood; diarrhoea loses them along with the water."}},
+    {"term": {"zh": "補液", "en": "rehydration"}, "plain": {"zh": "把流失的水和鹽分補回來，可以用口服或點滴，方式與量由醫囑決定。", "en": "Replacing lost water and salts by mouth or by drip; the route and amount follow the medical order."}},
+    {"term": {"zh": "生長曲線", "en": "growth chart"}, "plain": {"zh": "把孩子的身高體重畫在同年齡的參考曲線上，看趨勢而不是單一點。", "en": "A child's height and weight plotted against reference curves for their age; the trend matters more than any single point."}},
+    {"term": {"zh": "百分位", "en": "percentile"}, "plain": {"zh": "在一百個同齡孩子裡排第幾；第五十百分位就是正中間。", "en": "Where a child ranks among a hundred children of the same age; the fiftieth percentile is the middle."}},
+    {"term": {"zh": "耳鏡", "en": "otoscope"}, "plain": {"zh": "有燈的小漏斗，用來看耳道和耳膜。", "en": "A small lit funnel for looking into the ear canal and at the eardrum."}},
+    {"term": {"zh": "聽診", "en": "auscultation"}, "plain": {"zh": "用聽診器聽呼吸音與心音，左右兩邊要互相對照。", "en": "Listening to breath and heart sounds with a stethoscope, always comparing left with right."}},
+    {"term": {"zh": "ISBAR", "en": "ISBAR"}, "plain": {"zh": "回報病情的固定順序：身分、情境、背景、評估、建議，最後複誦。", "en": "A fixed order for reporting: Identity, Situation, Background, Assessment, Recommendation, then read back."}}
+  ],
+  "codex": [
+    {"id": "handover-board", "kind": "equipment", "name": {"zh": "交班板", "en": "Handover board"}, "text": {"zh": "每一床的重點、待辦與追蹤者。交班時先看板，再看人。", "en": "Each bed's key points, to-dos and who follows up. Read the board, then look at the people."}, "hot": "whiteboard"},
+    {"id": "monitor", "kind": "equipment", "name": {"zh": "生理監視器", "en": "Patient monitor"}, "text": {"zh": "心跳、血壓、血氧與體溫。先看趨勢與警報，再看單一數字。", "en": "Heart rate, blood pressure, oxygen saturation and temperature. Trends and alarms first, single numbers second."}, "hot": "monitor"},
+    {"id": "scales", "kind": "equipment", "name": {"zh": "嬰幼兒體重計", "en": "Infant scales"}, "text": {"zh": "體重是最誠實的出入量。同一台、同樣衣著、記下時間，才能比較。", "en": "Weight is the most honest intake and output. Same scales, same clothing, time recorded, or it cannot be compared."}, "hot": "device"},
+    {"id": "otoscope", "kind": "equipment", "name": {"zh": "耳鏡", "en": "Otoscope"}, "text": {"zh": "看耳道與耳膜。小朋友的耳廓要往下往後拉，才看得到。", "en": "For the ear canal and eardrum. In a small child, pull the pinna down and back to see."}, "hot": "instruments"},
+    {"id": "med-cart", "kind": "equipment", "name": {"zh": "藥車", "en": "Medication cart"}, "text": {"zh": "兒科給藥要雙人核對，依醫囑與體重。本站不提供劑量。", "en": "Paediatric drugs are double-checked and follow the order and the weight. No doses are given here."}, "hot": "drugs"},
+    {"id": "dino-sticker", "kind": "item", "name": {"zh": "恐龍貼紙", "en": "Dinosaur sticker"}, "text": {"zh": "小宇給你的，有點皺。暴龍喝水了。", "en": "From Xiao-Yu, a little crumpled. The T. rex drank its water."}},
+    {"id": "io-chart", "kind": "concept", "name": {"zh": "出入量表", "en": "Intake and output chart"}, "text": {"zh": "攝入、尿、吐、便各自一欄，時間在最左邊；估計值要標記為估計。", "en": "Columns for drinks, urine, vomit and stool, time in the left-most column; estimates are marked as estimates."}},
+    {"id": "critical-value", "kind": "concept", "name": {"zh": "危急值通報", "en": "Critical value call"}, "text": {"zh": "實驗室來電、接聽者複誦、記錄時間與對象、立即通知醫師：四步缺一不可。", "en": "Lab calls, receiver reads back, time and names recorded, physician told at once: four steps, none optional."}}
+  ],
+  "segs": [
+    {"id": "handover", "name": {"zh": "晨間交班", "en": "Morning handover"}, "sub": {"zh": "07:30 · 兒科病房交班板", "en": "07:30 · paediatric ward board"}, "t": 450, "mood": "day",
+     "note": {"zh": "晨間交班完成", "en": "Morning handover done"},
+     "beats": [
+      {"id": "h1", "to": "place:board", "guide": {"zh": "到交班板集合", "en": "Gather at the handover board"},
+       "lines": [
+        ["sys", {"zh": "兒科病房，早上七點半。交班板上貼滿便利貼，走廊盡頭有孩子在哭。", "en": "The paediatric ward, half past seven. The board is covered in sticky notes; a child is crying at the end of the corridor."}],
+        ["resident", {"zh": "夜班還算平靜。重點是 7 床小宇，三歲，腹瀉第二天，喝得少。", "en": "Nights were quiet-ish. The one to watch is bed 7, Xiao-Yu, three years old, day two of diarrhoea, drinking less."}],
+        ["resident", {"zh": "媽媽說尿布變少，昨天三片。", "en": "Mum says fewer wet nappies. Three yesterday."}],
+        ["me", {"zh": "三片是幾個小時內的？", "en": "Three in how many hours?"}],
+        ["resident", {"zh": "……我沒問。呼叫器一直響。", "en": "…I didn't ask. The pager wouldn't stop."}],
+        ["attending", {"zh": "那我們就從這裡開始。交班不是念數字，是把問題交出去。", "en": "Then that is where we start. A handover is not reading out numbers; it is passing on the questions."}]
+       ]},
+      {"id": "h2", "to": "attending", "guide": {"zh": "去找吳主治", "en": "Find Dr Wu"},
+       "lines": [
+        ["attending", {"zh": "早。咖啡？不用，我自己也不會喝。", "en": "Morning. Coffee? Don't bother, I never drink mine either."}],
+        ["attending", {"zh": "媽媽說尿布三片。三片是多久？", "en": "Mum says three nappies. Three over how long?"}],
+        ["me", {"zh": "不知道。", "en": "I don't know."}],
+        ["attending", {"zh": "那你知道的是什麼？從這裡建立問題。", "en": "Then what do you know? Frame the problem from there."}]
+       ],
+       "mini": {"type": "stage", "case": "pediatrics-v38-intake-output", "stage": 0},
+       "post": [
+        ["attending", {"zh": "出入量沒有時間，就只是數字。去床邊，把時間找回來。", "en": "Intake and output without the time is just a number. Go to the bedside and get the time back."}]
+       ]}
+     ]},
+    {"id": "rounds", "name": {"zh": "查房 7 床", "en": "Rounds: bed 7"}, "sub": {"zh": "08:15 · 7 床，小宇", "en": "08:15 · bed 7, Xiao-Yu"}, "t": 495, "mood": "day",
+     "note": {"zh": "7 床床邊評估完成", "en": "Bedside assessment of bed 7 done"},
+     "beats": [
+      {"id": "r1", "to": "xiaoyu", "guide": {"zh": "到 7 床看小宇", "en": "See Xiao-Yu in bed 7"},
+       "lines": [
+        ["sys", {"zh": "小宇抱著一隻掉了尾巴的暴龍，眼睛跟著你移動。", "en": "Xiao-Yu is hugging a T. rex with no tail. His eyes follow you around."}],
+        ["mother", {"zh": "醫師早。他從昨天開始不太想喝。", "en": "Morning, doctor. He hasn't wanted to drink since yesterday."}],
+        ["xiaoyu", {"zh": "暴龍也不想喝。", "en": "T. rex doesn't want to drink either."}],
+        ["me", {"zh": "那暴龍今天尿尿幾次？", "en": "And how many times has T. rex had a wee today?"}],
+        ["mother", {"zh": "我手機有記，可是時間都亂寫。", "en": "I've got it on my phone, but the times are all over the place."}]
+       ],
+       "mini": {"type": "choice", "q": {"zh": "你要怎麼記錄小宇的攝入與尿量？", "en": "How will you record Xiao-Yu's intake and urine output?"},
+                "options": [
+                 {"zh": "開一張有時間軸的出入量表", "en": "Start an intake and output chart with a timeline", "ok": true, "set": {"io-chart": true},
+                  "why": {"zh": "時間、攝入、流失並排，才看得出方向。", "en": "Time, intake and losses side by side are what show the direction."}},
+                 {"zh": "請媽媽憑印象回想一整天", "en": "Ask Mum to recall the whole day from memory", "ok": false, "set": {"io-chart": false},
+                  "why": {"zh": "記憶會壓縮時間，也會漏掉灑出來的。", "en": "Memory compresses time and forgets what was spilled."}},
+                 {"zh": "把估計量當精準值填進去", "en": "Enter the estimates as exact amounts", "ok": false, "set": {"io-chart": false},
+                  "why": {"zh": "估計要標記為估計，不然會誤導下一班。", "en": "Estimates must be labelled as estimates or they mislead the next shift."}}
+                ]},
+       "post": [
+        ["mother", {"zh": "好，我從現在開始記時間。", "en": "All right, I'll write the time from now on."}]
+       ]},
+      {"id": "r2", "roles": ["nurse"], "to": "place:scale", "guide": {"zh": "推體重計到床邊", "en": "Bring the scales to the bed"},
+       "lines": [
+        ["sys", {"zh": "體重是最誠實的出入量。昨天入院時秤過一次。", "en": "Weight is the most honest intake and output. He was weighed once on admission yesterday."}],
+        ["me", {"zh": "小宇，暴龍先量，再換你。", "en": "Xiao-Yu, T. rex goes first, then you."}],
+        ["xiaoyu", {"zh": "暴龍比較重。", "en": "T. rex is heavier."}]
+       ],
+       "mini": {"type": "find", "hot": "device", "q": {"zh": "找到嬰幼兒體重計", "en": "Find the infant scales"}},
+       "post": [
+        ["sys", {"zh": "你記下體重、時間與衣著，和昨天同一台。", "en": "You note the weight, the time and what he is wearing, same scales as yesterday."}]
+       ]},
+      {"id": "r3", "roles": ["intern"], "to": "xiaoyu", "guide": {"zh": "幫小宇聽診", "en": "Auscultate Xiao-Yu's chest"},
+       "lines": [
+        ["me", {"zh": "我先聽暴龍的肺，再聽你的。", "en": "I'll listen to T. rex's lungs first, then yours."}],
+        ["attending", {"zh": "聽診左右對照。腹瀉的孩子，也可能同時有別的事。", "en": "Auscultation, side to side. A child with diarrhoea can have something else going on too."}]
+       ],
+       "mini": {"type": "drill", "template": "pediatrics", "drill": "lungs"},
+       "post": [
+        ["attending", {"zh": "呼吸音對稱。好，現在看他的嘴唇和眼睛。", "en": "Breath sounds symmetrical. Good. Now look at his lips and his eyes."}]
+       ]},
+      {"id": "r4", "to": "attending", "guide": {"zh": "聽吳主治問診", "en": "Listen to Dr Wu at the bedside"},
+       "lines": [
+        ["mother", {"zh": "他今天好乖，都沒吵。", "en": "He's been so good today, not a peep."}],
+        ["attending", {"zh": "乖，還是太安靜？", "en": "Good, or too quiet?"}],
+        ["sys", {"zh": "小宇靠在媽媽肩上，回答慢了半拍。", "en": "Xiao-Yu leans on his mother's shoulder; his answers come half a beat late."}],
+        ["attending", {"zh": "嘴唇乾，皮膚彈性差一點，微血管回填慢一些。", "en": "Dry lips, skin turgor slightly reduced, capillary refill a little slow."}],
+        ["me", {"zh": "安靜不是改善。", "en": "Quiet is not improvement."}],
+        ["attending", {"zh": "對。安靜的孩子，評估的優先順序要往前提。告訴林護理師。", "en": "Right. A quiet child moves up the list. Tell Nurse Lin."}]
+       ],
+       "set": {"quiet-noted": true}}
+     ]},
+    {"id": "call", "name": {"zh": "一通電話", "en": "A phone call"}, "sub": {"zh": "10:30 · 護理站電話", "en": "10:30 · the station phone"}, "t": 630, "mood": "day",
+     "note": {"zh": "阿嬤的版本併進同一條時間線", "en": "Grandma's version merged into one timeline"},
+     "beats": [
+      {"id": "c1", "to": "place:station", "guide": {"zh": "到護理站接電話", "en": "Take the call at the station"},
+       "ring": {"title": {"zh": "小宇阿嬤來電", "en": "Xiao-Yu's grandmother calling"}, "sub": {"zh": "「我昨晚有餵他喝很多！」", "en": "“I gave him lots to drink last night!”"}, "call": true, "from": "grandma"},
+       "lines": [
+        ["grandma", {"zh": "醫師，我昨晚十點有餵他喝一大杯！他媽媽沒說嗎？", "en": "Doctor, I gave him a big cup at ten last night! Didn't his mum say?"}],
+        ["me", {"zh": "阿嬤，謝謝您。是幾點喝的？喝完多少？", "en": "Thank you, Grandma. What time was that, and how much did he finish?"}],
+        ["grandma", {"zh": "大概十點啦，大半杯。他媽媽說她也有餵。", "en": "About ten, most of the cup. His mum says she gave him some too."}],
+        ["sys", {"zh": "媽媽的手機紀錄也寫著十點。", "en": "Mum's phone log also says ten o'clock."}],
+        ["me", {"zh": "兩個人，同一個時間。是同一杯，還是兩杯？", "en": "Two people, the same time. One cup, or two?"}]
+       ],
+       "mini": {"type": "stage", "case": "pediatrics-v38-caregiver-records", "stage": 0},
+       "post": [
+        ["grandma", {"zh": "好像是同一杯啦，我餵一半，她餵一半。", "en": "I think it was the same cup. I gave half, she gave half."}],
+        ["me", {"zh": "那我記成一次。謝謝阿嬤，晚上辛苦了。", "en": "Then I'll record it once. Thank you, Grandma, nights are hard."}]
+       ]},
+      {"id": "c2", "to": "resident", "guide": {"zh": "和陳住院核對時間線", "en": "Check the timeline with Dr Chen"},
+       "lines": [
+        ["resident", {"zh": "所以是一條時間線，不是兩條。", "en": "So it's one timeline, not two."}],
+        ["me", {"zh": "兩位照顧者輪班，紀錄要併成一條，重複的只算一次。", "en": "Two caregivers in shifts: the records merge into one line, and duplicates count once."}],
+        ["sys", {"zh": "呼叫器響了。陳住院看也不看就按掉。", "en": "The pager goes off. Dr Chen silences it without looking."}],
+        ["resident", {"zh": "它比我媽還常找我。", "en": "It calls me more than my mother does."}]
+       ]}
+     ]},
+    {"id": "noon", "name": {"zh": "午間討論", "en": "Midday discussion"}, "sub": {"zh": "12:00 · 醫師辦公室", "en": "12:00 · doctors' office"}, "t": 720, "mood": "day",
+     "note": {"zh": "影像與出入量一起看；接到危急值", "en": "Imaging and the chart together; a critical value call"},
+     "beats": [
+      {"id": "n1", "to": "attending", "guide": {"zh": "找吳主治討論", "en": "Discuss with Dr Wu"},
+       "lines": [
+        ["sys", {"zh": "吳主治的咖啡還是滿的，已經涼了。", "en": "Dr Wu's coffee is still full, and cold."}],
+        ["attending", {"zh": "出入量表呢？", "en": "Where is the intake and output chart?"}]
+       ]},
+      {"id": "n1y", "when": {"flag": "io-chart", "is": true},
+       "lines": [
+        ["me", {"zh": "從八點開始記，攝入、尿布、嘔吐都有時間。", "en": "Running since eight: drinks, nappies and vomits, all timed."}],
+        ["attending", {"zh": "好。有時間軸，才看得出方向。", "en": "Good. With a timeline you can see the direction."}]
+       ]},
+      {"id": "n1n", "when": {"flag": "io-chart", "is": false},
+       "lines": [
+        ["attending", {"zh": "沒有時間軸，我們只能從現在重新開始算。", "en": "Without a timeline we can only start counting from now."}],
+        ["me", {"zh": "……我去開一張表。", "en": "…I'll start a chart."}],
+        ["attending", {"zh": "去。下午我要看到方向，不是數字。", "en": "Go. This afternoon I want a direction, not a number."}]
+       ]},
+      {"id": "n2", "to": "place:imaging-ws", "guide": {"zh": "到影像工作站", "en": "Go to the imaging workstation"},
+       "lines": [
+        ["attending", {"zh": "腹瀉的孩子為什麼會脫水？看看腸子在哪裡做什麼。", "en": "Why does a child with diarrhoea get dehydration? Look at where the gut does its work."}]
+       ],
+       "mini": {"type": "imaging", "region": "abdomen-lower",
+                "question": {"zh": "水分主要在腸道的哪一段被吸收？", "en": "Where in the gut is most water absorbed?"},
+                "answer": {"zh": "小腸吸收最多，大腸回收剩下的水分；腹瀉時兩段都來不及，水和電解質一起流失。", "en": "The small bowel absorbs most of it and the colon reclaims the rest; in diarrhoea neither keeps up, and water and electrolytes are lost together."}},
+       "post": [
+        ["attending", {"zh": "所以補液補的不只是水。", "en": "So rehydration replaces more than water."}]
+       ]},
+      {"id": "n3", "to": "place:station", "guide": {"zh": "回護理站接電話", "en": "Back to the station for a call"},
+       "ring": {"title": {"zh": "檢驗科來電", "en": "Laboratory calling"}, "sub": {"zh": "7 床電解質有一項危急值", "en": "Bed 7: one electrolyte is a critical value"}, "call": true, "from": "lab"},
+       "lines": [
+        ["lab", {"zh": "兒科病房嗎？7 床小宇的電解質有一項是危急值。請複誦病人姓名、床號與項目。", "en": "Paediatric ward? Bed 7, Xiao-Yu: one of the electrolytes is a critical value. Please give me a read-back of the name, bed and item."}]
+       ],
+       "mini": {"type": "choice", "q": {"zh": "檢驗科要求複誦，你怎麼做？", "en": "The lab asks for a read-back. What do you do?"},
+                "options": [
+                 {"zh": "複誦並記錄，立刻通知主治", "en": "Read back, record it, tell the attending at once", "ok": true, "set": {"readback": true},
+                  "why": {"zh": "閉環溝通：複誦、記錄時間與對象、通報，三步缺一不可。", "en": "Closed-loop communication: read back, record time and names, escalate. None of the three is optional."}},
+                 {"zh": "說「好，知道了」就掛掉", "en": "Say “OK, got it” and hang up", "ok": false, "set": {"readback": false},
+                  "why": {"zh": "沒有複誦，就可能聽錯項目或床號。", "en": "Without a read-back you can mishear the item or the bed."}},
+                 {"zh": "先吃午餐再處理", "en": "Have lunch first", "ok": false, "set": {"readback": false},
+                  "why": {"zh": "危急值的意思，就是不能等。", "en": "Critical means it cannot wait."}}
+                ]},
+       "post": [
+        ["lab", {"zh": "通報時間我記下了。", "en": "I've logged the time of the call."}],
+        ["attending", {"zh": "走，去看他。檢驗值是提醒，孩子才是答案。", "en": "Come on, let's see him. The number is a prompt; the child is the answer."}]
+       ]}
+     ]},
+    {"id": "clinic", "name": {"zh": "下午門診", "en": "Afternoon clinic"}, "sub": {"zh": "14:00 · 兒科門診", "en": "14:00 · paediatric clinic"}, "t": 840, "mood": "day",
+     "note": {"zh": "門診：生長曲線與一隻耳朵", "en": "Clinic: a growth chart and one ear"},
+     "beats": [
+      {"id": "k1", "to": "resident", "guide": {"zh": "到門診找陳住院", "en": "Join Dr Chen in clinic"},
+       "lines": [
+        ["resident", {"zh": "門診時間。妍妍，六歲，例行追蹤，生長曲線突然掉了一格。", "en": "Clinic time. Yan-Yan, six, routine follow-up, and her growth chart has suddenly dropped a line."}],
+        ["me", {"zh": "她看起來跟平常一樣嗎？", "en": "Does she look her usual self?"}],
+        ["resident", {"zh": "活潑得很，剛剛還在走廊跑。", "en": "Full of beans, she was just running in the corridor."}],
+        ["attending", {"zh": "曲線掉下來，第一個要懷疑的不是孩子。", "en": "When the curve drops, the first suspect is not the child."}]
+       ],
+       "mini": {"type": "stage", "case": "pediatrics-v38-growth-measurement", "stage": 0},
+       "post": [
+        ["resident", {"zh": "找到了，上次是躺著量的，這次站著。", "en": "Found it: last time she was measured lying down, this time standing."}],
+        ["me", {"zh": "躺量和站量本來就不同。先重量，再說話。", "en": "Lying and standing lengths differ anyway. Re-measure first, then talk."}]
+       ]},
+      {"id": "k2", "roles": ["intern"], "to": "place:exam", "guide": {"zh": "幫妍妍看耳朵", "en": "Look in Yan-Yan's ear"},
+       "lines": [
+        ["sys", {"zh": "妍妍說右耳有一點點痛。", "en": "Yan-Yan says her right ear hurts a little."}],
+        ["me", {"zh": "我用耳鏡看一下，像手電筒，不會痛。", "en": "I'll look with the otoscope. It's like a torch, it won't hurt."}],
+        ["attending", {"zh": "小朋友的耳廓要往下往後拉。", "en": "In a child, pull the pinna down and back."}]
+       ],
+       "mini": {"type": "drill", "template": "pediatrics", "drill": "otoChild"},
+       "post": [
+        ["attending", {"zh": "看到耳膜了？先描述你看到的，不要先下結論。", "en": "See the drum? Describe what you see before you conclude anything."}]
+       ]},
+      {"id": "k3", "roles": ["nurse"], "to": "place:sink", "guide": {"zh": "兩位病人之間先洗手", "en": "Wash your hands between patients"},
+       "lines": [
+        ["sys", {"zh": "下一位病人已經在門口。", "en": "The next patient is already at the door."}],
+        ["me", {"zh": "等我一下，先洗手。", "en": "One moment, hands first."}]
+       ],
+       "mini": {"type": "find", "hot": "sink", "q": {"zh": "找到洗手台", "en": "Find the hand-wash sink"}},
+       "post": [
+        ["attending", {"zh": "最有效的感染管制，就是你剛剛做的那件事。", "en": "The most effective infection control is what you just did."}]
+       ]},
+      {"id": "k4", "to": "resident", "guide": {"zh": "看重量後的曲線", "en": "Look at the re-plotted chart"},
+       "lines": [
+        ["resident", {"zh": "重量之後，妍妍回到原本的百分位。出生年月還輸錯了一個月。", "en": "Re-measured, Yan-Yan is back on her usual percentile. And her birth month was entered wrong."}],
+        ["me", {"zh": "先改橫軸，再重畫曲線。然後才談營養。", "en": "Fix the age axis, re-plot the curve, and only then talk about nutrition."}],
+        ["attending", {"zh": "一個百分位不是診斷，趨勢才是。", "en": "One percentile is not a diagnosis. The trend is."}]
+       ]}
+     ]},
+    {"id": "deterioration", "name": {"zh": "病況變化", "en": "Deterioration"}, "sub": {"zh": "16:00 · 7 床", "en": "16:00 · bed 7"}, "t": 960, "mood": "day",
+     "note": {"zh": "小宇血壓下降，團隊到齊", "en": "Xiao-Yu's pressure drops; the team arrives"},
+     "beats": [
+      {"id": "d1", "to": "xiaoyu", "guide": {"zh": "馬上回 7 床", "en": "Back to bed 7, now"},
+       "ring": {"title": {"zh": "林護理師訊息", "en": "Message from Nurse Lin"}, "sub": {"zh": "7 床心跳變快、手腳冰涼，請過來", "en": "Bed 7: fast heart rate, cold hands and feet, please come"}, "call": false, "from": "nurse-lin"},
+       "lines": [
+        ["nurse-lin", {"zh": "心跳快、四肢涼、微血管回填變慢，血壓剛剛量偏低。", "en": "Tachycardic, cool limbs, capillary refill slower, and the pressure just came back low."}],
+        ["mother", {"zh": "他剛剛叫不太醒……", "en": "He wouldn't really wake up just now…"}]
+       ],
+       "mini": {"type": "vitals", "event": "hypotension",
+                "options": [
+                 {"zh": "叫主治到床邊，依醫囑建立通路、測血糖", "en": "Call the attending to the bedside; line access and a glucose check per order", "ok": true,
+                  "why": {"zh": "休克前兆：人、通路、血糖同時到位。", "en": "Early shock: people, access and glucose arrive together."}},
+                 {"zh": "再觀察一小時看看", "en": "Watch for another hour", "ok": false,
+                  "why": {"zh": "安靜加上血壓下降，不是可以等的組合。", "en": "Quiet plus a falling pressure is not a combination that waits."}},
+                 {"zh": "先把出入量表補完", "en": "Finish the chart first", "ok": false,
+                  "why": {"zh": "表格可以晚一點，孩子不行。", "en": "The chart can wait. The child cannot."}}
+                ]},
+       "post": [
+        ["nurse-lin", {"zh": "通路建好了，血糖也測了。", "en": "Line's in, glucose checked."}],
+        ["attending", {"zh": "我到了。說給我聽。", "en": "I'm here. Talk me through it."}]
+       ]},
+      {"id": "d2", "to": "attending", "guide": {"zh": "向吳主治 ISBAR 回報", "en": "ISBAR report to Dr Wu"},
+       "lines": [
+        ["attending", {"zh": "用 ISBAR，三十秒。", "en": "ISBAR, thirty seconds."}]
+       ],
+       "mini": {"type": "order", "q": {"zh": "床邊回報的 ISBAR 順序", "en": "The ISBAR order for a bedside report"},
+                "steps": [
+                 {"zh": "身分：我是誰、哪一床", "en": "Identity: who I am, which bed"},
+                 {"zh": "情境：現在發生什麼", "en": "Situation: what is happening now"},
+                 {"zh": "背景：腹瀉兩天、攝入減少", "en": "Background: two days of diarrhoea, less intake"},
+                 {"zh": "評估：心跳快、血壓低、反應慢", "en": "Assessment: fast pulse, low pressure, slow responses"},
+                 {"zh": "建議：請到床邊，依醫囑補液", "en": "Recommendation: come to the bedside, rehydration per order"},
+                 {"zh": "複誦確認接下來的處置", "en": "Read back the agreed plan"}
+                ]},
+       "post": [
+        ["attending", {"zh": "好。這是一個完整的回報。開始補液，依醫囑，每一步記時間。", "en": "Good. That is a complete report. Start rehydration per order, and time every step."}]
+       ]},
+      {"id": "d3", "to": "xiaoyu", "guide": {"zh": "回到床邊", "en": "Back to the bedside"},
+       "lines": [
+        ["sys", {"zh": "半小時後，小宇的手腳回暖，開始找暴龍。", "en": "Half an hour later Xiao-Yu's hands are warm again and he is looking for T. rex."}],
+        ["xiaoyu", {"zh": "暴龍要喝水。", "en": "T. rex wants water."}],
+        ["mother", {"zh": "他說暴龍要喝水！", "en": "He says T. rex wants water!"}],
+        ["attending", {"zh": "還好早上有秤體重，現在的比較才有意義。", "en": "Good thing he was weighed this morning; now the comparison means something."}]
+       ]}
+     ]},
+    {"id": "evening", "name": {"zh": "交班與下班", "en": "Handover and home"}, "sub": {"zh": "17:30 · 交班板", "en": "17:30 · handover board"}, "t": 1050, "mood": "eve",
+     "note": {"zh": "交班完成，恐龍貼紙到手", "en": "Handed over; dinosaur sticker acquired"},
+     "beats": [
+      {"id": "e1", "to": "place:board", "guide": {"zh": "到交班板交班", "en": "Hand over at the board"},
+       "lines": [
+        ["resident", {"zh": "晚班我接。7 床說吧，未解的問題和誰追蹤。", "en": "I've got the evening. Bed 7: open problems and who follows up."}],
+        ["me", {"zh": "出入量表到現在、補液依醫囑進行中、兩位照顧者一條時間線、一小時後再評估。", "en": "Chart up to now, rehydration per order in progress, one timeline for two caregivers, reassess in an hour."}]
+       ]},
+      {"id": "e1y", "when": {"flag": "readback", "is": true},
+       "lines": [
+        ["resident", {"zh": "危急值那通電話，你有複誦？", "en": "That critical value call, did you read it back?"}],
+        ["me", {"zh": "有，項目、床號、時間都在紀錄上。", "en": "Yes. Item, bed and time are all in the notes."}],
+        ["resident", {"zh": "那我就不用再打去問了。", "en": "Then I don't have to ring them back."}]
+       ]},
+      {"id": "e1n", "when": {"flag": "readback", "is": false},
+       "lines": [
+        ["resident", {"zh": "危急值是哪一項？幾點通知的？", "en": "Which item was critical? What time did they call?"}],
+        ["me", {"zh": "……我沒有複誦，紀錄只寫了「已告知」。", "en": "…I didn't read it back. The note just says “informed”."}],
+        ["attending", {"zh": "這就是為什麼要複誦。現在打回去確認，然後寫下來。", "en": "This is why we read back. Ring them now, confirm it, and write it down."}]
+       ]},
+      {"id": "e2", "to": "attending", "guide": {"zh": "聽吳主治的結語", "en": "Dr Wu's debrief"},
+       "lines": [
+        ["attending", {"zh": "今天你學到的不是腹瀉，是時間。", "en": "What you learned today was not diarrhoea. It was time."}],
+        ["attending", {"zh": "尿布要有時間，兩位照顧者要有一條時間線，危急值要有通報時間。", "en": "Nappies need a time, two caregivers need one timeline, and a critical value needs the time it was called."}],
+        ["attending", {"zh": "明天繼續。咖啡我明天再喝。", "en": "Same again tomorrow. I'll drink the coffee tomorrow."}],
+        ["sys", {"zh": "她把那杯涼掉的咖啡倒進水槽，和昨天一樣。", "en": "She pours the cold coffee down the sink, same as yesterday."}]
+       ]},
+      {"id": "e3", "to": "xiaoyu", "guide": {"zh": "回 7 床說晚安", "en": "Say goodnight to bed 7"},
+       "lines": [
+        ["xiaoyu", {"zh": "醫師，這個給你。", "en": "Doctor, this is for you."}],
+        ["sys", {"zh": "一張恐龍貼紙，有點皺。", "en": "A dinosaur sticker, a little crumpled."}],
+        ["mother", {"zh": "他說暴龍喝水了，要謝謝你。", "en": "He says T. rex drank his water, and he wants to thank you."}],
+        ["me", {"zh": "我會貼在名牌上。晚安，小宇。", "en": "I'll put it on my badge. Goodnight, Xiao-Yu."}]
+       ],
+       "item": "dino-sticker", "end": true}
+     ]}
+  ],
+  "ending": {"title": {"zh": "下班了", "en": "End of shift"}, "sub": {"zh": "暴龍喝水了，貼紙在你的名牌上", "en": "T. rex drank his water; the sticker is on your badge"},
+             "stats": ["stages", "drills", "choices", "calls", "items", "time"]}
+}

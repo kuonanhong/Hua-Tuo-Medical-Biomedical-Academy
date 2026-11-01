@@ -1,0 +1,1520 @@
+{
+ "format": "huatuo-shift-v1",
+ "department": "dermatology",
+ "title": {
+  "zh": "皮膚科值班日",
+  "en": "A shift in dermatology"
+ },
+ "tagline": {
+  "zh": "從一張舊手機照片到一顆不癒合的小丘疹",
+  "en": "From an old phone photo to a small lesion that will not heal"
+ },
+ "room": "clinic",
+ "minutes": 25,
+ "roles": [
+  {
+   "id": "intern",
+   "zh": "實習醫師",
+   "en": "Intern",
+   "desc": {
+    "zh": "問演變、公平比較照片、畫切片邊界、寫病理申請單。外觀不是組織結果。",
+    "en": "Ask about evolution, compare photographs fairly, mark the biopsy margins, write the pathology request. Appearance is not histology."
+   }
+  },
+  {
+   "id": "derm-nurse",
+   "zh": "皮膚科護理師",
+   "en": "Dermatology nurse",
+   "desc": {
+    "zh": "標準化攝影、切片器械、檢體標籤、追蹤電話。沒有尺的照片不算照片。",
+    "en": "Standardised photography, the biopsy tray, specimen labels, the follow-up calls. A photo without a ruler is not a photo."
+   }
+  }
+ ],
+ "cast": {
+  "attending": {
+   "name": {
+    "zh": "莊主治",
+    "en": "Dr Chuang"
+   },
+   "role": {
+    "zh": "主治醫師（師傅）",
+    "en": "Attending (mentor)"
+   },
+   "tag": "ATT",
+   "color": "#9c4f2f",
+   "body": "mentor",
+   "about": {
+    "zh": "皮膚科主治，皮膚鏡掛在脖子上，口袋裡一捲尺貼紙。每一個病灶她只問一句：「它變了嗎？」",
+    "en": "Dermatologist with a dermatoscope on a lanyard and a roll of ruler stickers in her pocket. Of every lesion she asks one thing: 'Has it changed?'"
+   }
+  },
+  "nurse-ting": {
+   "name": {
+    "zh": "小婷",
+    "en": "Nurse Ting"
+   },
+   "role": {
+    "zh": "皮膚科護理師",
+    "en": "Dermatology nurse"
+   },
+   "tag": "RN",
+   "color": "#3b8f6a",
+   "body": "nurse",
+   "about": {
+    "zh": "攝影區和治療室都是她的。同一個距離、同一個光線、同一把尺，三年後的照片才比得了。",
+    "en": "Runs the photo station and the procedure room. Same distance, same light, same ruler, so that the photo three years from now can be compared."
+   }
+  },
+  "patient-hsiang": {
+   "name": {
+    "zh": "阿香",
+    "en": "Ms Hsiang"
+   },
+   "role": {
+    "zh": "門診病人",
+    "en": "Clinic patient"
+   },
+   "tag": "PH",
+   "color": "#b8762e",
+   "body": "patient",
+   "about": {
+    "zh": "48 歲市場攤商，小腿一顆色素斑半年來變大。舊手機裡有一張去年夏天的照片，因為那天穿了新涼鞋。（虛擬個案）",
+    "en": "A 48-year-old market stallholder with a pigmented spot on her calf that has grown over six months. Her old phone holds a photo from last summer, taken because of new sandals. (Fictional.)"
+   }
+  },
+  "patient-wang": {
+   "name": {
+    "zh": "王伯",
+    "en": "Mr Wang"
+   },
+   "role": {
+    "zh": "門診病人",
+    "en": "Clinic patient"
+   },
+   "tag": "PW",
+   "color": "#8a6ac4",
+   "body": "patient",
+   "about": {
+    "zh": "72 歲，鼻翼一顆小丘疹半年來反覆出血結痂，堅信是刮鬍子刮到。孫子逼他來的。（虛擬個案）",
+    "en": "A 72-year-old with a small papule on the side of his nose that has bled and crusted repeatedly for six months. Certain it is a shaving cut. His grandson made him come. (Fictional.)"
+   }
+  },
+  "patient-chiang": {
+   "name": {
+    "zh": "阿強",
+    "en": "Mr Chiang"
+   },
+   "role": {
+    "zh": "移植追蹤病人",
+    "en": "Transplant follow-up patient"
+   },
+   "tag": "PC",
+   "color": "#6a9c3a",
+   "body": "patient",
+   "about": {
+    "zh": "59 歲，腎移植八年，做了三十年工地。耳廓上一顆硬硬的結節六週內變大、會痛。想把移植藥停掉「免得再長」。（虛擬個案）",
+    "en": "A 59-year-old eight years after a kidney transplant, thirty years on building sites. A hard nodule on his ear has grown and become painful within six weeks. Wants to stop his transplant drugs 'so nothing else grows'. (Fictional.)"
+   }
+  },
+  "patient-mei": {
+   "name": {
+    "zh": "小美",
+    "en": "Ms Mei"
+   },
+   "role": {
+    "zh": "急診會診病人",
+    "en": "ER consult patient"
+   },
+   "tag": "PM",
+   "color": "#c9596a",
+   "body": "patient",
+   "about": {
+    "zh": "25 歲研究生，一週前因為泌尿道感染開始吃抗生素，昨天全身起疹，今天發燒、嘴巴破、眼睛痛。（虛擬個案）",
+    "en": "A 25-year-old postgraduate who started an antibiotic for a urinary infection a week ago, broke out in a rash yesterday, and today has a fever, mouth ulcers and sore eyes. (Fictional.)"
+   }
+  },
+  "er-doc": {
+   "name": {
+    "zh": "急診阿哲",
+    "en": "Dr Che (ER)"
+   },
+   "role": {
+    "zh": "急診值班醫師",
+    "en": "ER doctor"
+   },
+   "tag": "ER",
+   "color": "#5b6abf",
+   "body": "resident",
+   "phoneOnly": true,
+   "about": {
+    "zh": "急診打來會診「一個皮疹」。皮膚科最怕的就是「只是一個皮疹」。",
+    "en": "The ER calling about 'a rash'. The phrase dermatology fears most is 'just a rash'."
+   }
+  },
+  "path-tech": {
+   "name": {
+    "zh": "病理科小何",
+    "en": "Ho (pathology)"
+   },
+   "role": {
+    "zh": "病理科技術師",
+    "en": "Pathology technician"
+   },
+   "tag": "PTH",
+   "color": "#2e8aa8",
+   "body": "tech",
+   "phoneOnly": true,
+   "about": {
+    "zh": "病理科收檢體的人。申請單少一格，他會傳訊息來要。",
+    "en": "Receives the specimens in pathology. One missing box on the request form and he messages you for it."
+   }
+  }
+ },
+ "places": {
+  "whiteboard": {
+   "name": {
+    "zh": "晨會白板",
+    "en": "Morning board"
+   },
+   "hot": "whiteboard"
+  },
+  "exam-bed": {
+   "name": {
+    "zh": "診間檢查床",
+    "en": "Examination couch"
+   },
+   "hot": "bed"
+  },
+  "photo-station": {
+   "name": {
+    "zh": "標準化攝影區",
+    "en": "Photo station"
+   },
+   "hot": "lightbox"
+  },
+  "dermatoscope": {
+   "name": {
+    "zh": "皮膚鏡",
+    "en": "Dermatoscope"
+   },
+   "hot": "device"
+  },
+  "proc-tray": {
+   "name": {
+    "zh": "切片器械車",
+    "en": "Biopsy tray"
+   },
+   "hot": "instruments"
+  },
+  "pacs": {
+   "name": {
+    "zh": "影像工作站",
+    "en": "Imaging workstation"
+   },
+   "hot": "imaging"
+  },
+  "monitor": {
+   "name": {
+    "zh": "急診監視器",
+    "en": "ER monitor"
+   },
+   "hot": "monitor"
+  },
+  "desk": {
+   "name": {
+    "zh": "診間桌",
+    "en": "Clinic desk"
+   },
+   "hot": "desk"
+  }
+ },
+ "glossary": [
+  {
+   "term": {
+    "zh": "皮膚鏡",
+    "en": "dermoscopy"
+   },
+   "plain": {
+    "zh": "一支放大加偏光的小鏡子，看得到皮膚表面底下的色素結構和血管。它提示風險，不能取代組織。",
+    "en": "A small magnifier with polarised light that shows pigment structures and vessels beneath the skin surface. It signals risk; it does not replace tissue."
+   }
+  },
+  {
+   "term": {
+    "zh": "色素斑",
+    "en": "pigmented lesion"
+   },
+   "plain": {
+    "zh": "皮膚上任何一塊深色的斑或痣。大多數無害，重點不是大小，是它有沒有在變。",
+    "en": "Any dark spot or mole on the skin. Most are harmless; what matters is not the size but whether it is changing."
+   }
+  },
+  {
+   "term": {
+    "zh": "演變",
+    "en": "evolution"
+   },
+   "plain": {
+    "zh": "病灶隨時間改變：變大、變色、邊緣變不規則、開始癢或流血。這是最重要的一個警訊。",
+    "en": "A lesion changing over time: bigger, different colour, irregular edge, itching or bleeding. The single most important warning sign."
+   }
+  },
+  {
+   "term": {
+    "zh": "標準化照片",
+    "en": "standardised photograph"
+   },
+   "plain": {
+    "zh": "同一個距離、同一個光線、旁邊放一把尺。沒有尺的兩張照片不能公平比較。",
+    "en": "Same distance, same light, a ruler beside the lesion. Two photos without a ruler cannot be compared fairly."
+   }
+  },
+  {
+   "term": {
+    "zh": "皮膚切片",
+    "en": "skin biopsy"
+   },
+   "plain": {
+    "zh": "局部麻醉後取一小塊皮膚送病理。取哪裡、取多深、邊界怎麼標，決定報告能不能回答問題。",
+    "en": "Removing a small piece of skin under local anaesthetic for pathology. Where, how deep and how the margins are marked decide whether the report can answer the question."
+   }
+  },
+  {
+   "term": {
+    "zh": "病理確認",
+    "en": "histological confirmation"
+   },
+   "plain": {
+    "zh": "在顯微鏡下看到組織才算確診。外觀再典型，也只是「像」。",
+    "en": "A diagnosis made by seeing the tissue under the microscope. However typical the appearance, it is only 'looks like' until then."
+   }
+  },
+  {
+   "term": {
+    "zh": "基底細胞癌",
+    "en": "basal cell carcinoma"
+   },
+   "plain": {
+    "zh": "最常見的皮膚癌，長得慢、很少轉移，但會在原地一直破壞。常見的樣子：一顆反覆出血結痂、邊緣像珍珠的小丘疹。",
+    "en": "The commonest skin cancer: slow-growing, rarely spreading, but relentlessly destructive where it sits. Classic look: a small papule that bleeds and crusts again and again, with a pearly edge."
+   }
+  },
+  {
+   "term": {
+    "zh": "珍珠樣邊緣",
+    "en": "pearly border"
+   },
+   "plain": {
+    "zh": "病灶邊緣像半透明的小珍珠，上面有細細的血管。看到它要想到基底細胞癌，但仍要切片。",
+    "en": "A translucent, pearl-like rim with fine vessels across it. Think basal cell carcinoma when you see it, but still biopsy."
+   }
+  },
+  {
+   "term": {
+    "zh": "自由邊緣",
+    "en": "free margin"
+   },
+   "plain": {
+    "zh": "鼻翼、眼瞼、嘴唇這種沒有東西支撐的邊緣。這裡的病灶，治療計畫要同時想功能和外觀。",
+    "en": "Edges with nothing behind them, such as the nostril rim, eyelid or lip. A lesion here needs a plan that considers function and appearance together."
+   }
+  },
+  {
+   "term": {
+    "zh": "皮紋",
+    "en": "skin tension lines"
+   },
+   "plain": {
+    "zh": "皮膚天然的張力方向。順著皮紋切，疤痕最細；逆著切，疤痕會張開。",
+    "en": "The skin's natural lines of tension. Cut along them and the scar is finest; cut across them and it spreads."
+   }
+  },
+  {
+   "term": {
+    "zh": "梭形切除",
+    "en": "fusiform excision"
+   },
+   "plain": {
+    "zh": "把病灶連同邊界切成一個兩頭尖的橄欖形，方便縫合不起皺。長軸要順著皮紋。",
+    "en": "Removing the lesion with its margin as a pointed-ends ellipse so the wound closes flat. The long axis follows the skin tension lines."
+   }
+  },
+  {
+   "term": {
+    "zh": "免疫抑制",
+    "en": "immunosuppression"
+   },
+   "plain": {
+    "zh": "移植後為了保護器官而壓低免疫系統。代價是皮膚癌風險大幅上升，而且長得更快、更凶。",
+    "en": "Holding the immune system down after a transplant to protect the organ. The price is a much higher risk of skin cancer, which also grows faster and behaves worse."
+   }
+  },
+  {
+   "term": {
+    "zh": "角化結節",
+    "en": "keratotic nodule"
+   },
+   "plain": {
+    "zh": "一顆硬硬的、表面粗糙結痂的突起。在免疫抑制又長期日曬的人身上，快速變大就是警訊。",
+    "en": "A firm, rough, crusted bump. In someone immunosuppressed with decades of sun, rapid growth is the warning."
+   }
+  },
+  {
+   "term": {
+    "zh": "嚴重皮膚藥物不良反應",
+    "en": "severe cutaneous adverse reaction"
+   },
+   "plain": {
+    "zh": "藥物引起的全身性皮膚反應，可能起水泡、皮膚剝離、黏膜潰爛、發燒。會致命，要立刻停藥並升級照護。",
+    "en": "A drug-induced reaction across the whole skin: blisters, peeling, ulcerated mucosa, fever. It can kill; the drug stops at once and care escalates."
+   }
+  },
+  {
+   "term": {
+    "zh": "黏膜",
+    "en": "mucosa"
+   },
+   "plain": {
+    "zh": "嘴巴、眼睛、生殖器內側的濕潤表面。皮疹加黏膜受累，就不是「只是一個皮疹」。",
+    "en": "The moist linings of the mouth, eyes and genitals. A rash plus mucosal involvement is never 'just a rash'."
+   }
+  }
+ ],
+ "codex": [
+  {
+   "id": "dermatoscope",
+   "kind": "equipment",
+   "name": {
+    "zh": "皮膚鏡",
+    "en": "Dermatoscope"
+   },
+   "text": {
+    "zh": "莊主治脖子上那支。放大十倍、偏光，看色素網、小球、血管。皮膚鏡的照片也要標準化，才能和下次比。",
+    "en": "The one around Dr Chuang's neck. Ten times magnification, polarised light, for pigment networks, globules and vessels. Dermoscopy images are standardised too, so they can be compared next time."
+   },
+   "hot": "device"
+  },
+  {
+   "id": "photo-station",
+   "kind": "equipment",
+   "name": {
+    "zh": "標準化攝影區",
+    "en": "Photo station"
+   },
+   "text": {
+    "zh": "固定的燈、固定的距離標記、貼在病灶旁邊的尺。小婷的規矩：先拍全景定位，再拍近景，再拍皮膚鏡。",
+    "en": "Fixed lights, a fixed distance mark, a ruler stuck beside the lesion. Nurse Ting's rule: overview for location first, then close-up, then dermoscopy."
+   },
+   "hot": "lightbox"
+  },
+  {
+   "id": "biopsy-tray",
+   "kind": "equipment",
+   "name": {
+    "zh": "切片器械車",
+    "en": "Biopsy tray"
+   },
+   "text": {
+    "zh": "標記筆、尺、消毒、局麻、切片工具、縫線、檢體罐、固定液。先畫邊界、再拍照、再消毒，順序不能反。",
+    "en": "Marker, ruler, antiseptic, local anaesthetic, biopsy instruments, sutures, specimen pot, fixative. Mark the margins, photograph, then prep; never the other way round."
+   },
+   "hot": "instruments"
+  },
+  {
+   "id": "pacs",
+   "kind": "equipment",
+   "name": {
+    "zh": "影像工作站",
+    "en": "Imaging workstation"
+   },
+   "text": {
+    "zh": "臨床照片、皮膚鏡影像、必要時的影像檢查都在這裡。先核對姓名日期，再比較。比較之前先問：拍攝條件一樣嗎？",
+    "en": "Clinical photos, dermoscopy images and any imaging studies live here. Name and date first, then compare. And before comparing: were the conditions the same?"
+   },
+   "hot": "imaging"
+  },
+  {
+   "id": "monitor",
+   "kind": "equipment",
+   "name": {
+    "zh": "急診監視器",
+    "en": "ER monitor"
+   },
+   "text": {
+    "zh": "皮膚科很少看監視器，直到有人說「只是一個皮疹」加上發燒。那時候體溫和血壓比皮疹本身更重要。",
+    "en": "Dermatology rarely watches a monitor, until someone says 'just a rash' and adds a fever. Then temperature and blood pressure matter more than the rash itself."
+   },
+   "hot": "monitor"
+  },
+  {
+   "id": "hsiang-pot",
+   "kind": "item",
+   "name": {
+    "zh": "阿香的切片檢體罐",
+    "en": "Ms Hsiang's biopsy pot"
+   },
+   "text": {
+    "zh": "固定液裡一小塊帶著邊界標記的皮膚，罐身是阿香的雙識別，申請單附了部位圖和兩張照片。病理回來之前，它是整個問題的答案。",
+    "en": "A small piece of skin with its margin marks in fixative, the pot carrying Ms Hsiang's two identifiers, the form carrying a site diagram and two photos. Until pathology returns, it holds the whole answer."
+   }
+  },
+  {
+   "id": "has-it-changed",
+   "kind": "concept",
+   "name": {
+    "zh": "它變了嗎？",
+    "en": "Has it changed?"
+   },
+   "text": {
+    "zh": "大小不是唯一條件。一顆小的但在變的病灶，比一顆大的但十年沒變的病灶更需要注意。問演變，公平比較照片，然後決定。",
+    "en": "Size is not the only criterion. A small lesion that is changing needs more attention than a large one unchanged for ten years. Ask about evolution, compare photos fairly, then decide."
+   }
+  },
+  {
+   "id": "appearance-not-histology",
+   "kind": "concept",
+   "name": {
+    "zh": "外觀不是組織結果",
+    "en": "Appearance is not histology"
+   },
+   "text": {
+    "zh": "珍珠樣邊緣、不規則色素、快速變大的角化結節，都只是「像」。治療計畫建立在病理確認之上，不建立在直徑之上。",
+    "en": "A pearly border, irregular pigment, a fast-growing keratotic nodule: all of them are only 'looks like'. Treatment plans rest on histological confirmation, not on a diameter."
+   }
+  }
+ ],
+ "segs": [
+  {
+   "id": "morning",
+   "name": {
+    "zh": "晨會",
+    "en": "Morning meeting"
+   },
+   "sub": {
+    "zh": "08:00 · 晨會白板",
+    "en": "08:00 · morning board"
+   },
+   "t": 480,
+   "mood": "day",
+   "note": {
+    "zh": "晨會：今天的門診與切片",
+    "en": "Morning meeting: clinic and biopsies"
+   },
+   "beats": [
+    {
+     "id": "m1",
+     "to": "place:whiteboard",
+     "guide": {
+      "zh": "到白板看今天的名單",
+      "en": "Check today's list at the board"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "早。今天門診四十五個，兩個切片，下午一個移植追蹤。尺貼紙一人一捲，照片沒有尺就不要拍。",
+        "en": "Morning. Forty-five in clinic, two biopsies, a transplant follow-up this afternoon. One roll of ruler stickers each; no ruler, no photo."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "第一位阿香，小腿色素斑半年變大。",
+        "en": "First is Ms Hsiang, a calf lesion growing over six months."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "「變大」是她說的。你等一下要做的，是讓照片說。",
+        "en": "'Growing' is her word. Your job shortly is to let the photographs say it."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "m2",
+     "to": "place:dermatoscope",
+     "guide": {
+      "zh": "開診前：皮膚鏡在哪？",
+      "en": "Before clinic: where is the dermatoscope?"
+     },
+     "roles": [
+      "derm-nurse"
+     ],
+     "lines": [
+      [
+       "nurse-ting",
+       {
+        "zh": "每天開診前三件事：皮膚鏡充飽、攝影區燈開、尺貼紙補滿。先找到皮膚鏡。",
+        "en": "Three things before every clinic: dermatoscope charged, photo-station lights on, ruler stickers restocked. Find the dermatoscope first."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "find",
+      "hot": "device",
+      "q": {
+       "zh": "在診間找到皮膚鏡",
+       "en": "Find the dermatoscope in the clinic"
+      }
+     },
+     "post": [
+      [
+       "nurse-ting",
+       {
+        "zh": "充飽了。鏡頭擦過。今天它會很忙。",
+        "en": "Fully charged, lens cleaned. It will be busy today."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "hsiang",
+   "name": {
+    "zh": "阿香的色素斑",
+    "en": "Ms Hsiang's lesion"
+   },
+   "sub": {
+    "zh": "08:30 · 診間與攝影區",
+    "en": "08:30 · clinic and photo station"
+   },
+   "t": 510,
+   "mood": "day",
+   "note": {
+    "zh": "公平比較阿香的照片",
+    "en": "Compared Ms Hsiang's photos fairly"
+   },
+   "beats": [
+    {
+     "id": "s1",
+     "to": "patient-hsiang",
+     "guide": {
+      "zh": "請阿香進診間",
+      "en": "Call Ms Hsiang into the room"
+     },
+     "lines": [
+      [
+       "patient-hsiang",
+       {
+        "zh": "醫師，這顆痣我從小就有，可是半年來好像變大了。我手機裡有去年夏天的照片，因為那天穿新涼鞋。",
+        "en": "Doctor, I have had this mole since I was small, but it seems bigger these six months. I have a photo from last summer on my phone, because of my new sandals."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "顏色有變嗎？邊緣？會癢或流血嗎？",
+        "en": "Has the colour changed? The edge? Any itching or bleeding?"
+       }
+      ],
+      [
+       "patient-hsiang",
+       {
+        "zh": "顏色好像深淺不一了。邊邊……不像以前那麼圓。",
+        "en": "The colour seems uneven now. The edge... is not as round as it used to be."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "色素斑只問一句：它變了嗎？大小不是唯一條件。",
+        "en": "Of a pigmented lesion ask one thing: has it changed? Size is not the only criterion."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "dermatology-v38-changing-pigment",
+      "stage": 0
+     },
+     "post": [
+      [
+       "attending",
+       {
+        "zh": "對。演變是最重要的警訊。現在去攝影區，把她去年的照片和今天的放在一起。",
+        "en": "Right. Evolution is the most important warning sign. Now to the photo station, and put last year's photo next to today's."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "s2",
+     "to": "place:photo-station",
+     "guide": {
+      "zh": "到攝影區比較兩張照片",
+      "en": "Compare the two photos at the station"
+     },
+     "lines": [
+      [
+       "nurse-ting",
+       {
+        "zh": "去年的照片：戶外、側光、沒有尺、距離不明。今天的是標準化照片：固定燈、固定距離、有尺。",
+        "en": "Last year's photo: outdoors, side light, no ruler, unknown distance. Today's is a standardised photograph: fixed light, fixed distance, ruler."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "所以不能直接比大小。但邊緣的形狀和顏色分布可以比，而且確實不一樣了。",
+        "en": "So the size cannot be compared directly. But the shape of the edge and the colour distribution can, and they are genuinely different."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "公平比較之後還是有演變，加上皮膚鏡下的可疑結構。你今天要怎麼做？",
+        "en": "Even after a fair comparison there is evolution, plus suspicious structures on dermoscopy. What do you do today?"
+       }
+      ]
+     ],
+     "mini": {
+      "type": "choice",
+      "q": {
+       "zh": "演變明確、皮膚鏡可疑，但病人說她很忙。今天怎麼做？",
+       "en": "Clear evolution, suspicious dermoscopy, but the patient says she is busy. What today?"
+      },
+      "options": [
+       {
+        "zh": "今天切片，指定結果追蹤人與聯絡方式",
+        "en": "Biopsy today; name a result-tracking owner and contact route",
+        "ok": true,
+        "set": {
+         "biopsy": true
+        },
+        "why": {
+         "zh": "影像提示風險，組織才能回答。忙的病人最容易錯過追蹤，所以追蹤的人和方式今天就要定。",
+         "en": "Imaging signals risk; only tissue answers. Busy patients are the ones who miss follow-up, so the owner and the route are set today."
+        }
+       },
+       {
+        "zh": "三個月後再拍一次照看看",
+        "en": "Re-photograph in three months and see",
+        "ok": false,
+        "set": {
+         "biopsy": false
+        },
+        "why": {
+         "zh": "演變已經有了，再等三個月只是讓它再演變三個月。",
+         "en": "The evolution is already there; three more months only buys three more months of evolution."
+        }
+       },
+       {
+        "zh": "皮膚鏡看起來可疑，直接當惡性治療",
+        "en": "Dermoscopy looks suspicious; treat as malignant now",
+        "ok": false,
+        "set": {
+         "biopsy": false
+        },
+        "why": {
+         "zh": "皮膚鏡提示風險，不能分期也不能定計畫。沒有病理就沒有治療計畫。",
+         "en": "Dermoscopy signals risk; it cannot stage or plan. No pathology, no treatment plan."
+        }
+       }
+      ]
+     },
+     "post": [
+      [
+       "patient-hsiang",
+       {
+        "zh": "今天？……好。攤位我請妹妹顧。電話留我妹妹的，我常漏接。",
+        "en": "Today? ...All right. My sister can mind the stall. Put my sister's number down; I miss calls all the time."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "s3",
+     "to": "place:proc-tray",
+     "guide": {
+      "zh": "到治療室畫切片邊界",
+      "en": "Mark the biopsy margins in the procedure room"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "先畫，再拍，再消毒。邊界標記和取樣點要讓病理醫師看得懂方向。",
+        "en": "Mark first, photograph, then prep. The margin marks and sampling site must let the pathologist read the orientation."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "drill",
+      "template": "dermatology",
+      "drill": "biopsy"
+     },
+     "item": "hsiang-pot",
+     "post": [
+      [
+       "attending",
+       {
+        "zh": "好。取樣完成，罐子貼雙識別。申請單上一定要有部位圖和照片，病理醫師不是在猜。",
+        "en": "Good. Sample taken, pot labelled with two identifiers. The request form must carry a site diagram and photos; the pathologist is not guessing."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "s4",
+     "to": "nurse-ting",
+     "guide": {
+      "zh": "跟小婷處理檢體",
+      "en": "Handle the specimen with Nurse Ting"
+     },
+     "roles": [
+      "derm-nurse"
+     ],
+     "lines": [
+      [
+       "nurse-ting",
+       {
+        "zh": "檢體從離開皮膚到進病理科，每一步都有順序。排給我看。",
+        "en": "From leaving the skin to arriving in pathology, every step has an order. Lay it out."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "order",
+      "q": {
+       "zh": "把皮膚切片檢體的處理順序排對",
+       "en": "Put the skin-specimen handling steps in order"
+      },
+      "steps": [
+       {
+        "zh": "床邊核對雙識別並貼罐身標籤",
+        "en": "Two identifiers, label the pot at the bedside"
+       },
+       {
+        "zh": "檢體立即放入固定液",
+        "en": "Specimen straight into fixative"
+       },
+       {
+        "zh": "申請單附部位圖、照片與臨床資訊",
+        "en": "Form with site diagram, photos, clinical details"
+       },
+       {
+        "zh": "登錄追蹤單與結果追蹤人",
+        "en": "Log the tracker and the result owner"
+       },
+       {
+        "zh": "送件並確認病理科簽收",
+        "en": "Dispatch and confirm pathology receipt"
+       }
+      ]
+     },
+     "post": [
+      [
+       "nurse-ting",
+       {
+        "zh": "對。追蹤人那一格是整個流程最常空著的，也是最常出事的。",
+        "en": "Right. The owner box is the one most often left blank, and the one where things most often go wrong."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "wang",
+   "name": {
+    "zh": "王伯的鼻翼",
+    "en": "Mr Wang's nose"
+   },
+   "sub": {
+    "zh": "10:30 · 診間",
+    "en": "10:30 · clinic"
+   },
+   "t": 630,
+   "mood": "day",
+   "note": {
+    "zh": "王伯：外觀不是組織結果",
+    "en": "Mr Wang: appearance is not histology"
+   },
+   "beats": [
+    {
+     "id": "w1",
+     "to": "patient-wang",
+     "guide": {
+      "zh": "請王伯進診間",
+      "en": "Call Mr Wang into the room"
+     },
+     "lines": [
+      [
+       "patient-wang",
+       {
+        "zh": "醫師，這是刮鬍子刮到的，半年了而已。是我孫子一直吵。",
+        "en": "Doctor, this is a shaving cut, only six months old. It is my grandson who keeps nagging."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "王伯，同一個地方每次結痂掉了又流血，半年。刮鬍子的傷口不會這樣。",
+        "en": "Mr Wang, the same spot bleeding again every time the crust falls off, for six months. A shaving cut does not do that."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "皮膚鏡看看。邊緣像珍珠，上面有細血管。像什麼？",
+        "en": "Dermoscopy. A pearly border with fine vessels across it. What does that look like?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "像基底細胞癌。但「像」不是診斷。",
+        "en": "Like a basal cell carcinoma. But 'like' is not a diagnosis."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "dermatology-v38-bcc-nonhealing",
+      "stage": 1
+     },
+     "post": [
+      [
+       "attending",
+       {
+        "zh": "對。外觀可以提示，組織才能確認。今天切片，計畫等病理。",
+        "en": "Right. Appearance suggests; tissue confirms. Biopsy today; the plan waits for pathology."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "w2",
+     "to": "place:pacs",
+     "guide": {
+      "zh": "到工作站看鼻翼的影像",
+      "en": "Review the nose images at the workstation"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "把王伯的臨床照片和皮膚鏡影像調出來。病灶在鼻翼邊緣。為什麼計畫不能只看直徑？",
+        "en": "Pull up Mr Wang's clinical and dermoscopy images. The lesion sits on the nostril rim. Why can the plan not be decided by diameter alone?"
+       }
+      ]
+     ],
+     "mini": {
+      "type": "imaging",
+      "region": "face",
+      "question": {
+       "zh": "鼻翼邊緣的小病灶，治療計畫為什麼不能只看直徑？",
+       "en": "A small lesion on the nostril rim: why is the plan not decided by diameter alone?"
+      },
+      "answer": {
+       "zh": "因為它靠近自由邊緣。切除會影響鼻孔的形狀和呼吸，重建方式要和病人重視的外觀與功能一起討論。病理確認在前，部位與目標決定計畫，直徑只是其中一項。",
+       "en": "Because it sits by a free margin. Excision affects the shape of the nostril and breathing, and reconstruction must be discussed with the appearance and function the patient values. Histology first; then site and goals shape the plan, with diameter only one factor."
+      }
+     },
+     "post": [
+      [
+       "patient-wang",
+       {
+        "zh": "醫師，鼻子會不會變形？我還要吹薩克斯風。",
+        "en": "Doctor, will my nose change shape? I still play the saxophone."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "這就是為什麼不能只看直徑。薩克斯風寫進計畫裡。",
+        "en": "That is exactly why it is not just the diameter. The saxophone goes into the plan."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "w3",
+     "to": "place:proc-tray",
+     "guide": {
+      "zh": "練習：順皮紋的梭形設計",
+      "en": "Practice: a fusiform design along the skin lines"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "病理回來之前先練設計。梭形切除，長軸順著皮紋，兩端夠尖才縫得平。在模型上畫。",
+        "en": "Practise the design while pathology is pending. A fusiform excision, long axis along the skin tension lines, ends pointed enough to close flat. Draw it on the model."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "drill",
+      "template": "dermatology",
+      "drill": "ellipse"
+     },
+     "post": [
+      [
+       "attending",
+       {
+        "zh": "方向對了。真正的鼻翼不會這麼好畫，所以病理確認之後，這個部位我們會和整形外科一起討論。",
+        "en": "Orientation right. A real nostril rim is never this easy to draw, which is why, once histology confirms, this site is discussed together with plastic surgery."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "w4",
+     "to": "place:desk",
+     "guide": {
+      "zh": "寫王伯的病歷與申請單",
+      "en": "Write Mr Wang's note and request"
+     },
+     "roles": [
+      "intern"
+     ],
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "你寫下：半年病程、同處反覆出血結痂、皮膚鏡所見、部位靠近自由邊緣、病人重視呼吸與外觀。最後一行：吹薩克斯風。",
+        "en": "You write: six-month course, repeated bleeding and crusting at one site, dermoscopy findings, proximity to the free margin, the patient's priorities of breathing and appearance. Last line: plays the saxophone."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "（經過）最後一行留著。病理醫師不需要，整形外科需要。",
+        "en": "(Passing) Keep the last line. The pathologist does not need it; plastic surgery does."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "noon",
+   "name": {
+    "zh": "午間：病理科訊息",
+    "en": "Noon: message from pathology"
+   },
+   "sub": {
+    "zh": "12:00 · 診間桌",
+    "en": "12:00 · clinic desk"
+   },
+   "t": 720,
+   "mood": "day",
+   "note": {
+    "zh": "補齊病理申請單",
+    "en": "Completed the pathology request"
+   },
+   "beats": [
+    {
+     "id": "n1",
+     "to": "place:desk",
+     "guide": {
+      "zh": "看病理科的訊息",
+      "en": "Read pathology's message"
+     },
+     "roles": [
+      "intern"
+     ],
+     "ring": {
+      "title": {
+       "zh": "病理科訊息",
+       "en": "Message from pathology"
+      },
+      "sub": {
+       "zh": "阿香的檢體已收到；請補皮膚鏡照片與演變描述",
+       "en": "Ms Hsiang's specimen received; please add the dermoscopy image and the evolution history"
+      },
+      "call": false,
+      "from": "path-tech"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "你補上：半年的演變、兩張照片的拍攝條件差異、皮膚鏡所見、邊界標記的方向。病理醫師會因為這幾行少猜很多。",
+        "en": "You add: six months of evolution, the difference in conditions between the two photos, the dermoscopy findings, the orientation of the margin marks. These lines spare the pathologist a great deal of guessing."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "（經過）病理報告的品質，有一半是申請單決定的。",
+        "en": "(Passing) Half the quality of a pathology report is decided by the request form."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "transplant",
+   "name": {
+    "zh": "移植追蹤",
+    "en": "Transplant follow-up"
+   },
+   "sub": {
+    "zh": "14:00 · 診間",
+    "en": "14:00 · clinic"
+   },
+   "t": 840,
+   "mood": "day",
+   "note": {
+    "zh": "阿強：六週變大的結節",
+    "en": "Mr Chiang: a nodule grown in six weeks"
+   },
+   "beats": [
+    {
+     "id": "t1",
+     "to": "patient-chiang",
+     "guide": {
+      "zh": "請阿強進診間",
+      "en": "Call Mr Chiang into the room"
+     },
+     "lines": [
+      [
+       "patient-chiang",
+       {
+        "zh": "醫師，耳朵這顆六週前還是小小的，現在會痛，偶爾流血。我想把移植的藥停掉，免得一直長。",
+        "en": "Doctor, this one on my ear was tiny six weeks ago; now it hurts and bleeds sometimes. I want to stop the transplant drugs so nothing else grows."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "阿強，移植八年的免疫抑制、三十年工地日曬、耳廓這個部位、六週變大。四件事加起來，今天就要處理。",
+        "en": "Mr Chiang, eight years of immunosuppression after the transplant, thirty years of sun on building sites, this site on the ear, growth within six weeks. Those four together mean we act today."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "快速變化讓「觀察」不再是選項。但停藥那件事，你怎麼回答他？",
+        "en": "Rapid change takes 'observe' off the table. But the drugs: how do you answer him?"
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "dermatology-v38-scc-transplant",
+      "stage": 1
+     },
+     "post": [
+      [
+       "me",
+       {
+        "zh": "阿強，移植藥不能自己停，腎臟會排斥。皮膚科和移植團隊會一起評估，調整由他們決定。今天先切片，拍整個耳朵和頸部淋巴結區。",
+        "en": "Mr Chiang, the transplant drugs are never stopped on your own; the kidney would reject. Dermatology and the transplant team assess together and any adjustment is theirs. Today we biopsy and photograph the whole ear and the neck node areas."
+       }
+      ],
+      [
+       "patient-chiang",
+       {
+        "zh": "……那顆腎是我太太給的。我不會亂停。",
+        "en": "...That kidney came from my wife. I will not mess with it."
+       }
+      ],
+      [
+       "nurse-ting",
+       {
+        "zh": "全景、近景、皮膚鏡，三張都有尺。頸部也拍。",
+        "en": "Overview, close-up, dermoscopy, all three with a ruler. The neck as well."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "er-consult",
+   "name": {
+    "zh": "急診會診",
+    "en": "ER consult"
+   },
+   "sub": {
+    "zh": "16:00 · 急診",
+    "en": "16:00 · the ER"
+   },
+   "t": 960,
+   "mood": "eve",
+   "note": {
+    "zh": "小美：不只是一個皮疹",
+    "en": "Ms Mei: not just a rash"
+   },
+   "beats": [
+    {
+     "id": "e1",
+     "to": "place:monitor",
+     "guide": {
+      "zh": "接電話，衝去急診",
+      "en": "Take the call, run to the ER"
+     },
+     "ring": {
+      "title": {
+       "zh": "急診來電",
+       "en": "ER calling"
+      },
+      "sub": {
+       "zh": "25 歲女性「一個皮疹」，吃抗生素一週，發燒",
+       "en": "25-year-old woman, 'a rash', a week on antibiotics, febrile"
+      },
+      "call": true,
+      "from": "er-doc"
+     },
+     "lines": [
+      [
+       "er-doc",
+       {
+        "zh": "急診阿哲。25 歲女性，抗生素吃一週，昨天起全身疹，今天發燒。只是一個皮疹，可以開藥膏回家嗎？",
+        "en": "Che in the ER. 25-year-old woman, a week on an antibiotic, rash since yesterday, febrile today. Just a rash; can she go home with a cream?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "嘴巴和眼睛呢？皮膚會不會痛、有沒有水泡？",
+        "en": "Mouth and eyes? Is the skin painful, any blisters?"
+       }
+      ],
+      [
+       "er-doc",
+       {
+        "zh": "……她說嘴巴破、眼睛痛。背上有幾個水泡。",
+        "en": "...She says mouth ulcers and sore eyes. A few blisters on her back."
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "你到急診。小美縮在床上，嘴唇破皮，眼睛紅，背上的皮一碰就皺起來。監視器上體溫在閃。",
+        "en": "You reach the ER. Ms Mei is curled on the bed, lips raw, eyes red, the skin on her back wrinkling at a touch. The temperature on the monitor flashes."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "vitals",
+      "event": "fever",
+      "options": [
+       {
+        "zh": "停可疑藥物、評估黏膜與剝離面積、升級照護、叫師傅",
+        "en": "Stop the suspect drug, assess mucosa and detachment, escalate care, call the mentor",
+        "ok": true,
+        "why": {
+         "zh": "皮疹加發燒加黏膜加皮膚剝離，這是嚴重皮膚藥物不良反應。藥今天就停，照護等級今天就升，不是開藥膏。",
+         "en": "Rash plus fever plus mucosa plus skin detachment is a severe cutaneous adverse reaction. The drug stops today and the level of care rises today; this is not a cream."
+        }
+       },
+       {
+        "zh": "開止癢藥膏和退燒藥回家",
+        "en": "Anti-itch cream and an antipyretic, home",
+        "ok": false,
+        "why": {
+         "zh": "回家的路上皮膚會繼續剝。這是皮膚科少數會致命的急症。",
+         "en": "Her skin keeps peeling on the way home. This is one of dermatology's few lethal emergencies."
+        }
+       },
+       {
+        "zh": "把抗生素吃完再說，感染比較重要",
+        "en": "Finish the antibiotic first; the infection matters more",
+        "ok": false,
+        "why": {
+         "zh": "造成這一切的很可能就是那顆抗生素。多吃一顆，多剝一片皮。",
+         "en": "That antibiotic is very likely the cause. One more tablet, one more sheet of skin."
+        }
+       }
+      ]
+     },
+     "post": [
+      [
+       "attending",
+       {
+        "zh": "（趕到）對。嚴重皮膚藥物不良反應。停藥、記錄剝離面積、眼科會診、燒燙傷等級的照護。小美，妳不是「只是一個皮疹」。",
+        "en": "(Arriving) Right. A severe cutaneous adverse reaction. Stop the drug, chart the detached area, ophthalmology review, burns-level care. Ms Mei, you are not 'just a rash'."
+       }
+      ],
+      [
+       "patient-mei",
+       {
+        "zh": "……我以為是過敏。我論文下週要交。",
+        "en": "...I thought it was an allergy. My thesis is due next week."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "這週的工作是妳的皮膚。論文的事，我們幫妳開診斷書。",
+        "en": "This week's work is your skin. For the thesis, we will write the medical certificate."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "end-of-day",
+   "name": {
+    "zh": "交班與下班",
+    "en": "Handover and home"
+   },
+   "sub": {
+    "zh": "17:30 · 晨會白板",
+    "en": "17:30 · the board"
+   },
+   "t": 1050,
+   "mood": "eve",
+   "note": {
+    "zh": "完成晚間交班",
+    "en": "Evening handover done"
+   },
+   "beats": [
+    {
+     "id": "d1",
+     "to": "place:whiteboard",
+     "guide": {
+      "zh": "到白板交班",
+      "en": "Hand over at the board"
+     },
+     "when": {
+      "flag": "biopsy",
+      "is": true
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "阿香：皮膚切片今天完成，病理追蹤人是我，聯絡方式是她妹妹。王伯：切片完成，等病理再與整形外科討論。",
+        "en": "Ms Hsiang: skin biopsy done today, I own the pathology follow-up, contact via her sister. Mr Wang: biopsied, plastic surgery discussion once pathology is back."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "阿強：切片與全區照片完成，移植團隊已通知。小美：嚴重皮膚藥物不良反應，可疑藥已停，收治升級，眼科今晚看。",
+        "en": "Mr Chiang: biopsied with full-area photos, transplant team informed. Ms Mei: severe cutaneous adverse reaction, suspect drug stopped, admitted at an escalated level, ophthalmology tonight."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "阿香那條，你早上就把追蹤人和妹妹的電話定下來了。忙的病人最容易漏，你沒有讓她漏。",
+        "en": "For Ms Hsiang you fixed the owner and the sister's number this morning. Busy patients are the ones who slip through; you did not let her."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "d2",
+     "to": "place:whiteboard",
+     "guide": {
+      "zh": "到白板交班",
+      "en": "Hand over at the board"
+     },
+     "when": {
+      "flag": "biopsy",
+      "is": false
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "王伯：切片完成，等病理再與整形外科討論。阿強：切片與全區照片完成，移植團隊已通知。",
+        "en": "Mr Wang: biopsied, plastic surgery discussion once pathology is back. Mr Chiang: biopsied with full-area photos, transplant team informed."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "小美：嚴重皮膚藥物不良反應，可疑藥已停，收治升級，眼科今晚看。",
+        "en": "Ms Mei: severe cutaneous adverse reaction, suspect drug stopped, admitted at an escalated level, ophthalmology tonight."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "阿香呢？早上你想三個月後再拍。我在攝影區把她叫回來切了。她妹妹的電話是小婷追著要的。你的交班單上少了一個名字。",
+        "en": "And Ms Hsiang? This morning you wanted to re-photograph in three months. I called her back from the photo station and biopsied her. Nurse Ting chased her sister's number. Your handover is missing a name."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "……阿香：切片完成，病理追蹤人是我。對不起，演變已經在那裡了，我還在看大小。",
+        "en": "...Ms Hsiang: biopsied, I own the pathology follow-up. I am sorry; the evolution was right there and I was still looking at size."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "d3",
+     "to": "nurse-ting",
+     "guide": {
+      "zh": "跟小婷收攝影區",
+      "en": "Close the photo station with Nurse Ting"
+     },
+     "roles": [
+      "derm-nurse"
+     ],
+     "lines": [
+      [
+       "nurse-ting",
+       {
+        "zh": "今天三十七組照片，每一組都有尺。三個檢體都簽收了，追蹤單上三個名字。明天我打第一通追蹤電話。",
+        "en": "Thirty-seven photo sets today, every one with a ruler. All three specimens signed in, three names on the tracker. I make the first follow-up call tomorrow."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "阿香的妹妹。",
+        "en": "Ms Hsiang's sister."
+       }
+      ],
+      [
+       "nurse-ting",
+       {
+        "zh": "阿香的妹妹。還有，皮膚鏡要充電，它今天真的很忙。",
+        "en": "Ms Hsiang's sister. And the dermatoscope goes on charge; it really was busy today."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "d4",
+     "to": "attending",
+     "guide": {
+      "zh": "聽師傅的下班總結",
+      "en": "The mentor's debrief"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "今天四個病人，四個「只是」：只是一顆痣、只是刮鬍子、只是一顆硬塊、只是一個皮疹。",
+        "en": "Four patients today, four 'justs': just a mole, just a shaving cut, just a hard lump, just a rash."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "皮膚科的全部工作，就是在「只是」後面問一句：它變了嗎？然後讓組織說話。",
+        "en": "The whole of dermatology is asking one question after the word 'just': has it changed? And then letting the tissue speak."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "師傅，我的尺貼紙用完了。",
+        "en": "Dr Chuang, I have run out of ruler stickers."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "好現象。明天再給你一捲。",
+        "en": "A good sign. Another roll tomorrow."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "night",
+   "name": {
+    "zh": "夜間一通電話",
+    "en": "One call at night"
+   },
+   "sub": {
+    "zh": "22:30 · 值班室",
+    "en": "22:30 · on-call room"
+   },
+   "t": 1350,
+   "mood": "night",
+   "note": {
+    "zh": "夜間：小美的皮膚剝離增加",
+    "en": "Night: Ms Mei's detachment spreading"
+   },
+   "beats": [
+    {
+     "id": "x1",
+     "to": "place:monitor",
+     "guide": {
+      "zh": "接電話，去看小美",
+      "en": "Take the call, see Ms Mei"
+     },
+     "ring": {
+      "title": {
+       "zh": "急診留觀來電",
+       "en": "ER observation calling"
+      },
+      "sub": {
+       "zh": "小美背上的剝離面積變大，眼睛更痛",
+       "en": "Ms Mei's detachment is spreading and her eyes hurt more"
+      },
+      "call": true,
+      "from": "er-doc"
+     },
+     "lines": [
+      [
+       "er-doc",
+       {
+        "zh": "阿哲。小美背上剝離的面積比傍晚大，眼睛更痛，體溫還高，血壓還好。燒燙傷中心的床在問要不要轉。",
+        "en": "Che. Ms Mei's detached area on the back is larger than this evening, her eyes hurt more, still febrile, pressure holding. The burns unit is asking whether to transfer."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "剝離面積每班畫圖記錄，現在重畫一次比對。眼科今晚一定要看到她。",
+        "en": "Chart the detached area as a diagram every shift; redraw it now and compare. Ophthalmology must see her tonight."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "轉燒燙傷等級照護我同意，我現在通知莊主治，依醫囑補充與傷口照護繼續。",
+        "en": "I agree with transfer to burns-level care; I am calling Dr Chuang now, and fluids and wound care continue per orders."
+       }
+      ],
+      [
+       "patient-mei",
+       {
+        "zh": "醫師……我還是「只是一個皮疹」的那個嗎？",
+        "en": "Doctor... am I still the 'just a rash' one?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "妳從來都不是。今晚整間醫院都知道妳的名字。",
+        "en": "You never were. Tonight the whole hospital knows your name."
+       }
+      ]
+     ],
+     "end": true
+    }
+   ]
+  }
+ ],
+ "ending": {
+  "title": {
+   "zh": "下班了",
+   "en": "End of shift"
+  },
+  "sub": {
+   "zh": "在「只是」後面問一句：它變了嗎？",
+   "en": "After the word 'just', ask: has it changed?"
+  },
+  "stats": [
+   "stages",
+   "drills",
+   "choices",
+   "calls",
+   "items",
+   "time"
+  ]
+ }
+}

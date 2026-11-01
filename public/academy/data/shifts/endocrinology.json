@@ -1,0 +1,1568 @@
+{
+ "format": "huatuo-shift-v1",
+ "department": "endocrinology",
+ "title": {
+  "zh": "內分泌科值班日",
+  "en": "A shift in endocrinology"
+ },
+ "tagline": {
+  "zh": "從候診區的一聲喊叫到夜裡的血糖警報",
+  "en": "From a shout in the waiting room to the night-time glucose alarm"
+ },
+ "room": "clinic",
+ "minutes": 25,
+ "roles": [
+  {
+   "id": "intern",
+   "zh": "實習醫師",
+   "en": "Intern",
+   "desc": {
+    "zh": "跟診、接急診會診電話、摸甲狀腺、寫門診紀錄。血糖不是唯一的線索。",
+    "en": "Sit in clinic, take the ER consult calls, palpate thyroids, write the notes. Glucose is never the only clue."
+   }
+  },
+  {
+   "id": "educator",
+   "zh": "糖尿病衛教師",
+   "en": "Diabetes educator",
+   "desc": {
+    "zh": "低血糖處置、藥袋核對、病日守則。病人離開診間之後，記得的多半是你說的話。",
+    "en": "Hypoglycaemia drills, medicine-bag checks, sick-day rules. What patients remember after clinic is mostly what you said."
+   }
+  }
+ ],
+ "cast": {
+  "attending": {
+   "name": {
+    "zh": "高主治",
+    "en": "Dr Kao"
+   },
+   "role": {
+    "zh": "主治醫師（師傅）",
+    "en": "Attending (mentor)"
+   },
+   "tag": "ATT",
+   "color": "#8a4a9c",
+   "body": "mentor",
+   "about": {
+    "zh": "內分泌科主治，桌上有一罐葡萄糖片，見人就請，沒有人拿過。最常說的話：「血糖不是唯一的線索。」",
+    "en": "Endocrinologist with a jar of glucose tablets on her desk that she offers to everyone and nobody ever takes. Her refrain: 'Glucose is never the only clue.'"
+   }
+  },
+  "educator-chi": {
+   "name": {
+    "zh": "小琪",
+    "en": "Nurse Chi"
+   },
+   "role": {
+    "zh": "糖尿病衛教師",
+    "en": "Diabetes educator"
+   },
+   "tag": "DE",
+   "color": "#3b8f6a",
+   "body": "nurse",
+   "about": {
+    "zh": "衛教室的主人。可以用一個藥袋講一堂課，也能在十五秒內找到急救糖。",
+    "en": "Runs the education room. Can teach a whole lesson from one medicine bag, and finds the emergency glucose in fifteen seconds."
+   }
+  },
+  "patient-man": {
+   "name": {
+    "zh": "阿滿姨",
+    "en": "Mrs Man"
+   },
+   "role": {
+    "zh": "門診病人",
+    "en": "Clinic patient"
+   },
+   "tag": "PM",
+   "color": "#b8762e",
+   "body": "patient",
+   "about": {
+    "zh": "69 歲，糖尿病十五年，吃降血糖藥。今天為了「抽血要空腹」沒吃早餐，藥照吃。在候診區開始冒汗、講話顛三倒四。（虛擬個案）",
+    "en": "A 69-year-old with fifteen years of diabetes on tablets. Skipped breakfast today because 'the blood test needs fasting', but took the tablets anyway. Began sweating and talking nonsense in the waiting room. (Fictional.)"
+   }
+  },
+  "family-man": {
+   "name": {
+    "zh": "阿明",
+    "en": "Ming"
+   },
+   "role": {
+    "zh": "阿滿姨的兒子",
+    "en": "Mrs Man's son"
+   },
+   "tag": "FAM",
+   "color": "#c9596a",
+   "body": "family",
+   "about": {
+    "zh": "開計程車，載媽媽來看診。媽媽的藥袋在他車上的置物箱裡，他說「每次都一樣」。",
+    "en": "Drives a taxi and brought his mother in. Her medicine bag is in his glove box; he says 'it is always the same'."
+   }
+  },
+  "patient-lin": {
+   "name": {
+    "zh": "林太太",
+    "en": "Mrs Lin"
+   },
+   "role": {
+    "zh": "甲狀腺門診病人",
+    "en": "Thyroid clinic patient"
+   },
+   "tag": "PL",
+   "color": "#8a6ac4",
+   "body": "patient",
+   "about": {
+    "zh": "45 歲國中老師，照鏡子發現脖子一邊比較凸，上網查了一整夜。帶著一疊列印的資料來。（虛擬個案）",
+    "en": "A 45-year-old secondary-school teacher who noticed one side of her neck is fuller and spent a night on the internet. Arrives with a stack of printouts. (Fictional.)"
+   }
+  },
+  "patient-chuang": {
+   "name": {
+    "zh": "莊先生",
+    "en": "Mr Chuang"
+   },
+   "role": {
+    "zh": "病房病人",
+    "en": "Ward patient"
+   },
+   "tag": "PC",
+   "color": "#6a9c3a",
+   "body": "patient",
+   "about": {
+    "zh": "53 歲，因為關節疾病長期吃類固醇。腸胃炎吐了三天，藥吞不下去，今天住院時血壓很低、全身無力。（虛擬個案）",
+    "en": "A 53-year-old on long-term steroids for joint disease. Three days of vomiting with gastroenteritis, could not keep his tablets down; admitted today weak and hypotensive. (Fictional.)"
+   }
+  },
+  "er-doc": {
+   "name": {
+    "zh": "急診阿澤",
+    "en": "Dr Tse (ER)"
+   },
+   "role": {
+    "zh": "急診值班醫師",
+    "en": "ER doctor"
+   },
+   "tag": "ER",
+   "color": "#5b6abf",
+   "body": "resident",
+   "phoneOnly": true,
+   "about": {
+    "zh": "急診的會診電話永遠在你剛坐下的時候打來。講話很快，但會等你問完。",
+    "en": "The ER consult call that always comes the moment you sit down. Talks fast, but waits for your questions."
+   }
+  },
+  "ward-nurse": {
+   "name": {
+    "zh": "病房小潔",
+    "en": "Nurse Chieh"
+   },
+   "role": {
+    "zh": "病房護理師",
+    "en": "Ward nurse"
+   },
+   "tag": "WN",
+   "color": "#2e8aa8",
+   "body": "nurse",
+   "phoneOnly": true,
+   "about": {
+    "zh": "新病人入院第一件事是把藥單念一遍給醫師聽。今天她念到「類固醇」的時候停了一下。",
+    "en": "Reads every new admission's drug list to the doctor. Today she paused at the word 'steroid'."
+   }
+  }
+ },
+ "places": {
+  "whiteboard": {
+   "name": {
+    "zh": "晨會白板",
+    "en": "Morning board"
+   },
+   "hot": "whiteboard"
+  },
+  "waiting": {
+   "name": {
+    "zh": "候診區",
+    "en": "Waiting area"
+   },
+   "hot": "door"
+  },
+  "exam-bed": {
+   "name": {
+    "zh": "診間檢查床",
+    "en": "Examination couch"
+   },
+   "hot": "bed"
+  },
+  "monitor": {
+   "name": {
+    "zh": "診間監視器",
+    "en": "Clinic monitor"
+   },
+   "hot": "monitor"
+  },
+  "drug-cart": {
+   "name": {
+    "zh": "急救藥車",
+    "en": "Emergency drug cart"
+   },
+   "hot": "drugs"
+  },
+  "us-cart": {
+   "name": {
+    "zh": "超音波車",
+    "en": "Ultrasound cart"
+   },
+   "hot": "ultrasound"
+  },
+  "pacs": {
+   "name": {
+    "zh": "PACS 讀片站",
+    "en": "PACS workstation"
+   },
+   "hot": "imaging"
+  },
+  "desk": {
+   "name": {
+    "zh": "診間桌",
+    "en": "Clinic desk"
+   },
+   "hot": "desk"
+  }
+ },
+ "glossary": [
+  {
+   "term": {
+    "zh": "低血糖",
+    "en": "hypoglycaemia"
+   },
+   "plain": {
+    "zh": "血糖掉到太低。冒汗、發抖、心慌、講話顛三倒四，再嚴重會昏倒。吃了降血糖藥又沒吃飯最常見。",
+    "en": "Blood sugar falling too low: sweating, shaking, palpitations, confused speech, and eventually collapse. Most often from taking diabetes tablets without eating."
+   }
+  },
+  {
+   "term": {
+    "zh": "降血糖藥",
+    "en": "diabetes tablets"
+   },
+   "plain": {
+    "zh": "讓血糖下降的口服藥。有些種類不管你有沒有吃飯都會繼續作用，所以空腹吃特別危險。",
+    "en": "Oral medicines that lower blood sugar. Some kinds keep working whether or not you have eaten, which makes them dangerous on an empty stomach."
+   }
+  },
+  {
+   "term": {
+    "zh": "吞嚥安全",
+    "en": "safe to swallow"
+   },
+   "plain": {
+    "zh": "病人夠清醒、能自己吞東西，才可以從嘴巴給糖。意識不清的人硬餵會嗆到肺裡。",
+    "en": "Only a patient awake enough to swallow may be given sugar by mouth. Force-feeding someone drowsy sends it into the lungs."
+   }
+  },
+  {
+   "term": {
+    "zh": "酮酸中毒",
+    "en": "ketoacidosis"
+   },
+   "plain": {
+    "zh": "身體沒辦法用糖，改燒脂肪，產生酸性的酮體堆在血裡。會噁心、呼吸又深又快、肚子痛。",
+    "en": "The body cannot use sugar, burns fat instead and floods the blood with acidic ketones: nausea, deep fast breathing, abdominal pain."
+   }
+  },
+  {
+   "term": {
+    "zh": "血酮",
+    "en": "blood ketones"
+   },
+   "plain": {
+    "zh": "指尖血就能量的酮體數值。懷疑酮酸中毒時要直接量它，不能只看血糖。",
+    "en": "Ketones measured from a fingerprick. When ketoacidosis is suspected you measure them directly; glucose alone will not do."
+   }
+  },
+  {
+   "term": {
+    "zh": "SGLT2",
+    "en": "SGLT2"
+   },
+   "plain": {
+    "zh": "一類讓糖從尿裡排掉的糖尿病藥。好處很多，但生病、禁食時可能發生「血糖不高的酮酸中毒」。",
+    "en": "A class of diabetes medicines that make the kidneys pass sugar in the urine. Many benefits, but during illness or fasting they can cause ketoacidosis without a high glucose."
+   }
+  },
+  {
+   "term": {
+    "zh": "甲狀腺結節",
+    "en": "thyroid nodule"
+   },
+   "plain": {
+    "zh": "甲狀腺裡長出來的一顆腫塊，非常常見，大多數是良性的。要不要進一步檢查，看超音波特徵，不是看大小。",
+    "en": "A lump inside the thyroid gland, very common and mostly benign. Whether it needs further tests depends on its ultrasound features, not its size alone."
+   }
+  },
+  {
+   "term": {
+    "zh": "細針穿刺",
+    "en": "fine-needle aspiration"
+   },
+   "plain": {
+    "zh": "用很細的針從結節抽一點細胞去化驗。只在超音波風險分層建議時才做。",
+    "en": "Drawing a few cells from a nodule with a very thin needle for the laboratory. Done only when the ultrasound risk category calls for it."
+   }
+  },
+  {
+   "term": {
+    "zh": "類固醇",
+    "en": "steroids"
+   },
+   "plain": {
+    "zh": "長期吃會讓身體自己的腎上腺「休假」。突然停藥或吐到吃不下，身體就沒有壓力荷爾蒙可用。",
+    "en": "Taken long term, they send the body's own adrenal glands 'on leave'. Stop suddenly, or vomit the tablets up, and there is no stress hormone to fall back on."
+   }
+  },
+  {
+   "term": {
+    "zh": "腎上腺危象",
+    "en": "adrenal crisis"
+   },
+   "plain": {
+    "zh": "壓力荷爾蒙突然不夠，血壓掉、無力、嘔吐，會致命。長期吃類固醇又生病停藥的人最危險。",
+    "en": "A sudden shortage of stress hormone: falling blood pressure, weakness, vomiting, and it can kill. Highest risk in people on long-term steroids who fall ill and miss doses."
+   }
+  },
+  {
+   "term": {
+    "zh": "病日守則",
+    "en": "sick-day rules"
+   },
+   "plain": {
+    "zh": "生病、發燒、嘔吐的時候藥要怎麼調、什麼時候要求助的個人計畫。由醫療團隊事先寫好給病人帶回家。",
+    "en": "A personal plan for what to do with medicines when ill, feverish or vomiting, and when to seek help. Written in advance by the care team and taken home."
+   }
+  },
+  {
+   "term": {
+    "zh": "藥袋",
+    "en": "medicine bag"
+   },
+   "plain": {
+    "zh": "病人把所有藥裝在一起的袋子。打開來一顆一顆核對，比問「你吃什麼藥」準確一百倍。",
+    "en": "The bag a patient keeps all their medicines in. Opening it and checking tablet by tablet is a hundred times more accurate than asking 'what do you take?'"
+   }
+  }
+ ],
+ "codex": [
+  {
+   "id": "glucometer",
+   "kind": "equipment",
+   "name": {
+    "zh": "血糖機與血酮機",
+    "en": "Glucose and ketone meter"
+   },
+   "text": {
+    "zh": "指尖一滴血，幾秒鐘。同一台通常能換試紙量血酮。懷疑酮酸中毒的時候，量血酮比量血糖重要。",
+    "en": "One drop from a fingertip, a few seconds. The same meter usually takes a ketone strip. When ketoacidosis is suspected, the ketone reading matters more than the glucose."
+   },
+   "hot": "device"
+  },
+  {
+   "id": "glucose-kit",
+   "kind": "equipment",
+   "name": {
+    "zh": "急救糖",
+    "en": "Emergency glucose kit"
+   },
+   "text": {
+    "zh": "藥車上層：口服葡萄糖凝膠、葡萄糖片、注射用葡萄糖與升糖素依醫囑使用。每一間診間都要有人在十五秒內找得到。",
+    "en": "Top shelf of the drug cart: oral glucose gel, glucose tablets, injectable glucose and glucagon for use per orders. Someone in every clinic room must be able to find it within fifteen seconds."
+   },
+   "hot": "drugs"
+  },
+  {
+   "id": "us-cart",
+   "kind": "equipment",
+   "name": {
+    "zh": "甲狀腺超音波",
+    "en": "Thyroid ultrasound"
+   },
+   "text": {
+    "zh": "高頻探頭，病人仰頭。橫切看兩葉與峽部，縱切量結節。報告寫的是特徵和風險分層，不是「好」或「不好」。",
+    "en": "A high-frequency probe with the neck extended. Transverse for both lobes and the isthmus, longitudinal to measure the nodule. The report describes features and a risk category, never 'good' or 'bad'."
+   },
+   "hot": "ultrasound"
+  },
+  {
+   "id": "monitor",
+   "kind": "equipment",
+   "name": {
+    "zh": "診間監視器",
+    "en": "Clinic monitor"
+   },
+   "text": {
+    "zh": "門診也有監視器，推到候診區只要三十秒。低血糖的病人心跳會快，腎上腺危象的病人血壓會低。",
+    "en": "Clinics have monitors too, thirty seconds from the waiting area. The hypoglycaemic patient has a fast pulse; the patient in adrenal crisis has a low pressure."
+   },
+   "hot": "monitor"
+  },
+  {
+   "id": "pacs",
+   "kind": "equipment",
+   "name": {
+    "zh": "PACS 讀片站",
+    "en": "PACS workstation"
+   },
+   "text": {
+    "zh": "甲狀腺超音波的影像和報告都在這裡。看影像之前先看日期：結節有沒有變大，要和舊片比。",
+    "en": "Thyroid ultrasound images and reports live here. Check the date before the image: whether a nodule has grown is a comparison with the old study."
+   },
+   "hot": "imaging"
+  },
+  {
+   "id": "man-bag",
+   "kind": "item",
+   "name": {
+    "zh": "阿滿姨的藥袋",
+    "en": "Mrs Man's medicine bag"
+   },
+   "text": {
+    "zh": "從阿明的計程車置物箱拿出來的。裡面有兩種降血糖藥，其中一種是長效的，還有一包鄰居給的「顧血糖」保健品。",
+    "en": "Retrieved from the glove box of Ming's taxi. Two kinds of diabetes tablets, one of them long-acting, plus a packet of 'blood-sugar support' supplements from a neighbour."
+   }
+  },
+  {
+   "id": "glucose-not-only",
+   "kind": "concept",
+   "name": {
+    "zh": "血糖不是唯一的線索",
+    "en": "Glucose is never the only clue"
+   },
+   "text": {
+    "zh": "低血糖要看意識和吞嚥；酮酸中毒要看血酮和酸鹼；腎上腺危象要看血壓和類固醇史。血糖機的數字只是入口。",
+    "en": "Hypoglycaemia is about consciousness and swallowing; ketoacidosis about ketones and acid-base; adrenal crisis about blood pressure and steroid history. The glucose reading is only the doorway."
+   }
+  },
+  {
+   "id": "sick-day",
+   "kind": "concept",
+   "name": {
+    "zh": "病日守則",
+    "en": "Sick-day rules"
+   },
+   "text": {
+    "zh": "吃類固醇、SGLT2 或胰島素的人，生病時藥該怎麼辦，不能現場猜。團隊事先寫好個人計畫，病人帶回家，貼在冰箱上。",
+    "en": "What people on steroids, SGLT2 medicines or insulin should do with their drugs when ill is not guessed on the day. The team writes a personal plan in advance; the patient takes it home and sticks it on the fridge."
+   }
+  }
+ ],
+ "segs": [
+  {
+   "id": "morning",
+   "name": {
+    "zh": "晨會",
+    "en": "Morning meeting"
+   },
+   "sub": {
+    "zh": "07:45 · 晨會白板",
+    "en": "07:45 · morning board"
+   },
+   "t": 465,
+   "mood": "day",
+   "note": {
+    "zh": "晨會：今天的門診名單",
+    "en": "Morning meeting: today's list"
+   },
+   "beats": [
+    {
+     "id": "m1",
+     "to": "place:whiteboard",
+     "guide": {
+      "zh": "到白板看今天的名單",
+      "en": "Check today's list at the board"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "早。葡萄糖片？不要？好。今天門診四十個，其中三個甲狀腺超音波。",
+        "en": "Morning. Glucose tablet? No? Fine. Forty in clinic today, three of them thyroid ultrasounds."
+       }
+      ],
+      [
+       "educator-chi",
+       {
+        "zh": "阿滿姨九點。她上次說抽血要空腹，所以不吃早餐，但藥照吃。我有點擔心。",
+        "en": "Mrs Man at nine. Last time she said fasting bloods meant no breakfast, but she still took her tablets. I am a little worried."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "記住小琪說的話。候診區比診間更容易出事。",
+        "en": "Remember what Chi just said. Things go wrong in the waiting area more often than in the consulting room."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "m2",
+     "to": "place:drug-cart",
+     "guide": {
+      "zh": "確認急救糖在哪裡",
+      "en": "Locate the emergency glucose"
+     },
+     "roles": [
+      "educator"
+     ],
+     "lines": [
+      [
+       "educator-chi",
+       {
+        "zh": "每天開診前我做一件事：找到急救糖。不是知道在哪，是走過去摸到它。",
+        "en": "One thing before every clinic: find the emergency glucose. Not know where it is; walk over and touch it."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "find",
+      "hot": "drugs",
+      "q": {
+       "zh": "在診間找到急救藥車上的急救糖",
+       "en": "Find the emergency glucose on the clinic drug cart"
+      }
+     },
+     "post": [
+      [
+       "educator-chi",
+       {
+        "zh": "上層，凝膠、糖片、注射用的都在。十五秒。好。",
+        "en": "Top shelf: gel, tablets, injectable. Fifteen seconds. Good."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "m3",
+     "to": "place:desk",
+     "guide": {
+      "zh": "先看阿滿姨的病歷",
+      "en": "Read Mrs Man's chart first"
+     },
+     "roles": [
+      "intern"
+     ],
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "病歷上寫著兩種降血糖藥，其中一種長效。最近一次回診的體重比半年前少了幾公斤。",
+        "en": "Two kinds of diabetes tablets, one of them long-acting. Her weight at the last visit was a few kilos down on six months ago."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "（經過）體重掉、藥沒改。你看到的這一行，等一下會變成一件事。",
+        "en": "(Passing) Weight down, tablets unchanged. That line you are reading is about to become an event."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "waiting",
+   "name": {
+    "zh": "候診區事件",
+    "en": "Waiting-room event"
+   },
+   "sub": {
+    "zh": "08:40 · 候診區",
+    "en": "08:40 · waiting area"
+   },
+   "t": 520,
+   "mood": "day",
+   "note": {
+    "zh": "處理阿滿姨低血糖",
+    "en": "Treated Mrs Man's hypoglycaemia"
+   },
+   "beats": [
+    {
+     "id": "w1",
+     "to": "place:waiting",
+     "guide": {
+      "zh": "候診區有人在喊",
+      "en": "Someone is shouting in the waiting area"
+     },
+     "lines": [
+      [
+       "family-man",
+       {
+        "zh": "醫師！我媽講話怪怪的，一直冒汗，手在抖！",
+        "en": "Doctor! My mum is talking strangely, sweating all over, her hands are shaking!"
+       }
+      ],
+      [
+       "patient-man",
+       {
+        "zh": "我……今天星期幾……阿明你怎麼在這裡……",
+        "en": "I... what day is it... Ming, why are you here..."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "先別餵她東西。你先看什麼？",
+        "en": "Do not feed her anything yet. What do you check first?"
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "endocrinology-v37-hypoglycaemia",
+      "stage": 0
+     },
+     "post": [
+      [
+       "attending",
+       {
+        "zh": "對。意識和吞嚥安全先確認，再決定糖從嘴巴還是從血管進去。",
+        "en": "Right. Consciousness first, and whether she is safe to swallow; then you decide whether sugar goes in by mouth or by vein."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "w2",
+     "to": "place:monitor",
+     "guide": {
+      "zh": "推監視器過去",
+      "en": "Bring the monitor over"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "血糖機的數字很低。阿滿姨還能回答自己的名字，但吞嚥看起來不穩。監視器響了。",
+        "en": "The glucometer reads very low. Mrs Man can still say her name, but her swallow looks unsafe. The monitor alarms."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "vitals",
+      "event": "hypoglycaemia",
+      "options": [
+       {
+        "zh": "確認吞嚥不安全，依醫囑靜脈給糖，十五分鐘後重測",
+        "en": "Swallow unsafe: glucose by vein per orders, recheck in fifteen minutes",
+        "ok": true,
+        "why": {
+         "zh": "處置途徑由意識和吞嚥決定。吞不穩的人從嘴巴餵會嗆進肺裡。",
+         "en": "The route is decided by consciousness and swallow. Feeding someone with an unsafe swallow sends it into the lungs."
+        }
+       },
+       {
+        "zh": "趕快餵她喝含糖飲料",
+        "en": "Quickly give her a sugary drink",
+        "ok": false,
+        "why": {
+         "zh": "她的吞嚥不安全。糖沒進去，先嗆到。",
+         "en": "Her swallow is unsafe. The sugar will not go down; the choking comes first."
+        }
+       },
+       {
+        "zh": "先送急診，門診沒有辦法處理",
+        "en": "Send her to the ER; clinic cannot manage this",
+        "ok": false,
+        "why": {
+         "zh": "急救糖就在藥車上。等轉送的這二十分鐘，大腦在挨餓。",
+         "en": "The emergency glucose is on the cart. Twenty minutes of transfer is twenty minutes of a starving brain."
+        }
+       }
+      ]
+     },
+     "post": [
+      [
+       "patient-man",
+       {
+        "zh": "……阿明？我剛剛怎麼了？我是不是又沒吃早餐。",
+        "en": "...Ming? What just happened? Did I skip breakfast again."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "回來了。阿滿姨，等一下我們要談一件事：空腹抽血的時候，藥怎麼辦。",
+        "en": "She is back. Mrs Man, in a while we need to talk about one thing: what to do with your tablets on fasting-blood days."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "w3",
+     "to": "educator-chi",
+     "guide": {
+      "zh": "跟小琪複習低血糖流程",
+      "en": "Review the hypoglycaemia routine with Chi"
+     },
+     "roles": [
+      "educator"
+     ],
+     "lines": [
+      [
+       "educator-chi",
+       {
+        "zh": "剛剛大家都動得很快，但順序對了才是流程。我們排一次。",
+        "en": "Everyone moved fast just now, but it is only a routine if the order is right. Let us lay it out once."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "order",
+      "q": {
+       "zh": "把低血糖的處置順序排對",
+       "en": "Put the hypoglycaemia routine in order"
+      },
+      "steps": [
+       {
+        "zh": "確認意識與吞嚥是否安全",
+        "en": "Check consciousness and swallow"
+       },
+       {
+        "zh": "指尖測血糖並記錄",
+        "en": "Fingerprick glucose, record it"
+       },
+       {
+        "zh": "依途徑與醫囑給糖",
+        "en": "Give glucose by the right route"
+       },
+       {
+        "zh": "十五分鐘後重測",
+        "en": "Recheck after fifteen minutes"
+       },
+       {
+        "zh": "找原因、記錄、安排追蹤",
+        "en": "Find the cause, document, follow up"
+       }
+      ]
+     },
+     "post": [
+      [
+       "educator-chi",
+       {
+        "zh": "最後一步最常被跳過。血糖回來了，原因還在她的藥袋裡。",
+        "en": "The last step is the one most often skipped. The glucose is back; the cause is still in her medicine bag."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "er-call",
+   "name": {
+    "zh": "急診會診電話",
+    "en": "ER consult call"
+   },
+   "sub": {
+    "zh": "10:30 · 診間桌",
+    "en": "10:30 · clinic desk"
+   },
+   "t": 630,
+   "mood": "day",
+   "note": {
+    "zh": "電話會診急診的噁心病人",
+    "en": "Phone consult: nausea in the ER"
+   },
+   "beats": [
+    {
+     "id": "c1",
+     "to": "place:desk",
+     "guide": {
+      "zh": "接急診的電話",
+      "en": "Take the ER call"
+     },
+     "ring": {
+      "title": {
+       "zh": "急診來電",
+       "en": "ER calling"
+      },
+      "sub": {
+       "zh": "36 歲糖尿病人噁心、呼吸深，血糖不高",
+       "en": "36-year-old with diabetes: nausea, deep breathing, glucose not high"
+      },
+      "call": true,
+      "from": "er-doc"
+     },
+     "lines": [
+      [
+       "er-doc",
+       {
+        "zh": "急診阿澤。36 歲糖尿病人，感冒三天，噁心、呼吸又深又快。血糖只有一點點高，所以應該不是酮酸中毒吧？想問你們要不要收。",
+        "en": "Tse in the ER. 36-year-old with diabetes, three days of a cold, nausea, deep fast breathing. Glucose only mildly up, so not ketoacidosis, right? Asking whether you will take him."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "他吃什麼藥？",
+        "en": "What is he on?"
+       }
+      ],
+      [
+       "er-doc",
+       {
+        "zh": "藥單上有一個 SGLT2 類的。",
+        "en": "An SGLT2 class drug is on his list."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "choice",
+      "q": {
+       "zh": "血糖不高，呼吸深快，吃 SGLT2。你跟急診說什麼？",
+       "en": "Glucose not high, deep breathing, on an SGLT2. What do you tell the ER?"
+      },
+      "options": [
+       {
+        "zh": "立刻查血酮與血液氣體，不能用血糖排除",
+        "en": "Check blood ketones and a gas now; glucose cannot exclude it",
+        "ok": true,
+        "set": {
+         "ketones": true
+        },
+        "why": {
+         "zh": "SGLT2 類藥物在生病、禁食時可能造成血糖不高的酮酸中毒。酸鹼和血酮才是答案。",
+         "en": "SGLT2 medicines can cause ketoacidosis without a high glucose during illness or fasting. The ketones and the acid-base are the answer."
+        }
+       },
+       {
+        "zh": "血糖不高就不是酮酸中毒，先當腸胃炎",
+        "en": "Glucose is not high, so not ketoacidosis; treat as gastroenteritis",
+        "ok": false,
+        "set": {
+         "ketones": false
+        },
+        "why": {
+         "zh": "這正是這類藥最危險的陷阱。呼吸深快是身體在吐酸。",
+         "en": "That is exactly the trap with this class of drug. Deep fast breathing is the body blowing off acid."
+        }
+       },
+       {
+        "zh": "叫他回家多喝水，明天門診",
+        "en": "Send him home with fluids, clinic tomorrow",
+        "ok": false,
+        "set": {
+         "ketones": false
+        },
+        "why": {
+         "zh": "噁心加深呼吸的糖尿病人不能回家。",
+         "en": "A diabetic patient with nausea and deep breathing does not go home."
+        }
+       }
+      ]
+     },
+     "post": [
+      [
+       "attending",
+       {
+        "zh": "（在旁邊）掛了電話記得寫下來：對方姓名、時間、你的建議。電話會診也是醫療紀錄。",
+        "en": "(Beside you) When you hang up, write it down: who, when, what you advised. A phone consult is a medical record too."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "noon",
+   "name": {
+    "zh": "午間討論",
+    "en": "Midday discussion"
+   },
+   "sub": {
+    "zh": "12:00 · 診間桌",
+    "en": "12:00 · clinic desk"
+   },
+   "t": 720,
+   "mood": "day",
+   "note": {
+    "zh": "討論急診病人的酮酸中毒",
+    "en": "Discussed the ER ketoacidosis"
+   },
+   "beats": [
+    {
+     "id": "n1",
+     "to": "attending",
+     "guide": {
+      "zh": "跟高主治看急診的結果",
+      "en": "Go over the ER results with Dr Kao"
+     },
+     "when": {
+      "flag": "ketones",
+      "is": true
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "急診的血酮回來了，很高，血氣是酸的，血糖只是一點點高。你早上那通電話救了他兩個小時。",
+        "en": "The ER ketones are back: high, the gas is acidotic, the glucose only mildly up. Your call this morning bought him two hours."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "血糖不是唯一的線索。",
+        "en": "Glucose is never the only clue."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "學得很快。現在他在治療中，恢復要看什麼？",
+        "en": "Quick learner. He is being treated now; what do you follow for recovery?"
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "endocrinology-v37-ketoacidosis",
+      "stage": 1
+     },
+     "post": [
+      [
+       "attending",
+       {
+        "zh": "對。血酮、酸鹼、電解質、容量，加上誘因：感冒和那顆藥。血糖恢復最早，但它最不重要。",
+        "en": "Right. Ketones, acid-base, electrolytes, volume, plus the triggers: the cold and that tablet. Glucose normalises first and matters least."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "n2",
+     "to": "attending",
+     "guide": {
+      "zh": "跟高主治看急診的結果",
+      "en": "Go over the ER results with Dr Kao"
+     },
+     "when": {
+      "flag": "ketones",
+      "is": false
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "急診照腸胃炎處理了兩小時，病人呼吸更深才補查血酮：很高，血氣是酸的。血糖還是只有一點點高。",
+        "en": "The ER treated gastroenteritis for two hours; only when his breathing deepened did they check ketones: high, gas acidotic. Glucose still only mildly up."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "我用血糖排除了酮酸中毒。這是那類藥最危險的陷阱。",
+        "en": "I excluded ketoacidosis on the glucose. That is exactly the trap with that class of drug."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "記住這兩個小時。現在他在治療中，恢復要看什麼？",
+        "en": "Remember those two hours. He is being treated now; what do you follow for recovery?"
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "endocrinology-v37-ketoacidosis",
+      "stage": 1
+     },
+     "post": [
+      [
+       "attending",
+       {
+        "zh": "對。血酮、酸鹼、電解質、容量，加上誘因。血糖恢復最早，但它最不重要。",
+        "en": "Right. Ketones, acid-base, electrolytes, volume, plus the triggers. Glucose normalises first and matters least."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "thyroid",
+   "name": {
+    "zh": "甲狀腺門診",
+    "en": "Thyroid clinic"
+   },
+   "sub": {
+    "zh": "14:00 · 檢查床與超音波",
+    "en": "14:00 · couch and ultrasound"
+   },
+   "t": 840,
+   "mood": "day",
+   "note": {
+    "zh": "評估林太太的甲狀腺結節",
+    "en": "Assessed Mrs Lin's thyroid nodule"
+   },
+   "beats": [
+    {
+     "id": "t1",
+     "to": "patient-lin",
+     "guide": {
+      "zh": "請林太太進診間",
+      "en": "Call Mrs Lin into the room"
+     },
+     "lines": [
+      [
+       "patient-lin",
+       {
+        "zh": "醫師，我查了一整夜，這些資料說脖子凸起來可能是……我印了十二頁。",
+        "en": "Doctor, I searched all night. These say a lump in the neck could be... I printed twelve pages."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "十二頁我們一起看。但先讓我站到妳後面摸一下，好嗎？",
+        "en": "We will go through the twelve pages together. But first let me stand behind you and feel the neck, all right?"
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "從後面摸，請她吞口水。結節會跟著吞嚥上下動。",
+        "en": "Palpate from behind and ask her to swallow. A nodule moves up and down with the swallow."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "drill",
+      "template": "endocrinology",
+      "drill": "thyroidPalp"
+     },
+     "post": [
+      [
+       "attending",
+       {
+        "zh": "右葉一顆，表面平滑，會隨吞嚥移動，沒有摸到淋巴結。手告訴你的，超音波來確認。",
+        "en": "One in the right lobe, smooth, moves on swallowing, no palpable nodes. What the hands tell you, the ultrasound confirms."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "t2",
+     "to": "place:us-cart",
+     "guide": {
+      "zh": "推超音波：橫切與縱切",
+      "en": "Ultrasound: transverse and longitudinal"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "仰頭，探頭橫切先看兩葉和峽部，再轉縱切量那顆結節。",
+        "en": "Neck extended. Transverse first for both lobes and the isthmus, then turn longitudinal to measure the nodule."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "drill",
+      "template": "endocrinology",
+      "drill": "us:thyroid"
+     },
+     "post": [
+      [
+       "patient-lin",
+       {
+        "zh": "醫師，它有多大？大就是不好嗎？第七頁說……",
+        "en": "Doctor, how big is it? Is big bad? Page seven says..."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "t3",
+     "to": "place:pacs",
+     "guide": {
+      "zh": "到 PACS 看影像，回答林太太",
+      "en": "Review the images on PACS and answer Mrs Lin"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "先核對姓名日期，再看。你要回答她的問題，但用對的問題回答。",
+        "en": "Name and date first, then look. You will answer her question, but with the right question."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "imaging",
+      "region": "neck",
+      "question": {
+       "zh": "林太太問「大就是不好嗎」。甲狀腺結節的超音波，真正要回答的是什麼？",
+       "en": "Mrs Lin asks 'is big bad?' What does a thyroid nodule's ultrasound actually have to answer?"
+      },
+      "answer": {
+       "zh": "結節的特徵：實心或囊性、邊緣、回音、有沒有鈣化點、形狀。這些決定風險分層，再決定要不要細針穿刺。大小只是其中一項，不是答案。",
+       "en": "The nodule's features: solid or cystic, margins, echogenicity, calcifications, shape. These set the risk category, which decides whether fine-needle aspiration is needed. Size is one item on the list, not the answer."
+      }
+     },
+     "post": [
+      [
+       "me",
+       {
+        "zh": "林太太，大小不是重點。特徵看起來屬於低風險，依規範追蹤就好，不需要穿刺。",
+        "en": "Mrs Lin, size is not the point. The features put it in a low-risk category: follow-up per the guideline, no needle needed."
+       }
+      ],
+      [
+       "patient-lin",
+       {
+        "zh": "……那我可以把十二頁丟掉了嗎？",
+        "en": "...So can I throw away the twelve pages?"
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "留著第三頁，那頁寫得不錯。其他可以。",
+        "en": "Keep page three; it is actually quite good. The rest can go."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "education",
+   "name": {
+    "zh": "衛教室",
+    "en": "Education room"
+   },
+   "sub": {
+    "zh": "15:00 · 衛教室",
+    "en": "15:00 · education room"
+   },
+   "t": 900,
+   "mood": "day",
+   "note": {
+    "zh": "打開阿滿姨的藥袋",
+    "en": "Opened Mrs Man's medicine bag"
+   },
+   "beats": [
+    {
+     "id": "d1",
+     "to": "family-man",
+     "guide": {
+      "zh": "阿明把藥袋拿來了",
+      "en": "Ming has brought the medicine bag"
+     },
+     "lines": [
+      [
+       "family-man",
+       {
+        "zh": "藥袋在我車上，每次都一樣啊。……這包是鄰居給的顧血糖的，她說天然的。",
+        "en": "The bag was in my taxi; it is always the same. ...This packet is from a neighbour, for blood sugar. She says it is natural."
+       }
+      ],
+      [
+       "educator-chi",
+       {
+        "zh": "一顆一顆來。這顆是長效的降血糖藥，不吃飯它也會繼續作用。體重掉了之後，劑量沒有人重新看過。",
+        "en": "One tablet at a time. This one is a long-acting diabetes tablet; it keeps working whether or not she eats. Nobody re-looked at it after her weight fell."
+       }
+      ],
+      [
+       "patient-man",
+       {
+        "zh": "醫師說空腹……我以為藥還是要吃才乖。",
+        "en": "The doctor said fasting... I thought taking the tablets was still the good thing to do."
+       }
+      ],
+      [
+       "educator-chi",
+       {
+        "zh": "阿滿姨，妳很乖，是我們沒講清楚。下次抽血前怎麼做，我寫在這張卡上，貼冰箱。",
+        "en": "Mrs Man, you did everything right; we did not explain it well. What to do before the next blood test is on this card. Put it on the fridge."
+       }
+      ]
+     ],
+     "item": "man-bag"
+    },
+    {
+     "id": "d2",
+     "to": "place:desk",
+     "guide": {
+      "zh": "寫門診紀錄與轉介",
+      "en": "Write the clinic note and the referral"
+     },
+     "roles": [
+      "intern"
+     ],
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "你寫下：低血糖事件、意識與吞嚥、處置與重測、藥袋核對結果、再發風險、追蹤安排。最後一行寫「衛教已完成，卡片已交付」。",
+        "en": "You write: the hypoglycaemia event, consciousness and swallow, treatment and recheck, the medicine-bag findings, recurrence risk, follow-up. The last line reads 'education done, card given'."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "（經過）再發風險那行加粗。長效藥的低血糖會回來，今晚就可能。",
+        "en": "(Passing) Put the recurrence-risk line in bold. Hypoglycaemia from a long-acting tablet comes back, possibly tonight."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ward-call",
+   "name": {
+    "zh": "病房來電",
+    "en": "Ward calling"
+   },
+   "sub": {
+    "zh": "16:00 · 病房",
+    "en": "16:00 · the ward"
+   },
+   "t": 960,
+   "mood": "eve",
+   "note": {
+    "zh": "處理莊先生的腎上腺危象",
+    "en": "Managed Mr Chuang's adrenal crisis"
+   },
+   "beats": [
+    {
+     "id": "k1",
+     "to": "place:monitor",
+     "guide": {
+      "zh": "接電話，上病房",
+      "en": "Take the call, go up to the ward"
+     },
+     "ring": {
+      "title": {
+       "zh": "病房來電",
+       "en": "Ward calling"
+      },
+      "sub": {
+       "zh": "新入院腸胃炎病人血壓很低，藥單有類固醇",
+       "en": "New gastroenteritis admission hypotensive; steroid on the drug list"
+      },
+      "call": true,
+      "from": "ward-nurse"
+     },
+     "lines": [
+      [
+       "ward-nurse",
+       {
+        "zh": "病房小潔。莊先生，53 歲，腸胃炎吐三天入院。我念藥單的時候看到長期類固醇，他說三天都吐掉了。現在血壓很低、全身無力。",
+        "en": "Chieh on the ward. Mr Chuang, 53, admitted with three days of vomiting. Reading his list I saw long-term steroids; he says he vomited them all up for three days. He is now hypotensive and weak."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "小潔，妳停在「類固醇」那一秒很重要。我馬上到。",
+        "en": "Chieh, the second you paused at 'steroid' matters. I am coming now."
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "莊先生躺在床上，臉色灰白，說話很小聲。監視器的血壓數字在掉。",
+        "en": "Mr Chuang lies grey-faced, speaking in a whisper. The blood-pressure number on the monitor is falling."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "vitals",
+      "event": "hypotension",
+      "options": [
+       {
+        "zh": "當腎上腺危象急評，依醫囑補充類固醇與輸液，叫師傅",
+        "en": "Treat as adrenal crisis: steroid and fluids per orders, call the mentor",
+        "ok": true,
+        "why": {
+         "zh": "長期類固醇中斷加壓力事件加低血壓，不等檢驗結果。這是先治療再確認的少數情況之一。",
+         "en": "Long-term steroids interrupted, a stress event and hypotension: do not wait for results. This is one of the few situations where you treat first and confirm later."
+        }
+       },
+       {
+        "zh": "先當腸胃炎脫水，補水觀察",
+        "en": "Treat as dehydration from gastroenteritis, fluids and observe",
+        "ok": false,
+        "why": {
+         "zh": "脫水是其中一部分，但沒有壓力荷爾蒙，補再多水血壓也撐不住。",
+         "en": "Dehydration is part of it, but without stress hormone no amount of fluid holds the pressure up."
+        }
+       },
+       {
+        "zh": "等明早抽血確認腎上腺功能再給藥",
+        "en": "Wait for tomorrow's adrenal blood tests before treating",
+        "ok": false,
+        "why": {
+         "zh": "腎上腺危象會在今晚致命。先抽血留著，但不能等結果。",
+         "en": "An adrenal crisis can kill tonight. Draw the bloods and keep them, but never wait for them."
+        }
+       }
+      ]
+     },
+     "post": [
+      [
+       "attending",
+       {
+        "zh": "（趕到）對。這是內分泌科少數「先治療再確認」的時刻。血壓回來了嗎？",
+        "en": "(Arriving) Right. One of endocrinology's rare 'treat first, confirm later' moments. Is the pressure coming back?"
+       }
+      ],
+      [
+       "patient-chuang",
+       {
+        "zh": "……醫師，我只是吃壞肚子。沒有人跟我說過吐藥這麼嚴重。",
+        "en": "...Doctor, I just had a stomach bug. Nobody ever told me vomiting my tablets was this serious."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "那是我們的錯，不是你的。等你好一點，我們補一堂課。",
+        "en": "That is our failure, not yours. When you are better, we owe you a lesson."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "end-of-day",
+   "name": {
+    "zh": "交班與下班",
+    "en": "Handover and home"
+   },
+   "sub": {
+    "zh": "17:30 · 晨會白板",
+    "en": "17:30 · the board"
+   },
+   "t": 1050,
+   "mood": "eve",
+   "note": {
+    "zh": "完成晚間交班",
+    "en": "Evening handover done"
+   },
+   "beats": [
+    {
+     "id": "e1",
+     "to": "place:whiteboard",
+     "guide": {
+      "zh": "到白板交班給值班醫師",
+      "en": "Hand over to the on-call doctor"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "阿滿姨留觀一晚：長效降血糖藥造成的低血糖，再發風險高，依醫囑定時測。急診 36 歲酮酸中毒在治療中，看血酮和酸鹼。",
+        "en": "Mrs Man stays overnight: hypoglycaemia from a long-acting tablet, high recurrence risk, scheduled checks per orders. The 36-year-old in ketoacidosis is being treated; follow ketones and acid-base."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "莊先生腎上腺危象，血壓回穩，類固醇依醫囑。出院前要有病日守則。",
+        "en": "Mr Chuang, adrenal crisis, pressure recovered, steroids per orders. He needs sick-day rules before discharge."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "最後那句話，你打算怎麼交？「要有」不是計畫。",
+        "en": "That last line. How do you hand it over? 'He needs' is not a plan."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "endocrinology-v37-adrenal-crisis",
+      "stage": 1
+     },
+     "post": [
+      [
+       "attending",
+       {
+        "zh": "對。個人的病日守則、吐藥時怎麼辦、什麼時候打電話、打給誰。寫好交給他，貼冰箱。",
+        "en": "Right. A personal sick-day plan: what to do when tablets come back up, when to call, whom to call. Written, handed over, stuck on the fridge."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "e2",
+     "to": "educator-chi",
+     "guide": {
+      "zh": "跟小琪收衛教室",
+      "en": "Close the education room with Chi"
+     },
+     "roles": [
+      "educator"
+     ],
+     "lines": [
+      [
+       "educator-chi",
+       {
+        "zh": "今天發了三張冰箱卡：阿滿姨的空腹日、急診那位的 SGLT2 生病守則、莊先生的類固醇病日守則。",
+        "en": "Three fridge cards today: Mrs Man's fasting-day card, the SGLT2 sick-day card for the ER patient, and Mr Chuang's steroid sick-day rules."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "一天三張，是多還是少？",
+        "en": "Three in a day. Is that many or few?"
+       }
+      ],
+      [
+       "educator-chi",
+       {
+        "zh": "是三個今天之後比較安全的人。",
+        "en": "It is three people who are safer after today than before."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "e3",
+     "to": "attending",
+     "guide": {
+      "zh": "聽師傅的下班總結",
+      "en": "The mentor's debrief"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "今天三個急症，沒有一個是靠血糖機的數字抓到的。阿滿姨靠意識和吞嚥，急診那位靠血酮，莊先生靠一個護理師停了一秒。",
+        "en": "Three emergencies today and not one was caught by the glucometer number. Mrs Man by consciousness and swallow, the ER patient by ketones, Mr Chuang by a nurse pausing for one second."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "血糖不是唯一的線索。還有，林太太的第三頁真的寫得不錯。",
+        "en": "Glucose is never the only clue. And Mrs Lin's page three really was quite good."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "師傅，葡萄糖片。我要一顆。",
+        "en": "Dr Kao, the glucose tablets. I will take one."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "……三年來第一個。回家。",
+        "en": "...The first in three years. Go home."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "night",
+   "name": {
+    "zh": "夜間血糖警報",
+    "en": "Night glucose alarm"
+   },
+   "sub": {
+    "zh": "23:00 · 值班室",
+    "en": "23:00 · on-call room"
+   },
+   "t": 1380,
+   "mood": "night",
+   "note": {
+    "zh": "夜間處理再發低血糖",
+    "en": "Night: recurrent hypoglycaemia"
+   },
+   "beats": [
+    {
+     "id": "x1",
+     "to": "place:exam-bed",
+     "guide": {
+      "zh": "接電話，去留觀床",
+      "en": "Take the call, go to the observation bed"
+     },
+     "ring": {
+      "title": {
+       "zh": "留觀區來電",
+       "en": "Observation calling"
+      },
+      "sub": {
+       "zh": "阿滿姨半夜血糖又低了",
+       "en": "Mrs Man's glucose is low again"
+      },
+      "call": true,
+      "from": "ward-nurse"
+     },
+     "lines": [
+      [
+       "ward-nurse",
+       {
+        "zh": "小潔。阿滿姨定時測的血糖又低了，她在睡，叫得醒，會講話，吞嚥看起來正常。",
+        "en": "Chieh. Mrs Man's scheduled glucose is low again. She is asleep but rousable, talking, swallow looks normal."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "長效藥，再發在預期內。意識清楚、吞嚥安全，依醫囑口服給糖，十五分鐘重測，繼續定時監測到明天早上。",
+        "en": "Long-acting tablet; recurrence was expected. Awake and swallowing safely: oral glucose per orders, recheck in fifteen minutes, keep the scheduled checks until morning."
+       }
+      ],
+      [
+       "patient-man",
+       {
+        "zh": "醫師……我又沒吃晚餐嗎？",
+        "en": "Doctor... did I skip dinner again?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "沒有，阿滿姨。是藥還在作用。妳做得都對，我們在看著。",
+        "en": "No, Mrs Man. It is the tablet still working. You did everything right; we are watching."
+       }
+      ]
+     ],
+     "end": true
+    }
+   ]
+  }
+ ],
+ "ending": {
+  "title": {
+   "zh": "下班了",
+   "en": "End of shift"
+  },
+  "sub": {
+   "zh": "血糖不是唯一的線索",
+   "en": "Glucose is never the only clue"
+  },
+  "stats": [
+   "stages",
+   "drills",
+   "choices",
+   "calls",
+   "items",
+   "time"
+  ]
+ }
+}

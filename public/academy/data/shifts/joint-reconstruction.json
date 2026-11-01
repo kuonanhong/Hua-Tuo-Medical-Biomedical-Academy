@@ -1,0 +1,1764 @@
+{
+ "format": "huatuo-shift-v1",
+ "department": "joint-reconstruction",
+ "title": {
+  "zh": "關節重建值班日",
+  "en": "A shift in joint reconstruction"
+ },
+ "tagline": {
+  "zh": "一顆杯、一支柄、一條走廊",
+  "en": "One cup, one stem, one corridor"
+ },
+ "room": "or",
+ "minutes": 25,
+ "roles": [
+  {
+   "id": "resident",
+   "zh": "關節重建住院醫師",
+   "en": "Arthroplasty resident",
+   "desc": {
+    "zh": "全髖置換日。模板、入路、杯的角度、試復位、骨水泥，還有一通「上週那位發燒了」的電話。",
+    "en": "Total hip day. Templating, approach, cup angle, trial reduction, cement, and a phone call that says 'last week's patient has a fever'."
+   }
+  },
+  {
+   "id": "physio",
+   "zh": "物理治療師",
+   "en": "Physiotherapist",
+   "desc": {
+    "zh": "ERAS 的靈魂。手術當天就下床，走廊是你的治療室，出院標準由你簽。",
+    "en": "The soul of ERAS. Out of bed on the day of surgery, the corridor is your treatment room, and you sign off the discharge criteria."
+   }
+  }
+ ],
+ "cast": {
+  "attending": {
+   "name": {
+    "zh": "柯主治",
+    "en": "Dr Ko"
+   },
+   "role": {
+    "zh": "主治醫師（師傅）",
+    "en": "Attending (mentor)"
+   },
+   "tag": "ATT",
+   "color": "#0e7490",
+   "body": "mentor",
+   "about": {
+    "zh": "有模板軟體，還是堅持在燈箱上用透明片再量一次。口頭禪：「量兩次，切一次。」",
+    "en": "Has templating software but still measures again with acetate on the lightbox. Catchphrase: 'Measure twice, cut once.'"
+   }
+  },
+  "chief": {
+   "name": {
+    "zh": "小宋學長",
+    "en": "Dr Sung"
+   },
+   "role": {
+    "zh": "總醫師",
+    "en": "Chief resident"
+   },
+   "tag": "CR",
+   "color": "#2f6f9f",
+   "body": "resident",
+   "about": {
+    "zh": "夜裡查房時會順便檢查每個病人的助行器高度。",
+    "en": "Checks the height of every patient's walking frame on his night rounds."
+   }
+  },
+  "scrub": {
+   "name": {
+    "zh": "怡婷",
+    "en": "Yi-ting"
+   },
+   "role": {
+    "zh": "刷手護理師",
+    "en": "Scrub nurse"
+   },
+   "tag": "SN",
+   "color": "#c27a2c",
+   "body": "scrub",
+   "about": {
+    "zh": "試用頭的尺寸排成一列，像一排迷你保齡球。",
+    "en": "Lines up the trial heads like a row of miniature bowling balls."
+   }
+  },
+  "anaes": {
+   "name": {
+    "zh": "淑芬",
+    "en": "Shu-fen"
+   },
+   "role": {
+    "zh": "麻醉護理師",
+    "en": "Anaesthesia nurse"
+   },
+   "tag": "AN",
+   "color": "#3b8f6a",
+   "body": "anaesthetist",
+   "about": {
+    "zh": "脊椎麻醉之後，她會陪病人聊天聊到骨水泥打完。",
+    "en": "After the spinal she chats with the patient until the cement has set."
+   }
+  },
+  "patient": {
+   "name": {
+    "zh": "吳老師",
+    "en": "Ms Wu"
+   },
+   "role": {
+    "zh": "病人・67 歲退休舞蹈老師",
+    "en": "Patient, 67, retired dance teacher"
+   },
+   "tag": "PT",
+   "color": "#6b7280",
+   "body": "patient",
+   "about": {
+    "zh": "右髖退化性關節炎，Oxford 髖分數很低，止痛與復健都試過了。她說：「我想再跳一次探戈。」",
+    "en": "Right hip osteoarthritis, a very low Oxford hip score, analgesia and physio exhausted. She says: 'I want to dance one more tango.'"
+   }
+  },
+  "husband": {
+   "name": {
+    "zh": "吳先生",
+    "en": "Mr Wu"
+   },
+   "role": {
+    "zh": "家屬",
+    "en": "Family"
+   },
+   "tag": "FAM",
+   "color": "#b45309",
+   "body": "family",
+   "about": {
+    "zh": "她的舞伴四十年。帶了舞蹈教室的照片，說要放在床頭提醒她目標。",
+    "en": "Her dance partner for forty years. Brought a photo of the studio to keep her goal at the bedside."
+   }
+  },
+  "ward-nurse": {
+   "name": {
+    "zh": "心怡",
+    "en": "Hsin-yi"
+   },
+   "role": {
+    "zh": "病房護理師",
+    "en": "Ward nurse"
+   },
+   "tag": "RN",
+   "color": "#9d4b7a",
+   "body": "nurse",
+   "about": {
+    "zh": "ERAS 路徑的執行者。病人一坐起來頭暈，她第一個打電話。",
+    "en": "Runs the ERAS pathway on the ward. First to call when a patient goes dizzy sitting up."
+   }
+  },
+  "clinic-pt": {
+   "name": {
+    "zh": "高師傅",
+    "en": "Mr Kao"
+   },
+   "role": {
+    "zh": "門診病人・58 歲水電師傅",
+    "en": "Clinic patient, 58, plumber"
+   },
+   "tag": "PT2",
+   "color": "#8a6d3b",
+   "body": "patient",
+   "about": {
+    "zh": "蹲不下去、穿襪子要坐著。他問：「換了一個能用多久？」",
+    "en": "Cannot squat, has to sit to put on socks. He asks: 'How long will a new one last?'"
+   }
+  }
+ },
+ "places": {
+  "whiteboard": {
+   "name": {
+    "zh": "刀表白板",
+    "en": "Theatre whiteboard"
+   },
+   "hot": "whiteboard"
+  },
+  "scrub-sink": {
+   "name": {
+    "zh": "刷手台",
+    "en": "Scrub sink"
+   },
+   "hot": "sink"
+  },
+  "table": {
+   "name": {
+    "zh": "手術台",
+    "en": "Operating table"
+   },
+   "hot": "field"
+  },
+  "lightbox": {
+   "name": {
+    "zh": "模板燈箱",
+    "en": "Templating lightbox"
+   },
+   "hot": "lightbox"
+  },
+  "instruments": {
+   "name": {
+    "zh": "器械與試用元件台",
+    "en": "Instruments and trials"
+   },
+   "hot": "instruments"
+  },
+  "imaging": {
+   "name": {
+    "zh": "影像工作站",
+    "en": "Imaging workstation"
+   },
+   "hot": "imaging"
+  },
+  "bed": {
+   "name": {
+    "zh": "病床",
+    "en": "Ward bed"
+   },
+   "hot": "bed"
+  },
+  "corridor": {
+   "name": {
+    "zh": "病房走廊",
+    "en": "Ward corridor"
+   },
+   "hot": "door"
+  },
+  "clinic-desk": {
+   "name": {
+    "zh": "門診桌",
+    "en": "Clinic desk"
+   },
+   "hot": "desk"
+  },
+  "recovery": {
+   "name": {
+    "zh": "恢復室",
+    "en": "Recovery room"
+   },
+   "hot": "recovery"
+  }
+ },
+ "glossary": [
+  {
+   "term": {
+    "zh": "時間暫停",
+    "en": "time-out"
+   },
+   "plain": {
+    "zh": "劃刀前全隊停下來核對病人、左右側、手術與植入物尺寸。",
+    "en": "Before the incision the whole team stops to confirm patient, side, operation and implant sizes."
+   }
+  },
+  {
+   "term": {
+    "zh": "退化性關節炎",
+    "en": "osteoarthritis"
+   },
+   "plain": {
+    "zh": "關節軟骨磨損，骨頭對骨頭。痛、僵、走不遠、蹲不下。",
+    "en": "Worn-out joint cartilage, bone on bone. Pain, stiffness, a short walking distance, no squatting."
+   }
+  },
+  {
+   "term": {
+    "zh": "全髖置換",
+    "en": "total hip replacement"
+   },
+   "plain": {
+    "zh": "把磨壞的髖臼和股骨頭都換成人工的：一顆杯、一支柄、一顆頭。",
+    "en": "Both the worn socket and the ball are replaced with artificial parts: a cup, a stem and a head."
+   }
+  },
+  {
+   "term": {
+    "zh": "模板",
+    "en": "templating"
+   },
+   "plain": {
+    "zh": "手術前在 X 光上套上植入物的透明片或軟體，預先決定尺寸、位置與肢長。",
+    "en": "Before surgery, implant outlines are laid over the X-ray on acetate or in software to plan sizes, position and leg length."
+   }
+  },
+  {
+   "term": {
+    "zh": "後側入路",
+    "en": "posterior approach"
+   },
+   "plain": {
+    "zh": "從臀部後方進入髖關節，要把外旋肌放開再縫回去。術後一段時間避免彎太深、內旋。",
+    "en": "Entering the hip from behind the buttock, detaching and later repairing the short external rotators. Deep flexion and internal rotation are avoided for a while afterwards."
+   }
+  },
+  {
+   "term": {
+    "zh": "髖臼杯",
+    "en": "acetabular cup"
+   },
+   "plain": {
+    "zh": "裝在骨盆髖臼裡的半球形元件。外展與前傾角度決定會不會脫臼。",
+    "en": "The hemispherical part fixed into the pelvic socket. Its inclination and anteversion decide whether the hip will dislocate."
+   }
+  },
+  {
+   "term": {
+    "zh": "試復位",
+    "en": "trial reduction"
+   },
+   "plain": {
+    "zh": "先裝試用元件把關節復位，測試各方向穩不穩、兩腳長度對不對，再放正式植入物。",
+    "en": "Trial components are fitted and the joint reduced to test stability in every direction and leg length, before the real implants go in."
+   }
+  },
+  {
+   "term": {
+    "zh": "肢長",
+    "en": "leg length"
+   },
+   "plain": {
+    "zh": "兩腳長度。差太多病人會覺得一腳長一腳短，走路跛、背痛。",
+    "en": "The two legs' lengths. A big difference feels like one long leg and one short, with a limp and back pain."
+   }
+  },
+  {
+   "term": {
+    "zh": "骨水泥",
+    "en": "bone cement"
+   },
+   "plain": {
+    "zh": "把植入物固定在骨頭裡的樹脂。混合後幾分鐘內要放好，打進去時麻醉要盯著血壓。",
+    "en": "A resin that fixes the implant into the bone. It must be placed within minutes of mixing, and anaesthesia watches the blood pressure as it goes in."
+   }
+  },
+  {
+   "term": {
+    "zh": "ERAS",
+    "en": "ERAS"
+   },
+   "plain": {
+    "zh": "加速康復路徑：術前衛教與碳水化合物、少用嗎啡類、手術當天下床、早出院。",
+    "en": "Enhanced recovery: pre-op education and carbohydrate drink, fewer opioids, out of bed on the day of surgery, early discharge."
+   }
+  },
+  {
+   "term": {
+    "zh": "脫臼",
+    "en": "dislocation"
+   },
+   "plain": {
+    "zh": "人工髖的球跑出杯外。腳忽然變短、轉向、不能動。要在麻醉下復位，不要在病房硬推。",
+    "en": "The artificial ball slips out of the cup. The leg suddenly shortens, rotates and cannot move. It is reduced under anaesthesia, never forced back on the ward."
+   }
+  },
+  {
+   "term": {
+    "zh": "髖關節注意事項",
+    "en": "hip precautions"
+   },
+   "plain": {
+    "zh": "後側入路術後早期避免的動作：髖彎超過直角、翹腳、腳尖向內。穿襪子用輔具。",
+    "en": "Movements avoided early after a posterior approach: bending the hip past a right angle, crossing the legs, toes turned in. Socks go on with an aid."
+   }
+  },
+  {
+   "term": {
+    "zh": "Oxford 髖分數",
+    "en": "Oxford hip score"
+   },
+   "plain": {
+    "zh": "十二個問題的問卷，問痛與日常功能，分數越低越嚴重。拿來決定是不是該換、追蹤換得好不好。",
+    "en": "A twelve-question survey of pain and daily function; lower is worse. Used to decide on surgery and to track the result."
+   }
+  },
+  {
+   "term": {
+    "zh": "人工關節感染",
+    "en": "prosthetic joint infection"
+   },
+   "plain": {
+    "zh": "細菌長在植入物上。抽關節液培養之前不要先給抗生素，否則長不出來、治不好。",
+    "en": "Bacteria growing on the implant. No antibiotics before the joint is aspirated for culture, or nothing grows and nothing gets cured."
+   }
+  }
+ ],
+ "codex": [
+  {
+   "id": "cup-impactor",
+   "kind": "equipment",
+   "name": {
+    "zh": "髖臼杯打入器",
+    "en": "Cup impactor"
+   },
+   "hot": "instruments",
+   "text": {
+    "zh": "把杯打進髖臼的長柄。上面的對準桿告訴你外展與前傾，但骨盆的姿勢會騙人。",
+    "en": "The long handle that seats the cup. Its alignment rod shows inclination and anteversion, but the pelvis's position can lie to you."
+   }
+  },
+  {
+   "id": "cement-mixer",
+   "kind": "equipment",
+   "name": {
+    "zh": "骨水泥真空混合器",
+    "en": "Vacuum cement mixer"
+   },
+   "hot": "device",
+   "text": {
+    "zh": "抽真空減少氣泡，骨水泥才強。計時從粉和液體混合那一刻開始。",
+    "en": "Vacuum mixing removes bubbles so the cement is stronger. The clock starts the moment powder meets liquid."
+   }
+  },
+  {
+   "id": "lightbox-acetate",
+   "kind": "equipment",
+   "name": {
+    "zh": "燈箱與模板透明片",
+    "en": "Lightbox and acetate templates"
+   },
+   "hot": "lightbox",
+   "text": {
+    "zh": "柯主治的儀式。放大率要用參考球校正，不然尺寸會差一號。",
+    "en": "Dr Ko's ritual. Magnification is calibrated with the reference ball, or the sizes come out one off."
+   }
+  },
+  {
+   "id": "trial-heads",
+   "kind": "equipment",
+   "name": {
+    "zh": "試用股骨頭",
+    "en": "Trial heads"
+   },
+   "hot": "instruments",
+   "text": {
+    "zh": "不同頸長的試用頭。試復位不穩或腳太短，就換一顆再試。",
+    "en": "Heads of different neck lengths. If the trial is unstable or the leg short, swap one and try again."
+   }
+  },
+  {
+   "id": "walking-frame",
+   "kind": "equipment",
+   "name": {
+    "zh": "助行器",
+    "en": "Walking frame"
+   },
+   "hot": "door",
+   "text": {
+    "zh": "高度到手腕橫紋。手術當天第一次站起來就靠它。",
+    "en": "Height set to the wrist crease. The first stand on the day of surgery leans on it."
+   }
+  },
+  {
+   "id": "trial-head-item",
+   "kind": "item",
+   "name": {
+    "zh": "一顆試用頭",
+    "en": "A trial head"
+   },
+   "text": {
+    "zh": "今天試復位時換上去的那顆加長頸試用頭。穩了，腳也一樣長了。",
+    "en": "The longer-neck trial that went on at today's trial reduction. Stable, and the legs came out equal."
+   }
+  },
+  {
+   "id": "studio-photo",
+   "kind": "item",
+   "name": {
+    "zh": "舞蹈教室的照片",
+    "en": "The dance studio photo"
+   },
+   "text": {
+    "zh": "吳先生放在床頭的照片。她說出院那天要先去教室坐一下。",
+    "en": "The photo Mr Wu put at the bedside. She says the first stop after discharge is a chair in the studio."
+   }
+  },
+  {
+   "id": "safe-zone",
+   "kind": "concept",
+   "name": {
+    "zh": "杯的角度",
+    "en": "Cup orientation"
+   },
+   "text": {
+    "zh": "外展約四十度、適度前傾。太陡會磨損，太平會撞擊，前傾不夠往後脫臼。脊椎僵硬的病人要另外想。",
+    "en": "About forty degrees of inclination and moderate anteversion. Too steep wears, too flat impinges, too little anteversion dislocates backwards. A stiff spine changes the plan."
+   }
+  },
+  {
+   "id": "eras",
+   "kind": "concept",
+   "name": {
+    "zh": "ERAS",
+    "en": "ERAS"
+   },
+   "text": {
+    "zh": "不是「趕病人回家」，是把每個會讓人躺著的原因提早拿掉：痛、噁心、低血壓、尿管、害怕。",
+    "en": "Not 'sending people home early' but removing in advance every reason a person stays in bed: pain, nausea, low pressure, the catheter, fear."
+   }
+  }
+ ],
+ "segs": [
+  {
+   "id": "handover",
+   "name": {
+    "zh": "晨間交班",
+    "en": "Morning handover"
+   },
+   "sub": {
+    "zh": "07:30 · 刀表白板與燈箱",
+    "en": "07:30 · whiteboard and lightbox"
+   },
+   "t": 450,
+   "mood": "day",
+   "note": {
+    "zh": "交班與模板：量兩次",
+    "en": "Handover and templating: measured twice"
+   },
+   "beats": [
+    {
+     "id": "h1",
+     "to": "chief",
+     "guide": {
+      "zh": "找小宋學長交班",
+      "en": "Find Dr Sung for handover"
+     },
+     "lines": [
+      [
+       "chief",
+       {
+        "zh": "早。3 床昨天的全髖，ERAS 路徑，今早要走第二次。第一台吳老師，右全髖，後側入路。",
+        "en": "Morning. Bed 3, yesterday's total hip, on the ERAS pathway, second walk this morning. First case Ms Wu, right total hip, posterior approach."
+       }
+      ],
+      [
+       "chief",
+       {
+        "zh": "下午門診有個水電師傅，髖退化性關節炎，一直問換了能用多久。",
+        "en": "Clinic this afternoon has a plumber with hip osteoarthritis who keeps asking how long a new one lasts."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "3 床昨天走了多遠？",
+        "en": "How far did bed 3 walk yesterday?"
+       }
+      ],
+      [
+       "chief",
+       {
+        "zh": "手術當天下午走到門口。助行器高度我調過了。",
+        "en": "To the door on the afternoon of surgery. I adjusted the frame height."
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "白板：08:00 右全髖置換（吳老師）。14:00 門診。3 床：ERAS 第一天。",
+        "en": "Whiteboard: 08:00 right total hip (Ms Wu). 14:00 clinic. Bed 3: ERAS day one."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "h2",
+     "to": "place:lightbox",
+     "guide": {
+      "zh": "和柯主治在燈箱上套模板",
+      "en": "Template with Dr Ko on the lightbox"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "早。軟體說杯是幾號？",
+        "en": "Morning. What cup size does the software say?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "軟體給了一個號數，參考球校正過。",
+        "en": "It gave a size, calibrated with the reference ball."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "好。現在用透明片再量一次。量兩次，切一次。杯放哪裡？",
+        "en": "Good. Now the acetate, once more. Measure twice, cut once. Where does the cup sit?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "淚滴為底、內側壁為界，旋轉中心回到解剖位置。",
+        "en": "Teardrop as the floor, medial wall as the limit, centre of rotation back to anatomical."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "joint-reconstruction-tha-planning-templating",
+      "stage": 2
+     },
+     "post": [
+      [
+       "attending",
+       {
+        "zh": "兩次一樣。肢長和偏距也畫好了。去刷手。",
+        "en": "Both agree. Leg length and offset are drawn too. Go and scrub."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "first-case",
+   "name": {
+    "zh": "第一台：全髖",
+    "en": "First case: total hip"
+   },
+   "sub": {
+    "zh": "08:00 · 開刀房",
+    "en": "08:00 · operating theatre"
+   },
+   "t": 480,
+   "mood": "day",
+   "note": {
+    "zh": "吳老師的全髖：試復位後換了一顆頭",
+    "en": "Ms Wu's hip: one trial head swapped, then stable"
+   },
+   "beats": [
+    {
+     "id": "c1",
+     "to": "patient",
+     "guide": {
+      "zh": "跟吳老師核對身分與左右",
+      "en": "Confirm identity and side with Ms Wu"
+     },
+     "lines": [
+      [
+       "patient",
+       {
+        "zh": "醫師，右邊。探戈的時候右腳要往後，現在往後就痛。",
+        "en": "Doctor, the right. In tango the right foot goes back, and going back is what hurts now."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "姓名、生日說一次。右邊的標記還在。",
+        "en": "Name and birthday once for me. The mark on the right is still there."
+       }
+      ],
+      [
+       "husband",
+       {
+        "zh": "醫師，照片可以放床頭嗎？我們的教室。",
+        "en": "Doctor, may the photo go at the bedside? It's our studio."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "可以。今天下午她就會站起來看它。",
+        "en": "It may. She'll be standing up to look at it this afternoon."
+       }
+      ]
+     ],
+     "item": "studio-photo"
+    },
+    {
+     "id": "c2",
+     "to": "place:table",
+     "guide": {
+      "zh": "時間暫停：WHO 核對",
+      "en": "Time-out: WHO check"
+     },
+     "lines": [
+      [
+       "scrub",
+       {
+        "zh": "時間暫停。吳老師，右側全髖置換，後側入路，過敏無，抗生素依醫囑。",
+        "en": "Time-out. Ms Wu, right total hip replacement, posterior approach, no allergies, antibiotics per protocol."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "模板尺寸？備用尺寸？骨水泥的時候誰喊？",
+        "en": "Templated sizes? Spares? Who calls the cement?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "杯、柄、頭的號數在白板上，上下一號都在。骨水泥我喊，麻醉回應。",
+        "en": "Cup, stem and head sizes on the whiteboard, one size either way available. I call the cement; anaesthesia acknowledges."
+       }
+      ],
+      [
+       "anaes",
+       {
+        "zh": "脊椎麻醉，病人清醒，她會跟我聊探戈。",
+        "en": "Spinal; she's awake and will talk to me about tango."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "joint-reconstruction-tha-posterior-operation",
+      "stage": 0
+     }
+    },
+    {
+     "id": "c3",
+     "to": "place:instruments",
+     "guide": {
+      "zh": "確認試用元件都在",
+      "en": "Confirm the trial components are out"
+     },
+     "lines": [
+      [
+       "scrub",
+       {
+        "zh": "試用杯、試用柄、試用頭三種頸長，排好了。",
+        "en": "Trial cups, trial stems and three neck lengths of trial heads, all laid out."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "找給我看：加長頸的試用頭在哪裡？等一下可能要用。",
+        "en": "Show me: where is the longer-neck trial head? We may need it."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "find",
+      "hot": "instruments",
+      "q": {
+       "zh": "點一下器械台，找到加長頸的試用頭",
+       "en": "Tap the instrument table to find the longer-neck trial head"
+      }
+     }
+    },
+    {
+     "id": "c4",
+     "to": "place:table",
+     "guide": {
+      "zh": "後側入路與杯的角度",
+      "en": "Posterior approach and cup orientation"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "外旋肌標記好、放開，等一下要縫回去。髖臼磨到軟骨下骨出血。杯的角度？",
+        "en": "Rotators tagged and released; they go back later. Ream the socket to bleeding subchondral bone. Acetabular cup angle?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "外展約四十度、適度前傾。先看骨盆有沒有歪，對準桿會被骨盆姿勢騙。",
+        "en": "About forty degrees of inclination, moderate anteversion. Check the pelvis isn't tilted first; the alignment rod can be fooled by pelvic position."
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "打入器一下一下，杯咬進骨頭的聲音從空心變成實心。",
+        "en": "Blow by blow, the sound of the cup seating changes from hollow to solid."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "drill",
+      "template": "joint-reconstruction",
+      "drill": "cup"
+     }
+    },
+    {
+     "id": "c5",
+     "to": "place:table",
+     "guide": {
+      "zh": "試復位與穩定測試",
+      "en": "Trial reduction and stability test"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "試用元件裝好。復位。測：彎髖內旋、伸髖外旋、肢長、軟組織張力。",
+        "en": "Trials in. Reduce. Test: flexion with internal rotation, extension with external rotation, leg length, soft-tissue tension."
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "彎髖加內旋時，頭往後滑了一下。不穩。",
+        "en": "In flexion and internal rotation the head slides back a little. Unstable."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "怎麼辦？",
+        "en": "What now?"
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "joint-reconstruction-tha-posterior-operation",
+      "stage": 8
+     }
+    },
+    {
+     "id": "c6",
+     "to": "attending",
+     "guide": {
+      "zh": "試復位不穩，你的決定",
+      "en": "Unstable trial: your decision"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "試復位往後不穩。選一個。",
+        "en": "The trial is unstable posteriorly. Choose."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "choice",
+      "q": {
+       "zh": "試復位在彎髖內旋時不穩，下一步？",
+       "en": "The trial reduction is unstable in flexion and internal rotation. Next step?"
+      },
+      "options": [
+       {
+        "zh": "查杯與柄的前傾、換加長頸試用頭、再測",
+        "en": "Check cup and stem anteversion, swap to a longer-neck trial, retest",
+        "ok": true,
+        "set": {
+         "trial": "adjust"
+        },
+        "why": {
+         "zh": "對。先找原因：角度、偏距、軟組織張力。試用元件就是為了改的。",
+         "en": "Right. Find the cause first: version, offset, soft-tissue tension. Trials exist to be changed."
+        }
+       },
+       {
+        "zh": "差不多了，直接放正式植入物",
+        "en": "Close enough; put in the definitive implants",
+        "ok": false,
+        "set": {
+         "trial": "rush"
+        },
+        "why": {
+         "zh": "試復位不穩，正式的也會不穩。那就是半夜脫臼的電話。",
+         "en": "An unstable trial means an unstable implant. That becomes the midnight dislocation call."
+        }
+       },
+       {
+        "zh": "換成最大號的頭就好",
+        "en": "Just use the biggest head",
+        "ok": false,
+        "set": {
+         "trial": "bighead"
+        },
+        "why": {
+         "zh": "大頭幫忙，但不修正錯的角度。先查原因。",
+         "en": "A bigger head helps, but it does not correct a wrong angle. Cause first."
+        }
+       }
+      ]
+     },
+     "post": [
+      [
+       "me",
+       {
+        "zh": "柄的前傾不夠。調整、換加長頸的試用頭。再測：各方向穩，肢長一致。",
+        "en": "Stem anteversion was short. Adjusted, longer-neck trial on. Retest: stable in all directions, leg lengths equal."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "骨水泥，混合開始，計時。麻醉請注意。",
+        "en": "Bone cement: mixing starts, clock running. Anaesthesia, please note."
+       }
+      ],
+      [
+       "anaes",
+       {
+        "zh": "收到。吳老師，骨水泥進去了，跟我說說探戈。",
+        "en": "Noted. Ms Wu, the cement is going in; tell me about tango."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "關節囊與外旋肌縫回去。這一步決定她會不會脫臼。",
+        "en": "Capsule and rotators repaired. This step decides whether she dislocates."
+       }
+      ]
+     ],
+     "item": "trial-head-item"
+    },
+    {
+     "id": "c7",
+     "roles": [
+      "resident"
+     ],
+     "to": "place:recovery",
+     "guide": {
+      "zh": "寫紀錄與 ERAS 醫囑",
+      "en": "Op note and ERAS orders"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "紀錄：入路、杯與柄的號數與角度、換頭的原因、穩定測試結果、肢長。",
+        "en": "Note: approach, cup and stem sizes and angles, why the head was changed, stability test result, leg length."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "ERAS 醫囑：多模式止痛依醫囑、今天下午下床、不放尿管、傷口敷料照路徑、出院標準貼在床頭。",
+        "en": "ERAS orders: multimodal analgesia per protocol, out of bed this afternoon, no catheter, dressing per pathway, discharge criteria posted at the bedside."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "還有一句：照片不要收。",
+        "en": "And one more: nobody moves the photo."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "c7p",
+     "roles": [
+      "physio"
+     ],
+     "to": "place:corridor",
+     "guide": {
+      "zh": "規劃手術當天的第一次下床",
+      "en": "Plan the day-of-surgery first stand"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "脊椎麻醉退了、血壓穩、痛控制住，就站。助行器調到手腕橫紋，先坐床邊，再站，再走到門口。",
+        "en": "Once the spinal has worn off, pressure is stable and pain controlled, she stands. Frame to the wrist crease, sit on the edge first, then stand, then to the door."
+       }
+      ],
+      [
+       "ward-nurse",
+       {
+        "zh": "髖關節注意事項我會先貼好：不彎過直角、不翹腳、腳尖不向內。",
+        "en": "I'll post the hip precautions first: no bending past a right angle, no crossing legs, no toes turned in."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "穿襪子的輔具也先放她床頭。她會想自己穿。",
+        "en": "And the sock aid goes at her bedside now. She'll want to do it herself."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ward-call",
+   "name": {
+    "zh": "病房來電",
+    "en": "Ward call"
+   },
+   "sub": {
+    "zh": "10:30 · 3 床坐起來頭暈",
+    "en": "10:30 · bed 3 dizzy on sitting up"
+   },
+   "t": 630,
+   "mood": "day",
+   "note": {
+    "zh": "3 床 ERAS 第一天：噁心與低血壓處理",
+    "en": "Bed 3 ERAS day one: nausea and hypotension managed"
+   },
+   "beats": [
+    {
+     "id": "w1",
+     "ring": {
+      "title": {
+       "zh": "病房來電",
+       "en": "Ward calling"
+      },
+      "sub": {
+       "zh": "3 床坐起來頭暈想吐，血壓偏低",
+       "en": "Bed 3: dizzy and nauseated sitting up, pressure low"
+      },
+      "call": true,
+      "from": "ward-nurse"
+     },
+     "to": "place:bed",
+     "guide": {
+      "zh": "接電話，去看 3 床",
+      "en": "Take the call and see bed 3"
+     },
+     "lines": [
+      [
+       "ward-nurse",
+       {
+        "zh": "醫師，3 床要走第二次，一坐起來就頭暈想吐，血壓比躺著低很多。",
+        "en": "Doctor, bed 3 was due for his second walk; the moment he sat up he went dizzy and nauseated, pressure much lower than lying down."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "躺回去、腳抬一下，依醫囑止吐與輸液，看傷口和血色素。別把今天的下床取消，延後。",
+        "en": "Lie him back, legs up, antiemetic and fluids per protocol, check the wound and haemoglobin. Don't cancel today's walk; postpone it."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "vitals",
+      "event": "hypotension",
+      "options": [
+       {
+        "zh": "躺回、依醫囑止吐輸液、查血色素、稍後再試",
+        "en": "Lie back, antiemetic and fluids per protocol, haemoglobin, retry later",
+        "ok": true,
+        "why": {
+         "zh": "對。姿勢性低血壓與噁心是 ERAS 最常見的絆腳石，處理完再走，不是不走。",
+         "en": "Right. Postural hypotension and nausea are ERAS's commonest stumbling blocks; treat them and walk later, not never."
+        }
+       },
+       {
+        "zh": "撐著走完，路徑規定要走",
+        "en": "Push through the walk; the pathway says so",
+        "ok": false,
+        "why": {
+         "zh": "路徑不是命令，是清單。頭暈的人走路會跌倒。",
+         "en": "The pathway is a checklist, not an order. Dizzy people fall."
+        }
+       },
+       {
+        "zh": "今天整天臥床休息",
+        "en": "Bed rest for the whole day",
+        "ok": false,
+        "why": {
+         "zh": "一整天臥床會換來血栓、肺炎與更久的住院。處理原因，再試。",
+         "en": "A day in bed buys clots, pneumonia and a longer stay. Treat the cause and try again."
+        }
+       }
+      ]
+     }
+    },
+    {
+     "id": "w2",
+     "roles": [
+      "physio"
+     ],
+     "to": "place:corridor",
+     "guide": {
+      "zh": "重新嘗試下床與走路",
+      "en": "Retry the stand and walk"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "血壓回來了、不吐了。先坐床邊兩分鐘，再站，數到十沒頭暈才走。",
+        "en": "Pressure back, nausea gone. Edge of bed for two minutes, then stand, count to ten with no dizziness before walking."
+       }
+      ],
+      [
+       "ward-nurse",
+       {
+        "zh": "他說他昨天走到門口，今天要走到護理站。",
+        "en": "He says he reached the door yesterday and wants the nurses' station today."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "那就護理站。助行器在前，我在旁邊。",
+        "en": "Then the nurses' station. Frame in front, me beside him."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "joint-reconstruction-eras-arthroplasty-pathway",
+      "stage": 3
+     }
+    }
+   ]
+  },
+  {
+   "id": "imaging-noon",
+   "name": {
+    "zh": "影像討論",
+    "en": "Imaging review"
+   },
+   "sub": {
+    "zh": "12:00 · 吳老師的術後 X 光",
+    "en": "12:00 · Ms Wu's post-op X-ray"
+   },
+   "t": 720,
+   "mood": "day",
+   "note": {
+    "zh": "術後 X 光：杯、柄、肢長都對",
+    "en": "Post-op film: cup, stem and length all right"
+   },
+   "beats": [
+    {
+     "id": "n1",
+     "to": "place:imaging",
+     "guide": {
+      "zh": "和柯主治看術後 X 光",
+      "en": "Review the post-op X-ray with Dr Ko"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "術後骨盆正面。跟模板比。你報。",
+        "en": "Post-op AP pelvis. Compare with the template. You present."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "先杯，再柄，再兩邊比。",
+        "en": "Cup first, then stem, then compare the two sides."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "imaging",
+      "region": "pelvis",
+      "question": {
+       "zh": "全髖置換後的骨盆 X 光要確認什麼？",
+       "en": "What must a pelvic X-ray after total hip replacement confirm?"
+      },
+      "answer": {
+       "zh": "髖臼杯的外展與前傾、柄在髓腔內的位置與骨水泥套是否完整、兩側肢長與偏距比對、有沒有術中骨折。",
+       "en": "Cup inclination and anteversion, stem position in the canal and an intact cement mantle, leg length and offset compared with the other side, and no intra-operative fracture."
+      }
+     },
+     "post": [
+      [
+       "attending",
+       {
+        "zh": "跟模板一樣。量兩次的好處。去吃飯，下午門診。",
+        "en": "Same as the template. That's what measuring twice buys. Eat; clinic this afternoon."
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "燈箱還亮著，透明片還夾在上面。",
+        "en": "The lightbox is still on, the acetate still clipped to it."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "clinic",
+   "name": {
+    "zh": "下午門診",
+    "en": "Afternoon clinic"
+   },
+   "sub": {
+    "zh": "14:00 · 門診",
+    "en": "14:00 · clinic"
+   },
+   "t": 840,
+   "mood": "day",
+   "note": {
+    "zh": "高師傅的問題：能用多久",
+    "en": "Mr Kao's question: how long will it last"
+   },
+   "beats": [
+    {
+     "id": "a1",
+     "to": "clinic-pt",
+     "guide": {
+      "zh": "門診：高師傅的髖",
+      "en": "Clinic: Mr Kao's hip"
+     },
+     "lines": [
+      [
+       "clinic-pt",
+       {
+        "zh": "醫師，蹲不下去，襪子要坐著穿。止痛吃了、復健做了。換一個能用多久？",
+        "en": "Doctor, I can't squat, socks go on sitting down. I've taken the painkillers, done the physio. How long does a new one last?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "先看 Oxford 髖分數和 X 光，再回答。你的分數很低，X 光骨頭對骨頭。",
+        "en": "Oxford hip score and the X-ray first, then the answer. Your score is very low and the film shows bone on bone."
+       }
+      ],
+      [
+       "clinic-pt",
+       {
+        "zh": "所以呢？",
+        "en": "So?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "大多數人用很多年，但你五十八歲、做水電常蹲，磨損會比較快。這就是我們要一起決定的事。",
+        "en": "Most people get many years, but at fifty-eight and squatting for a living, wear will be faster. That is what we decide together."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "joint-reconstruction-hip-oa-assessment",
+      "stage": 7
+     }
+    },
+    {
+     "id": "a1p",
+     "roles": [
+      "physio"
+     ],
+     "to": "place:clinic-desk",
+     "guide": {
+      "zh": "回顧非手術治療",
+      "en": "Review the non-operative options"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "高師傅，運動做了哪些？體重、拐杖、工作姿勢的調整？",
+        "en": "Mr Kao, which exercises have you done? Weight, a stick, changes at work?"
+       }
+      ],
+      [
+       "clinic-pt",
+       {
+        "zh": "運動有做，拐杖不肯拿，客戶會笑。",
+        "en": "Exercises yes; the stick no, customers would laugh."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "拐杖拿在對側手，可以少掉很多髖的負荷。先試六週，我們再談手術。",
+        "en": "A stick in the opposite hand takes a lot of load off the hip. Six weeks of that, then we talk surgery."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "a1r",
+     "roles": [
+      "resident"
+     ],
+     "to": "place:clinic-desk",
+     "guide": {
+      "zh": "寫門診紀錄與共享決策",
+      "en": "Clinic note and shared decision"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "紀錄：Oxford 髖分數、X 光分級、已試過的非手術治療、他的職業需求、我們談到的磨損與翻修。",
+        "en": "Note: Oxford hip score, X-ray grade, non-operative treatments tried, his job demands, and our conversation about wear and revision."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "最後一句寫什麼？",
+        "en": "And the last sentence?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "「病人將於六週後回診，屆時共同決定。」決定是他的，資訊是我們的。",
+        "en": "'Patient to return in six weeks for a shared decision.' The decision is his; the information is ours."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "infection-call",
+   "name": {
+    "zh": "急診來電",
+    "en": "ER call"
+   },
+   "sub": {
+    "zh": "16:00 · 上週那位發燒了",
+    "en": "16:00 · last week's patient has a fever"
+   },
+   "t": 960,
+   "mood": "day",
+   "note": {
+    "zh": "疑似人工關節感染：培養先於抗生素",
+    "en": "Suspected prosthetic joint infection: cultures before antibiotics"
+   },
+   "beats": [
+    {
+     "id": "e1",
+     "ring": {
+      "title": {
+       "zh": "急診來電",
+       "en": "ER calling"
+      },
+      "sub": {
+       "zh": "上週全髖的病人回來：傷口紅熱、發燒",
+       "en": "Last week's hip is back: red hot wound, fever"
+      },
+      "call": true,
+      "from": "ward-nurse"
+     },
+     "to": "place:bed",
+     "guide": {
+      "zh": "接電話，去急診看傷口",
+      "en": "Take the call and see the wound in the ER"
+     },
+     "lines": [
+      [
+       "ward-nurse",
+       {
+        "zh": "醫師，急診轉過來：上週全髖的病人，傷口紅、熱、滲液，發燒。急診問要不要先給抗生素。",
+        "en": "Doctor, forwarded from the ER: last week's total hip, wound red, hot and oozing, febrile. The ER asks whether to start antibiotics."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "先不要。抽血培養、通知柯主治、準備關節穿刺。培養之前不給抗生素。",
+        "en": "Not yet. Blood cultures, call Dr Ko, prepare a joint aspiration. No antibiotics before the cultures."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "choice",
+      "q": {
+       "zh": "術後一週傷口紅熱、發燒，第一步？",
+       "en": "A week after a hip replacement the wound is red and hot and the patient febrile. First step?"
+      },
+      "options": [
+       {
+        "zh": "血液與關節液培養先抽，通知主治，再談抗生素",
+        "en": "Blood and joint cultures first, call the attending, antibiotics after",
+        "ok": true,
+        "set": {
+         "pji": "culture"
+        },
+        "why": {
+         "zh": "對。人工關節感染的治療靠培養結果。先給抗生素，就永遠不知道是什麼菌。",
+         "en": "Right. Treating a prosthetic joint infection depends on the culture. Antibiotics first and you never learn the organism."
+        }
+       },
+       {
+        "zh": "開口服抗生素回家觀察",
+        "en": "Oral antibiotics and home to observe",
+        "ok": false,
+        "set": {
+         "pji": "oral"
+        },
+        "why": {
+         "zh": "口服抗生素會壓住症狀、養出抗藥菌，讓早期感染變成晚期感染。",
+         "en": "Oral antibiotics mask the picture, breed resistance and turn an early infection into a late one."
+        }
+       },
+       {
+        "zh": "在急診把傷口打開看看",
+        "en": "Open the wound in the ER to have a look",
+        "ok": false,
+        "set": {
+         "pji": "open"
+        },
+        "why": {
+         "zh": "人工關節的傷口在開刀房、無菌、有計畫地開。不在急診。",
+         "en": "A joint-replacement wound is opened in theatre, sterile and with a plan. Not in the ER."
+        }
+       }
+      ]
+     }
+    },
+    {
+     "id": "e2",
+     "to": "attending",
+     "guide": {
+      "zh": "向柯主治報告",
+      "en": "Report to Dr Ko"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "術後第八天，傷口紅熱滲液、發燒、發炎指數高。培養抽了，抗生素還沒給。",
+        "en": "Day eight post-op, wound red, hot and oozing, febrile, inflammatory markers up. Cultures taken, antibiotics not yet given."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "早期感染，植入物穩固。計畫？",
+        "en": "Early infection with well-fixed implants. Plan?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "今晚開刀房：清創、沖洗、換掉可更換的元件、保留植入物，培養後依醫囑抗生素。",
+        "en": "Theatre tonight: debridement, irrigation, exchange of the modular parts, implants retained, antibiotics per protocol after the cultures."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "對。而且你沒有讓急診先給抗生素。這通電話你接得好。",
+        "en": "Right. And you stopped the ER giving antibiotics first. You took that call well."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "evening",
+   "name": {
+    "zh": "交班與回顧",
+    "en": "Handover and debrief"
+   },
+   "sub": {
+    "zh": "18:00 · 開刀房外",
+    "en": "18:00 · outside theatre"
+   },
+   "t": 1080,
+   "mood": "eve",
+   "note": {
+    "zh": "交給夜班；師傅的三件事",
+    "en": "Handed to the night team; the mentor's three things"
+   },
+   "beats": [
+    {
+     "id": "d1",
+     "to": "chief",
+     "guide": {
+      "zh": "向夜班交班",
+      "en": "Hand over to the night team"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "吳老師右全髖，試復位換過頭，下午已站起來走到門口。3 床走到護理站。感染的那位今晚清創。",
+        "en": "Ms Wu: right total hip, trial head swapped, stood and walked to the door this afternoon. Bed 3 reached the nurses' station. The infection goes to theatre tonight."
+       }
+      ],
+      [
+       "chief",
+       {
+        "zh": "高師傅？",
+        "en": "Mr Kao?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "拐杖六週，再回來談。",
+        "en": "A stick for six weeks, then back to talk."
+       }
+      ],
+      [
+       "chief",
+       {
+        "zh": "收到。我今晚會檢查他們的助行器高度。",
+        "en": "Received. I'll check their frame heights tonight."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "d1b",
+     "when": {
+      "flag": "trial",
+      "is": "rush"
+     },
+     "to": "attending",
+     "guide": {
+      "zh": "柯主治提起試復位",
+      "en": "Dr Ko brings up the trial reduction"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "早上試復位不穩，你想直接放正式的。",
+        "en": "This morning, with an unstable trial, you wanted to put in the definitive implants."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "對。您讓我先查前傾。",
+        "en": "I did. You made me check the anteversion first."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "試用元件存在的理由，就是讓你在能改的時候改。量兩次，切一次。",
+        "en": "Trials exist so you can change things while they can still be changed. Measure twice, cut once."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "d2",
+     "to": "attending",
+     "guide": {
+      "zh": "師傅的回顧",
+      "en": "The mentor's debrief"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "今天三件事。模板你量了兩次。試復位不穩，你找了原因。",
+        "en": "Three things today. You templated twice. The unstable trial: you found the cause."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "感染的電話，你沒有讓抗生素跑在培養前面。",
+        "en": "The infection call: you did not let antibiotics run ahead of the cultures."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "燈箱還亮著。",
+        "en": "The lightbox is still on."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "明天還要用。去吃飯。",
+        "en": "I'll need it tomorrow. Go and eat."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "night",
+   "name": {
+    "zh": "值班夜",
+    "en": "On call tonight"
+   },
+   "sub": {
+    "zh": "22:00 · 病房",
+    "en": "22:00 · ward"
+   },
+   "t": 1320,
+   "mood": "night",
+   "note": {
+    "zh": "夜裡「腳變短了」：X 光說沒有",
+    "en": "'The leg looks short' at night: the X-ray says no"
+   },
+   "beats": [
+    {
+     "id": "x1",
+     "ring": {
+      "title": {
+       "zh": "病房來電",
+       "en": "Ward calling"
+      },
+      "sub": {
+       "zh": "吳老師翻身後說右腳變短、轉向、很痛",
+       "en": "After turning, Ms Wu says her right leg feels short, turned and painful"
+      },
+      "call": true,
+      "from": "ward-nurse"
+     },
+     "lines": [
+      [
+       "ward-nurse",
+       {
+        "zh": "醫師，吳老師翻身後喊痛，說右腳變短、腳尖往內。我沒敢動她。",
+        "en": "Doctor, Ms Wu cried out after turning; she says the right leg is short and the toes point inwards. I haven't moved her."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "對，別動。後側入路、腳短內旋——先當脫臼。",
+        "en": "Right, don't. Posterior approach, short and internally rotated: treat it as a dislocation until proven otherwise."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "choice",
+      "q": {
+       "zh": "全髖當晚腳變短、內旋、劇痛，第一步？",
+       "en": "The night after a total hip the leg is short, internally rotated and very painful. First step?"
+      },
+      "options": [
+       {
+        "zh": "禁食、止痛依醫囑、床邊 X 光、通知主治",
+        "en": "Nil by mouth, analgesia per protocol, portable X-ray, call the attending",
+        "ok": true,
+        "set": {
+         "night": "xray"
+        },
+        "why": {
+         "zh": "對。先確認，再在麻醉下復位。病房硬推會傷到骨頭和植入物。",
+         "en": "Right. Confirm first, then reduce under anaesthesia. Forcing it on the ward damages bone and implant."
+        }
+       },
+       {
+        "zh": "在病房直接推回去",
+        "en": "Reduce it on the ward right now",
+        "ok": false,
+        "set": {
+         "night": "force"
+        },
+        "why": {
+         "zh": "沒有肌肉放鬆、沒有影像，硬推會造成骨折或植入物鬆動。",
+         "en": "Without muscle relaxation or imaging, forcing it risks fracture or loosening."
+        }
+       },
+       {
+        "zh": "給止痛讓她睡，明早再看",
+        "en": "Analgesia and sleep, review in the morning",
+        "ok": false,
+        "set": {
+         "night": "wait"
+        },
+        "why": {
+         "zh": "脫臼的髖不能等到天亮。",
+         "en": "A dislocated hip does not wait for morning."
+        }
+       }
+      ]
+     }
+    },
+    {
+     "id": "x2",
+     "to": "patient",
+     "guide": {
+      "zh": "去看吳老師",
+      "en": "Go and see Ms Wu"
+     },
+     "lines": [
+      [
+       "patient",
+       {
+        "zh": "醫師……我是不是把它弄壞了？",
+        "en": "Doctor... have I broken it?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "X 光看過了：頭在杯裡，沒有脫臼。是枕頭滑掉、肌肉抽筋，加上翻身的姿勢。兩腳現在一樣長。",
+        "en": "X-ray reviewed: the head is in the cup, no dislocation. The pillow slipped, the muscle cramped and the turning position did the rest. Both legs are the same length now."
+       }
+      ],
+      [
+       "husband",
+       {
+        "zh": "嚇死我了。",
+        "en": "You scared me to death."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "嚇一次是好事，大家都把髖關節注意事項記得更牢了。枕頭夾回兩腿中間。",
+        "en": "One scare is useful; now everyone remembers the hip precautions. Pillow back between the knees."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "x3",
+     "ring": {
+      "title": {
+       "zh": "柯主治訊息",
+       "en": "Message from Dr Ko"
+      },
+      "sub": {
+       "zh": "「感染那位清創完，培養送了。明早燈箱見。」",
+       "en": "'Infection debrided, cultures sent. Lightbox tomorrow morning.'"
+      },
+      "call": false,
+      "from": "attending"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "一顆杯、一支柄、一顆換過的試用頭、一條走廊、一個枕頭。兩腳一樣長。",
+        "en": "One cup, one stem, one swapped trial head, one corridor, one pillow. Both legs the same length."
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "值班結束。床頭的舞蹈教室照片下面，多了一張寫著「門口 → 護理站」的紙條。",
+        "en": "End of shift. Under the studio photo at the bedside, a new note reads 'door → nurses' station'."
+       }
+      ]
+     ],
+     "end": true
+    }
+   ]
+  }
+ ],
+ "ending": {
+  "title": {
+   "zh": "下班了",
+   "en": "End of shift"
+  },
+  "sub": {
+   "zh": "量兩次，切一次",
+   "en": "Measure twice, cut once"
+  },
+  "stats": [
+   "stages",
+   "grades",
+   "choices",
+   "calls",
+   "items",
+   "time"
+  ]
+ }
+}

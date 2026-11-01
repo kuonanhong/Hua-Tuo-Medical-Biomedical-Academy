@@ -1,0 +1,1530 @@
+{
+ "format": "huatuo-shift-v1",
+ "department": "neurology",
+ "title": {
+  "zh": "神經內科值班日",
+  "en": "A shift in neurology"
+ },
+ "tagline": {
+  "zh": "時間就是大腦，定位就是答案",
+  "en": "Time is brain; localisation is the answer"
+ },
+ "room": "ward",
+ "minutes": 25,
+ "roles": [
+  {
+   "id": "resident",
+   "zh": "神經內科住院醫師",
+   "en": "Neurology resident",
+   "desc": {
+    "zh": "病房、門診、中風小組的呼叫器都在你身上。你做神經學檢查、算分數、判讀影像、在時鐘前做決定。",
+    "en": "The ward, the clinic and the stroke pager are all yours. You examine, score, read the images and decide against the clock."
+   }
+  },
+  {
+   "id": "stroke-nurse",
+   "zh": "中風個管師",
+   "en": "Stroke nurse specialist",
+   "desc": {
+    "zh": "中風病人從急診到出院都認得你。你準備溶栓箱、算最後正常時間、追血壓、教家屬。",
+    "en": "Stroke patients know you from the ED to discharge. You prepare the thrombolysis box, pin down last known well, chase the blood pressure and teach the families."
+   }
+  }
+ ],
+ "cast": {
+  "attending": {
+   "name": {
+    "zh": "范主治",
+    "en": "Dr Fan"
+   },
+   "role": {
+    "zh": "神經內科主治醫師（師傅）",
+    "en": "Consultant neurologist (mentor)"
+   },
+   "tag": "ATT",
+   "color": "#81296d",
+   "about": {
+    "zh": "反射槌叫「小錘」，想事情的時候會拿它敲桌子。口頭禪：「先定位，再定性。」",
+    "en": "Her reflex hammer is called 'Little Hammer' and taps the desk when she thinks. Catchphrase: 'Where first, then what.'"
+   },
+   "body": "mentor"
+  },
+  "mei-ling": {
+   "name": {
+    "zh": "美玲",
+    "en": "Mei-Ling"
+   },
+   "role": {
+    "zh": "資深中風個管師",
+    "en": "Senior stroke nurse"
+   },
+   "tag": "SN",
+   "color": "#3b8f6a",
+   "about": {
+    "zh": "問「最後一次正常是幾點」問得比任何人都精準。家屬記不得，她會問早餐吃了什麼。",
+    "en": "Nobody pins down 'when was he last normal' more precisely. When the family cannot remember, she asks what was for breakfast."
+   },
+   "body": "nurse"
+  },
+  "mr-wu": {
+   "name": {
+    "zh": "吳伯",
+    "en": "Mr Wu"
+   },
+   "role": {
+    "zh": "病人：中風第三天",
+    "en": "Patient: stroke, day three"
+   },
+   "tag": "P1",
+   "color": "#c2453d",
+   "about": {
+    "zh": "七十一歲，左側無力入院，第三天。昨晚心電圖遙測抓到心房顫動。兒子問他還能不能開車。",
+    "en": "Seventy-one, admitted with left-sided weakness, day three. Telemetry caught atrial fibrillation overnight. His son asks whether he can still drive."
+   },
+   "body": "patient"
+  },
+  "son": {
+   "name": {
+    "zh": "吳先生",
+    "en": "Mr Wu junior"
+   },
+   "role": {
+    "zh": "吳伯的兒子",
+    "en": "Mr Wu's son"
+   },
+   "tag": "FAM",
+   "color": "#b8742c",
+   "about": {
+    "zh": "每天帶一本筆記本來，把醫師說的每一句話寫下來。",
+    "en": "Comes every day with a notebook and writes down everything the doctors say."
+   },
+   "body": "family"
+  },
+  "ms-lin": {
+   "name": {
+    "zh": "林老師",
+    "en": "Ms Lin"
+   },
+   "role": {
+    "zh": "門診：昨天說不出話十分鐘",
+    "en": "Clinic: ten minutes without words yesterday"
+   },
+   "tag": "P2",
+   "color": "#8a5a2b",
+   "about": {
+    "zh": "五十四歲國中老師。昨天上課時突然說不出話，十分鐘後恢復。上週左眼也暗過一分鐘。她想下週再來。",
+    "en": "Fifty-four, secondary-school teacher. Lost her words for ten minutes in class yesterday. Last week her left eye went dark for a minute. She would rather come back next week."
+   },
+   "body": "patient"
+  },
+  "a-chuan": {
+   "name": {
+    "zh": "阿川",
+    "en": "A-Chuan"
+   },
+   "role": {
+    "zh": "病人：中風小組呼叫",
+    "en": "Patient: stroke code"
+   },
+   "tag": "P3",
+   "color": "#6a8f3b",
+   "about": {
+    "zh": "四十八歲廚師，下午三點二十分還在切菜，三點半右手舉不起來、講不出話。同事叫了救護車。",
+    "en": "Forty-eight, a chef. Chopping vegetables at twenty past three; by half past he could not lift his right hand or speak. His colleague called the ambulance."
+   },
+   "body": "patient"
+  },
+  "er-doc": {
+   "name": {
+    "zh": "急診黃醫師",
+    "en": "Dr Huang (ER)"
+   },
+   "role": {
+    "zh": "急診醫師",
+    "en": "Emergency physician"
+   },
+   "tag": "ER",
+   "color": "#d9534f",
+   "about": {
+    "zh": "中風小組的呼叫從他開始。他一定先講最後正常時間。",
+    "en": "Every stroke code starts with him, and he always leads with last known well."
+   },
+   "phoneOnly": true
+  },
+  "night-nurse": {
+   "name": {
+    "zh": "阿琴",
+    "en": "A-Chin"
+   },
+   "role": {
+    "zh": "神經內科病房夜班護理師",
+    "en": "Neurology-ward night nurse"
+   },
+   "tag": "NN",
+   "color": "#4d6d8e",
+   "about": {
+    "zh": "夜班。溶栓後的病人她每十五分鐘看一次，頭痛兩個字她絕不放過。",
+    "en": "Night shift. Checks post-thrombolysis patients every fifteen minutes and never lets the word 'headache' pass."
+   },
+   "phoneOnly": true
+  }
+ },
+ "places": {
+  "board": {
+   "name": {
+    "zh": "病房白板",
+    "en": "Ward board"
+   },
+   "hot": "whiteboard"
+  },
+  "bed-wu": {
+   "name": {
+    "zh": "吳伯的床",
+    "en": "Mr Wu's bed"
+   },
+   "hot": "bed"
+  },
+  "telemetry": {
+   "name": {
+    "zh": "心電圖遙測站",
+    "en": "Telemetry station"
+   },
+   "hot": "monitor"
+  },
+  "clinic-desk": {
+   "name": {
+    "zh": "神經內科門診",
+    "en": "Neurology clinic"
+   },
+   "hot": "desk"
+  },
+  "viewer": {
+   "name": {
+    "zh": "影像工作站",
+    "en": "Imaging workstation"
+   },
+   "hot": "imaging"
+  },
+  "lysis-box": {
+   "name": {
+    "zh": "溶栓箱",
+    "en": "Thrombolysis box"
+   },
+   "hot": "drugs"
+  },
+  "angio": {
+   "name": {
+    "zh": "血管攝影室",
+    "en": "Angiography suite"
+   },
+   "hot": "carm"
+  },
+  "er-door": {
+   "name": {
+    "zh": "急診方向",
+    "en": "Towards the ED"
+   },
+   "hot": "door"
+  }
+ },
+ "glossary": [
+  {
+   "term": {
+    "zh": "先定位，再定性",
+    "en": "where first, then what"
+   },
+   "plain": {
+    "zh": "神經科的思考順序：先想病灶在神經系統的哪裡，再想它是什麼病。",
+    "en": "The neurologist's order of thinking: first where the lesion sits in the nervous system, then what disease it is."
+   }
+  },
+  {
+   "term": {
+    "zh": "最後正常時間",
+    "en": "last known well"
+   },
+   "plain": {
+    "zh": "病人最後一次被看到完全正常的時間。溶栓和取栓的時鐘從這裡開始。",
+    "en": "The last time the patient was seen completely normal. The thrombolysis and thrombectomy clocks start here."
+   }
+  },
+  {
+   "term": {
+    "zh": "NIHSS",
+    "en": "NIHSS"
+   },
+   "plain": {
+    "zh": "一套中風嚴重度的評分，從意識到語言到肢體一項一項打分。分數決定治療，也用來追蹤變化。",
+    "en": "A stroke-severity score graded item by item from consciousness to language to limbs. It guides treatment and tracks change."
+   }
+  },
+  {
+   "term": {
+    "zh": "溶栓",
+    "en": "thrombolysis"
+   },
+   "plain": {
+    "zh": "用藥把堵住腦血管的血塊溶掉。有時間窗，也有禁忌症，給了之後要密切監測。",
+    "en": "A drug that dissolves the clot blocking a brain artery. It has a time window and contraindications, and needs close monitoring afterwards."
+   }
+  },
+  {
+   "term": {
+    "zh": "取栓",
+    "en": "thrombectomy"
+   },
+   "plain": {
+    "zh": "從鼠蹊部的動脈放導管到腦部，把大血管裡的血塊直接拉出來。",
+    "en": "A catheter passed from the groin artery up to the brain to pull the clot out of a large vessel directly."
+   }
+  },
+  {
+   "term": {
+    "zh": "失語症",
+    "en": "aphasia"
+   },
+   "plain": {
+    "zh": "語言能力受損：說不出、聽不懂、或兩者都有。通常是左腦的問題。",
+    "en": "Impaired language: unable to speak, unable to understand, or both. Usually the left hemisphere."
+   }
+  },
+  {
+   "term": {
+    "zh": "旋前漂移",
+    "en": "pronator drift"
+   },
+   "plain": {
+    "zh": "閉眼平舉雙手，無力的那隻手會慢慢往內轉、往下掉。很敏感的輕微無力測試。",
+    "en": "Arms held out with eyes closed: the weak arm slowly turns inward and drifts down. A sensitive test for subtle weakness."
+   }
+  },
+  {
+   "term": {
+    "zh": "短暫性腦缺血發作",
+    "en": "transient ischaemic attack"
+   },
+   "plain": {
+    "zh": "腦部短暫缺血造成的症狀，完全恢復。它是警告：之後幾天中風的風險最高。",
+    "en": "Symptoms from a brief loss of blood supply to the brain that fully recover. A warning: the stroke risk is highest in the following days."
+   }
+  },
+  {
+   "term": {
+    "zh": "ABCD2",
+    "en": "ABCD2"
+   },
+   "plain": {
+    "zh": "年齡、血壓、症狀、持續時間、糖尿病加起來的分數，估計短暫性腦缺血發作後早期中風的風險。",
+    "en": "Age, blood pressure, clinical features, duration and diabetes added together to estimate the early stroke risk after a transient ischaemic attack."
+   }
+  },
+  {
+   "term": {
+    "zh": "心房顫動",
+    "en": "atrial fibrillation"
+   },
+   "plain": {
+    "zh": "心房不規則亂跳，血液容易在裡面結塊，塊掉出來就跑到腦部。中風後要找它。",
+    "en": "The upper chambers quiver irregularly, blood pools and clots, and a clot can travel to the brain. Look for it after every stroke."
+   }
+  },
+  {
+   "term": {
+    "zh": "出血性轉化",
+    "en": "haemorrhagic transformation"
+   },
+   "plain": {
+    "zh": "梗塞的腦組織裡出血。中風幾天後突然變差，要先想到它。",
+    "en": "Bleeding into the infarcted brain tissue. Sudden deterioration days after a stroke: think of this first."
+   }
+  },
+  {
+   "term": {
+    "zh": "眼底鏡",
+    "en": "ophthalmoscope"
+   },
+   "plain": {
+    "zh": "照進瞳孔看視網膜和視神經的小手電筒。看得到栓子、看得到腦壓。",
+    "en": "A small torch that looks through the pupil at the retina and optic nerve. It can show emboli and raised brain pressure."
+   }
+  },
+  {
+   "term": {
+    "zh": "頸動脈狹窄",
+    "en": "carotid stenosis"
+   },
+   "plain": {
+    "zh": "脖子上供應腦部的大動脈變窄。同側的短暫性腦缺血發作後，兩週內處理效益最高。",
+    "en": "Narrowing of the big neck artery that feeds the brain. After a transient attack on the same side, treating it within two weeks gives the most benefit."
+   }
+  },
+  {
+   "term": {
+    "zh": "中風小組",
+    "en": "stroke team"
+   },
+   "plain": {
+    "zh": "急診、神經科、放射科、檢驗一起啟動的流程：時鐘開始算，CT 優先。",
+    "en": "ED, neurology, radiology and the lab activated together: the clock starts and CT comes first."
+   }
+  }
+ ],
+ "codex": [
+  {
+   "id": "hammer",
+   "kind": "equipment",
+   "name": {
+    "zh": "反射槌",
+    "en": "Reflex hammer"
+   },
+   "text": {
+    "zh": "敲肌腱看反射。亢進、減弱、對稱不對稱，都是定位的線索。",
+    "en": "Taps a tendon to elicit a reflex. Brisk, reduced, symmetric or not: all localising clues."
+   },
+   "hot": "device"
+  },
+  {
+   "id": "ophthalmoscope",
+   "kind": "equipment",
+   "name": {
+    "zh": "眼底鏡",
+    "en": "Ophthalmoscope"
+   },
+   "text": {
+    "zh": "從顳側十五度進去找視盤。視網膜上的小亮點可能是從頸動脈掉下來的栓子。",
+    "en": "Come in from fifteen degrees temporal to find the disc. A bright fleck on the retina may be an embolus from the carotid."
+   },
+   "hot": "device"
+  },
+  {
+   "id": "telemetry",
+   "kind": "equipment",
+   "name": {
+    "zh": "心電圖遙測",
+    "en": "Telemetry"
+   },
+   "text": {
+    "zh": "中風病人身上貼著的小盒子。心房顫動常常只在半夜出現幾分鐘。",
+    "en": "The small box worn by stroke patients. Atrial fibrillation often appears for only a few minutes in the night."
+   },
+   "hot": "monitor"
+  },
+  {
+   "id": "viewer",
+   "kind": "equipment",
+   "name": {
+    "zh": "影像工作站",
+    "en": "Imaging workstation"
+   },
+   "text": {
+    "zh": "非顯影 CT 先排除出血，CTA 找大血管阻塞。先看哪一張，決定了時鐘。",
+    "en": "Non-contrast CT first to exclude bleeding, then CTA for a large-vessel occlusion. Which you look at first decides the clock."
+   },
+   "hot": "imaging"
+  },
+  {
+   "id": "nihss-sheet",
+   "kind": "item",
+   "name": {
+    "zh": "阿川的 NIHSS 評分表",
+    "en": "A-Chuan's NIHSS sheet"
+   },
+   "text": {
+    "zh": "你在急診一項一項打的分數。溶栓後每一次重打，都是跟這張比。",
+    "en": "The score you graded item by item in the ED. Every re-score after thrombolysis is compared with this sheet."
+   }
+  },
+  {
+   "id": "little-hammer",
+   "kind": "item",
+   "name": {
+    "zh": "范主治借你的小錘",
+    "en": "Dr Fan's Little Hammer, on loan"
+   },
+   "text": {
+    "zh": "她說：「今天借你。明天還我的時候，告訴我你用它定位了什麼。」",
+    "en": "She said: 'Yours for today. When you return it tomorrow, tell me what you localised with it.'"
+   }
+  },
+  {
+   "id": "time-brain",
+   "kind": "concept",
+   "name": {
+    "zh": "時間就是大腦",
+    "en": "Time is brain"
+   },
+   "text": {
+    "zh": "大血管阻塞的每一分鐘，都有數百萬個神經元在消失。流程的每一步都是為了那幾分鐘。",
+    "en": "Every minute of a large-vessel occlusion costs millions of neurons. Every step of the pathway exists for those minutes."
+   }
+  }
+ ],
+ "segs": [
+  {
+   "id": "handover",
+   "name": {
+    "zh": "晨間交班",
+    "en": "Morning handover"
+   },
+   "sub": {
+    "zh": "07:30 · 病房白板",
+    "en": "07:30 · ward board"
+   },
+   "t": 450,
+   "mood": "day",
+   "note": {
+    "zh": "交班完成",
+    "en": "Handover done"
+   },
+   "beats": [
+    {
+     "id": "h1",
+     "to": "place:board",
+     "guide": {
+      "zh": "到白板前交班",
+      "en": "Go to the board"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "白板：吳伯，中風第三天，遙測抓到心房顫動。十點門診有一位林老師，昨天說不出話十分鐘。",
+        "en": "Board: Mr Wu, stroke day three, telemetry caught atrial fibrillation. Clinic at ten: a Ms Lin, ten minutes without words yesterday."
+       }
+      ],
+      [
+       "mei-ling",
+       {
+        "zh": "早。溶栓箱我剛點過。中風小組的呼叫器在你口袋，電池是新的。",
+        "en": "Morning. I have just checked the thrombolysis box. The stroke pager is in your pocket; fresh battery."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "謝謝。希望今天用不到。",
+        "en": "Thanks. Here is hoping we do not need it today."
+       }
+      ],
+      [
+       "mei-ling",
+       {
+        "zh": "每個人都這樣說。",
+        "en": "Everyone says that."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "h2",
+     "to": "attending",
+     "guide": {
+      "zh": "找范主治",
+      "en": "Find Dr Fan"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "早。吳伯第三天了。查房你要帶什麼？",
+        "en": "Morning. Mr Wu is on day three. What do you take on the round?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "反射槌、眼底鏡，還有昨晚的遙測。",
+        "en": "Reflex hammer, ophthalmoscope, and last night's telemetry."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "小錘今天借你。先定位，再定性。回來告訴我你用它定位了什麼。",
+        "en": "Little Hammer is yours today. Where first, then what. Come back and tell me what you localised with it."
+       }
+      ]
+     ],
+     "item": "little-hammer"
+    },
+    {
+     "id": "h3",
+     "to": "place:lysis-box",
+     "guide": {
+      "zh": "點溶栓箱",
+      "en": "Check the thrombolysis box"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "藥、稀釋液、幫浦管路、禁忌症卡、NIHSS 評分表、血壓紀錄單。一樣都不能少。",
+        "en": "Drug, diluent, pump line, contraindication card, NIHSS sheets, blood-pressure chart. Nothing may be missing."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "find",
+      "hot": "drugs",
+      "q": {
+       "zh": "點選溶栓箱，完成清點。",
+       "en": "Tap the thrombolysis box to complete the check."
+      }
+     },
+     "roles": [
+      "stroke-nurse"
+     ]
+    },
+    {
+     "id": "h4",
+     "to": "place:telemetry",
+     "guide": {
+      "zh": "看吳伯的遙測",
+      "en": "Review Mr Wu's telemetry"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "凌晨三點，一段六分鐘不規則的心律。心房顫動。這改變了吳伯的二級預防。",
+        "en": "Three in the morning: six minutes of an irregular rhythm. Atrial fibrillation. That changes Mr Wu's secondary prevention."
+       }
+      ]
+     ],
+     "roles": [
+      "resident"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "round",
+   "name": {
+    "zh": "查房：吳伯",
+    "en": "Round: Mr Wu"
+   },
+   "sub": {
+    "zh": "08:00 · 吳伯的床",
+    "en": "08:00 · Mr Wu's bed"
+   },
+   "t": 480,
+   "mood": "day",
+   "note": {
+    "zh": "吳伯的檢查與二級預防計畫完成",
+    "en": "Mr Wu examined; prevention plan set"
+   },
+   "beats": [
+    {
+     "id": "r1",
+     "to": "mr-wu",
+     "guide": {
+      "zh": "神經學檢查：運動系統",
+      "en": "Neurological examination: motor"
+     },
+     "lines": [
+      [
+       "mr-wu",
+       {
+        "zh": "醫師，我的左手比昨天有力了。你看。",
+        "en": "Doctor, my left hand is stronger than yesterday. Look."
+       }
+      ],
+      [
+       "son",
+       {
+        "zh": "（翻開筆記本）昨天是三分，今天呢？",
+        "en": "(opening the notebook) Yesterday was a three. Today?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "我們一項一項來：張力、肌力、旋前漂移。",
+        "en": "One at a time: tone, power, pronator drift."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "neurology-neurological-examination",
+      "stage": 3
+     },
+     "post": [
+      [
+       "me",
+       {
+        "zh": "左側旋前漂移還在，但肌力進步。反射左邊比右邊活躍。上運動神經元的型態，右側大腦。",
+        "en": "Left pronator drift persists but power has improved. Reflexes brisker on the left. Upper-motor-neurone pattern, right hemisphere."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "定位對了。小錘沒白借。",
+        "en": "Localisation correct. Little Hammer was not lent in vain."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "r2",
+     "to": "attending",
+     "guide": {
+      "zh": "心房顫動：抗凝的時機",
+      "en": "Atrial fibrillation: when to anticoagulate"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "遙測抓到心房顫動了。二級預防怎麼改？什麼時候開始？",
+        "en": "Telemetry caught atrial fibrillation. How does secondary prevention change, and when does it start?"
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "neurology-stroke-secondary-prevention",
+      "stage": 2
+     },
+     "post": [
+      [
+       "son",
+       {
+        "zh": "那他還能開車嗎？",
+        "en": "So can he still drive?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "吳先生，中風後有一段時間不能開車，之後要重新評估。我把規定寫給你。",
+        "en": "Mr Wu, after a stroke there is a period with no driving, then a reassessment. I will write the rules down for you."
+       }
+      ],
+      [
+       "son",
+       {
+        "zh": "（寫）不能開車……重新評估……",
+        "en": "(writing) No driving... reassessment..."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "clinic",
+   "name": {
+    "zh": "門診：林老師",
+    "en": "Clinic: Ms Lin"
+   },
+   "sub": {
+    "zh": "10:00 · 神經內科門診",
+    "en": "10:00 · neurology clinic"
+   },
+   "t": 600,
+   "mood": "day",
+   "note": {
+    "zh": "林老師的風險分層完成",
+    "en": "Ms Lin risk-stratified"
+   },
+   "beats": [
+    {
+     "id": "k1",
+     "to": "ms-lin",
+     "guide": {
+      "zh": "請林老師坐下",
+      "en": "Ask Ms Lin to sit"
+     },
+     "lines": [
+      [
+       "ms-lin",
+       {
+        "zh": "醫師，就十分鐘，講不出話，然後就好了。我今天下午有課，可以下週再來嗎？",
+        "en": "Doctor, it was only ten minutes without words and then it passed. I teach this afternoon; can I come back next week?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "林老師，完全恢復的症狀叫短暫性腦缺血發作。它是警告。我先算一個分數。",
+        "en": "Ms Lin, symptoms that fully recover are called a transient ischaemic attack. It is a warning. Let me work out a score first."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "neurology-tia-abcd2",
+      "stage": 2
+     },
+     "post": [
+      [
+       "me",
+       {
+        "zh": "ABCD2 分數高。還有上週左眼暗了一分鐘。這兩件事可能是同一條血管。",
+        "en": "High ABCD2 score. And last week's minute of darkness in the left eye. Those two may be the same artery."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "k2",
+     "to": "ms-lin",
+     "guide": {
+      "zh": "眼底鏡",
+      "en": "Ophthalmoscopy"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "左眼暗過一分鐘。拿眼底鏡，從顳側十五度進去，找視盤，然後看血管。",
+        "en": "A minute of darkness in the left eye. Ophthalmoscope, in from fifteen degrees temporal, find the disc, then follow the vessels."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "drill",
+      "template": "neurology",
+      "drill": "fundus"
+     },
+     "post": [
+      [
+       "me",
+       {
+        "zh": "視網膜動脈分叉處有一個亮亮的小斑點。像是栓子。",
+        "en": "A bright fleck at a branch of a retinal artery. It looks like an embolus."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "那就是定位：左側頸動脈。",
+        "en": "There is your localisation: the left carotid."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "k3",
+     "to": "attending",
+     "guide": {
+      "zh": "今天還是下週？",
+      "en": "Today or next week?"
+     },
+     "lines": [
+      [
+       "ms-lin",
+       {
+        "zh": "所以……我可以下週再來做檢查嗎？",
+        "en": "So... can I come back next week for the tests?"
+       }
+      ]
+     ],
+     "mini": {
+      "type": "choice",
+      "q": {
+       "zh": "ABCD2 分數高、眼底疑似栓子。你怎麼安排？",
+       "en": "High ABCD2 score and a probable retinal embolus. What do you arrange?"
+      },
+      "options": [
+       {
+        "zh": "今天做完：頸動脈影像、腦部影像、心律、立即抗血小板",
+        "en": "Today: carotid and brain imaging, rhythm, antiplatelet now",
+        "ok": true,
+        "why": {
+         "zh": "短暫性腦缺血發作後的幾天風險最高。高分的人要在二十四小時內完成評估。",
+         "en": "The days after a transient ischaemic attack carry the highest risk. High scorers are worked up within twenty-four hours."
+        },
+        "set": {
+         "lin": "today"
+        }
+       },
+       {
+        "zh": "開藥，下週門診安排檢查",
+        "en": "Start medication; book tests for next week's clinic",
+        "ok": false,
+        "why": {
+         "zh": "下週可能太晚。美玲會在中午打電話把她叫回來。",
+         "en": "Next week may be too late. Mei-Ling will phone her back at noon."
+        },
+        "set": {
+         "lin": "nextweek"
+        }
+       },
+       {
+        "zh": "直接收住院觀察一週",
+        "en": "Admit for a week of observation",
+        "ok": false,
+        "why": {
+         "zh": "住院不是重點，檢查的速度才是。今天做完，多半可以回家。",
+         "en": "Admission is not the point; the speed of the work-up is. Done today, most can go home."
+        },
+        "set": {
+         "lin": "today"
+        }
+       }
+      ]
+     }
+    },
+    {
+     "id": "k4",
+     "to": "place:viewer",
+     "guide": {
+      "zh": "為什麼急著看頸動脈？",
+      "en": "Why the carotid, urgently?"
+     },
+     "ring": {
+      "title": {
+       "zh": "放射科訊息",
+       "en": "Message from radiology"
+      },
+      "sub": {
+       "zh": "頸動脈檢查可排今天下午兩點",
+       "en": "Carotid imaging slot available at two this afternoon"
+      },
+      "call": false
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "為什麼頸動脈的檢查不能等？用影像說給我聽。",
+        "en": "Why can the carotid work-up not wait? Tell me with the images."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "imaging",
+      "region": "neck",
+      "question": {
+       "zh": "同側短暫性腦缺血發作後，為什麼頸動脈狹窄要盡快找出來？",
+       "en": "After a same-side transient ischaemic attack, why find a carotid stenosis quickly?"
+      },
+      "answer": {
+       "zh": "因為它是可以處理的病因。嚴重的同側頸動脈狹窄，在症狀後兩週內處理，預防中風的效益最高。",
+       "en": "Because it is a treatable cause. A severe same-side carotid stenosis treated within two weeks of symptoms gives the greatest stroke prevention."
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "deterioration",
+   "name": {
+    "zh": "吳伯變嗜睡",
+    "en": "Mr Wu is drowsy"
+   },
+   "sub": {
+    "zh": "12:30 · 吳伯的床",
+    "en": "12:30 · Mr Wu's bed"
+   },
+   "t": 750,
+   "mood": "day",
+   "note": {
+    "zh": "吳伯的惡化處理完成",
+    "en": "Mr Wu's deterioration managed"
+   },
+   "beats": [
+    {
+     "id": "d1",
+     "to": "mr-wu",
+     "guide": {
+      "zh": "兒子說爸爸怪怪的",
+      "en": "His son says something is wrong"
+     },
+     "lines": [
+      [
+       "son",
+       {
+        "zh": "醫師，我爸早上還很好，現在叫他要叫好幾次。左手好像又不動了。",
+        "en": "Doctor, Dad was fine this morning; now it takes several calls to rouse him. The left hand is not moving again."
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "吳伯睜眼很慢。左側旋前漂移比早上明顯得多。血壓很高。",
+        "en": "Mr Wu opens his eyes slowly. The left pronator drift is far worse than this morning. The blood pressure is very high."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "vitals",
+      "event": "hypertension",
+      "options": [
+       {
+        "zh": "重新檢查、血糖、緊急頭部 CT、暫停抗血栓",
+        "en": "Re-examine, glucose, urgent head CT, hold antithrombotics",
+        "ok": true,
+        "why": {
+         "zh": "中風幾天後突然變差：先想出血性轉化或腦水腫。CT 之前不要再給抗血栓藥。",
+         "en": "Sudden decline days after a stroke: think haemorrhagic transformation or oedema first. No more antithrombotics before the CT."
+        }
+       },
+       {
+        "zh": "血壓高，先把血壓快速壓下來",
+        "en": "The pressure is high; bring it down fast",
+        "ok": false,
+        "why": {
+         "zh": "原因不明之前快速降壓可能讓梗塞周圍更缺血。先 CT，血壓依醫囑。",
+         "en": "Dropping the pressure fast before you know the cause can starve the tissue around the infarct. CT first; pressure per protocol."
+        }
+       },
+       {
+        "zh": "他只是累了，下午再看",
+        "en": "He is just tired; review this afternoon",
+        "ok": false,
+        "why": {
+         "zh": "新的無力加嗜睡不是累。這是中風病房最不能等的事。",
+         "en": "New weakness with drowsiness is not tiredness. It is the one thing a stroke ward never waits on."
+        }
+       }
+      ]
+     },
+     "post": [
+      [
+       "attending",
+       {
+        "zh": "CT：梗塞區內有出血性轉化，中線稍微偏移。抗血栓暫停，神經外科會診，密切觀察。",
+        "en": "CT: haemorrhagic transformation within the infarct, slight midline shift. Antithrombotics held, neurosurgery consulted, close observation."
+       }
+      ],
+      [
+       "son",
+       {
+        "zh": "（筆停住了）……會好嗎？",
+        "en": "(the pen stops) ...Will he be all right?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "吳先生，接下來二十四小時很關鍵。我們每一小時看他一次，有變化馬上告訴你。",
+        "en": "Mr Wu, the next twenty-four hours matter most. We check him hourly and tell you the moment anything changes."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "d2",
+     "to": "place:telemetry",
+     "guide": {
+      "zh": "開醫囑與會診單",
+      "en": "Orders and the referral"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "你開立：每小時意識與瞳孔、血壓依醫囑、抗血栓暫停、神經外科會診、明早追蹤 CT。每一行都寫上時間。",
+        "en": "You order: hourly consciousness and pupils, pressure per protocol, antithrombotics held, neurosurgical consult, repeat CT in the morning. Every line carries a time."
+       }
+      ]
+     ],
+     "roles": [
+      "resident"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "afternoon",
+   "name": {
+    "zh": "下午：林老師的結果",
+    "en": "Afternoon: Ms Lin's results"
+   },
+   "sub": {
+    "zh": "14:00 · 影像工作站",
+    "en": "14:00 · imaging workstation"
+   },
+   "t": 840,
+   "mood": "day",
+   "note": {
+    "zh": "林老師的頸動脈結果與轉介完成",
+    "en": "Ms Lin's carotid result and referral done"
+   },
+   "beats": [
+    {
+     "id": "a1",
+     "to": "place:viewer",
+     "guide": {
+      "zh": "看頸動脈影像",
+      "en": "Look at the carotid imaging"
+     },
+     "lines": [
+      [
+       "mei-ling",
+       {
+        "zh": "林老師中午被我叫回來了。她下課後直接過來，頸動脈影像剛做完。",
+        "en": "I phoned Ms Lin back at noon. She came straight after her lesson; the carotid imaging has just finished."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "左側頸動脈嚴重狹窄。如果等到下週，我們可能是在急診見她。",
+        "en": "Severe left carotid stenosis. If we had waited until next week, we might have met her in the ED."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "……謝謝美玲。我記住了。",
+        "en": "...Thank you, Mei-Ling. Lesson learned."
+       }
+      ]
+     ],
+     "when": {
+      "flag": "lin",
+      "is": "nextweek"
+     }
+    },
+    {
+     "id": "a1b",
+     "to": "place:viewer",
+     "guide": {
+      "zh": "看頸動脈影像",
+      "en": "Look at the carotid imaging"
+     },
+     "lines": [
+      [
+       "mei-ling",
+       {
+        "zh": "林老師的頸動脈影像做完了。",
+        "en": "Ms Lin's carotid imaging is done."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "左側頸動脈嚴重狹窄。今天做完是對的。血管外科兩週內處理。",
+        "en": "Severe left carotid stenosis. Doing it today was right. Vascular surgery within two weeks."
+       }
+      ]
+     ],
+     "when": {
+      "flag": "lin",
+      "is": "today"
+     }
+    },
+    {
+     "id": "a2",
+     "to": "ms-lin",
+     "guide": {
+      "zh": "告訴林老師",
+      "en": "Tell Ms Lin"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "林老師，找到原因了：左邊脖子的血管窄了。這是好消息，因為它可以處理。",
+        "en": "Ms Lin, we found the cause: the artery on the left side of your neck is narrowed. That is good news, because it can be treated."
+       }
+      ],
+      [
+       "ms-lin",
+       {
+        "zh": "……我下午的課，請假了。",
+        "en": "...I cancelled this afternoon's lesson."
+       }
+      ],
+      [
+       "mei-ling",
+       {
+        "zh": "學生會原諒你。藥今天開始吃，血管外科的門診我幫你排了。",
+        "en": "Your students will forgive you. Medication starts today, and I have booked vascular surgery for you."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "stroke-code",
+   "name": {
+    "zh": "中風小組呼叫",
+    "en": "Stroke code"
+   },
+   "sub": {
+    "zh": "16:00 · 急診方向",
+    "en": "16:00 · towards the ED"
+   },
+   "t": 960,
+   "mood": "day",
+   "note": {
+    "zh": "阿川溶栓並轉取栓",
+    "en": "A-Chuan thrombolysed and taken for thrombectomy"
+   },
+   "beats": [
+    {
+     "id": "c1",
+     "ring": {
+      "title": {
+       "zh": "中風小組呼叫",
+       "en": "Stroke code"
+      },
+      "sub": {
+       "zh": "四十八歲男性，失語加右側無力",
+       "en": "Forty-eight-year-old man, aphasia and right-sided weakness"
+      },
+      "call": true,
+      "from": "er-doc"
+     },
+     "lines": [
+      [
+       "er-doc",
+       {
+        "zh": "神經內科嗎？中風小組啟動。四十八歲男性，最後正常時間十五點二十，失語、右側無力。血糖正常。五分鐘到。",
+        "en": "Neurology? Stroke team activation. Forty-eight-year-old man, last known well fifteen-twenty, aphasia and right-sided weakness. Glucose normal. Five minutes."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "收到。CT 空出來，溶栓箱帶下去。美玲，跟我走。",
+        "en": "Received. Clear the CT; thrombolysis box coming down. Mei-Ling, with me."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "c2",
+     "to": "place:er-door",
+     "guide": {
+      "zh": "到急診：順序",
+      "en": "To the ED: the order"
+     },
+     "lines": [
+      [
+       "mei-ling",
+       {
+        "zh": "電梯裡把順序講一遍。到了就不用想。",
+        "en": "Run through the order in the lift. Then there is nothing to think about when we arrive."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "order",
+      "q": {
+       "zh": "急性中風到院後的順序？",
+       "en": "Order the acute-stroke steps on arrival."
+      },
+      "steps": [
+       {
+        "zh": "確認最後正常時間與血糖",
+        "en": "Confirm last known well and glucose"
+       },
+       {
+        "zh": "NIHSS 評分",
+        "en": "NIHSS score"
+       },
+       {
+        "zh": "非顯影 CT 排除出血",
+        "en": "Non-contrast CT to exclude bleeding"
+       },
+       {
+        "zh": "溶栓判定與禁忌症",
+        "en": "Thrombolysis decision and contraindications"
+       },
+       {
+        "zh": "CTA 找大血管阻塞，取栓轉介",
+        "en": "CTA for a large-vessel occlusion; thrombectomy referral"
+       }
+      ]
+     }
+    },
+    {
+     "id": "c3",
+     "to": "a-chuan",
+     "guide": {
+      "zh": "NIHSS",
+      "en": "NIHSS"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "阿川躺在急診的床上，眼睛看著你，嘴巴動了卻沒有聲音。右手垂在床邊。",
+        "en": "A-Chuan lies on the ED trolley, eyes on you, mouth moving without sound. His right arm hangs off the bed."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "阿川，我是神經內科。失語症的時候你不用說話，點頭就好。",
+        "en": "A-Chuan, neurology. With aphasia you do not need to speak; just nod."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "neurology-acute-stroke-pathway",
+      "stage": 2
+     },
+     "post": [
+      [
+       "attending",
+       {
+        "zh": "分數高、失語、右側無力。定位：左大腦中動脈。CT 沒有出血。溶栓依醫囑，CTA 現在。",
+        "en": "High score, aphasia, right-sided weakness. Localisation: left middle cerebral artery. CT shows no bleeding. Thrombolysis per protocol; CTA now."
+       }
+      ]
+     ],
+     "item": "nihss-sheet",
+     "t": 970
+    },
+    {
+     "id": "c4",
+     "to": "place:angio",
+     "guide": {
+      "zh": "血管攝影室：取栓",
+      "en": "Angiography suite: thrombectomy"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "CTA：左側 M1 阻塞。大血管，取栓。導絲從頸內動脈進去，越過血栓。你來扶，我在你手上。",
+        "en": "CTA: left M1 occlusion. Large vessel, thrombectomy. Wire from the internal carotid, across the clot. Your hands; mine on top."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "drill",
+      "template": "neurology",
+      "drill": "wire:neuro"
+     },
+     "post": [
+      [
+       "sys",
+       {
+        "zh": "血栓出來了，血流回來了。幾分鐘後阿川的右手動了一下，然後他說：「……菜。」",
+        "en": "The clot comes out; flow returns. Minutes later A-Chuan's right hand twitches, and he says: '...Vegetables.'"
+       }
+      ],
+      [
+       "mei-ling",
+       {
+        "zh": "時間記下來：從門口到再灌注。",
+        "en": "Time noted: door to reperfusion."
+       }
+      ]
+     ],
+     "t": 1000
+    },
+    {
+     "id": "c5",
+     "to": "a-chuan",
+     "guide": {
+      "zh": "跟同事說明溶栓後注意事項",
+      "en": "Brief his colleague on what to watch"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "阿川的同事在門外。你用最簡單的話說：今晚每十五分鐘會有人看他；頭痛、嘔吐、更嗜睡，都要馬上按鈴。",
+        "en": "A-Chuan's colleague waits outside. You keep it simple: someone will check him every fifteen minutes tonight; headache, vomiting or more drowsiness means press the bell at once."
+       }
+      ]
+     ],
+     "roles": [
+      "stroke-nurse"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "evening",
+   "name": {
+    "zh": "傍晚交班",
+    "en": "Evening handover"
+   },
+   "sub": {
+    "zh": "18:00 · 病房白板",
+    "en": "18:00 · ward board"
+   },
+   "t": 1080,
+   "mood": "eve",
+   "note": {
+    "zh": "交班給夜班",
+    "en": "Handed over to the night team"
+   },
+   "beats": [
+    {
+     "id": "v1",
+     "to": "place:board",
+     "guide": {
+      "zh": "交班給夜班",
+      "en": "Hand over to the night team"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "吳伯：出血性轉化，抗血栓暫停，每小時神經學檢查，神經外科追蹤。",
+        "en": "Mr Wu: haemorrhagic transformation, antithrombotics held, hourly neuro checks, neurosurgery following."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "阿川：溶栓加取栓，再灌注成功。溶栓後監測依流程，頭痛、嘔吐、意識變化要立刻 CT。",
+        "en": "A-Chuan: thrombolysis plus thrombectomy, successful reperfusion. Post-thrombolysis monitoring per pathway; headache, vomiting or altered consciousness means immediate CT."
+       }
+      ],
+      [
+       "mei-ling",
+       {
+        "zh": "林老師明天回來看血管外科。她說要帶學生寫的卡片。",
+        "en": "Ms Lin is back tomorrow for vascular surgery. She says she is bringing a card her students wrote."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "v2",
+     "to": "attending",
+     "guide": {
+      "zh": "還小錘",
+      "en": "Return Little Hammer"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "小錘還我。今天你用它定位了什麼？",
+        "en": "Little Hammer back, please. What did you localise with it today?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "吳伯的右大腦、林老師的左頸動脈、阿川的左大腦中動脈。",
+        "en": "Mr Wu's right hemisphere, Ms Lin's left carotid, A-Chuan's left middle cerebral artery."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "三個定位，三個不同的答案。先定位，再定性。回家吧。",
+        "en": "Three localisations, three different answers. Where first, then what. Go home."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "night",
+   "name": {
+    "zh": "夜間值班",
+    "en": "Night on call"
+   },
+   "sub": {
+    "zh": "21:30 · 值班室電話",
+    "en": "21:30 · on-call phone"
+   },
+   "t": 1290,
+   "mood": "night",
+   "note": {
+    "zh": "溶栓後夜間監測處理完成",
+    "en": "Post-thrombolysis night call handled"
+   },
+   "beats": [
+    {
+     "id": "x1",
+     "ring": {
+      "title": {
+       "zh": "病房來電",
+       "en": "Ward calling"
+      },
+      "sub": {
+       "zh": "阿川說頭痛",
+       "en": "A-Chuan says he has a headache"
+      },
+      "call": true,
+      "from": "night-nurse"
+     },
+     "lines": [
+      [
+       "night-nurse",
+       {
+        "zh": "醫師，阿川說頭痛，血壓比傍晚高。NIHSS 我重打了，跟傍晚一樣。沒有嘔吐。",
+        "en": "Doctor, A-Chuan says he has a headache and his pressure is higher than this evening. I re-scored the NIHSS: unchanged. No vomiting."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "謝謝你有重打分數。溶栓後的頭痛，我們照流程走。",
+        "en": "Thank you for re-scoring. Headache after thrombolysis: we follow the pathway."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "neurology-acute-stroke-pathway",
+      "stage": 8
+     },
+     "post": [
+      [
+       "night-nurse",
+       {
+        "zh": "好，血壓依醫囑，CT 排了，十五分鐘一次我繼續。",
+        "en": "Right, pressure per protocol, CT booked, I keep going every fifteen minutes."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "x2",
+     "to": "place:viewer",
+     "guide": {
+      "zh": "CT 回來了",
+      "en": "The CT is back"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "CT：沒有出血。阿川的頭痛在血壓處理後緩解。他用右手比了一個「讚」。",
+        "en": "CT: no bleeding. A-Chuan's headache settles once the pressure is managed. He gives a thumbs-up with his right hand."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "（訊息）阿琴說你沒有只開止痛藥，先重打分數、先 CT。這就是神經科。晚安，小錘明天再借你。",
+        "en": "(message) A-Chin says you did not just prescribe a painkiller; you re-scored and scanned first. That is neurology. Good night; Little Hammer is yours again tomorrow."
+       }
+      ]
+     ],
+     "t": 1330,
+     "end": true
+    }
+   ]
+  }
+ ],
+ "ending": {
+  "title": {
+   "zh": "下班了",
+   "en": "End of shift"
+  },
+  "sub": {
+   "zh": "一支小錘、一張評分表、一條打通的血管",
+   "en": "A little hammer, a score sheet and a reopened artery"
+  },
+  "stats": [
+   "stages",
+   "drills",
+   "choices",
+   "calls",
+   "items",
+   "time"
+  ]
+ }
+}

@@ -1,0 +1,1596 @@
+{
+ "format": "huatuo-shift-v1",
+ "department": "emergency",
+ "title": {
+  "zh": "急診值班日",
+  "en": "A shift in the emergency department"
+ },
+ "tagline": {
+  "zh": "從檢傷台到急救區，每一分鐘都在排序",
+  "en": "From triage to resus, every minute is a sorting problem"
+ },
+ "room": "er",
+ "minutes": 25,
+ "roles": [
+  {
+   "id": "resident",
+   "zh": "急診住院醫師",
+   "en": "Emergency resident",
+   "desc": {
+    "zh": "同時看四個病人、接一通救護車電話、回答一個家屬。你排序、你決定、你交班。",
+    "en": "Four patients at once, one ambulance call, one relative's question. You sort, you decide, you hand over."
+   }
+  },
+  {
+   "id": "triage-nurse",
+   "zh": "檢傷護理師",
+   "en": "Triage nurse",
+   "desc": {
+    "zh": "急診的第一道門。誰先看、誰可以等，你三十秒內決定。安靜的病人最需要你。",
+    "en": "The first door of the department. Who goes first and who can wait: you decide in thirty seconds. The quiet patients need you most."
+   }
+  }
+ ],
+ "cast": {
+  "attending": {
+   "name": {
+    "zh": "羅主治",
+    "en": "Dr Lo"
+   },
+   "role": {
+    "zh": "急診主治醫師（師傅）",
+    "en": "Emergency consultant (mentor)"
+   },
+   "tag": "ATT",
+   "color": "#81296d",
+   "about": {
+    "zh": "永遠很冷靜，手上永遠有一個沒吃完的三明治。口頭禪：「最壞的可能是什麼？」",
+    "en": "Always calm, always holding a sandwich she never finishes. Catchphrase: 'What is the worst thing this could be?'"
+   },
+   "body": "mentor"
+  },
+  "charge": {
+   "name": {
+    "zh": "阿嬌",
+    "en": "A-Chiao"
+   },
+   "role": {
+    "zh": "急診護理長",
+    "en": "Charge nurse"
+   },
+   "tag": "CN",
+   "color": "#3b8f6a",
+   "about": {
+    "zh": "急救區是她的。病人還沒進門，床、監視器、急救車已經就位。",
+    "en": "Resus is hers. Before the patient is through the door the bed, monitor and crash cart are ready."
+   },
+   "body": "nurse"
+  },
+  "grandma-lin": {
+   "name": {
+    "zh": "林阿嬤",
+    "en": "Grandma Lin"
+   },
+   "role": {
+    "zh": "病人：安養院，發燒",
+    "en": "Patient: care home, fever"
+   },
+   "tag": "P1",
+   "color": "#c2453d",
+   "about": {
+    "zh": "八十二歲，從安養院送來。不喊痛、不吵鬧，只是「比平常安靜」。這是最危險的一種安靜。",
+    "en": "Eighty-two, sent in from a care home. Not complaining, not restless, just 'quieter than usual'. The most dangerous kind of quiet."
+   },
+   "body": "patient"
+  },
+  "mr-chiang": {
+   "name": {
+    "zh": "阿強",
+    "en": "Mr Chiang"
+   },
+   "role": {
+    "zh": "病人：胸痛已緩解",
+    "en": "Patient: chest pain, now settled"
+   },
+   "tag": "P2",
+   "color": "#b8742c",
+   "about": {
+    "zh": "五十二歲貨車司機，胸口悶了二十分鐘，在候診區就不痛了。現在只想回去開車。",
+    "en": "Fifty-two, lorry driver, twenty minutes of chest tightness that eased in the waiting room. Now he just wants to get back on the road."
+   },
+   "body": "patient"
+  },
+  "mr-wu": {
+   "name": {
+    "zh": "吳先生",
+    "en": "Mr Wu"
+   },
+   "role": {
+    "zh": "病人：突然口齒不清",
+    "en": "Patient: sudden slurred speech"
+   },
+   "tag": "P3",
+   "color": "#8a5a2b",
+   "about": {
+    "zh": "六十八歲，早餐時太太發現他講話含糊、右手拿不住筷子。救護車十分鐘後到。",
+    "en": "Sixty-eight. At breakfast his wife noticed slurred speech and chopsticks slipping from his right hand. Ambulance ten minutes out."
+   },
+   "body": "patient"
+  },
+  "hsiao-ching": {
+   "name": {
+    "zh": "小晴",
+    "en": "Hsiao-Ching"
+   },
+   "role": {
+    "zh": "病人：餐後喘鳴",
+    "en": "Patient: wheeze after a meal"
+   },
+   "tag": "P4",
+   "color": "#6a8f3b",
+   "about": {
+    "zh": "二十四歲，午餐吃了朋友帶的點心，嘴唇發麻、起疹子、呼吸有聲音。她說「應該沒事吧」。",
+    "en": "Twenty-four. Ate a friend's home-made snack at lunch; tingling lips, a rash, noisy breathing. She says 'it is probably nothing'."
+   },
+   "body": "patient"
+  },
+  "paramedic": {
+   "name": {
+    "zh": "救護員小高",
+    "en": "Paramedic Kao"
+   },
+   "role": {
+    "zh": "救護員",
+    "en": "Paramedic"
+   },
+   "tag": "EMS",
+   "color": "#d9534f",
+   "about": {
+    "zh": "到院前通報一句話講完：年齡、主訴、生命徵象、預計到達。",
+    "en": "Pre-hospital notification in one breath: age, complaint, vitals, ETA."
+   },
+   "phoneOnly": true
+  },
+  "care-home": {
+   "name": {
+    "zh": "安養院護理師",
+    "en": "Care-home nurse"
+   },
+   "role": {
+    "zh": "安養院護理師",
+    "en": "Care-home nurse"
+   },
+   "tag": "CH",
+   "color": "#4d6d8e",
+   "about": {
+    "zh": "照顧林阿嬤三年。她說「比平常安靜」的時候，是在告訴你一件很重要的事。",
+    "en": "Has looked after Grandma Lin for three years. When she says 'quieter than usual' she is telling you something important."
+   },
+   "phoneOnly": true
+  }
+ },
+ "places": {
+  "board": {
+   "name": {
+    "zh": "交班板",
+    "en": "Handover board"
+   },
+   "hot": "whiteboard"
+  },
+  "triage": {
+   "name": {
+    "zh": "檢傷台",
+    "en": "Triage desk"
+   },
+   "hot": "desk"
+  },
+  "resus": {
+   "name": {
+    "zh": "急救區",
+    "en": "Resus bay"
+   },
+   "hot": "field"
+  },
+  "monitor": {
+   "name": {
+    "zh": "監視器",
+    "en": "Monitor"
+   },
+   "hot": "monitor"
+  },
+  "ecg": {
+   "name": {
+    "zh": "心電圖機",
+    "en": "ECG machine"
+   },
+   "hot": "device"
+  },
+  "cart": {
+   "name": {
+    "zh": "急救車",
+    "en": "Crash cart"
+   },
+   "hot": "crash-cart"
+  },
+  "scan": {
+   "name": {
+    "zh": "超音波機",
+    "en": "Ultrasound machine"
+   },
+   "hot": "ultrasound"
+  },
+  "viewer": {
+   "name": {
+    "zh": "影像工作站",
+    "en": "Imaging workstation"
+   },
+   "hot": "imaging"
+  },
+  "waiting": {
+   "name": {
+    "zh": "候診區入口",
+    "en": "Waiting-room entrance"
+   },
+   "hot": "door"
+  }
+ },
+ "glossary": [
+  {
+   "term": {
+    "zh": "檢傷分類",
+    "en": "triage"
+   },
+   "plain": {
+    "zh": "把每一位到急診的人依嚴重程度分級，決定誰先看。不是先到先看。",
+    "en": "Sorting everyone who arrives by how sick they are, to decide who is seen first. Not first come, first served."
+   }
+  },
+  {
+   "term": {
+    "zh": "敗血症",
+    "en": "sepsis"
+   },
+   "plain": {
+    "zh": "身體對感染的反應失控，開始傷害自己的器官。老人常常不發高燒，只是變安靜、變迷糊。",
+    "en": "The body's response to infection running out of control and damaging its own organs. The elderly often have no high fever, just quietness and confusion."
+   }
+  },
+  {
+   "term": {
+    "zh": "乳酸",
+    "en": "lactate"
+   },
+   "plain": {
+    "zh": "組織缺氧時產生的物質。抽血看乳酸，是看器官有沒有在「喘不過氣」。",
+    "en": "A substance produced when tissues lack oxygen. A blood lactate shows whether the organs are 'suffocating'."
+   }
+  },
+  {
+   "term": {
+    "zh": "血液培養",
+    "en": "blood culture"
+   },
+   "plain": {
+    "zh": "抽血放進培養瓶，讓細菌長出來。要在抗生素之前抽，否則長不出來。",
+    "en": "Blood placed in culture bottles so bacteria can grow. Taken before antibiotics, or nothing grows."
+   }
+  },
+  {
+   "term": {
+    "zh": "十二導程心電圖",
+    "en": "12-lead ECG"
+   },
+   "plain": {
+    "zh": "十個電極、十二個角度看心臟的電活動。胸痛病人十分鐘內要有一張。",
+    "en": "Ten electrodes, twelve views of the heart's electrical activity. Every chest-pain patient needs one within ten minutes."
+   }
+  },
+  {
+   "term": {
+    "zh": "肌鈣蛋白",
+    "en": "troponin"
+   },
+   "plain": {
+    "zh": "心肌受傷時漏到血液裡的蛋白質。要抽兩次比較變化，一次正常不代表沒事。",
+    "en": "A protein that leaks into the blood when heart muscle is injured. Measured twice to see the trend; one normal value does not clear anyone."
+   }
+  },
+  {
+   "term": {
+    "zh": "最後正常時間",
+    "en": "last known well"
+   },
+   "plain": {
+    "zh": "病人最後一次被看到完全正常的時間。中風治療的時鐘從那一刻開始算，不是從發現的時候。",
+    "en": "The last time the patient was seen completely normal. The stroke clock starts there, not when the symptoms were noticed."
+   }
+  },
+  {
+   "term": {
+    "zh": "中風小組",
+    "en": "stroke team"
+   },
+   "plain": {
+    "zh": "神經科、放射科、檢驗和急診一起啟動的流程：CT 優先、血糖先測、時間一直算。",
+    "en": "Neurology, radiology, the lab and the ED activated together: CT first, glucose checked, the clock always running."
+   }
+  },
+  {
+   "term": {
+    "zh": "過敏性休克",
+    "en": "anaphylaxis"
+   },
+   "plain": {
+    "zh": "嚴重的全身過敏反應：皮膚、呼吸道、循環同時出事。第一線治療是肌肉注射腎上腺素。",
+    "en": "A severe whole-body allergic reaction hitting skin, airway and circulation at once. First-line treatment is intramuscular adrenaline."
+   }
+  },
+  {
+   "term": {
+    "zh": "雙相反應",
+    "en": "biphasic reaction"
+   },
+   "plain": {
+    "zh": "過敏性休克好了幾小時後再發作一次。所以治療後不能馬上回家。",
+    "en": "Anaphylaxis that comes back hours after it settled. The reason nobody goes home straight after treatment."
+   }
+  },
+  {
+   "term": {
+    "zh": "胸外按壓",
+    "en": "chest compressions"
+   },
+   "plain": {
+    "zh": "用手掌根在胸骨下半段用力、快速、規律地壓，讓血液繼續流動。",
+    "en": "Pressing hard, fast and regularly with the heel of the hand on the lower half of the breastbone to keep blood moving."
+   }
+  },
+  {
+   "term": {
+    "zh": "FAST 超音波",
+    "en": "FAST scan"
+   },
+   "plain": {
+    "zh": "創傷病人的四個超音波切面，幾十秒內找肚子和心臟周圍有沒有出血。",
+    "en": "Four ultrasound windows in a trauma patient, finding blood around the abdominal organs and the heart within seconds."
+   }
+  },
+  {
+   "term": {
+    "zh": "到院前通報",
+    "en": "pre-hospital notification"
+   },
+   "plain": {
+    "zh": "救護車在路上先打電話，讓急診在病人到達前準備好床、人和設備。",
+    "en": "The ambulance phoning ahead so the department has bed, people and equipment ready before arrival."
+   }
+  },
+  {
+   "term": {
+    "zh": "ISBAR",
+    "en": "ISBAR"
+   },
+   "plain": {
+    "zh": "打電話或交班的順序：我是誰、情況、背景、評估、建議。",
+    "en": "The order for a call or a handover: identify, situation, background, assessment, recommendation."
+   }
+  }
+ ],
+ "codex": [
+  {
+   "id": "triage-desk",
+   "kind": "equipment",
+   "name": {
+    "zh": "檢傷台",
+    "en": "Triage desk"
+   },
+   "text": {
+    "zh": "一台血壓計、一支體溫計、一支血氧儀、一個會問「為什麼今天來」的人。",
+    "en": "A sphygmomanometer, a thermometer, an oximeter, and someone who asks 'why today?'"
+   },
+   "hot": "desk"
+  },
+  {
+   "id": "ecg-machine",
+   "kind": "equipment",
+   "name": {
+    "zh": "心電圖機",
+    "en": "ECG machine"
+   },
+   "text": {
+    "zh": "十個電極貼對位置，十二個角度才正確。V1 到 V6 的位置是基本功。",
+    "en": "Ten electrodes in the right places give twelve correct views. V1 to V6 placement is the fundamental skill."
+   },
+   "hot": "device"
+  },
+  {
+   "id": "crash-cart",
+   "kind": "equipment",
+   "name": {
+    "zh": "急救車",
+    "en": "Crash cart"
+   },
+   "text": {
+    "zh": "每一層抽屜放什麼都固定。去顫器在上面，甦醒球掛側邊。",
+    "en": "Every drawer is fixed. Defibrillator on top, bag-valve mask on the side."
+   },
+   "hot": "crash-cart"
+  },
+  {
+   "id": "us-machine",
+   "kind": "equipment",
+   "name": {
+    "zh": "急診超音波",
+    "en": "Point-of-care ultrasound"
+   },
+   "text": {
+    "zh": "急診醫師自己拿探頭。FAST、肺、心臟，答一個是非題，不是寫報告。",
+    "en": "The emergency doctor holds the probe. FAST, lung, heart: answering a yes-or-no question, not writing a report."
+   },
+   "hot": "ultrasound"
+  },
+  {
+   "id": "culture-bottles",
+   "kind": "item",
+   "name": {
+    "zh": "林阿嬤的血液培養瓶",
+    "en": "Grandma Lin's culture bottles"
+   },
+   "text": {
+    "zh": "兩套、兩個部位、抗生素之前。瓶身上的時間是你寫的。",
+    "en": "Two sets, two sites, before antibiotics. The time on the bottle is in your handwriting."
+   }
+  },
+  {
+   "id": "ecg-chiang",
+   "kind": "item",
+   "name": {
+    "zh": "阿強的心電圖",
+    "en": "Mr Chiang's ECG"
+   },
+   "text": {
+    "zh": "沒有 ST 上升。但「沒有」只是開始，不是結束。",
+    "en": "No ST elevation. But 'no' is the beginning, not the end."
+   }
+  },
+  {
+   "id": "worst-case",
+   "kind": "concept",
+   "name": {
+    "zh": "最壞的可能是什麼",
+    "en": "What is the worst thing this could be"
+   },
+   "text": {
+    "zh": "急診的思考順序：先排除會死的，再找最可能的。",
+    "en": "The order of thinking in the ED: rule out what kills first, then find what is most likely."
+   }
+  }
+ ],
+ "segs": [
+  {
+   "id": "handover",
+   "name": {
+    "zh": "晨間交班",
+    "en": "Morning handover"
+   },
+   "sub": {
+    "zh": "07:30 · 交班板",
+    "en": "07:30 · handover board"
+   },
+   "t": 450,
+   "mood": "day",
+   "note": {
+    "zh": "交班完成",
+    "en": "Handover done"
+   },
+   "beats": [
+    {
+     "id": "h1",
+     "to": "place:board",
+     "guide": {
+      "zh": "到交班板",
+      "en": "Go to the handover board"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "候診區十二個人，急救區一床。交班板上最新的一行：安養院送來的阿嬤，發燒，剛到。",
+        "en": "Twelve in the waiting room, one in resus. The newest line on the board: grandmother from a care home, fever, just arrived."
+       }
+      ],
+      [
+       "charge",
+       {
+        "zh": "早。夜班說候診區那位胸痛的大哥不痛了，吵著要走。阿嬤在檢傷台。",
+        "en": "Morning. Night shift says the chest-pain gentleman in the waiting room is pain-free and wants to leave. Grandma is at triage."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "檢傷分類：阿嬤先，然後胸痛。胸痛的不能走。",
+        "en": "Triage order: Grandma first, then the chest pain. The chest pain does not leave."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "h2",
+     "to": "attending",
+     "guide": {
+      "zh": "找羅主治",
+      "en": "Find Dr Lo"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "早。安養院送來的阿嬤，只是發燒。最壞的可能是什麼？",
+        "en": "Morning. The care-home grandmother: just a fever. What is the worst thing this could be?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "敗血症。老人家常常不喊痛，只是變安靜。",
+        "en": "Sepsis. The elderly often do not complain; they just go quiet."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "對。那就用那個標準去看她。三明治我放這裡。",
+        "en": "Right. Then look at her with that standard. I am leaving my sandwich here."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "triage",
+   "name": {
+    "zh": "檢傷：林阿嬤",
+    "en": "Triage: Grandma Lin"
+   },
+   "sub": {
+    "zh": "07:45 · 檢傷台",
+    "en": "07:45 · triage desk"
+   },
+   "t": 465,
+   "mood": "day",
+   "note": {
+    "zh": "林阿嬤進急救區，敗血症流程啟動",
+    "en": "Grandma Lin to resus; sepsis pathway started"
+   },
+   "beats": [
+    {
+     "id": "t1",
+     "to": "grandma-lin",
+     "guide": {
+      "zh": "到檢傷台看阿嬤",
+      "en": "See Grandma at triage"
+     },
+     "lines": [
+      [
+       "grandma-lin",
+       {
+        "zh": "我沒事……我只是想睡。",
+        "en": "I am fine... I just want to sleep."
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "安養院的轉介單寫著：比平常安靜、吃得少、今天早上尿很少。",
+        "en": "The care-home note reads: quieter than usual, eating less, very little urine this morning."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "初步線索。一個一個收。",
+        "en": "First clues. Collect them one by one."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "emergency-v37-triage-sepsis",
+      "stage": 0
+     }
+    },
+    {
+     "id": "t2",
+     "to": "place:monitor",
+     "guide": {
+      "zh": "看她的生命徵象",
+      "en": "Look at her observations"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "體溫高、心跳快、血壓偏低、呼吸稍快。她對時間和地點的回答都不對。",
+        "en": "Temperature up, pulse fast, pressure on the low side, breathing a little quick. She gets the date and the place wrong."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "vitals",
+      "event": "fever",
+      "options": [
+       {
+        "zh": "升級檢傷、進急救區、培養後依醫囑抗生素、乳酸、輸液",
+        "en": "Upgrade triage, to resus, cultures then antibiotics per protocol, lactate, fluids",
+        "ok": true,
+        "why": {
+         "zh": "敗血症的時鐘已經在走。先培養再抗生素，乳酸看器官灌流，輸液依醫囑。",
+         "en": "The sepsis clock is running. Cultures before antibiotics, lactate for perfusion, fluids per protocol."
+        }
+       },
+       {
+        "zh": "給退燒藥，回候診區等抽血",
+        "en": "Antipyretic and back to the waiting room for bloods",
+        "ok": false,
+        "why": {
+         "zh": "退燒會讓數字好看，不會讓器官好過。她不能回候診區。",
+         "en": "Lowering the temperature makes the numbers look better, not the organs. She does not go back to the waiting room."
+        }
+       },
+       {
+        "zh": "先照胸部 X 光找感染源",
+        "en": "Chest X-ray first to find the source",
+        "ok": false,
+        "why": {
+         "zh": "找感染源重要，但不能排在培養、抗生素和輸液前面。",
+         "en": "Finding the source matters, but not before cultures, antibiotics and fluids."
+        }
+       }
+      ]
+     },
+     "post": [
+      [
+       "charge",
+       {
+        "zh": "急救區二床，監視器上了。",
+        "en": "Resus bed two, monitor on."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "t3",
+     "to": "place:resus",
+     "guide": {
+      "zh": "抗生素之前：血液培養",
+      "en": "Before antibiotics: cultures"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "血液培養兩套、兩個部位，時間寫在瓶身上。然後才是抗生素。",
+        "en": "Blood culture: two sets, two sites, the time on each bottle. Only then the antibiotic."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "培養送了，乳酸抽了。抗生素依醫囑現在給。",
+        "en": "Cultures sent, lactate drawn. Antibiotic going in now per the order."
+       }
+      ]
+     ],
+     "roles": [
+      "triage-nurse"
+     ],
+     "item": "culture-bottles"
+    },
+    {
+     "id": "t3b",
+     "to": "place:resus",
+     "guide": {
+      "zh": "交叉核對證據",
+      "en": "Cross-check the evidence"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "安靜、迷糊、尿少、乳酸高。感染源你猜哪裡？",
+        "en": "Quiet, confused, little urine, high lactate. Where is the source, do you think?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "泌尿道最可能，但肺和皮膚都要看。她背上有沒有壓瘡，我去翻。",
+        "en": "Urinary most likely, but lungs and skin need checking. I will turn her and look for pressure sores."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "好。阿嬤的培養瓶上的時間，是你今天寫過最重要的字。",
+        "en": "Good. The time on her culture bottles is the most important thing you will write today."
+       }
+      ]
+     ],
+     "roles": [
+      "resident"
+     ],
+     "item": "culture-bottles"
+    }
+   ]
+  },
+  {
+   "id": "chest-pain",
+   "name": {
+    "zh": "不痛了的阿強",
+    "en": "Mr Chiang, pain-free"
+   },
+   "sub": {
+    "zh": "09:30 · 心電圖機",
+    "en": "09:30 · ECG machine"
+   },
+   "t": 570,
+   "mood": "day",
+   "note": {
+    "zh": "阿強的心電圖與去向決定",
+    "en": "Mr Chiang's ECG and disposition"
+   },
+   "beats": [
+    {
+     "id": "c1",
+     "to": "mr-chiang",
+     "guide": {
+      "zh": "去攔住阿強",
+      "en": "Catch Mr Chiang"
+     },
+     "lines": [
+      [
+       "mr-chiang",
+       {
+        "zh": "醫師，我真的不痛了。車還停在路邊，我要去開。",
+        "en": "Doctor, honestly, the pain is gone. My lorry is parked on the street; I need to move it."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "阿強，不痛了是好事，但不痛不等於沒事。先給我十分鐘做一張心電圖。",
+        "en": "Mr Chiang, pain-free is good, but it is not the same as fine. Give me ten minutes for an ECG."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "c1b",
+     "to": "place:triage",
+     "guide": {
+      "zh": "重新檢傷阿強",
+      "en": "Re-triage Mr Chiang"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "你把阿強的檢傷等級往上調，從候診區移到有監視器的床，並在單子上寫下心電圖的十分鐘期限。",
+        "en": "You upgrade Mr Chiang's triage category, move him from the waiting room to a monitored bed, and write the ten-minute ECG deadline on his sheet."
+       }
+      ],
+      [
+       "charge",
+       {
+        "zh": "胸痛不痛了的人最會溜走。你盯著他。",
+        "en": "The ones whose chest pain has stopped are the ones who slip away. Keep an eye on him."
+       }
+      ]
+     ],
+     "roles": [
+      "triage-nurse"
+     ]
+    },
+    {
+     "id": "c2",
+     "to": "place:ecg",
+     "guide": {
+      "zh": "貼 V1 到 V6",
+      "en": "Place V1 to V6"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "十二導程心電圖，胸前導程你來貼。貼錯位置，整張圖都錯。",
+        "en": "12-lead ECG; you place the chest leads. Wrong positions, wrong tracing."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "drill",
+      "template": "emergency",
+      "drill": "ecg"
+     },
+     "post": [
+      [
+       "me",
+       {
+        "zh": "沒有 ST 上升。T 波有一點平。",
+        "en": "No ST elevation. The T waves are a little flat."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "「沒有 ST 上升」是開始，不是結束。",
+        "en": "'No ST elevation' is the start, not the finish."
+       }
+      ]
+     ],
+     "item": "ecg-chiang"
+    },
+    {
+     "id": "c3",
+     "to": "place:viewer",
+     "guide": {
+      "zh": "胸部 X 光：找什麼？",
+      "en": "Chest film: looking for what?"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "胸痛病人的胸部影像，你在找哪些會死人的非心肌梗塞原因？",
+        "en": "On a chest-pain patient's chest imaging, which non-infarct killers are you looking for?"
+       }
+      ]
+     ],
+     "mini": {
+      "type": "imaging",
+      "region": "chest",
+      "question": {
+       "zh": "胸痛病人的胸部影像，要排除哪些致命的非 ACS 原因？",
+       "en": "On chest imaging for chest pain, which lethal non-ACS causes must be excluded?"
+      },
+      "answer": {
+       "zh": "主動脈剝離（縱膈變寬）、氣胸、食道破裂（縱膈氣體）、大量肋膜積液或肺炎。先排除會死的。",
+       "en": "Aortic dissection (widened mediastinum), pneumothorax, oesophageal rupture (mediastinal air), large effusion or pneumonia. Rule out the killers first."
+      }
+     }
+    },
+    {
+     "id": "c4",
+     "to": "mr-chiang",
+     "guide": {
+      "zh": "他可以走嗎？",
+      "en": "Can he go?"
+     },
+     "lines": [
+      [
+       "mr-chiang",
+       {
+        "zh": "心電圖正常了吧？我可以走了吧？",
+        "en": "ECG normal, right? Can I go now?"
+       }
+      ]
+     ],
+     "mini": {
+      "type": "choice",
+      "q": {
+       "zh": "第一次肌鈣蛋白正常、心電圖無 ST 上升。你怎麼做？",
+       "en": "First troponin normal, no ST elevation on the ECG. What now?"
+      },
+      "options": [
+       {
+        "zh": "留觀，照流程抽第二次肌鈣蛋白再決定",
+        "en": "Keep him; second troponin per the pathway, then decide",
+        "ok": true,
+        "why": {
+         "zh": "一次正常的肌鈣蛋白不能排除。看變化，不看單點。",
+         "en": "One normal troponin excludes nothing. The trend decides, not a single value."
+        },
+        "set": {
+         "chiang": "stay"
+        }
+       },
+       {
+        "zh": "心電圖正常，讓他走，門診追蹤",
+        "en": "Normal ECG, let him go, clinic follow-up",
+        "ok": false,
+        "why": {
+         "zh": "他會在下午回來。而且是用救護車。",
+         "en": "He will be back this afternoon. By ambulance."
+        },
+        "set": {
+         "chiang": "home"
+        }
+       },
+       {
+        "zh": "直接安排心導管",
+        "en": "Straight to the cath lab",
+        "ok": false,
+        "why": {
+         "zh": "沒有 ST 上升、血流動力穩定，還沒到那一步。先完成風險分層。",
+         "en": "No ST elevation and he is stable; not yet. Finish the risk stratification first."
+        },
+        "set": {
+         "chiang": "stay"
+        }
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "stroke",
+   "name": {
+    "zh": "救護車通報：中風",
+    "en": "Ambulance: stroke"
+   },
+   "sub": {
+    "zh": "11:30 · 電話與急救區",
+    "en": "11:30 · the phone and resus"
+   },
+   "t": 690,
+   "mood": "day",
+   "note": {
+    "zh": "吳先生的中風流程啟動",
+    "en": "Mr Wu's stroke pathway activated"
+   },
+   "beats": [
+    {
+     "id": "s1",
+     "ring": {
+      "title": {
+       "zh": "到院前通報",
+       "en": "Pre-hospital notification"
+      },
+      "sub": {
+       "zh": "六十八歲男性，FAST 陽性，十分鐘到",
+       "en": "Sixty-eight-year-old man, FAST positive, ten minutes"
+      },
+      "call": true,
+      "from": "paramedic"
+     },
+     "lines": [
+      [
+       "paramedic",
+       {
+        "zh": "急診嗎？六十八歲男性，早餐時口齒不清、右手無力。太太說七點半還正常。血糖正常，十分鐘到。",
+        "en": "ED? Sixty-eight-year-old man, slurred speech and right-arm weakness at breakfast. Wife says normal at half past seven. Glucose normal, ten minutes out."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "收到。最後正常時間七點半。我啟動中風小組，CT 先空出來。",
+        "en": "Received. Last known well half past seven. Activating the stroke team; CT being cleared now."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "emergency-v37-stroke-time",
+      "stage": 0
+     }
+    },
+    {
+     "id": "s2",
+     "to": "place:resus",
+     "guide": {
+      "zh": "到達前：順序",
+      "en": "Before arrival: the order"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "他進門之後的順序，你排。每一分鐘都是腦細胞。",
+        "en": "Put the steps after he comes through the door in order. Every minute is brain."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "order",
+      "q": {
+       "zh": "中風病人到院後的順序？",
+       "en": "Order the steps when a stroke patient arrives."
+      },
+      "steps": [
+       {
+        "zh": "確認最後正常時間與血糖",
+        "en": "Confirm last known well and glucose"
+       },
+       {
+        "zh": "快速神經學評估",
+        "en": "Rapid neurological assessment"
+       },
+       {
+        "zh": "直接送非顯影 CT",
+        "en": "Straight to non-contrast CT"
+       },
+       {
+        "zh": "溶栓禁忌症核對",
+        "en": "Check thrombolysis contraindications"
+       },
+       {
+        "zh": "與神經科決定治療並交班",
+        "en": "Decide treatment with neurology; hand over"
+       }
+      ]
+     }
+    },
+    {
+     "id": "s3",
+     "to": "mr-wu",
+     "guide": {
+      "zh": "吳先生到了",
+      "en": "Mr Wu has arrived"
+     },
+     "lines": [
+      [
+       "mr-wu",
+       {
+        "zh": "……我、我講話怪怪的。",
+        "en": "...My, my words are strange."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "吳先生，我聽得懂。我們現在直接去照電腦斷層，太太在後面跟著。",
+        "en": "Mr Wu, I understand you. We are going straight to the CT scanner; your wife is right behind."
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "從門口到 CT，走廊上沒有人停下來。羅主治的三明治還在桌上。",
+        "en": "From the door to CT, nobody in the corridor stops. Dr Lo's sandwich is still on the desk."
+       }
+      ]
+     ],
+     "t": 700
+    },
+    {
+     "id": "s4",
+     "to": "place:viewer",
+     "guide": {
+      "zh": "溶栓禁忌症核對",
+      "en": "Check the thrombolysis contraindications"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "CT 沒有出血。你拿出禁忌症清單，一項一項問太太：近期手術、出血、抗凝血劑、血壓。",
+        "en": "CT shows no bleeding. You take out the contraindication list and go through it with his wife: recent surgery, bleeding, anticoagulants, blood pressure."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "神經科嗎？最後正常時間七點半，CT 無出血，禁忌症核對完成。你們來決定溶栓。",
+        "en": "Neurology? Last known well half past seven, CT without bleeding, contraindications checked. Thrombolysis is your call."
+       }
+      ]
+     ],
+     "roles": [
+      "resident"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "afternoon",
+   "name": {
+    "zh": "午後：候診區",
+    "en": "Afternoon: the waiting room"
+   },
+   "sub": {
+    "zh": "13:00 · 候診區入口",
+    "en": "13:00 · waiting-room entrance"
+   },
+   "t": 780,
+   "mood": "day",
+   "note": {
+    "zh": "候診區急救與過敏性休克處理完成",
+    "en": "Waiting-room collapse and anaphylaxis handled"
+   },
+   "beats": [
+    {
+     "id": "a1",
+     "to": "place:waiting",
+     "guide": {
+      "zh": "候診區有人倒下！",
+      "en": "Someone has collapsed in the waiting room!"
+     },
+     "lines": [
+      [
+       "charge",
+       {
+        "zh": "候診區有人倒下！沒有反應、沒有呼吸！",
+        "en": "Collapse in the waiting room! Unresponsive, not breathing!"
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "是一位來探病的中年男子。你跪下去開始胸外按壓，手掌根放在胸骨下半段。",
+        "en": "A middle-aged visitor. You drop to your knees and start chest compressions, heel of the hand on the lower half of the breastbone."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "drill",
+      "template": "emergency",
+      "drill": "cpr"
+     },
+     "post": [
+      [
+       "sys",
+       {
+        "zh": "急救車到了，電極貼上。幾個循環後，他的脈搏回來了，開始咳嗽。",
+        "en": "The crash cart arrives, pads go on. A few cycles later his pulse returns and he starts to cough."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "深度對、節奏對、中斷很短。推進急救區，我接手。",
+        "en": "Depth right, rate right, short pauses. Into resus; I have him."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "a2",
+     "to": "hsiao-ching",
+     "guide": {
+      "zh": "餐後喘鳴的小晴",
+      "en": "Hsiao-Ching, wheezing after lunch"
+     },
+     "lines": [
+      [
+       "hsiao-ching",
+       {
+        "zh": "我應該沒事吧？就是嘴唇麻麻的，身上癢，呼吸有一點點聲音。",
+        "en": "It is probably nothing, right? Just tingly lips, itchy skin, and my breathing is a little noisy."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "皮膚、呼吸道，兩個系統同時出事。小晴，這叫過敏性休克，我們要現在處理。",
+        "en": "Skin and airway, two systems at once. Hsiao-Ching, this is anaphylaxis and we treat it now."
+       }
+      ]
+     ],
+     "t": 870
+    },
+    {
+     "id": "a3",
+     "to": "place:monitor",
+     "guide": {
+      "zh": "看監視器",
+      "en": "Watch the monitor"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "她說頭暈。監視器上血壓掉了，心跳快，聲音越來越啞。",
+        "en": "She says she feels faint. The pressure on the monitor drops, pulse racing, her voice getting hoarser."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "vitals",
+      "event": "hypotension",
+      "options": [
+       {
+        "zh": "依醫囑肌肉注射腎上腺素、平躺抬腿、氧氣、叫人",
+        "en": "Intramuscular adrenaline per protocol, flat with legs up, oxygen, call for help",
+        "ok": true,
+        "why": {
+         "zh": "過敏性休克的第一線是肌肉注射腎上腺素，不是抗組織胺。平躺抬腿，不要讓她坐起來。",
+         "en": "First line in anaphylaxis is intramuscular adrenaline, not an antihistamine. Flat with legs raised; do not let her sit up."
+        }
+       },
+       {
+        "zh": "先給抗組織胺觀察看看",
+        "en": "Antihistamine first and observe",
+        "ok": false,
+        "why": {
+         "zh": "抗組織胺治皮膚癢，救不了血壓和氣道。",
+         "en": "Antihistamines help the itch; they do not rescue the pressure or the airway."
+        }
+       },
+       {
+        "zh": "讓她坐起來比較好呼吸",
+        "en": "Sit her up to help her breathe",
+        "ok": false,
+        "why": {
+         "zh": "血壓正在掉的人坐起來可能心跳停止。平躺。",
+         "en": "Sitting up a patient whose pressure is falling can stop the heart. Flat."
+        }
+       }
+      ]
+     },
+     "post": [
+      [
+       "hsiao-ching",
+       {
+        "zh": "……聲音回來了。我可以回家了嗎？",
+        "en": "...My voice is back. Can I go home?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "還不行。雙相反應可能幾小時後再來一次。今天在這裡留觀。",
+        "en": "Not yet. A biphasic reaction can return hours later. You stay with us today."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "return",
+   "name": {
+    "zh": "阿強的下午",
+    "en": "Mr Chiang's afternoon"
+   },
+   "sub": {
+    "zh": "16:00 · 急救區",
+    "en": "16:00 · resus bay"
+   },
+   "t": 960,
+   "mood": "day",
+   "note": {
+    "zh": "阿強的第二次肌鈣蛋白與去向",
+    "en": "Mr Chiang's second troponin and disposition"
+   },
+   "beats": [
+    {
+     "id": "r1",
+     "to": "mr-chiang",
+     "guide": {
+      "zh": "阿強回來了",
+      "en": "Mr Chiang is back"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "救護車推進來的是阿強。胸痛又來了，這次沒有停。",
+        "en": "The ambulance brings in Mr Chiang. The chest pain is back, and this time it has not stopped."
+       }
+      ],
+      [
+       "mr-chiang",
+       {
+        "zh": "醫師……我開到一半又痛了。",
+        "en": "Doctor... it came back halfway through my run."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "早上那一次正常的肌鈣蛋白，現在你知道它的意思了。",
+        "en": "That one normal troponin this morning: now you know what it meant."
+       }
+      ]
+     ],
+     "when": {
+      "flag": "chiang",
+      "is": "home"
+     }
+    },
+    {
+     "id": "r1b",
+     "to": "mr-chiang",
+     "guide": {
+      "zh": "第二次肌鈣蛋白回來了",
+      "en": "Second troponin is back"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "阿強還在留觀區，第二次肌鈣蛋白回來了：比第一次高。",
+        "en": "Mr Chiang is still in observation. The second troponin is back: higher than the first."
+       }
+      ],
+      [
+       "mr-chiang",
+       {
+        "zh": "所以我早上不能走是對的？",
+        "en": "So you were right not to let me go this morning?"
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "對。變化才是答案。",
+        "en": "Yes. The trend was the answer."
+       }
+      ]
+     ],
+     "when": {
+      "flag": "chiang",
+      "is": "stay"
+     }
+    },
+    {
+     "id": "r2",
+     "to": "attending",
+     "guide": {
+      "zh": "證據交叉核對",
+      "en": "Cross-check the evidence"
+     },
+     "ring": {
+      "title": {
+       "zh": "檢驗科訊息",
+       "en": "Message from the lab"
+      },
+      "sub": {
+       "zh": "阿強第二次肌鈣蛋白結果已出",
+       "en": "Mr Chiang: second troponin result is out"
+      },
+      "call": false
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "心電圖、兩次肌鈣蛋白、症狀、危險因子。把它們放在一起，然後打給心臟科。",
+        "en": "ECG, two troponins, symptoms, risk factors. Put them together, then call cardiology."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "emergency-v37-chest-pain",
+      "stage": 1
+     },
+     "post": [
+      [
+       "me",
+       {
+        "zh": "心臟科嗎？我用 ISBAR 交班：五十二歲男性，胸痛，肌鈣蛋白上升……",
+        "en": "Cardiology? ISBAR handover: fifty-two-year-old man, chest pain, rising troponin..."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "evening",
+   "name": {
+    "zh": "傍晚交班",
+    "en": "Evening handover"
+   },
+   "sub": {
+    "zh": "17:30 · 交班板",
+    "en": "17:30 · handover board"
+   },
+   "t": 1050,
+   "mood": "eve",
+   "note": {
+    "zh": "交班給夜班",
+    "en": "Handed over to the night team"
+   },
+   "beats": [
+    {
+     "id": "v1",
+     "to": "place:board",
+     "guide": {
+      "zh": "交班給夜班",
+      "en": "Hand over to the night team"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "林阿嬤：敗血症，泌尿道來源，培養已送，抗生素已給，乳酸追蹤中。",
+        "en": "Grandma Lin: sepsis, urinary source, cultures sent, antibiotics given, lactate being tracked."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "吳先生：中風，已溶栓，神經科收。小晴：過敏性休克，留觀雙相反應。阿強：心臟科收。",
+        "en": "Mr Wu: stroke, thrombolysed, admitted under neurology. Hsiao-Ching: anaphylaxis, observing for a biphasic reaction. Mr Chiang: admitted under cardiology."
+       }
+      ],
+      [
+       "charge",
+       {
+        "zh": "候診區那位先生，加護病房說他醒了，在問是誰壓的。",
+        "en": "The waiting-room gentleman: ICU says he is awake and asking who did the compressions."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "v2",
+     "to": "attending",
+     "guide": {
+      "zh": "羅主治的反思",
+      "en": "Dr Lo's debrief"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "今天最安靜的病人是誰？",
+        "en": "Who was the quietest patient today?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "林阿嬤。",
+        "en": "Grandma Lin."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "對。急診最難的不是最吵的病人，是最安靜的。你今天聽見了。",
+        "en": "Yes. The hardest patient in the ED is never the loudest; it is the quietest. Today you heard her."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "三明治我還是沒吃完。回家吧。",
+        "en": "I still did not finish the sandwich. Go home."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "night",
+   "name": {
+    "zh": "夜間值班",
+    "en": "Night on call"
+   },
+   "sub": {
+    "zh": "22:00 · 急救區",
+    "en": "22:00 · resus bay"
+   },
+   "t": 1320,
+   "mood": "night",
+   "note": {
+    "zh": "創傷 FAST 完成",
+    "en": "Trauma FAST done"
+   },
+   "beats": [
+    {
+     "id": "x1",
+     "ring": {
+      "title": {
+       "zh": "到院前通報",
+       "en": "Pre-hospital notification"
+      },
+      "sub": {
+       "zh": "機車騎士，腹部撞擊，五分鐘到",
+       "en": "Motorcyclist, abdominal impact, five minutes"
+      },
+      "call": true,
+      "from": "paramedic"
+     },
+     "lines": [
+      [
+       "paramedic",
+       {
+        "zh": "急診嗎？二十多歲機車騎士，肚子撞到把手，心跳快、血壓偏低，意識清楚。五分鐘到。",
+        "en": "ED? Motorcyclist in his twenties, abdomen into the handlebar, fast pulse, low-ish pressure, alert. Five minutes."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "收到。創傷區準備，超音波機推到床邊，血庫先知道。",
+        "en": "Received. Trauma bay ready, ultrasound to the bedside, blood bank informed."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "x2",
+     "to": "place:scan",
+     "guide": {
+      "zh": "FAST 四個切面",
+      "en": "FAST: four windows"
+     },
+     "lines": [
+      [
+       "charge",
+       {
+        "zh": "病人到了。探頭在你手上，FAST 超音波，四個切面。",
+        "en": "Patient is here. The probe is in your hand: FAST scan, four windows."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "drill",
+      "template": "emergency",
+      "drill": "us:fast"
+     },
+     "post": [
+      [
+       "me",
+       {
+        "zh": "右上腹有游離液體。外科，現在。",
+        "en": "Free fluid in the right upper quadrant. Surgery, now."
+       }
+      ],
+      [
+       "charge",
+       {
+        "zh": "外科在路上，血已經到了。",
+        "en": "Surgery is on the way; the blood is here."
+       }
+      ]
+     ],
+     "t": 1330
+    },
+    {
+     "id": "x3",
+     "to": "place:board",
+     "guide": {
+      "zh": "夜裡最後一行",
+      "en": "The last line of the night"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "外科把他推進手術室。你在交班板寫下時間，然後發現羅主治的三明治不見了。",
+        "en": "Surgery wheels him to theatre. You write the time on the board and notice Dr Lo's sandwich has finally gone."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "（訊息）阿嬌說 FAST 做得很快，叫外科叫得更快。這就是急診。晚安。",
+        "en": "(message) A-Chiao says the FAST was quick and the call to surgery quicker. That is emergency medicine. Good night."
+       }
+      ]
+     ],
+     "t": 1350,
+     "end": true
+    }
+   ]
+  }
+ ],
+ "ending": {
+  "title": {
+   "zh": "下班了",
+   "en": "End of shift"
+  },
+  "sub": {
+   "zh": "四個病人、一次按壓、一個沒吃完的三明治",
+   "en": "Four patients, one round of compressions, one unfinished sandwich"
+  },
+  "stats": [
+   "stages",
+   "drills",
+   "choices",
+   "calls",
+   "items",
+   "time"
+  ]
+ }
+}

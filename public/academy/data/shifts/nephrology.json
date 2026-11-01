@@ -1,0 +1,1614 @@
+{
+ "format": "huatuo-shift-v1",
+ "department": "nephrology",
+ "title": {
+  "zh": "腎臟內科值班日",
+  "en": "A shift in nephrology"
+ },
+ "tagline": {
+  "zh": "從透析室的早晨到那通高血鉀的電話",
+  "en": "From a morning in the dialysis unit to the potassium call"
+ },
+ "room": "ward",
+ "minutes": 25,
+ "roles": [
+  {
+   "id": "intern",
+   "zh": "實習醫師",
+   "en": "Intern",
+   "desc": {
+    "zh": "找基準值、看尿量、接危急值電話、自己看尿沉渣。",
+    "en": "Find the baseline, watch the urine output, take the critical-value calls, look at the urine sediment yourself."
+   }
+  },
+  {
+   "id": "hd-nurse",
+   "zh": "透析護理師",
+   "en": "Dialysis nurse",
+   "desc": {
+    "zh": "廔管、機器、上機與下機都在你手上。病人每週見你三次，比見家人還多。",
+    "en": "Fistulas, machines, putting on and taking off: all yours. Patients see you three times a week, more than their families."
+   }
+  }
+ ],
+ "cast": {
+  "attending": {
+   "name": {
+    "zh": "周主治",
+    "en": "Dr Chou"
+   },
+   "role": {
+    "zh": "主治醫師（師傅）",
+    "en": "Attending (mentor)"
+   },
+   "tag": "ATT",
+   "color": "#2b6e8a",
+   "body": "mentor",
+   "about": {
+    "zh": "腎臟科主治，口袋裡有一本小筆記，記著每個病人的基準肌酸酐。開口第一句永遠是「舊值呢？」",
+    "en": "Nephrologist with a pocket notebook of every patient's baseline creatinine. His first words are always 'and the old value?'"
+   }
+  },
+  "nurse-yu": {
+   "name": {
+    "zh": "阿玉",
+    "en": "Nurse Yu"
+   },
+   "role": {
+    "zh": "透析室資深護理師",
+    "en": "Senior dialysis nurse"
+   },
+   "tag": "RN",
+   "color": "#3b8f6a",
+   "body": "nurse",
+   "about": {
+    "zh": "透析室二十年，閉著眼睛摸廔管就知道是誰。對機器講話，機器也聽她的。",
+    "en": "Twenty years in the dialysis unit; can tell whose fistula it is with her eyes shut. Talks to the machines, and the machines listen."
+   }
+  },
+  "patient-hai": {
+   "name": {
+    "zh": "阿海伯",
+    "en": "Mr Hai"
+   },
+   "role": {
+    "zh": "5 床病人",
+    "en": "Patient, bed 5"
+   },
+   "tag": "P5",
+   "color": "#b8762e",
+   "body": "patient",
+   "about": {
+    "zh": "75 歲退休漁夫，腹瀉三天後全身無力，腰痠就吃女婿買的止痛藥。堅稱「我的腎以前好好的」，但沒有人找得到舊報告。（虛擬個案）",
+    "en": "A 75-year-old retired fisherman, weak after three days of diarrhoea, taking his son-in-law's painkillers for backache. Insists his kidneys 'used to be fine', but nobody can find an old report. (Fictional.)"
+   }
+  },
+  "family-hai": {
+   "name": {
+    "zh": "小芬",
+    "en": "Fen"
+   },
+   "role": {
+    "zh": "阿海伯的女兒",
+    "en": "Mr Hai's daughter"
+   },
+   "tag": "FAM",
+   "color": "#c9596a",
+   "body": "family",
+   "about": {
+    "zh": "在漁會上班，中午會帶便當來。家裡的抽屜她翻了一整晚。",
+    "en": "Works at the fishermen's association and brings lunch boxes at noon. She spent all night going through the drawers at home."
+   }
+  },
+  "patient-chang": {
+   "name": {
+    "zh": "張阿姨",
+    "en": "Mrs Chang"
+   },
+   "role": {
+    "zh": "透析病人",
+    "en": "Dialysis patient"
+   },
+   "tag": "PC",
+   "color": "#8a6ac4",
+   "body": "patient",
+   "about": {
+    "zh": "68 歲，慢性腎病洗腎兩年，每週一三五報到。昨天孫子生日吃了很多水果。今天覺得心臟「怪怪的」。（虛擬個案）",
+    "en": "A 68-year-old on dialysis for two years, Mondays, Wednesdays and Fridays. Ate a lot of fruit at her grandson's birthday yesterday. Says her heart feels 'odd' today. (Fictional.)"
+   }
+  },
+  "patient-kai": {
+   "name": {
+    "zh": "阿凱",
+    "en": "Kai"
+   },
+   "role": {
+    "zh": "急診會診病人",
+    "en": "ER consult patient"
+   },
+   "tag": "PK",
+   "color": "#6a9c3a",
+   "body": "patient",
+   "about": {
+    "zh": "32 歲外送員，一週前尿變成茶色，眼皮腫，急診量到高血壓。覺得自己只是太累。（虛擬個案）",
+    "en": "A 32-year-old delivery rider: tea-coloured urine for a week, puffy eyelids, and a high blood pressure found in the ER. Thinks he is just tired. (Fictional.)"
+   }
+  },
+  "lab-tech": {
+   "name": {
+    "zh": "檢驗科小高",
+    "en": "Kao from the lab"
+   },
+   "role": {
+    "zh": "醫檢師",
+    "en": "Medical laboratory scientist"
+   },
+   "tag": "LAB",
+   "color": "#5b6abf",
+   "body": "tech",
+   "phoneOnly": true,
+   "about": {
+    "zh": "打危急值電話的人。會要求你複誦，一個字都不能少。",
+    "en": "The voice behind the critical-value calls. Makes you read the value back, every digit."
+   }
+  },
+  "ward-nurse": {
+   "name": {
+    "zh": "病房阿寬",
+    "en": "Nurse Kuan"
+   },
+   "role": {
+    "zh": "病房護理師",
+    "en": "Ward nurse"
+   },
+   "tag": "WN",
+   "color": "#2e8aa8",
+   "body": "nurse",
+   "phoneOnly": true,
+   "about": {
+    "zh": "5 床的主責護理師，尿壺量得比誰都準。",
+    "en": "Bed 5's primary nurse. Nobody measures a urine bottle more precisely."
+   }
+  }
+ },
+ "places": {
+  "whiteboard": {
+   "name": {
+    "zh": "交班白板",
+    "en": "Handover board"
+   },
+   "hot": "whiteboard"
+  },
+  "bed5": {
+   "name": {
+    "zh": "5 床",
+    "en": "Bed 5"
+   },
+   "hot": "bed"
+  },
+  "hd-machine": {
+   "name": {
+    "zh": "透析機",
+    "en": "Dialysis machine"
+   },
+   "hot": "device"
+  },
+  "monitor": {
+   "name": {
+    "zh": "透析室監視器",
+    "en": "Unit monitor"
+   },
+   "hot": "monitor"
+  },
+  "us-cart": {
+   "name": {
+    "zh": "超音波車",
+    "en": "Ultrasound cart"
+   },
+   "hot": "ultrasound"
+  },
+  "scope": {
+   "name": {
+    "zh": "尿沉渣顯微鏡",
+    "en": "Sediment microscope"
+   },
+   "hot": "microscope"
+  },
+  "pacs": {
+   "name": {
+    "zh": "PACS 讀片站",
+    "en": "PACS workstation"
+   },
+   "hot": "imaging"
+  },
+  "io-chart": {
+   "name": {
+    "zh": "輸出入量記錄表",
+    "en": "Fluid balance chart"
+   },
+   "hot": "chart"
+  },
+  "desk": {
+   "name": {
+    "zh": "護理站桌",
+    "en": "Station desk"
+   },
+   "hot": "desk"
+  }
+ },
+ "glossary": [
+  {
+   "term": {
+    "zh": "肌酸酐",
+    "en": "creatinine"
+   },
+   "plain": {
+    "zh": "肌肉代謝的廢物，靠腎臟排掉。腎功能變差它就在血裡堆高，但要跟舊值比才知道是新還是舊的問題。",
+    "en": "A waste product from muscle, cleared by the kidneys. It rises in the blood when they fail, but only a comparison with an old value tells you whether the problem is new."
+   }
+  },
+  {
+   "term": {
+    "zh": "基準值",
+    "en": "baseline"
+   },
+   "plain": {
+    "zh": "病人平常的數值。沒有基準值，你分不出急性腎損傷和多年的慢性腎病。",
+    "en": "The patient's usual number. Without a baseline you cannot tell an acute kidney injury from years of chronic disease."
+   }
+  },
+  {
+   "term": {
+    "zh": "急性腎損傷",
+    "en": "acute kidney injury"
+   },
+   "plain": {
+    "zh": "腎功能在幾天內突然變差。原因通常不只一個：缺水、藥物、尿路阻塞都可能同時參與。",
+    "en": "Kidney function falling over days. Usually more than one cause at once: dehydration, drugs and a blocked outflow can all take part."
+   }
+  },
+  {
+   "term": {
+    "zh": "尿量",
+    "en": "urine output"
+   },
+   "plain": {
+    "zh": "腎臟最誠實的即時報告。每一小時有多少，比明天早上的抽血更早告訴你方向。",
+    "en": "The kidney's most honest live report. How much comes out each hour tells you the direction before tomorrow's blood test."
+   }
+  },
+  {
+   "term": {
+    "zh": "動靜脈廔管",
+    "en": "AV fistula"
+   },
+   "plain": {
+    "zh": "手臂上用手術把動脈和靜脈接起來的血管，是洗腎病人的生命線。每次上機前都要看、摸、聽。",
+    "en": "A surgically joined artery and vein in the arm, the dialysis patient's lifeline. Before every session: look, feel, listen."
+   }
+  },
+  {
+   "term": {
+    "zh": "透析",
+    "en": "dialysis"
+   },
+   "plain": {
+    "zh": "用機器代替腎臟，把血引出來清掉廢物和多餘的水和鉀，再送回去。",
+    "en": "A machine standing in for the kidneys: blood is drawn out, cleaned of waste, excess water and potassium, and returned."
+   }
+  },
+  {
+   "term": {
+    "zh": "血鉀",
+    "en": "potassium"
+   },
+   "plain": {
+    "zh": "血液裡的一種電解質。太高會讓心臟跳得慢、跳得亂，甚至停下來。洗腎病人特別容易高。",
+    "en": "An electrolyte in the blood. Too high and the heart slows, beats irregularly or stops. Dialysis patients are especially prone to it."
+   }
+  },
+  {
+   "term": {
+    "zh": "溶血檢體",
+    "en": "haemolysed sample"
+   },
+   "plain": {
+    "zh": "抽血時紅血球被弄破，細胞裡的鉀跑進血清，數值會假性偏高。但檢體有問題，不代表病人沒問題。",
+    "en": "Red cells broken during the blood draw leak potassium into the serum and falsely raise the number. A faulty sample does not mean a healthy patient."
+   }
+  },
+  {
+   "term": {
+    "zh": "危急值",
+    "en": "critical value"
+   },
+   "plain": {
+    "zh": "檢驗室看到可能立即危及生命的數字，會直接打電話給醫師，對方要複誦確認。",
+    "en": "A laboratory result that could threaten life right now. The lab phones the doctor directly and the doctor reads the value back."
+   }
+  },
+  {
+   "term": {
+    "zh": "心電圖",
+    "en": "ECG"
+   },
+   "plain": {
+    "zh": "記錄心臟電活動的圖。高血鉀會先在心電圖上留下痕跡，比症狀更早。",
+    "en": "A recording of the heart's electrical activity. High potassium leaves its mark on the ECG before it causes symptoms."
+   }
+  },
+  {
+   "term": {
+    "zh": "水腎",
+    "en": "hydronephrosis"
+   },
+   "plain": {
+    "zh": "尿排不出去，往上堆回腎臟，超音波看到腎盂被撐大。代表下游有東西塞住。",
+    "en": "Urine backing up into the kidney because it cannot drain; on ultrasound the collecting system looks stretched. Something downstream is blocked."
+   }
+  },
+  {
+   "term": {
+    "zh": "尿沉渣",
+    "en": "urine sediment"
+   },
+   "plain": {
+    "zh": "把尿離心後沉在底部的東西，拿去顯微鏡下看。腎臟科醫師自己看，因為裡面有腎絲球的線索。",
+    "en": "What settles at the bottom after spinning the urine, examined under the microscope. Nephrologists look themselves, because the glomerular clues are in there."
+   }
+  },
+  {
+   "term": {
+    "zh": "變形紅血球",
+    "en": "dysmorphic red cells"
+   },
+   "plain": {
+    "zh": "形狀被擠壞的紅血球。表示血是從腎絲球濾出來的，不是從膀胱或尿道流的。",
+    "en": "Red cells squashed out of shape. They show the blood came through the kidney's filters, not from the bladder or urethra."
+   }
+  },
+  {
+   "term": {
+    "zh": "紅血球圓柱",
+    "en": "red-cell casts"
+   },
+   "plain": {
+    "zh": "紅血球在腎小管裡被壓成一條條的模子。看到它，出血幾乎一定來自腎臟本身。",
+    "en": "Red cells moulded into little cylinders inside the kidney tubules. See one and the bleeding is almost certainly from the kidney itself."
+   }
+  },
+  {
+   "term": {
+    "zh": "肺腎症候群",
+    "en": "pulmonary-renal syndrome"
+   },
+   "plain": {
+    "zh": "肺出血和腎絲球發炎一起出現，常是同一個免疫疾病在攻擊兩個器官。要緊急整合處理。",
+    "en": "Lung bleeding and kidney inflammation appearing together, often one immune disease attacking two organs. It needs urgent joined-up care."
+   }
+  }
+ ],
+ "codex": [
+  {
+   "id": "hd-machine",
+   "kind": "equipment",
+   "name": {
+    "zh": "血液透析機",
+    "en": "Haemodialysis machine"
+   },
+   "text": {
+    "zh": "幫浦、透析器、管路和一排警報燈。處方由團隊設定；上機前它會自檢，自檢沒過就不接病人。阿玉說它只是比較囉嗦，不是故障。",
+    "en": "Pump, dialyser, tubing and a row of alarm lights. The prescription is the team's; before each session it self-tests, and a failed test means no patient is connected. Nurse Yu says it is chatty, not broken."
+   },
+   "hot": "device"
+  },
+  {
+   "id": "us-cart",
+   "kind": "equipment",
+   "name": {
+    "zh": "床邊超音波",
+    "en": "Bedside ultrasound"
+   },
+   "text": {
+    "zh": "腎臟科用它回答一個問題：尿有沒有排出去？腎臟長軸看腎盂有沒有撐大、膀胱有沒有脹滿。兩分鐘，改變整個診斷。",
+    "en": "The nephrologist uses it to answer one question: is the urine getting out? The long axis of the kidney shows a stretched pelvis; the bladder shows retention. Two minutes that change the whole diagnosis."
+   },
+   "hot": "ultrasound"
+  },
+  {
+   "id": "microscope",
+   "kind": "equipment",
+   "name": {
+    "zh": "尿沉渣顯微鏡",
+    "en": "Sediment microscope"
+   },
+   "text": {
+    "zh": "護理站角落的那台。離心、倒掉上清、取一滴沉渣、蓋玻片、低倍找圓柱、高倍看紅血球形狀。周主治說這是腎臟科的聽診器。",
+    "en": "The one in the corner of the station. Spin, decant, one drop of sediment, coverslip, low power for casts, high power for red-cell shape. Dr Chou calls it the nephrologist's stethoscope."
+   },
+   "hot": "microscope"
+  },
+  {
+   "id": "monitor",
+   "kind": "equipment",
+   "name": {
+    "zh": "透析室監視器",
+    "en": "Unit monitor"
+   },
+   "text": {
+    "zh": "每張透析椅都有一台。心跳變慢、波形變寬，在病人說「怪怪的」之前就看得到。",
+    "en": "One at every dialysis chair. A slowing pulse and a widening waveform are visible before the patient says anything feels 'odd'."
+   },
+   "hot": "monitor"
+  },
+  {
+   "id": "io-chart",
+   "kind": "equipment",
+   "name": {
+    "zh": "輸出入量記錄表",
+    "en": "Fluid balance chart"
+   },
+   "text": {
+    "zh": "床尾那張紙。每小時喝了多少、尿了多少。沒有這張表，你對腎臟的了解只剩明天早上的一管血。",
+    "en": "The sheet at the foot of the bed: what went in and what came out, hour by hour. Without it, all you know about the kidney is tomorrow morning's blood tube."
+   },
+   "hot": "chart"
+  },
+  {
+   "id": "old-report",
+   "kind": "item",
+   "name": {
+    "zh": "阿海伯的舊健檢報告",
+    "en": "Mr Hai's old health-check report"
+   },
+   "text": {
+    "zh": "小芬翻了一整晚抽屜找到的，三年前漁會健檢。上面有一個肌酸酐。有了它，急性和慢性終於分得開。",
+    "en": "Found by Fen after a night of going through drawers: the fishermen's association health check from three years ago. It has a creatinine on it. With it, acute and chronic can finally be told apart."
+   }
+  },
+  {
+   "id": "baseline-first",
+   "kind": "concept",
+   "name": {
+    "zh": "先找基準",
+    "en": "Baseline first"
+   },
+   "text": {
+    "zh": "一個肌酸酐數字沒有意義，兩個才有。先找舊值：其他醫院、健檢、捐血、保險體檢。找不到，就把尿量和趨勢當基準。",
+    "en": "One creatinine means nothing; two mean something. Hunt for the old value: other hospitals, health checks, blood donation, insurance medicals. If there is none, the urine output and the trend become your baseline."
+   }
+  },
+  {
+   "id": "three-questions",
+   "kind": "concept",
+   "name": {
+    "zh": "急性腎損傷的三個問題",
+    "en": "Three questions for acute kidney injury"
+   },
+   "text": {
+    "zh": "進水夠不夠（容量）、有沒有東西在傷腎（藥物、顯影劑、感染）、尿排得出去嗎（阻塞）。三個都要問，因為答案常常不只一個。",
+    "en": "Is enough getting in (volume)? Is something hurting the kidney (drugs, contrast, infection)? Can urine get out (obstruction)? Ask all three, because the answer is often more than one."
+   }
+  }
+ ],
+ "segs": [
+  {
+   "id": "handover",
+   "name": {
+    "zh": "晨間交班",
+    "en": "Morning handover"
+   },
+   "sub": {
+    "zh": "07:30 · 病房白板",
+    "en": "07:30 · ward whiteboard"
+   },
+   "t": 450,
+   "mood": "day",
+   "note": {
+    "zh": "接下 5 床阿海伯",
+    "en": "Took over Mr Hai in bed 5"
+   },
+   "beats": [
+    {
+     "id": "h1",
+     "to": "place:whiteboard",
+     "guide": {
+      "zh": "到白板聽交班",
+      "en": "Hear the handover at the board"
+     },
+     "lines": [
+      [
+       "ward-nurse",
+       {
+        "zh": "（擴音）5 床阿海伯，75 歲，腹瀉三天後無力，昨晚入院。肌酸酐偏高，沒有舊值可以比。",
+        "en": "(On speaker) Bed 5, Mr Hai, 75, weak after three days of diarrhoea, admitted last night. Creatinine raised, and there is no old value to compare."
+       }
+      ],
+      [
+       "ward-nurse",
+       {
+        "zh": "腰痠一直吃女婿買的止痛藥。他說他的腎以前好好的。",
+        "en": "Takes his son-in-law's painkillers for backache. Says his kidneys used to be fine."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "「以前好好的」不是基準值。舊值呢？",
+        "en": "'Used to be fine' is not a baseline. And the old value?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "找不到。他沒在我們醫院看過。",
+        "en": "None. He has never been seen here."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "h2",
+     "to": "attending",
+     "guide": {
+      "zh": "跟周主治討論怎麼開始",
+      "en": "Discuss the plan with Dr Chou"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "一個肌酸酐沒有意義，兩個才有。沒有舊值的時候，你拿什麼當基準？",
+        "en": "One creatinine means nothing; two mean something. With no old value, what do you use as a baseline?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "……他的尿量？還有今天和明天的趨勢。",
+        "en": "...His urine output? And the trend from today to tomorrow."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "對。來，把線索排一排。",
+        "en": "Right. Line up the clues."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "nephrology-v37-aki-baseline",
+      "stage": 0
+     },
+     "post": [
+      [
+       "attending",
+       {
+        "zh": "好。女兒中午會來，請她回家翻抽屜：健檢、捐血、保險體檢，什麼都好。",
+        "en": "Good. His daughter comes at noon; ask her to go through the drawers at home. Health checks, blood donation, insurance medicals, anything."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "h3",
+     "to": "place:desk",
+     "guide": {
+      "zh": "到護理站處理醫囑",
+      "en": "Sort the orders at the station"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "阿海伯的藥單攤在桌上。止痛藥、降血壓藥、一包女婿買的藥局成藥。",
+        "en": "Mr Hai's drug list lies on the desk: painkillers, blood-pressure tablets, and a packet of pharmacy pills from the son-in-law."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "choice",
+      "q": {
+       "zh": "沒有基準值的急性腎損傷，第一張醫囑寫什麼？",
+       "en": "Acute kidney injury with no baseline. What is your first order?"
+      },
+      "options": [
+       {
+        "zh": "停止痛藥、審藥單、每小時尿量表",
+        "en": "Stop the painkillers, review the list, hourly urine chart",
+        "ok": true,
+        "set": {
+         "uo-chart": true
+        },
+        "why": {
+         "zh": "先把正在傷腎的東西拿掉，然後讓腎臟每小時給你報告。這比任何一管血都早。",
+         "en": "Remove what is hurting the kidney now, then let the kidney report to you hourly. That is earlier than any blood tube."
+        }
+       },
+       {
+        "zh": "先大量補水，明早再抽血",
+        "en": "Fluids now, bloods tomorrow morning",
+        "ok": false,
+        "set": {
+         "uo-chart": false
+        },
+        "why": {
+         "zh": "缺水可能只是原因之一。沒有尿量表，你補的水進去之後去了哪裡，沒有人知道。",
+         "en": "Dehydration may be only one cause. Without a urine chart nobody knows where the fluid you give actually goes."
+        }
+       },
+       {
+        "zh": "直接排緊急透析",
+        "en": "Book urgent dialysis",
+        "ok": false,
+        "set": {
+         "uo-chart": false
+        },
+        "why": {
+         "zh": "透析是回答問題之後的工具，不是問題本身。他現在沒有透析的緊急指徵。",
+         "en": "Dialysis is a tool for after the questions are answered, not a substitute for them. He has no emergency indication now."
+        }
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "unit",
+   "name": {
+    "zh": "透析室",
+    "en": "Dialysis unit"
+   },
+   "sub": {
+    "zh": "08:00 · 透析椅",
+    "en": "08:00 · dialysis chairs"
+   },
+   "t": 480,
+   "mood": "day",
+   "note": {
+    "zh": "張阿姨上機",
+    "en": "Mrs Chang put on dialysis"
+   },
+   "beats": [
+    {
+     "id": "u1",
+     "to": "patient-chang",
+     "guide": {
+      "zh": "到透析椅見張阿姨",
+      "en": "See Mrs Chang at her chair"
+     },
+     "lines": [
+      [
+       "patient-chang",
+       {
+        "zh": "阿玉，今天心臟怪怪的，跳得好像比較慢。昨天孫子生日，我吃了很多水果，不要罵我。",
+        "en": "Yu, my heart feels odd today, slower somehow. It was my grandson's birthday yesterday and I ate a lot of fruit. Do not scold me."
+       }
+      ],
+      [
+       "nurse-yu",
+       {
+        "zh": "我不罵，我記下來。先給我手臂。",
+        "en": "No scolding, just writing it down. Arm first."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "「心臟怪怪的」加「很多水果」，你想到什麼？記著，等一下會用到。",
+        "en": "'Heart feels odd' plus 'a lot of fruit'. What comes to mind? Hold that thought; you will need it."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "u2",
+     "to": "place:hd-machine",
+     "guide": {
+      "zh": "上機前評估廔管",
+      "en": "Assess the fistula before connecting"
+     },
+     "roles": [
+      "hd-nurse"
+     ],
+     "lines": [
+      [
+       "nurse-yu",
+       {
+        "zh": "每一次上機前評估動靜脈廔管：看、摸、聽。看紅腫，摸震顫，聽雜音。廔管是她的命。",
+        "en": "Before every session, assess the AV fistula: look, feel, listen. Look for redness, feel for the thrill, listen for the bruit. The fistula is her life."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "drill",
+      "template": "nephrology",
+      "drill": "fistula"
+     },
+     "post": [
+      [
+       "nurse-yu",
+       {
+        "zh": "震顫在，雜音連續，沒有紅腫。可以穿刺。機器自檢也過了，它今天心情不錯。",
+        "en": "Thrill present, continuous bruit, no redness. Safe to needle. The machine passed its self-test too; it is in a good mood today."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "u3",
+     "to": "place:desk",
+     "guide": {
+      "zh": "寫阿海伯的入院評估",
+      "en": "Write Mr Hai's admission assessment"
+     },
+     "roles": [
+      "intern"
+     ],
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "你把三個問題寫成三行：進水夠不夠、有沒有東西在傷腎、尿排得出去嗎。第三行你還沒有答案。",
+        "en": "You write the three questions as three lines: enough going in, anything hurting the kidney, can urine get out. The third line has no answer yet."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "（經過）第三行空著很好。空著就代表你會去回答它。",
+        "en": "(Passing) Good that the third line is blank. Blank means you will go and answer it."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bedside",
+   "name": {
+    "zh": "床邊超音波",
+    "en": "Bedside ultrasound"
+   },
+   "sub": {
+    "zh": "09:30 · 5 床",
+    "en": "09:30 · bed 5"
+   },
+   "t": 570,
+   "mood": "day",
+   "note": {
+    "zh": "超音波發現阿海伯水腎",
+    "en": "Ultrasound: Mr Hai has hydronephrosis"
+   },
+   "beats": [
+    {
+     "id": "b1",
+     "to": "patient-hai",
+     "guide": {
+      "zh": "去 5 床看阿海伯",
+      "en": "See Mr Hai at bed 5"
+     },
+     "lines": [
+      [
+       "patient-hai",
+       {
+        "zh": "醫師，我出海四十年沒住過院。拉肚子而已，怎麼住進來了？",
+        "en": "Doctor, forty years at sea and never in hospital. It was just diarrhoea, how did I end up here?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "阿海伯，你最近尿尿順嗎？有沒有要等很久、滴滴答答？",
+        "en": "Mr Hai, has passing urine been easy lately? Any waiting, any dribbling?"
+       }
+      ],
+      [
+       "patient-hai",
+       {
+        "zh": "男人老了都這樣啦。晚上起來四五次，每次都一點點。",
+        "en": "All old men are like that. Up four or five times a night, a little each time."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "聽到了嗎？「每次都一點點」。第三個問題，去拿超音波。",
+        "en": "Did you hear that? 'A little each time'. The third question. Fetch the ultrasound."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "b2",
+     "to": "place:us-cart",
+     "guide": {
+      "zh": "推超音波車：腎臟長軸",
+      "en": "Ultrasound: long axis of the kidney"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "側躺，探頭放在腰側，找腎臟長軸。你要看的是腎盂有沒有被撐開。",
+        "en": "On his side, probe on the flank, find the long axis of the kidney. You are looking for a stretched collecting system."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "drill",
+      "template": "nephrology",
+      "drill": "us:kidney"
+     },
+     "post": [
+      [
+       "attending",
+       {
+        "zh": "兩邊水腎，膀胱脹得像顆球。他不是「只有」缺水和止痛藥，他的尿根本出不去。",
+        "en": "Hydronephrosis on both sides and a bladder like a football. He is not 'just' dehydrated on painkillers; his urine cannot get out at all."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "三個原因同時存在。放導尿管解除阻塞，然後看尿量。",
+        "en": "All three causes at once. A catheter to relieve the obstruction, then watch the urine output."
+       }
+      ],
+      [
+       "patient-hai",
+       {
+        "zh": "導尿管？……好啦，只要不是開刀。",
+        "en": "A catheter? ...Fine, as long as it is not an operation."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "lab-call",
+   "name": {
+    "zh": "危急值來電",
+    "en": "Critical-value call"
+   },
+   "sub": {
+    "zh": "10:30 · 透析室",
+    "en": "10:30 · dialysis unit"
+   },
+   "t": 630,
+   "mood": "day",
+   "note": {
+    "zh": "處理張阿姨高血鉀",
+    "en": "Managed Mrs Chang's high potassium"
+   },
+   "beats": [
+    {
+     "id": "l1",
+     "to": "attending",
+     "guide": {
+      "zh": "接檢驗科電話，回報師傅",
+      "en": "Take the lab call, report to the mentor"
+     },
+     "ring": {
+      "title": {
+       "zh": "檢驗科危急值",
+       "en": "Lab: critical value"
+      },
+      "sub": {
+       "zh": "張阿姨血鉀危急值，檢體註記溶血",
+       "en": "Mrs Chang: critical potassium, sample flagged haemolysed"
+      },
+      "call": true,
+      "from": "lab-tech"
+     },
+     "lines": [
+      [
+       "lab-tech",
+       {
+        "zh": "檢驗科小高。張阿姨上機前那管血，血鉀危急值，但檢體有溶血註記。請複誦。",
+        "en": "Kao from the lab. Mrs Chang's pre-dialysis sample: potassium at critical level, but the sample is flagged haemolysed. Please read back."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "張阿姨，血鉀危急值，檢體溶血，通知時間記錄了。謝謝。",
+        "en": "Mrs Chang, critical potassium, haemolysed sample, time of notification recorded. Thank you."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "溶血檢體會假性偏高。所以這通電話可以不理嗎？她早上說了什麼？",
+        "en": "A haemolysed sample reads falsely high. So can this call be ignored? What did she tell you this morning?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "心臟怪怪的、跳得慢、昨天吃很多水果。",
+        "en": "Heart feels odd, slower, and a lot of fruit yesterday."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "nephrology-v37-potassium",
+      "stage": 0
+     },
+     "post": [
+      [
+       "attending",
+       {
+        "zh": "對。檢體有問題不代表病人沒問題。心電圖、重抽，兩個同時做，不是先後。",
+        "en": "Right. A faulty sample does not mean a healthy patient. ECG and a repeat sample, both at once, not one after the other."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "l2",
+     "to": "place:monitor",
+     "guide": {
+      "zh": "到監視器看張阿姨",
+      "en": "Check Mrs Chang on the monitor"
+     },
+     "lines": [
+      [
+       "nurse-yu",
+       {
+        "zh": "心電圖貼好了。你看波形，她的心跳在變慢，T 波變尖。",
+        "en": "ECG leads are on. Look at the trace: her rate is slowing and the T waves are peaking."
+       }
+      ],
+      [
+       "patient-chang",
+       {
+        "zh": "我是不是不該吃那些水果……",
+        "en": "I should not have eaten all that fruit, should I..."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "vitals",
+      "event": "bradycardia",
+      "options": [
+       {
+        "zh": "叫師傅、依醫囑處理高血鉀、準備透析、持續心電圖",
+        "en": "Call the mentor, treat the potassium per orders, prepare dialysis, continuous ECG",
+        "ok": true,
+        "why": {
+         "zh": "症狀加心電圖變化，等不到重抽結果。透析是她最有效的排鉀方法，而且機器就在旁邊。",
+         "en": "Symptoms plus ECG changes do not wait for the repeat result. Dialysis is her most effective way to clear potassium, and the machine is right there."
+        }
+       },
+       {
+        "zh": "等重抽結果出來再決定",
+        "en": "Wait for the repeat result",
+        "ok": false,
+        "why": {
+         "zh": "心電圖已經在說話了。等待是用她的心臟在賭。",
+         "en": "The ECG is already speaking. Waiting gambles with her heart."
+        }
+       },
+       {
+        "zh": "請她深呼吸放鬆，可能是緊張",
+        "en": "Ask her to relax and breathe; probably anxiety",
+        "ok": false,
+        "why": {
+         "zh": "尖 T 波不是緊張。這是高血鉀在心臟上留下的痕跡。",
+         "en": "Peaked T waves are not anxiety. That is potassium writing on the heart."
+        }
+       }
+      ]
+     },
+     "post": [
+      [
+       "nurse-yu",
+       {
+        "zh": "上機了，透析液依醫囑。阿姨，下次孫子生日，蛋糕可以，水果我們再談。",
+        "en": "She is on, dialysate per orders. Mrs Chang, next birthday the cake is fine; the fruit we discuss."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "重抽結果回來了，還是高。溶血只是讓它看起來更高而已。",
+        "en": "The repeat is back, still high. The haemolysis only made it look even higher."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "noon",
+   "name": {
+    "zh": "午間：基準值出現",
+    "en": "Noon: the baseline appears"
+   },
+   "sub": {
+    "zh": "12:00 · 5 床",
+    "en": "12:00 · bed 5"
+   },
+   "t": 720,
+   "mood": "day",
+   "note": {
+    "zh": "找到阿海伯的舊值",
+    "en": "Found Mr Hai's old creatinine"
+   },
+   "beats": [
+    {
+     "id": "m1",
+     "to": "family-hai",
+     "guide": {
+      "zh": "小芬帶東西來了",
+      "en": "Fen has brought something"
+     },
+     "lines": [
+      [
+       "family-hai",
+       {
+        "zh": "醫師，我翻了一整晚。三年前漁會健檢的報告，這個對嗎？",
+        "en": "Doctor, I went through everything all night. The fishermen's association health check from three years ago. Is this the one?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "對，就是這個。上面有肌酸酐。小芬，這張紙改變了整個判斷。",
+        "en": "Yes, exactly this. It has a creatinine on it. Fen, this sheet of paper changes the whole picture."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "三年前就比正常高一些。所以他是慢性腎病上面疊了一個急性損傷。兩個問題，不是一個。",
+        "en": "Already a little above normal three years ago. So this is an acute injury on top of chronic disease. Two problems, not one."
+       }
+      ]
+     ],
+     "item": "old-report"
+    },
+    {
+     "id": "m2",
+     "to": "place:io-chart",
+     "guide": {
+      "zh": "看床尾的輸出入量表",
+      "en": "Check the fluid balance chart"
+     },
+     "when": {
+      "flag": "uo-chart",
+      "is": true
+     },
+     "lines": [
+      [
+       "ward-nurse",
+       {
+        "zh": "（經過）尿量表在這裡。導尿管放了之後第一個小時出很多，現在穩定了。",
+        "en": "(Passing) The urine chart is here. A lot came out in the first hour after the catheter; it has settled now."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "這就是為什麼早上要先開尿量表。你現在有趨勢了。",
+        "en": "That is why the urine chart went up this morning. Now you have a trend."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "nephrology-v37-aki-baseline",
+      "stage": 1
+     },
+     "post": [
+      [
+       "attending",
+       {
+        "zh": "容量、藥物、阻塞。三個都在，三個都在處理。這才叫急性腎損傷的評估。",
+        "en": "Volume, drugs, obstruction. All three present, all three being addressed. That is what assessing an acute kidney injury means."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "m3",
+     "to": "place:io-chart",
+     "guide": {
+      "zh": "看床尾的輸出入量表",
+      "en": "Check the fluid balance chart"
+     },
+     "when": {
+      "flag": "uo-chart",
+      "is": false
+     },
+     "lines": [
+      [
+       "ward-nurse",
+       {
+        "zh": "（經過）尿量表？早上沒有醫囑，我們沒有分時段記。導尿管放了之後尿了多少，我只能估。",
+        "en": "(Passing) The urine chart? There was no order this morning, so we did not chart it hourly. How much came out after the catheter, I can only estimate."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "半天的尿量不見了。腎臟剛剛對你說了六個小時的話，你沒有在聽。現在開始記。",
+        "en": "Half a day of urine output, lost. The kidney has been talking to you for six hours and you were not listening. Start charting now."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "nephrology-v37-aki-baseline",
+      "stage": 1
+     },
+     "post": [
+      [
+       "attending",
+       {
+        "zh": "容量、藥物、阻塞。三個都在。從現在起，每小時的尿量就是你的基準。",
+        "en": "Volume, drugs, obstruction. All three present. From now on, the hourly urine output is your baseline."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "consult",
+   "name": {
+    "zh": "急診會診",
+    "en": "ER consult"
+   },
+   "sub": {
+    "zh": "14:00 · 尿沉渣顯微鏡",
+    "en": "14:00 · the sediment microscope"
+   },
+   "t": 840,
+   "mood": "day",
+   "note": {
+    "zh": "會診阿凱的茶色尿",
+    "en": "Saw Kai's tea-coloured urine"
+   },
+   "beats": [
+    {
+     "id": "c1",
+     "to": "patient-kai",
+     "guide": {
+      "zh": "看會診單，去見阿凱",
+      "en": "Read the consult, meet Kai"
+     },
+     "ring": {
+      "title": {
+       "zh": "急診會診單",
+       "en": "ER consult"
+      },
+      "sub": {
+       "zh": "32 歲男性茶色尿、眼皮腫、新發高血壓",
+       "en": "32-year-old man: tea-coloured urine, puffy eyelids, new hypertension"
+      },
+      "call": false
+     },
+     "lines": [
+      [
+       "patient-kai",
+       {
+        "zh": "醫師，我只是太累。外送一天跑十二小時，眼睛腫很正常吧？尿的顏色可能是沒喝水。",
+        "en": "Doctor, I am just tired. Twelve hours a day on deliveries, puffy eyes are normal, right? The urine colour is probably from not drinking."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "茶色尿、眼皮腫、血壓高，三個一起出現，我想親自看你的尿。",
+        "en": "Tea-coloured urine, puffy eyelids, high blood pressure, all three together. I want to look at your urine myself."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "對。檢驗單寫「血尿」只是兩個字。腎臟科醫師自己看沉渣。顯微鏡在哪？",
+        "en": "Right. 'Haematuria' on a lab slip is just a word. Nephrologists look at the sediment themselves. Where is the microscope?"
+       }
+      ]
+     ],
+     "mini": {
+      "type": "find",
+      "hot": "microscope",
+      "q": {
+       "zh": "找到護理站角落的尿沉渣顯微鏡",
+       "en": "Find the sediment microscope in the corner of the station"
+      }
+     },
+     "post": [
+      [
+       "sys",
+       {
+        "zh": "離心、倒掉上清、一滴沉渣、蓋玻片。低倍：紅血球圓柱。高倍：滿視野的變形紅血球。",
+        "en": "Spin, decant, one drop, coverslip. Low power: red-cell casts. High power: a field full of dysmorphic red cells."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "這些血不是從膀胱來的，是從腎絲球漏出來的。阿凱不是太累。",
+        "en": "This blood is not from the bladder; it is leaking through the glomeruli. Kai is not just tired."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "deterioration",
+   "name": {
+    "zh": "病況變化",
+    "en": "Deterioration"
+   },
+   "sub": {
+    "zh": "16:00 · PACS 讀片站",
+    "en": "16:00 · PACS workstation"
+   },
+   "t": 960,
+   "mood": "eve",
+   "note": {
+    "zh": "阿凱咳血，啟動肺腎評估",
+    "en": "Kai coughed blood: pulmonary-renal work-up"
+   },
+   "beats": [
+    {
+     "id": "d1",
+     "to": "place:pacs",
+     "guide": {
+      "zh": "接電話，到 PACS 看胸片",
+      "en": "Take the call, pull up the chest film"
+     },
+     "ring": {
+      "title": {
+       "zh": "病房來電",
+       "en": "Ward calling"
+      },
+      "sub": {
+       "zh": "阿凱咳出血絲，肌酸酐又升了",
+       "en": "Kai is coughing blood-streaked sputum; creatinine up again"
+      },
+      "call": true,
+      "from": "ward-nurse"
+     },
+     "lines": [
+      [
+       "ward-nurse",
+       {
+        "zh": "阿寬。阿凱剛剛咳出血絲，下午的肌酸酐比早上高。血氧還好，他有點怕。",
+        "en": "Kuan. Kai has just coughed up blood-streaked sputum, and this afternoon's creatinine is higher than this morning's. Saturation fine, he is a bit frightened."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "腎絲球加咳血。先把胸片調出來，核對名字和日期。",
+        "en": "Glomeruli plus haemoptysis. Pull up the chest film; check the name and date."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "imaging",
+      "region": "chest",
+      "question": {
+       "zh": "腎絲球血尿的病人開始咳血，胸片要幫你回答什麼？",
+       "en": "A patient with glomerular haematuria starts coughing blood. What should the chest film answer?"
+      },
+      "answer": {
+       "zh": "兩側肺野有沒有新的瀰漫性浸潤，那可能是肺泡出血。肺和腎同時出問題，要想同一個免疫疾病攻擊兩個器官，緊急整合評估，不能分開處理。",
+       "en": "Whether there are new diffuse infiltrates in both lung fields, which could be alveolar haemorrhage. Lungs and kidneys failing together points to one immune disease attacking two organs: urgent joined-up assessment, never handled separately."
+      }
+     },
+     "post": [
+      [
+       "attending",
+       {
+        "zh": "這是肺腎症候群要排除的時候。免疫科、胸腔科、腎臟科，今天晚上就要一起談。",
+        "en": "This is when a pulmonary-renal syndrome must be excluded. Immunology, chest and renal talk together tonight, not tomorrow."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "d2",
+     "to": "attending",
+     "guide": {
+      "zh": "跟師傅決定升級",
+      "en": "Decide the escalation with the mentor"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "腎功能在惡化，又咳血。這不是明天門診的事。",
+        "en": "Kidney function is worsening and he is coughing blood. This is not a clinic problem for tomorrow."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "對。速度很重要。你的交班要怎麼寫，讓接手的人也跑起來？",
+        "en": "Right. Speed matters. How do you write the handover so the next person runs too?"
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "nephrology-v37-haematuria",
+      "stage": 1
+     },
+     "post": [
+      [
+       "attending",
+       {
+        "zh": "好。跨器官線索加惡化速度，這兩件事不能分開寫。",
+        "en": "Good. Cross-organ clues and the pace of deterioration are never written apart."
+       }
+      ],
+      [
+       "patient-kai",
+       {
+        "zh": "醫師……我今晚不能回去跑單了對吧。",
+        "en": "Doctor... I am not going back out on deliveries tonight, am I."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "今晚你的工作是讓我們把答案找出來。",
+        "en": "Tonight your job is to let us find the answer."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "end-of-day",
+   "name": {
+    "zh": "交班與下班",
+    "en": "Handover and home"
+   },
+   "sub": {
+    "zh": "17:30 · 病房白板",
+    "en": "17:30 · ward whiteboard"
+   },
+   "t": 1050,
+   "mood": "eve",
+   "note": {
+    "zh": "完成晚間交班",
+    "en": "Evening handover done"
+   },
+   "beats": [
+    {
+     "id": "e1",
+     "to": "place:whiteboard",
+     "guide": {
+      "zh": "到白板交班給夜班",
+      "en": "Hand over to the night team"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "5 床阿海伯：慢性腎病疊急性損傷，三個原因，導尿管已放，舊值在病歷裡，尿量每小時記。",
+        "en": "Bed 5, Mr Hai: acute injury on chronic disease, three causes, catheter in, old value in the notes, hourly urine output charted."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "張阿姨：高血鉀已透析，心電圖恢復，明天回門診談飲食。阿凱：腎絲球血尿加咳血，肺腎評估進行中。",
+        "en": "Mrs Chang: potassium dialysed, ECG normalised, diet talk in clinic tomorrow. Kai: glomerular haematuria with haemoptysis, pulmonary-renal work-up under way."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "阿凱的部分，把「速度」寫進去。誰負責追免疫科的回覆？",
+        "en": "For Kai, write in the pace. Who is chasing immunology's reply?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "我。電話留在交班單上。",
+        "en": "Me. My number is on the handover sheet."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "e2",
+     "to": "place:hd-machine",
+     "guide": {
+      "zh": "下機與機器消毒",
+      "en": "Take-off and machine disinfection"
+     },
+     "roles": [
+      "hd-nurse"
+     ],
+     "lines": [
+      [
+       "nurse-yu",
+       {
+        "zh": "下機後廔管壓迫止血、再聽一次雜音、機器跑消毒程序。明天早上它還要再囉嗦一輪。",
+        "en": "After take-off: pressure on the fistula, listen to the bruit once more, run the machine's disinfection cycle. It will be chatty again tomorrow morning."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "張阿姨的廔管還好嗎？",
+        "en": "Is Mrs Chang's fistula all right?"
+       }
+      ],
+      [
+       "nurse-yu",
+       {
+        "zh": "好得很。她走的時候問我，葡萄算水果嗎。",
+        "en": "Perfectly. On her way out she asked me whether grapes count as fruit."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "e3",
+     "to": "place:desk",
+     "guide": {
+      "zh": "寫今日病程紀錄",
+      "en": "Write today's progress notes"
+     },
+     "roles": [
+      "intern"
+     ],
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "你把阿海伯的三個問題寫成三個答案，把舊值貼進病歷，把阿凱的沉渣所見畫下來。畫得很醜，但是對的。",
+        "en": "You turn Mr Hai's three questions into three answers, paste the old value into the chart, and sketch Kai's sediment findings. Ugly drawings, but correct."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "e4",
+     "to": "attending",
+     "guide": {
+      "zh": "聽師傅的下班總結",
+      "en": "The mentor's debrief"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "今天你學到腎臟科的三件事：先找基準、自己看尿、檢體有問題不代表病人沒問題。",
+        "en": "Three things from nephrology today: find the baseline first, look at the urine yourself, and a faulty sample does not mean a healthy patient."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "阿海伯那張舊報告，是他女兒找到的，不是我們。記得謝謝她。",
+        "en": "Mr Hai's old report was found by his daughter, not by us. Remember to thank her."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "師傅，你的小本子今天多了三個人。",
+        "en": "Dr Chou, your notebook has three more people in it today."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "四個。我把你也記進去了。",
+        "en": "Four. I wrote you in as well."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "night",
+   "name": {
+    "zh": "夜間一通電話",
+    "en": "One call at night"
+   },
+   "sub": {
+    "zh": "22:30 · 值班室",
+    "en": "22:30 · on-call room"
+   },
+   "t": 1350,
+   "mood": "night",
+   "note": {
+    "zh": "夜間處理解除阻塞後多尿",
+    "en": "Night: post-obstructive diuresis"
+   },
+   "beats": [
+    {
+     "id": "n1",
+     "to": "place:bed5",
+     "guide": {
+      "zh": "接電話，回 5 床",
+      "en": "Take the call, back to bed 5"
+     },
+     "ring": {
+      "title": {
+       "zh": "病房來電",
+       "en": "Ward calling"
+      },
+      "sub": {
+       "zh": "阿海伯尿量變很多",
+       "en": "Mr Hai is passing a great deal of urine"
+      },
+      "call": true,
+      "from": "ward-nurse"
+     },
+     "lines": [
+      [
+       "ward-nurse",
+       {
+        "zh": "阿寬。5 床導尿管放了之後，尿量這幾個小時一直很多，比喝進去的多。血壓還好，他說口渴。",
+        "en": "Kuan. Bed 5 has been passing a great deal of urine for hours since the catheter went in, more than he is drinking. Pressure fine, he says he is thirsty."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "解除阻塞後多尿。尿量繼續每小時記，依醫囑補充與追電解質，我過去看他的容量。",
+        "en": "Post-obstructive diuresis. Keep charting hourly, replace and check electrolytes per orders, and I will come and assess his volume."
+       }
+      ],
+      [
+       "patient-hai",
+       {
+        "zh": "醫師，我這輩子沒尿過這麼多。這是好事還是壞事？",
+        "en": "Doctor, I have never passed this much in my life. Is that good or bad?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "是腎臟終於在說話。我們的工作是聽清楚，然後跟上。",
+        "en": "It is your kidneys finally talking. Our job is to listen carefully and keep up."
+       }
+      ]
+     ],
+     "end": true
+    }
+   ]
+  }
+ ],
+ "ending": {
+  "title": {
+   "zh": "下班了",
+   "en": "End of shift"
+  },
+  "sub": {
+   "zh": "一個肌酸酐沒有意義，兩個才有",
+   "en": "One creatinine means nothing; two mean something"
+  },
+  "stats": [
+   "stages",
+   "drills",
+   "choices",
+   "calls",
+   "items",
+   "time"
+  ]
+ }
+}

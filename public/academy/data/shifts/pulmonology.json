@@ -1,0 +1,1625 @@
+{
+ "format": "huatuo-shift-v1",
+ "department": "pulmonology",
+ "title": {
+  "zh": "胸腔內科值班日",
+  "en": "A shift in pulmonology"
+ },
+ "tagline": {
+  "zh": "從晨間查房到夜裡那通血氧警報",
+  "en": "From the morning round to the night-time saturation alarm"
+ },
+ "room": "ward",
+ "minutes": 25,
+ "roles": [
+  {
+   "id": "intern",
+   "zh": "實習醫師",
+   "en": "Intern",
+   "desc": {
+    "zh": "查房、聽診、讀胸片、接電話、寫交班。走廊永遠在跑。",
+    "en": "Round, auscultate, read chest films, take the calls, write the handover. Always running down a corridor."
+   }
+  },
+  {
+   "id": "rt",
+   "zh": "呼吸治療師",
+   "en": "Respiratory therapist",
+   "desc": {
+    "zh": "肺功能、氧氣與呼吸器都歸你。病人喘不喘，你比監視器先知道。",
+    "en": "Spirometry, oxygen and ventilators are yours. You know the patient is struggling before the monitor does."
+   }
+  }
+ ],
+ "cast": {
+  "attending": {
+   "name": {
+    "zh": "楊主治",
+    "en": "Dr Yang"
+   },
+   "role": {
+    "zh": "主治醫師（師傅）",
+    "en": "Attending (mentor)"
+   },
+   "tag": "ATT",
+   "color": "#2f6f9f",
+   "body": "mentor",
+   "about": {
+    "zh": "胸腔內科主治，爬樓梯從不等電梯。呼叫器很懂事：她一坐下就響。",
+    "en": "Pulmonologist who never waits for the lift. Her pager has excellent timing: it goes off the moment she sits down."
+   }
+  },
+  "rt-pan": {
+   "name": {
+    "zh": "潘治療師",
+    "en": "RT Pan"
+   },
+   "role": {
+    "zh": "呼吸治療師",
+    "en": "Respiratory therapist"
+   },
+   "tag": "RT",
+   "color": "#3b8f6a",
+   "body": "tech",
+   "about": {
+    "zh": "病房的呼吸治療師，手上永遠有一支血氧機和一包口哨型的練習吸入器。",
+    "en": "The ward's respiratory therapist, never without a pulse oximeter and a bag of whistle-shaped training inhalers."
+   }
+  },
+  "patient-huang": {
+   "name": {
+    "zh": "黃阿嬤",
+    "en": "Grandma Huang"
+   },
+   "role": {
+    "zh": "12 床病人",
+    "en": "Patient, bed 12"
+   },
+   "tag": "P12",
+   "color": "#b8762e",
+   "body": "patient",
+   "about": {
+    "zh": "73 歲，退休國小老師，咳嗽發燒三天，今天早上把孫女叫成女兒的名字。（虛擬個案）",
+    "en": "A 73-year-old retired primary-school teacher: cough and fever for three days, and this morning she called her granddaughter by her daughter's name. (Fictional.)"
+   }
+  },
+  "family-huang": {
+   "name": {
+    "zh": "小晴",
+    "en": "Ching"
+   },
+   "role": {
+    "zh": "病人孫女",
+    "en": "Patient's granddaughter"
+   },
+   "tag": "FAM",
+   "color": "#c9596a",
+   "body": "family",
+   "about": {
+    "zh": "大學生，請假來陪阿嬤。阿嬤叫錯她名字的時候，她比誰都先發現不對。",
+    "en": "A university student on leave to sit with her grandmother. She was the first to notice something was wrong when her name came out wrong."
+   }
+  },
+  "patient-lin": {
+   "name": {
+    "zh": "林伯",
+    "en": "Mr Lin"
+   },
+   "role": {
+    "zh": "肺功能室病人",
+    "en": "Spirometry patient"
+   },
+   "tag": "PL",
+   "color": "#8a6ac4",
+   "body": "patient",
+   "about": {
+    "zh": "65 歲，抽菸四十年，走到公車站會喘，早上一定要咳一陣。覺得肺功能檢查「吹一下而已」。（虛擬個案）",
+    "en": "A 65-year-old who has smoked for forty years, breathless by the bus stop, with a morning cough. Thinks spirometry is 'just blowing into a tube'. (Fictional.)"
+   }
+  },
+  "patient-chen": {
+   "name": {
+    "zh": "陳小姐",
+    "en": "Ms Chen"
+   },
+   "role": {
+    "zh": "門診病人",
+    "en": "Clinic patient"
+   },
+   "tag": "PC",
+   "color": "#6a9c3a",
+   "body": "patient",
+   "about": {
+    "zh": "26 歲，辦公大樓清潔員，夜咳好幾週，說自己「每天都有吸」。只記得吸入器是紫色的。（虛擬個案）",
+    "en": "A 26-year-old office cleaner with weeks of night cough who says she uses her inhaler 'every day'. Remembers only that it is purple. (Fictional.)"
+   }
+  },
+  "ward-nurse": {
+   "name": {
+    "zh": "病房小美",
+    "en": "Nurse Mei"
+   },
+   "role": {
+    "zh": "病房護理師",
+    "en": "Ward nurse"
+   },
+   "tag": "WN",
+   "color": "#2e8aa8",
+   "body": "nurse",
+   "phoneOnly": true,
+   "about": {
+    "zh": "12 床的主責護理師，呼吸次數她永遠親手數一分鐘。",
+    "en": "Bed 12's primary nurse. She always counts the respiratory rate by hand for a full minute."
+   }
+  },
+  "ortho-nurse": {
+   "name": {
+    "zh": "骨科病房",
+    "en": "Ortho ward"
+   },
+   "role": {
+    "zh": "骨科病房護理師",
+    "en": "Orthopaedic ward nurse"
+   },
+   "tag": "OW",
+   "color": "#a0522d",
+   "body": "nurse",
+   "phoneOnly": true,
+   "about": {
+    "zh": "骨科病房打來的電話通常只有一句：「有人喘起來了，你們快來。」",
+    "en": "Calls from the orthopaedic ward usually contain one sentence: 'Someone is breathless, come quickly.'"
+   }
+  }
+ },
+ "places": {
+  "whiteboard": {
+   "name": {
+    "zh": "交班白板",
+    "en": "Handover board"
+   },
+   "hot": "whiteboard"
+  },
+  "bed12": {
+   "name": {
+    "zh": "12 床",
+    "en": "Bed 12"
+   },
+   "hot": "bed"
+  },
+  "monitor": {
+   "name": {
+    "zh": "床邊監視器",
+    "en": "Bedside monitor"
+   },
+   "hot": "monitor"
+  },
+  "pacs": {
+   "name": {
+    "zh": "PACS 讀片站",
+    "en": "PACS workstation"
+   },
+   "hot": "imaging"
+  },
+  "pft": {
+   "name": {
+    "zh": "肺功能室",
+    "en": "Lung function room"
+   },
+   "hot": "lab"
+  },
+  "niv": {
+   "name": {
+    "zh": "呼吸器車",
+    "en": "Ventilator trolley"
+   },
+   "hot": "device"
+  },
+  "us-cart": {
+   "name": {
+    "zh": "超音波車",
+    "en": "Ultrasound cart"
+   },
+   "hot": "ultrasound"
+  },
+  "desk": {
+   "name": {
+    "zh": "護理站桌",
+    "en": "Station desk"
+   },
+   "hot": "desk"
+  }
+ },
+ "glossary": [
+  {
+   "term": {
+    "zh": "肺炎",
+    "en": "pneumonia"
+   },
+   "plain": {
+    "zh": "肺泡被感染發炎、積了液體，氧氣進不去。胸片上會看到一塊白影。",
+    "en": "Infection and inflammation filling the air sacs with fluid so oxygen cannot get through. It shows as a white patch on the chest film."
+   }
+  },
+  {
+   "term": {
+    "zh": "意識混亂",
+    "en": "new confusion"
+   },
+   "plain": {
+    "zh": "突然變得搞不清楚人、時間、地點。在肺炎的老人家身上，這是病情嚴重的警訊，不是「老了」。",
+    "en": "Suddenly not knowing who, when or where. In an older person with pneumonia it is a marker of severe illness, not of 'just getting old'."
+   }
+  },
+  {
+   "term": {
+    "zh": "血氧飽和度",
+    "en": "oxygen saturation"
+   },
+   "plain": {
+    "zh": "夾在手指上的小機器量的數字，代表血液裡有多少比例的血紅素帶著氧氣。",
+    "en": "The number from the little clip on the finger: the share of haemoglobin in the blood that is carrying oxygen."
+   }
+  },
+  {
+   "term": {
+    "zh": "痰液培養",
+    "en": "sputum culture"
+   },
+   "plain": {
+    "zh": "把痰送去實驗室養細菌，找出是哪一種菌、怕哪一種藥。要在抗生素之前採才準。",
+    "en": "Growing the bacteria from a sputum sample to learn which germ it is and which drugs it fears. Only reliable if taken before antibiotics start."
+   }
+  },
+  {
+   "term": {
+    "zh": "聽診",
+    "en": "auscultation"
+   },
+   "plain": {
+    "zh": "用聽診器聽呼吸聲。左右兩邊對照著聽，才聽得出哪一邊不一樣。",
+    "en": "Listening to the breath sounds with a stethoscope. Comparing left with right is how you hear which side is different."
+   }
+  },
+  {
+   "term": {
+    "zh": "肺功能檢查",
+    "en": "spirometry"
+   },
+   "plain": {
+    "zh": "用力吹氣的檢查，量你能吹出多少、吹多快。要吹得夠用力、夠久、重複得夠像，結果才可信。",
+    "en": "A forced-breathing test that measures how much air you can blow out and how fast. It is only trustworthy if the blows are hard enough, long enough and repeatable."
+   }
+  },
+  {
+   "term": {
+    "zh": "氣流阻塞",
+    "en": "airflow obstruction"
+   },
+   "plain": {
+    "zh": "氣管變窄、氣吐不乾淨。慢性阻塞性肺病和氣喘都會造成，但要靠合格的肺功能確認。",
+    "en": "Narrowed airways that will not empty properly. Both COPD and asthma cause it, but it is confirmed by a good-quality spirometry, not by guessing."
+   }
+  },
+  {
+   "term": {
+    "zh": "吸入器",
+    "en": "inhaler"
+   },
+   "plain": {
+    "zh": "把藥直接送進氣管的小裝置。用對步驟藥才到得了肺，用錯步驟大半停在喉嚨。",
+    "en": "A small device that delivers medicine straight into the airways. With the right steps it reaches the lungs; with the wrong steps most of it stops in the throat."
+   }
+  },
+  {
+   "term": {
+    "zh": "肺栓塞",
+    "en": "pulmonary embolism"
+   },
+   "plain": {
+    "zh": "腿部血管的血塊跑到肺動脈卡住。突然喘、胸痛、單腳腫是典型組合，胸片常常是正常的。",
+    "en": "A clot from a leg vein lodging in the lung arteries. Sudden breathlessness, chest pain and one swollen leg are the classic trio; the chest film is often normal."
+   }
+  },
+  {
+   "term": {
+    "zh": "D-dimer",
+    "en": "D-dimer"
+   },
+   "plain": {
+    "zh": "血塊分解後的碎片。數值低可以幫忙排除血栓，數值高卻有很多原因，剛開完刀本來就會高。",
+    "en": "A fragment left when clots break down. A low level helps rule a clot out; a high level has many causes, and recent surgery is one of them."
+   }
+  },
+  {
+   "term": {
+    "zh": "臨床機率",
+    "en": "clinical probability"
+   },
+   "plain": {
+    "zh": "先用病史和危險因子估「這個人有多可能是肺栓塞」，再決定做哪個檢查。不是先檢查再想。",
+    "en": "Estimating how likely this person is to have a clot from history and risk factors, then choosing the test. Not testing first and thinking later."
+   }
+  },
+  {
+   "term": {
+    "zh": "非侵襲性呼吸器",
+    "en": "non-invasive ventilation"
+   },
+   "plain": {
+    "zh": "戴面罩、不插管的呼吸器，幫忙把氣推進去。要有人盯著病人，不是接上就走。",
+    "en": "A ventilator that works through a tight face mask instead of a tube, helping push air in. Someone must watch the patient; it is never set up and left."
+   }
+  },
+  {
+   "term": {
+    "zh": "胸膜滑動",
+    "en": "pleural sliding"
+   },
+   "plain": {
+    "zh": "超音波下兩層胸膜隨呼吸互相滑動的亮線。看得到滑動，那個位置就幾乎不會是氣胸。",
+    "en": "On ultrasound, the bright line of the two pleural layers sliding over each other with each breath. Where you see sliding there is almost certainly no pneumothorax."
+   }
+  }
+ ],
+ "codex": [
+  {
+   "id": "oximeter",
+   "kind": "equipment",
+   "name": {
+    "zh": "脈搏血氧機",
+    "en": "Pulse oximeter"
+   },
+   "text": {
+    "zh": "夾在手指上，用紅光和紅外光算血氧飽和度。手冷、指甲油、病人在動，數字都會騙你；先看波形再信數字。",
+    "en": "Clips on a finger and uses red and infrared light to estimate oxygen saturation. Cold hands, nail varnish and movement all lie to it; trust the waveform before the number."
+   },
+   "hot": "monitor"
+  },
+  {
+   "id": "spirometer",
+   "kind": "equipment",
+   "name": {
+    "zh": "肺功能儀",
+    "en": "Spirometer"
+   },
+   "text": {
+    "zh": "肺功能室裡那台接著吹嘴的機器。每天校正，每次檢查至少三次可接受、可重複的用力呼氣。品質不合格的曲線不判讀。",
+    "en": "The machine with the mouthpiece in the lung-function room. Calibrated daily; each test needs at least three acceptable, repeatable forced blows. A poor-quality curve is not interpreted."
+   },
+   "hot": "lab"
+  },
+  {
+   "id": "niv",
+   "kind": "equipment",
+   "name": {
+    "zh": "非侵襲性呼吸器",
+    "en": "NIV machine"
+   },
+   "text": {
+    "zh": "推車上的呼吸器加面罩與管路。設定依醫囑由團隊調整；你的工作是知道它在哪、面罩尺寸對不對、病人戴上後有沒有人盯著。",
+    "en": "The ventilator on a trolley with its mask and tubing. Settings are the team's, per orders; your job is to know where it is, that the mask fits, and that someone watches the patient once it is on."
+   },
+   "hot": "device"
+  },
+  {
+   "id": "us-cart",
+   "kind": "equipment",
+   "name": {
+    "zh": "床邊超音波",
+    "en": "Bedside ultrasound"
+   },
+   "text": {
+    "zh": "胸腔科用來看胸膜滑動、肋膜積液和橫膈的工具。病人喘起來的時候，它比把人推去照片快。",
+    "en": "The chest physician's tool for pleural sliding, effusions and the diaphragm. When a patient becomes breathless it is quicker than a trip to radiology."
+   },
+   "hot": "ultrasound"
+  },
+  {
+   "id": "pacs",
+   "kind": "equipment",
+   "name": {
+    "zh": "PACS 讀片站",
+    "en": "PACS workstation"
+   },
+   "text": {
+    "zh": "先核對姓名、日期、左右標記。胸片看得到陰影，看不到呼吸次數和意識，所以永遠要和病人一起讀。",
+    "en": "Check the name, the date and the side marker first. A chest film shows the shadow but not the breathing rate or the confusion, so it is always read together with the patient."
+   },
+   "hot": "imaging"
+  },
+  {
+   "id": "trainer-inhaler",
+   "kind": "item",
+   "name": {
+    "zh": "練習用吸入器",
+    "en": "Training inhaler"
+   },
+   "text": {
+    "zh": "沒有藥、會吹口哨的練習器。吸得太快它會叫。潘治療師說：「叫了就是你在吸，不是藥在進去。」",
+    "en": "A drug-free trainer that whistles when you inhale too fast. RT Pan says: 'If it whistles, you are sucking, and the drug is not going in.'"
+   }
+  },
+  {
+   "id": "image-not-severity",
+   "kind": "concept",
+   "name": {
+    "zh": "影像不等於嚴重度",
+    "en": "The image is not the severity"
+   },
+   "text": {
+    "zh": "胸片上一小塊陰影的老人家，可能比一大片陰影的年輕人危險得多。呼吸次數、意識、血壓、氧氣需求，才決定她今晚睡哪裡。",
+    "en": "An older patient with a small shadow may be far sicker than a young one with a large shadow. Breathing rate, confusion, blood pressure and oxygen need decide where she sleeps tonight."
+   }
+  },
+  {
+   "id": "probability-first",
+   "kind": "concept",
+   "name": {
+    "zh": "機率先於檢查",
+    "en": "Probability before the test"
+   },
+   "text": {
+    "zh": "肺栓塞沒有一個檢查能單獨回答。先估臨床機率，再決定要不要 D-dimer、要不要直接做影像。順序錯了，陽性和陰性都會騙你。",
+    "en": "No single test answers 'pulmonary embolism'. Estimate the clinical probability first, then decide whether a D-dimer helps or whether to go straight to imaging. In the wrong order, both a positive and a negative will mislead you."
+   }
+  }
+ ],
+ "segs": [
+  {
+   "id": "handover",
+   "name": {
+    "zh": "晨間交班",
+    "en": "Morning handover"
+   },
+   "sub": {
+    "zh": "07:30 · 病房白板",
+    "en": "07:30 · ward whiteboard"
+   },
+   "t": 450,
+   "mood": "day",
+   "note": {
+    "zh": "接下 12 床黃阿嬤",
+    "en": "Took over Grandma Huang in bed 12"
+   },
+   "beats": [
+    {
+     "id": "h1",
+     "to": "place:whiteboard",
+     "guide": {
+      "zh": "到白板聽夜班交班",
+      "en": "Hear the night handover"
+     },
+     "lines": [
+      [
+       "ward-nurse",
+       {
+        "zh": "（電話擴音）12 床黃阿嬤，73 歲，咳嗽發燒三天，昨晚入院。胸片右下肺有陰影。",
+        "en": "(On speaker) Bed 12, Grandma Huang, 73. Cough and fever for three days, admitted last night. Shadow in the right lower lung on the film."
+       }
+      ],
+      [
+       "ward-nurse",
+       {
+        "zh": "凌晨開始呼吸比較快，我親手數的。剛剛她把孫女叫成女兒的名字。",
+        "en": "Breathing faster since the early hours, I counted it myself. And just now she called her granddaughter by her daughter's name."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "陰影不大。她是不是只是年紀大、睡不好？",
+        "en": "The shadow is small. Could she just be old and short of sleep?"
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "這句話等一下在床邊再說一次，我想看你說不說得出口。",
+        "en": "Say that sentence again at the bedside. I want to see whether you still can."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "h2",
+     "to": "attending",
+     "guide": {
+      "zh": "跟楊主治討論嚴重度",
+      "en": "Discuss severity with Dr Yang"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "一張胸片、一個數字、一個新的意識混亂。哪一個決定她今晚睡哪裡？",
+        "en": "One chest film, one number, one new confusion. Which decides where she sleeps tonight?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "……不是胸片。",
+        "en": "...Not the chest film."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "對。影像告訴你「哪裡」，病人告訴你「多嚴重」。來，把線索排一排。",
+        "en": "Right. The image tells you where; the patient tells you how bad. Line up the clues."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "pulmonology-v37-pneumonia",
+      "stage": 0
+     },
+     "post": [
+      [
+       "attending",
+       {
+        "zh": "呼吸快加意識混亂，這個肺炎不「小」。她的痰和血，你打算什麼時候採？",
+        "en": "Fast breathing plus new confusion: this pneumonia is not 'small'. Her sputum and blood, when do you plan to take them?"
+       }
+      ]
+     ]
+    },
+    {
+     "id": "h3",
+     "to": "place:desk",
+     "guide": {
+      "zh": "到護理站處理醫囑",
+      "en": "Sort the orders at the station"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "抗生素已經備好在藥車上。護理師看著你，等你開口。",
+        "en": "The antibiotic is already drawn up on the drug trolley. The nurse is looking at you, waiting."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "choice",
+      "q": {
+       "zh": "抗生素和培養，順序怎麼排？",
+       "en": "Antibiotic and cultures: in what order?"
+      },
+      "options": [
+       {
+        "zh": "先採血液與痰液培養，不延誤抗生素",
+        "en": "Cultures first, then the antibiotic without delay",
+        "ok": true,
+        "set": {
+         "cultures": true
+        },
+        "why": {
+         "zh": "採檢只要幾分鐘，抗生素之後再採，培養常常是陰性的，你會不知道敵人是誰。",
+         "en": "Sampling takes minutes. Cultures taken after the antibiotic are often negative, and you never learn who the enemy was."
+        }
+       },
+       {
+        "zh": "先給抗生素，培養明天早上再採",
+        "en": "Antibiotic now, cultures tomorrow morning",
+        "ok": false,
+        "set": {
+         "cultures": false
+        },
+        "why": {
+         "zh": "明天的培養會被今天的抗生素蓋掉。",
+         "en": "Tomorrow's culture will be blanked by today's antibiotic."
+        }
+       },
+       {
+        "zh": "等退燒再採，比較不會辛苦",
+        "en": "Wait until the fever settles to sample",
+        "ok": false,
+        "set": {
+         "cultures": false
+        },
+        "why": {
+         "zh": "發燒的時候採血液培養，正是最容易養出細菌的時候。",
+         "en": "Blood cultures taken during the fever are exactly the ones most likely to grow."
+        }
+       }
+      ]
+     }
+    },
+    {
+     "id": "h4",
+     "to": "place:niv",
+     "guide": {
+      "zh": "確認呼吸器車在哪",
+      "en": "Locate the ventilator trolley"
+     },
+     "roles": [
+      "rt"
+     ],
+     "lines": [
+      [
+       "rt-pan",
+       {
+        "zh": "每天早上第一件事：知道非侵襲性呼吸器在哪一台車上、面罩尺寸齊不齊。喘起來的時候沒有時間找。",
+        "en": "First thing every morning: know which trolley the non-invasive ventilation is on and that all the mask sizes are there. There is no time to look when someone is gasping."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "find",
+      "hot": "device",
+      "q": {
+       "zh": "在病房裡找到呼吸器車",
+       "en": "Find the ventilator trolley on the ward"
+      }
+     },
+     "post": [
+      [
+       "rt-pan",
+       {
+        "zh": "好。管路、面罩、濾網都在。今天希望它只是站在那裡。",
+        "en": "Good. Tubing, masks, filter all present. Today we hope it just stands there."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "round",
+   "name": {
+    "zh": "床邊查房",
+    "en": "Bedside round"
+   },
+   "sub": {
+    "zh": "08:00 · 12 床",
+    "en": "08:00 · bed 12"
+   },
+   "t": 480,
+   "mood": "day",
+   "note": {
+    "zh": "聽診黃阿嬤",
+    "en": "Examined Grandma Huang"
+   },
+   "beats": [
+    {
+     "id": "r1",
+     "to": "patient-huang",
+     "guide": {
+      "zh": "去 12 床看黃阿嬤",
+      "en": "See Grandma Huang at bed 12"
+     },
+     "lines": [
+      [
+       "patient-huang",
+       {
+        "zh": "老師來了嗎？今天幾年級的課……啊，醫師。我有點喘。",
+        "en": "Is the teacher here? Which year am I teaching today... oh, doctor. I am a little short of breath."
+       }
+      ],
+      [
+       "family-huang",
+       {
+        "zh": "醫師，她昨天還會罵我沒穿外套。今天不太對。",
+        "en": "Doctor, yesterday she was still scolding me for not wearing a jacket. Today she is not right."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "孫女說得對。來，聽診。左右對照，一個位置一個位置來。",
+        "en": "Her granddaughter is right. Now, auscultation. Side to side, one position at a time."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "drill",
+      "template": "pulmonology",
+      "drill": "lungs"
+     },
+     "post": [
+      [
+       "attending",
+       {
+        "zh": "右下肺囉音、呼吸音變小，左邊乾淨。跟胸片一致。但她的呼吸次數比胸片更重要。",
+        "en": "Crackles and reduced air entry at the right base, left side clear. Matches the film. But her breathing rate matters more than the film."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "r2",
+     "to": "place:monitor",
+     "guide": {
+      "zh": "看監視器：氧氣與呼吸",
+      "en": "Check the monitor: oxygen and breathing"
+     },
+     "lines": [
+      [
+       "rt-pan",
+       {
+        "zh": "血氧飽和度在氧氣下還可以，但她用力在呼吸。看肩膀，不要只看數字。",
+        "en": "Oxygen saturation is acceptable on oxygen, but she is working to breathe. Look at her shoulders, not just the number."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "氧氣依醫囑給，呼吸次數每小時數。血氧波形先看再信。",
+        "en": "Oxygen per orders, breathing rate counted hourly. Trust the saturation only after looking at the waveform."
+       }
+      ],
+      [
+       "family-huang",
+       {
+        "zh": "她的手很冰，那個夾子會不會不準？",
+        "en": "Her hands are freezing. Could the clip be wrong?"
+       }
+      ],
+      [
+       "rt-pan",
+       {
+        "zh": "會。所以我剛剛幫她換到耳垂。小晴，你觀察力很好。",
+        "en": "It can. That is why I moved it to her earlobe just now. Ching, you have a good eye."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pft",
+   "name": {
+    "zh": "肺功能室",
+    "en": "Lung function room"
+   },
+   "sub": {
+    "zh": "09:30 · 肺功能室",
+    "en": "09:30 · spirometry"
+   },
+   "t": 570,
+   "mood": "day",
+   "note": {
+    "zh": "林伯的肺功能重做",
+    "en": "Repeated Mr Lin's spirometry"
+   },
+   "beats": [
+    {
+     "id": "p1",
+     "to": "patient-lin",
+     "guide": {
+      "zh": "到肺功能室見林伯",
+      "en": "Meet Mr Lin in the lung function room"
+     },
+     "lines": [
+      [
+       "patient-lin",
+       {
+        "zh": "吹一下而已嘛，我剛剛吹了三次，可以回家了吧？",
+        "en": "It is just blowing, right? I blew three times already. Can I go home?"
+       }
+      ],
+      [
+       "rt-pan",
+       {
+        "zh": "林伯，你每次吹到一半就停。機器說這三次長得都不一樣。",
+        "en": "Mr Lin, you stop halfway every time. The machine says none of the three look alike."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "胸片有肺氣腫的樣子，大家都「覺得」他是慢性阻塞性肺病。但覺得不算數。",
+        "en": "The film looks emphysematous and everyone 'feels' he has COPD. Feeling does not count."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "p2",
+     "to": "place:pft",
+     "guide": {
+      "zh": "檢查肺功能曲線的品質",
+      "en": "Check the quality of the spirometry curves"
+     },
+     "roles": [
+      "rt"
+     ],
+     "lines": [
+      [
+       "rt-pan",
+       {
+        "zh": "判讀之前先看品質。起始夠不夠快、吹得夠不夠久、三次像不像。不合格的曲線，數字再漂亮都不算。",
+        "en": "Quality before interpretation. Fast enough start, long enough blow, three alike. A curve that fails quality is not a result, however nice the numbers."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "pulmonology-v37-copd-confirm",
+      "stage": 1
+     },
+     "post": [
+      [
+       "rt-pan",
+       {
+        "zh": "林伯，再來。吸到最滿、用力吹、吹到我叫停。想像你在吹熄一百根蠟燭。",
+        "en": "Mr Lin, again. Fill right up, blast it out, keep going until I say stop. Imagine blowing out a hundred candles."
+       }
+      ],
+      [
+       "patient-lin",
+       {
+        "zh": "……一百根。好啦。",
+        "en": "...A hundred. Fine."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "p3",
+     "to": "place:desk",
+     "guide": {
+      "zh": "寫黃阿嬤的入院評估",
+      "en": "Write Grandma Huang's admission assessment"
+     },
+     "roles": [
+      "intern"
+     ],
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "你把呼吸次數、意識變化、氧氣需求、血壓和年齡寫在一起。嚴重度不是一個數字，是一組。",
+        "en": "You write the breathing rate, the change in consciousness, the oxygen need, the blood pressure and the age together. Severity is not one number; it is a set."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "（經過）寫完記得加一句：戒菸史和疫苗。出院的時候會用到。",
+        "en": "(Passing) When you finish, add one line: smoking history and vaccines. You will need it at discharge."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ward-call",
+   "name": {
+    "zh": "病房來電",
+    "en": "Ward calling"
+   },
+   "sub": {
+    "zh": "10:30 · 12 床",
+    "en": "10:30 · bed 12"
+   },
+   "t": 630,
+   "mood": "day",
+   "note": {
+    "zh": "重評黃阿嬤",
+    "en": "Reassessed Grandma Huang"
+   },
+   "beats": [
+    {
+     "id": "w1",
+     "to": "place:bed12",
+     "guide": {
+      "zh": "接電話，回 12 床",
+      "en": "Take the call, back to bed 12"
+     },
+     "ring": {
+      "title": {
+       "zh": "病房來電",
+       "en": "Ward calling"
+      },
+      "sub": {
+       "zh": "12 床又燒起來，呼吸更快",
+       "en": "Bed 12 febrile again, breathing faster"
+      },
+      "call": true,
+      "from": "ward-nurse"
+     },
+     "lines": [
+      [
+       "ward-nurse",
+       {
+        "zh": "小美。12 床黃阿嬤，抗生素打了兩個多小時，又燒起來，呼吸比早上更快，氧氣需求上升。建議你現在來看。",
+        "en": "Mei. Bed 12, Grandma Huang: over two hours into the antibiotic, febrile again, breathing faster than this morning, oxygen need rising. I suggest you come now."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "馬上到。請潘治療師也過來。",
+        "en": "On my way. Please ask RT Pan to come too."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "治療兩小時沒反應不奇怪。但「變差」就不一樣。重新想：病因對嗎？有沒有併發症？",
+        "en": "No response after two hours is not strange. Getting worse is different. Think again: is the cause right? Is there a complication?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "肋膜積液、膿胸、不是細菌的肺炎、心臟。還有她喝的水有沒有嗆到。",
+        "en": "Effusion, empyema, a non-bacterial pneumonia, the heart. And whether she has been aspirating her drinks."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "w2",
+     "to": "attending",
+     "guide": {
+      "zh": "跟師傅討論培養",
+      "en": "Discuss the cultures with the mentor"
+     },
+     "when": {
+      "flag": "cultures",
+      "is": true
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "還好你早上先採了痰液培養和血液培養。革蘭氏染色下午會有初步結果，我們不是在黑暗裡換藥。",
+        "en": "Good thing you took the sputum culture and blood cultures this morning. The Gram stain comes back this afternoon; we are not changing drugs in the dark."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "床邊超音波看一下有沒有積液？",
+        "en": "Shall I look for an effusion with the bedside ultrasound?"
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "去。順便讓潘治療師評估她的呼吸功，呼吸器車可能要靠近一點。",
+        "en": "Go. And have RT Pan assess her work of breathing; the ventilator trolley may need to come closer."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "w3",
+     "to": "attending",
+     "guide": {
+      "zh": "跟師傅討論培養",
+      "en": "Discuss the cultures with the mentor"
+     },
+     "when": {
+      "flag": "cultures",
+      "is": false
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "培養在抗生素之後才採，很可能什麼都養不出來。現在要換藥，我們是在黑暗裡換。",
+        "en": "The cultures went after the antibiotic, so they may well grow nothing. If we change drugs now, we change them in the dark."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "是我排錯順序。現在補採還有意義嗎？",
+        "en": "I got the order wrong. Is it still worth sampling now?"
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "有，陰性也是資訊。去採，然後用床邊超音波看積液。",
+        "en": "Yes, a negative is still information. Take them, then look for an effusion with the bedside ultrasound."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "reading",
+   "name": {
+    "zh": "午間讀片",
+    "en": "Midday film review"
+   },
+   "sub": {
+    "zh": "12:00 · PACS 讀片站",
+    "en": "12:00 · PACS workstation"
+   },
+   "t": 720,
+   "mood": "day",
+   "note": {
+    "zh": "與師傅讀黃阿嬤的胸片",
+    "en": "Reviewed the chest film with the mentor"
+   },
+   "beats": [
+    {
+     "id": "i1",
+     "to": "place:pacs",
+     "guide": {
+      "zh": "到 PACS 跟師傅讀片",
+      "en": "Review the film at PACS"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "午餐在這裡吃。先核對姓名、日期、左右標記，再看片。",
+        "en": "Lunch happens here. Name, date, side marker first, then the film."
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "呼叫器響了。她看了一眼，放回口袋。「等我們看完。」",
+        "en": "Her pager goes off. She glances at it and puts it back. 'After we finish.'"
+       }
+      ]
+     ],
+     "mini": {
+      "type": "imaging",
+      "region": "chest",
+      "question": {
+       "zh": "胸片右下肺陰影不大，但病人呼吸快、意識混亂。這張片能告訴你她有多嚴重嗎？",
+       "en": "A modest right-lower shadow, yet the patient is breathing fast and newly confused. Can this film tell you how sick she is?"
+      },
+      "answer": {
+       "zh": "不能。影像告訴你位置和範圍，嚴重度來自呼吸次數、意識、血壓和氧氣需求。一小塊陰影的老人家可以比一大片陰影的年輕人更危險。",
+       "en": "No. The image gives location and extent; severity comes from breathing rate, consciousness, blood pressure and oxygen need. An older patient with a small shadow can be far sicker than a young one with a large shadow."
+      }
+     },
+     "post": [
+      [
+       "attending",
+       {
+        "zh": "記住這張片。以後每次有人說「陰影不大」，你就想到黃阿嬤叫錯孫女名字的早上。",
+        "en": "Remember this film. Whenever someone says 'the shadow is small', think of the morning Grandma Huang got her granddaughter's name wrong."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "clinic",
+   "name": {
+    "zh": "氣喘門診",
+    "en": "Asthma clinic"
+   },
+   "sub": {
+    "zh": "14:00 · 門診",
+    "en": "14:00 · outpatient clinic"
+   },
+   "t": 840,
+   "mood": "day",
+   "note": {
+    "zh": "門診教陳小姐吸入器",
+    "en": "Taught Ms Chen her inhaler"
+   },
+   "beats": [
+    {
+     "id": "k1",
+     "to": "patient-chen",
+     "guide": {
+      "zh": "請陳小姐進診間",
+      "en": "Call Ms Chen into the room"
+     },
+     "lines": [
+      [
+       "patient-chen",
+       {
+        "zh": "醫師，我每天都有吸啊，可是晚上還是咳到醒。是不是藥太弱？",
+        "en": "Doctor, I use it every day, but I still cough myself awake at night. Is the medicine too weak?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "妳的吸入器叫什麼名字？可以示範一次給我看嗎？",
+        "en": "What is your inhaler called? Could you show me how you use it?"
+       }
+      ],
+      [
+       "patient-chen",
+       {
+        "zh": "紫色的那個。就……這樣噴一下，吸一下。",
+        "en": "The purple one. You just... puff and breathe in."
+       }
+      ],
+      [
+       "rt-pan",
+       {
+        "zh": "等等，妳噴完才吸。藥都停在喉嚨了。來，用這支會吹口哨的練習器。",
+        "en": "Wait, you puffed first and inhaled after. The drug stopped in your throat. Here, try the whistling trainer."
+       }
+      ]
+     ],
+     "item": "trainer-inhaler",
+     "mini": {
+      "type": "order",
+      "q": {
+       "zh": "把定量噴霧吸入器的步驟排對",
+       "en": "Put the metered-dose inhaler steps in order"
+      },
+      "steps": [
+       {
+        "zh": "搖勻、打開蓋子",
+        "en": "Shake and uncap"
+       },
+       {
+        "zh": "慢慢把氣呼光",
+        "en": "Breathe all the way out"
+       },
+       {
+        "zh": "含住吸嘴，開始慢吸同時按壓",
+        "en": "Seal lips, start a slow breath in and press"
+       },
+       {
+        "zh": "吸到底後閉氣數秒",
+        "en": "Hold the breath for a few seconds"
+       },
+       {
+        "zh": "慢慢呼氣，漱口",
+        "en": "Breathe out slowly and rinse the mouth"
+       }
+      ]
+     },
+     "post": [
+      [
+       "rt-pan",
+       {
+        "zh": "對。按壓和吸氣要同時開始。吸太快它會叫，叫了就重來。",
+        "en": "Right. Press and inhale together. If it whistles you were too fast; start again."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "還有一件事。妳說晚上咳，哪幾天最嚴重？",
+        "en": "One more thing. You say you cough at night. Which nights are worst?"
+       }
+      ],
+      [
+       "patient-chen",
+       {
+        "zh": "……打掃大樓那幾天。用清潔劑的時候。",
+        "en": "...The days I clean the office tower. When I use the cleaning sprays."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "時間關聯是線索，不是診斷。記兩週的症狀日記，下次帶來。",
+        "en": "The timing is a clue, not a diagnosis. Keep a two-week symptom diary and bring it next time."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "consult",
+   "name": {
+    "zh": "急會診",
+    "en": "Urgent consult"
+   },
+   "sub": {
+    "zh": "16:00 · 骨科病房",
+    "en": "16:00 · orthopaedic ward"
+   },
+   "t": 960,
+   "mood": "eve",
+   "note": {
+    "zh": "會診術後突然喘的病人",
+    "en": "Saw the post-op patient with sudden dyspnoea"
+   },
+   "beats": [
+    {
+     "id": "c1",
+     "to": "place:monitor",
+     "guide": {
+      "zh": "接電話，衝去骨科病房",
+      "en": "Take the call, run to orthopaedics"
+     },
+     "ring": {
+      "title": {
+       "zh": "骨科病房來電",
+       "en": "Ortho ward calling"
+      },
+      "sub": {
+       "zh": "術後第三天的病人突然喘起來",
+       "en": "A patient three days after surgery is suddenly breathless"
+      },
+      "call": true,
+      "from": "ortho-nurse"
+     },
+     "lines": [
+      [
+       "ortho-nurse",
+       {
+        "zh": "骨科病房。42 歲女性，膝關節手術後第三天，剛剛起身突然喘、胸口痛，右小腿昨天就有點腫。血氧在掉。",
+        "en": "Ortho ward. 42-year-old woman, day three after knee surgery, suddenly breathless and chest pain on standing. Right calf a bit swollen since yesterday. Saturation falling."
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "你到的時候，她坐在床緣，手撐著床，說話一次只能講半句。",
+        "en": "When you arrive she is on the edge of the bed, arms braced, managing half a sentence at a time."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "vitals",
+      "event": "desaturation",
+      "options": [
+       {
+        "zh": "氧氣依醫囑、坐起、監測、叫師傅、估肺栓塞機率",
+        "en": "Oxygen per orders, sit up, monitor, call the mentor, estimate PE probability",
+        "ok": true,
+        "why": {
+         "zh": "術後、單腳腫、突然喘：先穩住氧氣，同時把臨床機率算出來，再選檢查。",
+         "en": "Post-op, one swollen leg, sudden dyspnoea: secure oxygen first, work out the clinical probability at the same time, then pick the test."
+        }
+       },
+       {
+        "zh": "先照一張胸片，正常就放心",
+        "en": "Chest film first; if normal, reassure",
+        "ok": false,
+        "why": {
+         "zh": "肺栓塞的胸片常常是正常的。正常的胸片不能排除它。",
+         "en": "The chest film in pulmonary embolism is often normal. A normal film does not exclude it."
+        }
+       },
+       {
+        "zh": "教她腹式呼吸，觀察半小時",
+        "en": "Teach breathing exercises, observe thirty minutes",
+        "ok": false,
+        "why": {
+         "zh": "血氧正在掉的病人不是呼吸練習的對象。",
+         "en": "A patient whose saturation is falling is not a candidate for breathing exercises."
+        }
+       }
+      ]
+     }
+    },
+    {
+     "id": "c2",
+     "to": "place:us-cart",
+     "guide": {
+      "zh": "推超音波：先排除氣胸",
+      "en": "Ultrasound: exclude a pneumothorax first"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "（趕到）在做影像之前，兩分鐘先排除一件事。前胸找胸膜滑動。",
+        "en": "(Arriving) Before any imaging, two minutes to exclude one thing. Anterior chest, look for pleural sliding."
+       }
+      ],
+      [
+       "rt-pan",
+       {
+        "zh": "氧氣上了，面罩尺寸對。我在旁邊。",
+        "en": "Oxygen is on, mask size right. I am right here."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "drill",
+      "template": "pulmonology",
+      "drill": "us:lung"
+     },
+     "post": [
+      [
+       "attending",
+       {
+        "zh": "兩邊都有滑動，不是氣胸。現在，她的肺栓塞臨床機率是多少？",
+        "en": "Sliding on both sides, so not a pneumothorax. Now: what is her clinical probability of pulmonary embolism?"
+       }
+      ]
+     ]
+    },
+    {
+     "id": "c3",
+     "to": "attending",
+     "guide": {
+      "zh": "跟師傅決定下一個檢查",
+      "en": "Decide the next test with the mentor"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "術後第三天、單側小腿腫、突然喘、心跳快。機率高。",
+        "en": "Day three post-op, unilateral calf swelling, sudden dyspnoea, tachycardia. High probability."
+       }
+      ],
+      [
+       "ortho-nurse",
+       {
+        "zh": "醫師，她早上有抽 D-dimer，是高的。",
+        "en": "Doctor, she had a D-dimer this morning. It was raised."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "剛開完刀的 D-dimer 本來就高。那個數字幫你什麼？",
+        "en": "A D-dimer three days after surgery is raised anyway. What does that number do for you?"
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "pulmonology-v37-embolism",
+      "stage": 1
+     },
+     "post": [
+      [
+       "attending",
+       {
+        "zh": "對。高機率的病人，D-dimer 不是確診也不是排除，直接安排影像。順序對了，檢查才有意義。",
+        "en": "Right. In a high-probability patient the D-dimer neither confirms nor excludes; go straight to imaging. The test only means something when the order is right."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "end-of-day",
+   "name": {
+    "zh": "交班與下班",
+    "en": "Handover and home"
+   },
+   "sub": {
+    "zh": "17:30 · 病房白板",
+    "en": "17:30 · ward whiteboard"
+   },
+   "t": 1050,
+   "mood": "eve",
+   "note": {
+    "zh": "完成晚間交班",
+    "en": "Evening handover done"
+   },
+   "beats": [
+    {
+     "id": "e1",
+     "to": "place:whiteboard",
+     "guide": {
+      "zh": "到白板交班給夜班",
+      "en": "Hand over to the night team"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "12 床黃阿嬤：肺炎加意識混亂，今天中午變差，培養狀態在這裡，氧氣需求趨勢在這裡。",
+        "en": "Bed 12, Grandma Huang: pneumonia with new confusion, deteriorated at midday, culture status here, oxygen trend here."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "骨科 42 歲女性：肺栓塞高機率，影像已安排，氧氣依醫囑。結果出來請打給楊主治。",
+        "en": "Ortho, 42-year-old woman: high probability of pulmonary embolism, imaging arranged, oxygen per orders. Call Dr Yang when the result is back."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "好。還有一個人你沒交。",
+        "en": "Good. There is one person you have not handed over."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "……林伯。重做的肺功能品質合格，有氣流阻塞，明天門診談戒菸。",
+        "en": "...Mr Lin. The repeated spirometry passed quality, shows airflow obstruction, and tomorrow's clinic is about stopping smoking."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "e2",
+     "to": "place:niv",
+     "guide": {
+      "zh": "下班前點檢呼吸器",
+      "en": "Check the ventilator before leaving"
+     },
+     "roles": [
+      "rt"
+     ],
+     "lines": [
+      [
+       "rt-pan",
+       {
+        "zh": "呼吸器車回原位，管路換新，面罩消毒。今天它只是站在那裡。這是最好的一天。",
+        "en": "Trolley back in place, fresh tubing, masks disinfected. Today it just stood there. That is the best kind of day."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "黃阿嬤的呼吸功下午有改善嗎？",
+        "en": "Did Grandma Huang's work of breathing improve this afternoon?"
+       }
+      ],
+      [
+       "rt-pan",
+       {
+        "zh": "肩膀放下來了。小晴說她又開始罵人沒穿外套。",
+        "en": "Her shoulders came down. Ching says she is back to scolding people about jackets."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "e3",
+     "to": "place:desk",
+     "guide": {
+      "zh": "寫今日病程紀錄",
+      "en": "Write today's progress notes"
+     },
+     "roles": [
+      "intern"
+     ],
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "你寫下黃阿嬤的嚴重度評估、變差的時間點、重新思考的鑑別、培養的狀態。寫給半夜接手的人看。",
+        "en": "You write Grandma Huang's severity assessment, the time she worsened, the differential you reopened, the culture status. Written for whoever takes over at midnight."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "e4",
+     "to": "attending",
+     "guide": {
+      "zh": "聽師傅的下班總結",
+      "en": "The mentor's debrief"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "今天三個病人，同一堂課。黃阿嬤的陰影不大，林伯的曲線很醜，骨科那位的胸片會是正常的。",
+        "en": "Three patients today, one lesson. Grandma Huang's shadow was small, Mr Lin's curves were ugly, and the ortho patient's chest film will be normal."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "檢查從來不是答案，它只是回答你問對的問題。你今天問對了幾個？",
+        "en": "A test is never the answer. It only answers the question you asked correctly. How many did you ask correctly today?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "……比早上多。",
+        "en": "...More than this morning."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "夠了。回家。",
+        "en": "That will do. Go home."
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "她坐下來。呼叫器響了。",
+        "en": "She sits down. The pager goes off."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "night",
+   "name": {
+    "zh": "夜間血氧警報",
+    "en": "Night saturation alarm"
+   },
+   "sub": {
+    "zh": "22:00 · 值班室",
+    "en": "22:00 · on-call room"
+   },
+   "t": 1320,
+   "mood": "night",
+   "note": {
+    "zh": "夜間處理血氧下降",
+    "en": "Night: handled a saturation drop"
+   },
+   "beats": [
+    {
+     "id": "n1",
+     "to": "place:bed12",
+     "guide": {
+      "zh": "接電話，回 12 床",
+      "en": "Take the call, back to bed 12"
+     },
+     "ring": {
+      "title": {
+       "zh": "病房來電",
+       "en": "Ward calling"
+      },
+      "sub": {
+       "zh": "12 床血氧警報響了",
+       "en": "Bed 12's saturation alarm is going"
+      },
+      "call": true,
+      "from": "ward-nurse"
+     },
+     "lines": [
+      [
+       "ward-nurse",
+       {
+        "zh": "小美。12 床血氧警報，數字掉了，但她在睡覺，呼吸次數跟傍晚一樣，手又冰了。",
+        "en": "Mei. Bed 12's saturation alarm: the number dropped, but she is asleep, breathing rate same as this evening, and her hands are cold again."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "先看波形。波形不好就換耳垂重量。同時我過去看她的呼吸和意識，不只看數字。",
+        "en": "Check the waveform first. If it is poor, move the probe to the earlobe and re-read. I am coming to look at her breathing and consciousness, not just the number."
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "波形重新穩定，數字回來了。黃阿嬤翻個身，嘟囔了一句關於外套的話。",
+        "en": "The waveform steadies and the number returns. Grandma Huang rolls over and mutters something about a jacket."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "記錄：探頭問題，但呼吸與意識已確認。半小時後再量一次。",
+        "en": "Documented: probe artefact, breathing and consciousness confirmed. Recheck in thirty minutes."
+       }
+      ]
+     ],
+     "end": true
+    }
+   ]
+  }
+ ],
+ "ending": {
+  "title": {
+   "zh": "下班了",
+   "en": "End of shift"
+  },
+  "sub": {
+   "zh": "檢查只回答你問對的問題",
+   "en": "A test only answers the question you asked correctly"
+  },
+  "stats": [
+   "stages",
+   "drills",
+   "choices",
+   "calls",
+   "items",
+   "time"
+  ]
+ }
+}
