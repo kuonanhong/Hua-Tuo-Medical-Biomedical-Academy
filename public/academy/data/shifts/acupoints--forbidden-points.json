@@ -1,0 +1,736 @@
+{
+ "format": "huatuo-shift-v2",
+ "department": "acupoints",
+ "case": "forbidden-points",
+ "caseTitle": {"zh": "禁針穴的一天", "en": "A day of forbidden points"},
+ "condition": {"zh": "安全 · 禁針禁灸與危險穴", "en": "Safety · forbidden and danger points"},
+ "difficulty": 2,
+ "title": {"zh": "針灸室的紅線", "en": "Red lines in the acupuncture room"},
+ "tagline": {"zh": "一位剛發現懷孕的病人、一個喘不過氣的高個子，和少了一支的針", "en": "A patient who has just found out she is pregnant, a tall lad short of breath, and one needle missing"},
+ "room": "acupuncture",
+ "minutes": 25,
+ "roles": [
+  {
+   "id": "intern",
+   "zh": "中醫見習醫師",
+   "en": "TCM intern",
+   "desc": {
+    "zh": "取穴、選穴、在老師看著時進針。今天學的是：哪些穴不能碰，為什麼不能碰。",
+    "en": "Locate and choose points, needle under supervision. Today’s lesson: which points you must not touch, and why."
+   }
+  },
+  {
+   "id": "assistant",
+   "zh": "針灸助理",
+   "en": "Acupuncture assistant",
+   "desc": {
+    "zh": "針盤、銳器盒、針數清點都歸你。進針數一次，出針數一次，對得上才算結束。",
+    "en": "Needle tray, sharps box and needle counts are yours. Count in, count out; it is only finished when they match."
+   }
+  }
+ ],
+ "cast": {
+  "xie": {
+   "name": {"zh": "謝醫師", "en": "Dr Hsieh"},
+   "role": {"zh": "針灸科主治醫師（師傅）", "en": "Acupuncture attending (mentor)"},
+   "tag": "ATT",
+   "color": "#81296d",
+   "body": "mentor",
+   "about": {
+    "zh": "抽屜裡有一張手寫的禁針穴歌，每個穴旁邊用紅筆註明底下是什麼器官。口頭禪：「古人說禁，是因為古人看過。」",
+    "en": "Keeps a handwritten verse of forbidden points in his drawer, each annotated in red with the organ underneath. Catchphrase: “When the ancients say forbidden, it’s because they saw what happened.”"
+   }
+  },
+  "fang": {
+   "name": {"zh": "阿芳", "en": "Fang"},
+   "role": {"zh": "針灸助理", "en": "Acupuncture assistant"},
+   "tag": "AST",
+   "color": "#3b8f6a",
+   "body": "nurse",
+   "about": {"zh": "針數清點從來沒出錯過——今天之前。", "en": "Her needle counts have never been wrong. Until today."}
+  },
+  "meijun": {
+   "name": {"zh": "美君", "en": "Mei-Jun"},
+   "role": {"zh": "三十四歲，肩頸痛、想備孕", "en": "Thirty-four, stiff shoulders, hoping to conceive"},
+   "tag": "P1",
+   "color": "#c2703a",
+   "body": "patient",
+   "about": {
+    "zh": "虛構教學個案。設計師，肩頸緊到頭痛，想順便「調身體準備懷孕」。這個月月經晚了幾天，她以為是加班。",
+    "en": "Fictional teaching case. A designer whose tight shoulders give her headaches; she also wants to “prepare her body for pregnancy”. Her period is a few days late; she blames overtime."
+   }
+  },
+  "akai": {
+   "name": {"zh": "阿凱", "en": "A-Kai"},
+   "role": {"zh": "十九歲，高瘦的籃球隊員", "en": "Nineteen, a tall, thin basketball player"},
+   "tag": "P2",
+   "color": "#2f6fa3",
+   "body": "patient",
+   "about": {
+    "zh": "虛構教學個案。大學籃球隊。昨天在別處做了背部針灸，今天右胸悶痛，爬樓梯會喘。",
+    "en": "Fictional teaching case. University basketball team. Had acupuncture on his upper back elsewhere yesterday; today his right chest aches and stairs leave him breathless."
+   }
+  },
+  "kaimom": {
+   "name": {"zh": "阿凱的媽媽", "en": "A-Kai's mother"},
+   "role": {"zh": "家屬（電話）", "en": "Family (phone)"},
+   "tag": "FAM",
+   "color": "#a0522d",
+   "phoneOnly": true,
+   "about": {"zh": "兒子一米九，她還是叫他「寶寶」。", "en": "Her son is nearly two metres tall and she still calls him “baby”."}
+  }
+ },
+ "places": {
+  "board": {"name": {"zh": "治療排程白板", "en": "Treatment board"}, "hot": "whiteboard"},
+  "chart-wall": {"name": {"zh": "經絡掛圖", "en": "Meridian chart"}, "hot": "meridian-chart"},
+  "couch": {"name": {"zh": "一號治療床", "en": "Couch one"}, "hot": "couch"},
+  "couch2": {"name": {"zh": "二號治療床", "en": "Couch two"}, "hot": "recovery"},
+  "needles": {"name": {"zh": "無菌針盤與銳器盒", "en": "Needle tray and sharps box"}, "hot": "needles"},
+  "crash": {"name": {"zh": "急救車", "en": "Crash cart"}, "hot": "crash-cart"}
+ },
+ "glossary": [
+  {
+   "term": {"zh": "禁針穴", "en": "points forbidden to needle"},
+   "plain": {
+    "zh": "古籍列出不可針刺或不可深刺的穴位，多因下方有重要器官或血管；例如神闕、乳中。",
+    "en": "Points the classics say must not be needled, or not deeply, usually because an organ or vessel lies beneath; for example Shenque and Ruzhong."
+   }
+  },
+  {
+   "term": {"zh": "禁灸穴", "en": "points forbidden to moxa"},
+   "plain": {
+    "zh": "古籍列出不宜施灸的穴位，多在顏面、大血管或表淺處；例如睛明、人迎。",
+    "en": "Points the classics say must not be warmed, mostly on the face, over large vessels or where tissue is thin; for example Jingming and Renying."
+   }
+  },
+  {
+   "term": {"zh": "孕婦禁穴", "en": "points avoided in pregnancy"},
+   "plain": {"zh": "合谷、三陰交、肩井、至陰，以及腹部、腰骶部穴位；孕期避免針灸。", "en": "Hegu, Sanyinjiao, Jianjing, Zhiyin, and points on the belly and low back; avoided during pregnancy."}
+  },
+  {
+   "term": {"zh": "肺尖", "en": "lung apex"},
+   "plain": {"zh": "肺的最上端，高過鎖骨；肩井、缺盆一帶深刺可能刺到。", "en": "The top of the lung, rising above the collarbone; deep needling around Jianjing or Quepen can reach it."}
+  },
+  {
+   "term": {"zh": "氣胸", "en": "pneumothorax"},
+   "plain": {
+    "zh": "空氣跑進肺和胸壁之間，肺塌陷；胸背部深刺是最常見的嚴重針刺意外。",
+    "en": "Air between the lung and chest wall, collapsing the lung; deep needling of the chest or back is the commonest serious acupuncture accident."
+   }
+  },
+  {
+   "term": {"zh": "斜刺", "en": "oblique insertion"},
+   "plain": {"zh": "針與皮膚成斜角進針；胸背部穴位用斜刺避開胸膜。", "en": "Needling at a slant to the skin; on the chest and back it keeps the needle away from the pleura."}
+  },
+  {
+   "term": {"zh": "平刺", "en": "transverse insertion"},
+   "plain": {"zh": "針幾乎貼著皮膚進針；頭皮、胸骨上的穴位常用。", "en": "Needling almost flat along the skin; used on the scalp and over the breastbone."}
+  },
+  {
+   "term": {"zh": "延髓", "en": "medulla"},
+   "plain": {
+    "zh": "腦幹最下段，管呼吸心跳；風府、啞門深處就是它，針尖不可向上深刺。",
+    "en": "The lowest part of the brainstem, running breathing and heartbeat; it lies deep to Fengfu and Yamen, so the needle never points up and deep."
+   }
+  },
+  {
+   "term": {"zh": "滑脈", "en": "slippery pulse"},
+   "plain": {"zh": "往來流利、如珠走盤；中醫認為主痰濕、食積，也常見於懷孕。", "en": "Smooth and rolling like pearls on a plate; in TCM phlegm-damp or food stagnation, and often seen in pregnancy."}
+  },
+  {
+   "term": {"zh": "針數清點", "en": "needle count"},
+   "plain": {
+    "zh": "進針與出針各數一次，數字對得上才算結束；和手術室清點紗布一樣。",
+    "en": "Count the needles in and count them out; it is only over when the numbers match, like a swab count in theatre."
+   }
+  },
+  {
+   "term": {"zh": "遺留針", "en": "retained needle"},
+   "plain": {"zh": "出針時漏拔、留在病人身上或床上的針；靠清點與巡視預防。", "en": "A needle missed at removal, left in the patient or on the couch; prevented by counting and checking."}
+  },
+  {
+   "term": {"zh": "銳器盒", "en": "sharps box"},
+   "plain": {"zh": "裝用過針具的硬殼容器，不回套、不滿出、不用手壓。", "en": "The rigid bin for used needles: no recapping, never overfilled, never pressed down by hand."}
+  },
+  {
+   "term": {"zh": "跡近錯失", "en": "near miss"},
+   "plain": {"zh": "差一點造成傷害但被攔下的事件；一樣要通報，才能改進。", "en": "An error caught before it caused harm; it is still reported so the system can improve."}
+  }
+ ],
+ "codex": [
+  {
+   "id": "needle-tray",
+   "kind": "equipment",
+   "name": {"zh": "無菌針盤與銳器盒", "en": "Needle tray and sharps box"},
+   "text": {
+    "zh": "一次性無菌針、分格針盤、酒精棉、乾棉球。銳器盒放在伸手可及處，用過的針直接丟入，不回套。進針前數一次，出針後數一次。",
+    "en": "Single-use sterile needles, a divided tray, alcohol swabs, dry cotton. The sharps box sits within reach; used needles go straight in, never recapped. Count before insertion and after removal."
+   },
+   "hot": "needles"
+  },
+  {
+   "id": "danger-chart",
+   "kind": "equipment",
+   "name": {"zh": "謝醫師的紅筆掛圖", "en": "Dr Hsieh's red-pen chart"},
+   "text": {
+    "zh": "經絡掛圖上，謝醫師用紅筆圈出危險區：肩井下的肺尖、肺俞下的胸膜、風府下的延髓、睛明旁的眼球、人迎旁的頸動脈、鳩尾下的肝與心。",
+    "en": "On the meridian chart Dr Hsieh has circled the danger zones in red: the lung apex under Jianjing, the pleura under Feishu, the medulla under Fengfu, the eyeball beside Jingming, the carotid beside Renying, the liver and heart under Jiuwei."
+   },
+   "hot": "meridian-chart"
+  },
+  {
+   "id": "forbidden-verse",
+   "kind": "item",
+   "name": {"zh": "手寫的禁針穴歌", "en": "The handwritten forbidden-points verse"},
+   "text": {
+    "zh": "謝醫師老師傳下來的紙，邊緣都毛了。每個穴名旁邊，有一行紅筆小字：底下是什麼、古人怎麼發現的。",
+    "en": "A sheet handed down from Dr Hsieh’s own teacher, frayed at the edges. Beside each point name, a small red note: what lies beneath, and how the ancients found out."
+   }
+  },
+  {
+   "id": "concept-forbidden",
+   "kind": "concept",
+   "name": {"zh": "禁針禁灸穴：古籍與解剖", "en": "Forbidden points: the classics and anatomy"},
+   "text": {
+    "zh": "古籍的禁針、禁灸清單，大多可以用現代解剖解釋：神闕（臍，易感染）禁針可灸；乳中只當定位標誌；肩井、缺盆下有肺尖；胸背部穴下有胸膜；風府、啞門深處是延髓；睛明、承泣、球後貼近眼球；人迎旁是頸動脈；箕門、衝門靠近股動脈。禁灸多在顏面（留疤）與大血管上。原則：危險區斜刺或平刺、不深刺、瘦的人更淺、針尖方向要對。",
+    "en": "Most of the classical forbidden lists make sense in modern anatomy: Shenque (the navel, easily infected) is not needled but may be warmed; Ruzhong is only a landmark; under Jianjing and Quepen lies the lung apex; under chest and back points, the pleura; deep to Fengfu and Yamen, the medulla; Jingming, Chengqi and Qiuhou sit against the eyeball; Renying lies beside the carotid; Jimen and Chongmen near the femoral artery. Moxa is forbidden mostly on the face (scarring) and over large vessels. Rules: oblique or transverse in danger zones, never deep, shallower still in thin people, and the needle tip pointing the right way."
+   }
+  },
+  {
+   "id": "concept-pregnancy",
+   "kind": "concept",
+   "name": {"zh": "孕期針灸的原則", "en": "Acupuncture in pregnancy"},
+   "text": {
+    "zh": "孕期不是絕對不能針灸，但要：避開孕婦禁穴（合谷、三陰交、肩井、至陰、崑崙，以及下腹部與腰骶部；中後期上腹部也避免），刺激溫和、穴位少、時間短、臥位，並讓產科知道。出血、腹痛、破水、胎動減少：立即轉產科。懷孕可能性要在針之前問，不是針之後。",
+    "en": "Pregnancy does not rule acupuncture out, but: avoid the pregnancy-forbidden points (Hegu, Sanyinjiao, Jianjing, Zhiyin, Kunlun, the lower belly and low back, and later the upper belly too), stimulate gently, use few points and short sessions, lie her down, and keep obstetrics informed. Bleeding, belly pain, waters breaking or fewer movements: obstetrics at once. Ask about possible pregnancy before the needle, not after."
+   }
+  },
+  {
+   "id": "concept-pneumo",
+   "kind": "concept",
+   "name": {"zh": "針刺氣胸：辨識與處理", "en": "Acupuncture pneumothorax: recognition and response"},
+   "text": {
+    "zh": "危險穴：肩井、缺盆、肺俞、膏肓、膈俞、胸部穴位，尤其瘦高的人。症狀可能在針後數小時到一天才出現：單側胸痛、吸氣痛、喘、咳、血氧下降。處理：停止治療、坐起、給氧、監測、叫救護車；急診以胸部 X 光確認，嚴重時需抽氣或放胸管。告訴急診針刺的部位與時間。",
+    "en": "Risky points: Jianjing, Quepen, Feishu, Gaohuang, Geshu and chest points, especially in tall thin people. Symptoms can appear hours to a day later: one-sided chest pain, pain on breathing in, breathlessness, cough, falling saturation. Response: stop, sit up, oxygen, monitor, ambulance; the ED confirms on chest X-ray and may aspirate or insert a chest drain. Tell them where and when the needles went in."
+   }
+  },
+  {
+   "id": "concept-count",
+   "kind": "concept",
+   "name": {"zh": "針數清點與遺留針", "en": "Needle counts and retained needles"},
+   "text": {
+    "zh": "進針時數、出針時數，數字寫在治療單上。出針後再看一次頭皮、頭髮、衣物皺褶與床面；頭部和背部最容易漏。數字不對：病人先不離開，全員找到為止。找到了也要通報跡近錯失，因為下一次可能沒那麼幸運。",
+    "en": "Count at insertion, count at removal, and write both on the treatment sheet. After removal look again at scalp, hair, clothing folds and the couch; head and back are where needles hide. If the count is off, the patient stays until it is found. Found or not, report the near miss, because next time you may not be so lucky."
+   }
+  }
+ ],
+ "segs": [
+  {
+   "id": "morning",
+   "name": {"zh": "禁針穴歌", "en": "The forbidden-points verse"},
+   "sub": {"zh": "08:00 · 經絡掛圖", "en": "08:00 · meridian chart"},
+   "t": 480,
+   "mood": "day",
+   "note": {"zh": "古人說禁，是因為古人看過", "en": "Forbidden because they saw"},
+   "beats": [
+    {
+     "id": "m1",
+     "to": "place:chart-wall",
+     "guide": {"zh": "到紅筆掛圖前", "en": "Go to the red-pen chart"},
+     "lines": [
+      ["sys", {"zh": "針灸室早上八點。謝醫師在經絡掛圖上用紅筆圈了好幾個地方。", "en": "Eight a.m. in the acupuncture room. Dr Hsieh has circled several spots on the meridian chart in red."}],
+      ["xie", {"zh": "古書有禁針穴、禁灸穴。為什麼要禁？", "en": "The classics list points forbidden to needle and points forbidden to moxa. Why forbid them?"}],
+      ["me", {"zh": "底下有重要的東西。", "en": "Something important lies underneath."}],
+      [
+       "xie",
+       {
+        "zh": "古人說禁，是因為古人看過。指出這四個，說說底下是什麼。",
+        "en": "When the ancients say forbidden, it’s because they saw what happened. Point to these four and tell me what lies beneath."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "points",
+      "codes": ["GB21", "CV8", "ST17", "GV16"],
+      "q": {"zh": "指出肩井、神闕、乳中、風府", "en": "Point to Jianjing, Shenque, Ruzhong and Fengfu"}
+     },
+     "post": [
+      [
+       "me",
+       {
+        "zh": "肩井下面是肺尖；神闕是肚臍，禁針可灸；乳中只當定位標誌；風府深處是延髓。",
+        "en": "Under Jianjing, the lung apex; Shenque is the navel, no needles but moxa is fine; Ruzhong is only a landmark; deep to Fengfu, the medulla."
+       }
+      ],
+      ["xie", {"zh": "肩井還有一條：孕婦禁針。今天記住它。", "en": "And one more for Jianjing: no needles in pregnancy. Remember that today."}]
+     ]
+    },
+    {
+     "id": "m2",
+     "to": "fang",
+     "guide": {"zh": "和阿芳準備針盤", "en": "Set up the tray with Fang"},
+     "lines": [
+      ["fang", {"zh": "我的規矩：進針數一次，出針數一次，對得上才算結束。", "en": "My rule: count in, count out, and it’s only over when they match."}],
+      ["fang", {"zh": "銳器盒在手邊，不回套、不滿出、不用手壓。", "en": "Sharps box within reach. No recapping, no overfilling, no pressing it down by hand."}],
+      ["me", {"zh": "妳數錯過嗎？", "en": "Have you ever miscounted?"}],
+      ["fang", {"zh": "從來沒有。", "en": "Never."}]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "meijun",
+   "name": {"zh": "美君的肩頸", "en": "Mei-Jun's shoulders"},
+   "sub": {"zh": "09:00 · 一號治療床", "en": "09:00 · couch one"},
+   "t": 540,
+   "mood": "day",
+   "note": {"zh": "美君：脈滑、月經晚，驗孕陽性", "en": "Mei-Jun: slippery pulse, late period, positive"},
+   "beats": [
+    {
+     "id": "c1",
+     "to": "meijun",
+     "guide": {"zh": "聽美君說她的肩頸", "en": "Hear about Mei-Jun's shoulders"},
+     "lines": [
+      [
+       "meijun",
+       {"zh": "肩膀硬到頭痛。也想順便調身體，我們打算明年生小孩。", "en": "My shoulders are so tight I get headaches. And I’d like to get my body ready; we’re planning a baby next year."}
+      ],
+      ["me", {"zh": "月經規律嗎？上一次是什麼時候？", "en": "Are your periods regular? When was the last one?"}],
+      ["meijun", {"zh": "很規律。這個月晚了幾天，應該是加班。", "en": "Very regular. This month it’s a few days late. Overtime, probably."}],
+      ["xie", {"zh": "先把脈。", "en": "Pulse first."}]
+     ],
+     "mini": {
+      "type": "pulse",
+      "pulse": "slippery",
+      "q": {"zh": "美君的脈往來流利，像珠子在盤子裡滾。這是？", "en": "Mei-Jun’s pulse flows smoothly, like pearls rolling on a plate. Which pulse?"},
+      "options": [
+       {
+        "zh": "滑脈",
+        "en": "Slippery pulse",
+        "ok": true,
+        "why": {
+         "zh": "滑脈如珠走盤，中醫認為主痰濕、食積，也見於懷孕。加上月經延遲，先驗孕。脈只能提示，不能確診。",
+         "en": "Slippery, like pearls rolling: in TCM phlegm-damp or food stagnation, and also pregnancy. With a late period, test first. A pulse can suggest; it cannot confirm."
+        }
+       },
+       {
+        "zh": "弦脈",
+        "en": "Wiry pulse",
+        "ok": false,
+        "why": {"zh": "弦脈端直如琴弦，多見肝鬱與疼痛。她的脈是圓滑流利的。", "en": "Wiry is straight like a string, for constraint and pain. Hers is round and flowing."}
+       },
+       {"zh": "細脈", "en": "Thin pulse", "ok": false, "why": {"zh": "細脈如線，主氣血不足。她的脈不細。", "en": "Thin like a thread, for depleted qi and blood. Hers is not thin."}},
+       {
+        "zh": "澀脈",
+        "en": "Choppy pulse",
+        "ok": false,
+        "why": {"zh": "澀脈往來艱澀，如刀刮竹，多見血瘀或精血虧。和她相反。", "en": "Choppy drags like a knife scraping bamboo, for stasis or depletion. The opposite of hers."}
+       }
+      ]
+     },
+     "post": [
+      [
+       "xie",
+       {"zh": "古人說「婦人手少陰脈動甚者，妊子也」。我們不用猜，我們有驗孕棒。", "en": "The ancients wrote of a pregnant woman’s strongly beating pulse. We needn’t guess; we have pregnancy tests."}
+      ],
+      ["fang", {"zh": "美君，洗手間旁邊的櫃子有驗孕棒，我陪妳去。", "en": "Mei-Jun, there are tests in the cupboard by the toilet. I’ll come with you."}]
+     ]
+    },
+    {
+     "id": "c2",
+     "to": "meijun",
+     "guide": {"zh": "看驗孕結果", "en": "See the test result"},
+     "lines": [
+      ["sys", {"zh": "兩條線。美君坐回治療床，看著它，眼眶紅了，又笑了。", "en": "Two lines. Mei-Jun sits back on the couch, looks at it, eyes welling, then laughing."}],
+      ["meijun", {"zh": "真的有了……我還以為是加班。", "en": "It’s real... I thought it was overtime."}],
+      ["xie", {"zh": "恭喜。那今天的處方要改。原本寫的是肩井、合谷、三陰交、風池。", "en": "Congratulations. Then today’s plan changes. It said Jianjing, Hegu, Sanyinjiao and Fengchi."}]
+     ],
+     "mini": {
+      "type": "choice",
+      "q": {
+       "zh": "美君懷孕早期，肩頸痛想針灸。原處方：肩井、合谷、三陰交、風池。你？",
+       "en": "Mei-Jun is newly pregnant and wants needles for her shoulders. The plan: Jianjing, Hegu, Sanyinjiao, Fengchi. You?"
+      },
+      "options": [
+       {
+        "zh": "去掉孕婦禁穴，改安全穴、溫和手法",
+        "en": "Drop the forbidden points; safe points, gentle",
+        "ok": true,
+        "why": {
+         "zh": "肩井、合谷、三陰交都是孕婦禁穴，肩井下還有肺尖。改用安全的穴位、少穴、輕刺激、臥位，並請她讓產科知道。",
+         "en": "Jianjing, Hegu and Sanyinjiao are all points avoided in pregnancy, and Jianjing sits over the lung apex. Use safe points, fewer of them, gentle stimulation, lying down, and ask her to tell obstetrics."
+        },
+        "set": {"safe-plan": true}
+       },
+       {
+        "zh": "照原處方，手法放輕",
+        "en": "Same points, lighter touch",
+        "ok": false,
+        "why": {"zh": "禁穴不是「輕一點」就可以。", "en": "A forbidden point is not made safe by a lighter hand."},
+        "set": {"safe-plan": false}
+       },
+       {
+        "zh": "懷孕就不能針灸，請她回家",
+        "en": "No acupuncture in pregnancy; send her home",
+        "ok": false,
+        "why": {
+         "zh": "孕期不是絕對不能針灸，避開禁穴、溫和處理即可；直接拒絕，她的痛就沒人處理。",
+         "en": "Pregnancy is not an absolute bar: avoid the forbidden points and be gentle. Refusing outright leaves her pain untreated."
+        }
+       }
+      ]
+     },
+     "post": [
+      ["meijun", {"zh": "所以還是可以針？", "en": "So I can still have acupuncture?"}],
+      ["xie", {"zh": "可以，換地方、換手法。產檢時告訴醫師妳有針灸。", "en": "Yes, with different points and a gentler hand. Tell your obstetrician at your check-up."}]
+     ]
+    },
+    {
+     "id": "c3",
+     "to": "place:couch",
+     "guide": {"zh": "選今天的安全穴", "en": "Choose today’s safe points"},
+     "lines": [["xie", {"zh": "局部用風池，遠端用手上的後溪、外關。都不在孕婦禁穴名單上。", "en": "Fengchi locally, and distal points on the hand: Houxi and Waiguan. None is on the pregnancy list."}]],
+     "mini": {
+      "type": "points",
+      "codes": ["GB20", "SI3", "TE5"],
+      "q": {"zh": "指出風池、後溪、外關", "en": "Point to Fengchi, Houxi and Waiguan"}
+     },
+     "post": [
+      [
+       "xie",
+       {"zh": "風池針尖向鼻尖，依穴位標準深度。穴少、刺激輕、臥位。", "en": "Fengchi with the tip towards the nose, to the point’s standard depth. Few points, gentle stimulation, lying down."}
+      ]
+     ]
+    },
+    {
+     "id": "c4",
+     "to": "meijun",
+     "guide": {"zh": "在老師看著下進針", "en": "Needle under supervision"},
+     "lines": [["fang", {"zh": "針刺前，你把流程排一次給我看。", "en": "Before the needles, show me the whole sequence."}]],
+     "mini": {
+      "type": "order",
+      "q": {"zh": "針刺操作的正確順序", "en": "The correct sequence for needling"},
+      "steps": [
+       {"zh": "核對病人、禁忌與穴位", "en": "Check patient, contraindications, points"},
+       {"zh": "體位舒適，定位取穴", "en": "Comfortable position, locate points"},
+       {"zh": "手與穴位消毒", "en": "Clean hands and skin"},
+       {"zh": "進針，行針得氣", "en": "Insert, manipulate to de qi"},
+       {"zh": "留針觀察，出針按壓", "en": "Retain and watch; remove and press"},
+       {"zh": "清點針數，丟入銳器盒", "en": "Count needles; into the sharps box"}
+      ]
+     },
+     "post": [
+      ["fang", {"zh": "進針三支……不對，風池是兩側，四支。我寫上去了。", "en": "Three needles in... no, Fengchi is both sides: four. Written down."}],
+      ["meijun", {"zh": "比我想的不痛。", "en": "Less painful than I expected."}]
+     ]
+    },
+    {
+     "id": "c5",
+     "to": "meijun",
+     "guide": {"zh": "交代美君回家的注意", "en": "Give Mei-Jun her home advice"},
+     "roles": ["intern"],
+     "lines": [
+      ["meijun", {"zh": "網路說按合谷、三陰交可以舒緩肩頸，我在家可以自己按嗎？", "en": "The internet says pressing Hegu and Sanyinjiao eases tight shoulders. Can I press them at home?"}],
+      [
+       "me",
+       {"zh": "懷孕期間，這兩個先不要自己按。肩頸可以熱敷、伸展、調整螢幕高度。", "en": "Not those two while you’re pregnant. For the shoulders: warm packs, stretching, and raise your screen."}
+      ],
+      ["me", {"zh": "出血、肚子痛、頭暈，先找婦產科。", "en": "Bleeding, belly pain or dizziness: obstetrics first."}]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "akai",
+   "name": {"zh": "喘不過氣的高個子", "en": "The tall lad who can’t breathe"},
+   "sub": {"zh": "10:30 · 二號治療床", "en": "10:30 · couch two"},
+   "t": 630,
+   "mood": "day",
+   "note": {"zh": "阿凱：背部針刺後氣胸", "en": "A-Kai: pneumothorax after back needling"},
+   "beats": [
+    {
+     "id": "d1",
+     "to": "akai",
+     "guide": {"zh": "請阿凱躺上二號床", "en": "Bring A-Kai to couch two"},
+     "ring": {
+      "title": {"zh": "阿凱媽媽來電", "en": "A-Kai's mother calling"},
+      "sub": {"zh": "我兒子胸口悶、會喘", "en": "My son's chest is tight and he's breathless"},
+      "call": true,
+      "from": "kaimom"
+     },
+     "lines": [
+      [
+       "kaimom",
+       {
+        "zh": "我兒子說胸口悶、會喘。他昨天在別處背上扎針，人已經在你們樓下了。",
+        "en": "My son says his chest feels tight and he’s breathless. He had needles in his back somewhere yesterday. He’s downstairs at your place now."
+       }
+      ],
+      ["akai", {"zh": "右邊胸口悶，吸氣會痛，爬上來喘到要停。", "en": "Right side of my chest is tight, hurts when I breathe in, I had to stop on the stairs."}],
+      ["sys", {"zh": "他背上右側肩胛骨內緣，有兩個小小的針孔。", "en": "Two tiny needle marks on his back, along the inner edge of the right shoulder blade."}],
+      [
+       "xie",
+       {"zh": "高瘦的年輕男生、背部針刺後一天、單側胸痛加喘。你想到什麼？", "en": "Tall, thin, young, a day after back needling, one-sided chest pain and breathlessness. What do you think of?"}
+      ],
+      ["me", {"zh": "氣胸。", "en": "Pneumothorax."}]
+     ]
+    },
+    {
+     "id": "d2",
+     "to": "akai",
+     "guide": {"zh": "阿凱的血氧往下掉", "en": "A-Kai's saturation is falling"},
+     "lines": [["fang", {"zh": "血氧機夾上了。數字在往下走。", "en": "Oximeter on. The number’s going down."}]],
+     "mini": {
+      "type": "vitals",
+      "event": "desaturation",
+      "options": [
+       {
+        "zh": "讓他坐起、給氧、監測、叫救護車",
+        "en": "Sit up, oxygen, monitor, ambulance",
+        "ok": true,
+        "why": {
+         "zh": "疑似氣胸：坐姿較好呼吸，給氧、監測血氧與生命徵象，立即送急診；不在這裡做任何處置延誤。",
+         "en": "Suspected pneumothorax: sitting helps breathing; give oxygen, monitor saturation and vital signs, and send him to the ED at once with no delaying treatments here."
+        }
+       },
+       {
+        "zh": "讓他平躺休息",
+        "en": "Lie him flat to rest",
+        "ok": false,
+        "why": {"zh": "平躺會更喘。氣胸不會休息就好。", "en": "Lying flat makes it worse. A pneumothorax doesn’t rest itself better."}
+       },
+       {
+        "zh": "在背上拔罐把氣拔出來",
+        "en": "Cup his back to draw the air out",
+        "ok": false,
+        "why": {"zh": "空氣在胸腔裡，拔罐拔不到，只會延誤。", "en": "The air is inside the chest; cups cannot reach it and only waste time."}
+       },
+       {
+        "zh": "針內關止喘",
+        "en": "Needle Neiguan for the breathlessness",
+        "ok": false,
+        "why": {"zh": "先處理原因與安全，針刺不是氣胸的處置。", "en": "Cause and safety first; needling is not a treatment for pneumothorax."}
+       }
+      ]
+     },
+     "post": [
+      ["fang", {"zh": "急救車的氧氣接上了。救護車在路上。", "en": "Oxygen from the crash cart is on. Ambulance on its way."}],
+      ["akai", {"zh": "我只是想讓肩膀好一點……", "en": "I only wanted my shoulder to feel better..."}]
+     ]
+    },
+    {
+     "id": "d2b",
+     "to": "fang",
+     "guide": {"zh": "和阿芳準備轉送", "en": "Prepare the transfer with Fang"},
+     "roles": ["assistant"],
+     "lines": [
+      ["fang", {"zh": "針刺的部位、時間、哪一家，我問了他媽媽，寫在轉送單最上面。", "en": "Where he was needled, when and where: I asked his mother and put it at the top of the transfer sheet."}],
+      ["fang", {"zh": "血氧每次量都記時間。急診會想看它怎麼往下走。", "en": "Every saturation reading gets a time. The ED will want to see how it fell."}]
+     ]
+    },
+    {
+     "id": "d3",
+     "to": "place:crash",
+     "guide": {"zh": "等救護車時想影像", "en": "While the ambulance comes: imaging"},
+     "lines": [["xie", {"zh": "急診會照胸部 X 光。你在片子上找什麼？", "en": "The ED will take a chest X-ray. What do you look for on it?"}]],
+     "mini": {
+      "type": "imaging",
+      "region": "chest",
+      "question": {"zh": "疑似針刺後氣胸，胸部 X 光要找什麼？", "en": "Suspected pneumothorax after needling: what do you look for on the chest X-ray?"},
+      "answer": {
+       "zh": "一條臟層胸膜的細白線，線外看不到肺紋理；肺塌陷的程度。若氣管與縱膈被推向對側，是張力性氣胸，要立即減壓。瘦高年輕男性也可能自發性氣胸，但針刺部位與時間一定要告訴急診。",
+       "en": "A thin white visceral pleural line with no lung markings beyond it, and how much the lung has collapsed. If the trachea and mediastinum are pushed across, it is a tension pneumothorax needing immediate decompression. Tall thin young men can also have spontaneous ones, but always tell the ED where and when the needles went in."
+      }
+     },
+     "post": [
+      [
+       "me",
+       {"zh": "轉送單：昨天右上背針刺，今天右胸痛、喘、血氧下降。", "en": "Transfer note: right upper back needled yesterday; today right chest pain, breathlessness, falling saturation."}
+      ]
+     ]
+    },
+    {
+     "id": "d4",
+     "to": "place:couch2",
+     "guide": {"zh": "練習背部穴的安全角度", "en": "Practise the safe angle on the back"},
+     "lines": [
+      ["xie", {"zh": "這不是為了阿凱，是為了你以後的病人。肺俞要怎麼刺？", "en": "This isn’t for A-Kai; it’s for your future patients. How do you needle Feishu?"}],
+      ["me", {"zh": "向脊柱方向斜刺，依穴位標準深度，不深刺。", "en": "Obliquely towards the spine, to the standard depth, never deep."}]
+     ],
+     "mini": {"type": "drill", "template": "acupoints", "drill": "needle:back"},
+     "post": [
+      [
+       "xie",
+       {
+        "zh": "胸背部斜刺或平刺，瘦的人更淺。阿凱那麼瘦，胸壁比你想的薄。",
+        "en": "On the chest and back, oblique insertion or transverse insertion, shallower still for thin people. A-Kai is so thin his chest wall is thinner than you’d think."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "count",
+   "name": {"zh": "少一支針", "en": "One needle missing"},
+   "sub": {"zh": "13:30 · 一號治療床", "en": "13:30 · couch one"},
+   "t": 810,
+   "mood": "day",
+   "note": {"zh": "針數清點：枕頭邊找到", "en": "Needle count: found by the pillow"},
+   "beats": [
+    {
+     "id": "n1",
+     "to": "fang",
+     "guide": {"zh": "阿芳說數字對不上", "en": "Fang says the count doesn't match"},
+     "lines": [
+      ["fang", {"zh": "美君那一床，進針四支，出針只有三支。", "en": "Mei-Jun’s couch: four needles in, three out."}],
+      ["fang", {"zh": "從來沒有過。今天之前。", "en": "Never happened before. Until today."}],
+      ["xie", {"zh": "美君還在休息嗎？請她先別走。全員找。", "en": "Is Mei-Jun still resting? Ask her to stay. Everyone search."}]
+     ],
+     "mini": {"type": "find", "hot": "couch", "q": {"zh": "在治療床找出遺留的那支針", "en": "Find the retained needle on the couch"}},
+     "post": [
+      ["fang", {"zh": "在枕頭邊！風池那一支，出針時被頭髮蓋住了。", "en": "By the pillow! The Fengchi needle; her hair hid it when we removed them."}],
+      ["xie", {"zh": "還好在枕頭上，不是跟著她的頭髮回家。", "en": "Lucky it’s on the pillow and not going home in her hair."}],
+      ["meijun", {"zh": "原來你們會一支一支數。我更放心了。", "en": "So you count every single one. That makes me feel safer."}]
+     ]
+    },
+    {
+     "id": "n2",
+     "to": "fang",
+     "guide": {"zh": "和阿芳寫跡近錯失通報", "en": "File the near-miss report with Fang"},
+     "roles": ["assistant"],
+     "lines": [
+      ["fang", {"zh": "找到了也要通報。這叫跡近錯失。", "en": "Found or not, it gets reported. It’s a near miss."}],
+      ["fang", {"zh": "改善：出針時數、放進盤子再數一次，最後摸一次頭皮和枕頭。", "en": "Fix: count as they come out, count again in the tray, then one last sweep of scalp and pillow."}],
+      ["me", {"zh": "妳的紀錄還是很完美。", "en": "Your record is still perfect."}],
+      ["fang", {"zh": "完美的是清點，不是我。", "en": "The count is perfect. Not me."}]
+     ]
+    },
+    {
+     "id": "n3",
+     "to": "place:board",
+     "guide": {"zh": "寫美君的治療紀錄", "en": "Write Mei-Jun's treatment record"},
+     "roles": ["intern"],
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "紀錄：懷孕早期，避開孕婦禁穴，取風池、後溪、外關，輕刺激、臥位。已建議告知產科。",
+        "en": "Record: early pregnancy; pregnancy-forbidden points avoided; Fengchi, Houxi and Waiguan, gentle stimulation, lying down. Advised to inform obstetrics."
+       }
+      ],
+      ["xie", {"zh": "再寫一行：遺留針已尋獲，病人知情。誠實寫，下一個人才學得到。", "en": "Add: retained needle found, patient informed. Write it honestly so the next person learns."}]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "callback",
+   "name": {"zh": "阿凱的消息", "en": "News of A-Kai"},
+   "sub": {"zh": "15:30 · 診間電話", "en": "15:30 · clinic phone"},
+   "t": 930,
+   "mood": "day",
+   "note": {"zh": "阿凱：右側氣胸，放了胸管", "en": "A-Kai: right pneumothorax, chest drain"},
+   "beats": [
+    {
+     "id": "k1",
+     "ring": {
+      "title": {"zh": "阿凱媽媽來電", "en": "A-Kai's mother calling"},
+      "sub": {"zh": "寶寶的 X 光結果出來了", "en": "My baby's X-ray result is back"},
+      "call": true,
+      "from": "kaimom"
+     },
+     "lines": [
+      [
+       "kaimom",
+       {
+        "zh": "寶寶是右邊氣胸，放了一條管子，要住院幾天。醫生說還好早來。",
+        "en": "My baby has a right pneumothorax. They put a tube in; he’s in for a few days. The doctor said good thing he came early."
+       }
+      ],
+      ["kaimom", {"zh": "他說以後只給有執照、會問一堆問題的醫師針。", "en": "He says from now on only licensed doctors who ask lots of questions get to needle him."}],
+      ["xie", {"zh": "問問題，是針灸最安全的一步。", "en": "Asking questions is the safest step in acupuncture."}]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "debrief",
+   "name": {"zh": "收診回顧", "en": "Closing debrief"},
+   "sub": {"zh": "17:00 · 經絡掛圖", "en": "17:00 · meridian chart"},
+   "t": 1020,
+   "mood": "eve",
+   "note": {"zh": "問在針之前，數在針之後", "en": "Ask before the needle, count after it"},
+   "beats": [
+    {
+     "id": "e0",
+     "when": {"flag": "safe-plan", "is": true},
+     "lines": [["xie", {"zh": "美君走的時候說，她會帶先生來看那張掛圖。她記住了肩井。", "en": "Mei-Jun said on her way out she’d bring her husband to see the chart. She remembered Jianjing."}]]
+    },
+    {
+     "id": "e0b",
+     "when": {"flag": "safe-plan", "is": false},
+     "lines": [
+      [
+       "xie",
+       {
+        "zh": "你本來想照原處方輕輕針。孕婦禁穴沒有輕重之分，只有針與不針。",
+        "en": "You were going to keep the old points with a lighter hand. Pregnancy-forbidden points have no light and heavy, only needled or not."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "e1",
+     "to": "xie",
+     "guide": {"zh": "和謝醫師回顧今天", "en": "Debrief with Dr Hsieh"},
+     "item": "forbidden-verse",
+     "lines": [
+      ["xie", {"zh": "今天三條紅線。說說看。", "en": "Three red lines today. Go on."}],
+      [
+       "me",
+       {
+        "zh": "懷孕要在針之前問；胸背部斜刺不深刺；針數進出都要對。",
+        "en": "Ask about pregnancy before the needle; oblique and never deep on the chest and back; the count must match in and out."
+       }
+      ],
+      [
+       "xie",
+       {
+        "zh": "這張給你。我老師給我的時候說：古人說禁，是因為古人看過。現在你也看過了。",
+        "en": "This is for you. When my teacher gave it to me he said: forbidden because the ancients saw. Now you have seen too."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "night",
+   "name": {"zh": "夜間訊息", "en": "Night message"},
+   "sub": {"zh": "21:00 · 家", "en": "21:00 · home"},
+   "t": 1260,
+   "mood": "night",
+   "note": {"zh": "美君：告訴先生了", "en": "Mei-Jun: told her husband"},
+   "beats": [
+    {
+     "id": "x1",
+     "ring": {"title": {"zh": "美君傳訊息", "en": "Message from Mei-Jun"}, "sub": {"zh": "我告訴先生了", "en": "I told my husband"}, "call": false, "from": "meijun"},
+     "lines": [
+      [
+       "meijun",
+       {"zh": "我告訴先生了，他哭得比我還慘。產檢時我會說我有針灸、針了哪裡。", "en": "I told my husband; he cried harder than I did. At my check-up I’ll say I had acupuncture and where."}
+      ],
+      ["sys", {"zh": "阿芳在群組貼了一張新的清點表，最下面多了一欄：「頭皮與枕頭」。", "en": "Fang posts a new count sheet to the team chat, with an extra row at the bottom: “scalp and pillow”."}]
+     ],
+     "end": true
+    }
+   ]
+  }
+ ],
+ "ending": {
+  "title": {"zh": "收針了", "en": "Needles counted"},
+  "sub": {"zh": "問在針之前，數在針之後", "en": "Ask before the needle, count after it"},
+  "stats": ["drills", "choices", "calls", "items", "time"]
+ }
+}

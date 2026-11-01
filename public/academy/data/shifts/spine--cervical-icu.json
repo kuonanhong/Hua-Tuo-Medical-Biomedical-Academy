@@ -1,0 +1,253 @@
+{
+  "format": "huatuo-shift-v2",
+  "department": "spine",
+  "case": "cervical-icu",
+  "caseTitle": {"zh": "淺水跳水之後", "en": "After the shallow dive"},
+  "condition": {"zh": "外傷 · 頸椎脊髓損傷", "en": "Trauma · cervical cord injury"},
+  "difficulty": 3,
+  "room": "icu",
+  "title": {"zh": "脊椎外科：加護病房的一天", "en": "Spine surgery: a day in the ICU"},
+  "tagline": {"zh": "一個會開玩笑的年輕人、一條往下掉的肺活量", "en": "A young man who jokes, and a vital capacity that keeps falling"},
+  "minutes": 23,
+  "roles": [
+    {"id": "resident", "zh": "脊椎外科住院醫師", "en": "Spine resident", "desc": {"zh": "昨晚的急診刀做完了，今天的戰場在加護病房：血壓、呼吸、皮膚、和一位母親的眼睛。", "en": "Last night's emergency operation is done; today's battlefield is the ICU: blood pressure, breathing, skin, and a mother's eyes."}},
+    {"id": "rt", "zh": "呼吸治療師", "en": "Respiratory therapist", "desc": {"zh": "肺活量計是你的聽診器。你會比任何人都早看見數字往下走。", "en": "The spirometer is your stethoscope. You'll see the numbers slide before anyone else does."}}
+  ],
+  "cast": {
+    "attending": {"name": {"zh": "譚主治", "en": "Dr Tam"}, "role": {"zh": "脊椎外科主治醫師（師傅）", "en": "Spine attending (mentor)"}, "tag": "ATT", "color": "#81296d", "body": "mentor",
+      "about": {"zh": "話少，查房時會蹲下來和病人平視。口頭禪：「趨勢比數字誠實。」", "en": "A man of few words who crouches to meet patients eye to eye on rounds. Catchphrase: 'Trends are more honest than numbers.'"}},
+    "icu-nurse": {"name": {"zh": "心瑜", "en": "Hsin-yu"}, "role": {"zh": "加護病房護理師", "en": "ICU nurse"}, "tag": "RN", "color": "#3b8f6a", "body": "nurse",
+      "about": {"zh": "翻身從不遲到，抽痰前一定先看心跳。手機桌布是她的貓。", "en": "Never late for a turn; always watches the heart rate before suctioning. Her phone wallpaper is her cat."}},
+    "rt-senior": {"name": {"zh": "阿彬", "en": "Bin"}, "role": {"zh": "資深呼吸治療師", "en": "Senior respiratory therapist"}, "tag": "RT", "color": "#0e7490", "body": "tech",
+      "about": {"zh": "趨勢表畫得比誰都工整，一眼就能看出誰的呼吸在「假裝沒事」。", "en": "Draws the neatest trend charts on the unit and can spot breathing that is 'pretending to be fine' at a glance."}},
+    "physio": {"name": {"zh": "佩君", "en": "Pei-chun"}, "role": {"zh": "物理治療師", "en": "Physiotherapist"}, "tag": "PT", "color": "#b45309", "body": "physio",
+      "about": {"zh": "相信關節一天不動就少一分。翻身、拍痰、活動度，一樣都不能少。", "en": "Believes every day a joint stays still costs something. Turning, chest clearance, range of motion: none of it optional."}},
+    "icu-doc": {"name": {"zh": "加護孫主治", "en": "Dr Sun (ICU)"}, "role": {"zh": "加護病房主治醫師", "en": "ICU attending"}, "tag": "ICU", "color": "#2563eb", "body": "specialist",
+      "about": {"zh": "插管時說話最輕，手最穩。最討厭「再等一下看看」。", "en": "Speaks softest and has the steadiest hands at an intubation. Hates 'let's wait a bit and see'."}},
+    "patient": {"name": {"zh": "小魏", "en": "Wei"}, "role": {"zh": "病人・24 歲外送員", "en": "Patient, 24, delivery rider"}, "tag": "PT2", "color": "#6b7280", "body": "patient",
+      "about": {"zh": "昨晚和朋友在溪邊，從石頭上跳進淺水。醒著、會開玩笑，手卻抬不起來。", "en": "Last night, at a river with friends, he dived off a rock into shallow water. Awake and joking, but he can't lift his hands."}},
+    "mother": {"name": {"zh": "魏媽媽", "en": "Mrs Wei"}, "role": {"zh": "家屬・小魏的母親", "en": "Family, Wei's mother"}, "tag": "FAM", "color": "#9d4b7a", "body": "family",
+      "about": {"zh": "在市場賣麵。從昨晚到現在沒闔過眼，圍裙還繫在身上。", "en": "Sells noodles at the market. Hasn't slept since last night; her apron is still tied on."}},
+    "friend": {"name": {"zh": "阿杰", "en": "Jie"}, "role": {"zh": "小魏的朋友", "en": "Wei's friend"}, "tag": "FR", "color": "#7c3aed", "phoneOnly": true,
+      "about": {"zh": "把小魏從水裡拉上來的人。一直問自己有沒有拉錯。", "en": "The one who pulled Wei out of the water. Keeps asking himself whether he did it wrong."}}
+  },
+  "places": {
+    "bed": {"name": {"zh": "加護 3 床", "en": "ICU bed 3"}, "hot": "bed"},
+    "monitor": {"name": {"zh": "動脈導管監視器", "en": "Arterial line monitor"}, "hot": "monitor"},
+    "ventilator": {"name": {"zh": "呼吸器", "en": "Ventilator"}, "hot": "device"},
+    "imaging": {"name": {"zh": "影像工作站", "en": "Imaging workstation"}, "hot": "imaging"},
+    "board": {"name": {"zh": "查房白板", "en": "Rounds whiteboard"}, "hot": "whiteboard"},
+    "desk": {"name": {"zh": "加護護理站", "en": "ICU nursing station"}, "hot": "desk"}
+  },
+  "glossary": [
+    {"term": {"zh": "頸椎骨折脫位", "en": "cervical fracture-dislocation"}, "plain": {"zh": "頸椎骨頭斷裂、上下兩節錯開。脊髓被夾在中間，最容易受傷。", "en": "A broken neck vertebra with one level slipped over the next. The spinal cord caught between them is easily injured."}},
+    {"term": {"zh": "ASIA 分級", "en": "ASIA grade"}, "plain": {"zh": "國際通用的脊髓損傷分級，從 A（完全損傷）到 E（正常），看的是感覺、力量與肛門周圍的功能。", "en": "The international grading of spinal cord injury, from A (complete) to E (normal), based on sensation, strength and function around the anus."}},
+    {"term": {"zh": "不完全損傷", "en": "incomplete injury"}, "plain": {"zh": "受傷平面以下還保留一些感覺或力量。恢復的機會比完全損傷大。", "en": "Some sensation or strength survives below the injury level. The chance of recovery is better than in a complete injury."}},
+    {"term": {"zh": "薦髓保留", "en": "sacral sparing"}, "plain": {"zh": "最下端的脊髓功能還在，例如肛門周圍有感覺。它是判斷「不完全」最重要的證據。", "en": "Function preserved at the very bottom of the cord, such as feeling around the anus. It is the key evidence that an injury is incomplete."}},
+    {"term": {"zh": "肺活量", "en": "vital capacity"}, "plain": {"zh": "吸到最滿再一口氣吹到最空的氣量。頸髓損傷的人要反覆量，看它往哪裡走。", "en": "The volume of air blown out after the deepest breath in. In a cervical cord injury it is measured repeatedly to see which way it is heading."}},
+    {"term": {"zh": "膈神經", "en": "phrenic nerve"}, "plain": {"zh": "控制橫膈的神經，來自第三到第五頸椎。橫膈是最主要的呼吸肌。", "en": "The nerve that drives the diaphragm, arising from the third to fifth cervical levels. The diaphragm is the main breathing muscle."}},
+    {"term": {"zh": "脊髓水腫", "en": "cord oedema"}, "plain": {"zh": "受傷的脊髓會腫，頭幾天還可能往上下擴大，讓症狀一時變差。", "en": "An injured cord swells, and over the first days the swelling can spread up or down, temporarily worsening the picture."}},
+    {"term": {"zh": "平均動脈壓", "en": "mean arterial pressure"}, "plain": {"zh": "一個心跳週期裡的平均血壓，最能代表器官得到的灌流。脊髓損傷後要守在指引的目標內。", "en": "The average pressure across one heartbeat, the best guide to organ perfusion. After a cord injury it is held within the guideline target."}},
+    {"term": {"zh": "吞嚥篩檢", "en": "swallow screen"}, "plain": {"zh": "喝水吃東西之前的簡單測試。頸椎前側手術後、平躺戴頸圈的人很容易嗆到。", "en": "A simple test before any drinking or eating. After anterior neck surgery, lying flat in a collar, choking is easy."}},
+    {"term": {"zh": "脊髓休克", "en": "spinal shock"}, "plain": {"zh": "脊髓剛受傷時，受傷平面以下的反射暫時全部消失。這時的無力不一定是最後的結果。", "en": "Right after a cord injury, reflexes below the level vanish for a time. Weakness during this phase is not necessarily the final picture."}},
+    {"term": {"zh": "自主神經反射異常", "en": "autonomic dysreflexia"}, "plain": {"zh": "胸椎上段以上的損傷，脊髓休克過後，膀胱脹或便秘等刺激會讓血壓突然飆高。要會認、會找原因。", "en": "In injuries above the upper chest, once spinal shock passes, a full bladder or constipation can make blood pressure surge suddenly. It must be recognised and its trigger found."}},
+    {"term": {"zh": "側塊螺釘", "en": "lateral mass screw"}, "plain": {"zh": "後側頸椎固定常用的螺釘，打在椎骨兩側的骨塊上，避開脊髓與椎動脈。", "en": "The usual screw for posterior neck fixation, placed in the bony blocks on each side of a vertebra, away from the cord and the vertebral artery."}}
+  ],
+  "codex": [
+    {"id": "ventilator", "kind": "equipment", "name": {"zh": "呼吸器", "en": "Ventilator"}, "hot": "device", "text": {"zh": "下午它接手了小魏的呼吸。不是因為他輸了，是因為他的肌肉需要休息。", "en": "This afternoon it took over Wei's breathing. Not because he lost, but because his muscles needed rest."}},
+    {"id": "art-line", "kind": "equipment", "name": {"zh": "動脈導管監視器", "en": "Arterial line monitor"}, "hot": "monitor", "text": {"zh": "每一個心跳都畫成一條波。平均動脈壓守在目標裡，受傷的脊髓才有血喝。", "en": "Draws every heartbeat as a wave. Keep the mean arterial pressure on target and the injured cord gets its blood."}},
+    {"id": "collar", "kind": "equipment", "name": {"zh": "硬式頸圈", "en": "Rigid cervical collar"}, "hot": "bed", "text": {"zh": "保護剛固定的頸椎，但也壓皮膚、妨礙吞嚥。下巴、枕部與鎖骨上方的皮膚每天都要看。", "en": "Protects the freshly fixed neck, but presses on skin and hampers swallowing. Chin, occiput and the skin above the collarbones are checked every day."}},
+    {"id": "vc-chart", "kind": "item", "name": {"zh": "肺活量趨勢表", "en": "Vital capacity trend chart"}, "text": {"zh": "阿彬畫的，一格一格往下走。沒有一個數字嚇人，連起來卻是一條斜坡。", "en": "Bin's chart, stepping down box by box. No single number looks frightening; joined up, they make a slope."}},
+    {"id": "voice-message", "kind": "item", "name": {"zh": "阿杰的錄音", "en": "Jie's voice message"}, "text": {"zh": "「兄弟，你欠我一頓宵夜，外送的不算。」小魏聽完，嘴角動了一下。", "en": "'Bro, you owe me a late-night meal, and delivery doesn't count.' When Wei heard it, the corner of his mouth moved."}},
+    {"id": "c345", "kind": "concept", "name": {"zh": "三、四、五，讓橫膈活著", "en": "Three, four, five keep the diaphragm alive"}, "text": {"zh": "第五頸椎附近的損傷，橫膈多半還能動，但肋間肌與腹肌沒了：吸得淺、咳不出痰。頭幾天脊髓水腫可能往上爬，碰到第三到第五頸椎的膈神經根，呼吸就一路變差。所以要反覆量肺活量看趨勢、積極排痰，在病人累倒之前有計畫地插管：影像喉頭鏡、頭頸保持一直線、有人扶頭。", "en": "With an injury near C5 the diaphragm usually still works, but the intercostal and abdominal muscles are gone: shallow breaths and no effective cough. Over the first days the cord oedema may climb towards the C3–C5 phrenic roots and breathing worsens step by step. So measure vital capacity repeatedly and watch the trend, clear secretions hard, and intubate in a planned way before exhaustion: video laryngoscope, head and neck kept in line, someone holding the head."}},
+    {"id": "shock-and-grade", "kind": "concept", "name": {"zh": "脊髓休克、神經性休克與預後", "en": "Spinal shock, neurogenic shock and prognosis"}, "text": {"zh": "脊髓休克是反射暫時消失；神經性休克是交感神經斷了，血壓低、心跳慢，要用升壓藥守住灌流。兩者都會讓第一天看起來比實際更糟。真正預告恢復的，是有沒有薦髓保留、是不是不完全損傷，以及接下來幾週的變化。", "en": "Spinal shock is the temporary loss of reflexes; neurogenic shock is loss of sympathetic tone, with low pressure and a slow pulse, needing vasopressors to hold perfusion. Both make day one look worse than it is. What really predicts recovery is sacral sparing, whether the injury is incomplete, and the course over the following weeks."}},
+    {"id": "early-bundle", "kind": "concept", "name": {"zh": "第一週的併發症預防", "en": "Preventing complications in week one"}, "text": {"zh": "整體翻身與減壓、胸腔物理治療、血栓預防、腸道與膀胱計畫、關節活動度、吞嚥篩檢、營養、睡眠與心理支持。脊髓休克過後還要教會病人和家屬認出自主神經反射異常：頭痛、臉紅、血壓飆高，先找脹滿的膀胱。", "en": "Log-roll turning and pressure relief, chest physiotherapy, clot prevention, bowel and bladder plans, joint range of motion, swallow screening, nutrition, sleep and psychological support. Once spinal shock passes, patient and family learn to spot autonomic dysreflexia: headache, flushing, soaring pressure, and look first for a full bladder."}}
+  ],
+  "segs": [
+    {"id": "round", "name": {"zh": "加護查房", "en": "ICU rounds"}, "sub": {"zh": "07:30 · 加護 3 床", "en": "07:30 · ICU bed 3"}, "t": 450, "mood": "day",
+     "note": {"zh": "ASIA B：有薦髓保留", "en": "ASIA B: sacral sparing present"},
+     "beats": [
+      {"id": "r1", "to": "attending", "guide": {"zh": "跟譚主治查房", "en": "Round with Dr Tam"},
+       "lines": [
+        ["attending", {"zh": "昨晚的病人。你說。", "en": "Last night's patient. Go ahead."}],
+        ["me", {"zh": "小魏，二十四歲，淺水跳水，第五、六頸椎骨折脫位。昨晚前側減壓融合，今天術後第一天。", "en": "Wei, twenty-four, shallow dive, C5–6 cervical fracture-dislocation. Anterior decompression and fusion last night; day one today."}],
+        ["attending", {"zh": "神經學檢查呢？", "en": "Neuro exam?"}],
+        ["me", {"zh": "手肘能彎，手腕以下沒有力；肛門周圍有感覺，沒有自主收縮。", "en": "Elbows flex, nothing from the wrists down; sensation around the anus, no voluntary contraction."}]
+       ],
+       "mini": {"type": "stage", "case": "spine-spinal-cord-injury-acute-asia", "stage": 3},
+       "post": [
+        ["me", {"zh": "ASIA 分級 B：感覺不完全，有薦髓保留。", "en": "ASIA grade B: sensory incomplete, with sacral sparing."}],
+        ["attending", {"zh": "那是今天最好的消息。不完全損傷，就有恢復的空間。", "en": "That's the best news of the day. An incomplete injury leaves room to recover."}]
+       ]},
+      {"id": "r2", "roles": ["rt"], "to": "place:bed", "guide": {"zh": "量第一次肺活量", "en": "First vital capacity"},
+       "lines": [
+        ["me", {"zh": "小魏，吸到最滿，然後一口氣用力吹出來。", "en": "Wei, breathe all the way in, then blow it all out in one go."}],
+        ["patient", {"zh": "吹氣球比賽？我小學冠軍喔。", "en": "A balloon contest? I was primary-school champion."}],
+        ["rt-senior", {"zh": "記在趨勢表上。數字本身不重要，往哪裡走才重要。", "en": "On the trend chart. The number matters less than where it's heading."}],
+        ["me", {"zh": "隔幾個小時我就來找你比一次肺活量。", "en": "I'll be back every few hours for another vital capacity round."}]
+       ],
+       "item": "vc-chart"},
+      {"id": "r3", "to": "patient", "guide": {"zh": "跟小魏聊聊", "en": "Talk with Wei"},
+       "lines": [
+        ["patient", {"zh": "醫師，我手抬不起來，可是我還能用嘴巴點外送吧？", "en": "Doctor, I can't lift my hands, but I can still order takeaway with my mouth, right?"}],
+        ["me", {"zh": "可以，你說，我幫你按。", "en": "Sure. You say it, I'll tap it."}],
+        ["patient", {"zh": "……我會再走路嗎？還有，可以先喝一口水嗎？好渴。", "en": "...will I walk again? And can I have a sip of water first? So thirsty."}],
+        ["me", {"zh": "走路的事現在還太早說，你有薦髓保留，是好跡象。水的事……", "en": "It's too early to say about walking; your sacral sparing is a good sign. As for the water..."}]
+       ],
+       "mini": {"type": "choice", "q": {"zh": "前側頸椎手術後第一天，他要喝一口水。", "en": "Day one after anterior neck surgery, he wants a sip of water."},
+        "options": [
+         {"zh": "先做吞嚥篩檢，通過才給水", "en": "Swallow screen first; water only if he passes", "ok": true, "set": {"swallow": "screened"},
+          "why": {"zh": "前側手術、平躺、戴頸圈，吞嚥很容易嗆。他咳嗽沒力，嗆進去的水會變成肺炎。", "en": "Anterior surgery, lying flat, in a collar: choking is easy. His cough is weak, and water in the lungs becomes pneumonia."}},
+         {"zh": "一小口而已，用吸管給", "en": "Just a little sip through a straw", "ok": false, "set": {"swallow": "sip"},
+          "why": {"zh": "一小口就足以嗆進氣管，而他沒有力氣咳出來。", "en": "One sip is enough to go down the wrong way, and he hasn't the strength to cough it out."}}
+        ]},
+       "post": [
+        ["patient", {"zh": "好吧，那我先用想的。", "en": "Fine. I'll drink it in my head for now."}]
+       ]}
+     ]},
+    {"id": "pressure", "name": {"zh": "血壓目標", "en": "The pressure target"}, "sub": {"zh": "09:00 · 動脈導管監視器", "en": "09:00 · arterial line monitor"}, "t": 540, "mood": "day",
+     "note": {"zh": "平均動脈壓守在目標內", "en": "Mean arterial pressure held on target"},
+     "beats": [
+      {"id": "p1", "to": "place:monitor", "guide": {"zh": "看動脈導管的數字", "en": "Read the arterial line"},
+       "lines": [
+        ["icu-nurse", {"zh": "平均動脈壓剛剛掉到目標下面，心跳偏慢。我依醫囑調了升壓藥。", "en": "Mean arterial pressure just dipped below target and the pulse is slow. I've adjusted the vasopressor per the orders."}],
+        ["me", {"zh": "這是神經性休克的樣子：交感神經斷了，血管鬆了。", "en": "That's neurogenic shock: the sympathetic supply is cut and the vessels have gone slack."}]
+       ],
+       "mini": {"type": "find", "hot": "monitor", "q": {"zh": "點一下監視器，找到平均動脈壓", "en": "Tap the monitor and find the mean arterial pressure"}}},
+      {"id": "p2", "to": "attending", "guide": {"zh": "為什麼要撐血壓", "en": "Why hold the pressure up?"},
+       "lines": [
+        ["attending", {"zh": "一個二十四歲的人，為什麼要用升壓藥把血壓撐高？", "en": "Why prop up a twenty-four-year-old's blood pressure with vasopressors?"}],
+        ["me", {"zh": "受傷的脊髓腫著，血流的自我調節壞了。血壓一低，缺血就是第二次傷害。", "en": "The injured cord is swollen and has lost its autoregulation. Let the pressure drop and ischaemia becomes a second injury."}]
+       ],
+       "mini": {"type": "stage", "case": "spine-spinal-cord-injury-acute-asia", "stage": 5},
+       "post": [
+        ["attending", {"zh": "第一次傷害是石頭給的。第二次，是我們給的。", "en": "The first injury came from the rock. The second one would come from us."}]
+       ]}
+     ]},
+    {"id": "mri", "name": {"zh": "水腫往上爬", "en": "Oedema climbing"}, "sub": {"zh": "10:30 · 影像工作站", "en": "10:30 · imaging workstation"}, "t": 630, "mood": "day",
+     "note": {"zh": "術後 MRI：水腫往上到第四頸椎", "en": "Post-op MRI: oedema up to C4"},
+     "beats": [
+      {"id": "m1", "ring": {"title": {"zh": "放射科訊息", "en": "Radiology message"}, "sub": {"zh": "「術後 MRI 已上傳，請看脊髓訊號」", "en": "'Post-op MRI uploaded; look at the cord signal'"}, "call": false},
+       "to": "place:imaging", "guide": {"zh": "看術後 MRI", "en": "Review the post-op MRI"},
+       "lines": [
+        ["attending", {"zh": "骨頭固定得很好。看脊髓。", "en": "The bone is well fixed. Look at the cord."}],
+        ["me", {"zh": "脊髓水腫比術前長，往上到第四頸椎。", "en": "The cord oedema is longer than before surgery, up to C4."}]
+       ],
+       "mini": {"type": "imaging", "region": "spine",
+        "question": {"zh": "術後 MRI：骨折處已減壓，但脊髓內的高訊號往上延伸到第四頸椎。這對接下來幾天的呼吸代表什麼？", "en": "Post-op MRI: the fracture is decompressed, but high signal in the cord now reaches C4. What does that mean for his breathing over the next few days?"},
+        "answer": {"zh": "脊髓水腫在受傷後頭幾天常繼續擴大。往上爬近第三到第五頸椎，就可能影響膈神經與橫膈。他本來就失去肋間肌與腹肌，吸得淺、咳不出痰。所以要密集追蹤肺活量的趨勢、加強排痰，並在疲累之前有計畫地插管。", "en": "Cord oedema often keeps spreading for the first few days. Climbing towards C3–C5 it can affect the phrenic nerve and the diaphragm. He has already lost his intercostal and abdominal muscles: shallow breaths, no cough. So track the vital capacity trend closely, clear secretions hard, and plan intubation before he tires."}},
+       "post": [
+        ["attending", {"zh": "三、四、五，讓橫膈活著。今天記住這句話。", "en": "Three, four, five keep the diaphragm alive. Remember that today."}]
+       ]},
+      {"id": "m2", "roles": ["resident"], "to": "attending", "guide": {"zh": "後側固定的計畫", "en": "The posterior fixation plan"},
+       "lines": [
+        ["attending", {"zh": "前面固定了，下週後面再補一段。頸椎打側塊螺釘，第七頸椎的側塊太薄，改打椎弓根。", "en": "The front is fixed; next week we add the back. Lateral mass screws in the neck; C7's lateral mass is too thin, so a pedicle screw there."}],
+        ["me", {"zh": "第七頸椎的椎弓根細，進入點和角度要更準。", "en": "C7 pedicles are narrow; the entry point and angle need to be even more exact."}],
+        ["attending", {"zh": "所以現在先在模擬器上練。", "en": "So practise on the simulator now."}]
+       ],
+       "mini": {"type": "drill", "template": "spine", "drill": "pedicle"},
+       "post": [
+        ["attending", {"zh": "偏內傷脊髓，偏外穿出去。模型不會痛，下週的人會。", "en": "Too medial hits the cord, too lateral breaks out. The model doesn't hurt; next week's patient will."}]
+       ]}
+     ]},
+    {"id": "falling", "name": {"zh": "數字往下掉", "en": "The numbers slide"}, "sub": {"zh": "13:00 · 加護 3 床", "en": "13:00 · ICU bed 3"}, "t": 780, "mood": "day",
+     "note": {"zh": "肺活量一路往下；有計畫地插管", "en": "Vital capacity sliding; a planned intubation"},
+     "beats": [
+      {"id": "f1", "roles": ["rt"], "to": "place:bed", "guide": {"zh": "中午的肺活量", "en": "The midday vital capacity"},
+       "lines": [
+        ["me", {"zh": "早上是這裡，中午又少了一截。他說話開始一句一斷。", "en": "This morning it was here; at noon it's dropped another step. He's starting to talk in broken phrases."}],
+        ["rt-senior", {"zh": "呼吸變淺變快，脖子的肌肉在幫忙。叫醫師，現在。", "en": "Shallow and fast, neck muscles helping. Call the doctors, now."}]
+       ]},
+      {"id": "f2", "when": {"flag": "swallow", "is": "sip"}, "to": "icu-nurse", "guide": {"zh": "早上那一小口", "en": "This morning's sip"},
+       "lines": [
+        ["icu-nurse", {"zh": "早上那一小口水，他咳了很久。之後痰就變多、變稀。", "en": "After that sip this morning he coughed for ages. Since then his secretions have been more and thinner."}],
+        ["me", {"zh": "可能嗆進去了。痰送培養，加強抽痰，之後全部等吞嚥篩檢。", "en": "He probably aspirated. Sputum for culture, more suctioning, and nothing more by mouth until a swallow screen."}],
+        ["attending", {"zh": "一小口水不會要人命。但一個咳不出來的人，會被一小口水拖累。", "en": "A sip of water won't kill anyone. But a man who can't cough gets dragged down by one."}]
+       ]},
+      {"id": "f3", "when": {"flag": "swallow", "is": "screened"}, "to": "icu-nurse", "guide": {"zh": "吞嚥篩檢的結果", "en": "The swallow screen result"},
+       "lines": [
+        ["icu-nurse", {"zh": "早上的吞嚥篩檢沒通過，他一口水都沒喝。痰雖然多，至少肺是乾淨的。", "en": "He failed this morning's swallow screen, so no water at all. Plenty of secretions, but at least the lungs are clean."}],
+        ["me", {"zh": "還好先篩了。", "en": "Glad we screened first."}]
+       ]},
+      {"id": "f4", "to": "patient", "guide": {"zh": "小魏喘起來了", "en": "Wei is struggling"},
+       "lines": [
+        ["patient", {"zh": "我……沒事……只是……有點累……", "en": "I'm... fine... just... a bit... tired..."}],
+        ["icu-nurse", {"zh": "血氧往下掉了，痰卡在喉嚨咳不出來。", "en": "Saturation's falling and there's sputum stuck he can't cough up."}]
+       ],
+       "mini": {"type": "vitals", "event": "desaturation",
+        "options": [
+         {"zh": "抽痰、給氧，請加護主治準備插管", "en": "Suction, oxygen, ICU attending to prepare intubation", "ok": true,
+          "why": {"zh": "肺活量一路往下、呼吸淺快、咳不出痰：這是累了的呼吸。先處理痰與氧，同時在崩潰之前有計畫地插管。", "en": "Falling vital capacity, shallow fast breathing, no cough: these are tiring lungs. Clear secretions and give oxygen, and plan intubation before he collapses."}},
+         {"zh": "先抽動脈血，等結果再說", "en": "Blood gas first, decide on the result", "ok": false,
+          "why": {"zh": "等到血液氣體變壞，往往已經太晚。趨勢比單一數字誠實。", "en": "By the time the blood gas turns bad it is often too late. The trend is more honest than one number."}},
+         {"zh": "給面罩氧氣，繼續觀察", "en": "Face-mask oxygen and keep watching", "ok": false,
+          "why": {"zh": "氧氣拉得高血氧，救不了沒力的肌肉，還可能讓你晚一步發現二氧化碳在上升。", "en": "Oxygen can lift the saturation but can't rescue tired muscles, and may hide a rising carbon dioxide."}}
+        ]},
+       "post": [
+        ["icu-doc", {"zh": "影像喉頭鏡。頭頸保持一直線，不准往後仰。誰扶頭？", "en": "Video laryngoscope. Head and neck in line; no extension. Who's holding the head?"}],
+        ["me", {"zh": "我扶。", "en": "I am."}],
+        ["icu-nurse", {"zh": "抽痰時心跳掉了一下，阿托平在旁邊備著，已經回來了。", "en": "Pulse dipped during suction; atropine was standing by, and it's come back up."}]
+       ]},
+      {"id": "f5", "to": "mother", "guide": {"zh": "告訴魏媽媽", "en": "Tell Mrs Wei"},
+       "lines": [
+        ["mother", {"zh": "插管了？是不是變嚴重了？是不是……", "en": "A breathing tube? Is he worse? Is he..."}],
+        ["me", {"zh": "是他的呼吸肌太累，我們在他累倒之前先幫他。這是計畫，不是失敗。", "en": "His breathing muscles are exhausted; we stepped in before he collapsed. This is the plan, not a failure."}],
+        ["mother", {"zh": "他從小就愛逞強。", "en": "He's always had to be the tough one."}],
+        ["me", {"zh": "這幾天不用逞強，機器幫他。", "en": "For a few days he doesn't have to be. The machine will help."}]
+       ]}
+     ]},
+    {"id": "afternoon", "name": {"zh": "一天的小事", "en": "The small things"}, "sub": {"zh": "15:30 · 查房白板", "en": "15:30 · rounds whiteboard"}, "t": 930, "mood": "day",
+     "note": {"zh": "翻身、拍痰、血栓、腸道、和一通電話", "en": "Turns, chest physio, clots, bowels, and a phone call"},
+     "beats": [
+      {"id": "g1", "to": "physio", "guide": {"zh": "翻身與胸腔物理治療", "en": "Turning and chest physio"},
+       "lines": [
+        ["physio", {"zh": "整個人一起翻，頭頸一直線。每次翻身我順便拍痰。", "en": "Turn him as one, head and neck in line. Every turn, I do chest clearance too."}],
+        ["me", {"zh": "腳跟、薦骨、枕部、下巴都要看，他感覺不到壓。", "en": "Heels, sacrum, back of the head, chin: he can't feel the pressure."}]
+       ],
+       "mini": {"type": "stage", "case": "spine-spinal-cord-injury-acute-asia", "stage": 8},
+       "post": [
+        ["physio", {"zh": "還有關節活動度。肩膀放著不動兩週就硬了。", "en": "And range of motion. Leave a shoulder still for two weeks and it's stiff."}]
+       ]},
+      {"id": "g2", "ring": {"title": {"zh": "打到護理站的電話", "en": "A call to the nursing station"}, "sub": {"zh": "「我是把他拉上來的人」", "en": "'I'm the one who pulled him out'"}, "call": true, "from": "friend"},
+       "lines": [
+        ["friend", {"zh": "我是阿杰，昨天把他從水裡拉上來的。我是不是拉錯了？我一直抱著他的頭……", "en": "I'm Jie, I pulled him out of the water yesterday. Did I do it wrong? I kept holding his head..."}],
+        ["me", {"zh": "你讓他的頭和身體保持一起，還馬上叫救護車。你做的是對的。", "en": "You kept his head and body together and called the ambulance at once. You did it right."}],
+        ["friend", {"zh": "……那我可以做什麼？", "en": "...then what can I do?"}],
+        ["me", {"zh": "錄一段話給他。他醒來，我放給他聽。", "en": "Record him a message. When he wakes, I'll play it to him."}]
+       ],
+       "item": "voice-message"}
+     ]},
+    {"id": "evening", "name": {"zh": "師傅的話", "en": "The mentor's words"}, "sub": {"zh": "18:00 · 加護 3 床", "en": "18:00 · ICU bed 3"}, "t": 1080, "mood": "eve",
+     "note": {"zh": "交給夜班：趨勢表、翻身、錄音", "en": "To the night team: trend chart, turns, the recording"},
+     "beats": [
+      {"id": "h1", "to": "attending", "guide": {"zh": "師傅的回顧", "en": "The mentor's debrief"},
+       "lines": [
+        ["attending", {"zh": "今天他插管了。你覺得今天是壞的一天嗎？", "en": "He was intubated today. Was it a bad day?"}],
+        ["me", {"zh": "……是有計畫的一天。", "en": "...it was a planned day."}],
+        ["attending", {"zh": "對。脊髓休克還在，現在的力量不是最後的力量。", "en": "Right. Spinal shock is still here; today's strength is not his final strength."}],
+        ["attending", {"zh": "你看趨勢不看單點，你守住了血壓，你跟他媽媽說的是實話，也是希望。", "en": "You watched the trend, not the dot. You held the pressure. What you told his mother was the truth, and it was also hope."}],
+        ["me", {"zh": "自主神經反射異常要等脊髓休克過後才會出現，我交班時先提醒。", "en": "Autonomic dysreflexia only appears after spinal shock passes; I'll flag it at handover anyway."}],
+        ["attending", {"zh": "好。那是幾週後的事，但要從今天開始教。", "en": "Good. That's weeks away, but the teaching starts today."}]
+       ]}
+     ]},
+    {"id": "night", "name": {"zh": "夜裡的錄音", "en": "The recording at night"}, "sub": {"zh": "22:30 · 加護 3 床", "en": "22:30 · ICU bed 3"}, "t": 1350, "mood": "night",
+     "note": {"zh": "他醒了，聽見朋友的聲音", "en": "He wakes and hears his friend's voice"},
+     "beats": [
+      {"id": "n1", "ring": {"title": {"zh": "加護病房來電", "en": "ICU calling"}, "sub": {"zh": "「他醒了，一直看門口」", "en": "'He's awake and keeps looking at the door'"}, "call": true, "from": "icu-nurse"},
+       "lines": [
+        ["icu-nurse", {"zh": "鎮靜減輕後他醒了，插著管不能說話，一直看門口。", "en": "He woke when the sedation was lightened. Tube in, can't speak, keeps looking at the door."}],
+        ["me", {"zh": "我過去。", "en": "On my way."}]
+       ]},
+      {"id": "n2", "to": "patient", "guide": {"zh": "放阿杰的錄音", "en": "Play Jie's message"},
+       "lines": [
+        ["sys", {"zh": "小魏睜著眼，呼吸器規律地送氣。你把手機放在他耳邊。", "en": "Wei's eyes are open; the ventilator breathes steadily. You hold the phone to his ear."}],
+        ["friend", {"zh": "（錄音）兄弟，我是阿杰。你欠我一頓宵夜，外送的不算。", "en": "(recording) Bro, it's Jie. You owe me a late-night meal, and delivery doesn't count."}],
+        ["sys", {"zh": "小魏的嘴角動了一下。監視器上的心跳慢慢平穩下來。", "en": "The corner of Wei's mouth moves. On the monitor his heart rate slowly settles."}],
+        ["me", {"zh": "明天早上，我們再比一次肺活量。這次，你會贏。", "en": "Tomorrow morning, another vital capacity contest. This time you'll win."}]
+       ],
+       "end": true}
+     ]}
+  ],
+  "ending": {"title": {"zh": "下班了", "en": "End of shift"}, "sub": {"zh": "趨勢比數字誠實", "en": "Trends are more honest than numbers"},
+    "stats": ["stages", "grades", "choices", "calls", "items", "time"]}
+}

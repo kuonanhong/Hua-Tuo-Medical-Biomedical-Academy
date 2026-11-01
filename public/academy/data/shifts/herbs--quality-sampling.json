@@ -1,0 +1,297 @@
+{
+  "format": "huatuo-shift-v2",
+  "department": "herbs",
+  "case": "quality-sampling",
+  "caseTitle": {"zh": "一批黃耆的體檢", "en": "A batch of astragalus gets a check-up"},
+  "condition": {"zh": "藥材品質 · 抽驗與混偽品", "en": "Herb quality · sampling and adulterants"},
+  "difficulty": 2,
+  "room": "decoction-lab",
+  "title": {"zh": "中藥品管實驗室值班日", "en": "A day in the herbal QC laboratory"},
+  "tagline": {"zh": "數據不會說謊，但樣品會", "en": "Numbers do not lie; samples do"},
+  "minutes": 26,
+  "roles": [
+    {"id": "pharm-student", "zh": "藥學生", "en": "Pharmacy student",
+     "desc": {"zh": "跟著鄭老師做驗收：取樣、性狀、顯微、層析、二氧化硫與重金屬，最後學會什麼叫放行。", "en": "Incoming inspection with Teacher Cheng: sampling, characters, microscopy, chromatography, sulphur dioxide and heavy metals, and finally what “release” means."}},
+    {"id": "qc-tech", "zh": "品管技師", "en": "QC technician",
+     "desc": {"zh": "儀器是你的：粉碎機、天平、HPLC、乾燥箱。數據進 LIMS 之前，每一個都要經過你的眼睛。", "en": "The instruments are yours: grinder, balance, HPLC, drying oven. Every number passes your eyes before it enters the LIMS."}}
+  ],
+  "cast": {
+    "mentor": {"name": {"zh": "鄭老師", "en": "Teacher Cheng"}, "role": {"zh": "生藥品管負責人（師傅）", "en": "Pharmacognosy and QC lead (mentor)"}, "tag": "PI", "color": "#81296d", "body": "mentor",
+               "about": {"zh": "中醫師、藥師、也是實驗室的人。白板上永遠貼著一張色層圖。她說：取樣不對，後面全是真實的錯誤數字。", "en": "Physician, pharmacist and lab person. There is always a chromatogram taped to her whiteboard. “Sample wrongly,” she says, “and every number after that is a real, accurate mistake.”"}},
+    "chieh": {"name": {"zh": "小傑", "en": "Chieh"}, "role": {"zh": "品管技師，HPLC 負責人", "en": "QC technician, keeper of the HPLC"}, "tag": "QC", "color": "#2f6f9f", "body": "tech",
+              "about": {"zh": "講話像儀器說明書。有氣喘，口袋永遠有吸入劑，但常常忘了戴口罩。", "en": "Talks like an instrument manual. Asthmatic; always carries his inhaler, often forgets his mask."}},
+    "lin": {"name": {"zh": "林姐", "en": "Sister Lin"}, "role": {"zh": "驗收倉管中藥師", "en": "Receiving and warehouse pharmacist"}, "tag": "RX", "color": "#3b8f6a", "body": "herbalist",
+            "about": {"zh": "用鼻子驗收二十年。她聞得出硫磺，也聞得出業務在撒謊。", "en": "Twenty years of inspecting with her nose. She can smell sulphur, and she can smell a sales rep bending the truth."}},
+    "mrs-chen": {"name": {"zh": "陳老闆娘", "en": "Mrs Chen"}, "role": {"zh": "藥膳店老闆娘，帶樣品來", "en": "Runs a medicinal-food shop; brings a sample"}, "tag": "C", "color": "#c2703a", "body": "patient",
+                 "about": {"zh": "虛構教學個案。進了一批便宜又特別香的「五加皮」，想泡五加皮酒給熟客。", "en": "Fictional teaching case. Bought a cheap, unusually fragrant batch of “wujiapi” and plans to make wujiapi wine for her regulars."}},
+    "supplier": {"name": {"zh": "阿發", "en": "A-Fa"}, "role": {"zh": "藥材供應商業務（電話）", "en": "Herb supplier's sales rep (by phone)"}, "tag": "SUP", "color": "#8a6d3b", "phoneOnly": true,
+                 "about": {"zh": "每一批都是「這批特別好」。", "en": "Every batch is “an especially good one”."}},
+    "wu-doc": {"name": {"zh": "吳醫師", "en": "Dr Wu"}, "role": {"zh": "中醫內科主治（電話）", "en": "TCM internal medicine attending (by phone)"}, "tag": "DR", "color": "#3f6fa8", "phoneOnly": true,
+               "about": {"zh": "病人一喊上火，他先懷疑藥材。鄭老師先懷疑他。", "en": "When a patient complains of “heat”, he suspects the herbs first. Teacher Cheng suspects him first."}}
+  },
+  "places": {
+    "bench": {"name": {"zh": "中央實驗桌", "en": "Central bench"}, "hot": "bench"},
+    "hood": {"name": {"zh": "抽氣櫃", "en": "Fume hood"}, "hot": "hood"},
+    "hplc": {"name": {"zh": "層析區", "en": "Chromatography"}, "hot": "hplc"},
+    "oven": {"name": {"zh": "乾燥箱", "en": "Drying oven"}, "hot": "oven"},
+    "grinder": {"name": {"zh": "粉碎機", "en": "Grinder"}, "hot": "grinder"},
+    "balance": {"name": {"zh": "天平室", "en": "Balance room"}, "hot": "scale"},
+    "scope": {"name": {"zh": "生藥顯微鏡", "en": "Pharmacognosy microscope"}, "hot": "microscope"},
+    "lims": {"name": {"zh": "LIMS 工作站", "en": "LIMS workstation"}, "hot": "workstation"},
+    "board": {"name": {"zh": "批次紀錄板", "en": "Batch record board"}, "hot": "chart"},
+    "sink": {"name": {"zh": "洗滌槽", "en": "Sink"}, "hot": "sink"}
+  },
+  "glossary": [
+    {"term": {"zh": "批號", "en": "lot number"}, "plain": {"zh": "同一次生產、同一來源的一批藥材的編號。所有檢驗結果、留樣和放行都跟著這個號碼走。", "en": "The code for one batch from one source and one production run. Every result, retained sample and release decision follows this number."}},
+    {"term": {"zh": "四分法", "en": "quartering"}, "plain": {"zh": "把混勻的樣品攤成方形、畫十字分四份，取對角兩份再混，重複到需要的量。讓小樣品能代表整批。", "en": "Spread the mixed sample into a square, cut it in a cross, keep two opposite quarters, mix and repeat until small enough. It lets a small sample stand for the whole lot."}},
+    {"term": {"zh": "留樣", "en": "retained sample"}, "plain": {"zh": "每批留一份封存、標示、保存到效期之後，將來有爭議時拿出來重驗。", "en": "A sealed, labelled portion of every lot kept past its expiry, so a dispute later can be retested."}},
+    {"term": {"zh": "性狀鑑別", "en": "macroscopic identification"}, "plain": {"zh": "用眼睛、手、鼻子、舌頭認藥材：形狀、顏色、斷面、質地、氣味。儀器之前的第一關。", "en": "Identifying a herb with eyes, hands, nose and tongue: shape, colour, cut surface, texture, smell. The first gate, before any instrument."}},
+    {"term": {"zh": "粉末鑑定", "en": "powder microscopy"}, "plain": {"zh": "把藥材磨成粉，在顯微鏡下看它特有的細胞：纖維、導管、澱粉粒、結晶。摻了別的東西會多出不該有的細胞。", "en": "Grinding the herb and looking at its characteristic cells under the microscope: fibres, vessels, starch grains, crystals. An adulterant shows up as cells that should not be there."}},
+    {"term": {"zh": "薄層層析", "en": "thin-layer chromatography"}, "plain": {"zh": "把樣品點在薄板上，讓溶劑往上爬，不同成分停在不同高度。樣品和對照藥材斑點位置一樣，才算像。", "en": "Spot the sample on a thin plate and let solvent climb; different compounds stop at different heights. The sample should show spots at the same heights as the reference herb."}},
+    {"term": {"zh": "HPLC", "en": "HPLC"}, "plain": {"zh": "高效液相層析：用高壓把樣品推過管柱，把成分一個一個分開、定量。指標成分含量就是它算出來的。", "en": "High-performance liquid chromatography: the sample is pushed through a column under pressure, separating and quantifying compounds one by one. It gives the marker-compound content."}},
+    {"term": {"zh": "指標成分", "en": "marker compound"}, "plain": {"zh": "藥典選來代表這味藥的一兩個化合物，像黃耆的黃耆甲苷。含量夠不等於藥好，但不夠一定有問題。", "en": "One or two compounds the pharmacopoeia chooses to represent a herb, such as astragaloside IV for astragalus. Enough marker does not prove a good herb, but too little always means a problem."}},
+    {"term": {"zh": "對照藥材", "en": "reference herb"}, "plain": {"zh": "經權威單位確認身分的標準樣品。所有比對都跟它比，不是跟上一批比。", "en": "A standard sample whose identity an authority has confirmed. Everything is compared with it, never with last month's lot."}},
+    {"term": {"zh": "二氧化硫", "en": "sulphur dioxide"}, "plain": {"zh": "硫磺熏蒸留下的殘留，讓藥材看起來白亮、不生蟲，但有酸刺味，過量對呼吸道和氣喘病人有害。藥典有限量。", "en": "The residue of sulphur fumigation, which keeps herbs pale and pest-free but leaves a sour sting, and in excess harms the airways and asthmatics. The pharmacopoeia sets a limit."}},
+    {"term": {"zh": "重金屬", "en": "heavy metals"}, "plain": {"zh": "鉛、鎘、汞、砷、銅等。來自土壤、水或加工。看不到、聞不到，只能用儀器驗。", "en": "Lead, cadmium, mercury, arsenic, copper and others, from soil, water or processing. Invisible and odourless; only instruments find them."}},
+    {"term": {"zh": "混偽品", "en": "adulterant"}, "plain": {"zh": "長得像、名字像、價格便宜，但不是那味藥的東西。有些只是沒效，有些有毒。", "en": "Something that looks alike, is named alike and costs less, but is not the herb. Some are merely useless; some are toxic."}},
+    {"term": {"zh": "香加皮", "en": "periploca bark"}, "plain": {"zh": "北五加皮，蘿藦科杠柳的根皮。常被當五加皮賣，特別香；含強心苷，泡酒服用可致心律不整，是有毒的混偽品。", "en": "“Northern wujiapi”, the root bark of Periploca. Often sold as wujiapi and notably fragrant; it carries cardiac glycosides and, steeped in wine, can cause arrhythmias. A toxic adulterant."}},
+    {"term": {"zh": "檢驗報告書", "en": "certificate of analysis"}, "plain": {"zh": "一批藥材所有檢驗項目的結果與判定，品保簽名後，才有放行或拒收。", "en": "The sheet listing every test result and verdict for a lot. Only after quality assurance signs it is the lot released or rejected."}},
+    {"term": {"zh": "系統適用性", "en": "system suitability"}, "plain": {"zh": "跑樣品之前先跑標準品，確認儀器今天分得開、量得準。儀器不對，所有數據都不算。", "en": "Running the standard before any sample to confirm the instrument separates and measures correctly today. If the system fails, no result counts."}}
+  ],
+  "codex": [
+    {"id": "hplc", "kind": "equipment", "name": {"zh": "HPLC 層析系統", "en": "The HPLC stack"}, "text": {"zh": "幫浦、自動進樣器、管柱恆溫箱、偵測器。螢幕上那條線叫色層圖，每個峰是一個成分。先跑系統適用性，再跑樣品。", "en": "Pump, autosampler, column oven, detector. The line on the screen is the chromatogram; each peak is a compound. System suitability first, samples second."}, "hot": "hplc"},
+    {"id": "scope", "kind": "equipment", "name": {"zh": "生藥顯微鏡", "en": "Pharmacognosy microscope"}, "text": {"zh": "看粉末裡的纖維、導管、澱粉粒、結晶。旁邊的玻片盒是對照藥材的標準片，一味一格。", "en": "For the fibres, vessels, starch grains and crystals in a powder. The slide box beside it holds reference-herb standard slides, one herb per slot."}, "hot": "microscope"},
+    {"id": "hood", "kind": "equipment", "name": {"zh": "抽氣櫃", "en": "Fume hood"}, "text": {"zh": "溶劑、粉碎、硫磺味重的樣品都在這裡開。拉門拉到標線以下，不是全開。", "en": "Solvents, grinding and strongly sulphurous samples are opened here. Sash down to the mark, not wide open."}, "hot": "hood"},
+    {"id": "balance-room", "kind": "equipment", "name": {"zh": "天平室", "en": "Balance room"}, "text": {"zh": "分析天平在防震桌上，有防風罩。開門走路都會讓最後一位數跳。等它穩，再讀。", "en": "An analytical balance on an anti-vibration table inside a draught shield. Opening the door or walking past moves the last digit. Wait for it to settle, then read."}, "hot": "scale"},
+    {"id": "grinder", "kind": "equipment", "name": {"zh": "粉碎機與篩", "en": "Grinder and sieve stack"}, "text": {"zh": "把飲片打成粉供檢驗。粉塵會飛，戴口罩、在抽氣櫃內操作，氣喘的人尤其要。", "en": "Turns pieces into powder for testing. The dust flies: mask on and work inside the hood, especially if you have asthma."}, "hot": "grinder"},
+    {"id": "chen-bag", "kind": "item", "name": {"zh": "老闆娘的「五加皮」", "en": "Mrs Chen's “wujiapi”"}, "text": {"zh": "捲筒狀、特別香。薄層層析對不上五加皮，對上香加皮。沒有泡成酒，是今天最好的結果。", "en": "Curled quills, strikingly fragrant. On the thin-layer plate it fails to match wujiapi and matches periploca. That it never became wine is the best result of the day."}},
+    {"id": "c-sampling", "kind": "concept", "name": {"zh": "取樣決定一切", "en": "Sampling decides everything"}, "text": {"zh": "一批幾十包，只驗一小罐。所以要隨機多點取樣、四分法縮分、留樣封存。從一包裡挖一把，驗出來的數字再精確，也只代表那一把。", "en": "Dozens of sacks per lot, one small jar tested. So sample at random from many points, reduce by quartering, retain and seal. Scoop from one sack and the most precise number you get represents only that scoop."}},
+    {"id": "c-adulterant", "kind": "concept", "name": {"zh": "混偽品：五加皮與香加皮", "en": "Adulterants: wujiapi and periploca"}, "text": {"zh": "五加皮是五加科，氣味淡，中醫用來祛風濕、強筋骨；香加皮是蘿藦科杠柳，特別香，含強心苷，泡酒可致心律不整甚至致命。性狀看捲曲與氣味，層析定案。便宜又特別香，先懷疑。", "en": "Wujiapi (Acanthopanax) is faintly scented and used in TCM for wind-damp and weak sinews; periploca bark is strongly fragrant and carries cardiac glycosides; steeped in wine it can cause fatal arrhythmias. Characters show the curl and the smell; chromatography settles it. Cheap and unusually fragrant: suspect first."}},
+    {"id": "c-quality-vs-pattern", "kind": "concept", "name": {"zh": "品質合格，不等於用對證", "en": "Passing quality is not the same as the right pattern"}, "text": {"zh": "病人「上火」，醫師懷疑藥材。留樣重驗合格，再看病人：舌紅苔黃是實熱，黃耆甘溫補氣，本來就不宜。品管回答藥材的問題，辨證回答病人的問題，兩個都要問。", "en": "A patient feels “heat”; the doctor blames the herb. The retained sample retests fine; then look at the patient: a red tongue with a yellow coat is excess heat, and warm, qi-tonifying astragalus was never right for it. QC answers the question about the herb; pattern diagnosis answers the one about the patient. Ask both."}},
+    {"id": "c-release", "kind": "concept", "name": {"zh": "放行與拒收", "en": "Release and rejection"}, "text": {"zh": "檢驗完成、覆核數據、與規格比對、品保簽名，才有放行。任何一項不合格就拒收、退貨、通報，不洗、不混、不稀釋。不合格批留樣要留更久。", "en": "Tests complete, data reviewed, compared with specification, quality assurance signs: only then release. Any failed item means reject, return and report; no washing, blending or diluting. Failed lots keep their retained sample longer."}}
+  ],
+  "segs": [
+    {"id": "receiving", "name": {"zh": "驗收", "en": "Incoming inspection"}, "sub": {"zh": "08:00 · 中央實驗桌", "en": "08:00 · central bench"}, "t": 480, "mood": "day",
+     "note": {"zh": "黃耆一批；取樣四分法；粉末鑑定", "en": "One lot of astragalus; quartering; powder microscopy"},
+     "beats": [
+      {"id": "a1", "to": "place:bench", "guide": {"zh": "到實驗桌找鄭老師", "en": "Find Teacher Cheng at the bench"},
+       "lines": [
+        ["sys", {"zh": "品管實驗室早上八點。HPLC 的幫浦低聲嗡嗡，白板上貼著昨晚的色層圖。", "en": "The QC lab at eight. The HPLC pump hums; last night's chromatogram is taped to the whiteboard."}],
+        ["mentor", {"zh": "早。今天一批黃耆進來，二十幾包。我們只驗一小罐。所以第一步是什麼？", "en": "Morning. A lot of astragalus came in, twenty-odd sacks. We test one small jar. So what is step one?"}],
+        ["me", {"zh": "取樣。取得不對，後面的數字都只代表那一把。", "en": "Sampling. Done wrongly, every number after it represents one scoop."}],
+        ["mentor", {"zh": "你聽過我這句話。好，排給我看：從核對批號到進 LIMS。", "en": "You have heard me say that. Good. Lay it out for me, from checking the lot number to logging into the LIMS."}]
+       ],
+       "mini": {"type": "order", "q": {"zh": "一批藥材驗收取樣的正確順序", "en": "The correct order for sampling an incoming lot"},
+                "steps": [
+                 {"zh": "核對批號與來源文件", "en": "Check lot number and source documents"},
+                 {"zh": "隨機多點取樣", "en": "Sample at random from many points"},
+                 {"zh": "四分法縮分", "en": "Reduce by quartering"},
+                 {"zh": "留樣封存、標示", "en": "Seal and label the retained sample"},
+                 {"zh": "送檢並登錄 LIMS", "en": "Send to test and log in the LIMS"}
+                ]},
+       "post": [
+        ["mentor", {"zh": "留樣在送檢之前。送出去的那罐會被用光，留下的那罐，是將來吵架的證據。", "en": "Retain before you send. The jar you send gets used up; the jar you keep is the evidence when there is an argument later."}]
+       ]},
+      {"id": "a2", "to": "lin", "guide": {"zh": "跟林姐做性狀驗收", "en": "Do the macroscopic inspection with Sister Lin"},
+       "lines": [
+        ["lin", {"zh": "儀器之前先過我這關。性狀鑑別：看、摸、聞、嘗。黃耆什麼樣？", "en": "Before any instrument, it passes me. Macroscopic identification: look, feel, smell, taste. What does astragalus look like?"}],
+        ["me", {"zh": "圓柱形，外皮淡棕黃、有縱皺紋，斷面纖維性、黃白色、有菊花心，豆腥味，嚼起來微甜。", "en": "Cylindrical, pale brownish-yellow skin with lengthwise wrinkles, a fibrous yellow-white cut face with a chrysanthemum heart, a beany smell, faintly sweet to chew."}],
+        ["lin", {"zh": "不錯。這盤混了幾種來料，分開歸位，順便告訴我哪一包聞起來有酸刺味。", "en": "Not bad. This tray has several deliveries mixed; sort them, and tell me which sack has a sour sting to it."}]
+       ],
+       "mini": {"type": "drill", "template": "herbs", "drill": "herbsort"},
+       "post": [
+        ["lin", {"zh": "第三包，太白、太亮、酸刺。我二十年的鼻子說：硫磺熏過頭。等二氧化硫的數字。", "en": "Third sack: too white, too shiny, sour sting. Twenty years of nose says over-fumigated. We wait for the sulphur dioxide figure."}]
+       ]},
+      {"id": "a3", "to": "place:scope", "guide": {"zh": "到顯微鏡做粉末鑑定", "en": "Powder microscopy at the microscope"},
+       "lines": [
+        ["mentor", {"zh": "性狀對了，再看細胞。粉末鑑定：黃耆的粉末應該有什麼？", "en": "Characters fit; now the cells. Powder microscopy: what should astragalus powder show?"}],
+        ["me", {"zh": "成束的纖維、具緣紋孔的導管、澱粉粒，還有纖維旁邊的結晶。", "en": "Bundled fibres, bordered-pit vessels, starch grains, and crystals alongside the fibres."}],
+        ["mentor", {"zh": "找到顯微鏡，對照玻片在右邊的盒子裡。多出來不該有的細胞，就是摻了東西。", "en": "Find the microscope; the reference slides are in the box on the right. Cells that should not be there mean something was added."}]
+       ],
+       "mini": {"type": "find", "hot": "microscope", "q": {"zh": "找到生藥顯微鏡與對照玻片盒", "en": "Find the pharmacognosy microscope and the reference slide box"}},
+       "post": [
+        ["mentor", {"zh": "和對照藥材的玻片一致。身分對了。身分對，不代表合格；合格還有一整張檢驗報告書要填。", "en": "Matches the reference herb slide. Identity confirmed. Identity is not release; release needs a whole certificate of analysis filled in."}]
+       ]}
+     ]},
+    {"id": "chroma", "name": {"zh": "層析與粉碎", "en": "Chromatography and grinding"}, "sub": {"zh": "09:30 · 層析區與粉碎機", "en": "09:30 · chromatography and the grinder"}, "t": 570, "mood": "day",
+     "note": {"zh": "系統適用性先跑；粉塵與氣喘", "en": "System suitability first; dust and asthma"},
+     "beats": [
+      {"id": "t1", "to": "place:hplc", "guide": {"zh": "到層析區看小傑跑樣", "en": "Watch Chieh run the samples"},
+       "lines": [
+        ["chieh", {"zh": "薄層層析先點：對照藥材、樣品、空白。斑點同高同色才算像。", "en": "Thin-layer chromatography first: reference herb, sample, blank. Spots at the same height and colour count as a match."}],
+        ["chieh", {"zh": "HPLC 定量指標成分：黃耆甲苷和毛蕊異黃酮葡萄糖苷。但是你看，今天樣品的色層圖少了一個峰。", "en": "HPLC quantifies the marker compounds: astragaloside IV and calycosin glucoside. But look, today's sample chromatogram is missing a peak."}],
+        ["me", {"zh": "少一個峰。是樣品有問題，還是今天的系統有問題？", "en": "A missing peak. Is it the sample, or today's system?"}]
+       ],
+       "mini": {"type": "choice", "q": {"zh": "樣品色層圖少了一個應有的峰。第一步？", "en": "The sample chromatogram lacks an expected peak. First step?"},
+                "options": [
+                 {"zh": "先查系統適用性與標準品再判", "en": "Check system suitability and the standard first", "ok": true, "why": {"zh": "儀器今天分不分得開、標準品有沒有放錯，先確認。系統不對，樣品的數字都不算。", "en": "Confirm first that the instrument separates today and the standard was loaded correctly. If the system fails, no sample figure counts."}},
+                 {"zh": "直接判不合格，退貨", "en": "Fail it outright and return the lot", "ok": false, "why": {"zh": "沒排除儀器問題就判死刑，退錯了批，也學不到真正的原因。", "en": "Condemning the lot before ruling out the instrument may reject a good batch and teaches you nothing about the real cause."}},
+                 {"zh": "性狀對了就算合格", "en": "Characters matched, so pass it", "ok": false, "why": {"zh": "性狀是第一關，不是最後一關。少的那個峰得有解釋。", "en": "Characters are the first gate, not the last. The missing peak needs an explanation."}}
+                ]},
+       "post": [
+        ["chieh", {"zh": "標準品重跑，峰出來了。剛剛是自動進樣器的小瓶放錯位。樣品再跑一次。", "en": "Standard rerun: the peak is there. The autosampler vial had been placed in the wrong slot. Sample goes again."}],
+        ["mentor", {"zh": "記下來。今天差點因為一個小瓶的位置，退掉一批好黃耆。", "en": "Write it down. Today a vial position nearly rejected a good lot of astragalus."}]
+       ]},
+      {"id": "t2", "to": "place:grinder", "guide": {"zh": "到粉碎機製備水分灰分樣品", "en": "Prepare the moisture and ash samples at the grinder"},
+       "lines": [
+        ["chieh", {"zh": "水分、灰分、浸出物都要粉。粉碎機在這裡，篩子一套。來。", "en": "Moisture, ash and extractives all need powder. Grinder here, sieve stack there. Go."}],
+        ["lin", {"zh": "小傑，口罩。你又沒戴。", "en": "Chieh. Mask. You've forgotten again."}],
+        ["chieh", {"zh": "等一下戴。先打這一批。", "en": "In a second. This lot first."}]
+       ],
+       "mini": {"type": "drill", "template": "herbs", "drill": "grind"},
+       "post": [
+        ["sys", {"zh": "粉塵在抽氣櫃外飄了一層。小傑開始咳，咳得停不下來。", "en": "A film of dust drifts outside the hood. Chieh starts coughing and cannot stop."}]
+       ]},
+      {"id": "t3", "guide": {"zh": "小傑喘不過氣", "en": "Chieh cannot catch his breath"},
+       "lines": [
+        ["chieh", {"zh": "……胸口緊。吸入劑……在口袋。", "en": "…Chest's tight. Inhaler… pocket."}],
+        ["lin", {"zh": "別講話。你，決定。", "en": "Stop talking. You: decide."}]
+       ],
+       "mini": {"type": "vitals", "event": "desaturation",
+                "options": [
+                 {"zh": "帶離粉塵、讓他用自己的吸入劑、叫人", "en": "Out of the dust, his own inhaler, call for help", "ok": true, "why": {"zh": "氣喘發作：先離開刺激源、坐直、用他自己處方的緩解吸入劑、叫人並監測。沒改善或講不出整句話，送急診。", "en": "An asthma attack: remove the trigger, sit him upright, let him use his own prescribed reliever, call for help and monitor. No improvement, or unable to finish a sentence: emergency."}},
+                 {"zh": "開窗通風，讓他繼續把樣品打完", "en": "Open a window and let him finish the batch", "ok": false, "why": {"zh": "刺激源還在，發作會惡化。樣品可以等，氣道不能。", "en": "The trigger is still there and the attack will worsen. The sample can wait; an airway cannot."}},
+                 {"zh": "泡一杯止咳的中藥茶給他", "en": "Brew him a herbal cough tea", "ok": false, "why": {"zh": "氣喘發作不是咳嗽。茶的時間是血氧掉的時間。", "en": "An asthma attack is not a cough. Tea time is desaturation time."}}
+                ]},
+       "set": {"chieh-ok": true},
+       "post": [
+        ["chieh", {"zh": "……好多了。對不起。", "en": "…Better. Sorry."}],
+        ["mentor", {"zh": "從今天起，粉碎機只在抽氣櫃內開，口罩是開機條件，不是建議。二氧化硫高的樣品尤其。", "en": "From today the grinder runs only inside the hood, and a mask is a start condition, not a suggestion. Especially with high-sulphur samples."}]
+       ]}
+     ]},
+    {"id": "sulfur", "name": {"zh": "二氧化硫與重金屬", "en": "Sulphur dioxide and heavy metals"}, "sub": {"zh": "11:00 · LIMS 工作站", "en": "11:00 · LIMS workstation"}, "t": 660, "mood": "day",
+     "note": {"zh": "第三包超標：拒收，不洗不混", "en": "Third sack over the limit: reject; no washing, no blending"},
+     "beats": [
+      {"id": "s1", "to": "place:lims", "guide": {"zh": "到 LIMS 看第三包的結果", "en": "Read the third sack's result in the LIMS"},
+       "lines": [
+        ["chieh", {"zh": "重金屬全批合格。二氧化硫：林姐那一包，超過藥典限量。其他包合格。", "en": "Heavy metals pass across the lot. Sulphur dioxide: Sister Lin's sack is above the pharmacopoeial limit. The others pass."}],
+        ["lin", {"zh": "鼻子沒退休。", "en": "The nose has not retired."}],
+        ["mentor", {"zh": "一批裡有一包不合格。這批怎麼處理？", "en": "One failing sack in a lot. What happens to the lot?"}]
+       ],
+       "mini": {"type": "choice", "q": {"zh": "同批二十幾包中，一包二氧化硫超標。你怎麼處理這批？", "en": "One of twenty-odd sacks in the lot fails sulphur dioxide. What do you do with the lot?"},
+                "options": [
+                 {"zh": "整批拒收退貨，通報，留樣", "en": "Reject the whole lot, report, retain", "ok": true, "set": {"so2-rejected": true}, "why": {"zh": "批號是一個身分。一包不合格代表這批的製程不可信；拒收、退貨、通報供應商，留樣留更久。", "en": "A lot number is one identity. One failing sack means the lot's process cannot be trusted: reject, return, report the supplier, keep the retained sample longer."}},
+                 {"zh": "那包洗一洗曬乾再驗", "en": "Wash and dry that sack, then retest", "ok": false, "set": {"so2-rejected": false}, "why": {"zh": "洗掉的是數字，不是問題。藥材品管沒有「處理到合格」這條路。", "en": "Washing removes the number, not the problem. There is no “treat until it passes” in herb QC."}},
+                 {"zh": "混進合格的包裡，平均就過了", "en": "Blend it into the passing sacks; the average passes", "ok": false, "set": {"so2-rejected": false}, "why": {"zh": "稀釋不合格品，是把一包的問題變成一整批的問題，而且是故意的。", "en": "Diluting a failed item turns one sack's problem into the whole lot's, deliberately."}}
+                ]}},
+      {"id": "s2", "to": "lin", "guide": {"zh": "把補氣藥挑出來一起比對", "en": "Pick the qi tonics to compare together"},
+       "lines": [
+        ["lin", {"zh": "今天來料單上還有一堆。和黃耆同類的補氣藥，驗收時要一起比性狀。哪些？", "en": "There is more on today's delivery sheet. The qi tonics in the same family as astragalus get their characters compared together. Which are they?"}]
+       ],
+       "mini": {"type": "herb", "q": {"zh": "來料清單中，與黃耆同屬補氣藥、要一起比對性狀的有哪些？", "en": "On the delivery sheet, which herbs are qi tonics like astragalus and get inspected together?"},
+                "pick": ["黨參", "白朮", "山藥", "甘草", "人參"],
+                "distractors": ["當歸", "川芎", "丹參", "紅花"]},
+       "post": [
+        ["lin", {"zh": "對。活血的那幾味另一盤，當歸聞起來就不一樣。順便一提，山藥、白芍是最常被硫磺熏過頭的，進來先聞。", "en": "Right. The blood-movers go on another tray; angelica smells different from the start. By the way, yam and white peony are the ones most often over-fumigated; smell them on arrival."}]
+       ]},
+      {"id": "s3", "when": {"flag": "so2-rejected", "is": true}, "ring": {"title": {"zh": "供應商來電", "en": "Supplier calling"}, "sub": {"zh": "阿發：這批特別好", "en": "A-Fa: this batch is especially good"}, "call": true, "from": "supplier"},
+       "lines": [
+        ["supplier", {"zh": "鄭老師！退貨？那批特別好欸，只有一包，我換一包給你們不就好了？", "en": "Teacher Cheng! A return? That batch was especially good. Only one sack; I'll just swap it, no?"}],
+        ["me", {"zh": "阿發，批號是一個身分。一包超標，整批的製程我們沒辦法相信。檢驗報告書會附給你。", "en": "A-Fa, a lot number is one identity. One sack over the limit and we cannot trust the lot's process. The certificate of analysis will go with it."}],
+        ["supplier", {"zh": "……好啦。下一批我自己先聞。", "en": "…Fine. I'll smell the next one myself first."}],
+        ["mentor", {"zh": "你剛剛那句話，講得比我好。", "en": "You said that better than I would have."}]
+       ]},
+      {"id": "s4", "when": {"flag": "so2-rejected", "is": false}, "to": "mentor", "guide": {"zh": "鄭老師看到 LIMS 的放行欄", "en": "Teacher Cheng sees the release column"},
+       "lines": [
+        ["mentor", {"zh": "LIMS 上這批怎麼還在待放行？一包超標的批，叫做不合格批。", "en": "Why is this lot still “pending release” in the LIMS? A lot with one failing sack is a failed lot."}],
+        ["me", {"zh": "我想說只有一包……", "en": "I thought, since it was only one sack…"}],
+        ["mentor", {"zh": "批號是一個身分。改成拒收，通報供應商，留樣延長。然後把這句話寫進你的筆記：不洗、不混、不稀釋。", "en": "A lot number is one identity. Change it to rejected, report the supplier, extend the retained sample. And write this in your notes: no washing, no blending, no diluting."}]
+       ]}
+     ]},
+    {"id": "client", "name": {"zh": "老闆娘的五加皮", "en": "Mrs Chen's wujiapi"}, "sub": {"zh": "13:30 · 中央實驗桌", "en": "13:30 · central bench"}, "t": 810, "mood": "day",
+     "note": {"zh": "便宜又特別香，先懷疑", "en": "Cheap and unusually fragrant: suspect first"},
+     "beats": [
+      {"id": "c1", "to": "mrs-chen", "guide": {"zh": "接待陳老闆娘", "en": "See Mrs Chen"},
+       "lines": [
+        ["mrs-chen", {"zh": "鄭老師，我進了一批五加皮，便宜又特別香，想泡五加皮酒給熟客。先幫我看一下？", "en": "Teacher Cheng, I got a batch of wujiapi, cheap and wonderfully fragrant. I want to make wujiapi wine for my regulars. Could you check it first?"}],
+        ["me", {"zh": "捲筒狀的皮……香氣很濃。五加皮應該氣味很淡才對。", "en": "Curled quills of bark… and a strong scent. Wujiapi should smell faint."}],
+        ["mentor", {"zh": "特別香的「五加皮」，先想到什麼？", "en": "An unusually fragrant “wujiapi”: what comes to mind first?"}],
+        ["me", {"zh": "香加皮。北五加，含強心苷。", "en": "Periploca bark. Northern wujiapi, with cardiac glycosides."}]
+       ],
+       "mini": {"type": "choice", "q": {"zh": "老闆娘的「五加皮」特別香，疑似香加皮。你怎麼建議？", "en": "Mrs Chen's “wujiapi” is strikingly fragrant and may be periploca. Your advice?"},
+                "options": [
+                 {"zh": "先別泡酒，留樣層析，提醒心悸就醫", "en": "No wine yet; retain and run TLC; warn about palpitations", "ok": true, "why": {"zh": "香加皮泡酒可致心律不整。沒確認身分前不能用；已經賣出去的，要提醒客人心悸頭暈立刻就醫。", "en": "Periploca in wine can cause arrhythmias. Nothing is used until identity is confirmed; anyone already sold some is warned that palpitations or dizziness mean seek care at once."}},
+                 {"zh": "香的比較好，是上等貨", "en": "The fragrant one is premium grade", "ok": false, "why": {"zh": "這一句就是混偽品賣得掉的原因。", "en": "That sentence is exactly why the adulterant sells."}},
+                 {"zh": "煮久一點毒就沒了", "en": "Boil it longer and the toxin is gone", "ok": false, "why": {"zh": "強心苷不是烏頭鹼，久煎不會變安全。而且她要泡的是酒。", "en": "Cardiac glycosides are not aconitine; long cooking does not make them safe. And she means to steep it in spirits."}}
+                ]},
+       "post": [
+        ["mrs-chen", {"zh": "還沒泡，還沒賣。天啊。", "en": "Not steeped yet, not sold yet. Heavens."}],
+        ["mentor", {"zh": "那就是今天最好的消息。樣品留下，薄層層析晚上跑，明天給你答案。", "en": "Then that is the best news today. Leave the sample; the thin-layer run goes tonight, and you get an answer tomorrow."}]
+       ],
+       "item": "chen-bag"},
+      {"id": "c2", "to": "place:hood", "roles": ["qc-tech"], "guide": {"zh": "在抽氣櫃內製備五加皮樣品", "en": "Prepare the wujiapi sample inside the hood"},
+       "lines": [
+        ["chieh", {"zh": "這次在抽氣櫃裡打粉，拉門到標線，口罩戴好。我學乖了。", "en": "This time we grind inside the hood, sash to the mark, mask on. I've learned."}],
+        ["me", {"zh": "對照藥材兩種都要點：五加皮和香加皮。比對不是只看像不像五加皮，也看像不像香加皮。", "en": "Two reference herbs on the plate: wujiapi and periploca. We check not only whether it matches wujiapi, but whether it matches periploca."}],
+        ["chieh", {"zh": "……你剛剛講了一句品管的話。", "en": "…That was a QC sentence you just said."}]
+       ]}
+     ]},
+    {"id": "doctorcall", "name": {"zh": "吳醫師來電", "en": "Dr Wu calls"}, "sub": {"zh": "15:00 · LIMS 工作站", "en": "15:00 · LIMS workstation"}, "t": 900, "mood": "day",
+     "note": {"zh": "留樣合格；問題在證不在藥", "en": "Retained sample passes; the problem is the pattern, not the herb"},
+     "beats": [
+      {"id": "d1", "ring": {"title": {"zh": "吳醫師來電", "en": "Dr Wu calling"}, "sub": {"zh": "病人吃黃耆「上火」", "en": "A patient “overheated” on astragalus"}, "call": true, "from": "wu-doc"},
+       "lines": [
+        ["wu-doc", {"zh": "鄭老師，上個月那批黃耆是不是有問題？病人吃了口乾、長痘、便秘，說上火。", "en": "Teacher Cheng, was last month's astragalus lot faulty? A patient got a dry mouth, spots and constipation; says it “overheated” him."}],
+        ["mentor", {"zh": "留樣重驗了，性狀、層析、重金屬、二氧化硫全部合格。吳醫師，舌照傳來。", "en": "We retested the retained sample: characters, chromatography, heavy metals, sulphur dioxide, all pass. Dr Wu, send the tongue photo."}],
+        ["mentor", {"zh": "你看。這個人，該不該吃黃耆？", "en": "You look. Should this person be on astragalus at all?"}]
+       ],
+       "mini": {"type": "tongue", "q": {"zh": "病人舌紅、苔黃、口乾便秘、長痘。證型？", "en": "Red tongue, yellow coat, dry mouth, constipation, spots. The pattern?"},
+                "tongue": {"body": "red", "coat": "yellow", "shape": "normal"},
+                "options": [
+                 {"zh": "實熱證：黃耆甘溫，本不宜", "en": "Excess heat: warm astragalus was never right", "ok": true, "why": {"zh": "舌紅苔黃加口乾便秘是實熱。黃耆甘溫補氣，中醫認為實熱證不宜，吃了當然「上火」。藥沒問題，證錯了。", "en": "Red tongue, yellow coat, dry mouth and constipation mean excess heat. Astragalus is sweet and warm; TCM reasoning keeps it away from excess heat. The herb is fine; the pattern was wrong."}},
+                 {"zh": "氣虛證：黃耆劑量不夠", "en": "Qi deficiency: not enough astragalus", "ok": false, "why": {"zh": "氣虛舌淡、神疲、脈弱。這張舌是紅的，苔是黃的。", "en": "Qi deficiency shows a pale tongue, fatigue and a weak pulse. This tongue is red with a yellow coat."}},
+                 {"zh": "寒濕證：藥材受潮", "en": "Cold-damp: the herb got damp", "ok": false, "why": {"zh": "寒濕苔白膩、怕冷。而且藥材受潮是品管問題，留樣已經排除。", "en": "Cold-damp gives a greasy white coat and chills. And a damp herb is a QC issue, which the retained sample already excludes."}}
+                ]},
+       "post": [
+        ["wu-doc", {"zh": "……這是我學弟開的。我回去跟他談。", "en": "…My junior prescribed that. I'll talk to him."}],
+        ["mentor", {"zh": "品質合格不等於用對證。品管回答藥材的問題；病人的問題，要回到辨證。", "en": "Passing quality is not the same as the right pattern. QC answers for the herb; the patient's question goes back to pattern diagnosis."}]
+       ]},
+      {"id": "d2", "to": "place:lims", "guide": {"zh": "把合格的黃耆批放行", "en": "Release the passing astragalus lot"},
+       "lines": [
+        ["mentor", {"zh": "另一批黃耆全部合格。放行不是按一個鍵。順序排出來。", "en": "The other astragalus lot passes everything. Release is not one button. Put the steps in order."}]
+       ],
+       "mini": {"type": "order", "q": {"zh": "一批藥材從檢驗完成到放行的順序", "en": "From tests complete to release: the order"},
+                "steps": [
+                 {"zh": "檢驗項目全部完成", "en": "All test items complete"},
+                 {"zh": "第二人覆核原始數據", "en": "Second person reviews raw data"},
+                 {"zh": "與規格逐項比對", "en": "Compare item by item with specification"},
+                 {"zh": "品保簽署檢驗報告書", "en": "QA signs the certificate of analysis"},
+                 {"zh": "標示放行，紀錄歸檔", "en": "Label released; file the records"}
+                ]},
+       "post": [
+        ["chieh", {"zh": "覆核那一步，是我早上少的那個峰被抓到的地方。", "en": "The review step is where my missing peak would have been caught this morning."}]
+       ]}
+     ]},
+    {"id": "evening", "name": {"zh": "留樣室", "en": "The retained-sample room"}, "sub": {"zh": "17:30 · 天平室旁", "en": "17:30 · beside the balance room"}, "t": 1050, "mood": "eve",
+     "note": {"zh": "不合格批留更久；今天三件事", "en": "Failed lots kept longer; three things today"},
+     "beats": [
+      {"id": "e1", "to": "place:balance", "roles": ["qc-tech"], "guide": {"zh": "封存今天的留樣", "en": "Seal today's retained samples"},
+       "lines": [
+        ["lin", {"zh": "留樣罐：批號、日期、取樣人、封條。拒收那批，保存期限要寫比平常長。", "en": "Retained-sample jars: lot number, date, sampler, seal. The rejected lot gets a longer retention date than usual."}],
+        ["me", {"zh": "因為將來最可能吵架的，就是它。", "en": "Because that is the one most likely to be argued over."}],
+        ["lin", {"zh": "學得很快。天平室的門輕一點關，最後一位數會跳。", "en": "Quick learner. Close the balance-room door gently; the last digit jumps."}]
+       ]},
+      {"id": "e2", "to": "mentor", "guide": {"zh": "聽鄭老師收尾", "en": "Teacher Cheng wraps up"},
+       "lines": [
+        ["mentor", {"zh": "今天三件事：一個放錯位的小瓶、一包硫磺過頭的黃耆、一袋特別香的樹皮。哪一件最可怕？", "en": "Three things today: a misplaced vial, an over-fumigated sack, a bag of fragrant bark. Which was the most frightening?"}],
+        ["me", {"zh": "樹皮。因為它差一點變成酒，進到很多人的心臟裡。", "en": "The bark. It was one step from becoming wine and reaching a lot of hearts."}],
+        ["mentor", {"zh": "對。品管的工作不是讓數字好看，是讓那一步永遠走不到。", "en": "Right. QC is not about making numbers look good; it is about making sure that step is never taken."}]
+       ]}
+     ]},
+    {"id": "night", "name": {"zh": "夜跑層析", "en": "The night run"}, "sub": {"zh": "20:00 · 層析區", "en": "20:00 · chromatography"}, "t": 1200, "mood": "night",
+     "note": {"zh": "香加皮確認；老闆娘明天會收到電話", "en": "Periploca confirmed; Mrs Chen gets a call tomorrow"},
+     "beats": [
+      {"id": "n1", "to": "place:hplc", "guide": {"zh": "看薄層層析的結果", "en": "Read the thin-layer result"},
+       "lines": [
+        ["sys", {"zh": "晚上八點。紫外燈下，薄層板上的斑點亮起來。", "en": "Eight at night. Under the UV lamp the spots on the thin-layer plate light up."}],
+        ["chieh", {"zh": "樣品和五加皮對照：對不上。和香加皮對照：每一個斑點都對上。", "en": "Sample against wujiapi reference: no match. Against periploca reference: every spot lines up."}],
+        ["me", {"zh": "香加皮。明天一早打給老闆娘，整批不能用，也不能退回市場流通。", "en": "Periploca. First thing tomorrow we phone Mrs Chen: the whole batch is unusable and must not go back into circulation."}],
+        ["mentor", {"zh": "還有通報。混偽品不是她一個人的問題，是市場的問題。", "en": "And a report. An adulterant is not her problem alone; it is the market's."}],
+        ["sys", {"zh": "白板上多了一張新的色層圖。鄭老師在旁邊寫：便宜又特別香，先懷疑。", "en": "A new chromatogram joins the whiteboard. Beside it Teacher Cheng writes: cheap and unusually fragrant, suspect first."}]
+       ],
+       "end": true}
+     ]}
+  ],
+  "ending": {"title": {"zh": "放行了", "en": "Released"}, "sub": {"zh": "一批放行，一批拒收，一袋樹皮沒變成酒", "en": "One lot released, one rejected, one bag of bark that never became wine"},
+             "stats": ["choices", "drills", "calls", "items", "grades", "time"]}
+}

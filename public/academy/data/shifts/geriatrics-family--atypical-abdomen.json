@@ -1,0 +1,262 @@
+{
+  "format": "huatuo-shift-v2",
+  "department": "geriatrics-family",
+  "case": "atypical-abdomen",
+  "caseTitle": {"zh": "阿滿姨的「沒什麼」肚子痛", "en": "Auntie Man's “nothing much” tummy"},
+  "condition": {"zh": "老年急症 · 非典型腹痛", "en": "Geriatric emergency · atypical abdominal pain"},
+  "difficulty": 3,
+  "room": "er",
+  "title": {"zh": "老年醫學急診日", "en": "A geriatrics day in the ER"},
+  "tagline": {"zh": "不太痛的闌尾、安靜的發燒和一袋留在家裡的藥", "en": "A barely painful appendix, a quiet fever and a medicine bag left at home"},
+  "minutes": 25,
+  "roles": [
+    {"id": "resident", "zh": "家醫科住院醫師", "en": "Family medicine resident",
+     "desc": {"zh": "跟著許主治做急診的老年醫學會診：問診、觸診、影像、敗血症流程、一通外科電話。她說「沒什麼」的時候，再問一次的人是你。", "en": "Geriatric liaison in the ER with Dr Hsu: history, palpation, imaging, the sepsis pathway, a call to surgery. When she says “nothing much”, you are the one who asks again."}},
+    {"id": "nurse", "zh": "老年急診個管護理師", "en": "Geriatric ER nurse",
+     "desc": {"zh": "基準狀態、藥袋、家屬電話與監視器都在你手上；她變安靜的那一刻，你最先注意到。", "en": "Baseline, medicine bag, family calls and the monitor are yours; the moment she goes quiet, you notice first."}}
+  ],
+  "cast": {
+    "attending": {"name": {"zh": "許主治", "en": "Dr Hsu"}, "role": {"zh": "家醫科主治醫師（師傅）", "en": "Family medicine attending (mentor)"}, "tag": "ATT", "color": "#81296d", "body": "mentor",
+                  "about": {"zh": "記得每位病人的狗叫什麼名字，今天要記一隻貓。口袋裡的茶葉蛋還沒剝。", "en": "Remembers every patient's dog's name; today it is a cat. The tea egg in his pocket is still unpeeled."}},
+    "er-doc": {"name": {"zh": "高醫師", "en": "Dr Kao"}, "role": {"zh": "急診主治醫師", "en": "ER attending"}, "tag": "ER", "color": "#c0392b", "body": "specialist",
+               "about": {"zh": "一次看八個病人。遇到八十歲以上的腹痛，會把家醫科叫來，然後說：你們慢慢問。", "en": "Sees eight patients at once. For anyone over eighty with abdominal pain, calls family medicine and says: take your time asking."}},
+    "triage": {"name": {"zh": "阿芳", "en": "Fang"}, "role": {"zh": "檢傷護理師", "en": "Triage nurse"}, "tag": "TN", "color": "#3b8f6a", "body": "nurse",
+               "about": {"zh": "檢傷台的守門人。她說：老人家的急症講話很小聲，所以我靠近一點聽。", "en": "Gatekeeper of the triage desk. Her line: emergencies in the elderly speak softly, so I lean in."}},
+    "aman": {"name": {"zh": "阿滿姨", "en": "Auntie Man"}, "role": {"zh": "八十五歲，「肚子有點不舒服」", "en": "Eighty-five, “tummy a bit off”"}, "tag": "P", "color": "#c2703a", "body": "patient",
+             "about": {"zh": "虛構教學個案。獨居，養一隻叫咪咪的貓。什麼都「沒什麼」。長期吃類固醇，藥袋留在家裡。", "en": "Fictional teaching case. Lives alone with a cat called Mimi. Everything is “nothing much”. On long-term steroids; the medicine bag stayed at home."}},
+    "daughter-in-law": {"name": {"zh": "阿滿姨的媳婦", "en": "Auntie Man's daughter-in-law"}, "role": {"zh": "家屬", "en": "Family"}, "tag": "FAM", "color": "#8a6d3b", "body": "family",
+                        "about": {"zh": "下午請假趕來，手上提著那一袋藥。她說：媽從來不喊痛。", "en": "Arrives in the afternoon on leave, carrying the medicine bag. Her line: Mum never says it hurts."}},
+    "surgeon": {"name": {"zh": "外科住院醫師", "en": "Surgical resident"}, "role": {"zh": "一般外科（電話）", "en": "General surgery (by phone)"}, "tag": "GS", "color": "#3f6fa8", "phoneOnly": true,
+                "about": {"zh": "電話很短，問題很準：壓痛在哪、乳酸多少、止痛了沒。", "en": "Short calls, precise questions: where is the tenderness, what is the lactate, has she had analgesia."}},
+    "homecare": {"name": {"zh": "居家護理師", "en": "Home care nurse"}, "role": {"zh": "居家護理（電話）", "en": "Home care (by phone)"}, "tag": "HC", "color": "#2f6f8f", "phoneOnly": true,
+                 "about": {"zh": "每週去看阿滿姨一次。她知道「平常的阿滿姨」是什麼樣子，這比任何檢驗都重要。", "en": "Visits Auntie Man weekly. Knows what “the usual Auntie Man” looks like, which matters more than any test."}}
+  },
+  "places": {
+    "triage": {"name": {"zh": "檢傷台", "en": "Triage desk"}, "hot": "handover"},
+    "bay": {"name": {"zh": "急診 6 床", "en": "ER bay 6"}, "hot": "bed"},
+    "monitor": {"name": {"zh": "床邊監視器", "en": "Bedside monitor"}, "hot": "monitor"},
+    "ws": {"name": {"zh": "影像工作站", "en": "Imaging workstation"}, "hot": "imaging"},
+    "desk": {"name": {"zh": "醫師工作台", "en": "Doctors' desk"}, "hot": "desk"},
+    "chart": {"name": {"zh": "病歷架", "en": "Chart rack"}, "hot": "chart"}
+  },
+  "glossary": [
+    {"term": {"zh": "非典型表現", "en": "atypical presentation"}, "plain": {"zh": "老人家生病常常不照課本：不發燒、不太痛、只是變安靜、吃不下、走不穩。症狀小聲，病不一定小。", "en": "Illness in older people often ignores the textbook: no fever, little pain, just quieter, off food, unsteady. Soft symptoms do not mean a small disease."}},
+    {"term": {"zh": "檢傷", "en": "triage"}, "plain": {"zh": "急診門口依嚴重度排順序。老人家的分數常常被「看起來還好」拉低，所以要多看一眼。", "en": "Sorting patients by urgency at the ER door. Older people's scores are often dragged down by “looks fine”, so look twice."}},
+    {"term": {"zh": "闌尾炎", "en": "appendicitis"}, "plain": {"zh": "盲腸尾端的小管子發炎。年輕人右下腹劇痛；老人家可能只是悶悶的、低燒，等發現時常已穿孔。", "en": "Inflammation of the little tube off the caecum. Young people get severe right-lower pain; the elderly may have only a dull ache and a low fever, and are often perforated by the time it is found."}},
+    {"term": {"zh": "穿孔", "en": "perforation"}, "plain": {"zh": "發炎的腸壁破了個洞，腸內容物漏進腹腔，接著就是腹膜炎與敗血症。", "en": "The inflamed gut wall bursts and its contents leak into the abdomen; peritonitis and sepsis follow."}},
+    {"term": {"zh": "反彈痛", "en": "rebound tenderness"}, "plain": {"zh": "手慢慢壓下去不太痛，突然放開反而痛：腹膜受刺激的徵象。老人家的反彈痛常常不明顯。", "en": "Pressing in slowly hurts little, but letting go suddenly hurts: a sign of an irritated peritoneum. In the elderly it is often muted."}},
+    {"term": {"zh": "類固醇", "en": "steroids"}, "plain": {"zh": "壓制發炎的藥。長期吃會蓋住發燒和疼痛，也讓身體在壓力下做不出自己的皮質醇。", "en": "Medicines that suppress inflammation. Long-term use hides fever and pain, and stops the body making its own cortisol under stress."}},
+    {"term": {"zh": "腎上腺功能不足", "en": "adrenal insufficiency"}, "plain": {"zh": "長期吃類固醇的人突然生大病或開刀，身體擠不出足夠的皮質醇，血壓會掉。要事先告訴外科與麻醉，依醫囑處理。", "en": "When someone on long-term steroids falls seriously ill or has surgery, the body cannot produce enough cortisol and the blood pressure falls. Tell surgery and anaesthesia in advance; managed per order."}},
+    {"term": {"zh": "敗血症", "en": "sepsis"}, "plain": {"zh": "感染引起全身失控的反應，血壓掉、器官受傷。老人家的第一個徵象常常是意識變了。", "en": "The body's runaway response to infection: falling blood pressure, injured organs. In the elderly the first sign is often a change in alertness."}},
+    {"term": {"zh": "血液培養", "en": "blood cultures"}, "plain": {"zh": "抽血放進培養瓶找細菌。一定要在第一劑抗生素之前抽，否則就找不到了。", "en": "Blood drawn into culture bottles to grow the bacteria. Always taken before the first antibiotic dose, or the culprit is never found."}},
+    {"term": {"zh": "基準狀態", "en": "baseline"}, "plain": {"zh": "病人平常的樣子：會不會聊天、自己走不走、認不認得人。沒有基準，就看不出「變了」。", "en": "What the person is normally like: chatty or not, walking alone or not, recognising people or not. Without a baseline you cannot see “changed”."}},
+    {"term": {"zh": "譫妄", "en": "delirium"}, "plain": {"zh": "急性的意識混亂，可能吵，也可能只是安靜得不對勁。常常是感染、藥物或疼痛的第一個訊號。", "en": "Acute confusion that may be noisy or just unusually quiet. Often the first signal of infection, a drug or pain."}},
+    {"term": {"zh": "決策能力", "en": "capacity"}, "plain": {"zh": "能不能理解、記住、權衡手術的資訊並表達決定。八十五歲不等於沒有；譫妄時可能暫時沒有。", "en": "Whether a person can understand, retain and weigh the information about an operation and express a choice. Eighty-five does not mean no; delirium may mean not right now."}},
+    {"term": {"zh": "電腦斷層", "en": "CT"}, "plain": {"zh": "用 X 光切出一層一層的影像。老人家的腹痛，打顯影劑的電腦斷層最常直接給答案。", "en": "X-rays reconstructed into slices. For abdominal pain in the elderly, a contrast CT most often gives the answer outright."}},
+    {"term": {"zh": "ISBAR", "en": "ISBAR"}, "plain": {"zh": "打電話會診的固定順序：身分、情境、背景、評估、建議，最後複誦。", "en": "The fixed order for a referral call: Identity, Situation, Background, Assessment, Recommendation, then read back."}}
+  ],
+  "codex": [
+    {"id": "triage-desk", "kind": "equipment", "name": {"zh": "檢傷台", "en": "Triage desk"}, "text": {"zh": "生命徵象、主訴、分級。八十歲以上的腹痛，分級之後再多問一句：平常是什麼樣子？", "en": "Vital signs, complaint, category. For abdominal pain over eighty, add one question after the category: what is she normally like?"}, "hot": "handover"},
+    {"id": "er-monitor", "kind": "equipment", "name": {"zh": "床邊監視器", "en": "Bedside monitor"}, "text": {"zh": "老人家的心跳可能被藥壓著不會快，血壓掉下來才是第一個數字。看趨勢，不看一筆。", "en": "An older heart may be kept slow by medication; the first number to move is often the blood pressure. Watch the trend, not one reading."}, "hot": "monitor"},
+    {"id": "ct-scanner", "kind": "equipment", "name": {"zh": "電腦斷層", "en": "CT scanner"}, "text": {"zh": "老人家的腹痛少用猜的。打顯影劑前看腎功能與過敏，依流程。", "en": "Guess less with abdominal pain in the elderly. Check kidney function and allergies before contrast, per protocol."}, "hot": "imaging"},
+    {"id": "medicine-bag", "kind": "equipment", "name": {"zh": "藥袋", "en": "Medicine bag"}, "text": {"zh": "留在家裡的那一袋，比任何檢驗都重要。類固醇、抗凝血藥、降心跳的藥，每一種都會改寫急診的故事。", "en": "The bag left at home matters more than any test. Steroids, anticoagulants, heart-slowing drugs: each rewrites the ER story."}, "hot": "drugs"},
+    {"id": "chart-rack", "kind": "equipment", "name": {"zh": "病歷架", "en": "Chart rack"}, "text": {"zh": "過敏、上次住院、上次的意識狀態、誰是聯絡人。打給外科之前先翻。", "en": "Allergies, last admission, last known mental state, who to contact. Read it before you call surgery."}, "hot": "chart"},
+    {"id": "cat-photo", "kind": "item", "name": {"zh": "咪咪的照片", "en": "A photo of Mimi"}, "text": {"zh": "阿滿姨手機裡的貓。手術同意書簽完，她說：「貓要有人餵。」居家護理師說她會去。", "en": "The cat on Auntie Man's phone. After signing the consent she said: “Someone has to feed the cat.” The home care nurse said she would."}},
+    {"id": "atypical-why", "kind": "concept", "name": {"zh": "老年急症為什麼不典型", "en": "Why geriatric emergencies are atypical"}, "text": {"zh": "免疫老化讓發燒變少；痛覺與腹膜反應變鈍；類固醇蓋住發炎；降心跳的藥讓心跳快不起來；認知障礙讓主訴變成「沒什麼」。所以老人家的腹痛：門檻放低、影像放早、基準狀態一定要問到；低燒加變安靜，就當敗血症處理到證明不是為止。", "en": "Immune ageing blunts fever; pain and peritoneal signs dull; steroids mask inflammation; heart-slowing drugs stop the pulse rising; cognitive impairment turns the complaint into “nothing much”. So for abdominal pain in the elderly: lower the threshold, image earlier, always establish the baseline; a low fever plus new quietness is sepsis until proven otherwise."}},
+    {"id": "steroids-stress", "kind": "concept", "name": {"zh": "類固醇病人遇到壓力", "en": "A steroid patient under stress"}, "text": {"zh": "長期吃類固醇的人，腎上腺早就休息了。大感染、手術、嘔吐吃不下藥，身體擠不出皮質醇，血壓會莫名其妙地掉：這是腎上腺功能不足。要做的事：藥袋找出來、絕不突然停藥、把「長期類固醇」寫進會診與麻醉的第一行、依醫囑由團隊決定調整。知道這件事的人，救得了一條命。", "en": "In someone on long-term steroids the adrenal glands have long been resting. A major infection, an operation, or vomiting that stops the tablets leaves the body unable to produce cortisol, and the pressure falls for no obvious reason: adrenal insufficiency. What to do: find the medicine bag, never stop the drug abruptly, write “long-term steroids” on the first line of the referral and the anaesthetic note, and let the team adjust per order. Knowing this saves lives."}},
+    {"id": "capacity-four", "kind": "concept", "name": {"zh": "決策能力的四件事", "en": "The four parts of capacity"}, "text": {"zh": "理解（這是什麼手術、不開會怎樣）、記住（講完還記得）、權衡（用自己的價值比較利弊）、表達（說出決定）。四件都做得到，就有決策能力，年齡不是理由。譫妄的人可能暫時做不到，那就先處理可逆的原因，再問一次；真的做不到時，才找代理人，而且決定要是「她會怎麼選」。", "en": "Understand (what the operation is and what happens without it), retain (still remember after the explanation), weigh (compare the options by her own values), communicate (state a choice). All four present means capacity; age is not a reason. A delirious person may lack it temporarily, so treat the reversible causes and ask again; only when it is truly absent does a proxy decide, and the decision must be what she would have chosen."}}
+  ],
+  "segs": [
+    {"id": "triage", "name": {"zh": "檢傷區", "en": "Triage"}, "sub": {"zh": "08:00 · 急診檢傷台", "en": "08:00 · ER triage desk"}, "t": 480, "mood": "day",
+     "note": {"zh": "檢傷：八十五歲，「肚子有點不舒服」", "en": "Triage: eighty-five, “tummy a bit off”"},
+     "beats": [
+      {"id": "t1", "to": "place:triage", "guide": {"zh": "到檢傷台", "en": "Go to the triage desk"},
+       "lines": [
+        ["sys", {"zh": "急診早上八點。許主治從口袋掏出茶葉蛋，看了一眼，又放回去。", "en": "The ER at eight. Dr Hsu takes the tea egg out of his pocket, looks at it, puts it back."}],
+        ["triage", {"zh": "6 床阿滿姨，八十五歲，鄰居送來的。主訴「肚子有點不舒服」兩天，體溫微微高，心跳不快，檢傷三級。", "en": "Bay 6, Auntie Man, eighty-five, brought in by a neighbour. “Tummy a bit off” for two days, temperature slightly up, pulse not fast, triage category three."}],
+        ["er-doc", {"zh": "八十歲以上的腹痛，我都叫家醫科來。你們慢慢問，我去看另外七個。", "en": "Abdominal pain over eighty, I call family medicine. Take your time; I have seven others."}],
+        ["attending", {"zh": "老人家的急症講話很小聲。三級不代表小事。先去摸肚子。", "en": "Emergencies in the elderly speak softly. Category three does not mean minor. Go and feel the abdomen."}]
+       ]},
+      {"id": "t2", "roles": ["resident"], "to": "aman", "guide": {"zh": "到 6 床做腹部觸診", "en": "Palpate the abdomen at bay 6"},
+       "lines": [
+        ["aman", {"zh": "醫生，沒什麼啦，鄰居太緊張。", "en": "Doctor, it's nothing. My neighbour fusses."}],
+        ["attending", {"zh": "從離痛最遠的地方開始壓，最後才到右下腹。看她的臉，不要只看你的手。", "en": "Start farthest from the pain and finish at the right lower quadrant. Watch her face, not just your hand."}]
+       ],
+       "mini": {"type": "drill", "template": "geriatrics-family", "drill": "palp"},
+       "post": [
+        ["me", {"zh": "右下腹有壓痛，但她只皺了一下眉。反彈痛不明顯。", "en": "Right lower quadrant tender, but she only frowned slightly. Rebound tenderness is muted."}],
+        ["attending", {"zh": "老人家的反彈痛常常不明顯，這就是非典型表現。皺一下眉，在八十五歲，就是大叫。", "en": "Rebound is often muted in the elderly; that is the atypical presentation. A slight frown at eighty-five is a scream."}]
+       ]}
+     ]},
+    {"id": "history", "name": {"zh": "問診與基準", "en": "History and baseline"}, "sub": {"zh": "09:00 · 急診 6 床", "en": "09:00 · ER bay 6"}, "t": 540, "mood": "day",
+     "note": {"zh": "藥袋在家；平常的阿滿姨很會聊", "en": "Medicine bag at home; the usual Auntie Man is chatty"},
+     "beats": [
+      {"id": "h1", "to": "aman", "guide": {"zh": "問阿滿姨平常吃什麼藥", "en": "Ask Auntie Man about her medicines"},
+       "lines": [
+        ["me", {"zh": "阿滿姨，您平常吃什麼藥？", "en": "Auntie Man, what medicines do you take?"}],
+        ["aman", {"zh": "白色的、小小的，早上吃。風濕科開的，吃很多年了。藥袋在家裡。", "en": "Little white ones, in the morning. From the rheumatologist, for years. The bag's at home."}],
+        ["attending", {"zh": "風濕科、吃很多年、小小白白的。你想到什麼？", "en": "Rheumatology, for years, small and white. What comes to mind?"}],
+        ["me", {"zh": "類固醇。發燒和痛都會被蓋住，而且不能突然停。", "en": "Steroids. They hide fever and pain, and must not stop abruptly."}],
+        ["attending", {"zh": "先當作是，等藥袋來證實。寫在會診單第一行。", "en": "Assume yes until the bag proves otherwise. First line of the referral."}]
+       ],
+       "set": {"steroid-suspected": true}},
+      {"id": "h2", "to": "place:desk", "guide": {"zh": "接居家護理師電話", "en": "Take the home care nurse's call"},
+       "ring": {"title": {"zh": "居家護理師來電", "en": "Home care nurse calling"}, "sub": {"zh": "鄰居說阿滿姨進急診了，我跟你們講她平常的樣子", "en": "The neighbour told me Auntie Man is in the ER; let me tell you her baseline"}, "call": true, "from": "homecare"},
+       "lines": [
+        ["homecare", {"zh": "她平常很會聊，自己走去市場，認得每個人。上週還罵我太瘦。今天電話裡她只說「嗯」。", "en": "Normally she chats, walks to the market alone, knows everyone. Last week she told me I was too thin. Today on the phone she only said “mm”."}],
+        ["me", {"zh": "基準狀態：會聊、自己走、認人。今天比平常安靜。謝謝，這比檢驗重要。", "en": "Baseline: chatty, walks alone, recognises people. Quieter than usual today. Thank you; that matters more than the bloods."}],
+        ["homecare", {"zh": "還有，她家有一隻貓，叫咪咪。她會一直問。", "en": "And she has a cat, Mimi. She will keep asking about it."}]
+       ],
+       "set": {"baseline-known": true}},
+      {"id": "h3", "to": "aman", "guide": {"zh": "決定要不要先止痛", "en": "Decide about analgesia"},
+       "lines": [
+        ["triage", {"zh": "她說有點痛了。外科還沒來看。要先止痛嗎？", "en": "She says it hurts a little now. Surgery hasn't seen her yet. Analgesia first?"}]
+       ],
+       "mini": {"type": "choice", "q": {"zh": "外科會診前，止痛怎麼辦？", "en": "Before the surgical review, what about pain relief?"},
+                "options": [
+                 {"zh": "依醫囑先止痛，再安排檢查", "en": "Analgesia per order, then the investigations", "ok": true, "set": {"analgesia-first": true},
+                  "why": {"zh": "止痛不會蓋掉診斷；一個不痛的病人反而讓觸診更可靠。", "en": "Analgesia does not hide the diagnosis; a comfortable patient makes the examination more reliable."}},
+                 {"zh": "先不止痛，怕掩蓋外科的判斷", "en": "Withhold it so surgery can assess properly", "ok": false, "set": {"analgesia-first": false},
+                  "why": {"zh": "這是老觀念。讓八十五歲的人痛著等，只會換來一個不讓人摸的肚子。", "en": "An outdated idea. Making an eighty-five-year-old wait in pain only buys you an abdomen nobody can examine."}},
+                 {"zh": "先給她喝點熱湯壓一壓", "en": "A little warm soup to settle it first", "ok": false, "set": {"analgesia-first": false},
+                  "why": {"zh": "可能要開刀的肚子要禁食。", "en": "An abdomen that may need surgery stays nil by mouth."}}
+                ]},
+       "post": [
+        ["attending", {"zh": "禁食、止痛依醫囑、抽血、排電腦斷層。順序寫在板上。", "en": "Nil by mouth, analgesia per order, bloods, book the CT. Write the order on the board."}]
+       ]}
+     ]},
+    {"id": "imaging", "name": {"zh": "影像與意識", "en": "Imaging and alertness"}, "sub": {"zh": "10:30 · 影像工作站", "en": "10:30 · imaging workstation"}, "t": 630, "mood": "day",
+     "note": {"zh": "電腦斷層：闌尾；她更安靜了", "en": "CT: the appendix; she is quieter still"},
+     "beats": [
+      {"id": "i1", "to": "place:ws", "guide": {"zh": "到工作站看腹部影像", "en": "Abdominal images at the workstation"},
+       "lines": [
+        ["attending", {"zh": "八十五歲、低燒、右下腹壓痛不明顯。你會選什麼影像？為什麼？", "en": "Eighty-five, low fever, muted right-lower tenderness. Which imaging, and why?"}]
+       ],
+       "mini": {"type": "imaging", "region": "abdomen-lower",
+                "question": {"zh": "老人家右下腹不典型腹痛，首選影像是什麼？", "en": "Atypical right-lower abdominal pain in the elderly: which imaging first?"},
+                "answer": {"zh": "打顯影劑的腹部電腦斷層（腎功能與過敏依流程先看）。老人家腹壁厚、腸氣多，超音波常看不清；闌尾炎在老年常晚期才發現，穿孔比例高，電腦斷層能同時看穿孔、膿瘍與其他鑑別。", "en": "Contrast-enhanced abdominal CT, after kidney function and allergy checks per protocol. Ultrasound is often limited in the elderly by body habitus and bowel gas; appendicitis presents late in this group with a high perforation rate, and CT shows perforation, abscess and the differentials at once."}},
+       "post": [
+        ["er-doc", {"zh": "報告：闌尾腫脹，旁邊有一點游離液。外科我打了，他們會回電。", "en": "Report: swollen appendix with a little free fluid beside it. I've paged surgery; they'll call back."}]
+       ]},
+      {"id": "i2", "to": "aman", "guide": {"zh": "回 6 床看阿滿姨的意識", "en": "Back to bay 6: how alert is she?"},
+       "lines": [
+        ["triage", {"zh": "她剛剛沒有問貓。早上每十分鐘問一次。", "en": "She hasn't asked about the cat. This morning it was every ten minutes."}],
+        ["attending", {"zh": "突然安靜的長者。核對基準，這是譫妄的開始還是她累了？", "en": "A suddenly quiet older adult. Check against the baseline: is this delirium beginning, or is she tired?"}]
+       ],
+       "mini": {"type": "stage", "case": "geriatrics-family-v38-acute-confusion", "stage": 0},
+       "post": [
+        ["attending", {"zh": "基準是「會聊、會問貓」。現在不問了，就是急性變化。低燒加變安靜，當敗血症處理到證明不是為止。", "en": "Baseline is “chats, asks about the cat”. Not asking is an acute change. Low fever plus new quietness: treat as sepsis until proven otherwise."}]
+       ]}
+     ]},
+    {"id": "deterioration", "name": {"zh": "病況變化", "en": "Deterioration"}, "sub": {"zh": "13:00 · 急診 6 床", "en": "13:00 · ER bay 6"}, "t": 780, "mood": "day",
+     "note": {"zh": "血壓掉了；敗血症流程；外科回電", "en": "Pressure falling; sepsis pathway; surgery calls back"},
+     "beats": [
+      {"id": "v1", "to": "place:monitor", "guide": {"zh": "看監視器", "en": "Look at the monitor"},
+       "lines": [
+        ["sys", {"zh": "監視器響了。血壓往下掉，心跳沒有變快。阿滿姨閉著眼睛，叫她會應，但只說「嗯」。", "en": "The monitor alarms. Blood pressure falling, pulse not rising. Auntie Man's eyes are closed; she answers when called, but only “mm”."}]
+       ],
+       "mini": {"type": "vitals", "event": "hypotension",
+                "options": [
+                 {"zh": "叫人、給氧、抗生素前先抽血液培養，通知急診與外科", "en": "Call for help, oxygen, blood cultures before antibiotics, tell ER and surgery", "ok": true,
+                  "why": {"zh": "敗血症流程：先認出來、先叫人、培養先於抗生素、輸液抗生素依醫囑。心跳不快不代表不嚴重。", "en": "The sepsis pathway: recognise, call, cultures before antibiotics, fluids and antibiotics per order. A pulse that does not rise does not mean it is not serious."}},
+                 {"zh": "先等外科回電再說", "en": "Wait for surgery to call back", "ok": false,
+                  "why": {"zh": "敗血症不等電話。", "en": "Sepsis does not wait for the phone."}},
+                 {"zh": "扶她坐起來喝點水", "en": "Sit her up for a drink of water", "ok": false,
+                  "why": {"zh": "血壓掉的人不坐起來；要開刀的肚子不喝水。", "en": "A falling pressure does not sit up; an abdomen heading for theatre does not drink."}}
+                ]},
+       "post": [
+        ["er-doc", {"zh": "我來了。敗血症流程走起來。你把順序講一遍給新來的護理師。", "en": "I'm here. Sepsis pathway, go. Talk the new nurse through the order."}]
+       ]},
+      {"id": "v2", "roles": ["nurse"], "to": "triage", "guide": {"zh": "帶護理師走敗血症流程", "en": "Walk the nurse through the sepsis pathway"},
+       "lines": [
+        ["triage", {"zh": "順序。慢慢講，我做。", "en": "The order. Say it slowly; I'll do it."}]
+       ],
+       "mini": {"type": "order", "q": {"zh": "急診敗血症流程的順序", "en": "The order of the ER sepsis pathway"},
+                "steps": [
+                 {"zh": "辨識：血壓下降、意識改變、低燒", "en": "Recognise: falling pressure, altered alertness, low fever"},
+                 {"zh": "叫人：通知急診主治與外科", "en": "Call: ER attending and surgery"},
+                 {"zh": "抗生素前先抽血液培養與乳酸", "en": "Blood cultures and lactate before antibiotics"},
+                 {"zh": "依醫囑給氧、輸液、抗生素", "en": "Oxygen, fluids and antibiotics per order"},
+                 {"zh": "監測尿量與血壓，定時再評估", "en": "Monitor urine output and pressure; reassess regularly"}
+                ]},
+       "post": [
+        ["attending", {"zh": "還有一行：長期類固醇。血壓掉得這麼安靜，腎上腺功能不足也要想。依醫囑由團隊處理。", "en": "One more line: long-term steroids. A pressure falling this quietly should also make you think of adrenal insufficiency. Managed by the team, per order."}]
+       ]},
+      {"id": "v3", "to": "place:desk", "guide": {"zh": "接外科電話，用 ISBAR", "en": "Take surgery's call, in ISBAR"},
+       "ring": {"title": {"zh": "外科回電", "en": "Surgery calling back"}, "sub": {"zh": "6 床闌尾，給我 ISBAR", "en": "Bay 6 appendix: give me ISBAR"}, "call": true, "from": "surgeon"},
+       "lines": [
+        ["me", {"zh": "6 床阿滿姨，八十五歲。情境：電腦斷層闌尾炎併游離液，一小時內血壓下降、意識變安靜。", "en": "Bay 6, Auntie Man, eighty-five. Situation: CT appendicitis with free fluid; in the last hour pressure falling and new quietness."}],
+        ["me", {"zh": "背景：長期類固醇，藥袋還沒到；基準是會聊天、自己走。評估：疑似穿孔併敗血症，流程已啟動。建議：請您現在來看，討論手術。", "en": "Background: long-term steroids, bag not yet here; baseline chatty and independent. Assessment: likely perforation with sepsis, pathway started. Recommendation: please come now to discuss surgery."}],
+        ["surgeon", {"zh": "複誦：八十五歲、闌尾炎併游離液、血壓降、長期類固醇、流程已啟動。我十分鐘到。止痛了沒？", "en": "Read-back: eighty-five, appendicitis with free fluid, falling pressure, long-term steroids, pathway running. Ten minutes. Has she had analgesia?"}]
+       ]},
+      {"id": "v4", "when": {"flag": "analgesia-first", "is": true},
+       "lines": [
+        ["me", {"zh": "早上依醫囑止痛了。止痛後右下腹還是有壓痛。", "en": "Analgesia per order this morning. Right-lower tenderness persisted afterwards."}],
+        ["surgeon", {"zh": "止痛了還壓痛，更確定。好，我來。", "en": "Tender despite analgesia: that is more convincing. On my way."}]
+       ]},
+      {"id": "v5", "when": {"flag": "analgesia-first", "is": false},
+       "lines": [
+        ["me", {"zh": "還沒止痛。現在她痛到不太讓人碰肚子。", "en": "Not yet. She is now too sore to let anyone near her abdomen."}],
+        ["surgeon", {"zh": "那我的觸診就少了一半。先依醫囑止痛，我來。下次不要讓老人家痛著等我。", "en": "Then half my examination is gone. Analgesia per order now; I'm coming. Next time, don't leave an older person in pain waiting for me."}]
+       ]}
+     ]},
+    {"id": "family", "name": {"zh": "藥袋到了", "en": "The bag arrives"}, "sub": {"zh": "15:00 · 急診 6 床", "en": "15:00 · ER bay 6"}, "t": 900, "mood": "day",
+     "note": {"zh": "類固醇證實；病歷與過敏", "en": "Steroids confirmed; chart and allergies"},
+     "beats": [
+      {"id": "f1", "to": "daughter-in-law", "guide": {"zh": "和媳婦一起看藥袋", "en": "Go through the bag with her daughter-in-law"},
+       "lines": [
+        ["daughter-in-law", {"zh": "藥袋拿來了。媽從來不喊痛，我早該想到。", "en": "Here's the bag. Mum never says it hurts. I should have known."}],
+        ["attending", {"zh": "多重用藥，從藥袋和本人經驗開始。一包一包對。", "en": "Polypharmacy: start from the bag and the person's own experience. One packet at a time."}]
+       ],
+       "mini": {"type": "stage", "case": "geriatrics-family-v38-medicine-bag", "stage": 0},
+       "post": [
+        ["me", {"zh": "類固醇證實了，每天早上，吃了八年。還有一顆降心跳的藥，難怪心跳快不起來。", "en": "Steroids confirmed: every morning for eight years. And a heart-slowing tablet, which is why the pulse never rose."}],
+        ["attending", {"zh": "兩行都寫給麻醉科：長期類固醇、降心跳藥。手術中的血壓，他們要先知道。", "en": "Both lines go to anaesthesia: long-term steroids, heart-slowing drug. They need to know before the blood pressure in theatre does."}]
+       ],
+       "set": {"steroid-confirmed": true}},
+      {"id": "f2", "roles": ["nurse"], "to": "place:chart", "guide": {"zh": "找病歷核對過敏", "en": "Find the chart and check allergies"},
+       "lines": [
+        ["attending", {"zh": "抗生素給之前，過敏誰核對過？去找病歷。", "en": "Who checked allergies before the antibiotic? Find the chart."}]
+       ],
+       "mini": {"type": "find", "hot": "chart", "q": {"zh": "找到病歷架，核對過敏紀錄", "en": "Find the chart rack and check the allergy record"}},
+       "post": [
+        ["me", {"zh": "過敏：無。上次住院兩年前，出院時意識清楚、自己走。", "en": "Allergies: none. Last admission two years ago; alert and walking independently at discharge."}]
+       ]}
+     ]},
+    {"id": "decision", "name": {"zh": "手術前", "en": "Before theatre"}, "sub": {"zh": "17:00 · 急診 6 床", "en": "17:00 · ER bay 6"}, "t": 1020, "mood": "eve",
+     "note": {"zh": "決策能力、同意書、一隻貓", "en": "Capacity, consent, a cat"},
+     "beats": [
+      {"id": "d1", "to": "aman", "guide": {"zh": "評估阿滿姨的決策能力", "en": "Assess Auntie Man's capacity"},
+       "lines": [
+        ["sys", {"zh": "輸液與抗生素依醫囑給了，血壓回來一些。阿滿姨睜開眼睛，第一句話：「咪咪吃了沒？」", "en": "Fluids and antibiotics given per order; the pressure has come back a little. Auntie Man opens her eyes. First words: “Has Mimi eaten?”"}],
+        ["er-doc", {"zh": "外科要開刀，要同意書。八十五歲又剛剛譫妄，她能自己簽嗎？", "en": "Surgery wants to operate and needs consent. Eighty-five and just delirious: can she sign for herself?"}],
+        ["attending", {"zh": "決策能力四件事：理解、記住、權衡、表達。你問，我聽。", "en": "Capacity has four parts: understand, retain, weigh, communicate. You ask; I listen."}],
+        ["me", {"zh": "阿滿姨，醫師說闌尾破了要開刀。您可以跟我說一次，您聽到了什麼嗎？", "en": "Auntie Man, the doctors say the appendix has burst and needs an operation. Can you tell me what you heard?"}],
+        ["aman", {"zh": "肚子裡那條小腸子破了，不開會更嚴重。開了要住院幾天。我要先問貓。", "en": "The little tube in my belly burst; it gets worse if they don't operate. A few days in hospital after. I need to ask about the cat first."}],
+        ["attending", {"zh": "理解、記住、權衡、表達，四件都有。她有決策能力。貓的事也是權衡的一部分。", "en": "Understand, retain, weigh, communicate: all four. She has capacity. The cat is part of the weighing."}]
+       ],
+       "item": "cat-photo"},
+      {"id": "d2", "to": "attending", "guide": {"zh": "交班給開刀房與許主治結語", "en": "Handover to theatre and Dr Hsu's debrief"},
+       "lines": [
+        ["me", {"zh": "交班：闌尾炎併穿孔疑似、敗血症流程進行中、長期類固醇與降心跳藥已告知麻醉、有決策能力、同意書已簽、貓由居家護理師處理。", "en": "Handover: likely perforated appendicitis, sepsis pathway running, long-term steroids and heart-slowing drug reported to anaesthesia, has capacity, consent signed, cat handled by the home care nurse."}],
+        ["attending", {"zh": "今天四件事：皺一下眉就是大叫；基準比檢驗重要；培養先於抗生素；藥袋裡的類固醇要寫在第一行。", "en": "Four things today: a slight frown is a scream; the baseline beats the bloods; cultures before antibiotics; the steroids in the bag go on the first line."}],
+        ["sys", {"zh": "他終於把茶葉蛋剝了。分你一半。", "en": "He finally peels the tea egg. You get half."}]
+       ]}
+     ]},
+    {"id": "night", "name": {"zh": "夜間電話", "en": "Night call"}, "sub": {"zh": "22:30 · 急診醫師工作台", "en": "22:30 · ER doctors' desk"}, "t": 1350, "mood": "night",
+     "note": {"zh": "術後夜裡：眼鏡、小燈、貓的消息", "en": "The night after surgery: glasses, a small light, news of the cat"},
+     "beats": [
+      {"id": "n1", "to": "place:desk", "guide": {"zh": "接居家護理師的電話", "en": "Take the home care nurse's call"},
+       "ring": {"title": {"zh": "居家護理師來電", "en": "Home care nurse calling"}, "sub": {"zh": "咪咪餵過了；病房說阿滿姨晚上有點亂", "en": "Mimi has been fed; the ward says Auntie Man is a bit muddled tonight"}, "call": true, "from": "homecare"},
+       "lines": [
+        ["homecare", {"zh": "咪咪餵過了，鄰居接手。病房說阿滿姨開完刀晚上有點亂，一直找眼鏡。", "en": "Mimi's fed; the neighbour is taking over. The ward says Auntie Man is a bit muddled after the operation and keeps looking for her glasses."}],
+        ["me", {"zh": "術後的譫妄要先找原因：痛、尿、氧氣、剛加的藥。眼鏡給她、開小燈、告訴她幾點、在哪裡，還有，告訴她貓吃過了。", "en": "Post-operative delirium: causes first—pain, bladder, oxygen, any new drug. Give her the glasses, a small light, the time and the place. And tell her the cat has eaten."}],
+        ["homecare", {"zh": "複誦：先找原因、眼鏡小燈報時、貓吃過了。這句我親自去說。", "en": "Read-back: causes first, glasses, light and the time, the cat has eaten. That last line I'll deliver myself."}],
+        ["sys", {"zh": "你放下電話。工作台上還有半顆茶葉蛋，和一張手機裡傳來的貓的照片。", "en": "You put the phone down. On the desk, half a tea egg and a photo of a cat someone forwarded to your phone."}]
+       ],
+       "end": true}
+     ]}
+  ],
+  "ending": {"title": {"zh": "下班了", "en": "End of shift"}, "sub": {"zh": "皺一下眉，在八十五歲，就是大叫", "en": "A slight frown at eighty-five is a scream"},
+             "stats": ["stages", "drills", "choices", "calls", "items", "time"]}
+}

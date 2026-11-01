@@ -1,0 +1,329 @@
+{
+  "format": "huatuo-shift-v2",
+  "department": "formulas",
+  "case": "main",
+  "caseTitle": {"zh": "有汗桂枝，無汗麻黃", "en": "Sweat: cinnamon twig; no sweat: ephedra"},
+  "condition": {"zh": "經方調劑 · 表證", "en": "Classical formulas · exterior patterns"},
+  "difficulty": 1,
+  "room": "herbal-pharmacy",
+  "title": {"zh": "經方調劑日", "en": "A day dispensing the classical formulas"},
+  "tagline": {"zh": "一首方歌、一張處方、一位吃錯顆粒的阿伯", "en": "A formula verse, a prescription, and an uncle who took the wrong granules"},
+  "minutes": 26,
+  "roles": [
+    {"id": "clerk", "zh": "中醫見習醫師", "en": "TCM clerk",
+     "desc": {"zh": "到中藥局學方劑的另一面：從抽屜看配伍，從窗口看病人，從電話看醫師也會漏。", "en": "Learn the other side of formulas in the dispensary: combinations from the drawers, patients from the window, and from the phone that doctors miss things too."}},
+    {"id": "dispenser", "zh": "中藥調劑師", "en": "Herbal dispenser",
+     "desc": {"zh": "抓藥、秤量、分帖、複核、發藥衛教。嘴裡念方歌，手上不出錯。", "en": "Dispense, weigh, divide, verify, counsel. Formula verses on your lips, no slips in your hands."}}
+  ],
+  "cast": {
+    "mentor": {"name": {"zh": "蘇老師", "en": "Teacher Su"}, "role": {"zh": "中藥局方劑指導醫師（師傅）", "en": "Formula teaching physician of the dispensary (mentor)"}, "tag": "MD", "color": "#81296d", "body": "mentor",
+               "about": {"zh": "背方歌像唱歌。她問「這方為什麼這樣配」的次數，比問「這方是什麼」多三倍。", "en": "Recites formula verses as if singing. Asks “why is it put together this way?” three times as often as “what is it?”."}},
+    "kuan": {"name": {"zh": "阿寬", "en": "Kuan"}, "role": {"zh": "中藥調劑師", "en": "Herbal dispenser"}, "tag": "RX", "color": "#3b8f6a", "body": "herbalist",
+             "about": {"zh": "抓藥時嘴裡一定念方歌，念錯一個字就重抓。口袋裡有一張寫滿方歌的小抄，從來沒拿出來過。", "en": "Always murmurs the formula verse while dispensing; one wrong syllable and he starts the pack again. Keeps a crib sheet of verses in his pocket that he has never once taken out."}},
+    "mi": {"name": {"zh": "小米", "en": "Mi"}, "role": {"zh": "中藥局助理", "en": "Dispensary assistant"}, "tag": "AST", "color": "#2f8f8f", "body": "student",
+           "about": {"zh": "負責補斗、包藥、泡阿寬永遠忘了喝的茶。", "en": "Refills drawers, packs, and brews the tea Kuan always forgets to drink."}},
+    "mrs-lin": {"name": {"zh": "林太太", "en": "Mrs Lin"}, "role": {"zh": "四十二歲，感冒怕風自汗", "en": "Forty-two, a cold with chills and sweating"}, "tag": "P1", "color": "#c2703a", "body": "patient",
+                "about": {"zh": "虛構教學個案。幼兒園老師，被學生傳染。「我明明都在流汗，為什麼還是怕風？」", "en": "Fictional teaching case. Kindergarten teacher, caught it from the children. “I keep sweating, so why do I still hate the draught?”"}},
+    "uncle-chou": {"name": {"zh": "周伯", "en": "Uncle Chou"}, "role": {"zh": "七十一歲，咳喘清痰，高血壓", "en": "Seventy-one, cough with thin phlegm, hypertension"}, "tag": "P2", "color": "#b5651d", "body": "patient",
+                   "about": {"zh": "虛構教學個案。退休公車司機。朋友給他一包「麻黃湯」顆粒說治咳很快，他今天早上配咖啡吃了。", "en": "Fictional teaching case. Retired bus driver. A friend gave him a sachet of “Mahuang Tang” granules for the cough, which he took with his coffee this morning."}},
+    "kao-doc": {"name": {"zh": "高醫師", "en": "Dr Kao"}, "role": {"zh": "中醫內科主治（電話）", "en": "TCM internal medicine attending (by phone)"}, "tag": "DR", "color": "#3f6fa8", "phoneOnly": true,
+                "about": {"zh": "經方派。開方很準，但病歷上的血壓欄常常沒看。", "en": "A classical-formula devotee. Prescribes precisely, and often skips the blood-pressure column."}},
+    "chou-daughter": {"name": {"zh": "周小姐", "en": "Ms Chou"}, "role": {"zh": "周伯的女兒（電話）", "en": "Uncle Chou's daughter (by phone)"}, "tag": "FAM", "color": "#8a6d3b", "phoneOnly": true,
+                      "about": {"zh": "晚上下班才知道爸爸早上吃了什麼。", "en": "Only finds out after work what her father took that morning."}}
+  },
+  "places": {
+    "cabinet": {"name": {"zh": "百子櫃", "en": "Herb cabinet"}, "hot": "cabinet"},
+    "counter": {"name": {"zh": "調劑檯", "en": "Dispensing counter"}, "hot": "scale"},
+    "ws": {"name": {"zh": "處方工作站", "en": "Prescription workstation"}, "hot": "workstation"},
+    "window": {"name": {"zh": "發藥窗口", "en": "Dispensing window"}, "hot": "desk"},
+    "granules": {"name": {"zh": "科學中藥櫃", "en": "Granule cabinet"}, "hot": "granules"},
+    "decoction": {"name": {"zh": "煎藥機", "en": "Decoction machine"}, "hot": "decoction"},
+    "handover": {"name": {"zh": "交班區", "en": "Handover corner"}, "hot": "handover"},
+    "sink": {"name": {"zh": "洗手台", "en": "Hand-wash sink"}, "hot": "sink"}
+  },
+  "glossary": [
+    {"term": {"zh": "經方", "en": "classical formula"}, "plain": {"zh": "《傷寒論》《金匱要略》裡的方。藥味少、結構清楚、使用條件寫得很明白，是學配伍的起點。", "en": "The formulas of the Shanghan Lun and Jingui Yaolue. Few herbs, clear structure, and precise conditions for use; the starting point for learning combinations."}},
+    {"term": {"zh": "方歌", "en": "formula verse"}, "plain": {"zh": "把一首方的藥味編成押韻的句子，方便記。阿寬抓藥時念的就是它。", "en": "A rhymed line that packs a formula's herbs into something memorable. What Kuan murmurs while dispensing."}},
+    {"term": {"zh": "君臣佐使", "en": "sovereign, minister, assistant, envoy"}, "plain": {"zh": "一首方裡藥的分工：君藥對主證、臣藥幫君藥、佐藥處理兼證或制約毒性、使藥引經調和。", "en": "The division of labour inside a formula: the sovereign treats the main pattern, ministers help it, assistants handle side issues or temper toxicity, the envoy guides and harmonises."}},
+    {"term": {"zh": "太陽中風", "en": "taiyang wind strike"}, "plain": {"zh": "《傷寒論》對風寒感冒的一種分類：怕風、發熱、有汗、脈浮緩。桂枝湯就是為它寫的。", "en": "A Shanghan Lun category of wind-cold: aversion to draughts, fever, sweating, a floating moderate pulse. Guizhi Tang was written for it."}},
+    {"term": {"zh": "表虛", "en": "exterior deficiency"}, "plain": {"zh": "中醫認為體表的防衛鬆了，所以會自己流汗、怕風。治法是調和營衛，不是大發汗。", "en": "In TCM reasoning the body's outer defence has loosened, hence spontaneous sweating and chills. The treatment harmonises rather than forces a sweat."}},
+    {"term": {"zh": "表實", "en": "exterior excess"}, "plain": {"zh": "體表被寒邪閉住，不出汗、全身痛、脈浮緊。這時才用麻黃湯發汗。", "en": "The exterior sealed shut by cold: no sweating, body aches, a floating tight pulse. Only then is Mahuang Tang used to open a sweat."}},
+    {"term": {"zh": "自汗", "en": "spontaneous sweating"}, "plain": {"zh": "沒運動、不熱也在流汗。桂枝湯證的關鍵字；有自汗就不用麻黃湯。", "en": "Sweating without exertion or heat. The keyword of the Guizhi Tang pattern; where there is spontaneous sweating, Mahuang Tang is not used."}},
+    {"term": {"zh": "浮緩脈", "en": "floating moderate pulse"}, "plain": {"zh": "輕按就摸到、節奏從容不緊。浮主表，緩配合有汗，是表虛的脈。", "en": "Felt with a light touch, relaxed rather than taut. Floating means exterior; moderate goes with sweating; the pulse of exterior deficiency."}},
+    {"term": {"zh": "啜熱稀粥", "en": "sip hot thin congee"}, "plain": {"zh": "桂枝湯的服法：喝完藥再喝一碗熱稀粥，中醫認為可以助藥力、養胃氣，讓汗微微出來。", "en": "Part of the Guizhi Tang method: after the decoction, a bowl of hot thin rice congee, which in TCM reasoning supports the formula and the stomach so a gentle sweat comes."}},
+    {"term": {"zh": "溫覆", "en": "cover warmly"}, "plain": {"zh": "喝完藥蓋被子保暖，等微汗。不是蒸桑拿，大汗淋漓反而傷正氣。", "en": "Tuck up under a blanket after the dose and wait for a light sweat. Not a sauna; a drenching sweat is said to harm the body's strength."}},
+    {"term": {"zh": "微似有汗", "en": "a slight sweat"}, "plain": {"zh": "全身微微潮潤就夠了。桂枝湯原文特別寫「不可令如水流漓」。", "en": "The whole body just faintly damp is enough. The original text of Guizhi Tang warns explicitly against sweat running like water."}},
+    {"term": {"zh": "外寒內飲", "en": "external cold with internal fluid"}, "plain": {"zh": "外面受寒，裡面又有稀痰水飲：咳喘、痰清稀量多、怕冷。小青龍湯的對證。", "en": "Cold from outside with thin phlegm-fluid inside: cough and wheeze, copious watery phlegm, chills. The pattern Xiao Qinglong Tang is built for."}},
+    {"term": {"zh": "麻黃鹼", "en": "ephedrine"}, "plain": {"zh": "麻黃裡的成分，會讓血壓升高、心跳加快、睡不著。高血壓、心悸、攝護腺肥大的人要特別小心。", "en": "A compound in ephedra that raises blood pressure, quickens the heart and keeps people awake. Special care in hypertension, palpitations and prostate enlargement."}},
+    {"term": {"zh": "科學中藥", "en": "concentrated granules"}, "plain": {"zh": "把煎好的湯劑濃縮乾燥成顆粒。方便，但它還是藥：麻黃湯顆粒裡一樣有麻黃鹼。", "en": "Decoctions concentrated and dried into granules. Convenient, but still medicine: Mahuang Tang granules carry ephedrine like the pot does."}},
+    {"term": {"zh": "加減", "en": "modification"}, "plain": {"zh": "在原方上依病人多加或拿掉幾味。頸背僵硬加葛根；兼喘加厚朴、杏仁。加減有道理，不是隨便加。", "en": "Adding or removing a few herbs from the base formula for this patient. Stiff neck and back: add pueraria; wheeze: add magnolia bark and apricot kernel. Modifications follow logic, not whim."}}
+  ],
+  "codex": [
+    {"id": "cabinet", "kind": "equipment", "name": {"zh": "經方的抽屜", "en": "The classical formulas' drawers"}, "text": {"zh": "桂枝、白芍、生薑、大棗、甘草五個抽屜彼此挨著，因為一天開幾十次。阿寬說抽屜的排法就是一本方劑學。", "en": "Cinnamon twig, white peony, fresh ginger, jujube and liquorice sit side by side because they are opened dozens of times a day. Kuan says the drawer layout is a formula textbook."}, "hot": "cabinet"},
+    {"id": "steelyard", "kind": "equipment", "name": {"zh": "戥秤", "en": "Steelyard balance"}, "text": {"zh": "每味秤完分開放，一帖一張紙。分帖要等量，不是目測。", "en": "Each herb weighed and set apart, one sheet per pack; packs divided equally, not by eye."}, "hot": "scale"},
+    {"id": "workstation", "kind": "equipment", "name": {"zh": "處方工作站", "en": "Prescription workstation"}, "text": {"zh": "處方旁邊就是病歷摘要：血壓、心律、過敏、正在吃的西藥。審方看的是整個人，不是只有方。", "en": "Beside the prescription sits the chart summary: blood pressure, heart rhythm, allergies, current Western medicines. Review reads the whole person, not only the formula."}, "hot": "workstation"},
+    {"id": "granule-cabinet", "kind": "equipment", "name": {"zh": "科學中藥櫃", "en": "Granule cabinet"}, "text": {"zh": "整面都是經方名：桂枝湯、麻黃湯、小青龍湯。病人分不出來的時候，顆粒看起來都一樣。", "en": "A wall of classical names: Guizhi Tang, Mahuang Tang, Xiao Qinglong Tang. When the patient cannot tell them apart, every granule looks the same."}, "hot": "granules"},
+    {"id": "crib-sheet", "kind": "item", "name": {"zh": "阿寬的方歌小抄", "en": "Kuan's crib sheet"}, "text": {"zh": "一張摺了八次的紙，寫滿方歌。他下班前塞給你：「我早就不用了，你拿去。」", "en": "A sheet folded eight times, covered in formula verses. He pressed it on you before leaving: “I stopped needing it ages ago. You take it.”"}},
+    {"id": "c-jcsz", "kind": "concept", "name": {"zh": "桂枝湯的君臣佐使", "en": "Sovereign to envoy in Guizhi Tang"}, "text": {"zh": "桂枝為君，解肌發表、溫通衛陽；白芍為臣，斂陰和營，一散一收；生薑佐桂枝散寒、大棗佐白芍養營；炙甘草為使，調和諸藥。五味藥，一個「調和營衛」的結構。看懂它，就看懂一半的經方。", "en": "Cinnamon twig is sovereign, releasing the muscle layer and warming the defensive yang; white peony is minister, gathering yin and harmonising the nutritive, one scatters as the other gathers; fresh ginger assists the twig against cold, jujube assists the peony in nourishing; honey-fried liquorice is envoy, harmonising all. Five herbs, one structure: harmonise nutritive and defensive. Understand it and half the classical formulas open up."}},
+    {"id": "c-sweat", "kind": "concept", "name": {"zh": "有汗桂枝，無汗麻黃", "en": "Sweat: Guizhi; no sweat: Mahuang"}, "text": {"zh": "同樣是風寒感冒：有汗怕風、脈浮緩是表虛，用桂枝湯調和；無汗身痛、脈浮緊是表實，用麻黃湯發汗。把麻黃湯給自汗的人，汗更多、人更虛。《傷寒論》寫得很白：表虛自汗忌用。", "en": "Both are wind-cold colds: sweating with chills and a floating moderate pulse is exterior deficiency, harmonised with Guizhi Tang; no sweat, body aches and a floating tight pulse is exterior excess, opened with Mahuang Tang. Give Mahuang Tang to someone already sweating and they sweat more and weaken. The Shanghan Lun is blunt: not for exterior deficiency with spontaneous sweating."}},
+    {"id": "c-ephedra", "kind": "concept", "name": {"zh": "麻黃與現代病人", "en": "Ephedra and the modern patient"}, "text": {"zh": "麻黃鹼升血壓、加快心跳、擾睡眠、讓排尿更困難。所以含麻黃的方（麻黃湯、小青龍湯、麻杏石甘湯）在高血壓、心律不整、失眠、攝護腺肥大的病人要審慎，處方工作站的血壓欄是審方的一部分。自己買的顆粒也算。", "en": "Ephedrine raises blood pressure, quickens the heart, disturbs sleep and makes urination harder. So ephedra-containing formulas (Mahuang Tang, Xiao Qinglong Tang, Maxing Shigan Tang) need care in hypertension, arrhythmia, insomnia and prostate enlargement, and the blood-pressure column on the workstation is part of the review. Self-bought granules count too."}},
+    {"id": "c-method", "kind": "concept", "name": {"zh": "服法也是處方", "en": "The method of taking it is part of the prescription"}, "text": {"zh": "桂枝湯的原文花了一半篇幅講怎麼吃：溫服、啜熱稀粥、溫覆、微似有汗、汗出病解就停。抓對藥只做了一半，窗口衛教做完另一半。", "en": "Half the original text of Guizhi Tang is about how to take it: warm, then sip hot thin congee, cover warmly, aim for a slight sweat, stop once the sweat comes and the illness lifts. Dispensing correctly is half the job; counselling at the window is the other half."}}
+  ],
+  "segs": [
+    {"id": "morning", "name": {"zh": "方歌", "en": "The formula verse"}, "sub": {"zh": "08:00 · 百子櫃前", "en": "08:00 · at the herb cabinet"}, "t": 480, "mood": "day",
+     "note": {"zh": "桂枝湯五味；分藥歸斗", "en": "The five herbs of Guizhi Tang; sorting the delivery"},
+     "beats": [
+      {"id": "m1", "to": "place:cabinet", "guide": {"zh": "到百子櫃前找蘇老師", "en": "Find Teacher Su at the cabinet"},
+       "lines": [
+        ["sys", {"zh": "中藥局八點。阿寬在念方歌，小米在泡阿寬不會喝的茶。", "en": "The dispensary at eight. Kuan is murmuring a verse; Mi is brewing the tea Kuan will not drink."}],
+        ["mentor", {"zh": "早。今天只做一件事：把經方從紙上搬到抽屜裡，再搬到病人身上。", "en": "Morning. One job today: move the classical formulas off the page, into the drawers, and onto the patient."}],
+        ["mentor", {"zh": "經方是什麼？為什麼學方劑從它開始？", "en": "What is a classical formula, and why start there?"}],
+        ["me", {"zh": "《傷寒論》《金匱》的方。藥味少、結構清楚、使用條件寫得明白。", "en": "The formulas of the Shanghan Lun and the Jingui. Few herbs, clear structure, the conditions spelled out."}],
+        ["kuan", {"zh": "還有一點：方歌好背。桂枝湯治太陽風，芍藥甘草薑棗同。", "en": "And one more: the verses are easy to learn. Cinnamon twig for taiyang wind, with peony, liquorice, ginger and jujube."}]
+       ]},
+      {"id": "m2", "to": "kuan", "guide": {"zh": "從盤子裡挑出桂枝湯", "en": "Pick Guizhi Tang off the tray"},
+       "lines": [
+        ["kuan", {"zh": "方歌念得出來沒用，要挑得出來。盤子裡混了幾味別的。", "en": "Reciting the verse is no use unless you can pick it out. There are a few strangers on this tray."}]
+       ],
+       "mini": {"type": "herb", "q": {"zh": "挑出桂枝湯的五味藥", "en": "Select the five herbs of Guizhi Tang"}, "formula": "桂枝湯",
+                "pick": ["桂枝", "白芍", "生薑", "大棗", "甘草"],
+                "distractors": ["麻黃", "杏仁", "柴胡", "黃芩"]},
+       "post": [
+        ["mentor", {"zh": "五味藥，君臣佐使分一下。桂枝君、白芍臣、薑棗佐、甘草使。一散一收，調和營衛。", "en": "Five herbs; sort them sovereign to envoy. Twig sovereign, peony minister, ginger and jujube assistants, liquorice envoy. One scatters, one gathers: harmonise nutritive and defensive."}],
+        ["kuan", {"zh": "你沒碰麻黃。很好。今天還會再碰到它。", "en": "You left the ephedra alone. Good. You will meet it again today."}]
+       ]},
+      {"id": "m3", "to": "place:cabinet", "roles": ["dispenser"], "guide": {"zh": "把早上的來料歸斗", "en": "Sort the morning delivery into the drawers"},
+       "lines": [
+        ["mi", {"zh": "早上的貨到了，混在一盤。阿寬說你來歸斗，我念標籤。", "en": "The morning delivery is here, all on one tray. Kuan says you sort, I read the labels."}]
+       ],
+       "mini": {"type": "drill", "template": "formulas", "drill": "herbsort"},
+       "post": [
+        ["kuan", {"zh": "桂枝和肉桂不同斗，一個是嫩枝、一個是樹皮。歸錯了，桂枝湯會變成另一首方。", "en": "Cinnamon twig and cinnamon bark are different drawers: one is the young twig, one the bark. Mix them and Guizhi Tang becomes a different formula."}]
+       ]}
+     ]},
+    {"id": "mrs-lin", "name": {"zh": "林太太的桂枝湯", "en": "Mrs Lin's Guizhi Tang"}, "sub": {"zh": "09:30 · 工作站與窗口", "en": "09:30 · workstation and window"}, "t": 570, "mood": "day",
+     "note": {"zh": "太陽中風；服法是處方的一半", "en": "Taiyang wind strike; the method is half the prescription"},
+     "beats": [
+      {"id": "l1", "to": "place:ws", "guide": {"zh": "審林太太的處方", "en": "Review Mrs Lin's prescription"},
+       "lines": [
+        ["mentor", {"zh": "高醫師的方：林太太，四十二歲，感冒三天，怕風、發熱、有汗。診斷寫太陽中風。舌先看。", "en": "Dr Kao's prescription: Mrs Lin, forty-two, three days of a cold with chills, fever and sweating. Diagnosis: taiyang wind strike. Tongue first."}]
+       ],
+       "mini": {"type": "tongue", "q": {"zh": "林太太的舌：淡紅、苔薄白。怕風、有汗、發熱。證型？", "en": "Mrs Lin's tongue: pink, thin white coat. Chills, sweating, fever. The pattern?"},
+                "tongue": {"body": "normal", "coat": "thin-white", "shape": "normal"},
+                "options": [
+                 {"zh": "風寒表虛", "en": "Wind-cold, exterior deficiency", "ok": true, "why": {"zh": "舌淡紅苔薄白是表證未入裡；有汗怕風就是表虛。桂枝湯證。", "en": "A pink tongue with a thin white coat means the illness is still at the exterior; sweating with chills makes it exterior deficiency. The Guizhi Tang pattern."}},
+                 {"zh": "風寒表實", "en": "Wind-cold, exterior excess", "ok": false, "why": {"zh": "表實是無汗、身痛、脈浮緊。她在流汗。", "en": "Exterior excess means no sweat, body aches and a floating tight pulse. She is sweating."}},
+                 {"zh": "風熱表證", "en": "Wind-heat exterior", "ok": false, "why": {"zh": "風熱咽痛、口渴、苔薄黃、脈浮數。她怕風不口渴，苔白。", "en": "Wind-heat gives a sore throat, thirst, a thin yellow coat and a floating rapid pulse. She has chills, no thirst, a white coat."}},
+                 {"zh": "氣虛感冒", "en": "Qi-deficiency cold", "ok": false, "why": {"zh": "氣虛感冒反覆不癒、倦怠、舌淡胖。她是急性三天，舌淡紅。", "en": "A qi-deficiency cold lingers, with fatigue and a pale swollen tongue. Hers is three acute days with a pink tongue."}}
+                ]},
+       "post": [
+        ["mentor", {"zh": "表虛。所以是桂枝湯，不是麻黃湯。這句話今天要講三次。", "en": "Exterior deficiency. So Guizhi Tang, not Mahuang Tang. You will hear that three times today."}]
+       ]},
+      {"id": "l2", "to": "mrs-lin", "guide": {"zh": "到窗口見林太太，摸脈", "en": "See Mrs Lin at the window; feel the pulse"},
+       "lines": [
+        ["mrs-lin", {"zh": "我明明一直在流汗，為什麼還是怕風？", "en": "I keep sweating, so why do I still hate the draught?"}],
+        ["mentor", {"zh": "好問題。先摸脈。你也來。", "en": "Good question. Pulse first. You too."}],
+        ["me", {"zh": "輕按就有，不緊，節奏從容。", "en": "There on a light touch, not taut, relaxed rhythm."}]
+       ],
+       "mini": {"type": "pulse", "q": {"zh": "林太太的脈：輕取即得，從容不緊。這是什麼脈？", "en": "Mrs Lin's pulse: felt on light touch, relaxed, not taut. Name it."},
+                "pulse": "floating",
+                "options": [
+                 {"zh": "浮緩脈", "en": "Floating moderate pulse", "ok": true, "why": {"zh": "浮主表證；緩而不緊，配合有汗，是表虛。浮緩就是桂枝湯的脈。", "en": "Floating means an exterior pattern; relaxed rather than tight, with sweating, means exterior deficiency. Floating-moderate is the Guizhi Tang pulse."}},
+                 {"zh": "浮緊脈", "en": "Floating tight pulse", "ok": false, "why": {"zh": "浮緊像繃緊的繩子，配無汗身痛，是麻黃湯的脈。她的不緊。", "en": "Floating-tight feels like a taut rope and goes with no sweat and body aches: the Mahuang Tang pulse. Hers is not tight."}},
+                 {"zh": "沉脈", "en": "Deep pulse", "ok": false, "why": {"zh": "沉脈要重按才有，主裡證。她輕按就摸到。", "en": "A deep pulse needs firm pressure and means an interior pattern. Hers is there on a light touch."}},
+                 {"zh": "數脈", "en": "Rapid pulse", "ok": false, "why": {"zh": "數脈講的是快，主熱。她的節奏是從容的。", "en": "Rapid is about speed and means heat. Her rhythm is relaxed."}}
+                ]},
+       "post": [
+        ["mentor", {"zh": "林太太，中醫認為妳體表的防衛鬆了，汗出去了，風還進得來。桂枝湯不是逼汗，是把門關好。", "en": "Mrs Lin, in TCM terms your outer defence has loosened: sweat gets out and the wind still gets in. Guizhi Tang does not force a sweat; it closes the door properly."}]
+       ]},
+      {"id": "l3", "guide": {"zh": "教林太太桂枝湯的服法", "en": "Teach Mrs Lin how to take it"},
+       "lines": [
+        ["mentor", {"zh": "桂枝湯原文有一半在講怎麼吃。你排給她看。", "en": "Half the original text of Guizhi Tang is about how to take it. Lay it out for her."}]
+       ],
+       "mini": {"type": "order", "q": {"zh": "桂枝湯的服法順序", "en": "The method of taking Guizhi Tang, in order"},
+                "steps": [
+                 {"zh": "藥汁溫服", "en": "Take the decoction warm"},
+                 {"zh": "啜熱稀粥助藥力", "en": "Sip hot thin congee to support it"},
+                 {"zh": "溫覆保暖", "en": "Cover warmly"},
+                 {"zh": "微似有汗即可，不可大汗", "en": "A slight sweat is enough; never drenching"},
+                 {"zh": "汗出病解就停後服", "en": "Once sweat comes and it lifts, stop"}
+                ]},
+       "post": [
+        ["mrs-lin", {"zh": "喝藥還要配稀飯？", "en": "Congee with the medicine?"}],
+        ["kuan", {"zh": "對，熱的、稀的。這是處方的一部分，不是宵夜。", "en": "Yes: hot and thin. It is part of the prescription, not a snack."}]
+       ]},
+      {"id": "l4", "roles": ["clerk"], "guide": {"zh": "林太太問能不能吃麻黃湯", "en": "Mrs Lin asks about Mahuang Tang"},
+       "lines": [
+        ["mrs-lin", {"zh": "我同事說麻黃湯比較快，我可以換那個嗎？", "en": "My colleague says Mahuang Tang works faster. Can I have that instead?"}]
+       ],
+       "mini": {"type": "choice", "q": {"zh": "自汗怕風的林太太想改吃麻黃湯。你怎麼回答？", "en": "Mrs Lin, sweating and chilled, wants Mahuang Tang instead. Your answer?"},
+                "options": [
+                 {"zh": "有汗桂枝、無汗麻黃，妳不適合", "en": "Sweat: Guizhi; no sweat: Mahuang. Not for you", "ok": true, "why": {"zh": "麻黃湯是給無汗表實的人發汗。已經自汗的人再發汗，汗更多、人更虛。原文：表虛自汗忌用。", "en": "Mahuang Tang opens a sweat in someone sealed shut. Someone already sweating only sweats more and weakens. The text: not for exterior deficiency with spontaneous sweating."}},
+                 {"zh": "快的比較好，幫妳問醫師換", "en": "Faster is better; I'll ask the doctor to switch", "ok": false, "why": {"zh": "「快」不是辨證。同事的感冒和她的感冒不是同一個證。", "en": "“Faster” is not a pattern. The colleague's cold and hers are not the same pattern."}},
+                 {"zh": "兩個一起吃最保險", "en": "Take both to be safe", "ok": false, "why": {"zh": "兩首方向相反的方疊在一起，不是保險，是打架。", "en": "Two formulas pulling opposite ways are not insurance; they are a fight."}}
+                ]},
+       "post": [
+        ["mentor", {"zh": "第二次了：有汗桂枝，無汗麻黃。", "en": "That is twice now: sweat, Guizhi; no sweat, Mahuang."}]
+       ]}
+     ]},
+    {"id": "uncle-chou", "name": {"zh": "周伯的小青龍湯", "en": "Uncle Chou's Xiao Qinglong Tang"}, "sub": {"zh": "11:00 · 工作站與窗口", "en": "11:00 · workstation and window"}, "t": 660, "mood": "day",
+     "note": {"zh": "麻黃遇到高血壓；早上那包顆粒", "en": "Ephedra meets hypertension; the morning sachet"},
+     "beats": [
+      {"id": "u1", "to": "place:ws", "guide": {"zh": "審周伯的處方", "en": "Review Uncle Chou's prescription"},
+       "lines": [
+        ["mentor", {"zh": "高醫師第二張：周伯，七十一歲，咳喘、痰清稀量多、怕冷。診斷外寒內飲，開小青龍湯。先挑組成。", "en": "Dr Kao's second: Uncle Chou, seventy-one, cough and wheeze with copious thin phlegm, chills. Diagnosis external cold with internal fluid; Xiao Qinglong Tang. Pick the herbs first."}]
+       ],
+       "mini": {"type": "herb", "q": {"zh": "挑出屬於小青龍湯的藥材", "en": "Select the herbs of Xiao Qinglong Tang"}, "formula": "小青龍湯",
+                "pick": ["麻黃", "桂枝", "乾薑", "細辛", "半夏", "五味子"],
+                "distractors": ["石膏", "杏仁", "黃芩", "桑白皮"]},
+       "post": [
+        ["mentor", {"zh": "還有白芍、甘草，一共八味。乾薑細辛五味子，一溫一散一收，是方的眼睛。", "en": "Plus white peony and liquorice, eight in all. Dried ginger, asarum and schisandra, one warming, one scattering, one gathering: the eye of the formula."}],
+        ["mentor", {"zh": "證對了。現在看處方旁邊那欄：血壓。", "en": "The pattern fits. Now the column beside the prescription: blood pressure."}],
+        ["me", {"zh": "高血壓，長期吃降壓藥。而且病歷上有一次心悸的紀錄。方裡有麻黃。", "en": "Hypertension on long-term tablets. And a note of palpitations once. The formula contains ephedra."}]
+       ]},
+      {"id": "u2", "guide": {"zh": "麻黃與血壓欄", "en": "Ephedra and the blood-pressure column"},
+       "lines": [
+        ["kuan", {"zh": "高醫師經方開得很準，血壓欄常常沒看。你是審方的人。", "en": "Dr Kao prescribes the classics precisely and often skips the blood-pressure column. You are the reviewer."}]
+       ],
+       "mini": {"type": "choice", "q": {"zh": "小青龍湯含麻黃，周伯有高血壓與心悸紀錄。你怎麼做？", "en": "Xiao Qinglong Tang contains ephedra; Uncle Chou has hypertension and a history of palpitations. What do you do?"},
+                "options": [
+                 {"zh": "打電話給高醫師，提醒血壓與心悸", "en": "Phone Dr Kao about the BP and palpitations", "ok": true, "set": {"queried-kao": true}, "why": {"zh": "麻黃鹼升壓、加快心跳。審方看到風險因子就回頭問醫師，由他決定去留或換方。", "en": "Ephedrine raises pressure and heart rate. A reviewer who sees the risk goes back to the prescriber, who decides whether to keep, drop or swap."}},
+                 {"zh": "證對就好，照抓", "en": "The pattern fits; dispense as written", "ok": false, "set": {"queried-kao": false}, "why": {"zh": "證對是必要條件，不是充分條件。病人還有一個血壓。", "en": "A fitting pattern is necessary, not sufficient. The patient also has a blood pressure."}},
+                 {"zh": "自己把麻黃拿掉再抓", "en": "Remove the ephedra myself", "ok": false, "set": {"queried-kao": false}, "why": {"zh": "拿掉麻黃的小青龍湯已經不是小青龍湯。改方是醫師的事，調劑的人打電話。", "en": "Xiao Qinglong Tang without ephedra is no longer Xiao Qinglong Tang. Changing a formula is the doctor's job; the dispenser's is the phone."}}
+                ]}},
+      {"id": "u3", "when": {"flag": "queried-kao", "is": true}, "ring": {"title": {"zh": "高醫師回電", "en": "Dr Kao calling back"}, "sub": {"zh": "周伯的麻黃", "en": "About Uncle Chou's ephedra"}, "call": true, "from": "kao-doc"},
+       "lines": [
+        ["kao-doc", {"zh": "血壓欄我沒看到，謝謝。改方：去麻黃，加紫蘇子、杏仁降氣平喘，請他明天回診量血壓。", "en": "I missed the blood-pressure column; thank you. Changed: drop the ephedra, add perilla seed and apricot kernel to descend qi and ease the wheeze, and have him back tomorrow for a pressure check."}],
+        ["me", {"zh": "收到。我也會提醒他，自己買的任何含麻黃顆粒都不要吃。", "en": "Noted. I'll also tell him not to take any self-bought granules containing ephedra."}],
+        ["kao-doc", {"zh": "這句話很重要。你等一下就知道為什麼。", "en": "That sentence matters. You are about to find out why."}]
+       ]},
+      {"id": "u4", "when": {"flag": "queried-kao", "is": false}, "to": "mentor", "guide": {"zh": "蘇老師複核時攔下", "en": "Teacher Su stops it at verification"},
+       "lines": [
+        ["mentor", {"zh": "這帖有麻黃，病人有高血壓和心悸紀錄。審方那一欄你看了嗎？", "en": "Ephedra in this pack; hypertension and palpitations in the chart. Did you read that column?"}],
+        ["me", {"zh": "看了……我想說證對了。", "en": "I did… I thought the pattern fitting was enough."}],
+        ["mentor", {"zh": "證對是入場券，不是放行。打給高醫師。", "en": "A fitting pattern is the ticket in, not the release. Phone Dr Kao."}],
+        ["sys", {"zh": "高醫師改了方：去麻黃，加紫蘇子、杏仁。電話那頭說了一句「下次先攔我」。", "en": "Dr Kao changes the formula: ephedra out, perilla seed and apricot kernel in. Down the line: “next time stop me first.”"}]
+       ]},
+      {"id": "u5", "to": "uncle-chou", "guide": {"zh": "到窗口見周伯", "en": "See Uncle Chou at the window"},
+       "lines": [
+        ["uncle-chou", {"zh": "少年仔，我早上咳得厲害，朋友給我一包麻黃湯顆粒，我配咖啡吃了。現在心臟一直跳很快。", "en": "Young one, I was coughing badly this morning, so a friend gave me a sachet of Mahuang Tang granules and I took it with my coffee. Now my heart's racing."}],
+        ["me", {"zh": "麻黃湯顆粒……加咖啡。周伯，先坐下。", "en": "Mahuang Tang granules… with coffee. Uncle Chou, sit down first."}],
+        ["sys", {"zh": "周伯額頭有汗，手按著胸口。小米已經去拿血壓計。", "en": "Sweat on Uncle Chou's brow, a hand on his chest. Mi is already fetching the cuff."}]
+       ],
+       "mini": {"type": "vitals", "event": "tachyarrhythmia",
+                "options": [
+                 {"zh": "坐下、量血壓脈搏、通知醫師，胸痛就送急診", "en": "Sit him down, BP and pulse, tell the doctor; chest pain means emergency", "ok": true, "why": {"zh": "麻黃鹼加咖啡因，心跳快、血壓升。先量數據、停所有含麻黃製品、通知醫師；胸痛、暈厥、心律不整就直接急診。", "en": "Ephedrine plus caffeine: fast heart, rising pressure. Measure, stop every ephedra product, tell the doctor; chest pain, fainting or an irregular rhythm goes straight to emergency."}},
+                 {"zh": "先給他熱茶壓一壓", "en": "A hot tea to settle him first", "ok": false, "why": {"zh": "茶裡還有咖啡因。他今天的問題就是刺激物太多。", "en": "Tea has caffeine too. His problem today is too many stimulants already."}},
+                 {"zh": "小青龍湯先給他帶回去", "en": "Give him the Xiao Qinglong Tang to take home", "ok": false, "why": {"zh": "原方含麻黃，等於再加一份。病人心悸的時候，不是發藥的時候。", "en": "The original formula also carries ephedra; that is another helping. A palpitating patient is not a dispensing moment."}}
+                ]},
+       "set": {"ephedra-episode": true},
+       "post": [
+        ["mentor", {"zh": "血壓高了，心跳快但規則。周伯，顆粒也是藥，麻黃湯顆粒裡一樣有麻黃鹼。咖啡更是火上加油。", "en": "Pressure is up; heart fast but regular. Uncle Chou, granules are medicine too; Mahuang Tang granules carry ephedrine like the pot does. Coffee pours fuel on it."}],
+        ["uncle-chou", {"zh": "……我以為顆粒是保健品。", "en": "…I thought granules were a health supplement."}],
+        ["mentor", {"zh": "今天坐著觀察到穩，明天回高醫師門診量血壓。朋友給的，下次先拿來問。", "en": "You sit here until it settles; tomorrow you see Dr Kao for a pressure check. Anything a friend gives you, bring it here first."}]
+       ]}
+     ]},
+    {"id": "counter", "name": {"zh": "調劑檯", "en": "The counter"}, "sub": {"zh": "13:30 · 調劑檯", "en": "13:30 · dispensing counter"}, "t": 810, "mood": "day",
+     "note": {"zh": "調劑五步；分帖等量；加減有道理", "en": "Five dispensing steps; equal packs; modifications with reasons"},
+     "beats": [
+      {"id": "c1", "to": "place:counter", "guide": {"zh": "到調劑檯排出調劑流程", "en": "Lay out the dispensing workflow at the counter"},
+       "lines": [
+        ["kuan", {"zh": "兩張方都定了。從審方到發藥，一條線走完。順序排給我看。", "en": "Both prescriptions are settled. From review to handing over, one unbroken line. Put the steps in order for me."}]
+       ],
+       "mini": {"type": "order", "q": {"zh": "一張處方從審方到發藥的調劑流程", "en": "The dispensing workflow from review to handover"},
+                "steps": [
+                 {"zh": "審方：病人、診斷、配伍、禁忌", "en": "Review: patient, diagnosis, taboos"},
+                 {"zh": "抓藥：逐味秤量、分帖等量", "en": "Dispense: weigh each herb, equal packs"},
+                 {"zh": "複核：第二人逐味核對", "en": "Verify: second person, herb by herb"},
+                 {"zh": "包裝標示：煎法與服法", "en": "Pack and label: cooking and method"},
+                 {"zh": "發藥衛教，病人回述", "en": "Counsel; patient repeats it back"}
+                ]},
+       "post": [
+        ["kuan", {"zh": "最後一步最常被跳過。病人點頭不算，要能說回來。", "en": "The last step is the one most often skipped. A nod does not count; they have to say it back."}]
+       ]},
+      {"id": "c2", "roles": ["dispenser"], "guide": {"zh": "秤林太太的桂枝湯", "en": "Weigh Mrs Lin's Guizhi Tang"},
+       "lines": [
+        ["kuan", {"zh": "五味藥，分帖等量，一帖一張紙。念方歌，手不要停。", "en": "Five herbs, equal packs, one sheet each. Say the verse; keep your hands moving."}]
+       ],
+       "mini": {"type": "drill", "template": "formulas", "drill": "weigh"},
+       "post": [
+        ["kuan", {"zh": "生薑切片另外放，大棗要掰開。小事，但煎出來差很多。", "en": "Fresh ginger sliced and set apart; jujubes split open. Small things, big difference in the pot."}]
+       ]},
+      {"id": "c3", "roles": ["clerk"], "to": "mentor", "guide": {"zh": "學桂枝湯的加減", "en": "Learn the modifications of Guizhi Tang"},
+       "lines": [
+        ["mentor", {"zh": "林太太說頸背有點僵。高醫師補了一味，變成桂枝加葛根湯。加減不是隨便加，挑出兩種常見加減會用到的藥。", "en": "Mrs Lin mentioned a stiff neck. Dr Kao added one herb, making Guizhi plus Pueraria. Modification is never random; pick the herbs two common modifications use."}]
+       ],
+       "mini": {"type": "herb", "q": {"zh": "桂枝湯常見加減：頸背僵硬加一味；兼喘加兩味。挑出這三味。", "en": "Common Guizhi Tang modifications: stiff neck adds one herb; wheeze adds two. Pick those three."},
+                "pick": ["葛根", "厚朴", "杏仁"],
+                "distractors": ["麻黃", "石膏", "黃連", "大黃"]},
+       "post": [
+        ["mentor", {"zh": "葛根解肌舒筋，所以項背強加它；厚朴杏仁降氣，所以喘加它們。每一味加減背後都有一句話。", "en": "Pueraria releases the muscles and eases the sinews, hence for the stiff neck; magnolia bark and apricot kernel descend qi, hence for wheeze. Every modification has a sentence behind it."}]
+       ]}
+     ]},
+    {"id": "afternoon", "name": {"zh": "窗口衛教", "en": "Counselling at the window"}, "sub": {"zh": "15:30 · 發藥窗口", "en": "15:30 · the dispensing window"}, "t": 930, "mood": "day",
+     "note": {"zh": "風池合谷；顆粒也是藥", "en": "GB20 and LI4; granules are medicine"},
+     "beats": [
+      {"id": "a1", "to": "mrs-lin", "guide": {"zh": "回答林太太的頭痛", "en": "Answer Mrs Lin's headache question"},
+       "lines": [
+        ["mrs-lin", {"zh": "藥我會照著吃。那頭痛怕風的時候，可以自己按哪裡？", "en": "I'll take it as told. When the headache and chills hit, where can I press myself?"}],
+        ["mentor", {"zh": "教她兩個穴。風池、合谷。在圖上點給她看。", "en": "Teach her two points: Fengchi and Hegu. Show her on the figure."}]
+       ],
+       "mini": {"type": "points", "q": {"zh": "點出風池與合谷", "en": "Locate Fengchi (GB20) and Hegu (LI4)"}, "codes": ["GB20", "LI4"], "view": "back"},
+       "post": [
+        ["me", {"zh": "風池在後頸髮際兩側凹陷，合谷在虎口。按到痠脹就好，不用用力。", "en": "Fengchi sits in the hollows either side of the nape at the hairline; Hegu in the web of the thumb. Press until it aches a little; no force needed."}],
+        ["mentor", {"zh": "合谷孕婦不按。林太太不是，但這句話每次都要問。", "en": "Hegu is not pressed in pregnancy. Mrs Lin is not pregnant, but you ask every time."}]
+       ]},
+      {"id": "a2", "to": "place:granules", "guide": {"zh": "到科學中藥櫃找那罐麻黃湯", "en": "Find the Mahuang Tang jar in the granule cabinet"},
+       "lines": [
+        ["mentor", {"zh": "周伯早上吃的那種顆粒，我們這裡也有。找出來，看看標籤上寫了什麼。", "en": "The granules Uncle Chou took this morning, we stock them too. Find the jar and read the label."}]
+       ],
+       "mini": {"type": "find", "hot": "granules", "q": {"zh": "在科學中藥櫃找到麻黃湯顆粒", "en": "Find the Mahuang Tang granules in the granule cabinet"}},
+       "post": [
+        ["me", {"zh": "標籤上有組成、有「高血壓、心悸者慎用」。他朋友大概沒看。", "en": "The label lists the herbs and says “caution in hypertension and palpitations”. His friend probably never read it."}],
+        ["mentor", {"zh": "第三次：有汗桂枝，無汗麻黃；有高血壓，先問。顆粒也是藥。", "en": "Third time: sweat, Guizhi; no sweat, Mahuang; hypertension, ask first. Granules are medicine."}]
+       ]}
+     ]},
+    {"id": "evening", "name": {"zh": "關櫃", "en": "Closing"}, "sub": {"zh": "18:00 · 交班區", "en": "18:00 · handover corner"}, "t": 1080, "mood": "eve",
+     "note": {"zh": "周伯穩了回家；方歌小抄", "en": "Uncle Chou went home steady; the crib sheet"},
+     "beats": [
+      {"id": "e1", "to": "place:handover", "guide": {"zh": "到交班區聽蘇老師收尾", "en": "Teacher Su wraps up at the handover corner"},
+       "lines": [
+        ["mentor", {"zh": "周伯下午血壓回來了，心跳也穩，女兒來接。今天兩首經方，你學到哪一句？", "en": "Uncle Chou's pressure came down this afternoon, heart steady, daughter picked him up. Two classical formulas today; which sentence stays?"}],
+        ["me", {"zh": "證對是入場券，不是放行。", "en": "A fitting pattern is the ticket in, not the release."}],
+        ["mentor", {"zh": "還有一句。", "en": "And one more."}],
+        ["me", {"zh": "有汗桂枝，無汗麻黃。", "en": "Sweat, Guizhi; no sweat, Mahuang."}],
+        ["mentor", {"zh": "第四次。可以下班了。", "en": "Fourth time. You may go home."}]
+       ]},
+      {"id": "e2", "to": "kuan", "roles": ["dispenser"], "guide": {"zh": "阿寬塞給你一張紙", "en": "Kuan presses a sheet on you"},
+       "lines": [
+        ["kuan", {"zh": "這個給你。方歌小抄，我早就不用了。", "en": "This is for you. My crib sheet of verses; I stopped needing it ages ago."}],
+        ["me", {"zh": "摺了八次。你每天都帶著。", "en": "Folded eight times. You carry it every day."}],
+        ["kuan", {"zh": "帶著和用是兩回事。走了，茶又涼了。", "en": "Carrying and using are two different things. Off you go; the tea's gone cold again."}]
+       ],
+       "item": "crib-sheet"}
+     ]},
+    {"id": "night", "name": {"zh": "夜間來電", "en": "The evening call"}, "sub": {"zh": "21:00 · 中藥局值班電話", "en": "21:00 · the dispensary on-call phone"}, "t": 1260, "mood": "night",
+     "note": {"zh": "女兒的電話；新方好轉", "en": "The daughter calls; the new formula is working"},
+     "beats": [
+      {"id": "n1", "when": {"flag": "queried-kao", "is": false}, "ring": {"title": {"zh": "周小姐來電", "en": "Ms Chou calling"}, "sub": {"zh": "爸爸的藥是不是又有麻黃", "en": "Does Dad's formula still have ephedra?"}, "call": true, "from": "chou-daughter"},
+       "lines": [
+        ["chou-daughter", {"zh": "藥局嗎？爸爸說早上心悸的事，我看藥袋，上面本來是小青龍湯？裡面有麻黃嗎？", "en": "Dispensary? Dad told me about this morning. I'm looking at the bag; it was Xiao Qinglong Tang originally? Does that have ephedra?"}],
+        ["me", {"zh": "原方有，但下午蘇老師攔下來，高醫師已經改了，現在這帖沒有麻黃。是我審方時漏了一步，對不起。", "en": "The original did, but Teacher Su stopped it this afternoon and Dr Kao changed it; this pack has none. I missed a step at review, and I'm sorry."}],
+        ["chou-daughter", {"zh": "好，有改就好。他說明天回診。謝謝你講實話。", "en": "All right, as long as it was changed. He says he's going back tomorrow. Thank you for being straight."}]
+       ]},
+      {"id": "n2", "when": {"flag": "queried-kao", "is": true}, "ring": {"title": {"zh": "周小姐訊息", "en": "Message from Ms Chou"}, "sub": {"zh": "新方喝了，咳好多了", "en": "New formula taken; cough much better"}, "from": "chou-daughter"},
+       "lines": [
+        ["chou-daughter", {"zh": "爸爸晚上喝了新的方，咳少很多，血壓量起來正常。他說那個少年仔有打電話問醫師，謝謝。", "en": "Dad took the new formula tonight; far less coughing and his pressure reads normal. He says the young one phoned the doctor. Thank you."}],
+        ["me", {"zh": "請他明天還是回診量血壓。朋友給的任何顆粒，先拿來問。", "en": "Please still bring him for the pressure check tomorrow. Any granules a friend gives him, bring them to us first."}]
+       ]},
+      {"id": "n3", "to": "place:handover", "guide": {"zh": "寫完值班紀錄", "en": "Finish the on-call log"},
+       "lines": [
+        ["sys", {"zh": "晚上九點。值班紀錄寫到最後一行：周伯，含麻黃顆粒加咖啡，心悸，已穩，明日回診。", "en": "Nine at night. The last line of the on-call log: Uncle Chou, ephedra granules plus coffee, palpitations, settled, review tomorrow."}],
+        ["sys", {"zh": "口袋裡那張摺了八次的紙，第一行是桂枝湯。", "en": "In your pocket, the sheet folded eight times. Its first line is Guizhi Tang."}]
+       ],
+       "end": true}
+     ]}
+  ],
+  "ending": {"title": {"zh": "下班了", "en": "End of shift"}, "sub": {"zh": "兩首經方，一欄血壓，一張小抄", "en": "Two classical formulas, one blood-pressure column, one crib sheet"},
+             "stats": ["choices", "drills", "calls", "items", "grades", "time"]}
+}

@@ -1,0 +1,266 @@
+{
+  "format": "huatuo-shift-v2",
+  "department": "psychiatry",
+  "case": "eating-disorder",
+  "caseTitle": {"zh": "體育課昏倒的長跑選手", "en": "The runner who fainted in PE"},
+  "condition": {"zh": "飲食障礙 · 醫療不穩定", "en": "Eating disorder · medical instability"},
+  "difficulty": 2,
+  "room": "er",
+  "title": {"zh": "兒少精神科的急診照會日", "en": "A youth-psychiatry day in the emergency room"},
+  "tagline": {"zh": "她說自己只是很自律，監視器說的不一樣", "en": "She says she is just disciplined; the monitor says otherwise"},
+  "minutes": 25,
+  "roles": [
+    {"id": "cap-resident", "zh": "兒少精神科住院醫師", "en": "Child and adolescent psychiatry resident",
+     "desc": {"zh": "接急診照會：先確認身體穩不穩，再談她的害怕。她要你保密的那一刻，你要說清楚什麼可以、什麼不行。", "en": "Take the emergency consult: first whether her body is stable, then her fear. When she asks you to keep a secret, say clearly what you can and cannot keep."}},
+    {"id": "dietitian", "zh": "臨床營養師", "en": "Clinical dietitian",
+     "desc": {"zh": "盲秤、餐盤、抽血追磷。你知道第一餐比第一句話更難，也知道再餵食症候群在哪裡等著。", "en": "Blind weighing, the meal tray, phosphate checks. You know the first meal is harder than the first conversation, and where refeeding syndrome lies in wait."}}
+  ],
+  "cast": {
+    "attending": {"name": {"zh": "白主治", "en": "Dr Pai"}, "role": {"zh": "兒少精神科主治（師傅）", "en": "Youth psychiatrist (mentor)"}, "tag": "ATT", "color": "#81296d", "body": "mentor",
+                  "about": {"zh": "穿慢跑鞋上班。跟青少年說話像跟大人說話，從不把體重數字念出口。", "en": "Wears running shoes to work. Talks to teenagers as if they were adults and never says a weight number aloud."}},
+    "er-doc": {"name": {"zh": "急診蘇醫師", "en": "Dr Su, emergency"}, "role": {"zh": "急診住院醫師", "en": "Emergency resident"}, "tag": "ER", "color": "#c0392b", "body": "resident",
+               "about": {"zh": "一次顧六床。照會單寫得很短：「16 歲昏倒，心跳慢，媽媽說她很自律。」", "en": "Covers six beds at once. His consult is short: “16, fainted, slow heart, mum says she's disciplined.”"}},
+    "fen": {"name": {"zh": "阿芬", "en": "Fen"}, "role": {"zh": "急診護理師", "en": "Emergency nurse"}, "tag": "RN", "color": "#3b8f6a", "body": "nurse",
+            "about": {"zh": "會在冷氣房裡偷偷替病人多蓋一條毯子。她說：手冷的孩子，心也會累。", "en": "Quietly adds a blanket in the air-conditioning. Her saying: a child with cold hands has a tired heart too."}},
+    "qing": {"name": {"zh": "小晴", "en": "Qing"}, "role": {"zh": "十六歲，越野長跑選手", "en": "Sixteen, cross-country runner"}, "tag": "PT", "color": "#c2703a", "body": "patient",
+             "about": {"zh": "虛構教學個案。高二，班上第一名，校隊越野長跑。大熱天穿著過大的帽T。下週六是全國賽。", "en": "Fictional teaching case. Eleventh grade, top of her class, school cross-country team. An oversized hoodie on a hot day. Nationals are next Saturday."}},
+    "mother": {"name": {"zh": "小晴媽媽", "en": "Qing's mother"}, "role": {"zh": "家屬", "en": "Family"}, "tag": "FAM", "color": "#8a6d3b", "body": "family",
+               "about": {"zh": "會計師，說話很快，手機一直響。她說女兒從小就不用人操心，所以這次更慌。", "en": "An accountant who talks fast with a phone that never stops. Her daughter never needed worrying about, which is why this frightens her more."}},
+    "coach": {"name": {"zh": "田徑隊教練", "en": "Running coach"}, "role": {"zh": "學校教練（訊息）", "en": "School coach (messages)"}, "tag": "CO", "color": "#5a6b8a", "phoneOnly": true,
+              "about": {"zh": "真心關心她，也真心想要那面獎牌。兩件事他還沒分開想過。", "en": "Truly cares about her, and truly wants the medal. He hasn't yet thought about those two things separately."}},
+    "ward-nurse": {"name": {"zh": "兒科病房阿珮", "en": "Pei, paediatric ward"}, "role": {"zh": "兒科病房護理師（電話）", "en": "Paediatric ward nurse (by phone)"}, "tag": "WN", "color": "#2f6f8f", "phoneOnly": true,
+                   "about": {"zh": "夜班。說話很輕，像怕吵醒整個病房。", "en": "Night shift. Speaks softly, as if afraid to wake the whole ward."}}
+  },
+  "places": {
+    "bay": {"name": {"zh": "急診留觀床", "en": "ER observation bay"}, "hot": "bed"},
+    "monitor": {"name": {"zh": "床邊監視器", "en": "Bedside monitor"}, "hot": "monitor"},
+    "scale": {"name": {"zh": "背對螢幕的體重計", "en": "Scale facing the wall"}, "hot": "device"},
+    "ws": {"name": {"zh": "影像工作站", "en": "Imaging workstation"}, "hot": "imaging"},
+    "corner": {"name": {"zh": "急診會談角落", "en": "ER interview corner"}, "hot": "desk"},
+    "board": {"name": {"zh": "急診白板", "en": "ER whiteboard"}, "hot": "whiteboard"}
+  },
+  "glossary": [
+    {"term": {"zh": "神經性厭食症", "en": "anorexia nervosa"}, "plain": {"zh": "一種精神疾病：極度害怕變胖，嚴格限制吃東西，體重明顯過低，卻看不見自己的危險。不是愛漂亮，也不是任性。", "en": "A mental illness: an intense fear of gaining weight, strict food restriction and a dangerously low weight that the person cannot see as dangerous. Not vanity, not stubbornness."}},
+    {"term": {"zh": "醫療不穩定", "en": "medical instability"}, "plain": {"zh": "身體已經撐不住的徵象：心跳太慢、血壓太低、站起來頭暈、體溫低、電解質異常。出現時要先住院穩定身體。", "en": "Signs the body can no longer cope: a very slow heart, low blood pressure, dizziness on standing, low temperature, abnormal salts. When present, admission to stabilise the body comes first."}},
+    {"term": {"zh": "姿勢性變化", "en": "orthostatic changes"}, "plain": {"zh": "從躺著到站起來，心跳和血壓的變化。飢餓的身體調節不了，站起來心跳暴衝、血壓掉、眼前發黑。", "en": "How pulse and blood pressure change from lying to standing. A starved body can't adjust: the pulse jumps, pressure falls and vision greys out."}},
+    {"term": {"zh": "心搏過緩", "en": "bradycardia"}, "plain": {"zh": "心跳太慢。運動員可以心跳慢但心臟健康；飢餓的人心跳慢是因為心肌被拿去當燃料了。", "en": "A heart rate that is too slow. Athletes can have a slow, healthy heart; a starving person's heart is slow because its muscle is being used as fuel."}},
+    {"term": {"zh": "胎毛", "en": "lanugo"}, "plain": {"zh": "身體太瘦太冷時，皮膚上長出的細軟汗毛，是身體想保暖。", "en": "Fine, soft hair that grows on the skin when the body is very thin and cold: the body trying to keep warm."}},
+    {"term": {"zh": "運動員心臟", "en": "athlete's heart"}, "plain": {"zh": "長期訓練讓心臟變強、休息時心跳慢，但心臟大小正常或變大，站起來心跳會適當加快。和飢餓的慢心跳不一樣。", "en": "Training makes the heart stronger and slower at rest, but normal or larger in size, and it speeds up sensibly on standing. Not the same as a starved slow heart."}},
+    {"term": {"zh": "再餵食症候群", "en": "refeeding syndrome"}, "plain": {"zh": "長期飢餓的人重新開始吃，身體突然把磷、鉀、鎂搬進細胞，血中濃度掉下去，可能心律不整或心衰竭。所以要吃，但要邊吃邊抽血追蹤。", "en": "When a long-starved person starts eating, the body suddenly pulls phosphate, potassium and magnesium into cells and blood levels fall, risking arrhythmia or heart failure. So she must eat, with blood checks along the way."}},
+    {"term": {"zh": "磷", "en": "phosphate"}, "plain": {"zh": "細胞製造能量需要的礦物質。再餵食時最容易往下掉的那一項。", "en": "A mineral cells need to make energy; the level most likely to drop during refeeding."}},
+    {"term": {"zh": "盲秤", "en": "blind weighing"}, "plain": {"zh": "量體重時讓病人背對螢幕、不念出數字。數字會讓疾病的聲音更大聲；趨勢交給團隊看。", "en": "Weighing with the patient facing away from the display and no number spoken. The number feeds the illness's voice; the team watches the trend."}},
+    {"term": {"zh": "保密的界線", "en": "limits of confidentiality"}, "plain": {"zh": "大部分談話會保密，但有生命危險時，必須讓能保護她的人知道。先說清楚界線，再開始談。", "en": "Most of what is said stays private, but when life is at risk, the people who can protect her must be told. Say where the line is before the talking starts."}},
+    {"term": {"zh": "家庭為基礎治療", "en": "family-based treatment"}, "plain": {"zh": "青少年飲食障礙的主要治療之一：暫時由父母負責三餐，把疾病和孩子分開看，不怪任何人。", "en": "A main treatment for teenage eating disorders: parents temporarily take charge of meals, the illness is separated from the child, and no one is blamed."}}
+  ],
+  "codex": [
+    {"id": "monitor", "kind": "equipment", "name": {"zh": "床邊監視器", "en": "Bedside monitor"}, "text": {"zh": "睡著時心跳會再慢一些。警報的下限依團隊標準設好，響了先看人、手量脈搏，再看螢幕。", "en": "The heart slows further in sleep. Set the lower alarm limit by the team's standard; when it sounds, look at her and feel a pulse before the screen."}, "hot": "monitor"},
+    {"id": "ecg-cart", "kind": "equipment", "name": {"zh": "心電圖機", "en": "ECG machine"}, "text": {"zh": "慢心跳要看節律、QT 間期和電解質造成的變化。一張心電圖，比一句「她是跑者」可靠。", "en": "With a slow heart, check the rhythm, the QT interval and any changes from low salts. One ECG is more reliable than “she's a runner”."}, "hot": "device"},
+    {"id": "scale", "kind": "equipment", "name": {"zh": "背對螢幕的體重計", "en": "Scale facing the wall"}, "text": {"zh": "同一台秤、同一個時間、穿病人服、先上廁所。數字寫進紀錄，不念出來。", "en": "Same scale, same time, hospital gown, bladder emptied. The number goes in the record and is not read aloud."}, "hot": "device"},
+    {"id": "warm-blanket", "kind": "equipment", "name": {"zh": "保暖毯", "en": "Warming blanket"}, "text": {"zh": "飢餓的人體溫偏低、手腳冰冷。保暖不是貼心而已，是治療的一部分。", "en": "A starved body runs cold, with icy hands and feet. Warmth is not just kindness; it is part of treatment."}, "hot": "bed"},
+    {"id": "race-bib", "kind": "item", "name": {"zh": "全國賽的號碼布", "en": "The nationals race bib"}, "text": {"zh": "小晴一直放在帽T口袋裡。晚上她在背面寫了一行字：「我想跑，但要用健康的腳跑。」", "en": "Qing kept it in her hoodie pocket. At night she wrote on the back: “I want to run, but on healthy legs.”"}},
+    {"id": "instability", "kind": "concept", "name": {"zh": "醫療不穩定先於會談", "en": "Medical stability before talk"}, "text": {"zh": "飲食障礙的青少年，先看身體：休息時心跳、躺站的姿勢性變化、血壓、體溫、電解質、心電圖、有沒有昏倒。任何一項達到青少年住院標準，就先住院穩定。飢餓本身會讓人憂鬱、焦慮、專注力差、想法更僵化——很多「個性」問題，吃回來會改善。所以先救身體，心理治療才接得上。", "en": "With a teenager with an eating disorder, look at the body first: resting pulse, orthostatic changes, blood pressure, temperature, electrolytes, ECG, any fainting. Any one meeting the adolescent admission criteria means admit and stabilise. Starvation itself causes low mood, anxiety, poor focus and rigid thinking; much that looks like personality improves with nutrition. Save the body first so therapy has something to hold on to."}},
+    {"id": "refeeding", "kind": "concept", "name": {"zh": "再餵食：要吃，也要追蹤", "en": "Refeeding: eat, and monitor"}, "text": {"zh": "長期飢餓後開始進食，胰島素上升，把磷、鉀、鎂和維生素 B1 帶進細胞，血中濃度可能驟降，引起心律不整、心衰竭、水腫。答案不是不吃，而是依營養師與醫師的計畫穩定地增加熱量，頭幾天密集抽血追蹤電解質、補充維生素、看水腫和心跳。吃得太少太慢，也會讓她繼續處在危險裡。", "en": "When eating restarts after long starvation, rising insulin drives phosphate, potassium, magnesium and thiamine into cells; blood levels can plunge, causing arrhythmia, heart failure and swelling. The answer is not to withhold food but to increase intake steadily on the dietitian's and doctors' plan, with frequent electrolyte checks, vitamin supplements and watching for swelling and heart rhythm in the first days. Feeding too little, too slowly also keeps her in danger."}},
+    {"id": "illness-voice", "kind": "concept", "name": {"zh": "把疾病和孩子分開", "en": "Separate the illness from the child"}, "text": {"zh": "厭食症常像一個在耳邊說話的聲音：「你不配吃」「多跑一圈」。和她吵這個聲音沒用，罵她也沒用。說「是厭食症讓你害怕吃」而不是「你為什麼不吃」。家庭為基礎治療裡，父母和孩子是同一隊，對手是疾病。", "en": "Anorexia often sounds like a voice at her ear: “you don't deserve food”, “run one more lap”. Arguing with that voice is useless, and so is scolding her. Say “the anorexia makes eating frightening” rather than “why won't you eat”. In family-based treatment the parents and the child are one team; the opponent is the illness."}}
+  ],
+  "segs": [
+    {"id": "arrive", "name": {"zh": "急診照會", "en": "The ER consult"}, "sub": {"zh": "10:30 · 急診留觀區", "en": "10:30 · ER observation area"}, "t": 630, "mood": "day",
+     "note": {"zh": "大熱天的帽T和一雙冰冷的手", "en": "A hoodie on a hot day, and ice-cold hands"},
+     "beats": [
+      {"id": "a1", "to": "er-doc", "guide": {"zh": "找急診蘇醫師", "en": "Find Dr Su in the ER"},
+       "ring": {"title": {"zh": "急診照會", "en": "ER consult"}, "sub": {"zh": "16 歲體育課昏倒，心跳慢，請精神科評估", "en": "16, fainted in PE, slow pulse; psychiatry please"}, "call": true, "from": "er-doc"},
+       "lines": [
+        ["er-doc", {"zh": "高二女生，體育課跑完昏倒。心跳很慢，躺著還好，站起來就暈。媽媽說她只是很自律。", "en": "Eleventh-grader, fainted after running in PE. Very slow heart, fine lying down, dizzy on standing. Mum says she's just disciplined."}],
+        ["attending", {"zh": "自律是媽媽的詞。我們要找的是她身體的詞。", "en": "Disciplined is her mother's word. We're looking for her body's words."}],
+        ["er-doc", {"zh": "心電圖做了，我先去顧別床。她叫小晴。", "en": "ECG's done; I need to see other beds. Her name's Qing."}]
+       ]},
+      {"id": "a2", "to": "qing", "guide": {"zh": "去留觀床見小晴", "en": "Meet Qing in the bay"},
+       "lines": [
+        ["sys", {"zh": "冷氣房裡，她裹著過大的帽T，手指發紫。床邊放著一雙磨舊的跑鞋。", "en": "In the air-conditioning she is wrapped in an oversized hoodie, fingers bluish. A pair of worn running shoes sits by the bed."}],
+        ["qing", {"zh": "我沒事。只是最近有點累，讀書也專心不了。下週六要比賽，我可以回去練習了嗎？", "en": "I'm fine. Just a bit tired lately, and I can't concentrate on studying. Race next Saturday; can I go back to training?"}],
+        ["attending", {"zh": "累、專心不了、心情低。這題寫的是上班族，原則一樣：先看身體有沒有原因。", "en": "Tired, can't focus, low. This exercise is about an office worker, but the principle holds: check the body for a cause first."}]
+       ],
+       "mini": {"type": "stage", "case": "psychiatry-v38-depression-function", "stage": 2},
+       "post": [
+        ["attending", {"zh": "飢餓本身就會讓人憂鬱、焦慮、專注力差。吃回來之前，先不要替她的心情下診斷。", "en": "Starvation itself causes low mood, anxiety and poor focus. Until she's eating again, don't diagnose her mood."}]
+       ]},
+      {"id": "a3", "roles": ["cap-resident"], "to": "qing", "guide": {"zh": "做精神狀態檢查", "en": "Do a mental-state examination"},
+       "lines": [
+        ["attending", {"zh": "從外表看起。她身上已經寫了很多東西。", "en": "Start with appearance. Her body has already written a lot down."}]
+       ],
+       "mini": {"type": "drill", "template": "psychiatry", "drill": "mse"},
+       "post": [
+        ["me", {"zh": "外表：手臂有細細的胎毛、手冷；情緒平、會笑但笑得很累；想法：一提到吃飯就說「我吃很多了」。", "en": "Appearance: fine lanugo on her arms, cold hands; mood flat, smiles but tiredly; thought: at any mention of food, “I eat plenty.”"}],
+        ["attending", {"zh": "還有一個：她說月經停了半年，她以為是跑步的關係。", "en": "One more: her periods stopped half a year ago. She thought it was the running."}]
+       ]}
+     ]},
+    {"id": "body", "name": {"zh": "身體說的話", "en": "What the body says"}, "sub": {"zh": "11:30 · 留觀床與影像工作站", "en": "11:30 · bay and imaging workstation"}, "t": 690, "mood": "day",
+     "note": {"zh": "心跳慢不是運動員心臟", "en": "This slow heart isn't an athlete's heart"},
+     "beats": [
+      {"id": "b1", "roles": ["dietitian"], "to": "place:scale", "guide": {"zh": "替小晴做盲秤", "en": "Blind-weigh Qing"},
+       "lines": [
+        ["qing", {"zh": "我可以看數字嗎？我只是想知道。", "en": "Can I see the number? I just want to know."}],
+        ["me", {"zh": "今天在急診我們不念數字。團隊會看趨勢，之後要不要一起看，再跟你討論。", "en": "We're not reading numbers out in the ER today. The team watches the trend; whether we look together later, we'll decide with you."}]
+       ],
+       "mini": {"type": "order", "q": {"zh": "盲秤的步驟", "en": "Blind weighing, step by step"},
+                "steps": [
+                 {"zh": "先說明為什麼要量", "en": "Explain why we weigh"},
+                 {"zh": "先上廁所，只穿病人服", "en": "Empty bladder, hospital gown only"},
+                 {"zh": "背對螢幕站上同一台秤", "en": "Same scale, back to the display"},
+                 {"zh": "記錄數字，不念出來", "en": "Record the number without saying it"},
+                 {"zh": "與先前紀錄比較趨勢", "en": "Compare the trend with earlier records"}
+                ]},
+       "post": [
+        ["fen", {"zh": "她下秤時口袋叮噹一聲。裡面有兩個裝滿水的小瓶子。", "en": "As she steps off, her pocket clinks. Two small bottles full of water."}],
+        ["me", {"zh": "沒關係，我們重量一次。這是疾病的辦法，不是她的錯。", "en": "It's all right; we weigh again. That's the illness's trick, not her fault."}]
+       ]},
+      {"id": "b2", "to": "place:monitor", "guide": {"zh": "監視器在響", "en": "The monitor is alarming"},
+       "lines": [
+        ["sys", {"zh": "小晴睡著了。監視器的心跳數字一路往下掉，警報響起。", "en": "Qing has fallen asleep. The heart-rate figure on the monitor drifts down until the alarm sounds."}],
+        ["fen", {"zh": "教練剛傳訊息說她平常心跳就很慢，叫我們不用緊張。", "en": "The coach just texted that her heart is always slow and not to worry."}]
+       ],
+       "mini": {"type": "vitals", "event": "bradycardia",
+                "options": [
+                 {"zh": "看人、手量脈搏、做心電圖，臥床監測", "en": "Look at her, feel the pulse, repeat the ECG, bed rest on monitor", "ok": true,
+                  "why": {"zh": "先確認不是導線問題，再看節律與 QT。飢餓的慢心跳是醫療不穩定，要監測並通知主治。", "en": "Make sure it isn't a lead problem, then check rhythm and QT. A starved slow heart is medical instability; monitor and tell the attending."}},
+                 {"zh": "她是跑者，運動員心臟，調低警報", "en": "She's a runner; athlete's heart; lower the alarm", "ok": false,
+                  "why": {"zh": "運動員心臟大小正常、站起來心跳會適當加快。她站起來會暈、會昏倒，不是同一件事。", "en": "An athlete's heart is normal-sized and speeds up sensibly on standing. She faints on standing; it isn't the same thing."}},
+                 {"zh": "叫醒她起來走一走", "en": "Wake her and get her walking", "ok": false,
+                  "why": {"zh": "她站起來就會頭暈昏倒。現在需要的是臥床和監測，不是運動。", "en": "She faints when she stands. What she needs now is bed rest and monitoring, not exercise."}}
+                ]},
+       "post": [
+        ["attending", {"zh": "節律是竇性，QT 還好。醒來後她的心跳回升了。但這就是醫療不穩定，今天要住院。", "en": "Sinus rhythm, QT acceptable. Her rate rises when she wakes. But this is medical instability; she's being admitted today."}]
+       ]},
+      {"id": "b3", "to": "place:ws", "guide": {"zh": "看胸部 X 光", "en": "Look at the chest film"},
+       "lines": [
+        ["er-doc", {"zh": "胸片我順便照了，肺沒事。你們看看心臟的影子。", "en": "I took a chest film too; lungs are fine. Have a look at the heart shadow."}]
+       ],
+       "mini": {"type": "imaging", "region": "chest",
+                "question": {"zh": "小晴的心臟影子又窄又小。這代表什麼？和運動員心臟有什麼不同？", "en": "Qing's heart shadow is narrow and small. What does it mean, and how does it differ from an athlete's heart?"},
+                "answer": {"zh": "長期飢餓時，心肌也被分解當燃料，心臟變小、跳得慢、血壓低，站起來代償不了。運動員心臟通常大小正常或稍大、功能好、站起來心跳會適當加快。小晴的心影變小加上昏倒，是身體撐不住的證據。吃回來，心臟會慢慢長回來。", "en": "In long starvation, heart muscle is broken down for fuel: the heart shrinks, beats slowly, the pressure is low and it can't compensate on standing. An athlete's heart is usually normal or slightly enlarged, works well and speeds up appropriately on standing. Qing's small heart plus her faint is evidence her body can't cope. With nutrition, the heart gradually rebuilds."}},
+       "post": [
+        ["attending", {"zh": "你可以把這張片子給她看。不是嚇她，是讓她知道，累不是她不夠努力。", "en": "You could show her this film. Not to frighten her; to show her the tiredness isn't a lack of effort."}]
+       ]}
+     ]},
+    {"id": "talk", "name": {"zh": "會談角落", "en": "The interview corner"}, "sub": {"zh": "13:00 · 急診會談角落", "en": "13:00 · ER interview corner"}, "t": 780, "mood": "day",
+     "note": {"zh": "先說清楚保密的界線", "en": "State the limits of confidentiality first"},
+     "beats": [
+      {"id": "t1", "to": "qing", "guide": {"zh": "和小晴單獨談", "en": "Talk with Qing alone"},
+       "lines": [
+        ["qing", {"zh": "我跟你說一件事，你不能告訴我媽。我晚上會偷偷起來跑步，午餐都丟掉。", "en": "I'll tell you something but you can't tell my mum. I get up at night to run, and I throw my lunch away."}]
+       ],
+       "mini": {"type": "choice", "q": {"zh": "她要你保密。你怎麼回答？", "en": "She asks you to keep it secret. How do you answer?"},
+                "options": [
+                 {"zh": "先說哪些一定要讓爸媽知道，和原因", "en": "Say first what her parents must know, and why", "ok": true, "set": {"told-first": true},
+                  "why": {"zh": "這是保密的界線：有生命危險時，保護她的人必須知道。先告訴她要說什麼、怎麼說，她才不會覺得被背叛。", "en": "That is the limit of confidentiality: when life is at risk, the people protecting her must know. Telling her first what will be shared, and how, keeps it from feeling like betrayal."}},
+                 {"zh": "答應保密，先建立信任", "en": "Promise secrecy to build trust", "ok": false, "set": {"told-first": false},
+                  "why": {"zh": "一個做不到的承諾，之後一定會破。信任建立在誠實的界線上，不是在祕密上。", "en": "A promise you can't keep will break later. Trust is built on honest limits, not on secrets."}},
+                 {"zh": "直接出去全部告訴媽媽", "en": "Walk out and tell her mother everything", "ok": false, "set": {"told-first": false},
+                  "why": {"zh": "內容是要說的，但不先告訴她，她會覺得被出賣，下次什麼都不說了。", "en": "The content must be shared, but without telling her first she will feel sold out and say nothing next time."}}
+                ]},
+       "post": [
+        ["attending", {"zh": "保密的界線，越早說越好。最好在她開口之前。", "en": "The limits of confidentiality: the earlier you state them, the better. Ideally before she starts talking."}]
+       ]},
+      {"id": "t2", "to": "qing", "guide": {"zh": "問「自律」是什麼意思", "en": "Ask what “discipline” means"},
+       "lines": [
+        ["qing", {"zh": "我只是比較自律，吃得乾淨一點。大家都說我很厲害。", "en": "I'm just more disciplined, I eat clean. Everyone says I'm amazing."}],
+        ["attending", {"zh": "「自律」「乾淨」是她的詞。這題寫的是睡眠，原則一樣：請她解釋，這些詞對她是什麼意思。", "en": "“Disciplined” and “clean” are her words. This exercise is about sleep, but the principle holds: ask her what the words mean to her."}]
+       ],
+       "mini": {"type": "stage", "case": "psychiatry-v38-sleep-stress-context", "stage": 2},
+       "post": [
+        ["qing", {"zh": "……乾淨的意思是，吃完不會有罪惡感。可是最近，吃什麼都有罪惡感。", "en": "…Clean means I don't feel guilty after eating. But lately everything makes me feel guilty."}],
+        ["me", {"zh": "那個罪惡感，聽起來像是神經性厭食症在說話，不是你。", "en": "That guilt sounds like anorexia nervosa talking, not you."}]
+       ]},
+      {"id": "t3", "to": "mother", "guide": {"zh": "和小晴媽媽談", "en": "Talk with Qing's mother"},
+       "lines": [
+        ["mother", {"zh": "是不是我害的？我自己也一直在節食。她從小就不用人操心。", "en": "Is this my fault? I've been dieting myself for years. She never needed worrying about."}],
+        ["attending", {"zh": "不是任何人害的。這是一種病，會挑最認真、最努力的孩子。", "en": "It's no one's fault. It's an illness, and it picks the most conscientious, hardest-working children."}],
+        ["attending", {"zh": "家庭為基礎治療裡，您不是被告，是隊友。暫時由您負責她的三餐，對手是疾病。", "en": "In family-based treatment you're not the accused; you're a teammate. For now you take charge of her meals, and the opponent is the illness."}]
+       ]}
+     ]},
+    {"id": "plan", "name": {"zh": "第一個餐盤", "en": "The first tray"}, "sub": {"zh": "15:00 · 留觀床", "en": "15:00 · observation bay"}, "t": 900, "mood": "day",
+     "note": {"zh": "要吃，也要追磷", "en": "Eat, and track the phosphate"},
+     "beats": [
+      {"id": "p1", "roles": ["dietitian"], "to": "qing", "guide": {"zh": "陪小晴吃第一餐", "en": "Sit with Qing for her first meal"},
+       "lines": [
+        ["sys", {"zh": "餐盤送來。小晴把飯撥成一小堆一小堆，最後把筷子放下。", "en": "The tray arrives. Qing pushes the rice into small heaps, then sets her chopsticks down."}],
+        ["me", {"zh": "這一餐是醫療的一部分，像點滴一樣。我陪你吃，不催你、不數你。", "en": "This meal is part of treatment, like a drip. I'll sit with you, no rushing, no counting."}],
+        ["me", {"zh": "抽血結果：磷在下限附近、鉀偏低。開始吃以後，再餵食症候群最容易在頭幾天出現，我們每天追。", "en": "Bloods: phosphate near the bottom, potassium low. Once eating starts, refeeding syndrome is most likely in the first days; we'll check every day."}],
+        ["qing", {"zh": "……那我吃一半可以嗎？", "en": "…Can I eat half?"}],
+        ["me", {"zh": "今天先吃到這條線。明天我們再往上走一點。", "en": "Today, up to this line. Tomorrow we go a little further."}]
+       ]},
+      {"id": "p2", "roles": ["cap-resident"], "to": "mother", "guide": {"zh": "回應媽媽的提議", "en": "Answer the mother's proposal"},
+       "lines": [
+        ["mother", {"zh": "可以讓我帶她回家嗎？我保證盯著她吃。住院會影響她的課業。", "en": "Can I take her home? I promise I'll watch her eat. Being admitted will hurt her studies."}]
+       ],
+       "mini": {"type": "choice", "q": {"zh": "媽媽想今天帶她回家。你怎麼建議？", "en": "Her mother wants to take her home today. Your advice?"},
+                "options": [
+                 {"zh": "先住院穩定心跳與電解質", "en": "Admit first to stabilise heart and salts", "ok": true,
+                  "why": {"zh": "心跳慢、站起來昏倒、電解質偏低，是醫療不穩定。穩定之後，家庭為基礎治療在家裡接手。", "en": "A slow heart, fainting on standing and low salts are medical instability. Once stable, family-based treatment takes over at home."}},
+                 {"zh": "可以回家，門診追蹤", "en": "Home is fine, follow up in clinic", "ok": false,
+                  "why": {"zh": "再餵食的頭幾天最危險，回家沒有監視器也沒有抽血。", "en": "The first days of refeeding are the most dangerous, and home has no monitor and no blood tests."}},
+                 {"zh": "回家，但先暫停吃東西", "en": "Home, but pause eating for now", "ok": false,
+                  "why": {"zh": "不吃才是最大的危險。需要的是有監測地吃。", "en": "Not eating is the biggest danger. What she needs is eating with monitoring."}}
+                ]},
+       "post": [
+        ["mother", {"zh": "好。課本我帶來，她在病房也可以讀。", "en": "All right. I'll bring her books; she can study on the ward."}]
+       ]},
+      {"id": "p3", "to": "place:bay", "guide": {"zh": "回覆教練的訊息", "en": "Answer the coach's message"},
+       "ring": {"title": {"zh": "教練傳來訊息", "en": "Message from the coach"}, "sub": {"zh": "她週六還能跑全國賽嗎？", "en": "Can she still run nationals on Saturday?"}, "call": false, "from": "coach"},
+       "lines": [
+        ["me", {"zh": "請小晴自己決定要讓教練知道多少。我只能說：這週六不行，她的心臟需要休息。", "en": "Qing decides how much the coach knows. All I can say: not this Saturday; her heart needs rest."}],
+        ["qing", {"zh": "……你跟他說，我明年還要跑。", "en": "…Tell him I'm running next year."}]
+       ]}
+     ]},
+    {"id": "trust", "name": {"zh": "母女之間", "en": "Between mother and daughter"}, "sub": {"zh": "17:00 · 留觀床", "en": "17:00 · observation bay"}, "t": 1020, "mood": "eve",
+     "note": {"zh": "界線先說，信任才留得住", "en": "State the limits first and trust survives"},
+     "beats": [
+      {"id": "r1", "when": {"flag": "told-first", "is": true},
+       "lines": [
+        ["sys", {"zh": "你們三個人一起坐下。小晴自己說出了半夜跑步的事，聲音很小。", "en": "The three of you sit together. Qing says it herself, quietly: the night-time running."}],
+        ["qing", {"zh": "我很生氣你要說。可是你有先跟我講，所以……我比較能說出口。", "en": "I'm angry you had to tell. But you warned me first, so… it was easier to say it."}],
+        ["mother", {"zh": "謝謝你自己說。媽媽不會罵你，我們一起。", "en": "Thank you for saying it yourself. I won't scold you. We'll do this together."}]
+       ],
+       "item": "race-bib"},
+      {"id": "r2", "when": {"flag": "told-first", "is": false},
+       "lines": [
+        ["sys", {"zh": "小晴聽到媽媽提起半夜跑步，臉一下子白了。她扯掉監視器的貼片，轉身面對牆壁。", "en": "When her mother mentions the night running, Qing goes white. She pulls off the monitor stickers and turns to the wall."}],
+        ["qing", {"zh": "你說你不會講的。", "en": "You said you wouldn't tell."}],
+        ["attending", {"zh": "去跟她道歉，然後說清楚：哪些會說、為什麼、以後怎麼先告訴她。信任可以修，但要從界線開始。", "en": "Go and apologise, then be clear: what gets shared, why, and how she'll hear it first next time. Trust can be repaired, starting with the limits."}]
+       ],
+       "item": "race-bib"}
+     ]},
+    {"id": "handover", "name": {"zh": "轉病房交班", "en": "Handover to the ward"}, "sub": {"zh": "18:00 · 急診白板", "en": "18:00 · ER whiteboard"}, "t": 1080, "mood": "eve",
+     "note": {"zh": "交班：心跳下限、磷、盲秤、誰陪餐", "en": "Handover: heart-rate limit, phosphate, blind weighing, who sits with meals"},
+     "beats": [
+      {"id": "h1", "to": "place:board", "guide": {"zh": "交班給兒科病房", "en": "Hand over to the paediatric ward"},
+       "lines": [
+        ["me", {"zh": "小晴：神經性厭食症合併醫療不穩定。心搏過緩、姿勢性變化、低鉀、磷在下限。", "en": "Qing: anorexia nervosa with medical instability. Bradycardia, orthostatic changes, low potassium, phosphate at the floor."}],
+        ["me", {"zh": "監視器警報依團隊標準；每天抽電解質含磷；盲秤；三餐有人陪；不談數字。", "en": "Monitor alarms by team standard; daily electrolytes including phosphate; blind weighing; someone sits with every meal; no numbers."}],
+        ["fen", {"zh": "保暖毯一起帶上去。她的手到現在還是冰的。", "en": "Send the warming blanket up with her. Her hands are still cold."}]
+       ]},
+      {"id": "h2", "to": "attending", "guide": {"zh": "聽白主治的結語", "en": "Dr Pai's debrief"},
+       "lines": [
+        ["attending", {"zh": "今天三件事：先看身體，再談心；慢心跳不一定是運動員心臟；保密的界線在她開口前說。", "en": "Three things today: body first, then mind; a slow heart isn't always an athlete's heart; state the limits of confidentiality before she speaks."}],
+        ["attending", {"zh": "還有，把疾病和孩子分開。她不是不聽話，她是在跟一個很大聲的聲音打架。", "en": "And separate the illness from the child. She isn't disobedient; she's fighting a very loud voice."}],
+        ["sys", {"zh": "白主治低頭看看自己的慢跑鞋，笑了一下：「我也很久沒跑了。」", "en": "Dr Pai glances at his running shoes and smiles: “I haven't run in ages either.”"}]
+       ]}
+     ]},
+    {"id": "night", "name": {"zh": "病房的深夜", "en": "Late on the ward"}, "sub": {"zh": "22:40 · 值班室", "en": "22:40 · on-call room"}, "t": 1360, "mood": "night",
+     "note": {"zh": "不處罰，陪她撐過那個聲音", "en": "No punishment; sit with her through the voice"},
+     "beats": [
+      {"id": "n1", "to": "place:corner", "guide": {"zh": "接兒科病房的電話", "en": "Take the paediatric ward's call"},
+       "ring": {"title": {"zh": "兒科病房來電", "en": "Paediatric ward calling"}, "sub": {"zh": "她在床上做仰臥起坐，枕頭下藏了麵包", "en": "Doing sit-ups in bed; bread hidden under the pillow"}, "call": true, "from": "ward-nurse"},
+       "lines": [
+        ["ward-nurse", {"zh": "小晴在床上偷偷做仰臥起坐，枕頭下面有晚餐的麵包。要不要跟她說這樣會延長住院？", "en": "Qing's doing sit-ups in bed, and dinner's bread is under her pillow. Should we tell her this will lengthen her stay?"}],
+        ["me", {"zh": "不要處罰，也不要吵。坐在她旁邊，說：是厭食症讓你停不下來，我陪你。", "en": "No punishment, no arguing. Sit beside her and say: it's the anorexia that won't let you stop; I'll stay with you."}],
+        ["me", {"zh": "心跳和血壓再量一次，依計畫臥床。明天早上的團隊會談，把這件事放進計畫。", "en": "Recheck pulse and pressure, bed rest per plan. Put this in the plan at tomorrow's team meeting."}],
+        ["ward-nurse", {"zh": "複誦：不處罰、陪伴、量生命徵象、依計畫臥床、明早團隊討論。", "en": "Read-back: no punishment, stay with her, vital signs, bed rest per plan, team discussion tomorrow."}],
+        ["ward-nurse", {"zh": "……她停下來了。她把號碼布翻過來，在背面寫了一行字。", "en": "…She stopped. She turned her race bib over and wrote one line on the back."}],
+        ["sys", {"zh": "「我想跑，但要用健康的腳跑。」", "en": "“I want to run, but on healthy legs.”"}]
+       ],
+       "end": true}
+     ]}
+  ],
+  "ending": {"title": {"zh": "下班了", "en": "End of shift"}, "sub": {"zh": "先救身體，再陪她跟那個聲音打架", "en": "Save the body, then help her fight the voice"},
+             "stats": ["stages", "drills", "choices", "calls", "items", "time"]}
+}

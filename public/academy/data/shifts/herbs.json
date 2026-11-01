@@ -1,0 +1,367 @@
+{
+  "format": "huatuo-shift-v2",
+  "department": "herbs",
+  "case": "main",
+  "caseTitle": {"zh": "一味藥，生熟兩條命", "en": "One herb, raw or processed"},
+  "condition": {"zh": "飲片辨識 · 炮製", "en": "Herb identification · processing"},
+  "difficulty": 1,
+  "room": "herbal-pharmacy",
+  "title": {"zh": "中藥局調劑日", "en": "A day at the herbal dispensary"},
+  "tagline": {"zh": "百子櫃前，先認得它，再談治病", "en": "At the hundred-drawer cabinet you learn the herb before you learn the cure"},
+  "minutes": 25,
+  "roles": [
+    {"id": "pharm-student", "zh": "藥學生", "en": "Pharmacy student",
+     "desc": {"zh": "跟著何主任與阿玲姐：認飲片、看炮製、審方、抓藥、四查十對念出來。", "en": "Follow Director Ho and A-Ling: identify the pieces, learn processing, review prescriptions, dispense, and say the checks out loud."}},
+    {"id": "dispenser", "zh": "中藥調劑師", "en": "Herbal dispenser",
+     "desc": {"zh": "抓藥、複核、補斗、發藥衛教；窗口、電話和搗藥缽都是你的。", "en": "Dispense, double-check, refill the drawers, counsel at the window; the phone and the mortar are yours too."}}
+  ],
+  "cast": {
+    "mentor": {"name": {"zh": "何主任", "en": "Director Ho"}, "role": {"zh": "中藥局主任（師傅）", "en": "Head of the herbal dispensary (mentor)"}, "tag": "DIR", "color": "#81296d", "body": "mentor",
+               "about": {"zh": "中醫師兼藥師。桌上那杯茶永遠是溫的，因為永遠喝不完。先問你「這是什麼」，再問「為什麼」。", "en": "Physician and pharmacist. The tea on his desk is always lukewarm because it is never finished. He asks “what is it?” before “why?”."}},
+    "aling": {"name": {"zh": "阿玲姐", "en": "A-Ling"}, "role": {"zh": "資深中藥調劑師", "en": "Senior herbal dispenser"}, "tag": "RX", "color": "#3b8f6a", "body": "herbalist",
+              "about": {"zh": "百子櫃一百多個抽屜，閉著眼睛都摸得到。口頭禪：「念出來。」", "en": "Knows every one of the hundred-odd drawers with her eyes shut. Catchphrase: “Say it out loud.”"}},
+    "xiaoyu": {"name": {"zh": "小宇", "en": "Hsiao-Yu"}, "role": {"zh": "中藥局助理", "en": "Dispensary assistant"}, "tag": "AST", "color": "#2f8f8f", "body": "student",
+               "about": {"zh": "補斗、打包、掃地。上週把生地放進熟地的抽屜，今天還在被念。", "en": "Refills drawers, packs, sweeps. Put raw rehmannia in the prepared-rehmannia drawer last week and is still hearing about it."}},
+    "grandma": {"name": {"zh": "吳阿嬤", "en": "Grandma Wu"}, "role": {"zh": "七十歲，失眠複診", "en": "Seventy, back for her insomnia"}, "tag": "P", "color": "#c2703a", "body": "patient",
+                "about": {"zh": "虛構教學個案。吃中藥二十年，自認比實習生懂。今天帶了一袋市場買的「甘草」。", "en": "Fictional teaching case. Twenty years of herbal medicine and sure she knows more than the student. Today she brings a market bag of “liquorice”."}},
+    "liang-doc": {"name": {"zh": "梁醫師", "en": "Dr Liang"}, "role": {"zh": "中醫內科主治（電話）", "en": "TCM internal medicine attending (by phone)"}, "tag": "DR", "color": "#3f6fa8", "phoneOnly": true,
+                  "about": {"zh": "字跡像心電圖。被問處方從不生氣，只說「你看得出來就好」。", "en": "Handwriting like an ECG trace. Never minds a query; just says “good that you spotted it”."}},
+    "ward-nurse": {"name": {"zh": "小潘", "en": "Nurse Pan"}, "role": {"zh": "中醫病房護理師（電話）", "en": "TCM ward nurse (by phone)"}, "tag": "RN", "color": "#8a6d3b", "phoneOnly": true,
+                   "about": {"zh": "問問題一次問三個，而且都問得對。", "en": "Asks three questions at once, and all three are good ones."}}
+  },
+  "places": {
+    "cabinet": {"name": {"zh": "百子櫃", "en": "Herb cabinet"}, "hot": "cabinet"},
+    "counter": {"name": {"zh": "調劑檯", "en": "Dispensing counter"}, "hot": "scale"},
+    "mortar": {"name": {"zh": "搗藥缽", "en": "Mortar and pestle"}, "hot": "grinder"},
+    "ws": {"name": {"zh": "處方工作站", "en": "Prescription workstation"}, "hot": "workstation"},
+    "window": {"name": {"zh": "發藥窗口", "en": "Dispensing window"}, "hot": "desk"},
+    "decoction": {"name": {"zh": "煎藥機", "en": "Decoction machine"}, "hot": "decoction"},
+    "granules": {"name": {"zh": "科學中藥櫃", "en": "Granule cabinet"}, "hot": "granules"},
+    "sink": {"name": {"zh": "洗手台", "en": "Hand-wash sink"}, "hot": "sink"}
+  },
+  "glossary": [
+    {"term": {"zh": "飲片", "en": "decoction pieces"}, "plain": {"zh": "藥材洗淨、切片、炮製後，可以直接入煎的樣子。抽屜裡裝的都是飲片，不是原藥材。", "en": "Herbs washed, sliced and processed so they can go straight into the pot. The drawers hold pieces, not raw crude herbs."}},
+    {"term": {"zh": "炮製", "en": "processing"}, "plain": {"zh": "用炒、蒸、炙、煅等方法改變藥材的性質：減毒、增效、改變歸經或方便保存。", "en": "Changing a herb by frying, steaming, honey-frying or calcining: to reduce toxicity, strengthen an action, shift its target or help it keep."}},
+    {"term": {"zh": "蜜炙", "en": "honey-frying"}, "plain": {"zh": "用煉蜜拌炒。中醫認為蜜炙後藥性偏補、偏潤，像炙甘草補中、炙黃耆補氣。", "en": "Stir-frying with refined honey. In TCM reasoning this makes a herb more tonifying and moistening, as with honey-fried liquorice."}},
+    {"term": {"zh": "九蒸九曬", "en": "nine steamings and sun-dryings"}, "plain": {"zh": "傳統上把生地黃反覆蒸曬成熟地黃的工序。顏色轉黑、味轉甜，中醫認為由涼血轉為補血。", "en": "The traditional repeated steaming and drying that turns raw rehmannia into prepared rehmannia: black, sweet, and in TCM terms blood-nourishing rather than blood-cooling."}},
+    {"term": {"zh": "四查十對", "en": "four checks, ten matches"}, "plain": {"zh": "調劑的核對口訣：查處方、查藥品、查配伍禁忌、查用藥合理性，每一查各對幾項，念出聲音來。", "en": "The dispensing checklist: check the prescription, the herbs, the combination taboos and the rationale, each with its items to match, said aloud."}},
+    {"term": {"zh": "串斗", "en": "drawer mix-up"}, "plain": {"zh": "一味藥跑進另一味藥的抽屜。最常見的調劑錯誤來源，所以補斗要兩個人。", "en": "One herb ending up in another herb's drawer. The commonest root of dispensing errors, which is why refilling takes two people."}},
+    {"term": {"zh": "百子櫃", "en": "herb cabinet"}, "plain": {"zh": "整面牆的小抽屜，依功效分區、常用藥放中間順手處；每個抽屜一味飲片，貼名牌。", "en": "A wall of small drawers grouped by action, the common herbs at hand height; one herb per drawer, each labelled."}},
+    {"term": {"zh": "戥秤", "en": "steelyard balance"}, "plain": {"zh": "傳統手提小桿秤，一手提繩一手撥秤砣。電子天平旁邊還是會放一把，為了停電和手感。", "en": "The small hand-held beam balance with a sliding weight. It still sits beside the electronic balance, for power cuts and for feel."}},
+    {"term": {"zh": "審方", "en": "prescription review"}, "plain": {"zh": "抓藥前先把處方讀一遍：病人、診斷、藥名、炮製規格、煎法、禁忌。有疑問先問醫師，不自己改。", "en": "Reading the whole prescription before touching a drawer: patient, diagnosis, herb names, processing grade, cooking notes, taboos. Query the doctor; never silently amend."}},
+    {"term": {"zh": "先煎", "en": "decoct first"}, "plain": {"zh": "礦石、貝殼類和需要久煎減毒的藥先下鍋，煮一段時間後再加其他藥。", "en": "Minerals, shells and herbs that need long cooking go in first for a while before the rest of the pot."}},
+    {"term": {"zh": "後下", "en": "add last"}, "plain": {"zh": "含揮發油的芳香藥（木香、砂仁、薄荷）最後才下，煮久了香氣跑光，中醫認為效力也跟著跑。", "en": "Aromatic herbs rich in volatile oils (costus, amomum, mint) go in at the end; cook them long and the aroma, and in TCM terms the effect, is gone."}},
+    {"term": {"zh": "看摸聞嘗", "en": "look, touch, smell, taste"}, "plain": {"zh": "性狀鑑別四步：看形色斷面、摸質地、聞氣味、嘗味道。嘗只碰舌尖，一小片，有毒藥不嘗。", "en": "The four steps of identifying a herb by its characters: appearance and cut surface, texture, smell, taste. Taste with the tongue tip only, a sliver, and never a toxic herb."}},
+    {"term": {"zh": "菊花心", "en": "chrysanthemum heart"}, "plain": {"zh": "根類藥材橫切面放射狀的紋路，像菊花。甘草、黃耆都有，所以光看斷面會認錯。", "en": "The radiating pattern on a root's cut surface, like a chrysanthemum. Liquorice and astragalus both show it, which is why the cut face alone misleads."}},
+    {"term": {"zh": "心脾兩虛", "en": "heart and spleen deficiency"}, "plain": {"zh": "中醫證型：思慮勞倦耗了心血脾氣，見失眠多夢、心悸、倦怠、食少、舌淡。歸脾湯的對證。", "en": "A TCM pattern: worry and overwork drain heart blood and spleen qi, giving poor sleep, palpitations, fatigue, little appetite and a pale tongue. The pattern Guipi Tang is built for."}},
+    {"term": {"zh": "細脈", "en": "thready pulse"}, "plain": {"zh": "脈像一條細線，應指明顯但窄。中醫認為多見於氣血不足。", "en": "A pulse felt as a fine thread, clear under the finger but narrow. In TCM reasoning it usually points to insufficient qi and blood."}}
+  ],
+  "codex": [
+    {"id": "cabinet", "kind": "equipment", "name": {"zh": "百子櫃", "en": "The hundred-drawer cabinet"}, "text": {"zh": "依功效分區：解表在左上、補益在右手邊、有毒的不在這裡。每格一味，名牌朝外；補斗兩人核對。", "en": "Arranged by action: exterior-releasing top left, tonics on the right, toxic herbs not here at all. One herb per drawer, label out; two people to refill."}, "hot": "cabinet"},
+    {"id": "steelyard", "kind": "equipment", "name": {"zh": "戥秤與電子天平", "en": "Steelyard and electronic balance"}, "text": {"zh": "電子天平歸零再秤；戥秤提繩要平。阿玲姐說手感是秤出來的，不是看出來的。", "en": "Zero the electronic balance before every herb; hold the steelyard cord level. A-Ling says feel comes from weighing, not from watching."}, "hot": "scale"},
+    {"id": "mortar", "kind": "equipment", "name": {"zh": "搗藥缽", "en": "Mortar and pestle"}, "text": {"zh": "種子、果實類（酸棗仁、砂仁、杏仁）入煎前搗碎，讓有效成分煎得出來。搗完要清乾淨，不然下一味沾味道。", "en": "Seeds and fruits (sour jujube seed, amomum, apricot kernel) are crushed before cooking so their contents can leach out. Clean it after, or the next herb borrows the smell."}, "hot": "grinder"},
+    {"id": "workstation", "kind": "equipment", "name": {"zh": "處方工作站", "en": "Prescription workstation"}, "text": {"zh": "螢幕上有處方、診斷、過敏史、舌照和脈案。審方在這裡做，不在抽屜前做。", "en": "Prescription, diagnosis, allergies, tongue photo and pulse notes on one screen. Review happens here, not at the drawers."}, "hot": "workstation"},
+    {"id": "granule-jar", "kind": "equipment", "name": {"zh": "科學中藥顆粒", "en": "Concentrated granules"}, "text": {"zh": "把煎好的湯劑濃縮、噴霧乾燥成顆粒。方便、劑量穩定；但沒有先煎後下可以調，也聞不到藥香。", "en": "Decoctions concentrated and spray-dried into granules. Convenient and consistent; but no decoct-first or add-last to adjust, and no smell of the pot."}, "hot": "granules"},
+    {"id": "grandma-bag", "kind": "item", "name": {"zh": "阿嬤的那包「甘草」", "en": "Grandma's bag of “liquorice”"}, "text": {"zh": "市場買的。斷面有菊花心，嘗起來是豆腥味不是甜：是黃耆。何主任留了一片當教材。", "en": "Bought at the market. Chrysanthemum heart on the cut face, but it tastes beany rather than sweet: astragalus. Director Ho kept a slice for teaching."}},
+    {"id": "c-paozhi", "kind": "concept", "name": {"zh": "炮製為什麼改變藥性", "en": "Why processing changes a herb"}, "text": {"zh": "中醫認為生地黃涼血、熟地黃補血；生甘草清熱解毒、炙甘草補中益氣；生薑散寒、乾薑溫中、炮薑止血。同一株植物，炮製決定它在方裡做什麼。生品與炮製品分斗、分名、分格。", "en": "In TCM reasoning raw rehmannia cools the blood while prepared rehmannia nourishes it; raw liquorice clears heat while honey-fried liquorice tonifies; fresh ginger scatters cold, dried ginger warms the centre, charred ginger stops bleeding. Same plant; processing decides its job. Raw and processed grades get separate drawers, names and slots."}},
+    {"id": "c-sicha", "kind": "concept", "name": {"zh": "四查十對", "en": "Four checks, ten matches"}, "text": {"zh": "查處方：對科別、姓名、年齡。查藥品：對藥名、劑型、規格、數量。查配伍禁忌：對十八反十九畏、孕婦禁忌。查用藥合理性：對診斷、用法用量。念出聲音，第二個人複核簽名。", "en": "Check the prescription: match department, name, age. Check the herbs: name, form, grade, quantity. Check the combination taboos: the eighteen antagonisms, nineteen incompatibilities, pregnancy. Check the rationale: diagnosis, directions. Say it aloud; a second person verifies and signs."}},
+    {"id": "c-identify", "kind": "concept", "name": {"zh": "性狀鑑別：看摸聞嘗", "en": "Identification by characters"}, "text": {"zh": "看：形狀、顏色、斷面紋路（菊花心、朱砂點、車輪紋）。摸：質地、脆韌、是否受潮。聞：藥香、豆腥、硫磺的酸刺味。嘗：甜、苦、麻、澀，只用舌尖一小片，有毒藥不嘗。四步都做完再說它是什麼。", "en": "Look: shape, colour, cut-surface pattern (chrysanthemum heart, cinnabar dots, wheel rays). Touch: texture, brittle or tough, damp or dry. Smell: herbal, beany, or the sour sting of sulphur. Taste: sweet, bitter, numbing, astringent, tongue tip only, a sliver, never a toxic herb. All four before you name it."}},
+    {"id": "c-decoct-order", "kind": "concept", "name": {"zh": "先煎、後下、烊化、沖服", "en": "Decoct first, add last, melt, stir in"}, "text": {"zh": "礦石貝殼與附子先煎；一般群藥中段；芳香藥後下；阿膠等膠類烊化，用熱藥汁化開；三七粉等沖服。調劑時分包標示，病人才做得到。", "en": "Minerals, shells and aconite go first; the ordinary herbs in the middle; aromatics last; gelatins like donkey-hide gelatin are melted in the hot liquid; powders like notoginseng are stirred in. Dispensing packs and labels them separately so the patient can actually do it."}}
+  ],
+  "segs": [
+    {"id": "open", "name": {"zh": "開櫃", "en": "Opening the cabinet"}, "sub": {"zh": "07:40 · 百子櫃前", "en": "07:40 · at the herb cabinet"}, "t": 460, "mood": "day",
+     "note": {"zh": "看摸聞嘗；串斗抓出來了", "en": "Look, touch, smell, taste; one mix-up caught"},
+     "beats": [
+      {"id": "o1", "to": "place:cabinet", "guide": {"zh": "到百子櫃前找何主任", "en": "Find Director Ho at the cabinet"},
+       "lines": [
+        ["sys", {"zh": "中藥局早上七點四十。百子櫃的銅拉環還是涼的，何主任的茶已經溫了。", "en": "The herbal dispensary at seven-forty. The brass drawer pulls are still cool; Director Ho's tea is already lukewarm."}],
+        ["mentor", {"zh": "早。今天不教你治病，先教你認得藥。", "en": "Morning. Today I am not teaching you to treat anyone. I am teaching you to recognise the herb."}],
+        ["mentor", {"zh": "這面百子櫃怎麼排？解表在哪、補益在哪、有毒的在哪？", "en": "How is this herb cabinet arranged? Where are the exterior-releasers, the tonics, the toxic ones?"}],
+        ["me", {"zh": "依功效分區……有毒的，不在這面牆上？", "en": "Grouped by action… and the toxic ones are not on this wall?"}],
+        ["aling", {"zh": "答對一半。有毒的在上鎖的專櫃。另一半：每格一味，名牌朝外，拿錯了全世界都看得到。", "en": "Half right. The toxic ones live in a locked cabinet. The other half: one herb per drawer, label out, so a wrong grab is visible to the whole world."}]
+       ]},
+      {"id": "o2", "to": "aling", "guide": {"zh": "跟阿玲姐認飲片", "en": "Learn the pieces with A-Ling"},
+       "lines": [
+        ["aling", {"zh": "飲片認不得，後面都不用談。看摸聞嘗，四步做完再開口。", "en": "If you cannot recognise the decoction pieces, nothing after this matters. Look, touch, smell, taste, then speak."}],
+        ["aling", {"zh": "這盤混了十幾味，各自歸斗。認不出來的放旁邊，不要猜。", "en": "This tray has a dozen herbs mixed up. Put each back in its drawer. Anything you cannot name goes aside; do not guess."}],
+        ["me", {"zh": "斷面有菊花心的……先看是不是黃耆。", "en": "The one with a chrysanthemum heart on the cut face… let me check whether it is astragalus."}]
+       ],
+       "mini": {"type": "drill", "template": "herbs", "drill": "herbsort"},
+       "post": [
+        ["aling", {"zh": "不錯。記住，菊花心甘草也有。聞一下：豆腥味是黃耆，甜到喉嚨的是甘草。", "en": "Not bad. Remember, liquorice has a chrysanthemum heart too. Smell it: beany is astragalus, sweet down to the throat is liquorice."}],
+        ["mentor", {"zh": "嘗只碰舌尖，一小片。有毒的，永遠不嘗。", "en": "Taste with the tongue tip only, a sliver. Toxic herbs, never."}]
+       ]},
+      {"id": "o3", "to": "xiaoyu", "roles": ["dispenser"], "guide": {"zh": "檢查小宇補的熟地斗", "en": "Check the drawer Hsiao-Yu refilled"},
+       "lines": [
+        ["xiaoyu", {"zh": "熟地我昨天補好了，這次絕對沒串斗。", "en": "I refilled the prepared rehmannia yesterday. Definitely no drawer mix-up this time."}],
+        ["aling", {"zh": "「絕對」兩個字在中藥局是禁語。你去看。", "en": "“Definitely” is a banned word in this dispensary. Go and look."}],
+        ["me", {"zh": "熟地黃應該黑亮、黏手、甜。我找找有沒有偏黃褐、不黏的片。", "en": "Prepared rehmannia should be glossy black, sticky, sweet. Let me look for pieces that are yellow-brown and dry."}]
+       ],
+       "mini": {"type": "find", "hot": "cabinet", "q": {"zh": "在百子櫃找到熟地黃的抽屜，抓出混進去的生地黃", "en": "Find the prepared-rehmannia drawer in the cabinet and pick out the raw rehmannia mixed in"}},
+       "set": {"drawer-checked": true},
+       "post": [
+        ["xiaoyu", {"zh": "……三片。我發誓那包標籤寫熟地。", "en": "…Three pieces. I swear the bag said prepared."}],
+        ["aling", {"zh": "所以補斗要兩個人，一個念標籤，一個看飲片。串斗不是誰笨，是沒有第二雙眼睛。", "en": "That is why refilling takes two: one reads the label, one looks at the pieces. A mix-up is not stupidity; it is a missing second pair of eyes."}]
+       ]}
+     ]},
+    {"id": "review", "name": {"zh": "審方", "en": "Prescription review"}, "sub": {"zh": "09:00 · 處方工作站", "en": "09:00 · prescription workstation"}, "t": 540, "mood": "day",
+     "note": {"zh": "歸脾湯加減；甘草生炙要問", "en": "Guipi Tang modified; raw or honey-fried liquorice is a question"},
+     "beats": [
+      {"id": "r1", "to": "place:ws", "guide": {"zh": "到工作站審梁醫師的處方", "en": "Review Dr Liang's prescription at the workstation"},
+       "lines": [
+        ["mentor", {"zh": "梁醫師的方，吳阿嬤，七十歲，失眠二十年。審方先看什麼？", "en": "Dr Liang's prescription: Grandma Wu, seventy, twenty years of insomnia. What do you read first in a prescription review?"}],
+        ["me", {"zh": "病人、診斷、過敏史。然後才是藥。", "en": "Patient, diagnosis, allergies. Then the herbs."}],
+        ["mentor", {"zh": "好。診斷寫「不寐」，證型沒寫清楚。舌照在這裡，你說她是什麼證。", "en": "Good. Diagnosis says “insomnia”; the pattern is not spelled out. Here is the tongue photo. Tell me her pattern."}]
+       ],
+       "mini": {"type": "tongue", "q": {"zh": "吳阿嬤的舌象：淡、苔薄白、邊有齒痕。最符合哪個證型？", "en": "Grandma Wu's tongue: pale, thin white coat, tooth-marked edges. Which pattern fits best?"},
+                "tongue": {"body": "pale", "coat": "thin-white", "shape": "teeth-marked"},
+                "options": [
+                 {"zh": "心脾兩虛", "en": "Heart and spleen deficiency", "ok": true, "why": {"zh": "舌淡齒痕是氣血不足、脾虛濕停；配上失眠多夢、心悸倦怠，中醫辨為心脾兩虛。", "en": "A pale, tooth-marked tongue means weak qi and blood with spleen dampness; with dream-filled sleep, palpitations and fatigue, TCM reads heart and spleen deficiency."}},
+                 {"zh": "陰虛火旺", "en": "Yin deficiency with fire", "ok": false, "why": {"zh": "陰虛火旺的舌是紅、少苔甚至剝苔，不會淡而有齒痕。", "en": "Yin deficiency with fire shows a red tongue with little or peeled coat, not pale and tooth-marked."}},
+                 {"zh": "痰熱內擾", "en": "Phlegm-heat harassing", "ok": false, "why": {"zh": "痰熱的苔是黃膩，舌偏紅。這張是薄白。", "en": "Phlegm-heat gives a greasy yellow coat on a reddish tongue. This one is thin and white."}},
+                 {"zh": "肝鬱化火", "en": "Liver constraint turning to fire", "ok": false, "why": {"zh": "肝火的舌紅、苔黃，人急躁易怒，脈弦數。和淡舌齒痕不合。", "en": "Liver fire gives a red tongue, yellow coat, irritability and a wiry rapid pulse. It does not match a pale, tooth-marked tongue."}}
+                ]},
+       "post": [
+        ["mentor", {"zh": "心脾兩虛，所以梁醫師開歸脾湯加減。證對了，藥才有地方站。", "en": "Heart and spleen deficiency, hence Dr Liang's modified Guipi Tang. Get the pattern right and the herbs have somewhere to stand."}]
+       ]},
+      {"id": "r2", "to": "mentor", "guide": {"zh": "把歸脾湯的組成說出來", "en": "Name the herbs of Guipi Tang"},
+       "lines": [
+        ["mentor", {"zh": "歸脾湯裡有什麼？從盤子裡挑出來，不是背給我聽。", "en": "What is in Guipi Tang? Pick them off the tray; do not recite."}]
+       ],
+       "mini": {"type": "herb", "q": {"zh": "挑出屬於歸脾湯的藥材", "en": "Select the herbs that belong to Guipi Tang"}, "formula": "歸脾湯",
+                "pick": ["黃耆", "白朮", "當歸", "酸棗仁", "龍眼肉", "遠志"],
+                "distractors": ["黃連", "梔子", "生地黃", "知母"]},
+       "post": [
+        ["mentor", {"zh": "你沒碰黃連和梔子，很好。那是清熱的，給陰虛火旺或痰熱的人；放進心脾兩虛的方子，是幫倒忙。", "en": "You left the coptis and gardenia alone, good. Those clear heat, for fire or phlegm-heat patterns; in a heart-and-spleen deficiency formula they work against you."}],
+        ["mentor", {"zh": "梁醫師加了龍骨、牡蠣安神，加木香、砂仁醒脾。待會抓藥的時候，這四味有話要說。", "en": "Dr Liang added dragon bone and oyster shell to calm the spirit, and costus and amomum to wake the spleen. Those four will have something to say when we dispense."}]
+       ]},
+      {"id": "r3", "guide": {"zh": "處方上的「甘草」", "en": "The “liquorice” on the prescription"},
+       "lines": [
+        ["me", {"zh": "主任，處方寫「甘草」，沒寫炙。歸脾湯裡應該是炙甘草吧？", "en": "Director, it just says “liquorice”, not honey-fried. Guipi Tang should have the honey-fried one, shouldn't it?"}],
+        ["mentor", {"zh": "你看得出來，很好。那你要怎麼做？", "en": "You spotted it; good. So what will you do?"}]
+       ],
+       "mini": {"type": "choice", "q": {"zh": "處方寫「甘草」未註明生炙，方義應為炙甘草。你怎麼做？", "en": "The prescription says “liquorice” with no grade; the formula logic calls for honey-fried. What do you do?"},
+                "options": [
+                 {"zh": "依字面抓生甘草，照單發", "en": "Dispense raw liquorice as written", "ok": false, "set": {"asked-liang": false}, "why": {"zh": "字面沒錯，方義錯了。生甘草清熱解毒，炙甘草補中；心脾兩虛要的是補。", "en": "Literal but wrong in intent. Raw liquorice clears heat; honey-fried tonifies, which is what this pattern needs."}},
+                 {"zh": "打電話問梁醫師，請他註明", "en": "Phone Dr Liang and ask him to specify", "ok": true, "set": {"asked-liang": true}, "why": {"zh": "審方發現規格不明，問開方醫師並請他註記，是唯一正確的路。", "en": "An unspecified grade found at review goes back to the prescriber for a note. That is the only right road."}},
+                 {"zh": "自己改成炙甘草，比較合理", "en": "Change it to honey-fried myself", "ok": false, "set": {"asked-liang": false}, "why": {"zh": "合理也不能擅改處方。調劑人員沒有改方的權限，改了就是誰都查不到的錯。", "en": "Reasonable, but a dispenser may not amend a prescription. An unlogged change is an error nobody can trace."}}
+                ]}},
+      {"id": "r4", "when": {"flag": "asked-liang", "is": true}, "ring": {"title": {"zh": "梁醫師回電", "en": "Dr Liang calling back"}, "sub": {"zh": "吳阿嬤的甘草", "en": "About Grandma Wu's liquorice"}, "call": true, "from": "liang-doc"},
+       "lines": [
+        ["liang-doc", {"zh": "炙的，炙甘草。我字太醜，謝謝你問。我電子處方補註了。", "en": "Honey-fried. My handwriting is awful; thank you for asking. I've annotated the electronic prescription."}],
+        ["me", {"zh": "收到，炙甘草。另外龍骨牡蠣先煎、木香砂仁後下，我會分包標示。", "en": "Noted, honey-fried. Dragon bone and oyster shell to decoct first, costus and amomum to add last; I'll pack and label them separately."}],
+        ["liang-doc", {"zh": "你比我上一個實習生認真。", "en": "You are more careful than my last student."}]
+       ]},
+      {"id": "r5", "when": {"flag": "asked-liang", "is": false}, "to": "mentor", "guide": {"zh": "被主任攔下來", "en": "Stopped by the Director"},
+       "lines": [
+        ["mentor", {"zh": "等一下。藥包裡這片甘草是生的。心脾兩虛補中益氣，要哪一個？", "en": "Wait. This liquorice in the pack is raw. For heart and spleen deficiency you tonify the centre; which grade do you want?"}],
+        ["me", {"zh": "……炙甘草。我剛剛應該打電話問梁醫師的。", "en": "…Honey-fried. I should have phoned Dr Liang."}],
+        ["mentor", {"zh": "現在打。重抓一帖不丟臉，發出去才丟臉。", "en": "Phone now. Re-dispensing one pack is no shame; sending it out would be."}],
+        ["sys", {"zh": "梁醫師在電話裡笑了一聲：「炙的。下次先問。」", "en": "Dr Liang laughs once down the line: “Honey-fried. Ask first next time.”"}]
+       ]}
+     ]},
+    {"id": "dispense", "name": {"zh": "抓藥", "en": "Dispensing"}, "sub": {"zh": "10:30 · 調劑檯", "en": "10:30 · dispensing counter"}, "t": 630, "mood": "day",
+     "note": {"zh": "四查十對念出來；搗、秤、分包", "en": "Checks said aloud; crush, weigh, pack apart"},
+     "beats": [
+      {"id": "d1", "to": "place:counter", "guide": {"zh": "到調劑檯，開始四查十對", "en": "Start the four checks at the counter"},
+       "lines": [
+        ["aling", {"zh": "抓藥之前，四查十對。念出來，不是在心裡念。", "en": "Before any drawer opens: four checks, ten matches. Out loud, not in your head."}],
+        ["me", {"zh": "查處方：對科別、姓名、年齡……", "en": "Check the prescription: match department, name, age…"}]
+       ],
+       "mini": {"type": "order", "q": {"zh": "調劑核對「四查十對」的順序", "en": "The order of the dispensing checks"},
+                "steps": [
+                 {"zh": "查處方：對科別、姓名、年齡", "en": "Prescription: department, name, age"},
+                 {"zh": "查藥品：對藥名、規格、數量", "en": "Herbs: name, grade, quantity"},
+                 {"zh": "查配伍禁忌：對十八反、孕婦", "en": "Taboos: antagonisms, pregnancy"},
+                 {"zh": "查用藥合理性：對診斷與用法", "en": "Rationale: diagnosis and directions"},
+                 {"zh": "第二人複核並簽名", "en": "Second person verifies and signs"}
+                ]},
+       "post": [
+        ["aling", {"zh": "對。順序是為了不漏；念出來是為了讓旁邊的人也能攔你。", "en": "Right. The order is so nothing is skipped; saying it aloud is so the person beside you can stop you."}]
+       ]},
+      {"id": "d2", "guide": {"zh": "用戥秤抓一帖", "en": "Weigh one pack on the steelyard"},
+       "lines": [
+        ["aling", {"zh": "電子天平歸零。但這一帖，用戥秤。提繩要平，眼睛看秤星。", "en": "Zero the electronic balance. But this pack, you do on the steelyard balance. Cord level, eyes on the marks."}],
+        ["me", {"zh": "為什麼還要學戥秤？", "en": "Why still learn the steelyard?"}],
+        ["aling", {"zh": "停電的時候、出診的時候、還有想知道自己手穩不穩的時候。", "en": "For power cuts, for house calls, and for finding out whether your hand is steady."}]
+       ],
+       "mini": {"type": "drill", "template": "herbs", "drill": "weigh"},
+       "post": [
+        ["aling", {"zh": "每一味秤完分開放，一帖一張紙，等量分帖。不要堆成一座山再分。", "en": "Each herb weighed and set apart, one sheet per pack, divided evenly. Never pile a mountain and split it afterwards."}]
+       ]},
+      {"id": "d3", "guide": {"zh": "挑出要後下的藥", "en": "Pick out the herbs to add last"},
+       "lines": [
+        ["mentor", {"zh": "剛才說有四味藥有話要說。哪兩味要單獨包，註明後下？", "en": "I said four herbs had something to say. Which two get their own packet marked “add last”?"}]
+       ],
+       "mini": {"type": "herb", "q": {"zh": "吳阿嬤這帖裡，哪些要單獨分包、標示「後下」？", "en": "Which herbs in Grandma Wu's pack need a separate packet marked “add last”?"},
+                "pick": ["木香", "砂仁"],
+                "distractors": ["黃耆", "白朮", "龍眼肉", "茯苓", "龍骨", "牡蠣"]},
+       "post": [
+        ["mentor", {"zh": "木香、砂仁含揮發油，煮久香氣跑光。龍骨、牡蠣相反，是礦石貝殼，要先煎。", "en": "Costus and amomum are rich in volatile oil; cook them long and the aroma is gone. Dragon bone and oyster shell are the opposite: mineral and shell, decoct first."}],
+        ["aling", {"zh": "後下的包小，先煎的包大，病人一看就懂。字要寫在包上，不是只寫在處方上。", "en": "The add-last packet is small, the decoct-first one is big; the patient sees it at a glance. Write it on the packet, not only on the prescription."}]
+       ]},
+      {"id": "d4", "to": "place:mortar", "guide": {"zh": "到搗藥缽搗酸棗仁", "en": "Crush the sour jujube seed at the mortar"},
+       "lines": [
+        ["aling", {"zh": "酸棗仁是種子，殼硬。不搗，煎不出來，等於沒放。", "en": "Sour jujube seed is a seed; the coat is hard. Unless you crush it, nothing leaches out and it may as well not be there."}],
+        ["me", {"zh": "搗到裂開就好，不用成粉？", "en": "Just until it cracks, not to powder?"}],
+        ["aling", {"zh": "對，搗碎不是搗爛。缽子用完擦乾淨，不然下一味帶棗仁味。", "en": "Right: crushed, not pulverised. Wipe the mortar after, or the next herb smells of jujube."}]
+       ],
+       "mini": {"type": "drill", "template": "herbs", "drill": "grind"},
+       "post": [
+        ["aling", {"zh": "搗藥缽的聲音，是中藥局的心跳。沒聲音的時候，代表沒人在工作。", "en": "The sound of the mortar is the heartbeat of this dispensary. Silence means nobody is working."}]
+       ]},
+      {"id": "d5", "roles": ["pharm-student"], "to": "aling", "guide": {"zh": "看阿玲姐切白芍", "en": "Watch A-Ling slice white peony"},
+       "lines": [
+        ["aling", {"zh": "這批白芍是整條來的，要自己切。薄片，斷面平，厚薄一致才煎得均勻。", "en": "This white peony came whole; we slice it ourselves. Thin slices, flat faces, even thickness so it cooks evenly."}],
+        ["me", {"zh": "刀往前推，手指收著……", "en": "Push the blade forward, fingers tucked…"}]
+       ],
+       "mini": {"type": "drill", "template": "herbs", "drill": "cut"},
+       "post": [
+        ["aling", {"zh": "切完的叫飲片，切之前的叫藥材。你今天從藥材切到飲片了。", "en": "After the knife it is a decoction piece; before, it was a crude herb. Today you took one from herb to piece."}]
+       ]}
+     ]},
+    {"id": "window", "name": {"zh": "發藥窗口", "en": "The dispensing window"}, "sub": {"zh": "11:30 · 發藥窗口", "en": "11:30 · the window"}, "t": 690, "mood": "day",
+     "note": {"zh": "阿嬤的「甘草」；頭暈不是小事", "en": "Grandma's “liquorice”; dizziness is not small"},
+     "beats": [
+      {"id": "w1", "to": "grandma", "guide": {"zh": "到窗口見吳阿嬤", "en": "See Grandma Wu at the window"},
+       "lines": [
+        ["grandma", {"zh": "少年仔，我這包甘草市場買的，泡茶顧喉嚨，可以配你們的藥嗎？", "en": "Young one, I bought this liquorice at the market for a throat tea. Can I take it with your herbs?"}],
+        ["me", {"zh": "阿嬤我先看看。斷面有菊花心……可是聞起來是豆腥味。", "en": "Let me look first, Grandma. Chrysanthemum heart on the cut face… but it smells beany."}],
+        ["aling", {"zh": "嘗一小片。", "en": "Taste a sliver."}],
+        ["me", {"zh": "不甜。阿嬤，這不是甘草，是黃耆。", "en": "Not sweet. Grandma, this is not liquorice. It is astragalus."}],
+        ["grandma", {"zh": "黃耆？那不是補氣的？我喉嚨痛喝補氣的？", "en": "Astragalus? Isn't that the qi tonic? I've been drinking a qi tonic for a sore throat?"}],
+        ["mentor", {"zh": "看摸聞嘗，少一步就認錯。阿嬤，喉嚨痛的事，等一下讓我看看。", "en": "Look, touch, smell, taste; skip one step and you misname it. Grandma, let me look at that throat in a moment."}]
+       ],
+       "item": "grandma-bag"},
+      {"id": "w2", "guide": {"zh": "跟主任一起摸阿嬤的脈", "en": "Feel Grandma's pulse with the Director"},
+       "lines": [
+        ["grandma", {"zh": "主任，我最近爬樓梯會喘，有時候心跳跳一下很大力。", "en": "Director, lately I get breathless on the stairs, and sometimes my heart gives one big thump."}],
+        ["mentor", {"zh": "手伸出來。你也來，三指定寸關尺，浮中沉都按。", "en": "Give me your wrist. You too: three fingers on cun, guan and chi; press lightly, then deeper."}],
+        ["me", {"zh": "細細的一條線，按下去還在，但很窄。", "en": "A fine thread; still there when I press, but narrow."}]
+       ],
+       "mini": {"type": "pulse", "q": {"zh": "吳阿嬤的脈：細如線，應指明顯但窄。這是什麼脈？", "en": "Grandma Wu's pulse: thin as a thread, clear under the finger but narrow. Name it."},
+                "pulse": "thready",
+                "options": [
+                 {"zh": "細脈", "en": "Thready pulse", "ok": true, "why": {"zh": "細脈主氣血兩虛。和舌淡齒痕、心脾兩虛互相印證。", "en": "A thready pulse points to deficient qi and blood, matching the pale tongue and the heart-and-spleen pattern."}},
+                 {"zh": "滑脈", "en": "Slippery pulse", "ok": false, "why": {"zh": "滑脈圓滑如珠，往來流利，多見痰濕、食積或孕婦。不是這種窄線。", "en": "A slippery pulse rolls like beads, smooth and flowing, seen with phlegm-damp, food stagnation or pregnancy. Not this narrow thread."}},
+                 {"zh": "弦脈", "en": "Wiry pulse", "ok": false, "why": {"zh": "弦脈端直而長，像按琴弦，多屬肝鬱、痛證。", "en": "A wiry pulse is straight and long like a guitar string, usually liver constraint or pain."}},
+                 {"zh": "洪脈", "en": "Surging pulse", "ok": false, "why": {"zh": "洪脈來盛去衰，寬大有力，多屬實熱。和細脈正好相反。", "en": "A surging pulse comes big and fades, broad and forceful, mostly excess heat. The very opposite of thready."}}
+                ]},
+       "post": [
+        ["mentor", {"zh": "細脈，對。但是七十歲、爬樓梯喘、心跳一下很大力，這幾個字我不喜歡。", "en": "Thready, yes. But seventy, breathless on stairs, a heart that thumps: I do not like those words together."}]
+       ]},
+      {"id": "w3", "guide": {"zh": "阿嬤站不穩了", "en": "Grandma sways"},
+       "lines": [
+        ["grandma", {"zh": "……我頭有點暈，眼前黑黑的。", "en": "…I feel dizzy. Everything's going dark."}],
+        ["sys", {"zh": "阿嬤扶著窗口，臉色發白。小宇已經跑去拿血壓計。", "en": "Grandma grips the counter, pale. Hsiao-Yu is already running for the blood-pressure cuff."}]
+       ],
+       "mini": {"type": "vitals", "event": "hypotension",
+                "options": [
+                 {"zh": "扶她平躺抬腿，量血壓血糖，叫主任", "en": "Lie her flat, legs up, check BP and sugar, call the Director", "ok": true, "why": {"zh": "先防跌倒、恢復腦部灌流，再量數據、找人。空腹等候的老人家，頭暈最常見的原因是姿勢性低血壓和低血糖。", "en": "Prevent the fall and restore flow to the brain first, then measure and get help. In an elderly person who has waited on an empty stomach, postural hypotension and low sugar are the usual causes."}},
+                 {"zh": "先泡一杯人參茶給她提神", "en": "Brew her ginseng tea to perk her up", "ok": false, "why": {"zh": "頭暈的人還沒評估就給藥，是用藥局的習慣處理急症。先扶、先量、先叫人。", "en": "Medicating an unassessed dizzy patient is the dispensary habit applied to an emergency. Support, measure, call first."}},
+                 {"zh": "請她自己走去椅子坐一下", "en": "Ask her to walk to a chair", "ok": false, "why": {"zh": "眼前發黑的人自己走，下一步是跌倒。", "en": "Someone whose vision is going dark should not walk anywhere; the next step is a fall."}}
+                ]},
+       "set": {"referred": true},
+       "post": [
+        ["mentor", {"zh": "血壓偏低，血糖正常。阿嬤，早餐沒吃就來排隊對不對？", "en": "Blood pressure on the low side, sugar normal. Grandma, you queued without breakfast, didn't you?"}],
+        ["grandma", {"zh": "……想說空腹比較好抓藥。", "en": "…I thought an empty stomach was better for getting herbs."}],
+        ["mentor", {"zh": "失眠二十年、心悸、爬樓梯喘、今天暈倒。這不是抓藥的問題。我請梁醫師安排心電圖，必要時轉診心臟科。", "en": "Twenty years of insomnia, palpitations, breathless on stairs, and a faint today. This is not a dispensing problem. I'll ask Dr Liang to arrange an ECG and refer to cardiology if needed."}],
+        ["mentor", {"zh": "記住：中藥局的窗口也是門診的一部分。紅旗看到了，就要轉。", "en": "Remember: the dispensary window is part of the clinic. See a red flag, refer."}]
+       ]},
+      {"id": "w4", "guide": {"zh": "教阿嬤煎藥", "en": "Teach Grandma how to cook the pack"},
+       "lines": [
+        ["grandma", {"zh": "好多了。那這帖藥怎麼煮？包包好多個。", "en": "Much better now. So how do I cook this? There are so many little packets."}],
+        ["me", {"zh": "阿嬤，我照順序講一次，您跟著排。", "en": "Grandma, I'll say it in order and you arrange the packets along with me."}]
+       ],
+       "mini": {"type": "order", "q": {"zh": "吳阿嬤這帖藥的煎法順序", "en": "The cooking order for Grandma Wu's pack"},
+                "steps": [
+                 {"zh": "群藥冷水浸泡一段時間", "en": "Soak the main herbs in cold water"},
+                 {"zh": "龍骨、牡蠣先煎", "en": "Dragon bone and oyster shell first"},
+                 {"zh": "倒入群藥同煎", "en": "Add the main herbs"},
+                 {"zh": "木香、砂仁最後才下", "en": "Costus and amomum last"},
+                 {"zh": "濾渣分次溫服", "en": "Strain and take warm in portions"}
+                ]},
+       "post": [
+        ["grandma", {"zh": "先煎的大包，後下的小包。我記得了。那黃耆呢？", "en": "Big packet first, small packet last. Got it. And my astragalus?"}],
+        ["mentor", {"zh": "先放著。等梁醫師看過，再決定它有沒有用。", "en": "Keep it for now. Once Dr Liang has seen you, we'll decide whether it has a job."}]
+       ]}
+     ]},
+    {"id": "wardcall", "name": {"zh": "病房來電", "en": "The ward calls"}, "sub": {"zh": "13:30 · 處方工作站", "en": "13:30 · prescription workstation"}, "t": 810, "mood": "day",
+     "note": {"zh": "生地不能代熟地；附子久煎", "en": "Raw does not replace prepared; aconite cooks long"},
+     "beats": [
+      {"id": "p1", "ring": {"title": {"zh": "中醫病房來電", "en": "TCM ward calling"}, "sub": {"zh": "小潘：三個問題", "en": "Nurse Pan: three questions"}, "call": true, "from": "ward-nurse"},
+       "lines": [
+        ["ward-nurse", {"zh": "中藥局嗎？三個問題：炙甘草和甘草一樣嗎？熟地沒了可以用生地代嗎？附子要先煎多久？", "en": "Dispensary? Three questions: is honey-fried liquorice the same as liquorice? Can raw rehmannia replace prepared if we run out? How long does aconite cook first?"}],
+        ["me", {"zh": "一個一個來。第一，不一樣，炙甘草是蜜炙過的，補中；生甘草清熱。", "en": "One at a time. First: not the same. Honey-fried liquorice is processed with honey and tonifies; raw clears heat."}],
+        ["ward-nurse", {"zh": "第二個呢？熟地跟生地。", "en": "Second one. Prepared versus raw rehmannia."}]
+       ],
+       "mini": {"type": "choice", "q": {"zh": "病房的熟地黃用完了，護理師問能不能先用生地黃代替。", "en": "The ward is out of prepared rehmannia; the nurse asks whether raw can stand in."},
+                "options": [
+                 {"zh": "不能代，功效不同，回報醫師", "en": "No; different action, tell the doctor", "ok": true, "why": {"zh": "熟地經九蒸九曬，中醫認為由涼血變補血。缺藥的處理是通知醫師與藥局補送，不是換一味。", "en": "Prepared rehmannia has been through nine steamings and sun-dryings; in TCM reasoning it has turned from blood-cooling to blood-nourishing. A shortage means telling the doctor and sending stock, not swapping herbs."}},
+                 {"zh": "可以，都是地黃", "en": "Yes, it's all rehmannia", "ok": false, "why": {"zh": "同一株植物，炮製後是兩味藥。生地涼、熟地溫補，給錯方向。", "en": "Same plant, but after processing they are two medicines. Raw is cool, prepared is warm and tonifying; the wrong direction."}},
+                 {"zh": "可以，生地加倍就等於熟地", "en": "Yes, double the raw to equal prepared", "ok": false, "why": {"zh": "炮製改變的是性質，不是份量。加倍涼血藥不會變成補血藥。", "en": "Processing changes the nature, not the amount. Twice as much cooling herb does not become a tonic."}}
+                ]},
+       "post": [
+        ["ward-nurse", {"zh": "懂了。第三個，附子要先煎多久？", "en": "Understood. Third: how long does aconite cook first?"}],
+        ["me", {"zh": "依藥典與處方標示久煎，煎到嘗起來不麻口。確切時間看處方註記，我不在電話裡給數字。", "en": "Cook it first for the long time the pharmacopoeia and the prescription specify, until a taste no longer numbs. The exact timing is on the prescription; I won't give a number over the phone."}],
+        ["mentor", {"zh": "最後一句，是今天最像藥師的一句話。", "en": "That last sentence is the most pharmacist-like thing you have said today."}]
+       ]},
+      {"id": "p2", "when": {"flag": "referred", "is": true}, "ring": {"title": {"zh": "梁醫師訊息", "en": "Message from Dr Liang"}, "sub": {"zh": "吳阿嬤的心電圖排好了", "en": "Grandma Wu's ECG is booked"}, "from": "liang-doc"},
+       "lines": [
+        ["liang-doc", {"zh": "阿嬤心電圖下午排了，心臟科也知道。謝謝窗口有看她，不是只看處方。", "en": "Grandma's ECG is booked this afternoon and cardiology knows. Thank you for looking at her at the window, not only at the prescription."}],
+        ["mentor", {"zh": "看到沒有？中藥局最重要的設備不是百子櫃，是眼睛。", "en": "See? The most important equipment in this dispensary is not the cabinet. It is your eyes."}]
+       ]}
+     ]},
+    {"id": "decoct", "name": {"zh": "煎藥與顆粒", "en": "Decoction and granules"}, "sub": {"zh": "15:00 · 煎藥機與科學中藥櫃", "en": "15:00 · decoction machine and granule cabinet"}, "t": 900, "mood": "day",
+     "note": {"zh": "代煎工單；顆粒與飲片各有長短", "en": "Decoction orders; granules and pieces each have limits"},
+     "beats": [
+      {"id": "c1", "to": "place:decoction", "guide": {"zh": "到煎藥機看代煎工單", "en": "Check the decoction orders at the machine"},
+       "lines": [
+        ["aling", {"zh": "代煎的工單在這裡。先煎的藥進第一道，後下的藥有獨立投藥口。你找找看在哪。", "en": "The decoction-service orders are here. Decoct-first herbs go in the first run; add-last herbs have their own port. Find it."}]
+       ],
+       "mini": {"type": "find", "hot": "decoction", "q": {"zh": "找到煎藥機，確認後下投藥口與工單標示", "en": "Find the decoction machine and confirm the add-last port against the order"}},
+       "post": [
+        ["aling", {"zh": "代煎的藥包冷藏，喝之前隔水溫熱。這句要印在袋子上，病人不會記得你說過。", "en": "Decocted packs are refrigerated and warmed in a water bath before drinking. Print that on the bag; patients never remember what you said."}]
+       ]},
+      {"id": "c2", "to": "place:granules", "guide": {"zh": "到科學中藥櫃", "en": "Go to the granule cabinet"},
+       "lines": [
+        ["mentor", {"zh": "這邊是科學中藥，濃縮顆粒。病人問你：顆粒和飲片哪個好？", "en": "These are the concentrated granules. A patient asks you: granules or pieces, which is better?"}],
+        ["me", {"zh": "顆粒方便、劑量穩定；飲片可以調先煎後下、加減靈活，但要自己煮。", "en": "Granules are convenient and consistent; pieces allow decoct-first, add-last and flexible changes, but you cook them yourself."}],
+        ["mentor", {"zh": "沒有哪個好，只有哪個適合這個病人。阿嬤手會抖，火爐危險，她可能適合顆粒。", "en": "Neither is better; one suits this patient. Grandma's hands shake and a stove is a hazard; granules may suit her."}]
+       ],
+       "item": "granule-jar"}
+     ]},
+    {"id": "close", "name": {"zh": "關櫃", "en": "Closing the cabinet"}, "sub": {"zh": "18:00 · 百子櫃與主任桌", "en": "18:00 · cabinet and the Director's desk"}, "t": 1080, "mood": "eve",
+     "note": {"zh": "補斗兩人；一片黃耆當教材", "en": "Two to refill; one slice of astragalus kept for teaching"},
+     "beats": [
+      {"id": "e1", "to": "place:cabinet", "roles": ["dispenser"], "guide": {"zh": "和小宇一起補斗", "en": "Refill the drawers with Hsiao-Yu"},
+       "lines": [
+        ["xiaoyu", {"zh": "今天補斗我念標籤，你看飲片。可以嗎？", "en": "Tonight I read the labels and you look at the pieces. Deal?"}],
+        ["me", {"zh": "可以。先進先出，舊的往前挪，新的放後面；生品、炮製品不同斗。", "en": "Deal. First in, first out: old stock forward, new behind; raw and processed grades in separate drawers."}],
+        ["xiaoyu", {"zh": "……我昨天就是新的倒在上面。", "en": "…Yesterday I poured the new on top."}],
+        ["aling", {"zh": "所以今天有人學會了。關櫃。", "en": "And so today somebody learned. Close up."}]
+       ]},
+      {"id": "e2", "to": "mentor", "guide": {"zh": "到主任桌前交班", "en": "Hand over at the Director's desk"},
+       "lines": [
+        ["mentor", {"zh": "今天你認了一盤藥、抓出三片生地、問了一通電話、看見一個阿嬤。哪一件最重要？", "en": "Today you sorted a tray, caught three slices of raw rehmannia, made one phone call and noticed one grandmother. Which mattered most?"}],
+        ["me", {"zh": "……看見阿嬤。", "en": "…Noticing Grandma."}],
+        ["mentor", {"zh": "對。藥認得再準，病人沒看見，就只是個會抓藥的櫃子。", "en": "Right. Know the herbs perfectly but miss the patient, and you are only a cabinet that can dispense."}],
+        ["mentor", {"zh": "那片黃耆我留下了。下一個實習生進來，先考這個。", "en": "I kept that slice of astragalus. The next student who walks in gets tested on it first."}]
+       ]}
+     ]},
+    {"id": "night", "name": {"zh": "夜間煎藥", "en": "Night decoction run"}, "sub": {"zh": "20:30 · 煎藥機旁", "en": "20:30 · beside the decoction machine"}, "t": 1230, "mood": "night",
+     "note": {"zh": "最後一批代煎；茶還是溫的", "en": "The last batch; the tea is still lukewarm"},
+     "beats": [
+      {"id": "n1", "to": "place:decoction", "guide": {"zh": "看完最後一批代煎", "en": "See the last batch through"},
+       "lines": [
+        ["sys", {"zh": "晚上八點半。百子櫃關了，煎藥機還亮著，最後一批是明早病房要的。", "en": "Half past eight. The cabinet is shut; the decoction machine still glows with tomorrow morning's ward batch."}],
+        ["aling", {"zh": "先煎的進去了，後下的我設好時間。你核對一次工單再走。", "en": "Decoct-first is in; add-last is timed. Check the order sheet once more before you go."}],
+        ["me", {"zh": "姓名、床號、方名、先煎後下、冷藏標示。都對。", "en": "Name, bed, formula, decoct-first, add-last, refrigeration label. All correct."}],
+        ["sys", {"zh": "主任桌上，那杯茶還是溫的。明天一樣會是。", "en": "On the Director's desk the tea is still lukewarm. It will be tomorrow, too."}]
+       ],
+       "end": true}
+     ]}
+  ],
+  "ending": {"title": {"zh": "關櫃了", "en": "Cabinet closed"}, "sub": {"zh": "認得藥，也看見了人", "en": "You knew the herbs, and you saw the person"},
+             "stats": ["drills", "choices", "calls", "items", "grades", "time"]}
+}

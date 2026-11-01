@@ -1,0 +1,269 @@
+{
+ "format": "huatuo-shift-v2",
+ "department": "endocrinology",
+ "case": "new-type1",
+ "caseTitle": {"zh": "病房日：第一支胰島素", "en": "Ward day: the first insulin pen"},
+ "condition": {"zh": "糖尿病 · 新診斷第一型", "en": "Diabetes · new type 1"},
+ "difficulty": 1,
+ "room": "ward",
+ "title": {"zh": "內分泌科：病房的一天", "en": "Endocrinology: a day on the ward"},
+ "tagline": {"zh": "二十三歲，酮酸中毒醒來的第一天", "en": "Twenty-three, and the first day after ketoacidosis"},
+ "minutes": 22,
+ "roles": [
+  {"id": "intern", "zh": "內分泌科實習醫師", "en": "Endocrinology intern",
+   "desc": {"zh": "接住從點滴換到皮下注射的那一刻、跟病人和媽媽解釋第一型、摸甲狀腺、找出阿嬤血糖亂跳的原因。",
+            "en": "Catch the moment the drip gives way to injections, explain type 1 to a patient and his mother, feel a thyroid, and find out why Grandma's glucose jumps about."}},
+  {"id": "dietitian", "zh": "營養師", "en": "Dietitian",
+   "desc": {"zh": "把「不能吃甜的」改寫成「會算醣類」。你的工具是餐盤、外送菜單，和一個願意學的年輕人。",
+            "en": "Turn 'no more sweets' into 'I can count carbohydrates'. Your tools are a plate, a delivery menu and a young man willing to learn."}}
+ ],
+ "cast": {
+  "attending": {"name": {"zh": "何主治", "en": "Dr Ho"}, "role": {"zh": "內分泌科主治（師傅）", "en": "Endocrinologist (mentor)"}, "tag": "ATT", "color": "#5b6fb0", "body": "mentor",
+   "about": {"zh": "說話很慢的內分泌科主治，查房時會坐下來，跟病人一樣高。口頭禪：「胰島素不是失敗，是補回身體少掉的東西。」",
+             "en": "A slow-spoken endocrinologist who sits down on ward rounds, at the patient's eye level. Catchphrase: 'Insulin is not failure. It gives back what the body is missing.'"}},
+  "nurse-an": {"name": {"zh": "病房小安", "en": "An"}, "role": {"zh": "病房護理師", "en": "Ward nurse"}, "tag": "RN", "color": "#3b8f6a", "body": "nurse",
+   "about": {"zh": "病房護理師，教過幾百個人打胰島素。她的教具是一顆柳丁，已經被戳了很多年。",
+             "en": "Ward nurse who has taught hundreds of people to inject insulin. Her teaching aid is an orange that has been punctured for years."}},
+  "dietitian-yu": {"name": {"zh": "營養師小柚", "en": "Yu, dietitian"}, "role": {"zh": "糖尿病營養師", "en": "Diabetes dietitian"}, "tag": "RD", "color": "#c7882d", "body": "tech",
+   "about": {"zh": "隨身帶一個塑膠餐盤和一疊外送菜單影本。信念：沒有壞食物，只有沒算過的食物。",
+             "en": "Carries a plastic plate and a stack of photocopied delivery menus. Belief: there is no bad food, only food that has not been counted."}},
+  "patient-jie": {"name": {"zh": "小傑", "en": "Jie"}, "role": {"zh": "15 床 · 新診斷糖尿病", "en": "Bed 15 · newly diagnosed diabetes"}, "tag": "P15", "color": "#2e8aa8", "body": "patient",
+   "about": {"zh": "23 歲外送員，幾個月來一直口渴、跑廁所，瘦了一大圈還以為是跑單跑的。前天半夜因酮酸中毒從急診住進來。（虛擬個案）",
+             "en": "Twenty-three, a food-delivery rider. Months of thirst and trips to the toilet; lost a lot of weight and put it down to all the deliveries. Admitted through the ER two nights ago with ketoacidosis. (Fictional.)"}},
+  "family-mom": {"name": {"zh": "傑媽", "en": "Jie's mother"}, "role": {"zh": "小傑的媽媽", "en": "Jie's mother"}, "tag": "FAM", "color": "#d08a3a", "body": "family",
+   "about": {"zh": "單親媽媽，早餐店老闆娘。從住院那天起一直在找「是誰害的」，最後懷疑到自己身上。",
+             "en": "Single mother who runs a breakfast shop. Since admission she has been looking for someone to blame, and has ended up blaming herself."}},
+  "patient-lin": {"name": {"zh": "林阿嬤", "en": "Grandma Lin"}, "role": {"zh": "16 床 · 第二型糖尿病", "en": "Bed 16 · type 2 diabetes"}, "tag": "P16", "color": "#8a6ac4", "body": "patient",
+   "about": {"zh": "78 歲，打胰島素二十年，自己打得很熟。這次因為血糖忽高忽低、昨天低到冒冷汗住院。很愛分小傑吃她的蘇打餅。（虛擬個案）",
+             "en": "Seventy-eight, injecting insulin for twenty years and proud of her technique. Admitted because her glucose swings high and low, and yesterday it fell low enough for a cold sweat. Keeps offering Jie her crackers. (Fictional.)"}},
+  "night-nurse": {"name": {"zh": "夜班阿玉", "en": "Yu-ling, night nurse"}, "role": {"zh": "病房夜班護理師", "en": "Ward night nurse"}, "tag": "NRN", "color": "#4f8a8b", "phoneOnly": true,
+   "about": {"zh": "夜班護理師，打電話前一定已經測好血糖。", "en": "Night nurse who has always checked the glucose before she phones."}}
+ },
+ "places": {
+  "board": {"name": {"zh": "病房白板", "en": "Ward whiteboard"}, "hot": "whiteboard"},
+  "bed15": {"name": {"zh": "15 床", "en": "Bed 15"}, "hot": "bed"},
+  "bed16": {"name": {"zh": "16 床", "en": "Bed 16"}, "hot": "recovery"},
+  "fridge": {"name": {"zh": "胰島素冰箱", "en": "Insulin fridge"}, "hot": "drugs"},
+  "meter": {"name": {"zh": "血糖血酮機", "en": "Glucose and ketone meter"}, "hot": "lab"},
+  "station": {"name": {"zh": "護理站", "en": "Nurses' station"}, "hot": "desk"}
+ },
+ "glossary": [
+  {"term": {"zh": "第一型糖尿病", "en": "type 1 diabetes"}, "plain": {"zh": "免疫系統把胰臟做胰島素的細胞當成敵人打掉，身體幾乎做不出胰島素。不是吃出來的，任何年紀都可能發生，從診斷那天起就需要胰島素。", "en": "The immune system attacks the cells in the pancreas that make insulin, until the body can make almost none. It is not caused by diet, can start at any age, and needs insulin from the day of diagnosis."}},
+  {"term": {"zh": "自體抗體", "en": "autoantibodies"}, "plain": {"zh": "身體做出來攻擊自己的抗體。驗到跟胰島細胞有關的自體抗體，支持是第一型而不是第二型。", "en": "Antibodies the body makes against itself. Finding the ones aimed at the insulin-making cells supports type 1 rather than type 2."}},
+  {"term": {"zh": "酮酸中毒", "en": "ketoacidosis"}, "plain": {"zh": "沒有胰島素，身體只好燒脂肪，產生大量酮體讓血液變酸。會口渴、嘔吐、喘、肚子痛，嚴重會昏迷。", "en": "Without insulin the body burns fat and makes so many ketones that the blood turns acidic. Thirst, vomiting, deep breathing and tummy pain, and in severe cases coma."}},
+  {"term": {"zh": "基礎胰島素", "en": "basal insulin"}, "plain": {"zh": "長效的胰島素，像背景音樂一樣整天低低地作用。第一型的人就算沒吃東西、生病，也不能停。", "en": "Long-acting insulin that works quietly in the background all day, like background music. In type 1 it is never stopped, even when not eating or when ill."}},
+  {"term": {"zh": "餐前胰島素", "en": "mealtime insulin"}, "plain": {"zh": "短效的胰島素，配合這一餐吃的醣類。吃多少醣、打多少，由醫療團隊教你怎麼算。", "en": "Short-acting insulin matched to the carbohydrate in a meal. How much depends on how much carbohydrate, and the team teaches you how to work it out."}},
+  {"term": {"zh": "胰島素筆", "en": "insulin pen"}, "plain": {"zh": "長得像原子筆的注射器，裡面裝好胰島素，轉刻度、裝針頭就能打。每次都要換新針頭、先排氣。", "en": "An injector shaped like a pen, pre-filled with insulin: dial, attach a needle, inject. A new needle every time, and a priming shot first."}},
+  {"term": {"zh": "醣類計算", "en": "carbohydrate counting"}, "plain": {"zh": "估計一餐裡有多少醣類（飯、麵、水果、含糖飲料），用來配合餐前胰島素。不是禁止，是算得出來。", "en": "Estimating how much carbohydrate (rice, noodles, fruit, sweet drinks) a meal contains, to match the mealtime insulin. Not forbidding food: making it countable."}},
+  {"term": {"zh": "低血糖", "en": "hypoglycaemia"}, "plain": {"zh": "血糖太低。冒冷汗、手抖、心悸、餓、講話怪怪的，嚴重會昏迷。能吞就先吃快速的糖，再重測。", "en": "Blood glucose too low. Cold sweat, shaking, palpitations, hunger, odd speech, and in severe cases unconsciousness. If able to swallow, fast-acting sugar first, then recheck."}},
+  {"term": {"zh": "血酮", "en": "blood ketones"}, "plain": {"zh": "血液裡的酮體濃度。判斷酮酸中毒有沒有好、生病時要不要求助，看血酮比只看血糖可靠。", "en": "The level of ketones in the blood. To judge whether ketoacidosis has resolved, or whether to seek help when ill, ketones are more reliable than glucose alone."}},
+  {"term": {"zh": "脂肪增生", "en": "lipohypertrophy"}, "plain": {"zh": "一直打在同一個地方，皮下長出軟軟的脂肪塊。打在這裡的胰島素吸收忽快忽慢，血糖就跟著亂跳。", "en": "Injecting into the same spot again and again grows soft fatty lumps under the skin. Insulin injected there is absorbed unpredictably, and the glucose swings with it."}},
+  {"term": {"zh": "病日守則", "en": "sick-day rules"}, "plain": {"zh": "生病時的規則：基礎胰島素不停、血糖血酮多測、多喝水、吐到吃不下或血酮高就求助。", "en": "Rules for being ill: never stop basal insulin, check glucose and ketones more often, keep drinking, and seek help if vomiting stops you eating or ketones are high."}}
+ ],
+ "codex": [
+  {"id": "ward-board", "kind": "equipment", "name": {"zh": "病房白板", "en": "Ward whiteboard"}, "text": {"zh": "每一床一行。15 床那一行今天早上寫著：「點滴 06:00 停，長效 21:00」。兩個時間中間那一大段空白，就是今天第一個問題。", "en": "One line per bed. This morning bed 15 reads: 'drip stopped 06:00, long-acting 21:00'. The long blank between those two times is the first problem of the day."}, "hot": "whiteboard"},
+  {"id": "insulin-fridge", "kind": "equipment", "name": {"zh": "胰島素冰箱", "en": "Insulin fridge"}, "text": {"zh": "沒開封的胰島素放冰箱，不能結凍；開封後的筆依說明書放室溫，筆身寫上開封日期，過期就丟。冰箱門上有溫度紀錄表，每班簽。", "en": "Unopened insulin lives in the fridge and must never freeze; an opened pen stays at room temperature as its leaflet says, with the opening date written on it, and is discarded when it expires. The temperature log on the door is signed every shift."}, "hot": "drugs"},
+  {"id": "ketone-meter", "kind": "equipment", "name": {"zh": "血糖血酮機", "en": "Glucose and ketone meter"}, "text": {"zh": "一台機器兩種試紙。酮酸中毒好了沒，看的是血酮和酸鹼，不是血糖。小傑出院時，也會帶一台回家。", "en": "One meter, two kinds of strip. Whether ketoacidosis has resolved is judged by ketones and acid-base, not glucose. Jie will take one home too."}, "hot": "lab"},
+  {"id": "sharps-bin", "kind": "equipment", "name": {"zh": "銳器收集盒", "en": "Sharps bin"}, "text": {"zh": "用過的針頭直接丟進去，不回套。在家可以用有蓋的硬塑膠瓶代替，裝滿了依當地規定帶回醫院或藥局。", "en": "Used needles go straight in, never recapped. At home a lidded hard plastic bottle will do, returned to the hospital or pharmacy when full, as local rules say."}, "hot": "instruments"},
+  {"id": "first-pen", "kind": "item", "name": {"zh": "小傑的第一支筆", "en": "Jie's first pen"}, "text": {"zh": "筆身貼著小傑自己寫的標籤：「長效，晚上」。旁邊還畫了一台機車。從今天起，它跟安全帽一樣，出門一定要帶。", "en": "The pen carries Jie's own label: 'long-acting, evening', with a little scooter drawn beside it. From today it goes everywhere he goes, like his helmet."}},
+  {"id": "overlap-before-stop", "kind": "concept", "name": {"zh": "點滴停之前，皮下先接上", "en": "Bridge before you stop the drip"}, "text": {"zh": "靜脈胰島素作用很短，停掉不久就沒了；皮下長效胰島素要一段時間才開始作用。所以酮酸中毒好轉後，要先打皮下的基礎胰島素，重疊一段時間，才停點滴。中間如果空掉，酮體會在幾個小時內回來。這是病房最常見、也最好預防的錯誤之一。", "en": "Intravenous insulin acts only briefly and is gone soon after it stops; subcutaneous basal insulin takes a while to start working. So once ketoacidosis is improving, the basal injection goes in first and overlaps for a while before the drip stops. Leave a gap and the ketones come back within hours. It is one of the commonest ward errors, and one of the easiest to prevent."}},
+  {"id": "not-the-bubble-tea", "kind": "concept", "name": {"zh": "第一型不是吃出來的", "en": "Type 1 is not caused by food"}, "text": {"zh": "第一型糖尿病是自體免疫疾病：免疫系統打掉了胰島細胞。珍珠奶茶沒有害他，媽媽也沒有。成人也會發生，有時一開始被當成第二型。線索是：年輕、瘦、很快就酮酸中毒、驗到自體抗體。這同一個免疫傾向，也會讓甲狀腺等器官出問題，所以要一併篩檢。", "en": "Type 1 diabetes is autoimmune: the immune system destroyed the islet cells. Bubble tea did not do this, and neither did his mother. It also starts in adults, sometimes mistaken for type 2 at first. The clues: young, lean, quick to ketoacidosis, autoantibodies present. The same immune tendency can affect the thyroid and other organs, so they are screened too."}},
+  {"id": "lumps-steal-insulin", "kind": "concept", "name": {"zh": "肚子上的軟塊會偷胰島素", "en": "Lumps that steal insulin"}, "text": {"zh": "血糖忽高忽低、找不到原因的時候，請病人掀開衣服，看、也摸注射的地方。脂肪增生的區域吸收不穩定；換到健康皮膚後吸收突然變好，反而可能低血糖，所以換部位的同時，劑量要由醫師一起檢視。每次輪替部位、每次換針頭，是預防的方法。", "en": "When glucose swings without explanation, ask to see and feel the injection sites. Lipohypertrophy absorbs erratically; moving to healthy skin can suddenly improve absorption and cause hypoglycaemia, so when the site changes the dose is reviewed by the doctor too. Rotating sites and a fresh needle every time are the prevention."}}
+ ],
+ "segs": [
+  {"id": "handover", "name": {"zh": "晨間交班", "en": "Morning handover"}, "sub": {"zh": "07:30 · 病房白板", "en": "07:30 · ward whiteboard"}, "t": 450, "mood": "day",
+   "note": {"zh": "抓到點滴與長效之間的空白", "en": "Caught the gap between drip and basal"},
+   "beats": [
+    {"id": "h1", "to": "place:board", "guide": {"zh": "到白板接 15 床", "en": "Take over bed 15 at the board"},
+     "lines": [
+      ["nurse-an", {"zh": "15 床小傑，23 歲，前天酮酸中毒住進來。夜班說酸中毒好了，點滴胰島素今天早上六點停，長效排晚上九點。", "en": "Bed 15, Jie, 23, admitted two nights ago with ketoacidosis. Nights say the acidosis has cleared, the insulin drip stopped at six this morning, long-acting is due at nine tonight."}],
+      ["attending", {"zh": "「酸中毒好了」是看什麼說的？血糖、血酮、還是酸鹼？", "en": "'Acidosis cleared' based on what? Glucose, ketones, or acid-base?"}]
+     ],
+     "mini": {"type": "stage", "case": "endocrinology-v37-ketoacidosis", "stage": 1},
+     "post": [
+      ["attending", {"zh": "對，恢復不能只看血糖。現在再看一次白板：六點停點滴，九點才打長效。中間發生什麼事？", "en": "Right: recovery is never judged on glucose alone. Now look at the board again. Drip off at six, long-acting at nine tonight. What happens in between?"}]
+     ]},
+    {"id": "h2", "to": "place:bed15", "guide": {"zh": "決定怎麼補上空白", "en": "Decide how to close the gap"},
+     "lines": [
+      ["sys", {"zh": "靜脈胰島素停掉不久就沒有作用了。距離晚上九點，還有一整個白天。", "en": "Intravenous insulin stops working soon after it is switched off. Nine o'clock tonight is a whole day away."}]
+     ],
+     "mini": {"type": "choice", "q": {"zh": "點滴胰島素清晨已停，長效排在晚上。你怎麼做？", "en": "The insulin drip stopped at dawn; long-acting is scheduled for tonight. What do you do?"},
+      "options": [
+       {"zh": "請示師傅，依規範補基礎胰島素並追血酮", "en": "Ask the mentor; basal insulin now per protocol, recheck ketones", "ok": true, "set": {"bridged": true},
+        "why": {"zh": "第一型的人沒有自己的胰島素，空一整天，酮體會回來。依規範補上基礎胰島素、追血酮，這個空白就關起來了。", "en": "Someone with type 1 has no insulin of their own; leave a whole day empty and the ketones come back. Basal insulin per protocol and a ketone recheck close the gap."}},
+       {"zh": "血糖還好，照排程晚上再打", "en": "Glucose looks fine; wait for tonight as scheduled", "ok": false, "set": {"bridged": false},
+        "why": {"zh": "血糖還好，是因為點滴才剛停。沒有基礎胰島素，幾個小時後血酮會先上來，血糖接著上來。", "en": "Glucose looks fine only because the drip has just stopped. Without basal insulin, within hours the ketones climb first and the glucose follows."}},
+       {"zh": "等早餐後看血糖再決定", "en": "Wait for the post-breakfast glucose", "ok": false, "set": {"bridged": false},
+        "why": {"zh": "問題不是早餐，是背景完全沒有胰島素。等一個血糖，不會回答這個問題。", "en": "The problem is not breakfast; it is that there is no background insulin at all. Waiting for a glucose reading will not answer that."}}
+      ]},
+     "post": [
+      ["nurse-an", {"zh": "我先把白板改掉，免得下一班又照舊。", "en": "I will change the board first, so the next shift does not follow the old plan."}]
+     ]}
+   ]},
+  {"id": "bed15", "name": {"zh": "15 床母子", "en": "Bed 15, mother and son"}, "sub": {"zh": "08:30 · 15 床", "en": "08:30 · bed 15"}, "t": 510, "mood": "day",
+   "note": {"zh": "第一型不是珍奶害的", "en": "Type 1 is not the bubble tea's fault"},
+   "beats": [
+    {"id": "b1", "to": "patient-jie", "guide": {"zh": "跟小傑和媽媽解釋第一型", "en": "Explain type 1 to Jie and his mother"},
+     "lines": [
+      ["family-mom", {"zh": "醫師，是不是外送的珍奶害的？他一天兩杯。還是我早餐店的奶茶？是我害的對不對？", "en": "Doctor, was it the bubble tea from his deliveries? Two cups a day. Or the milk tea from my breakfast shop? It is my fault, isn't it?"}],
+      ["me", {"zh": "傑媽，不是妳，也不是珍奶。這比較像是第一型糖尿病：免疫系統把做胰島素的細胞打掉了。", "en": "No, it is not you, and it is not the bubble tea. This looks like type 1 diabetes: his immune system has destroyed the cells that make insulin."}],
+      ["patient-jie", {"zh": "第一型不是小孩子才有的嗎？我都二十三了。", "en": "Isn't type 1 something kids get? I'm twenty-three."}],
+      ["attending", {"zh": "（坐下來）大人也會。我們送了自體抗體，結果出來就更確定。年輕、瘦、很快就酮酸中毒，都是線索。", "en": "(Sitting down) Adults get it too. We have sent autoantibodies, and the result will make it more certain. Young, lean, quick into ketoacidosis: all clues."}],
+      ["family-mom", {"zh": "……所以不是我。那我可以哭一下嗎？", "en": "...So it is not me. Can I cry for a minute, then?"}],
+      ["attending", {"zh": "可以。哭完我們來學怎麼照顧它。", "en": "You can. Afterwards we will learn how to look after it."}]
+     ]},
+    {"id": "b2", "to": "dietitian-yu", "guide": {"zh": "跟小柚準備醣類課", "en": "Prepare the carbohydrate class with Yu"}, "roles": ["dietitian"],
+     "lines": [
+      ["dietitian-yu", {"zh": "小傑一天跑三十單，午餐常常在機車上吃。我們不要叫他「不能吃」，要教他醣類計算。", "en": "Jie does thirty deliveries a day and often eats lunch on the scooter. Let's not tell him what he cannot eat; let's teach him carbohydrate counting."}],
+      ["me", {"zh": "我把他最常點的五樣東西寫下來：雞腿便當、滷肉飯、水煎包、香蕉、還有珍奶。", "en": "I've written down his five usual orders: chicken-leg bento, braised pork rice, pan-fried buns, a banana, and bubble tea."}],
+      ["dietitian-yu", {"zh": "很好，這就是他的課本。珍奶不是壞人，只是醣很多、很快。", "en": "Perfect, that is his textbook. Bubble tea is not a villain; it is just a lot of sugar, very fast."}]
+     ]}
+   ]},
+  {"id": "pen", "name": {"zh": "第一支筆", "en": "The first pen"}, "sub": {"zh": "10:00 · 15 床", "en": "10:00 · bed 15"}, "t": 600, "mood": "day",
+   "note": {"zh": "小傑自己打了第一針", "en": "Jie gave his own first injection"},
+   "beats": [
+    {"id": "p1", "to": "nurse-an", "guide": {"zh": "看小安教胰島素筆", "en": "Watch An teach the pen"},
+     "lines": [
+      ["nurse-an", {"zh": "這顆柳丁陪我很多年了。小傑，胰島素筆的步驟只有幾個，但順序錯一個，劑量就不準。", "en": "This orange and I go back years. Jie, the insulin pen has only a few steps, but get one out of order and the dose is not accurate."}]
+     ],
+     "mini": {"type": "order", "q": {"zh": "胰島素筆注射：把步驟排對", "en": "Insulin pen injection: put the steps in order"},
+      "steps": [
+       {"zh": "洗手，核對筆的種類與時間", "en": "Wash hands; check pen type and time"},
+       {"zh": "裝上新針頭", "en": "Attach a new needle"},
+       {"zh": "排氣測試，看到藥滴出", "en": "Prime until a drop appears"},
+       {"zh": "轉到醫囑刻度，選部位注射", "en": "Dial the prescribed dose; inject at a fresh site"},
+       {"zh": "推到底後停留，再拔針", "en": "Press fully, hold, then withdraw"},
+       {"zh": "針頭直接丟銳器盒", "en": "Needle straight into the sharps bin"}
+      ]},
+     "post": [
+      ["nurse-an", {"zh": "排氣那一步很多人跳過，跳過了，第一針可能打的是空氣。", "en": "Lots of people skip priming, and then the first shot may be mostly air."}]
+     ]},
+    {"id": "p2", "to": "patient-jie", "guide": {"zh": "陪小傑打第一針", "en": "Be with Jie for his first injection"},
+     "lines": [
+      ["patient-jie", {"zh": "我送過兩千單，下大雨也送。結果怕一根這麼細的針。", "en": "I've done two thousand deliveries, even in typhoon rain. And I'm scared of a needle this thin."}],
+      ["me", {"zh": "每個人第一針都這樣。捏起肚子的皮，不要看我，看你的機車鑰匙圈。", "en": "Everyone is like this the first time. Pinch the skin on your belly. Don't look at me; look at your scooter keyring."}],
+      ["patient-jie", {"zh": "……打完了？就這樣？我要在筆上畫一台機車。", "en": "...Done? That's it? I'm drawing a scooter on this pen."}]
+     ],
+     "item": "first-pen"}
+   ]},
+  {"id": "late-morning", "name": {"zh": "十一點的血酮", "en": "The eleven o'clock ketones"}, "sub": {"zh": "11:00 · 血糖血酮機", "en": "11:00 · glucose and ketone meter"}, "t": 660, "mood": "day",
+   "note": {"zh": "血酮與甲狀腺：免疫的朋友", "en": "Ketones, and the thyroid: immune company"},
+   "beats": [
+    {"id": "k1", "to": "place:meter", "guide": {"zh": "看小傑的血酮", "en": "Check Jie's ketones"}, "when": {"flag": "bridged", "is": true},
+     "ring": {"title": {"zh": "小安的訊息", "en": "Message from An"}, "sub": {"zh": "15 床血酮複測好了", "en": "Bed 15 ketone recheck done"}, "from": "nurse-an"},
+     "lines": [
+      ["nurse-an", {"zh": "血酮持續往下，他說想吃東西了。早上補的那一劑接得剛好。", "en": "Blood ketones still falling, and he says he is hungry. This morning's basal bridged it nicely."}],
+      ["me", {"zh": "好，午餐依醫囑配餐前胰島素，第一次算醣請小柚陪他。", "en": "Good. Lunch with mealtime insulin per orders, and Yu sits with him for his first count."}]
+     ]},
+    {"id": "k2", "to": "place:meter", "guide": {"zh": "看小傑的血酮", "en": "Check Jie's ketones"}, "when": {"flag": "bridged", "is": false},
+     "ring": {"title": {"zh": "小安的訊息", "en": "Message from An"}, "sub": {"zh": "15 床血酮又上來了，在吐", "en": "Bed 15 ketones rising again; vomiting"}, "from": "nurse-an"},
+     "lines": [
+      ["nurse-an", {"zh": "小傑吐了一次，血酮比早上高，血糖也開始爬。點滴停了五個小時，中間什麼都沒有。", "en": "Jie vomited once, ketones are higher than this morning and the glucose is starting to climb. The drip has been off five hours with nothing in between."}],
+      ["attending", {"zh": "這就是那段空白。依規範重新開始，補上基礎胰島素，重疊之後再停。今天就讓他再住一晚。", "en": "That is the gap. Restart per protocol, give the basal insulin, overlap, then stop. He stays an extra night."}],
+      ["patient-jie", {"zh": "我以為好了……原來好了也要接著打。", "en": "I thought I was better... so even better means keep injecting."}]
+     ]},
+    {"id": "k3", "to": "place:bed15", "guide": {"zh": "摸小傑的甲狀腺", "en": "Feel Jie's thyroid"}, "roles": ["intern"],
+     "lines": [
+      ["attending", {"zh": "問你：第一型的自體免疫，常常帶哪些朋友一起來？", "en": "A question: type 1 autoimmunity often brings friends along. Which ones?"}],
+      ["me", {"zh": "甲狀腺、腸道的乳糜瀉、腎上腺、還有惡性貧血。今天先從甲狀腺開始。", "en": "The thyroid, coeliac disease of the gut, the adrenals, and pernicious anaemia. Starting with the thyroid today."}]
+     ],
+     "mini": {"type": "drill", "template": "endocrinology", "drill": "thyroidPalp"},
+     "post": [
+      ["me", {"zh": "摸起來不大、沒有結節。甲狀腺功能已經一起抽了。", "en": "Not enlarged, no nodules. Thyroid function has been sent with today's bloods."}],
+      ["attending", {"zh": "好。正常也要寫下來，以後每年再看一次。", "en": "Good. Record a normal too, and look again every year."}]
+     ]}
+   ]},
+  {"id": "grandma", "name": {"zh": "16 床林阿嬤", "en": "Bed 16, Grandma Lin"}, "sub": {"zh": "13:30 · 16 床", "en": "13:30 · bed 16"}, "t": 810, "mood": "day",
+   "note": {"zh": "阿嬤肚子上的軟塊", "en": "The soft lumps on Grandma's belly"},
+   "beats": [
+    {"id": "g1", "to": "patient-lin", "guide": {"zh": "去 16 床看注射部位", "en": "Check bed 16's injection sites"},
+     "ring": {"title": {"zh": "小安的訊息", "en": "Message from An"}, "sub": {"zh": "16 床午餐前血糖又偏低", "en": "Bed 16 low again before lunch"}, "from": "nurse-an"},
+     "lines": [
+      ["patient-lin", {"zh": "我打二十年了，比護理師還熟。都打同一個地方，那裡不痛。", "en": "Twenty years I've been injecting, I know it better than the nurses. Always the same spot; it doesn't hurt there."}],
+      ["me", {"zh": "阿嬤，可以讓我看一下、摸一下您打針的地方嗎？「不痛」有時候就是線索。", "en": "Grandma, may I look at and feel where you inject? 'It doesn't hurt' is sometimes the clue."}]
+     ],
+     "mini": {"type": "imaging", "region": "skin",
+      "question": {"zh": "阿嬤肚臍兩側有兩塊軟軟、有彈性的隆起，打針不痛。這是什麼？為什麼會讓血糖忽高忽低？", "en": "Two soft, rubbery swellings either side of Grandma's navel, painless to inject. What are they, and why would they make her glucose swing?"},
+      "answer": {"zh": "脂肪增生：長年打在同一處、針頭重複使用造成的皮下脂肪塊。胰島素在這裡吸收忽快忽慢，所以血糖亂跳。改打健康皮膚時吸收可能突然變好、反而低血糖，所以換部位要和醫師一起檢視劑量，並學會輪替部位、每次換針頭。", "en": "Lipohypertrophy: fatty lumps under the skin from years of injecting the same place and reusing needles. Insulin absorbs erratically there, so the glucose swings. Moving to healthy skin can suddenly improve absorption and cause hypoglycaemia, so the dose is reviewed with the doctor when the site changes, and she learns to rotate sites with a fresh needle each time."}},
+     "post": [
+      ["patient-lin", {"zh": "原來是我的「老地方」在搗蛋。那個針頭……我一支用一個禮拜耶。", "en": "So my 'old spot' is the troublemaker. And the needle... I use one for a week."}]
+     ]},
+    {"id": "g2", "to": "place:bed16", "guide": {"zh": "核對阿嬤的藥與再發風險", "en": "Check Grandma's medicines and risk"},
+     "lines": [
+      ["attending", {"zh": "部位找到了，還不夠。她昨天低血糖，藥名、時間、吃飯，都核對過了嗎？", "en": "Finding the site is not enough. She was hypoglycaemic yesterday. Names, times, meals: all checked?"}]
+     ],
+     "mini": {"type": "stage", "case": "endocrinology-v37-hypoglycaemia", "stage": 1},
+     "post": [
+      ["me", {"zh": "她還吃一顆女兒從診所拿的降血糖藥，我們的清單上沒有。已經跟藥師核對了。", "en": "She also takes a tablet her daughter collects from a local clinic, which is not on our list. Checked with the pharmacist now."}]
+     ]}
+   ]},
+  {"id": "afternoon", "name": {"zh": "午後衛教", "en": "Afternoon teaching"}, "sub": {"zh": "15:30 · 護理站", "en": "15:30 · nurses' station"}, "t": 930, "mood": "day",
+   "note": {"zh": "冰箱、病日守則、媽媽的筆記本", "en": "The fridge, sick-day rules, Mum's notebook"},
+   "beats": [
+    {"id": "a1", "to": "place:fridge", "guide": {"zh": "找胰島素冰箱確認日期", "en": "Find the fridge and check dates"},
+     "lines": [
+      ["nurse-an", {"zh": "出院前要教他保存。先去看看病房的胰島素冰箱：開封日期、溫度紀錄，哪一支該丟。", "en": "Before discharge he needs to learn storage. Go and look at the ward insulin fridge: opening dates, the temperature log, which pen should be thrown out."}]
+     ],
+     "mini": {"type": "find", "hot": "drugs", "q": {"zh": "找到病房的胰島素冰箱，核對溫度紀錄與開封日期", "en": "Find the ward insulin fridge and check the temperature log and opening dates"}},
+     "post": [
+      ["me", {"zh": "有一支沒寫開封日期，我退回藥局。小傑在家：沒開的放冰箱不結凍，開了的依說明書放室溫。", "en": "One pen has no opening date, so it goes back to pharmacy. For Jie at home: unopened in the fridge, never frozen; opened at room temperature as the leaflet says."}]
+     ]},
+    {"id": "a2", "to": "family-mom", "guide": {"zh": "教傑媽病日守則", "en": "Teach Jie's mother the sick-day rules"},
+     "lines": [
+      ["family-mom", {"zh": "我寫在筆記本上。如果他感冒吃不下，是不是胰島素就先停？", "en": "I'm writing it in my notebook. If he has a cold and can't eat, he stops the insulin first, right?"}],
+      ["me", {"zh": "這一題最重要：基礎胰島素不停。這是病日守則的第一條。生病時血糖血酮多測、多喝水。", "en": "This is the most important one: basal insulin never stops. That is the first of the sick-day rules. When ill, check glucose and ketones more often and keep drinking."}],
+      ["me", {"zh": "吐到吃不下、血酮高、喘或肚子痛，就直接回急診，不要等。", "en": "If he is vomiting and cannot eat, if ketones are high, if he is breathing hard or has tummy pain, straight back to the ER. No waiting."}],
+      ["dietitian-yu", {"zh": "還有，珍奶可以喝，只是要算。我幫他做了一張「外送醣類小抄」，可以貼在安全帽裡。", "en": "And bubble tea is allowed, it just gets counted. I made him a 'delivery carb cheat-sheet' to stick inside his helmet."}]
+     ]}
+   ]},
+  {"id": "evening", "name": {"zh": "交班與總結", "en": "Handover and debrief"}, "sub": {"zh": "17:30 · 病房白板", "en": "17:30 · ward whiteboard"}, "t": 1050, "mood": "eve",
+   "note": {"zh": "兩床交班：空白、軟塊、清單外的藥", "en": "Two beds: the gap, the lumps, the extra tablet"},
+   "beats": [
+    {"id": "e1", "to": "place:board", "guide": {"zh": "寫晚班交班", "en": "Write the evening handover"},
+     "lines": [
+      ["attending", {"zh": "16 床阿嬤的交班，除了「低血糖」三個字，還要什麼？", "en": "For Grandma in bed 16, what goes on the handover besides 'hypoglycaemia'?"}]
+     ],
+     "mini": {"type": "stage", "case": "endocrinology-v37-hypoglycaemia", "stage": 2},
+     "post": [
+      ["me", {"zh": "注射部位已換、劑量師傅重新看過、清單外的藥已停、睡前和半夜各測一次。", "en": "Injection site changed, dose reviewed by you, the extra tablet stopped, a check at bedtime and one overnight."}]
+     ]},
+    {"id": "e2", "to": "attending", "guide": {"zh": "聽師傅的總結", "en": "The mentor's debrief"},
+     "lines": [
+      ["attending", {"zh": "今天兩個人，一個用了二十年胰島素，一個用了一天。兩個人的問題，都藏在看起來最平常的地方。", "en": "Two people today: one on insulin for twenty years, one for a day. Both problems hid in the most ordinary places."}],
+      ["attending", {"zh": "白板上兩個時間之間的空白，和肚子上一塊不會痛的皮膚。好的內分泌科醫師，會去看那些地方。", "en": "The blank between two times on a whiteboard, and a patch of skin that does not hurt. A good endocrinologist goes and looks there."}]
+     ]}
+   ]},
+  {"id": "night", "name": {"zh": "夜裡的冷汗", "en": "A cold sweat at night"}, "sub": {"zh": "22:30 · 15 床", "en": "22:30 · bed 15"}, "t": 1350, "mood": "night",
+   "note": {"zh": "小傑第一次低血糖，自己認出來", "en": "Jie's first hypo, and he recognised it himself"},
+   "beats": [
+    {"id": "n1", "to": "place:bed15", "guide": {"zh": "接夜班電話去 15 床", "en": "Take the night call, go to bed 15"},
+     "ring": {"title": {"zh": "夜班阿玉來電", "en": "Yu-ling calling"}, "sub": {"zh": "15 床冒冷汗、手抖，血糖偏低", "en": "Bed 15 sweaty, shaky, glucose low"}, "call": true, "from": "night-nurse"},
+     "lines": [
+      ["night-nurse", {"zh": "阿玉。小傑晚餐前打了餐前胰島素，結果朋友來看他，便當只吃幾口。現在冒冷汗、手抖。血糖測好了，偏低。人清醒。", "en": "Yu-ling. Jie took his mealtime insulin before dinner, then friends visited and he only ate a few bites of his bento. Now sweaty and shaky. Glucose checked: low. He is fully awake."}],
+      ["patient-jie", {"zh": "醫師，我自己先按了叫人鈴。這是不是你們說的低血糖？", "en": "Doctor, I pressed the call bell myself. Is this the hypoglycaemia you told me about?"}]
+     ],
+     "mini": {"type": "vitals", "event": "hypoglycaemia",
+      "options": [
+       {"zh": "清醒可吞嚥：口服快速糖，依規範重測", "en": "Awake and swallowing: fast-acting sugar by mouth, recheck per protocol", "ok": true,
+        "why": {"zh": "意識清楚、吞嚥安全，先吃快速吸收的糖，依規範重測，回升後再吃點正餐。順便複習：餐前胰島素要配吃得下的那一餐。", "en": "Awake with a safe swallow: fast-absorbed sugar first, recheck per protocol, then a proper snack once it rises. And a lesson: mealtime insulin is matched to the meal he can actually eat."}},
+       {"zh": "讓他先睡，明早再測", "en": "Let him sleep; recheck in the morning", "ok": false,
+        "why": {"zh": "低血糖不會因為睡著就好，只會變成叫不醒。現在處理，現在重測。", "en": "Hypoglycaemia does not improve with sleep; it becomes unrousable. Treat now, recheck now."}},
+       {"zh": "今晚的胰島素全部停掉", "en": "Stop all insulin tonight", "ok": false,
+        "why": {"zh": "第一型的人基礎胰島素不能停，停了酮體會回來。要調整的是餐前那一劑跟吃的量，由醫師依醫囑處理。", "en": "In type 1 the basal insulin is never stopped, or the ketones return. What needs adjusting is the mealtime dose against what he eats, per the doctor's orders."}}
+      ]},
+     "post": [
+      ["night-nurse", {"zh": "重測回來了，他在吃阿嬤給的蘇打餅。", "en": "The recheck is up, and he is eating Grandma's crackers."}]
+     ]},
+    {"id": "n2", "to": "patient-jie", "guide": {"zh": "睡前跟小傑說兩句", "en": "A word with Jie before sleep"},
+     "lines": [
+      ["patient-jie", {"zh": "我自己認出來了耶。冒汗、手抖、心跳快，跟下午小安講的一模一樣。", "en": "I recognised it myself. Sweat, shaking, heart racing, exactly what An described this afternoon."}],
+      ["me", {"zh": "對，這是今天最重要的一件事。打針你學會了，認出低血糖，你也學會了。", "en": "Yes, and that is the most important thing today. You learned to inject, and you learned to recognise a hypo."}],
+      ["patient-lin", {"zh": "（隔壁床簾後）少年仔，蘇打餅明天還有，記得吃飯再打針。", "en": "(From behind the next curtain) Young man, there are more crackers tomorrow. Eat, then inject."}],
+      ["family-mom", {"zh": "（傳訊息）醫師，筆記本寫滿兩頁了。明天早餐店我請病房吃無糖豆漿。", "en": "(Text message) Doctor, two pages of notes so far. Tomorrow the breakfast shop is treating the ward to unsweetened soy milk."}]
+     ],
+     "end": true}
+   ]}
+ ],
+ "ending": {"title": {"zh": "下班了", "en": "End of shift"}, "sub": {"zh": "胰島素不是失敗；空白和軟塊都要去看", "en": "Insulin is not failure; look at the gaps and the lumps"},
+  "stats": ["stages", "drills", "choices", "calls", "items", "time"]}
+}

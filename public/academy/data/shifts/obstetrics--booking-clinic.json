@@ -1,0 +1,251 @@
+{
+ "format": "huatuo-shift-v2",
+ "department": "obstetrics",
+ "case": "booking-clinic",
+ "caseTitle": {"zh": "第一次產檢", "en": "The first antenatal visit"},
+ "condition": {"zh": "產前照護 · 初診風險評估", "en": "Antenatal care · booking risk assessment"},
+ "difficulty": 1,
+ "room": "clinic",
+ "title": {"zh": "產檢門診的一天", "en": "A day in antenatal clinic"},
+ "tagline": {"zh": "產檢的每一題都有原因", "en": "Every question in antenatal care is there for a reason"},
+ "minutes": 25,
+ "roles": [
+  {"id": "resident", "zh": "產科住院醫師", "en": "Obstetrics resident",
+   "desc": {"zh": "門診一整天。超音波、驗血、一題一題問。沒有急刀，但每一位都可能是之後的急刀。", "en": "Clinic all day. Scans, bloods, one question at a time. No emergencies, but any of them could become tomorrow's."}},
+  {"id": "coordinator", "zh": "產檢個管師", "en": "Antenatal care coordinator",
+   "desc": {"zh": "血壓、尿液、手冊、衛教。孕婦有些話不會跟醫師說，會跟妳說。", "en": "Blood pressure, urine, handbooks, advice. Some things women will not tell the doctor, they will tell you."}}
+ ],
+ "cast": {
+  "attending": {"name": {"zh": "何主治", "en": "Dr Ho"}, "role": {"zh": "產科主治醫師（師傅）", "en": "Obstetrics attending (mentor)"}, "tag": "ATT", "color": "#9d174d", "body": "mentor",
+   "about": {"zh": "門診看了二十年，桌上一盒衛生紙、一盒餅乾。口頭禪：「產檢的每一題都有原因。」", "en": "Twenty years of clinics; a box of tissues and a box of biscuits on the desk. Catchphrase: 'Every question is there for a reason.'"}},
+  "coord": {"name": {"zh": "秀蘭", "en": "Hsiu-lan"}, "role": {"zh": "產檢個管師", "en": "Antenatal care coordinator"}, "tag": "CM", "color": "#3b8f6a", "body": "nurse",
+   "about": {"zh": "記得每位孕婦的預產期和她家狗的名字。女廁門後那張小卡是她貼的。", "en": "Remembers every woman's due date and her dog's name. The little card on the back of the toilet door is hers."}},
+  "hsiao-chi": {"name": {"zh": "小琪", "en": "Hsiao-chi"}, "role": {"zh": "病人・24 歲・初診", "en": "Patient, 24, booking"}, "tag": "PT1", "color": "#db2777", "body": "patient",
+   "about": {"zh": "第一胎，月經晚了一陣子才發現。說話前會先看先生一眼。", "en": "First pregnancy, found out once her period was well overdue. Glances at her husband before she speaks."}},
+  "a-hao": {"name": {"zh": "阿豪", "en": "A-hao"}, "role": {"zh": "小琪的先生", "en": "Hsiao-chi's husband"}, "tag": "FAM", "color": "#475569", "body": "family",
+   "about": {"zh": "很熱心、很快、很大聲。每一題都替太太回答。", "en": "Keen, quick and loud. Answers every question for his wife."}},
+  "ms-lin": {"name": {"zh": "林老師", "en": "Ms Lin"}, "role": {"zh": "病人・33 歲・第二胎", "en": "Patient, 33, second baby"}, "tag": "PT2", "color": "#7c3aed", "body": "patient",
+   "about": {"zh": "國小老師，Rh 陰性。說自己是「班上唯一的熊貓血」。", "en": "Primary-school teacher, Rh negative. Calls herself 'the only panda blood in the class'."}},
+  "ms-nguyen": {"name": {"zh": "阮小姐", "en": "Ms Nguyen"}, "role": {"zh": "病人・31 歲・三十四週", "en": "Patient, 31, thirty-four weeks"}, "tag": "PT3", "color": "#0e7490", "body": "patient",
+   "about": {"zh": "嫁來台灣第六年，整條街的翻譯。今天自己來做生長超音波，帶了一袋芒果給個管師。", "en": "Six years in Taiwan, translator for her whole street. Here alone for a growth scan, with a bag of mangoes for the coordinator."}},
+  "social": {"name": {"zh": "吳社工", "en": "Ms Wu"}, "role": {"zh": "醫院社工師", "en": "Hospital social worker"}, "tag": "SW", "color": "#b45309", "phoneOnly": true,
+   "about": {"zh": "只在電話裡。說話很慢，從不催人做決定。", "en": "Only on the phone. Speaks slowly and never rushes anyone into a decision."}},
+  "ld-midwife": {"name": {"zh": "產房玉珍", "en": "Yu-chen on labour ward"}, "role": {"zh": "產房夜班助產師", "en": "Night labour-ward midwife"}, "tag": "MW", "color": "#2f6f9f", "phoneOnly": true,
+   "about": {"zh": "夜裡的電話總是從她開始：「我先講結論。」", "en": "Night calls always start with her: 'Bottom line first.'"}}
+ },
+ "places": {
+  "desk": {"name": {"zh": "診桌", "en": "Clinic desk"}, "hot": "desk"},
+  "couch": {"name": {"zh": "檢查床", "en": "Examination couch"}, "hot": "bed"},
+  "scan": {"name": {"zh": "超音波機", "en": "Ultrasound machine"}, "hot": "ultrasound"},
+  "chart": {"name": {"zh": "病歷電腦", "en": "Notes computer"}, "hot": "chart"},
+  "sink": {"name": {"zh": "洗手台", "en": "Sink"}, "hot": "sink"},
+  "door": {"name": {"zh": "診間門口", "en": "Clinic door"}, "hot": "door"}
+ },
+ "glossary": [
+  {"term": {"zh": "初診", "en": "booking visit"}, "plain": {"zh": "懷孕後第一次正式產檢：完整病史、風險分級、驗血、定週數，決定之後走哪一條照護路徑。", "en": "The first full antenatal visit: complete history, risk grading, blood tests and dating, deciding which care pathway follows."}},
+  {"term": {"zh": "可拒絕制篩檢", "en": "opt-out screening"}, "plain": {"zh": "愛滋、梅毒、B 型肝炎等篩檢預設都會做，孕婦本人可以拒絕。拒絕要說明清楚、記錄，之後再問一次。", "en": "Tests such as HIV, syphilis and hepatitis B are done by default unless the woman herself declines. A refusal is explained, recorded and offered again later."}},
+  {"term": {"zh": "垂直傳染", "en": "vertical transmission"}, "plain": {"zh": "病毒或細菌從媽媽傳給胎兒或新生兒。早知道就能治療或預防，大幅降低機會。", "en": "An infection passing from mother to baby. Known early, it can be treated or prevented and the risk falls sharply."}},
+  {"term": {"zh": "頭臀長", "en": "crown-rump length"}, "plain": {"zh": "早期超音波量胎兒頭頂到屁股的長度，是推算週數最準的方法。", "en": "The length from the top of the head to the bottom, measured on an early scan; the most accurate way to date a pregnancy."}},
+  {"term": {"zh": "Rh 陰性", "en": "Rh negative"}, "plain": {"zh": "紅血球上沒有 D 抗原，在台灣很少見。寶寶若是 Rh 陽性，媽媽可能產生抗體，影響下一胎。", "en": "No D antigen on the red cells; rare in Taiwan. If the baby is Rh positive, the mother can make antibodies that harm a later baby."}},
+  {"term": {"zh": "抗 D 免疫球蛋白", "en": "anti-D immunoglobulin"}, "plain": {"zh": "打給 Rh 陰性孕婦，預防她產生抗 D 抗體。懷孕中後期、出血或腹部受傷後、產後都可能要打，劑量依醫囑。", "en": "Given to Rh-negative women so they do not make anti-D antibodies: in later pregnancy, after bleeding or a blow to the abdomen, and after birth; amounts per protocol."}},
+  {"term": {"zh": "抗體篩檢", "en": "antibody screen"}, "plain": {"zh": "驗媽媽血中有沒有會攻擊寶寶紅血球的抗體。初診驗一次，Rh 陰性在中期再驗。", "en": "A test for antibodies in the mother's blood that could attack the baby's red cells. Done at booking, and again mid-pregnancy if Rh negative."}},
+  {"term": {"zh": "單獨詢問", "en": "asking alone"}, "plain": {"zh": "每位孕婦都有一段沒有陪同者在場的時間，問安全、情緒與暴力。絕不在伴侶面前問。", "en": "Every pregnant woman gets some time without whoever came with her, to be asked about safety, mood and violence. Never in front of the partner."}},
+  {"term": {"zh": "親密伴侶暴力", "en": "intimate partner violence"}, "plain": {"zh": "來自伴侶的身體、言語、經濟傷害或控制。懷孕時常開始或變嚴重，也會影響胎兒。", "en": "Physical, verbal or financial harm or control by a partner. It often starts or worsens in pregnancy, and it affects the baby too."}},
+  {"term": {"zh": "生長超音波", "en": "growth scan"}, "plain": {"zh": "懷孕後期量頭圍、腹圍、股骨長估胎兒大小，再看羊水和胎盤位置。", "en": "A later-pregnancy scan measuring head, abdomen and thigh bone to estimate size, and checking the fluid and placenta."}},
+  {"term": {"zh": "仰臥低血壓", "en": "supine hypotension"}, "plain": {"zh": "懷孕後期平躺時，子宮壓住下腔靜脈，血回不了心臟：頭暈、冒冷汗、血壓掉。往左側躺就會改善。", "en": "Lying flat late in pregnancy, the womb presses on the big vein returning blood to the heart: dizziness, sweating, falling pressure. Turning to the left side relieves it."}}
+ ],
+ "codex": [
+  {"id": "us-machine", "kind": "equipment", "name": {"zh": "門診超音波機", "en": "Clinic ultrasound machine"}, "hot": "ultrasound", "text": {"zh": "早期看位置、心跳、幾胎、頭臀長；後期看大小、羊水、胎盤。同一台機器，兩種問題。", "en": "Early on: location, heartbeat, how many, crown-rump length. Later: size, fluid, placenta. One machine, two sets of questions."}},
+  {"id": "wedge", "kind": "equipment", "name": {"zh": "楔形枕", "en": "Wedge pillow"}, "hot": "bed", "text": {"zh": "墊在孕婦右腰下，讓身體往左傾。後期做超音波前先放好。", "en": "Goes under the right side of the back to tilt the body to the left. Placed before any late-pregnancy scan."}},
+  {"id": "handbook", "kind": "item", "name": {"zh": "小琪的孕婦健康手冊", "en": "Hsiao-chi's pregnancy record"}, "text": {"zh": "第一頁寫著依頭臀長修正後的預產期。手冊最後夾著秀蘭給的小卡。", "en": "Page one carries the due date corrected by crown-rump length. Tucked in the back: the little card from Hsiu-lan."}},
+  {"id": "door-card", "kind": "item", "name": {"zh": "女廁門後的小卡", "en": "The card on the toilet door"}, "text": {"zh": "一張名片大小的卡，寫著保護專線與社工電話，撕下來不會被人發現。", "en": "A card the size of a business card with the protection hotline and the social worker's number, small enough to take unnoticed."}},
+  {"id": "why-alone", "kind": "concept", "name": {"zh": "為什麼要單獨問", "en": "Why ask alone"}, "text": {"zh": "親密伴侶暴力在懷孕時常開始或加重，而施暴者往往就坐在診間裡、替她回答。所以每一位孕婦都有一段單獨的時間，用例行的語氣問：「在家安全嗎？有沒有人讓妳害怕？」她說了，就相信、記錄、評估安全，依規定通報並轉社工；之後要怎麼走，尊重她的決定。她沒說，也讓她知道門一直開著。", "en": "Partner violence often begins or worsens in pregnancy, and the abuser is often sitting in the clinic answering for her. So every woman gets time alone and is asked routinely: 'Are you safe at home? Is anyone making you afraid?' If she tells you: believe, document, assess safety, report as required and involve social work; the steps after that are her decisions. If she does not, make sure she knows the door stays open."}},
+  {"id": "crl-dating", "kind": "concept", "name": {"zh": "週數以早期超音波為準", "en": "Early scans set the dates"}, "text": {"zh": "最後一次月經常記錯，排卵也不一定準時。早期頭臀長的誤差最小；差距超過標準時，以頭臀長修正預產期，之後不再因為後期的大小去改。後面所有的篩檢與生產時機都靠這個日期。", "en": "Period dates are often misremembered and ovulation is not always on time. Early crown-rump length has the smallest error; when the difference exceeds the standard, the due date follows the scan and is not changed later because of size. Every later screen and birth decision depends on that date."}},
+  {"id": "rh-pathway", "kind": "concept", "name": {"zh": "Rh 陰性的照護路徑", "en": "The Rh-negative pathway"}, "text": {"zh": "每一胎都重新開始：初診驗血型與抗體篩檢，中期再驗，依醫囑給預防性抗 D 免疫球蛋白；出血、腹部受傷或侵入性檢查後也要評估再給；產後驗寶寶血型，寶寶是 Rh 陽性就再給。上一胎打過，不代表這一胎不用。", "en": "Each pregnancy starts afresh: group and antibody screen at booking, again mid-pregnancy, routine anti-D prophylaxis per protocol; reassess after bleeding, abdominal trauma or invasive tests; after birth check the baby's group and give again if the baby is Rh positive. Having it last time does not cover this time."}},
+  {"id": "aortocaval", "kind": "concept", "name": {"zh": "仰臥低血壓的原理", "en": "Why lying flat drops the pressure"}, "text": {"zh": "懷孕中後期的子宮很重，平躺時壓在脊椎右前方的下腔靜脈上，回心的血變少，心輸出量下降，媽媽頭暈，胎盤的血流也跟著少。向左側躺或右腰墊高，就把子宮從血管上移開。", "en": "From mid-pregnancy the heavy womb lies on the inferior vena cava in front of the spine when she is flat. Less blood returns to the heart, output falls, she feels faint and the placenta gets less flow too. Turning left, or a wedge under the right side, lifts the womb off the vein."}}
+ ],
+ "segs": [
+  {"id": "open", "name": {"zh": "開診", "en": "Clinic opens"}, "sub": {"zh": "08:00 · 診間", "en": "08:00 · clinic room"}, "t": 480, "mood": "day",
+   "note": {"zh": "診間準備好，今天三位", "en": "Room ready, three women today"},
+   "beats": [
+    {"id": "o1", "to": "attending", "guide": {"zh": "找何主治報到", "en": "Report to Dr Ho"},
+     "lines": [
+      ["attending", {"zh": "今天門診，三位：一位初診、一位 Rh 陰性、一位三十四週生長超音波。", "en": "Clinic today, three women: a booking visit, an Rh-negative mother, and a thirty-four-week growth scan."}],
+      ["me", {"zh": "初診最花時間。", "en": "The booking takes longest."}],
+      ["attending", {"zh": "因為產檢的每一題都有原因。今天你要知道每一題在保護誰。", "en": "Because every question is there for a reason. Today, know who each question protects."}]
+     ]},
+    {"id": "o2", "to": "place:scan", "guide": {"zh": "開超音波機", "en": "Switch on the ultrasound"},
+     "lines": [
+      ["coord", {"zh": "探頭、凝膠、楔形枕都在。楔形枕是給下午那位的，你記得放。", "en": "Probe, gel, wedge pillow all here. The wedge is for this afternoon's lady; remember to use it."}]
+     ],
+     "mini": {"type": "find", "hot": "ultrasound", "q": {"zh": "點一下超音波機，確認探頭與楔形枕都在", "en": "Tap the ultrasound and check the probe and wedge are there"}},
+     "post": [["coord", {"zh": "餅乾在主治桌上，不是給你的。", "en": "The biscuits on Dr Ho's desk aren't for you."}]]}
+   ]},
+  {"id": "booking", "name": {"zh": "初診", "en": "The booking visit"}, "sub": {"zh": "08:30 · 診桌", "en": "08:30 · clinic desk"}, "t": 510, "mood": "day",
+   "note": {"zh": "小琪的病史與篩檢說明", "en": "Hsiao-chi's history and screening"},
+   "beats": [
+    {"id": "b1", "roles": ["coordinator"], "to": "hsiao-chi", "guide": {"zh": "量血壓、驗尿、建手冊", "en": "Blood pressure, urine, handbook"},
+     "lines": [
+      ["me", {"zh": "小琪，先量血壓，等一下請妳自己去廁所留尿。", "en": "Hsiao-chi, blood pressure first; in a moment you'll take the urine pot to the toilet yourself."}],
+      ["a-hao", {"zh": "我陪她去。", "en": "I'll go with her."}],
+      ["me", {"zh": "女廁先生不能進喔。在這裡等就好。", "en": "Husbands can't go into the ladies'. Just wait here."}]
+     ]},
+    {"id": "b2", "to": "hsiao-chi", "guide": {"zh": "初診病史", "en": "Booking history"},
+     "lines": [
+      ["me", {"zh": "小琪，以前有沒有什麼病？有在吃藥嗎？", "en": "Hsiao-chi, any illnesses in the past? Taking any medicines?"}],
+      ["a-hao", {"zh": "沒有，她很健康。下一題。", "en": "No, she's healthy. Next."}],
+      ["sys", {"zh": "小琪看了先生一眼，點點頭。", "en": "Hsiao-chi glances at her husband and nods."}],
+      ["me", {"zh": "接下來是驗血：血型、貧血、還有愛滋、梅毒、B 型肝炎，這些是可拒絕制篩檢。", "en": "Next, bloods: blood group, anaemia, and HIV, syphilis and hepatitis B, which are opt-out screening."}],
+      ["a-hao", {"zh": "愛滋梅毒就不用了，我們又沒有亂來。", "en": "Skip HIV and syphilis. We're not like that."}]
+     ],
+     "mini": {"type": "stage", "case": "obstetrics-booking-visit-risk-assessment", "stage": 3},
+     "post": [["me", {"zh": "每位孕婦都驗，不是因為懷疑誰。早知道就能防止垂直傳染。要不要驗，是小琪自己決定。", "en": "Every pregnant woman is tested; it's not suspicion of anyone. Knowing early prevents vertical transmission. And whether to test is Hsiao-chi's decision."}],
+              ["hsiao-chi", {"zh": "……我要驗。", "en": "...I'd like the tests."}]]}
+   ]},
+  {"id": "dating", "name": {"zh": "幾週了", "en": "How many weeks"}, "sub": {"zh": "09:15 · 超音波機", "en": "09:15 · ultrasound"}, "t": 555, "mood": "day",
+   "note": {"zh": "依頭臀長修正預產期", "en": "Due date corrected by crown-rump length"},
+   "beats": [
+    {"id": "d1", "to": "place:scan", "guide": {"zh": "早期超音波", "en": "The early scan"},
+     "lines": [
+      ["attending", {"zh": "早期超音波要回答哪幾個問題？先說再看。", "en": "What questions does an early scan answer? Say them, then look."}]
+     ],
+     "mini": {"type": "imaging", "region": "pelvis",
+      "question": {"zh": "早期妊娠超音波要確認哪些事？", "en": "What does an early pregnancy scan confirm?"},
+      "answer": {"zh": "在子宮裡（排除子宮外孕）、有沒有心跳、幾胎（多胞胎要看絨毛膜性）、量頭臀長定週數。另外看子宮和卵巢有沒有異常。", "en": "That it is inside the womb (not ectopic), whether there is a heartbeat, how many (and chorionicity if more than one), and crown-rump length for dating. Also any abnormality of the womb or ovaries."}},
+     "post": [["sys", {"zh": "子宮內單胎，心跳規律。頭臀長比月經推算的小了兩週多。", "en": "A single pregnancy in the womb, regular heartbeat. The crown-rump length is more than two weeks behind the period dates."}],
+              ["a-hao", {"zh": "是不是長太小？", "en": "Is it too small?"}]]},
+    {"id": "d2", "to": "attending", "guide": {"zh": "預產期以哪個為準", "en": "Which due date counts"},
+     "lines": [
+      ["me", {"zh": "不是太小，是月經的日子不準。早期以頭臀長為準。", "en": "Not too small; the period date is off. Early on, crown-rump length sets the dates."}]
+     ],
+     "mini": {"type": "stage", "case": "obstetrics-booking-visit-risk-assessment", "stage": 5},
+     "post": [["attending", {"zh": "對。這個日期定了就不再改。之後的篩檢、生產時機全靠它。", "en": "Right. Once set, the date doesn't change. Every later screen and the timing of birth depend on it."}]],
+     "item": "handbook"}
+   ]},
+  {"id": "alone", "name": {"zh": "單獨的時間", "en": "Time alone"}, "sub": {"zh": "09:45 · 診間門口", "en": "09:45 · clinic door"}, "t": 585, "mood": "day",
+   "note": {"zh": "問那一題的方式", "en": "How that question is asked"},
+   "beats": [
+    {"id": "a1", "to": "attending", "guide": {"zh": "最後一題怎麼問", "en": "How to ask the last question"},
+     "lines": [
+      ["attending", {"zh": "初診還剩一題：安全。阿豪一直替她回答，你注意到了嗎？", "en": "One booking question left: safety. Did you notice A-hao answering everything for her?"}]
+     ],
+     "mini": {"type": "choice", "q": {"zh": "怎麼問小琪「在家安不安全」？", "en": "How do you ask Hsiao-chi whether she is safe at home?"},
+      "options": [
+       {"zh": "例行安排單獨時間再問", "en": "Make routine time alone, then ask", "ok": true, "set": {"alone": "yes"},
+        "why": {"zh": "對。「每位孕婦都有一段單獨的時間」，用例行的語氣，不讓任何人覺得被針對。", "en": "Right. 'Every woman has some time on her own' — routine wording, so nobody feels singled out."}},
+       {"zh": "當著先生的面問", "en": "Ask in front of her husband", "ok": false, "set": {"alone": "no"},
+        "why": {"zh": "如果他就是讓她害怕的人，她只能回答「很好」，而且回家可能更危險。", "en": "If he is the one she fears, she can only say 'fine', and home may become more dangerous."}},
+       {"zh": "看起來還好，跳過", "en": "She seems fine, skip it", "ok": false, "set": {"alone": "skip"},
+        "why": {"zh": "暴力看不出來。所以每個人都問，不是看起來像才問。", "en": "Violence doesn't show. That's why everyone is asked, not only those who look the part."}}
+      ]}},
+    {"id": "a2", "when": {"flag": "alone", "is": "yes"}, "to": "hsiao-chi", "guide": {"zh": "門關上之後", "en": "After the door closes"},
+     "lines": [
+      ["coord", {"zh": "阿豪先生，麻煩到櫃台幫太太填資料。每位都一樣喔。", "en": "Mr A-hao, could you fill in her forms at the front desk? Everyone does."}],
+      ["me", {"zh": "小琪，這題我們問每一個人：在家安全嗎？有沒有人讓妳害怕？", "en": "Hsiao-chi, we ask everyone this: are you safe at home? Is anyone making you afraid?"}],
+      ["hsiao-chi", {"zh": "……他會看我手機。上個月推了我一下，撞到櫃子。他說懷孕了就會變好。", "en": "...he checks my phone. Last month he shoved me into a cabinet. He says it'll get better now I'm pregnant."}],
+      ["me", {"zh": "謝謝妳告訴我。這不是妳的錯。", "en": "Thank you for telling me. This is not your fault."}]
+     ],
+     "mini": {"type": "stage", "case": "obstetrics-booking-visit-risk-assessment", "stage": 7}},
+    {"id": "a3", "when": {"flag": "alone", "is": "yes"}, "ring": {"title": {"zh": "社工回電", "en": "Social worker calling"}, "sub": {"zh": "吳社工：我現在可以下來", "en": "Ms Wu: I can come down now"}, "call": true, "from": "social"},
+     "lines": [
+      ["social", {"zh": "我五分鐘內到，安排在旁邊的衛教室。依規定要通報，但之後每一步都是她決定。", "en": "I'll be there within five minutes; we'll use the side education room. A report is required, but every step after that is hers to decide."}],
+      ["me", {"zh": "親密伴侶暴力，懷孕初期。她今天不想離開家，想知道有哪些選擇。", "en": "Intimate partner violence, early pregnancy. She doesn't want to leave home today; she wants to know her options."}]
+     ]}
+   ]},
+  {"id": "rh", "name": {"zh": "熊貓血", "en": "Panda blood"}, "sub": {"zh": "11:00 · 診桌", "en": "11:00 · clinic desk"}, "t": 660, "mood": "day",
+   "note": {"zh": "林老師：每一胎都要重新來", "en": "Ms Lin: every pregnancy starts again"},
+   "beats": [
+    {"id": "r1", "ring": {"title": {"zh": "檢驗科訊息", "en": "Lab message"}, "sub": {"zh": "林老師的抗體篩檢報告出來了", "en": "Ms Lin's antibody screen is back"}, "call": false, "from": "coord"}, "to": "ms-lin", "guide": {"zh": "林老師的血型", "en": "Ms Lin's blood group"},
+     "lines": [
+      ["ms-lin", {"zh": "我第一胎有打過那個針，這次應該不用了吧？", "en": "I had that injection with my first. I shouldn't need it this time, right?"}],
+      ["me", {"zh": "Rh 陰性每一胎都要重新來。先看今天的抗體篩檢。", "en": "With Rh negative, every pregnancy starts again. Let's look at today's antibody screen."}]
+     ],
+     "mini": {"type": "stage", "case": "obstetrics-booking-visit-risk-assessment", "stage": 4},
+     "post": [["sys", {"zh": "抗體篩檢陰性。上一胎的抗 D 免疫球蛋白有效。", "en": "Antibody screen negative. Last time's anti-D immunoglobulin did its job."}],
+              ["ms-lin", {"zh": "所以熊貓還沒被發現。", "en": "So the panda hasn't been spotted yet."}]]},
+    {"id": "r2", "to": "attending", "guide": {"zh": "Rh 陰性的路徑", "en": "The Rh-negative pathway"},
+     "lines": [
+      ["attending", {"zh": "林老師的整個孕期，從現在到產後，順序說一次。", "en": "Ms Lin's whole pregnancy, from now until after the birth: in order."}]
+     ],
+     "mini": {"type": "order", "q": {"zh": "Rh 陰性孕婦的照護順序", "en": "Care of an Rh-negative pregnancy, in order"},
+      "steps": [
+       {"zh": "初診驗血型與抗體篩檢", "en": "Booking group and antibody screen"},
+       {"zh": "中期再驗抗體", "en": "Repeat antibody screen mid-pregnancy"},
+       {"zh": "依醫囑給預防性抗 D", "en": "Routine anti-D per protocol"},
+       {"zh": "出血或腹部受傷後評估再給", "en": "Reassess after bleeding or abdominal injury"},
+       {"zh": "產後驗寶寶血型，陽性再給", "en": "Baby's group after birth; give if positive"}
+      ]},
+     "post": [["attending", {"zh": "第四步最常被忘記。跌倒、撞到肚子、出血，Rh 陰性都要想到它。", "en": "Step four is the one people forget. A fall, a knock to the bump, any bleeding: with Rh negative, think of it."}]]}
+   ]},
+  {"id": "growth", "name": {"zh": "三十四週", "en": "Thirty-four weeks"}, "sub": {"zh": "14:00 · 檢查床", "en": "14:00 · examination couch"}, "t": 840, "mood": "day",
+   "note": {"zh": "阮小姐：楔形枕與左側躺", "en": "Ms Nguyen: wedge and left tilt"},
+   "beats": [
+    {"id": "g1", "roles": ["resident"], "to": "ms-nguyen", "guide": {"zh": "生長超音波", "en": "The growth scan"},
+     "lines": [
+      ["ms-nguyen", {"zh": "醫師，芒果給秀蘭，不是給你的喔。", "en": "Doctor, the mangoes are for Hsiu-lan, not you."}],
+      ["me", {"zh": "了解。我們量頭、肚子、大腿骨，再看羊水和胎盤。", "en": "Understood. We'll measure head, tummy and thigh bone, then check the fluid and placenta."}]
+     ],
+     "mini": {"type": "drill", "template": "obstetrics", "drill": "us:fetal"}},
+    {"id": "g2", "to": "place:couch", "guide": {"zh": "她說頭好暈", "en": "She says she feels faint"},
+     "lines": [
+      ["ms-nguyen", {"zh": "醫師……我頭好暈，想吐，眼前黑黑的。", "en": "Doctor... I'm dizzy, I feel sick, it's going dark."}],
+      ["sys", {"zh": "她平躺在檢查床上，楔形枕還在櫃子上。臉色發白，冒冷汗。", "en": "She's lying flat on the couch; the wedge is still on the shelf. Pale and clammy."}]
+     ],
+     "mini": {"type": "vitals", "event": "hypotension",
+      "options": [
+       {"zh": "立刻轉向左側躺、墊高右腰", "en": "Turn her onto her left, wedge the right", "ok": true,
+        "why": {"zh": "對。仰臥低血壓：子宮壓住下腔靜脈。往左側一轉，幾十秒內就會好轉。之後再量血壓、聽胎心。", "en": "Right. Supine hypotension: the womb is on the vena cava. Turn her left and it improves within moments. Then recheck the pressure and the baby's heart."}},
+       {"zh": "保持平躺、把腳抬高", "en": "Keep her flat, raise her legs", "ok": false,
+        "why": {"zh": "平躺就是問題所在，抬腳也移不開壓在血管上的子宮。", "en": "Lying flat is the problem; raising the legs doesn't lift the womb off the vein."}},
+       {"zh": "叫她坐起來馬上走走", "en": "Sit her up and walk her round", "ok": false,
+        "why": {"zh": "快要昏倒時站起來走，容易跌倒。先側躺，穩了再起來。", "en": "Walking someone who's about to faint invites a fall. Lie her on her side first; up once she's steady."}}
+      ]},
+     "post": [["ms-nguyen", {"zh": "……好了。原來躺平不行。我要跟整條街說。", "en": "...that's better. So lying flat is a no. I'm telling the whole street."}],
+              ["sys", {"zh": "血壓回來，胎心音規律。生長曲線在正常範圍。", "en": "Pressure back up, baby's heartbeat regular. Growth on the normal curve."}]]},
+    {"id": "g3", "roles": ["coordinator"], "to": "place:couch", "guide": {"zh": "楔形枕放好", "en": "Wedge in place"},
+     "lines": [
+      ["me", {"zh": "楔形枕我墊上了。之後二十週以上的孕婦躺上來，我先放枕頭再叫醫師。", "en": "The wedge is in. From now on, anyone over twenty weeks gets the wedge before the doctor is called."}],
+      ["ms-nguyen", {"zh": "秀蘭，芒果冰箱放一下比較好吃。", "en": "Hsiu-lan, the mangoes taste better after a bit in the fridge."}]
+     ]}
+   ]},
+  {"id": "close", "name": {"zh": "收診", "en": "Closing the clinic"}, "sub": {"zh": "17:30 · 診桌", "en": "17:30 · clinic desk"}, "t": 1050, "mood": "eve",
+   "note": {"zh": "一張小卡、一個日期、一個枕頭", "en": "A card, a date, a pillow"},
+   "beats": [
+    {"id": "c0", "when": {"flag": "alone", "is": "no"}, "to": "coord", "guide": {"zh": "秀蘭有話要說", "en": "Hsiu-lan has something to tell you"},
+     "lines": [
+      ["coord", {"zh": "早上你當著先生的面問，小琪說「很好」。剛才她一個人回來，說要拿手冊，其實是去女廁拿了那張小卡。", "en": "This morning you asked in front of her husband and she said 'fine'. She came back alone just now saying she'd forgotten her handbook; she went to the ladies' for that card."}],
+      ["me", {"zh": "……我會請社工打給她，用她留的那支電話。下次一定單獨問。", "en": "...I'll ask social work to call her on the number she gave us. Next time, alone, always."}]
+     ]},
+    {"id": "c0b", "when": {"flag": "alone", "is": "skip"}, "to": "coord", "guide": {"zh": "秀蘭有話要說", "en": "Hsiu-lan has something to tell you"},
+     "lines": [
+      ["coord", {"zh": "小琪那題你跳過了。她剛才自己在女廁拿了保護專線的小卡。", "en": "You skipped that question for Hsiao-chi. She just took the protection hotline card from the ladies' on her own."}],
+      ["me", {"zh": "看起來還好不代表沒事。我請社工聯絡她。", "en": "Looking fine doesn't mean she is. I'll get social work to reach her."}]
+     ]},
+    {"id": "c1", "to": "attending", "guide": {"zh": "何主治的回顧", "en": "Dr Ho's debrief"},
+     "lines": [
+      ["attending", {"zh": "今天哪一題在保護誰？", "en": "So: which question protected whom today?"}],
+      ["me", {"zh": "篩檢保護寶寶；頭臀長保護之後的每一個決定；抗體篩檢保護林老師的下一胎；單獨詢問保護小琪。", "en": "Screening protects the baby; crown-rump length protects every later decision; the antibody screen protects Ms Lin's next baby; asking alone protects Hsiao-chi."}],
+      ["attending", {"zh": "還有楔形枕保護阮小姐的血壓。產檢沒有不重要的題目。", "en": "And the wedge protected Ms Nguyen's blood pressure. Nothing in antenatal care is a throwaway question."}]
+     ],
+     "item": "door-card"}
+   ]},
+  {"id": "night", "name": {"zh": "夜裡的跌倒", "en": "A fall at night"}, "sub": {"zh": "21:30 · 值班電話", "en": "21:30 · on-call phone"}, "t": 1290, "mood": "night",
+   "note": {"zh": "林老師跌倒：Rh 陰性的第四步", "en": "Ms Lin's fall: step four of the Rh pathway"},
+   "beats": [
+    {"id": "n1", "ring": {"title": {"zh": "產房來電", "en": "Labour ward calling"}, "sub": {"zh": "Rh 陰性孕婦下樓梯跌倒", "en": "Rh-negative woman fell on the stairs"}, "call": true, "from": "ld-midwife"},
+     "lines": [
+      ["ld-midwife", {"zh": "我先講結論：林老師下樓梯跌倒，屁股先著地，沒撞到肚子，有一點點出血。她打來問要不要來。", "en": "Bottom line first: Ms Lin slipped on the stairs, landed on her bottom, didn't hit her bump, a little bleeding. She's asking if she should come in."}],
+      ["me", {"zh": "要來。胎心監測、看有沒有胎盤早期剝離，抽血。她是 Rh 陰性，跌倒加出血要評估抗 D。", "en": "Yes. Fetal monitoring, check for placental abruption, bloods. She's Rh negative: a fall with bleeding means assessing for anti-D."}],
+      ["ld-midwife", {"zh": "好，我叫她現在來。她說：熊貓自己會搭計程車。", "en": "Right, I'll tell her to come now. She says the panda will take a taxi."}]
+     ]},
+    {"id": "n2", "to": "place:chart", "guide": {"zh": "寫完最後一筆", "en": "The last note of the day"},
+     "lines": [
+      ["sys", {"zh": "訊息來自吳社工：「小琪拿了專線卡，約了下週。她說謝謝。」", "en": "A message from Ms Wu: 'Hsiao-chi took the hotline card and booked in for next week. She says thank you.'"}],
+      ["me", {"zh": "第四步，今天就用上了。", "en": "Step four, needed the same day."}],
+      ["sys", {"zh": "值班未完。何主治桌上的餅乾少了一塊，秀蘭說不是她。", "en": "The night goes on. One biscuit is missing from Dr Ho's desk. Hsiu-lan says it wasn't her."}]
+     ],
+     "end": true}
+   ]}
+ ],
+ "ending": {"title": {"zh": "下班了", "en": "End of shift"}, "sub": {"zh": "產檢的每一題都有原因", "en": "Every question is there for a reason"}, "stats": ["stages", "grades", "choices", "calls", "items", "time"]}
+}

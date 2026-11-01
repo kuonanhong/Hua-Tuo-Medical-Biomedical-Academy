@@ -1,0 +1,281 @@
+{
+ "format": "huatuo-shift-v2",
+ "department": "plastic-surgery",
+ "case": "jaw-reconstruction",
+ "caseTitle": {"zh": "印出來的下顎", "en": "The jaw that came out of a printer"},
+ "condition": {"zh": "腫瘤 · 顯微重建規劃", "en": "Cancer · microsurgical reconstruction planning"},
+ "difficulty": 3,
+ "room": "biomed-lab",
+ "title": {"zh": "整形外科重建規劃日", "en": "A reconstruction planning day"},
+ "tagline": {"zh": "病人上手術台之前，刀先在電腦裡開一次", "en": "Before the patient reaches the table, the operation happens once on screen"},
+ "minutes": 25,
+ "roles": [
+  {"id": "resident", "zh": "整形外科住院醫師", "en": "Plastic-surgery resident",
+   "desc": {"zh": "今天不在手術室，在實驗室。看 CT、看腳、看導板，下午在顯微鏡下縫比頭髮細的血管。", "en": "Not in theatre today but in the lab. CT, legs, guides, and in the afternoon vessels finer than a hair under the microscope."}},
+  {"id": "engineer", "zh": "生醫工程師", "en": "Biomedical engineer",
+   "desc": {"zh": "把 CT 變成模型、把醫師的線變成導板。你不開刀，但你畫的每一條線都會變成鋸子的方向。", "en": "Turns CT into models and surgeons' lines into guides. You never operate, but every line you draw becomes the direction of a saw."}}
+ ],
+ "cast": {
+  "attending": {"name": {"zh": "嚴主治", "en": "Dr Yen"}, "role": {"zh": "顯微重建主治醫師（師傅）", "en": "Microsurgery attending (mentor)"}, "tag": "ATT", "color": "#5b3a8c", "body": "mentor",
+   "about": {"zh": "縫過的血管比頭髮細。習慣在 3D 模型上用鉛筆寫字。口頭禪：「從牙齒往回規劃。」", "en": "Has sewn vessels finer than hair. Writes on 3D models in pencil. Catchphrase: 'Plan backwards from the teeth.'"}},
+  "engineer": {"name": {"zh": "曉晴", "en": "Hsiao-ching"}, "role": {"zh": "生醫工程師", "en": "Biomedical engineer"}, "tag": "ENG", "color": "#0f766e", "body": "tech",
+   "about": {"zh": "把 CT 切成一層一層再疊回來的人。實驗室的 3D 列印機只聽她的。", "en": "Slices CT into layers and stacks them back up. The lab's 3D printer only listens to her."}},
+  "hn-surgeon": {"name": {"zh": "林醫師", "en": "Dr Lin"}, "role": {"zh": "頭頸外科醫師", "en": "Head-and-neck surgeon"}, "tag": "HN", "color": "#1d4ed8", "body": "specialist",
+   "about": {"zh": "負責切，嚴主治負責補。兩人在螢幕前討論邊緣，像在畫國界。", "en": "He resects, Dr Yen rebuilds. Watching them agree a margin on screen is like watching a border being drawn."}},
+  "mr-tsai": {"name": {"zh": "蔡先生", "en": "Mr Tsai"}, "role": {"zh": "病人・58 歲", "en": "Patient, 58"}, "tag": "PT", "color": "#6b7280", "body": "patient",
+   "about": {"zh": "開了三十年貨車，嚼了三十年檳榔，戒了兩年。下牙齦的破洞以為是假牙磨的。", "en": "Thirty years driving lorries and chewing betel nut; stopped two years ago. Thought the sore on his lower gum was from his denture."}},
+  "mrs-tsai": {"name": {"zh": "蔡太太", "en": "Mrs Tsai"}, "role": {"zh": "家屬", "en": "Family"}, "tag": "FAM", "color": "#b45309", "body": "family",
+   "about": {"zh": "帶了一本筆記本，每個字都抄。最想問的是：他以後還能不能吃她滷的肉。", "en": "Brought a notebook and writes down every word. What she most wants to know: will he ever eat her braised pork again."}},
+  "burns-rn": {"name": {"zh": "雅婷", "en": "Ya-ting"}, "role": {"zh": "燒傷加護病房護理師", "en": "Burns ICU nurse"}, "tag": "BU", "color": "#3b8f6a", "phoneOnly": true,
+   "about": {"zh": "只在電話裡。照片會先傳過來，打電話時已經量好尿量。", "en": "Only on the phone. The photos arrive before the call, and the urine output is already measured."}},
+  "cssd": {"name": {"zh": "老陳", "en": "Mr Chen"}, "role": {"zh": "供應中心技術員", "en": "Sterile services technician"}, "tag": "SPD", "color": "#64748b", "phoneOnly": true,
+   "about": {"zh": "什麼都能滅菌，前提是說明書寫可以。", "en": "Can sterilise anything, provided the instructions say it can be done."}}
+ },
+ "places": {
+  "workstation": {"name": {"zh": "規劃工作站", "en": "Planning workstation"}, "hot": "workstation"},
+  "printer": {"name": {"zh": "3D 列印機", "en": "3D printer"}, "hot": "printer3d"},
+  "bench": {"name": {"zh": "模型工作台", "en": "Model bench"}, "hot": "bench"},
+  "microscope": {"name": {"zh": "顯微吻合練習台", "en": "Microsurgery practice station"}, "hot": "microscope"},
+  "desk": {"name": {"zh": "討論桌", "en": "Meeting table"}, "hot": "desk"},
+  "sink": {"name": {"zh": "洗手台", "en": "Sink"}, "hot": "sink"},
+  "chart": {"name": {"zh": "病歷與排程", "en": "Notes and schedule"}, "hot": "chart"}
+ },
+ "glossary": [
+  {"term": {"zh": "口腔癌", "en": "oral cancer"}, "plain": {"zh": "長在牙齦、舌頭、頰黏膜的癌，和檳榔、菸、酒高度相關。口腔破洞超過兩週不好就要切片。", "en": "Cancer of the gums, tongue or cheek lining, strongly linked to betel nut, tobacco and alcohol. A mouth ulcer that has not healed in two weeks gets a biopsy."}},
+  {"term": {"zh": "安全邊緣", "en": "surgical margin"}, "plain": {"zh": "腫瘤周圍一起切掉的正常組織。邊緣夠，復發的機會才低。頭頸外科先決定，重建再配合。", "en": "The normal tissue removed around a tumour. Adequate margins lower the chance of recurrence. The head-and-neck surgeon decides them; the reconstruction follows."}},
+  {"term": {"zh": "虛擬手術規劃", "en": "virtual surgical planning"}, "plain": {"zh": "用病人的 CT 在電腦裡先切、先補：下顎切多少、腓骨切成幾段、怎麼拼回去。", "en": "Using the patient's CT to cut and rebuild on screen first: how much jaw comes out, how many pieces the fibula becomes and how they fit together."}},
+  {"term": {"zh": "分割", "en": "segmentation"}, "plain": {"zh": "把 CT 每一層裡屬於骨頭（或腫瘤）的部分挑出來，疊成立體模型。", "en": "Picking out the bone (or tumour) on each CT slice and stacking the slices into a 3D model."}},
+  {"term": {"zh": "腓骨游離皮瓣", "en": "fibula free flap"}, "plain": {"zh": "從小腿取下腓骨連同血管和一塊皮膚，接到頸部血管上，用來重建下顎。少了腓骨照樣能走路。", "en": "The fibula taken from the lower leg with its vessels and a patch of skin, plugged into neck vessels to rebuild the jaw. People walk normally without it."}},
+  {"term": {"zh": "切割導板", "en": "cutting guide"}, "plain": {"zh": "依規劃 3D 列印的小板子，卡在骨頭上，鋸子沿著它切，角度和長度就跟電腦裡一樣。", "en": "A small 3D-printed plate that clips onto the bone; the saw follows it, so angles and lengths match the plan."}},
+  {"term": {"zh": "電腦斷層血管攝影", "en": "CT angiography"}, "plain": {"zh": "打顯影劑的 CT，把血管照出來。取腓骨前確認小腿三條動脈都在。", "en": "A CT with contrast that shows the blood vessels. Before taking a fibula it confirms all three leg arteries are there."}},
+  {"term": {"zh": "腓動脈", "en": "peroneal artery"}, "plain": {"zh": "腓骨皮瓣靠它供血。少數人的腳掌主要靠它，取了腳會缺血，所以術前一定要看。", "en": "The artery that feeds a fibula flap. In a few people the foot depends on it, and taking it would starve the foot, so it is always checked beforehand."}},
+  {"term": {"zh": "生物相容性", "en": "biocompatibility"}, "plain": {"zh": "碰到傷口或放進身體的材料，不能造成毒性或過敏。導板要用醫療等級的材料。", "en": "Material that touches a wound or stays in the body must not be toxic or cause reactions. Guides are printed in medical-grade material."}},
+  {"term": {"zh": "滅菌確效", "en": "sterilisation validation"}, "plain": {"zh": "證明某種材料用某種方法滅菌，真的滅得乾淨又不變形。說明書沒寫的方法不能自己試。", "en": "Proof that a given material, sterilised a given way, ends up both sterile and undeformed. A method the instructions do not list is never improvised."}},
+  {"term": {"zh": "顯微血管吻合", "en": "microvascular anastomosis"}, "plain": {"zh": "在顯微鏡下把皮瓣的小動脈、小靜脈和頸部血管縫起來，血流得進去也流得出來，皮瓣才活。", "en": "Joining the flap's tiny artery and vein to neck vessels under the microscope, so blood flows in and out and the flap lives."}},
+  {"term": {"zh": "皮瓣監測", "en": "flap monitoring"}, "plain": {"zh": "術後定時看皮瓣的顏色、溫度、回填和都卜勒聲音。血栓越早發現，救回來的機會越大。", "en": "Regular checks after surgery of the flap's colour, warmth, refill and Doppler signal. The earlier a clot is caught, the better the chance of saving it."}},
+  {"term": {"zh": "腹腔高壓", "en": "intra-abdominal hypertension"}, "plain": {"zh": "大量輸液後腸子和腹壁水腫，肚子裡壓力升高，壓到腎和肺：尿變少、呼吸器壓力升高。用膀胱壓間接量。", "en": "After large volumes of fluid the bowel and abdominal wall swell and pressure inside rises, squeezing kidneys and lungs: less urine, higher ventilator pressures. It is measured indirectly through the bladder."}}
+ ],
+ "codex": [
+  {"id": "printer", "kind": "equipment", "name": {"zh": "醫療用 3D 列印機", "en": "Medical 3D printer"}, "hot": "printer3d", "text": {"zh": "一層一層用光固化樹脂印出模型與導板。印完還要清洗、後固化、去支撐，最後量尺寸。", "en": "Builds models and guides layer by layer in light-cured resin. After printing: wash, post-cure, remove supports, then measure."}},
+  {"id": "workstation", "kind": "equipment", "name": {"zh": "規劃工作站", "en": "Planning workstation"}, "hot": "workstation", "text": {"zh": "CT 進來，模型和導板出去。中間是醫師和工程師的對話。", "en": "CT goes in, models and guides come out. In between: surgeons and engineers talking."}},
+  {"id": "micro-station", "kind": "equipment", "name": {"zh": "顯微吻合練習台", "en": "Microsurgery practice station"}, "hot": "microscope", "text": {"zh": "顯微鏡、練習用的人工血管、比頭髮細的縫線。每一位重建醫師都在這裡縫過幾百針。", "en": "Microscope, practice vessels, suture finer than a hair. Every reconstructive surgeon has sewn hundreds of stitches here."}},
+  {"id": "jaw-model", "kind": "item", "name": {"zh": "蔡先生的下顎模型", "en": "Mr Tsai's jaw model"}, "text": {"zh": "白色樹脂，腫瘤範圍用紅筆圈起來。嚴主治在旁邊用鉛筆寫：從牙齒往回規劃。", "en": "White resin, the tumour circled in red. Beside it, in Dr Yen's pencil: plan backwards from the teeth."}},
+  {"id": "notebook", "kind": "item", "name": {"zh": "蔡太太筆記本的一頁", "en": "A page of Mrs Tsai's notebook"}, "text": {"zh": "「腳的骨頭換到下巴。走路沒問題。先吃軟的。以後可能可以植牙。滷肉：再等等。」", "en": "'Leg bone goes to the jaw. Walking fine. Soft food first. Implants maybe later. Braised pork: wait a bit.'"}},
+  {"id": "plan-backwards", "kind": "concept", "name": {"zh": "從牙齒往回規劃", "en": "Plan backwards from the teeth"}, "text": {"zh": "重建的目標不是把洞補起來，而是讓人能咬、能吃、能說話。先決定以後牙齒（植牙）要在哪個高度、怎麼咬合，再決定腓骨放在哪裡、切成幾段。順序反了，骨頭長好了卻裝不了牙。", "en": "The aim is not to fill a hole but to let someone bite, eat and speak. Decide where future teeth (implants) sit and how they meet first, then where the fibula goes and how many pieces it becomes. Do it the other way round and the bone heals where no tooth can go."}},
+  {"id": "look-at-the-foot", "kind": "concept", "name": {"zh": "取腓骨前先看腳", "en": "Look at the foot before taking the fibula"}, "text": {"zh": "小腿有三條動脈供應腳掌。大多數人少了腓動脈沒事；少數人腳掌主要靠它，取了就缺血。術前血管攝影或都卜勒確認三條都在，再決定取哪一隻腳。腓骨上下兩端要留夠長，保護膝與踝。", "en": "Three leg arteries feed the foot. Most people manage without the peroneal; a few depend on it, and taking it starves the foot. Angiography or Doppler confirms all three before choosing a leg. Enough fibula is left at each end to protect knee and ankle."}},
+  {"id": "guide-is-a-device", "kind": "concept", "name": {"zh": "導板也是醫療器材", "en": "A guide is a medical device"}, "text": {"zh": "印出來的導板要進手術區，就跟器械一樣：醫療等級材料、確認生物相容、依材料說明書的確效方法滅菌、標示病人與版本、可追溯。印得再準，沒滅菌就不能用。", "en": "A printed guide entering the sterile field is treated like any instrument: medical-grade material, biocompatibility confirmed, sterilised by the method the material's instructions validate, labelled with patient and version, traceable. However accurate the print, unsterile means unusable."}}
+ ],
+ "segs": [
+  {"id": "plan", "name": {"zh": "電腦裡的手術", "en": "Surgery on screen"}, "sub": {"zh": "08:00 · 規劃工作站", "en": "08:00 · planning workstation"}, "t": 480, "mood": "day",
+   "note": {"zh": "看腫瘤，決定邊緣", "en": "The tumour seen, the margins agreed"},
+   "beats": [
+    {"id": "p1", "to": "attending", "guide": {"zh": "找嚴主治報到", "en": "Report to Dr Yen"},
+     "lines": [
+      ["attending", {"zh": "今天不進手術室。下週一的刀，今天在這裡先開一次。", "en": "No theatre today. Next Monday's operation happens here first."}],
+      ["me", {"zh": "蔡先生，下牙齦的口腔癌，侵犯下顎骨。", "en": "Mr Tsai: oral cancer of the lower gum, into the mandible."}],
+      ["attending", {"zh": "對。林醫師切，我們補。補之前，先知道他要切掉什麼。", "en": "Yes. Dr Lin resects, we rebuild. Before rebuilding, know what's coming out."}]
+     ]},
+    {"id": "p2", "to": "place:workstation", "guide": {"zh": "看下顎的 CT", "en": "Read the jaw CT"},
+     "lines": [
+      ["hn-surgeon", {"zh": "安全邊緣我抓好了。你先自己看，告訴我腫瘤吃到哪裡。", "en": "I've set the surgical margin. Look for yourself first and tell me how far the tumour reaches."}]
+     ],
+     "mini": {"type": "imaging", "region": "mouth",
+      "question": {"zh": "下牙齦口腔癌的 CT，規劃重建前要看什麼？", "en": "CT of a lower-gum cancer: what do you look at before planning the reconstruction?"},
+      "answer": {"zh": "腫瘤在骨頭裡的範圍（皮質有沒有被吃穿、往下多深）、下齒槽神經管有沒有被侵犯、切掉的骨段要多長、兩端剩下的骨頭與關節、頸部淋巴結。邊緣由頭頸外科決定，重建依切除範圍設計。", "en": "How far the tumour has gone into bone (cortex breached, how deep), whether the inferior alveolar canal is involved, the length of bone to remove, the bone and joints left at each end, and the neck nodes. Head-and-neck surgery sets the margins; the reconstruction is designed around the resection."}},
+     "post": [["hn-surgeon", {"zh": "對。切的這一段，就是你要補的形狀。", "en": "Right. The segment I take out is the shape you rebuild."}]]},
+    {"id": "p3", "roles": ["engineer"], "to": "place:workstation", "guide": {"zh": "分割：把骨頭挑出來", "en": "Segmentation: lift out the bone"},
+     "lines": [
+      ["me", {"zh": "閾值先抓骨頭，假牙的金屬偽影要手動修掉，不然模型上會多一顆不存在的牙。", "en": "Threshold for bone first, then hand-clean the denture's metal artefact, or the model grows a tooth that isn't there."}],
+      ["attending", {"zh": "妳修偽影的速度，比我修鬍子快。", "en": "You clean artefact faster than I shave."}]
+     ]}
+   ]},
+  {"id": "legs", "name": {"zh": "先看腳", "en": "Look at the legs first"}, "sub": {"zh": "09:00 · 規劃工作站", "en": "09:00 · planning workstation"}, "t": 540, "mood": "day",
+   "note": {"zh": "血管攝影決定哪一隻腳", "en": "The angiogram chooses the leg"},
+   "beats": [
+    {"id": "g1", "to": "place:workstation", "guide": {"zh": "看小腿血管攝影", "en": "Read the leg angiogram"},
+     "lines": [
+      ["attending", {"zh": "下顎要用腓骨補。取腓骨之前看什麼？", "en": "The jaw will be rebuilt with fibula. What do you check before taking a fibula?"}]
+     ],
+     "mini": {"type": "imaging", "region": "lower-limb",
+      "question": {"zh": "取腓骨游離皮瓣前，小腿電腦斷層血管攝影要確認什麼？", "en": "Before a fibula free flap, what must the leg CT angiography confirm?"},
+      "answer": {"zh": "前脛、後脛、腓動脈三條都在、一路通到腳掌，沒有嚴重狹窄。若腳掌主要靠腓動脈供血，那一隻腳就不能取。也看皮膚穿通支的位置，決定皮島放哪。", "en": "Anterior tibial, posterior tibial and peroneal arteries all present and running to the foot without serious narrowing. If the foot depends mainly on the peroneal artery, that leg is off limits. Note the skin perforators too, to place the skin paddle."}},
+     "post": [["sys", {"zh": "左腳三條動脈都好。右腳的後脛動脈很細，腳掌主要靠腓動脈。", "en": "Left leg: all three arteries fine. Right leg: a thin posterior tibial, the foot fed mainly by the peroneal."}]]},
+    {"id": "g2", "to": "attending", "guide": {"zh": "決定取哪一隻腳", "en": "Choose the leg"},
+     "lines": [
+      ["engineer", {"zh": "原本的範本是右腳，因為切的是右下顎，血管方向比較順。", "en": "The draft used the right leg; it's a right-sided resection, so the vessels lie more naturally."}],
+      ["attending", {"zh": "你決定。", "en": "Your call."}]
+     ],
+     "mini": {"type": "choice", "q": {"zh": "右腳腳掌主要靠腓動脈，取哪一隻腳？", "en": "The right foot depends on its peroneal artery. Which leg?"},
+      "options": [
+       {"zh": "改用左腳，重新規劃血管方向", "en": "Switch to the left, replan the pedicle", "ok": true, "set": {"leg": "left"},
+        "why": {"zh": "對。血管方向可以在電腦裡重新排；腳掌缺血不能重來。", "en": "Right. The pedicle direction can be re-planned on screen; an ischaemic foot cannot be undone."}},
+       {"zh": "照原本右腳，血管方向比較順", "en": "Keep the right, the vessels lie better", "ok": false, "set": {"leg": "right"},
+        "why": {"zh": "取了腳掌唯一的主要血管，腳會缺血。方便不是理由。", "en": "Taking the foot's main supply leaves it ischaemic. Convenience is not a reason."}},
+       {"zh": "兩隻都可以，手術時再看", "en": "Either will do, decide on the day", "ok": false, "set": {"leg": "undecided"},
+        "why": {"zh": "導板是照一隻腳印的。不先決定，就沒有導板。", "en": "A guide is printed for one specific leg. No decision, no guide."}}
+      ]},
+     "post": [["attending", {"zh": "取腓骨前先看腳。這句寫在模型上。", "en": "Look at the foot before taking the fibula. Write that on the model."}]]}
+   ]},
+  {"id": "burn-call", "name": {"zh": "燒傷病房的照片", "en": "Photos from the burns unit"}, "sub": {"zh": "10:00 · 討論桌", "en": "10:00 · meeting table"}, "t": 600, "mood": "day",
+   "note": {"zh": "第二天的燒傷，深度變了", "en": "A day-two burn whose depth has changed"},
+   "beats": [
+    {"id": "b1", "ring": {"title": {"zh": "燒傷加護來電", "en": "Burns ICU calling"}, "sub": {"zh": "前天的燙傷，傷口顏色變了", "en": "The scald from two days ago looks different"}, "call": true, "from": "burns-rn"},
+     "lines": [
+      ["burns-rn", {"zh": "前天入院的大腿燙傷，今天換藥，有一塊從粉紅變成斑駁的白。照片傳給你了。", "en": "The thigh scald admitted two days ago: at today's dressing one patch has gone from pink to mottled white. Photos sent."}],
+      ["me", {"zh": "壓下去會回紅嗎？", "en": "Does it blanch and refill?"}],
+      ["burns-rn", {"zh": "回得很慢，針刺感覺也變鈍了。", "en": "Very slowly, and pinprick sensation is dull now."}]
+     ]},
+    {"id": "b2", "to": "attending", "guide": {"zh": "跟嚴主治看照片", "en": "Go through the photos with Dr Yen"},
+     "lines": [
+      ["attending", {"zh": "第一天說淺層，第二天變深。誰錯了？", "en": "Superficial on day one, deeper on day two. Who got it wrong?"}],
+      ["me", {"zh": "沒有人錯。燒傷會轉深，所以要四十八小時再評估。", "en": "Nobody. Burns convert; that's why depth is reassessed at forty-eight hours."}]
+     ],
+     "mini": {"type": "stage", "case": "plastic-surgery-burn-tbsa-depth-assessment", "stage": 8},
+     "post": [["attending", {"zh": "記下來，排進植皮評估。下午我去看。", "en": "Note it and put her down for a grafting review. I'll see her this afternoon."}]]}
+   ]},
+  {"id": "print", "name": {"zh": "列印", "en": "Printing"}, "sub": {"zh": "11:00 · 3D 列印機", "en": "11:00 · 3D printer"}, "t": 660, "mood": "day",
+   "note": {"zh": "導板與模型印好、量好", "en": "Guides and model printed and measured"},
+   "beats": [
+    {"id": "r0", "when": {"flag": "leg", "is": "right"}, "to": "engineer", "guide": {"zh": "曉晴叫住你", "en": "Hsiao-ching stops you"},
+     "lines": [
+      ["engineer", {"zh": "嚴主治剛剛把右腳的檔案退回來，寫了一句：先看腳。我們要重印左腳的導板。", "en": "Dr Yen just sent the right-leg file back with one line: look at the foot. We're reprinting the guide for the left leg."}],
+      ["me", {"zh": "……我的錯。重印多久？", "en": "...my mistake. How long to reprint?"}],
+      ["engineer", {"zh": "一個下午。還好是在印表機上錯，不是在手術台上。", "en": "An afternoon. Better wrong on the printer than on the table."}]
+     ]},
+    {"id": "r1", "to": "place:printer", "guide": {"zh": "找到列印中的導板", "en": "Find the guides printing"},
+     "lines": [
+      ["engineer", {"zh": "下顎模型、下顎切割導板、腓骨切割導板，三件一起印。你找得到哪一台嗎？", "en": "Jaw model, jaw cutting guide, fibula cutting guide, printing together. Which printer are they on?"}]
+     ],
+     "mini": {"type": "find", "hot": "printer3d", "q": {"zh": "點一下正在列印導板的 3D 列印機", "en": "Tap the 3D printer that is printing the guides"}},
+     "post": [["sys", {"zh": "樹脂槽上方，一塊白色的下顎正一層一層長出來。", "en": "Above the resin tank, a white jaw is growing one layer at a time."}]],
+     "item": "jaw-model"},
+    {"id": "r2", "to": "engineer", "guide": {"zh": "整個規劃流程排一次", "en": "Put the planning workflow in order"},
+     "lines": [
+      ["attending", {"zh": "下次你自己帶一個病人走這條路。從 CT 到手術室，順序？", "en": "Next time you take a patient down this road yourself. From CT to theatre, in what order?"}]
+     ],
+     "mini": {"type": "order", "q": {"zh": "虛擬手術規劃到手術室的順序", "en": "Virtual surgical planning, CT to theatre"},
+      "steps": [
+       {"zh": "顏面與小腿 CT、血管攝影", "en": "Face and leg CT, angiography"},
+       {"zh": "分割、建立立體模型", "en": "Segment, build the 3D model"},
+       {"zh": "會議決定切除範圍與邊緣", "en": "Agree resection and margins"},
+       {"zh": "規劃腓骨分段與位置", "en": "Plan fibula segments and position"},
+       {"zh": "設計並列印導板與模型", "en": "Design and print guides and model"},
+       {"zh": "量尺寸、滅菌、標示後送刀房", "en": "Measure, sterilise, label, to theatre"}
+      ]},
+     "post": [["attending", {"zh": "順序對。第三步你沒有決定權，第六步你不能省。", "en": "Right order. Step three isn't your decision, and step six is never skipped."}]]},
+    {"id": "r3", "roles": ["engineer"], "to": "place:bench", "guide": {"zh": "後處理與尺寸檢查", "en": "Post-processing and measurement"},
+     "lines": [
+      ["me", {"zh": "清洗、後固化、拔支撐。卡尺量鋸縫寬度和定位孔，跟設計檔比。", "en": "Wash, post-cure, remove supports. Calipers on the saw slots and the locating holes, checked against the design file."}],
+      ["me", {"zh": "導板套在下顎模型上，卡得剛好，沒有晃。", "en": "The guide sits on the jaw model snugly, no rocking."}]
+     ]}
+   ]},
+  {"id": "sterile", "name": {"zh": "導板要怎麼滅菌", "en": "How to sterilise a guide"}, "sub": {"zh": "13:00 · 模型工作台", "en": "13:00 · model bench"}, "t": 780, "mood": "day",
+   "note": {"zh": "導板是醫療器材，不是模型", "en": "A guide is a device, not a model"},
+   "beats": [
+    {"id": "t1", "ring": {"title": {"zh": "供應中心訊息", "en": "Sterile services message"}, "sub": {"zh": "老陳：導板用什麼滅菌？", "en": "Mr Chen: how is the guide sterilised?"}, "call": false, "from": "cssd"},
+     "lines": [
+      ["cssd", {"zh": "週一的導板什麼時候送來？用什麼方法滅菌？有滅菌確效的說明書給我。", "en": "When are Monday's guides coming, and how are they sterilised? Send me the instructions with the sterilisation validation."}]
+     ]},
+    {"id": "t2", "to": "attending", "guide": {"zh": "決定滅菌方式", "en": "Decide the sterilisation route"},
+     "lines": [
+      ["attending", {"zh": "老陳在問。你怎麼回？", "en": "Mr Chen is asking. Your reply?"}]
+     ],
+     "mini": {"type": "choice", "q": {"zh": "3D 列印的切割導板，要怎麼送進手術區？", "en": "How does a 3D-printed cutting guide reach the sterile field?"},
+      "options": [
+       {"zh": "依樹脂說明書確效的方法，交供應中心", "en": "Validated method from the resin's IFU, via CSSD", "ok": true, "set": {"sterile": "validated"},
+        "why": {"zh": "對。醫療等級材料、確認生物相容性、依說明書確效的方法滅菌、標示病人與版本、可追溯。", "en": "Right. Medical-grade material, biocompatibility confirmed, sterilised by the method its instructions validate, labelled with patient and version, traceable."}},
+       {"zh": "一般高壓蒸氣鍋，跟器械一起", "en": "Into the steam autoclave with the instruments", "ok": false, "set": {"sterile": "guess"},
+        "why": {"zh": "有些樹脂能蒸、有些會變形。沒確認條件就蒸，鋸縫可能歪了你都不知道。", "en": "Some resins tolerate steam, some warp. Steam without checking and the saw slot may shift without you knowing."}},
+       {"zh": "酒精擦一擦，手術時直接用", "en": "Wipe with alcohol, use on the day", "ok": false, "set": {"sterile": "wipe"},
+        "why": {"zh": "酒精擦拭是消毒，不是滅菌。進到開放傷口的東西必須滅菌。", "en": "An alcohol wipe disinfects; it does not sterilise. Anything entering an open wound must be sterile."}}
+      ]},
+     "post": [["engineer", {"zh": "說明書我已經傳給老陳。版本號印在導板邊上了。", "en": "I've sent Mr Chen the instructions. The version number is printed on the edge of the guide."}]]},
+    {"id": "t3", "when": {"flag": "sterile", "is": "guess"}, "to": "engineer", "guide": {"zh": "老陳回電", "en": "Mr Chen rings back"},
+     "lines": [
+      ["engineer", {"zh": "老陳說：說明書寫的條件跟一般器械不一樣，要分開跑。如果直接跟器械一起蒸，鋸縫會變形。", "en": "Mr Chen says the instructions specify a different cycle from the instruments; it runs separately. Steamed with the instruments, the saw slots would have warped."}],
+      ["me", {"zh": "差一點就讓鋸子照著歪掉的縫切。記住了：先讀說明書。", "en": "The saw nearly followed a warped slot. Lesson learned: read the instructions first."}]
+     ]}
+   ]},
+  {"id": "consult", "name": {"zh": "拿在手上的下巴", "en": "A jaw in his hands"}, "sub": {"zh": "14:30 · 討論桌", "en": "14:30 · meeting table"}, "t": 870, "mood": "day",
+   "note": {"zh": "蔡先生看見自己的下顎", "en": "Mr Tsai sees his own jaw"},
+   "beats": [
+    {"id": "c1", "to": "mr-tsai", "guide": {"zh": "跟蔡先生解釋手術", "en": "Explain the operation to Mr Tsai"},
+     "lines": [
+      ["mr-tsai", {"zh": "這是我的下巴？紅色那塊就是壞掉的？", "en": "This is my jaw? The red bit is the bad part?"}],
+      ["me", {"zh": "對。林醫師會把紅色這段連同安全邊緣切掉，我們用左腳的腓骨游離皮瓣補回來。", "en": "Yes. Dr Lin removes the red segment with a safety margin, and we rebuild it with a fibula free flap from your left leg."}],
+      ["mr-tsai", {"zh": "腳少一根骨頭，我還能開車嗎？", "en": "One bone fewer in my leg. Can I still drive?"}],
+      ["me", {"zh": "走路、開車都可以。剛開始會先復健一陣子。", "en": "Walking and driving, yes. There'll be a stretch of rehab first."}]
+     ]},
+    {"id": "c2", "to": "mrs-tsai", "guide": {"zh": "蔡太太的問題", "en": "Mrs Tsai's question"},
+     "lines": [
+      ["mrs-tsai", {"zh": "醫師，他以後能吃我滷的肉嗎？", "en": "Doctor, will he ever eat my braised pork again?"}],
+      ["attending", {"zh": "先吃軟的。我們把腓骨放在以後裝得了植牙的高度。所以，可能可以，但要等。", "en": "Soft food first. We're placing the bone at a height that can take implants later. So: possibly, but it will take time."}],
+      ["mrs-tsai", {"zh": "（寫下來）「滷肉：再等等。」好。", "en": "(writing) 'Braised pork: wait a bit.' Good."}]
+     ],
+     "item": "notebook"}
+   ]},
+  {"id": "micro", "name": {"zh": "比頭髮細", "en": "Finer than a hair"}, "sub": {"zh": "16:00 · 顯微吻合練習台", "en": "16:00 · microsurgery station"}, "t": 960, "mood": "day",
+   "note": {"zh": "前壁三針", "en": "Three front-wall bites"},
+   "beats": [
+    {"id": "m1", "roles": ["resident"], "to": "place:microscope", "guide": {"zh": "顯微血管吻合練習", "en": "Microvascular anastomosis practice"},
+     "lines": [
+      ["attending", {"zh": "週一要接的動脈大概就這麼細。前壁三針，針距一樣、深度一樣。", "en": "Monday's artery will be about this fine. Three front-wall bites: same spacing, same depth."}],
+      ["me", {"zh": "手腕靠在台面，手指動，手臂不動。", "en": "Wrists on the table; fingers move, arms don't."}]
+     ],
+     "mini": {"type": "drill", "template": "plastic-surgery", "drill": "anast"},
+     "post": [["attending", {"zh": "第三針比前兩針好。手術那天就是第三針的手。", "en": "The third bite beat the first two. Bring the third bite's hands on Monday."}]]},
+    {"id": "m2", "roles": ["engineer"], "to": "place:bench", "guide": {"zh": "術前最後的套合測試", "en": "Final fit test"},
+     "lines": [
+      ["me", {"zh": "腓骨導板套在腓骨模型上，三段切完拼到下顎模型。角度和設計差不到一度。", "en": "Fibula guide on the fibula model, three segments cut and assembled on the jaw model. Within a degree of the design."}],
+      ["attending", {"zh": "這個模型手術時也要放在刀房，當地圖用。術後皮瓣監測表也先印好。", "en": "That model goes to theatre on the day too, as a map. And print the flap monitoring chart for afterwards."}]
+     ]}
+   ]},
+  {"id": "night", "name": {"zh": "夜間電話", "en": "The night call"}, "sub": {"zh": "21:30 · 值班電話", "en": "21:30 · on-call phone"}, "t": 1290, "mood": "night",
+   "note": {"zh": "燒傷病人的肚子：腹腔高壓", "en": "A burned patient's abdomen: intra-abdominal hypertension"},
+   "beats": [
+    {"id": "x1", "ring": {"title": {"zh": "燒傷加護來電", "en": "Burns ICU calling"}, "sub": {"zh": "大面積燒傷，尿少、肚子脹、血壓掉", "en": "Major burn: low urine, tense belly, pressure falling"}, "call": true, "from": "burns-rn"},
+     "lines": [
+      ["burns-rn", {"zh": "三床大面積燒傷，輸液一直加，尿還是少。肚子很脹很硬，呼吸器壓力一直升，血壓開始掉。", "en": "Bed three, major burn: the fluids keep going up but the urine stays low. Belly tense and hard, ventilator pressures climbing, blood pressure starting to fall."}],
+      ["me", {"zh": "先不要再加輸液。請量膀胱壓，我現在過去，也通知加護主治。", "en": "Don't increase the fluids yet. Measure the bladder pressure; I'm coming now, and I'll tell the ICU attending."}]
+     ],
+     "mini": {"type": "vitals", "event": "hypotension",
+      "options": [
+       {"zh": "量膀胱壓、叫上級、檢討輸液總量", "en": "Bladder pressure, call senior, review fluid totals", "ok": true,
+        "why": {"zh": "對。尿少加腹脹加呼吸器壓力升高，要想到腹腔高壓。再加輸液只會更脹。", "en": "Right. Low urine, a tense belly and rising ventilator pressures mean intra-abdominal hypertension. More fluid just swells it further."}},
+       {"zh": "尿少就再加快輸液", "en": "Low urine, so speed up the fluid", "ok": false,
+        "why": {"zh": "這就是輸液越加越多的陷阱。腹壓高時，尿少是因為腎被壓住，不是水不夠。", "en": "That is the fluid-creep trap. With high abdominal pressure the kidneys are squeezed; the urine is low for that reason, not for lack of fluid."}},
+       {"zh": "先給利尿劑把尿逼出來", "en": "Give a diuretic to force urine out", "ok": false,
+        "why": {"zh": "尿量是復甦的指標，用利尿劑逼出來就看不到真相，還會讓血壓更低。", "en": "Urine output is the resuscitation gauge; forcing it out with a diuretic hides the truth and drops the pressure further."}}
+      ]},
+     "post": [["burns-rn", {"zh": "膀胱壓很高。加護主治到了，在準備減壓。", "en": "Bladder pressure is high. The ICU attending is here and preparing to decompress."}]]},
+    {"id": "x2", "to": "attending", "guide": {"zh": "跟嚴主治討論", "en": "Talk it through with Dr Yen"},
+     "lines": [
+      ["attending", {"zh": "腹腔高壓。原因、量法、處理，在流程裡哪一步？", "en": "Intra-abdominal hypertension. Cause, measurement, management: where is it in the pathway?"}]
+     ],
+     "mini": {"type": "stage", "case": "plastic-surgery-burn-fluid-resuscitation-urine-output", "stage": 7},
+     "post": [["attending", {"zh": "胸腹有環狀焦痂的話，焦痂切開也是減壓的一部分。明早一起看。", "en": "If there's circumferential eschar on the trunk, escharotomy is part of the decompression too. We'll look together in the morning."}]]}
+   ]},
+  {"id": "debrief", "name": {"zh": "回顧", "en": "Debrief"}, "sub": {"zh": "22:30 · 討論桌", "en": "22:30 · meeting table"}, "t": 1350, "mood": "night",
+   "note": {"zh": "一隻腳、一塊導板、一個膀胱壓", "en": "One leg, one guide, one bladder pressure"},
+   "beats": [
+    {"id": "e1", "to": "attending", "guide": {"zh": "嚴主治的回顧", "en": "Dr Yen's debrief"},
+     "lines": [
+      ["attending", {"zh": "今天沒有開刀，可是你做了三個手術決定：哪隻腳、怎麼滅菌、要不要再加水。", "en": "No operating today, yet you made three surgical decisions: which leg, how to sterilise, and whether to add more fluid."}],
+      ["me", {"zh": "三個都是先看清楚再動手。", "en": "All three were: look properly before acting."}],
+      ["attending", {"zh": "重建也是。從牙齒往回規劃，從腳往上檢查。", "en": "So is reconstruction. Plan backwards from the teeth, check upwards from the foot."}]
+     ]},
+    {"id": "e2", "when": {"flag": "leg", "is": "undecided"}, "to": "attending", "guide": {"zh": "嚴主治多說一句", "en": "Dr Yen adds one thing"},
+     "lines": [
+      ["attending", {"zh": "早上你說手術時再決定腳。曉晴等了一個小時才開始印。", "en": "This morning you wanted to choose the leg on the day. Hsiao-ching waited an hour before she could print."}],
+      ["me", {"zh": "下次在血管攝影看完當下就決定。", "en": "Next time I decide right after the angiogram."}]
+     ]},
+    {"id": "e3", "to": "place:bench", "guide": {"zh": "收好模型", "en": "Put the model away"},
+     "lines": [
+      ["engineer", {"zh": "導板送供應中心了，標籤寫著蔡先生、左腳、第二版。", "en": "The guides are with sterile services, labelled Mr Tsai, left leg, version two."}],
+      ["sys", {"zh": "值班未完。白色的下顎放在工作台上，鉛筆字還在：從牙齒往回規劃。", "en": "The night goes on. The white jaw sits on the bench, the pencil still there: plan backwards from the teeth."}]
+     ],
+     "end": true}
+   ]}
+ ],
+ "ending": {"title": {"zh": "下班了", "en": "End of shift"}, "sub": {"zh": "刀先在電腦裡開一次", "en": "Operate once on screen first"}, "stats": ["stages", "grades", "choices", "calls", "items", "time"]}
+}

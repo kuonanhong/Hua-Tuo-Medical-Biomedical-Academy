@@ -1,0 +1,1702 @@
+{
+ "format": "huatuo-shift-v2",
+ "department": "tcm-intern-clinic",
+ "case": "main",
+ "caseTitle": {
+  "zh": "第一次獨立初診",
+  "en": "Your first solo new patient"
+ },
+ "condition": {
+  "zh": "初診 · 胃脘痛",
+  "en": "First visit · epigastric pain"
+ },
+ "difficulty": 1,
+ "title": {
+  "zh": "中醫實習門診值班日",
+  "en": "A day in the TCM teaching clinic"
+ },
+ "tagline": {
+  "zh": "兩個胃痛，一個是心臟",
+  "en": "Two stomach pains; one of them is a heart"
+ },
+ "room": "tcm-clinic",
+ "minutes": 25,
+ "roles": [
+  {
+   "id": "intern",
+   "zh": "中醫實習醫師",
+   "en": "TCM intern",
+   "desc": {
+    "zh": "第一次獨立看初診：主訴、四診、辨證、處方、針灸、衛教，平板一項一項評分。",
+    "en": "Your first solo new patient: chief complaint, four examinations, pattern, prescription, needles and advice, each item scored on the tablet."
+   }
+  },
+  {
+   "id": "educator",
+   "zh": "衛教護理師",
+   "en": "Education nurse",
+   "desc": {
+    "zh": "報到、生命徵象、心電圖與衛教都是你的。你是第一個看到老許冒冷汗的人。",
+    "en": "Check-in, vital signs, the ECG and the advice sheet are yours. You are first to see Mr Hsu’s cold sweat."
+   }
+  }
+ ],
+ "cast": {
+  "master": {
+   "name": {
+    "zh": "杜醫師",
+    "en": "Dr Tu"
+   },
+   "role": {
+    "zh": "教學門診主治（師傅）",
+    "en": "Teaching-clinic attending (mentor)"
+   },
+   "tag": "DR",
+   "color": "#81296d",
+   "body": "mentor",
+   "about": {
+    "zh": "坐在單面鏡後面看你看診，咖啡永遠放到涼。口頭禪：漏問的那一題，最貴。",
+    "en": "Watches from behind the one-way mirror, coffee always left to go cold. Catchphrase: the question you skip is the expensive one."
+   }
+  },
+  "nurse": {
+   "name": {
+    "zh": "阿蓮護理師",
+    "en": "Nurse Lien"
+   },
+   "role": {
+    "zh": "衛教護理師",
+    "en": "Education nurse"
+   },
+   "tag": "RN",
+   "color": "#3b8f6a",
+   "body": "nurse",
+   "about": {
+    "zh": "教學門診做了十年。病人一坐下，她就知道誰今天不對勁。",
+    "en": "Ten years in the teaching clinic. The moment a patient sits down she knows who is not right today."
+   }
+  },
+  "peichun": {
+   "name": {
+    "zh": "佩君",
+    "en": "Pei-chun"
+   },
+   "role": {
+    "zh": "四十一歲，銀行櫃員",
+    "en": "Forty-one, bank teller"
+   },
+   "tag": "P1",
+   "color": "#c2703a",
+   "body": "patient",
+   "about": {
+    "zh": "虛構教學個案。胃脹痛兩個月，月底結帳最嚴重。把主訴寫在手機備忘錄裡帶來。",
+    "en": "Fictional teaching case. Two months of a bloated, aching stomach, worst at month-end closing. Brought her complaints typed in a phone note."
+   }
+  },
+  "hsu": {
+   "name": {
+    "zh": "老許",
+    "en": "Mr Hsu"
+   },
+   "role": {
+    "zh": "六十三歲，計程車司機",
+    "en": "Sixty-three, taxi driver"
+   },
+   "tag": "P2",
+   "color": "#b5651d",
+   "body": "patient",
+   "about": {
+    "zh": "虛構教學個案。糖尿病、抽菸。說自己「胃又在痛」，想拿胃藥就走，車還停在樓下。",
+    "en": "Fictional teaching case. Diabetic, smoker. Says his “stomach is acting up again”, wants pills and to go; his cab is parked downstairs."
+   }
+  },
+  "mrshsu": {
+   "name": {
+    "zh": "許太太",
+    "en": "Mrs Hsu"
+   },
+   "role": {
+    "zh": "老許的太太",
+    "en": "Mr Hsu's wife"
+   },
+   "tag": "FAM",
+   "color": "#8a6d3b",
+   "body": "family",
+   "about": {
+    "zh": "一路從樓下追上來。說老許從來不聽人講話。",
+    "en": "Chased him up from the street. Says he has never listened to anyone."
+   }
+  },
+  "cardio": {
+   "name": {
+    "zh": "心臟內科住院醫師",
+    "en": "Cardiology resident"
+   },
+   "role": {
+    "zh": "心臟內科（電話）",
+    "en": "Cardiology (by phone)"
+   },
+   "tag": "CV",
+   "color": "#3f6fa8",
+   "phoneOnly": true,
+   "about": {
+    "zh": "剛從導管室出來，聲音很累，但特地打來說謝謝。",
+    "en": "Just out of the cath lab, sounding tired, but calls specially to say thank you."
+   }
+  }
+ },
+ "places": {
+  "pulse-desk": {
+   "name": {
+    "zh": "脈枕診桌",
+    "en": "Pulse desk"
+   },
+   "hot": "pulse-desk"
+  },
+  "lamp": {
+   "name": {
+    "zh": "舌診燈",
+    "en": "Tongue lamp"
+   },
+   "hot": "lamp"
+  },
+  "couch": {
+   "name": {
+    "zh": "隔簾治療床",
+    "en": "Curtained couch"
+   },
+   "hot": "couch"
+  },
+  "board": {
+   "name": {
+    "zh": "診間白板",
+    "en": "Clinic whiteboard"
+   },
+   "hot": "whiteboard"
+  },
+  "desk": {
+   "name": {
+    "zh": "書寫桌與評分平板",
+    "en": "Desk and scoring tablet"
+   },
+   "hot": "desk"
+  },
+  "chart": {
+   "name": {
+    "zh": "病歷架",
+    "en": "Chart rack"
+   },
+   "hot": "chart"
+  },
+  "bronze": {
+   "name": {
+    "zh": "針灸銅人",
+    "en": "Bronze figure"
+   },
+   "hot": "bronze"
+  }
+ },
+ "glossary": [
+  {
+   "term": {
+    "zh": "主訴",
+    "en": "chief complaint"
+   },
+   "plain": {
+    "zh": "病人最主要的不舒服加上持續多久，用病人的話寫，不寫診斷。",
+    "en": "The main complaint and how long it has lasted, in the patient’s terms, never a diagnosis."
+   }
+  },
+  {
+   "term": {
+    "zh": "四診合參",
+    "en": "four examinations together"
+   },
+   "plain": {
+    "zh": "望、聞、問、切四種診法的資料合起來判斷，不靠單一診法。",
+    "en": "Looking, listening and smelling, asking and palpating are combined; no single examination decides."
+   }
+  },
+  {
+   "term": {
+    "zh": "胃脘痛",
+    "en": "epigastric pain"
+   },
+   "plain": {
+    "zh": "上腹部、心窩下方的疼痛，中醫內科稱胃脘痛。",
+    "en": "Pain in the upper abdomen just below the breastbone, called stomach-duct pain in TCM."
+   }
+  },
+  {
+   "term": {
+    "zh": "肝氣犯胃",
+    "en": "liver qi invading the stomach"
+   },
+   "plain": {
+    "zh": "中醫認為情緒壓力使肝氣鬱結，橫逆犯胃，出現脹痛連脅、噯氣、嘆氣。",
+    "en": "In TCM, emotional strain knots liver qi, which then strikes the stomach sideways: distending pain into the flanks, belching, sighing."
+   }
+  },
+  {
+   "term": {
+    "zh": "弦脈",
+    "en": "wiry pulse"
+   },
+   "plain": {
+    "zh": "指下端直而長，像按在琴弦上；中醫認為多見於肝鬱、痛證。",
+    "en": "Straight and long under the fingers, like pressing a zither string; in TCM it goes with liver constraint and pain."
+   }
+  },
+  {
+   "term": {
+    "zh": "遲脈",
+    "en": "slow pulse"
+   },
+   "plain": {
+    "zh": "一息不足四至的慢脈；中醫認為多主寒，但西醫要先想心臟傳導問題。",
+    "en": "Fewer than four beats per breath; in TCM it usually means cold, but in Western terms think first of the heart’s conduction."
+   }
+  },
+  {
+   "term": {
+    "zh": "警訊症狀",
+    "en": "alarm features"
+   },
+   "plain": {
+    "zh": "提示嚴重疾病的症狀：體重減輕、黑便、吐血、吞嚥困難、貧血、夜間痛醒等。",
+    "en": "Symptoms that point to serious disease: weight loss, black stools, vomiting blood, difficulty swallowing, anaemia, pain waking you at night."
+   }
+  },
+  {
+   "term": {
+    "zh": "辨證論治",
+    "en": "pattern-based treatment"
+   },
+   "plain": {
+    "zh": "先辨明證型，再依證立治法、選方藥與穴位。",
+    "en": "Identify the pattern first, then set the method, the formula and the points from it."
+   }
+  },
+  {
+   "term": {
+    "zh": "疏肝理氣",
+    "en": "soothing the liver"
+   },
+   "plain": {
+    "zh": "讓鬱結的肝氣重新流動的治法，代表方如柴胡疏肝散。",
+    "en": "The method of getting constrained liver qi moving again; Chai Hu Shu Gan San is the classic formula."
+   }
+  },
+  {
+   "term": {
+    "zh": "一夫法",
+    "en": "four-finger measure"
+   },
+   "plain": {
+    "zh": "病人自己四指併攏的寬度當作取穴的尺；足三里在膝眼下一夫。",
+    "en": "The breadth of the patient’s own four fingers held together, used to locate points; ST36 lies one such breadth below the knee eye."
+   }
+  },
+  {
+   "term": {
+    "zh": "不通則痛",
+    "en": "blockage brings pain"
+   },
+   "plain": {
+    "zh": "中醫認為氣血運行不暢就會痛；脹痛多屬氣滯。",
+    "en": "In TCM, pain arises where qi and blood cannot flow; distending pain usually means stagnant qi."
+   }
+  },
+  {
+   "term": {
+    "zh": "心電圖",
+    "en": "ECG"
+   },
+   "plain": {
+    "zh": "記錄心臟電氣活動的檢查；胸痛、上腹痛冒冷汗時要盡快做。",
+    "en": "A recording of the heart’s electrical activity; needed fast for chest or upper-abdominal pain with a cold sweat."
+   }
+  },
+  {
+   "term": {
+    "zh": "紅旗",
+    "en": "red flag"
+   },
+   "plain": {
+    "zh": "提示危險疾病的症狀；出現就先排除，中醫調理之後再談。",
+    "en": "A symptom pointing to dangerous disease; rule it out first, TCM care afterwards."
+   }
+  }
+ ],
+ "codex": [
+  {
+   "id": "tablet",
+   "kind": "equipment",
+   "name": {
+    "zh": "評分平板",
+    "en": "Scoring tablet"
+   },
+   "text": {
+    "zh": "每完成一項就「叮」一聲。漏掉的項目不會響，只會在下班前一起出現。",
+    "en": "Chimes for every completed item. Missed items stay silent, then all appear together before you leave."
+   },
+   "hot": "desk"
+  },
+  {
+   "id": "pulse-desk",
+   "kind": "equipment",
+   "name": {
+    "zh": "脈枕診桌",
+    "en": "Pulse desk"
+   },
+   "text": {
+    "zh": "病人坐正、手臂平放、掌心向上。兩手都要診，左手心肝腎，右手肺脾命門。",
+    "en": "Patient upright, arm flat, palm up. Both wrists are read: left for heart, liver, kidney; right for lung, spleen and the gate of life."
+   },
+   "hot": "pulse-desk"
+  },
+  {
+   "id": "aed",
+   "kind": "equipment",
+   "name": {
+    "zh": "心電圖機與 AED",
+    "en": "ECG machine and AED"
+   },
+   "text": {
+    "zh": "中醫門診也有：心電圖機在護理站，AED 掛在門口。你希望一輩子用不到，今天用到了一半。",
+    "en": "A TCM clinic has them too: the ECG at the nurses’ station, the AED by the door. You hope never to need them; today you needed half."
+   },
+   "hot": "door"
+  },
+  {
+   "id": "taxi-keys",
+   "kind": "item",
+   "name": {
+    "zh": "老許的計程車鑰匙",
+    "en": "Mr Hsu’s taxi keys"
+   },
+   "text": {
+    "zh": "他想自己開車去急診。阿蓮把鑰匙收進口袋：「這個我先保管。」",
+    "en": "He wanted to drive himself to the ER. Nurse Lien pocketed the keys: “I’ll look after these.”"
+   }
+  },
+  {
+   "id": "first-visit",
+   "kind": "concept",
+   "name": {
+    "zh": "初診流程與中醫病歷",
+    "en": "The first visit and the TCM record"
+   },
+   "text": {
+    "zh": "核對身分→主訴（症狀＋時間）→現病史與十問→望聞問切→辨證（病名、證型、病機）→治則→處方與針灸→衛教與回診。主訴寫病人的話，不寫證型；辨證要寫出理由，處方才有根。",
+    "en": "Confirm identity → chief complaint (symptom plus duration) → history and the ten questions → look, listen, ask, palpate → pattern (disease, pattern, mechanism) → principle → prescription and points → advice and follow-up. The complaint is in the patient’s words, never the pattern; the pattern carries its reasons, or the prescription has no roots."
+   }
+  },
+  {
+   "id": "alarm",
+   "kind": "concept",
+   "name": {
+    "zh": "胃痛的警訊症狀",
+    "en": "Alarm features in stomach pain"
+   },
+   "text": {
+    "zh": "體重減輕、黑便或吐血、吞嚥困難、持續嘔吐、貧血、夜間痛醒、摸到腫塊、四十歲以上新發的症狀、家族胃癌史。有任何一項，就安排腸胃科與胃鏡評估；中醫調理可以同時進行，但不能取代檢查。",
+    "en": "Weight loss, black stools or vomited blood, difficulty swallowing, persistent vomiting, anaemia, pain that wakes you, a palpable mass, new symptoms after forty, a family history of stomach cancer. Any one means gastroenterology and endoscopy; TCM care may run alongside but never replaces the work-up."
+   }
+  },
+  {
+   "id": "cardiac-stomach",
+   "kind": "concept",
+   "name": {
+    "zh": "會騙人的胃痛",
+    "en": "The stomach pain that is the heart"
+   },
+   "text": {
+    "zh": "下壁心肌梗塞常表現為上腹痛、噁心、冒冷汗，還可能因傳導受影響而心跳變慢。糖尿病、老人、女性更容易症狀不典型。上腹痛加上冷汗、喘、活動加重、放射到下巴或手臂，先做心電圖、啟動急救，不讓病人自己走或開車。",
+    "en": "An inferior heart attack often shows as upper-abdominal pain, nausea and a cold sweat, and can slow the heart by affecting conduction. Diabetics, older people and women more often have atypical symptoms. Upper-abdominal pain with a cold sweat, breathlessness, worse on exertion or spreading to the jaw or arm: ECG and the emergency chain first, and the patient never walks or drives himself."
+   }
+  },
+  {
+   "id": "slow-pulse",
+   "kind": "concept",
+   "name": {
+    "zh": "遲脈的兩種讀法",
+    "en": "Two readings of a slow pulse"
+   },
+   "text": {
+    "zh": "中醫認為遲脈主寒：有力為實寒，無力為虛寒；運動員的遲緩有力則可以是正常。可是冒冷汗、胸悶、頭暈的遲脈，要先排除心臟傳導阻滯或心肌梗塞。兩種讀法不衝突：先排危險，再談寒熱。",
+    "en": "In TCM a slow pulse means cold: forceful for excess cold, forceless for deficiency cold, and a slow strong pulse in an athlete can be normal. But a slow pulse with a cold sweat, chest tightness or dizziness must first be cleared of heart block or infarction. The readings do not clash: danger first, cold and heat after."
+   }
+  }
+ ],
+ "segs": [
+  {
+   "id": "prep",
+   "name": {
+    "zh": "開診前",
+    "en": "Before clinic"
+   },
+   "sub": {
+    "zh": "07:50 · 診間白板",
+    "en": "07:50 · clinic whiteboard"
+   },
+   "t": 470,
+   "mood": "day",
+   "note": {
+    "zh": "流程先排好，平板開始叮",
+    "en": "Steps in order, the tablet starts chiming"
+   },
+   "beats": [
+    {
+     "id": "a1",
+     "to": "master",
+     "guide": {
+      "zh": "聽杜醫師交代規則",
+      "en": "Dr Tu’s ground rules"
+     },
+     "lines": [
+      [
+       "master",
+       {
+        "zh": "今天你自己看初診。我在單面鏡後面，平板會一項一項打分。",
+        "en": "Today you see the new patients alone. I’m behind the one-way mirror, and the tablet scores you item by item."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "漏掉會怎樣？",
+        "en": "And if I miss something?"
+       }
+      ],
+      [
+       "master",
+       {
+        "zh": "平板不會響。下班前它會一次全部告訴你。",
+        "en": "The tablet stays quiet. Before you leave it tells you everything at once."
+       }
+      ],
+      [
+       "nurse",
+       {
+        "zh": "別怕，它只是很誠實。",
+        "en": "Don’t worry. It’s just very honest."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "a2",
+     "to": "place:board",
+     "guide": {
+      "zh": "排出初診流程",
+      "en": "Order the first-visit steps"
+     },
+     "lines": [
+      [
+       "master",
+       {
+        "zh": "初診流程在白板上被我打亂了。排回去。",
+        "en": "I’ve scrambled the first-visit steps on the board. Put them back."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "order",
+      "q": {
+       "zh": "中醫初診的順序",
+       "en": "A TCM first visit, in order"
+      },
+      "steps": [
+       {
+        "zh": "核對身分",
+        "en": "Confirm identity"
+       },
+       {
+        "zh": "記錄主訴與時間",
+        "en": "Chief complaint and duration"
+       },
+       {
+        "zh": "現病史與十問",
+        "en": "History and the ten questions"
+       },
+       {
+        "zh": "望聞問切",
+        "en": "Look, listen, ask, palpate"
+       },
+       {
+        "zh": "辨證與治則",
+        "en": "Pattern and principle"
+       },
+       {
+        "zh": "處方、衛教與回診",
+        "en": "Prescription, advice, follow-up"
+       }
+      ]
+     },
+     "post": [
+      [
+       "sys",
+       {
+        "zh": "叮。",
+        "en": "Ding."
+       }
+      ],
+      [
+       "master",
+       {
+        "zh": "順序對了。順序背得出來不稀奇，明天累的時候還照順序走，才稀奇。",
+        "en": "Right order. Reciting it is easy; keeping to it when you’re tired tomorrow is the rare part."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "peichun",
+   "name": {
+    "zh": "佩君的胃",
+    "en": "Pei-chun's stomach"
+   },
+   "sub": {
+    "zh": "08:30 · 脈枕診桌",
+    "en": "08:30 · the pulse desk"
+   },
+   "t": 510,
+   "mood": "day",
+   "note": {
+    "zh": "主訴、警訊、舌與脈",
+    "en": "Complaint, alarm features, tongue and pulse"
+   },
+   "beats": [
+    {
+     "id": "b1",
+     "to": "peichun",
+     "guide": {
+      "zh": "請佩君入座、問主訴",
+      "en": "Seat Pei-chun, take the complaint"
+     },
+     "lines": [
+      [
+       "peichun",
+       {
+        "zh": "我把症狀打在手機裡了。胃脹痛兩個月，痛到兩邊肋骨，打嗝會比較舒服。",
+        "en": "I typed it all on my phone. Two months of a bloated, aching stomach that spreads to both sides of my ribs. Burping helps."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "什麼時候最嚴重？",
+        "en": "When is it worst?"
+       }
+      ],
+      [
+       "peichun",
+       {
+        "zh": "月底結帳，還有被主管念的時候。我一直嘆氣，同事都以為我失戀。",
+        "en": "Month-end closing, and when my manager scolds me. I sigh all day; my colleagues think I’ve been dumped."
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "叮。主訴：胃脘脹痛連脅兩個月，情緒緊張加重。",
+        "en": "Ding. Chief complaint: two months of epigastric distending pain into the flanks, worse with stress."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "b2",
+     "to": "peichun",
+     "guide": {
+      "zh": "開方前還要問什麼",
+      "en": "What else before prescribing"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "你腦中已經有一個證了。手指往處方欄移過去。",
+        "en": "You already have a pattern in mind. Your finger drifts toward the prescription field."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "choice",
+      "q": {
+       "zh": "四十一歲、新發胃痛兩個月。開方前你還要問什麼？",
+       "en": "Forty-one, two months of new stomach pain. Before prescribing, what else?"
+      },
+      "options": [
+       {
+        "zh": "體重、黑便、吞嚥、嘔吐、貧血、夜間痛",
+        "en": "Weight, black stools, swallowing, vomiting, anaemia, night pain",
+        "ok": true,
+        "why": {
+         "zh": "四十歲以上新發的胃痛要先篩警訊症狀；有任何一項就安排胃鏡，中醫調理同時進行。",
+         "en": "New stomach pain after forty must be screened for alarm features; any one means endoscopy, with TCM care alongside."
+        },
+        "set": {
+         "asked-alarm": true
+        }
+       },
+       {
+        "zh": "不用了，證已經很清楚",
+        "en": "Nothing, the pattern is clear",
+        "ok": false,
+        "why": {
+         "zh": "證清楚不代表沒有別的病。漏問的那一題最貴。",
+         "en": "A clear pattern does not mean no other disease. The question you skip is the expensive one."
+        },
+        "set": {
+         "asked-alarm": false
+        }
+       },
+       {
+        "zh": "只問她愛不愛吃辣",
+        "en": "Only whether she likes spicy food",
+        "ok": false,
+        "why": {
+         "zh": "飲食要問，但不能取代警訊症狀。",
+         "en": "Diet matters, but it doesn’t replace the alarm features."
+        },
+        "set": {
+         "asked-alarm": false
+        }
+       }
+      ]
+     }
+    },
+    {
+     "id": "b3",
+     "when": {
+      "flag": "asked-alarm",
+      "is": true
+     },
+     "to": "peichun",
+     "guide": {
+      "zh": "聽她補充的病史",
+      "en": "Hear the extra history"
+     },
+     "lines": [
+      [
+       "peichun",
+       {
+        "zh": "體重沒變。啊，健檢說我貧血，在吃鐵劑，大便黑黑的。這個也要講？",
+        "en": "Weight’s the same. Oh, my health check said I’m anaemic; I take iron and my stools are dark. Does that count?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "要。鐵劑會讓大便變黑，但貧血加胃痛，要請腸胃科做胃鏡確認。",
+        "en": "It does. Iron darkens stools, but anaemia with stomach pain needs gastroenterology and an endoscopy to be sure."
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "叮。叮。",
+        "en": "Ding. Ding."
+       }
+      ]
+     ],
+     "set": {
+      "gi-referred": true
+     }
+    },
+    {
+     "id": "b4",
+     "to": "place:lamp",
+     "guide": {
+      "zh": "在舌診燈下看舌",
+      "en": "Read the tongue"
+     },
+     "lines": [
+      [
+       "nurse",
+       {
+        "zh": "鐵劑和咖啡都會染苔。今天早上喝了什麼？",
+        "en": "Iron and coffee both stain the coat. What did you drink this morning?"
+       }
+      ],
+      [
+       "peichun",
+       {
+        "zh": "還沒，緊張到吃不下。",
+        "en": "Nothing yet. Too nervous to eat."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "tongue",
+      "q": {
+       "zh": "舌淡紅、苔薄白，舌形正常。你怎麼讀？",
+       "en": "Pale-red body, thin white coat, normal shape. Your reading?"
+      },
+      "tongue": {
+       "body": "normal",
+       "coat": "thin-white",
+       "shape": "normal"
+      },
+      "options": [
+       {
+        "zh": "舌象大致正常：氣滯為主，尚未化熱",
+        "en": "Nearly normal: qi stagnation, no heat yet",
+        "ok": true,
+        "why": {
+         "zh": "中醫認為單純氣滯舌象常無明顯變化；沒有黃苔、紅舌，表示鬱而未化熱，也沒有明顯虛象。",
+         "en": "In TCM simple qi stagnation often leaves the tongue unchanged; no yellow coat or red body means the constraint has not turned to heat, and there is no clear deficiency."
+        }
+       },
+       {
+        "zh": "舌紅苔黃：胃火熾盛",
+        "en": "Red with yellow coat: blazing stomach fire",
+        "ok": false,
+        "why": {
+         "zh": "舌不紅、苔不黃，看到的才算。",
+         "en": "The body isn’t red and the coat isn’t yellow. Only what you see counts."
+        }
+       },
+       {
+        "zh": "舌淡胖齒痕：脾氣虛",
+        "en": "Pale, swollen, tooth-marked: spleen qi deficient",
+        "ok": false,
+        "why": {
+         "zh": "舌形正常，沒有齒痕。",
+         "en": "Normal shape, no tooth marks."
+        }
+       }
+      ]
+     }
+    },
+    {
+     "id": "b5",
+     "to": "peichun",
+     "guide": {
+      "zh": "診脈：兩手都要",
+      "en": "Pulse: both wrists"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "指下端直而長，像按在琴弦上，左關最明顯。",
+        "en": "Straight and long under your fingers, like a zither string, clearest at the left guan."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "pulse",
+      "q": {
+       "zh": "端直而長，如按琴弦。這是什麼脈？",
+       "en": "Straight, long, like a zither string. Which pulse?"
+      },
+      "pulse": "wiry",
+      "options": [
+       {
+        "zh": "弦脈：肝鬱氣滯",
+        "en": "Wiry: liver qi constraint",
+        "ok": true,
+        "why": {
+         "zh": "中醫認為肝主疏泄，氣機不暢脈就繃直如弦；左關屬肝，正好最明顯。",
+         "en": "In TCM the liver governs free flow; when qi is constrained the pulse stiffens like a string, and the left guan, the liver position, shows it most."
+        }
+       },
+       {
+        "zh": "滑脈：痰濕或食積",
+        "en": "Slippery: phlegm-damp or food",
+        "ok": false,
+        "why": {
+         "zh": "滑脈圓滑如珠；弦脈是直的、繃的。",
+         "en": "Slippery rolls like beads; wiry is straight and taut."
+        }
+       },
+       {
+        "zh": "細脈：血虛",
+        "en": "Thready: blood deficiency",
+        "ok": false,
+        "why": {
+         "zh": "細脈如線，但應指明顯；她的脈不細，是長而直。",
+         "en": "A thready pulse is a fine line; hers is not fine, it is long and straight."
+        }
+       }
+      ]
+     },
+     "post": [
+      [
+       "me",
+       {
+        "zh": "胃脘脹痛連脅、噯氣得舒、情緒加重、弦脈：肝氣犯胃。",
+        "en": "Distending epigastric pain into the flanks, relieved by belching, worse with stress, wiry pulse: liver qi invading the stomach."
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "叮。",
+        "en": "Ding."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "plan",
+   "name": {
+    "zh": "辨證開方與下針",
+    "en": "Pattern, formula, needles"
+   },
+   "sub": {
+    "zh": "09:30 · 隔簾治療床",
+    "en": "09:30 · the curtained couch"
+   },
+   "t": 570,
+   "mood": "day",
+   "note": {
+    "zh": "疏肝理氣：柴胡疏肝散與四穴",
+    "en": "Soothe the liver: formula and four points"
+   },
+   "beats": [
+    {
+     "id": "c1",
+     "to": "place:desk",
+     "guide": {
+      "zh": "選出疏肝理氣的藥",
+      "en": "Pick the liver-soothing herbs"
+     },
+     "lines": [
+      [
+       "master",
+       {
+        "zh": "（耳機裡）證對了。治則？",
+        "en": "(in your earpiece) Pattern’s right. Principle?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "疏肝理氣、和胃止痛。柴胡疏肝散。",
+        "en": "Soothing the liver, moving qi, harmonising the stomach. Chai Hu Shu Gan San."
+       }
+      ],
+      [
+       "master",
+       {
+        "zh": "方裡負責疏肝行氣的是哪幾味？",
+        "en": "Which of its herbs do the soothing and moving?"
+       }
+      ]
+     ],
+     "mini": {
+      "type": "herb",
+      "q": {
+       "zh": "選出柴胡疏肝散中疏肝理氣的藥",
+       "en": "Pick the liver-soothing, qi-moving herbs of Chai Hu Shu Gan San"
+      },
+      "formula": "柴胡疏肝散",
+      "pick": [
+       "柴胡",
+       "香附",
+       "陳皮",
+       "枳殼"
+      ],
+      "distractors": [
+       "黃耆",
+       "人參",
+       "附子",
+       "熟地黃"
+      ]
+     },
+     "post": [
+      [
+       "master",
+       {
+        "zh": "黃耆、人參是補；她不虛，補了反而更脹。用量依處方，我簽。",
+        "en": "Astragalus and ginseng tonify; she isn’t deficient, and tonics would bloat her more. Amounts per prescription; I’ll sign."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "c2",
+     "to": "place:bronze",
+     "guide": {
+      "zh": "在銅人上指出四穴",
+      "en": "Show the four points"
+     },
+     "lines": [
+      [
+       "master",
+       {
+        "zh": "針灸處方：和胃一個、腹部募穴一個、胃的下合穴一個、疏肝一個。",
+        "en": "Acupuncture plan: one to calm the stomach, the stomach’s front-mu point, its lower he-sea point, and one to soothe the liver."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "points",
+      "q": {
+       "zh": "指出內關、中脘、足三里、太衝",
+       "en": "Point out PC6, CV12, ST36 and LR3"
+      },
+      "codes": [
+       "PC6",
+       "CV12",
+       "ST36",
+       "LR3"
+      ],
+      "view": "front"
+     },
+     "post": [
+      [
+       "master",
+       {
+        "zh": "中脘在臍上，腹部穴位下針前先問有沒有懷孕、剛吃飽。",
+        "en": "CV12 sits above the navel; before needling the abdomen ask about pregnancy and a full stomach."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "c3",
+     "to": "place:couch",
+     "guide": {
+      "zh": "足三里：一夫法定位下針",
+      "en": "ST36: locate, then needle"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "佩君，膝蓋彎起來。你的四根手指併攏，放在膝眼下面。",
+        "en": "Pei-chun, bend your knee. Put your four fingers together just under the knee eye."
+       }
+      ],
+      [
+       "peichun",
+       {
+        "zh": "用我的手量？不是用你的？",
+        "en": "With my hand? Not yours?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "用你的。你的身體用你的尺，這叫一夫法。",
+        "en": "Yours. Your body, your ruler. It’s called the four-finger measure."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "drill",
+      "template": "tcm-intern-clinic",
+      "drill": "needle:leg"
+     },
+     "post": [
+      [
+       "peichun",
+       {
+        "zh": "腿痠痠脹脹的，可是胃好像鬆開了。",
+        "en": "My leg aches a bit, but my stomach feels like it’s loosening."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "不通則痛。氣在動了。",
+        "en": "Blockage brings pain. The qi is moving."
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "叮。",
+        "en": "Ding."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "hsu",
+   "name": {
+    "zh": "老許的胃",
+    "en": "Mr Hsu's stomach"
+   },
+   "sub": {
+    "zh": "10:30 · 脈枕診桌",
+    "en": "10:30 · the pulse desk"
+   },
+   "t": 630,
+   "mood": "day",
+   "note": {
+    "zh": "冷汗加遲脈：不是胃",
+    "en": "Cold sweat and a slow pulse: not the stomach"
+   },
+   "beats": [
+    {
+     "id": "d1",
+     "to": "hsu",
+     "guide": {
+      "zh": "請老許入座",
+      "en": "Seat Mr Hsu"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "老許扶著門框進來，額頭都是汗。冷氣明明很強。",
+        "en": "Mr Hsu comes in gripping the door frame, forehead beaded with sweat. The air conditioning is on full."
+       }
+      ],
+      [
+       "hsu",
+       {
+        "zh": "胃又在痛啦，從早上痛到現在，想吐。開個胃藥我就走，車還停在樓下。",
+        "en": "Stomach’s at it again. Since this morning, and I feel sick. Give me something and I’ll go; my cab’s downstairs."
+       }
+      ],
+      [
+       "nurse",
+       {
+        "zh": "許先生，爬樓梯上來的時候，痛有沒有變嚴重？",
+        "en": "Mr Hsu, did it get worse climbing the stairs?"
+       }
+      ],
+      [
+       "hsu",
+       {
+        "zh": "有啦，還有點喘。下巴也怪怪的。",
+        "en": "Yeah, and a bit breathless. My jaw feels funny too."
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "阿蓮看了你一眼。那一眼很長。",
+        "en": "Nurse Lien looks at you. It is a long look."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "d2",
+     "to": "hsu",
+     "guide": {
+      "zh": "先摸脈",
+      "en": "Feel the pulse"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "手腕濕冷。脈來得很慢，一息不到四至，軟而無力。",
+        "en": "The wrist is cold and clammy. The pulse comes slowly, fewer than four beats to your breath, soft and weak."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "pulse",
+      "q": {
+       "zh": "冷汗、上腹痛，脈一息不足四至。這是什麼脈，你先想到什麼？",
+       "en": "Cold sweat, upper-abdominal pain, fewer than four beats per breath. Which pulse, and your first thought?"
+      },
+      "pulse": "slow",
+      "options": [
+       {
+        "zh": "遲脈；冷汗加遲脈，先想心臟",
+        "en": "Slow; with a cold sweat, think heart first",
+        "ok": true,
+        "why": {
+         "zh": "中醫認為遲主寒，但冷汗、喘、放射到下巴的上腹痛加慢脈，要先排除下壁心肌梗塞與傳導阻滯。",
+         "en": "In TCM slow means cold, but a slow pulse with cold sweat, breathlessness and upper-abdominal pain into the jaw must first be cleared of an inferior infarction and heart block."
+        }
+       },
+       {
+        "zh": "遲脈；寒邪客胃，溫胃散寒",
+        "en": "Slow; cold invading the stomach, warm it",
+        "ok": false,
+        "why": {
+         "zh": "這是教科書的讀法，可是今天先排危險。冷汗不是寒邪。",
+         "en": "That is the textbook reading, but danger comes first today. That sweat is not cold evil."
+        }
+       },
+       {
+        "zh": "數脈；胃熱",
+        "en": "Rapid; stomach heat",
+        "ok": false,
+        "why": {
+         "zh": "這條脈是慢的，不是快的。",
+         "en": "This pulse is slow, not fast."
+        }
+       }
+      ]
+     }
+    },
+    {
+     "id": "d3",
+     "to": "hsu",
+     "guide": {
+      "zh": "第一步處置",
+      "en": "The first response"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "血壓計顯示心跳偏慢、血壓偏低。老許說眼前有點黑。",
+        "en": "The cuff shows a slow heart rate and low blood pressure. Mr Hsu says his vision is dimming."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "vitals",
+      "event": "bradycardia",
+      "options": [
+       {
+        "zh": "躺下停止活動、啟動急救、心電圖、AED",
+        "en": "Lie him down, stop exertion, call emergency, ECG, AED ready",
+        "ok": true,
+        "why": {
+         "zh": "疑似心肌梗塞：停止活動、啟動急救流程、盡快心電圖，AED 拿到身邊。中醫處置一律暫停。",
+         "en": "Suspected heart attack: stop exertion, start the emergency chain, ECG as soon as possible, AED at his side. All TCM care stops."
+        }
+       },
+       {
+        "zh": "針內關止嘔止痛",
+        "en": "Needle PC6 for the nausea and pain",
+        "ok": false,
+        "why": {
+         "zh": "內關可以止嘔，但現在每一分鐘都在心肌上。先急救。",
+         "en": "PC6 eases nausea, but right now the time is being spent in his heart muscle. Emergency first."
+        }
+       },
+       {
+        "zh": "讓他自己開車去急診",
+        "en": "Let him drive himself to the ER",
+        "ok": false,
+        "why": {
+         "zh": "他眼前發黑。開車可能害了他，也害了路上的人。",
+         "en": "His vision is dimming. Driving could kill him and someone else on the road."
+        }
+       }
+      ]
+     },
+     "post": [
+      [
+       "nurse",
+       {
+        "zh": "心電圖做好了，下壁導程有變化。救護車叫了。許先生，鑰匙我先保管。",
+        "en": "ECG done: changes in the inferior leads. Ambulance called. Mr Hsu, I’ll keep the keys."
+       }
+      ],
+      [
+       "hsu",
+       {
+        "zh": "我的車……",
+        "en": "My cab…"
+       }
+      ],
+      [
+       "mrshsu",
+       {
+        "zh": "車我來顧！你給我躺好！",
+        "en": "I’ll mind the cab! You lie still!"
+       }
+      ]
+     ],
+     "item": "taxi-keys"
+    },
+    {
+     "id": "d4",
+     "to": "mrshsu",
+     "guide": {
+      "zh": "跟許太太說明",
+      "en": "Explain to Mrs Hsu"
+     },
+     "lines": [
+      [
+       "mrshsu",
+       {
+        "zh": "他每次胃痛都吃胃藥就好，這次怎麼會是心臟？",
+        "en": "Every time his stomach hurts, antacids fix it. How can it be his heart this time?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "心臟下面那一面出問題，常常痛在胃這裡。他有糖尿病、抽菸、冒冷汗、心跳慢，這些是紅旗。",
+        "en": "When the underside of the heart is in trouble, the pain often sits right here at the stomach. Diabetes, smoking, a cold sweat and a slow heart are red flags."
+       }
+      ],
+      [
+       "mrshsu",
+       {
+        "zh": "我叫他戒菸叫了三十年。",
+        "en": "I’ve told him to quit smoking for thirty years."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "這次，他可能會聽。",
+        "en": "This time he might listen."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "review",
+   "name": {
+    "zh": "中午：平板開口",
+    "en": "Noon: the tablet speaks"
+   },
+   "sub": {
+    "zh": "12:30 · 病歷架",
+    "en": "12:30 · the chart rack"
+   },
+   "t": 750,
+   "mood": "day",
+   "note": {
+    "zh": "主訴寫病人的話",
+    "en": "The complaint is in the patient’s words"
+   },
+   "beats": [
+    {
+     "id": "e1",
+     "to": "place:chart",
+     "guide": {
+      "zh": "把佩君的病歷找出來",
+      "en": "Pull Pei-chun’s chart"
+     },
+     "lines": [
+      [
+       "master",
+       {
+        "zh": "病歷拿來。我們從主訴開始看。",
+        "en": "Bring the chart. We start with the chief complaint."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "find",
+      "hot": "chart",
+      "q": {
+       "zh": "在病歷架找出佩君的初診病歷",
+       "en": "Find Pei-chun’s first-visit record on the rack"
+      }
+     }
+    },
+    {
+     "id": "e2",
+     "to": "master",
+     "guide": {
+      "zh": "主訴怎麼寫",
+      "en": "How to write the complaint"
+     },
+     "lines": [
+      [
+       "master",
+       {
+        "zh": "三個寫法，哪一個是主訴？",
+        "en": "Three versions. Which one is a chief complaint?"
+       }
+      ]
+     ],
+     "mini": {
+      "type": "choice",
+      "q": {
+       "zh": "哪一個是合格的主訴？",
+       "en": "Which is a proper chief complaint?"
+      },
+      "options": [
+       {
+        "zh": "胃脘脹痛連脅兩月，情緒緊張加重",
+        "en": "Epigastric distension into flanks, two months, worse with stress",
+        "ok": true,
+        "why": {
+         "zh": "主訴＝主要症狀＋時間（必要時加誘因），用病人的話，不寫診斷或證型。",
+         "en": "Chief complaint = main symptom + duration (and trigger if useful), in the patient’s terms, without a diagnosis or pattern."
+        }
+       },
+       {
+        "zh": "肝氣犯胃",
+        "en": "Liver qi invading the stomach",
+        "ok": false,
+        "why": {
+         "zh": "這是辨證結果，不是病人說的話。主訴寫成證，後面就沒有推理可看了。",
+         "en": "That is the pattern, not what she said. Write the pattern as the complaint and the reasoning disappears."
+        }
+       },
+       {
+        "zh": "病人說她胃不好",
+        "en": "Patient says her stomach is bad",
+        "ok": false,
+        "why": {
+         "zh": "沒有部位、性質、時間。下一位醫師看了什麼都不知道。",
+         "en": "No site, quality or duration. The next doctor learns nothing."
+        }
+       }
+      ]
+     },
+     "post": [
+      [
+       "master",
+       {
+        "zh": "四診合參寫得好。辨證論治的理由也寫了。",
+        "en": "Your four examinations together are well written, and the reasons for the pattern-based treatment are there."
+       }
+      ],
+      [
+       "master",
+       {
+        "zh": "平板唯一沒響的是……",
+        "en": "The one item the tablet didn’t chime for is…"
+       }
+      ]
+     ],
+     "item": "first-visit"
+    },
+    {
+     "id": "e3",
+     "when": {
+      "flag": "asked-alarm",
+      "is": false
+     },
+     "lines": [
+      [
+       "master",
+       {
+        "zh": "……警訊症狀。四十一歲新發胃痛，你沒問體重、黑便、貧血。",
+        "en": "…alarm features. New stomach pain at forty-one and you didn’t ask about weight, black stools or anaemia."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "我以為證很清楚就……",
+        "en": "I thought, with the pattern so clear…"
+       }
+      ],
+      [
+       "master",
+       {
+        "zh": "證清楚，病不一定單純。今晚她可能會打來，到時候補問。",
+        "en": "A clear pattern doesn’t make the disease simple. She may call tonight; ask then."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "e4",
+     "when": {
+      "flag": "asked-alarm",
+      "is": true
+     },
+     "lines": [
+      [
+       "master",
+       {
+        "zh": "……沒有。今天平板全部響過。貧血那一題問得好，胃鏡也排了。",
+        "en": "…none. Every item chimed today. The anaemia question was well asked, and the endoscopy is booked."
+       }
+      ],
+      [
+       "nurse",
+       {
+        "zh": "杜醫師的咖啡又涼了。他看你看得太專心。",
+        "en": "Dr Tu’s coffee has gone cold again. He was watching you too closely."
+       }
+      ]
+     ],
+     "item": "alarm"
+    }
+   ]
+  },
+  {
+   "id": "callback",
+   "name": {
+    "zh": "心臟科回電",
+    "en": "Cardiology calls back"
+   },
+   "sub": {
+    "zh": "15:00 · 書寫桌",
+    "en": "15:00 · the writing desk"
+   },
+   "t": 900,
+   "mood": "day",
+   "note": {
+    "zh": "老許的血管通了",
+    "en": "Mr Hsu's artery is open"
+   },
+   "beats": [
+    {
+     "id": "f1",
+     "ring": {
+      "title": {
+       "zh": "心臟內科來電",
+       "en": "Cardiology calling"
+      },
+      "sub": {
+       "zh": "許先生的導管做完了",
+       "en": "Mr Hsu is out of the cath lab"
+      },
+      "call": true,
+      "from": "cardio"
+     },
+     "to": "place:desk",
+     "guide": {
+      "zh": "接心臟內科的電話",
+      "en": "Take cardiology’s call"
+     },
+     "lines": [
+      [
+       "cardio",
+       {
+        "zh": "許先生是下壁心肌梗塞，右冠狀動脈塞住，已經打通。到院時心跳很慢，還好來得快。",
+        "en": "Mr Hsu had an inferior infarction, a blocked right coronary artery, now opened. His heart rate was very slow on arrival; thank goodness he came fast."
+       }
+      ],
+      [
+       "cardio",
+       {
+        "zh": "你們的心電圖跟轉診寫得很清楚。也謝謝沒讓他自己開車。",
+        "en": "Your ECG and referral were very clear. And thank you for not letting him drive."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "鑰匙還在我們這裡。",
+        "en": "We still have the keys."
+       }
+      ]
+     ],
+     "item": "cardiac-stomach"
+    },
+    {
+     "id": "f2",
+     "roles": [
+      "educator"
+     ],
+     "to": "place:desk",
+     "guide": {
+      "zh": "寫佩君的衛教單",
+      "en": "Write Pei-chun’s advice"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "佩君的衛教：三餐定時、少咖啡、結帳週前多散步、症狀變化就回診。",
+        "en": "Pei-chun’s sheet: regular meals, less coffee, a short walk before closing week, return if anything changes."
+       }
+      ],
+      [
+       "nurse",
+       {
+        "zh": "還要寫：黑便變多、吐、體重掉，立刻回來。",
+        "en": "Also: more black stools, vomiting or weight loss, come back at once."
+       }
+      ]
+     ],
+     "item": "slow-pulse"
+    }
+   ]
+  },
+  {
+   "id": "debrief",
+   "name": {
+    "zh": "收尾",
+    "en": "Wrapping up"
+   },
+   "sub": {
+    "zh": "17:30 · 單面鏡後面",
+    "en": "17:30 · behind the mirror"
+   },
+   "t": 1050,
+   "mood": "eve",
+   "note": {
+    "zh": "漏問的那一題最貴",
+    "en": "The skipped question is the expensive one"
+   },
+   "beats": [
+    {
+     "id": "g1",
+     "to": "master",
+     "guide": {
+      "zh": "聽杜醫師的結語",
+      "en": "Dr Tu’s debrief"
+     },
+     "lines": [
+      [
+       "master",
+       {
+        "zh": "今天兩個「胃痛」。一個是肝氣犯胃，一個是心臟。差別不在舌脈，在你多問的那一句。",
+        "en": "Two “stomach pains” today. One was liver qi invading the stomach, one was a heart. The difference wasn’t in tongue or pulse; it was the extra question you asked."
+       }
+      ],
+      [
+       "master",
+       {
+        "zh": "老許那條遲脈，中醫讀成寒沒有錯，只是今天輪不到它。",
+        "en": "Reading Mr Hsu’s slow pulse as cold isn’t wrong in TCM. It just wasn’t its turn today."
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "他終於喝了一口咖啡。冰的。他皺眉，還是喝完了。",
+        "en": "He finally sips his coffee. Stone cold. He winces and drinks it anyway."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "night",
+   "name": {
+    "zh": "夜間訊息",
+    "en": "A night message"
+   },
+   "sub": {
+    "zh": "20:30 · 回家路上",
+    "en": "20:30 · on the way home"
+   },
+   "t": 1230,
+   "mood": "night",
+   "note": {
+    "zh": "佩君的補充",
+    "en": "Pei-chun's afterthought"
+   },
+   "beats": [
+    {
+     "id": "n1",
+     "ring": {
+      "title": {
+       "zh": "佩君的訊息",
+       "en": "Message from Pei-chun"
+      },
+      "sub": {
+       "zh": "醫生，我忘了講一件事……",
+       "en": "Doctor, I forgot to mention something…"
+      },
+      "call": false,
+      "from": "peichun"
+     },
+     "lines": [
+      [
+       "peichun",
+       {
+        "zh": "醫生，針完今天胃都沒脹。不過有件事我忘了講……",
+        "en": "Doctor, no bloating since the needles today. But there’s something I forgot to say…"
+       }
+      ]
+     ]
+    },
+    {
+     "id": "n2",
+     "when": {
+      "flag": "asked-alarm",
+      "is": false
+     },
+     "lines": [
+      [
+       "peichun",
+       {
+        "zh": "健檢說我貧血，在吃鐵劑，大便黑黑的。要緊嗎？",
+        "en": "My health check said I’m anaemic. I’m on iron and my stools are dark. Does it matter?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "鐵劑會讓大便變黑，可是貧血加胃痛要做胃鏡。明天我請腸胃科幫你排。",
+        "en": "Iron darkens stools, but anaemia with stomach pain needs an endoscopy. I’ll get gastroenterology to book you tomorrow."
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "你在筆記本最上面寫：警訊症狀。畫了三個圈。",
+        "en": "At the top of your notebook you write “alarm features” and circle it three times."
+       }
+      ]
+     ],
+     "set": {
+      "gi-referred": true
+     }
+    },
+    {
+     "id": "n3",
+     "when": {
+      "flag": "gi-referred",
+      "is": true
+     },
+     "lines": [
+      [
+       "peichun",
+       {
+        "zh": "胃鏡那天我請好假了。結帳週我會記得去散步。",
+        "en": "I’ve booked the day off for the endoscopy. And I’ll remember the walk before closing week."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "好。有黑便變多、吐或體重掉，不要等，直接回來。",
+        "en": "Good. If the stools get darker, you vomit or lose weight, don’t wait; come straight back."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "n4",
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "你口袋裡有個硬硬的東西。是老許的計程車鑰匙。",
+        "en": "Something hard in your pocket. Mr Hsu’s taxi keys."
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "明天還給許太太。順便問她，老許戒菸了沒。",
+        "en": "Back to Mrs Hsu tomorrow. And ask whether he has quit smoking yet."
+       }
+      ]
+     ],
+     "end": true
+    }
+   ]
+  }
+ ],
+ "ending": {
+  "title": {
+   "zh": "下班了",
+   "en": "End of shift"
+  },
+  "sub": {
+   "zh": "漏問的那一題，最貴",
+   "en": "The question you skip is the expensive one"
+  },
+  "stats": [
+   "drills",
+   "choices",
+   "calls",
+   "items",
+   "time"
+  ]
+ }
+}

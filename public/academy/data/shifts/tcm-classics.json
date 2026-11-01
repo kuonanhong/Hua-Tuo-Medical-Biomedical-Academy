@@ -1,0 +1,861 @@
+{
+ "format": "huatuo-shift-v2",
+ "department": "tcm-classics",
+ "case": "main",
+ "caseTitle": {"zh": "條文與病人", "en": "The clause and the patient"},
+ "condition": {"zh": "經典 · 傷寒論六經辨證", "en": "Classics · six-channel patterns"},
+ "difficulty": 2,
+ "title": {"zh": "讀《傷寒論》的門診日", "en": "A clinic day with the Shanghan lun"},
+ "tagline": {"zh": "清晨讀條文，上午遇見兩個口苦的人", "en": "Clauses at dawn, and two bitter mouths before noon"},
+ "room": "tcm-clinic",
+ "minutes": 25,
+ "roles": [
+  {
+   "id": "clerk",
+   "zh": "中醫見習醫師",
+   "en": "TCM clerk",
+   "desc": {
+    "zh": "讀書會報告、跟診、問診、寫病歷。今天的功課：把條文用在活人身上，也知道什麼時候不能用。",
+    "en": "Reading-group report, clinic, history, notes. Today’s homework: use the clauses on living people, and know when not to."
+   }
+  },
+  {
+   "id": "herbalist",
+   "zh": "中藥調劑師",
+   "en": "Herbal dispenser",
+   "desc": {"zh": "調劑、核對、煎服法衛教。經方的方後注是你的條文。", "en": "Dispensing, checking, teaching how to decoct and take it. The notes after each classical formula are your clauses."}
+  }
+ ],
+ "cast": {
+  "ko": {
+   "name": {"zh": "柯醫師", "en": "Dr Ko"},
+   "role": {"zh": "中醫內科主治醫師（師傅）", "en": "TCM internal medicine attending (mentor)"},
+   "tag": "ATT",
+   "color": "#81296d",
+   "body": "mentor",
+   "about": {
+    "zh": "每週二清晨帶《傷寒論》讀書會。從不說「書上說」，只問「張仲景看到這個病人會問什麼」。",
+    "en": "Runs the Tuesday dawn reading group on the Shanghan lun. Never says “the book says”; asks “what would Zhang Zhongjing ask this patient?”"
+   }
+  },
+  "juan": {
+   "name": {"zh": "阿娟", "en": "Juan"},
+   "role": {"zh": "中藥調劑師", "en": "Herbal dispenser"},
+   "tag": "HB",
+   "color": "#3b8f6a",
+   "body": "herbalist",
+   "about": {
+    "zh": "背得出每個經方的煎服法。最在意「去滓再煎」有沒有被跳過。",
+    "en": "Knows every classical formula’s decoction method by heart. Cares most whether “strain and decoct again” got skipped."
+   }
+  },
+  "xiaolin": {
+   "name": {"zh": "小林", "en": "Lin"},
+   "role": {"zh": "讀書會學長（住院醫師）", "en": "Reading-group senior (resident)"},
+   "tag": "RES",
+   "color": "#5a6b7c",
+   "body": "student",
+   "about": {"zh": "條文背得比誰都熟，常把「但見一證便是」用過頭。", "en": "Knows the clauses better than anyone, and overuses “one sign is enough”."}
+  },
+  "peijun": {
+   "name": {"zh": "佩君", "en": "Pei-Jun"},
+   "role": {"zh": "二十九歲，感冒拖了一週的老師", "en": "Twenty-nine, a teacher a week into a cold"},
+   "tag": "P1",
+   "color": "#2f6fa3",
+   "body": "patient",
+   "about": {
+    "zh": "虛構教學個案。國小老師。前幾天怕冷發燒，現在一陣冷一陣熱、嘴巴苦，上課講兩句就想吐。",
+    "en": "Fictional teaching case. A primary-school teacher. Chills and fever at first; now cold and hot by turns, a bitter mouth, nausea after two sentences in class."
+   }
+  },
+  "zhou": {
+   "name": {"zh": "老周", "en": "Old Zhou"},
+   "role": {"zh": "六十六歲，退休計程車司機", "en": "Sixty-six, retired taxi driver"},
+   "tag": "P2",
+   "color": "#c2703a",
+   "body": "patient",
+   "about": {
+    "zh": "虛構教學個案。說自己「也是口苦、也是忽冷忽熱」，要拿跟佩君一樣的藥。眼白有點黃，他沒發現。",
+    "en": "Fictional teaching case. Says he “also has a bitter mouth and goes hot and cold” and wants Pei-Jun’s medicine. The whites of his eyes are a little yellow; he hasn’t noticed."
+   }
+  },
+  "zhouson": {
+   "name": {"zh": "老周的兒子", "en": "Zhou's son"},
+   "role": {"zh": "家屬（電話）", "en": "Family (phone)"},
+   "tag": "FAM",
+   "color": "#a0522d",
+   "phoneOnly": true,
+   "about": {"zh": "在外縣市上班，電話裡比誰都急。", "en": "Works in another county; more anxious on the phone than anyone in the room."}
+  },
+  "er-doc": {
+   "name": {"zh": "急診醫師", "en": "Emergency physician"},
+   "role": {"zh": "急診（電話）", "en": "Emergency department (phone)"},
+   "tag": "ER",
+   "color": "#c0392b",
+   "phoneOnly": true,
+   "about": {"zh": "交班前會回電告訴你轉來的病人怎麼了。", "en": "Calls back before handover to tell you what became of your referral."}
+  }
+ },
+ "places": {
+  "board": {"name": {"zh": "讀書會白板", "en": "Reading-group whiteboard"}, "hot": "whiteboard"},
+  "desk": {"name": {"zh": "脈枕診桌", "en": "Pulse desk"}, "hot": "pulse-desk"},
+  "lamp": {"name": {"zh": "舌診燈", "en": "Tongue lamp"}, "hot": "lamp"},
+  "chart-wall": {"name": {"zh": "經絡掛圖", "en": "Meridian chart"}, "hot": "meridian-chart"},
+  "cabinet": {"name": {"zh": "藥材標本櫃", "en": "Herb specimen cabinet"}, "hot": "cabinet"},
+  "couch": {"name": {"zh": "隔簾後的治療床", "en": "Couch behind the curtain"}, "hot": "couch"}
+ },
+ "glossary": [
+  {
+   "term": {"zh": "六經辨證", "en": "six-channel pattern identification"},
+   "plain": {
+    "zh": "《傷寒論》把外感病分成太陽、陽明、少陽、太陰、少陰、厥陰六層，看病在哪一經、往哪裡傳。",
+    "en": "The Shanghan lun sorts external illness into six layers (Taiyang, Yangming, Shaoyang, Taiyin, Shaoyin, Jueyin) and asks where the illness sits and where it is heading."
+   }
+  },
+  {
+   "term": {"zh": "條文", "en": "clause"},
+   "plain": {
+    "zh": "《傷寒論》由一條條短句寫成，每條是一組症狀與處置；讀書會一次讀幾條。",
+    "en": "The Shanghan lun is written in short numbered clauses, each a cluster of signs and what to do; a reading group takes a few at a time."
+   }
+  },
+  {
+   "term": {"zh": "提綱", "en": "headline clause"},
+   "plain": {
+    "zh": "每一經開頭概括主症的條文，例如「少陽之為病，口苦、咽乾、目眩也」。",
+    "en": "The clause opening each channel that sums up its key signs, such as “Shaoyang disease: bitter mouth, dry throat, dizzy eyes”."
+   }
+  },
+  {
+   "term": {"zh": "太陽病", "en": "Taiyang disease"},
+   "plain": {"zh": "外感初期、病在表：惡寒、發熱、頭項強痛、脈浮。", "en": "The first, surface stage of an external illness: chills, fever, stiff aching head and neck, a floating pulse."}
+  },
+  {
+   "term": {"zh": "少陽病", "en": "Shaoyang disease"},
+   "plain": {
+    "zh": "病在半表半裡：往來寒熱、口苦咽乾、胸脅苦滿、不欲飲食、心煩喜嘔、脈弦。",
+    "en": "Illness “half outside, half inside”: alternating chills and fever, bitter mouth, dry throat, full flanks, no appetite, irritability, nausea, a wiry pulse."
+   }
+  },
+  {
+   "term": {"zh": "往來寒熱", "en": "alternating chills and fever"},
+   "plain": {"zh": "冷一陣、熱一陣，輪流出現；和太陽病的惡寒發熱同時存在不同。", "en": "Cold for a while, then hot, taking turns; unlike Taiyang, where chills and fever come together."}
+  },
+  {
+   "term": {"zh": "胸脅苦滿", "en": "fullness in the chest and flanks"},
+   "plain": {"zh": "胸口兩側到肋下悶脹；少陽經循行經過脅肋。", "en": "A stuffed, pressing feeling from the sides of the chest to under the ribs; the Shaoyang channel runs along the flanks."}
+  },
+  {
+   "term": {"zh": "和解", "en": "harmonising"},
+   "plain": {
+    "zh": "少陽病不可發汗、不可攻下，中醫用「和解」法，代表方是小柴胡湯。",
+    "en": "Shaoyang may be neither sweated nor purged; TCM “harmonises” instead, the model formula being Xiao Chaihu Tang."
+   }
+  },
+  {
+   "term": {"zh": "去滓再煎", "en": "strain and decoct again"},
+   "plain": {
+    "zh": "小柴胡湯的煎法：煮好後濾去藥渣，再把藥汁煎濃；中醫認為能使藥性更和。",
+    "en": "Xiao Chaihu Tang’s method: boil, strain off the dregs, then simmer the liquid down again; in TCM this makes the formula gentler and more unified."
+   }
+  },
+  {
+   "term": {"zh": "方證相應", "en": "formula–pattern match"},
+   "plain": {"zh": "經方的用法：症狀組合對上條文，就用那個方；對不上就不用。", "en": "How classical formulas are used: if the cluster of signs matches the clause, use that formula; if not, don’t."}
+  },
+  {
+   "term": {"zh": "發黃", "en": "yellowing"},
+   "plain": {
+    "zh": "《傷寒論》對黃疸的說法。現代要查肝膽；合併發燒腹痛時是急症。",
+    "en": "The Shanghan lun’s word for jaundice. Today it means checking the liver and bile ducts; with fever and belly pain it is an emergency."
+   }
+  },
+  {
+   "term": {"zh": "下合穴", "en": "lower sea point"},
+   "plain": {"zh": "六腑在下肢各有一個合穴；膽的下合穴是陽陵泉。", "en": "Each of the six fu organs has a sea point on the leg; the gallbladder’s is Yanglingquan."}
+  },
+  {
+   "term": {"zh": "膽囊穴", "en": "Dannang point"},
+   "plain": {"zh": "陽陵泉下方的經外奇穴；膽道疾病時常有壓痛，古今都把它當線索。", "en": "An extra point below Yanglingquan; often tender in biliary disease, a clue old and new."}
+  },
+  {
+   "term": {"zh": "急下之", "en": "purge urgently"},
+   "plain": {
+    "zh": "《傷寒論》陽明病有幾條「急下之」：病勢危急就不能等。今天的「急」是急診。",
+    "en": "A few Yangming clauses say “purge urgently”: when the illness is dangerous, do not wait. Today “urgently” means the emergency department."
+   }
+  }
+ ],
+ "codex": [
+  {
+   "id": "pulse-desk",
+   "kind": "equipment",
+   "name": {"zh": "脈枕診桌", "en": "Pulse desk"},
+   "text": {
+    "zh": "脈枕墊在腕下，手與心臟同高，三指齊平按寸關尺。讀書會的條文，九成要在這張桌上驗證。",
+    "en": "The pillow goes under the wrist, the hand at heart height, three fingers level on cun, guan and chi. Nine clauses in ten from the reading group are tested at this desk."
+   },
+   "hot": "pulse-desk"
+  },
+  {
+   "id": "meridian-chart",
+   "kind": "equipment",
+   "name": {"zh": "經絡掛圖：少陽經", "en": "Meridian chart: Shaoyang"},
+   "text": {
+    "zh": "足少陽膽經從外眼角繞耳，沿頭側下行，過脅肋、髖外側到足四趾。「胸脅苦滿」的位置，剛好是它走過的地方。",
+    "en": "The foot Shaoyang gallbladder channel runs from the outer eye corner round the ear, down the side of the head, across the flanks and outer hip to the fourth toe. “Full flanks” sit right on its path."
+   },
+   "hot": "meridian-chart"
+  },
+  {
+   "id": "chaihu",
+   "kind": "equipment",
+   "name": {"zh": "藥材標本：柴胡", "en": "Specimen: Chaihu"},
+   "text": {
+    "zh": "小柴胡湯的君藥。中醫認為苦微寒，和解少陽、疏肝。標本櫃裡的柴胡根細長、質硬，斷面纖維性。",
+    "en": "The chief herb of Xiao Chaihu Tang. In TCM bitter and slightly cold, harmonising Shaoyang and soothing the liver. The specimen roots are long, thin and hard, fibrous in section."
+   },
+   "hot": "cabinet"
+  },
+  {
+   "id": "ko-copy",
+   "kind": "item",
+   "name": {"zh": "柯醫師畫線的《傷寒論》", "en": "Dr Ko's marked Shanghan lun"},
+   "text": {
+    "zh": "紅線是他年輕時畫的條文，藍線是被病人教會之後補的旁註。最多藍線的一頁，寫著「觀其脈證，知犯何逆，隨證治之」。",
+    "en": "Red lines are clauses he marked when young; blue notes were added after patients taught him. The page with the most blue reads: “Observe the pulse and signs, know what went wrong, treat according to the signs.”"
+   }
+  },
+  {
+   "id": "zhang-zhongjing",
+   "kind": "person",
+   "name": {"zh": "張仲景", "en": "Zhang Zhongjing"},
+   "text": {
+    "zh": "東漢醫家，著《傷寒雜病論》，後世分為《傷寒論》與《金匱要略》。以六經辨證與方證相應立下中醫臨床的骨架，被尊為醫聖。",
+    "en": "Eastern Han physician who wrote the Treatise on Cold Damage and Miscellaneous Diseases, later split into the Shanghan lun and the Jingui yaolue. His six channels and formula–pattern matching gave TCM practice its skeleton; he is honoured as the Sage of Medicine."
+   }
+  },
+  {
+   "id": "concept-six",
+   "kind": "concept",
+   "name": {"zh": "六經辨證怎麼用", "en": "Using the six channels"},
+   "text": {
+    "zh": "三陽病多屬實熱：太陽在表（惡寒發熱、脈浮），陽明在裡（大熱、大渴、腹滿便秘），少陽在半表半裡（往來寒熱、口苦、脈弦）。三陰病多屬虛寒：太陰腹滿吐利，少陰脈微細、但欲寐，厥陰寒熱錯雜。病可以循經傳、越經傳、直中，也可以合病、併病。書的篇章順序不是病的順序。",
+    "en": "The three yang stages are mostly excess and heat: Taiyang on the surface (chills with fever, floating pulse), Yangming inside (high fever, thirst, full belly, constipation), Shaoyang half-in half-out (alternating chills, bitter mouth, wiry pulse). The three yin stages are mostly deficiency and cold: Taiyin with fullness, vomiting and diarrhoea; Shaoyin with a faint thin pulse and only wanting to sleep; Jueyin with heat and cold tangled. Illness may pass in order, skip, strike directly, or involve two channels at once. The chapter order is not the illness’s order."
+   }
+  },
+  {
+   "id": "concept-reading",
+   "kind": "concept",
+   "name": {"zh": "讀經典的四個步驟", "en": "Four steps for reading a classic"},
+   "text": {
+    "zh": "一、讀條文：原文、斷句、字義。二、找方證：這組症狀對應哪個方、哪些藥。三、問病機：為什麼這樣治，換一個症狀會怎樣。四、對照現代：同樣的表現，現代醫學會擔心什麼危險疾病。第四步不是否定經典，是讓經典安全地用在今天的病人身上。",
+    "en": "One: read the clause, its punctuation and words. Two: find the formula–pattern match. Three: ask the mechanism, why this treatment and what changes if a sign changes. Four: compare with modern medicine, what dangerous disease the same picture can hide. Step four does not dismiss the classic; it lets the classic be used safely on today’s patient."
+   }
+  },
+  {
+   "id": "concept-biliary",
+   "kind": "concept",
+   "name": {"zh": "少陽與膽道急症", "en": "Shaoyang and biliary emergencies"},
+   "text": {
+    "zh": "口苦、往來寒熱、脅下痛是少陽病的骨架，也可能是膽囊炎或膽管炎。紅旗：寒顫高燒、黃疸（眼白發黃、茶色尿）、右上腹痛加劇；若再有血壓下降或意識改變，是可能致命的敗血症。中醫認為大柴胡湯、茵陳蒿湯治少陽陽明與發黃，但膽管阻塞合併感染需要急診抽血、影像與引流。先轉診，再談經方。",
+    "en": "A bitter mouth, alternating chills and pain under the ribs are the bones of Shaoyang disease, and also of cholecystitis or cholangitis. Red flags: rigors with high fever, jaundice (yellow eyes, tea-coloured urine), worsening right upper belly pain; add falling blood pressure or confusion and it is potentially fatal sepsis. TCM uses Da Chaihu Tang and Yinchenhao Tang for Shaoyang–Yangming and yellowing, but an infected blocked bile duct needs emergency bloods, imaging and drainage. Refer first; classical formulas later."
+   }
+  }
+ ],
+ "segs": [
+  {
+   "id": "reading",
+   "name": {"zh": "清晨讀書會", "en": "Dawn reading group"},
+   "sub": {"zh": "07:00 · 中醫診間", "en": "07:00 · TCM clinic"},
+   "t": 420,
+   "mood": "day",
+   "note": {"zh": "太陽、少陽提綱", "en": "Taiyang and Shaoyang headlines"},
+   "beats": [
+    {
+     "id": "r1",
+     "to": "place:board",
+     "guide": {"zh": "到白板前參加讀書會", "en": "Join the reading group at the board"},
+     "lines": [
+      ["sys", {"zh": "週二清晨七點，白板上寫著兩行字：「太陽之為病」「少陽之為病」。", "en": "Tuesday, seven a.m. Two lines on the whiteboard: “Taiyang disease” and “Shaoyang disease”."}],
+      ["ko", {"zh": "《傷寒論》不是用背的，是用的。太陽病提綱？", "en": "The Shanghan lun is not for reciting; it is for using. The Taiyang headline clause?"}],
+      ["me", {"zh": "太陽之為病，脈浮，頭項強痛而惡寒。", "en": "“Taiyang disease: floating pulse, stiff aching head and neck, aversion to cold.”"}],
+      ["ko", {"zh": "少陽呢？", "en": "And Shaoyang?"}],
+      ["me", {"zh": "少陽之為病，口苦、咽乾、目眩也。", "en": "“Shaoyang disease: bitter mouth, dry throat, dizzy eyes.”"}],
+      ["ko", {"zh": "好。六經辨證的六經，照書的篇章排一次。", "en": "Good. Now put the six channels of six-channel pattern identification in the book’s chapter order."}]
+     ],
+     "mini": {
+      "type": "order",
+      "q": {"zh": "《傷寒論》六經篇章的順序", "en": "The order of the six-channel chapters in the Shanghan lun"},
+      "steps": [
+       {"zh": "太陽病", "en": "Taiyang"},
+       {"zh": "陽明病", "en": "Yangming"},
+       {"zh": "少陽病", "en": "Shaoyang"},
+       {"zh": "太陰病", "en": "Taiyin"},
+       {"zh": "少陰病", "en": "Shaoyin"},
+       {"zh": "厥陰病", "en": "Jueyin"}
+      ]
+     },
+     "post": [
+      [
+       "ko",
+       {
+        "zh": "但書的順序不等於病的順序。病可以直接到少陽，也可以跳過一經。看病人，不看目錄。",
+        "en": "But the book’s order is not the illness’s order. Illness can land straight in Shaoyang or skip a channel. Read the patient, not the contents page."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "r2",
+     "to": "xiaolin",
+     "guide": {"zh": "聽小林學長的報告", "en": "Hear Lin's report"},
+     "lines": [
+      ["xiaolin", {"zh": "太陽病篇佔了全書快一半的條文。我的結論：太陽最重要。", "en": "The Taiyang chapter holds nearly half the clauses. My conclusion: Taiyang matters most."}],
+      ["ko", {"zh": "為什麼張仲景要花這麼多條寫太陽？你們自己看。", "en": "Why did Zhang Zhongjing spend so many clauses on Taiyang? Look for yourselves."}]
+     ],
+     "mini": {"type": "stage", "case": "tcm-classics-shanghan-workflow", "stage": 2},
+     "post": [
+      [
+       "ko",
+       {
+        "zh": "因為最多病人在這一關被看好——或者被治壞。誤汗、誤下的條文，都在太陽篇。",
+        "en": "Because most patients are either cured or mistreated at that first stage. The clauses on wrong sweating and wrong purging all live in the Taiyang chapter."
+       }
+      ],
+      ["xiaolin", {"zh": "所以太陽篇其實是一本「錯誤處理手冊」。", "en": "So the Taiyang chapter is really an error-handling manual."}],
+      ["ko", {"zh": "這句話可以寫進報告。", "en": "Put that sentence in your report."}]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "peijun",
+   "name": {"zh": "佩君的口苦", "en": "Pei-Jun's bitter mouth"},
+   "sub": {"zh": "09:00 · 脈枕診桌", "en": "09:00 · pulse desk"},
+   "t": 540,
+   "mood": "day",
+   "note": {"zh": "佩君：少陽病，小柴胡湯證", "en": "Pei-Jun: Shaoyang, Xiao Chaihu Tang"},
+   "beats": [
+    {
+     "id": "p1",
+     "to": "peijun",
+     "guide": {"zh": "請佩君到脈枕診桌", "en": "Bring Pei-Jun to the pulse desk"},
+     "lines": [
+      ["peijun", {"zh": "感冒一週了。前幾天怕冷發燒，現在一陣冷一陣熱，嘴巴好苦。", "en": "A week of this cold. At first chills and fever; now cold, then hot, and my mouth is so bitter."}],
+      ["me", {"zh": "冷和熱是同時，還是輪流？", "en": "Cold and hot at the same time, or taking turns?"}],
+      ["peijun", {"zh": "輪流。冷完了熱，熱完了又冷。這裡也悶悶的。", "en": "Taking turns. Cold, then hot, then cold again. And it feels stuffed here."}],
+      ["sys", {"zh": "她的手指沿著兩側肋骨下緣比了一下。", "en": "Her fingers trace along the lower edge of her ribs on both sides."}],
+      ["ko", {"zh": "往來寒熱、胸脅苦滿。上課呢？", "en": "Alternating chills and fever; fullness in the chest and flanks. And in class?"}],
+      ["peijun", {"zh": "講兩句就想吐。小朋友以為我懷孕了。", "en": "Two sentences and I want to throw up. The kids think I’m pregnant."}]
+     ],
+     "mini": {
+      "type": "pulse",
+      "pulse": "wiry",
+      "q": {"zh": "佩君的脈端直而長，如按琴弦，偏細。這是？", "en": "Pei-Jun’s pulse is straight and long like a pressed string, and a little thin. Which pulse?"},
+      "options": [
+       {
+        "zh": "弦脈",
+        "en": "Wiry pulse",
+        "ok": true,
+        "why": {
+         "zh": "弦是少陽主脈。條文說「脈弦細，頭痛發熱者，屬少陽」。配合往來寒熱與口苦，病在少陽。",
+         "en": "Wiry is the Shaoyang pulse. The clause reads: “A wiry thin pulse with headache and fever belongs to Shaoyang.” With alternating chills and a bitter mouth, the illness sits in Shaoyang."
+        }
+       },
+       {
+        "zh": "浮脈",
+        "en": "Floating pulse",
+        "ok": false,
+        "why": {"zh": "浮主表，是太陽病的脈。她已經不在表了。", "en": "Floating means the surface: the Taiyang pulse. She has moved past the surface."}
+       },
+       {
+        "zh": "洪脈",
+        "en": "Surging pulse",
+        "ok": false,
+        "why": {"zh": "洪大是陽明氣分大熱，會大熱大渴大汗。她沒有。", "en": "Surging belongs to Yangming heat, with high fever, great thirst and sweating. She has none."}
+       },
+       {
+        "zh": "微細脈",
+        "en": "Faint, thin pulse",
+        "ok": false,
+        "why": {"zh": "脈微細、但欲寐是少陰。她累，但神清。", "en": "Faint and thin with only wanting to sleep is Shaoyin. She is tired but clear-headed."}
+       }
+      ]
+     },
+     "post": [
+      ["ko", {"zh": "舌淡紅、苔薄白，熱還沒入裡成實。少陽病。", "en": "Pale-red tongue, thin white coat: the heat hasn’t gone deep and solid. Shaoyang disease."}],
+      ["peijun", {"zh": "是很嚴重的病嗎？", "en": "Is that serious?"}],
+      ["ko", {"zh": "是很常見的病。嚴重的話，我們會告訴妳。", "en": "It is very common. If it were serious, we would tell you."}]
+     ]
+    },
+    {
+     "id": "p2",
+     "to": "place:chart-wall",
+     "guide": {"zh": "在掛圖上循少陽經", "en": "Trace the Shaoyang channel on the chart"},
+     "lines": [
+      ["ko", {"zh": "為什麼少陽病會「胸脅苦滿」？", "en": "Why does Shaoyang disease bring full flanks?"}],
+      ["me", {"zh": "足少陽膽經沿頭側下行，走過脅肋。", "en": "The foot Shaoyang gallbladder channel runs down the side of the head and across the flanks."}],
+      ["ko", {"zh": "用手走一遍，從外眼角開始。", "en": "Walk it with your hand, starting from the outer corner of the eye."}]
+     ],
+     "mini": {"type": "drill", "template": "tcm-classics", "drill": "trace"},
+     "post": [["ko", {"zh": "經絡走到哪裡，病就可能表現在哪裡。條文不是憑空寫的。", "en": "Where the channel runs, the illness can show. The clauses were not written out of thin air."}]]
+    },
+    {
+     "id": "p3",
+     "to": "place:cabinet",
+     "guide": {"zh": "到標本櫃配小柴胡湯", "en": "Assemble Xiao Chaihu Tang at the cabinet"},
+     "lines": [
+      ["ko", {"zh": "少陽不可汗、不可下，只能和解。代表方？", "en": "Shaoyang may be neither sweated nor purged, only harmonised. The model formula?"}],
+      ["me", {"zh": "小柴胡湯。", "en": "Xiao Chaihu Tang."}]
+     ],
+     "mini": {
+      "type": "herb",
+      "q": {"zh": "托盤上哪些屬於小柴胡湯？", "en": "Which herbs on the tray belong to Xiao Chaihu Tang?"},
+      "pick": ["柴胡", "黃芩", "半夏", "人參", "甘草", "大棗"],
+      "distractors": ["麻黃", "桂枝", "石膏", "大黃"],
+      "formula": "小柴胡湯"
+     },
+     "post": [
+      ["juan", {"zh": "還少一味生薑，在調劑台上切片。一共七味。", "en": "One missing: fresh ginger, being sliced on the bench. Seven herbs in all."}],
+      [
+       "ko",
+       {
+        "zh": "柴胡、黃芩一散一清；半夏、生薑止嘔；人參、甘草、大棗扶正。這叫和解。",
+        "en": "Chaihu releases and Huangqin clears; Banxia and ginger settle the nausea; ginseng, liquorice and dates support. That is harmonising."
+       }
+      ],
+      ["ko", {"zh": "麻黃、桂枝發汗，石膏清陽明，大黃攻下。少陽全都不能用。", "en": "Mahuang and Guizhi sweat, Shigao clears Yangming, Dahuang purges. None of them belong in Shaoyang."}]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dispense",
+   "name": {"zh": "調劑與煎服", "en": "Dispensing and decocting"},
+   "sub": {"zh": "10:30 · 藥材標本櫃", "en": "10:30 · herb cabinet"},
+   "t": 630,
+   "mood": "day",
+   "note": {"zh": "方後注：去滓再煎", "en": "The method note: strain, decoct again"},
+   "beats": [
+    {
+     "id": "h1",
+     "to": "juan",
+     "guide": {"zh": "和阿娟核對煎服法", "en": "Check the decoction method with Juan"},
+     "lines": [
+      ["juan", {"zh": "經方的煎法有學問。小柴胡湯最特別的一步，你知道嗎？", "en": "Classical formulas have their own methods. Know the odd step in Xiao Chaihu Tang?"}],
+      ["me", {"zh": "去滓再煎。", "en": "Strain and decoct again."}],
+      ["juan", {"zh": "排給我看。分量依處方，我只看順序。", "en": "Put it in order. Amounts are per the prescription; I’m only checking the sequence."}]
+     ],
+     "mini": {
+      "type": "order",
+      "q": {"zh": "小柴胡湯的煎服法順序", "en": "Xiao Chaihu Tang's decoction method, in order"},
+      "steps": [
+       {"zh": "藥材加水浸泡", "en": "Soak the herbs in water"},
+       {"zh": "煎煮", "en": "Boil"},
+       {"zh": "濾去藥渣", "en": "Strain off the dregs"},
+       {"zh": "藥汁再煎濃縮", "en": "Simmer the liquid down again"},
+       {"zh": "分次溫服", "en": "Take warm, in divided doses"}
+      ]
+     },
+     "post": [
+      ["juan", {"zh": "再煎讓藥性更和。有些代煎省掉這一步，我會打電話去問。", "en": "Re-decocting makes it gentler. Some outsourced decoction skips it; I phone and ask."}],
+      ["ko", {"zh": "方後注也是條文。", "en": "The method notes are clauses too."}]
+     ]
+    },
+    {
+     "id": "h2",
+     "to": "peijun",
+     "guide": {"zh": "在發藥窗口衛教佩君", "en": "Teach Pei-Jun at the dispensing window"},
+     "roles": ["herbalist"],
+     "lines": [
+      ["juan", {"zh": "溫溫地喝，少吃生冷油膩，今天早點睡。", "en": "Drink it warm, go easy on cold and greasy food, sleep early tonight."}],
+      [
+       "juan",
+       {
+        "zh": "如果高燒不退、喘、胸痛、眼睛變黃或肚子越來越痛，直接回診或去急診。",
+        "en": "If the fever won’t break, you get breathless, chest pain, yellow eyes or worsening belly pain, come back or go to the emergency department."
+       }
+      ],
+      ["peijun", {"zh": "眼睛變黃？", "en": "Yellow eyes?"}],
+      ["juan", {"zh": "感冒不會讓眼睛變黃。會的話，就不是感冒了。", "en": "A cold never turns your eyes yellow. If they do, it isn’t a cold."}]
+     ]
+    },
+    {
+     "id": "h3",
+     "to": "place:desk",
+     "guide": {"zh": "寫佩君的病歷", "en": "Write Pei-Jun's notes"},
+     "roles": ["clerk"],
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "少陽病：往來寒熱、口苦、胸脅苦滿、心煩喜嘔、脈弦細、苔薄白。治以和解。",
+        "en": "Shaoyang disease: alternating chills, bitter mouth, full flanks, nausea, wiry thin pulse, thin white coat. Treat by harmonising."
+       }
+      ],
+      [
+       "ko",
+       {"zh": "方證相應寫清楚了。再加一行：何時回診、何時去急診。", "en": "The formula–pattern match is clear. Add one line: when to return, and when to go to the emergency department."}
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "zhou",
+   "name": {"zh": "老周也口苦", "en": "Old Zhou is bitter too"},
+   "sub": {"zh": "11:30 · 脈枕診桌", "en": "11:30 · pulse desk"},
+   "t": 690,
+   "mood": "day",
+   "note": {"zh": "老周：發黃、寒顫、右上腹痛", "en": "Zhou: yellow, rigors, right upper pain"},
+   "beats": [
+    {
+     "id": "z1",
+     "to": "zhou",
+     "guide": {"zh": "請老周坐下", "en": "Seat Old Zhou"},
+     "lines": [
+      ["zhou", {"zh": "醫師，我也是嘴巴苦、忽冷忽熱。跟剛剛那個小姐一樣的藥就好。", "en": "Doctor, I’ve got the bitter mouth and the hot-and-cold too. Same medicine as that young lady, please."}],
+      ["me", {"zh": "什麼時候開始的？", "en": "When did it start?"}],
+      [
+       "zhou",
+       {"zh": "昨晚發抖發到牙齒打架。右邊肚子上面痛，吃油的更痛。", "en": "Last night I shook so hard my teeth rattled. Pain up on the right side of my belly, worse after greasy food."}
+      ],
+      ["xiaolin", {"zh": "往來寒熱、口苦、脅痛。「但見一證便是」，小柴胡湯！", "en": "Alternating chills, bitter mouth, flank pain. “One sign is enough”: Xiao Chaihu Tang!"}],
+      ["ko", {"zh": "「但見一證便是」不是這樣用的。老周，到燈下來。", "en": "“One sign is enough” is not used like that. Mr Zhou, come under the lamp."}]
+     ]
+    },
+    {
+     "id": "z2",
+     "to": "place:lamp",
+     "guide": {"zh": "在舌診燈下看舌與眼白", "en": "Tongue and eyes under the lamp"},
+     "lines": [["sys", {"zh": "燈光下，老周的眼白泛著淡淡的黃。舌紅，苔黃而膩。", "en": "Under the lamp the whites of Zhou’s eyes are faintly yellow. Red tongue, greasy yellow coat."}]],
+     "mini": {
+      "type": "tongue",
+      "tongue": {"body": "red", "coat": "greasy-yellow", "shape": "normal"},
+      "q": {"zh": "舌紅、苔黃膩，眼白發黃。這和佩君一樣嗎？", "en": "Red tongue, greasy yellow coat, yellow eyes. Is this the same as Pei-Jun?"},
+      "options": [
+       {
+        "zh": "不一樣：濕熱蘊結，身目發黃",
+        "en": "No: damp-heat with yellowing",
+        "ok": true,
+        "why": {
+         "zh": "苔黃膩為濕熱，眼白發黃就是「發黃」。條文裡這已是陽明或少陽陽明合病；現代要想到膽道阻塞合併感染。",
+         "en": "A greasy yellow coat means damp-heat, and yellow eyes are “yellowing”. In the clauses that is already Yangming, or Shaoyang with Yangming; today it means a blocked, infected bile duct."
+        }
+       },
+       {
+        "zh": "一樣，都是少陽病",
+        "en": "Same: both Shaoyang",
+        "ok": false,
+        "why": {"zh": "佩君苔薄白、沒有發黃、沒有寒顫。像不等於一樣。", "en": "Pei-Jun had a thin white coat, no yellowing, no rigors. Similar is not the same."}
+       },
+       {
+        "zh": "脾胃虛寒",
+        "en": "Spleen-stomach cold",
+        "ok": false,
+        "why": {"zh": "虛寒應見舌淡苔白，不會黃膩。", "en": "Cold deficiency shows a pale tongue and white coat, never greasy yellow."}
+       }
+      ]
+     },
+     "post": [
+      [
+       "ko",
+       {
+        "zh": "我按他陽陵泉下方的膽囊穴，他縮了一下腳。膽的下合穴也痛。",
+        "en": "I press the Dannang point below his Yanglingquan and he jerks his leg. The gallbladder’s lower sea point is tender too."
+       }
+      ],
+      ["ko", {"zh": "發燒、發黃、右上腹痛，三個一起出現。你想到什麼？", "en": "Fever, yellowing, right upper belly pain, all three together. What comes to mind?"}],
+      ["me", {"zh": "膽管炎。", "en": "Cholangitis."}]
+     ]
+    },
+    {
+     "id": "z3",
+     "to": "zhou",
+     "guide": {"zh": "決定老周的下一步", "en": "Decide Zhou's next step"},
+     "lines": [
+      ["xiaolin", {"zh": "條文裡有大柴胡湯、茵陳蒿湯，方證相應啊。", "en": "The clauses give Da Chaihu Tang and Yinchenhao Tang. The formula–pattern match is right there."}],
+      ["ko", {"zh": "條文也寫了「急下之」。急的時候，不能等一帖藥。", "en": "The clauses also say “purge urgently”. When it is urgent, you do not wait for a decoction."}]
+     ],
+     "mini": {
+      "type": "choice",
+      "q": {"zh": "老周：寒顫高燒、眼白發黃、右上腹痛。下一步？", "en": "Zhou: rigors, high fever, yellow eyes, right upper belly pain. Next step?"},
+      "options": [
+       {
+        "zh": "立即轉急診，今天不開藥",
+        "en": "Emergency referral now; no herbs today",
+        "ok": true,
+        "why": {
+         "zh": "發燒、黃疸、右上腹痛是膽管炎的警訊，可能很快變成敗血性休克，需要抽血、影像與引流。",
+         "en": "Fever, jaundice and right upper pain are the warning triad of cholangitis, which can turn into septic shock fast; he needs bloods, imaging and drainage."
+        },
+        "set": {"referred": true}
+       },
+       {
+        "zh": "開大柴胡湯加茵陳，明天回診",
+        "en": "Da Chaihu Tang with Yinchen; review tomorrow",
+        "ok": false,
+        "why": {"zh": "方證看似相應，但阻塞合併感染需要引流。等到明天可能太晚。", "en": "The match looks right, but an infected blocked duct needs draining. Tomorrow may be too late."},
+        "set": {"referred": false}
+       },
+       {
+        "zh": "先針陽陵泉止痛再看",
+        "en": "Needle Yanglingquan for the pain, then see",
+        "ok": false,
+        "why": {"zh": "止痛不是治療，只會讓危險看起來小一點。", "en": "Easing the pain treats nothing; it only makes the danger look smaller."},
+        "set": {"referred": false}
+       }
+      ]
+     },
+     "post": [["ko", {"zh": "小林，叫救護車。我去量血壓。", "en": "Lin, call an ambulance. I’ll take his blood pressure."}]]
+    },
+    {
+     "id": "z4",
+     "to": "zhou",
+     "guide": {"zh": "老周又開始發抖", "en": "Zhou starts shaking again"},
+     "lines": [
+      [
+       "sys",
+       {"zh": "量血壓時，老周又抖了起來，額頭燙，回答問題慢了半拍。", "en": "As the cuff inflates Zhou starts shaking again; his forehead is burning and his answers come half a beat late."}
+      ]
+     ],
+     "mini": {
+      "type": "vitals",
+      "event": "hypotension",
+      "options": [
+       {
+        "zh": "平躺保暖、監測，叫救護車並先通知急診",
+        "en": "Flat, warm, monitor, ambulance, call ahead",
+        "ok": true,
+        "why": {
+         "zh": "寒顫、發燒、血壓下降加反應變慢，可能已是敗血性休克。平躺維持腦部血流，盡快送醫並預先通報。",
+         "en": "Rigors, fever, falling pressure and slowing responses may already be septic shock. Lying flat keeps blood to the brain; get him moving and phone ahead."
+        }
+       },
+       {
+        "zh": "刮痧退熱",
+        "en": "Guasha to bring the fever down",
+        "ok": false,
+        "why": {"zh": "不處理原因、延誤送醫，皮膚出痧也會干擾急診判讀。", "en": "It treats no cause, delays transfer and muddies the skin for the emergency team."}
+       },
+       {
+        "zh": "喝熱薑湯發汗",
+        "en": "Hot ginger tea to sweat it out",
+        "ok": false,
+        "why": {"zh": "這不是太陽病。發汗只會讓他更脫水、血壓更低。", "en": "This is not Taiyang. Sweating only dehydrates him and drops the pressure further."}
+       },
+       {
+        "zh": "請他自己開車去急診",
+        "en": "Let him drive himself to the ED",
+        "ok": false,
+        "why": {"zh": "血壓下降、反應變慢的人不能開車，要叫救護車。", "en": "A man with falling pressure and slowed thinking cannot drive. Ambulance."}
+       }
+      ]
+     },
+     "post": [["ko", {"zh": "轉診單寫三件事：寒顫、發黃、右上腹痛。再加開始的時間。", "en": "The referral gets three things: rigors, yellowing, right upper pain. Plus when it started."}]]
+    },
+    {
+     "id": "z5",
+     "when": {"flag": "referred", "is": false},
+     "lines": [
+      [
+       "ko",
+       {
+        "zh": "你本來想讓他帶藥回家。條文沒錯，錯在今天的老周要的不是一帖藥，是一條引流管。",
+        "en": "You were going to send him home with herbs. The clause was not wrong; today Zhou needed a drainage tube, not a decoction."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "z5b",
+     "when": {"flag": "referred", "is": true},
+     "lines": [
+      ["ko", {"zh": "你沒被「但見一證便是」帶走。小林，你也聽一下。", "en": "You didn’t let “one sign is enough” carry you off. Lin, you listen too."}],
+      ["xiaolin", {"zh": "……聽到了。下週我報告陽明篇「急下之」。", "en": "...Heard. Next week I’ll present the Yangming “purge urgently” clauses."}]
+     ]
+    },
+    {
+     "id": "z6",
+     "ring": {"title": {"zh": "老周兒子來電", "en": "Zhou's son calling"}, "sub": {"zh": "我爸說他只是感冒？", "en": "Dad says it’s only a cold?"}, "call": true, "from": "zhouson"},
+     "lines": [
+      ["zhouson", {"zh": "我爸在你們那裡？他說只是感冒——", "en": "My dad’s with you? He said it was just a cold—"}],
+      [
+       "me",
+       {
+        "zh": "不像感冒，可能是膽道感染。救護車送急診了，請直接去急診。",
+        "en": "It doesn’t look like a cold; it may be a bile-duct infection. The ambulance is taking him to the emergency department. Please go straight there."
+       }
+      ],
+      ["zhouson", {"zh": "他每次都說只是感冒。謝謝你們沒相信他。", "en": "He always says it’s just a cold. Thank you for not believing him."}]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "noon",
+   "name": {"zh": "午後讀書", "en": "Afternoon reading"},
+   "sub": {"zh": "13:30 · 讀書會白板", "en": "13:30 · reading board"},
+   "t": 810,
+   "mood": "day",
+   "note": {"zh": "經典與現代紅旗", "en": "Classics and modern red flags"},
+   "beats": [
+    {
+     "id": "a1",
+     "to": "place:board",
+     "guide": {"zh": "回到白板想影像", "en": "Back at the board: imaging"},
+     "lines": [["ko", {"zh": "我們不做影像，但要知道急診為什麼急。老周到了急診，會做什麼？", "en": "We don’t scan anyone, but we should know why the ED is in a hurry. What will they do for Zhou?"}]],
+     "mini": {
+      "type": "imaging",
+      "region": "abdomen-upper",
+      "question": {"zh": "發燒、黃疸、右上腹痛：急診會做什麼影像？找什麼？", "en": "Fever, jaundice, right upper pain: what imaging will the ED do, and what will they look for?"},
+      "answer": {
+       "zh": "先做腹部超音波，看膽囊、膽管有沒有擴張與結石；必要時電腦斷層或磁振膽道攝影。膽管阻塞合併感染要抗生素加內視鏡或經皮引流。",
+       "en": "An abdominal ultrasound first, for a dilated duct and stones; CT or MR cholangiography if needed. An infected blocked duct needs antibiotics plus endoscopic or percutaneous drainage."
+      }
+     },
+     "post": [
+      [
+       "ko",
+       {
+        "zh": "讀經典的第四步：同樣的表現，現代會擔心什麼。這一步讓經典安全。",
+        "en": "The fourth step in reading a classic: what would modern medicine fear in the same picture? That step keeps the classic safe."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "a2",
+     "to": "xiaolin",
+     "guide": {"zh": "和小林重讀那一條", "en": "Re-read that clause with Lin"},
+     "roles": ["clerk"],
+     "lines": [
+      ["xiaolin", {"zh": "「傷寒中風，有柴胡證，但見一證便是，不必悉具。」我哪裡讀錯了？", "en": "“With a Chaihu pattern, one sign is enough; not all need be present.” Where did I misread it?"}],
+      [
+       "me",
+       {
+        "zh": "前提是「有柴胡證」。它說的是不必等症狀全到齊，不是可以不看其他症狀。",
+        "en": "The premise is “with a Chaihu pattern”. It says you needn’t wait for every sign, not that you may ignore the others."
+       }
+      ],
+      ["xiaolin", {"zh": "老周的發黃和寒顫，就是「其他症狀」。", "en": "Zhou’s yellowing and rigors were the “others”."}],
+      ["ko", {"zh": "斷句和前提，是讀條文的第一步。", "en": "Punctuation and premise: the first step of reading any clause."}]
+     ]
+    },
+    {
+     "id": "a3",
+     "to": "juan",
+     "guide": {"zh": "和阿娟做調劑核對", "en": "Run the dispensing check with Juan"},
+     "roles": ["herbalist"],
+     "lines": [
+      [
+       "juan",
+       {
+        "zh": "佩君的藥，四查十對再做一次：查處方、查藥品、查配伍禁忌、查用藥合理性。",
+        "en": "Pei-Jun’s herbs, the four checks again: the prescription, the herbs, incompatibilities, and whether it fits the diagnosis."
+       }
+      ],
+      ["me", {"zh": "半夏在方裡。要確認沒有附子、烏頭類，十八反。", "en": "Banxia is in it, so confirm no aconite-family herbs: one of the eighteen incompatibilities."}],
+      [
+       "juan",
+       {"zh": "對。還有她說「小朋友以為我懷孕」——我問了，不是。半夏孕婦要慎用。", "en": "Right. And she joked the kids think she’s pregnant. I asked: she isn’t. Banxia needs care in pregnancy."}
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "callback",
+   "name": {"zh": "急診回電", "en": "The ED calls back"},
+   "sub": {"zh": "16:00 · 診間電話", "en": "16:00 · clinic phone"},
+   "t": 960,
+   "mood": "day",
+   "note": {"zh": "老周：總膽管結石合併膽管炎", "en": "Zhou: duct stone with cholangitis"},
+   "beats": [
+    {
+     "id": "c1",
+     "ring": {"title": {"zh": "急診醫師回電", "en": "Emergency physician"}, "sub": {"zh": "老周的結果出來了", "en": "Zhou's results are back"}, "call": true, "from": "er-doc"},
+     "lines": [
+      [
+       "er-doc",
+       {
+        "zh": "老周是總膽管結石合併膽管炎，血壓在這裡掉過一次，已經做內視鏡引流。",
+        "en": "Zhou had a common bile duct stone with cholangitis. His pressure dropped once here; he has had endoscopic drainage."
+       }
+      ],
+      ["me", {"zh": "謝謝你回電。", "en": "Thanks for calling back."}],
+      ["er-doc", {"zh": "轉診單寫「寒顫、發黃、右上腹痛」，我們一看就懂。", "en": "Your note said “rigors, yellowing, right upper pain”. We understood at a glance."}],
+      ["ko", {"zh": "病歷要寫到下一個人一看就懂。這也是條文的精神。", "en": "Write so the next person understands at a glance. That is the spirit of the clauses too."}]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "name": {"zh": "讀書會之後", "en": "After the reading"},
+   "sub": {"zh": "17:30 · 中醫診間", "en": "17:30 · TCM clinic"},
+   "t": 1050,
+   "mood": "eve",
+   "note": {"zh": "隨證治之，不是隨方", "en": "Treat by the signs, not the formula"},
+   "beats": [
+    {
+     "id": "e1",
+     "to": "ko",
+     "guide": {"zh": "和柯醫師收尾", "en": "Wrap up with Dr Ko"},
+     "item": "ko-copy",
+     "lines": [
+      ["ko", {"zh": "今天兩個口苦的人。一個是條文，一個是急診。差在哪？", "en": "Two bitter mouths today. One was a clause, one was an emergency. What was the difference?"}],
+      ["me", {"zh": "發黃、寒顫和右上腹的痛。還有：像不等於是。", "en": "Yellowing, rigors and the right upper pain. And: similar is not the same."}],
+      [
+       "ko",
+       {"zh": "「觀其脈證，知犯何逆，隨證治之。」隨證，不是隨方。", "en": "“Observe the pulse and signs, know what went wrong, treat according to the signs.” The signs, not the formula."}
+      ],
+      ["ko", {"zh": "這本借你。紅線是我年輕時畫的，藍線是被病人教會之後畫的。", "en": "Borrow this. The red lines I drew when young; the blue ones after patients taught me."}]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "night",
+   "name": {"zh": "夜間訊息", "en": "Night messages"},
+   "sub": {"zh": "21:00 · 宿舍", "en": "21:00 · home"},
+   "t": 1260,
+   "mood": "night",
+   "note": {"zh": "佩君：沒那麼想吐了", "en": "Pei-Jun: less nauseous"},
+   "beats": [
+    {
+     "id": "n1",
+     "ring": {
+      "title": {"zh": "佩君傳訊息", "en": "Message from Pei-Jun"},
+      "sub": {"zh": "喝了藥，沒那麼想吐了", "en": "Took the herbs; less nauseous now"},
+      "call": false,
+      "from": "peijun"
+     },
+     "lines": [
+      [
+       "peijun",
+       {
+        "zh": "藥喝了兩次，沒那麼想吐了。明天可以上課。小朋友說要畫卡片給「苦苦醫生」。",
+        "en": "Two doses down and the nausea’s easing. I can teach tomorrow. The kids are making a card for “Doctor Bitter”."
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "小林也傳來訊息：「下週陽明篇。我會把『但見一證便是』那條的上下文一起讀。」",
+        "en": "A message from Lin too: “Yangming next week. I’ll read the ‘one sign is enough’ clause with its context this time.”"
+       }
+      ]
+     ],
+     "end": true
+    }
+   ]
+  }
+ ],
+ "ending": {
+  "title": {"zh": "讀完了", "en": "Clauses closed"},
+  "sub": {"zh": "觀其脈證，知犯何逆，隨證治之", "en": "Observe the signs, know what went wrong, treat by the signs"},
+  "stats": ["stages", "drills", "choices", "calls", "items", "time"]
+ }
+}

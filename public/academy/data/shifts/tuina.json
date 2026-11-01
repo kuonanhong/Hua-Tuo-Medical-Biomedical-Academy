@@ -1,0 +1,329 @@
+{
+ "format": "huatuo-shift-v2",
+ "department": "tuina",
+ "case": "main",
+ "caseTitle": {"zh": "閃到腰的早晨", "en": "The morning a back went out"},
+ "condition": {"zh": "傷科 · 急性腰扭傷", "en": "Trauma · acute lumbar sprain"},
+ "difficulty": 2,
+ "title": {"zh": "推拿科值班日", "en": "A shift in tuina"},
+ "tagline": {"zh": "閃到腰的搬家師傅，和一個不能推的人", "en": "A mover who put his back out, and a patient you must not treat"},
+ "room": "tuina",
+ "minutes": 25,
+ "roles": [
+  {"id": "intern", "zh": "中醫見習醫師", "en": "TCM clinical clerk",
+   "desc": {"zh": "跟著吳師傅問診、摸脈、篩紅旗；該推的你學手法，不該推的你學轉診。紀錄由你寫。", "en": "Follow Master Wu through history, pulse and red flags; learn the hands on the ones you may treat and the referral on the ones you must not. The notes are yours."}},
+  {"id": "therapist", "zh": "推拿治療師", "en": "Tuina therapist",
+   "desc": {"zh": "滾法、按法、擦法透熱與熱敷包都在你手上；治療床的節奏你最清楚。", "en": "Rolling, pressing, friction-to-warmth and the heat packs are yours; nobody knows the rhythm of the couch better."}}
+ ],
+ "cast": {
+  "master": {"name": {"zh": "吳師傅", "en": "Master Wu"}, "role": {"zh": "傷科中醫師（師傅）", "en": "TCM trauma physician (mentor)"}, "tag": "SF", "color": "#81296d", "body": "mentor",
+   "about": {"zh": "手掌厚得像砧板，說話很輕。口頭禪：「先問、再摸、最後才推。」", "en": "Palms as thick as a chopping board, voice soft. His motto: ask first, feel second, press last."}},
+  "akai": {"name": {"zh": "阿凱", "en": "A-Kai"}, "role": {"zh": "推拿治療師", "en": "Tuina therapist"}, "tag": "PT", "color": "#2f8f8f", "body": "therapist",
+   "about": {"zh": "推拿室的節拍器。滾法滾到病人睡著是他的日常；桌上永遠有一杯涼掉的黑咖啡。", "en": "The metronome of the room. Patients fall asleep under his rolling; there is always a cold black coffee on his desk."}},
+  "nurse": {"name": {"zh": "小雯護理師", "en": "Nurse Hsiao-Wen"}, "role": {"zh": "治療室護理師", "en": "Treatment-room nurse"}, "tag": "RN", "color": "#3b8f6a", "body": "nurse",
+   "about": {"zh": "管熱敷包保溫箱、紅外線燈和候診名單。誰的燈太近，她第一個知道。", "en": "Runs the heat-pack warmer, the infrared lamp and the waiting list. If a lamp is too close, she knows first."}},
+  "aliang": {"name": {"zh": "阿良", "en": "A-Liang"}, "role": {"zh": "搬家工人，閃到腰", "en": "Removals worker, back went out"}, "tag": "P1", "color": "#c2703a", "body": "patient",
+   "about": {"zh": "虛構教學個案。三十二歲搬家工人，今早抬洗衣機時「喀」一聲，之後直不起腰。下午還有一車要搬。", "en": "Fictional teaching case. A removals worker in his early thirties; something went “click” lifting a washing machine this morning and he has not straightened up since. There is another van to load this afternoon."}},
+  "boss": {"name": {"zh": "搬家公司老闆", "en": "The removals boss"}, "role": {"zh": "阿良的老闆（電話）", "en": "A-Liang's boss (by phone)"}, "tag": "BOS", "color": "#5a6b7a", "phoneOnly": true,
+   "about": {"zh": "一通電話問「下午能不能上工」。關心員工，也關心那一車。", "en": "Rings to ask whether A-Liang can work this afternoon. Cares about his man, and about the van."}},
+  "ahma": {"name": {"zh": "秀英阿嬤", "en": "Grandma Hsiu-Ying"}, "role": {"zh": "跌倒後腰痛，骨質疏鬆", "en": "Back pain after a fall, osteoporosis"}, "tag": "P2", "color": "#b5651d", "body": "patient",
+   "about": {"zh": "虛構教學個案。七十八歲，骨質疏鬆多年，昨夜在浴室滑倒後腰痛到坐不住。孫女用輪椅推她來「喬一下」。", "en": "Fictional teaching case. Seventy-eight, years of osteoporosis, slipped in the bathroom last night and cannot sit for the pain. Her granddaughter wheeled her in to be “clicked back”."}},
+  "granddaughter": {"name": {"zh": "阿嬤的孫女", "en": "The granddaughter"}, "role": {"zh": "家屬", "en": "Family"}, "tag": "FAM", "color": "#8a6d3b", "body": "family",
+   "about": {"zh": "手機裡存著三家國術館的電話。愛阿嬤，很急。", "en": "Has three bone-setters' numbers in her phone. Loves her grandmother, and is in a hurry."}},
+  "ward-nurse": {"name": {"zh": "骨科病房護理師", "en": "Orthopaedic ward nurse"}, "role": {"zh": "病房護理師（電話）", "en": "Ward nurse (by phone)"}, "tag": "RN2", "color": "#3f6fa8", "phoneOnly": true,
+   "about": {"zh": "晚上打來的電話都很具體：幾床、什麼痛、要你做什麼。", "en": "Her night calls are precise: which bed, what pain, what she needs from you."}}
+ },
+ "places": {
+  "board": {"name": {"zh": "治療排程白板", "en": "Treatment schedule board"}, "hot": "whiteboard"},
+  "couch": {"name": {"zh": "治療床", "en": "Treatment couch"}, "hot": "couch"},
+  "lamp": {"name": {"zh": "紅外線燈與熱敷包", "en": "Infrared lamp and heat packs"}, "hot": "lamp"},
+  "traction": {"name": {"zh": "牽引床", "en": "Traction table"}, "hot": "traction"},
+  "mat": {"name": {"zh": "導引功法墊區", "en": "Exercise mat area"}, "hot": "mat"},
+  "desk": {"name": {"zh": "紀錄桌", "en": "Notes desk"}, "hot": "desk"},
+  "sink": {"name": {"zh": "洗手台", "en": "Hand-wash sink"}, "hot": "sink"},
+  "chart": {"name": {"zh": "病歷架", "en": "Chart rack"}, "hot": "chart"}
+ },
+ "glossary": [
+  {"term": {"zh": "急性腰扭傷", "en": "acute lumbar sprain"}, "plain": {"zh": "俗稱閃到腰：搬重或扭轉時腰部肌肉、韌帶或小關節突然受傷，痛到不敢動，但神經多半沒事。", "en": "“Putting your back out”: a sudden injury to the muscles, ligaments or small joints of the lower back while lifting or twisting. Painful and stiff, but the nerves are usually fine."}},
+  {"term": {"zh": "紅旗徵象", "en": "red flags"}, "plain": {"zh": "提示腰痛背後可能有骨折、感染、腫瘤或神經受壓的警訊，例如大小便失禁、鞍部麻木、發燒、不明體重減輕。出現就轉診，不推拿。", "en": "Warning signs that back pain may hide a fracture, infection, tumour or nerve compression: loss of bladder or bowel control, saddle numbness, fever, unexplained weight loss. Refer; do not treat with tuina."}},
+  {"term": {"zh": "馬尾症候群", "en": "cauda equina syndrome"}, "plain": {"zh": "腰椎最下方那束神經被嚴重壓迫，會大小便失禁、鞍部麻木、雙腿無力。是急診，不是推拿室的病人。", "en": "Severe compression of the bundle of nerves at the bottom of the spine: incontinence, saddle numbness, weak legs. An emergency, never a tuina patient."}},
+  {"term": {"zh": "直腿抬高試驗", "en": "straight-leg raise"}, "plain": {"zh": "病人平躺，檢查者慢慢抬起他伸直的腿；若腿後側出現放射到小腿的痛，提示坐骨神經受到牽拉。", "en": "The patient lies flat and the examiner slowly lifts the straight leg; pain shooting down to the calf suggests the sciatic nerve is under tension."}},
+  {"term": {"zh": "弦脈", "en": "wiry pulse"}, "plain": {"zh": "指下像按在繃緊的琴弦上。中醫認為弦主痛、主肝膽、主筋，急性扭傷氣血瘀滯時常見。", "en": "Feels like pressing a taut string. In TCM reasoning, wiry governs pain, the liver–gallbladder and the sinews; common when qi and blood are stuck after an acute sprain."}},
+  {"term": {"zh": "滾法", "en": "rolling"}, "plain": {"zh": "用手背近小指側在體表來回滾動的手法，面積大、滲透深，用來放鬆大片肌肉。", "en": "Rolling the back of the hand (little-finger side) to and fro over the body; covers a wide area and sinks deep, used to relax large muscle groups."}},
+  {"term": {"zh": "按法", "en": "pressing"}, "plain": {"zh": "用指、掌或肘垂直向下按壓並停留，由輕到重。中醫認為能通經活絡、解痙止痛。", "en": "Pressing straight down with finger, palm or elbow and holding, light to firm. In TCM reasoning it opens the channels and eases spasm."}},
+  {"term": {"zh": "擦法透熱", "en": "friction to warmth"}, "plain": {"zh": "用掌根或小魚際在皮膚上快速直線來回摩擦，直到局部發熱為止。要塗介質，避免擦破皮。", "en": "Rapid straight-line rubbing with the heel of the hand until the area feels warm. Use a lubricant so the skin is not rubbed raw."}},
+  {"term": {"zh": "阿是穴", "en": "ashi point"}, "plain": {"zh": "沒有固定位置、一按就「啊！是這裡」的壓痛點。傷科常以它為治療點。", "en": "A tender point with no fixed location: press it and the patient says “ah, there!”. Trauma practice often treats it directly."}},
+  {"term": {"zh": "腰背委中求", "en": "seek the back in Weizhong"}, "plain": {"zh": "《四總穴歌》的句子：腰背的病可取膝後的委中穴。中醫認為膀胱經從腰背走到膝後，所以遠端也能治近端。", "en": "A line from the Song of the Four Command Points: back problems may be treated at Weizhong behind the knee, because the bladder channel runs from the back down to it."}},
+  {"term": {"zh": "骨質疏鬆", "en": "osteoporosis"}, "plain": {"zh": "骨頭變得像海綿一樣疏鬆，輕輕一跌、甚至咳嗽就可能骨折。重手法和扳法在這種病人身上是禁忌。", "en": "Bones become sponge-like and fragile; a small fall, even a cough, can cause a fracture. Forceful pressing and thrust techniques are contraindicated."}},
+  {"term": {"zh": "壓縮性骨折", "en": "compression fracture"}, "plain": {"zh": "椎體像被壓扁的紙箱一樣變矮，常見於骨質疏鬆的長者跌倒後。推拿會讓它更糟。", "en": "A vertebral body squashed like a crushed box, typical in older people with osteoporosis after a fall. Tuina makes it worse."}},
+  {"term": {"zh": "姿勢性低血壓", "en": "postural hypotension"}, "plain": {"zh": "趴了一陣子突然站起來，血壓一下子跟不上，會頭暈眼黑甚至昏倒。先坐、再站、慢慢來。", "en": "Standing up suddenly after lying for a while, the blood pressure lags behind: dizziness, dark vision, even fainting. Sit first, then stand, slowly."}}
+ ],
+ "codex": [
+  {"id": "couch", "kind": "equipment", "name": {"zh": "治療床", "en": "Treatment couch"}, "text": {"zh": "寬、穩、高度可調。病人趴著時臉要有洞或枕頭，腹下墊薄枕讓腰放鬆。", "en": "Wide, stable, height-adjustable. Prone patients need a face hole or pillow, and a thin bolster under the belly to let the back relax."}, "hot": "couch"},
+  {"id": "heat-packs", "kind": "equipment", "name": {"zh": "紅外線燈與熱敷包保溫箱", "en": "Infrared lamp and heat-pack warmer"}, "text": {"zh": "溫熱能讓肌肉放鬆，也能燙傷。燈不能太近，熱敷包要隔毛巾，糖尿病或感覺遲鈍的人更要小心。", "en": "Warmth relaxes muscle and also burns. Keep the lamp at a safe distance, wrap packs in a towel, and be extra careful with diabetic or numb skin."}, "hot": "lamp"},
+  {"id": "traction-table", "kind": "equipment", "name": {"zh": "牽引床", "en": "Traction table"}, "text": {"zh": "把腰椎或頸椎輕輕拉開的床。骨質疏鬆、腫瘤、急性期和孕婦都不適合。負荷依醫囑，不是越重越好。", "en": "Gently separates the lumbar or cervical spine. Not for osteoporosis, tumour, the acute phase or pregnancy. Load per prescription; heavier is not better."}, "hot": "traction"},
+  {"id": "gloves", "kind": "item", "name": {"zh": "阿良的工作手套", "en": "A-Liang's work gloves"}, "text": {"zh": "他掛在治療床腳忘了拿。下午那一車，他是真的很想搬。", "en": "Left hanging on the couch leg. He really did want to load that afternoon van."}},
+  {"id": "ask-feel-press", "kind": "concept", "name": {"zh": "先問、再摸、最後才推", "en": "Ask, feel, then press"}, "text": {"zh": "推拿前的評估順序：問受傷機轉、放射痛、麻木、大小便與既往病史；再看姿勢、摸壓痛、做直腿抬高試驗；確定沒有紅旗徵象，手才放上去。中醫傷科講「手摸心會」，但手摸之前先有腦。", "en": "The order of a tuina assessment: ask about the mechanism, radiating pain, numbness, bladder and bowel, past illness; then look at posture, palpate tenderness, do a straight-leg raise; only when the red flags are clear do the hands go on. The classics say the hand feels and the heart knows, but the brain comes before the hand."}},
+  {"id": "contraindications", "kind": "concept", "name": {"zh": "推拿的禁忌症", "en": "Contraindications to tuina"}, "text": {"zh": "骨折與疑似骨折、嚴重骨質疏鬆、腫瘤與轉移部位、急性感染與發燒、皮膚破損與傳染性皮膚病、出血傾向與抗凝血治療、孕婦的腰腹與特定穴位、剛吃飽或極度疲勞。頸椎旋轉扳法另有椎動脈風險。記不住全部沒關係，記得「不確定就不推、轉診」。", "en": "Fractures and suspected fractures, severe osteoporosis, tumours and metastatic sites, acute infection and fever, broken skin and contagious skin disease, bleeding tendency and anticoagulants, the abdomen, lower back and certain points in pregnancy, a full stomach or exhaustion. Cervical rotation thrusts carry a vertebral-artery risk of their own. If you cannot remember them all, remember: when unsure, do not treat; refer."}},
+  {"id": "acute-principles", "kind": "concept", "name": {"zh": "急性期的手法原則", "en": "Technique in the acute phase"}, "text": {"zh": "急性腰扭傷的頭幾天：手法輕、時間短、先遠後近。先鬆解腰部以外的緊張（臀、腿後側、委中），再輕柔處理腰部，不做扳法與強力整復。中醫認為此時氣血瘀滯在局部，重手法會讓瘀腫更甚。", "en": "In the first days after an acute sprain: light hands, short sessions, distal before local. Release tension away from the back first (buttock, hamstrings, Weizhong), then treat the back gently; no thrusts or forceful adjustments. In TCM reasoning qi and blood are congealed locally, and heavy hands deepen the stasis."}},
+  {"id": "distal-points", "kind": "concept", "name": {"zh": "遠端取穴：腰背委中求", "en": "Distal points: the back and Weizhong"}, "text": {"zh": "膀胱經從頭沿背脊兩側下行，經過腰部的腎俞、大腸俞，到膝後的委中。中醫認為經絡所過、主治所及：腰痛時點按委中，常能讓病人彎腰時鬆一點。點按時膝微屈，避開膕窩正中的血管與神經，力道由輕到重。", "en": "The bladder channel descends from the head along both sides of the spine, through Shenshu and Dachangshu at the waist, to Weizhong behind the knee. Where a channel passes, it treats: pressing Weizhong often lets a stiff back bend a little more. Keep the knee slightly bent, avoid the vessels and nerve in the centre of the fossa, and build pressure gradually."}},
+  {"id": "whiteboard", "kind": "equipment", "name": {"zh": "治療排程白板", "en": "Treatment schedule board"}, "text": {"zh": "誰在哪張床、誰在熱敷、誰等師傅看。推拿室的交班從這裡開始。", "en": "Who is on which couch, who is under heat, who is waiting for the master. Handover in a tuina room starts here."}, "hot": "whiteboard"}
+ ],
+ "segs": [
+  {"id": "handover", "name": {"zh": "早交班", "en": "Morning handover"}, "sub": {"zh": "07:40 · 治療排程白板前", "en": "07:40 · at the schedule board"}, "t": 460, "mood": "day",
+   "note": {"zh": "交班：三張床、一台牽引、一盞燈", "en": "Handover: three couches, one traction table, one lamp"},
+   "beats": [
+    {"id": "h1", "to": "place:board", "guide": {"zh": "到白板前交班", "en": "Handover at the board"},
+     "lines": [
+      ["sys", {"zh": "推拿治療室，早上七點四十分。熱敷包保溫箱嗡嗡響，阿凱的黑咖啡已經涼了。", "en": "The tuina room, twenty to eight. The heat-pack warmer hums; A-Kai's black coffee is already cold."}],
+      ["master", {"zh": "早。今天第一位是閃到腰的搬家工人，第二位是病房轉來的阿嬤。先問你一句：推拿前第一件事是什麼？", "en": "Morning. First up is a mover who put his back out, then a grandmother referred from the ward. One question first: what comes before any tuina?"}],
+      ["me", {"zh": "先問、再摸、最後才推。", "en": "Ask first, feel second, press last."}],
+      ["master", {"zh": "會背了。今天看你會不會做。", "en": "You can recite it. Today we see if you can do it."}],
+      ["akai", {"zh": "第三床的熱敷包昨天有人說太燙。小雯，燈的距離麻煩再看一次。", "en": "Someone said couch three's heat pack was too hot yesterday. Hsiao-Wen, please check the lamp distance again."}]
+     ]},
+    {"id": "h2", "to": "nurse", "guide": {"zh": "幫小雯檢查紅外線燈", "en": "Help check the infrared lamp"},
+     "lines": [
+      ["nurse", {"zh": "你幫我找一下，哪一盞是第三床的紅外線燈？太近會燙傷，尤其是感覺比較鈍的老人家。", "en": "Find me couch three's infrared lamp. Too close and it burns, especially older people who feel less."}]
+     ],
+     "mini": {"type": "find", "hot": "lamp", "q": {"zh": "找到紅外線燈與熱敷包保溫箱", "en": "Find the infrared lamp and heat-pack warmer"}},
+     "post": [
+      ["nurse", {"zh": "距離拉遠一點，皮膚要隔毛巾。熱是藥，也是傷。", "en": "Pull it back a little, and always a towel on the skin. Heat is medicine and injury both."}]
+     ]}
+   ]},
+  {"id": "aliang", "name": {"zh": "第一位：阿良", "en": "First patient: A-Liang"}, "sub": {"zh": "08:30 · 治療床", "en": "08:30 · treatment couch"}, "t": 510, "mood": "day",
+   "note": {"zh": "阿良：篩過紅旗才上手", "en": "A-Liang: red flags first, then hands"},
+   "beats": [
+    {"id": "a1", "to": "aliang", "guide": {"zh": "去看阿良", "en": "See A-Liang"},
+     "lines": [
+      ["sys", {"zh": "阿良側著身子慢慢走進來，一隻手撐著腰，另一隻手還拿著工作手套。", "en": "A-Liang edges in sideways, one hand on his back, the other still holding his work gloves."}],
+      ["aliang", {"zh": "醫師，幫我喬一下就好，我下午還有一車。抬洗衣機的時候「喀」一聲，現在直不起來。", "en": "Doc, just click it back for me, I've got a van this afternoon. Lifting a washing machine, it went “click”, and now I can't straighten up."}],
+      ["master", {"zh": "先別急著喬。你要先問他什麼？", "en": "No clicking yet. What do you ask him first?"}]
+     ],
+     "mini": {"type": "choice", "q": {"zh": "阿良急著回去上工，你先做什麼？", "en": "A-Liang wants to get back to work. What do you do first?"},
+      "options": [
+       {"zh": "先問紅旗徵象、再做理學檢查", "en": "Screen red flags, then examine", "ok": true, "set": {"screened": true}, "why": {"zh": "大小便、腿麻無力、放射痛、發燒、外傷史、腫瘤史。沒問這些，手不能放上去。", "en": "Bladder and bowel, numb or weak legs, radiating pain, fever, trauma, cancer history. Until these are asked, hands stay off."}},
+       {"zh": "先推一推再說，他趕時間", "en": "Treat first, he is in a hurry", "ok": false, "set": {"screened": false}, "why": {"zh": "趕時間不是省略評估的理由。推到不該推的，耽誤的是一輩子。", "en": "Being in a hurry is no reason to skip the assessment. Treating the wrong back costs a lifetime."}},
+       {"zh": "先熱敷再推，比較不痛", "en": "Heat first, then treat", "ok": false, "set": {"screened": false}, "why": {"zh": "還沒評估就上熱敷，等於先決定了治療。順序錯了。", "en": "Heat before assessment means you have already chosen the treatment. The order is wrong."}}
+      ]},
+     "post": [
+      ["me", {"zh": "阿良，大小便正常嗎？腿會麻、會沒力嗎？痛有沒有竄到小腿？", "en": "A-Liang, bladder and bowels normal? Any numbness or weakness in the legs? Does the pain shoot down to the calf?"}],
+      ["aliang", {"zh": "都正常啦。就是腰，像被人用板子夾住。", "en": "All normal. It's just the back, like it's clamped in a vice."}],
+      ["master", {"zh": "問大小便和鞍部麻木，是在排除馬尾症候群。那個是急診，不是我們的床。", "en": "Asking about bladder, bowel and saddle numbness is how you rule out cauda equina syndrome. That is an emergency, not our couch."}]
+     ]},
+    {"id": "a2", "to": "aliang", "guide": {"zh": "摸脈", "en": "Take the pulse"},
+     "lines": [
+      ["master", {"zh": "手放上去。急性扭傷、痛得厲害的人，脈常常是什麼樣？", "en": "Fingers on. What does the pulse usually feel like in someone in acute pain after a sprain?"}]
+     ],
+     "mini": {"type": "pulse", "q": {"zh": "指下繃緊如琴弦。這是什麼脈？", "en": "Taut as a string under your fingers. Which pulse is this?"}, "pulse": "wiry",
+      "options": [
+       {"zh": "弦脈", "en": "Wiry", "ok": true, "why": {"zh": "中醫認為弦主痛、主筋。急性扭傷氣血瘀滯、筋脈拘急，脈多弦或弦緊。", "en": "In TCM reasoning wiry governs pain and the sinews. After an acute sprain, with qi and blood stuck and the sinews tight, the pulse is often wiry or wiry-tight."}},
+       {"zh": "滑脈", "en": "Slippery", "ok": false, "why": {"zh": "滑脈如珠走盤，多見於痰濕、食積或妊娠，不是急性疼痛的典型脈。", "en": "Slippery rolls like beads on a plate: phlegm-damp, food stagnation or pregnancy, not the typical pulse of acute pain."}},
+       {"zh": "細脈", "en": "Thready", "ok": false, "why": {"zh": "細脈如線，主氣血兩虛。阿良是個壯年工人，脈有力不細。", "en": "Thready is like a thread: qi and blood deficiency. A-Liang is a strong young worker; his pulse is forceful, not thin."}},
+       {"zh": "浮脈", "en": "Floating", "ok": false, "why": {"zh": "浮脈輕取即得，多主表證如感冒初起。與腰扭傷無關。", "en": "Floating is felt with the lightest touch, usually an exterior pattern like an early cold. Not relevant to a sprain."}}
+      ]},
+     "post": [
+      ["master", {"zh": "弦脈。再看他怎麼站、怎麼轉，然後直腿抬高試驗。", "en": "A wiry pulse. Now watch how he stands and turns, then the straight-leg raise."}]
+     ]},
+    {"id": "a3", "when": {"flag": "screened", "is": true}, "to": "master", "guide": {"zh": "向師傅報告檢查結果", "en": "Report your findings"},
+     "lines": [
+      ["me", {"zh": "腰椎右側肌肉緊繃壓痛，有一個阿是穴；直腿抬高試驗陰性，沒有放射痛，神經學正常。", "en": "Right paraspinal muscles tight and tender with one ashi point; straight-leg raise negative, no radiating pain, neurology normal."}],
+      ["master", {"zh": "好。沒有紅旗徵象，是單純的急性腰扭傷。這種可以推——但怎麼推，等一下你會看到。", "en": "Good. No red flags: a straightforward acute lumbar sprain. This one we may treat, and in a moment you will see how."}]
+     ]},
+    {"id": "a3b", "when": {"flag": "screened", "is": false}, "to": "master", "guide": {"zh": "師傅把你攔下來", "en": "The master stops you"},
+     "lines": [
+      ["master", {"zh": "等一下。你還沒問他大小便、腿麻，也沒做直腿抬高試驗。手拿開，從頭問。", "en": "Wait. You have not asked about bladder, bowel or leg numbness, nor done the straight-leg raise. Hands off; start again."}],
+      ["me", {"zh": "對不起。阿良，我重新問一次。", "en": "Sorry. A-Liang, let me start over."}],
+      ["master", {"zh": "推拿室最常出事的，不是手法不好，是沒有篩紅旗徵象。這次他沒事，下次呢？", "en": "What goes wrong in a tuina room is rarely bad technique. It is the red flags nobody screened. He is fine this time. Next time?"}]
+     ]},
+    {"id": "a4", "to": "place:couch", "guide": {"zh": "排好推拿流程", "en": "Plan the treatment sequence"},
+     "lines": [
+      ["akai", {"zh": "阿良趴好了，腹下墊了薄枕。你來排順序，我照你的做。", "en": "A-Liang is prone with a bolster under his belly. You order the steps; I follow."}]
+     ],
+     "mini": {"type": "order", "q": {"zh": "急性腰扭傷的推拿流程", "en": "Tuina sequence for an acute lumbar sprain"},
+      "steps": [
+       {"zh": "核對身分、說明並取得同意", "en": "Confirm identity, explain, obtain consent"},
+       {"zh": "擺位、暴露腰部並保暖", "en": "Position, expose the back, keep warm"},
+       {"zh": "放鬆手法：滾法、揉法", "en": "Relaxing techniques: rolling, kneading"},
+       {"zh": "點按腎俞、大腸俞、委中", "en": "Press Shenshu, Dachangshu, Weizhong"},
+       {"zh": "整理手法：擦法透熱", "en": "Finishing: friction to warmth"},
+       {"zh": "衛教、紀錄、約回診", "en": "Advice, documentation, follow-up"}
+      ]},
+     "post": [
+      ["master", {"zh": "記住：急性期先遠後近，先鬆再點，不扳。", "en": "Remember: in the acute phase, distal before local, relax before press, and no thrusts."}]
+     ]},
+    {"id": "a5", "to": "place:couch", "guide": {"zh": "跟阿凱學滾法", "en": "Learn rolling from A-Kai"},
+     "lines": [
+      ["akai", {"zh": "滾法：手背小指側貼著，腕關節帶動，像在揉麵團不是在敲門。沿膀胱經從上滾到下，壓力要透進去但不能跳。", "en": "Rolling: little-finger side of the back of the hand on the skin, the wrist drives it, like kneading dough, not knocking on a door. Down the bladder channel; pressure sinks in and never bounces."}],
+      ["aliang", {"zh": "……欸，這樣還蠻舒服的。", "en": "…Huh, that actually feels good."}]
+     ],
+     "mini": {"type": "drill", "template": "tuina", "drill": "roll"},
+     "post": [
+      ["akai", {"zh": "持久、有力、均勻、柔和、深透。五個字，練一輩子。", "en": "Lasting, forceful, even, gentle, penetrating. Five words, a lifetime of practice."}]
+     ]},
+    {"id": "a6", "to": "place:couch", "guide": {"zh": "取腎俞、大腸俞、委中", "en": "Locate the three points"},
+     "lines": [
+      ["master", {"zh": "肌肉鬆了，取穴。腰痛的三個基本穴：腎俞、大腸俞，和「腰背委中求」的委中。在圖上指給我看。", "en": "Muscles relaxed; now the points. The three basics for back pain: Shenshu, Dachangshu, and Weizhong, as in “seek the back in Weizhong”. Show me on the figure."}]
+     ],
+     "mini": {"type": "points", "q": {"zh": "點出腎俞、大腸俞、委中", "en": "Tap Shenshu, Dachangshu and Weizhong"}, "codes": ["BL23", "BL25", "BL40"], "view": "back"},
+     "post": [
+      ["master", {"zh": "委中在膝後正中，膝微屈著按，避開正中的血管神經，力道由輕到重。", "en": "Weizhong is dead centre behind the knee. Press with the knee slightly bent, away from the midline vessels and nerve, light to firm."}]
+     ]},
+    {"id": "a7", "to": "place:couch", "guide": {"zh": "用按法處理穴位與肌肉", "en": "Apply pressing to points and muscle"},
+     "lines": [
+      ["master", {"zh": "按法用在腧穴和肌肉上，指、掌、肘各有用處。急性期用拇指和掌根，肘先收起來。", "en": "Pressing works on points and on muscle, with finger, palm or elbow. In the acute phase use the thumb and heel of the hand; keep the elbow for later."}]
+     ],
+     "mini": {"type": "stage", "case": "tuina-an-fa-workflow", "stage": 4},
+     "post": [
+      ["aliang", {"zh": "按到那個點的時候，痛會從腰竄到屁股，然後……鬆了。", "en": "When you hit that spot the pain shoots from my back to my hip, and then… it lets go."}],
+      ["master", {"zh": "那就是阿是穴。", "en": "That is the ashi point."}]
+     ]},
+    {"id": "a8", "roles": ["therapist"], "to": "place:lamp", "guide": {"zh": "擦法透熱，再熱敷", "en": "Friction to warmth, then heat"},
+     "lines": [
+      ["me", {"zh": "阿良，最後用掌根擦到發熱，然後熱敷包隔毛巾放一下。太燙一定要講。", "en": "A-Liang, I finish by rubbing until it is warm, then a heat pack over a towel for a while. Say the moment it is too hot."}],
+      ["nurse", {"zh": "熱敷包我剛換過，隔兩層毛巾。", "en": "I have just changed the packs; two layers of towel."}],
+      ["akai", {"zh": "擦法透熱要塗介質、直線、快而不重。發熱就停，不是擦到紅。", "en": "Friction to warmth needs lubricant, straight lines, fast but not heavy. Stop when it is warm, not when it is red."}]
+     ]},
+    {"id": "a8i", "roles": ["intern"], "to": "place:desk", "guide": {"zh": "寫治療紀錄", "en": "Write the treatment note"},
+     "lines": [
+      ["me", {"zh": "主訴、受傷機轉、紅旗篩檢陰性、理學檢查、辨證、手法與穴位、病人反應、衛教。", "en": "Complaint, mechanism, red-flag screen negative, examination, pattern, techniques and points, response, advice."}],
+      ["master", {"zh": "再加一行：「不做扳法，理由：急性期。」紀錄寫下你沒做的事，和你做的一樣重要。", "en": "Add one line: “No thrust technique, reason: acute phase.” What you chose not to do belongs in the note as much as what you did."}]
+     ]},
+    {"id": "a9", "to": "aliang", "guide": {"zh": "阿良站起來時……", "en": "As A-Liang stands up…"},
+     "lines": [
+      ["sys", {"zh": "熱敷結束。阿良一個翻身就坐起來、站起來，臉色忽然發白，手扶著床沿。", "en": "Heat finished. A-Liang rolls over, sits and stands in one go. His face goes white and he grabs the couch edge."}],
+      ["aliang", {"zh": "……眼前黑黑的。", "en": "…Everything's gone dark."}]
+     ],
+     "mini": {"type": "vitals", "event": "hypotension",
+      "options": [
+       {"zh": "扶他躺回去、抬腿、觀察再量", "en": "Lie him back, raise legs, observe, re-measure", "ok": true, "why": {"zh": "趴久了突然站起的姿勢性低血壓。躺下抬腿、別讓他自己走，恢復後先坐一會兒再站。", "en": "Postural hypotension after lying prone. Lie him down, raise the legs, do not let him walk off; once recovered, sit a while before standing."}},
+       {"zh": "讓他快點走出去透氣", "en": "Get him outside for fresh air", "ok": false, "why": {"zh": "頭暈眼黑的人走出去，最可能的結局是跌倒。", "en": "A dizzy man walking out most likely ends up on the floor."}},
+       {"zh": "繼續推，可能是推到位了", "en": "Keep treating, it means it is working", "ok": false, "why": {"zh": "臉白、眼黑、冒汗不是「推到位」，是循環跟不上。先處理人，不是處理腰。", "en": "Pale, dark vision, sweating is not “working”; it is circulation lagging. Treat the person first, not the back."}}
+      ]},
+     "post": [
+      ["master", {"zh": "治療床下來永遠三步：先坐、腳垂下來、再站。你的衛教裡要有這一句。", "en": "Getting off the couch is always three steps: sit, legs down, then stand. Put that line in your advice."}]
+     ]}
+   ]},
+  {"id": "call", "name": {"zh": "老闆來電", "en": "The boss calls"}, "sub": {"zh": "10:30 · 紀錄桌", "en": "10:30 · notes desk"}, "t": 630, "mood": "day",
+   "note": {"zh": "下午那一車：先養腰", "en": "The afternoon van: the back comes first"},
+   "beats": [
+    {"id": "c1", "to": "place:desk", "guide": {"zh": "接搬家公司的電話", "en": "Take the boss's call"},
+     "ring": {"title": {"zh": "搬家公司來電", "en": "Removals company calling"}, "sub": {"zh": "阿良下午能不能上工？", "en": "Can A-Liang work this afternoon?"}, "call": true, "from": "boss"},
+     "lines": [
+      ["boss", {"zh": "醫師，阿良下午那一車還能不能搬？我可以叫他只搬輕的。", "en": "Doctor, can A-Liang do this afternoon's van? I can give him only the light stuff."}],
+      ["me", {"zh": "今天不行，急性腰扭傷的頭幾天彎腰搬重會再傷。讓他休息、慢慢走動，約回診我們再評估。", "en": "Not today. In the first days of an acute sprain, bending and lifting re-injures it. Rest, gentle walking, and we reassess at follow-up."}],
+      ["boss", {"zh": "好啦好啦。那他搬洗衣機的姿勢是不是要教一下？", "en": "Fine, fine. Should somebody teach him how to lift a washing machine, though?"}],
+      ["master", {"zh": "這位老闆問到重點了。", "en": "That boss has just asked the right question."}],
+      ["sys", {"zh": "掛掉電話，你看到治療床腳掛著一雙工作手套。阿良走的時候，是真的慢慢走的。", "en": "As you hang up you notice a pair of work gloves on the couch leg. A-Liang really did walk out slowly."}],
+      ["nurse", {"zh": "他會回來拿的。急的人都會回來。", "en": "He'll be back for them. People in a hurry always come back."}]
+     ],
+     "item": "gloves"}
+   ]},
+  {"id": "ahma", "name": {"zh": "不能推的病人", "en": "The patient you must not treat"}, "sub": {"zh": "11:30 · 治療床旁", "en": "11:30 · beside the couch"}, "t": 690, "mood": "day",
+   "note": {"zh": "秀英阿嬤：轉診照 X 光", "en": "Grandma Hsiu-Ying: referred for X-ray"},
+   "beats": [
+    {"id": "m1", "to": "ahma", "guide": {"zh": "去看秀英阿嬤", "en": "See Grandma Hsiu-Ying"},
+     "lines": [
+      ["sys", {"zh": "輪椅進來。秀英阿嬤坐得很淺，手撐著扶手，每個震動都讓她皺眉。", "en": "A wheelchair comes in. Grandma Hsiu-Ying perches on the edge, hands on the armrests, wincing at every bump."}],
+      ["granddaughter", {"zh": "阿嬤昨晚在浴室滑倒，腰痛到坐不住。國術館說可以喬，我想說來醫院比較安全。", "en": "She slipped in the bathroom last night and can't sit for the pain. The bone-setter said he could click it; I thought the hospital was safer."}],
+      ["me", {"zh": "阿嬤，哪裡痛？跌倒的時候是怎麼著地的？平常有在吃骨質疏鬆的藥嗎？", "en": "Grandma, where does it hurt? How did you land? Do you take anything for osteoporosis?"}],
+      ["ahma", {"zh": "屁股坐下去，腰這裡「咚」一聲。骨鬆的藥吃好幾年了。", "en": "Landed on my bottom, and my back went “thud”. I've taken the bone pills for years."}],
+      ["master", {"zh": "骨質疏鬆、跌倒、坐姿著地、腰部劇痛、拒按。你的處置？", "en": "Osteoporosis, a fall, landed sitting, severe back pain, cannot bear touch. Your plan?"}]
+     ],
+     "mini": {"type": "choice", "q": {"zh": "秀英阿嬤該怎麼處理？", "en": "What should happen to Grandma Hsiu-Ying?"},
+      "options": [
+       {"zh": "不推拿，先轉診照腰椎 X 光", "en": "No tuina; refer for a spine X-ray first", "ok": true, "set": {"ahma-referred": true}, "why": {"zh": "骨質疏鬆長者跌倒後腰痛，第一要排除的是壓縮性骨折。影像沒看到之前，手不能上。", "en": "Back pain after a fall in an osteoporotic elder means compression fracture until proven otherwise. No hands until the image is seen."}},
+       {"zh": "輕手法先放鬆，看會不會好", "en": "Gentle techniques first, see if it settles", "ok": false, "set": {"ahma-referred": false}, "why": {"zh": "「輕」在骨折上沒有安全值。先確定骨頭是完整的。", "en": "There is no safe “gentle” on a fracture. Confirm the bone is intact first."}},
+       {"zh": "上牽引床把腰拉開", "en": "Put her on the traction table", "ok": false, "set": {"ahma-referred": false}, "why": {"zh": "骨質疏鬆與疑似骨折都是牽引的禁忌。這一步可能讓椎體再塌。", "en": "Osteoporosis and suspected fracture are both contraindications to traction. This could collapse the vertebra further."}}
+      ]},
+     "post": [
+      ["granddaughter", {"zh": "所以……不能喬？", "en": "So… no clicking?"}],
+      ["master", {"zh": "今天不能。有些病人我們最好的治療，是把他送到對的地方。", "en": "Not today. For some patients the best treatment we have is sending them to the right place."}]
+     ]},
+    {"id": "m2", "to": "place:chart", "guide": {"zh": "看腰椎影像區", "en": "Review the spine imaging"},
+     "lines": [
+      ["master", {"zh": "轉診單寫之前，先想清楚你要放射科看什麼。打開脊椎影像區。", "en": "Before you write the referral, be clear what you want radiology to look at. Open the spine imaging."}]
+     ],
+     "mini": {"type": "imaging", "region": "spine",
+      "question": {"zh": "骨質疏鬆長者跌倒後腰痛，影像上最要看什麼？", "en": "An osteoporotic elder with back pain after a fall: what matters most on the image?"},
+      "answer": {"zh": "椎體有沒有變矮、前緣塌陷（壓縮性骨折）、椎體對位與椎弓根是否完整；有神經症狀或懷疑不穩定要進一步做斷層或磁振。任何懷疑都轉骨科，不推拿。", "en": "Loss of vertebral height or anterior wedging (compression fracture), alignment, intact pedicles; neurological signs or suspected instability call for CT or MRI. Any suspicion goes to orthopaedics, not to tuina."}},
+     "post": [
+      ["master", {"zh": "還有一件事：骨質疏鬆的人，壓縮性骨折可能一點外傷史都沒有。咳嗽、彎腰撿東西，就夠了。", "en": "One more thing: in osteoporosis a compression fracture may have no trauma history at all. A cough, bending for a sock, is enough."}]
+     ]},
+    {"id": "m3", "to": "granddaughter", "guide": {"zh": "跟孫女解釋", "en": "Explain to the granddaughter"},
+     "lines": [
+      ["me", {"zh": "我們先照 X 光排除骨折。如果骨頭沒事，之後再用很輕的手法和遠端穴位幫阿嬤；如果有骨折，骨科會接手。", "en": "We X-ray first to rule out a fracture. If the bone is fine, later we can help with very gentle techniques and distal points; if it is broken, orthopaedics takes over."}],
+      ["granddaughter", {"zh": "好。那國術館的電話我先刪掉。", "en": "OK. I'll delete the bone-setter's number then."}],
+      ["ahma", {"zh": "免啦，留著。等我好了帶你去吃他們隔壁的肉圓。", "en": "Keep it. When I'm better I'll take you for the meatballs next door to his shop."}]
+     ]}
+   ]},
+  {"id": "afternoon", "name": {"zh": "下午：阿良回來了", "en": "Afternoon: A-Liang returns"}, "sub": {"zh": "14:30 · 功法墊區", "en": "14:30 · exercise mats"}, "t": 870, "mood": "day",
+   "note": {"zh": "自我照護與證據", "en": "Self-care and evidence"},
+   "beats": [
+    {"id": "p1", "to": "place:mat", "guide": {"zh": "在墊區等阿良", "en": "Meet A-Liang at the mats"},
+     "lines": [
+      ["sys", {"zh": "阿良回來拿手套，走路比早上直了一些。", "en": "A-Liang is back for his gloves, walking a little straighter than this morning."}],
+      ["aliang", {"zh": "醫師，網路上有人說推拿沒用，有人說要推到瘀青才有效。到底哪個對？", "en": "Doc, online some say tuina is useless and some say you have to bruise to make it work. Which is it?"}],
+      ["master", {"zh": "好問題，兩個都錯。證據怎麼說，你來講。", "en": "Good question, and both are wrong. Tell him what the evidence says."}]
+     ],
+     "mini": {"type": "stage", "case": "tuina-tuina-principles-workflow", "stage": 4},
+     "post": [
+      ["me", {"zh": "急性腰痛大多會自己好，推拿幫的是這段時間少痛一點、動得早一點。推到瘀青是傷，不是療效。", "en": "Most acute back pain settles by itself; tuina helps you hurt less and move sooner meanwhile. Bruising is injury, not effect."}]
+     ]},
+    {"id": "p2", "to": "place:mat", "guide": {"zh": "教阿良搬重與護腰", "en": "Teach lifting and back care"},
+     "lines": [
+      ["akai", {"zh": "來，示範一次抬洗衣機：靠近、蹲下、腰直、用腿站起、不要邊抬邊轉。", "en": "Right, lifting a washing machine: get close, squat, back straight, stand with the legs, never twist while lifting."}],
+      ["aliang", {"zh": "我們都是用甩的……", "en": "We usually just swing it…"}],
+      ["akai", {"zh": "我知道。所以你今天在這裡。", "en": "I know. That is why you are here today."}],
+      ["master", {"zh": "回去這幾天：不久坐、不久站、不彎腰搬重，走路可以。痛加重、腿麻、大小便有問題，馬上回來或去急診。", "en": "For the next few days: no long sitting, no long standing, no bending to lift; walking is fine. If the pain worsens, the legs go numb or bladder or bowel change, come straight back or go to emergency."}]
+     ],
+     "set": {"education": true}}
+   ]},
+  {"id": "debrief", "name": {"zh": "交班與師傅的話", "en": "Handover and the master's word"}, "sub": {"zh": "17:30 · 白板前", "en": "17:30 · at the board"}, "t": 1050, "mood": "eve",
+   "note": {"zh": "阿嬤的 X 光回來了", "en": "Grandma's X-ray is back"},
+   "beats": [
+    {"id": "d1", "when": {"flag": "ahma-referred", "is": true}, "to": "place:board", "guide": {"zh": "看病房傳來的訊息", "en": "Read the ward's message"},
+     "ring": {"title": {"zh": "骨科病房訊息", "en": "Message from orthopaedics"}, "sub": {"zh": "秀英阿嬤：第一腰椎壓縮性骨折，已收治", "en": "Grandma Hsiu-Ying: L1 compression fracture, admitted"}, "call": false, "from": "ward-nurse"},
+     "lines": [
+      ["sys", {"zh": "訊息：「秀英阿嬤 X 光第一腰椎壓縮性骨折，骨科收住院，謝謝你們沒有動她。」", "en": "Message: “Grandma Hsiu-Ying: L1 compression fracture on X-ray, admitted to orthopaedics. Thank you for not touching her.”"}],
+      ["master", {"zh": "看到沒有。你今天最好的治療，是沒有推的那一個。", "en": "You see. Your best treatment today was the one you did not give."}]
+     ]},
+    {"id": "d1b", "when": {"flag": "ahma-referred", "is": false}, "to": "place:board", "guide": {"zh": "看病房傳來的訊息", "en": "Read the ward's message"},
+     "ring": {"title": {"zh": "骨科病房訊息", "en": "Message from orthopaedics"}, "sub": {"zh": "秀英阿嬤：第一腰椎壓縮性骨折", "en": "Grandma Hsiu-Ying: L1 compression fracture"}, "call": false, "from": "ward-nurse"},
+     "lines": [
+      ["sys", {"zh": "訊息：「秀英阿嬤家屬自行帶去急診，X 光第一腰椎壓縮性骨折，骨科收住院。」", "en": "Message: “Grandma Hsiu-Ying's family took her to emergency themselves; L1 compression fracture on X-ray, admitted to orthopaedics.”"}],
+      ["master", {"zh": "早上你差一點就把手放上去。記住這個下午。骨質疏鬆加跌倒，先影像，沒有例外。", "en": "This morning you nearly put your hands on her. Remember this afternoon. Osteoporosis plus a fall means imaging first, no exceptions."}]
+     ]},
+    {"id": "d2", "roles": ["therapist"], "to": "place:sink", "guide": {"zh": "清潔治療床與器具", "en": "Clean the couches and tools"},
+     "lines": [
+      ["me", {"zh": "三張床擦過、床單換新，熱敷包回保溫箱，罐具和刮痧板消毒歸位。", "en": "Three couches wiped, fresh sheets, heat packs back in the warmer, cups and scraping boards disinfected and shelved."}],
+      ["nurse", {"zh": "紅外線燈記得關，上次有人開一整夜。", "en": "Switch the lamp off; someone left it on all night once."}]
+     ]},
+    {"id": "d3", "to": "master", "guide": {"zh": "聽師傅說一句話", "en": "Hear the master out"},
+     "lines": [
+      ["master", {"zh": "問你最後一個問題：今天兩個腰痛，為什麼一個推、一個不推？", "en": "Last question: two back pains today. Why treat one and not the other?"}],
+      ["me", {"zh": "因為推拿治的是「可以推的腰痛」。年輕、機轉清楚、沒有紅旗，推；骨質疏鬆、跌倒、疑似骨折，先轉。", "en": "Because tuina treats the back pain that may be treated. Young, clear mechanism, no red flags: treat. Osteoporosis, a fall, suspected fracture: refer first."}],
+      ["master", {"zh": "手法可以慢慢練。判斷，要從第一天就練。去吃飯。", "en": "Technique can be practised slowly. Judgement you practise from day one. Go and eat."}]
+     ]}
+   ]},
+  {"id": "night", "name": {"zh": "夜間電話", "en": "Night call"}, "sub": {"zh": "21:30 · 值班室", "en": "21:30 · on-call room"}, "t": 1290, "mood": "night",
+   "note": {"zh": "病房電話：骨折的腰，遠端處理", "en": "Ward call: a fractured back, treated distally"},
+   "beats": [
+    {"id": "n1", "to": "place:desk", "guide": {"zh": "接骨科病房電話", "en": "Answer the orthopaedic ward"},
+     "ring": {"title": {"zh": "骨科病房來電", "en": "Orthopaedic ward calling"}, "sub": {"zh": "秀英阿嬤腰很痛，問中醫能不能來「喬」", "en": "Grandma Hsiu-Ying is in pain and asks if TCM can “click” her"}, "call": true, "from": "ward-nurse"},
+     "lines": [
+      ["ward-nurse", {"zh": "阿嬤說白天在你們那邊沒推到，現在腰很痛，想請人來喬一下。可以嗎？", "en": "Grandma says she never got her treatment with you today, her back hurts, and she wants someone to come and click it. Can you?"}],
+      ["me", {"zh": "不能喬。壓縮性骨折急性期不做腰部手法。止痛依骨科醫囑；如果骨科同意，我們可以用遠端穴位和四肢輕柔放鬆幫她舒服一點。", "en": "No clicking. No lumbar techniques in the acute phase of a compression fracture. Analgesia per the orthopaedic team; if they agree, we can use distal points and gentle limb work to make her more comfortable."}],
+      ["ward-nurse", {"zh": "好，我請值班醫師開會診。她還一直說肉圓的事。", "en": "OK, I'll ask the on-call doctor to request a consult. She keeps talking about meatballs."}]
+     ]},
+    {"id": "n2", "to": "place:desk", "guide": {"zh": "看師傅傳來的訊息", "en": "Read the master's message"},
+     "ring": {"title": {"zh": "吳師傅訊息", "en": "Message from Master Wu"}, "sub": {"zh": "明天第一位是頸椎病，先讀椎動脈", "en": "Tomorrow's first case is a neck; read up on the vertebral artery"}, "call": false, "from": "master"},
+     "lines": [
+      ["sys", {"zh": "訊息：「今天的判斷很好。明天第一位是頸椎病，睡前讀一下椎動脈與頸椎旋轉扳法的風險。先問、再摸、最後才推。」", "en": "Message: “Good judgement today. Tomorrow's first patient is a cervical case; before bed read about the vertebral artery and the risks of cervical rotation thrusts. Ask, feel, then press.”"}],
+      ["me", {"zh": "（把手套放進抽屜，明天還他。）", "en": "(The gloves go in the drawer, to return tomorrow.)"}]
+     ],
+     "end": true}
+   ]}
+ ],
+ "ending": {"title": {"zh": "下班了", "en": "End of shift"}, "sub": {"zh": "兩個腰痛，一個推、一個不推", "en": "Two back pains: one treated, one referred"},
+  "stats": ["stages", "drills", "choices", "calls", "items", "time"]}
+}

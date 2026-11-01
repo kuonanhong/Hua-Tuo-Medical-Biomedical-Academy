@@ -1,0 +1,251 @@
+{
+  "format": "huatuo-shift-v2",
+  "department": "joint-reconstruction",
+  "case": "hip-fracture",
+  "caseTitle": {"zh": "浴室裡的那一跤", "en": "The fall in the bathroom"},
+  "condition": {"zh": "外傷 · 老年髖部骨折", "en": "Trauma · fragility hip fracture"},
+  "difficulty": 2,
+  "room": "er",
+  "title": {"zh": "關節重建：急診的夜", "en": "Joint reconstruction: a night in the ER"},
+  "tagline": {"zh": "一條皮尺、一副眼鏡、一個不該渴一整夜的阿嬤", "en": "A tape measure, a pair of glasses, and a grandma who shouldn't go thirsty all night"},
+  "minutes": 22,
+  "roles": [
+    {"id": "resident", "zh": "關節重建住院醫師（值班）", "en": "Joint reconstruction resident (on call)", "desc": {"zh": "夜班第一通會診就是髖部骨折。你以為是骨科的事，今晚會發現一半是內科。", "en": "Your first night consult is a hip fracture. You think it's an orthopaedic problem; tonight you'll find half of it is medicine."}},
+    {"id": "er-nurse", "zh": "急診護理師", "en": "ER nurse", "desc": {"zh": "你看得到醫師常常漏掉的：腳跟的紅、尿袋的空、病人眼神從清楚變成飄。", "en": "You see what doctors often miss: a red heel, an empty urine bag, a gaze drifting from clear to lost."}}
+  ],
+  "cast": {
+    "attending": {"name": {"zh": "杜主治", "en": "Dr Tu"}, "role": {"zh": "關節重建主治醫師（師傅）", "en": "Joint reconstruction attending (mentor)"}, "tag": "ATT", "color": "#81296d", "body": "mentor",
+      "about": {"zh": "說話很慢，動作很快。口頭禪：「髖部骨折是穿著外科衣服的內科急症。」", "en": "Speaks slowly, moves fast. Catchphrase: 'A hip fracture is a medical emergency in surgical clothing.'"}},
+    "er-doc": {"name": {"zh": "急診蔡醫師", "en": "Dr Tsai (ER)"}, "role": {"zh": "急診主治醫師", "en": "Emergency physician"}, "tag": "ER", "color": "#c2410c", "body": "specialist",
+      "about": {"zh": "剛處理完一個創傷，咖啡是今晚第三杯，交班仍然一句不漏。", "en": "Just finished a trauma call, on her third coffee of the night, and still hands over without missing a thing."}},
+    "anaes": {"name": {"zh": "麻醉科小羅", "en": "Lo (anaesthesia)"}, "role": {"zh": "麻醉科醫師", "en": "Anaesthetist"}, "tag": "AN", "color": "#0e7490", "body": "anaesthetist",
+      "about": {"zh": "超音波探頭是她的筆。她說：「止痛做得好，譫妄少一半。」", "en": "The ultrasound probe is her pen. Her line: 'Get the pain right and you halve the delirium.'"}},
+    "patient": {"name": {"zh": "李阿嬤", "en": "Grandma Lee"}, "role": {"zh": "病人・86 歲退休裁縫", "en": "Patient, 86, retired seamstress"}, "tag": "PT", "color": "#6b7280", "body": "patient",
+      "about": {"zh": "記得每一位老客人的腰圍，卻記不得今天星期幾。口袋裡永遠有一條皮尺。", "en": "Remembers every old customer's waist size but not what day it is. Always has a tape measure in her pocket."}},
+    "son": {"name": {"zh": "李先生", "en": "Mr Lee"}, "role": {"zh": "家屬・阿嬤的兒子", "en": "Family, her son"}, "tag": "FAM", "color": "#b45309", "body": "family",
+      "about": {"zh": "做保全，值夜班。接到電話就從公司衝來，制服還沒換。", "en": "A night-shift security guard who ran straight from work, still in uniform."}},
+    "geri": {"name": {"zh": "老年醫學科鄧醫師", "en": "Dr Teng (geriatrics)"}, "role": {"zh": "老年醫學科醫師", "en": "Geriatrician"}, "tag": "GER", "color": "#3b8f6a", "phoneOnly": true,
+      "about": {"zh": "電話裡永遠先問三件事：藥、腎、腦。", "en": "On the phone she always asks three things first: drugs, kidneys, brain."}},
+    "ward-nurse": {"name": {"zh": "怡君", "en": "Yi-chun"}, "role": {"zh": "骨科病房護理師", "en": "Orthopaedic ward nurse"}, "tag": "RN", "color": "#9d4b7a", "phoneOnly": true,
+      "about": {"zh": "收病人之前會先問：「眼鏡跟助聽器有沒有跟上來？」", "en": "Before taking a patient she asks: 'Are the glasses and hearing aid coming up too?'"}}
+  },
+  "places": {
+    "bed": {"name": {"zh": "急診處置床", "en": "ER bay"}, "hot": "bed"},
+    "monitor": {"name": {"zh": "生理監視器", "en": "Patient monitor"}, "hot": "monitor"},
+    "imaging": {"name": {"zh": "影像判讀螢幕", "en": "Image viewer"}, "hot": "imaging"},
+    "ultrasound": {"name": {"zh": "超音波機", "en": "Ultrasound machine"}, "hot": "ultrasound"},
+    "desk": {"name": {"zh": "急診護理站", "en": "ER nursing station"}, "hot": "desk"},
+    "board": {"name": {"zh": "急診白板", "en": "ER whiteboard"}, "hot": "whiteboard"}
+  },
+  "glossary": [
+    {"term": {"zh": "股骨頸骨折", "en": "femoral neck fracture"}, "plain": {"zh": "大腿骨最上端、靠近球頭的那一段斷掉。老人跌倒最常見的髖部骨折之一。", "en": "A break in the narrow neck just below the ball of the thigh bone; one of the commonest hip fractures after a fall in old age."}},
+    {"term": {"zh": "Garden 分類", "en": "Garden classification"}, "plain": {"zh": "依骨折有沒有移位，把股骨頸骨折分成四型。移位愈多，股骨頭的血流愈可能斷掉。", "en": "Sorts femoral neck fractures into four types by displacement. The more displaced, the more likely the blood supply to the head is cut."}},
+    {"term": {"zh": "半髖置換", "en": "hemiarthroplasty"}, "plain": {"zh": "只換掉股骨頭這一半，保留原本的髖臼。手術較短、脫臼風險較低。", "en": "Replacing only the ball, keeping the patient's own socket. A shorter operation with a lower risk of dislocation."}},
+    {"term": {"zh": "髂筋膜阻斷", "en": "fascia iliaca block"}, "plain": {"zh": "在超音波下把局部麻醉藥打進鼠蹊部的筋膜層，讓髖部的神經暫時不痛。鴉片類可以少用。", "en": "Under ultrasound, local anaesthetic is placed in a fascial layer in the groin to numb the nerves of the hip for a while, so fewer opioids are needed."}},
+    {"term": {"zh": "抗凝血劑", "en": "anticoagulant"}, "plain": {"zh": "讓血不容易凝固的藥，常用來預防心房顫動造成的中風。跌倒撞頭時要特別小心顱內出血。", "en": "A medicine that slows clotting, often taken to prevent stroke in atrial fibrillation. After a head strike it raises the worry of bleeding inside the skull."}},
+    {"term": {"zh": "譫妄", "en": "delirium"}, "plain": {"zh": "急性的意識混亂，時好時壞，晚上特別明顯。痛、脫水、感染、藥物、陌生環境都會引發。", "en": "Acute confusion that comes and goes, often worse at night. Pain, dehydration, infection, medicines and strange surroundings can all trigger it."}},
+    {"term": {"zh": "禁食", "en": "fasting"}, "plain": {"zh": "手術前不吃東西，避免麻醉時嘔吐吸入。現在的規範讓清流質可以喝到術前不久，不再「從午夜開始全部不能吃喝」。", "en": "Not eating before surgery to avoid vomiting and inhalation under anaesthesia. Current rules allow clear fluids until shortly before surgery, not 'nothing from midnight'."}},
+    {"term": {"zh": "心房顫動", "en": "atrial fibrillation"}, "plain": {"zh": "心房亂跳的心律不整。痛、脫水或感染會讓心跳一下子跑得很快。", "en": "An irregular rhythm with the upper chambers quivering. Pain, dehydration or infection can suddenly make the heart race."}},
+    {"term": {"zh": "頭部外傷", "en": "head injury"}, "plain": {"zh": "跌倒撞到頭。吃抗凝血劑的人就算看起來沒事，也要照頭部 CT。", "en": "A blow to the head. In someone on anticoagulants a head CT is needed even when they seem fine."}},
+    {"term": {"zh": "老年醫學共照", "en": "orthogeriatric co-management"}, "plain": {"zh": "骨科和老年醫學科從入院就一起照顧，管藥、腎、認知、營養與跌倒，術後恢復比較好。", "en": "Orthopaedics and geriatrics care for the patient together from admission, covering medicines, kidneys, cognition, nutrition and falls. Recovery is better."}},
+    {"term": {"zh": "壓力性損傷", "en": "pressure injury"}, "plain": {"zh": "皮膚長時間被壓住而受傷，常在薦骨與腳跟。在地上躺很久的老人特別危險。", "en": "Skin damaged by prolonged pressure, usually over the sacrum and heels. Elderly people who lay on the floor for a long time are at special risk."}},
+    {"term": {"zh": "脆弱性骨折", "en": "fragility fracture"}, "plain": {"zh": "站著的高度跌倒就骨折，代表骨質疏鬆。它是下一次骨折的警訊。", "en": "A fracture from a fall from standing height, a sign of osteoporosis and a warning of the next fracture."}}
+  ],
+  "codex": [
+    {"id": "er-bay", "kind": "equipment", "name": {"zh": "處置床與減壓床墊", "en": "ER bay and pressure mattress"}, "hot": "bed", "text": {"zh": "在地上躺了一個多小時的阿嬤，到急診的第一件事之一就是換減壓床墊、看薦骨與腳跟。", "en": "A grandma who lay on the floor for over an hour needs, among the first things, a pressure-relieving mattress and a look at her sacrum and heels."}},
+    {"id": "us-machine", "kind": "equipment", "name": {"zh": "超音波機", "en": "Ultrasound machine"}, "hot": "ultrasound", "text": {"zh": "小羅用它找到筋膜層，看著藥水在裡面散開。看得見的針，才是安全的針。", "en": "Lo uses it to find the fascial layer and watch the anaesthetic spread. A needle you can see is a safe needle."}},
+    {"id": "monitor", "kind": "equipment", "name": {"zh": "生理監視器", "en": "Patient monitor"}, "hot": "monitor", "text": {"zh": "今晚它先叫了：心房顫動跑快。它告訴你心跳，但要你自己去找為什麼。", "en": "Tonight it alarmed first: atrial fibrillation racing. It tells you the rate; you have to find the reason."}},
+    {"id": "tape", "kind": "item", "name": {"zh": "阿嬤的皮尺", "en": "Grandma's tape measure"}, "text": {"zh": "裁縫用的軟皮尺，數字都磨淡了。她說等她好了，要量你的白袍袖子。", "en": "A tailor's soft tape, its numbers worn faint. When she is better, she says, she'll measure your white-coat sleeves."}},
+    {"id": "glasses", "kind": "item", "name": {"zh": "阿嬤的老花眼鏡", "en": "Grandma's reading glasses"}, "text": {"zh": "戴上眼鏡、聽見兒子的聲音，她就從「要回家煮飯」回到了「我在醫院」。這是最便宜的譫妄治療。", "en": "With her glasses on and her son's voice near, she came back from 'I must go home and cook' to 'I'm in hospital'. The cheapest delirium treatment there is."}},
+    {"id": "medical-emergency", "kind": "concept", "name": {"zh": "穿著外科衣服的內科急症", "en": "A medical emergency in surgical clothing"}, "text": {"zh": "老年髖部骨折之後一年的死亡率不低，決定結果的多半不是刀開得漂不漂亮，而是：痛有沒有控制、有沒有脫水、抗凝血劑與共病怎麼處理、有沒有譫妄與壓力性損傷、能不能盡早手術與下床，以及出院前有沒有處理骨質疏鬆與跌倒。所以要老年醫學共照，所以骨科醫師也要會看電解質。", "en": "Mortality in the year after a hip fracture in old age is substantial, and the outcome depends less on a pretty operation than on: pain control, hydration, managing anticoagulants and comorbidities, preventing delirium and pressure injury, early surgery and early walking, and treating osteoporosis and falls before discharge. Hence orthogeriatric co-management, and hence the orthopaedic doctor reads electrolytes too."}},
+    {"id": "delirium", "kind": "concept", "name": {"zh": "譫妄預防束包", "en": "The delirium prevention bundle"}, "text": {"zh": "眼鏡、助聽器、時鐘與日曆、家人陪伴、白天開燈晚上關燈、好好止痛、補水、避免不必要的導尿管與鎮靜藥、早點下床。約束帶通常讓譫妄更糟。每一項都很小，加起來很大。", "en": "Glasses, hearing aids, a clock and calendar, family nearby, lights on by day and off by night, good analgesia, fluids, no unnecessary catheters or sedatives, early mobilisation. Restraints usually make delirium worse. Each item is small; together they are large."}},
+    {"id": "hemi-vs-tha", "kind": "concept", "name": {"zh": "全髖還是半髖", "en": "Total hip or hemiarthroplasty"}, "text": {"zh": "移位的股骨頸骨折，股骨頭血流常已中斷，老人多選擇置換而非固定。受傷前能獨立外出行走、認知良好、身體狀況許可的人，全髖置換走得更好；認知退化或行動較受限的人，半髖置換手術較短、脫臼較少。決定看的是她受傷前的生活，不只是今晚的片子。", "en": "In a displaced femoral neck fracture the blood supply to the head is often lost, so older patients usually get a replacement rather than fixation. Those who walked independently outdoors before the injury, with good cognition and fitness, do better with a total hip; those with cognitive decline or limited mobility do well with a hemiarthroplasty, which is shorter and dislocates less. The decision rests on her life before the fall, not just tonight's film."}}
+  ],
+  "segs": [
+    {"id": "arrive", "name": {"zh": "阿嬤來了", "en": "Grandma arrives"}, "sub": {"zh": "18:30 · 急診處置床", "en": "18:30 · ER bay"}, "t": 1110, "mood": "eve",
+     "note": {"zh": "右腳短、外轉；在地上躺了一個多小時", "en": "Right leg short and turned out; over an hour on the floor"},
+     "beats": [
+      {"id": "a1", "to": "er-doc", "guide": {"zh": "聽蔡醫師交班", "en": "Take handover from Dr Tsai"},
+       "lines": [
+        ["er-doc", {"zh": "八十六歲，晚上在浴室滑倒，右腳短、外轉，不能站。有心房顫動，吃抗凝血劑。", "en": "Eighty-six, slipped in the bathroom this evening, right leg short and turned out, can't stand. Atrial fibrillation, on an anticoagulant."}],
+        ["me", {"zh": "有撞到頭嗎？", "en": "Did she hit her head?"}],
+        ["er-doc", {"zh": "額頭腫一包，她說沒事。兒子在路上。抽血送了，剩下交給你們。", "en": "A lump on the forehead; she says she's fine. Son's on his way. Bloods are sent; the rest is yours."}]
+       ]},
+      {"id": "a2", "to": "patient", "guide": {"zh": "去看李阿嬤", "en": "See Grandma Lee"},
+       "lines": [
+        ["patient", {"zh": "醫師，你的袖子太長了。改天拿來，我幫你改。", "en": "Doctor, your sleeves are too long. Bring the coat round some day and I'll take them up."}],
+        ["me", {"zh": "阿嬤，先讓我看看腳。跌倒前有頭暈、胸悶嗎？", "en": "Grandma, let me see the leg first. Any dizziness or chest tightness before you fell?"}],
+        ["patient", {"zh": "沒有，是地板滑。我爬不起來，在地上躺了一個多小時。", "en": "No, the floor was slippery. I couldn't get up; I lay there over an hour."}],
+        ["me", {"zh": "躺那麼久，要擔心脫水、肌肉受傷和壓力性損傷。我已經請護理師看皮膚了。", "en": "That long on the floor means dehydration, muscle damage and pressure injury. The nurse is checking her skin."}]
+       ],
+       "item": "tape"},
+      {"id": "a3", "roles": ["er-nurse"], "to": "place:bed", "guide": {"zh": "看壓力點、保暖", "en": "Check pressure points, keep warm"},
+       "lines": [
+        ["me", {"zh": "薦骨有一片紅，壓了會退；右腳跟還好。換減壓床墊，墊高腳跟。", "en": "A red patch on the sacrum that blanches; right heel fine. Pressure mattress on, heels off-loaded."}],
+        ["me", {"zh": "保暖毯蓋上，開始記尿量。她的眼鏡和助聽器放在床頭，不要收進袋子。", "en": "Warming blanket on, urine output charted. Her glasses and hearing aid stay at the bedside, not in a bag."}],
+        ["er-doc", {"zh": "這一句交班，比我的還重要。", "en": "That line of handover beats mine."}]
+       ]}
+     ]},
+    {"id": "pain", "name": {"zh": "先止痛", "en": "Pain first"}, "sub": {"zh": "19:00 · 超音波機", "en": "19:00 · ultrasound machine"}, "t": 1140, "mood": "eve",
+     "note": {"zh": "髂筋膜阻斷：阿嬤睡著了", "en": "Fascia iliaca block: Grandma falls asleep"},
+     "beats": [
+      {"id": "b1", "to": "place:ultrasound", "guide": {"zh": "推超音波機過來", "en": "Bring the ultrasound over"},
+       "lines": [
+        ["anaes", {"zh": "股骨頸骨折很痛。先打一個阻斷，鴉片類可以少一點，譫妄也少一點。", "en": "Femoral neck fractures hurt. A block first: fewer opioids and less delirium."}]
+       ],
+       "mini": {"type": "find", "hot": "ultrasound", "q": {"zh": "點一下超音波機，推到阿嬤床邊", "en": "Tap the ultrasound machine and wheel it to Grandma's bed"}}},
+      {"id": "b2", "to": "anaes", "guide": {"zh": "請小羅做阻斷", "en": "Lo does the block"},
+       "lines": [
+        ["me", {"zh": "她吃抗凝血劑，可以打嗎？", "en": "She's on an anticoagulant. Is a block allowed?"}],
+        ["anaes", {"zh": "髂筋膜阻斷是表淺、壓得住的筋膜平面，和打在脊椎裡不一樣。評估過，可以。", "en": "A fascia iliaca block is a superficial, compressible plane, not like a spinal. We've weighed it: yes."}],
+        ["anaes", {"zh": "看螢幕：針尖在這裡，藥水在筋膜下面散開。", "en": "Watch the screen: needle tip here, the anaesthetic spreading under the fascia."}]
+       ],
+       "mini": {"type": "stage", "case": "joint-reconstruction-eras-arthroplasty-pathway", "stage": 2},
+       "post": [
+        ["patient", {"zh": "腳不痛了……我可以睡一下嗎？", "en": "The leg's stopped hurting... may I sleep a little?"}],
+        ["anaes", {"zh": "睡吧，阿嬤。止痛做得好，譫妄少一半。", "en": "Sleep, Grandma. Get the pain right and you halve the delirium."}]
+       ]}
+     ]},
+    {"id": "film", "name": {"zh": "片子與頭", "en": "The film and the head"}, "sub": {"zh": "19:40 · 影像判讀螢幕", "en": "19:40 · image viewer"}, "t": 1180, "mood": "eve",
+     "note": {"zh": "Garden 第四型；頭部 CT 沒有出血", "en": "Garden IV; head CT clear"},
+     "beats": [
+      {"id": "c1", "to": "attending", "guide": {"zh": "和杜主治看片子", "en": "Read the films with Dr Tu"},
+       "lines": [
+        ["attending", {"zh": "我到了。先說片子。", "en": "I'm here. Films first."}],
+        ["me", {"zh": "右側股骨頸骨折，完全移位。她吃抗凝血劑又撞到頭，頭部 CT 我也排了。", "en": "Right femoral neck fracture, fully displaced. She's anticoagulated and hit her head, so I've booked a head CT too."}],
+        ["attending", {"zh": "好，那是今晚最重要的一張片。這張呢？Garden 分類幾型？為什麼重要？", "en": "Good, that's tonight's most important scan. And this one: which Garden classification type, and why does it matter?"}]
+       ],
+       "mini": {"type": "imaging", "region": "pelvis",
+        "question": {"zh": "右股骨頸骨折，骨折端完全分開、股骨頭轉了方向。這是 Garden 幾型？接下來要做固定還是置換？", "en": "A right femoral neck fracture with the fragments fully separated and the head rotated. Which Garden type, and does she need fixation or replacement?"},
+        "answer": {"zh": "完全移位，是 Garden 第四型。移位的股骨頸骨折，股骨頭的血流很可能已經斷了，老人做固定容易不癒合或股骨頭壞死，所以通常選擇置換。全髖或半髖，要看她受傷前能不能獨立外出行走、認知與身體狀況。", "en": "Fully displaced: Garden IV. In a displaced femoral neck fracture the head's blood supply is probably gone, and in older people fixation often fails to unite or the head dies, so a replacement is usual. Total or hemi depends on whether she walked independently outdoors before, and on her cognition and fitness."}},
+       "post": [
+        ["attending", {"zh": "她平常怎麼過日子？這決定全髖還是半髖。", "en": "What was her everyday life like? That decides total or hemi."}],
+        ["me", {"zh": "每天自己走去市場，還在幫鄰居改褲子。但有輕度記憶退化。", "en": "Walks to the market alone every day and still alters the neighbours' trousers. But mild memory decline."}]
+       ]},
+      {"id": "c2", "ring": {"title": {"zh": "頭部 CT 結果", "en": "Head CT result"}, "sub": {"zh": "「沒有顱內出血」", "en": "'No intracranial bleed'"}, "call": false, "from": "er-doc"},
+       "lines": [
+        ["er-doc", {"zh": "頭部 CT 出來了：沒有顱內出血。額頭只是皮下血腫，旁邊有一道小裂傷要縫。", "en": "Head CT's back: no bleed inside the skull. Just a bruise under the skin, with a small cut beside it that needs stitching."}],
+        ["me", {"zh": "頭部外傷排除出血了。裂傷我來縫。", "en": "Head injury cleared of bleeding. I'll close the cut."}]
+       ]},
+      {"id": "c3", "to": "place:bed", "guide": {"zh": "縫額頭的裂傷", "en": "Close the forehead cut"},
+       "lines": [
+        ["me", {"zh": "傷口乾淨，局部麻醉後縫合。阿嬤，會有一點刺。", "en": "Clean wound; local anaesthetic, then sutures. Grandma, a little sting."}],
+        ["patient", {"zh": "縫漂亮一點，我是做衣服的。", "en": "Make it neat. I sewed for a living."}]
+       ],
+       "mini": {"type": "drill", "template": "joint-reconstruction", "drill": "suture"},
+       "post": [
+        ["patient", {"zh": "針距很平均。你可以來我店裡當學徒。", "en": "Nice even stitches. You could come and apprentice in my shop."}]
+       ]}
+     ]},
+    {"id": "risk", "name": {"zh": "藥、腎、腦", "en": "Drugs, kidneys, brain"}, "sub": {"zh": "20:30 · 急診護理站", "en": "20:30 · ER nursing station"}, "t": 1230, "mood": "eve",
+     "note": {"zh": "共照會診與禁食時間", "en": "Co-management call and fasting times"},
+     "beats": [
+      {"id": "d1", "ring": {"title": {"zh": "老年醫學科來電", "en": "Geriatrics calling"}, "sub": {"zh": "「共照會診收到，我先問三件事」", "en": "'Got the co-management consult. Three questions first.'"}, "call": true, "from": "geri"},
+       "lines": [
+        ["geri", {"zh": "老年醫學共照收到。三件事：最後一次吃抗凝血劑是什麼時候？腎功能？平常認知怎麼樣？", "en": "Orthogeriatric co-management, got it. Three things: when was the last anticoagulant dose? Kidneys? Usual cognition?"}],
+        ["me", {"zh": "早上吃的；腎功能輕度下降；平常輕度記憶退化，今晚還算清楚。", "en": "This morning; mildly reduced kidney function; mild memory decline, fairly clear tonight."}],
+        ["geri", {"zh": "手術時機和麻醉科一起看藥物代謝的時間，不要為了等而等太久。", "en": "Time the surgery with anaesthesia around how the drug clears, but don't wait for the sake of waiting."}]
+       ],
+       "mini": {"type": "stage", "case": "joint-reconstruction-hip-oa-assessment", "stage": 5}},
+      {"id": "d2", "to": "son", "guide": {"zh": "回答李先生的問題", "en": "Answer Mr Lee's question"},
+       "lines": [
+        ["son", {"zh": "醫師，我媽明天開刀，是不是從現在開始什麼都不能吃、不能喝？", "en": "Doctor, Mum's surgery is tomorrow. Does that mean nothing to eat or drink from now on?"}]
+       ],
+       "mini": {"type": "choice", "q": {"zh": "兒子問：從現在到明天手術都要禁食嗎？", "en": "The son asks: is it nil by mouth from now until tomorrow's surgery?"},
+        "options": [
+         {"zh": "依麻醉規範，清流質可喝到術前不久", "en": "Per anaesthesia rules, clear fluids until shortly before", "ok": true, "set": {"fasting": "short"},
+          "why": {"zh": "長時間禁食讓老人脫水、低血壓、譫妄。依規範，清流質可以喝到術前規定時間，固體食物另外算。", "en": "Long fasting leaves older people dehydrated, hypotensive and delirious. Per the rules, clear fluids are allowed until the set time before surgery; solids have their own limit."}},
+         {"zh": "從現在開始全部禁食比較安全", "en": "Nothing at all from now; safer", "ok": false, "set": {"fasting": "long"},
+          "why": {"zh": "對八十多歲的人，這不是安全，是脫水。手術時間還沒定，禁食可能拖過一整天。", "en": "For someone in her eighties that isn't safety, it's dehydration. The theatre time isn't fixed; the fast could last a whole day."}}
+        ]},
+       "post": [
+        ["son", {"zh": "那……運動飲料可以嗎？她只喝那個。", "en": "Then... is a sports drink OK? It's all she'll drink."}],
+        ["me", {"zh": "我照麻醉科的規範寫清楚：什麼可以喝、喝到幾點。", "en": "I'll write it clearly from the anaesthesia rules: what she can drink, and until when."}]
+       ]},
+      {"id": "d3", "to": "attending", "guide": {"zh": "禁食與碳水化合物", "en": "Fasting and carbohydrate"},
+       "lines": [
+        ["attending", {"zh": "「午夜後禁食」是上一代的規矩。為什麼現在改了？", "en": "'Nil by mouth from midnight' was the last generation's rule. Why did it change?"}],
+        ["me", {"zh": "胃排空清流質很快；禁食太久反而脫水、胰島素阻抗、術後更虛弱。", "en": "The stomach clears clear fluids quickly; fasting too long brings dehydration, insulin resistance and weaker recovery."}]
+       ],
+       "mini": {"type": "stage", "case": "joint-reconstruction-eras-arthroplasty-pathway", "stage": 1}}
+     ]},
+    {"id": "racing", "name": {"zh": "心跳變快了", "en": "The heart speeds up"}, "sub": {"zh": "21:30 · 生理監視器", "en": "21:30 · patient monitor"}, "t": 1290, "mood": "night",
+     "note": {"zh": "心房顫動跑快、阿嬤要回家煮飯", "en": "Fast atrial fibrillation; Grandma wants to go home and cook"},
+     "beats": [
+      {"id": "e1", "to": "place:monitor", "guide": {"zh": "監視器在叫", "en": "The monitor is alarming"},
+       "lines": [
+        ["sys", {"zh": "監視器的心跳數字一直往上爬，心律不整齊。阿嬤在扯點滴，說布還泡在水裡。", "en": "The heart rate keeps climbing, irregular. Grandma is tugging at her drip, saying the cloth is still soaking."}]
+       ],
+       "mini": {"type": "vitals", "event": "tachyarrhythmia",
+        "options": [
+         {"zh": "找原因：痛、脫水、電解質，做心電圖", "en": "Find the cause: pain, fluids, salts; do an ECG", "ok": true,
+          "why": {"zh": "心房顫動跑快，常是痛、脫水、感染或電解質在推。處理原因、做心電圖、持續監測，必要時請內科一起控制心跳。", "en": "Fast atrial fibrillation is usually driven by pain, dehydration, infection or electrolytes. Treat the cause, get an ECG, keep monitoring, and bring in medicine for rate control if needed."}},
+         {"zh": "馬上電擊整流", "en": "Cardiovert now", "ok": false,
+          "why": {"zh": "她血壓穩定、還能對話，不是不穩定的心律不整。電擊不是第一步。", "en": "Her pressure is stable and she's talking; this isn't an unstable arrhythmia. Shocking her is not step one."}},
+         {"zh": "給鎮靜藥讓她安靜", "en": "Sedate her to settle her", "ok": false,
+          "why": {"zh": "鎮靜藥讓譫妄更嚴重、更容易嗆到。先找原因。", "en": "Sedatives deepen delirium and raise the risk of choking. Find the cause first."}}
+        ]},
+       "post": [
+        ["me", {"zh": "阻斷的效果退了一點，她又痛了；尿量也少。", "en": "The block is wearing off and she's sore again; urine output is low too."}],
+        ["attending", {"zh": "痛和乾。兩個都是我們能處理的。", "en": "Pain and dry. Both are things we can fix."}]
+       ]},
+      {"id": "e2", "when": {"flag": "fasting", "is": "long"}, "to": "son", "guide": {"zh": "李先生說她好渴", "en": "Mr Lee says she's thirsty"},
+       "lines": [
+        ["son", {"zh": "醫師，她一直喊口渴，護理師說你交代不能喝……", "en": "Doctor, she keeps saying she's thirsty, and the nurse says you said no drinks..."}],
+        ["me", {"zh": "是我說錯了。依規範她可以喝清流質，我馬上改。", "en": "That was my mistake. By the rules she can have clear fluids. I'm changing it now."}],
+        ["attending", {"zh": "八十六歲的人禁食太久，兩三個小時就看得出來。改得快，也是本事。", "en": "Fast an eighty-six-year-old too long and it shows within hours. Correcting it quickly is a skill too."}]
+       ]},
+      {"id": "e3", "to": "patient", "guide": {"zh": "把阿嬤帶回現在", "en": "Bring Grandma back to now"},
+       "lines": [
+        ["patient", {"zh": "我要回家，布還泡在水裡，客人明天要來拿……", "en": "I have to go home, the cloth's still soaking, the customer's coming tomorrow..."}]
+       ],
+       "mini": {"type": "choice", "q": {"zh": "阿嬤混亂、扯點滴、想下床。先怎麼做？", "en": "Grandma is confused, pulling at her drip, trying to get up. What first?"},
+        "options": [
+         {"zh": "戴眼鏡助聽器、兒子陪、告訴她在哪", "en": "Glasses, hearing aid, son beside her, orient her", "ok": true,
+          "why": {"zh": "譫妄的第一線是非藥物：看得清、聽得到、熟悉的人、知道時間地點。同時繼續找原因。", "en": "First-line care for delirium is non-drug: seeing, hearing, a familiar face, knowing time and place. Keep looking for causes alongside."}},
+         {"zh": "用約束帶固定雙手", "en": "Restrain both hands", "ok": false,
+          "why": {"zh": "約束通常讓譫妄更糟，還會增加受傷與壓力性損傷。只在最後手段、依規範短暫使用。", "en": "Restraints usually worsen delirium and add injury and pressure damage. Only as a last resort, briefly, by protocol."}}
+        ]},
+       "post": [
+        ["son", {"zh": "媽，我在這裡。布我明天幫你拿去晾。", "en": "Mum, I'm here. I'll hang the cloth out for you tomorrow."}],
+        ["patient", {"zh": "……你制服怎麼還沒換？", "en": "...why are you still in uniform?"}],
+        ["me", {"zh": "她回來了。", "en": "She's back."}]
+       ],
+       "item": "glasses"}
+     ]},
+    {"id": "consent", "name": {"zh": "全髖還是半髖", "en": "Total or hemi"}, "sub": {"zh": "22:30 · 急診護理站", "en": "22:30 · ER nursing station"}, "t": 1350, "mood": "night",
+     "note": {"zh": "家屬同意半髖置換；病房備好床", "en": "Family agree to a hemiarthroplasty; ward bed ready"},
+     "beats": [
+      {"id": "f1", "to": "attending", "guide": {"zh": "跟家屬談手術", "en": "Talk surgery with the family"},
+       "lines": [
+        ["attending", {"zh": "明早排刀。今晚跟家屬談清楚：為什麼開、開什麼、風險是什麼。", "en": "She's on tomorrow morning's list. Tonight the family hear why, what, and the risks."}],
+        ["me", {"zh": "股骨頭的血流斷了，固定容易失敗。我們建議半髖置換。", "en": "The blood supply to the head is lost and fixation tends to fail. We recommend a hemiarthroplasty."}],
+        ["son", {"zh": "她以前那麼健康，為什麼不換整個？", "en": "She was so healthy. Why not replace the whole joint?"}],
+        ["attending", {"zh": "全髖走得更好，但手術較久、脫臼風險較高。她有記憶退化、今晚又有譫妄，半髖對她比較安全。", "en": "A total hip walks better but takes longer and dislocates more. With her memory decline and tonight's delirium, a hemi is safer for her."}],
+        ["son", {"zh": "……我懂了。她只想回去縫衣服。", "en": "...I understand. She just wants to get back to her sewing."}]
+       ]},
+      {"id": "f2", "ring": {"title": {"zh": "骨科病房來電", "en": "Orthopaedic ward calling"}, "sub": {"zh": "「床備好了，減壓床墊也鋪了」", "en": "'Bed's ready, pressure mattress on'"}, "call": true, "from": "ward-nurse"},
+       "lines": [
+        ["ward-nurse", {"zh": "床備好了，減壓床墊也鋪了。眼鏡跟助聽器要跟著上來喔。", "en": "Bed's ready and the pressure mattress is on. Glasses and hearing aid come up with her, yes?"}],
+        ["me", {"zh": "都在床頭的袋子裡，還有一條皮尺。", "en": "All in the bedside bag, plus a tape measure."}],
+        ["ward-nurse", {"zh": "皮尺？", "en": "A tape measure?"}],
+        ["me", {"zh": "她說等她好了，要量我的袖子。", "en": "She says once she's better she's measuring my sleeves."}]
+       ]}
+     ]},
+    {"id": "handover", "name": {"zh": "交班之前", "en": "Before handover"}, "sub": {"zh": "23:40 · 急診白板", "en": "23:40 · ER whiteboard"}, "t": 1420, "mood": "night",
+     "note": {"zh": "師傅的三件事；骨質疏鬆在敲門", "en": "The mentor's three points; osteoporosis knocking"},
+     "beats": [
+      {"id": "g1", "to": "attending", "guide": {"zh": "師傅的回顧", "en": "The mentor's debrief"},
+       "lines": [
+        ["attending", {"zh": "今晚三件事。你先管痛，再管片子，最後才管刀。", "en": "Three things tonight. You did pain first, films second, the knife last."}],
+        ["attending", {"zh": "你在她撞到頭時想到抗凝血劑。你把她從譫妄裡帶回來，用的是一副眼鏡。", "en": "When she hit her head you thought of the anticoagulant. You brought her back from delirium with a pair of glasses."}],
+        ["attending", {"zh": "第三件：出院前要做什麼？", "en": "Third: what has to happen before discharge?"}],
+        ["me", {"zh": "骨質疏鬆評估、跌倒預防、浴室加扶手。脆弱性骨折是下一次骨折的開始。", "en": "Osteoporosis assessment, falls prevention, grab rails in the bathroom. A fragility fracture is where the next fracture begins."}],
+        ["sys", {"zh": "白板上，李阿嬤的名字旁邊寫著：明早第一台・半髖・眼鏡隨身・皮尺隨身。", "en": "On the whiteboard, beside Grandma Lee's name: first case tomorrow, hemi, glasses with her, tape measure with her."}]
+       ],
+       "end": true}
+     ]}
+  ],
+  "ending": {"title": {"zh": "下班了", "en": "End of shift"}, "sub": {"zh": "穿著外科衣服的內科急症", "en": "A medical emergency in surgical clothing"},
+    "stats": ["stages", "grades", "choices", "calls", "items", "time"]}
+}

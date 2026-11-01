@@ -1,0 +1,1361 @@
+{
+ "format": "huatuo-shift-v2",
+ "department": "thoracic-surgery",
+ "case": "hyperhidrosis",
+ "caseTitle": {
+  "zh": "滴在樂譜上的汗",
+  "en": "Sweat on the score"
+ },
+ "condition": {
+  "zh": "日間手術 · 手汗症",
+  "en": "Day surgery · palmar hyperhidrosis"
+ },
+ "difficulty": 1,
+ "room": "clinic",
+ "minutes": 22,
+ "title": {
+  "zh": "胸腔外科日間手術",
+  "en": "Thoracic surgery day case"
+ },
+ "tagline": {
+  "zh": "手乾了很容易，同意書才是最難的一刀",
+  "en": "Dry hands are easy; the consent is the hardest cut"
+ },
+ "roles": [
+  {
+   "id": "resident",
+   "zh": "胸腔外科住院醫師",
+   "en": "Thoracic surgery resident",
+   "desc": {
+    "zh": "日間手術：早上進來、傍晚回家。最重要的一刀，是同意書上那一行字。",
+    "en": "Day surgery: in at breakfast, home by evening. The most important cut is one line on the consent form."
+   }
+  },
+  {
+   "id": "pacu-nurse",
+   "zh": "恢復室護理師",
+   "en": "Recovery-room nurse",
+   "desc": {
+    "zh": "病人醒來的第一眼是你。摸她的手、看她的眼皮、量她的血氧，決定她能不能回家。",
+    "en": "You are the first face she sees on waking. Feel her hands, check her eyelids, watch her saturation, and decide whether she can go home."
+   }
+  }
+ ],
+ "cast": {
+  "attending": {
+   "name": {
+    "zh": "鄭主治",
+    "en": "Dr Cheng"
+   },
+   "role": {
+    "zh": "胸腔外科主治醫師（師傅）",
+    "en": "Thoracic surgeon (mentor)"
+   },
+   "tag": "ATT",
+   "color": "#355e3b",
+   "about": {
+    "zh": "做過很多手汗手術，同意書卻談得比手術久。他說：「手乾了很容易，背濕了要她自己扛。」",
+    "en": "Has done many sweating operations and still spends longer on the consent than the surgery. \"Dry hands are easy. A wet back is hers to carry.\""
+   },
+   "body": "mentor"
+  },
+  "anaes": {
+   "name": {
+    "zh": "邱醫師",
+    "en": "Dr Chiu"
+   },
+   "role": {
+    "zh": "麻醉科醫師",
+    "en": "Anaesthetist"
+   },
+   "tag": "AN",
+   "color": "#0f766e",
+   "about": {
+    "zh": "雙腔氣管內管放得又快又準，最討厭有人在她面前說「小手術」。",
+    "en": "Places double-lumen tubes fast and true, and hates anyone saying \"minor operation\" in front of her."
+   },
+   "body": "anaesthetist"
+  },
+  "patient": {
+   "name": {
+    "zh": "小晴",
+    "en": "Ching"
+   },
+   "role": {
+    "zh": "病人・22 歲鋼琴系學生",
+    "en": "Patient, 22, piano student"
+   },
+   "tag": "PT",
+   "color": "#6b7280",
+   "about": {
+    "zh": "從小手汗滴在考卷上。上台演奏時琴鍵會滑，畢業音樂會在兩個月後。",
+    "en": "Since childhood her sweat has dripped onto exam papers. On stage the keys turn slippery; her graduation recital is two months away."
+   },
+   "body": "patient"
+  },
+  "boyfriend": {
+   "name": {
+    "zh": "宇軒",
+    "en": "Yu-hsuan"
+   },
+   "role": {
+    "zh": "家屬・男朋友",
+    "en": "Family, boyfriend"
+   },
+   "tag": "FAM",
+   "color": "#b45309",
+   "about": {
+    "zh": "交往三年，牽手時一直帶著手帕。今天負責載她回家。",
+    "en": "Three years together and always a handkerchief when they hold hands. Today he drives her home."
+   },
+   "body": "family"
+  },
+  "dermatologist": {
+   "name": {
+    "zh": "皮膚科王醫師",
+    "en": "Dr Wang (dermatology)"
+   },
+   "role": {
+    "zh": "皮膚科醫師",
+    "en": "Dermatologist"
+   },
+   "tag": "DERM",
+   "color": "#4b5fa8",
+   "about": {
+    "zh": "轉介單上把小晴試過的治療一條一條寫清楚。",
+    "en": "Lists every treatment Ching has tried on the referral, line by line."
+   },
+   "phoneOnly": true
+  },
+  "ward-nurse": {
+   "name": {
+    "zh": "怡君",
+    "en": "Yi-chun"
+   },
+   "role": {
+    "zh": "胸腔外科病房護理師",
+    "en": "Thoracic ward nurse"
+   },
+   "tag": "RN",
+   "color": "#9d4b7a",
+   "about": {
+    "zh": "病房的胸管她每一條都會去看冒泡。",
+    "en": "Checks the bubbling in every drain on the ward."
+   },
+   "phoneOnly": true
+  }
+ },
+ "places": {
+  "admit": {
+   "name": {
+    "zh": "日間手術報到處",
+    "en": "Day-surgery admission"
+   },
+   "hot": "desk"
+  },
+  "bay": {
+   "name": {
+    "zh": "術前準備床",
+    "en": "Pre-op bay"
+   },
+   "hot": "bed"
+  },
+  "theatre": {
+   "name": {
+    "zh": "開刀房",
+    "en": "Operating theatre"
+   },
+   "hot": "field"
+  },
+  "scope": {
+   "name": {
+    "zh": "胸腔鏡",
+    "en": "Thoracoscope"
+   },
+   "hot": "endoscopy"
+  },
+  "airway": {
+   "name": {
+    "zh": "麻醉機",
+    "en": "Anaesthetic machine"
+   },
+   "hot": "anaesthesia"
+  },
+  "pacu": {
+   "name": {
+    "zh": "恢復室",
+    "en": "Recovery room"
+   },
+   "hot": "recovery"
+  },
+  "viewer": {
+   "name": {
+    "zh": "影像工作站",
+    "en": "Imaging workstation"
+   },
+   "hot": "imaging"
+  },
+  "phone": {
+   "name": {
+    "zh": "值班電話",
+    "en": "On-call phone"
+   },
+   "hot": "chart"
+  }
+ },
+ "glossary": [
+  {
+   "term": {
+    "zh": "手汗症",
+    "en": "hyperhidrosis"
+   },
+   "plain": {
+    "zh": "汗腺不是壞掉，是交感神經太熱心，手一直出汗，跟熱不熱、緊不緊張關係不大。",
+    "en": "The sweat glands aren't faulty; the sympathetic nerves are over-eager, so the hands sweat regardless of heat or nerves."
+   }
+  },
+  {
+   "term": {
+    "zh": "交感神經鏈",
+    "en": "sympathetic chain"
+   },
+   "plain": {
+    "zh": "沿著脊椎兩旁、在胸腔後壁的一串神經節，管手汗的那一段就在這裡。",
+    "en": "A string of nerve ganglia either side of the spine on the back wall of the chest. The stretch that drives hand sweating lies here."
+   }
+  },
+  {
+   "term": {
+    "zh": "交感神經手術",
+    "en": "sympathectomy"
+   },
+   "plain": {
+    "zh": "用胸腔鏡把管手汗那一段交感神經切斷或夾住。",
+    "en": "Cutting or clipping, through a thoracoscope, the segment of sympathetic chain that drives hand sweating."
+   }
+  },
+  {
+   "term": {
+    "zh": "代償性多汗",
+    "en": "compensatory sweating"
+   },
+   "plain": {
+    "zh": "手乾了，背、肚子、大腿反而更會流汗。很常見，有的人很困擾，而且常常是永久的。",
+    "en": "The hands dry up but the back, belly or thighs sweat more. Common, troublesome for some, and often permanent."
+   }
+  },
+  {
+   "term": {
+    "zh": "單肺通氣",
+    "en": "one-lung ventilation"
+   },
+   "plain": {
+    "zh": "手術那一側的肺先休息塌下來，讓外科醫師看得到胸腔後壁。",
+    "en": "The lung on the operated side is rested and collapsed so the surgeon can see the back wall of the chest."
+   }
+  },
+  {
+   "term": {
+    "zh": "雙腔氣管內管",
+    "en": "double-lumen tube"
+   },
+   "plain": {
+    "zh": "一根管子有兩個通道，可以分別控制左右肺。",
+    "en": "One tube with two channels, so each lung can be controlled separately."
+   }
+  },
+  {
+   "term": {
+    "zh": "霍納氏症候群",
+    "en": "Horner's syndrome"
+   },
+   "plain": {
+    "zh": "頸部交感神經受傷，一邊眼皮下垂、瞳孔變小、臉不出汗。少見但要先說。",
+    "en": "Injury to the neck's sympathetic supply: a drooping eyelid, a small pupil and a dry face on one side. Rare, but must be mentioned."
+   }
+  },
+  {
+   "term": {
+    "zh": "殘餘氣胸",
+    "en": "residual pneumothorax"
+   },
+   "plain": {
+    "zh": "手術後肺尖留下一點空氣。小的多半會自己吸收。",
+    "en": "A little air left at the lung apex after surgery. Small ones usually absorb on their own."
+   }
+  },
+  {
+   "term": {
+    "zh": "離子導入",
+    "en": "iontophoresis"
+   },
+   "plain": {
+    "zh": "把手泡在水裡通微弱電流，減少出汗。手術前常先試過。",
+    "en": "Soaking the hands in water with a weak current to reduce sweating; often tried before surgery."
+   }
+  },
+  {
+   "term": {
+    "zh": "日間手術",
+    "en": "day surgery"
+   },
+   "plain": {
+    "zh": "當天入院、當天出院的手術。流程短，安全標準一樣高。",
+    "en": "Admitted and discharged the same day. A short pathway with the same safety standards."
+   }
+  },
+  {
+   "term": {
+    "zh": "漏氣",
+    "en": "air leak"
+   },
+   "plain": {
+    "zh": "肺表面有小破口，空氣跑進胸腔，水封瓶會冒泡。",
+    "en": "A small hole in the lung surface lets air into the chest; the underwater seal bubbles."
+   }
+  },
+  {
+   "term": {
+    "zh": "心搏過緩",
+    "en": "bradycardia"
+   },
+   "plain": {
+    "zh": "心跳太慢。交感神經手術中偶爾會發生，麻醉要隨時準備。",
+    "en": "A heart rate that is too slow. It occasionally happens during sympathetic surgery, and anaesthesia stays ready."
+   }
+  }
+ ],
+ "codex": [
+  {
+   "id": "dlt",
+   "kind": "equipment",
+   "name": {
+    "zh": "雙腔氣管內管",
+    "en": "Double-lumen tube"
+   },
+   "text": {
+    "zh": "放好以後要用支氣管鏡確認位置，左右肺才能各自控制。",
+    "en": "Its position is checked with a bronchoscope so each lung can be controlled on its own."
+   },
+   "hot": "anaesthesia"
+  },
+  {
+   "id": "scope",
+   "kind": "equipment",
+   "name": {
+    "zh": "胸腔鏡",
+    "en": "Thoracoscope"
+   },
+   "text": {
+    "zh": "從腋下小傷口伸進去。交感神經鏈在肋骨頭上，像一條白色的細線。",
+    "en": "Passed through a small cut in the armpit. The sympathetic chain lies over the rib heads like a fine white thread."
+   },
+   "hot": "endoscopy"
+  },
+  {
+   "id": "pacu-monitor",
+   "kind": "equipment",
+   "name": {
+    "zh": "恢復室監視器",
+    "en": "Recovery monitor"
+   },
+   "text": {
+    "zh": "血氧、心跳、呼吸。日間手術能不能回家，先看它，再看病人。",
+    "en": "Saturation, heart rate, breathing. Whether a day case goes home: first this, then the patient."
+   },
+   "hot": "monitor"
+  },
+  {
+   "id": "sheet-music",
+   "kind": "item",
+   "name": {
+    "zh": "汗濕的樂譜",
+    "en": "The sweat-stained score"
+   },
+   "text": {
+    "zh": "蕭邦夜曲的影印本，右下角被手汗浸得起皺。她說這是她的「病歷」。",
+    "en": "A photocopied Chopin nocturne, its lower right corner wrinkled with sweat. Her \"medical record\", she says."
+   }
+  },
+  {
+   "id": "dry-glass",
+   "kind": "item",
+   "name": {
+    "zh": "恢復室窗上的手",
+    "en": "A hand on the recovery window"
+   },
+   "text": {
+    "zh": "她把手掌貼在窗玻璃上，拿開，沒有留下霧氣。",
+    "en": "She presses her palm to the window glass and lifts it away. No mist left behind."
+   }
+  },
+  {
+   "id": "why-chest",
+   "kind": "concept",
+   "name": {
+    "zh": "為什麼手汗要開胸腔",
+    "en": "Why sweaty hands mean a chest operation"
+   },
+   "text": {
+    "zh": "手的出汗由交感神經控制，而管手的那一段交感神經鏈，就沿著脊椎兩旁走在胸腔後壁、肋骨頭上。所以手術從腋下放胸腔鏡，讓那一側肺暫時塌下，看到神經鏈後在特定的肋骨高度切斷或夾住。高度越高，手越乾，但代償性多汗與心跳變慢的機會也越高。",
+    "en": "Hand sweating is driven by sympathetic nerves, and the stretch of chain that serves the hands runs beside the spine on the back wall of the chest, over the rib heads. So a thoracoscope goes in through the armpit, that lung is briefly collapsed, and the chain is cut or clipped at a chosen rib level. The higher the level, the drier the hands, but the greater the chance of compensatory sweating and a slow heart."
+   }
+  },
+  {
+   "id": "consent-line",
+   "kind": "concept",
+   "name": {
+    "zh": "同意書上最重要的一行",
+    "en": "The most important line on the consent"
+   },
+   "text": {
+    "zh": "手汗症手術的效果通常很好，但它治療的是生活品質，不是危及生命的病，所以說明要更完整。代償性多汗很常見，嚴重程度因人而異，而且多半無法回復；其他風險包括氣胸、出血、霍納氏症候群、復發。先試過外用止汗劑、離子導入、肉毒桿菌注射或口服藥，再談手術。讓病人帶著真實的期待做決定。",
+    "en": "Sympathectomy usually works well, but it treats quality of life, not a life-threatening disease, so the explanation must be fuller. Compensatory sweating is common, varies in severity and is mostly irreversible; other risks include pneumothorax, bleeding, Horner's syndrome and recurrence. Try topical antiperspirants, iontophoresis, botulinum injections or tablets first. Let the patient decide with realistic expectations."
+   }
+  },
+  {
+   "id": "day-case",
+   "kind": "concept",
+   "name": {
+    "zh": "日間手術的出院標準",
+    "en": "Discharge criteria for a day case"
+   },
+   "text": {
+    "zh": "清醒、生命徵象穩定、血氧在呼吸室內空氣時可接受、疼痛用口服藥控制得住、能喝水不吐、可以自己走、胸部 X 光沒有需要處理的氣胸、有大人陪同回家、知道哪些情況要回來。少一項，就留下來。",
+    "en": "Alert, stable vital signs, acceptable saturation on room air, pain controlled by tablets, drinking without vomiting, walking unaided, no pneumothorax on X-ray that needs treatment, an adult to take them home, and knowing when to come back. Miss one, and they stay."
+   }
+  }
+ ],
+ "segs": [
+  {
+   "id": "admit",
+   "name": {
+    "zh": "日間手術報到",
+    "en": "Day-surgery admission"
+   },
+   "sub": {
+    "zh": "07:00 · 報到處",
+    "en": "07:00 · admission desk"
+   },
+   "t": 420,
+   "mood": "day",
+   "note": {
+    "zh": "小晴到了，樂譜也帶來了",
+    "en": "Ching arrives, score in hand"
+   },
+   "beats": [
+    {
+     "id": "a1",
+     "to": "attending",
+     "guide": {
+      "zh": "到報到處找鄭主治",
+      "en": "Find Dr Cheng at admission"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "早。今天的病人是手汗症。胸腔外科為什麼要治手汗？",
+        "en": "Morning. Today's patient has palmar hyperhidrosis. Why does a thoracic surgeon treat sweaty hands?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "管手汗的交感神經鏈，走在胸腔後壁的肋骨頭上。",
+        "en": "The sympathetic chain that drives hand sweating runs over the rib heads on the back wall of the chest."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "對。手術很短，但這不是救命的手術。所以同意書要比手術更仔細。",
+        "en": "Right. The operation is short, but it isn't life-saving. So the consent must be more careful than the surgery."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "a2",
+     "to": "patient",
+     "guide": {
+      "zh": "看小晴",
+      "en": "See Ching"
+     },
+     "lines": [
+      [
+       "patient",
+       {
+        "zh": "醫師，你看，我現在什麼都沒做，手就在滴。",
+        "en": "Doctor, look. I'm doing nothing and my hands are dripping."
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "她攤開手，汗珠真的順著指尖滴到地上。手上捏著一份皺掉的樂譜。",
+        "en": "She opens her hands, and drops really do run off her fingertips onto the floor. In them, a crumpled score."
+       }
+      ],
+      [
+       "patient",
+       {
+        "zh": "這是蕭邦。右下角是我上次彈到一半滑掉的地方。",
+        "en": "This is Chopin. The bottom right is where my hand slid off last time, mid-piece."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "核對一下：小晴，22 歲，雙側胸腔鏡交感神經手術，禁食從昨晚開始。",
+        "en": "Checking: Ching, 22, bilateral thoracoscopic sympathectomy, fasting since last night."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "thoracic-surgery-vats-lobectomy",
+      "stage": 0
+     },
+     "item": "sheet-music"
+    }
+   ]
+  },
+  {
+   "id": "consent",
+   "name": {
+    "zh": "同意書",
+    "en": "Consent"
+   },
+   "sub": {
+    "zh": "07:40 · 術前準備床",
+    "en": "07:40 · pre-op bay"
+   },
+   "t": 460,
+   "mood": "day",
+   "note": {
+    "zh": "代償性多汗：說清楚，也說真話",
+    "en": "Compensatory sweating: explained, and honestly"
+   },
+   "beats": [
+    {
+     "id": "c1",
+     "to": "patient",
+     "guide": {
+      "zh": "和小晴談同意書",
+      "en": "Go through the consent with Ching"
+     },
+     "ring": {
+      "title": {
+       "zh": "皮膚科訊息",
+       "en": "Message from dermatology"
+      },
+      "sub": {
+       "zh": "王醫師：「外用藥、離子導入、肉毒都試過，效果不持久。」",
+       "en": "Dr Wang: \"Topicals, iontophoresis, botulinum all tried; none lasted.\""
+      },
+      "call": false,
+      "from": "dermatologist"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "皮膚科說妳外用止汗劑、離子導入、肉毒桿菌都試過了？",
+        "en": "Dermatology says you've tried antiperspirants, iontophoresis and botulinum injections?"
+       }
+      ],
+      [
+       "patient",
+       {
+        "zh": "都試過。離子導入每次泡完很好，三天後又回來。",
+        "en": "All of them. Iontophoresis was great each time, and back in three days."
+       }
+      ],
+      [
+       "boyfriend",
+       {
+        "zh": "我只想知道，開完會不會有什麼後遺症？",
+        "en": "I just want to know: are there any after-effects?"
+       }
+      ]
+     ],
+     "mini": {
+      "type": "choice",
+      "q": {
+       "zh": "你怎麼說明代償性多汗？",
+       "en": "How do you explain compensatory sweating?"
+      },
+      "options": [
+       {
+        "zh": "很常見、程度不一，多半回不去",
+        "en": "Common, variable, usually permanent",
+        "ok": true,
+        "why": {
+         "zh": "對。這是治療生活品質的手術，病人有權知道最常見的代價，並且帶著真實的期待做決定。",
+         "en": "Right. This operation treats quality of life; she has a right to know its commonest price and to decide with real expectations."
+        },
+        "set": {
+         "consent": "honest"
+        }
+       },
+       {
+        "zh": "很少見，就算有也很輕微",
+        "en": "Rare, and mild if it happens",
+        "ok": false,
+        "why": {
+         "zh": "代償性多汗很常見，少數人嚴重到影響生活。把它說小，是讓她用錯的資訊做決定。",
+         "en": "Compensatory sweating is common and severe for a minority. Shrinking it means she decides on false information."
+        },
+        "set": {
+         "consent": "minimise"
+        }
+       },
+       {
+        "zh": "先不提，免得她害怕",
+        "en": "Leave it out so she isn't frightened",
+        "ok": false,
+        "why": {
+         "zh": "不說不會讓風險消失，只會讓她在發生時覺得被騙。",
+         "en": "Silence doesn't remove the risk; it only makes her feel deceived when it happens."
+        },
+        "set": {
+         "consent": "omit"
+        }
+       }
+      ]
+     },
+     "post": [
+      [
+       "patient",
+       {
+        "zh": "背流汗……我可以穿深色的演出服。手滑掉，我什麼都穿不了。",
+        "en": "A sweaty back... I can wear a dark concert dress. A slipping hand, there's nothing I can wear for that."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "這句話寫進病歷。是她的理由，不是我們的。",
+        "en": "Write that sentence in the notes. It's her reason, not ours."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "c2",
+     "to": "place:admit",
+     "guide": {
+      "zh": "寫風險特定的同意書",
+      "en": "Write the risk-specific consent"
+     },
+     "roles": [
+      "resident"
+     ],
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "代償性多汗、氣胸、出血、霍納氏症候群、心搏過緩、效果不佳或復發。",
+        "en": "Compensatory sweating, pneumothorax, bleeding, Horner's syndrome, bradycardia, poor effect or recurrence."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "還有一句：這是她選的，她也知道可以不選。",
+        "en": "And one more line: she chose this, and she knows she could choose not to."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "theatre",
+   "name": {
+    "zh": "胸腔鏡",
+    "en": "Thoracoscopy"
+   },
+   "sub": {
+    "zh": "08:30 · 開刀房",
+    "en": "08:30 · operating theatre"
+   },
+   "t": 510,
+   "mood": "day",
+   "note": {
+    "zh": "單肺通氣，兩側神經鏈處理完成",
+    "en": "One-lung ventilation; both chains done"
+   },
+   "beats": [
+    {
+     "id": "o1",
+     "to": "place:airway",
+     "guide": {
+      "zh": "確認單肺通氣",
+      "en": "Confirm one-lung ventilation"
+     },
+     "lines": [
+      [
+       "anaes",
+       {
+        "zh": "雙腔氣管內管放好了，支氣管鏡確認位置。右肺塌下，左肺通氣。",
+        "en": "Double-lumen tube in, position confirmed on bronchoscopy. Right lung down, left lung ventilating."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "日間手術也一樣，時間暫停做完了。",
+        "en": "Day case or not, the time-out is done."
+       }
+      ],
+      [
+       "anaes",
+       {
+        "zh": "很好。誰再說「小手術」，誰就去顧麻醉機。",
+        "en": "Good. Whoever says \"minor operation\" next minds the anaesthetic machine."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "thoracic-surgery-vats-lobectomy",
+      "stage": 1
+     }
+    },
+    {
+     "id": "o2",
+     "to": "place:scope",
+     "guide": {
+      "zh": "放胸腔鏡、找神經鏈",
+      "en": "In with the scope; find the chain"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "腋下一個小口。往後看，肋骨頭上那條白色細線就是交感神經鏈。",
+        "en": "One small cut in the armpit. Look back: the fine white thread over the rib heads is the chain."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "數肋骨，確認高度，再處理。",
+        "en": "Count the ribs, confirm the level, then act."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "drill",
+      "template": "thoracic-surgery",
+      "drill": "lap:thorax"
+     }
+    },
+    {
+     "id": "o3",
+     "to": "place:airway",
+     "guide": {
+      "zh": "監視器上的心跳",
+      "en": "The heart rate on the monitor"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "神經鏈一處理，監視器上的心跳一下子慢了下來。",
+        "en": "As the chain is divided, the heart rate on the monitor drops abruptly."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "vitals",
+      "event": "bradycardia",
+      "options": [
+       {
+        "zh": "告知外科暫停，麻醉依流程處理",
+        "en": "Tell surgery to pause; anaesthesia per protocol",
+        "ok": true,
+        "why": {
+         "zh": "對。交感神經手術中可能心跳變慢。先停手、讓麻醉評估與處理，穩了再繼續。",
+         "en": "Right. Sympathetic surgery can slow the heart. Stop, let anaesthesia assess and treat, continue once stable."
+        }
+       },
+       {
+        "zh": "沒事，加快速度做完",
+        "en": "Fine; hurry and finish",
+        "ok": false,
+        "why": {
+         "zh": "心跳慢下來是身體在說話。加快只會讓你聽不到。",
+         "en": "A slowing heart is the body speaking. Hurrying just stops you hearing it."
+        }
+       },
+       {
+        "zh": "馬上中止手術轉開胸",
+        "en": "Abort and convert to thoracotomy",
+        "ok": false,
+        "why": {
+         "zh": "心跳慢不是出血。轉開胸解決不了它，只會讓她多一個大傷口。",
+         "en": "Bradycardia isn't bleeding. Opening the chest won't fix it, just give her a big wound."
+        }
+       }
+      ]
+     },
+     "post": [
+      [
+       "anaes",
+       {
+        "zh": "回來了，穩定。可以繼續。",
+        "en": "It's back up and stable. Carry on."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "另一側一樣。數肋骨，不要貪高。",
+        "en": "Same on the other side. Count the ribs; don't get greedy and go high."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pacu",
+   "name": {
+    "zh": "恢復室",
+    "en": "Recovery"
+   },
+   "sub": {
+    "zh": "10:00 · 恢復室",
+    "en": "10:00 · recovery room"
+   },
+   "t": 600,
+   "mood": "day",
+   "note": {
+    "zh": "手乾了、溫了；肺尖一點點氣",
+    "en": "Hands warm and dry; a little air at the apex"
+   },
+   "beats": [
+    {
+     "id": "p1",
+     "to": "patient",
+     "guide": {
+      "zh": "小晴醒來",
+      "en": "Ching wakes"
+     },
+     "roles": [
+      "pacu-nurse"
+     ],
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "小晴，手術做完了。先看我：眼皮一樣高、瞳孔一樣大。",
+        "en": "Ching, it's done. Look at me first: eyelids level, pupils equal."
+       }
+      ],
+      [
+       "patient",
+       {
+        "zh": "……我的手……好熱……",
+        "en": "...my hands... they're warm..."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "溫的，而且是乾的。",
+        "en": "Warm, and dry."
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "她把手掌貼在窗玻璃上，拿開，沒有留下霧氣。她哭了，又笑了。",
+        "en": "She presses her palm to the window and lifts it away. No mist. She cries, then laughs."
+       }
+      ]
+     ],
+     "item": "dry-glass"
+    },
+    {
+     "id": "p2",
+     "to": "place:viewer",
+     "guide": {
+      "zh": "看術後胸部 X 光",
+      "en": "Review the post-op chest X-ray"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "日間手術回家前，最後一張片子。你看。",
+        "en": "The last film before a day case goes home. Your read."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "imaging",
+      "region": "chest",
+      "question": {
+       "zh": "兩側肺尖有什麼？她能回家嗎？",
+       "en": "What is at the lung apices, and can she go home?"
+      },
+      "answer": {
+       "zh": "右肺尖有一條很靠近胸壁的細肋膜線，是少量殘餘氣胸；肺已大致擴張，沒有縱膈偏移。症狀輕、血氧好，可以觀察，多半會自行吸收。",
+       "en": "A fine pleural line close to the chest wall at the right apex: a small residual pneumothorax. The lung is mostly expanded with no shift. With mild symptoms and good saturation it can be observed and usually absorbs."
+      }
+     },
+     "post": [
+      [
+       "attending",
+       {
+        "zh": "小的殘餘氣胸很常見。重要的是血氧、症狀，還有下午再看一次。",
+        "en": "Small residual air is common. What matters: saturation, symptoms, and another look this afternoon."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "p3",
+     "to": "boyfriend",
+     "guide": {
+      "zh": "宇軒進來",
+      "en": "Yu-hsuan comes in"
+     },
+     "lines": [
+      [
+       "boyfriend",
+       {
+        "zh": "我可以……牽一下嗎？",
+        "en": "Can I... hold your hand?"
+       }
+      ],
+      [
+       "patient",
+       {
+        "zh": "你的手帕可以收起來了。",
+        "en": "You can put the handkerchief away."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ward-call",
+   "name": {
+    "zh": "病房來電",
+    "en": "The ward calls"
+   },
+   "sub": {
+    "zh": "13:00 · 值班電話",
+    "en": "13:00 · on-call phone"
+   },
+   "t": 780,
+   "mood": "day",
+   "note": {
+    "zh": "5 床的胸管冒泡：一步一步檢查",
+    "en": "Bed 5's drain is bubbling: checked step by step"
+   },
+   "beats": [
+    {
+     "id": "w1",
+     "to": "place:phone",
+     "guide": {
+      "zh": "接怡君的電話",
+      "en": "Take Yi-chun's call"
+     },
+     "ring": {
+      "title": {
+       "zh": "病房來電",
+       "en": "Ward calling"
+      },
+      "sub": {
+       "zh": "怡君：「5 床肺葉切除第二天，胸管冒泡變多了。」",
+       "en": "Yi-chun: \"Bed 5, day two after lobectomy, more bubbling in the drain.\""
+      },
+      "call": true,
+      "from": "ward-nurse"
+     },
+     "lines": [
+      [
+       "ward-nurse",
+       {
+        "zh": "5 床肺葉切除第二天，水封瓶冒泡比早上多，胸口摸起來有點啪啪的。",
+        "en": "Bed 5, day two after lobectomy, the seal is bubbling more than this morning, and the chest wall crackles a little."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "血氧、呼吸、血壓呢？",
+        "en": "Saturation, breathing, pressure?"
+       }
+      ],
+      [
+       "ward-nurse",
+       {
+        "zh": "都穩定。他說不喘。",
+        "en": "All stable. He says he isn't breathless."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "好。我們照順序找漏氣是從肺來的，還是從管子來的。",
+        "en": "Good. Let's find out, in order, whether the air leak is from the lung or the tubing."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "order",
+      "q": {
+       "zh": "胸管冒泡變多時的檢查順序",
+       "en": "Checking a drain that bubbles more, in order"
+      },
+      "steps": [
+       {
+        "zh": "先看病人：血氧、呼吸、血壓",
+        "en": "Patient first: saturation, breathing, pressure"
+       },
+       {
+        "zh": "從胸壁到水封瓶檢查每個接頭",
+        "en": "Check every connection from chest to seal"
+       },
+       {
+        "zh": "看水柱有沒有隨呼吸擺動",
+        "en": "Is the column swinging with breathing?"
+       },
+       {
+        "zh": "請病人咳嗽，看冒泡程度",
+        "en": "Ask him to cough; watch the bubbling"
+       },
+       {
+        "zh": "摸皮下氣腫範圍並標記",
+        "en": "Feel and mark the crackling skin"
+       },
+       {
+        "zh": "照胸部 X 光並報告主治",
+        "en": "Chest X-ray and inform the attending"
+       }
+      ]
+     },
+     "post": [
+      [
+       "ward-nurse",
+       {
+        "zh": "接頭鬆了一個，鎖緊後冒泡少很多。皮下氣腫我畫線了。",
+        "en": "One connector was loose; locked, the bubbling has dropped a lot. I've marked the crackling skin."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "很好。X 光照完我過去看，界線往外擴就再打給我。",
+        "en": "Great. I'll come after the X-ray. If the line spreads, call me again."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "discharge",
+   "name": {
+    "zh": "回家",
+    "en": "Home"
+   },
+   "sub": {
+    "zh": "16:00 · 恢復室",
+    "en": "16:00 · recovery room"
+   },
+   "t": 960,
+   "mood": "day",
+   "note": {
+    "zh": "出院標準都達到了",
+    "en": "Every discharge criterion met"
+   },
+   "beats": [
+    {
+     "id": "d1",
+     "to": "patient",
+     "guide": {
+      "zh": "出院前核對",
+      "en": "Check before discharge"
+     },
+     "roles": [
+      "pacu-nurse"
+     ],
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "清醒、血氧好、吃了止痛藥不太痛、喝水沒吐、自己走到廁所。X 光的空氣沒有變多。",
+        "en": "Alert, good saturation, pain fine on tablets, drinking without vomiting, walked to the toilet. No more air on the X-ray."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "回家如果越來越喘、胸痛變厲害、眼皮下垂，馬上回來。",
+        "en": "At home: more and more breathless, worse chest pain or a drooping eyelid, come straight back."
+       }
+      ],
+      [
+       "boyfriend",
+       {
+        "zh": "我會看著她，也會看著她的眼皮。",
+        "en": "I'll watch her, and her eyelids."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "d2",
+     "to": "place:admit",
+     "guide": {
+      "zh": "寫出院摘要",
+      "en": "Write the discharge summary"
+     },
+     "roles": [
+      "resident"
+     ],
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "雙側交感神經手術，術中短暫心搏過緩已恢復，少量殘餘氣胸觀察中，已說明警訊。",
+        "en": "Bilateral sympathectomy; brief intra-operative bradycardia, resolved; small residual pneumothorax under observation; warning signs explained."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "回診時間也寫上。兩週後，我想看她彈琴的手。",
+        "en": "Put the follow-up in too. In two weeks I want to see her playing hands."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "d3",
+     "to": "attending",
+     "guide": {
+      "zh": "鄭主治的回顧",
+      "en": "Dr Cheng's debrief"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "今天的手術，哪一步最難？",
+        "en": "Today's operation: which step was hardest?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "數肋骨找高度？",
+        "en": "Counting ribs for the level?"
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "是早上七點四十分的那段對話。手術十幾分鐘，那段話她要帶一輩子。",
+        "en": "The conversation at twenty to eight this morning. The operation takes minutes; she carries that talk for life."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "night",
+   "name": {
+    "zh": "值班夜",
+    "en": "On call tonight"
+   },
+   "sub": {
+    "zh": "21:30 · 值班電話",
+    "en": "21:30 · on-call phone"
+   },
+   "t": 1290,
+   "mood": "night",
+   "note": {
+    "zh": "小晴的背濕了",
+    "en": "Ching's back is damp"
+   },
+   "beats": [
+    {
+     "id": "n1",
+     "to": "place:phone",
+     "guide": {
+      "zh": "接小晴的電話",
+      "en": "Take Ching's call"
+     },
+     "ring": {
+      "title": {
+       "zh": "病人來電",
+       "en": "Patient calling"
+      },
+      "sub": {
+       "zh": "小晴：「醫師，我手很乾，可是背好像濕濕的。」",
+       "en": "Ching: \"Doctor, my hands are dry, but my back feels damp.\""
+      },
+      "call": true,
+      "from": "patient"
+     },
+     "lines": [
+      [
+       "patient",
+       {
+        "zh": "醫師，我手很乾，可是背好像濕濕的。不喘，也不太痛。",
+        "en": "Doctor, my hands are dry but my back feels damp. Not breathless, not much pain."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "眼皮和瞳孔呢？請宇軒看一下。",
+        "en": "Eyelids and pupils? Ask Yu-hsuan to check."
+       }
+      ],
+      [
+       "boyfriend",
+       {
+        "zh": "兩邊一樣，都很正常。",
+        "en": "Both the same, both normal."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "n2",
+     "to": "place:phone",
+     "guide": {
+      "zh": "小晴說",
+      "en": "Ching says"
+     },
+     "when": {
+      "flag": "consent",
+      "is": "honest"
+     },
+     "lines": [
+      [
+       "patient",
+       {
+        "zh": "早上你說過背可能會流汗。我有心理準備。深色的演出服已經訂了。",
+        "en": "You told me this morning my back might sweat. I was ready for it. I've already ordered a dark concert dress."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "它的程度要一段時間才穩定，回診時一起看。手還好嗎？",
+        "en": "It takes a while to settle; we'll look together at follow-up. And the hands?"
+       }
+      ],
+      [
+       "patient",
+       {
+        "zh": "剛剛彈了一段蕭邦。琴鍵沒有滑。",
+        "en": "I just played some Chopin. The keys didn't slip."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "n3",
+     "to": "place:phone",
+     "guide": {
+      "zh": "小晴說",
+      "en": "Ching says"
+     },
+     "when": {
+      "flag": "consent",
+      "is": "minimise"
+     },
+     "lines": [
+      [
+       "patient",
+       {
+        "zh": "你說很少見又很輕微……可是我的背一直在流。為什麼是我？",
+        "en": "You said it was rare and mild... but my back keeps streaming. Why me?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "對不起，我早上說得太輕了。它其實很常見。明天我和鄭主治一起再跟妳談清楚。",
+        "en": "I'm sorry; I made it sound too small this morning. It's actually common. Tomorrow Dr Cheng and I will go through it properly with you."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "n4",
+     "to": "place:phone",
+     "guide": {
+      "zh": "小晴說",
+      "en": "Ching says"
+     },
+     "when": {
+      "flag": "consent",
+      "is": "omit"
+     },
+     "lines": [
+      [
+       "patient",
+       {
+        "zh": "沒有人跟我說過背會流汗。如果早知道，我會想更久一點。",
+        "en": "Nobody told me my back would sweat. If I'd known, I'd have thought longer."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "妳說得對，這是我們應該先告訴妳的。明天我們好好談，包括怎麼處理它。",
+        "en": "You're right; we should have told you first. Tomorrow we'll talk properly, including how to manage it."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "n5",
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "值班結束。電話掛上前，你聽到遠遠的琴聲，乾淨，沒有一個音滑掉。",
+        "en": "End of shift. Before the line goes dead you hear a piano in the distance: clean, not a single note slipping."
+       }
+      ]
+     ],
+     "end": true
+    }
+   ]
+  }
+ ],
+ "ending": {
+  "title": {
+   "zh": "下班了",
+   "en": "End of shift"
+  },
+  "sub": {
+   "zh": "琴鍵不滑了；背上的汗，要說在手術前面",
+   "en": "The keys no longer slip; the sweat on the back must be told before the surgery"
+  },
+  "stats": [
+   "stages",
+   "grades",
+   "choices",
+   "calls",
+   "items",
+   "time"
+  ]
+ }
+}

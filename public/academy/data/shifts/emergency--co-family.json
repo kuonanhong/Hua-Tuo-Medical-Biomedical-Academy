@@ -1,0 +1,1389 @@
+{
+ "format": "huatuo-shift-v2",
+ "department": "emergency",
+ "case": "co-family",
+ "caseTitle": {
+  "zh": "寒流夜：一家四口的頭痛",
+  "en": "Cold-front night: a family with headaches"
+ },
+ "condition": {
+  "zh": "中毒 · 一氧化碳",
+  "en": "Poisoning · carbon monoxide"
+ },
+ "difficulty": 3,
+ "room": "er",
+ "title": {
+  "zh": "急診：寒流來的那一晚",
+  "en": "Emergency: the night the cold front came"
+ },
+ "tagline": {
+  "zh": "血氧百分之百，不代表氧氣夠",
+  "en": "A perfect saturation is not enough oxygen"
+ },
+ "minutes": 25,
+ "roles": [
+  {
+   "id": "resident",
+   "zh": "急診住院醫師",
+   "en": "Emergency resident",
+   "desc": {
+    "zh": "寒流夜的急診。四個同姓的病人一起走進來，你要先想到的不是病，是他們家。",
+    "en": "A cold-front night in the ED. Four patients with one surname walk in together; the first thing to think about is not a disease but their home."
+   }
+  },
+  {
+   "id": "resus-nurse",
+   "zh": "急救區護理師",
+   "en": "Resus nurse",
+   "desc": {
+    "zh": "面罩、抽血、監視器、搬運都經過你。今晚你要同時看四台監視器和一個孕婦的肚子。",
+    "en": "Masks, bloods, monitors and transfers all go through you. Tonight you watch four monitors and one pregnant belly."
+   }
+  }
+ ],
+ "cast": {
+  "attending": {
+   "name": {
+    "zh": "唐主治",
+    "en": "Dr Tang"
+   },
+   "role": {
+    "zh": "急診夜班主治醫師（師傅）",
+    "en": "Night emergency consultant (mentor)"
+   },
+   "tag": "ATT",
+   "color": "#81296d",
+   "about": {
+    "zh": "鑰匙圈上掛著一個一氧化碳偵測器，十年前一個病人送的。口頭禪：「一家人一起病，先想環境。」",
+    "en": "A carbon monoxide detector hangs on his keyring, a gift from a patient ten years ago. Catchphrase: \"When a whole family falls ill, think of the house.\""
+   },
+   "body": "mentor"
+  },
+  "charge": {
+   "name": {
+    "zh": "阿珍",
+    "en": "Ah-Chen"
+   },
+   "role": {
+    "zh": "急救區組長",
+    "en": "Resus team leader"
+   },
+   "tag": "RN",
+   "color": "#3b8f6a",
+   "about": {
+    "zh": "寒流一來，她先把所有保暖毯拿出來，再把氧氣筒全部檢查一遍。",
+    "en": "When a cold front arrives she pulls out every warming blanket, then checks every oxygen cylinder."
+   },
+   "body": "nurse"
+  },
+  "wang-dad": {
+   "name": {
+    "zh": "王爸",
+    "en": "Mr Wang"
+   },
+   "role": {
+    "zh": "病人：頭痛、走路不穩",
+    "en": "Patient: headache, unsteady"
+   },
+   "tag": "PT",
+   "color": "#4a7fb5",
+   "about": {
+    "zh": "四十二歲，開機車行。全家最後一個洗澡，在浴室裡「眼前一黑」。堅持自己是吃壞肚子。",
+    "en": "Forty-two, runs a scooter shop. Last to shower, he \"blacked out\" in the bathroom. Insists it was something they ate."
+   },
+   "body": "patient"
+  },
+  "wang-mom": {
+   "name": {
+    "zh": "王太太",
+    "en": "Mrs Wang"
+   },
+   "role": {
+    "zh": "病人：懷孕七個月，頭痛想吐",
+    "en": "Patient: seven months pregnant, nausea"
+   },
+   "tag": "PT",
+   "color": "#c06c84",
+   "about": {
+    "zh": "三十四歲，懷孕七個月。一手扶著肚子，一手牽著小寶。她最先說「全家都怪怪的」。",
+    "en": "Thirty-four, seven months pregnant. One hand on her belly, the other holding Bao. She was the first to say \"we all feel strange\"."
+   },
+   "body": "patient"
+  },
+  "bao": {
+   "name": {
+    "zh": "小寶",
+    "en": "Bao"
+   },
+   "role": {
+    "zh": "病人：六歲，想睡、嘔吐",
+    "en": "Patient: six, drowsy and vomiting"
+   },
+   "tag": "PT",
+   "color": "#e0a030",
+   "about": {
+    "zh": "六歲，抱著恐龍玩偶。平常吵到鄰居會來敲門，今晚一直想睡。",
+    "en": "Six, clutching a toy dinosaur. Normally loud enough for the neighbours to knock; tonight he just wants to sleep."
+   },
+   "body": "patient"
+  },
+  "a-gong": {
+   "name": {
+    "zh": "阿公",
+    "en": "Grandpa Wang"
+   },
+   "role": {
+    "zh": "病人：七十四歲，胸悶",
+    "en": "Patient: seventy-four, chest tightness"
+   },
+   "tag": "PT",
+   "color": "#6a8f3b",
+   "about": {
+    "zh": "七十四歲，心臟放過支架。說胸口「像壓了一包米」，但更擔心孫子。",
+    "en": "Seventy-four, has a coronary stent. Says his chest feels \"like a sack of rice on it\", but worries more about his grandson."
+   },
+   "body": "patient"
+  },
+  "firefighter": {
+   "name": {
+    "zh": "消防林小隊長",
+    "en": "Squad leader Lin"
+   },
+   "role": {
+    "zh": "消防隊小隊長",
+    "en": "Fire crew leader"
+   },
+   "tag": "FD",
+   "color": "#d9534f",
+   "about": {
+    "zh": "從王家公寓打來，背景是風聲和偵測器的嗶嗶聲。講話像報數字一樣乾脆。",
+    "en": "Calls from the Wangs' flat over wind and beeping detectors. Speaks like he is reading off a checklist."
+   },
+   "phoneOnly": true
+  },
+  "hbo": {
+   "name": {
+    "zh": "高壓氧中心許醫師",
+    "en": "Dr Hsu (hyperbaric unit)"
+   },
+   "role": {
+    "zh": "高壓氧中心醫師",
+    "en": "Hyperbaric physician"
+   },
+   "tag": "HBO",
+   "color": "#5b4a9e",
+   "about": {
+    "zh": "半夜被叫醒也很有禮貌，會先問「孕婦幾個月？孩子有沒有失去意識？」",
+    "en": "Polite even when woken at midnight. First questions: \"How pregnant? Did the child lose consciousness?\""
+   },
+   "phoneOnly": true
+  }
+ },
+ "places": {
+  "board": {
+   "name": {
+    "zh": "急診交班板",
+    "en": "ED handover board"
+   },
+   "hot": "whiteboard"
+  },
+  "triage": {
+   "name": {
+    "zh": "檢傷台",
+    "en": "Triage desk"
+   },
+   "hot": "desk"
+  },
+  "resus": {
+   "name": {
+    "zh": "急救區一床",
+    "en": "Resus bay 1"
+   },
+   "hot": "field"
+  },
+  "bay2": {
+   "name": {
+    "zh": "急救區二床",
+    "en": "Resus bay 2"
+   },
+   "hot": "recovery"
+  },
+  "monitor": {
+   "name": {
+    "zh": "生理監視器",
+    "en": "Patient monitor"
+   },
+   "hot": "monitor"
+  },
+  "ecg": {
+   "name": {
+    "zh": "心電圖機",
+    "en": "ECG machine"
+   },
+   "hot": "device"
+  },
+  "abg": {
+   "name": {
+    "zh": "血液氣體分析機",
+    "en": "Blood gas analyser"
+   },
+   "hot": "lab"
+  },
+  "viewer": {
+   "name": {
+    "zh": "影像工作站",
+    "en": "Image viewer"
+   },
+   "hot": "imaging"
+  },
+  "door": {
+   "name": {
+    "zh": "救護車入口",
+    "en": "Ambulance entrance"
+   },
+   "hot": "door"
+  }
+ },
+ "glossary": [
+  {
+   "term": {
+    "zh": "一氧化碳",
+    "en": "carbon monoxide"
+   },
+   "plain": {
+    "zh": "燃燒不完全時產生、無色無味的氣體。它搶走血紅素上氧氣的位置，讓身體缺氧。",
+    "en": "A colourless, odourless gas from incomplete burning. It takes oxygen's place on haemoglobin and starves the body of oxygen."
+   }
+  },
+  {
+   "term": {
+    "zh": "脈搏血氧機",
+    "en": "pulse oximeter"
+   },
+   "plain": {
+    "zh": "夾在手指上量血氧的機器。它分不出被一氧化碳佔住的血紅素，所以中毒時會顯示假的正常。",
+    "en": "The finger clip that reads oxygen saturation. It cannot tell carbon-monoxide-bound haemoglobin apart, so in poisoning it shows a falsely normal number."
+   }
+  },
+  {
+   "term": {
+    "zh": "碳氧血紅素",
+    "en": "carboxyhaemoglobin"
+   },
+   "plain": {
+    "zh": "被一氧化碳佔住的血紅素。要抽血用血液氣體機量。",
+    "en": "Haemoglobin taken over by carbon monoxide. Measured from a blood sample on the gas analyser."
+   }
+  },
+  {
+   "term": {
+    "zh": "共血氧測定",
+    "en": "co-oximetry"
+   },
+   "plain": {
+    "zh": "血液氣體機用多種波長分辨不同的血紅素，能直接量出碳氧血紅素。靜脈血也可以。",
+    "en": "The gas analyser uses several wavelengths to tell haemoglobin types apart and measures carboxyhaemoglobin directly. Venous blood works."
+   }
+  },
+  {
+   "term": {
+    "zh": "非再吸入面罩",
+    "en": "non-rebreather mask"
+   },
+   "plain": {
+    "zh": "有儲氣袋的面罩，可以給最高濃度的氧氣。一氧化碳中毒的第一件事。",
+    "en": "A mask with a reservoir bag that delivers the highest oxygen concentration. The first treatment for carbon monoxide poisoning."
+   }
+  },
+  {
+   "term": {
+    "zh": "高壓氧",
+    "en": "hyperbaric oxygen"
+   },
+   "plain": {
+    "zh": "在加壓艙裡吸純氧，讓一氧化碳更快離開血紅素。失去意識、抽搐、孕婦、心臟受損時會考慮。",
+    "en": "Breathing pure oxygen in a pressurised chamber so carbon monoxide leaves haemoglobin faster. Considered after unconsciousness, seizures, in pregnancy or heart injury."
+   }
+  },
+  {
+   "term": {
+    "zh": "胎兒血紅素",
+    "en": "fetal haemoglobin"
+   },
+   "plain": {
+    "zh": "胎兒的血紅素更容易抓住一氧化碳，排得也更慢。所以孕婦就算症狀輕，也要更積極。",
+    "en": "A baby's haemoglobin grabs carbon monoxide more tightly and lets go more slowly, so a pregnant patient is treated more aggressively even with mild symptoms."
+   }
+  },
+  {
+   "term": {
+    "zh": "心肌損傷",
+    "en": "myocardial injury"
+   },
+   "plain": {
+    "zh": "心臟肌肉缺氧受損，血中肌鈣蛋白會上升。中毒的長輩要查心電圖和肌鈣蛋白。",
+    "en": "Heart muscle damaged by lack of oxygen; troponin in the blood rises. Poisoned older patients need an ECG and troponin."
+   }
+  },
+  {
+   "term": {
+    "zh": "癲癇發作",
+    "en": "seizure"
+   },
+   "plain": {
+    "zh": "腦部異常放電造成抽搐或失去意識。先保護病人、計時、給氧，再處理原因。",
+    "en": "Abnormal electrical activity in the brain causing jerking or loss of consciousness. Protect, time it, give oxygen, then treat the cause."
+   }
+  },
+  {
+   "term": {
+    "zh": "延遲性神經後遺症",
+    "en": "delayed neurological sequelae"
+   },
+   "plain": {
+    "zh": "中毒後幾天到幾週才出現的記憶、情緒或動作問題。出院時一定要交代。",
+    "en": "Memory, mood or movement problems that appear days to weeks after poisoning. Always explained at discharge."
+   }
+  },
+  {
+   "term": {
+    "zh": "群聚",
+    "en": "cluster"
+   },
+   "plain": {
+    "zh": "同一個地方的好幾個人同時出現類似症狀。先想共同的環境：空氣、食物、水。",
+    "en": "Several people from one place falling ill together. Think of what they share first: air, food, water."
+   }
+  },
+  {
+   "term": {
+    "zh": "最後正常時間",
+    "en": "last known well"
+   },
+   "plain": {
+    "zh": "病人最後一次被確認正常的時刻。用來判斷神經症狀是什麼時候開始的。",
+    "en": "The last moment the patient was confirmed normal; it dates when neurological symptoms began."
+   }
+  }
+ ],
+ "codex": [
+  {
+   "id": "nrb-mask",
+   "kind": "equipment",
+   "name": {
+    "zh": "非再吸入面罩",
+    "en": "Non-rebreather mask"
+   },
+   "text": {
+    "zh": "儲氣袋要先充滿再戴，面罩要貼緊。今晚急救區一口氣戴了四個，阿珍還多拿了一個小號的給小寶。",
+    "en": "Fill the reservoir bag before fitting, seal the mask well. Resus fitted four tonight; Ah-Chen fetched a small one for Bao."
+   },
+   "hot": "drugs"
+  },
+  {
+   "id": "gas-analyser",
+   "kind": "equipment",
+   "name": {
+    "zh": "血液氣體分析機",
+    "en": "Blood gas analyser"
+   },
+   "text": {
+    "zh": "共血氧測定靠它。夾手指的血氧機看不到的東西，它看得到。",
+    "en": "Co-oximetry lives here. What the finger clip cannot see, this can."
+   },
+   "hot": "lab"
+  },
+  {
+   "id": "oximeter",
+   "kind": "equipment",
+   "name": {
+    "zh": "脈搏血氧機",
+    "en": "Pulse oximeter"
+   },
+   "text": {
+    "zh": "用兩種顏色的光比較血紅素吸收多少。碳氧血紅素在它眼裡和帶氧的血紅素長得很像。",
+    "en": "Compares how haemoglobin absorbs two colours of light. To it, carboxyhaemoglobin looks almost like oxygenated haemoglobin."
+   },
+   "hot": "monitor"
+  },
+  {
+   "id": "co-keyring",
+   "kind": "item",
+   "name": {
+    "zh": "唐主治的偵測器鑰匙圈",
+    "en": "Dr Tang's detector keyring"
+   },
+   "text": {
+    "zh": "十年前一位病人出院時送他的。那位病人也是在寒流夜、也是熱水器、也是全家。",
+    "en": "A patient gave it to him on discharge ten years ago. Also a cold-front night, also a water heater, also a whole family."
+   }
+  },
+  {
+   "id": "bao-dino",
+   "kind": "item",
+   "name": {
+    "zh": "小寶的恐龍",
+    "en": "Bao's dinosaur"
+   },
+   "text": {
+    "zh": "小寶進高壓氧艙前交給你保管的。尾巴被咬過，名字叫「阿嘎」。",
+    "en": "Bao handed it to you before the chamber. Its tail has been chewed; its name is \"Ah-Ga\"."
+   }
+  },
+  {
+   "id": "sat-lies",
+   "kind": "concept",
+   "name": {
+    "zh": "血氧機也會說謊",
+    "en": "The oximeter can lie"
+   },
+   "text": {
+    "zh": "脈搏血氧機只用兩個波長判斷血紅素帶不帶氧，碳氧血紅素吸收光的方式和帶氧血紅素很像，所以數字會「假正常」。懷疑一氧化碳時，要抽血做共血氧測定；靜脈血就可以。數值高低和嚴重度不完全相符：昏倒過、抽搐、胸痛、孕婦，都要當嚴重處理。給高濃度氧氣會讓一氧化碳排得更快，所以先給氧，不要等報告。",
+    "en": "A pulse oximeter uses two wavelengths to judge whether haemoglobin carries oxygen, and carboxyhaemoglobin absorbs light much like oxygenated haemoglobin, so the number reads falsely normal. Suspect carbon monoxide, draw blood for co-oximetry; venous blood is fine. The level does not match severity perfectly: fainting, seizures, chest pain or pregnancy all count as severe. High-flow oxygen speeds elimination, so give oxygen first and do not wait for the result."
+   }
+  },
+  {
+   "id": "think-house",
+   "kind": "concept",
+   "name": {
+    "zh": "一家人一起病，先想環境",
+    "en": "A sick family means a sick house"
+   },
+   "text": {
+    "zh": "同一屋簷下好幾個人同時頭痛、想吐、頭暈，要先想共同的環境。食物中毒通常吃完才發作、腹瀉多；一氧化碳中毒在室內加重、離開就好轉、寵物也會倒。台灣冬天最常見的是裝在密閉陽台或室內的燃氣熱水器，加上寒流時窗戶全關。問一句「你們家熱水器裝在哪裡」，有時候比任何檢查都快。通知消防檢查現場，也是在救還沒來的鄰居。",
+    "en": "When several people under one roof have headaches, nausea and dizziness together, think of what they share. Food poisoning follows a meal and brings diarrhoea; carbon monoxide gets worse indoors, better outside, and fells pets too. In a Taiwanese winter the usual culprit is a gas water heater on an enclosed balcony or indoors, with every window shut against the cold. Asking \"where is your water heater?\" can beat any test. Calling the fire service to check the flat protects the neighbours who have not arrived yet."
+   }
+  },
+  {
+   "id": "hbo-why",
+   "kind": "concept",
+   "name": {
+    "zh": "誰需要高壓氧？",
+    "en": "Who needs the chamber?"
+   },
+   "text": {
+    "zh": "高壓氧讓一氧化碳更快離開血紅素，也可能減少延遲性神經後遺症。常見的考慮情況：曾失去意識、抽搐或神經學異常、心肌缺血、孕婦、碳氧血紅素很高。高壓氧不是急救的替代品：轉送前病人要穩定、氣道安全、氧氣不能斷。就算沒有進艙，出院也要交代延遲性神經後遺症，並約回診。",
+    "en": "Hyperbaric oxygen drives carbon monoxide off haemoglobin faster and may reduce delayed neurological problems. Usual reasons to consider it: loss of consciousness, seizures or neurological signs, cardiac ischaemia, pregnancy, very high carboxyhaemoglobin. It is not a substitute for resuscitation: before transfer the patient must be stable, the airway safe and oxygen never interrupted. Even without the chamber, discharge advice covers delayed sequelae with a follow-up visit."
+   }
+  }
+ ],
+ "segs": [
+  {
+   "id": "handover",
+   "name": {
+    "zh": "寒流夜的交班",
+    "en": "Cold-front handover"
+   },
+   "sub": {
+    "zh": "19:00 · 急診交班板",
+    "en": "19:00 · ED handover board"
+   },
+   "t": 1140,
+   "mood": "eve",
+   "note": {
+    "zh": "交班完成",
+    "en": "Handover done"
+   },
+   "beats": [
+    {
+     "id": "h1",
+     "to": "place:board",
+     "guide": {
+      "zh": "看交班板",
+      "en": "Read the board"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "交班板：「寒流，氣溫個位數。急診滿床。」窗外的風把救護車入口的門吹得一直響。",
+        "en": "Board: \"Cold front, single-digit temperatures. ED full.\" Wind rattles the ambulance doors."
+       }
+      ],
+      [
+       "charge",
+       {
+        "zh": "保暖毯全部拿出來了。氧氣筒也檢查過，今晚感覺會用很多。",
+        "en": "All the warming blankets are out. Cylinders checked too. Feels like a high-oxygen night."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "h2",
+     "to": "attending",
+     "guide": {
+      "zh": "找唐主治",
+      "en": "Find Dr Tang"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "（晃一晃鑰匙圈）知道這是什麼嗎？一氧化碳偵測器。寒流夜，它比聽診器還重要。",
+        "en": "(Jingles his keyring) Know what this is? A carbon monoxide detector. On a cold-front night it beats a stethoscope."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "因為大家把窗戶都關起來？",
+        "en": "Because everyone shuts their windows?"
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "還有熱水器裝在不該裝的地方。記住：一家人一起病，先想環境。",
+        "en": "And water heaters fitted where they should not be. Remember: when a family falls ill, think of the house."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "h3",
+     "to": "place:abg",
+     "guide": {
+      "zh": "確認血液氣體機",
+      "en": "Check the gas analyser"
+     },
+     "lines": [
+      [
+       "charge",
+       {
+        "zh": "今晚如果要驗碳氧血紅素，機器在哪？校正過了嗎？",
+        "en": "If we need carboxyhaemoglobin tonight, where is the machine? Is it calibrated?"
+       }
+      ]
+     ],
+     "mini": {
+      "type": "find",
+      "hot": "lab",
+      "q": {
+       "zh": "急診的血液氣體分析機在哪裡？",
+       "en": "Where is the ED blood gas analyser?"
+      }
+     },
+     "post": [
+      [
+       "me",
+       {
+        "zh": "校正過了，共血氧測定的試劑也夠。",
+        "en": "Calibrated, with enough co-oximetry cartridges."
+       }
+      ]
+     ],
+     "roles": [
+      "resus-nurse"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "arrive",
+   "name": {
+    "zh": "一家四口",
+    "en": "A family of four"
+   },
+   "sub": {
+    "zh": "20:30 · 檢傷台",
+    "en": "20:30 · triage desk"
+   },
+   "t": 1230,
+   "mood": "eve",
+   "note": {
+    "zh": "王家：懷疑一氧化碳",
+    "en": "The Wangs: suspected CO"
+   },
+   "beats": [
+    {
+     "id": "a1",
+     "to": "wang-mom",
+     "guide": {
+      "zh": "問王太太",
+      "en": "Talk to Mrs Wang"
+     },
+     "lines": [
+      [
+       "wang-mom",
+       {
+        "zh": "我們晚上吃火鍋，吃完全家都頭痛、想吐。我先生洗完澡差點昏倒。",
+        "en": "We had hotpot tonight. Afterwards everyone had headaches and nausea. My husband nearly fainted after his shower."
+       }
+      ],
+      [
+       "wang-dad",
+       {
+        "zh": "（扶著頭）一定是那盒肉不新鮮。打個點滴就好。",
+        "en": "(Holding his head) It was that box of meat. A drip and we are fine."
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "檢傷：四個人的血氧都是百分之九十九到一百。小寶靠在媽媽身上一直打瞌睡。",
+        "en": "Triage: all four read ninety-nine to a hundred percent saturation. Bao dozes against his mother."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "a2",
+     "to": "attending",
+     "guide": {
+      "zh": "和唐主治討論",
+      "en": "Discuss with Dr Tang"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "四個人、同時發作、血氧都很漂亮。這叫群聚。你第一個想到什麼？",
+        "en": "Four people, same onset, beautiful saturations. That is a cluster. What comes to mind first?"
+       }
+      ]
+     ],
+     "mini": {
+      "type": "choice",
+      "q": {
+       "zh": "王家四口同時頭痛想吐，血氧都正常。先想什麼？",
+       "en": "Four Wangs with headache and nausea, normal saturations. First thought?"
+      },
+      "options": [
+       {
+        "zh": "一氧化碳：全家先上高濃度氧氣",
+        "en": "Carbon monoxide: high-flow oxygen for all",
+        "ok": true,
+        "why": {
+         "zh": "群聚、室內、寒流、浴室裡發作。血氧機看不到碳氧血紅素，先給氧再抽血驗。",
+         "en": "A cluster, indoors, a cold front, symptoms in the bathroom. The oximeter cannot see carboxyhaemoglobin: oxygen first, then blood."
+        },
+        "set": {
+         "co": "early"
+        }
+       },
+       {
+        "zh": "食物中毒：止吐、打點滴",
+        "en": "Food poisoning: antiemetics and fluids",
+        "ok": false,
+        "why": {
+         "zh": "食物中毒通常以腹瀉為主，也不會讓人在浴室昏倒、讓孩子一直想睡。血氧正常不代表氧氣夠。",
+         "en": "Food poisoning is mostly diarrhoea and does not make people faint in the shower or children drowsy. A normal saturation is not enough oxygen."
+        },
+        "set": {
+         "co": "late"
+        }
+       },
+       {
+        "zh": "病毒性腸胃炎，先排隊看診",
+        "en": "Viral gastroenteritis, join the queue",
+        "ok": false,
+        "why": {
+         "zh": "四個人同一時間發作，包含一個孕婦和一個嗜睡的孩子，不該在候診區等。",
+         "en": "Four people at once, including a pregnant woman and a drowsy child, should not wait in the queue."
+        },
+        "set": {
+         "co": "late"
+        }
+       }
+      ]
+     }
+    },
+    {
+     "id": "a3",
+     "to": "wang-dad",
+     "guide": {
+      "zh": "評估王爸",
+      "en": "Assess Mr Wang"
+     },
+     "lines": [
+      [
+       "wang-dad",
+       {
+        "zh": "我……剛剛講到哪？（講話慢、走路往一邊偏）",
+        "en": "I... where was I? (Slow speech, drifting to one side as he walks)"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "王太太，他最後一次完全正常是什麼時候？",
+        "en": "Mrs Wang, when was he last completely normal?"
+       }
+      ],
+      [
+       "wang-mom",
+       {
+        "zh": "進浴室之前還在跟小寶玩。大概八點。",
+        "en": "Playing with Bao before his shower. About eight."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "emergency-v37-stroke-time",
+      "stage": 0
+     },
+     "post": [
+      [
+       "attending",
+       {
+        "zh": "最後正常時間要問，中風也要想。但他全家都在頭痛，先給氧，再看他會不會變好。",
+        "en": "Ask for last known well and keep stroke in mind. But his whole family has a headache: oxygen first, then see if he improves."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "oxygen",
+   "name": {
+    "zh": "高濃度氧氣",
+    "en": "High-flow oxygen"
+   },
+   "sub": {
+    "zh": "21:00 · 急救區",
+    "en": "21:00 · resus"
+   },
+   "t": 1260,
+   "mood": "eve",
+   "note": {
+    "zh": "全家上氧，驗碳氧血紅素",
+    "en": "Oxygen for all, CO levels sent"
+   },
+   "beats": [
+    {
+     "id": "o1",
+     "to": "place:resus",
+     "guide": {
+      "zh": "全家上面罩",
+      "en": "Masks for everyone"
+     },
+     "lines": [
+      [
+       "charge",
+       {
+        "zh": "四個非再吸入面罩，儲氣袋先充滿。小寶用小號的，恐龍也一起躺。",
+        "en": "Four non-rebreather masks, bags filled first. Small one for Bao, the dinosaur lies down too."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "你在檢傷十分鐘就決定給氧。這十分鐘，一氧化碳已經在往外排了。",
+        "en": "You chose oxygen within ten minutes of triage. In those minutes, carbon monoxide has already been leaving."
+       }
+      ]
+     ],
+     "when": {
+      "flag": "co",
+      "is": "early"
+     }
+    },
+    {
+     "id": "o1b",
+     "lines": [
+      [
+       "firefighter",
+       {
+        "zh": "急診嗎？王家公寓偵測器爆表，熱水器裝在封起來的陽台，窗戶全關。病人是不是都在你們那？",
+        "en": "ED? The detector in the Wangs' flat is off the scale, the heater is on a sealed balcony, every window shut. Are they all with you?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "（看向打點滴的王家）……是。現在全部上高濃度氧氣。",
+        "en": "(Looking at the Wangs on drips) ...Yes. High-flow oxygen for all, now."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "沒關係，現在就給。血氧正常騙過很多人，下次寒流你會先問熱水器。",
+        "en": "It is fine, give it now. Normal saturations fool many people. Next cold front you will ask about the heater first."
+       }
+      ]
+     ],
+     "ring": {
+      "title": {
+       "zh": "消防隊來電",
+       "en": "Fire crew calling"
+      },
+      "sub": {
+       "zh": "王家公寓的偵測器響了",
+       "en": "The Wangs' flat detector is screaming"
+      },
+      "call": true,
+      "from": "firefighter"
+     },
+     "when": {
+      "flag": "co",
+      "is": "late"
+     }
+    },
+    {
+     "id": "o2",
+     "to": "place:abg",
+     "guide": {
+      "zh": "送共血氧測定",
+      "en": "Send co-oximetry"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "血液氣體機吐出報告：四個人的碳氧血紅素都明顯升高，王爸和小寶最高。",
+        "en": "The gas analyser prints: carboxyhaemoglobin raised in all four, highest in Mr Wang and Bao."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "指尖的脈搏血氧機還顯示百分之九十九。它真的看不到。",
+        "en": "The finger pulse oximeter still reads ninety-nine. It really cannot see it."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "order",
+      "q": {
+       "zh": "一氧化碳中毒的處置順序？",
+       "en": "Order the care of carbon monoxide poisoning"
+      },
+      "steps": [
+       {
+        "zh": "全家戴非再吸入面罩",
+        "en": "Non-rebreather masks for all"
+       },
+       {
+        "zh": "抽血做共血氧測定",
+        "en": "Blood for co-oximetry"
+       },
+       {
+        "zh": "心電圖、肌鈣蛋白與神經學檢查",
+        "en": "ECG, troponin, neuro exam"
+       },
+       {
+        "zh": "孕婦會診婦產科監測胎兒",
+        "en": "Obstetrics to monitor the baby"
+       },
+       {
+        "zh": "評估高壓氧適應症",
+        "en": "Assess for hyperbaric oxygen"
+       }
+      ]
+     }
+    },
+    {
+     "id": "o3",
+     "lines": [
+      [
+       "firefighter",
+       {
+        "zh": "偵測器確認了，熱水器關掉、窗戶打開。樓上鄰居也頭暈，我們送去你們那邊。",
+        "en": "Detector confirmed, heater off, windows open. The neighbours upstairs are dizzy too; we are sending them to you."
+       }
+      ],
+      [
+       "firefighter",
+       {
+        "zh": "對了，有一隻倉鼠，我們帶出來了，在警衛室，活蹦亂跳。",
+        "en": "Oh, there was a hamster. We brought it out; it is in the guard room, very lively."
+       }
+      ]
+     ],
+     "ring": {
+      "title": {
+       "zh": "消防隊回報",
+       "en": "Fire crew update"
+      },
+      "sub": {
+       "zh": "現場檢查完成，鄰居也要送來",
+       "en": "Scene checked; neighbours coming too"
+      },
+      "call": true,
+      "from": "firefighter"
+     },
+     "when": {
+      "flag": "co",
+      "is": "early"
+     }
+    }
+   ]
+  },
+  {
+   "id": "gong",
+   "name": {
+    "zh": "阿公的胸悶",
+    "en": "Grandpa's chest"
+   },
+   "sub": {
+    "zh": "21:30 · 急救區二床",
+    "en": "21:30 · resus bay 2"
+   },
+   "t": 1290,
+   "mood": "eve",
+   "note": {
+    "zh": "阿公：心肌損傷",
+    "en": "Grandpa: myocardial injury"
+   },
+   "beats": [
+    {
+     "id": "g1",
+     "to": "a-gong",
+     "guide": {
+      "zh": "看阿公",
+      "en": "See Grandpa"
+     },
+     "lines": [
+      [
+       "a-gong",
+       {
+        "zh": "胸口像壓了一包米。我沒關係，先看小寶。",
+        "en": "Like a sack of rice on my chest. Never mind me, see Bao first."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "阿公，小寶有人在看。你放過支架，胸悶我們也要很認真看。",
+        "en": "Grandpa, Bao is being looked after. You have a stent; your chest matters too."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "emergency-v37-chest-pain",
+      "stage": 1
+     }
+    },
+    {
+     "id": "g2",
+     "to": "place:ecg",
+     "guide": {
+      "zh": "做十二導程心電圖",
+      "en": "Record a 12-lead ECG"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "一氧化碳也會讓心臟缺氧。導程貼準，跟他之前的心電圖比。",
+        "en": "Carbon monoxide starves the heart too. Place the leads properly and compare with his old ECG."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "drill",
+      "template": "emergency",
+      "drill": "ecg"
+     },
+     "post": [
+      [
+       "me",
+       {
+        "zh": "前壁有新的 ST 段下降，肌鈣蛋白也上升了。心肌損傷。",
+        "en": "New anterior ST depression and a rising troponin. Myocardial injury."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "心臟科知會，阿公留在急救區監測。高壓氧要不要做，請高壓氧醫師和心臟科一起決定。",
+        "en": "Tell cardiology; Grandpa stays monitored in resus. Whether he goes in the chamber is for the hyperbaric and cardiology teams together."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "g3",
+     "to": "place:board",
+     "guide": {
+      "zh": "打給心臟科",
+      "en": "Call cardiology"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "心臟科嗎？七十四歲男性，放過支架，一氧化碳中毒，胸悶，前壁 ST 下降，肌鈣蛋白上升。",
+        "en": "Cardiology? Seventy-four, previous stent, carbon monoxide poisoning, chest tightness, anterior ST depression, troponin rising."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "目前高濃度氧氣、監測中。想請你們評估，也一起討論高壓氧。",
+        "en": "On high-flow oxygen and monitored. Please assess him and join the hyperbaric discussion."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "情境、背景、評估、建議，一次講完。很好。",
+        "en": "Situation, background, assessment, request, in one go. Good."
+       }
+      ]
+     ],
+     "roles": [
+      "resident"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bao",
+   "name": {
+    "zh": "小寶",
+    "en": "Bao"
+   },
+   "sub": {
+    "zh": "22:15 · 急救區一床",
+    "en": "22:15 · resus bay 1"
+   },
+   "t": 1335,
+   "mood": "night",
+   "note": {
+    "zh": "小寶：抽搐後穩定",
+    "en": "Bao: stable after a seizure"
+   },
+   "beats": [
+    {
+     "id": "k1",
+     "to": "place:monitor",
+     "guide": {
+      "zh": "小寶在抽搐",
+      "en": "Bao is seizing"
+     },
+     "lines": [
+      [
+       "wang-mom",
+       {
+        "zh": "小寶！小寶你看媽媽！",
+        "en": "Bao! Bao, look at Mummy!"
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "小寶的眼睛往上吊，四肢規律地抽動。恐龍掉到地上。監視器的心跳衝上去。",
+        "en": "Bao's eyes roll up and his limbs jerk rhythmically. The dinosaur falls to the floor. The heart rate on the monitor climbs."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "vitals",
+      "event": "seizure",
+      "options": [
+       {
+        "zh": "側躺保護、計時、持續給氧、依醫囑止痙",
+        "en": "Side, time it, oxygen, anticonvulsant per order",
+        "ok": true,
+        "why": {
+         "zh": "一氧化碳讓腦部缺氧引起癲癇發作。保護他不撞傷、維持呼吸道、記錄時間，止痙藥由醫師依體重開立。",
+         "en": "Carbon monoxide starves the brain and triggers a seizure. Protect him, keep the airway, note the time; the doctor prescribes the anticonvulsant by weight."
+        }
+       },
+       {
+        "zh": "壓住手腳、往嘴裡放東西",
+        "en": "Hold his limbs, put something in his mouth",
+        "ok": false,
+        "why": {
+         "zh": "壓住手腳會受傷，往嘴裡塞東西會傷牙齒和呼吸道。側躺、保護就好。",
+         "en": "Restraint causes injury and anything in the mouth damages teeth and airway. On his side, protected."
+        }
+       },
+       {
+        "zh": "先推去電腦斷層",
+        "en": "Rush him to CT first",
+        "ok": false,
+        "why": {
+         "zh": "還在抽搐的孩子不能先去斷層。先讓發作停下來、穩住呼吸，影像之後再說。",
+         "en": "A seizing child does not go to CT first. Stop the seizure and secure breathing; imaging comes after."
+        }
+       }
+      ]
+     },
+     "post": [
+      [
+       "charge",
+       {
+        "zh": "停了。這次癲癇發作不到兩分鐘，血糖正常，呼吸穩定。",
+        "en": "Stopped. The seizure lasted under two minutes, glucose normal, breathing steady."
+       }
+      ],
+      [
+       "wang-mom",
+       {
+        "zh": "（握著小寶的手）他會不會……變得不一樣？",
+        "en": "(Holding Bao's hand) Will he... be different?"
+       }
+      ]
+     ]
+    },
+    {
+     "id": "k2",
+     "to": "place:viewer",
+     "guide": {
+      "zh": "看小寶的頭部斷層",
+      "en": "Read Bao's head CT"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "抽搐過、一氧化碳中毒的孩子，斷層看什麼？看了又能告訴你什麼？",
+        "en": "A child who seized with carbon monoxide poisoning: what does the CT show, and what can it tell you?"
+       }
+      ]
+     ],
+     "mini": {
+      "type": "imaging",
+      "region": "head",
+      "question": {
+       "zh": "小寶的頭部電腦斷層，在一氧化碳中毒早期常常是什麼樣子？",
+       "en": "Bao's head CT: what does it usually look like early in carbon monoxide poisoning?"
+      },
+      "answer": {
+       "zh": "常常是正常的。斷層主要是排除出血、外傷等其他原因；正常不代表沒事。嚴重中毒的變化，例如兩側蒼白球的低密度，多半較晚才出現。",
+       "en": "Often normal. The scan mainly rules out bleeding, trauma and other causes; normal does not mean well. Severe changes, such as low density in both globus pallidi, usually come later."
+      }
+     },
+     "item": "bao-dino"
+    },
+    {
+     "id": "k3",
+     "lines": [
+      [
+       "hbo",
+       {
+        "zh": "孕婦七個月、孩子抽搐、先生在浴室失去意識。三位都有高壓氧適應症，艙可以同時進。",
+        "en": "Seven months pregnant, a child who seized, a husband who lost consciousness. All three qualify for hyperbaric oxygen; the chamber takes them together."
+       }
+      ],
+      [
+       "hbo",
+       {
+        "zh": "轉送前：呼吸道安全、氧氣不斷、婦產科看過胎兒。阿公我跟心臟科再談。",
+        "en": "Before transfer: airway safe, oxygen continuous, obstetrics has checked the baby. I will discuss Grandpa with cardiology."
+       }
+      ]
+     ],
+     "ring": {
+      "title": {
+       "zh": "高壓氧中心回電",
+       "en": "Hyperbaric unit calling"
+      },
+      "sub": {
+       "zh": "三位可以進艙",
+       "en": "Three can go in the chamber"
+      },
+      "call": true,
+      "from": "hbo"
+     }
+    }
+   ]
+  },
+  {
+   "id": "transfer",
+   "name": {
+    "zh": "進艙之前",
+    "en": "Before the chamber"
+   },
+   "sub": {
+    "zh": "23:00 · 救護車入口",
+    "en": "23:00 · ambulance entrance"
+   },
+   "t": 1380,
+   "mood": "night",
+   "note": {
+    "zh": "三位轉高壓氧",
+    "en": "Three to the chamber"
+   },
+   "beats": [
+    {
+     "id": "t1",
+     "to": "wang-mom",
+     "guide": {
+      "zh": "回答王太太",
+      "en": "Answer Mrs Wang"
+     },
+     "lines": [
+      [
+       "wang-mom",
+       {
+        "zh": "寶寶呢？我已經比較不暈了，寶寶是不是也沒事了？",
+        "en": "And the baby? I feel less dizzy now. Is the baby fine too?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "胎心音現在很好。可是胎兒血紅素抓一氧化碳抓得更緊，所以妳要進艙，是為了寶寶。",
+        "en": "The baby's heartbeat is good. But fetal haemoglobin holds carbon monoxide more tightly, so the chamber is for the baby."
+       }
+      ],
+      [
+       "wang-mom",
+       {
+        "zh": "好。為了寶寶。",
+        "en": "All right. For the baby."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "t2",
+     "to": "place:door",
+     "guide": {
+      "zh": "準備轉送",
+      "en": "Prepare the transfer"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "氧氣筒全滿、備用一支、監視器電量、止痙藥、病歷和影像光碟。每床一張核對單。",
+        "en": "Cylinders full plus a spare, monitor batteries, anticonvulsant, notes and image discs. One checklist per patient."
+       }
+      ],
+      [
+       "charge",
+       {
+        "zh": "小寶的恐龍呢？……在你那裡？好，幫他保管。",
+        "en": "Bao's dinosaur? ...With you? Good, keep it safe for him."
+       }
+      ]
+     ],
+     "roles": [
+      "resus-nurse"
+     ]
+    },
+    {
+     "id": "t3",
+     "to": "place:board",
+     "guide": {
+      "zh": "寫通報與衛教",
+      "en": "Write the notes and advice"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "一氧化碳中毒四人，熱水器在密閉陽台。已通報。出院衛教寫上延遲性神經後遺症與回診。",
+        "en": "Four carbon monoxide cases, heater on a sealed balcony. Notified. Discharge advice covers delayed neurological sequelae and follow-up."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "還要寫：熱水器移到室外、裝偵測器。不寫這行，下個寒流他們會再來。",
+        "en": "Also write: move the heater outside, fit a detector. Skip that line and they are back next cold front."
+       }
+      ]
+     ],
+     "roles": [
+      "resident"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "late",
+   "name": {
+    "zh": "寒流還沒走",
+    "en": "The cold front stays"
+   },
+   "sub": {
+    "zh": "23:45 · 急診交班板",
+    "en": "23:45 · ED handover board"
+   },
+   "t": 1425,
+   "mood": "night",
+   "note": {
+    "zh": "下班前",
+    "en": "Before going off"
+   },
+   "beats": [
+    {
+     "id": "l1",
+     "to": "place:board",
+     "guide": {
+      "zh": "更新交班板",
+      "en": "Update the board"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "交班板：「王家四口一氧化碳中毒，三位轉高壓氧，阿公心肌損傷留觀。樓上鄰居兩位輕症，給氧中。」",
+        "en": "Board: \"Wang family ×4 carbon monoxide; three to hyperbaric, Grandpa monitored for myocardial injury. Two mild neighbours on oxygen.\""
+       }
+      ],
+      [
+       "a-gong",
+       {
+        "zh": "（隔著面罩）醫師，謝謝你先看小寶，也沒有忘記我。",
+        "en": "(Through the mask) Doctor, thank you for seeing Bao first, and for not forgetting me."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "l2",
+     "to": "attending",
+     "guide": {
+      "zh": "和唐主治收尾",
+      "en": "Wrap up with Dr Tang"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "今晚最危險的數字是哪一個？",
+        "en": "What was the most dangerous number tonight?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "百分之九十九。它讓我們差點以為大家都很好。",
+        "en": "Ninety-nine percent. It almost made us think everyone was fine."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "（把鑰匙圈放在你手上）借你戴一個冬天。寒流夜，記得先想環境。",
+        "en": "(Puts the keyring in your hand) Borrow it for the winter. On cold-front nights, think of the house first."
+       }
+      ]
+     ],
+     "item": "co-keyring",
+     "end": true
+    }
+   ]
+  }
+ ],
+ "ending": {
+  "title": {
+   "zh": "寒流夜結束",
+   "en": "Cold-front night over"
+  },
+  "sub": {
+   "zh": "四個病人，一台熱水器，一個說謊的數字",
+   "en": "Four patients, one heater, one lying number"
+  },
+  "stats": [
+   "stages",
+   "drills",
+   "imaging",
+   "choices",
+   "calls",
+   "items",
+   "time"
+  ]
+ }
+}

@@ -1,0 +1,261 @@
+{
+ "format": "huatuo-shift-v2",
+ "department": "hematology",
+ "case": "ttp",
+ "caseTitle": {"zh": "急診：被當成偏頭痛的瘀青", "en": "ER: bruises filed under migraine"},
+ "condition": {"zh": "血栓性微血管病 · TTP", "en": "Thrombotic microangiopathy · TTP"},
+ "difficulty": 3,
+ "room": "er",
+ "title": {"zh": "血液科：急診小夜會診", "en": "Haematology: an evening of ER consults"},
+ "tagline": {"zh": "血小板低的時候，先問它們跑去哪裡了", "en": "When platelets are low, first ask where they went"},
+ "minutes": 25,
+ "roles": [
+  {"id": "resident", "zh": "血液科值班住院醫師", "en": "On-call haematology resident",
+   "desc": {"zh": "接檢驗科的抹片電話、親眼看碎裂紅血球、擋住一袋不該給的血小板、在天黑前讓血漿置換開始。",
+            "en": "Take the lab's call about a blood film, see the fragmented red cells yourself, stop a platelet bag that should not be given, and have plasma exchange running before dark."}},
+  {"id": "apheresis", "zh": "血漿置換護理師", "en": "Apheresis nurse",
+   "desc": {"zh": "把置換機推到急診、確認送檢的管子在第一次置換前抽好、看著管路與病人，每一袋血漿都核對兩次。",
+            "en": "Bring the exchange machine down to the ER, make sure the right sample is drawn before the first exchange, watch the circuit and the patient, and check every bag of plasma twice."}}
+ ],
+ "cast": {
+  "attending": {"name": {"zh": "戴主治", "en": "Dr Tai"}, "role": {"zh": "血液科值班主治（師傅）", "en": "On-call haematologist (mentor)"}, "tag": "ATT", "color": "#8f2d3b", "body": "mentor",
+   "about": {"zh": "血液科主治，看抹片比看手機還久。口頭禪：「血小板低的時候，先問它們跑去哪裡了。」",
+             "en": "Haematologist who spends longer on blood films than on her phone. Catchphrase: 'When platelets are low, first ask where they went.'"}},
+  "nurse-mei": {"name": {"zh": "置換室小梅", "en": "Mei"}, "role": {"zh": "血漿置換護理師", "en": "Apheresis nurse"}, "tag": "APH", "color": "#3b8f6a", "body": "nurse",
+   "about": {"zh": "推著一台比她還高的置換機穿過整間醫院。她說機器有個性，週二特別愛鬧脾氣。",
+             "en": "Pushes an exchange machine taller than herself across the whole hospital. Insists the machine has moods, and sulks especially on Tuesdays."}},
+  "patient-yun": {"name": {"zh": "小芸", "en": "Yun"}, "role": {"zh": "6 床 · 頭痛與瘀青", "en": "Bed 6 · headache and bruises"}, "tag": "P6", "color": "#c9596a", "body": "patient",
+   "about": {"zh": "31 歲幼兒園老師。頭痛三天、腿上莫名瘀青、尿像可樂。今天上課叫錯小朋友的名字，園長嚇到送她來。急診寫：偏頭痛、月經期瘀青。（虛擬個案）",
+             "en": "Thirty-one, a kindergarten teacher. Three days of headache, unexplained bruises on her legs, cola-coloured urine. Today in class she called the children by the wrong names, and the head teacher brought her in. ER note: migraine, period bruising. (Fictional.)"}},
+  "family-xiang": {"name": {"zh": "阿翔", "en": "Xiang"}, "role": {"zh": "小芸的先生", "en": "Yun's husband"}, "tag": "FAM", "color": "#d08a3a", "body": "family",
+   "about": {"zh": "公車司機，下班直接從總站跑來，手上拿著班上小朋友畫的卡片。", "en": "A bus driver who ran straight from the depot after his shift, holding cards the children in her class drew."}},
+  "er-doc": {"name": {"zh": "急診阿駿", "en": "Dr Jun"}, "role": {"zh": "急診住院醫師", "en": "ER resident"}, "tag": "ER", "color": "#2e8aa8", "body": "resident",
+   "about": {"zh": "急診住院醫師，手腳很快。看到血小板低，第一個反應是「先補」。今晚他會學到另一種反應。", "en": "A fast-moving ER resident whose first reflex at a low platelet count is 'top it up'. Tonight he learns another reflex."}},
+  "lab": {"name": {"zh": "血液檢驗室阿蓁", "en": "Zhen, haematology lab"}, "role": {"zh": "血液檢驗醫檢師", "en": "Haematology technologist"}, "tag": "LAB", "color": "#6a9c3a", "phoneOnly": true,
+   "about": {"zh": "看到儀器旗標就推一張抹片自己看。今晚是她先看到碎片的。", "en": "Whenever the analyser flags, she makes a film and looks herself. Tonight she saw the fragments first."}},
+  "bloodbank": {"name": {"zh": "血庫小葳", "en": "Wei, blood bank"}, "role": {"zh": "血庫醫檢師", "en": "Blood-bank technologist"}, "tag": "BB", "color": "#8a6ac4", "phoneOnly": true,
+   "about": {"zh": "血庫值班，接到「血漿置換」四個字，就開始解凍一整車的血漿。", "en": "On blood-bank duty. Hear the words 'plasma exchange' and she starts thawing a whole trolley of plasma."}}
+ },
+ "places": {
+  "board": {"name": {"zh": "急診交班板", "en": "ER handover board"}, "hot": "whiteboard"},
+  "bed6": {"name": {"zh": "6 床", "en": "Bed 6"}, "hot": "bed"},
+  "scope": {"name": {"zh": "檢驗室顯微鏡", "en": "Lab microscope"}, "hot": "microscope"},
+  "monitor": {"name": {"zh": "監視器", "en": "Monitor"}, "hot": "monitor"},
+  "pacs": {"name": {"zh": "PACS 讀片站", "en": "PACS workstation"}, "hot": "imaging"},
+  "machine": {"name": {"zh": "血漿置換機", "en": "Plasma-exchange machine"}, "hot": "device"},
+  "desk": {"name": {"zh": "急診醫師桌", "en": "ER doctors' desk"}, "hot": "desk"}
+ },
+ "glossary": [
+  {"term": {"zh": "血栓性血小板低下紫斑症", "en": "TTP"}, "plain": {"zh": "全身小血管裡長出很多微小血栓，把血小板用光、把紅血球割碎，傷到腦、腎、心。少見、致命，但及早做血漿置換，多數人可以救回來。", "en": "Thrombotic thrombocytopenic purpura: tiny clots form throughout the small vessels, using up the platelets and shredding red cells, injuring brain, kidneys and heart. Rare and deadly, but most people survive with early plasma exchange."}},
+  {"term": {"zh": "碎裂紅血球", "en": "schistocytes"}, "plain": {"zh": "被小血栓像鐵絲網一樣割破的紅血球碎片，在抹片上像頭盔、三角形。看到很多，代表血管裡有東西在割紅血球。", "en": "Fragments of red cells sliced by tiny clots as if by wire mesh; on the film they look like helmets and triangles. Many of them mean something in the vessels is cutting red cells."}},
+  {"term": {"zh": "微血管病性溶血", "en": "microangiopathic haemolysis"}, "plain": {"zh": "紅血球在小血管裡被割碎破掉。血紅素下降、膽紅素和乳酸脫氫酶上升，抹片上有碎裂紅血球。", "en": "Red cells torn apart in small vessels. Haemoglobin falls, bilirubin and LDH rise, and the film shows schistocytes."}},
+  {"term": {"zh": "ADAMTS13", "en": "ADAMTS13"}, "plain": {"zh": "一種負責把血液裡過長的黏性蛋白剪短的酵素。TTP 的人身體做出抗體把它關掉，黏性蛋白就一直黏血小板。要在血漿置換前抽血送驗。", "en": "An enzyme that trims an over-long sticky protein in the blood. In TTP the body makes an antibody that switches it off, so the sticky protein keeps catching platelets. The sample is drawn before plasma exchange begins."}},
+  {"term": {"zh": "血漿置換", "en": "plasma exchange"}, "plain": {"zh": "用機器把病人的血漿換掉，帶走抗體、補回正常的酵素。TTP 的主要治療，越早開始越好。", "en": "A machine swaps the patient's plasma, removing the antibody and replacing the missing enzyme. The main treatment for TTP, and the sooner the better."}},
+  {"term": {"zh": "乳酸脫氫酶", "en": "LDH"}, "plain": {"zh": "細胞破掉時會跑出來的酵素。溶血和組織缺血時會上升，也可以拿來追蹤治療有沒有效。", "en": "An enzyme released when cells break. It rises with haemolysis and tissue ischaemia, and helps track whether treatment is working."}},
+  {"term": {"zh": "假性血小板低下", "en": "pseudothrombocytopenia"}, "plain": {"zh": "血小板在試管裡結成團，儀器數不到，看起來很低，其實病人體內正常。抹片低倍看到結團就知道。", "en": "Platelets clump together in the tube so the analyser misses them and the count looks low, though the patient's real count is normal. Clumps on a low-power look at the film give it away."}},
+  {"term": {"zh": "瘀點", "en": "petechiae"}, "plain": {"zh": "皮膚上針尖大小、壓不退的紅紫點，是血小板不夠或血管出問題的跡象。", "en": "Pinpoint red-purple spots in the skin that do not fade when pressed: a sign of too few platelets or a vessel problem."}},
+  {"term": {"zh": "直接抗球蛋白試驗", "en": "direct antiglobulin test"}, "plain": {"zh": "檢查紅血球表面有沒有黏著抗體。自體免疫溶血通常陽性，TTP 通常陰性，可以幫忙分辨。", "en": "Checks whether antibodies coat the red cells. Usually positive in autoimmune haemolysis and negative in TTP, so it helps tell them apart."}},
+  {"term": {"zh": "危急值", "en": "critical value"}, "plain": {"zh": "危險到檢驗科必須立刻打電話的結果。接的人要複誦、記時間與姓名。", "en": "A result dangerous enough that the lab must phone at once. Whoever answers reads it back and records the time and names."}},
+  {"term": {"zh": "肌鈣蛋白", "en": "troponin"}, "plain": {"zh": "心肌受傷時會釋放的蛋白。TTP 的小血栓也會塞到心臟的小血管，所以要驗、要追。", "en": "A protein released when heart muscle is injured. TTP's tiny clots can block the heart's small vessels too, so it is measured and followed."}}
+ ],
+ "codex": [
+  {"id": "microscope", "kind": "equipment", "name": {"zh": "檢驗室顯微鏡", "en": "Lab microscope"}, "text": {"zh": "先低倍看全片：血小板有沒有結團、細胞分布均不均勻；再找紅血球剛好不重疊的單層區，換高倍數碎片。儀器會數數字，只有人眼會看形狀。", "en": "Low power first over the whole film: platelet clumps, even spread; then find the monolayer where red cells just stop overlapping and switch to high power to count fragments. Analysers count numbers; only eyes see shapes."}, "hot": "microscope"},
+  {"id": "apheresis-machine", "kind": "equipment", "name": {"zh": "血漿置換機", "en": "Plasma-exchange machine"}, "text": {"zh": "把血抽出來、離心分出血漿、丟掉，換上捐血者的血漿再送回去。管路要預充、抗凝依規範、全程看著病人的血壓和鈣。", "en": "Draws blood, spins off the plasma, discards it, and returns the cells with donor plasma. The circuit is primed, anticoagulated per protocol, and the patient's pressure and calcium are watched throughout."}, "hot": "device"},
+  {"id": "monitor", "kind": "equipment", "name": {"zh": "監視器", "en": "Monitor"}, "text": {"zh": "TTP 的病人，腦和心是最怕被小血栓塞到的地方。監視器上的節律和病人說話清不清楚，要一起看。", "en": "In TTP the brain and the heart are the places small clots hurt most. Watch the rhythm on the monitor together with how clearly the patient is speaking."}, "hot": "monitor"},
+  {"id": "pacs", "kind": "equipment", "name": {"zh": "PACS 讀片站", "en": "PACS workstation"}, "text": {"zh": "頭部電腦斷層推到這裡。血小板很低又意識改變，第一個要排除的是腦出血；斷層正常，不代表腦沒有被影響。", "en": "The head CT lands here. With very low platelets and a changed mind, the first thing to exclude is bleeding in the brain; a normal CT does not mean the brain is unaffected."}, "hot": "imaging"},
+  {"id": "plasma-bags", "kind": "equipment", "name": {"zh": "解凍血漿", "en": "Thawed plasma"}, "text": {"zh": "血庫一整車解凍好的血漿，每一袋都要兩個人核對病人、血型與效期。置換用的抗凝劑會抓走血裡的鈣，所以病人說嘴唇麻，要當一回事。", "en": "A trolley of thawed plasma from the blood bank; every bag is checked by two people for patient, group and expiry. The exchange anticoagulant binds calcium, so when a patient says her lips are tingling, it matters."}, "hot": "drugs"},
+  {"id": "class-cards", "kind": "item", "name": {"zh": "小朋友畫的卡片", "en": "The children's cards"}, "text": {"zh": "一疊蠟筆畫的卡片，每一張都寫著「老師快點好」，有一張把老師畫成超人，披風上寫著小芸。阿翔把它們用膠帶貼在 6 床的簾子上。", "en": "A stack of crayon cards, each saying 'Get well soon, teacher'; one draws her as a superhero with YUN across the cape. Xiang taped them to bed 6's curtain."}},
+  {"id": "where-did-they-go", "kind": "concept", "name": {"zh": "血小板跑去哪裡了", "en": "Where did the platelets go?"}, "text": {"zh": "血小板低，只有幾個可能：做不出來（骨髓）、被破壞（免疫）、被用掉（血栓、出血）、被藏起來（脾臟），或根本是假的（試管裡結團）。抹片是第一個答案：結團說假性、碎裂紅血球說被小血栓用掉。在 TTP，血小板低是被用掉，所以補進去的血小板也可能被用掉。", "en": "Low platelets have only a few explanations: not made (marrow), destroyed (immune), used up (clots, bleeding), hidden (spleen), or not real at all (clumped in the tube). The film gives the first answer: clumps say pseudo, schistocytes say consumed by tiny clots. In TTP the platelets are being consumed, so transfused platelets may be consumed too."}},
+  {"id": "ttp-clock", "kind": "concept", "name": {"zh": "TTP 的時鐘", "en": "The TTP clock"}, "text": {"zh": "微血管病性溶血加血小板低下，沒有其他解釋時，要把 TTP 當急症：先抽 ADAMTS13 等送驗檢體，然後不等結果就開始血漿置換，依規範加上類固醇等治療。不治療的死亡率很高，結果要好幾天，所以先抽、先換，再確診。輸血小板除非有危及生命的出血，否則不常規給。", "en": "Microangiopathic haemolysis with low platelets and no other explanation: treat TTP as an emergency. Draw the ADAMTS13 and other samples first, then start plasma exchange without waiting for the results, with steroids and other treatment per protocol. Untreated mortality is high and results take days, so draw, exchange, then confirm. Platelet transfusion is not routine unless bleeding threatens life."}}
+ ],
+ "segs": [
+  {"id": "call", "name": {"zh": "檢驗室的電話", "en": "The lab's phone call"}, "sub": {"zh": "16:30 · 急診交班板", "en": "16:30 · ER handover board"}, "t": 990, "mood": "day",
+   "note": {"zh": "6 床：血小板危急值、抹片有碎片", "en": "Bed 6: critical platelets, fragments on the film"},
+   "beats": [
+    {"id": "c1", "to": "place:board", "guide": {"zh": "接檢驗室電話，看 6 床", "en": "Take the lab call; find bed 6"},
+     "ring": {"title": {"zh": "血液檢驗室來電", "en": "Haematology lab calling"}, "sub": {"zh": "急診 6 床血小板危急值，抹片有碎片", "en": "ER bed 6: critical platelets, fragments on the film"}, "call": true, "from": "lab"},
+     "lines": [
+      ["lab", {"zh": "阿蓁。急診 6 床小芸，血小板危急值，血紅素也低。我推了抹片看：沒有結團，碎裂紅血球很多。請複誦。", "en": "Zhen. ER bed 6, Yun: platelets at a critical value, haemoglobin low too. I made a film: no clumps, lots of schistocytes. Please read back."}],
+      ["me", {"zh": "複誦：6 床，血小板危急值、貧血、無結團、碎裂紅血球多。我現在過去看片。", "en": "Reading back: bed 6, critical platelets, anaemia, no clumping, many schistocytes. I'm coming to look at the film now."}],
+      ["er-doc", {"zh": "阿駿。她是偏頭痛加月經期瘀青啦，我已經開了血小板，等血庫送。", "en": "Jun. She's a migraine plus period bruising. I've already ordered platelets; waiting for the blood bank."}],
+      ["attending", {"zh": "（電話）戴主治。血小板先不要掛。血紅素下降、膽紅素和網狀紅血球呢？把證據放在一起再說。", "en": "(On the phone) Dr Tai. Do not hang those platelets yet. Falling haemoglobin; what about bilirubin and reticulocytes? Put the evidence together first."}]
+     ],
+     "mini": {"type": "stage", "case": "hematology-v38-hemolysis-trends", "stage": 1},
+     "post": [
+      ["me", {"zh": "間接膽紅素和乳酸脫氫酶都高，網狀紅血球上升。紅血球正在被破壞。", "en": "Indirect bilirubin and LDH both high, reticulocytes up. Red cells are being destroyed."}]
+     ]},
+    {"id": "c2", "to": "place:machine", "guide": {"zh": "把置換機準備好", "en": "Get the exchange machine ready"}, "roles": ["apheresis"],
+     "lines": [
+      ["attending", {"zh": "（傳訊息）小梅，急診可能有一個 TTP。機器先推下去，還不一定用，但不要讓機器等病人。", "en": "(Message) Mei, there may be a TTP in the ER. Take the machine down now. We may not need it, but the patient must never wait for the machine."}],
+      ["nurse-mei", {"zh": "收到。週二，它脾氣不好，我先開機自檢，管路包和抗凝的藥依規範帶齊。", "en": "On it. It's Tuesday and it's moody, so I'll power it up for its self-test and bring the circuit kit and anticoagulant per protocol."}]
+     ],
+     "mini": {"type": "find", "hot": "device", "q": {"zh": "找到血漿置換機，確認開機自檢通過", "en": "Find the plasma-exchange machine and confirm its self-test has passed"}},
+     "post": [
+      ["nurse-mei", {"zh": "自檢通過。機器到急診了，比血小板還早到。", "en": "Self-test passed. The machine is in the ER, ahead of the platelets."}]
+     ]}
+   ]},
+  {"id": "film", "name": {"zh": "親眼看抹片", "en": "The film, with your own eyes"}, "sub": {"zh": "17:00 · 檢驗室顯微鏡", "en": "17:00 · lab microscope"}, "t": 1020, "mood": "day",
+   "note": {"zh": "碎裂紅血球，不是結團", "en": "Schistocytes, not clumps"},
+   "beats": [
+    {"id": "f1", "to": "place:scope", "guide": {"zh": "重推一張抹片", "en": "Make a fresh film"}, "roles": ["resident"],
+     "lines": [
+      ["attending", {"zh": "自己推一張。角度、速度、力道，片子推得好，碎片才數得準。", "en": "Make one yourself. Angle, speed, pressure: a good film is the only kind you can count fragments on."}]
+     ],
+     "mini": {"type": "drill", "template": "hematology", "drill": "smear"},
+     "post": [
+      ["me", {"zh": "有羽毛狀的尾巴，單層區夠大。", "en": "A feathered edge and a good-sized monolayer."}]
+     ]},
+    {"id": "f2", "to": "place:scope", "guide": {"zh": "照順序判讀抹片", "en": "Read the film in order"},
+     "lines": [
+      ["attending", {"zh": "看片也有順序。跳過低倍，你會漏掉結團；跳過核對，你可能看的是別人的血。", "en": "Reading a film has an order too. Skip low power and you miss clumps; skip the identity check and you may be reading someone else's blood."}]
+     ],
+     "mini": {"type": "order", "q": {"zh": "判讀血液抹片：把步驟排對", "en": "Reading a blood film: put the steps in order"},
+      "steps": [
+       {"zh": "核對檢體與病人身分", "en": "Check the sample against the patient"},
+       {"zh": "低倍看全片與血小板結團", "en": "Low power: whole film, platelet clumps"},
+       {"zh": "找紅血球單層區", "en": "Find the red-cell monolayer"},
+       {"zh": "高倍看形狀，數碎裂紅血球", "en": "High power: shapes, count schistocytes"},
+       {"zh": "回報並記錄判讀者與時間", "en": "Report; record reader and time"}
+      ]},
+     "post": [
+      ["me", {"zh": "低倍沒有結團，不是假性血小板低下。高倍每個視野都有頭盔形、三角形的碎片。", "en": "No clumps at low power, so not pseudothrombocytopenia. At high power, helmet and triangle fragments in every field."}],
+      ["attending", {"zh": "微血管病性溶血加血小板低下。現在，去看病人。", "en": "Microangiopathic haemolysis with low platelets. Now go and see the patient."}]
+     ]}
+   ]},
+  {"id": "bed6", "name": {"zh": "6 床小芸", "en": "Bed 6, Yun"}, "sub": {"zh": "17:45 · 6 床", "en": "17:45 · bed 6"}, "t": 1065, "mood": "eve",
+   "note": {"zh": "擋住一袋不該給的血小板", "en": "Held back a platelet bag that should not go in"},
+   "beats": [
+    {"id": "b1", "to": "patient-yun", "guide": {"zh": "去 6 床看小芸", "en": "See Yun in bed 6"},
+     "lines": [
+      ["patient-yun", {"zh": "醫師，我只是頭痛，腿上的瘀青是撞到的吧。今天上課叫錯名字，小朋友笑我。", "en": "Doctor, it's just a headache; the bruises must be from bumping into things. I called the kids the wrong names today and they laughed at me."}],
+      ["me", {"zh": "小芸，尿的顏色最近怎麼樣？現在幾月幾號，妳在哪裡？", "en": "Yun, what colour has your urine been lately? What's the date today, and where are you?"}],
+      ["patient-yun", {"zh": "尿像可樂……今天是，嗯，禮拜……我在幼兒園？不對，這裡是醫院。", "en": "Like cola... today is, um, a... I'm at the kindergarten? No, wait, this is a hospital."}],
+      ["sys", {"zh": "腿上滿是瘀點和瘀青，說話時找不到字。碎片、溶血、血小板低、神經症狀。拼圖的名字叫 TTP。", "en": "Petechiae and bruises across her legs, words slipping away mid-sentence. Fragments, haemolysis, low platelets, neurological signs. The puzzle has a name: TTP."}],
+      ["er-doc", {"zh": "血小板到了。我先掛上去，等一下你們放中心導管比較安全吧？", "en": "The platelets are here. I'll hang them now; that makes your central line safer later, right?"}]
+     ],
+     "mini": {"type": "choice", "q": {"zh": "高度懷疑 TTP，血小板危急值，沒有大出血。血小板到了，你怎麼做？", "en": "Strongly suspected TTP, critical platelets, no major bleeding. The platelets have arrived. What do you do?"},
+      "options": [
+       {"zh": "先不輸血小板，叫師傅、啟動血漿置換", "en": "Hold the platelets; call the mentor, start plasma exchange", "ok": true, "set": {"held-platelets": true},
+        "why": {"zh": "TTP 的血小板低是被小血栓用掉，補進去可能成為更多血栓的材料。沒有危及生命的出血時不常規輸。導管由有經驗的人在超音波導引下放，置換越早越好。", "en": "In TTP the platelets are consumed by tiny clots, and transfused platelets may feed more clots. Without life-threatening bleeding they are not given routinely. An experienced operator places the line under ultrasound guidance, and exchange starts as early as possible."}},
+       {"zh": "先輸血小板到安全範圍再說", "en": "Transfuse platelets to a safe level first", "ok": false, "set": {"held-platelets": false},
+        "why": {"zh": "在 TTP，血小板低不是「不夠」，是「被用掉」。在沒有大出血時，補血小板沒有解決問題，還可能加重血栓。", "en": "In TTP low platelets are not 'too few' but 'used up'. Without major bleeding, transfusing them solves nothing and may worsen the clotting."}},
+       {"zh": "等 ADAMTS13 結果確診再處理", "en": "Wait for the ADAMTS13 result to confirm", "ok": false, "set": {"held-platelets": false},
+        "why": {"zh": "結果要好幾天，TTP 不會等。先抽檢體，再立刻開始治療。", "en": "The result takes days, and TTP will not wait. Draw the sample, then start treatment immediately."}}
+      ]},
+     "post": [
+      ["attending", {"zh": "（到了）阿駿，血小板退回血庫。不是你做錯，是今晚學一個新反射：血小板低，先問它們跑去哪裡了。", "en": "(Arriving) Jun, send the platelets back to the blood bank. You did nothing wrong; tonight you learn a new reflex. Low platelets: first ask where they went."}]
+     ]},
+    {"id": "b2", "to": "place:bed6", "guide": {"zh": "做神經學檢查並記時間", "en": "Neurological exam, timed"}, "roles": ["resident"],
+     "lines": [
+      ["attending", {"zh": "神經學檢查做一次、寫上時間。今晚她說話清不清楚，是我們看治療有沒有效的第一個指標。", "en": "One neurological examination, with the time written down. How clearly she speaks tonight is our first sign of whether treatment is working."}],
+      ["me", {"zh": "定向力時間錯、地點對。找字困難，右手握力稍弱，沒有頸部僵硬。18:00 記錄。", "en": "Oriented to place, not time. Word-finding difficulty, slightly weaker right grip, no neck stiffness. Recorded at 18:00."}],
+      ["patient-yun", {"zh": "醫師，你可以幫我打給園長嗎？明天的點心是我負責的，綠豆湯。", "en": "Doctor, could you call the head teacher for me? I'm in charge of tomorrow's snack. Mung-bean soup."}]
+     ]}
+   ]},
+  {"id": "ct", "name": {"zh": "頭部斷層與送檢", "en": "Head CT and the samples"}, "sub": {"zh": "18:30 · PACS 讀片站", "en": "18:30 · PACS workstation"}, "t": 1110, "mood": "eve",
+   "note": {"zh": "排除腦出血；檢體在置換前抽好", "en": "Brain bleed excluded; samples before exchange"},
+   "beats": [
+    {"id": "i1", "to": "place:pacs", "guide": {"zh": "看小芸的頭部斷層", "en": "Read Yun's head CT"},
+     "lines": [
+      ["attending", {"zh": "血小板這麼低、又在找不到字，置換之前要先回答一個問題。", "en": "Platelets this low, and she is losing her words. One question must be answered before the exchange."}]
+     ],
+     "mini": {"type": "imaging", "region": "head",
+      "question": {"zh": "血小板危急值、意識改變的小芸，為什麼要先照頭部電腦斷層？斷層正常代表腦沒事嗎？", "en": "Why does Yun, with critical platelets and confusion, need a head CT first? Does a normal CT mean her brain is fine?"},
+      "answer": {"zh": "先排除顱內出血，因為那會改變處置與風險。不代表沒事：TTP 的神經症狀多半來自微小血栓造成的小範圍缺血，斷層常常看不到。斷層正常，治療照樣要快，不能因此放慢。", "en": "To exclude bleeding inside the skull, which would change management and risk. It does not mean she is fine: TTP's neurological symptoms mostly come from tiny clots causing small areas of ischaemia that a CT often cannot see. A normal CT changes nothing about the urgency."}},
+     "post": [
+      ["me", {"zh": "沒有出血。神經症狀還在，所以時鐘還在走。", "en": "No haemorrhage. The neurological signs persist, so the clock is still running."}]
+     ]},
+    {"id": "i2", "to": "nurse-mei", "guide": {"zh": "確認置換前的檢體", "en": "Confirm the pre-exchange samples"},
+     "ring": {"title": {"zh": "血庫小葳", "en": "Wei, blood bank"}, "sub": {"zh": "血漿解凍中，第一批快好了", "en": "Plasma thawing; the first batch nearly ready"}, "from": "bloodbank"},
+     "lines": [
+      ["nurse-mei", {"zh": "置換機到了。開始之前，ADAMTS13、直接抗球蛋白試驗、其他送檢都要先抽好。一換下去，血就不是她原本的血了。", "en": "The machine is here. Before we start, ADAMTS13, the direct antiglobulin test and the other samples must be drawn. Once we exchange, the blood is no longer quite hers."}],
+      ["me", {"zh": "已經抽了，標籤上寫了時間，註明「置換前」。", "en": "Drawn already, labelled with the time and marked 'pre-exchange'."}],
+      ["nurse-mei", {"zh": "很好。今天週二，機器脾氣不好，我們對它溫柔一點。", "en": "Good. It's Tuesday and the machine is in a mood, so let's be gentle with it."}]
+     ]}
+   ]},
+  {"id": "exchange", "name": {"zh": "置換開始", "en": "The exchange begins"}, "sub": {"zh": "19:30 · 6 床與置換機", "en": "19:30 · bed 6 and the machine"}, "t": 1170, "mood": "eve",
+   "note": {"zh": "抽搐：保護她，加快治療", "en": "A seizure: protect her, press on with treatment"},
+   "beats": [
+    {"id": "x1", "to": "place:machine", "guide": {"zh": "看置換機開始運轉", "en": "Watch the exchange start"}, "when": {"flag": "held-platelets", "is": true},
+     "lines": [
+      ["nurse-mei", {"zh": "導管是加護病房學長在超音波下放的，一次就進，沒有出血。管路預充好了，第一袋血漿兩人核對完成，開始。", "en": "The ICU senior placed the line under ultrasound, first pass, no bleeding. Circuit primed, first plasma bag double-checked; starting."}],
+      ["attending", {"zh": "從電話到置換開始，你們只用了三個小時。這在 TTP 很重要。", "en": "From phone call to exchange in three hours. In TTP that matters a great deal."}]
+     ]},
+    {"id": "x2", "to": "place:machine", "guide": {"zh": "看置換機開始運轉", "en": "Watch the exchange start"}, "when": {"flag": "held-platelets", "is": false},
+     "lines": [
+      ["nurse-mei", {"zh": "血小板輸完了，數字只升了一點點，半小時後又掉回去。置換現在才開始。", "en": "The platelets went in; the count rose a little and was back down within half an hour. The exchange is only starting now."}],
+      ["attending", {"zh": "她剛剛講話更不清楚了。我們沒辦法證明是那袋血小板，但這就是 TTP 不常規輸的原因：它們被用掉，還可能變成更多血栓。", "en": "Her speech got worse just now. We cannot prove it was that bag, but this is why platelets are not routine in TTP: they get used up, and may become more clot."}]
+     ]},
+    {"id": "x3", "to": "place:monitor", "guide": {"zh": "監視器在叫，回 6 床", "en": "The monitor is alarming: back to bed 6"},
+     "lines": [
+      ["sys", {"zh": "小芸的眼睛往一邊飄，右手開始規律抽動，接著全身。置換機還在轉。", "en": "Yun's eyes drift to one side, her right hand begins to jerk rhythmically, then her whole body. The machine keeps turning."}]
+     ],
+     "mini": {"type": "vitals", "event": "seizure",
+      "options": [
+       {"zh": "側躺保護呼吸道、計時、叫人，依規範處理", "en": "On her side, protect the airway, time it, call for help, treat per protocol", "ok": true,
+        "why": {"zh": "先保護她：側躺、移開危險物、給氧、計時，依規範用藥止住發作，同時確認管路安全。抽搐是 TTP 在腦的表現，止住之後，置換要繼續，而且更急。", "en": "Protect her first: on her side, hazards away, oxygen, time it, stop the seizure with drugs per protocol, and secure the lines. The seizure is TTP in the brain; once it stops, the exchange continues, more urgently than before."}},
+       {"zh": "壓住手腳，塞東西進嘴巴防咬舌", "en": "Hold her limbs down; put something in her mouth", "ok": false,
+        "why": {"zh": "壓住會造成受傷，塞東西會傷牙齒、堵呼吸道。保護，不是約束。", "en": "Restraint causes injury, and objects in the mouth break teeth and block the airway. Protect; do not restrain."}},
+       {"zh": "先停掉置換，等發作完再看", "en": "Stop the exchange and wait until it ends", "ok": false,
+        "why": {"zh": "處理發作是現在的事，但置換正是在治療發作的原因。暫停與否由團隊依當下安全判斷，不是放著等。", "en": "Treating the seizure is the job right now, but the exchange is treating its cause. Whether to pause is a team decision on safety in the moment, not a reason to wait and watch."}}
+      ]},
+     "post": [
+      ["nurse-mei", {"zh": "停下來了。管路完好，機器沒有警報。她在呼吸，血氧回來了。", "en": "It's stopped. Lines intact, no machine alarms. She's breathing, oxygen back up."}],
+      ["attending", {"zh": "類固醇依規範已經給了。今晚請加護病房接手，置換照計畫完成。", "en": "Steroids per protocol are in. ICU takes her tonight, and the exchange completes as planned."}]
+     ]}
+   ]},
+  {"id": "xiang", "name": {"zh": "阿翔的問題", "en": "Xiang's question"}, "sub": {"zh": "21:00 · 6 床簾外", "en": "21:00 · outside bed 6's curtain"}, "t": 1260, "mood": "night",
+   "note": {"zh": "不是血癌；是一個被關掉的酵素", "en": "Not leukaemia: an enzyme switched off"},
+   "beats": [
+    {"id": "h1", "to": "family-xiang", "guide": {"zh": "跟阿翔說明病情", "en": "Explain to Xiang"},
+     "lines": [
+      ["family-xiang", {"zh": "醫師，血小板低、要換血，是不是血癌？她下禮拜還要帶小朋友去動物園。", "en": "Doctor, low platelets and changing her blood: is it leukaemia? She's supposed to take the kids to the zoo next week."}],
+      ["me", {"zh": "目前看起來不是血癌。我們懷疑的是血栓性血小板低下紫斑症，簡稱 TTP。", "en": "It doesn't look like leukaemia. What we suspect is thrombotic thrombocytopenic purpura, TTP for short."}],
+      ["me", {"zh": "她的身體做出抗體，關掉了一個叫 ADAMTS13 的酵素，血液裡就一直長小血栓。", "en": "Her body made an antibody that switched off an enzyme called ADAMTS13, so tiny clots keep forming in her blood."}],
+      ["me", {"zh": "血漿置換是把抗體帶走、把酵素補回來。這個病很危險，但早治療，多數人可以回去上班。", "en": "Plasma exchange takes the antibody away and gives the enzyme back. It's a dangerous illness, but treated early most people go back to work."}],
+      ["family-xiang", {"zh": "……那我先把這些貼起來。班上小朋友畫的，她醒來會想看。", "en": "...Then I'll stick these up first. The kids in her class drew them; she'll want to see them when she wakes."}]
+     ],
+     "item": "class-cards"}
+   ]},
+  {"id": "icu", "name": {"zh": "加護病房前", "en": "Before ICU"}, "sub": {"zh": "22:30 · 監視器", "en": "22:30 · monitor"}, "t": 1350, "mood": "night",
+   "note": {"zh": "心臟與腎臟：用症狀決定急迫性", "en": "Heart and kidneys: urgency by symptoms"},
+   "beats": [
+    {"id": "u1", "to": "place:monitor", "guide": {"zh": "看心臟和尿量", "en": "Check the heart and the urine"},
+     "ring": {"title": {"zh": "血液檢驗室來電", "en": "Haematology lab calling"}, "sub": {"zh": "6 床小芸：肌鈣蛋白上升，請複誦", "en": "Bed 6, Yun: troponin rising; read back"}, "call": true, "from": "lab"},
+     "lines": [
+      ["lab", {"zh": "阿蓁。6 床小芸，肌鈣蛋白比下午高，肌酸酐也上升。請複誦。", "en": "Zhen. Bed 6, Yun: troponin higher than this afternoon, creatinine rising too. Please read back."}],
+      ["nurse-mei", {"zh": "第一次置換做完。她說胸口有點悶、心跳快，尿袋這兩個小時沒什麼增加。", "en": "First exchange done. She says her chest feels a bit tight and her heart is racing, and the urine bag has barely grown in two hours."}],
+      ["attending", {"zh": "胸悶、心悸、尿少。小血栓也會去心臟和腎臟。這三個字告訴你什麼？", "en": "Chest tightness, palpitations, low urine. Tiny clots reach the heart and kidneys too. What do those three tell you?"}]
+     ],
+     "mini": {"type": "stage", "case": "hematology-v38-hemolysis-trends", "stage": 3},
+     "post": [
+      ["me", {"zh": "升級評估循環和腎功能：心電圖、肌鈣蛋白、腎功能、尿量每小時。加護病房學長已經知道。", "en": "Escalate assessment of circulation and kidneys: ECG, troponin, renal function, hourly urine. The ICU fellow already knows."}]
+     ]},
+    {"id": "u2", "to": "nurse-mei", "guide": {"zh": "處理嘴唇發麻", "en": "Deal with the tingling lips"}, "roles": ["apheresis"],
+     "lines": [
+      ["patient-yun", {"zh": "護理師，我的嘴唇和手指麻麻的，像吃了花椒。", "en": "Nurse, my lips and fingers are tingling, like after Sichuan pepper."}],
+      ["nurse-mei", {"zh": "這是置換用的抗凝劑把血裡的鈣抓走了。我先把速度放慢，依規範補鈣，通知醫師，再看一次心電圖。", "en": "That's the exchange anticoagulant binding the calcium in her blood. I'll slow the rate, replace calcium per protocol, tell the doctor, and check the ECG again."}],
+      ["nurse-mei", {"zh": "每一袋血漿兩個人核對，每一次發麻都要問。小芸，麻的感覺有變化就馬上跟我說。", "en": "Every plasma bag checked by two people, every tingle asked about. Yun, tell me at once if the tingling changes."}]
+     ]}
+   ]},
+  {"id": "night-handover", "name": {"zh": "夜間交班", "en": "Night handover"}, "sub": {"zh": "23:30 · 急診交班板", "en": "23:30 · ER handover board"}, "t": 1410, "mood": "night",
+   "note": {"zh": "交出時鐘：置換、檢體、心與腎", "en": "Handed over the clock: exchange, samples, heart, kidneys"},
+   "beats": [
+    {"id": "n1", "to": "place:board", "guide": {"zh": "寫交班給加護病房", "en": "Write the ICU handover"}, "roles": ["resident"],
+     "lines": [
+      ["me", {"zh": "6 床小芸：疑似 TTP，碎裂紅血球多、直接抗球蛋白試驗待回、ADAMTS13 置換前已抽。首次置換完成，類固醇已給。", "en": "Bed 6, Yun: suspected TTP, many schistocytes, direct antiglobulin test pending, ADAMTS13 drawn pre-exchange. First exchange done, steroids per protocol."}],
+      ["me", {"zh": "抽搐一次已止，斷層無出血。不常規輸血小板。明早追血小板、乳酸脫氫酶、肌鈣蛋白、腎功能。", "en": "One seizure, controlled; CT without bleeding. No routine platelet transfusion. Tomorrow morning: platelets, LDH, troponin, renal function."}]
+     ]},
+    {"id": "n2", "to": "attending", "guide": {"zh": "聽師傅的下班總結", "en": "The mentor's debrief"},
+     "lines": [
+      ["attending", {"zh": "今晚檢傷單上寫的是偏頭痛和月經期瘀青。救她的是檢驗室一個願意推片的人。", "en": "Tonight's triage sheet said migraine and period bruising. What saved her was a technologist willing to make a film."}],
+      ["attending", {"zh": "血小板低，先問它們去哪裡；看到碎片，先抽檢體、再置換；不確定的血小板，先不要掛。", "en": "Low platelets: ask where they went. Fragments: draw the samples, then exchange. Platelets you are unsure of: do not hang them."}],
+      ["er-doc", {"zh": "我把這三句寫在急診的血小板醫囑旁邊了。下次我會先打給你們。", "en": "I've written those three lines beside the ER platelet order set. Next time I'll call you first."}],
+      ["patient-yun", {"zh": "（推往加護病房的路上）阿翔……那張超人的，是小宇畫的。我叫對名字了吧？", "en": "(On the way to ICU) Xiang... the superhero one, Xiao-yu drew it. I got the name right, didn't I?"}]
+     ],
+     "end": true}
+   ]}
+ ],
+ "ending": {"title": {"zh": "下班了", "en": "End of shift"}, "sub": {"zh": "血小板低，先問它們跑去哪裡了", "en": "Low platelets: first ask where they went"},
+  "stats": ["stages", "drills", "choices", "calls", "items", "time"]}
+}

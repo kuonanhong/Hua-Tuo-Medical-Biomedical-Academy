@@ -1,0 +1,305 @@
+{
+  "format": "huatuo-shift-v2",
+  "department": "orthopedics",
+  "case": "paeds-elbow",
+  "caseTitle": {"zh": "粉紅色但沒有脈搏的手", "en": "Pink, but no pulse"},
+  "condition": {"zh": "外傷 · 兒童肘上骨折", "en": "Trauma · paediatric supracondylar fracture"},
+  "difficulty": 3,
+  "room": "er",
+  "title": {"zh": "骨科急診夜", "en": "An orthopaedic night in the ER"},
+  "tagline": {"zh": "一隻粉紅色的手、一支叉子、一個太緊的石膏", "en": "A pink hand, a dinner fork and a cast that was too tight"},
+  "minutes": 25,
+  "roles": [
+    {"id": "resident", "zh": "骨科住院醫師", "en": "Orthopaedic resident", "desc": {"zh": "急診小夜班。一個七歲的手肘、一位阿嬤的手腕、一通半夜的電話。先看手，再看片子。", "en": "Evening shift in the ER. A seven-year-old's elbow, a grandmother's wrist and a phone call in the middle of the night. Hand first, film second."}},
+    {"id": "cast-tech", "zh": "石膏室技術師", "en": "Plaster technician", "desc": {"zh": "夾板、石膏、剖開石膏的那一刀。你知道石膏哪裡會壓到皮膚，病人還沒喊你就先鬆了。", "en": "Splints, casts and the cut that splits a cast. You know where plaster presses on skin, and you loosen it before the patient has to shout."}}
+  ],
+  "cast": {
+    "attending": {"name": {"zh": "何主治", "en": "Dr Ho"}, "role": {"zh": "小兒骨科主治醫師（師傅）", "en": "Paediatric orthopaedic attending (mentor)"}, "tag": "ATT", "color": "#0f766e", "body": "mentor",
+      "about": {"zh": "口袋裡永遠有貼紙，先貼在自己手背上示範。口頭禪：「先看手，再看片子。」", "en": "Always has stickers in her pocket and demonstrates on the back of her own hand first. Catchphrase: 'Hand first, film second.'"}},
+    "er-doc": {"name": {"zh": "急診鄭醫師", "en": "Dr Cheng (ER)"}, "role": {"zh": "急診醫師", "en": "Emergency physician"}, "tag": "ER", "color": "#dc2626", "body": "specialist",
+      "about": {"zh": "鎮靜由她負責。她說：「我盯著呼吸，你們盯著骨頭。」", "en": "She runs the sedation. Her rule: 'I watch the breathing, you watch the bone.'"}},
+    "er-nurse": {"name": {"zh": "阿芳", "en": "Fang"}, "role": {"zh": "急診護理師", "en": "ER nurse"}, "tag": "RN", "color": "#9d4b7a", "body": "nurse",
+      "about": {"zh": "監視器的警報聲她分得出哪一種是真的。觀察區的簾子她永遠留一條縫。", "en": "She can tell which monitor alarm is real. She always leaves the observation-bay curtain open a crack."}},
+    "cast-master": {"name": {"zh": "老邱", "en": "Old Chiu"}, "role": {"zh": "石膏室師傅", "en": "Plaster-room master"}, "tag": "CST", "color": "#b45309", "body": "tech",
+      "about": {"zh": "做了三十年石膏。口頭禪：「石膏會說話，你要聽。」", "en": "Thirty years of plaster. Catchphrase: 'A cast talks. You have to listen.'"}},
+    "patient1": {"name": {"zh": "小恩", "en": "En"}, "role": {"zh": "病人・7 歲", "en": "Patient, 7"}, "tag": "PT1", "color": "#6b7280", "body": "patient",
+      "about": {"zh": "從單槓上摔下來，左手肘又腫又變形。第一個問題：「我還可以打躲避球嗎？」", "en": "Fell off the monkey bars: left elbow swollen and bent the wrong way. First question: 'Can I still play dodgeball?'"}},
+    "mother": {"name": {"zh": "小恩媽媽", "en": "En's mother"}, "role": {"zh": "家屬", "en": "Family"}, "tag": "FAM", "color": "#c2410c", "body": "family",
+      "about": {"zh": "來的路上給他吃了一塊餅乾，因為「他說餓」。她不知道這一塊餅乾會改變今晚的時間表。", "en": "Gave him a biscuit in the car because 'he said he was hungry'. She does not yet know that one biscuit will rearrange tonight's timetable."}},
+    "patient2": {"name": {"zh": "許阿姨", "en": "Mrs Hsu"}, "role": {"zh": "病人・68 歲市場魚販", "en": "Patient, 68, fish-stall owner"}, "tag": "PT2", "color": "#8a6d3b", "body": "patient",
+      "about": {"zh": "市場地板濕滑，手撐地跌倒，右手腕變成叉子的形狀。她最關心明天凌晨的魚貨。", "en": "Slipped on the wet market floor and landed on her hand: the right wrist now looks like a dinner fork. Her main worry is tomorrow's pre-dawn fish delivery."}},
+    "or-coord": {"name": {"zh": "開刀房協調師", "en": "Theatre coordinator"}, "role": {"zh": "開刀房協調師", "en": "Theatre coordinator"}, "tag": "OR", "color": "#2f6f9f", "phoneOnly": true,
+      "about": {"zh": "電話裡只問三件事：禁食、麻醉、幾點能進。", "en": "Asks only three things on the phone: fasting, anaesthesia, and what time you can come up."}}
+  },
+  "places": {
+    "board": {"name": {"zh": "急診白板", "en": "ER whiteboard"}, "hot": "whiteboard"},
+    "resus": {"name": {"zh": "急救區病床", "en": "Resus bay"}, "hot": "field"},
+    "monitor": {"name": {"zh": "監視器", "en": "Monitor"}, "hot": "monitor"},
+    "imaging": {"name": {"zh": "影像工作站", "en": "Imaging workstation"}, "hot": "imaging"},
+    "plaster": {"name": {"zh": "石膏台", "en": "Plaster bench"}, "hot": "instruments"},
+    "crash": {"name": {"zh": "急救車", "en": "Crash cart"}, "hot": "crash-cart"},
+    "obs": {"name": {"zh": "觀察區", "en": "Observation bay"}, "hot": "recovery"},
+    "desk": {"name": {"zh": "紀錄桌", "en": "Notes desk"}, "hot": "desk"},
+    "ambulance": {"name": {"zh": "救護車入口", "en": "Ambulance entrance"}, "hot": "door"}
+  },
+  "glossary": [
+    {"term": {"zh": "肘上骨折", "en": "supracondylar fracture"}, "plain": {"zh": "小孩手肘上方、肱骨最細的地方斷了。伸直手撐地摔倒最常見，附近有神經與動脈經過。", "en": "A break just above a child's elbow, at the thinnest part of the upper arm bone. Usually from a fall onto an outstretched hand; nerves and the artery run right past it."}},
+    {"term": {"zh": "Gartland 分級", "en": "Gartland classification"}, "plain": {"zh": "肘上骨折的分級：沒移位、部分移位、完全移位。分級決定要不要進開刀房。", "en": "The grading of supracondylar fractures: undisplaced, partly displaced, completely displaced. The grade decides whether the child goes to theatre."}},
+    {"term": {"zh": "前肱骨線", "en": "anterior humeral line"}, "plain": {"zh": "側面 X 光上沿肱骨前緣畫一條線，正常會穿過小頭的中間三分之一。線跑掉了，骨頭就移位了。", "en": "A line drawn down the front of the humerus on the lateral X-ray; normally it passes through the middle third of the capitellum. If it misses, the fragment has moved."}},
+    {"term": {"zh": "脂肪墊徵象", "en": "fat pad sign"}, "plain": {"zh": "關節裡出血把脂肪墊推起來，X 光上像一片帆。看到後側的帆，就算沒看到骨折線也要當骨折處理。", "en": "Blood in the joint lifts the fat pads so they look like sails on the X-ray. A posterior sail means a fracture even if you cannot see the line."}},
+    {"term": {"zh": "粉紅無脈手", "en": "pink pulseless hand"}, "plain": {"zh": "手是暖的、粉紅的、指甲按了會回血，但摸不到橈動脈。表示側枝循環撐著，但動脈被壓住或卡住，要盡快復位。", "en": "The hand is warm and pink and the nail beds refill, but there is no radial pulse. Collateral vessels are coping, but the artery is kinked or trapped: reduce the fracture promptly."}},
+    {"term": {"zh": "神經血管檢查", "en": "neurovascular examination"}, "plain": {"zh": "看、摸、動三件事：顏色與溫度、脈搏與回血、三條神經各自的動作與感覺。每次復位前後都要做一次。", "en": "Look, feel, move: colour and warmth, pulse and capillary refill, and the movement and sensation of each of the three nerves. Done before and after every reduction."}},
+    {"term": {"zh": "比 OK 的手勢", "en": "the OK sign"}, "plain": {"zh": "拇指與食指尖對尖圈成圓。圈不起來、變成捏扁的樣子，是前骨間神經受傷的訊號，肘上骨折最常傷到它。", "en": "Thumb tip to index-finger tip in a round circle. If the circle collapses into a pinch, the anterior interosseous nerve is injured, the nerve most often hurt in this fracture."}},
+    {"term": {"zh": "閉合復位", "en": "closed reduction"}, "plain": {"zh": "不開刀，用手法把骨頭拉回位置，再用石膏或鋼針固定。", "en": "Pulling the bone back into place by hand, without opening the skin, then holding it with a cast or pins."}},
+    {"term": {"zh": "鎮靜", "en": "procedural sedation"}, "plain": {"zh": "讓病人睡一下、不痛，但自己呼吸。需要監視器、氧氣、急救車，和一個只盯著呼吸的人。", "en": "The patient sleeps lightly and feels no pain but breathes for themselves. It needs a monitor, oxygen, the crash cart, and one person who watches nothing but the breathing."}},
+    {"term": {"zh": "禁食時間", "en": "fasting time"}, "plain": {"zh": "鎮靜或麻醉前胃要空，以免吐出來嗆到。一塊餅乾可以讓時間表往後挪。", "en": "The stomach must be empty before sedation or anaesthesia so nothing comes up and goes into the lungs. One biscuit can move the whole timetable."}},
+    {"term": {"zh": "橈骨遠端骨折", "en": "distal radius fracture"}, "plain": {"zh": "手腕上方的前臂骨斷了。老人家手撐地跌倒最常見，手腕會像叉子一樣翹起。", "en": "A break of the forearm bone just above the wrist. The commonest fracture after a fall onto the hand in older people; the wrist tilts up like a dinner fork."}},
+    {"term": {"zh": "脆弱性骨折", "en": "fragility fracture"}, "plain": {"zh": "站立高度以下的跌倒就斷了骨頭，表示骨頭本身不夠強。手腕是第一個警訊，下一次可能是髖部。", "en": "A bone that breaks from a fall from standing height or less, which means the bone itself is weak. The wrist is the first warning; the next one may be the hip."}},
+    {"term": {"zh": "剖開石膏", "en": "splitting the cast"}, "plain": {"zh": "石膏下腫脹讓壓力升高時，把石膏與裡面的棉墊一路剖到皮膚，讓壓力釋放。", "en": "When swelling under a cast raises the pressure, the plaster and the padding beneath it are cut all the way down to skin to let the pressure out."}}
+  ],
+  "codex": [
+    {"id": "cast-saw", "kind": "equipment", "name": {"zh": "石膏鋸", "en": "Cast saw"}, "hot": "instruments", "text": {"zh": "鋸片是震動不是旋轉，碰到皮膚不會切開，但會燙。老邱每切一刀就換個地方。", "en": "The blade oscillates rather than spins, so it does not cut skin, but it does get hot. Old Chiu moves to a new spot after every cut."}},
+    {"id": "monitor", "kind": "equipment", "name": {"zh": "床邊監視器", "en": "Bedside monitor"}, "hot": "monitor", "text": {"zh": "鎮靜時看三樣：血氧的數字、血氧的波形、吐氣的二氧化碳曲線。警報響了先看人，再看機器。", "en": "During sedation watch three things: the oxygen number, the oxygen waveform and the exhaled carbon-dioxide trace. When it alarms, look at the patient first, the machine second."}},
+    {"id": "crash-cart", "kind": "equipment", "name": {"zh": "急救車", "en": "Crash cart"}, "hot": "crash-cart", "text": {"zh": "鎮靜之前先確認：抽吸、甦醒球與面罩、氧氣、氣道器材。沒有這台車在旁邊，不開始鎮靜。", "en": "Checked before any sedation: suction, bag-valve mask, oxygen, airway kit. No cart beside the bed, no sedation."}},
+    {"id": "imaging-ws", "kind": "equipment", "name": {"zh": "影像工作站", "en": "Imaging workstation"}, "hot": "imaging", "text": {"zh": "小孩的手肘要正面、側面兩張，側面要是真的側面。看不懂的時候，拍對側來比。", "en": "A child's elbow needs an AP and a true lateral. When the picture makes no sense, image the other elbow for comparison."}},
+    {"id": "sticker", "kind": "item", "name": {"zh": "小恩的貼紙", "en": "En's sticker"}, "text": {"zh": "比出 OK 手勢之後得到的貼紙。他後來要求每一個走進簾子的人都比一次。", "en": "Earned for making the OK sign. He later demanded that everyone who came through the curtain make one too."}},
+    {"id": "post-film", "kind": "item", "name": {"zh": "復位後的 X 光", "en": "The post-reduction film"}, "text": {"zh": "許阿姨復位後的片子：掌傾、尺偏、長度都回來了。老邱三點加壓的手形留在石膏上。", "en": "Mrs Hsu's film after reduction: volar tilt, radial inclination and length all restored. The shape of Old Chiu's three-point mould is set in the plaster."}},
+    {"id": "ppp", "kind": "concept", "name": {"zh": "粉紅無脈手", "en": "The pink pulseless hand"}, "text": {"zh": "手暖、色粉紅、回血快，卻沒有脈搏：側枝循環在撐，不代表安全。固定在找到它的位置、盡快進開刀房復位，大多數復位後脈搏就回來；沒回來才談探查血管。絕對不要把手肘彎到底固定。", "en": "Warm, pink, brisk refill, no pulse: the collaterals are coping, which is not the same as safe. Splint the elbow where you found it, reduce it in theatre promptly; most pulses return after reduction, and only a hand that stays pulseless raises the question of exploring the artery. Never splint the elbow fully flexed."}},
+    {"id": "tight-cast", "kind": "concept", "name": {"zh": "石膏下的壓力", "en": "Pressure under the cast"}, "text": {"zh": "復位後的幾個小時腫得最厲害。痛越來越誇張、手指被動伸直會痛、發麻、變蒼白，順序通常是這樣；不要等到沒脈搏。剖開石膏與棉墊到皮膚、手與心臟同高，再評估。", "en": "Swelling peaks in the hours after reduction. Pain that escalates, pain on passively straightening the fingers, numbness, pallor: that is the usual order, and you never wait for the pulse to go. Split plaster and padding to skin, hand at heart level, then reassess."}},
+    {"id": "fls", "kind": "concept", "name": {"zh": "脆弱性骨折之後", "en": "After a fragility fracture"}, "text": {"zh": "手腕斷了，不只是手腕的事：骨密度、跌倒的原因、視力、藥物、家裡與工作場所的地板。骨折聯合照護從急診的這一張轉介單開始，下一次才不會是髖部。", "en": "A broken wrist is never only about the wrist: bone density, why she fell, eyesight, medicines, the floors at home and at work. Fracture liaison care starts with the referral written in the ER tonight, so that the next fracture is not a hip."}}
+  ],
+  "segs": [
+    {"id": "handover", "name": {"zh": "小夜交班", "en": "Evening handover"}, "sub": {"zh": "16:00 · 急診白板", "en": "16:00 · ER whiteboard"}, "t": 960, "mood": "day",
+     "note": {"zh": "交班：單槓與市場都在路上", "en": "Handover: the monkey bars and the market are on their way"},
+     "beats": [
+      {"id": "h1", "to": "er-nurse", "guide": {"zh": "找阿芳看急診白板", "en": "Find Fang at the ER whiteboard"},
+       "lines": [
+        ["er-nurse", {"zh": "骨科小夜的？來。你們的：兩個等石膏、一個等你看片。救護車剛通報：七歲男童單槓摔落，左手肘變形。", "en": "Ortho evening shift? Over here. Yours: two waiting for plaster, one waiting for you to read a film. And the ambulance just called: seven-year-old boy, fell off the monkey bars, left elbow deformed."}],
+        ["me", {"zh": "手的狀況有說嗎？", "en": "Did they say anything about the hand?"}],
+        ["er-nurse", {"zh": "說手是粉紅的。其他沒說。", "en": "They said the hand is pink. Nothing else."}],
+        ["sys", {"zh": "白板：16:10 救護車・七歲男童・左肘變形。16:30 石膏室兩位。", "en": "Whiteboard: 16:10 ambulance, boy of seven, left elbow deformity. 16:30 plaster room, two patients."}]
+       ]},
+      {"id": "h2", "to": "attending", "guide": {"zh": "找何主治", "en": "Find Dr Ho"},
+       "lines": [
+        ["attending", {"zh": "小兒骨科今天是我。小孩的手肘送來，你第一件事做什麼？", "en": "I'm on for paediatric orthopaedics tonight. A child's elbow comes through that door: what do you do first?"}],
+        ["me", {"zh": "先看手：顏色、溫度、回血、脈搏，然後三條神經。再看片子。", "en": "Hand first: colour, warmth, refill, pulse, then the three nerves. Film second."}],
+        ["attending", {"zh": "對。先看手，再看片子。片子不會跑，手會。", "en": "Right. Hand first, film second. The film isn't going anywhere; the hand might."}],
+        ["attending", {"zh": "還有，貼紙。小孩比 OK 的手勢給你看，要有獎品。", "en": "And stickers. When a child shows you the OK sign, there has to be a prize."}]
+       ]}
+     ]},
+    {"id": "elbow", "name": {"zh": "單槓摔下來", "en": "Off the monkey bars"}, "sub": {"zh": "16:30 · 急救區", "en": "16:30 · resus bay"}, "t": 990, "mood": "day",
+     "note": {"zh": "小恩：粉紅無脈手，原位固定", "en": "En: pink pulseless hand, splinted where it lay"},
+     "beats": [
+      {"id": "e1", "to": "patient1", "guide": {"zh": "去急救區看小恩的手", "en": "See En's hand in resus"},
+       "lines": [
+        ["patient1", {"zh": "醫師……我還可以打躲避球嗎？", "en": "Doctor... can I still play dodgeball?"}],
+        ["me", {"zh": "可以的，等骨頭長好。先讓我看看你的手，手肘不要動，我只看手指。", "en": "You can, once the bone has healed. Let me look at your hand first. Don't move the elbow; I only want the fingers."}],
+        ["mother", {"zh": "他來的路上一直喊痛，我給了他一塊餅乾。", "en": "He kept crying in the car, so I gave him a biscuit."}],
+        ["me", {"zh": "幾點吃的？這很重要，等一下跟您說為什麼。", "en": "What time was that? It matters; I'll explain in a moment."}],
+        ["mother", {"zh": "四點十分左右。", "en": "About ten past four."}]
+       ],
+       "mini": {"type": "stage", "case": "orthopedics-fracture-description-xray", "stage": 1},
+       "post": [
+        ["me", {"zh": "手是暖的、粉紅的、按指甲回血很快。可是——橈動脈摸不到。", "en": "The hand is warm and pink and the nail beds refill quickly. But... no radial pulse."}],
+        ["attending", {"zh": "粉紅無脈手。繼續，三條神經。", "en": "A pink pulseless hand. Carry on: three nerves."}]
+       ]},
+      {"id": "e2", "to": "patient1", "guide": {"zh": "三條神經：OK、讚、交叉手指", "en": "Three nerves: OK, thumbs-up, crossed fingers"},
+       "lines": [
+        ["me", {"zh": "小恩，跟我比 OK 的手勢。拇指和食指尖對尖，圈得起來嗎？", "en": "En, make the OK sign with me. Thumb tip to finger tip: can you make a round circle?"}],
+        ["patient1", {"zh": "……這樣？", "en": "...like this?"}],
+        ["me", {"zh": "圓的，很好。比個讚、手指張開、食指中指交叉。都會。這裡有感覺嗎？", "en": "Round, good. Thumbs up, spread your fingers, cross the first two. All there. Can you feel this?"}],
+        ["patient1", {"zh": "有。醫師，我比得很好吧？", "en": "Yes. Doctor, I did it really well, right?"}],
+        ["attending", {"zh": "比得很好。貼紙給他。神經都在，動脈被壓住了。你的決定？", "en": "Very well. Give him the sticker. Nerves intact, artery compromised. Your decision?"}]
+       ],
+       "item": "sticker",
+       "mini": {"type": "choice", "q": {"zh": "完全移位的肘上骨折、粉紅無脈手，現在怎麼做？", "en": "A completely displaced supracondylar fracture with a pink pulseless hand. What now?"},
+        "options": [
+         {"zh": "原位夾板、不彎不伸、通知開刀房盡快復位", "en": "Splint as found, no flexing or straightening, call theatre for prompt reduction", "ok": true, "set": {"elbow": "splint"},
+          "why": {"zh": "對。手肘固定在你找到它的位置，微彎就好。大多數復位之後脈搏就回來了。", "en": "Right. The elbow stays where you found it, gently flexed. In most children the pulse returns once the fracture is reduced."}},
+         {"zh": "把手肘彎到底，用石膏固定住", "en": "Flex the elbow fully and hold it in a cast", "ok": false, "set": {"elbow": "flex"},
+          "why": {"zh": "彎到底會把腫脹的手肘前方壓得更緊，動脈與神經一起受害。", "en": "Full flexion squeezes the swollen front of the elbow even harder; artery and nerve suffer together."}},
+         {"zh": "手是暖的、神經也好，明早再看", "en": "The hand is warm and the nerves fine; review in the morning", "ok": false, "set": {"elbow": "wait"},
+          "why": {"zh": "粉紅只是側枝循環在撐。等一夜，可能等到蒼白、冰冷與壞死。", "en": "Pink only means the collaterals are coping. Wait a night and you may be waiting for pale, cold and dead."}}
+        ]}},
+      {"id": "e3", "roles": ["cast-tech"], "to": "place:plaster", "guide": {"zh": "做原位後側夾板", "en": "Make the posterior splint as found"},
+       "lines": [
+        ["cast-master", {"zh": "小孩的夾板：後側板，棉墊要厚，手肘就停在他現在的角度，不多彎一度。", "en": "A child's splint: posterior slab, thick padding, and the elbow stays at exactly the angle it is in now, not one degree more."}],
+        ["me", {"zh": "我量長度，腋下到掌心。繃帶不繞緊，手指全部露出來。", "en": "I'll measure: armpit to palm. Bandage loose, every finger showing."}],
+        ["cast-master", {"zh": "對。石膏會說話，夾板也會：他如果開始哭得不一樣，就是在說話。", "en": "Right. A cast talks and so does a splint: if his crying changes, that's it talking."}],
+        ["mother", {"zh": "他現在哭是因為不能打躲避球。", "en": "Right now he's crying because of the dodgeball."}]
+       ]}
+     ]},
+    {"id": "films", "name": {"zh": "片子與餅乾", "en": "The film and the biscuit"}, "sub": {"zh": "17:15 · 影像工作站", "en": "17:15 · imaging workstation"}, "t": 1035, "mood": "eve",
+     "note": {"zh": "Gartland 完全移位；禁食時間重排", "en": "Gartland fully displaced; fasting time rearranged"},
+     "beats": [
+      {"id": "f1", "to": "place:imaging", "guide": {"zh": "和何主治看小恩的片子", "en": "Read En's films with Dr Ho"},
+       "lines": [
+        ["attending", {"zh": "片子上來。側面片：兩條線、一個徵象。說。", "en": "Films up. The lateral: two lines and one sign. Go."}]
+       ],
+       "mini": {"type": "imaging", "region": "upper-limb",
+        "question": {"zh": "小孩手肘的側面 X 光，怎麼看出肘上骨折與移位？", "en": "On a child's lateral elbow X-ray, how do you spot a supracondylar fracture and its displacement?"},
+        "answer": {"zh": "前肱骨線正常穿過小頭的中間三分之一，線跑到小頭前面表示遠端往後移位；橈骨頭的延長線要指向小頭；後側脂肪墊徵象代表關節內出血，即使看不到骨折線也要當骨折。再看成角與旋轉，決定 Gartland 分級。", "en": "The anterior humeral line should pass through the middle third of the capitellum; if it runs in front, the distal fragment has gone backwards. The radiocapitellar line must point at the capitellum. A posterior fat pad sign means blood in the joint, so treat it as a fracture even without a visible line. Then angulation and rotation decide the Gartland classification."}},
+       "post": [
+        ["attending", {"zh": "前肱骨線完全離開小頭，後側皮質斷開：Gartland 分級第三型。", "en": "The anterior humeral line misses the capitellum entirely and the posterior cortex is broken: Gartland classification type three."}],
+        ["me", {"zh": "完全移位加無脈。今晚開刀房：閉合復位加經皮鋼針固定。", "en": "Fully displaced and pulseless. Theatre tonight: closed reduction and percutaneous pinning."}],
+        ["attending", {"zh": "誰打電話？", "en": "Who makes the call?"}],
+        ["me", {"zh": "我。", "en": "I do."}]
+       ]},
+      {"id": "f2", "to": "attending", "guide": {"zh": "小兒骨折哪裡不一樣", "en": "What makes a child's fracture different"},
+       "lines": [
+        ["attending", {"zh": "等電話接通之前，說說小孩的骨頭跟大人哪裡不一樣。跟開刀房講的時候要用上。", "en": "While the phone rings: how is a child's bone different from an adult's? You'll need the words when you talk to theatre."}],
+        ["me", {"zh": "生長板還開著、骨膜厚、骨頭會彎不一定會斷。肘上骨折要看生長中心有沒有被牽連。", "en": "Open growth plates, thick periosteum, bone that bends before it breaks. In a supracondylar fracture you check whether the growth centres are involved."}],
+        ["attending", {"zh": "還有一句：孩子不會告訴你哪裡麻，你要用遊戲問出來。", "en": "And one more: a child won't tell you where it's numb. You find out with a game."}]
+       ],
+       "mini": {"type": "stage", "case": "orthopedics-fracture-description-xray", "stage": 7}},
+      {"id": "f3", "ring": {"title": {"zh": "開刀房來電", "en": "Theatre calling"}, "sub": {"zh": "七歲肘上骨折：禁食幾點？幾點能進？", "en": "Seven-year-old elbow: fasting time? When can he come up?"}, "call": true, "from": "or-coord"},
+       "lines": [
+        ["or-coord", {"zh": "骨科？七歲男童，閉合復位加鋼針。禁食時間？", "en": "Orthopaedics? Boy of seven, closed reduction and pinning. Fasting time?"}],
+        ["me", {"zh": "十六點十分吃了一塊餅乾。粉紅無脈手，神經完好，夾板固定中。", "en": "A biscuit at ten past four. Pink pulseless hand, nerves intact, splinted."}],
+        ["or-coord", {"zh": "麻醉科會評估。無脈是急迫，不是立刻；他們會給你一個時間。", "en": "Anaesthesia will assess. Pulseless means urgent, not this instant; they'll give you a time."}],
+        ["me", {"zh": "收到。每小時神經血管檢查，手不會離開我們的眼睛。", "en": "Understood. Hourly neurovascular examination; the hand stays under our eyes."}],
+        ["mother", {"zh": "一塊餅乾……對不起。", "en": "One biscuit... I'm sorry."}],
+        ["attending", {"zh": "媽媽，餅乾不是錯，我們只是要把時間排好。您老實說了，這比餅乾重要得多。", "en": "Mum, the biscuit isn't a mistake; we just have to arrange the timing. You told us the truth, and that matters far more than the biscuit."}]
+       ]}
+     ]},
+    {"id": "colles", "name": {"zh": "叉子手腕", "en": "The dinner-fork wrist"}, "sub": {"zh": "18:00 · 急救區", "en": "18:00 · resus bay"}, "t": 1080, "mood": "eve",
+     "note": {"zh": "許阿姨閉合復位；鎮靜中血氧掉了一次", "en": "Mrs Hsu reduced; one desaturation during sedation"},
+     "beats": [
+      {"id": "c1", "to": "patient2", "guide": {"zh": "看許阿姨的手腕與片子", "en": "See Mrs Hsu's wrist and film"},
+       "lines": [
+        ["patient2", {"zh": "醫師，我明天凌晨三點要去批魚。手腕這樣會好嗎？", "en": "Doctor, I'm at the fish market at three tomorrow morning. Will this wrist be all right?"}],
+        ["me", {"zh": "會好，但今晚要先把它拉回去。手指動一下，有感覺嗎？", "en": "It will, but tonight we pull it back into place first. Wiggle your fingers: can you feel this?"}],
+        ["patient2", {"zh": "有，就是痛。", "en": "Yes. It just hurts."}],
+        ["me", {"zh": "橈骨遠端骨折，往手背移位，典型的叉子形狀。閉合復位加石膏，鄭醫師幫您鎮靜。", "en": "A distal radius fracture, displaced towards the back of the hand, the classic dinner fork. Closed reduction and a cast, with Dr Cheng giving you procedural sedation."}],
+        ["er-doc", {"zh": "許阿姨，您會睡一下，我盯著您的呼吸。最後吃東西是幾點？", "en": "Mrs Hsu, you'll sleep a little and I'll watch your breathing. When did you last eat?"}],
+        ["patient2", {"zh": "中午。魚販沒時間吃下午茶。", "en": "Lunchtime. Fishmongers don't get afternoon tea."}]
+       ]},
+      {"id": "c2", "to": "place:crash", "guide": {"zh": "鎮靜前確認急救車", "en": "Check the crash cart before sedation"},
+       "lines": [
+        ["er-doc", {"zh": "鎮靜之前，三樣東西要在手邊。你去確認。", "en": "Before any sedation, three things within reach. Go and check."}],
+        ["me", {"zh": "抽吸、甦醒球與面罩、氧氣與氣道器材。", "en": "Suction, bag-valve mask, oxygen and airway kit."}]
+       ],
+       "mini": {"type": "find", "hot": "crash-cart", "q": {"zh": "點一下急救車，確認抽吸、甦醒球與氧氣都在", "en": "Tap the crash cart and confirm suction, bag-valve mask and oxygen are there"}}},
+      {"id": "c3", "to": "place:resus", "guide": {"zh": "鎮靜與復位前的暫停", "en": "Time-out before sedation and reduction"},
+       "lines": [
+        ["er-nurse", {"zh": "暫停核對。許阿姨，右手腕閉合復位，過敏無，最後進食中午，監視器上了。", "en": "Time-out. Mrs Hsu, right wrist closed reduction, no allergies, last meal at noon, monitor on."}],
+        ["me", {"zh": "右側確認。復位前的神經血管檢查做了：手指會動、有感覺、脈搏好。", "en": "Right side confirmed. Pre-reduction neurovascular examination done: fingers move, sensation present, pulse good."}],
+        ["er-doc", {"zh": "鎮靜由我，呼吸由我。你們只管骨頭。", "en": "Sedation is mine, breathing is mine. You two look after the bone."}]
+       ],
+       "mini": {"type": "drill", "template": "orthopedics", "drill": "timeout"}},
+      {"id": "c4", "to": "place:monitor", "guide": {"zh": "血氧掉了", "en": "The saturation drops"},
+       "lines": [
+        ["sys", {"zh": "牽引開始。監視器的音調變低了。", "en": "Traction begins. The monitor's tone drops a note."}],
+        ["er-nurse", {"zh": "血氧往下掉，波形還在，二氧化碳的波變寬變慢。", "en": "Saturation falling, waveform still there, the carbon-dioxide trace getting wide and slow."}],
+        ["er-doc", {"zh": "停手。", "en": "Hands off."}]
+       ],
+       "mini": {"type": "vitals", "event": "desaturation",
+        "options": [
+         {"zh": "停下、抬下巴推下顎、給氧、看胸口", "en": "Stop, chin lift and jaw thrust, oxygen, watch the chest", "ok": true,
+          "why": {"zh": "對。鎮靜中血氧掉，第一步永遠是氣道：下巴抬起來，大多數就回來了。先停手。", "en": "Right. When saturation falls under sedation the first step is always the airway: lift the chin and most come straight back. Stop pulling first."}},
+         {"zh": "快一點拉完，拉完就不痛了", "en": "Pull faster; once it's reduced the pain stops", "ok": false,
+          "why": {"zh": "快不是解法。缺氧的人不會因為骨頭回位就恢復呼吸。", "en": "Speed is not the answer. A hypoxic patient does not start breathing because the bone went back."}},
+         {"zh": "馬上準備插管", "en": "Prepare to intubate at once", "ok": false,
+          "why": {"zh": "跳過了最簡單的步驟。先抬下巴、給氧，看回不回來，再決定下一步。", "en": "That skips the simplest step. Chin lift and oxygen first, see whether she recovers, then decide."}}
+        ]},
+       "post": [
+        ["er-doc", {"zh": "回來了。舌根掉下去而已。繼續，但慢一點。", "en": "Back up. Her tongue dropped back, that's all. Carry on, but slower."}],
+        ["me", {"zh": "牽引、先加大變形再推回來、尺偏、掌屈一點。台階回去了。", "en": "Traction, exaggerate the deformity then push it back, ulnar deviation, a little palmar flexion. The step is gone."}],
+        ["cast-master", {"zh": "現在換我。", "en": "My turn now."}]
+       ]},
+      {"id": "c5", "roles": ["cast-tech"], "to": "place:plaster", "guide": {"zh": "復位後的石膏", "en": "The cast after reduction"},
+       "lines": [
+        ["cast-master", {"zh": "石膏不是最後一步。順序錯一步就要全部重來，你排。", "en": "The plaster isn't the last step. Get the order wrong and you start again. You put them in order."}]
+       ],
+       "mini": {"type": "order", "q": {"zh": "從閉合復位到石膏完成，正確順序？", "en": "From closed reduction to a finished cast, what is the right order?"},
+        "steps": [
+         {"zh": "牽引與手法復位", "en": "Traction and manipulation"},
+         {"zh": "維持復位，棉墊保護骨突", "en": "Hold the reduction, pad the bony points"},
+         {"zh": "石膏塑形：三點加壓", "en": "Mould the cast: three-point pressure"},
+         {"zh": "復位後 X 光確認", "en": "Post-reduction X-ray"},
+         {"zh": "神經血管檢查與衛教", "en": "Neurovascular check and advice"}
+        ]},
+       "post": [
+        ["cast-master", {"zh": "三點加壓是手掌留在石膏上的形狀，不是手指頭的坑。坑會壓出壓瘡。", "en": "Three-point moulding is the shape of your palms left in the plaster, not fingertip dents. Dents make pressure sores."}],
+        ["me", {"zh": "復位後的片子：掌傾、尺偏、長度都回來了。", "en": "Post-reduction film: volar tilt, radial inclination and length all back."}]
+       ],
+       "item": "post-film"},
+      {"id": "c6", "roles": ["resident"], "to": "patient2", "guide": {"zh": "跟許阿姨談骨頭與地板", "en": "Talk to Mrs Hsu about bones and floors"},
+       "lines": [
+        ["me", {"zh": "許阿姨，站著跌倒就斷了手腕，我們叫脆弱性骨折。手腕通常是第一個警訊。", "en": "Mrs Hsu, a wrist that breaks from a fall from standing is what we call a fragility fracture. The wrist is usually the first warning."}],
+        ["patient2", {"zh": "我每天搬魚箱，骨頭會不夠強？", "en": "I carry fish crates every day. My bones aren't strong enough?"}],
+        ["me", {"zh": "搬魚箱練的是肌肉。骨頭要另外查：骨密度、維生素、跌倒的原因。市場地板濕，鞋子呢？", "en": "Crates build muscle. Bone needs its own check: density, vitamins, why you fell. The market floor is wet; what about your shoes?"}],
+        ["patient2", {"zh": "……雨鞋底磨平了。", "en": "...the soles of my rubber boots are worn smooth."}],
+        ["me", {"zh": "那就從雨鞋開始。我開骨折聯合照護的轉介，他們會追你的骨頭，也會問你的地板。", "en": "Then we start with the boots. I'm writing a fracture liaison referral: they'll chase your bones and ask about your floors."}]
+       ],
+       "mini": {"type": "stage", "case": "orthopedics-hip-fracture-pathway", "stage": 9}}
+     ]},
+    {"id": "theatre", "name": {"zh": "小恩進開刀房", "en": "En goes to theatre"}, "sub": {"zh": "20:30 · 急救區門口", "en": "20:30 · resus doors"}, "t": 1230, "mood": "night",
+     "note": {"zh": "小恩送進開刀房；三種手，三種做法", "en": "En off to theatre; three hands, three plans"},
+     "beats": [
+      {"id": "t1", "to": "patient1", "guide": {"zh": "送小恩前再檢查一次", "en": "One more check before En goes up"},
+       "lines": [
+        ["sys", {"zh": "麻醉科評估完成：20:45 接病人。", "en": "Anaesthesia has assessed him: collection at 20:45."}],
+        ["me", {"zh": "小恩，再比一次 OK。……圓的。手還是粉紅的、暖的。等一下你會睡一覺，醒來手肘裡有兩根小鋼針幫你撐著。", "en": "En, one more OK sign. ...Round. Hand still pink and warm. In a bit you'll have a sleep, and when you wake up there'll be two little pins inside holding the elbow."}],
+        ["patient1", {"zh": "醒來可以打躲避球嗎？", "en": "Can I play dodgeball when I wake up?"}],
+        ["me", {"zh": "等鋼針拿掉、骨頭長好。到時候你的教練會比你還急。", "en": "Once the pins are out and the bone has healed. By then your coach will be keener than you."}],
+        ["mother", {"zh": "醫師，謝謝。", "en": "Doctor, thank you."}]
+       ]},
+      {"id": "t2", "to": "attending", "guide": {"zh": "何主治在門口問你", "en": "Dr Ho asks at the doors"},
+       "lines": [
+        ["attending", {"zh": "復位之後脈搏回來了，要做什麼？沒回來呢？", "en": "If the pulse comes back after reduction, what then? And if it doesn't?"}],
+        ["me", {"zh": "回來：鋼針固定、夾板、密切觀察。沒回來但手仍粉紅溫暖：固定後觀察還是探查，要血管外科一起決定。", "en": "Back: pin it, splint it, watch closely. Not back but still pink and warm: observe after fixation or explore, decided together with vascular surgery."}],
+        ["attending", {"zh": "蒼白冰冷呢？", "en": "And pale and cold?"}],
+        ["me", {"zh": "蒼白無脈：立刻探查血管，不等。", "en": "Pale and pulseless: explore the artery now, no waiting."}],
+        ["attending", {"zh": "好。三種手，三種做法。小恩交給我，你去看許阿姨。", "en": "Good. Three hands, three plans. En is mine now; you go and see Mrs Hsu."}]
+       ]},
+      {"id": "t2b", "when": {"flag": "elbow", "is": "flex"}, "to": "attending", "guide": {"zh": "何主治提起那個角度", "en": "Dr Ho brings up that angle"},
+       "lines": [
+        ["attending", {"zh": "你剛才在急救區本來想把手肘彎到底固定。", "en": "In resus you first wanted to splint the elbow fully flexed."}],
+        ["me", {"zh": "對。老邱說「停在他現在的角度」。", "en": "I did. Old Chiu said 'leave it at the angle it's in'."}],
+        ["attending", {"zh": "彎到底的那一刻，手肘前面的空間就沒了。記住今晚這隻手。", "en": "The moment you flex it fully, the space at the front of the elbow is gone. Remember this hand tonight."}]
+       ]},
+      {"id": "t2c", "when": {"flag": "elbow", "is": "wait"}, "to": "attending", "guide": {"zh": "何主治提起「明早再看」", "en": "Dr Ho brings up 'review in the morning'"},
+       "lines": [
+        ["attending", {"zh": "你剛才說手是暖的，想等到明早。", "en": "Earlier you said the hand was warm and wanted to wait until morning."}],
+        ["me", {"zh": "對。您說粉紅只是側枝在撐。", "en": "I did. You said pink only means the collaterals are coping."}],
+        ["attending", {"zh": "粉紅無脈手的「粉紅」是借來的時間，不是安全。借來的要還。", "en": "The 'pink' in pink pulseless hand is borrowed time, not safety. Borrowed time has to be paid back."}]
+       ]}
+     ]},
+    {"id": "night", "name": {"zh": "石膏會說話", "en": "The cast talks"}, "sub": {"zh": "23:00 · 觀察區", "en": "23:00 · observation bay"}, "t": 1380, "mood": "night",
+     "note": {"zh": "許阿姨石膏太緊，剖開到皮膚", "en": "Mrs Hsu's cast too tight, split to skin"},
+     "beats": [
+      {"id": "n1", "ring": {"title": {"zh": "觀察區來電", "en": "Observation bay calling"}, "sub": {"zh": "許阿姨手指腫、麻，說石膏越來越緊", "en": "Mrs Hsu's fingers are swollen and numb; she says the cast is getting tighter"}, "call": true, "from": "er-nurse"},
+       "lines": [
+        ["er-nurse", {"zh": "醫師，許阿姨手指腫起來、發麻，石膏越來越緊，止痛沒什麼用。", "en": "Doctor, Mrs Hsu's fingers are swelling and going numb, the cast feels tighter and tighter, and the analgesia isn't doing much."}],
+        ["me", {"zh": "被動伸直手指會痛嗎？", "en": "Does it hurt when you straighten her fingers for her?"}],
+        ["er-nurse", {"zh": "她叫出來了。", "en": "She cried out."}],
+        ["me", {"zh": "把石膏和裡面的棉墊整個剖開到皮膚，手放心臟同高，叫老邱。我馬上到。", "en": "Split the plaster and the padding all the way to skin, hand at heart level, call Old Chiu. I'm on my way."}]
+       ],
+       "mini": {"type": "stage", "case": "orthopedics-compartment-syndrome", "stage": 3}},
+      {"id": "n2", "to": "place:plaster", "guide": {"zh": "剖開石膏", "en": "Split the cast"},
+       "lines": [
+        ["cast-master", {"zh": "石膏在說話了。鋸子是震動不是旋轉，一刀一刀換位置，不要滑。", "en": "The cast is talking. The saw oscillates, it doesn't spin: one cut, move along, don't slide."}],
+        ["me", {"zh": "剖開石膏，連棉墊一起，不然等於沒剖。", "en": "Splitting the cast, padding and all, or it counts for nothing."}],
+        ["sys", {"zh": "棉墊剪開的瞬間，裂口自己張開了一指寬。", "en": "The moment the padding is cut, the split springs open a finger's width by itself."}],
+        ["patient2", {"zh": "……鬆了。醫師，手指有感覺了。", "en": "...it's loose. Doctor, I can feel my fingers."}],
+        ["me", {"zh": "痛退了、回血快、脈搏在。繼續觀察，不好就去開刀房。", "en": "Pain easing, refill brisk, pulse present. We keep watching; if it turns, it's theatre."}]
+       ]},
+      {"id": "n3", "to": "patient2", "guide": {"zh": "跟許阿姨說明", "en": "Explain to Mrs Hsu"},
+       "lines": [
+        ["patient2", {"zh": "醫師，我明天的魚……", "en": "Doctor, my fish tomorrow..."}],
+        ["me", {"zh": "今晚住觀察區，手抬著、手指要動。明早再照一張片子，魚請人幫忙批一天。", "en": "Tonight you stay in observation, hand up, fingers moving. Another film in the morning; let someone else do the market for one day."}],
+        ["patient2", {"zh": "三十年沒請過假。", "en": "Thirty years and I've never taken a day off."}],
+        ["me", {"zh": "那三十年的第一次，給手腕。", "en": "Then the first day off in thirty years goes to the wrist."}]
+       ]},
+      {"id": "n4", "ring": {"title": {"zh": "何主治訊息", "en": "Message from Dr Ho"}, "sub": {"zh": "「小恩復位後脈搏回來了，兩支鋼針。醒來第一句問貼紙。」", "en": "'En's pulse came back after reduction; two pins. First words on waking: where's my sticker.'"}, "call": false, "from": "attending"},
+       "lines": [
+        ["me", {"zh": "一隻粉紅色的手、一支叉子、一個太緊的石膏。三次神經血管檢查，三個不同的答案。", "en": "A pink hand, a dinner fork and a cast that was too tight. Three neurovascular examinations, three different answers."}],
+        ["sys", {"zh": "值班結束。觀察區的簾子後面，許阿姨的雨鞋立在床邊，鞋底朝上。", "en": "End of shift. Behind the observation-bay curtain, Mrs Hsu's rubber boots stand by the bed, soles up."}]
+       ],
+       "end": true}
+     ]}
+  ],
+  "ending": {"title": {"zh": "下班了", "en": "End of shift"}, "sub": {"zh": "先看手，再看片子", "en": "Hand first, film second"},
+    "stats": ["stages", "grades", "choices", "calls", "items", "time"]}
+}

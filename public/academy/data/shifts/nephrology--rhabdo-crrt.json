@@ -1,0 +1,1329 @@
+{
+ "format": "huatuo-shift-v2",
+ "department": "nephrology",
+ "case": "rhabdo-crrt",
+ "caseTitle": {
+  "zh": "飛輪課之後的可樂色尿",
+  "en": "Cola-coloured urine after spin class"
+ },
+ "condition": {
+  "zh": "橫紋肌溶解 · 急性腎損傷",
+  "en": "Rhabdomyolysis · acute kidney injury"
+ },
+ "difficulty": 3,
+ "room": "icu",
+ "title": {
+  "zh": "腎臟內科：加護病房的連續透析",
+  "en": "Nephrology: continuous dialysis in the ICU"
+ },
+ "tagline": {
+  "zh": "試紙說有血，顯微鏡說了算",
+  "en": "The dipstick says blood; the microscope decides"
+ },
+ "minutes": 25,
+ "roles": [
+  {
+   "id": "resident",
+   "zh": "腎臟內科住院醫師",
+   "en": "Nephrology resident",
+   "desc": {
+    "zh": "加護病房的會診。病人二十七歲、身體一向很好，腎臟卻在一夜之間停了。你要決定什麼時候接上機器。",
+    "en": "An ICU consult. The patient is twenty-seven and has always been healthy, yet his kidneys stopped overnight. You decide when the machine goes on."
+   }
+  },
+  {
+   "id": "crrt-nurse",
+   "zh": "重症透析護理師",
+   "en": "ICU dialysis nurse",
+   "desc": {
+    "zh": "連續性透析機從預充、設定到二十四小時看管，都在你手上。管路凝住、血壓掉下來，你都是第一個知道。",
+    "en": "From priming and programming to round-the-clock watching, the continuous dialysis machine is yours. Clotted circuits and falling pressures reach you first."
+   }
+  }
+ ],
+ "cast": {
+  "attending": {
+   "name": {
+    "zh": "馮主治",
+    "en": "Dr Feng"
+   },
+   "role": {
+    "zh": "腎臟內科主治醫師（師傅）",
+    "en": "Consultant nephrologist (mentor)"
+   },
+   "tag": "ATT",
+   "color": "#81296d",
+   "about": {
+    "zh": "白袍口袋裡永遠有一罐尿液試紙和一副老花眼鏡。口頭禪：「試紙說有血，顯微鏡說了算。」",
+    "en": "Always carries a tub of urine dipsticks and reading glasses in his white coat. Catchphrase: \"The dipstick says blood; the microscope decides.\""
+   },
+   "body": "mentor"
+  },
+  "icu-doc": {
+   "name": {
+    "zh": "加護病房邵醫師",
+    "en": "Dr Shao (ICU)"
+   },
+   "role": {
+    "zh": "加護病房研修醫師",
+    "en": "ICU fellow"
+   },
+   "tag": "ICU",
+   "color": "#2a7f9e",
+   "about": {
+    "zh": "跑步很快，講話更快。會診單上只寫了一行：「年輕人，腎衰竭，鉀在爬，救命。」",
+    "en": "Runs fast and talks faster. His consult note has one line: \"Young man, kidney failure, potassium climbing, help.\""
+   },
+   "body": "specialist"
+  },
+  "a-chieh": {
+   "name": {
+    "zh": "阿傑",
+    "en": "Ah-Chieh"
+   },
+   "role": {
+    "zh": "病人：加護五床，腿腫、尿少",
+    "en": "Patient: ICU bed 5, swollen legs, little urine"
+   },
+   "tag": "PT",
+   "color": "#4a7fb5",
+   "about": {
+    "zh": "二十七歲，保險業務。新年新希望，報名了人生第一堂飛輪課，「老師說不能停」。兩天後大腿腫到彎不起來，尿像可樂。還吃了止痛藥。",
+    "en": "Twenty-seven, sells insurance. A new-year resolution: his first ever spin class, where \"the instructor said don't stop\". Two days later his thighs were too swollen to bend and his urine looked like cola. He also took painkillers."
+   },
+   "body": "patient"
+  },
+  "hsiao-wen": {
+   "name": {
+    "zh": "小雯",
+    "en": "Hsiao-Wen"
+   },
+   "role": {
+    "zh": "阿傑的女朋友",
+    "en": "Ah-Chieh's girlfriend"
+   },
+   "tag": "FAM",
+   "color": "#c06c84",
+   "about": {
+    "zh": "是她幫阿傑報名飛輪課的。從進加護病房開始，一直在跟自己生氣。",
+    "en": "She signed him up for the class. Since he arrived in the ICU she has been angry with herself."
+   },
+   "body": "family"
+  },
+  "lab": {
+   "name": {
+    "zh": "檢驗科阿志",
+    "en": "Ah-Chih (laboratory)"
+   },
+   "role": {
+    "zh": "醫檢師",
+    "en": "Biomedical scientist"
+   },
+   "tag": "LAB",
+   "color": "#5b4a9e",
+   "about": {
+    "zh": "會說「這個數字我稀釋了好幾次才測到」，然後要你複誦。",
+    "en": "Says \"I had to dilute it several times to measure this\", then asks you to read it back."
+   },
+   "phoneOnly": true
+  },
+  "ortho": {
+   "name": {
+    "zh": "骨科何醫師",
+    "en": "Dr Ho (orthopaedics)"
+   },
+   "role": {
+    "zh": "骨科值班醫師",
+    "en": "On-call orthopaedic surgeon"
+   },
+   "tag": "ORT",
+   "color": "#d9534f",
+   "about": {
+    "zh": "對腔室症候群很緊張，說話時已經在找手術室的空檔。",
+    "en": "Takes compartment syndrome very seriously; already looking for a theatre slot as he talks."
+   },
+   "phoneOnly": true
+  }
+ },
+ "places": {
+  "board": {
+   "name": {
+    "zh": "加護病房白板",
+    "en": "ICU board"
+   },
+   "hot": "whiteboard"
+  },
+  "bed5": {
+   "name": {
+    "zh": "加護五床",
+    "en": "ICU bed 5"
+   },
+   "hot": "field"
+  },
+  "crrt": {
+   "name": {
+    "zh": "連續性透析機",
+    "en": "CRRT machine"
+   },
+   "hot": "device"
+  },
+  "monitor": {
+   "name": {
+    "zh": "生理監視器",
+    "en": "Patient monitor"
+   },
+   "hot": "monitor"
+  },
+  "us": {
+   "name": {
+    "zh": "床邊超音波",
+    "en": "Bedside ultrasound"
+   },
+   "hot": "ultrasound"
+  },
+  "scope": {
+   "name": {
+    "zh": "尿沉渣顯微鏡",
+    "en": "Urine microscope"
+   },
+   "hot": "microscope"
+  },
+  "viewer": {
+   "name": {
+    "zh": "影像工作站",
+    "en": "Image viewer"
+   },
+   "hot": "imaging"
+  },
+  "station": {
+   "name": {
+    "zh": "護理站",
+    "en": "Nurses' station"
+   },
+   "hot": "desk"
+  },
+  "cart": {
+   "name": {
+    "zh": "急救車",
+    "en": "Crash cart"
+   },
+   "hot": "crash-cart"
+  }
+ },
+ "glossary": [
+  {
+   "term": {
+    "zh": "橫紋肌溶解",
+    "en": "rhabdomyolysis"
+   },
+   "plain": {
+    "zh": "肌肉大量破壞，裡面的東西跑進血液：肌紅素、鉀、酵素。過度運動、壓傷、中暑都可能造成。",
+    "en": "Massive muscle breakdown releasing its contents into the blood: myoglobin, potassium, enzymes. Caused by over-exertion, crush injury, heat stroke and more."
+   }
+  },
+  {
+   "term": {
+    "zh": "肌酸激酶",
+    "en": "creatine kinase"
+   },
+   "plain": {
+    "zh": "肌肉裡的酵素，肌肉受傷越多，血中濃度越高。用來追蹤橫紋肌溶解。",
+    "en": "An enzyme inside muscle; the more muscle damage, the higher its blood level. Used to track rhabdomyolysis."
+   }
+  },
+  {
+   "term": {
+    "zh": "肌紅素尿",
+    "en": "myoglobinuria"
+   },
+   "plain": {
+    "zh": "肌紅素從尿液排出，尿變成茶色或可樂色。肌紅素會傷害腎小管。",
+    "en": "Myoglobin passed in urine, turning it tea- or cola-coloured. Myoglobin injures the kidney tubules."
+   }
+  },
+  {
+   "term": {
+    "zh": "尿液試紙",
+    "en": "urine dipstick"
+   },
+   "plain": {
+    "zh": "沾一下尿就能看顏色變化的試紙。「潛血」那一格分不出紅血球、血紅素還是肌紅素。",
+    "en": "A strip dipped in urine that changes colour. Its \"blood\" pad cannot tell red cells from haemoglobin or myoglobin."
+   }
+  },
+  {
+   "term": {
+    "zh": "急性腎損傷",
+    "en": "acute kidney injury"
+   },
+   "plain": {
+    "zh": "腎功能在幾小時到幾天內突然變差，肌酸酐上升、尿量減少。",
+    "en": "A sudden fall in kidney function over hours to days: creatinine rises, urine falls."
+   }
+  },
+  {
+   "term": {
+    "zh": "高血鉀",
+    "en": "hyperkalaemia"
+   },
+   "plain": {
+    "zh": "血中鉀離子太高，會讓心臟出現危險的心律。肌肉破壞時鉀會一直釋放出來。",
+    "en": "Too much potassium in the blood, which can cause dangerous heart rhythms. Broken muscle keeps releasing it."
+   }
+  },
+  {
+   "term": {
+    "zh": "腔室症候群",
+    "en": "compartment syndrome"
+   },
+   "plain": {
+    "zh": "肌肉腫在被筋膜包住的空間裡，壓力太高壓迫血管和神經。痛得不成比例、被動伸展更痛是警訊。",
+    "en": "Swollen muscle inside a tight fascial compartment raises the pressure and squeezes vessels and nerves. Pain out of proportion and pain on passive stretch are warnings."
+   }
+  },
+  {
+   "term": {
+    "zh": "連續性腎臟替代療法",
+    "en": "continuous renal replacement therapy"
+   },
+   "plain": {
+    "zh": "二十四小時慢慢地洗腎，對血壓的影響比較小，適合加護病房裡不穩定的病人。",
+    "en": "Dialysis run slowly around the clock; gentler on blood pressure and suited to unstable ICU patients."
+   }
+  },
+  {
+   "term": {
+    "zh": "透析導管",
+    "en": "dialysis catheter"
+   },
+   "plain": {
+    "zh": "放在大靜脈裡的粗管子，讓血液可以引出來經過機器再回去。用超音波導引放置。",
+    "en": "A wide tube in a large vein that lets blood flow out through the machine and back. Placed under ultrasound guidance."
+   }
+  },
+  {
+   "term": {
+    "zh": "管路凝固",
+    "en": "circuit clotting"
+   },
+   "plain": {
+    "zh": "血液在透析管路和濾器裡凝住，機器就會停下來。要用抗凝方式保護管路。",
+    "en": "Blood clotting in the dialysis tubing and filter stops the machine. The circuit is protected with anticoagulation."
+   }
+  },
+  {
+   "term": {
+    "zh": "寡尿",
+    "en": "oliguria"
+   },
+   "plain": {
+    "zh": "尿量明顯減少。急性腎損傷時尿量往往比血液數字更早變化。",
+    "en": "Markedly reduced urine output. In acute kidney injury it often changes before the blood numbers."
+   }
+  },
+  {
+   "term": {
+    "zh": "輸液復甦",
+    "en": "fluid resuscitation"
+   },
+   "plain": {
+    "zh": "早期給足夠的點滴，讓尿量維持，幫忙把肌紅素沖出腎臟。但已經積水時就要停。",
+    "en": "Early generous fluids to keep urine flowing and flush myoglobin through the kidneys. Stop once fluid overload appears."
+   }
+  }
+ ],
+ "codex": [
+  {
+   "id": "crrt-machine",
+   "kind": "equipment",
+   "name": {
+    "zh": "連續性透析機",
+    "en": "CRRT machine"
+   },
+   "text": {
+    "zh": "四個幫浦、一個濾器、好幾個壓力監測。螢幕上每一條壓力線，都在告訴你管路有沒有要凝了、導管順不順。",
+    "en": "Four pumps, a filter and several pressure monitors. Every pressure trace on its screen tells you whether the circuit is about to clot or the catheter is struggling."
+   },
+   "hot": "device"
+  },
+  {
+   "id": "urine-scope",
+   "kind": "equipment",
+   "name": {
+    "zh": "尿沉渣顯微鏡",
+    "en": "Urine microscope"
+   },
+   "text": {
+    "zh": "離心後的尿沉渣放在玻片上。試紙說有血，這裡卻幾乎看不到紅血球，只有棕色的顆粒圓柱。",
+    "en": "Spun urine sediment on a slide. The dipstick said blood, yet here there are almost no red cells, only muddy brown granular casts."
+   },
+   "hot": "microscope"
+  },
+  {
+   "id": "cola-urine",
+   "kind": "item",
+   "name": {
+    "zh": "那一杯可樂色的尿",
+    "en": "The cup of cola-coloured urine"
+   },
+   "text": {
+    "zh": "馮主治把它舉高：「這不是血的紅，是肌肉的棕。」",
+    "en": "Dr Feng holds it up: \"That is not the red of blood; it is the brown of muscle.\""
+   }
+  },
+  {
+   "id": "gym-band",
+   "kind": "item",
+   "name": {
+    "zh": "健身房手環",
+    "en": "Gym wristband"
+   },
+   "text": {
+    "zh": "阿傑手上還戴著，寫著「第一堂課免費」。小雯把它剪下來，說以後要陪他從走路開始。",
+    "en": "Still on Ah-Chieh's wrist: \"First class free\". Hsiao-Wen cut it off and said they would start again with walking, together."
+   }
+  },
+  {
+   "id": "dipstick-scope",
+   "kind": "concept",
+   "name": {
+    "zh": "試紙說有血，顯微鏡說了算",
+    "en": "The dipstick says blood; the microscope decides"
+   },
+   "text": {
+    "zh": "尿液試紙的「潛血」反應，其實是在偵測血基質，分不出紅血球、血紅素和肌紅素。試紙強陽性、顯微鏡下卻幾乎沒有紅血球，就要想到肌紅素尿（橫紋肌溶解）或血紅素尿（溶血）。看到變形紅血球和紅血球圓柱，才是腎絲球出血。同一個「茶色尿」，三種完全不同的故事。",
+    "en": "The dipstick's \"blood\" pad detects haem and cannot tell red cells from haemoglobin or myoglobin. Strongly positive with almost no red cells under the microscope means myoglobinuria (rhabdomyolysis) or haemoglobinuria (haemolysis). Dysmorphic red cells and red-cell casts mean glomerular bleeding. One \"tea-coloured urine\", three entirely different stories."
+   }
+  },
+  {
+   "id": "rhabdo-care",
+   "kind": "concept",
+   "name": {
+    "zh": "橫紋肌溶解的照護",
+    "en": "Caring for rhabdomyolysis"
+   },
+   "text": {
+    "zh": "越早輸液復甦越好，目標是維持足夠的尿量；但已經寡尿又積水時，再多點滴只會傷肺。停掉傷腎的東西：非類固醇消炎止痛藥、顯影劑。追蹤肌酸激酶、鉀、鈣、磷、酸鹼。每幾個小時檢查四肢，警覺腔室症候群。透析的時機看的是：藥物壓不住的高血鉀、嚴重酸中毒、積水、無尿，而肌肉還在持續釋放鉀。預防：運動循序漸進、補充水分、痛就停，第一堂課不要拚命。",
+    "en": "Fluid resuscitation early to keep urine flowing; but once oliguric and overloaded, more fluid only harms the lungs. Stop kidney-harming agents: NSAIDs, contrast. Track creatine kinase, potassium, calcium, phosphate, acid-base. Check the limbs every few hours for compartment syndrome. Dialysis is for hyperkalaemia that drugs cannot hold, severe acidosis, overload or anuria while the muscles keep releasing potassium. Prevention: build up gradually, drink, stop when it hurts, and do not go all out in the first class."
+   }
+  },
+  {
+   "id": "why-continuous",
+   "kind": "concept",
+   "name": {
+    "zh": "為什麼選連續性透析",
+    "en": "Why continuous dialysis"
+   },
+   "text": {
+    "zh": "間歇性血液透析可以很快把鉀降下來，但破壞中的肌肉會繼續釋放鉀，透析一停就反彈；血壓不穩時，快速脫水也容易休克。連續性腎臟替代療法二十四小時慢慢清，能持續控制鉀和水分，對血壓溫和。代價是需要持續抗凝保護管路、專人看管，以及剛接上機器時的低血壓。剛開始時脫水量從低開始、看血壓調整。",
+    "en": "Intermittent haemodialysis lowers potassium fast, but breaking muscle keeps releasing it, so it rebounds once dialysis stops; with an unstable pressure, rapid fluid removal also risks shock. Continuous renal replacement therapy clears slowly round the clock, holding potassium and fluid steady and treating the blood pressure gently. The price: continuous circuit anticoagulation, dedicated nursing, and hypotension as the machine goes on. Start fluid removal low and adjust to the pressure."
+   }
+  }
+ ],
+ "segs": [
+  {
+   "id": "consult",
+   "name": {
+    "zh": "加護病房會診",
+    "en": "The ICU consult"
+   },
+   "sub": {
+    "zh": "17:00 · 加護病房白板",
+    "en": "17:00 · ICU board"
+   },
+   "t": 1020,
+   "mood": "eve",
+   "note": {
+    "zh": "接到會診",
+    "en": "Consult received"
+   },
+   "beats": [
+    {
+     "id": "c1",
+     "lines": [
+      [
+       "icu-doc",
+       {
+        "zh": "腎臟科嗎？加護五床，二十七歲男生，飛輪課後兩天，腿腫、尿像可樂、幾乎沒尿。鉀在爬，血壓偏軟。",
+        "en": "Nephrology? ICU bed 5, twenty-seven-year-old, two days after spin class: swollen legs, cola urine, almost none. Potassium climbing, pressure soft."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "心電圖做了嗎？鉀的急救藥依醫囑先給，我們十分鐘到。",
+        "en": "ECG done? Give the emergency potassium treatment per protocol; we are there in ten."
+       }
+      ]
+     ],
+     "ring": {
+      "title": {
+       "zh": "加護病房會診",
+       "en": "ICU consult"
+      },
+      "sub": {
+       "zh": "五床：年輕人，腎衰竭，鉀在爬",
+       "en": "Bed 5: young man, kidney failure, potassium rising"
+      },
+      "call": true,
+      "from": "icu-doc"
+     }
+    },
+    {
+     "id": "c2",
+     "to": "attending",
+     "guide": {
+      "zh": "找馮主治",
+      "en": "Find Dr Feng"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "（從口袋拿出試紙）可樂色的尿。問你：尿液試紙驗出「有血」，就一定是血尿嗎？",
+        "en": "(Pulling out a dipstick) Cola urine. Question: if the urine dipstick says \"blood\", is it always haematuria?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "不一定。試紙分不出紅血球、血紅素和肌紅素。",
+        "en": "Not always. The dipstick cannot tell red cells from haemoglobin or myoglobin."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "對。試紙說有血，顯微鏡說了算。",
+        "en": "Right. The dipstick says blood; the microscope decides."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "c3",
+     "to": "place:crrt",
+     "guide": {
+      "zh": "準備連續性透析機",
+      "en": "Ready the CRRT machine"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "機器推到五床旁邊，濾器和管路拿出來，先不預充。等主治決定。",
+        "en": "Machine to bed 5, filter and lines out, not primed yet. Waiting for the consultant's decision."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "find",
+      "hot": "device",
+      "q": {
+       "zh": "加護病房的連續性透析機在哪裡？",
+       "en": "Where is the ICU's continuous dialysis machine?"
+      }
+     },
+     "post": [
+      [
+       "attending",
+       {
+        "zh": "還沒決定要做，先準備好。這樣決定之後就不用等。",
+        "en": "Ready before we decide, so no waiting once we do."
+       }
+      ]
+     ],
+     "roles": [
+      "crrt-nurse"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "chieh",
+   "name": {
+    "zh": "阿傑",
+    "en": "Ah-Chieh"
+   },
+   "sub": {
+    "zh": "17:30 · 加護五床",
+    "en": "17:30 · ICU bed 5"
+   },
+   "t": 1050,
+   "mood": "eve",
+   "note": {
+    "zh": "橫紋肌溶解合併急性腎損傷",
+    "en": "Rhabdomyolysis with AKI"
+   },
+   "beats": [
+    {
+     "id": "a1",
+     "to": "a-chieh",
+     "guide": {
+      "zh": "問阿傑",
+      "en": "Talk to Ah-Chieh"
+     },
+     "lines": [
+      [
+       "a-chieh",
+       {
+        "zh": "人生第一堂飛輪課，老師說不能停……隔天大腿腫到不能彎，尿像可樂。我以為是肌肉痠，吃了止痛藥。",
+        "en": "My first ever spin class, the instructor said don't stop... Next day my thighs were too swollen to bend and my pee looked like cola. I thought it was soreness and took painkillers."
+       }
+      ],
+      [
+       "hsiao-wen",
+       {
+        "zh": "是我幫他報名的……我以為他會喜歡。",
+        "en": "I signed him up... I thought he would like it."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "小雯，這不是妳的錯。第一堂課太拚、水喝不夠，再加上止痛藥，三件事加在一起。",
+        "en": "Hsiao-Wen, this is not your fault. A first class too hard, too little water, plus painkillers: three things together."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "a2",
+     "to": "place:station",
+     "guide": {
+      "zh": "找基準值",
+      "en": "Find the baseline"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "舊的肌酸酐呢？二十七歲，沒有慢性病，那基準怎麼找？",
+        "en": "Old creatinine? He is twenty-seven with no chronic illness. How do you find the baseline?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "公司健檢報告：去年腎功能正常。這次是急性腎損傷，不是慢性。",
+        "en": "His company check-up last year: normal kidneys. So this is acute kidney injury, not chronic."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "nephrology-v37-aki-baseline",
+      "stage": 1
+     },
+     "item": "cola-urine"
+    },
+    {
+     "id": "a3",
+     "to": "place:us",
+     "guide": {
+      "zh": "腎臟超音波",
+      "en": "Renal ultrasound"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "年輕人的急性腎損傷也要排除阻塞。長軸，量大小，看水腎。",
+        "en": "Even in a young man, rule out obstruction. Long axis, size, look for hydronephrosis."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "drill",
+      "template": "nephrology",
+      "drill": "us:kidney"
+     },
+     "post": [
+      [
+       "me",
+       {
+        "zh": "兩顆腎臟大小正常，皮質稍微腫，沒有水腎。不是阻塞。",
+        "en": "Both kidneys normal size, cortex a little swollen, no hydronephrosis. Not obstruction."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "急診給過輸液復甦了，尿還是很少。再灌下去，只會積到肺裡。",
+        "en": "The ED already gave fluid resuscitation and urine is still scant. Any more will only end up in his lungs."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "a4",
+     "to": "a-chieh",
+     "guide": {
+      "zh": "向阿傑說明透析",
+      "en": "Explain dialysis to Ah-Chieh"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "阿傑，你的腎臟現在被肌肉破壞的東西塞住了，鉀也太高。可能要先用機器幫腎臟做幾天工作。",
+        "en": "Ah-Chieh, your kidneys are clogged by what the broken muscle released, and your potassium is too high. A machine may need to do their work for a few days."
+       }
+      ],
+      [
+       "a-chieh",
+       {
+        "zh": "要洗一輩子嗎？",
+        "en": "For the rest of my life?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "大部分像你這樣的人，腎臟會慢慢回來。我們每天看尿量和抽血。",
+        "en": "Most people like you get their kidneys back gradually. We check your urine and bloods every day."
+       }
+      ]
+     ],
+     "roles": [
+      "resident"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "urine",
+   "name": {
+    "zh": "試紙與顯微鏡",
+    "en": "Dipstick and microscope"
+   },
+   "sub": {
+    "zh": "18:00 · 尿沉渣顯微鏡",
+    "en": "18:00 · urine microscope"
+   },
+   "t": 1080,
+   "mood": "eve",
+   "note": {
+    "zh": "肌紅素尿",
+    "en": "Myoglobinuria"
+   },
+   "beats": [
+    {
+     "id": "u1",
+     "to": "place:scope",
+     "guide": {
+      "zh": "看尿沉渣",
+      "en": "Examine the sediment"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "試紙：潛血強陽性。顯微鏡下：幾乎沒有紅血球，滿滿棕色的顆粒圓柱。",
+        "en": "Dipstick: strongly positive for blood. Microscope: almost no red cells, full of muddy brown granular casts."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "（戴上老花眼鏡）試紙說有血，顯微鏡說沒有紅血球。那是什麼？",
+        "en": "(Putting on his reading glasses) The dipstick says blood, the microscope says no red cells. So what is it?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "肌紅素尿。肌肉破壞，橫紋肌溶解。",
+        "en": "Myoglobinuria. Muscle breakdown: rhabdomyolysis."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "u2",
+     "lines": [
+      [
+       "lab",
+       {
+        "zh": "五床的肌酸激酶，我稀釋了好幾次才測到，是正常上限的好幾百倍。鉀也很高。請複誦。",
+        "en": "Bed 5's creatine kinase: I had to dilute it several times; it is hundreds of times the upper limit. Potassium high too. Please read back."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "複誦：肌酸激酶極高，鉀很高。收到。",
+        "en": "Read back: creatine kinase extremely high, potassium high. Received."
+       }
+      ]
+     ],
+     "ring": {
+      "title": {
+       "zh": "檢驗科來電",
+       "en": "Laboratory calling"
+      },
+      "sub": {
+       "zh": "五床的肌酸激酶與鉀",
+       "en": "Bed 5 creatine kinase and potassium"
+      },
+      "call": true,
+      "from": "lab"
+     }
+    },
+    {
+     "id": "u3",
+     "to": "place:monitor",
+     "guide": {
+      "zh": "看鉀和心電圖",
+      "en": "Check the potassium and ECG"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "鉀用藥物壓下來一點，又往上爬。肌肉還在一直放鉀出來。這個鉀是真的嗎？",
+        "en": "The potassium came down a little with drugs and is climbing again. The muscles keep releasing it. Is this potassium real?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "檢體沒有溶血，心電圖 T 波變尖。是真的。",
+        "en": "The sample is not haemolysed and the T waves are peaked. It is real."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "nephrology-v37-potassium",
+      "stage": 0
+     }
+    },
+    {
+     "id": "u4",
+     "to": "attending",
+     "guide": {
+      "zh": "決定透析時機",
+      "en": "Decide when to dialyse"
+     },
+     "lines": [
+      [
+       "icu-doc",
+       {
+        "zh": "寡尿，幾乎沒有尿，鉀壓不住。要不要再觀察一晚？",
+        "en": "Oliguria, almost no urine, and the potassium will not stay down. Watch one more night?"
+       }
+      ]
+     ],
+     "mini": {
+      "type": "choice",
+      "q": {
+       "zh": "鉀壓不住、寡尿，肌肉還在釋放鉀。現在？",
+       "en": "Potassium refractory, oliguric, muscles still releasing it. Now?"
+      },
+      "options": [
+       {
+        "zh": "今晚開始連續性腎臟替代療法",
+        "en": "Start continuous renal replacement therapy tonight",
+        "ok": true,
+        "why": {
+         "zh": "藥物壓不住的高血鉀加上寡尿，是透析的適應症。肌肉會持續釋放鉀，連續性透析可以一直清、不反彈，對偏軟的血壓也比較溫和。",
+         "en": "Refractory hyperkalaemia with oliguria is an indication for dialysis. Muscle keeps releasing potassium; continuous dialysis clears it steadily without rebound and is gentler on a soft pressure."
+        },
+        "set": {
+         "rrt": "now"
+        }
+       },
+       {
+        "zh": "再觀察一晚，繼續用藥",
+        "en": "One more night of drugs and watching",
+        "ok": false,
+        "why": {
+         "zh": "藥物只是把鉀暫時推進細胞，肌肉還在一直放出來。觀察一晚，可能等到的是心律不整。",
+         "en": "Drugs only push potassium into cells for a while; the muscles keep releasing it. A night of watching may end in an arrhythmia."
+        },
+        "set": {
+         "rrt": "wait"
+        }
+       },
+       {
+        "zh": "先做顯影劑斷層看大腿",
+        "en": "Contrast CT of the thighs first",
+        "ok": false,
+        "why": {
+         "zh": "顯影劑會傷腎，而腔室症候群靠的是床邊檢查和壓力測量。鉀的問題也不會等。",
+         "en": "Contrast harms the kidneys, compartment syndrome is a bedside and pressure diagnosis, and the potassium will not wait."
+        },
+        "set": {
+         "rrt": "wait"
+        }
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "legs",
+   "name": {
+    "zh": "他的大腿",
+    "en": "His thighs"
+   },
+   "sub": {
+    "zh": "19:00 · 加護五床",
+    "en": "19:00 · ICU bed 5"
+   },
+   "t": 1140,
+   "mood": "eve",
+   "note": {
+    "zh": "腔室壓力可接受，持續追蹤",
+    "en": "Compartments acceptable, serial checks"
+   },
+   "beats": [
+    {
+     "id": "l1",
+     "to": "a-chieh",
+     "guide": {
+      "zh": "檢查阿傑的腿",
+      "en": "Examine Ah-Chieh's legs"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "兩側大腿腫、硬，按壓會痛。被動伸展膝蓋時，他皺眉，但說「跟剛剛一樣」。足背脈搏摸得到。",
+        "en": "Both thighs swollen and firm, tender. On passive knee stretch he winces but says \"same as before\". Foot pulses present."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "腔室症候群要早抓。痛得不成比例、被動伸展更痛，就要量壓力。",
+        "en": "Catch compartment syndrome early. Pain out of proportion or worse on passive stretch means measuring the pressure."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "l2",
+     "lines": [
+      [
+       "ortho",
+       {
+        "zh": "我量了，大腿腔室壓力在可接受範圍。不用開刀，但每幾個小時要再檢查，變痛馬上叫我。",
+        "en": "I measured: thigh compartment pressures acceptable. No surgery now, but check every few hours and call me if the pain worsens."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "收到。護理紀錄加上四肢神經血管檢查。",
+        "en": "Received. Neurovascular limb checks added to the nursing chart."
+       }
+      ]
+     ],
+     "ring": {
+      "title": {
+       "zh": "骨科回電",
+       "en": "Orthopaedics calling"
+      },
+      "sub": {
+       "zh": "何醫師量完腔室壓力",
+       "en": "Dr Ho has measured the compartments"
+      },
+      "call": true,
+      "from": "ortho"
+     }
+    }
+   ]
+  },
+  {
+   "id": "line",
+   "name": {
+    "zh": "放透析導管",
+    "en": "Placing the catheter"
+   },
+   "sub": {
+    "zh": "20:00 · 加護五床",
+    "en": "20:00 · ICU bed 5"
+   },
+   "t": 1200,
+   "mood": "night",
+   "note": {
+    "zh": "導管放好，機器預充",
+    "en": "Catheter in, machine primed"
+   },
+   "beats": [
+    {
+     "id": "n1",
+     "to": "place:bed5",
+     "guide": {
+      "zh": "準備放導管、接機器",
+      "en": "Prepare the catheter and machine"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "從放透析導管到接上機器，順序排給我看。",
+        "en": "From catheter to machine on: show me the order."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "order",
+      "q": {
+       "zh": "開始連續性透析的順序？",
+       "en": "Order the start of continuous dialysis"
+      },
+      "steps": [
+       {
+        "zh": "確認適應症並取得同意",
+        "en": "Confirm indication, get consent"
+       },
+       {
+        "zh": "超音波導引放置透析導管",
+        "en": "Ultrasound-guided catheter insertion"
+       },
+       {
+        "zh": "胸部 X 光確認導管位置",
+        "en": "Chest film to confirm position"
+       },
+       {
+        "zh": "預充管路、設定處方",
+        "en": "Prime the circuit, set the prescription"
+       },
+       {
+        "zh": "接上病人，盯緊血壓",
+        "en": "Connect, watch the pressure"
+       },
+       {
+        "zh": "監測電解質與管路凝固",
+        "en": "Monitor electrolytes and clotting"
+       }
+      ]
+     }
+    },
+    {
+     "id": "n2",
+     "to": "place:viewer",
+     "guide": {
+      "zh": "看導管後的胸部 X 光",
+      "en": "Read the post-catheter chest film"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "右頸內靜脈的透析導管放好了。片子上你要確認兩件事。",
+        "en": "The right internal jugular dialysis catheter is in. Two things to confirm on the film."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "imaging",
+      "region": "chest",
+      "question": {
+       "zh": "阿傑放完右頸透析導管後的胸部 X 光，要確認哪兩件事？",
+       "en": "Ah-Chieh's chest film after a right jugular dialysis catheter: which two things must you confirm?"
+      },
+      "answer": {
+       "zh": "導管尖端位置在上腔靜脈與右心房交界附近；沒有氣胸。也順便看肺有沒有積水，輸液之後要注意。",
+       "en": "The tip near the junction of the superior vena cava and right atrium, and no pneumothorax. Also look for fluid in the lungs after all the fluids."
+      }
+     }
+    },
+    {
+     "id": "n3",
+     "to": "place:crrt",
+     "guide": {
+      "zh": "預充管路",
+      "en": "Prime the circuit"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "濾器和管路預充完成，沒有氣泡。抗凝方式依醫囑，脫水量從低的開始。",
+        "en": "Filter and lines primed, no air. Anticoagulation per order, fluid removal starting low."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "管路凝固是今晚最常讓你半夜起床的原因。壓力線要看。",
+        "en": "Circuit clotting is what will most often wake you tonight. Watch the pressure traces."
+       }
+      ]
+     ],
+     "roles": [
+      "crrt-nurse"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "start",
+   "name": {
+    "zh": "機器接上了",
+    "en": "The machine goes on"
+   },
+   "sub": {
+    "zh": "21:00 · 加護五床",
+    "en": "21:00 · ICU bed 5"
+   },
+   "t": 1260,
+   "mood": "night",
+   "note": {
+    "zh": "連續透析運轉",
+    "en": "CRRT running"
+   },
+   "beats": [
+    {
+     "id": "s1",
+     "to": "place:monitor",
+     "guide": {
+      "zh": "心電圖在變",
+      "en": "The ECG changes"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "晚上九點，監視器上的 T 波越來越尖，出現幾下寬大的心跳。邵醫師衝過來。",
+        "en": "At nine the T waves sharpen and a few broad beats appear. Dr Shao runs over."
+       }
+      ],
+      [
+       "icu-doc",
+       {
+        "zh": "鉀的急救藥再給一次！機器現在接！",
+        "en": "Emergency potassium treatment again! Machine on now!"
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "藥物只能爭取時間。剛剛那一晚的觀察，差一點就變成急救。",
+        "en": "Drugs only buy time. That night of watching nearly became a resuscitation."
+       }
+      ]
+     ],
+     "when": {
+      "flag": "rrt",
+      "is": "wait"
+     }
+    },
+    {
+     "id": "s1b",
+     "to": "place:monitor",
+     "guide": {
+      "zh": "鉀在下降",
+      "en": "The potassium is falling"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "機器接上一小時，鉀開始穩定往下，T 波慢慢變平。",
+        "en": "An hour on the machine and the potassium is falling steadily; the T waves flatten."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "肌肉還在放鉀，但機器一直在清。這就是選連續性的理由。",
+        "en": "The muscles still release it, but the machine keeps clearing. That is why we chose continuous."
+       }
+      ]
+     ],
+     "when": {
+      "flag": "rrt",
+      "is": "now"
+     }
+    },
+    {
+     "id": "s2",
+     "to": "place:crrt",
+     "guide": {
+      "zh": "血壓往下掉",
+      "en": "The pressure drops"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "機器剛接上不久，血壓往下掉，心跳變快。連續性透析機的螢幕上一切正常。",
+        "en": "Soon after starting, the pressure falls and the heart rate rises. The CRRT screen looks normal."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "vitals",
+      "event": "hypotension",
+      "options": [
+       {
+        "zh": "先暫停脫水、依醫囑給輸液或升壓藥",
+        "en": "Pause fluid removal, fluids or vasopressor per order",
+        "ok": true,
+        "why": {
+         "zh": "剛接上機器的低血壓很常見：血液進入管路、脫水太快。先把脫水量降到零，依醫囑處理血壓，再慢慢調回。",
+         "en": "Hypotension at the start is common: blood fills the circuit and fluid comes off too fast. Set fluid removal to zero, treat the pressure per order, then build back slowly."
+        }
+       },
+       {
+        "zh": "把脫水量加大，讓腎臟早點休息",
+        "en": "Increase fluid removal to rest the kidneys",
+        "ok": false,
+        "why": {
+         "zh": "脫更多水只會讓血壓更低、腎臟更缺血。",
+         "en": "Removing more fluid lowers the pressure and starves the kidneys further."
+        }
+       },
+       {
+        "zh": "馬上停機、拔掉導管",
+        "en": "Stop the machine and pull the catheter",
+        "ok": false,
+        "why": {
+         "zh": "機器是在救他的鉀。調整設定和血壓，不是放棄治療。",
+         "en": "The machine is saving him from his potassium. Adjust the settings and the pressure; do not abandon treatment."
+        }
+       }
+      ]
+     },
+     "post": [
+      [
+       "me",
+       {
+        "zh": "脫水暫停，血壓回來了。我每小時記錄一次。",
+        "en": "Fluid removal paused, pressure back. I will chart it hourly."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "s3",
+     "to": "place:station",
+     "guide": {
+      "zh": "寫會診與處置紀錄",
+      "en": "Write the consult and procedure note"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "飛輪課後橫紋肌溶解合併急性腎損傷、藥物壓不住的高血鉀，開始連續性腎臟替代療法。停用非類固醇止痛藥，避免顯影劑，追蹤四肢。",
+        "en": "Rhabdomyolysis with acute kidney injury and refractory hyperkalaemia after spin class: continuous renal replacement therapy started. NSAIDs stopped, contrast avoided, limbs monitored."
+       }
+      ]
+     ],
+     "roles": [
+      "resident"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "midnight",
+   "name": {
+    "zh": "午夜前",
+    "en": "Before midnight"
+   },
+   "sub": {
+    "zh": "23:30 · 加護五床",
+    "en": "23:30 · ICU bed 5"
+   },
+   "t": 1410,
+   "mood": "night",
+   "note": {
+    "zh": "下班前",
+    "en": "Before going off"
+   },
+   "beats": [
+    {
+     "id": "m1",
+     "to": "hsiao-wen",
+     "guide": {
+      "zh": "和小雯說話",
+      "en": "Talk with Hsiao-Wen"
+     },
+     "lines": [
+      [
+       "hsiao-wen",
+       {
+        "zh": "他的腎臟……還會回來嗎？",
+        "en": "His kidneys... will they come back?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "年輕、以前腎臟健康，大部分這樣的病人，腎功能會慢慢恢復。機器是在幫他撐過這幾天。",
+        "en": "Young, with healthy kidneys before: most patients like him recover function gradually. The machine is helping him through these days."
+       }
+      ],
+      [
+       "hsiao-wen",
+       {
+        "zh": "（剪下他的健身房手環）以後我們從走路開始。一起。",
+        "en": "(Cutting off his gym wristband) From now on we start with walking. Together."
+       }
+      ]
+     ],
+     "item": "gym-band"
+    },
+    {
+     "id": "m2",
+     "to": "attending",
+     "guide": {
+      "zh": "和馮主治收尾",
+      "en": "Wrap up with Dr Feng"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "今晚最關鍵的一個發現是什麼？",
+        "en": "What was the key finding tonight?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "試紙說有血，顯微鏡卻沒有紅血球。那一刻就知道是肌肉，不是腎絲球。",
+        "en": "The dipstick said blood but the microscope showed no red cells. That was when we knew it was muscle, not glomeruli."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "（收起老花眼鏡）顯微鏡說了算。機器交給夜班，我們明早看鉀。",
+        "en": "(Folding his glasses) The microscope decides. The machine is with the night team; we check the potassium in the morning."
+       }
+      ]
+     ],
+     "end": true
+    }
+   ]
+  }
+ ],
+ "ending": {
+  "title": {
+   "zh": "連續透析之夜",
+   "en": "A night on CRRT"
+  },
+  "sub": {
+   "zh": "一堂飛輪課、一杯可樂色的尿、一台不停的機器",
+   "en": "One spin class, one cup of cola urine, one machine that never stops"
+  },
+  "stats": [
+   "stages",
+   "drills",
+   "imaging",
+   "choices",
+   "calls",
+   "items",
+   "time"
+  ]
+ }
+}

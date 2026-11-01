@@ -1,0 +1,1417 @@
+{
+ "format": "huatuo-shift-v2",
+ "department": "ophthalmology",
+ "case": "icu-eyes",
+ "caseTitle": {
+  "zh": "不會說話的眼睛",
+  "en": "Eyes that cannot speak"
+ },
+ "condition": {
+  "zh": "會診 · 加護病房的眼睛",
+  "en": "Consults · eyes in intensive care"
+ },
+ "difficulty": 2,
+ "room": "icu",
+ "minutes": 24,
+ "title": {
+  "zh": "眼科會診日：加護病房",
+  "en": "Ophthalmology consults in the ICU"
+ },
+ "tagline": {
+  "zh": "加護病房的眼睛不會喊痛，只會慢慢壞掉",
+  "en": "ICU eyes don't cry out; they quietly fail"
+ },
+ "roles": [
+  {
+   "id": "resident",
+   "zh": "眼科住院醫師",
+   "en": "Ophthalmology resident",
+   "desc": {
+    "zh": "會診日：新生兒加護、內科加護、外科加護，三個不會自己說「我眼睛怪怪的」的病人。",
+    "en": "A consult day across the neonatal, medical and surgical ICUs: three patients who cannot say \"my eye feels wrong\"."
+   }
+  },
+  {
+   "id": "eye-nurse",
+   "zh": "眼科會診護理師",
+   "en": "Ophthalmic consult nurse",
+   "desc": {
+    "zh": "揹著會診包走遍全院：散瞳藥、螢光試紙、手持眼壓計。也教加護病房的同事怎麼照顧閉不起來的眼睛。",
+    "en": "Carries the consult bag round the hospital: dilating drops, fluorescein strips, a handheld tonometer. Also teaches ICU colleagues to care for eyes that will not close."
+   }
+  }
+ ],
+ "cast": {
+  "attending": {
+   "name": {
+    "zh": "柯主治",
+    "en": "Dr Ko"
+   },
+   "role": {
+    "zh": "小兒眼科與視網膜主治醫師（師傅）",
+    "en": "Paediatric retina attending (mentor)"
+   },
+   "tag": "ATT",
+   "color": "#355e8a",
+   "about": {
+    "zh": "戴著頭戴式間接眼底鏡走進加護病房，像礦工。他說：「加護病房的眼睛不會喊痛，只會慢慢壞掉。」",
+    "en": "Walks into the ICU in a head-mounted indirect ophthalmoscope like a miner. \"ICU eyes don't cry out. They just quietly fail.\""
+   },
+   "body": "mentor"
+  },
+  "nicu-nurse": {
+   "name": {
+    "zh": "雅婷",
+    "en": "Ya-ting"
+   },
+   "role": {
+    "zh": "新生兒加護病房護理師",
+    "en": "Neonatal ICU nurse"
+   },
+   "tag": "NICU",
+   "color": "#2f7d6d",
+   "about": {
+    "zh": "檢查時負責包巾、安撫奶嘴和盯監視器。她的手比任何鎮靜都有效。",
+    "en": "Handles swaddling, the dummy and the monitor during exams. Her hands work better than any sedation."
+   },
+   "body": "nurse"
+  },
+  "icu-nurse": {
+   "name": {
+    "zh": "阿珠",
+    "en": "A-chu"
+   },
+   "role": {
+    "zh": "內科加護病房護理師",
+    "en": "Medical ICU nurse"
+   },
+   "tag": "ICU",
+   "color": "#9d4b7a",
+   "about": {
+    "zh": "照顧趴睡的呼吸器病人，每兩小時翻一次頭。",
+    "en": "Nurses prone ventilated patients and turns their heads on the clock."
+   },
+   "body": "nurse"
+  },
+  "baby": {
+   "name": {
+    "zh": "小豆",
+    "en": "Little Bean"
+   },
+   "role": {
+    "zh": "病人・早產兒",
+    "en": "Patient, preterm baby"
+   },
+   "tag": "NB",
+   "color": "#6b7280",
+   "about": {
+    "zh": "二十七週出生，現在已經會用力抓人的手指。今天第一次做視網膜篩檢。",
+    "en": "Born at twenty-seven weeks, now grips a finger hard. First retinal screening today."
+   },
+   "body": "patient"
+  },
+  "mother": {
+   "name": {
+    "zh": "小豆媽媽",
+    "en": "Little Bean's mother"
+   },
+   "role": {
+    "zh": "家屬・媽媽",
+    "en": "Family, mother"
+   },
+   "tag": "FAM",
+   "color": "#b45309",
+   "about": {
+    "zh": "每天來擠奶、讀故事。手機裡全是保溫箱的照片。",
+    "en": "Comes every day to express milk and read stories. Her phone is full of incubator photos."
+   },
+   "body": "family"
+  },
+  "mr-chen": {
+   "name": {
+    "zh": "陳大哥",
+    "en": "Mr Chen"
+   },
+   "role": {
+    "zh": "病人・45 歲，流感肺炎插管",
+    "en": "Patient, 45, ventilated for flu pneumonia"
+   },
+   "tag": "PT",
+   "color": "#0f766e",
+   "about": {
+    "zh": "貨運司機，流感變成重症肺炎，趴著用呼吸器。鎮靜中，眼睛閉不起來。",
+    "en": "Lorry driver whose flu became severe pneumonia; ventilated prone and sedated, eyes not closing."
+   },
+   "body": "patient"
+  },
+  "mrs-huang": {
+   "name": {
+    "zh": "黃阿姨",
+    "en": "Auntie Huang"
+   },
+   "role": {
+    "zh": "病人・68 歲，腸道手術後",
+    "en": "Patient, 68, after bowel surgery"
+   },
+   "tag": "PT2",
+   "color": "#7a2e8a",
+   "about": {
+    "zh": "術後第一天，頭痛、一直吐。大家說是麻醉後的噁心。她說右眼好痛，看燈有彩虹。",
+    "en": "Day one after surgery, headache and vomiting, put down to post-anaesthetic nausea. She says her right eye hurts and lights have rainbows."
+   },
+   "body": "patient"
+  },
+  "sicu-doc": {
+   "name": {
+    "zh": "外科加護小林",
+    "en": "Lin (surgical ICU)"
+   },
+   "role": {
+    "zh": "外科加護住院醫師",
+    "en": "Surgical ICU resident"
+   },
+   "tag": "SICU",
+   "color": "#c2410c",
+   "about": {
+    "zh": "頭部電腦斷層正常，他鬆了一口氣，又覺得哪裡不對。",
+    "en": "Relieved the head CT was normal, and uneasy that something still isn't right."
+   },
+   "phoneOnly": true
+  }
+ },
+ "places": {
+  "board": {
+   "name": {
+    "zh": "會診白板",
+    "en": "Consult whiteboard"
+   },
+   "hot": "whiteboard"
+  },
+  "incubator": {
+   "name": {
+    "zh": "小豆的保溫箱",
+    "en": "Little Bean's incubator"
+   },
+   "hot": "bed"
+  },
+  "monitor": {
+   "name": {
+    "zh": "新生兒監視器",
+    "en": "Neonatal monitor"
+   },
+   "hot": "monitor"
+  },
+  "bed-chen": {
+   "name": {
+    "zh": "陳大哥的床",
+    "en": "Mr Chen's bed"
+   },
+   "hot": "recovery"
+  },
+  "bed-huang": {
+   "name": {
+    "zh": "黃阿姨的床",
+    "en": "Auntie Huang's bed"
+   },
+   "hot": "field"
+  },
+  "viewer": {
+   "name": {
+    "zh": "影像工作站",
+    "en": "Imaging workstation"
+   },
+   "hot": "imaging"
+  },
+  "kit": {
+   "name": {
+    "zh": "眼科會診包",
+    "en": "Eye consult bag"
+   },
+   "hot": "instruments"
+  },
+  "desk": {
+   "name": {
+    "zh": "護理站",
+    "en": "Nurses' station"
+   },
+   "hot": "desk"
+  }
+ },
+ "glossary": [
+  {
+   "term": {
+    "zh": "早產兒視網膜病變",
+    "en": "retinopathy of prematurity"
+   },
+   "plain": {
+    "zh": "早產兒視網膜的血管還沒長完，可能長歪、長出異常血管，嚴重會視網膜剝離。",
+    "en": "In a preterm baby the retinal vessels haven't finished growing; they may grow abnormally and, at worst, detach the retina."
+   }
+  },
+  {
+   "term": {
+    "zh": "散瞳",
+    "en": "dilation"
+   },
+   "plain": {
+    "zh": "點藥讓瞳孔放大，才看得到視網膜周邊。早產兒用的藥與流程不同。",
+    "en": "Drops that widen the pupil so the retinal periphery can be seen. Preterm babies have their own drops and protocol."
+   }
+  },
+  {
+   "term": {
+    "zh": "鞏膜壓迫",
+    "en": "scleral depression"
+   },
+   "plain": {
+    "zh": "用小器械在眼球外面輕壓，把最周邊的視網膜推進視野裡。",
+    "en": "Pressing gently on the outside of the eye with a small instrument to bring the far periphery of the retina into view."
+   }
+  },
+  {
+   "term": {
+    "zh": "眼心反射",
+    "en": "oculocardiac reflex"
+   },
+   "plain": {
+    "zh": "壓迫或拉扯眼球時，心跳反射性變慢。早產兒還可能呼吸暫停。",
+    "en": "Pressing or pulling on the eye slows the heart by reflex; in preterm babies breathing may pause too."
+   }
+  },
+  {
+   "term": {
+    "zh": "暴露性角膜病變",
+    "en": "exposure keratopathy"
+   },
+   "plain": {
+    "zh": "眼睛閉不起來，角膜表面乾掉、破皮，可能感染甚至穿孔。",
+    "en": "An eye that won't close dries out and its surface breaks down; it can become infected or even perforate."
+   }
+  },
+  {
+   "term": {
+    "zh": "保濕眼罩",
+    "en": "moisture chamber"
+   },
+   "plain": {
+    "zh": "用透明保濕膜罩住眼睛，形成濕潤的小空間，比單純貼膠帶有效。",
+    "en": "A clear film sealed over the eye to make a moist little chamber; more effective than tape alone."
+   }
+  },
+  {
+   "term": {
+    "zh": "螢光染色",
+    "en": "fluorescein"
+   },
+   "plain": {
+    "zh": "黃色染劑在藍光下讓角膜破皮的地方發出綠光。",
+    "en": "A yellow dye that makes damaged cornea glow green under blue light."
+   }
+  },
+  {
+   "term": {
+    "zh": "兔眼",
+    "en": "lagophthalmos"
+   },
+   "plain": {
+    "zh": "眼皮閉不完全，睡著時還露出一條白色的縫。",
+    "en": "Eyelids that don't fully close, leaving a white sliver showing in sleep."
+   }
+  },
+  {
+   "term": {
+    "zh": "念珠菌血症",
+    "en": "candidaemia"
+   },
+   "plain": {
+    "zh": "念珠菌跑進血液。少數會跑到眼底，要依流程請眼科看。",
+    "en": "Candida yeast in the bloodstream. A few cases seed the back of the eye, so ophthalmology looks per protocol."
+   }
+  },
+  {
+   "term": {
+    "zh": "急性隅角閉鎖",
+    "en": "acute angle closure"
+   },
+   "plain": {
+    "zh": "眼內房水的出口突然被虹膜堵住，眼壓急速升高，眼紅、劇痛、頭痛、嘔吐。",
+    "en": "The eye's fluid outlet is suddenly blocked by the iris; pressure soars, with a red eye, severe pain, headache and vomiting."
+   }
+  },
+  {
+   "term": {
+    "zh": "眼壓",
+    "en": "intraocular pressure"
+   },
+   "plain": {
+    "zh": "眼球裡面的壓力。太高會壓壞視神經。",
+    "en": "The pressure inside the eyeball. Too high and it crushes the optic nerve."
+   }
+  },
+  {
+   "term": {
+    "zh": "雷射虹膜切開",
+    "en": "laser iridotomy"
+   },
+   "plain": {
+    "zh": "用雷射在虹膜周邊打一個小洞，讓房水有另一條路走。",
+    "en": "A laser makes a tiny hole at the edge of the iris so fluid has another way through."
+   }
+  },
+  {
+   "term": {
+    "zh": "間接眼底鏡",
+    "en": "indirect ophthalmoscope"
+   },
+   "plain": {
+    "zh": "戴在頭上的燈加手持放大鏡，一眼看到很大範圍的視網膜。",
+    "en": "A head-mounted light plus a handheld lens that shows a wide sweep of retina at once."
+   }
+  }
+ ],
+ "codex": [
+  {
+   "id": "indirect",
+   "kind": "equipment",
+   "name": {
+    "zh": "頭戴式間接眼底鏡",
+    "en": "Head-mounted indirect ophthalmoscope"
+   },
+   "text": {
+    "zh": "柯主治的「礦工燈」。早產兒篩檢、念珠菌眼底篩檢都靠它。",
+    "en": "Dr Ko's \"miner's lamp\". Preterm screening and candida fundus checks both depend on it."
+   },
+   "hot": "device"
+  },
+  {
+   "id": "speculum",
+   "kind": "equipment",
+   "name": {
+    "zh": "嬰兒開瞼器與鞏膜壓迫器",
+    "en": "Infant speculum and scleral depressor"
+   },
+   "text": {
+    "zh": "很小，很輕。用力的時候，要一邊看監視器。",
+    "en": "Tiny and light. Whenever you press, watch the monitor too."
+   },
+   "hot": "instruments"
+  },
+  {
+   "id": "nicu-monitor",
+   "kind": "equipment",
+   "name": {
+    "zh": "新生兒監視器",
+    "en": "Neonatal monitor"
+   },
+   "text": {
+    "zh": "檢查中和檢查後都要看：心跳、血氧、呼吸暫停。",
+    "en": "Watch it during and after the exam: heart rate, saturation, apnoea."
+   },
+   "hot": "monitor"
+  },
+  {
+   "id": "footprint",
+   "kind": "item",
+   "name": {
+    "zh": "小豆的腳印卡",
+    "en": "Little Bean's footprint card"
+   },
+   "text": {
+    "zh": "保溫箱上貼的腳印卡。媽媽在背面寫下下一次眼睛檢查的日期，畫了一顆愛心。",
+    "en": "The footprint card on the incubator. On the back, her mother has written the next eye-exam date and drawn a heart."
+   }
+  },
+  {
+   "id": "rop-followup",
+   "kind": "concept",
+   "name": {
+    "zh": "早產兒視網膜病變：追蹤就是治療的一半",
+    "en": "ROP: follow-up is half the treatment"
+   },
+   "text": {
+    "zh": "篩檢對象是週數小或體重輕的早產兒，第一次檢查依矯正週數或出生後的時程安排。結果用區域（越靠中央越危險）、分期與有無「加重病變」描述。輕度的多半會自己退，但有一部分會在幾週內變重，進入需要雷射或眼內注射的範圍，而治療有時間窗。所以下一次檢查的日期，和這一次的結果一樣重要。",
+    "en": "Screening covers babies born very early or very small, with the first exam timed by corrected age or weeks after birth. Findings are described by zone (the more central, the more dangerous), stage, and whether \"plus disease\" is present. Mild disease usually regresses, but some worsens within weeks into the range needing laser or injection, and treatment has a time window. So the date of the next exam matters as much as today's result."
+   }
+  },
+  {
+   "id": "icu-eyes",
+   "kind": "concept",
+   "name": {
+    "zh": "加護病房的眼睛也是器官",
+    "en": "ICU eyes are an organ too"
+   },
+   "text": {
+    "zh": "鎮靜、肌肉鬆弛、趴睡、水腫都會讓眼皮閉不起來，淚液也變少。暴露性角膜病變一旦感染，可能失明。預防比治療簡單：評估閉合、清潔、潤滑、保濕眼罩、趴睡時避免眼睛受壓，每班記錄並用螢光檢查。這是護理照護的核心，也是會診該教的事。",
+    "en": "Sedation, paralysis, prone positioning and oedema all stop the eyelids closing, and tears dwindle. Exposure keratopathy that becomes infected can blind. Prevention is easier than cure: check closure, clean, lubricate, use a moisture chamber, keep pressure off the eyes when prone, record each shift and check with fluorescein. Core nursing care, and something every consult should teach."
+   }
+  },
+  {
+   "id": "ct-normal",
+   "kind": "concept",
+   "name": {
+    "zh": "電腦斷層正常，眼睛不一定沒事",
+    "en": "A normal CT does not clear the eye"
+   },
+   "text": {
+    "zh": "急性隅角閉鎖會頭痛、噁心、嘔吐，在術後病人很容易被當成麻醉後噁心或腦部問題。頭部電腦斷層看不到眼壓。看一眼就好：眼紅、角膜霧霧的、瞳孔半放大且反應差、摸起來眼球硬。加護病房裡的抗膽鹼或擬交感藥物、昏暗燈光都可能誘發。及早降眼壓、再做雷射虹膜切開，另一眼也要評估。",
+    "en": "Acute angle closure brings headache, nausea and vomiting, easily mistaken after surgery for post-anaesthetic sickness or a brain problem. A head CT cannot see eye pressure. One look is enough: a red eye, a hazy cornea, a mid-dilated sluggish pupil, a hard globe. Anticholinergic or adrenergic drugs and dim lighting in the ICU can trigger it. Lower the pressure early, then laser iridotomy, and assess the other eye too."
+   }
+  }
+ ],
+ "segs": [
+  {
+   "id": "list",
+   "name": {
+    "zh": "會診清單",
+    "en": "The consult list"
+   },
+   "sub": {
+    "zh": "08:30 · 會診白板",
+    "en": "08:30 · consult whiteboard"
+   },
+   "t": 510,
+   "mood": "day",
+   "note": {
+    "zh": "三個加護病房，三雙不會喊痛的眼睛",
+    "en": "Three ICUs, three pairs of eyes that cannot complain"
+   },
+   "beats": [
+    {
+     "id": "l1",
+     "to": "attending",
+     "guide": {
+      "zh": "到白板找柯主治",
+      "en": "Find Dr Ko at the board"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "早。今天三個加護病房：早產兒篩檢、趴睡的呼吸器病人、念珠菌血症要看眼底。",
+        "en": "Morning. Three ICUs today: a preterm screening, a prone ventilated patient, and a candidaemia fundus check."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "加護病房的眼睛有什麼共通點？",
+        "en": "What do ICU eyes have in common?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "病人不會說。要我們去看。",
+        "en": "The patients can't tell us. We have to go and look."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "對。去拿我的礦工燈。",
+        "en": "Right. Go and get my miner's lamp."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "find",
+      "hot": "device",
+      "q": {
+       "zh": "找到頭戴式間接眼底鏡",
+       "en": "Find the head-mounted indirect ophthalmoscope"
+      }
+     }
+    },
+    {
+     "id": "l2",
+     "to": "place:kit",
+     "guide": {
+      "zh": "整理會診包",
+      "en": "Pack the consult bag"
+     },
+     "roles": [
+      "eye-nurse"
+     ],
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "新生兒用的散瞳藥、表面麻醉、嬰兒開瞼器、螢光試紙、藍光筆、手持眼壓計。",
+        "en": "Neonatal dilating drops, topical anaesthetic, infant speculum, fluorescein strips, blue light, handheld tonometer."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "新生兒的散瞳藥依流程點，點完要提醒雅婷盯呼吸和心跳。",
+        "en": "Neonatal drops go in per protocol, and I remind Ya-ting to watch breathing and heart rate afterwards."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "nicu",
+   "name": {
+    "zh": "新生兒加護",
+    "en": "Neonatal ICU"
+   },
+   "sub": {
+    "zh": "09:00 · 小豆的保溫箱",
+    "en": "09:00 · Little Bean's incubator"
+   },
+   "t": 540,
+   "mood": "day",
+   "note": {
+    "zh": "小豆第一次篩檢：輕度，要追蹤",
+    "en": "Little Bean's first screen: mild, follow-up needed"
+   },
+   "beats": [
+    {
+     "id": "n1",
+     "to": "nicu-nurse",
+     "guide": {
+      "zh": "雅婷包好小豆了",
+      "en": "Ya-ting has swaddled Little Bean"
+     },
+     "lines": [
+      [
+       "nicu-nurse",
+       {
+        "zh": "包巾包好、安撫奶嘴、糖水依流程。監視器我盯著。",
+        "en": "Swaddled, dummy in, sucrose per protocol. I've got the monitor."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "開瞼器放好，鞏膜壓迫要輕。你戴燈。",
+        "en": "Speculum in, and gentle scleral depression. You wear the lamp."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "散瞳夠了。從後極開始，再往周邊看。",
+        "en": "Dilation is good. Posterior pole first, then out to the periphery."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "drill",
+      "template": "ophthalmology",
+      "drill": "fundus"
+     }
+    },
+    {
+     "id": "n2",
+     "to": "place:monitor",
+     "guide": {
+      "zh": "監視器響了",
+      "en": "The monitor alarms"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "你剛壓到周邊，監視器的心跳數字往下掉，血氧也開始往下。",
+        "en": "As you press at the periphery, the heart rate on the monitor drops and the saturation follows."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "vitals",
+      "event": "bradycardia",
+      "options": [
+       {
+        "zh": "停手、移開器械，讓雅婷依流程處理",
+        "en": "Stop, remove the instruments; Ya-ting per protocol",
+        "ok": true,
+        "why": {
+         "zh": "對。眼心反射：先放掉壓迫，大多數會很快回來。依新生兒流程刺激與支持呼吸，穩了再繼續。",
+         "en": "Right. Oculocardiac reflex: release the pressure and most recover quickly. Stimulate and support breathing per the neonatal protocol; resume once stable."
+        }
+       },
+       {
+        "zh": "快看完了，再撐一下",
+        "en": "Nearly done; push on",
+        "ok": false,
+        "why": {
+         "zh": "眼底可以晚一點看完，早產兒的心跳和呼吸不能等。",
+         "en": "The fundus can be finished later. A preterm baby's heart rate and breathing cannot wait."
+        }
+       },
+       {
+        "zh": "壓更用力，快點看完周邊",
+        "en": "Press harder to finish faster",
+        "ok": false,
+        "why": {
+         "zh": "壓迫正是心跳變慢的原因。越用力，反射越強。",
+         "en": "The pressure is what slowed the heart. Press harder and the reflex gets stronger."
+        }
+       }
+      ]
+     },
+     "post": [
+      [
+       "nicu-nurse",
+       {
+        "zh": "回來了。小豆抓住我的手指了。",
+        "en": "Back up. Little Bean's grabbed my finger."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "周邊看完：第二區，第一期，沒有加重病變。",
+        "en": "Periphery done: zone II, stage 1, no plus disease."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "輕度。現在最重要的是下一次。",
+        "en": "Mild. What matters most now is the next exam."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "n3",
+     "to": "mother",
+     "guide": {
+      "zh": "小豆媽媽來了",
+      "en": "Little Bean's mother arrives"
+     },
+     "lines": [
+      [
+       "mother",
+       {
+        "zh": "醫師，他的眼睛還好嗎？輕度的話，下次可以不用做了吧？他每次檢查都哭好久。",
+        "en": "Doctor, are his eyes all right? If it's mild, can we skip the next one? He cries so long every time."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "choice",
+      "q": {
+       "zh": "媽媽希望輕度就不用再檢查，你怎麼說？",
+       "en": "She hopes mild means no more exams. What do you say?"
+      },
+      "options": [
+       {
+        "zh": "說明可能變重，下次日期現在定好",
+        "en": "It can worsen; book the next date now",
+        "ok": true,
+        "why": {
+         "zh": "對。輕度的多半會退，但有一部分會在幾週內變重，而治療有時間窗。日期現在就排、寫下來。",
+         "en": "Right. Mild disease mostly regresses, but some worsens within weeks and treatment has a window. Book the date now and write it down."
+        },
+        "set": {
+         "rop": "booked"
+        }
+       },
+       {
+        "zh": "今天是輕度，下次看狀況再說",
+        "en": "It's mild; we'll see about next time",
+        "ok": false,
+        "why": {
+         "zh": "「看狀況」常常變成沒有下一次。錯過的視網膜病變不會回頭。",
+         "en": "\"We'll see\" often becomes no next time. Missed retinopathy doesn't give you a second chance."
+        },
+        "set": {
+         "rop": "vague"
+        }
+       },
+       {
+        "zh": "輕度就不用追蹤了",
+        "en": "Mild needs no follow-up",
+        "ok": false,
+        "why": {
+         "zh": "早產兒視網膜病變的危險在變化。篩檢要做到視網膜血管長完為止。",
+         "en": "The danger in ROP is change. Screening continues until the retinal vessels have finished growing."
+        },
+        "set": {
+         "rop": "skip"
+        }
+       }
+      ]
+     },
+     "post": [
+      [
+       "mother",
+       {
+        "zh": "好。哭一下，換一輩子看得見。",
+        "en": "All right. A little crying, for a lifetime of seeing."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "micu",
+   "name": {
+    "zh": "內科加護",
+    "en": "Medical ICU"
+   },
+   "sub": {
+    "zh": "11:00 · 陳大哥的床",
+    "en": "11:00 · Mr Chen's bed"
+   },
+   "t": 660,
+   "mood": "day",
+   "note": {
+    "zh": "暴露性角膜病變：保濕眼罩；眼底無念珠菌病灶",
+    "en": "Exposure keratopathy: moisture chamber; no candida in the fundus"
+   },
+   "beats": [
+    {
+     "id": "m1",
+     "to": "icu-nurse",
+     "guide": {
+      "zh": "阿珠在陳大哥床邊",
+      "en": "A-chu at Mr Chen's bed"
+     },
+     "lines": [
+      [
+       "icu-nurse",
+       {
+        "zh": "他剛從趴睡翻回來。眼睛一直閉不起來，下面露一條白線，結膜腫得像果凍。",
+        "en": "He's just been turned back from prone. The eyes won't close, a white strip shows below, and the conjunctiva is swollen like jelly."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "兔眼加上結膜水腫。點螢光看角膜。",
+        "en": "Lagophthalmos plus chemosis. Fluorescein for the cornea."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "ophthalmology-red-eye-triage-conjunctivitis",
+      "stage": 4
+     },
+     "post": [
+      [
+       "me",
+       {
+        "zh": "螢光染色：兩眼下方角膜一條帶狀綠色著染。暴露性角膜病變，還沒潰瘍。",
+        "en": "A green band of staining across the lower cornea in both eyes. Exposure keratopathy, no ulcer yet."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "還沒，是因為今天有人看。",
+        "en": "Not yet, because somebody looked today."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "m2",
+     "to": "icu-nurse",
+     "guide": {
+      "zh": "教加護病房的眼睛照護",
+      "en": "Teach ICU eye care"
+     },
+     "lines": [
+      [
+       "icu-nurse",
+       {
+        "zh": "我們之前只有貼膠帶。",
+        "en": "We've only been taping them shut."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "膠帶不夠。我們一起排一下每班的步驟。",
+        "en": "Tape isn't enough. Let's set out the steps for every shift."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "order",
+      "q": {
+       "zh": "鎮靜病人每班的眼睛照護順序",
+       "en": "Eye care for a sedated patient each shift, in order"
+      },
+      "steps": [
+       {
+        "zh": "評估眼皮能否閉合",
+        "en": "Check whether the lids close"
+       },
+       {
+        "zh": "用無菌生理食鹽水清潔",
+        "en": "Clean with sterile saline"
+       },
+       {
+        "zh": "依醫囑點潤滑劑或眼膏",
+        "en": "Lubricant or ointment per orders"
+       },
+       {
+        "zh": "蓋上保濕眼罩",
+        "en": "Apply the moisture chamber"
+       },
+       {
+        "zh": "趴睡時確認眼睛不受壓",
+        "en": "When prone, keep pressure off the eyes"
+       },
+       {
+        "zh": "記錄並定期螢光檢查",
+        "en": "Record, with regular fluorescein checks"
+       }
+      ]
+     },
+     "post": [
+      [
+       "icu-nurse",
+       {
+        "zh": "保濕眼罩我們庫房有，只是沒人知道。",
+        "en": "We've got moisture-chamber film in stock. Nobody knew."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "m3",
+     "to": "place:bed-chen",
+     "guide": {
+      "zh": "念珠菌血症的眼底",
+      "en": "The candidaemia fundus check"
+     },
+     "lines": [
+      [
+       "icu-nurse",
+       {
+        "zh": "感染科說他的中心導管血液培養長念珠菌，要請你們看眼底。",
+        "en": "Infectious diseases say his central-line cultures grew Candida; they want his fundus checked."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "散瞳後看兩眼視網膜和玻璃體：沒有白色絨毛狀病灶，玻璃體清。",
+        "en": "Both eyes dilated, retina and vitreous examined: no white fluffy lesions, vitreous clear."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "今天沒有。但他無法說「看不清楚」，所以依流程再追，有變化隨時找我們。",
+        "en": "None today. He can't tell us his vision is blurred, so we follow up per protocol and come whenever anything changes."
+       }
+      ]
+     ],
+     "roles": [
+      "resident"
+     ]
+    },
+    {
+     "id": "m4",
+     "to": "place:bed-chen",
+     "guide": {
+      "zh": "貼保濕眼罩",
+      "en": "Apply the moisture chamber"
+     },
+     "roles": [
+      "eye-nurse"
+     ],
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "阿珠，眼膏點下去，保濕膜從眉毛貼到顴骨，四邊密封，不要壓到眼球。",
+        "en": "A-chu: ointment in, then the film from brow to cheekbone, sealed on all four sides, no pressure on the globe."
+       }
+      ],
+      [
+       "icu-nurse",
+       {
+        "zh": "像幫眼睛蓋一個小溫室。",
+        "en": "Like a little greenhouse for the eye."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "對。每班打開看一次，記錄。",
+        "en": "Exactly. Open and check every shift, and record it."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sicu",
+   "name": {
+    "zh": "外科加護",
+    "en": "Surgical ICU"
+   },
+   "sub": {
+    "zh": "16:00 · 黃阿姨的床",
+    "en": "16:00 · Auntie Huang's bed"
+   },
+   "t": 960,
+   "mood": "day",
+   "note": {
+    "zh": "頭部斷層正常，答案在眼睛：急性隅角閉鎖",
+    "en": "Normal head CT; the answer was the eye: acute angle closure"
+   },
+   "beats": [
+    {
+     "id": "s1",
+     "to": "place:viewer",
+     "guide": {
+      "zh": "外科加護來電",
+      "en": "The surgical ICU calls"
+     },
+     "ring": {
+      "title": {
+       "zh": "外科加護來電",
+       "en": "Surgical ICU calling"
+      },
+      "sub": {
+       "zh": "小林：「術後頭痛嘔吐，斷層正常，右眼紅，是結膜炎嗎？」",
+       "en": "Lin: \"Post-op headache and vomiting, CT normal, right eye red. Conjunctivitis?\""
+      },
+      "call": true,
+      "from": "sicu-doc"
+     },
+     "lines": [
+      [
+       "sicu-doc",
+       {
+        "zh": "黃阿姨術後第一天，頭痛、一直吐。頭部電腦斷層正常。右眼紅，她說看燈有彩虹。",
+        "en": "Auntie Huang, day one post-op, headache, vomiting. Head CT normal. Right eye red; she says lights have rainbows."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "昨晚有沒有用支氣管擴張劑噴霧？病房燈很暗嗎？",
+        "en": "Any bronchodilator nebulisers last night? Was the unit dim?"
+       }
+      ],
+      [
+       "sicu-doc",
+       {
+        "zh": "有，她喘，噴了兩次。晚上燈都關了。",
+        "en": "Yes, she was wheezy and had two. Lights were off overnight."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "imaging",
+      "region": "head",
+      "question": {
+       "zh": "頭部電腦斷層正常。它排除不了什麼？",
+       "en": "The head CT is normal. What can it not rule out?"
+      },
+      "answer": {
+       "zh": "排除不了急性隅角閉鎖。斷層看不到眼壓；頭痛、嘔吐、眼紅、看燈有彩虹，要直接看眼睛：角膜、瞳孔、眼壓。",
+       "en": "Acute angle closure. A CT cannot see eye pressure. Headache, vomiting, a red eye and haloes round lights mean look at the eye itself: cornea, pupil, pressure."
+      }
+     }
+    },
+    {
+     "id": "s2",
+     "to": "mrs-huang",
+     "guide": {
+      "zh": "看黃阿姨的眼睛",
+      "en": "Look at Auntie Huang's eye"
+     },
+     "lines": [
+      [
+       "mrs-huang",
+       {
+        "zh": "醫師，右眼像被人從裡面用拳頭頂。燈旁邊都是彩虹。",
+        "en": "Doctor, my right eye feels punched from the inside. There are rainbows round every light."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "右眼視力很差、角膜霧霧的、瞳孔半放大、對光反應很慢。",
+        "en": "Right vision very poor, cornea hazy, pupil mid-dilated and barely reacting to light."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "ophthalmology-acute-angle-closure-glaucoma",
+      "stage": 1
+     },
+     "post": [
+      [
+       "attending",
+       {
+        "zh": "不是結膜炎。結膜炎不會讓瞳孔卡在半路。",
+        "en": "Not conjunctivitis. Conjunctivitis doesn't leave a pupil stuck half-way."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "s3",
+     "to": "mrs-huang",
+     "guide": {
+      "zh": "量眼壓",
+      "en": "Measure the pressure"
+     },
+     "roles": [
+      "eye-nurse"
+     ],
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "黃阿姨，表面麻醉點一下，這支筆輕輕碰一下眼睛，不會痛。",
+        "en": "Auntie Huang, a numbing drop, then this pen will touch your eye lightly. It won't hurt."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "右眼眼壓非常高，左眼正常。我立刻報給柯主治。",
+        "en": "Right intraocular pressure very high, left normal. I'm telling Dr Ko right now."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "ophthalmology-acute-angle-closure-glaucoma",
+      "stage": 2
+     }
+    },
+    {
+     "id": "s4",
+     "to": "attending",
+     "guide": {
+      "zh": "柯主治的處置",
+      "en": "Dr Ko's plan"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "急性隅角閉鎖。降眼壓的藥依流程，平躺、燈打亮、停掉會讓瞳孔放大的藥。",
+        "en": "Acute angle closure. Pressure-lowering treatment per protocol; lie her flat, lights up, stop anything that dilates the pupil."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "眼壓降下來、角膜清了，再做雷射虹膜切開。左眼也要評估。",
+        "en": "Once the pressure falls and the cornea clears, laser iridotomy. And assess the left eye."
+       }
+      ],
+      [
+       "mrs-huang",
+       {
+        "zh": "原來我吐不是因為麻醉……",
+        "en": "So I wasn't sick because of the anaesthetic..."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "一部分是眼睛在叫。今天有人聽到了。",
+        "en": "Partly it was your eye shouting. Today someone heard it."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "s5",
+     "to": "place:desk",
+     "guide": {
+      "zh": "寫會診紀錄",
+      "en": "Write the consult note"
+     },
+     "roles": [
+      "resident"
+     ],
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "右眼急性隅角閉鎖，眼壓很高，已依流程降壓。可能誘因：抗膽鹼噴霧與昏暗燈光。",
+        "en": "Right acute angle closure, pressure very high, lowered per protocol. Likely triggers: anticholinergic nebuliser and dim light."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "建議：避免散瞳類藥物、燈保持亮，明天雷射虹膜切開，左眼一併評估。",
+        "en": "Advice: avoid dilating drugs, keep lights up, laser iridotomy tomorrow, left eye assessed too."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "寫給外科加護看得懂的話。他們今晚要照顧她。",
+        "en": "Write it so the surgical ICU understands. They're caring for her tonight."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "debrief",
+   "name": {
+    "zh": "傍晚回顧",
+    "en": "Evening debrief"
+   },
+   "sub": {
+    "zh": "18:00 · 會診白板",
+    "en": "18:00 · consult whiteboard"
+   },
+   "t": 1080,
+   "mood": "eve",
+   "note": {
+    "zh": "三個病人，三種「看不到的」",
+    "en": "Three patients, three kinds of unseen"
+   },
+   "beats": [
+    {
+     "id": "d1",
+     "to": "attending",
+     "guide": {
+      "zh": "柯主治的回顧",
+      "en": "Dr Ko's debrief"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "今天三雙眼睛，有什麼共同點？",
+        "en": "Three pairs of eyes today. What did they share?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "都不會說。早產兒不會、鎮靜的不會，黃阿姨會說，但大家聽成噁心。",
+        "en": "None could tell us. The baby can't, the sedated man can't, and Auntie Huang could, but everyone heard nausea."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "眼科會診的工作，是替不會說的眼睛說話。",
+        "en": "An eye consult's job is to speak for eyes that can't."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "d2",
+     "to": "attending",
+     "guide": {
+      "zh": "柯主治看了小豆的紀錄",
+      "en": "Dr Ko checks Little Bean's record"
+     },
+     "when": {
+      "flag": "rop",
+      "is": "booked"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "小豆下一次的檢查排好了？",
+        "en": "Is Little Bean's next exam booked?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "排好了。媽媽寫在腳印卡背面，還畫了一顆愛心。",
+        "en": "Booked. His mother wrote it on the back of the footprint card, with a heart."
+       }
+      ]
+     ],
+     "item": "footprint"
+    },
+    {
+     "id": "d3",
+     "to": "attending",
+     "guide": {
+      "zh": "柯主治看了小豆的紀錄",
+      "en": "Dr Ko checks Little Bean's record"
+     },
+     "when": {
+      "flag": "rop",
+      "is": "vague"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "小豆的下一次檢查呢？紀錄上寫「看狀況」。",
+        "en": "Little Bean's next exam? The record says \"we'll see\"."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "……我現在去排，打電話給媽媽。",
+        "en": "...I'll book it now and phone his mother."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "早產兒視網膜病變不會等你看狀況。",
+        "en": "Retinopathy of prematurity won't wait for \"we'll see\"."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "d4",
+     "to": "attending",
+     "guide": {
+      "zh": "柯主治看了小豆的紀錄",
+      "en": "Dr Ko checks Little Bean's record"
+     },
+     "when": {
+      "flag": "rop",
+      "is": "skip"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "小豆的紀錄寫「輕度，不用追蹤」。誰教你的？",
+        "en": "Little Bean's record says \"mild, no follow-up\". Who taught you that?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "我以為輕度就安全了。",
+        "en": "I thought mild meant safe."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "篩檢要做到血管長完。現在去改，親自跟媽媽說。",
+        "en": "Screening continues until the vessels finish growing. Correct it now and tell his mother yourself."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "night",
+   "name": {
+    "zh": "值班夜",
+    "en": "On call tonight"
+   },
+   "sub": {
+    "zh": "22:00 · 值班電話",
+    "en": "22:00 · on-call phone"
+   },
+   "t": 1320,
+   "mood": "night",
+   "note": {
+    "zh": "黃阿姨的眼壓降了；陳大哥的眼罩在",
+    "en": "Auntie Huang's pressure down; Mr Chen's chamber on"
+   },
+   "beats": [
+    {
+     "id": "x1",
+     "to": "place:desk",
+     "guide": {
+      "zh": "接加護病房電話",
+      "en": "Take the ICU's call"
+     },
+     "ring": {
+      "title": {
+       "zh": "內科加護來電",
+       "en": "Medical ICU calling"
+      },
+      "sub": {
+       "zh": "阿珠：「陳大哥要再趴睡了，眼罩要拿掉嗎？」",
+       "en": "A-chu: \"Mr Chen is going prone again. Does the chamber come off?\""
+      },
+      "call": true,
+      "from": "icu-nurse"
+     },
+     "lines": [
+      [
+       "icu-nurse",
+       {
+        "zh": "陳大哥等一下又要趴睡。保濕眼罩要拿掉嗎？",
+        "en": "Mr Chen is going prone again shortly. Does the moisture chamber come off?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "不用拿掉。趴的時候確認頭枕沒有壓到眼睛，翻回來後打開檢查、記錄。",
+        "en": "Leave it on. When he's prone, make sure the head support isn't pressing on the eyes; check and record when he's turned back."
+       }
+      ],
+      [
+       "icu-nurse",
+       {
+        "zh": "好。另外外科加護說，黃阿姨的眼睛不痛了，看燈也沒有彩虹了。",
+        "en": "Will do. And surgical ICU say Auntie Huang's eye has stopped hurting, and the rainbows are gone."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "x2",
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "明天雷射。她的左眼也排在一起。",
+        "en": "Laser tomorrow, with her left eye assessed at the same visit."
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "值班結束。新生兒加護的燈調暗了；保溫箱上，那張腳印卡還貼著。",
+        "en": "End of shift. The neonatal unit dims its lights; on the incubator, the footprint card is still taped in place."
+       }
+      ]
+     ],
+     "end": true
+    }
+   ]
+  }
+ ],
+ "ending": {
+  "title": {
+   "zh": "下班了",
+   "en": "End of shift"
+  },
+  "sub": {
+   "zh": "三雙不會說話的眼睛，今天都有人看了",
+   "en": "Three pairs of silent eyes, all looked at today"
+  },
+  "stats": [
+   "stages",
+   "grades",
+   "choices",
+   "calls",
+   "items",
+   "time"
+  ]
+ }
+}

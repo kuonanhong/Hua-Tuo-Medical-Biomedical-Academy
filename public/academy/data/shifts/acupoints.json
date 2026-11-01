@@ -1,0 +1,279 @@
+{
+ "format": "huatuo-shift-v2",
+ "department": "acupoints",
+ "case": "main",
+ "caseTitle": {"zh": "銅人考試日", "en": "Bronze-figure exam day"},
+ "condition": {"zh": "常用穴定位考", "en": "Point-location exam"},
+ "difficulty": 1,
+ "title": {"zh": "經絡腧穴定位考試日", "en": "Point-location exam day"},
+ "tagline": {"zh": "三站、一尊銅人、一位會反問的標準化病人", "en": "Three stations, one bronze figure, and a standardised patient who asks the questions back"},
+ "room": "tcm-clinic",
+ "minutes": 25,
+ "roles": [
+  {"id": "intern", "zh": "中醫見習醫師", "en": "TCM clerk",
+   "desc": {"zh": "今天的考生。先找標誌，再用病人的手量，最後按壓確認。別忘了吃早餐。", "en": "Today's candidate. Find the landmark, measure with the patient's hand, confirm by pressing. And eat breakfast."}},
+  {"id": "ta", "zh": "針灸助教", "en": "Acupuncture teaching assistant",
+   "desc": {"zh": "帶練習、看流程、給回饋。評的是方法，不是運氣。", "en": "Run the practice, watch the method, give feedback. You grade the process, not the luck."}}
+ ],
+ "cast": {
+  "qiu": {"name": {"zh": "邱醫師", "en": "Dr Chiu"}, "role": {"zh": "針灸學教師（師傅）", "en": "Acupuncture teacher (mentor)"}, "tag": "ATT", "color": "#81296d", "body": "mentor",
+   "about": {"zh": "口頭禪：骨度是尺，手指是病人的。考試前會偷偷確認每個學生有沒有吃早餐。", "en": "Catchphrase: bone proportions are the ruler, the fingers belong to the patient. Quietly checks before every exam whether the students have eaten."}},
+  "azhe": {"name": {"zh": "阿哲學長", "en": "A-Che"}, "role": {"zh": "針灸助教（住院醫師）", "en": "Teaching assistant (resident)"}, "tag": "TA", "color": "#2f6f8f", "body": "student",
+   "about": {"zh": "評分表永遠寫得很具體。他自己當年考定位時，也是用錯手指。", "en": "His feedback sheets are always specific. When he sat the exam himself, he also measured with the wrong hand."}},
+  "xiaoyu": {"name": {"zh": "小雨", "en": "Hsiao-Yu"}, "role": {"zh": "同學，背得很熟，摸不太到", "en": "Classmate; knows the text, struggles on skin"}, "tag": "STU", "color": "#3b8f6a", "body": "student",
+   "about": {"zh": "定位文字倒背如流，一摸真人就慌。今天太緊張沒吃早餐。", "en": "Can recite every location, panics on a real body. Too nervous to eat breakfast today."}},
+  "chenbo": {"name": {"zh": "陳伯", "en": "Uncle Chen"}, "role": {"zh": "標準化病人，退休老師", "en": "Standardised patient, retired teacher"}, "tag": "SP", "color": "#c2703a", "body": "patient",
+   "about": {"zh": "虛構教學個案。教了三十年書，退休後自願當標準化病人。你考他，他也考你。", "en": "Fictional teaching case. Taught for thirty years, now volunteers as a standardised patient. You examine him; he examines you."}},
+  "registrar": {"name": {"zh": "教務組", "en": "Academic office"}, "role": {"zh": "教務（訊息）", "en": "Academic office (by message)"}, "tag": "ADM", "color": "#8a6d3b", "phoneOnly": true,
+   "about": {"zh": "訊息永遠準時，成績永遠晚一點。", "en": "Messages always on time, results always a little late."}},
+  "ward-nurse": {"name": {"zh": "病房護理師", "en": "Ward nurse"}, "role": {"zh": "病房（電話）", "en": "Ward (by phone)"}, "tag": "RN", "color": "#3f6fa8", "phoneOnly": true,
+   "about": {"zh": "病人要灸足三里，她想確認位置。問對人了。", "en": "A patient is due moxa at Zusanli and she wants to be sure of the spot. She asked the right people."}}
+ },
+ "places": {
+  "board": {"name": {"zh": "考站白板", "en": "Station board"}, "hot": "whiteboard"},
+  "chart-wall": {"name": {"zh": "經絡掛圖", "en": "Meridian chart"}, "hot": "meridian-chart"},
+  "bronze": {"name": {"zh": "針灸銅人", "en": "Bronze figure"}, "hot": "bronze"},
+  "couch": {"name": {"zh": "隔簾後的治療床", "en": "Couch behind the curtain"}, "hot": "couch"},
+  "desk": {"name": {"zh": "脈枕診桌", "en": "Pulse desk"}, "hot": "pulse-desk"}
+ },
+ "glossary": [
+  {"term": {"zh": "骨度分寸", "en": "bone-proportional cun"}, "plain": {"zh": "把身體各段骨頭的長度定為固定的「寸」數，不論高矮胖瘦都按比例折算，是取穴最基本的尺。", "en": "Each segment of the body is assigned a fixed number of cun regardless of the person's size, so distances scale with the individual; the basic ruler for locating points."}},
+  {"term": {"zh": "同身寸", "en": "body cun"}, "plain": {"zh": "用病人自己的手指當單位：中指中節為一寸、拇指寬為一寸、四指併攏為三寸。", "en": "Units taken from the patient's own hand: the middle segment of the middle finger as one cun, the thumb width as one cun, four fingers together as three cun."}},
+  {"term": {"zh": "橫指同身寸", "en": "finger-breadth cun"}, "plain": {"zh": "食中無名小指併攏，以中指中節橫紋為準的寬度為三寸；一定用病人的手。", "en": "The width of the patient's four fingers held together, measured at the middle crease of the middle finger, counts as three cun; always the patient's hand."}},
+  {"term": {"zh": "體表標誌", "en": "surface landmark"}, "plain": {"zh": "骨頭突起、肌腱、皮膚橫紋、髮際等摸得到看得到的參考點，取穴先找它們。", "en": "Bony prominences, tendons, skin creases and hairlines you can see or feel; point location starts from them."}},
+  {"term": {"zh": "犢鼻", "en": "Dubi"}, "plain": {"zh": "屈膝時髕骨下方外側的凹陷，又叫外膝眼；足三里從這裡往下量。", "en": "The hollow below and lateral to the kneecap when the knee is bent, the outer “knee eye”; Zusanli is measured down from it."}},
+  {"term": {"zh": "脛骨前嵴", "en": "tibial crest"}, "plain": {"zh": "小腿前面摸得到的那條骨脊；足三里在它外側一橫指。", "en": "The sharp ridge you can feel down the front of the shin; Zusanli lies one finger-breadth lateral to it."}},
+  {"term": {"zh": "原穴", "en": "yuan-source point"}, "plain": {"zh": "每條經脈上代表該臟腑原氣的穴，例如合谷、太溪；診治該臟腑常用。", "en": "The point on each meridian said to hold its organ's source qi, such as Hegu and Taixi; commonly used to assess and treat that organ."}},
+  {"term": {"zh": "合穴", "en": "he-sea point"}, "plain": {"zh": "五輸穴的最後一個，位在肘膝附近，中醫認為經氣在此匯入如水入海，例如足三里、曲池。", "en": "The last of the five transport points, near the elbow or knee, where in TCM the channel qi pours in like a river into the sea; Zusanli and Quchi for example."}},
+  {"term": {"zh": "下合穴", "en": "lower he-sea point"}, "plain": {"zh": "六腑在下肢各有一個合穴，足三里是胃的下合穴，所以「肚腹三里留」。", "en": "Each of the six fu organs has a he-sea point on the leg; Zusanli is the stomach's, hence “for the belly, keep to Sanli”."}},
+  {"term": {"zh": "交會穴", "en": "crossing point"}, "plain": {"zh": "兩條以上經脈相交的穴；三陰交是脾肝腎三經的交會，一穴管三經。", "en": "A point where two or more meridians meet; Sanyinjiao is where the Spleen, Liver and Kidney channels cross, one point for three meridians."}},
+  {"term": {"zh": "阿是穴", "en": "ashi point"}, "plain": {"zh": "沒有固定位置、按下去「啊，是這裡」的壓痛點；治痛有用，定位考不考它。", "en": "A tender spot with no fixed location, the “ah, yes, there” point; useful for pain, but never on a location exam."}},
+  {"term": {"zh": "直刺", "en": "perpendicular insertion"}, "plain": {"zh": "針身與皮膚垂直進針，用在肌肉豐厚的部位，例如足三里。", "en": "The needle enters at right angles to the skin, used where muscle is thick, as at Zusanli."}},
+  {"term": {"zh": "標準化病人", "en": "standardised patient"}, "plain": {"zh": "受過訓練、依劇本扮演病人並給回饋的人；考試裡最誠實的一份評分。", "en": "A trained person who plays a patient to a script and gives feedback; the most honest mark in any exam."}},
+  {"term": {"zh": "暈針", "en": "needle faint"}, "plain": {"zh": "針刺時頭暈、眼前發黑、冒冷汗甚至昏倒；空腹、緊張、坐姿、疲勞都是危險因子。", "en": "Dizziness, blackening vision, cold sweat or collapse during needling; an empty stomach, anxiety, sitting up and fatigue all raise the risk."}},
+  {"term": {"zh": "正常舌象", "en": "normal tongue"}, "plain": {"zh": "淡紅舌、薄白苔、不胖不瘦、活動自如。知道正常，才看得出異常。", "en": "A pale-red body, thin white coat, neither swollen nor thin, moving freely. You can only spot the abnormal once you know the normal."}}
+ ],
+ "codex": [
+  {"id": "bronze-figure", "kind": "equipment", "name": {"zh": "針灸銅人", "en": "Bronze acupuncture figure"}, "hot": "bronze",
+   "text": {"zh": "宋代王惟一鑄造的教學與考試用人形，穴孔灌水封蠟，針中則水出。今天的銅人是樹脂的，但考法一樣：先找標誌，再找穴。", "en": "The teaching and examination figure cast by Wang Weiyi in the Song dynasty: point holes filled with water and sealed with wax, a correct needle let the water out. Today's figure is resin, but the test is the same: landmark first, then point."}},
+  {"id": "meridian-chart", "kind": "equipment", "name": {"zh": "經絡掛圖", "en": "Meridian chart"}, "hot": "meridian-chart",
+   "text": {"zh": "十四經循行與常用穴一覽。考前複習用它，考試時不能看它。", "en": "The fourteen meridians and common points at a glance. For revision before the exam, and out of sight during it."}},
+  {"id": "pulse-desk", "kind": "equipment", "name": {"zh": "脈枕診桌", "en": "Pulse desk"}, "hot": "pulse-desk",
+   "text": {"zh": "今天借來當評分桌。脈枕讓手腕放鬆，方便量前臂的骨度：肘橫紋到腕橫紋算十二寸。", "en": "Borrowed as the marking desk today. The pulse cushion relaxes the wrist, which also makes the forearm's bone proportion easy to measure: elbow crease to wrist crease counts as twelve cun."}},
+  {"id": "location-card", "kind": "item", "name": {"zh": "定位小卡", "en": "Location card"},
+   "text": {"zh": "邱醫師發的卡：標誌→量→按→核對左右。四個字一個步驟，少一個都扣分。", "en": "Dr Chiu's card: landmark, measure, press, check both sides. One word per step; miss one and you lose the mark."}},
+  {"id": "wang-weiyi", "kind": "person", "name": {"zh": "王惟一與銅人", "en": "Wang Weiyi and the bronze figure"},
+   "text": {"zh": "北宋醫官，奉詔整理腧穴，撰《銅人腧穴針灸圖經》並鑄銅人兩具，把穴位的定位變成可以考試、可以複製的標準。", "en": "A Northern Song court physician commissioned to standardise the points; he wrote the Illustrated Manual of the Bronze Figure and cast two figures, turning point location into something that could be examined and reproduced."}},
+  {"id": "concept-locating", "kind": "concept", "name": {"zh": "穴位的四種取法", "en": "Four ways to locate a point"},
+   "text": {"zh": "骨度分寸：以骨節為尺按比例折算。同身寸：病人的手指當單位。體表標誌：骨突、肌腱、橫紋、髮際。簡便取穴：兩手虎口交叉食指尖到列缺、垂手中指尖到風市。四法互相核對，最後按壓確認酸脹感。", "en": "Bone-proportional cun: bony segments as a scaled ruler. Body cun: the patient's fingers as units. Surface landmarks: prominences, tendons, creases, hairlines. Convenience methods: crossed thumb-webs put the index tip on Lieque; the hanging middle finger finds Fengshi. The four cross-check one another, and pressing for an ache confirms the spot."}},
+  {"id": "concept-special", "kind": "concept", "name": {"zh": "特定穴為什麼重要", "en": "Why the special points matter"},
+   "text": {"zh": "原穴反映臟腑原氣，合穴治腑病，下合穴是六腑在下肢的門戶，交會穴一穴通數經，絡穴溝通表裡。中醫認為記住穴位的「身分」，就記住了它常用的理由。定位考後面接著的，是主治考。", "en": "Yuan-source points reflect an organ's source qi, he-sea points treat the fu organs, lower he-sea points are the fu organs' gateways on the legs, crossing points reach several meridians at once, luo-connecting points link paired channels. In TCM, knowing a point's “identity” is knowing why it is used. After the location exam comes the indications exam."}},
+  {"id": "concept-faint", "kind": "concept", "name": {"zh": "互相練針的安全", "en": "Safety when students needle each other"},
+   "text": {"zh": "空腹不練、緊張不練、一律臥位、只練安全穴位、老師在場、針盤清點。暈針時：出針、平臥抬腿、保暖、監測、通知老師。考試考的不只是穴位。", "en": "Never on an empty stomach, never when anxious, always lying down, only safe points, a teacher present, the tray counted. In a needle faint: needles out, lie flat with legs raised, warm, monitor, tell the teacher. The exam tests more than points."}}
+ ],
+ "segs": [
+  {"id": "review", "name": {"zh": "考前複習", "en": "Last-minute revision"}, "sub": {"zh": "08:00 · 中醫診間", "en": "08:00 · the TCM consulting room"}, "t": 480, "mood": "day",
+   "note": {"zh": "定位三寶複習完畢", "en": "The three essentials revised"},
+   "beats": [
+    {"id": "r1", "to": "place:board", "guide": {"zh": "看考站白板", "en": "Read the station board"},
+     "lines": [
+      ["sys", {"zh": "中醫診間今天借給針灸學考試。白板上寫著三站：銅人、真人、進針示範。", "en": "The TCM consulting room is lent to the acupuncture exam today. The board lists three stations: bronze figure, live model, insertion demonstration."}],
+      ["qiu", {"zh": "考定位之前，先問你最常用的三個穴：合谷、足三里、三陰交。定位三寶。", "en": "Before the exam, the three points you will use most: Hegu, Zusanli, Sanyinjiao. The three essentials."}],
+      ["qiu", {"zh": "在掛圖上指給我看。順便說它們是什麼穴。", "en": "Show me on the chart. And tell me what kind of point each is."}]
+     ],
+     "mini": {"type": "points", "codes": ["LI4", "ST36", "SP6"], "q": {"zh": "指出合谷、足三里、三陰交", "en": "Point to Hegu, Zusanli and Sanyinjiao"}},
+     "post": [
+      ["me", {"zh": "合谷是原穴，足三里是合穴也是胃的下合穴，三陰交是三陰經的交會穴。", "en": "Hegu is a yuan-source point, Zusanli a he-sea point and the stomach's lower he-sea point, Sanyinjiao the crossing point of the three leg yin meridians."}],
+      ["qiu", {"zh": "考試會問。吃早餐了嗎？", "en": "That will be asked. Have you eaten breakfast?"}]
+     ]},
+    {"id": "r2", "to": "azhe", "guide": {"zh": "跟助教練同身寸", "en": "Practise body cun with the TA"},
+     "lines": [
+      ["azhe", {"zh": "骨度分寸是尺，但尺要用病人的。中指同身寸、拇指同身寸、橫指同身寸，來一遍。", "en": "Bone-proportional cun is the ruler, but the ruler is the patient's. Middle-finger cun, thumb cun, finger-breadth cun: once through."}]
+     ],
+     "mini": {"type": "drill", "template": "acupoints", "drill": "cun"},
+     "post": [
+      ["azhe", {"zh": "四橫指是三寸，用病人的手。我當年就是用自己的手被扣分。", "en": "Four finger-breadths make three cun, with the patient's hand. I lost marks for using my own, back in the day."}]
+     ]}
+   ]},
+  {"id": "station1", "name": {"zh": "第一站：銅人", "en": "Station 1: the bronze figure"}, "sub": {"zh": "09:00 · 針灸銅人", "en": "09:00 · the bronze figure"}, "t": 540, "mood": "day",
+   "note": {"zh": "第一站：先找標誌，再找穴", "en": "Station 1: landmark first, then point"},
+   "beats": [
+    {"id": "s1", "to": "place:bronze", "guide": {"zh": "第一站：銅人取穴", "en": "Station 1: points on the bronze figure"},
+     "lines": [
+      ["qiu", {"zh": "銅人上沒有肉，只有標誌。先找體表標誌，再找穴。百會、風池、曲池。", "en": "The bronze figure has no flesh, only landmarks. Surface landmark first, then point. Baihui, Fengchi, Quchi."}]
+     ],
+     "mini": {"type": "points", "codes": ["GV20", "GB20", "LI11"], "q": {"zh": "在銅人上指出百會、風池、曲池", "en": "On the bronze figure, point to Baihui, Fengchi and Quchi"}},
+     "post": [
+      ["qiu", {"zh": "百會：兩耳尖連線的中點。風池：枕骨下兩條筋之間的凹陷。曲池：屈肘，肘橫紋外端。", "en": "Baihui: the midpoint of the line joining the ear apices. Fengchi: the hollow below the occiput between the two muscle cords. Quchi: elbow bent, the outer end of the crease."}]
+     ]},
+    {"id": "s2", "to": "xiaoyu", "guide": {"zh": "回答小雨的問題", "en": "Answer Hsiao-Yu's question"},
+     "lines": [
+      ["xiaoyu", {"zh": "我定位文字都背得出來，一摸真人就找不到。怎麼辦？", "en": "I can recite every location, and the moment I touch a real person I can't find anything. What do I do?"}],
+      ["qiu", {"zh": "你回答她。", "en": "You answer her."}]
+     ],
+     "mini": {"type": "choice", "q": {"zh": "小雨問：在真人身上找穴，最可靠的方法？", "en": "Hsiao-Yu asks: what is the most reliable way to find a point on a real person?"},
+      "options": [
+       {"zh": "先找體表標誌，再用病人的同身寸量", "en": "Landmark first, then the patient's body cun", "ok": true,
+        "why": {"zh": "標誌不會騙人，尺用病人的；最後按壓確認酸脹。", "en": "Landmarks do not lie and the ruler is the patient's; a press for the ache confirms it."}},
+       {"zh": "把掛圖位置背熟，照畫", "en": "Memorise the chart and copy it", "ok": false,
+        "why": {"zh": "掛圖是平均人，真人沒有一個是平均的。", "en": "The chart is an average person; no real person is average."}},
+       {"zh": "按到最痛的地方就是", "en": "Press until it hurts most; that's it", "ok": false,
+        "why": {"zh": "那是阿是穴，治痛有用，定位考不考它。", "en": "That is an ashi point, useful for pain, never on a location exam."}}
+      ]},
+     "post": [
+      ["xiaoyu", {"zh": "標誌、量、按。好。", "en": "Landmark, measure, press. Right."}]
+     ]}
+   ]},
+  {"id": "station2", "name": {"zh": "第二站：陳伯", "en": "Station 2: Uncle Chen"}, "sub": {"zh": "10:30 · 隔簾後的治療床", "en": "10:30 · the couch behind the curtain"}, "t": 630, "mood": "day",
+   "note": {"zh": "第二站：用陳伯的手量", "en": "Station 2: measured with Uncle Chen's hand"},
+   "beats": [
+    {"id": "c1", "to": "chenbo", "guide": {"zh": "第二站：真人定位", "en": "Station 2: location on a live model"},
+     "lines": [
+      ["chenbo", {"zh": "我教了三十年書，退休來當標準化病人。你們考我，我也考你們。", "en": "I taught for thirty years; now I'm a standardised patient. You examine me, I examine you."}],
+      ["me", {"zh": "陳伯好。", "en": "Good morning, Uncle Chen."}],
+      ["chenbo", {"zh": "足三里在哪？先講，再摸。", "en": "Where is Zusanli? Say it first, then find it."}]
+     ],
+     "mini": {"type": "choice", "q": {"zh": "足三里要從犢鼻往下量「四橫指」。你用誰的手指？", "en": "Zusanli is four finger-breadths below Dubi. Whose fingers do you use?"},
+      "options": [
+       {"zh": "用陳伯的手指，從犢鼻往下量", "en": "Uncle Chen's fingers, measured down from Dubi", "ok": true, "set": {"own-finger": false},
+        "why": {"zh": "同身寸是「同身」：病人的身、病人的手。", "en": "Body cun means the patient's body and the patient's hand."}},
+       {"zh": "用自己的手指量比較快", "en": "My own fingers; it's quicker", "ok": false, "set": {"own-finger": true},
+        "why": {"zh": "你的手比陳伯小。快一秒，差一個穴。", "en": "Your hand is smaller than Uncle Chen's. One second faster, one point out."}},
+       {"zh": "不用量，膝下外側按到酸就是", "en": "No measuring; press below the knee until it aches", "ok": false, "set": {"own-finger": true},
+        "why": {"zh": "酸的地方可能是阿是穴，不一定是足三里。", "en": "The sore spot may be an ashi point, not necessarily Zusanli."}}
+      ]},
+     "post": [
+      ["chenbo", {"zh": "我很高，你的手小。這題我每年都出。", "en": "I'm tall and your hand is small. I set this question every year."}]
+     ]},
+    {"id": "c2", "to": "chenbo", "guide": {"zh": "指出足三里、三陰交、太溪", "en": "Point to Zusanli, Sanyinjiao and Taixi"},
+     "lines": [
+      ["qiu", {"zh": "犢鼻、脛骨前嵴、內踝尖、跟腱。標誌先摸出來，再量。", "en": "Dubi, tibial crest, medial malleolus tip, Achilles tendon. Feel the landmarks first, then measure."}]
+     ],
+     "mini": {"type": "points", "codes": ["ST36", "SP6", "KI3"], "q": {"zh": "在陳伯腿上指出足三里、三陰交、太溪", "en": "On Uncle Chen's leg, point to Zusanli, Sanyinjiao and Taixi"}},
+     "post": [
+      ["qiu", {"zh": "足三里：犢鼻下四橫指、脛骨前嵴外一橫指。三陰交：內踝尖上四橫指、脛骨內側緣後方。太溪：內踝尖與跟腱之間。", "en": "Zusanli: four finger-breadths below Dubi, one lateral to the tibial crest. Sanyinjiao: four finger-breadths above the medial malleolus tip, behind the tibial border. Taixi: between the malleolus tip and the Achilles tendon."}],
+      ["chenbo", {"zh": "她按到了，很酸。合格。", "en": "She's on it; it aches properly. Pass."}]
+     ]},
+    {"id": "c3", "to": "chenbo", "guide": {"zh": "陳伯的加考", "en": "Uncle Chen's bonus question"},
+     "lines": [
+      ["chenbo", {"zh": "我舌頭也可以考。來，看看正不正常。", "en": "My tongue can be examined too. Come on, is it normal?"}],
+      ["qiu", {"zh": "他比題庫會出題。看吧。", "en": "He sets better questions than the question bank. Go on."}]
+     ],
+     "mini": {"type": "tongue", "tongue": {"body": "normal", "coat": "thin-white", "shape": "normal"}, "q": {"zh": "陳伯的舌：淡紅、苔薄白、不胖不瘦、伸舌居中。這是？", "en": "Uncle Chen's tongue: pale red, thin white coat, neither swollen nor thin, protrudes straight. This is?"},
+      "options": [
+       {"zh": "正常舌象", "en": "Normal tongue", "ok": true, "why": {"zh": "淡紅舌薄白苔就是正常。知道正常，才看得出異常。", "en": "A pale-red body with a thin white coat is normal. Knowing the normal is how you spot the abnormal."}},
+       {"zh": "氣虛舌", "en": "Qi-deficiency tongue", "ok": false, "why": {"zh": "氣虛舌淡胖、邊有齒痕。他的不胖。", "en": "A qi-deficient tongue is pale, swollen and tooth-marked. His is not swollen."}},
+       {"zh": "熱證舌", "en": "Heat-pattern tongue", "ok": false, "why": {"zh": "熱證舌紅苔黃。他的苔是白的。", "en": "A heat tongue is red with a yellow coat. His coat is white."}},
+       {"zh": "瘀血舌", "en": "Blood-stasis tongue", "ok": false, "why": {"zh": "瘀血舌紫暗或有瘀點。他的是淡紅。", "en": "A stasis tongue is purple or spotted. His is pale red."}}
+      ]},
+     "post": [
+      ["chenbo", {"zh": "這是今天最好的評語：正常。", "en": "Best remark of the day: normal."}]
+     ]},
+    {"id": "c4", "roles": ["ta"], "to": "azhe", "guide": {"zh": "和助教寫回饋", "en": "Write the feedback with the TA"},
+     "lines": [
+      ["azhe", {"zh": "助教看什麼：有沒有先找標誌、有沒有用病人的手、有沒有按壓確認、有沒有核對左右。", "en": "What the TA watches: landmark first, patient's hand, confirmation by pressing, both sides checked."}],
+      ["me", {"zh": "她標誌找得好，第三步忘了按。", "en": "Her landmarks were good; she forgot step three, the press."}],
+      ["azhe", {"zh": "寫下來。回饋要具體，不要寫「加油」。", "en": "Write it down. Feedback is specific; never just “keep trying”."}]
+     ]}
+   ]},
+  {"id": "wardcall", "name": {"zh": "病房來電", "en": "The ward calls"}, "sub": {"zh": "12:30 · 診間電話", "en": "12:30 · the clinic phone"}, "t": 750, "mood": "day",
+   "note": {"zh": "電話教定位：講標誌，不講感覺", "en": "Locating by phone: landmarks, not feelings"},
+   "beats": [
+    {"id": "w1",
+     "ring": {"title": {"zh": "病房來電", "en": "Ward calling"}, "sub": {"zh": "病人要灸足三里，躺著，我怎麼找？", "en": "Patient due moxa at Zusanli, lying down. How do I find it?"}, "call": true, "from": "ward-nurse"},
+     "lines": [
+      ["ward-nurse", {"zh": "醫囑要灸足三里，病人躺著。我怎麼找才準？", "en": "The order is moxa at Zusanli and the patient is lying down. How do I find it accurately?"}],
+      ["me", {"zh": "請他屈膝，我一步一步說。", "en": "Have him bend the knee; I'll take you through it step by step."}]
+     ],
+     "mini": {"type": "order", "q": {"zh": "電話裡教護理師找足三里的步驟", "en": "The steps for finding Zusanli, over the phone"},
+      "steps": [
+       {"zh": "屈膝，找到髕骨下外側的凹陷犢鼻", "en": "Bend the knee, find Dubi below the kneecap"},
+       {"zh": "用病人的四橫指從犢鼻往下量", "en": "Patient's four fingers measured down from Dubi"},
+       {"zh": "脛骨前嵴外側一橫指", "en": "One finger-breadth lateral to the tibial crest"},
+       {"zh": "按壓確認有酸脹感", "en": "Press to confirm the ache"},
+       {"zh": "做記號，核對左右對稱", "en": "Mark it, check both legs match"}
+      ]},
+     "post": [
+      ["ward-nurse", {"zh": "照著做了，他說酸。謝謝。", "en": "Done as you said; he says it aches. Thanks."}],
+      ["qiu", {"zh": "電話裡教定位，講標誌不講感覺。你做對了。", "en": "Teaching location by phone, you give landmarks, not feelings. You did it right."}]
+     ]},
+    {"id": "w2",
+     "ring": {"title": {"zh": "教務組訊息", "en": "Message from the academic office"}, "sub": {"zh": "第三站改到治療床，成績下午公布", "en": "Station 3 moved to the couch; results this afternoon"}, "call": false, "from": "registrar"},
+     "lines": [
+      ["registrar", {"zh": "第三站進針示範改在治療床，模型已送到。成績下午公布。", "en": "Station 3, insertion demonstration, moves to the couch; the model has arrived. Results this afternoon."}],
+      ["xiaoyu", {"zh": "我不餓。真的。快考完了。", "en": "I'm not hungry. Really. It's nearly over."}],
+      ["qiu", {"zh": "記住她這句話。", "en": "Remember what she just said."}]
+     ]}
+   ]},
+  {"id": "station3", "name": {"zh": "第三站：進針示範", "en": "Station 3: insertion"}, "sub": {"zh": "14:00 · 隔簾後的治療床", "en": "14:00 · the couch behind the curtain"}, "t": 840, "mood": "day",
+   "note": {"zh": "第三站：小雨暈針，處理得當", "en": "Station 3: Hsiao-Yu faints, handled well"},
+   "beats": [
+    {"id": "t1", "to": "place:couch", "guide": {"zh": "第三站：模型上示範直刺", "en": "Station 3: perpendicular insertion on the model"},
+     "lines": [
+      ["qiu", {"zh": "在模型上示範足三里直刺，依穴位標準深度。針身與皮膚垂直。", "en": "On the model, demonstrate perpendicular insertion at Zusanli to the point's standard depth. Needle at right angles to the skin."}]
+     ],
+     "mini": {"type": "drill", "template": "acupoints", "drill": "needle:leg"},
+     "post": [
+      ["qiu", {"zh": "足三里下面是脛骨前肌，安全。但安全不等於越深越好。", "en": "Beneath Zusanli lies tibialis anterior: safe. But safe does not mean the deeper the better."}]
+     ]},
+    {"id": "t2", "to": "xiaoyu", "guide": {"zh": "同學互相練習合谷", "en": "Classmates practise Hegu on each other"},
+     "lines": [
+      ["xiaoyu", {"zh": "換我當模特兒。坐著就好，我不躺。", "en": "My turn as the model. Sitting is fine; I don't need to lie down."}],
+      ["azhe", {"zh": "一律臥位。規定。", "en": "Lying down, everyone. House rule."}],
+      ["sys", {"zh": "針進合谷沒多久，小雨說眼前發黑，額頭全是汗。", "en": "Shortly after the needle enters Hegu, Hsiao-Yu says everything has gone dark, her forehead slick with sweat."}]
+     ],
+     "mini": {"type": "vitals", "event": "hypotension",
+      "options": [
+       {"zh": "立刻出針，平臥抬腿，保暖，監測並通知老師", "en": "Needle out at once, flat with legs raised, warm, monitor, tell the teacher", "ok": true,
+        "why": {"zh": "暈針的處理順序永遠是出針、平臥、保暖、監測。她已經躺著，所以沒有跌倒。", "en": "The order in a needle faint is always needle out, lie flat, warm, monitor. She was already lying down, so there was no fall."}},
+       {"zh": "扶她坐起來休息一下", "en": "Help her sit up and rest", "ok": false,
+        "why": {"zh": "坐起來腦部血流更少，會真的昏倒。", "en": "Sitting up starves the brain further; she would really pass out."}},
+       {"zh": "繼續，快好了", "en": "Carry on, nearly done", "ok": false,
+        "why": {"zh": "針還在，刺激還在。沒有「快好了」。", "en": "While the needle stays, the stimulus stays. There is no “nearly done”."}}
+      ]},
+     "post": [
+      ["qiu", {"zh": "暈針。空腹、緊張、第一次。考試考的，不只是穴位。", "en": "A needle faint. Empty stomach, nerves, first time. The exam tests more than points."}],
+      ["xiaoyu", {"zh": "……我應該吃早餐的。", "en": "…I should have eaten breakfast."}]
+     ]},
+    {"id": "t3", "when": {"flag": "own-finger", "is": false},
+     "lines": [
+      ["chenbo", {"zh": "剛才用我的手量的那一位，足三里按得最準。我有在看。", "en": "The one who measured with my hand found Zusanli most accurately. I was watching."}]
+     ]},
+    {"id": "t3b", "when": {"flag": "own-finger", "is": true},
+     "lines": [
+      ["azhe", {"zh": "你剛才用自己的手量陳伯。他的腿比你長一截，差了快一個穴。", "en": "You measured Uncle Chen with your own hand. His leg is a good deal longer than yours; you were nearly a whole point out."}]
+     ]}
+   ]},
+  {"id": "results", "name": {"zh": "放榜與回饋", "en": "Results and feedback"}, "sub": {"zh": "16:00 · 脈枕診桌", "en": "16:00 · the pulse desk"}, "t": 960, "mood": "day",
+   "note": {"zh": "通過。標誌、量、按、核對", "en": "Passed. Landmark, measure, press, check"},
+   "beats": [
+    {"id": "f1", "to": "qiu", "guide": {"zh": "聽邱醫師的回饋", "en": "Hear Dr Chiu's feedback"},
+     "lines": [
+      ["qiu", {"zh": "定位考通過了。我更在意兩件事：你用了病人的手，小雨倒下去時你第一個動作是出針。", "en": "You passed the location exam. Two things matter more to me: you used the patient's hand, and when Hsiao-Yu went down your first move was the needle out."}],
+      ["me", {"zh": "第二站我忘了按壓確認。", "en": "At station two I forgot to press and confirm."}],
+      ["qiu", {"zh": "對，陳伯記得。下次。這張卡收好。", "en": "Yes, Uncle Chen remembers. Next time. Keep this card."}]
+     ],
+     "item": "location-card"},
+    {"id": "f2", "to": "chenbo", "guide": {"zh": "謝謝陳伯", "en": "Thank Uncle Chen"},
+     "lines": [
+      ["chenbo", {"zh": "下個月我還來。我會準備新題目。", "en": "I'll be back next month. With new questions."}],
+      ["me", {"zh": "陳伯，您的舌頭很正常。", "en": "Uncle Chen, your tongue is very normal."}],
+      ["chenbo", {"zh": "這句我要寫進回饋表。", "en": "That line is going on my feedback form."}]
+     ]}
+   ]},
+  {"id": "night", "name": {"zh": "夜間訊息", "en": "Night message"}, "sub": {"zh": "20:30 · 宿舍", "en": "20:30 · the dormitory"}, "t": 1230, "mood": "night",
+   "note": {"zh": "小雨：吃飽了", "en": "Hsiao-Yu: fed"},
+   "beats": [
+    {"id": "n1",
+     "ring": {"title": {"zh": "小雨傳訊息", "en": "Message from Hsiao-Yu"}, "sub": {"zh": "我吃飽了。明天要不要一起去看陳伯？", "en": "I've eaten. Shall we visit Uncle Chen tomorrow?"}, "call": false, "from": "xiaoyu"},
+     "lines": [
+      ["xiaoyu", {"zh": "我吃飽了。明天要不要一起去看陳伯？他說要教我們他以前怎麼教書。", "en": "I've eaten. Want to visit Uncle Chen tomorrow? He says he'll teach us how he used to teach."}],
+      ["me", {"zh": "好。帶早餐。", "en": "Yes. Bring breakfast."}],
+      ["sys", {"zh": "邱醫師的訊息也進來了：「骨度是尺，手指是病人的。晚安。」", "en": "Dr Chiu's message arrives too: “Bone proportions are the ruler, the fingers belong to the patient. Good night.”"}]
+     ],
+     "end": true}
+   ]}
+ ],
+ "ending": {"title": {"zh": "考試結束", "en": "Exam over"}, "sub": {"zh": "標誌、量、按、核對左右", "en": "Landmark, measure, press, check both sides"},
+  "stats": ["drills", "choices", "calls", "items", "time"]}
+}

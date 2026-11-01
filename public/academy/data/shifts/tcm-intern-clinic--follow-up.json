@@ -1,0 +1,1473 @@
+{
+ "format": "huatuo-shift-v2",
+ "department": "tcm-intern-clinic",
+ "case": "follow-up",
+ "caseTitle": {
+  "zh": "複診日：方跟著證走",
+  "en": "Follow-up day: formula follows pattern"
+ },
+ "condition": {
+  "zh": "複診 · 調方與藥物安全",
+  "en": "Follow-up · adjusting, drug safety"
+ },
+ "difficulty": 2,
+ "title": {
+  "zh": "中醫實習門診：複診日",
+  "en": "TCM teaching clinic: follow-up day"
+ },
+ "tagline": {
+  "zh": "上次很有效，不代表這次照開",
+  "en": "“It worked last time” is not a prescription"
+ },
+ "room": "tcm-clinic",
+ "minutes": 25,
+ "roles": [
+  {
+   "id": "intern",
+   "zh": "中醫實習醫師",
+   "en": "TCM intern",
+   "desc": {
+    "zh": "複診日：上次的方子這次還對嗎？證變了，方就要變；病人變了，你要先看見。",
+    "en": "Follow-up day: is last visit’s formula still right? When the pattern changes the formula changes, and you have to see the change first."
+   }
+  },
+  {
+   "id": "pharmacist",
+   "zh": "中藥藥師",
+   "en": "TCM pharmacist",
+   "desc": {
+    "zh": "服藥反應、交互作用、批號與不良反應通報是你的。今天候診區那一聲咳，你最先聽見。",
+    "en": "Drug reactions, interactions, batch numbers and adverse-reaction reports are yours. You are first to hear that cough in the waiting room."
+   }
+  }
+ ],
+ "cast": {
+  "master": {
+   "name": {
+    "zh": "柯醫師",
+    "en": "Dr Ko"
+   },
+   "role": {
+    "zh": "中醫內科主治（師傅）",
+    "en": "TCM attending (mentor)"
+   },
+   "tag": "DR",
+   "color": "#81296d",
+   "body": "mentor",
+   "about": {
+    "zh": "徵得同意後，替每位病人存一本「舌頭相簿」。比對舌象像在看時裝秀。口頭禪：證走，方跟。",
+    "en": "With consent, keeps a “tongue album” for every patient and compares them like a fashion show. Catchphrase: the pattern moves, the formula follows."
+   }
+  },
+  "pharmacist": {
+   "name": {
+    "zh": "惠文藥師",
+    "en": "Pharmacist Hui-wen"
+   },
+   "role": {
+    "zh": "中藥藥師",
+    "en": "TCM pharmacist"
+   },
+   "tag": "PH",
+   "color": "#3b8f6a",
+   "body": "herbalist",
+   "about": {
+    "zh": "記得每位病人的藥袋長什麼樣子。包包裡永遠有一本不良反應通報單。",
+    "en": "Remembers what every patient’s medicine bag looks like. Always carries a pad of adverse-reaction forms."
+   }
+  },
+  "lichu": {
+   "name": {
+    "zh": "麗珠",
+    "en": "Li-chu"
+   },
+   "role": {
+    "zh": "五十六歲，市場賣花",
+    "en": "Fifty-six, flower seller"
+   },
+   "tag": "P1",
+   "color": "#c2703a",
+   "body": "patient",
+   "about": {
+    "zh": "虛構教學個案。十天前風熱咳嗽來看過，說上次的藥「很有效」，所以想原方再拿。",
+    "en": "Fictional teaching case. Seen ten days ago for a wind-heat cough; says the last formula “worked great” and wants the same again."
+   }
+  },
+  "chiwei": {
+   "name": {
+    "zh": "志偉",
+    "en": "Chih-wei"
+   },
+   "role": {
+    "zh": "四十五歲，公車司機",
+    "en": "Forty-five, bus driver"
+   },
+   "tag": "P2",
+   "color": "#a0522d",
+   "body": "patient",
+   "about": {
+    "zh": "虛構教學個案。頭痛老毛病，上次調方加了兩味蟲類藥。今天來早了，在候診區抓手臂。",
+    "en": "Fictional teaching case. Old headaches; last visit two insect-derived herbs were added. Early today, scratching his arms in the waiting room."
+   }
+  },
+  "mrschi": {
+   "name": {
+    "zh": "志偉的太太",
+    "en": "Chih-wei's wife"
+   },
+   "role": {
+    "zh": "家屬",
+    "en": "Family"
+   },
+   "tag": "FAM",
+   "color": "#8a6d3b",
+   "body": "family",
+   "about": {
+    "zh": "第一個發現先生嘴唇腫起來的人。手機裡有藥袋照片。",
+    "en": "First to notice her husband’s swollen lips. Has a photo of the medicine bag on her phone."
+   }
+  },
+  "erdoc": {
+   "name": {
+    "zh": "急診醫師",
+    "en": "ER doctor"
+   },
+   "role": {
+    "zh": "急診（電話）",
+    "en": "Emergency department (by phone)"
+   },
+   "tag": "ER",
+   "color": "#3f6fa8",
+   "phoneOnly": true,
+   "about": {
+    "zh": "最喜歡轉診時附上藥名和批號。",
+    "en": "Loves a transfer that comes with the drug names and batch numbers."
+   }
+  }
+ },
+ "places": {
+  "pulse-desk": {
+   "name": {
+    "zh": "脈枕診桌",
+    "en": "Pulse desk"
+   },
+   "hot": "pulse-desk"
+  },
+  "lamp": {
+   "name": {
+    "zh": "舌診燈",
+    "en": "Tongue lamp"
+   },
+   "hot": "lamp"
+  },
+  "chart": {
+   "name": {
+    "zh": "病歷與舌頭相簿",
+    "en": "Charts and tongue album"
+   },
+   "hot": "chart"
+  },
+  "cabinet": {
+   "name": {
+    "zh": "藥材標本櫃",
+    "en": "Herb specimen cabinet"
+   },
+   "hot": "cabinet"
+  },
+  "bronze": {
+   "name": {
+    "zh": "針灸銅人",
+    "en": "Bronze figure"
+   },
+   "hot": "bronze"
+  },
+  "door": {
+   "name": {
+    "zh": "候診區",
+    "en": "Waiting area"
+   },
+   "hot": "door"
+  },
+  "desk": {
+   "name": {
+    "zh": "書寫桌",
+    "en": "Writing desk"
+   },
+   "hot": "desk"
+  },
+  "board": {
+   "name": {
+    "zh": "診間白板",
+    "en": "Clinic whiteboard"
+   },
+   "hot": "whiteboard"
+  }
+ },
+ "glossary": [
+  {
+   "term": {
+    "zh": "複診",
+    "en": "follow-up visit"
+   },
+   "plain": {
+    "zh": "回診時重新評估：服藥後的變化、副作用、舌脈有沒有改變，再決定方子怎麼調。",
+    "en": "A return visit that reassesses changes after the medicine, side effects, tongue and pulse, then decides how to adjust."
+   }
+  },
+  {
+   "term": {
+    "zh": "證變方變",
+    "en": "the pattern moves, the formula follows"
+   },
+   "plain": {
+    "zh": "中醫認為病程中證型會轉變，方藥要跟著改，不能一方到底。",
+    "en": "In TCM patterns shift as an illness runs its course, so the formula must change with them rather than stay fixed."
+   }
+  },
+  {
+   "term": {
+    "zh": "燥咳",
+    "en": "dry cough"
+   },
+   "plain": {
+    "zh": "乾咳、少痰或痰黏難咳、咽乾；中醫認為多與燥邪或陰虛有關。",
+    "en": "A dry cough with little or sticky sputum and a dry throat; in TCM linked to dryness or yin deficiency."
+   }
+  },
+  {
+   "term": {
+    "zh": "肺陰虛",
+    "en": "lung yin deficiency"
+   },
+   "plain": {
+    "zh": "中醫認為肺的津液不足：乾咳少痰、咽乾、午後或夜間加重、舌紅少津、脈細數。",
+    "en": "In TCM the lung’s fluids run low: dry cough, scant sputum, dry throat, worse afternoon or night, red dry tongue, thready rapid pulse."
+   }
+  },
+  {
+   "term": {
+    "zh": "舌紅少津",
+    "en": "red tongue lacking moisture"
+   },
+   "plain": {
+    "zh": "舌色偏紅、舌面乾、唾液少，中醫認為是熱傷津液。",
+    "en": "A reddish, dry tongue surface with little saliva; in TCM heat has consumed the fluids."
+   }
+  },
+  {
+   "term": {
+    "zh": "滋陰潤肺",
+    "en": "moistening the lung"
+   },
+   "plain": {
+    "zh": "補充肺的津液、潤燥止咳的治法，代表方如麥門冬湯。",
+    "en": "The method of restoring the lung’s fluids to ease a dry cough; Mai Men Dong Tang is the classic."
+   }
+  },
+  {
+   "term": {
+    "zh": "八脈交會穴",
+    "en": "confluent points"
+   },
+   "plain": {
+    "zh": "八個通奇經八脈的穴位，常兩兩配用，例如列缺配照海治咽喉、肺系。",
+    "en": "Eight points linked to the extraordinary vessels, often paired, such as LU7 with KI6 for throat and lung."
+   }
+  },
+  {
+   "term": {
+    "zh": "蟲類藥",
+    "en": "insect-derived herbs"
+   },
+   "plain": {
+    "zh": "全蠍、蜈蚣、地龍、僵蠶等動物藥；中醫認為搜風通絡力強，也較易引起過敏。",
+    "en": "Animal herbs such as scorpion, centipede, earthworm and silkworm; in TCM strong for wind and channels, and more likely to cause allergy."
+   }
+  },
+  {
+   "term": {
+    "zh": "蕁麻疹",
+    "en": "hives"
+   },
+   "plain": {
+    "zh": "皮膚一塊一塊浮起、發紅、很癢的疹子，常是過敏的表現。",
+    "en": "Raised, red, very itchy welts, often a sign of allergy."
+   }
+  },
+  {
+   "term": {
+    "zh": "過敏性休克",
+    "en": "anaphylaxis"
+   },
+   "plain": {
+    "zh": "嚴重全身過敏：嘴唇舌頭腫、喘鳴、呼吸困難、血壓下降；要立即急救。",
+    "en": "A severe whole-body allergy: swelling of lips or tongue, wheeze, trouble breathing, falling blood pressure; needs emergency care at once."
+   }
+  },
+  {
+   "term": {
+    "zh": "不良反應通報",
+    "en": "adverse reaction report"
+   },
+   "plain": {
+    "zh": "把疑似藥物引起的傷害登記上報，讓下一位病人更安全。",
+    "en": "Recording and reporting suspected drug harm so the next patient is safer."
+   }
+  },
+  {
+   "term": {
+    "zh": "批號",
+    "en": "batch number"
+   },
+   "plain": {
+    "zh": "藥品出廠的生產編號；出問題時靠它追蹤同一批藥。",
+    "en": "The production code on a medicine; when something goes wrong it traces the whole batch."
+   }
+  },
+  {
+   "term": {
+    "zh": "紅旗",
+    "en": "red flag"
+   },
+   "plain": {
+    "zh": "提示危險情況的徵象；複診時最容易被「上次很好」蓋過去。",
+    "en": "A sign of danger; at follow-up it hides most easily behind “last time was great”."
+   }
+  }
+ ],
+ "codex": [
+  {
+   "id": "tongue-album",
+   "kind": "equipment",
+   "name": {
+    "zh": "舌頭相簿",
+    "en": "The tongue album"
+   },
+   "text": {
+    "zh": "每次複診同一盞燈、同一個角度、同樣請病人先別喝飲料。照片要病人同意才拍。",
+    "en": "Same lamp, same angle, same “no drinks first” at every visit. Photos only with the patient’s consent."
+   },
+   "hot": "chart"
+  },
+  {
+   "id": "lamp",
+   "kind": "equipment",
+   "name": {
+    "zh": "舌診燈",
+    "en": "Tongue lamp"
+   },
+   "text": {
+    "zh": "比對才有意義的前提：光線一致。換一盞燈，舌頭就換一種顏色。",
+    "en": "Comparison only works if the light is the same. Change the lamp and the tongue changes colour."
+   },
+   "hot": "lamp"
+  },
+  {
+   "id": "insect-herbs",
+   "kind": "equipment",
+   "name": {
+    "zh": "全蠍與蜈蚣標本",
+    "en": "Scorpion and centipede specimens"
+   },
+   "text": {
+    "zh": "標本櫃最上層。柯醫師說：越有力的藥，越要問清楚過敏史。",
+    "en": "Top shelf of the cabinet. Dr Ko says: the stronger the medicine, the more carefully you ask about allergies."
+   },
+   "hot": "cabinet"
+  },
+  {
+   "id": "med-bag",
+   "kind": "item",
+   "name": {
+    "zh": "志偉的藥袋照片",
+    "en": "Photo of Chih-wei’s medicine bag"
+   },
+   "text": {
+    "zh": "他太太手機裡的那張。藥名、日期、批號都拍到了，急診和藥師都靠它。",
+    "en": "The one on his wife’s phone: names, date and batch number all visible. The ER and the pharmacist both relied on it."
+   }
+  },
+  {
+   "id": "pattern-moves",
+   "kind": "concept",
+   "name": {
+    "zh": "證變方亦變",
+    "en": "When the pattern moves, so does the formula"
+   },
+   "text": {
+    "zh": "中醫認為外感咳嗽常從風熱轉成燥熱傷陰：痰從黃稠變少而黏，咽痛變咽乾，舌苔從薄黃變少津。上次的疏散風熱藥多辛散，用久了反而更傷津。複診要問：服藥後哪裡好了、哪裡變了、有沒有新症狀或副作用，再比對舌脈，判斷證有沒有轉。",
+    "en": "In TCM an external cough often turns from wind-heat into dryness damaging yin: sputum goes from thick yellow to scant and sticky, a sore throat becomes a dry one, the coat goes from thin yellow to dry. The dispersing herbs that suited the first visit are acrid and drying, and continued they worsen it. At follow-up ask what improved, what changed, any new symptoms or side effects, then compare tongue and pulse to see whether the pattern has moved."
+   }
+  },
+  {
+   "id": "herb-allergy",
+   "kind": "concept",
+   "name": {
+    "zh": "中藥也會過敏",
+    "en": "Herbal medicines can cause allergy"
+   },
+   "text": {
+    "zh": "任何藥都可能過敏，蟲類藥、花粉類、部分種子類較常見。新加藥或調方後要問皮膚癢、疹子、嘴唇腫、喘。出現嘴唇舌頭腫、喘鳴、呼吸困難、頭暈就是過敏性休克：呼救、啟動急救、平躺或坐起呼吸、依流程由醫師給藥、轉急診。之後停用可疑藥、保留藥品與批號、通報、在病歷與過敏卡註記。",
+    "en": "Any medicine can cause allergy; insect-derived herbs, pollens and some seeds more often. After adding or changing herbs, ask about itching, rash, swollen lips and wheeze. Swelling of lips or tongue, wheeze, breathlessness or dizziness means anaphylaxis: call for help, start the emergency chain, lie flat or sit up to breathe, medicines given by the physician per protocol, transfer to the ER. Afterwards stop the suspected herbs, keep the product and batch number, report it, and flag it in the chart and on an allergy card."
+   }
+  },
+  {
+   "id": "fair-compare",
+   "kind": "concept",
+   "name": {
+    "zh": "複診比較要公平",
+    "en": "Fair comparison at follow-up"
+   },
+   "text": {
+    "zh": "舌象比較要同光源、同角度、同距離，避開剛吃東西或喝有色飲料；脈診要同樣平息、同一側先後。病人說「很有效」，要追問哪裡有效，因為有效的部分可能已經不需要那味藥了。",
+    "en": "Tongue comparisons need the same light, angle and distance, and no fresh food or coloured drinks; pulses need the same settling and the same order of wrists. When a patient says “it worked great”, ask what exactly, because the part that worked may no longer need that herb."
+   }
+  },
+  {
+   "id": "maidong",
+   "kind": "concept",
+   "name": {
+    "zh": "麥門冬湯的配伍",
+    "en": "How Mai Men Dong Tang is built"
+   },
+   "text": {
+    "zh": "中醫認為此方以大量麥門冬滋養肺胃之陰為君，配少量半夏降逆化痰；半夏本性溫燥，被大量潤藥包住，只留下降逆的作用，叫「去性存用」。人參、甘草、大棗、粳米益胃生津，土旺則金生。用量依處方。",
+    "en": "In TCM the formula leads with a large share of ophiopogon to nourish lung and stomach yin, with a little pinellia to send rebellious qi down and resolve phlegm; pinellia is warm and drying by nature, but wrapped in so much moisture only its descending action remains, “removing the nature, keeping the use”. Ginseng, licorice, jujube and rice nourish the stomach to make fluids: when earth thrives, metal is born. Amounts follow the prescription."
+   }
+  }
+ ],
+ "segs": [
+  {
+   "id": "open",
+   "name": {
+    "zh": "午後開診",
+    "en": "Afternoon clinic"
+   },
+   "sub": {
+    "zh": "13:30 · 病歷與舌頭相簿",
+    "en": "13:30 · charts and tongue album"
+   },
+   "t": 810,
+   "mood": "day",
+   "note": {
+    "zh": "複診先看上一次",
+    "en": "Follow-up starts with last time"
+   },
+   "beats": [
+    {
+     "id": "a1",
+     "to": "place:chart",
+     "guide": {
+      "zh": "拿出麗珠的病歷與相簿",
+      "en": "Pull Li-chu’s chart and album"
+     },
+     "lines": [
+      [
+       "master",
+       {
+        "zh": "下午都是複診。複診第一步，不是看病人，是看上一次的你。",
+        "en": "All follow-ups this afternoon. The first step isn’t the patient; it’s last time’s you."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "find",
+      "hot": "chart",
+      "q": {
+       "zh": "找出麗珠的病歷與舌頭相簿",
+       "en": "Find Li-chu’s chart and tongue album"
+      }
+     },
+     "post": [
+      [
+       "sys",
+       {
+        "zh": "相簿裡是十天前的舌頭：舌尖紅、苔薄黃。旁邊寫著：風熱咳嗽，桑菊飲。",
+        "en": "Ten days ago in the album: red tip, thin yellow coat. Beside it: wind-heat cough, Sang Ju Yin."
+       }
+      ],
+      [
+       "master",
+       {
+        "zh": "漂亮吧？我的收藏。",
+        "en": "Lovely, isn’t it? My collection."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "a2",
+     "to": "place:board",
+     "guide": {
+      "zh": "排出複診流程",
+      "en": "Order the follow-up steps"
+     },
+     "lines": [
+      [
+       "master",
+       {
+        "zh": "複診流程，排給我看。",
+        "en": "The follow-up routine. Lay it out."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "order",
+      "q": {
+       "zh": "複診的順序",
+       "en": "A follow-up visit, in order"
+      },
+      "steps": [
+       {
+        "zh": "核對身分與上次處方",
+        "en": "Identity and last prescription"
+       },
+       {
+        "zh": "問服藥反應與副作用",
+        "en": "Response and side effects"
+       },
+       {
+        "zh": "比較症狀變化",
+        "en": "Compare the symptoms"
+       },
+       {
+        "zh": "重新望聞問切",
+        "en": "Repeat the four examinations"
+       },
+       {
+        "zh": "判斷證有沒有變",
+        "en": "Has the pattern moved?"
+       },
+       {
+        "zh": "調方並寫下理由",
+        "en": "Adjust and write the reason"
+       }
+      ]
+     },
+     "post": [
+      [
+       "pharmacist",
+       {
+        "zh": "第二步常被跳過。病人說「很好」，大家就忘了問副作用。",
+        "en": "Step two gets skipped. The patient says “great” and everyone forgets the side effects."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "lichu",
+   "name": {
+    "zh": "麗珠的咳",
+    "en": "Li-chu's cough"
+   },
+   "sub": {
+    "zh": "14:00 · 脈枕診桌",
+    "en": "14:00 · the pulse desk"
+   },
+   "t": 840,
+   "mood": "day",
+   "note": {
+    "zh": "黃痰變黏痰、咽痛變咽乾",
+    "en": "Yellow sputum to sticky, sore to dry"
+   },
+   "beats": [
+    {
+     "id": "b1",
+     "to": "lichu",
+     "guide": {
+      "zh": "請麗珠入座",
+      "en": "Seat Li-chu"
+     },
+     "lines": [
+      [
+       "lichu",
+       {
+        "zh": "醫生，上次的藥很有效！喉嚨不痛了，黃痰也沒了。原方再給我就好。",
+        "en": "Doctor, last time’s medicine worked great! No more sore throat, no more yellow phlegm. Same again, please."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "那現在還有哪裡不舒服？",
+        "en": "And what’s still bothering you?"
+       }
+      ],
+      [
+       "lichu",
+       {
+        "zh": "就是乾咳，痰一點點黏在喉嚨咳不出來，晚上比較嚴重。喉嚨乾乾的。",
+        "en": "Just a dry cough. A little sticky phlegm stuck in my throat, worse at night. My throat feels parched."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "有咳血、體重變輕、半夜盜汗、抽菸嗎？",
+        "en": "Any blood, weight loss, night sweats, smoking?"
+       }
+      ],
+      [
+       "lichu",
+       {
+        "zh": "都沒有。花店冷氣很強倒是真的。",
+        "en": "None. The flower shop’s air conditioning is fierce, though."
+       }
+      ]
+     ],
+     "post": [
+      [
+       "master",
+       {
+        "zh": "咳嗽的紅旗都問了，很好。",
+        "en": "Every cough red flag asked. Good."
+       }
+      ],
+      [
+       "master",
+       {
+        "zh": "「很有效」的那部分，可能已經不需要那些藥了。去看舌頭。",
+        "en": "The part that “worked” may no longer need those herbs. Go and look at the tongue."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "b2",
+     "to": "place:lamp",
+     "guide": {
+      "zh": "調燈：和上次一樣",
+      "en": "Set the lamp as last time"
+     },
+     "lines": [
+      [
+       "master",
+       {
+        "zh": "要比較，光就要一樣。燈、角度、距離，照上次的。",
+        "en": "To compare, the light must match. Lamp, angle, distance, as last time."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "drill",
+      "template": "tcm-intern-clinic",
+      "drill": "tongue"
+     },
+     "post": [
+      [
+       "pharmacist",
+       {
+        "zh": "麗珠姐，今天有喝什麼有顏色的嗎？",
+        "en": "Li-chu, any coloured drinks today?"
+       }
+      ],
+      [
+       "lichu",
+       {
+        "zh": "只有白開水，我知道你們會問。",
+        "en": "Only plain water. I knew you’d ask."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "b3",
+     "to": "place:lamp",
+     "guide": {
+      "zh": "看舌，比對相簿",
+      "en": "Read and compare"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "和相簿並排：舌尖的紅擴到整個舌面，舌面乾，苔幾乎看不到。",
+        "en": "Side by side with the album: the red has spread from the tip to the whole tongue, the surface is dry, the coat barely visible."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "tongue",
+      "q": {
+       "zh": "上次舌尖紅苔薄黃；今天舌紅、苔少而乾。代表什麼？",
+       "en": "Last time red tip, thin yellow coat; today red, scant dry coat. Meaning?"
+      },
+      "tongue": {
+       "body": "red",
+       "coat": "dry",
+       "shape": "normal"
+      },
+      "options": [
+       {
+        "zh": "熱已傷津：轉為燥熱或肺陰虛",
+        "en": "Heat has used up fluids: dryness, lung yin deficiency",
+        "ok": true,
+        "why": {
+         "zh": "中醫認為苔由胃氣與津液所生；苔少而乾、舌紅少津，表示外邪已去而津液受傷。",
+         "en": "In TCM the coat grows from stomach qi and fluids; a scant dry coat on a red, dry tongue means the external pathogen has gone and the fluids are injured."
+        }
+       },
+       {
+        "zh": "風熱還在，原方照開",
+        "en": "Wind-heat persists, repeat the formula",
+        "ok": false,
+        "why": {
+         "zh": "黃苔已退、咽痛已除。舌在說的是乾，不是風熱。",
+         "en": "The yellow coat and sore throat are gone. The tongue is saying dry, not wind-heat."
+        }
+       },
+       {
+        "zh": "轉成寒證",
+        "en": "It has turned cold",
+        "ok": false,
+        "why": {
+         "zh": "舌更紅、更乾，往熱和燥的方向走，不是寒。",
+         "en": "Redder and drier means heat and dryness, not cold."
+        }
+       }
+      ]
+     },
+     "post": [
+      [
+       "master",
+       {
+        "zh": "舌紅少津。相簿又多了一頁。",
+        "en": "Red tongue lacking moisture. Another page for the album."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "b4",
+     "to": "lichu",
+     "guide": {
+      "zh": "診脈",
+      "en": "Take the pulse"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "指下細細一條，跳得偏快，不浮。",
+        "en": "A fine line under your fingers, a little fast, not floating."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "pulse",
+      "q": {
+       "zh": "脈細而略快，不浮。這是什麼脈？",
+       "en": "Fine, a little fast, not floating. Which pulse?"
+      },
+      "pulse": "thready",
+      "options": [
+       {
+        "zh": "細數：陰虛有熱，表邪已解",
+        "en": "Thready, rapid: yin deficient, exterior cleared",
+        "ok": true,
+        "why": {
+         "zh": "中醫認為浮已去表示表證解了；細主陰津不足，數主熱。和乾咳、夜甚、咽乾一致。",
+         "en": "In TCM the floating quality gone means the exterior is resolved; thready means fluids are short and rapid means heat, matching the dry cough worse at night and dry throat."
+        }
+       },
+       {
+        "zh": "浮數：風熱在表",
+        "en": "Floating, rapid: wind-heat on the surface",
+        "ok": false,
+        "why": {
+         "zh": "十天前是浮數。今天要重一點才摸得到，表證已經解了。",
+         "en": "Ten days ago it was floating. Today you press a little deeper; the exterior has cleared."
+        }
+       },
+       {
+        "zh": "滑數：痰熱",
+        "en": "Slippery, rapid: phlegm-heat",
+        "ok": false,
+        "why": {
+         "zh": "痰熱痰多而黃。她的痰少到咳不出來。",
+         "en": "Phlegm-heat means plenty of yellow sputum. Hers is too scant to cough up."
+        }
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "adjust",
+   "name": {
+    "zh": "證變方變",
+    "en": "The formula follows"
+   },
+   "sub": {
+    "zh": "14:40 · 書寫桌",
+    "en": "14:40 · the writing desk"
+   },
+   "t": 880,
+   "mood": "day",
+   "note": {
+    "zh": "從疏風清熱到滋陰潤肺",
+    "en": "From clearing wind-heat to moistening"
+   },
+   "beats": [
+    {
+     "id": "c1",
+     "to": "lichu",
+     "guide": {
+      "zh": "決定怎麼調方",
+      "en": "Decide how to adjust"
+     },
+     "lines": [
+      [
+       "lichu",
+       {
+        "zh": "所以……原方可以再拿嗎？",
+        "en": "So… can I have the same again?"
+       }
+      ]
+     ],
+     "mini": {
+      "type": "choice",
+      "q": {
+       "zh": "麗珠想原方再拿。你怎麼決定？",
+       "en": "Li-chu wants the same formula. Your decision?"
+      },
+      "options": [
+       {
+        "zh": "證已轉：改滋陰潤肺，停疏散藥",
+        "en": "Pattern moved: nourish yin, stop the dispersing herbs",
+        "ok": true,
+        "why": {
+         "zh": "中醫認為疏散風熱的藥多辛散，表證已解還繼續用，會更傷津。證變方變。",
+         "en": "In TCM the wind-heat herbs are acrid and dispersing; continued after the exterior clears, they dry her further. The pattern moves, the formula follows."
+        },
+        "set": {
+         "adjusted": true
+        }
+       },
+       {
+        "zh": "她說很有效，原方照開",
+        "en": "She says it worked, repeat it",
+        "ok": false,
+        "why": {
+         "zh": "有效的部分已經好了。剩下的乾咳，是原方治不到、甚至加重的。",
+         "en": "The part that worked is done. The remaining dry cough is what the old formula can’t reach and may worsen."
+        },
+        "set": {
+         "adjusted": false
+        }
+       },
+       {
+        "zh": "加麻黃加強止咳",
+        "en": "Add ephedra to stop the cough",
+        "ok": false,
+        "why": {
+         "zh": "麻黃辛溫發散，用在燥咳上是越吹越乾。",
+         "en": "Ephedra is acrid, warm and dispersing; on a dry cough it is a fan on a drying field."
+        },
+        "set": {
+         "adjusted": false
+        }
+       }
+      ]
+     }
+    },
+    {
+     "id": "c2",
+     "to": "place:cabinet",
+     "guide": {
+      "zh": "選出麥門冬湯",
+      "en": "Pick Mai Men Dong Tang"
+     },
+     "lines": [
+      [
+       "master",
+       {
+        "zh": "肺胃陰虛的乾咳，代表方之一是麥門冬湯。選出它的藥。",
+        "en": "For a dry cough from lung and stomach yin deficiency, one classic is Mai Men Dong Tang. Pick its herbs."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "herb",
+      "q": {
+       "zh": "選出麥門冬湯的組成（粳米不在藥盤）",
+       "en": "Select Mai Men Dong Tang (rice not on the tray)"
+      },
+      "formula": "麥門冬湯",
+      "pick": [
+       "麥門冬",
+       "半夏",
+       "人參",
+       "甘草",
+       "大棗"
+      ],
+      "distractors": [
+       "麻黃",
+       "桂枝",
+       "細辛",
+       "生薑"
+      ]
+     },
+     "post": [
+      [
+       "me",
+       {
+        "zh": "半夏不是溫燥嗎？放在潤肺的方子裡？",
+        "en": "Isn’t pinellia warm and drying? In a moistening formula?"
+       }
+      ],
+      [
+       "master",
+       {
+        "zh": "大量麥門冬配少量半夏，燥性被包住，只留降逆的作用。去性存用。用量依處方。",
+        "en": "Lots of ophiopogon with a little pinellia: its dryness is wrapped up and only the descending action remains. Removing the nature, keeping the use. Amounts per prescription."
+       }
+      ]
+     ],
+     "item": "maidong"
+    },
+    {
+     "id": "c3",
+     "to": "place:bronze",
+     "guide": {
+      "zh": "指出潤肺利咽的穴",
+      "en": "Show points for lung and throat"
+     },
+     "lines": [
+      [
+       "master",
+       {
+        "zh": "針灸：八脈交會穴配一對治咽喉，肺的原穴，背上的肺俞。",
+        "en": "Needles: a pair of confluent points for the throat, the lung’s source point, and BL13 on the back."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "points",
+      "q": {
+       "zh": "指出列缺、照海、太淵、肺俞",
+       "en": "Point out LU7, KI6, LU9 and BL13"
+      },
+      "codes": [
+       "LU7",
+       "KI6",
+       "LU9",
+       "BL13"
+      ]
+     },
+     "post": [
+      [
+       "master",
+       {
+        "zh": "列缺配照海，一個通任脈、一個通陰蹺，管肺系與咽喉。肺俞斜刺不可深，下面是肺。",
+        "en": "LU7 with KI6: one opens the conception vessel, the other the yin heel vessel, governing lung and throat. BL13 oblique and never deep; the lung is beneath."
+       }
+      ],
+      [
+       "pharmacist",
+       {
+        "zh": "還有：花店冷氣直吹的位置，請換個地方站。",
+        "en": "And: stop standing right under the shop’s air conditioning."
+       }
+      ]
+     ],
+     "item": "pattern-moves"
+    }
+   ]
+  },
+  {
+   "id": "hives",
+   "name": {
+    "zh": "候診區的蕁麻疹",
+    "en": "Hives in the waiting room"
+   },
+   "sub": {
+    "zh": "15:30 · 候診區",
+    "en": "15:30 · the waiting area"
+   },
+   "t": 930,
+   "mood": "day",
+   "note": {
+    "zh": "嘴唇腫、喘鳴：過敏性休克",
+    "en": "Swollen lips, wheeze: anaphylaxis"
+   },
+   "beats": [
+    {
+     "id": "d1",
+     "to": "mrschi",
+     "guide": {
+      "zh": "候診區有人在叫",
+      "en": "Someone calls from the waiting area"
+     },
+     "lines": [
+      [
+       "mrschi",
+       {
+        "zh": "醫生！他嘴唇腫起來了，一直咳，聲音好奇怪！",
+        "en": "Doctor! His lips are swelling, he keeps coughing, his voice sounds strange!"
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "志偉手臂上一塊塊紅疹浮起，嘴唇腫，呼吸有咻咻聲，臉色發白。",
+        "en": "Raised red welts all over Chih-wei’s arms, swollen lips, a whistle in his breathing, his face pale."
+       }
+      ],
+      [
+       "chiwei",
+       {
+        "zh": "從早上就很癢……吃了新的藥粉之後……現在喉嚨很緊……",
+        "en": "Itchy since this morning… after the new powder… now my throat’s tight…"
+       }
+      ]
+     ]
+    },
+    {
+     "id": "d2",
+     "to": "chiwei",
+     "guide": {
+      "zh": "第一時間處置",
+      "en": "Immediate response"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "血氧機上的數字往下掉，他說快吸不到氣。",
+        "en": "The oximeter number is falling; he says he can barely draw breath."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "vitals",
+      "event": "desaturation",
+      "options": [
+       {
+        "zh": "呼救啟動急救、依流程給藥、準備轉送",
+        "en": "Call for help, emergency chain, protocol drugs, transfer",
+        "ok": true,
+        "why": {
+         "zh": "嘴唇腫、喘鳴、血氧掉是過敏性休克。立刻呼救，讓他坐起呼吸或平躺抬腳，依流程由醫師給藥、給氧，叫救護車。",
+         "en": "Lip swelling, wheeze and falling oxygen are anaphylaxis. Call for help at once, let him sit up to breathe or lie flat with legs raised, medicines and oxygen by the physician per protocol, and call the ambulance."
+        }
+       },
+       {
+        "zh": "給他喝水把藥沖淡",
+        "en": "Give him water to dilute it",
+        "ok": false,
+        "why": {
+         "zh": "喉嚨在腫，喝水可能嗆到。這是急救，不是稀釋。",
+         "en": "His throat is swelling; water could choke him. This is resuscitation, not dilution."
+        }
+       },
+       {
+        "zh": "針刺曲池、血海止癢",
+        "en": "Needle LI11 and SP10 for the itch",
+        "ok": false,
+        "why": {
+         "zh": "止癢穴治不了氣道水腫。先救呼吸。",
+         "en": "Anti-itch points can’t treat a swelling airway. Breathing first."
+        }
+       }
+      ]
+     },
+     "post": [
+      [
+       "master",
+       {
+        "zh": "急救箱來了，我給藥。救護車叫了沒？",
+        "en": "Emergency kit’s here; I’ll give the drugs. Ambulance called?"
+       }
+      ],
+      [
+       "pharmacist",
+       {
+        "zh": "叫了。藥袋照片他太太手機有，批號也拍到了。",
+        "en": "Called. His wife has a photo of the bag, batch number included."
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "過了一會兒，志偉的呼吸聲慢慢平下來。救護車到了。",
+        "en": "After a while his breathing quietens. The ambulance arrives."
+       }
+      ]
+     ],
+     "item": "med-bag"
+    },
+    {
+     "id": "d3",
+     "to": "master",
+     "guide": {
+      "zh": "問柯醫師：是哪一味",
+      "en": "Ask Dr Ko: which herb?"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "上次調方加了全蠍和蜈蚣……",
+        "en": "Last visit we added scorpion and centipede…"
+       }
+      ],
+      [
+       "master",
+       {
+        "zh": "蟲類藥搜風通絡力量強，也較容易過敏。加這類藥之前要問過敏史，加了之後要交代：癢、疹子、嘴唇腫，立刻停藥回來。",
+        "en": "Insect-derived herbs are strong for wind and channels and more likely to cause allergy. Ask the allergy history before adding them, and tell the patient: itching, rash or swollen lips means stop and come straight back."
+       }
+      ],
+      [
+       "master",
+       {
+        "zh": "上次那一句，我們沒有交代清楚。",
+        "en": "Last time, we didn’t say that clearly."
+       }
+      ]
+     ],
+     "item": "herb-allergy"
+    }
+   ]
+  },
+  {
+   "id": "report",
+   "name": {
+    "zh": "通報與註記",
+    "en": "Report and flag"
+   },
+   "sub": {
+    "zh": "16:00 · 書寫桌",
+    "en": "16:00 · the writing desk"
+   },
+   "t": 960,
+   "mood": "day",
+   "note": {
+    "zh": "讓下一位病人更安全",
+    "en": "Safer for the next patient"
+   },
+   "beats": [
+    {
+     "id": "e1",
+     "roles": [
+      "pharmacist"
+     ],
+     "to": "place:desk",
+     "guide": {
+      "zh": "排出不良反應處理步驟",
+      "en": "Order the reaction steps"
+     },
+     "lines": [
+      [
+       "master",
+       {
+        "zh": "通報單你填。先把處理順序排給我看。",
+        "en": "You file the report. First lay out the steps."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "order",
+      "q": {
+       "zh": "藥物不良反應的處理與通報",
+       "en": "Handling and reporting a drug reaction"
+      },
+      "steps": [
+       {
+        "zh": "停用可疑藥品",
+        "en": "Stop the suspected medicine"
+       },
+       {
+        "zh": "保留藥品與批號",
+        "en": "Keep the product and batch number"
+       },
+       {
+        "zh": "記錄症狀與時間",
+        "en": "Record symptoms and timing"
+       },
+       {
+        "zh": "通知處方醫師",
+        "en": "Inform the prescriber"
+       },
+       {
+        "zh": "填寫不良反應通報",
+        "en": "File the adverse reaction report"
+       },
+       {
+        "zh": "病歷與過敏卡註記",
+        "en": "Flag chart and allergy card"
+       }
+      ]
+     },
+     "post": [
+      [
+       "me",
+       {
+        "zh": "同一批號的全蠍，今天還有誰拿過，我也查一下。",
+        "en": "I’ll also check who else received scorpion from the same batch today."
+       }
+      ],
+      [
+       "master",
+       {
+        "zh": "這一步不在單子上，但你想到了。",
+        "en": "That step isn’t on the form, and you thought of it."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "e2",
+     "roles": [
+      "intern"
+     ],
+     "to": "place:desk",
+     "guide": {
+      "zh": "改志偉的病歷",
+      "en": "Update Chih-wei’s chart"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "過敏史：全蠍、蜈蚣可疑，紅字註記。下次調方前先看這一欄。",
+        "en": "Allergies: scorpion and centipede suspected, flagged in red. Read this line before any future adjustment."
+       }
+      ],
+      [
+       "master",
+       {
+        "zh": "再加一句：任何新藥，第一次服用要交代過敏症狀。複診不只是看好了沒，也是看傷了沒。",
+        "en": "Add one more: with any new herb, explain the allergy signs at the first dose. Follow-up asks not only “better?” but also “harmed?”."
+       }
+      ]
+     ],
+     "item": "fair-compare"
+    },
+    {
+     "id": "e3",
+     "ring": {
+      "title": {
+       "zh": "急診來電",
+       "en": "ER calling"
+      },
+      "sub": {
+       "zh": "志偉穩定了，留院觀察",
+       "en": "Chih-wei is stable, under observation"
+      },
+      "call": true,
+      "from": "erdoc"
+     },
+     "to": "place:desk",
+     "guide": {
+      "zh": "接急診的電話",
+      "en": "Take the ER’s call"
+     },
+     "lines": [
+      [
+       "erdoc",
+       {
+        "zh": "志偉穩定了，留院觀察一晚，避免延遲性反應。你們給藥快，藥袋照片也幫了大忙。",
+        "en": "Chih-wei is stable; we’re keeping him overnight in case of a delayed reaction. You treated him fast, and the bag photo helped a lot."
+       }
+      ],
+      [
+       "erdoc",
+       {
+        "zh": "過敏科會再評估。可疑藥先列入過敏紀錄。",
+        "en": "Allergy will review him. List the suspected herbs as allergies for now."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "debrief",
+   "name": {
+    "zh": "收尾",
+    "en": "Wrapping up"
+   },
+   "sub": {
+    "zh": "18:00 · 病歷與舌頭相簿",
+    "en": "18:00 · charts and tongue album"
+   },
+   "t": 1080,
+   "mood": "eve",
+   "note": {
+    "zh": "證走方跟，副作用也要跟",
+    "en": "Follow the pattern, and the side effects"
+   },
+   "beats": [
+    {
+     "id": "f1",
+     "to": "master",
+     "guide": {
+      "zh": "聽柯醫師的結語",
+      "en": "Dr Ko’s debrief"
+     },
+     "lines": [
+      [
+       "master",
+       {
+        "zh": "今天兩個複診。麗珠的方子好過頭了，志偉的方子傷了人。",
+        "en": "Two follow-ups today. Li-chu’s formula outlived its use; Chih-wei’s hurt him."
+       }
+      ],
+      [
+       "master",
+       {
+        "zh": "複診要問兩件事：證走到哪裡了？藥做了什麼不該做的事？",
+        "en": "Follow-up asks two things: where has the pattern gone, and what has the medicine done that it shouldn’t?"
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "他把今天麗珠的舌頭照片貼進相簿，在旁邊寫：證走，方跟。",
+        "en": "He sticks today’s photo of Li-chu’s tongue into the album and writes beside it: the pattern moves, the formula follows."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "night",
+   "name": {
+    "zh": "夜間訊息",
+    "en": "A night message"
+   },
+   "sub": {
+    "zh": "21:00 · 回家路上",
+    "en": "21:00 · on the way home"
+   },
+   "t": 1260,
+   "mood": "night",
+   "note": {
+    "zh": "麗珠的喉嚨",
+    "en": "Li-chu's throat"
+   },
+   "beats": [
+    {
+     "id": "n1",
+     "ring": {
+      "title": {
+       "zh": "麗珠的訊息",
+       "en": "Message from Li-chu"
+      },
+      "sub": {
+       "zh": "今天的新藥吃了……",
+       "en": "I took today’s new medicine…"
+      },
+      "call": false,
+      "from": "lichu"
+     },
+     "lines": [
+      [
+       "lichu",
+       {
+        "zh": "醫生，今天的藥吃了。跟你報告一下——",
+        "en": "Doctor, I’ve taken today’s medicine. Reporting in—"
+       }
+      ]
+     ]
+    },
+    {
+     "id": "n2",
+     "when": {
+      "flag": "adjusted",
+      "is": true
+     },
+     "lines": [
+      [
+       "lichu",
+       {
+        "zh": "喉嚨沒那麼乾了，晚上咳少很多。還有，我把收銀台搬離冷氣口了。",
+        "en": "My throat’s less dry and I’m coughing much less tonight. Also, I’ve moved the till away from the air vent."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "太好了。有咳血、發燒或咳超過三週就回來。",
+        "en": "Great. Come back for any blood, fever, or a cough beyond three weeks."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "n3",
+     "when": {
+      "flag": "adjusted",
+      "is": false
+     },
+     "lines": [
+      [
+       "lichu",
+       {
+        "zh": "喉嚨更乾了，咳到睡不著。是不是上次的藥這次不靈了？",
+        "en": "My throat is drier and I can’t sleep for coughing. Has the medicine stopped working?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "不是藥不靈，是證變了，方沒變。明天一早回來，我們改成滋陰潤肺。",
+        "en": "It isn’t the medicine failing; the pattern moved and the formula didn’t. Come in first thing tomorrow and we’ll switch to moistening the lung."
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "你在筆記本寫：「很有效」之後，一定要問「現在剩下什麼」。",
+        "en": "In your notebook: after “it worked great”, always ask “what’s left now?”"
+       }
+      ]
+     ]
+    },
+    {
+     "id": "n4",
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "惠文藥師傳來訊息：同批號的全蠍，今天沒有其他人拿。已通報。",
+        "en": "A message from Pharmacist Hui-wen: no one else received scorpion from that batch today. Report filed."
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "你放下手機。今天，兩個病人都比早上更安全。",
+        "en": "You put the phone down. Both patients are safer tonight than they were this morning."
+       }
+      ]
+     ],
+     "end": true
+    }
+   ]
+  }
+ ],
+ "ending": {
+  "title": {
+   "zh": "下班了",
+   "en": "End of shift"
+  },
+  "sub": {
+   "zh": "證走到哪裡？藥做了什麼不該做的事？",
+   "en": "Where has the pattern gone; what has the medicine done?"
+  },
+  "stats": [
+   "drills",
+   "choices",
+   "calls",
+   "items",
+   "time"
+  ]
+ }
+}

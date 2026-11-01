@@ -1,0 +1,1394 @@
+{
+ "format": "huatuo-shift-v2",
+ "department": "neurology",
+ "case": "status-epilepticus",
+ "caseTitle": {
+  "zh": "停不下來的發作",
+  "en": "The seizure that would not stop"
+ },
+ "condition": {
+  "zh": "急症 · 癲癇重積狀態",
+  "en": "Emergency · status epilepticus"
+ },
+ "difficulty": 3,
+ "room": "er",
+ "minutes": 25,
+ "title": {
+  "zh": "神經內科值班夜：急診",
+  "en": "Neurology on call: the ER at night"
+ },
+ "tagline": {
+  "zh": "抽搐會停；問題是什麼時候、為什麼",
+  "en": "The seizure will stop; the questions are when, and why"
+ },
+ "roles": [
+  {
+   "id": "resident",
+   "zh": "神經內科住院醫師",
+   "en": "Neurology resident",
+   "desc": {
+    "zh": "大夜班。一個停不下來的發作、一個發作後不會動的右手、一個從下午就「怪怪的」阿嬤。",
+    "en": "The night shift: a seizure that will not stop, a right arm that will not move afterwards, and a grandmother who has been 'odd' since the afternoon."
+   }
+  },
+  {
+   "id": "eeg-tech",
+   "zh": "腦波技術師",
+   "en": "EEG technologist",
+   "desc": {
+    "zh": "移動式腦波機是你的。電極貼得準，判讀才有意義；沒有抽搐的重積只有你的機器看得到。",
+    "en": "The portable EEG is yours. Electrodes placed precisely make the trace mean something; a status without convulsions is visible only to your machine."
+   }
+  }
+ ],
+ "cast": {
+  "attending": {
+   "name": {
+    "zh": "蘇主治",
+    "en": "Dr Su"
+   },
+   "role": {
+    "zh": "癲癇科主治醫師（師傅）",
+    "en": "Epileptologist (mentor)"
+   },
+   "tag": "ATT",
+   "color": "#3f6fa8",
+   "about": {
+    "zh": "半夜打給她從不生氣。口頭禪：「發作後的病人，不要急著貼標籤。」",
+    "en": "Never cross when woken at night. Her line: 'Don't be quick to label a patient who has just had a seizure.'"
+   },
+   "body": "mentor"
+  },
+  "er-doc": {
+   "name": {
+    "zh": "急診陳醫師",
+    "en": "Dr Chen (ER)"
+   },
+   "role": {
+    "zh": "急診主治醫師",
+    "en": "ER attending"
+   },
+   "tag": "ER",
+   "color": "#2f6f9f",
+   "about": {
+    "zh": "救護車進門前他已經把血糖機拿在手上。",
+    "en": "Has the glucometer in his hand before the ambulance doors open."
+   },
+   "body": "specialist"
+  },
+  "er-nurse": {
+   "name": {
+    "zh": "阿蓉",
+    "en": "Jung"
+   },
+   "role": {
+    "zh": "急診護理師",
+    "en": "ER nurse"
+   },
+   "tag": "RN",
+   "color": "#9d4b7a",
+   "about": {
+    "zh": "手錶上有計時器，病人一抽就按。她說秒數是最誠實的紀錄。",
+    "en": "A stopwatch on her wrist, started the moment a patient seizes. Seconds, she says, are the most honest record."
+   },
+   "body": "nurse"
+  },
+  "patient": {
+   "name": {
+    "zh": "小魚",
+    "en": "Yu"
+   },
+   "role": {
+    "zh": "病人・26 歲平面設計師",
+    "en": "Patient, 26, graphic designer"
+   },
+   "tag": "PT",
+   "color": "#6b7280",
+   "about": {
+    "zh": "癲癇多年，控制得不錯。這週趕稿兩晚沒睡，藥盒裡週二到週四的格子還是滿的。",
+    "en": "Years of well-controlled epilepsy. Two sleepless nights on a deadline this week; the Tuesday-to-Thursday slots in her pill box are still full."
+   },
+   "body": "patient"
+  },
+  "boyfriend": {
+   "name": {
+    "zh": "阿哲",
+    "en": "Che"
+   },
+   "role": {
+    "zh": "家屬・小魚的男友",
+    "en": "Family, Yu's boyfriend"
+   },
+   "tag": "FAM",
+   "color": "#b45309",
+   "about": {
+    "zh": "叫救護車的人。他說上週她有兩次「放空」幾秒鐘，他以為是累。",
+    "en": "The one who called the ambulance. Last week she 'blanked out' twice for a few seconds; he put it down to tiredness."
+   },
+   "body": "family"
+  },
+  "grandma": {
+   "name": {
+    "zh": "李阿嬤",
+    "en": "Grandma Li"
+   },
+   "role": {
+    "zh": "病人・78 歲，從下午就怪怪的",
+    "en": "Patient, 78, 'odd since the afternoon'"
+   },
+   "tag": "PT2",
+   "color": "#0f766e",
+   "about": {
+    "zh": "女兒說她從下午開始答非所問、嘴巴一直動、眼神放空，沒有抽搐。急診 CT 正常，微燒。",
+    "en": "Her daughter says she has been answering the wrong questions since the afternoon, lips working, eyes blank; no convulsion. ER CT normal, slight fever."
+   },
+   "body": "patient"
+  },
+  "icu-nurse": {
+   "name": {
+    "zh": "小潘",
+    "en": "Pan"
+   },
+   "role": {
+    "zh": "加護病房護理師",
+    "en": "ICU nurse"
+   },
+   "tag": "ICU",
+   "color": "#7c3aed",
+   "about": {
+    "zh": "夜裡 ICU 的電話多半是她打的。她先講好消息。",
+    "en": "Most of the ICU's night calls are hers. She leads with the good news."
+   },
+   "phoneOnly": true
+  }
+ },
+ "places": {
+  "resus": {
+   "name": {
+    "zh": "急救區",
+    "en": "Resus bay"
+   },
+   "hot": "field"
+  },
+  "monitor": {
+   "name": {
+    "zh": "監視器",
+    "en": "Monitor"
+   },
+   "hot": "monitor"
+  },
+  "ct": {
+   "name": {
+    "zh": "CT 室",
+    "en": "CT room"
+   },
+   "hot": "imaging"
+  },
+  "eeg": {
+   "name": {
+    "zh": "移動式腦波機",
+    "en": "Portable EEG"
+   },
+   "hot": "device"
+  },
+  "crash": {
+   "name": {
+    "zh": "急救車",
+    "en": "Crash cart"
+   },
+   "hot": "crash-cart"
+  },
+  "board": {
+   "name": {
+    "zh": "急診白板",
+    "en": "ER whiteboard"
+   },
+   "hot": "whiteboard"
+  },
+  "desk": {
+   "name": {
+    "zh": "會診桌",
+    "en": "Consult desk"
+   },
+   "hot": "desk"
+  },
+  "obs-bed": {
+   "name": {
+    "zh": "觀察床",
+    "en": "Observation bed"
+   },
+   "hot": "bed"
+  },
+  "icu": {
+   "name": {
+    "zh": "加護病房",
+    "en": "ICU"
+   },
+   "hot": "recovery"
+  }
+ },
+ "glossary": [
+  {
+   "term": {
+    "zh": "癲癇重積狀態",
+    "en": "status epilepticus"
+   },
+   "plain": {
+    "zh": "發作太久不停，或一次接一次中間沒醒。時間越長越難停，腦的傷害也越大，所以要照流程一層一層加藥。",
+    "en": "A seizure that goes on too long, or seizures back to back without waking in between. The longer it runs the harder it stops and the more the brain suffers, so treatment escalates step by step."
+   }
+  },
+  {
+   "term": {
+    "zh": "發作後狀態",
+    "en": "postictal state"
+   },
+   "plain": {
+    "zh": "發作停了之後的幾分鐘到幾小時：想睡、混亂、說不清楚、有時一側無力。會慢慢恢復。",
+    "en": "The minutes to hours after a seizure stops: drowsy, confused, speech unclear, sometimes weak on one side. It recovers gradually."
+   }
+  },
+  {
+   "term": {
+    "zh": "Todd 麻痺",
+    "en": "Todd's paresis"
+   },
+   "plain": {
+    "zh": "發作後一側暫時無力，像中風但會自己好。要靠時間和影像一起證明它不是中風。",
+    "en": "Temporary one-sided weakness after a seizure that looks like a stroke but resolves on its own. Time and imaging together prove it is not a stroke."
+   }
+  },
+  {
+   "term": {
+    "zh": "非抽搐性重積",
+    "en": "non-convulsive status"
+   },
+   "plain": {
+    "zh": "腦波上持續在發作，人卻只是呆呆的、答非所問、嘴巴一直動。沒有腦波就看不出來。",
+    "en": "Continuous seizure activity on EEG while the person merely looks blank, answers wrongly, lips working. Invisible without an EEG."
+   }
+  },
+  {
+   "term": {
+    "zh": "腦波",
+    "en": "EEG"
+   },
+   "plain": {
+    "zh": "頭皮上貼電極記錄腦的電活動。發作的腦波有特定的樣子，正常人的也有。",
+    "en": "Electrodes on the scalp recording the brain's electrical activity. A seizing brain has a recognisable pattern, and so does a normal one."
+   }
+  },
+  {
+   "term": {
+    "zh": "中風模仿者",
+    "en": "stroke mimic"
+   },
+   "plain": {
+    "zh": "看起來像中風但不是的病：發作後無力、低血糖、偏頭痛、功能性症狀。先排除它們，再談溶栓。",
+    "en": "Conditions that look like stroke but are not: postictal weakness, low glucose, migraine, functional symptoms. Rule them out before talking about lysis."
+   }
+  },
+  {
+   "term": {
+    "zh": "局部起始",
+    "en": "focal onset"
+   },
+   "plain": {
+    "zh": "發作從腦的一個點開始，例如先眼睛往一邊看、一隻手先抽，然後才全身。起點告訴你病灶在哪。",
+    "en": "A seizure that starts in one spot: eyes turning to one side, one hand jerking first, then the whole body. The starting point says where the lesion is."
+   }
+  },
+  {
+   "term": {
+    "zh": "發作描述",
+    "en": "seizure semiology"
+   },
+   "plain": {
+    "zh": "把發作的樣子按順序寫下來：先動哪裡、眼睛往哪看、持續多久、之後怎樣。比任何檢查都有用。",
+    "en": "The seizure written down in order: what moved first, where the eyes went, how long, what came after. Worth more than any test."
+   }
+  },
+  {
+   "term": {
+    "zh": "腰椎穿刺",
+    "en": "lumbar puncture"
+   },
+   "plain": {
+    "zh": "從腰部兩節脊椎之間抽一點腦脊髓液檢查。發燒加新發作，要排除腦炎的時候做。",
+    "en": "Drawing a little spinal fluid from between two lumbar vertebrae. Done when fever plus a new seizure raises the question of encephalitis."
+   }
+  },
+  {
+   "term": {
+    "zh": "腦炎",
+    "en": "encephalitis"
+   },
+   "plain": {
+    "zh": "腦本身發炎，常由病毒引起。發燒、意識混亂、發作。拖不得，依醫囑先治療再等結果。",
+    "en": "Inflammation of the brain itself, often viral: fever, confusion, seizures. Treatment per protocol starts before the results come back."
+   }
+  },
+  {
+   "term": {
+    "zh": "誘發因子",
+    "en": "seizure triggers"
+   },
+   "plain": {
+    "zh": "讓控制好的癲癇再發的原因：沒睡、漏藥、酒、發燒、生理期。問出來才能預防下一次。",
+    "en": "What tips controlled epilepsy back into seizures: lost sleep, missed doses, alcohol, fever, menstruation. Found by asking, prevented by knowing."
+   }
+  },
+  {
+   "term": {
+    "zh": "駕駛限制",
+    "en": "driving restriction"
+   },
+   "plain": {
+    "zh": "發作後一段時間不能開車，這是法規也是安全。每一位發作的病人離開前都要被告知。",
+    "en": "No driving for a set period after a seizure: the law, and common sense. Every patient who has seized is told before they leave."
+   }
+  }
+ ],
+ "codex": [
+  {
+   "id": "eeg-machine",
+   "kind": "equipment",
+   "name": {
+    "zh": "移動式腦波機",
+    "en": "Portable EEG"
+   },
+   "text": {
+    "zh": "推到床邊就能錄。電極位置按國際系統貼，貼歪了，發作會看起來在錯的地方。",
+    "en": "Records at the bedside. Electrodes go by the international system; placed wrongly, the seizure appears in the wrong place."
+   },
+   "hot": "device"
+  },
+  {
+   "id": "glucometer",
+   "kind": "equipment",
+   "name": {
+    "zh": "血糖機",
+    "en": "Glucometer"
+   },
+   "text": {
+    "zh": "每一個抽搐或意識混亂的病人，第一個檢查。低血糖的發作，給再多抗癲癇藥都不會停。",
+    "en": "The first test for anyone seizing or confused. A hypoglycaemic seizure will not stop however much anticonvulsant you give."
+   },
+   "hot": "drugs"
+  },
+  {
+   "id": "crash-cart",
+   "kind": "equipment",
+   "name": {
+    "zh": "急救車",
+    "en": "Crash cart"
+   },
+   "text": {
+    "zh": "抽吸、氧氣、口咽通氣道、第一線與第二線藥。發作時旁邊的人要知道每一格在哪。",
+    "en": "Suction, oxygen, airway adjuncts, first- and second-line drugs. Whoever is at the bedside must know every drawer."
+   },
+   "hot": "crash-cart"
+  },
+  {
+   "id": "ct-console",
+   "kind": "equipment",
+   "name": {
+    "zh": "CT 主機",
+    "en": "CT scanner"
+   },
+   "text": {
+    "zh": "發作後的 CT 排除出血、佔位、新梗塞。正常不等於沒事，之後還有 MRI 與腦波。",
+    "en": "After a seizure the CT rules out bleeding, a mass, a new infarct. Normal is not the end; MRI and EEG follow."
+   },
+   "hot": "imaging"
+  },
+  {
+   "id": "pill-box",
+   "kind": "item",
+   "name": {
+    "zh": "小魚的藥盒",
+    "en": "Yu's pill box"
+   },
+   "text": {
+    "zh": "週二到週四的格子都是滿的。最清楚的病史，是一個塑膠盒。",
+    "en": "Tuesday to Thursday still full. The clearest history in the room is a plastic box."
+   }
+  },
+  {
+   "id": "eeg-strip",
+   "kind": "item",
+   "name": {
+    "zh": "李阿嬤的腦波紙",
+    "en": "Grandma Li's EEG strip"
+   },
+   "text": {
+    "zh": "從頭到尾都在放電，人卻只是嘴巴動、眼神空。沒有這張紙，她會被當成失智惡化。",
+    "en": "Discharging from end to end while she merely worked her lips and stared. Without this strip she would have been written off as worsening dementia."
+   }
+  },
+  {
+   "id": "neurons",
+   "kind": "concept",
+   "name": {
+    "zh": "時間就是神經元",
+    "en": "Time is neurons"
+   },
+   "text": {
+    "zh": "發作超過幾分鐘，腦會進入自己維持發作的狀態，接受器改變，第一線藥越來越沒效。所以癲癇重積狀態的處理是按時間推進的：計時、第一線、第二線、通知加護。等待不是保守，是傷害。",
+    "en": "Past a few minutes a seizing brain starts sustaining itself; receptors change and first-line drugs lose their grip. That is why status epilepticus is managed against the clock: time it, first line, second line, call intensive care. Waiting is not caution; it is harm."
+   }
+  },
+  {
+   "id": "label",
+   "kind": "concept",
+   "name": {
+    "zh": "發作後不要急著貼標籤",
+    "en": "No quick labels after a seizure"
+   },
+   "text": {
+    "zh": "發作後一側無力、說不出話，可能是 Todd 麻痺，也可能是引起發作的中風。兩個方向都不能用猜的：做神經學檢查、急影像排除血管阻塞、短時間內重新評估。恢復了，是 Todd；沒恢復或影像有東西，就是中風。標籤要等證據。",
+    "en": "Weakness and lost speech after a seizure may be Todd's paresis or a stroke that caused the seizure. Neither is guessed: examine, image urgently to exclude an occlusion, re-examine soon. If it recovers, Todd's; if not, or if imaging shows something, stroke. The label waits for evidence."
+   }
+  }
+ ],
+ "segs": [
+  {
+   "id": "handover",
+   "name": {
+    "zh": "大夜接班",
+    "en": "Night handover"
+   },
+   "sub": {
+    "zh": "00:30 · 急診白板",
+    "en": "00:30 · ER whiteboard"
+   },
+   "t": 30,
+   "mood": "night",
+   "note": {
+    "zh": "接班：觀察床有位怪怪的阿嬤",
+    "en": "Took over: an 'odd' grandmother on the observation bed"
+   },
+   "beats": [
+    {
+     "id": "h1",
+     "to": "er-doc",
+     "guide": {
+      "zh": "找急診陳醫師接班",
+      "en": "Find Dr Chen to take over"
+     },
+     "lines": [
+      [
+       "er-doc",
+       {
+        "zh": "神內晚安。觀察床李阿嬤，78 歲，女兒說從下午開始答非所問、嘴巴一直動。CT 正常，微燒。",
+        "en": "Evening, neurology. Observation bed, Grandma Li, 78; since the afternoon she answers the wrong questions and her lips keep moving. CT normal, slight fever."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "有抽搐嗎？",
+        "en": "Any convulsion?"
+       }
+      ],
+      [
+       "er-doc",
+       {
+        "zh": "沒有。家屬以為中風，我覺得不像。你去看看，我先去接下一台救護車。",
+        "en": "None. The family thinks stroke; I don't. Have a look; I've another ambulance coming."
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "白板：觀察 4 床，李阿嬤，意識混亂待神內。急救區：空。",
+        "en": "Board: obs bed 4, Grandma Li, confusion awaiting neurology. Resus: empty."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "h1t",
+     "to": "place:eeg",
+     "guide": {
+      "zh": "檢查移動式腦波機",
+      "en": "Check the portable EEG"
+     },
+     "roles": [
+      "eeg-tech"
+     ],
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "電極膏夠、導線都通、電池滿。半夜的腦波機不能臨時找。",
+        "en": "Paste stocked, every lead conducting, battery full. You do not go hunting for an EEG machine at night."
+       }
+      ],
+      [
+       "er-nurse",
+       {
+        "zh": "阿嬤那床我看她一直咂嘴。你們等一下會用到它吧。",
+        "en": "That grandmother keeps smacking her lips. I suspect you'll be needing that machine."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "status",
+   "name": {
+    "zh": "停不下來的發作",
+    "en": "Status"
+   },
+   "sub": {
+    "zh": "01:00 · 急救區",
+    "en": "01:00 · resus bay"
+   },
+   "t": 60,
+   "mood": "night",
+   "note": {
+    "zh": "小魚的發作在第二線藥後停止",
+    "en": "Yu's seizure stopped after the second-line drug"
+   },
+   "beats": [
+    {
+     "id": "s1",
+     "to": "place:resus",
+     "guide": {
+      "zh": "救護車到，進急救區",
+      "en": "Ambulance in; to resus"
+     },
+     "ring": {
+      "title": {
+       "zh": "急診檢傷來電",
+       "en": "ER triage calling"
+      },
+      "sub": {
+       "zh": "26 歲女性持續抽搐，救護車三分鐘到",
+       "en": "Woman of 26, still convulsing, ambulance three minutes out"
+      },
+      "call": true,
+      "from": "er-nurse"
+     },
+     "lines": [
+      [
+       "er-nurse",
+       {
+        "zh": "救護車說從家裡抽到現在沒停過。男友跟車。",
+        "en": "Ambulance says she has not stopped since home. Boyfriend riding along."
+       }
+      ],
+      [
+       "boyfriend",
+       {
+        "zh": "她有癲癇！趕稿兩天沒睡，藥……我想她忘了吃。",
+        "en": "She has epilepsy! Two days without sleep on a deadline, and her pills... I think she forgot them."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "阿蓉，計時。陳醫師，血糖。",
+        "en": "Jung, the clock. Dr Chen, glucose."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "vitals",
+      "event": "seizure",
+      "options": [
+       {
+        "zh": "側臥護氣道、氧氣、計時、測血糖、依醫囑第一線藥",
+        "en": "Side-lying, airway, oxygen, time it, glucose, first-line drug per protocol",
+        "ok": true,
+        "why": {
+         "zh": "對。保護、計時、血糖、第一線。順序在手上，時間在錶上。",
+         "en": "Right. Protect, time, glucose, first line. The sequence in your hands, the time on the watch."
+        }
+       },
+       {
+        "zh": "壓住四肢，等五分鐘看會不會自己停",
+        "en": "Hold her limbs and wait five minutes to see if it stops",
+        "ok": false,
+        "why": {
+         "zh": "她已經抽了超過五分鐘。這已經是癲癇重積狀態，等待就是傷害。",
+         "en": "She has been seizing for well over five minutes. This is already status epilepticus; waiting is harm."
+        }
+       },
+       {
+        "zh": "先推去 CT 找原因",
+        "en": "Scan first to find the cause",
+        "ok": false,
+        "why": {
+         "zh": "抽搐中的病人進 CT 機，得到的是一張晃動的片子和一個缺氧的腦。先停發作。",
+         "en": "A convulsing patient in the scanner yields a blurred picture and a hypoxic brain. Stop the seizure first."
+        }
+       }
+      ]
+     },
+     "post": [
+      [
+       "er-nurse",
+       {
+        "zh": "第一線給了。還在抽。",
+        "en": "First line given. Still seizing."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "第二線依醫囑，通知加護病房與腦波。",
+        "en": "Second line per protocol; notify the ICU and EEG."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "s2",
+     "to": "place:crash",
+     "guide": {
+      "zh": "按順序處理癲癇重積",
+      "en": "Manage status in order"
+     },
+     "lines": [
+      [
+       "er-doc",
+       {
+        "zh": "你來排順序，我來給藥。",
+        "en": "You call the sequence; I'll give the drugs."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "order",
+      "q": {
+       "zh": "癲癇重積狀態的處理順序",
+       "en": "Managing status epilepticus, in order"
+      },
+      "steps": [
+       {
+        "zh": "計時、側臥、保護氣道與氧氣",
+        "en": "Start the clock, side-lying, airway and oxygen"
+       },
+       {
+        "zh": "測血糖",
+        "en": "Check glucose"
+       },
+       {
+        "zh": "建立靜脈通路",
+        "en": "Establish intravenous access"
+       },
+       {
+        "zh": "第一線藥依醫囑",
+        "en": "First-line drug per protocol"
+       },
+       {
+        "zh": "未止：第二線藥依醫囑",
+        "en": "Not stopped: second-line drug per protocol"
+       },
+       {
+        "zh": "通知加護病房與腦波",
+        "en": "Notify the ICU and EEG"
+       }
+      ]
+     },
+     "post": [
+      [
+       "er-nurse",
+       {
+        "zh": "停了。總共十一分又四十秒。",
+        "en": "Stopped. Eleven minutes forty in all."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "發作後狀態，側臥，監視器不離身。阿哲，她剛剛是先哪裡抽？",
+        "en": "Postictal state, side-lying, monitor stays on. Che, what moved first?"
+       }
+      ],
+      [
+       "boyfriend",
+       {
+        "zh": "眼睛先往右看，右手先抖，然後才整個人。",
+        "en": "Her eyes went right first, then the right hand, then everything."
+       }
+      ]
+     ],
+     "item": "pill-box"
+    },
+    {
+     "id": "s2r",
+     "to": "place:desk",
+     "guide": {
+      "zh": "寫下發作描述",
+      "en": "Write the semiology"
+     },
+     "roles": [
+      "resident"
+     ],
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "發作描述：眼睛向右偏、頭右轉、右手先抽，之後全身。局部起始，左側大腦起點。",
+        "en": "Seizure semiology: eyes deviated right, head turned right, right arm first, then generalised. Focal onset, left hemisphere."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "好。這一段比任何檢查都值錢。",
+        "en": "Good. That paragraph is worth more than any test."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "todd",
+   "name": {
+    "zh": "不會動的右手",
+    "en": "The right arm that will not move"
+   },
+   "sub": {
+    "zh": "02:30 · 急救區",
+    "en": "02:30 · resus bay"
+   },
+   "t": 150,
+   "mood": "night",
+   "note": {
+    "zh": "影像排除中風，無力一小時內恢復：Todd 麻痺",
+    "en": "Imaging excluded stroke; weakness recovered within the hour: Todd's paresis"
+   },
+   "beats": [
+    {
+     "id": "t1",
+     "to": "patient",
+     "guide": {
+      "zh": "小魚醒了，但右手不會動",
+      "en": "Yu is waking, but the right arm will not move"
+     },
+     "lines": [
+      [
+       "er-nurse",
+       {
+        "zh": "醫師，她醒了，可是右手舉不起來，話也說不出來。要不要叫中風小組？",
+        "en": "Doctor, she's waking, but can't lift the right arm or get words out. Shall I call the stroke team?"
+       }
+      ],
+      [
+       "patient",
+       {
+        "zh": "……",
+        "en": "..."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "右手無力、說不出話，發作後十五分鐘。",
+        "en": "Right arm weak, no speech, fifteen minutes after a seizure."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "choice",
+      "q": {
+       "zh": "發作後右側無力與失語，你會？",
+       "en": "Right-sided weakness and aphasia after a seizure. You...?"
+      },
+      "options": [
+       {
+        "zh": "神經學檢查、急影像排除血管阻塞、短時間內重新評估",
+        "en": "Examine, urgent imaging to exclude an occlusion, re-examine soon",
+        "ok": true,
+        "why": {
+         "zh": "對。可能是 Todd 麻痺，也可能是引起發作的中風。標籤要等證據：影像加時間。",
+         "en": "Right. It may be Todd's paresis or a stroke that triggered the seizure. The label waits for evidence: imaging plus time."
+        },
+        "set": {
+         "todd": "image"
+        }
+       },
+       {
+        "zh": "直接啟動溶栓流程",
+        "en": "Go straight to thrombolysis",
+        "ok": false,
+        "why": {
+         "zh": "發作起始的無力是溶栓的警訊之一。沒有影像證明阻塞，先不要。",
+         "en": "Weakness at seizure onset is one of the cautions for lysis. Without imaging showing an occlusion, not yet."
+        },
+        "set": {
+         "todd": "lyse"
+        }
+       },
+       {
+        "zh": "她有癲癇，一定是 Todd，讓她睡",
+        "en": "She has epilepsy, it must be Todd's; let her sleep",
+        "ok": false,
+        "why": {
+         "zh": "癲癇病人也會中風。「一定是」在神經科是危險的三個字。",
+         "en": "People with epilepsy have strokes too. 'It must be' are dangerous words in neurology."
+        },
+        "set": {
+         "todd": "ignore"
+        }
+       }
+      ]
+     },
+     "post": [
+      [
+       "attending",
+       {
+        "zh": "電話裡聽起來你做對了。發作後的病人，不要急著貼標籤。影像看完打給我。",
+        "en": "Sounds right from here. Don't be quick to label a patient who has just seized. Call me after the imaging."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "t1b",
+     "to": "place:resus",
+     "guide": {
+      "zh": "排除中風模仿者",
+      "en": "Exclude the stroke mimics"
+     },
+     "lines": [
+      [
+       "er-doc",
+       {
+        "zh": "血糖正常。你來把模仿者一個一個劃掉。",
+        "en": "Glucose normal. You strike the mimics off one by one."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "低血糖、偏頭痛、功能性、發作後。最後一個最像，但要證明。",
+        "en": "Hypoglycaemia, migraine, functional, postictal. The last fits best, but it has to be proven."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "neurology-tia-abcd2",
+      "stage": 1
+     }
+    },
+    {
+     "id": "t2",
+     "to": "place:ct",
+     "guide": {
+      "zh": "看小魚的影像",
+      "en": "Review Yu's imaging"
+     },
+     "lines": [
+      [
+       "er-nurse",
+       {
+        "zh": "片子好了。她右手剛剛動了一下。",
+        "en": "Images are up. Her right hand just moved."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "imaging",
+      "region": "head",
+      "question": {
+       "zh": "癲癇重積後的頭部影像，要先排除哪些？正常代表什麼？",
+       "en": "After status, what must the head imaging exclude, and what does 'normal' mean?"
+      },
+      "answer": {
+       "zh": "出血、佔位性病灶、新的梗塞、大血管阻塞與腦水腫。正常只代表沒有這些；原因還要靠腦波、MRI 與病史。",
+       "en": "Bleeding, a mass, a new infarct, a large-vessel occlusion and swelling. Normal only means none of those; the cause still needs EEG, MRI and the history."
+      }
+     },
+     "post": [
+      [
+       "me",
+       {
+        "zh": "CT 乾淨，血管影像沒有阻塞。她的右手回來了，開始講話了。",
+        "en": "CT clean, vessel imaging shows no occlusion. The right arm is back, and she is talking."
+       }
+      ],
+      [
+       "patient",
+       {
+        "zh": "我……截稿……",
+        "en": "My... deadline..."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "Todd 麻痺。標籤現在可以貼了。",
+        "en": "Todd's paresis. Now the label can go on."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "grandma",
+   "name": {
+    "zh": "怪怪的阿嬤",
+    "en": "The odd grandmother"
+   },
+   "sub": {
+    "zh": "04:00 · 觀察床",
+    "en": "04:00 · observation bed"
+   },
+   "t": 240,
+   "mood": "night",
+   "note": {
+    "zh": "李阿嬤：非抽搐性重積，發燒要排除腦炎",
+    "en": "Grandma Li: non-convulsive status; fever means excluding encephalitis"
+   },
+   "beats": [
+    {
+     "id": "g1",
+     "to": "grandma",
+     "guide": {
+      "zh": "去看李阿嬤",
+      "en": "Go and see Grandma Li"
+     },
+     "lines": [
+      [
+       "grandma",
+       {
+        "zh": "……吃飽了……",
+        "en": "...I've eaten..."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "阿嬤，今天幾號？",
+        "en": "Grandma, what's the date today?"
+       }
+      ],
+      [
+       "grandma",
+       {
+        "zh": "……吃飽了……",
+        "en": "...I've eaten..."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "女兒說下午開始的、時好時壞、嘴巴一直動、沒有抽搐、微燒。時間進程不像中風。",
+        "en": "Her daughter says it began this afternoon, waxes and wanes, lips working, no convulsion, low fever. The time course is not a stroke."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "neurology-neurological-examination",
+      "stage": 0
+     }
+    },
+    {
+     "id": "g1t",
+     "to": "place:eeg",
+     "guide": {
+      "zh": "把腦波機接到阿嬤頭上",
+      "en": "Hook Grandma up to the EEG"
+     },
+     "roles": [
+      "eeg-tech"
+     ],
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "電極按系統貼，阿嬤，貼一下頭皮，涼涼的。",
+        "en": "Electrodes by the system. Grandma, a little cold paste on your scalp."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "find",
+      "hot": "device",
+      "q": {
+       "zh": "點一下移動式腦波機，開始記錄",
+       "en": "Tap the portable EEG to start recording"
+      }
+     }
+    },
+    {
+     "id": "g2",
+     "to": "attending",
+     "guide": {
+      "zh": "蘇主治到了，一起看腦波",
+      "en": "Dr Su arrives; read the EEG together"
+     },
+     "ring": {
+      "title": {
+       "zh": "蘇主治訊息",
+       "en": "Message from Dr Su"
+      },
+      "sub": {
+       "zh": "「我到了。阿嬤的腦波開了沒？」",
+       "en": "'I'm here. Is Grandma's EEG running?'"
+      },
+      "call": false,
+      "from": "attending"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "看。從頭到尾都在放電，人卻只是咂嘴、放空。這是什麼？",
+        "en": "Look. Discharging from end to end, and all she does is smack her lips and stare. What is this?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "非抽搐性重積。沒有腦波就會被當成失智惡化。",
+        "en": "Non-convulsive status. Without the EEG she'd be written off as worsening dementia."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "對。依醫囑處理。她還微燒，新發作加發燒加意識混亂，你要排除什麼？",
+        "en": "Right. Treat per protocol. She is febrile; new seizures plus fever plus confusion means excluding what?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "腦炎。腰椎穿刺，依醫囑先治療再等結果。",
+        "en": "Encephalitis. Lumbar puncture, and treatment per protocol before the results."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "先把節段定出來。只定位，針不是今晚的課。",
+        "en": "Find your level first. Landmarks only; the needle is not tonight's lesson."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "drill",
+      "template": "neurology",
+      "drill": "lumbar"
+     },
+     "item": "eeg-strip"
+    }
+   ]
+  },
+  {
+   "id": "icu-call",
+   "name": {
+    "zh": "ICU 來電",
+    "en": "ICU calling"
+   },
+   "sub": {
+    "zh": "05:30 · 加護病房",
+    "en": "05:30 · ICU"
+   },
+   "t": 330,
+   "mood": "night",
+   "note": {
+    "zh": "小魚醒了，誘發因子與駕駛限制談完",
+    "en": "Yu awake; triggers and driving discussed"
+   },
+   "beats": [
+    {
+     "id": "i1",
+     "to": "place:icu",
+     "guide": {
+      "zh": "去 ICU 看小魚",
+      "en": "Go to the ICU to see Yu"
+     },
+     "ring": {
+      "title": {
+       "zh": "ICU 來電",
+       "en": "ICU calling"
+      },
+      "sub": {
+       "zh": "小潘：「小魚醒了，右手正常，一直要筆電。」",
+       "en": "Pan: 'Yu's awake, right arm normal, keeps asking for her laptop.'"
+      },
+      "call": true,
+      "from": "icu-nurse"
+     },
+     "lines": [
+      [
+       "icu-nurse",
+       {
+        "zh": "醫師，她完全清醒了，問可不可以回家趕稿。",
+        "en": "Doctor, she's fully awake and asking if she can go home to finish her work."
+       }
+      ],
+      [
+       "patient",
+       {
+        "zh": "醫師，我真的沒事了。截稿是今天中午。",
+        "en": "Doctor, I'm fine now, really. The deadline is noon today."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "兩晚沒睡、三天沒吃藥，然後抽了快十二分鐘。先說誘發因子，再說截稿。",
+        "en": "Two nights without sleep, three days without pills, then nearly twelve minutes of seizing. Seizure triggers first, then deadlines."
+       }
+      ],
+      [
+       "patient",
+       {
+        "zh": "……藥盒我以為吃了。",
+        "en": "...I thought I'd taken them."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "還有：一段時間不能開車。這是駕駛限制，不是我在罰你。",
+        "en": "And no driving for a while. That is the driving restriction, not me punishing you."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "neurology-stroke-secondary-prevention",
+      "stage": 8
+     }
+    },
+    {
+     "id": "i1t",
+     "to": "place:desk",
+     "guide": {
+      "zh": "寫兩份腦波報告",
+      "en": "Write the two EEG reports"
+     },
+     "roles": [
+      "eeg-tech"
+     ],
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "小魚：發作後慢波，左側為主，無持續放電。李阿嬤：持續放電，治療後減少。附時間與藥物依醫囑。",
+        "en": "Yu: postictal slowing, left-sided, no ongoing discharges. Grandma Li: continuous discharges, reduced after treatment. Times and medication per protocol noted."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "兩張報告，兩個完全不同的夜晚。寫清楚。",
+        "en": "Two reports, two entirely different nights. Write them clearly."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "i2",
+     "to": "boyfriend",
+     "guide": {
+      "zh": "跟阿哲談上週的「放空」",
+      "en": "Talk to Che about last week's 'blanks'"
+     },
+     "lines": [
+      [
+       "boyfriend",
+       {
+        "zh": "上週那兩次放空幾秒，是不是就已經在發作了？",
+        "en": "Those two blank spells last week, were they already seizures?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "很可能。那是局部起始的小發作，今晚只是變大了。下次放空就要來，不要等。",
+        "en": "Very likely. Small focal-onset seizures; tonight's just grew. Next time she blanks, come in; don't wait."
+       }
+      ],
+      [
+       "boyfriend",
+       {
+        "zh": "我會把她的藥盒放在筆電上面。",
+        "en": "I'll put her pill box on top of her laptop."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dawn",
+   "name": {
+    "zh": "黎明交班",
+    "en": "Dawn handover"
+   },
+   "sub": {
+    "zh": "07:30 · 急診白板",
+    "en": "07:30 · ER whiteboard"
+   },
+   "t": 450,
+   "mood": "day",
+   "note": {
+    "zh": "交給白班；師傅的問題",
+    "en": "Handed to the day team; the mentor's questions"
+   },
+   "beats": [
+    {
+     "id": "d1",
+     "to": "attending",
+     "guide": {
+      "zh": "向蘇主治交班",
+      "en": "Hand over to Dr Su"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "小魚 ICU 清醒，Todd 麻痺完全恢復，今天腦波與 MRI。李阿嬤腦波放電減少，腰穿已送，依醫囑治療中。",
+        "en": "Yu awake in ICU, Todd's fully recovered, EEG and MRI today. Grandma Li's discharges reduced, lumbar puncture sent, treatment per protocol under way."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "今晚最重要的檢查是哪一個？",
+        "en": "The most important test tonight?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "阿蓉的碼錶。",
+        "en": "Jung's stopwatch."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "對。時間就是神經元。",
+        "en": "Right. Time is neurons."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "d1b",
+     "to": "attending",
+     "guide": {
+      "zh": "蘇主治提起那隻右手",
+      "en": "Dr Su brings up that right arm"
+     },
+     "when": {
+      "flag": "todd",
+      "is": "lyse"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "兩點半的時候，你想直接溶栓。",
+        "en": "At half past two you wanted to lyse straight away."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "她看起來就是中風。",
+        "en": "She looked exactly like a stroke."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "發作後的病人都像。影像、時間、再檢查。急，但不能跳步。",
+        "en": "Everyone does after a seizure. Imaging, time, re-examine. Fast, but no skipped steps."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "d1c",
+     "to": "attending",
+     "guide": {
+      "zh": "蘇主治提起那隻右手",
+      "en": "Dr Su brings up that right arm"
+     },
+     "when": {
+      "flag": "todd",
+      "is": "ignore"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "兩點半的時候，你說「一定是 Todd」。",
+        "en": "At half past two you said 'it must be Todd's'."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "這次是。",
+        "en": "This time it was."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "這次是。下一個癲癇病人中風的時候，「一定是」會害了他。影像不能省。",
+        "en": "This time. The next epileptic who has a stroke will be harmed by 'it must be'. Imaging is never skipped."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "d2",
+     "lines": [
+      [
+       "er-nurse",
+       {
+        "zh": "白班到了。你的咖啡在會診桌上，我幫你蓋了蓋子。",
+        "en": "Day team's here. Your coffee is on the consult desk; I put a lid on it."
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "值班結束。腦波機推回角落，電池接上充電；小魚的藥盒放在筆電上。",
+        "en": "End of shift. The EEG is back in its corner, charging; Yu's pill box sits on top of her laptop."
+       }
+      ]
+     ],
+     "end": true
+    }
+   ]
+  }
+ ],
+ "ending": {
+  "title": {
+   "zh": "下班了",
+   "en": "End of shift"
+  },
+  "sub": {
+   "zh": "兩張腦波紙，一個碼錶，一隻回來的右手",
+   "en": "Two EEG strips, one stopwatch, one right arm that came back"
+  },
+  "stats": [
+   "stages",
+   "grades",
+   "choices",
+   "calls",
+   "items",
+   "time"
+  ]
+ }
+}

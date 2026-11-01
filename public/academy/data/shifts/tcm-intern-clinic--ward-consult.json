@@ -1,0 +1,1357 @@
+{
+ "format": "huatuo-shift-v2",
+ "department": "tcm-intern-clinic",
+ "case": "ward-consult",
+ "caseTitle": {
+  "zh": "病房會診：中西整合",
+  "en": "Ward consult: integrative care"
+ },
+ "condition": {
+  "zh": "整合 · 術後腸麻痺",
+  "en": "Integrative · post-op ileus"
+ },
+ "difficulty": 3,
+ "title": {
+  "zh": "中醫實習：外科病房會診",
+  "en": "TCM training: a surgical-ward consult"
+ },
+ "tagline": {
+  "zh": "回答被問的問題，知道什麼時候停手",
+  "en": "Answer the question asked; know when to stop"
+ },
+ "room": "ward",
+ "minutes": 26,
+ "roles": [
+  {
+   "id": "resident",
+   "zh": "中醫住院醫師",
+   "en": "TCM resident",
+   "desc": {
+    "zh": "外科病房的中醫會診：回答被問的問題、先跟原團隊說話，還有知道什麼時候該停手。",
+    "en": "A TCM consult on the surgical ward: answer the question asked, talk to the primary team first, and know when to stop."
+   }
+  },
+  {
+   "id": "nurse",
+   "zh": "病房護理師",
+   "en": "Ward nurse",
+   "desc": {
+    "zh": "春嬌阿姨的生命徵象、抗凝針時間、針後觀察都在你手上。第一個量到發燒的人是你。",
+    "en": "Auntie Chun-chiao’s vitals, the anticoagulant schedule and post-needling checks are in your hands. You are first to find the fever."
+   }
+  }
+ ],
+ "cast": {
+  "master": {
+   "name": {
+    "zh": "馮醫師",
+    "en": "Dr Feng"
+   },
+   "role": {
+    "zh": "中西整合醫學主治（師傅）",
+    "en": "Integrative medicine attending (mentor)"
+   },
+   "tag": "DR",
+   "color": "#81296d",
+   "body": "mentor",
+   "about": {
+    "zh": "口袋裡一本小冊子寫著「會診禮儀」。每次到病房都先找原團隊，常被誤認成營養師。",
+    "en": "Carries a pocket notebook titled “Consult manners”. Always finds the primary team first, and is often mistaken for the dietitian."
+   }
+  },
+  "nurse": {
+   "name": {
+    "zh": "佳穎護理師",
+    "en": "Nurse Chia-ying"
+   },
+   "role": {
+    "zh": "外科病房護理師",
+    "en": "Surgical ward nurse"
+   },
+   "tag": "RN",
+   "color": "#3b8f6a",
+   "body": "nurse",
+   "about": {
+    "zh": "病房白板上有一欄「今天放屁了沒」，是她發明的。",
+    "en": "Invented the “Passed gas today?” column on the ward board."
+   }
+  },
+  "chunchiao": {
+   "name": {
+    "zh": "春嬌阿姨",
+    "en": "Auntie Chun-chiao"
+   },
+   "role": {
+    "zh": "六十六歲，大腸癌術後第三天",
+    "en": "Sixty-six, day three after bowel surgery"
+   },
+   "tag": "P1",
+   "color": "#c2703a",
+   "body": "patient",
+   "about": {
+    "zh": "虛構教學個案。腹腔鏡乙狀結腸切除。在床上織毛線，說要織完才出院。",
+    "en": "Fictional teaching case. Laparoscopic sigmoid colectomy. Knitting in bed; says she leaves when the scarf is done."
+   }
+  },
+  "son": {
+   "name": {
+    "zh": "阿明",
+    "en": "Ah-Ming"
+   },
+   "role": {
+    "zh": "春嬌阿姨的兒子",
+    "en": "Auntie Chun-chiao's son"
+   },
+   "tag": "FAM",
+   "color": "#8a6d3b",
+   "body": "family",
+   "about": {
+    "zh": "工程師，把媽媽每天的體溫畫成折線圖。",
+    "en": "An engineer who plots his mother’s temperature on a line chart every day."
+   }
+  },
+  "surg": {
+   "name": {
+    "zh": "外科住院醫師",
+    "en": "Surgical resident"
+   },
+   "role": {
+    "zh": "一般外科住院醫師",
+    "en": "General surgery resident"
+   },
+   "tag": "SR",
+   "color": "#3f6fa8",
+   "body": "resident",
+   "about": {
+    "zh": "一臉沒睡。對中醫半信半疑，但很感謝有人先跟他說一聲。",
+    "en": "Visibly sleepless. Half-sceptical of TCM, but grateful when someone checks with him first."
+   }
+  }
+ },
+ "places": {
+  "chart": {
+   "name": {
+    "zh": "護理站病歷車",
+    "en": "Nurses’ station charts"
+   },
+   "hot": "chart"
+  },
+  "bed": {
+   "name": {
+    "zh": "春嬌阿姨的病床",
+    "en": "Auntie Chun-chiao’s bed"
+   },
+   "hot": "bed"
+  },
+  "monitor": {
+   "name": {
+    "zh": "生命徵象監視器",
+    "en": "Vital-signs monitor"
+   },
+   "hot": "monitor"
+  },
+  "board": {
+   "name": {
+    "zh": "病房白板",
+    "en": "Ward board"
+   },
+   "hot": "whiteboard"
+  },
+  "handover": {
+   "name": {
+    "zh": "護理站",
+    "en": "Nurses’ station"
+   },
+   "hot": "handover"
+  },
+  "sink": {
+   "name": {
+    "zh": "洗手台",
+    "en": "Sink"
+   },
+   "hot": "sink"
+  }
+ },
+ "glossary": [
+  {
+   "term": {
+    "zh": "會診",
+    "en": "consultation"
+   },
+   "plain": {
+    "zh": "原團隊請另一科來評估並給建議；會診醫師提建議，原團隊決定。",
+    "en": "The primary team asks another specialty to assess and advise; the consultant recommends, the primary team decides."
+   }
+  },
+  {
+   "term": {
+    "zh": "中西整合",
+    "en": "integrative care"
+   },
+   "plain": {
+    "zh": "中醫與西醫一起照顧同一位病人，彼此知道對方做了什麼。",
+    "en": "TCM and Western medicine caring for one patient together, each knowing what the other is doing."
+   }
+  },
+  {
+   "term": {
+    "zh": "術後腸麻痺",
+    "en": "post-operative ileus"
+   },
+   "plain": {
+    "zh": "手術後腸子暫時不太蠕動：腹脹、噁心、沒有排氣排便。",
+    "en": "After surgery the bowel temporarily stops moving: bloating, nausea, no gas or stool."
+   }
+  },
+  {
+   "term": {
+    "zh": "排氣",
+    "en": "passing gas"
+   },
+   "plain": {
+    "zh": "放屁。術後第一次排氣，代表腸子開始動了，病房會為它歡呼。",
+    "en": "Breaking wind. The first one after surgery means the bowel is moving again, and the ward cheers."
+   }
+  },
+  {
+   "term": {
+    "zh": "六腑以通為用",
+    "en": "the fu organs work by flowing"
+   },
+   "plain": {
+    "zh": "中醫認為胃腸等六腑要通暢才能發揮功能，不通就脹、痛、嘔。",
+    "en": "In TCM the hollow organs such as stomach and bowel only work when they flow; blocked, they bloat, ache and vomit."
+   }
+  },
+  {
+   "term": {
+    "zh": "下合穴",
+    "en": "lower he-sea point"
+   },
+   "plain": {
+    "zh": "六腑在下肢的對應穴：胃是足三里，大腸是上巨虛；中醫認為治腑病效果好。",
+    "en": "Each hollow organ’s point on the leg: ST36 for the stomach, ST37 for the large intestine; in TCM especially good for those organs."
+   }
+  },
+  {
+   "term": {
+    "zh": "澀脈",
+    "en": "choppy pulse"
+   },
+   "plain": {
+    "zh": "往來艱澀不流利，像輕刀刮竹；中醫認為多見於氣滯血瘀、傷精血少。",
+    "en": "A pulse that drags rather than flows, like a knife scraping bamboo; in TCM it appears with qi and blood stasis or depleted blood."
+   }
+  },
+  {
+   "term": {
+    "zh": "抗凝血劑",
+    "en": "anticoagulant"
+   },
+   "plain": {
+    "zh": "預防血栓的藥，會讓出血比較不容易停；針刺後要按壓久一點。",
+    "en": "A drug that prevents clots and makes bleeding harder to stop; needle holes need longer pressure."
+   }
+  },
+  {
+   "term": {
+    "zh": "活血化瘀",
+    "en": "invigorating blood"
+   },
+   "plain": {
+    "zh": "中醫讓血行通暢、化解瘀血的治法；這類藥可能增加出血風險。",
+    "en": "The TCM method of moving blood and dispersing stasis; these herbs can raise bleeding risk."
+   }
+  },
+  {
+   "term": {
+    "zh": "禁食",
+    "en": "nil by mouth"
+   },
+   "plain": {
+    "zh": "醫囑規定暫時不能由口進食或喝水；口服中藥也一樣要經原團隊同意。",
+    "en": "Nothing by mouth by order; oral herbs also need the primary team’s agreement."
+   }
+  },
+  {
+   "term": {
+    "zh": "吻合處滲漏",
+    "en": "anastomotic leak"
+   },
+   "plain": {
+    "zh": "腸子接起來的地方漏出來，會發燒、心跳快、腹痛加劇，是外科急症。",
+    "en": "A leak where the bowel was joined: fever, a fast heart, worsening pain; a surgical emergency."
+   }
+  },
+  {
+   "term": {
+    "zh": "ISBAR",
+    "en": "ISBAR"
+   },
+   "plain": {
+    "zh": "交班與通報的格式：介紹、狀況、背景、評估、建議。",
+    "en": "A structure for handover and calls: identify, situation, background, assessment, recommendation."
+   }
+  },
+  {
+   "term": {
+    "zh": "紅旗",
+    "en": "red flag"
+   },
+   "plain": {
+    "zh": "提示危險情況的徵象；出現就停下中醫處置，先找原團隊。",
+    "en": "A sign of danger; when it appears, pause TCM care and call the primary team."
+   }
+  }
+ ],
+ "codex": [
+  {
+   "id": "consult-form",
+   "kind": "equipment",
+   "name": {
+    "zh": "會診單",
+    "en": "Consult request"
+   },
+   "text": {
+    "zh": "上面寫著：「術後腸蠕動慢，請中醫協助。」馮醫師說：先回答這一題，不要回答你想回答的那一題。",
+    "en": "It reads: “Slow bowel recovery after surgery; TCM input please.” Dr Feng says: answer this question, not the one you wish you’d been asked."
+   },
+   "hot": "chart"
+  },
+  {
+   "id": "monitor",
+   "kind": "equipment",
+   "name": {
+    "zh": "生命徵象監視器",
+    "en": "Vital-signs monitor"
+   },
+   "text": {
+    "zh": "體溫、心跳、血壓、血氧。阿明說他的折線圖比它好看，但它比較快。",
+    "en": "Temperature, heart rate, blood pressure, oxygen. Ah-Ming says his line chart is prettier; the monitor is faster."
+   },
+   "hot": "monitor"
+  },
+  {
+   "id": "ward-board",
+   "kind": "equipment",
+   "name": {
+    "zh": "病房白板",
+    "en": "Ward board"
+   },
+   "text": {
+    "zh": "有一欄「今天放屁了沒」，用愛心貼紙打勾。佳穎說這是全病房最受重視的指標。",
+    "en": "A column headed “Passed gas today?”, ticked with heart stickers. Nurse Chia-ying calls it the most closely watched metric on the ward."
+   },
+   "hot": "whiteboard"
+  },
+  {
+   "id": "scarf",
+   "kind": "item",
+   "name": {
+    "zh": "春嬌阿姨的毛線圍巾",
+    "en": "Auntie Chun-chiao’s scarf"
+   },
+   "text": {
+    "zh": "轉去做電腦斷層前，她把織到一半的圍巾交給你保管：「等我回來繼續。」",
+    "en": "Before going for her CT she hands you the half-knitted scarf: “Keep it till I’m back.”"
+   }
+  },
+  {
+   "id": "consult-manners",
+   "kind": "concept",
+   "name": {
+    "zh": "會診的禮儀與流程",
+    "en": "Consult manners and method"
+   },
+   "text": {
+    "zh": "讀會診單與病歷→先找原團隊、確認他們要問什麼→床邊評估→寫建議與禁忌→和原團隊討論、取得同意→執行、記錄、追蹤。會診是建議不是醫囑；回答被問的問題；每一個介入都讓原團隊知道；病情變化先通知原團隊。",
+    "en": "Read the request and chart → find the primary team and confirm their question → assess at the bedside → write recommendations and cautions → discuss and agree with the primary team → act, document, follow up. A consult advises, it does not order; answer the question asked; let the primary team know of every intervention; any deterioration goes to them first."
+   }
+  },
+  {
+   "id": "postop-needle",
+   "kind": "concept",
+   "name": {
+    "zh": "術後病人的針灸安全",
+    "en": "Needling safely after surgery"
+   },
+   "text": {
+    "zh": "先看：血小板與凝血、抗凝針施打時間、傷口與引流管位置、感染與白血球、是否禁食、有無淋巴水腫的肢體。避開傷口與管路周圍，選遠端穴如足三里、上巨虛、內關；手法輕、針少、按壓久；嚴格無菌。病人發燒或腹痛加劇，先停針、找外科。",
+    "en": "Check first: platelets and clotting, the anticoagulant schedule, wounds and drains, infection and white count, whether nil by mouth, any limb with lymphoedema. Keep away from wounds and lines and use distal points such as ST36, ST37 and PC6; gentle technique, few needles, long pressure; strict asepsis. If the patient spikes a fever or the pain worsens, stop and call surgery."
+   }
+  },
+  {
+   "id": "herb-anticoag",
+   "kind": "concept",
+   "name": {
+    "zh": "中藥與抗凝血劑",
+    "en": "Herbs and anticoagulants"
+   },
+   "text": {
+    "zh": "活血化瘀類如丹參、當歸、紅花、桃仁，可能加強抗凝血劑或抗血小板藥的作用，增加出血風險。術後病人用中藥前，要讓外科與藥師都知道，禁食期間口服中藥更要原團隊同意。任何中藥都要寫進用藥紀錄。",
+    "en": "Blood-invigorating herbs such as salvia, angelica, safflower and peach kernel may strengthen anticoagulant or antiplatelet drugs and raise bleeding risk. Before herbs after surgery, both the surgeons and the pharmacist must know; while nil by mouth, oral herbs need the primary team’s agreement. Every herb goes on the medication record."
+   }
+  },
+  {
+   "id": "postop-flags",
+   "kind": "concept",
+   "name": {
+    "zh": "術後的紅旗",
+    "en": "Post-operative red flags"
+   },
+   "text": {
+    "zh": "發燒、心跳變快、腹痛加劇或變成全腹痛、肚子變硬、持續嘔吐、引流液變混濁、血壓下降、尿量變少。這些可能是吻合處滲漏、膿瘍或腸阻塞。中醫處置一律暫停，用 ISBAR 立刻通知外科。",
+    "en": "Fever, a rising heart rate, pain that worsens or spreads, a rigid abdomen, persistent vomiting, cloudy drain fluid, falling blood pressure, less urine. These may mean an anastomotic leak, an abscess or obstruction. All TCM care pauses, and surgery is called at once using ISBAR."
+   }
+  }
+ ],
+ "segs": [
+  {
+   "id": "request",
+   "name": {
+    "zh": "會診單",
+    "en": "The consult request"
+   },
+   "sub": {
+    "zh": "08:00 · 護理站病歷車",
+    "en": "08:00 · nurses’ station"
+   },
+   "t": 480,
+   "mood": "day",
+   "note": {
+    "zh": "先回答被問的問題",
+    "en": "Answer the question asked"
+   },
+   "beats": [
+    {
+     "id": "a1",
+     "to": "place:chart",
+     "guide": {
+      "zh": "找出會診單",
+      "en": "Find the consult request"
+     },
+     "lines": [
+      [
+       "master",
+       {
+        "zh": "外科病房的會診。第一步不是去看病人，是去讀會診單。",
+        "en": "A surgical-ward consult. Step one isn’t the patient; it’s the request."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "find",
+      "hot": "chart",
+      "q": {
+       "zh": "在病歷車找出春嬌阿姨的會診單",
+       "en": "Find Auntie Chun-chiao’s consult request at the station"
+      }
+     },
+     "post": [
+      [
+       "me",
+       {
+        "zh": "「術後第三天，腹脹未排氣，請中醫協助促進腸蠕動。」",
+        "en": "“Day three post-op, bloated, no gas yet; TCM help with bowel recovery please.”"
+       }
+      ],
+      [
+       "master",
+       {
+        "zh": "很好。回答這一題，不要回答你想回答的那一題。",
+        "en": "Good. Answer that question, not the one you wish you’d been asked."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "a2",
+     "to": "place:board",
+     "guide": {
+      "zh": "排出會診流程",
+      "en": "Order the consult steps"
+     },
+     "lines": [
+      [
+       "nurse",
+       {
+        "zh": "你們是營養師嗎？",
+        "en": "Are you the dietitians?"
+       }
+      ],
+      [
+       "master",
+       {
+        "zh": "中醫會診。常被認錯，沒關係。流程排給她看。",
+        "en": "TCM consult. Happens all the time. Show her the steps."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "order",
+      "q": {
+       "zh": "病房會診的流程",
+       "en": "A ward consult, step by step"
+      },
+      "steps": [
+       {
+        "zh": "讀會診單與病歷",
+        "en": "Read the request and chart"
+       },
+       {
+        "zh": "找原團隊確認問題",
+        "en": "Confirm the question with the team"
+       },
+       {
+        "zh": "床邊評估",
+        "en": "Assess at the bedside"
+       },
+       {
+        "zh": "寫建議與禁忌",
+        "en": "Write advice and cautions"
+       },
+       {
+        "zh": "與原團隊討論同意",
+        "en": "Agree it with the primary team"
+       },
+       {
+        "zh": "執行、記錄、追蹤",
+        "en": "Act, document, follow up"
+       }
+      ]
+     },
+     "post": [
+      [
+       "nurse",
+       {
+        "zh": "白板那一欄「今天放屁了沒」，阿姨三天都是空的。",
+        "en": "See the “Passed gas today?” column? Auntie’s has been empty for three days."
+       }
+      ]
+     ],
+     "item": "consult-manners"
+    }
+   ]
+  },
+  {
+   "id": "bedside",
+   "name": {
+    "zh": "床邊",
+    "en": "At the bedside"
+   },
+   "sub": {
+    "zh": "09:00 · 春嬌阿姨的病床",
+    "en": "09:00 · Auntie Chun-chiao’s bed"
+   },
+   "t": 540,
+   "mood": "day",
+   "note": {
+    "zh": "腑氣不通：舌淡紫、脈澀",
+    "en": "Bowel qi blocked: dusky tongue, choppy pulse"
+   },
+   "beats": [
+    {
+     "id": "b1",
+     "to": "surg",
+     "guide": {
+      "zh": "先找外科住院醫師",
+      "en": "Find the surgical resident first"
+     },
+     "lines": [
+      [
+       "master",
+       {
+        "zh": "你好，中醫會診。阿姨的狀況，你們最擔心什麼？",
+        "en": "Hello, TCM consultation. What worries you most about her?"
+       }
+      ],
+      [
+       "surg",
+       {
+        "zh": "腹腔鏡乙狀結腸切除，第三天。腸子動得慢，其他都穩定。有在打預防血栓的針。",
+        "en": "Laparoscopic sigmoid colectomy, day three. Slow bowel, otherwise stable. She’s on clot-prevention injections."
+       }
+      ],
+      [
+       "surg",
+       {
+        "zh": "老實說我對針灸半信半疑。但你們先來問，我很感謝。",
+        "en": "Honestly, I’m half-sceptical about acupuncture. But thanks for checking with me first."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "b2",
+     "to": "chunchiao",
+     "guide": {
+      "zh": "跟春嬌阿姨打招呼",
+      "en": "Greet Auntie Chun-chiao"
+     },
+     "lines": [
+      [
+       "chunchiao",
+       {
+        "zh": "中醫也來啦？肚子好脹，像吞了一顆氣球。有點想吐。",
+        "en": "TCM too? My belly’s so bloated, like I swallowed a balloon. A bit queasy."
+       }
+      ],
+      [
+       "son",
+       {
+        "zh": "這是我畫的體溫折線圖，三天都很平。",
+        "en": "Here’s my chart of her temperature. Flat for three days."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "阿姨，舌頭伸出來給我看一下。",
+        "en": "Auntie, let me see your tongue."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "tongue",
+      "q": {
+       "zh": "術後第三天：舌淡紫、苔白膩。怎麼讀？",
+       "en": "Day three post-op: pale-purple body, white greasy coat. Reading?"
+      },
+      "tongue": {
+       "body": "pale-purple",
+       "coat": "greasy-white",
+       "shape": "normal"
+      },
+      "options": [
+       {
+        "zh": "氣滯血瘀兼濕阻：腑氣不通",
+        "en": "Qi and blood stagnant, damp blocking",
+        "ok": true,
+        "why": {
+         "zh": "中醫認為手術損傷脈絡致瘀，舌淡紫；臥床少動、腑氣不通，濕濁內停，苔白膩。",
+         "en": "In TCM surgery injures the vessels and leaves stasis, so the tongue is dusky; lying still with the bowel blocked lets damp collect, so the coat is white and greasy."
+        }
+       },
+       {
+        "zh": "陰虛火旺",
+        "en": "Yin deficiency with fire",
+        "ok": false,
+        "why": {
+         "zh": "陰虛舌紅少苔；她的舌偏紫、苔厚膩。",
+         "en": "Yin deficiency means a red tongue with scant coat; hers is dusky with a thick greasy coat."
+        }
+       },
+       {
+        "zh": "熱毒熾盛",
+        "en": "Blazing toxic heat",
+        "ok": false,
+        "why": {
+         "zh": "熱毒舌紅絳、苔黃燥。目前沒有熱象，但要記住這個題目，下午會用到。",
+         "en": "Toxic heat gives a crimson tongue with a dry yellow coat. No heat now, but keep this one in mind for the afternoon."
+        }
+       }
+      ]
+     }
+    },
+    {
+     "id": "b3",
+     "to": "chunchiao",
+     "guide": {
+      "zh": "診脈",
+      "en": "Take the pulse"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "脈來不流利，像刀輕輕刮過竹子，一下一下卡住。",
+        "en": "The pulse drags rather than flows, like a knife lightly scraping bamboo, catching beat by beat."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "pulse",
+      "q": {
+       "zh": "往來艱澀，如輕刀刮竹。這是什麼脈？",
+       "en": "Dragging, like a knife scraping bamboo. Which pulse?"
+      },
+      "pulse": "choppy",
+      "options": [
+       {
+        "zh": "澀脈：氣滯血瘀",
+        "en": "Choppy: qi and blood stasis",
+        "ok": true,
+        "why": {
+         "zh": "中醫認為澀脈主氣滯血瘀或精血虧少；術後瘀阻、腑氣不通，正合。",
+         "en": "In TCM a choppy pulse means qi and blood stasis or depleted blood; after surgery, with stasis and a blocked bowel, it fits."
+        }
+       },
+       {
+        "zh": "滑脈：痰濕食積",
+        "en": "Slippery: phlegm, damp, food",
+        "ok": false,
+        "why": {
+         "zh": "滑脈往來流利如珠；這條脈是卡住的。",
+         "en": "Slippery flows like beads; this one catches."
+        }
+       },
+       {
+        "zh": "洪脈：熱盛",
+        "en": "Surging: blazing heat",
+        "ok": false,
+        "why": {
+         "zh": "洪脈來盛去衰、滿指。她沒有熱，脈也不盛。",
+         "en": "Surging floods the fingers. She has no heat and the pulse is not full."
+        }
+       }
+      ]
+     },
+     "post": [
+      [
+       "master",
+       {
+        "zh": "六腑以通為用。今天的目標只有一個：通。",
+        "en": "The fu organs work by flowing. Today has one goal: flow."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "before",
+   "name": {
+    "zh": "下針之前",
+    "en": "Before the needles"
+   },
+   "sub": {
+    "zh": "10:00 · 護理站",
+    "en": "10:00 · nurses’ station"
+   },
+   "t": 600,
+   "mood": "day",
+   "note": {
+    "zh": "血小板、抗凝針、傷口、同意",
+    "en": "Platelets, anticoagulant, wounds, consent"
+   },
+   "beats": [
+    {
+     "id": "c1",
+     "to": "place:handover",
+     "guide": {
+      "zh": "下針前要確認什麼",
+      "en": "What to check before needling"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "針盤已經備好。阿姨在床上等，手上還在織圍巾。",
+        "en": "The needle tray is ready. Auntie is waiting in bed, still knitting."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "choice",
+      "q": {
+       "zh": "術後打抗凝針的病人，下針前你要先做什麼？",
+       "en": "A post-op patient on anticoagulant injections. Before needling, what first?"
+      },
+      "options": [
+       {
+        "zh": "看血小板、抗凝針時間、傷口管路，並與外科確認",
+        "en": "Check platelets, injection timing, wounds and lines; agree with surgery",
+        "ok": true,
+        "why": {
+         "zh": "抗凝會增加出血；傷口與引流管周圍不能扎；禁食與感染也要看。每一個介入都讓原團隊知道。",
+         "en": "Anticoagulants raise bleeding risk; wounds and drains are off limits; fasting and infection matter too. The primary team knows about every intervention."
+        },
+        "set": {
+         "checked-chart": true
+        }
+       },
+       {
+        "zh": "直接扎，針很細不會出血",
+        "en": "Just needle; fine needles don’t bleed",
+        "ok": false,
+        "why": {
+         "zh": "細針在抗凝的人身上也會滲血、瘀青。而且外科不知道你做了什麼。",
+         "en": "Fine needles still ooze and bruise on anticoagulants, and surgery wouldn’t know what you did."
+        },
+        "set": {
+         "checked-chart": false
+        }
+       },
+       {
+        "zh": "扎肚子上的天樞，離腸子最近",
+        "en": "Needle ST25 on the belly, nearest the bowel",
+        "ok": false,
+        "why": {
+         "zh": "腹腔鏡傷口就在附近。術後選遠端穴，避開傷口與管路。",
+         "en": "The laparoscopic ports are right there. After surgery, use distal points away from wounds and lines."
+        },
+        "set": {
+         "checked-chart": false
+        }
+       }
+      ]
+     }
+    },
+    {
+     "id": "c2",
+     "when": {
+      "flag": "checked-chart",
+      "is": true
+     },
+     "to": "nurse",
+     "guide": {
+      "zh": "對時間表",
+      "en": "Check the schedule"
+     },
+     "lines": [
+      [
+       "nurse",
+       {
+        "zh": "血小板正常。抗凝針早上打過了，針刺排在下一劑之前，出針後我按久一點。",
+        "en": "Platelets normal. The morning injection is done; we’ll needle well before the next dose, and I’ll press longer afterwards."
+       }
+      ],
+      [
+       "surg",
+       {
+        "zh": "只扎腳跟手臂？可以。有變化跟我說。",
+        "en": "Just legs and forearm? Fine. Tell me if anything changes."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "c3",
+     "to": "place:handover",
+     "guide": {
+      "zh": "哪些中藥要小心",
+      "en": "Which herbs need care"
+     },
+     "lines": [
+      [
+       "son",
+       {
+        "zh": "我表弟說吃丹參可以化瘀，傷口好得快。可以帶來給媽媽喝嗎？",
+        "en": "My cousin says salvia clears stasis and heals wounds faster. Can I bring some for Mum?"
+       }
+      ],
+      [
+       "master",
+       {
+        "zh": "先回答我：打抗凝針的人，哪些藥要特別小心？",
+        "en": "First tell me: on anticoagulant injections, which herbs need special care?"
+       }
+      ]
+     ],
+     "mini": {
+      "type": "herb",
+      "q": {
+       "zh": "選出抗凝期間要特別小心的活血化瘀藥",
+       "en": "Pick the blood-invigorating herbs to avoid on anticoagulants"
+      },
+      "pick": [
+       "丹參",
+       "當歸",
+       "紅花",
+       "桃仁"
+      ],
+      "distractors": [
+       "山藥",
+       "茯苓",
+       "陳皮",
+       "甘草"
+      ]
+     },
+     "post": [
+      [
+       "me",
+       {
+        "zh": "活血化瘀的藥可能加強抗凝作用，增加出血。而且阿姨現在禁食。",
+        "en": "Herbs invigorating blood can strengthen the anticoagulant and raise bleeding risk. And she’s nil by mouth for now."
+       }
+      ],
+      [
+       "son",
+       {
+        "zh": "那我先不要帶。我把它記在折線圖旁邊。",
+        "en": "Then I won’t bring any. I’ll note it beside my chart."
+       }
+      ]
+     ],
+     "item": "herb-anticoag"
+    }
+   ]
+  },
+  {
+   "id": "needles",
+   "name": {
+    "zh": "下針",
+    "en": "Needling"
+   },
+   "sub": {
+    "zh": "10:30 · 春嬌阿姨的病床",
+    "en": "10:30 · Auntie Chun-chiao’s bed"
+   },
+   "t": 630,
+   "mood": "day",
+   "note": {
+    "zh": "遠端取穴：足三里、上巨虛、內關",
+    "en": "Distal points: ST36, ST37, PC6"
+   },
+   "beats": [
+    {
+     "id": "d1",
+     "to": "chunchiao",
+     "guide": {
+      "zh": "指出三個遠端穴",
+      "en": "Show three distal points"
+     },
+     "lines": [
+      [
+       "master",
+       {
+        "zh": "胃的下合穴、大腸的下合穴、止嘔的穴。全部在四肢，離傷口遠遠的。",
+        "en": "The stomach’s lower he-sea point, the large intestine’s, and the point for nausea. All on the limbs, far from the wounds."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "points",
+      "q": {
+       "zh": "指出足三里、上巨虛、內關",
+       "en": "Point out ST36, ST37 and PC6"
+      },
+      "codes": [
+       "ST36",
+       "ST37",
+       "PC6"
+      ],
+      "view": "front"
+     },
+     "post": [
+      [
+       "chunchiao",
+       {
+        "zh": "扎腳就會放屁？",
+        "en": "Needles in my legs make me pass gas?"
+       }
+      ],
+      [
+       "master",
+       {
+        "zh": "中醫認為下合穴治腑病。研究也在看術後腸麻痺。我們一起看結果。",
+        "en": "In TCM the lower he-sea points treat the hollow organs, and studies are looking at post-operative ileus. Let’s watch together."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "d2",
+     "to": "chunchiao",
+     "guide": {
+      "zh": "一夫法找上巨虛",
+      "en": "Find ST37 by finger-breadths"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "阿姨，我用你的手指當尺。足三里往下四指並攏的寬度，就是上巨虛。",
+        "en": "Auntie, I’m using your fingers as the ruler. Four fingers’ breadth below ST36 is ST37."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "drill",
+      "template": "tcm-intern-clinic",
+      "drill": "cun"
+     },
+     "post": [
+      [
+       "chunchiao",
+       {
+        "zh": "我的手指這麼好用？",
+        "en": "My fingers are that useful?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "織圍巾也是。",
+        "en": "They knit scarves too."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "d3",
+     "roles": [
+      "nurse"
+     ],
+     "to": "chunchiao",
+     "guide": {
+      "zh": "出針後按壓與觀察",
+      "en": "Press and watch after needling"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "針都出來了，我按住每個針孔，抗凝的人要按久一點。",
+        "en": "Needles out. I’m pressing every hole; on anticoagulants it takes longer."
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "你數了針盤：數量對。",
+        "en": "You count the tray: all accounted for."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "d4",
+     "roles": [
+      "resident"
+     ],
+     "to": "place:chart",
+     "guide": {
+      "zh": "寫會診紀錄",
+      "en": "Write the consult note"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "會診紀錄：術後腸麻痺，中醫辨為氣滯血瘀、腑氣不通。建議遠端取穴，避開傷口；禁食期間不建議口服中藥；活血藥避免。",
+        "en": "Note: post-op ileus; TCM pattern qi and blood stasis, bowel qi blocked. Recommend distal points away from wounds; no oral herbs while nil by mouth; avoid blood-invigorating herbs."
+       }
+      ],
+      [
+       "master",
+       {
+        "zh": "最後加一句：發燒、腹痛加劇，請先通知外科，暫停中醫處置。",
+        "en": "Add a last line: fever or worsening pain, call surgery first and pause TCM care."
+       }
+      ]
+     ],
+     "item": "postop-needle"
+    }
+   ]
+  },
+  {
+   "id": "noon",
+   "name": {
+    "zh": "午後回訪",
+    "en": "Afternoon round"
+   },
+   "sub": {
+    "zh": "13:00 · 春嬌阿姨的病床",
+    "en": "13:00 · Auntie Chun-chiao’s bed"
+   },
+   "t": 780,
+   "mood": "day",
+   "note": {
+    "zh": "腸音出來了",
+    "en": "Bowel sounds return"
+   },
+   "beats": [
+    {
+     "id": "e1",
+     "when": {
+      "flag": "checked-chart",
+      "is": true
+     },
+     "to": "chunchiao",
+     "guide": {
+      "zh": "回去看阿姨",
+      "en": "Check on Auntie"
+     },
+     "lines": [
+      [
+       "nurse",
+       {
+        "zh": "針孔都很乾淨，沒有瘀青。還沒排氣，但腸音出來了。",
+        "en": "Needle sites clean, no bruising. Not passing gas yet, but bowel sounds are back."
+       }
+      ],
+      [
+       "chunchiao",
+       {
+        "zh": "肚子在唱歌。還沒放屁，但是它在練習。",
+        "en": "My belly’s singing. No gas yet, but it’s rehearsing."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "e2",
+     "when": {
+      "flag": "checked-chart",
+      "is": false
+     },
+     "to": "chunchiao",
+     "guide": {
+      "zh": "回去看阿姨",
+      "en": "Check on Auntie"
+     },
+     "lines": [
+      [
+       "nurse",
+       {
+        "zh": "內關的針孔一直滲血，小腿也有一塊瘀青。她早上剛打抗凝針。",
+        "en": "The PC6 site keeps oozing, and there’s a bruise on her shin. She had her anticoagulant this morning."
+       }
+      ],
+      [
+       "surg",
+       {
+        "zh": "你們扎針前沒跟我說？下次先問我。",
+        "en": "You needled without telling me? Ask me first next time."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "是我們沒先確認。我加壓止血，紀錄會寫清楚。",
+        "en": "We didn’t check first. I’ll apply pressure and document it clearly."
+       }
+      ],
+      [
+       "master",
+       {
+        "zh": "針不大，信任才大。下次每一針都讓他知道。",
+        "en": "The needle was small; the trust lost is bigger. Next time he knows about every needle."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fever",
+   "name": {
+    "zh": "傍晚的發燒",
+    "en": "An evening fever"
+   },
+   "sub": {
+    "zh": "16:00 · 生命徵象監視器",
+    "en": "16:00 · the vitals monitor"
+   },
+   "t": 960,
+   "mood": "eve",
+   "note": {
+    "zh": "發燒、心跳快、腹痛加劇：停手",
+    "en": "Fever, fast heart, worse pain: stop"
+   },
+   "beats": [
+    {
+     "id": "f1",
+     "to": "place:monitor",
+     "guide": {
+      "zh": "監視器在響",
+      "en": "The monitor is alarming"
+     },
+     "lines": [
+      [
+       "son",
+       {
+        "zh": "我的折線圖，突然往上翹了。",
+        "en": "My line chart just shot upward."
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "體溫升高，心跳變快。春嬌阿姨抱著肚子，說痛的地方變大了，肚子摸起來比早上硬。",
+        "en": "Temperature up, heart rate climbing. Auntie Chun-chiao clutches her belly: the pain has spread, and it feels firmer than this morning."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "vitals",
+      "event": "fever",
+      "options": [
+       {
+        "zh": "暫停中醫處置，立刻用 ISBAR 通知外科",
+        "en": "Pause TCM, call surgery now with ISBAR",
+        "ok": true,
+        "why": {
+         "zh": "術後第三天發燒、心跳快、腹痛擴大變硬，要先想吻合處滲漏或膿瘍。這是外科急症，原團隊第一時間知道。",
+         "en": "Day three with fever, a fast heart and spreading, firmer pain: think anastomotic leak or abscess first. A surgical emergency; the primary team must know at once."
+        }
+       },
+       {
+        "zh": "再加針足三里，幫腸子動起來",
+        "en": "Add more needles at ST36 to move the bowel",
+        "ok": false,
+        "why": {
+         "zh": "這不是腸子太懶，可能是腸子漏了。現在加針只會延誤。",
+         "en": "This may not be a lazy bowel but a leaking one. More needles only delay."
+        }
+       },
+       {
+        "zh": "先記在會診單，明天再看",
+        "en": "Note it on the consult form; review tomorrow",
+        "ok": false,
+        "why": {
+         "zh": "紅旗不能等到明天。會診的最後一行就是為這一刻寫的。",
+         "en": "Red flags don’t wait until tomorrow. The last line of your note was written for this moment."
+        }
+       }
+      ]
+     },
+     "post": [
+      [
+       "me",
+       {
+        "zh": "外科嗎？我是中醫會診。春嬌阿姨，術後第三天。現在發燒、心跳快、腹痛擴大變硬。評估：擔心吻合處滲漏。建議：請你們馬上來看。",
+        "en": "Surgery? TCM consult here. Auntie Chun-chiao, day three post-op. Now febrile, tachycardic, pain spreading and firmer. Assessment: worried about an anastomotic leak. Recommendation: please come now."
+       }
+      ],
+      [
+       "surg",
+       {
+        "zh": "五分鐘內到。謝謝你直接打來。",
+        "en": "On my way. Thanks for calling straight away."
+       }
+      ]
+     ],
+     "item": "postop-flags"
+    },
+    {
+     "id": "f2",
+     "to": "surg",
+     "guide": {
+      "zh": "把病人交還外科",
+      "en": "Hand back to surgery"
+     },
+     "lines": [
+      [
+       "surg",
+       {
+        "zh": "要排電腦斷層。中醫的部分先停。",
+        "en": "We’re getting a CT. TCM on hold for now."
+       }
+      ],
+      [
+       "master",
+       {
+        "zh": "當然。會診是建議，你們決定。我們等你的消息。",
+        "en": "Of course. We advise; you decide. We’ll wait to hear from you."
+       }
+      ],
+      [
+       "chunchiao",
+       {
+        "zh": "小醫生，圍巾幫我顧好。等我回來繼續織。",
+        "en": "Young doctor, look after my scarf. I’ll finish it when I’m back."
+       }
+      ]
+     ],
+     "item": "scarf"
+    }
+   ]
+  },
+  {
+   "id": "night",
+   "name": {
+    "zh": "夜間訊息",
+    "en": "A night message"
+   },
+   "sub": {
+    "zh": "21:00 · 回家路上",
+    "en": "21:00 · on the way home"
+   },
+   "t": 1260,
+   "mood": "night",
+   "note": {
+    "zh": "早一點打，就早一點救",
+    "en": "An early call is an early rescue"
+   },
+   "beats": [
+    {
+     "id": "n1",
+     "ring": {
+      "title": {
+       "zh": "外科住院醫師的訊息",
+       "en": "Message from surgery"
+      },
+      "sub": {
+       "zh": "春嬌阿姨的斷層結果",
+       "en": "Auntie Chun-chiao’s CT result"
+      },
+      "call": false,
+      "from": "surg"
+     },
+     "lines": [
+      [
+       "surg",
+       {
+        "zh": "斷層有小的吻合處滲漏，已經放引流管、用抗生素，阿姨穩定。你們打得早，所以處理得早。",
+        "en": "CT showed a small anastomotic leak; drain placed, antibiotics started, she’s stable. You called early, so we acted early."
+       }
+      ],
+      [
+       "surg",
+       {
+        "zh": "等她恢復，還是想請你們回來幫忙。這次我會先打給你們。",
+        "en": "When she recovers we’d still like you back. This time I’ll call you first."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "n2",
+     "lines": [
+      [
+       "master",
+       {
+        "zh": "今天最好的中醫處置，是傍晚那一通電話。",
+        "en": "Today’s best TCM intervention was that evening phone call."
+       }
+      ],
+      [
+       "master",
+       {
+        "zh": "中西整合不是什麼都做，是知道什麼時候做、什麼時候停、什麼時候打電話。",
+        "en": "Integrative care isn’t doing everything; it’s knowing when to act, when to stop and when to call."
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "你的包包裡有半條毛線圍巾。你決定明天帶回病房。",
+        "en": "Half a knitted scarf sits in your bag. You’ll take it back to the ward tomorrow."
+       }
+      ]
+     ],
+     "end": true
+    }
+   ]
+  }
+ ],
+ "ending": {
+  "title": {
+   "zh": "下班了",
+   "en": "End of shift"
+  },
+  "sub": {
+   "zh": "整合：知道何時做、何時停、何時打電話",
+   "en": "Integration: when to act, when to stop, when to call"
+  },
+  "stats": [
+   "drills",
+   "choices",
+   "calls",
+   "items",
+   "time"
+  ]
+ }
+}

@@ -1,12 +1,328 @@
 {
- "format": "huatuo-shift-index-v1",
+ "format": "huatuo-shift-index-v2",
  "shifts": [
   {
+   "id": "acupoints",
+   "department": "acupoints",
+   "case": "main",
+   "faculty": "tcm",
+   "title": {
+    "zh": "經絡腧穴定位考試日",
+    "en": "Point-location exam day"
+   },
+   "caseTitle": {
+    "zh": "銅人考試日",
+    "en": "Bronze-figure exam day"
+   },
+   "condition": {
+    "zh": "常用穴定位考",
+    "en": "Point-location exam"
+   },
+   "difficulty": 1,
+   "tagline": {
+    "zh": "三站、一尊銅人、一位會反問的標準化病人",
+    "en": "Three stations, one bronze figure, and a standardised patient who asks the questions back"
+   },
+   "room": "tcm-clinic",
+   "minutes": 25,
+   "roles": [
+    {
+     "id": "intern",
+     "zh": "中醫見習醫師",
+     "en": "TCM clerk"
+    },
+    {
+     "id": "ta",
+     "zh": "針灸助教",
+     "en": "Acupuncture teaching assistant"
+    }
+   ],
+   "segs": 7,
+   "beats": 17,
+   "minis": [
+    "choice",
+    "drill",
+    "order",
+    "points",
+    "tongue",
+    "vitals"
+   ],
+   "glossary": 15,
+   "codex": 8
+  },
+  {
+   "id": "acupoints--forbidden-points",
+   "department": "acupoints",
+   "case": "forbidden-points",
+   "faculty": "tcm",
+   "title": {
+    "zh": "針灸室的紅線",
+    "en": "Red lines in the acupuncture room"
+   },
+   "caseTitle": {
+    "zh": "禁針穴的一天",
+    "en": "A day of forbidden points"
+   },
+   "condition": {
+    "zh": "安全 · 禁針禁灸與危險穴",
+    "en": "Safety · forbidden and danger points"
+   },
+   "difficulty": 2,
+   "tagline": {
+    "zh": "一位剛發現懷孕的病人、一個喘不過氣的高個子，和少了一支的針",
+    "en": "A patient who has just found out she is pregnant, a tall lad short of breath, and one needle missing"
+   },
+   "room": "acupuncture",
+   "minutes": 25,
+   "roles": [
+    {
+     "id": "intern",
+     "zh": "中醫見習醫師",
+     "en": "TCM intern"
+    },
+    {
+     "id": "assistant",
+     "zh": "針灸助理",
+     "en": "Acupuncture assistant"
+    }
+   ],
+   "segs": 7,
+   "beats": 20,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "imaging",
+    "order",
+    "points",
+    "pulse",
+    "vitals"
+   ],
+   "glossary": 13,
+   "codex": 7
+  },
+  {
+   "id": "acupoints--meridian-course",
+   "department": "acupoints",
+   "case": "meridian-course",
+   "faculty": "tcm",
+   "title": {
+    "zh": "經脈所過，主治所及",
+    "en": "Where a channel runs, it treats"
+   },
+   "caseTitle": {
+    "zh": "循經取穴的一天",
+    "en": "A day of following the channels"
+   },
+   "condition": {
+    "zh": "經絡 · 循行與遠端主治",
+    "en": "Channels · pathways and distal points"
+   },
+   "difficulty": 3,
+   "tagline": {
+    "zh": "一個落枕、一顆牙痛，和一個說是胃痛的阿伯",
+    "en": "A stiff neck, a toothache, and an old man who says it is his stomach"
+   },
+   "room": "tuina",
+   "minutes": 25,
+   "roles": [
+    {
+     "id": "intern",
+     "zh": "中醫見習醫師",
+     "en": "TCM intern"
+    },
+    {
+     "id": "therapist",
+     "zh": "推拿治療師",
+     "en": "Tuina therapist"
+    }
+   ],
+   "segs": 7,
+   "beats": 18,
+   "minis": [
+    "choice",
+    "drill",
+    "imaging",
+    "order",
+    "points",
+    "pulse",
+    "vitals"
+   ],
+   "glossary": 13,
+   "codex": 8
+  },
+  {
+   "id": "acupuncture-technique",
+   "department": "acupuncture-technique",
+   "case": "main",
+   "faculty": "tcm",
+   "title": {
+    "zh": "針灸治療室值班日",
+    "en": "A shift in the acupuncture room"
+   },
+   "caseTitle": {
+    "zh": "落枕的一天",
+    "en": "A day of stiff necks"
+   },
+   "condition": {
+    "zh": "經筋病 · 落枕",
+    "en": "Sinew channel · acute stiff neck"
+   },
+   "difficulty": 1,
+   "tagline": {
+    "zh": "一根針、一聲「酸了」和一個沒吃早餐的阿姨",
+    "en": "One needle, one “that aches”, and an auntie who skipped breakfast"
+   },
+   "room": "acupuncture",
+   "minutes": 25,
+   "roles": [
+    {
+     "id": "intern",
+     "zh": "中醫見習醫師",
+     "en": "TCM clerk"
+    },
+    {
+     "id": "assistant",
+     "zh": "針灸助理",
+     "en": "Acupuncture assistant"
+    }
+   ],
+   "segs": 8,
+   "beats": 21,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "order",
+    "points",
+    "pulse",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 14,
+   "codex": 8
+  },
+  {
+   "id": "acupuncture-technique--facial-palsy",
+   "department": "acupuncture-technique",
+   "case": "facial-palsy",
+   "faculty": "tcm",
+   "title": {
+    "zh": "針灸治療室：口眼喎斜",
+    "en": "Acupuncture room: the crooked mouth"
+   },
+   "caseTitle": {
+    "zh": "先看額頭：面癱的一天",
+    "en": "Look at the forehead first"
+   },
+   "condition": {
+    "zh": "面癱 · 周邊與中樞的鑑別",
+    "en": "Facial palsy · peripheral vs central"
+   },
+   "difficulty": 3,
+   "tagline": {
+    "zh": "一個外送員的右臉、一位阿姨的第二個月，和一通神經科的回電",
+    "en": "A courier's right cheek, an auntie's second month, and a call back from neurology"
+   },
+   "room": "acupuncture",
+   "minutes": 25,
+   "roles": [
+    {
+     "id": "resident",
+     "zh": "中醫住院醫師",
+     "en": "TCM resident"
+    },
+    {
+     "id": "assistant",
+     "zh": "針灸助理",
+     "en": "Acupuncture assistant"
+    }
+   ],
+   "segs": 8,
+   "beats": 17,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "herb",
+    "imaging",
+    "order",
+    "points",
+    "pulse",
+    "stage",
+    "tongue"
+   ],
+   "glossary": 14,
+   "codex": 8
+  },
+  {
+   "id": "acupuncture-technique--migraine",
+   "department": "acupuncture-technique",
+   "case": "migraine",
+   "faculty": "tcm",
+   "title": {
+    "zh": "中醫夜診的頭痛之夜",
+    "en": "A night of headaches in the TCM clinic"
+   },
+   "caseTitle": {
+    "zh": "夜診：兩個頭痛",
+    "en": "Evening clinic: two headaches"
+   },
+   "condition": {
+    "zh": "頭痛 · 偏頭痛與紅旗",
+    "en": "Headache · migraine and red flags"
+   },
+   "difficulty": 2,
+   "tagline": {
+    "zh": "一個十幾年都一樣的頭痛，和一個這輩子第一次的",
+    "en": "One headache that has been the same for years, and one that is the first of its kind"
+   },
+   "room": "tcm-clinic",
+   "minutes": 25,
+   "roles": [
+    {
+     "id": "resident",
+     "zh": "中醫住院醫師",
+     "en": "TCM resident"
+    },
+    {
+     "id": "nurse",
+     "zh": "夜診護理師",
+     "en": "Evening clinic nurse"
+    }
+   ],
+   "segs": 6,
+   "beats": 19,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "imaging",
+    "order",
+    "points",
+    "pulse",
+    "stage",
+    "tongue",
+    "vitals"
+   ],
+   "glossary": 14,
+   "codex": 9
+  },
+  {
+   "id": "anesthesiology",
    "department": "anesthesiology",
+   "case": "main",
+   "faculty": "western",
    "title": {
     "zh": "麻醉科值班日",
     "en": "A shift in anaesthesia"
    },
+   "caseTitle": {
+    "zh": "麻醉科值班日",
+    "en": "A shift in anaesthesia"
+   },
+   "condition": null,
+   "difficulty": 2,
    "tagline": {
     "zh": "睡著很容易，安全醒來才是功夫",
     "en": "Going to sleep is easy; waking safely is the craft"
@@ -39,11 +355,120 @@
    "codex": 7
   },
   {
+   "id": "anesthesiology--er-airway",
+   "department": "anesthesiology",
+   "case": "er-airway",
+   "faculty": "western",
+   "title": {
+    "zh": "麻醉科：夜間氣道值班",
+    "en": "Anaesthesia: the night airway pager"
+   },
+   "caseTitle": {
+    "zh": "急診的兩條氣道",
+    "en": "Two airways in the emergency department"
+   },
+   "condition": {
+    "zh": "急症 · 緊急氣道與誤吸風險",
+    "en": "Emergency · urgent airway and aspiration risk"
+   },
+   "difficulty": 3,
+   "tagline": {
+    "zh": "復甦在前，插管在後",
+    "en": "Resuscitate first, intubate second"
+   },
+   "room": "er",
+   "minutes": 25,
+   "roles": [
+    {
+     "id": "resident",
+     "zh": "麻醉科值班住院醫師",
+     "en": "On-call anaesthesia resident"
+    },
+    {
+     "id": "na",
+     "zh": "麻醉護理師",
+     "en": "Nurse anaesthetist"
+    }
+   ],
+   "segs": 7,
+   "beats": 21,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "imaging",
+    "order",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 13,
+   "codex": 9
+  },
+  {
+   "id": "anesthesiology--preop-clinic",
+   "department": "anesthesiology",
+   "case": "preop-clinic",
+   "faculty": "western",
+   "title": {
+    "zh": "麻醉科：術前評估門診",
+    "en": "Anaesthesia: pre-assessment clinic"
+   },
+   "caseTitle": {
+    "zh": "術前評估門診的一天",
+    "en": "A day in pre-assessment clinic"
+   },
+   "condition": {
+    "zh": "慢性病 · 術前評估門診",
+    "en": "Chronic disease · pre-assessment clinic"
+   },
+   "difficulty": 1,
+   "tagline": {
+    "zh": "手術那天的驚喜，要在一週前就拆掉",
+    "en": "Surprises on the day of surgery are defused a week earlier"
+   },
+   "room": "clinic",
+   "minutes": 22,
+   "roles": [
+    {
+     "id": "resident",
+     "zh": "麻醉科住院醫師",
+     "en": "Anaesthesia resident"
+    },
+    {
+     "id": "prenurse",
+     "zh": "術前評估門診護理師",
+     "en": "Pre-assessment nurse"
+    }
+   ],
+   "segs": 8,
+   "beats": 22,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "imaging",
+    "order",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 13,
+   "codex": 9
+  },
+  {
+   "id": "cardiac-surgery",
    "department": "cardiac-surgery",
+   "case": "main",
+   "faculty": "western",
    "title": {
     "zh": "心臟外科值班日",
     "en": "A shift in cardiac surgery"
    },
+   "caseTitle": {
+    "zh": "心臟外科值班日",
+    "en": "A shift in cardiac surgery"
+   },
+   "condition": null,
+   "difficulty": 2,
    "tagline": {
     "zh": "讓心臟停下來、上機、再讓它跳回來",
     "en": "Stop the heart, run the pump, make it beat again"
@@ -77,11 +502,118 @@
    "codex": 9
   },
   {
+   "id": "cardiac-surgery--aortic-dissection",
+   "department": "cardiac-surgery",
+   "case": "aortic-dissection",
+   "faculty": "western",
+   "title": {
+    "zh": "心臟外科值班夜：急診",
+    "en": "Cardiac surgery on call: the ER"
+   },
+   "caseTitle": {
+    "zh": "從胸口撕到背",
+    "en": "A tear from chest to back"
+   },
+   "condition": {
+    "zh": "急症 · 主動脈剝離",
+    "en": "Emergency · aortic dissection"
+   },
+   "difficulty": 3,
+   "tagline": {
+    "zh": "撕裂痛先想剝離，再想別的",
+    "en": "Tearing pain: think dissection first"
+   },
+   "room": "er",
+   "minutes": 26,
+   "roles": [
+    {
+     "id": "resident",
+     "zh": "心臟外科住院醫師",
+     "en": "Cardiac surgery resident"
+    },
+    {
+     "id": "er-nurse",
+     "zh": "急診護理師",
+     "en": "Emergency nurse"
+    }
+   ],
+   "segs": 7,
+   "beats": 19,
+   "minis": [
+    "choice",
+    "drill",
+    "imaging",
+    "order",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 13,
+   "codex": 8
+  },
+  {
+   "id": "cardiac-surgery--valve-team",
+   "department": "cardiac-surgery",
+   "case": "valve-team",
+   "faculty": "western",
+   "title": {
+    "zh": "心臟外科門診日",
+    "en": "Cardiac surgery clinic day"
+   },
+   "caseTitle": {
+    "zh": "阿嬤的嫁衣與瓣膜",
+    "en": "Grandma's dress and her valve"
+   },
+   "condition": {
+    "zh": "瓣膜病 · 心臟團隊會議",
+    "en": "Valve disease · heart team"
+   },
+   "difficulty": 1,
+   "tagline": {
+    "zh": "不開刀的一天，決定比開刀還難",
+    "en": "A day without operating, and a decision harder than any operation"
+   },
+   "room": "clinic",
+   "minutes": 22,
+   "roles": [
+    {
+     "id": "resident",
+     "zh": "心臟外科住院醫師",
+     "en": "Cardiac surgery resident"
+    },
+    {
+     "id": "physio",
+     "zh": "心臟復健物理治療師",
+     "en": "Cardiac rehab physiotherapist"
+    }
+   ],
+   "segs": 8,
+   "beats": 18,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "imaging",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 13,
+   "codex": 8
+  },
+  {
+   "id": "cardiology",
    "department": "cardiology",
+   "case": "main",
+   "faculty": "western",
    "title": {
     "zh": "心臟內科值班日",
     "en": "A shift in cardiology"
    },
+   "caseTitle": {
+    "zh": "心臟內科值班日",
+    "en": "A shift in cardiology"
+   },
+   "condition": null,
+   "difficulty": 2,
    "tagline": {
     "zh": "從門口到氣球，時鐘不停",
     "en": "From door to balloon, the clock never stops"
@@ -115,11 +647,120 @@
    "codex": 7
   },
   {
+   "id": "cardiology--heart-block",
+   "department": "cardiology",
+   "case": "heart-block",
+   "faculty": "western",
+   "title": {
+    "zh": "心臟內科值班：冠心加護",
+    "en": "Cardiology in the coronary-care unit"
+   },
+   "caseTitle": {
+    "zh": "像關燈一樣的昏倒",
+    "en": "A faint like a light switch"
+   },
+   "condition": {
+    "zh": "心律不整 · 暈厥",
+    "en": "Arrhythmia · syncope"
+   },
+   "difficulty": 3,
+   "tagline": {
+    "zh": "沒有預警的昏倒，答案在心電圖上",
+    "en": "A faint without warning: the answer is on the ECG"
+   },
+   "room": "icu",
+   "minutes": 26,
+   "roles": [
+    {
+     "id": "resident",
+     "zh": "心臟內科住院醫師",
+     "en": "Cardiology resident"
+    },
+    {
+     "id": "ccu-nurse",
+     "zh": "冠心加護病房護理師",
+     "en": "Coronary-care nurse"
+    }
+   ],
+   "segs": 7,
+   "beats": 20,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "imaging",
+    "order",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 12,
+   "codex": 8
+  },
+  {
+   "id": "cardiology--heart-failure",
+   "department": "cardiology",
+   "case": "heart-failure",
+   "faculty": "western",
+   "title": {
+    "zh": "心臟內科值班日：病房",
+    "en": "Cardiology on the ward"
+   },
+   "caseTitle": {
+    "zh": "阿嬌姨的湯",
+    "en": "Auntie Chiao's broth"
+   },
+   "condition": {
+    "zh": "慢性病 · 心衰竭惡化",
+    "en": "Chronic · decompensated heart failure"
+   },
+   "difficulty": 1,
+   "tagline": {
+    "zh": "心臟沒有變壞，是水變多了",
+    "en": "The heart did not get worse; the water did"
+   },
+   "room": "ward",
+   "minutes": 22,
+   "roles": [
+    {
+     "id": "resident",
+     "zh": "心臟內科住院醫師",
+     "en": "Cardiology resident"
+    },
+    {
+     "id": "ward-nurse",
+     "zh": "心臟內科病房護理師",
+     "en": "Cardiology ward nurse"
+    }
+   ],
+   "segs": 7,
+   "beats": 20,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "imaging",
+    "order",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 13,
+   "codex": 8
+  },
+  {
+   "id": "critical-care",
    "department": "critical-care",
+   "case": "main",
+   "faculty": "western",
    "title": {
     "zh": "重症值班日",
     "en": "A shift in intensive care"
    },
+   "caseTitle": {
+    "zh": "重症值班日",
+    "en": "A shift in intensive care"
+   },
+   "condition": null,
+   "difficulty": 2,
    "tagline": {
     "zh": "數字漂亮，不等於病人好",
     "en": "Good numbers are not the same as a good patient"
@@ -153,11 +794,119 @@
    "codex": 7
   },
   {
+   "id": "critical-care--rapid-response",
+   "department": "critical-care",
+   "case": "rapid-response",
+   "faculty": "western",
+   "title": {
+    "zh": "重症醫學：病房裡的早期警訊",
+    "en": "Critical care: early warnings on the wards"
+   },
+   "caseTitle": {
+    "zh": "快速反應小組的夜班",
+    "en": "A night on the rapid response team"
+   },
+   "condition": {
+    "zh": "病房惡化 · 快速反應",
+    "en": "Ward deterioration · rapid response"
+   },
+   "difficulty": 2,
+   "tagline": {
+    "zh": "在變成急救之前，先到床邊",
+    "en": "Reach the bedside before it becomes an arrest"
+   },
+   "room": "ward",
+   "minutes": 25,
+   "roles": [
+    {
+     "id": "rrt-res",
+     "zh": "重症值班住院醫師",
+     "en": "ICU resident on the rapid response team"
+    },
+    {
+     "id": "rrt-nurse",
+     "zh": "快速反應小組護理師",
+     "en": "Rapid response nurse"
+    }
+   ],
+   "segs": 7,
+   "beats": 21,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "imaging",
+    "order",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 13,
+   "codex": 8
+  },
+  {
+   "id": "critical-care--transport",
+   "department": "critical-care",
+   "case": "transport",
+   "faculty": "western",
+   "title": {
+    "zh": "重症醫學：加護病房帶著走",
+    "en": "Critical care: the ICU on wheels"
+   },
+   "caseTitle": {
+    "zh": "帶著呼吸器去影像科",
+    "en": "Taking the ventilator to radiology"
+   },
+   "condition": {
+    "zh": "復甦後照護 · 院內轉送",
+    "en": "Post-arrest care · in-hospital transfer"
+   },
+   "difficulty": 3,
+   "tagline": {
+    "zh": "病人離開加護病房，加護病房就要跟著走",
+    "en": "When the patient leaves the ICU, the ICU goes too"
+   },
+   "room": "imaging",
+   "minutes": 25,
+   "roles": [
+    {
+     "id": "fellow",
+     "zh": "重症研修醫師",
+     "en": "Critical care fellow"
+    },
+    {
+     "id": "transport-nurse",
+     "zh": "加護病房轉送護理師",
+     "en": "ICU transfer nurse"
+    }
+   ],
+   "segs": 7,
+   "beats": 23,
+   "minis": [
+    "choice",
+    "drill",
+    "imaging",
+    "order",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 12,
+   "codex": 7
+  },
+  {
+   "id": "dentistry",
    "department": "dentistry",
+   "case": "main",
+   "faculty": "western",
    "title": {
     "zh": "牙科值班日",
     "en": "A shift in dentistry"
    },
+   "caseTitle": {
+    "zh": "牙科值班日",
+    "en": "A shift in dentistry"
+   },
+   "condition": null,
+   "difficulty": 2,
    "tagline": {
     "zh": "一面口鏡，看見整個人",
     "en": "One mouth mirror, the whole person"
@@ -191,11 +940,119 @@
    "codex": 7
   },
   {
+   "id": "dentistry--facial-swelling",
+   "department": "dentistry",
+   "case": "facial-swelling",
+   "faculty": "western",
+   "title": {
+    "zh": "牙科急診夜",
+    "en": "A dental night in the ER"
+   },
+   "caseTitle": {
+    "zh": "腫到吞不下去的那顆牙",
+    "en": "The tooth that closed his throat"
+   },
+   "condition": {
+    "zh": "感染 · 齒源性蜂窩組織炎",
+    "en": "Infection · odontogenic cellulitis"
+   },
+   "difficulty": 3,
+   "tagline": {
+    "zh": "腫的是臉，問題在牙，危險在呼吸",
+    "en": "The swelling is in the face, the cause in a tooth, the danger in the airway"
+   },
+   "room": "er",
+   "minutes": 25,
+   "roles": [
+    {
+     "id": "resident",
+     "zh": "牙科住院醫師",
+     "en": "Dental resident"
+    },
+    {
+     "id": "er-nurse",
+     "zh": "急診護理師",
+     "en": "ER nurse"
+    }
+   ],
+   "segs": 7,
+   "beats": 18,
+   "minis": [
+    "choice",
+    "drill",
+    "imaging",
+    "order",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 13,
+   "codex": 7
+  },
+  {
+   "id": "dentistry--sterile-day",
+   "department": "dentistry",
+   "case": "sterile-day",
+   "faculty": "western",
+   "title": {
+    "zh": "牙科感控日",
+    "en": "A dental infection-control day"
+   },
+   "caseTitle": {
+    "zh": "滅菌鍋的那盞紅燈",
+    "en": "The red light on the steriliser"
+   },
+   "condition": {
+    "zh": "感控 · 器械再處理",
+    "en": "Infection control · instrument reprocessing"
+   },
+   "difficulty": 1,
+   "tagline": {
+    "zh": "看起來乾淨，不等於乾淨",
+    "en": "Looking clean is not the same as being clean"
+   },
+   "room": "cssd",
+   "minutes": 25,
+   "roles": [
+    {
+     "id": "resident",
+     "zh": "牙科住院醫師",
+     "en": "Dental resident"
+    },
+    {
+     "id": "cssd-tech",
+     "zh": "供應中心技術員",
+     "en": "Sterile services technician"
+    }
+   ],
+   "segs": 8,
+   "beats": 21,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "imaging",
+    "order",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 12,
+   "codex": 7
+  },
+  {
+   "id": "dermatology",
    "department": "dermatology",
+   "case": "main",
+   "faculty": "western",
    "title": {
     "zh": "皮膚科值班日",
     "en": "A shift in dermatology"
    },
+   "caseTitle": {
+    "zh": "皮膚科值班日",
+    "en": "A shift in dermatology"
+   },
+   "condition": null,
+   "difficulty": 2,
    "tagline": {
     "zh": "從一張舊手機照片到一顆不癒合的小丘疹",
     "en": "From an old phone photo to a small lesion that will not heal"
@@ -229,11 +1086,119 @@
    "codex": 8
   },
   {
+   "id": "dermatology--palm-psoriasis",
+   "department": "dermatology",
+   "case": "palm-psoriasis",
+   "faculty": "western",
+   "title": {
+    "zh": "皮膚科：檢驗室的一天",
+    "en": "Dermatology: a day in the skin lab"
+   },
+   "caseTitle": {
+    "zh": "檢驗室：主廚的一雙手",
+    "en": "The skin lab: a head chef's hands"
+   },
+   "condition": {
+    "zh": "乾癬 · 手掌乾癬與關節",
+    "en": "Psoriasis · palms and joints"
+   },
+   "difficulty": 1,
+   "tagline": {
+    "zh": "先刮一刮再下診斷；面積小，不等於輕",
+    "en": "Scrape before you name it; a small area is not a mild disease"
+   },
+   "room": "lab",
+   "minutes": 22,
+   "roles": [
+    {
+     "id": "intern",
+     "zh": "皮膚科實習醫師",
+     "en": "Dermatology intern"
+    },
+    {
+     "id": "skintech",
+     "zh": "皮膚科檢驗技術員",
+     "en": "Skin-lab technician"
+    }
+   ],
+   "segs": 8,
+   "beats": 16,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "imaging",
+    "order",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 12,
+   "codex": 8
+  },
+  {
+   "id": "dermatology--vibrio-fasciitis",
+   "department": "dermatology",
+   "case": "vibrio-fasciitis",
+   "faculty": "western",
+   "title": {
+    "zh": "皮膚科：急診小夜會診",
+    "en": "Dermatology: an evening of ER consults"
+   },
+   "caseTitle": {
+    "zh": "急診：海產攤阿姨的水泡",
+    "en": "ER: the seafood seller's blisters"
+   },
+   "condition": {
+    "zh": "軟組織感染 · 壞死性筋膜炎",
+    "en": "Soft-tissue infection · necrotising fasciitis"
+   },
+   "difficulty": 3,
+   "tagline": {
+    "zh": "水泡請皮膚科看；但這個水泡要的是外科",
+    "en": "'Blisters: dermatology please'. These blisters need a surgeon"
+   },
+   "room": "er",
+   "minutes": 24,
+   "roles": [
+    {
+     "id": "resident",
+     "zh": "皮膚科值班住院醫師",
+     "en": "On-call dermatology resident"
+    },
+    {
+     "id": "ernurse",
+     "zh": "急診護理師",
+     "en": "ER nurse"
+    }
+   ],
+   "segs": 8,
+   "beats": 16,
+   "minis": [
+    "choice",
+    "drill",
+    "imaging",
+    "order",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 11,
+   "codex": 8
+  },
+  {
+   "id": "emergency",
    "department": "emergency",
+   "case": "main",
+   "faculty": "western",
    "title": {
     "zh": "急診值班日",
     "en": "A shift in the emergency department"
    },
+   "caseTitle": {
+    "zh": "急診值班日",
+    "en": "A shift in the emergency department"
+   },
+   "condition": null,
+   "difficulty": 2,
    "tagline": {
     "zh": "從檢傷台到急救區，每一分鐘都在排序",
     "en": "From triage to resus, every minute is a sorting problem"
@@ -266,11 +1231,120 @@
    "codex": 7
   },
   {
+   "id": "emergency--co-family",
+   "department": "emergency",
+   "case": "co-family",
+   "faculty": "western",
+   "title": {
+    "zh": "急診：寒流來的那一晚",
+    "en": "Emergency: the night the cold front came"
+   },
+   "caseTitle": {
+    "zh": "寒流夜：一家四口的頭痛",
+    "en": "Cold-front night: a family with headaches"
+   },
+   "condition": {
+    "zh": "中毒 · 一氧化碳",
+    "en": "Poisoning · carbon monoxide"
+   },
+   "difficulty": 3,
+   "tagline": {
+    "zh": "血氧百分之百，不代表氧氣夠",
+    "en": "A perfect saturation is not enough oxygen"
+   },
+   "room": "er",
+   "minutes": 25,
+   "roles": [
+    {
+     "id": "resident",
+     "zh": "急診住院醫師",
+     "en": "Emergency resident"
+    },
+    {
+     "id": "resus-nurse",
+     "zh": "急救區護理師",
+     "en": "Resus nurse"
+    }
+   ],
+   "segs": 7,
+   "beats": 21,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "imaging",
+    "order",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 12,
+   "codex": 8
+  },
+  {
+   "id": "emergency--fast-track",
+   "department": "emergency",
+   "case": "fast-track",
+   "faculty": "western",
+   "title": {
+    "zh": "急診快速診區的一天",
+    "en": "A day in the emergency fast track"
+   },
+   "caseTitle": {
+    "zh": "快速診區：走進來的不一定輕",
+    "en": "Fast track: walking in is not the same as well"
+   },
+   "condition": {
+    "zh": "輕症區 · 隱藏的急症",
+    "en": "Fast track · hidden emergencies"
+   },
+   "difficulty": 1,
+   "tagline": {
+    "zh": "走進來的，不一定是輕的",
+    "en": "Walking in does not mean it is minor"
+   },
+   "room": "clinic",
+   "minutes": 25,
+   "roles": [
+    {
+     "id": "resident",
+     "zh": "急診住院醫師",
+     "en": "Emergency resident"
+    },
+    {
+     "id": "np",
+     "zh": "急診專科護理師",
+     "en": "Emergency nurse practitioner"
+    }
+   ],
+   "segs": 7,
+   "beats": 23,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "imaging",
+    "order",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 12,
+   "codex": 8
+  },
+  {
+   "id": "endocrinology",
    "department": "endocrinology",
+   "case": "main",
+   "faculty": "western",
    "title": {
     "zh": "內分泌科值班日",
     "en": "A shift in endocrinology"
    },
+   "caseTitle": {
+    "zh": "內分泌科值班日",
+    "en": "A shift in endocrinology"
+   },
+   "condition": null,
+   "difficulty": 2,
    "tagline": {
     "zh": "從候診區的一聲喊叫到夜裡的血糖警報",
     "en": "From a shout in the waiting room to the night-time glucose alarm"
@@ -304,11 +1378,120 @@
    "codex": 8
   },
   {
+   "id": "endocrinology--new-type1",
+   "department": "endocrinology",
+   "case": "new-type1",
+   "faculty": "western",
+   "title": {
+    "zh": "內分泌科：病房的一天",
+    "en": "Endocrinology: a day on the ward"
+   },
+   "caseTitle": {
+    "zh": "病房日：第一支胰島素",
+    "en": "Ward day: the first insulin pen"
+   },
+   "condition": {
+    "zh": "糖尿病 · 新診斷第一型",
+    "en": "Diabetes · new type 1"
+   },
+   "difficulty": 1,
+   "tagline": {
+    "zh": "二十三歲，酮酸中毒醒來的第一天",
+    "en": "Twenty-three, and the first day after ketoacidosis"
+   },
+   "room": "ward",
+   "minutes": 22,
+   "roles": [
+    {
+     "id": "intern",
+     "zh": "內分泌科實習醫師",
+     "en": "Endocrinology intern"
+    },
+    {
+     "id": "dietitian",
+     "zh": "營養師",
+     "en": "Dietitian"
+    }
+   ],
+   "segs": 8,
+   "beats": 17,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "imaging",
+    "order",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 11,
+   "codex": 8
+  },
+  {
+   "id": "endocrinology--thyroid-storm",
+   "department": "endocrinology",
+   "case": "thyroid-storm",
+   "faculty": "western",
+   "title": {
+    "zh": "內分泌科：急診小夜會診",
+    "en": "Endocrinology: an evening of ER consults"
+   },
+   "caseTitle": {
+    "zh": "急診小夜：燒不退的心跳",
+    "en": "ER evening: the heartbeat that ran hot"
+   },
+   "condition": {
+    "zh": "內分泌急症 · 甲狀腺風暴",
+    "en": "Endocrine emergency · thyroid storm"
+   },
+   "difficulty": 3,
+   "tagline": {
+    "zh": "檢傷寫焦慮加腸胃炎，監視器寫的是另一件事",
+    "en": "Triage wrote anxiety and gastroenteritis; the monitor wrote something else"
+   },
+   "room": "er",
+   "minutes": 24,
+   "roles": [
+    {
+     "id": "resident",
+     "zh": "內分泌科值班住院醫師",
+     "en": "On-call endocrinology resident"
+    },
+    {
+     "id": "ernurse",
+     "zh": "急診護理師",
+     "en": "ER nurse"
+    }
+   ],
+   "segs": 8,
+   "beats": 16,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "imaging",
+    "order",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 11,
+   "codex": 8
+  },
+  {
+   "id": "ent",
    "department": "ent",
+   "case": "main",
+   "faculty": "western",
    "title": {
     "zh": "耳鼻喉科值班日",
     "en": "A shift in ENT"
    },
+   "caseTitle": {
+    "zh": "耳鼻喉科值班日",
+    "en": "A shift in ENT"
+   },
+   "condition": null,
+   "difficulty": 2,
    "tagline": {
     "zh": "一個響起的監測器、一個時間窗、一支通氣管",
     "en": "A monitor that alarms, a treatment window and a grommet"
@@ -341,11 +1524,274 @@
    "codex": 8
   },
   {
+   "id": "ent--epistaxis",
+   "department": "ent",
+   "case": "epistaxis",
+   "faculty": "western",
+   "title": {
+    "zh": "耳鼻喉科急診夜",
+    "en": "An ENT night in the ER"
+   },
+   "caseTitle": {
+    "zh": "止不住的鼻血之夜",
+    "en": "The night the nose would not stop"
+   },
+   "condition": {
+    "zh": "出血 · 後鼻腔鼻出血",
+    "en": "Bleeding · posterior epistaxis"
+   },
+   "difficulty": 2,
+   "tagline": {
+    "zh": "捏對地方、看對方向、不要把頭往後仰",
+    "en": "Pinch the right spot, look the right way, and never tip the head back"
+   },
+   "room": "er",
+   "minutes": 25,
+   "roles": [
+    {
+     "id": "resident",
+     "zh": "耳鼻喉科住院醫師",
+     "en": "ENT resident"
+    },
+    {
+     "id": "er-nurse",
+     "zh": "急診護理師",
+     "en": "ER nurse"
+    }
+   ],
+   "segs": 7,
+   "beats": 20,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "imaging",
+    "order",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 13,
+   "codex": 8
+  },
+  {
+   "id": "ent--neck-lump",
+   "department": "ent",
+   "case": "neck-lump",
+   "faculty": "western",
+   "title": {
+    "zh": "耳鼻喉科門診日",
+    "en": "A clinic day in ENT"
+   },
+   "caseTitle": {
+    "zh": "沙啞三個月的頸部腫塊",
+    "en": "Three months hoarse, and a lump"
+   },
+   "condition": {
+    "zh": "腫瘤 · 頸部腫塊與聲音沙啞",
+    "en": "Tumour · neck lump and hoarseness"
+   },
+   "difficulty": 2,
+   "tagline": {
+    "zh": "沙啞超過三週的聲音，一定要看到聲帶",
+    "en": "A voice hoarse for more than three weeks must have its cords seen"
+   },
+   "room": "clinic",
+   "minutes": 25,
+   "roles": [
+    {
+     "id": "resident",
+     "zh": "耳鼻喉科住院醫師",
+     "en": "ENT resident"
+    },
+    {
+     "id": "clinic-nurse",
+     "zh": "耳鼻喉科門診護理師",
+     "en": "ENT clinic nurse"
+    }
+   ],
+   "segs": 7,
+   "beats": 17,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "imaging",
+    "order",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 14,
+   "codex": 8
+  },
+  {
+   "id": "formulas",
+   "department": "formulas",
+   "case": "main",
+   "faculty": "tcm",
+   "title": {
+    "zh": "經方調劑日",
+    "en": "A day dispensing the classical formulas"
+   },
+   "caseTitle": {
+    "zh": "有汗桂枝，無汗麻黃",
+    "en": "Sweat: cinnamon twig; no sweat: ephedra"
+   },
+   "condition": {
+    "zh": "經方調劑 · 表證",
+    "en": "Classical formulas · exterior patterns"
+   },
+   "difficulty": 1,
+   "tagline": {
+    "zh": "一首方歌、一張處方、一位吃錯顆粒的阿伯",
+    "en": "A formula verse, a prescription, and an uncle who took the wrong granules"
+   },
+   "room": "herbal-pharmacy",
+   "minutes": 26,
+   "roles": [
+    {
+     "id": "clerk",
+     "zh": "中醫見習醫師",
+     "en": "TCM clerk"
+    },
+    {
+     "id": "dispenser",
+     "zh": "中藥調劑師",
+     "en": "Herbal dispenser"
+    }
+   ],
+   "segs": 7,
+   "beats": 22,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "herb",
+    "order",
+    "points",
+    "pulse",
+    "tongue",
+    "vitals"
+   ],
+   "glossary": 15,
+   "codex": 9
+  },
+  {
+   "id": "formulas--decoction-service",
+   "department": "formulas",
+   "case": "decoction-service",
+   "faculty": "tcm",
+   "title": {
+    "zh": "代煎中心夜班",
+    "en": "Night shift at the decoction centre"
+   },
+   "caseTitle": {
+    "zh": "代煎中心的長夜",
+    "en": "A long night at the decoction centre"
+   },
+   "condition": {
+    "zh": "煎藥與代煎 · 品管",
+    "en": "Decoction service · quality control"
+   },
+   "difficulty": 2,
+   "tagline": {
+    "zh": "六台煎藥機、一個小鍋、一隻會叫的小雞",
+    "en": "Six decoction machines, one small pot, and a chicken that crows"
+   },
+   "room": "decoction-lab",
+   "minutes": 27,
+   "roles": [
+    {
+     "id": "clerk",
+     "zh": "中醫見習醫師",
+     "en": "TCM clerk"
+    },
+    {
+     "id": "decoctor",
+     "zh": "煎藥調劑師",
+     "en": "Decoction dispenser"
+    }
+   ],
+   "segs": 8,
+   "beats": 19,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "herb",
+    "order",
+    "points",
+    "tongue",
+    "vitals"
+   ],
+   "glossary": 15,
+   "codex": 9
+  },
+  {
+   "id": "formulas--drug-interaction",
+   "department": "formulas",
+   "case": "drug-interaction",
+   "faculty": "tcm",
+   "title": {
+    "zh": "中西藥併用諮詢門診",
+    "en": "The herb–drug consultation clinic"
+   },
+   "caseTitle": {
+    "zh": "藥袋裡的另一半",
+    "en": "The other half of the medicine bag"
+   },
+   "condition": {
+    "zh": "中西藥交互作用 · 抗凝",
+    "en": "Herb–drug interactions · anticoagulation"
+   },
+   "difficulty": 3,
+   "tagline": {
+    "zh": "一袋西藥、一罐丹參粉、一杯當開水喝的甘草茶",
+    "en": "A bag of tablets, a jar of danshen powder, and liquorice tea drunk like water"
+   },
+   "room": "tcm-clinic",
+   "minutes": 27,
+   "roles": [
+    {
+     "id": "resident",
+     "zh": "中醫住院醫師",
+     "en": "TCM resident"
+    },
+    {
+     "id": "pharmacist",
+     "zh": "臨床藥師",
+     "en": "Clinical pharmacist"
+    }
+   ],
+   "segs": 8,
+   "beats": 21,
+   "minis": [
+    "choice",
+    "drill",
+    "herb",
+    "order",
+    "points",
+    "pulse",
+    "tongue",
+    "vitals"
+   ],
+   "glossary": 15,
+   "codex": 9
+  },
+  {
+   "id": "foundations",
    "department": "foundations",
+   "case": "main",
+   "faculty": "western",
    "title": {
     "zh": "基礎醫學實驗室的一天",
     "en": "A day in the teaching lab"
    },
+   "caseTitle": {
+    "zh": "基礎醫學實驗室的一天",
+    "en": "A day in the teaching lab"
+   },
+   "condition": null,
+   "difficulty": 2,
    "tagline": {
     "zh": "層次有順序，觀察先於推論，控制沒過就沒有結果",
     "en": "Layers have an order, observation comes before inference, and no result counts until the controls pass"
@@ -379,11 +1825,120 @@
    "codex": 9
   },
   {
+   "id": "foundations--living-anatomy",
+   "department": "foundations",
+   "case": "living-anatomy",
+   "faculty": "western",
+   "title": {
+    "zh": "超音波教學室的一天",
+    "en": "A day in the ultrasound teaching room"
+   },
+   "caseTitle": {
+    "zh": "會說話的教科書",
+    "en": "The textbook that talks back"
+   },
+   "condition": {
+    "zh": "活體解剖 · 教學超音波",
+    "en": "Living anatomy · teaching ultrasound"
+   },
+   "difficulty": 1,
+   "tagline": {
+    "zh": "看到的是觀察，說出來的病名是推論",
+    "en": "What you see is observation; a diagnosis is inference"
+   },
+   "room": "imaging",
+   "minutes": 25,
+   "roles": [
+    {
+     "id": "student-lead",
+     "zh": "醫學生小組長",
+     "en": "Medical student group lead"
+    },
+    {
+     "id": "sonographer",
+     "zh": "超音波技術師",
+     "en": "Sonographer"
+    }
+   ],
+   "segs": 8,
+   "beats": 17,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "imaging",
+    "order",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 12,
+   "codex": 8
+  },
+  {
+   "id": "foundations--micro-lab",
+   "department": "foundations",
+   "case": "micro-lab",
+   "faculty": "western",
+   "title": {
+    "zh": "微生物實驗室的一天",
+    "en": "A day in the microbiology lab"
+   },
+   "caseTitle": {
+    "zh": "微生物實驗課的一天",
+    "en": "A day in the microbiology practical"
+   },
+   "condition": {
+    "zh": "微生物 · 生物安全與染色",
+    "en": "Microbiology · biosafety and staining"
+   },
+   "difficulty": 2,
+   "tagline": {
+    "zh": "看不見的東西，最需要規矩",
+    "en": "What you can't see needs the strictest rules"
+   },
+   "room": "biomed-lab",
+   "minutes": 25,
+   "roles": [
+    {
+     "id": "ta",
+     "zh": "微生物實驗助教（醫學生）",
+     "en": "Microbiology teaching assistant (medical student)"
+    },
+    {
+     "id": "biosafety",
+     "zh": "生物安全管理員",
+     "en": "Biosafety officer"
+    }
+   ],
+   "segs": 8,
+   "beats": 17,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "imaging",
+    "order",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 12,
+   "codex": 8
+  },
+  {
+   "id": "gastroenterology",
    "department": "gastroenterology",
+   "case": "main",
+   "faculty": "western",
    "title": {
     "zh": "消化內科值班日",
     "en": "A shift in gastroenterology"
    },
+   "caseTitle": {
+    "zh": "消化內科值班日",
+    "en": "A shift in gastroenterology"
+   },
+   "condition": null,
+   "difficulty": 2,
    "tagline": {
     "zh": "從黑便交班到最後一支內視鏡",
     "en": "From a melaena handover to the last scope of the day"
@@ -417,11 +1972,118 @@
    "codex": 8
   },
   {
+   "id": "gastroenterology--cholangitis",
+   "department": "gastroenterology",
+   "case": "cholangitis",
+   "faculty": "western",
+   "title": {
+    "zh": "消化內科：夜間膽道急症",
+    "en": "Gastroenterology: a biliary emergency at night"
+   },
+   "caseTitle": {
+    "zh": "急診的黃疸與高燒",
+    "en": "Jaundice and fever in the ED"
+   },
+   "condition": {
+    "zh": "膽道感染 · 急性膽管炎",
+    "en": "Biliary sepsis · acute cholangitis"
+   },
+   "difficulty": 3,
+   "tagline": {
+    "zh": "膽管塞住了，抗生素只是一半",
+    "en": "When the duct is blocked, antibiotics are only half"
+   },
+   "room": "er",
+   "minutes": 25,
+   "roles": [
+    {
+     "id": "fellow",
+     "zh": "消化內科研修醫師",
+     "en": "Gastroenterology fellow"
+    },
+    {
+     "id": "ercp-nurse",
+     "zh": "膽胰內視鏡護理師",
+     "en": "ERCP nurse"
+    }
+   ],
+   "segs": 7,
+   "beats": 22,
+   "minis": [
+    "choice",
+    "drill",
+    "imaging",
+    "order",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 12,
+   "codex": 8
+  },
+  {
+   "id": "gastroenterology--liver-clinic",
+   "department": "gastroenterology",
+   "case": "liver-clinic",
+   "faculty": "western",
+   "title": {
+    "zh": "消化內科：肝膽門診日",
+    "en": "Gastroenterology: a day in the liver clinic"
+   },
+   "caseTitle": {
+    "zh": "肝膽門診：不會喊痛的器官",
+    "en": "Liver clinic: the organ that never complains"
+   },
+   "condition": {
+    "zh": "慢性肝病 · 門診追蹤",
+    "en": "Chronic liver disease · clinic follow-up"
+   },
+   "difficulty": 1,
+   "tagline": {
+    "zh": "肝不會喊痛，所以要定期問它",
+    "en": "The liver never complains, so ask it regularly"
+   },
+   "room": "clinic",
+   "minutes": 25,
+   "roles": [
+    {
+     "id": "resident",
+     "zh": "消化內科住院醫師",
+     "en": "Gastroenterology resident"
+    },
+    {
+     "id": "case-manager",
+     "zh": "肝炎個案管理師",
+     "en": "Hepatitis case manager"
+    }
+   ],
+   "segs": 8,
+   "beats": 20,
+   "minis": [
+    "choice",
+    "drill",
+    "imaging",
+    "order",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 13,
+   "codex": 8
+  },
+  {
+   "id": "general-surgery",
    "department": "general-surgery",
+   "case": "main",
+   "faculty": "western",
    "title": {
     "zh": "一般外科值班日",
     "en": "A shift in general surgery"
    },
+   "caseTitle": {
+    "zh": "一般外科值班日",
+    "en": "A shift in general surgery"
+   },
+   "condition": null,
+   "difficulty": 2,
    "tagline": {
     "zh": "從交班到最後一台刀——簡單的闌尾，從來不簡單",
     "en": "From handover to the last case: the simple appendix never is"
@@ -455,11 +2117,118 @@
    "codex": 8
   },
   {
+   "id": "general-surgery--pregnant-appendix",
+   "department": "general-surgery",
+   "case": "pregnant-appendix",
+   "faculty": "western",
+   "title": {
+    "zh": "一般外科：產科病房的夜",
+    "en": "General surgery: a night on the maternity ward"
+   },
+   "caseTitle": {
+    "zh": "二十四週的右腹痛",
+    "en": "Right-sided pain at 24 weeks"
+   },
+   "condition": {
+    "zh": "急性腹症 · 妊娠闌尾炎",
+    "en": "Acute abdomen · appendicitis in pregnancy"
+   },
+   "difficulty": 3,
+   "tagline": {
+    "zh": "兩個心跳、一個被推高的闌尾、一杯等你的咖啡",
+    "en": "Two heartbeats, an appendix pushed upwards, and a coffee waiting for you"
+   },
+   "room": "ward",
+   "minutes": 23,
+   "roles": [
+    {
+     "id": "resident",
+     "zh": "外科值班住院醫師",
+     "en": "On-call surgical resident"
+    },
+    {
+     "id": "ob-nurse",
+     "zh": "產科病房護理師",
+     "en": "Maternity ward nurse"
+    }
+   ],
+   "segs": 7,
+   "beats": 17,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "imaging",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 13,
+   "codex": 7
+  },
+  {
+   "id": "general-surgery--severe-cholecystitis",
+   "department": "general-surgery",
+   "case": "severe-cholecystitis",
+   "faculty": "western",
+   "title": {
+    "zh": "一般外科：超音波與介入日",
+    "en": "General surgery: an ultrasound and intervention day"
+   },
+   "caseTitle": {
+    "zh": "九十歲的膽囊",
+    "en": "A gallbladder at ninety"
+   },
+   "condition": {
+    "zh": "感染 · 重症膽囊炎",
+    "en": "Infection · severe cholecystitis"
+   },
+   "difficulty": 2,
+   "tagline": {
+    "zh": "一支探頭、一條引流管、一個想回澎湖看海的阿公",
+    "en": "One probe, one drain, and a grandpa who wants to see the sea at home again"
+   },
+   "room": "imaging",
+   "minutes": 22,
+   "roles": [
+    {
+     "id": "resident",
+     "zh": "外科住院醫師（超音波輪訓）",
+     "en": "Surgical resident (ultrasound rotation)"
+    },
+    {
+     "id": "sonographer",
+     "zh": "超音波技術師",
+     "en": "Sonographer"
+    }
+   ],
+   "segs": 8,
+   "beats": 16,
+   "minis": [
+    "choice",
+    "drill",
+    "imaging",
+    "order",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 12,
+   "codex": 8
+  },
+  {
+   "id": "geriatrics-family",
    "department": "geriatrics-family",
+   "case": "main",
+   "faculty": "western",
    "title": {
     "zh": "老年與家醫科值班日",
     "en": "A shift in geriatrics and family medicine"
    },
+   "caseTitle": {
+    "zh": "老年與家醫科值班日",
+    "en": "A shift in geriatrics and family medicine"
+   },
+   "condition": null,
+   "difficulty": 2,
    "tagline": {
     "zh": "三個藥袋、一塊地毯和一班停駛的公車",
     "en": "Three medicine bags, a rug and a cancelled bus"
@@ -493,11 +2262,120 @@
    "codex": 8
   },
   {
+   "id": "geriatrics-family--atypical-abdomen",
+   "department": "geriatrics-family",
+   "case": "atypical-abdomen",
+   "faculty": "western",
+   "title": {
+    "zh": "老年醫學急診日",
+    "en": "A geriatrics day in the ER"
+   },
+   "caseTitle": {
+    "zh": "阿滿姨的「沒什麼」肚子痛",
+    "en": "Auntie Man's “nothing much” tummy"
+   },
+   "condition": {
+    "zh": "老年急症 · 非典型腹痛",
+    "en": "Geriatric emergency · atypical abdominal pain"
+   },
+   "difficulty": 3,
+   "tagline": {
+    "zh": "不太痛的闌尾、安靜的發燒和一袋留在家裡的藥",
+    "en": "A barely painful appendix, a quiet fever and a medicine bag left at home"
+   },
+   "room": "er",
+   "minutes": 25,
+   "roles": [
+    {
+     "id": "resident",
+     "zh": "家醫科住院醫師",
+     "en": "Family medicine resident"
+    },
+    {
+     "id": "nurse",
+     "zh": "老年急診個管護理師",
+     "en": "Geriatric ER nurse"
+    }
+   ],
+   "segs": 7,
+   "beats": 17,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "imaging",
+    "order",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 14,
+   "codex": 9
+  },
+  {
+   "id": "geriatrics-family--pneumonia-cga",
+   "department": "geriatrics-family",
+   "case": "pneumonia-cga",
+   "faculty": "western",
+   "title": {
+    "zh": "老年醫學病房日",
+    "en": "A geriatrics ward day"
+   },
+   "caseTitle": {
+    "zh": "水木伯的一碗粥",
+    "en": "Uncle Shui-Mu's bowl of congee"
+   },
+   "condition": {
+    "zh": "住院老年評估 · 吸入性肺炎",
+    "en": "Inpatient CGA · aspiration pneumonia"
+   },
+   "difficulty": 1,
+   "tagline": {
+    "zh": "一口水、一張交班板和一支保溫瓶",
+    "en": "A teaspoon of water, a handover board and a thermos"
+   },
+   "room": "ward",
+   "minutes": 25,
+   "roles": [
+    {
+     "id": "resident",
+     "zh": "家醫科住院醫師",
+     "en": "Family medicine resident"
+    },
+    {
+     "id": "nurse",
+     "zh": "出院準備護理師",
+     "en": "Discharge planning nurse"
+    }
+   ],
+   "segs": 8,
+   "beats": 18,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "imaging",
+    "order",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 13,
+   "codex": 9
+  },
+  {
+   "id": "gynecology",
    "department": "gynecology",
+   "case": "main",
+   "faculty": "western",
    "title": {
     "zh": "婦科值班日",
     "en": "A shift in gynaecology"
    },
+   "caseTitle": {
+    "zh": "婦科值班日",
+    "en": "A shift in gynaecology"
+   },
+   "condition": null,
+   "difficulty": 2,
    "tagline": {
     "zh": "鏡頭下的骨盆，門診裡的頭暈",
     "en": "A pelvis through the scope, a faint in the clinic"
@@ -530,11 +2408,118 @@
    "codex": 7
   },
   {
+   "id": "gynecology--ectopic",
+   "department": "gynecology",
+   "case": "ectopic",
+   "faculty": "western",
+   "title": {
+    "zh": "婦科急診夜",
+    "en": "A gynaecology night in the ER"
+   },
+   "caseTitle": {
+    "zh": "月經只是晚了幾天",
+    "en": "The period was only a few days late"
+   },
+   "condition": {
+    "zh": "急性腹痛 · 子宮外孕",
+    "en": "Acute pelvic pain · ectopic pregnancy"
+   },
+   "difficulty": 3,
+   "tagline": {
+    "zh": "會懷孕的人肚子痛，先驗孕",
+    "en": "Abdominal pain in anyone who could be pregnant: test first"
+   },
+   "room": "er",
+   "minutes": 25,
+   "roles": [
+    {
+     "id": "resident",
+     "zh": "婦產科住院醫師",
+     "en": "Obstetrics & gynaecology resident"
+    },
+    {
+     "id": "triage",
+     "zh": "急診檢傷護理師",
+     "en": "ER triage nurse"
+    }
+   ],
+   "segs": 7,
+   "beats": 21,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "imaging",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 12,
+   "codex": 7
+  },
+  {
+   "id": "gynecology--pmb-clinic",
+   "department": "gynecology",
+   "case": "pmb-clinic",
+   "faculty": "western",
+   "title": {
+    "zh": "婦科門診日",
+    "en": "A day in gynaecology clinic"
+   },
+   "caseTitle": {
+    "zh": "停經十年後的那一點血",
+    "en": "One spot of blood, ten years on"
+   },
+   "condition": {
+    "zh": "腫瘤 · 停經後出血",
+    "en": "Cancer work-up · postmenopausal bleeding"
+   },
+   "difficulty": 2,
+   "tagline": {
+    "zh": "停經後出血，一次都不正常",
+    "en": "Bleeding after the menopause is never normal, not even once"
+   },
+   "room": "clinic",
+   "minutes": 25,
+   "roles": [
+    {
+     "id": "resident",
+     "zh": "婦科住院醫師",
+     "en": "Gynaecology resident"
+    },
+    {
+     "id": "clinic-nurse",
+     "zh": "婦科門診護理師",
+     "en": "Gynaecology clinic nurse"
+    }
+   ],
+   "segs": 7,
+   "beats": 18,
+   "minis": [
+    "choice",
+    "drill",
+    "imaging",
+    "order",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 12,
+   "codex": 7
+  },
+  {
+   "id": "hematology",
    "department": "hematology",
+   "case": "main",
+   "faculty": "western",
    "title": {
     "zh": "血液科值班日",
     "en": "A shift in haematology"
    },
+   "caseTitle": {
+    "zh": "血液科值班日",
+    "en": "A shift in haematology"
+   },
+   "condition": null,
+   "difficulty": 2,
    "tagline": {
     "zh": "從一張血液抹片到一通溶血的電話",
     "en": "From one blood film to the haemolysis call"
@@ -567,11 +2552,271 @@
    "codex": 8
   },
   {
+   "id": "hematology--b12-clinic",
+   "department": "hematology",
+   "case": "b12-clinic",
+   "faculty": "western",
+   "title": {
+    "zh": "血液科：週三門診",
+    "en": "Haematology: Wednesday clinic"
+   },
+   "caseTitle": {
+    "zh": "門診：走路像踩在棉花上",
+    "en": "Clinic: walking on cotton wool"
+   },
+   "condition": {
+    "zh": "營養性貧血 · B12 與鐵缺乏",
+    "en": "Nutritional anaemia · B12 and iron"
+   },
+   "difficulty": 1,
+   "tagline": {
+    "zh": "MCV 正常的貧血，和一個九年前切掉的胃",
+    "en": "An anaemia with a normal MCV, and a stomach removed nine years ago"
+   },
+   "room": "clinic",
+   "minutes": 22,
+   "roles": [
+    {
+     "id": "intern",
+     "zh": "血液科實習醫師",
+     "en": "Haematology intern"
+    },
+    {
+     "id": "clinicnurse",
+     "zh": "血液科門診護理師",
+     "en": "Haematology clinic nurse"
+    }
+   ],
+   "segs": 8,
+   "beats": 16,
+   "minis": [
+    "choice",
+    "drill",
+    "imaging",
+    "order",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 11,
+   "codex": 8
+  },
+  {
+   "id": "hematology--ttp",
+   "department": "hematology",
+   "case": "ttp",
+   "faculty": "western",
+   "title": {
+    "zh": "血液科：急診小夜會診",
+    "en": "Haematology: an evening of ER consults"
+   },
+   "caseTitle": {
+    "zh": "急診：被當成偏頭痛的瘀青",
+    "en": "ER: bruises filed under migraine"
+   },
+   "condition": {
+    "zh": "血栓性微血管病 · TTP",
+    "en": "Thrombotic microangiopathy · TTP"
+   },
+   "difficulty": 3,
+   "tagline": {
+    "zh": "血小板低的時候，先問它們跑去哪裡了",
+    "en": "When platelets are low, first ask where they went"
+   },
+   "room": "er",
+   "minutes": 25,
+   "roles": [
+    {
+     "id": "resident",
+     "zh": "血液科值班住院醫師",
+     "en": "On-call haematology resident"
+    },
+    {
+     "id": "apheresis",
+     "zh": "血漿置換護理師",
+     "en": "Apheresis nurse"
+    }
+   ],
+   "segs": 8,
+   "beats": 16,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "imaging",
+    "order",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 11,
+   "codex": 8
+  },
+  {
+   "id": "herbs",
+   "department": "herbs",
+   "case": "main",
+   "faculty": "tcm",
+   "title": {
+    "zh": "中藥局調劑日",
+    "en": "A day at the herbal dispensary"
+   },
+   "caseTitle": {
+    "zh": "一味藥，生熟兩條命",
+    "en": "One herb, raw or processed"
+   },
+   "condition": {
+    "zh": "飲片辨識 · 炮製",
+    "en": "Herb identification · processing"
+   },
+   "difficulty": 1,
+   "tagline": {
+    "zh": "百子櫃前，先認得它，再談治病",
+    "en": "At the hundred-drawer cabinet you learn the herb before you learn the cure"
+   },
+   "room": "herbal-pharmacy",
+   "minutes": 25,
+   "roles": [
+    {
+     "id": "pharm-student",
+     "zh": "藥學生",
+     "en": "Pharmacy student"
+    },
+    {
+     "id": "dispenser",
+     "zh": "中藥調劑師",
+     "en": "Herbal dispenser"
+    }
+   ],
+   "segs": 8,
+   "beats": 24,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "herb",
+    "order",
+    "pulse",
+    "tongue",
+    "vitals"
+   ],
+   "glossary": 15,
+   "codex": 10
+  },
+  {
+   "id": "herbs--quality-sampling",
+   "department": "herbs",
+   "case": "quality-sampling",
+   "faculty": "tcm",
+   "title": {
+    "zh": "中藥品管實驗室值班日",
+    "en": "A day in the herbal QC laboratory"
+   },
+   "caseTitle": {
+    "zh": "一批黃耆的體檢",
+    "en": "A batch of astragalus gets a check-up"
+   },
+   "condition": {
+    "zh": "藥材品質 · 抽驗與混偽品",
+    "en": "Herb quality · sampling and adulterants"
+   },
+   "difficulty": 2,
+   "tagline": {
+    "zh": "數據不會說謊，但樣品會",
+    "en": "Numbers do not lie; samples do"
+   },
+   "room": "decoction-lab",
+   "minutes": 26,
+   "roles": [
+    {
+     "id": "pharm-student",
+     "zh": "藥學生",
+     "en": "Pharmacy student"
+    },
+    {
+     "id": "qc-tech",
+     "zh": "品管技師",
+     "en": "QC technician"
+    }
+   ],
+   "segs": 7,
+   "beats": 17,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "herb",
+    "order",
+    "tongue",
+    "vitals"
+   ],
+   "glossary": 15,
+   "codex": 10
+  },
+  {
+   "id": "herbs--toxic-herbs",
+   "department": "herbs",
+   "case": "toxic-herbs",
+   "faculty": "tcm",
+   "title": {
+    "zh": "毒劇藥專櫃值班日",
+    "en": "A day on the toxic-herb cabinet"
+   },
+   "caseTitle": {
+    "zh": "上鎖的那一櫃",
+    "en": "The locked cabinet"
+   },
+   "condition": {
+    "zh": "毒劇藥管理 · 附子",
+    "en": "Toxic herb control · aconite"
+   },
+   "difficulty": 3,
+   "tagline": {
+    "zh": "鑰匙、帳本、第二個人，還有嘴麻的阿伯",
+    "en": "A key, a ledger, a second person, and an uncle with a numb mouth"
+   },
+   "room": "herbal-pharmacy",
+   "minutes": 28,
+   "roles": [
+    {
+     "id": "resident",
+     "zh": "中醫住院醫師",
+     "en": "TCM resident"
+    },
+    {
+     "id": "pharmacist",
+     "zh": "中藥師",
+     "en": "Herbal pharmacist"
+    }
+   ],
+   "segs": 7,
+   "beats": 19,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "herb",
+    "order",
+    "pulse",
+    "tongue",
+    "vitals"
+   ],
+   "glossary": 14,
+   "codex": 9
+  },
+  {
+   "id": "infectious-disease",
    "department": "infectious-disease",
+   "case": "main",
+   "faculty": "western",
    "title": {
     "zh": "感染科值班日",
     "en": "A shift in infectious diseases"
    },
+   "caseTitle": {
+    "zh": "感染科值班日",
+    "en": "A shift in infectious diseases"
+   },
+   "condition": null,
+   "difficulty": 2,
    "tagline": {
     "zh": "從一張陰性報告到隔離病房的門",
     "en": "From one negative result to the isolation-room door"
@@ -605,11 +2850,119 @@
    "codex": 9
   },
   {
+   "id": "infectious-disease--cssd-needlestick",
+   "department": "infectious-disease",
+   "case": "cssd-needlestick",
+   "faculty": "western",
+   "title": {
+    "zh": "感染科：消毒供應中心的一天",
+    "en": "Infectious diseases: a day in sterile services"
+   },
+   "caseTitle": {
+    "zh": "消毒供應中心：一支沒拔的針",
+    "en": "Sterile services: the needle no one removed"
+   },
+   "condition": {
+    "zh": "感染管制 · 針扎與器械再處理",
+    "en": "Infection control · needlestick and reprocessing"
+   },
+   "difficulty": 1,
+   "tagline": {
+    "zh": "無菌是證明出來的，針扎是系統漏出來的",
+    "en": "Sterility is proven; needlesticks leak out of systems"
+   },
+   "room": "cssd",
+   "minutes": 22,
+   "roles": [
+    {
+     "id": "resident",
+     "zh": "感染科住院醫師",
+     "en": "Infectious-diseases resident"
+    },
+    {
+     "id": "cssdtech",
+     "zh": "消毒供應中心技術員",
+     "en": "Sterile-services technician"
+    }
+   ],
+   "segs": 8,
+   "beats": 16,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "imaging",
+    "order",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 11,
+   "codex": 9
+  },
+  {
+   "id": "infectious-disease--imported-malaria",
+   "department": "infectious-disease",
+   "case": "imported-malaria",
+   "faculty": "western",
+   "title": {
+    "zh": "感染科：急診小夜會診",
+    "en": "Infectious diseases: an evening of ER consults"
+   },
+   "caseTitle": {
+    "zh": "急診：從非洲回來的發燒",
+    "en": "ER: a fever that flew home from Africa"
+   },
+   "condition": {
+    "zh": "旅遊醫學 · 境外移入瘧疾",
+    "en": "Travel medicine · imported malaria"
+   },
+   "difficulty": 3,
+   "tagline": {
+    "zh": "從瘧疾流行區回來發燒，就是瘧疾，直到證明不是",
+    "en": "Fever after a malaria zone is malaria until proven otherwise"
+   },
+   "room": "er",
+   "minutes": 25,
+   "roles": [
+    {
+     "id": "resident",
+     "zh": "感染科值班住院醫師",
+     "en": "On-call infectious-diseases resident"
+    },
+    {
+     "id": "mls",
+     "zh": "急診檢驗醫檢師",
+     "en": "ER laboratory technologist"
+    }
+   ],
+   "segs": 7,
+   "beats": 17,
+   "minis": [
+    "choice",
+    "drill",
+    "imaging",
+    "order",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 13,
+   "codex": 8
+  },
+  {
+   "id": "joint-reconstruction",
    "department": "joint-reconstruction",
+   "case": "main",
+   "faculty": "western",
    "title": {
     "zh": "關節重建值班日",
     "en": "A shift in joint reconstruction"
    },
+   "caseTitle": {
+    "zh": "關節重建值班日",
+    "en": "A shift in joint reconstruction"
+   },
+   "condition": null,
+   "difficulty": 2,
    "tagline": {
     "zh": "一顆杯、一支柄、一條走廊",
     "en": "One cup, one stem, one corridor"
@@ -642,11 +2995,119 @@
    "codex": 9
   },
   {
+   "id": "joint-reconstruction--ddh-planning",
+   "department": "joint-reconstruction",
+   "case": "ddh-planning",
+   "faculty": "western",
+   "title": {
+    "zh": "關節重建：3D 規劃日",
+    "en": "Joint reconstruction: a 3D planning day"
+   },
+   "caseTitle": {
+    "zh": "印出來的骨盆",
+    "en": "A pelvis you can hold"
+   },
+   "condition": {
+    "zh": "髖發育不良 · 3D 規劃",
+    "en": "Hip dysplasia · 3D planning"
+   },
+   "difficulty": 3,
+   "tagline": {
+    "zh": "一個印出來的骨盆、一片導板、一個想站一整天的人",
+    "en": "A printed pelvis, a guide, and a woman who wants to stand all day"
+   },
+   "room": "biomed-lab",
+   "minutes": 24,
+   "roles": [
+    {
+     "id": "resident",
+     "zh": "關節重建住院醫師",
+     "en": "Joint reconstruction resident"
+    },
+    {
+     "id": "engineer",
+     "zh": "生醫工程師",
+     "en": "Biomedical engineer"
+    }
+   ],
+   "segs": 7,
+   "beats": 19,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "imaging",
+    "order",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 13,
+   "codex": 8
+  },
+  {
+   "id": "joint-reconstruction--hip-fracture",
+   "department": "joint-reconstruction",
+   "case": "hip-fracture",
+   "faculty": "western",
+   "title": {
+    "zh": "關節重建：急診的夜",
+    "en": "Joint reconstruction: a night in the ER"
+   },
+   "caseTitle": {
+    "zh": "浴室裡的那一跤",
+    "en": "The fall in the bathroom"
+   },
+   "condition": {
+    "zh": "外傷 · 老年髖部骨折",
+    "en": "Trauma · fragility hip fracture"
+   },
+   "difficulty": 2,
+   "tagline": {
+    "zh": "一條皮尺、一副眼鏡、一個不該渴一整夜的阿嬤",
+    "en": "A tape measure, a pair of glasses, and a grandma who shouldn't go thirsty all night"
+   },
+   "room": "er",
+   "minutes": 22,
+   "roles": [
+    {
+     "id": "resident",
+     "zh": "關節重建住院醫師（值班）",
+     "en": "Joint reconstruction resident (on call)"
+    },
+    {
+     "id": "er-nurse",
+     "zh": "急診護理師",
+     "en": "ER nurse"
+    }
+   ],
+   "segs": 7,
+   "beats": 17,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "imaging",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 12,
+   "codex": 8
+  },
+  {
+   "id": "medical-genetics",
    "department": "medical-genetics",
+   "case": "main",
+   "faculty": "western",
    "title": {
     "zh": "醫學遺傳科值班日",
     "en": "A shift in medical genetics"
    },
+   "caseTitle": {
+    "zh": "醫學遺傳科值班日",
+    "en": "A shift in medical genetics"
+   },
+   "condition": null,
+   "difficulty": 2,
    "tagline": {
     "zh": "未明不是致病，未知不是沒有，機率不是配額",
     "en": "Uncertain is not pathogenic, unknown is not absent, and probability is not a quota"
@@ -680,11 +3141,276 @@
    "codex": 8
   },
   {
+   "id": "medical-genetics--nicu-consult",
+   "department": "medical-genetics",
+   "case": "nicu-consult",
+   "faculty": "western",
+   "title": {
+    "zh": "新生兒加護病房的遺傳照會",
+    "en": "A genetics consult in the neonatal ICU"
+   },
+   "caseTitle": {
+    "zh": "保溫箱旁的第一句話",
+    "en": "The first sentence beside the incubator"
+   },
+   "condition": {
+    "zh": "新生兒 · 疑似唐氏症",
+    "en": "Newborn · suspected Down syndrome"
+   },
+   "difficulty": 3,
+   "tagline": {
+    "zh": "先說恭喜，再說他的名字，最後才說染色體",
+    "en": "Congratulations first, then his name, the chromosomes last"
+   },
+   "room": "icu",
+   "minutes": 25,
+   "roles": [
+    {
+     "id": "gen-resident",
+     "zh": "遺傳科住院醫師",
+     "en": "Clinical genetics resident"
+    },
+    {
+     "id": "nicu-nurse",
+     "zh": "新生兒加護護理師",
+     "en": "Neonatal ICU nurse"
+    }
+   ],
+   "segs": 8,
+   "beats": 17,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "imaging",
+    "order",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 12,
+   "codex": 8
+  },
+  {
+   "id": "medical-genetics--pgx-lab",
+   "department": "medical-genetics",
+   "case": "pgx-lab",
+   "faculty": "western",
+   "title": {
+    "zh": "分子診斷實驗室的一天",
+    "en": "A day in the molecular diagnostics lab"
+   },
+   "caseTitle": {
+    "zh": "吃藥之前先驗的那個基因",
+    "en": "The gene to test before the pill"
+   },
+   "condition": {
+    "zh": "藥物基因體 · HLA 檢測",
+    "en": "Pharmacogenomics · HLA testing"
+   },
+   "difficulty": 1,
+   "tagline": {
+    "zh": "陰性只回答被問的那一題",
+    "en": "A negative answers only the question asked"
+   },
+   "room": "biomed-lab",
+   "minutes": 25,
+   "roles": [
+    {
+     "id": "gen-resident",
+     "zh": "遺傳科住院醫師",
+     "en": "Clinical genetics resident"
+    },
+    {
+     "id": "mol-mls",
+     "zh": "分子檢驗醫檢師",
+     "en": "Molecular laboratory scientist"
+    }
+   ],
+   "segs": 8,
+   "beats": 17,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "imaging",
+    "order",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 12,
+   "codex": 8
+  },
+  {
+   "id": "moxa-cupping",
+   "department": "moxa-cupping",
+   "case": "main",
+   "faculty": "tcm",
+   "title": {
+    "zh": "灸法室的一天",
+    "en": "A day in the moxibustion room"
+   },
+   "caseTitle": {
+    "zh": "艾煙裡的痛經日",
+    "en": "Period pain in the moxa smoke"
+   },
+   "condition": {
+    "zh": "婦科 · 虛寒痛經艾灸",
+    "en": "Gynae · cold-type period pain"
+   },
+   "difficulty": 1,
+   "tagline": {
+    "zh": "一位怕冷的泳將、一陣艾煙，和一個晚了兩週的月經",
+    "en": "A swimmer who is always cold, a puff of moxa smoke, and a period two weeks late"
+   },
+   "room": "acupuncture",
+   "minutes": 25,
+   "roles": [
+    {
+     "id": "resident",
+     "zh": "中醫住院醫師",
+     "en": "TCM resident"
+    },
+    {
+     "id": "assistant",
+     "zh": "針灸助理",
+     "en": "Acupuncture assistant"
+    }
+   ],
+   "segs": 8,
+   "beats": 23,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "imaging",
+    "order",
+    "points",
+    "pulse",
+    "stage",
+    "tongue",
+    "vitals"
+   ],
+   "glossary": 15,
+   "codex": 8
+  },
+  {
+   "id": "moxa-cupping--moxa-burn",
+   "department": "moxa-cupping",
+   "case": "moxa-burn",
+   "faculty": "tcm",
+   "title": {
+    "zh": "整合病房的夜班",
+    "en": "Night shift on the integrative ward"
+   },
+   "caseTitle": {
+    "zh": "溫灸筒下的水泡",
+    "en": "The blister under the moxa tube"
+   },
+   "condition": {
+    "zh": "安全 · 艾灸燙傷處理",
+    "en": "Safety · moxa burn care"
+   },
+   "difficulty": 3,
+   "tagline": {
+    "zh": "一位感覺不到熱的阿伯、一個不痛的水泡，和一通說實話的電話",
+    "en": "A man who cannot feel heat, a blister that does not hurt, and a phone call that tells the truth"
+   },
+   "room": "ward",
+   "minutes": 25,
+   "roles": [
+    {
+     "id": "resident",
+     "zh": "中醫住院醫師（值班）",
+     "en": "TCM resident on call"
+    },
+    {
+     "id": "nurse",
+     "zh": "病房護理師",
+     "en": "Ward nurse"
+    }
+   ],
+   "segs": 7,
+   "beats": 18,
+   "minis": [
+    "choice",
+    "drill",
+    "imaging",
+    "order",
+    "points",
+    "stage",
+    "tongue",
+    "vitals"
+   ],
+   "glossary": 13,
+   "codex": 7
+  },
+  {
+   "id": "moxa-cupping--wind-cold",
+   "department": "moxa-cupping",
+   "case": "wind-cold",
+   "faculty": "tcm",
+   "title": {
+    "zh": "寒流來襲的外治室",
+    "en": "The treatment room in a cold snap"
+   },
+   "caseTitle": {
+    "zh": "寒流裡的外送員",
+    "en": "The rider in the cold snap"
+   },
+   "condition": {
+    "zh": "外感 · 風寒拔罐刮痧",
+    "en": "Common cold · cupping and guasha"
+   },
+   "difficulty": 2,
+   "tagline": {
+    "zh": "一身雨水的外送員、一位吃抗凝血劑的阿嬤，和一顆酒精棉球",
+    "en": "A rain-soaked rider, a grandma on blood thinners, and one alcohol swab"
+   },
+   "room": "tuina",
+   "minutes": 25,
+   "roles": [
+    {
+     "id": "resident",
+     "zh": "中醫住院醫師",
+     "en": "TCM resident"
+    },
+    {
+     "id": "nurse",
+     "zh": "外治室護理師",
+     "en": "Treatment-room nurse"
+    }
+   ],
+   "segs": 9,
+   "beats": 21,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "imaging",
+    "order",
+    "points",
+    "pulse",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 14,
+   "codex": 7
+  },
+  {
+   "id": "nephrology",
    "department": "nephrology",
+   "case": "main",
+   "faculty": "western",
    "title": {
     "zh": "腎臟內科值班日",
     "en": "A shift in nephrology"
    },
+   "caseTitle": {
+    "zh": "腎臟內科值班日",
+    "en": "A shift in nephrology"
+   },
+   "condition": null,
+   "difficulty": 2,
    "tagline": {
     "zh": "從透析室的早晨到那通高血鉀的電話",
     "en": "From a morning in the dialysis unit to the potassium call"
@@ -717,11 +3443,120 @@
    "codex": 8
   },
   {
+   "id": "nephrology--pd-clinic",
+   "department": "nephrology",
+   "case": "pd-clinic",
+   "faculty": "western",
+   "title": {
+    "zh": "腎臟內科：腹膜透析與腎臟門診",
+    "en": "Nephrology: PD unit and kidney clinic"
+   },
+   "caseTitle": {
+    "zh": "腹膜透析室的一天",
+    "en": "A day in the peritoneal dialysis unit"
+   },
+   "condition": {
+    "zh": "感染 · 腹膜透析腹膜炎",
+    "en": "Infection · PD peritonitis"
+   },
+   "difficulty": 1,
+   "tagline": {
+    "zh": "混濁的透析液，是一封求救信",
+    "en": "A cloudy bag is a call for help"
+   },
+   "room": "clinic",
+   "minutes": 25,
+   "roles": [
+    {
+     "id": "resident",
+     "zh": "腎臟內科住院醫師",
+     "en": "Nephrology resident"
+    },
+    {
+     "id": "pd-nurse",
+     "zh": "腹膜透析護理師",
+     "en": "PD nurse"
+    }
+   ],
+   "segs": 8,
+   "beats": 24,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "imaging",
+    "order",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 13,
+   "codex": 7
+  },
+  {
+   "id": "nephrology--rhabdo-crrt",
+   "department": "nephrology",
+   "case": "rhabdo-crrt",
+   "faculty": "western",
+   "title": {
+    "zh": "腎臟內科：加護病房的連續透析",
+    "en": "Nephrology: continuous dialysis in the ICU"
+   },
+   "caseTitle": {
+    "zh": "飛輪課之後的可樂色尿",
+    "en": "Cola-coloured urine after spin class"
+   },
+   "condition": {
+    "zh": "橫紋肌溶解 · 急性腎損傷",
+    "en": "Rhabdomyolysis · acute kidney injury"
+   },
+   "difficulty": 3,
+   "tagline": {
+    "zh": "試紙說有血，顯微鏡說了算",
+    "en": "The dipstick says blood; the microscope decides"
+   },
+   "room": "icu",
+   "minutes": 25,
+   "roles": [
+    {
+     "id": "resident",
+     "zh": "腎臟內科住院醫師",
+     "en": "Nephrology resident"
+    },
+    {
+     "id": "crrt-nurse",
+     "zh": "重症透析護理師",
+     "en": "ICU dialysis nurse"
+    }
+   ],
+   "segs": 7,
+   "beats": 22,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "imaging",
+    "order",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 12,
+   "codex": 7
+  },
+  {
+   "id": "neurology",
    "department": "neurology",
+   "case": "main",
+   "faculty": "western",
    "title": {
     "zh": "神經內科值班日",
     "en": "A shift in neurology"
    },
+   "caseTitle": {
+    "zh": "神經內科值班日",
+    "en": "A shift in neurology"
+   },
+   "condition": null,
+   "difficulty": 2,
    "tagline": {
     "zh": "時間就是大腦，定位就是答案",
     "en": "Time is brain; localisation is the answer"
@@ -755,11 +3590,119 @@
    "codex": 7
   },
   {
+   "id": "neurology--movement-clinic",
+   "department": "neurology",
+   "case": "movement-clinic",
+   "faculty": "western",
+   "title": {
+    "zh": "神經內科值班日：門診",
+    "en": "Neurology clinic day"
+   },
+   "caseTitle": {
+    "zh": "門診的手抖與頭痛",
+    "en": "Tremor and a headache in clinic"
+   },
+   "condition": {
+    "zh": "慢性病 · 巴金森病與頭痛",
+    "en": "Chronic · Parkinson's and headache"
+   },
+   "difficulty": 1,
+   "tagline": {
+    "zh": "看他走進來的十步，比問半小時還準",
+    "en": "Watch the ten steps in; they say more than half an hour of questions"
+   },
+   "room": "clinic",
+   "minutes": 22,
+   "roles": [
+    {
+     "id": "resident",
+     "zh": "神經內科住院醫師",
+     "en": "Neurology resident"
+    },
+    {
+     "id": "pd-nurse",
+     "zh": "巴金森個管師",
+     "en": "Parkinson's nurse specialist"
+    }
+   ],
+   "segs": 7,
+   "beats": 18,
+   "minis": [
+    "choice",
+    "drill",
+    "imaging",
+    "order",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 13,
+   "codex": 8
+  },
+  {
+   "id": "neurology--status-epilepticus",
+   "department": "neurology",
+   "case": "status-epilepticus",
+   "faculty": "western",
+   "title": {
+    "zh": "神經內科值班夜：急診",
+    "en": "Neurology on call: the ER at night"
+   },
+   "caseTitle": {
+    "zh": "停不下來的發作",
+    "en": "The seizure that would not stop"
+   },
+   "condition": {
+    "zh": "急症 · 癲癇重積狀態",
+    "en": "Emergency · status epilepticus"
+   },
+   "difficulty": 3,
+   "tagline": {
+    "zh": "抽搐會停；問題是什麼時候、為什麼",
+    "en": "The seizure will stop; the questions are when, and why"
+   },
+   "room": "er",
+   "minutes": 25,
+   "roles": [
+    {
+     "id": "resident",
+     "zh": "神經內科住院醫師",
+     "en": "Neurology resident"
+    },
+    {
+     "id": "eeg-tech",
+     "zh": "腦波技術師",
+     "en": "EEG technologist"
+    }
+   ],
+   "segs": 6,
+   "beats": 18,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "imaging",
+    "order",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 12,
+   "codex": 8
+  },
+  {
+   "id": "neurosurgery",
    "department": "neurosurgery",
+   "case": "main",
+   "faculty": "western",
    "title": {
     "zh": "神經外科值班日",
     "en": "A shift in neurosurgery"
    },
+   "caseTitle": {
+    "zh": "神經外科值班日",
+    "en": "A shift in neurosurgery"
+   },
+   "condition": null,
+   "difficulty": 2,
    "tagline": {
     "zh": "清醒開顱：病人一邊數大洲，我們一邊找邊界",
     "en": "Awake craniotomy: he names continents while we find the edge"
@@ -792,11 +3735,119 @@
    "codex": 9
   },
   {
+   "id": "neurosurgery--chronic-subdural",
+   "department": "neurosurgery",
+   "case": "chronic-subdural",
+   "faculty": "western",
+   "title": {
+    "zh": "神經外科值班日：病房",
+    "en": "Neurosurgery on the ward"
+   },
+   "caseTitle": {
+    "zh": "三週前的那一跤",
+    "en": "The fall three weeks ago"
+   },
+   "condition": {
+    "zh": "慢性病 · 慢性硬腦膜下血腫",
+    "en": "Chronic · chronic subdural haematoma"
+   },
+   "difficulty": 1,
+   "tagline": {
+    "zh": "老人的腦有空間，所以症狀來得晚",
+    "en": "An old brain has room, so the symptoms come late"
+   },
+   "room": "ward",
+   "minutes": 22,
+   "roles": [
+    {
+     "id": "resident",
+     "zh": "神經外科住院醫師",
+     "en": "Neurosurgery resident"
+    },
+    {
+     "id": "physio",
+     "zh": "物理治療師",
+     "en": "Physiotherapist"
+    }
+   ],
+   "segs": 7,
+   "beats": 18,
+   "minis": [
+    "choice",
+    "drill",
+    "imaging",
+    "order",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 13,
+   "codex": 8
+  },
+  {
+   "id": "neurosurgery--head-injury",
+   "department": "neurosurgery",
+   "case": "head-injury",
+   "faculty": "western",
+   "title": {
+    "zh": "神經外科值班夜：急診",
+    "en": "Neurosurgery on call: the ER"
+   },
+   "caseTitle": {
+    "zh": "急診的清醒期",
+    "en": "The lucid interval"
+   },
+   "condition": {
+    "zh": "外傷 · 硬腦膜外血腫",
+    "en": "Trauma · extradural haematoma"
+   },
+   "difficulty": 3,
+   "tagline": {
+    "zh": "清醒期是陷阱，瞳孔是時鐘",
+    "en": "The lucid interval is a trap; the pupil is the clock"
+   },
+   "room": "er",
+   "minutes": 25,
+   "roles": [
+    {
+     "id": "resident",
+     "zh": "神經外科住院醫師",
+     "en": "Neurosurgery resident"
+    },
+    {
+     "id": "trauma-nurse",
+     "zh": "急診外傷護理師",
+     "en": "ER trauma nurse"
+    }
+   ],
+   "segs": 8,
+   "beats": 23,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "imaging",
+    "order",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 12,
+   "codex": 8
+  },
+  {
+   "id": "nursing",
    "department": "nursing",
+   "case": "main",
+   "faculty": "western",
    "title": {
     "zh": "護理值班日",
     "en": "A nursing shift"
    },
+   "caseTitle": {
+    "zh": "護理值班日",
+    "en": "A nursing shift"
+   },
+   "condition": null,
+   "difficulty": 2,
    "tagline": {
     "zh": "趨勢不是最後一筆，停下來的三十秒最值錢",
     "en": "A trend is not the last reading, and the thirty seconds you stop are worth the most"
@@ -830,11 +3881,120 @@
    "codex": 9
   },
   {
+   "id": "nursing--cssd-recall",
+   "department": "nursing",
+   "case": "cssd-recall",
+   "faculty": "western",
+   "title": {
+    "zh": "消毒供應中心的一天",
+    "en": "A day in sterile processing"
+   },
+   "caseTitle": {
+    "zh": "培養箱裡變色的小瓶子",
+    "en": "The little vial that changed colour"
+   },
+   "condition": {
+    "zh": "感染管制 · 滅菌失敗召回",
+    "en": "Infection control · sterilisation recall"
+   },
+   "difficulty": 2,
+   "tagline": {
+    "zh": "看不見的細菌，靠看得見的紀錄抓住",
+    "en": "Invisible germs are caught by visible records"
+   },
+   "room": "cssd",
+   "minutes": 25,
+   "roles": [
+    {
+     "id": "nurse",
+     "zh": "輪調護理師（消毒供應中心）",
+     "en": "Rotating nurse (sterile processing)"
+    },
+    {
+     "id": "sterile-tech",
+     "zh": "消毒供應技術員",
+     "en": "Sterile processing technician"
+    }
+   ],
+   "segs": 8,
+   "beats": 17,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "imaging",
+    "order",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 12,
+   "codex": 9
+  },
+  {
+   "id": "nursing--er-triage",
+   "department": "nursing",
+   "case": "er-triage",
+   "faculty": "western",
+   "title": {
+    "zh": "急診檢傷台的一天",
+    "en": "A day at the emergency triage desk"
+   },
+   "caseTitle": {
+    "zh": "檢傷台前的三個人",
+    "en": "Three people at the triage desk"
+   },
+   "condition": {
+    "zh": "急診 · 檢傷分級",
+    "en": "Emergency · triage"
+   },
+   "difficulty": 3,
+   "tagline": {
+    "zh": "候診區也是急診的一部分",
+    "en": "The waiting room is part of the emergency room"
+   },
+   "room": "er",
+   "minutes": 25,
+   "roles": [
+    {
+     "id": "triage-nurse",
+     "zh": "急診檢傷護理師（新手）",
+     "en": "Triage nurse (new)"
+    },
+    {
+     "id": "emt",
+     "zh": "救護技術員",
+     "en": "Emergency medical technician"
+    }
+   ],
+   "segs": 7,
+   "beats": 19,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "imaging",
+    "order",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 12,
+   "codex": 8
+  },
+  {
+   "id": "obstetrics",
    "department": "obstetrics",
+   "case": "main",
+   "faculty": "western",
    "title": {
     "zh": "產科值班日",
     "en": "A shift on the labour ward"
    },
+   "caseTitle": {
+    "zh": "產科值班日",
+    "en": "A shift on the labour ward"
+   },
+   "condition": null,
+   "difficulty": 2,
    "tagline": {
     "zh": "從一個頭痛到第一聲哭",
     "en": "From a headache to a first cry"
@@ -867,11 +4027,119 @@
    "codex": 8
   },
   {
+   "id": "obstetrics--anomaly-scan",
+   "department": "obstetrics",
+   "case": "anomaly-scan",
+   "faculty": "western",
+   "title": {
+    "zh": "胎兒醫學超音波日",
+    "en": "A fetal-medicine scanning day"
+   },
+   "caseTitle": {
+    "zh": "看見與說出口之間",
+    "en": "Between seeing and saying"
+   },
+   "condition": {
+    "zh": "胎兒醫學 · 結構性超音波",
+    "en": "Fetal medicine · anomaly scan"
+   },
+   "difficulty": 2,
+   "tagline": {
+    "zh": "看到的說清楚，沒看到的也要說清楚",
+    "en": "Say clearly what you saw, and just as clearly what you did not"
+   },
+   "room": "imaging",
+   "minutes": 25,
+   "roles": [
+    {
+     "id": "resident",
+     "zh": "產科住院醫師",
+     "en": "Obstetrics resident"
+    },
+    {
+     "id": "sonographer",
+     "zh": "產科超音波技師",
+     "en": "Obstetric sonographer"
+    }
+   ],
+   "segs": 7,
+   "beats": 18,
+   "minis": [
+    "choice",
+    "drill",
+    "imaging",
+    "order",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 12,
+   "codex": 8
+  },
+  {
+   "id": "obstetrics--booking-clinic",
+   "department": "obstetrics",
+   "case": "booking-clinic",
+   "faculty": "western",
+   "title": {
+    "zh": "產檢門診的一天",
+    "en": "A day in antenatal clinic"
+   },
+   "caseTitle": {
+    "zh": "第一次產檢",
+    "en": "The first antenatal visit"
+   },
+   "condition": {
+    "zh": "產前照護 · 初診風險評估",
+    "en": "Antenatal care · booking risk assessment"
+   },
+   "difficulty": 1,
+   "tagline": {
+    "zh": "產檢的每一題都有原因",
+    "en": "Every question in antenatal care is there for a reason"
+   },
+   "room": "clinic",
+   "minutes": 25,
+   "roles": [
+    {
+     "id": "resident",
+     "zh": "產科住院醫師",
+     "en": "Obstetrics resident"
+    },
+    {
+     "id": "coordinator",
+     "zh": "產檢個管師",
+     "en": "Antenatal care coordinator"
+    }
+   ],
+   "segs": 8,
+   "beats": 19,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "imaging",
+    "order",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 11,
+   "codex": 8
+  },
+  {
+   "id": "oncology",
    "department": "oncology",
+   "case": "main",
+   "faculty": "western",
    "title": {
     "zh": "腫瘤醫學科值班日",
     "en": "A shift in medical oncology"
    },
+   "caseTitle": {
+    "zh": "腫瘤醫學科值班日",
+    "en": "A shift in medical oncology"
+   },
+   "condition": null,
+   "difficulty": 2,
    "tagline": {
     "zh": "從一份切片報告到一場多專科會議",
     "en": "From a biopsy report to the tumour board"
@@ -904,11 +4172,120 @@
    "codex": 8
   },
   {
+   "id": "oncology--er-emergencies",
+   "department": "oncology",
+   "case": "er-emergencies",
+   "faculty": "western",
+   "title": {
+    "zh": "腫瘤醫學科：急診小夜班",
+    "en": "Oncology: the evening shift in the ER"
+   },
+   "caseTitle": {
+    "zh": "急診小夜：背痛與心悸",
+    "en": "ER evening: a back and a heartbeat"
+   },
+   "condition": {
+    "zh": "腫瘤急症 · 脊髓壓迫／腫瘤溶解",
+    "en": "Oncology emergencies · cord compression / tumour lysis"
+   },
+   "difficulty": 3,
+   "tagline": {
+    "zh": "癌症病人的背痛不是背痛，心悸不是緊張",
+    "en": "In a cancer patient, back pain is not back pain and palpitations are not nerves"
+   },
+   "room": "er",
+   "minutes": 24,
+   "roles": [
+    {
+     "id": "resident",
+     "zh": "腫瘤科值班住院醫師",
+     "en": "On-call oncology resident"
+    },
+    {
+     "id": "ernurse",
+     "zh": "急診護理師",
+     "en": "ER nurse"
+    }
+   ],
+   "segs": 7,
+   "beats": 16,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "imaging",
+    "order",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 13,
+   "codex": 10
+  },
+  {
+   "id": "oncology--germline-clinic",
+   "department": "oncology",
+   "case": "germline-clinic",
+   "faculty": "western",
+   "title": {
+    "zh": "腫瘤醫學科：遺傳諮詢門診日",
+    "en": "Oncology: a day in the genetics clinic"
+   },
+   "caseTitle": {
+    "zh": "門診：報告上的那一行 BRCA",
+    "en": "Clinic: the BRCA line on the report"
+   },
+   "condition": {
+    "zh": "腫瘤遺傳 · 家族諮詢",
+    "en": "Cancer genetics · family counselling"
+   },
+   "difficulty": 2,
+   "tagline": {
+    "zh": "從腫瘤報告上的一行字到一整個家族",
+    "en": "From one line on a tumour report to a whole family"
+   },
+   "room": "clinic",
+   "minutes": 24,
+   "roles": [
+    {
+     "id": "intern",
+     "zh": "實習醫師",
+     "en": "Intern"
+    },
+    {
+     "id": "counsellor",
+     "zh": "遺傳諮詢師",
+     "en": "Genetic counsellor"
+    }
+   ],
+   "segs": 9,
+   "beats": 18,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "imaging",
+    "order",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 12,
+   "codex": 9
+  },
+  {
+   "id": "ophthalmology",
    "department": "ophthalmology",
+   "case": "main",
+   "faculty": "western",
    "title": {
     "zh": "眼科值班日",
     "en": "A shift in ophthalmology"
    },
+   "caseTitle": {
+    "zh": "眼科值班日",
+    "en": "A shift in ophthalmology"
+   },
+   "condition": null,
+   "difficulty": 2,
    "tagline": {
     "zh": "先沖水再問問題；先核對左右再下刀",
     "en": "Irrigate before you ask; check the side before the knife"
@@ -941,11 +4318,120 @@
    "codex": 9
   },
   {
+   "id": "ophthalmology--icu-eyes",
+   "department": "ophthalmology",
+   "case": "icu-eyes",
+   "faculty": "western",
+   "title": {
+    "zh": "眼科會診日：加護病房",
+    "en": "Ophthalmology consults in the ICU"
+   },
+   "caseTitle": {
+    "zh": "不會說話的眼睛",
+    "en": "Eyes that cannot speak"
+   },
+   "condition": {
+    "zh": "會診 · 加護病房的眼睛",
+    "en": "Consults · eyes in intensive care"
+   },
+   "difficulty": 2,
+   "tagline": {
+    "zh": "加護病房的眼睛不會喊痛，只會慢慢壞掉",
+    "en": "ICU eyes don't cry out; they quietly fail"
+   },
+   "room": "icu",
+   "minutes": 24,
+   "roles": [
+    {
+     "id": "resident",
+     "zh": "眼科住院醫師",
+     "en": "Ophthalmology resident"
+    },
+    {
+     "id": "eye-nurse",
+     "zh": "眼科會診護理師",
+     "en": "Ophthalmic consult nurse"
+    }
+   ],
+   "segs": 6,
+   "beats": 20,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "imaging",
+    "order",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 13,
+   "codex": 7
+  },
+  {
+   "id": "ophthalmology--retinal-detachment",
+   "department": "ophthalmology",
+   "case": "retinal-detachment",
+   "faculty": "western",
+   "title": {
+    "zh": "眼科急診夜",
+    "en": "An ophthalmology night in the ER"
+   },
+   "caseTitle": {
+    "zh": "閃光、黑幕與一支鉛筆",
+    "en": "Flashes, a curtain and a pencil"
+   },
+   "condition": {
+    "zh": "眼急症 · 視網膜剝離",
+    "en": "Eye emergency · retinal detachment"
+   },
+   "difficulty": 3,
+   "tagline": {
+    "zh": "黑幕從哪邊降下來，就從對面開始找",
+    "en": "Where the curtain falls, look on the opposite side"
+   },
+   "room": "er",
+   "minutes": 25,
+   "roles": [
+    {
+     "id": "resident",
+     "zh": "眼科住院醫師",
+     "en": "Ophthalmology resident"
+    },
+    {
+     "id": "triage-nurse",
+     "zh": "急診檢傷護理師",
+     "en": "ER triage nurse"
+    }
+   ],
+   "segs": 7,
+   "beats": 19,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "imaging",
+    "order",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 15,
+   "codex": 9
+  },
+  {
+   "id": "orthopedics",
    "department": "orthopedics",
+   "case": "main",
+   "faculty": "western",
    "title": {
     "zh": "骨科值班日",
     "en": "A shift in orthopaedics"
    },
+   "caseTitle": {
+    "zh": "骨科值班日",
+    "en": "A shift in orthopaedics"
+   },
+   "condition": null,
+   "difficulty": 2,
    "tagline": {
     "zh": "一支髖、一條脛骨、一個不成比例的痛",
     "en": "A hip, a tibia and a pain out of proportion"
@@ -978,11 +4464,120 @@
    "codex": 8
   },
   {
+   "id": "orthopedics--loaner-tray",
+   "department": "orthopedics",
+   "case": "loaner-tray",
+   "faculty": "western",
+   "title": {
+    "zh": "骨科與消毒供應中心",
+    "en": "Orthopaedics meets the CSSD"
+   },
+   "caseTitle": {
+    "zh": "借來的托盤",
+    "en": "The loaner tray"
+   },
+   "condition": {
+    "zh": "感染管制 · 植入物再處理",
+    "en": "Infection control · implant reprocessing"
+   },
+   "difficulty": 1,
+   "tagline": {
+    "zh": "借來的托盤、一包濕的器械、一支沒長的指示劑",
+    "en": "A loaner tray, a wet pack and an indicator that did not grow"
+   },
+   "room": "cssd",
+   "minutes": 22,
+   "roles": [
+    {
+     "id": "resident",
+     "zh": "骨科住院醫師",
+     "en": "Orthopaedic resident"
+    },
+    {
+     "id": "cssd-tech",
+     "zh": "消毒供應技術師",
+     "en": "CSSD technician"
+    }
+   ],
+   "segs": 7,
+   "beats": 21,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "imaging",
+    "order",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 14,
+   "codex": 10
+  },
+  {
+   "id": "orthopedics--paeds-elbow",
+   "department": "orthopedics",
+   "case": "paeds-elbow",
+   "faculty": "western",
+   "title": {
+    "zh": "骨科急診夜",
+    "en": "An orthopaedic night in the ER"
+   },
+   "caseTitle": {
+    "zh": "粉紅色但沒有脈搏的手",
+    "en": "Pink, but no pulse"
+   },
+   "condition": {
+    "zh": "外傷 · 兒童肘上骨折",
+    "en": "Trauma · paediatric supracondylar fracture"
+   },
+   "difficulty": 3,
+   "tagline": {
+    "zh": "一隻粉紅色的手、一支叉子、一個太緊的石膏",
+    "en": "A pink hand, a dinner fork and a cast that was too tight"
+   },
+   "room": "er",
+   "minutes": 25,
+   "roles": [
+    {
+     "id": "resident",
+     "zh": "骨科住院醫師",
+     "en": "Orthopaedic resident"
+    },
+    {
+     "id": "cast-tech",
+     "zh": "石膏室技術師",
+     "en": "Plaster technician"
+    }
+   ],
+   "segs": 6,
+   "beats": 22,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "imaging",
+    "order",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 13,
+   "codex": 9
+  },
+  {
+   "id": "pain-medicine",
    "department": "pain-medicine",
+   "case": "main",
+   "faculty": "western",
    "title": {
     "zh": "疼痛科值班日",
     "en": "A shift in pain medicine"
    },
+   "caseTitle": {
+    "zh": "疼痛科值班日",
+    "en": "A shift in pain medicine"
+   },
+   "condition": null,
+   "difficulty": 2,
    "tagline": {
     "zh": "看不見的痛，量得出來",
     "en": "Pain you cannot see can still be measured"
@@ -1015,11 +4610,119 @@
    "codex": 7
   },
   {
+   "id": "pain-medicine--block-day",
+   "department": "pain-medicine",
+   "case": "block-day",
+   "faculty": "western",
+   "title": {
+    "zh": "疼痛科：介入治療日",
+    "en": "Pain medicine: block day"
+   },
+   "caseTitle": {
+    "zh": "C 臂下的一天",
+    "en": "A day under the C-arm"
+   },
+   "condition": {
+    "zh": "介入 · 影像導引神經阻斷",
+    "en": "Interventional · image-guided nerve blocks"
+   },
+   "difficulty": 3,
+   "tagline": {
+    "zh": "針在影像裡，病人在你手裡",
+    "en": "The needle is on the screen; the patient is in your hands"
+   },
+   "room": "imaging",
+   "minutes": 26,
+   "roles": [
+    {
+     "id": "resident",
+     "zh": "疼痛科住院醫師",
+     "en": "Pain medicine resident"
+    },
+    {
+     "id": "rad",
+     "zh": "放射師",
+     "en": "Radiographer"
+    }
+   ],
+   "segs": 7,
+   "beats": 24,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "imaging",
+    "order",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 14,
+   "codex": 10
+  },
+  {
+   "id": "pain-medicine--opioid-clinic",
+   "department": "pain-medicine",
+   "case": "opioid-clinic",
+   "faculty": "western",
+   "title": {
+    "zh": "疼痛科：多專業門診日",
+    "en": "Pain medicine: a multidisciplinary clinic day"
+   },
+   "caseTitle": {
+    "zh": "減藥的勇氣",
+    "en": "The courage to taper"
+   },
+   "condition": {
+    "zh": "慢性病 · 長期鴉片類",
+    "en": "Chronic pain · long-term opioids"
+   },
+   "difficulty": 2,
+   "tagline": {
+    "zh": "一本疼痛日記、一支鼻噴劑、一位接生了半個鎮的奶奶",
+    "en": "A pain diary, a nasal spray, and a grandma who delivered half the town"
+   },
+   "room": "clinic",
+   "minutes": 22,
+   "roles": [
+    {
+     "id": "resident",
+     "zh": "疼痛科住院醫師",
+     "en": "Pain medicine resident"
+    },
+    {
+     "id": "psych",
+     "zh": "臨床心理師",
+     "en": "Clinical psychologist"
+    }
+   ],
+   "segs": 7,
+   "beats": 18,
+   "minis": [
+    "choice",
+    "drill",
+    "imaging",
+    "order",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 13,
+   "codex": 8
+  },
+  {
+   "id": "pathology-lab",
    "department": "pathology-lab",
+   "case": "main",
+   "faculty": "western",
    "title": {
     "zh": "病理檢驗科值班日",
     "en": "A shift in pathology and the lab"
    },
+   "caseTitle": {
+    "zh": "病理檢驗科值班日",
+    "en": "A shift in pathology and the lab"
+   },
+   "condition": null,
+   "difficulty": 2,
    "tagline": {
     "zh": "每一管檢體後面都有一個人",
     "en": "Behind every specimen tube there is a person"
@@ -1053,11 +4756,120 @@
    "codex": 9
   },
   {
+   "id": "pathology-lab--blood-bank-night",
+   "department": "pathology-lab",
+   "case": "blood-bank-night",
+   "faculty": "western",
+   "title": {
+    "zh": "血庫的小夜班",
+    "en": "An evening shift in the blood bank"
+   },
+   "caseTitle": {
+    "zh": "血庫小夜：一管不對的血",
+    "en": "Blood bank evening: the wrong tube"
+   },
+   "condition": {
+    "zh": "輸血醫學 · 錯血入管",
+    "en": "Transfusion medicine · wrong blood in tube"
+   },
+   "difficulty": 3,
+   "tagline": {
+    "zh": "血型和歷史對不上的時候，先相信歷史",
+    "en": "When the group disagrees with history, trust history first"
+   },
+   "room": "lab",
+   "minutes": 25,
+   "roles": [
+    {
+     "id": "path-resident",
+     "zh": "病理科住院醫師（輸血醫學）",
+     "en": "Pathology resident (transfusion medicine)"
+    },
+    {
+     "id": "bb-mls",
+     "zh": "血庫醫檢師",
+     "en": "Blood bank scientist"
+    }
+   ],
+   "segs": 6,
+   "beats": 17,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "imaging",
+    "order",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 13,
+   "codex": 8
+  },
+  {
+   "id": "pathology-lab--thyroid-fna",
+   "department": "pathology-lab",
+   "case": "thyroid-fna",
+   "faculty": "western",
+   "title": {
+    "zh": "細胞病理的超音波室早晨",
+    "en": "A cytopathology morning in ultrasound"
+   },
+   "caseTitle": {
+    "zh": "超音波室裡的顯微鏡",
+    "en": "A microscope in the ultrasound room"
+   },
+   "condition": {
+    "zh": "細胞病理 · 甲狀腺細針抽吸",
+    "en": "Cytopathology · thyroid FNA"
+   },
+   "difficulty": 1,
+   "tagline": {
+    "zh": "現場只回答夠不夠，不回答是不是",
+    "en": "On site we answer “enough?”, never “is it?”"
+   },
+   "room": "imaging",
+   "minutes": 25,
+   "roles": [
+    {
+     "id": "path-resident",
+     "zh": "病理科住院醫師（細胞病理）",
+     "en": "Pathology resident (cytology)"
+    },
+    {
+     "id": "cytotech",
+     "zh": "細胞醫檢師",
+     "en": "Cytotechnologist"
+    }
+   ],
+   "segs": 7,
+   "beats": 17,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "imaging",
+    "order",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 12,
+   "codex": 8
+  },
+  {
+   "id": "pediatric-surgery",
    "department": "pediatric-surgery",
+   "case": "main",
+   "faculty": "western",
    "title": {
     "zh": "小兒外科值班日",
     "en": "A shift in paediatric surgery"
    },
+   "caseTitle": {
+    "zh": "小兒外科值班日",
+    "en": "A shift in paediatric surgery"
+   },
+   "condition": null,
+   "difficulty": 2,
    "tagline": {
     "zh": "最小的病人，最大的決定",
     "en": "The smallest patients, the biggest decisions"
@@ -1090,11 +4902,119 @@
    "codex": 7
   },
   {
+   "id": "pediatric-surgery--torsion",
+   "department": "pediatric-surgery",
+   "case": "torsion",
+   "faculty": "western",
+   "title": {
+    "zh": "兒童急診的一天",
+    "en": "A day in the children's ER"
+   },
+   "caseTitle": {
+    "zh": "說不出口的肚子痛",
+    "en": "The tummy ache he couldn't name"
+   },
+   "condition": {
+    "zh": "急症 · 睪丸扭轉",
+    "en": "Emergency · testicular torsion"
+   },
+   "difficulty": 2,
+   "tagline": {
+    "zh": "肚子痛的男孩，也要看睪丸",
+    "en": "A boy with tummy pain gets his testes examined too"
+   },
+   "room": "er",
+   "minutes": 25,
+   "roles": [
+    {
+     "id": "resident",
+     "zh": "小兒外科住院醫師",
+     "en": "Paediatric surgery resident"
+    },
+    {
+     "id": "child-life",
+     "zh": "兒童醫療輔導師",
+     "en": "Child life specialist"
+    }
+   ],
+   "segs": 7,
+   "beats": 18,
+   "minis": [
+    "choice",
+    "drill",
+    "imaging",
+    "order",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 12,
+   "codex": 7
+  },
+  {
+   "id": "pediatric-surgery--volvulus",
+   "department": "pediatric-surgery",
+   "case": "volvulus",
+   "faculty": "western",
+   "title": {
+    "zh": "新生兒加護的夜",
+    "en": "A night in the neonatal unit"
+   },
+   "caseTitle": {
+    "zh": "綠色的嘔吐",
+    "en": "Green vomit"
+   },
+   "condition": {
+    "zh": "急性腹症 · 中腸扭轉",
+    "en": "Acute abdomen · midgut volvulus"
+   },
+   "difficulty": 3,
+   "tagline": {
+    "zh": "綠色的吐，不等天亮",
+    "en": "Green vomit does not wait for morning"
+   },
+   "room": "icu",
+   "minutes": 25,
+   "roles": [
+    {
+     "id": "resident",
+     "zh": "小兒外科住院醫師",
+     "en": "Paediatric surgery resident"
+    },
+    {
+     "id": "transport",
+     "zh": "新生兒轉送護理師",
+     "en": "Neonatal transport nurse"
+    }
+   ],
+   "segs": 7,
+   "beats": 18,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "imaging",
+    "order",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 12,
+   "codex": 8
+  },
+  {
+   "id": "pediatrics",
    "department": "pediatrics",
+   "case": "main",
+   "faculty": "western",
    "title": {
     "zh": "小兒科值班日",
     "en": "A shift in paediatrics"
    },
+   "caseTitle": {
+    "zh": "小兒科值班日",
+    "en": "A shift in paediatrics"
+   },
+   "condition": null,
+   "difficulty": 2,
    "tagline": {
     "zh": "從晨間交班到一張恐龍貼紙",
     "en": "From morning handover to a dinosaur sticker"
@@ -1128,11 +5048,120 @@
    "codex": 8
   },
   {
+   "id": "pediatrics--asthma-er",
+   "department": "pediatrics",
+   "case": "asthma-er",
+   "faculty": "western",
+   "title": {
+    "zh": "兒科急診的一天",
+    "en": "A day in the children's emergency room"
+   },
+   "caseTitle": {
+    "zh": "會背捷運站名的小喘喘",
+    "en": "The wheezy boy who knows every metro stop"
+   },
+   "condition": {
+    "zh": "呼吸 · 兒童氣喘急性發作",
+    "en": "Respiratory · acute childhood asthma"
+   },
+   "difficulty": 1,
+   "tagline": {
+    "zh": "喘鳴聲變小，不一定是好消息",
+    "en": "A quieter wheeze is not always good news"
+   },
+   "room": "er",
+   "minutes": 25,
+   "roles": [
+    {
+     "id": "ped-resident",
+     "zh": "小兒科住院醫師",
+     "en": "Paediatric resident"
+    },
+    {
+     "id": "rt",
+     "zh": "呼吸治療師",
+     "en": "Respiratory therapist"
+    }
+   ],
+   "segs": 8,
+   "beats": 17,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "imaging",
+    "order",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 12,
+   "codex": 8
+  },
+  {
+   "id": "pediatrics--dka-picu",
+   "department": "pediatrics",
+   "case": "dka-picu",
+   "faculty": "western",
+   "title": {
+    "zh": "兒科加護病房的一天",
+    "en": "A day in the paediatric ICU"
+   },
+   "caseTitle": {
+    "zh": "被當成腸胃炎的酮酸中毒",
+    "en": "The ketoacidosis mistaken for a tummy bug"
+   },
+   "condition": {
+    "zh": "內分泌 · 糖尿病酮酸中毒",
+    "en": "Endocrine · diabetic ketoacidosis"
+   },
+   "difficulty": 3,
+   "tagline": {
+    "zh": "流程表上每一個小時，都是她的故事",
+    "en": "Every hour on the flow sheet is a line of her story"
+   },
+   "room": "icu",
+   "minutes": 25,
+   "roles": [
+    {
+     "id": "ped-resident",
+     "zh": "小兒科住院醫師（加護）",
+     "en": "Paediatric resident (PICU)"
+    },
+    {
+     "id": "picu-nurse",
+     "zh": "兒科加護護理師",
+     "en": "PICU nurse"
+    }
+   ],
+   "segs": 8,
+   "beats": 17,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "imaging",
+    "order",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 12,
+   "codex": 9
+  },
+  {
+   "id": "pharmacology",
    "department": "pharmacology",
+   "case": "main",
+   "faculty": "western",
    "title": {
     "zh": "病房藥師值班日",
     "en": "A shift with the ward pharmacist"
    },
+   "caseTitle": {
+    "zh": "病房藥師值班日",
+    "en": "A shift with the ward pharmacist"
+   },
+   "condition": null,
+   "difficulty": 2,
    "tagline": {
     "zh": "成分不是商品名，加成不是相加",
     "en": "An ingredient is not a brand name, and additive is not arithmetic"
@@ -1165,11 +5194,120 @@
    "codex": 8
   },
   {
+   "id": "pharmacology--herb-drug-qc",
+   "department": "pharmacology",
+   "case": "herb-drug-qc",
+   "faculty": "western",
+   "title": {
+    "zh": "藥品品管實驗室的一天",
+    "en": "A day in the drug quality-control lab"
+   },
+   "caseTitle": {
+    "zh": "一袋變色的藥湯，一罐天然的粉",
+    "en": "A darker decoction and a “natural” powder"
+   },
+   "condition": {
+    "zh": "藥品品管 · 中西藥交互作用",
+    "en": "Drug QC · herb–drug interaction"
+   },
+   "difficulty": 1,
+   "tagline": {
+    "zh": "顏色是觀察不是判決，天然不等於沒有西藥",
+    "en": "Colour is an observation, not a verdict; natural does not mean drug-free"
+   },
+   "room": "decoction-lab",
+   "minutes": 25,
+   "roles": [
+    {
+     "id": "pharm-intern",
+     "zh": "實習藥師（品管輪訓）",
+     "en": "Pharmacy intern (QC rotation)"
+    },
+    {
+     "id": "qc-tech",
+     "zh": "品管技師",
+     "en": "QC technician"
+    }
+   ],
+   "segs": 8,
+   "beats": 22,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "imaging",
+    "order",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 14,
+   "codex": 9
+  },
+  {
+   "id": "pharmacology--icu-evening",
+   "department": "pharmacology",
+   "case": "icu-evening",
+   "faculty": "western",
+   "title": {
+    "zh": "加護病房藥師小夜班",
+    "en": "The ICU pharmacist's evening shift"
+   },
+   "caseTitle": {
+    "zh": "加護病房的小夜",
+    "en": "An evening shift in the ICU"
+   },
+   "condition": {
+    "zh": "重症 · 高警訊藥品與譫妄",
+    "en": "Critical care · high-alert drugs and delirium"
+   },
+   "difficulty": 3,
+   "tagline": {
+    "zh": "混亂先查糖，兩袋先對成分，兩個人才叫核對",
+    "en": "Confusion: check the sugar first. Two bags: check the ingredient first. A check needs two people"
+   },
+   "room": "icu",
+   "minutes": 25,
+   "roles": [
+    {
+     "id": "pharm-intern",
+     "zh": "實習藥師（小夜）",
+     "en": "Pharmacy intern (evening)"
+    },
+    {
+     "id": "icu-nurse",
+     "zh": "加護病房護理師",
+     "en": "ICU nurse"
+    }
+   ],
+   "segs": 6,
+   "beats": 18,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "imaging",
+    "order",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 13,
+   "codex": 8
+  },
+  {
+   "id": "plastic-surgery",
    "department": "plastic-surgery",
+   "case": "main",
+   "faculty": "western",
    "title": {
     "zh": "整形外科與燒傷值班日",
     "en": "A shift in plastic surgery and burns"
    },
+   "caseTitle": {
+    "zh": "整形外科與燒傷值班日",
+    "en": "A shift in plastic surgery and burns"
+   },
+   "condition": null,
+   "difficulty": 2,
    "tagline": {
     "zh": "從一顆小痣到一鍋熱湯",
     "en": "From a small mole to a pot of soup"
@@ -1202,11 +5340,120 @@
    "codex": 7
   },
   {
+   "id": "plastic-surgery--child-scald",
+   "department": "plastic-surgery",
+   "case": "child-scald",
+   "faculty": "western",
+   "title": {
+    "zh": "整形外科急診夜",
+    "en": "A plastic-surgery night in the ER"
+   },
+   "caseTitle": {
+    "zh": "熱水壺與小手的夜",
+    "en": "The kettle and the little hand"
+   },
+   "condition": {
+    "zh": "燒傷 · 兒童燙傷",
+    "en": "Burns · paediatric scald"
+   },
+   "difficulty": 2,
+   "tagline": {
+    "zh": "冷水不是冰塊，小孩不是縮小的大人",
+    "en": "Cool water is not ice, and a child is not a small adult"
+   },
+   "room": "er",
+   "minutes": 25,
+   "roles": [
+    {
+     "id": "resident",
+     "zh": "整形外科住院醫師",
+     "en": "Plastic-surgery resident"
+    },
+    {
+     "id": "peds-nurse",
+     "zh": "兒科急診護理師",
+     "en": "Paediatric ER nurse"
+    }
+   ],
+   "segs": 7,
+   "beats": 24,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "imaging",
+    "order",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 13,
+   "codex": 9
+  },
+  {
+   "id": "plastic-surgery--jaw-reconstruction",
+   "department": "plastic-surgery",
+   "case": "jaw-reconstruction",
+   "faculty": "western",
+   "title": {
+    "zh": "整形外科重建規劃日",
+    "en": "A reconstruction planning day"
+   },
+   "caseTitle": {
+    "zh": "印出來的下顎",
+    "en": "The jaw that came out of a printer"
+   },
+   "condition": {
+    "zh": "腫瘤 · 顯微重建規劃",
+    "en": "Cancer · microsurgical reconstruction planning"
+   },
+   "difficulty": 3,
+   "tagline": {
+    "zh": "病人上手術台之前，刀先在電腦裡開一次",
+    "en": "Before the patient reaches the table, the operation happens once on screen"
+   },
+   "room": "biomed-lab",
+   "minutes": 25,
+   "roles": [
+    {
+     "id": "resident",
+     "zh": "整形外科住院醫師",
+     "en": "Plastic-surgery resident"
+    },
+    {
+     "id": "engineer",
+     "zh": "生醫工程師",
+     "en": "Biomedical engineer"
+    }
+   ],
+   "segs": 9,
+   "beats": 23,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "imaging",
+    "order",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 13,
+   "codex": 8
+  },
+  {
+   "id": "psychiatry",
    "department": "psychiatry",
+   "case": "main",
+   "faculty": "western",
    "title": {
     "zh": "精神醫學科值班日",
     "en": "A shift in psychiatry"
    },
+   "caseTitle": {
+    "zh": "精神醫學科值班日",
+    "en": "A shift in psychiatry"
+   },
+   "condition": null,
+   "difficulty": 2,
    "tagline": {
     "zh": "從一間安全的會談室到夜裡的一通電話",
     "en": "From a safe interview room to a call in the night"
@@ -1239,11 +5486,119 @@
    "codex": 8
   },
   {
+   "id": "psychiatry--alcohol-withdrawal",
+   "department": "psychiatry",
+   "case": "alcohol-withdrawal",
+   "faculty": "western",
+   "title": {
+    "zh": "照會精神科的下午到深夜",
+    "en": "Liaison psychiatry, afternoon to midnight"
+   },
+   "caseTitle": {
+    "zh": "骨科病房牆上的螞蟻",
+    "en": "Ants on the orthopaedic ward wall"
+   },
+   "condition": {
+    "zh": "照會精神醫學 · 酒精戒斷",
+    "en": "Consultation-liaison · alcohol withdrawal"
+   },
+   "difficulty": 3,
+   "tagline": {
+    "zh": "照會單寫「精神病？」，答案藏在一個小酒瓶裡",
+    "en": "The consult says “psychosis?”; the answer is hidden in a small bottle"
+   },
+   "room": "ward",
+   "minutes": 25,
+   "roles": [
+    {
+     "id": "cl-resident",
+     "zh": "精神科住院醫師（照會）",
+     "en": "Psychiatry resident (liaison)"
+    },
+    {
+     "id": "ward-nurse",
+     "zh": "骨科病房護理師",
+     "en": "Orthopaedic ward nurse"
+    }
+   ],
+   "segs": 7,
+   "beats": 18,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "imaging",
+    "order",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 13,
+   "codex": 8
+  },
+  {
+   "id": "psychiatry--eating-disorder",
+   "department": "psychiatry",
+   "case": "eating-disorder",
+   "faculty": "western",
+   "title": {
+    "zh": "兒少精神科的急診照會日",
+    "en": "A youth-psychiatry day in the emergency room"
+   },
+   "caseTitle": {
+    "zh": "體育課昏倒的長跑選手",
+    "en": "The runner who fainted in PE"
+   },
+   "condition": {
+    "zh": "飲食障礙 · 醫療不穩定",
+    "en": "Eating disorder · medical instability"
+   },
+   "difficulty": 2,
+   "tagline": {
+    "zh": "她說自己只是很自律，監視器說的不一樣",
+    "en": "She says she is just disciplined; the monitor says otherwise"
+   },
+   "room": "er",
+   "minutes": 25,
+   "roles": [
+    {
+     "id": "cap-resident",
+     "zh": "兒少精神科住院醫師",
+     "en": "Child and adolescent psychiatry resident"
+    },
+    {
+     "id": "dietitian",
+     "zh": "臨床營養師",
+     "en": "Clinical dietitian"
+    }
+   ],
+   "segs": 7,
+   "beats": 17,
+   "minis": [
+    "choice",
+    "drill",
+    "imaging",
+    "order",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 11,
+   "codex": 8
+  },
+  {
+   "id": "public-health",
    "department": "public-health",
+   "case": "main",
+   "faculty": "western",
    "title": {
     "zh": "公共衛生疫調日",
     "en": "An outbreak investigation day"
    },
+   "caseTitle": {
+    "zh": "公共衛生疫調日",
+    "en": "An outbreak investigation day"
+   },
+   "condition": null,
+   "difficulty": 2,
    "tagline": {
     "zh": "先把分母找回來，再找兇手",
     "en": "Recover the denominator before you hunt the culprit"
@@ -1276,11 +5631,120 @@
    "codex": 9
   },
   {
+   "id": "public-health--screening-day",
+   "department": "public-health",
+   "case": "screening-day",
+   "faculty": "western",
+   "title": {
+    "zh": "社區篩檢日",
+    "en": "Community screening day"
+   },
+   "caseTitle": {
+    "zh": "篩檢車的一天",
+    "en": "A day on the screening van"
+   },
+   "condition": {
+    "zh": "篩檢 · 偽陽性與基礎率",
+    "en": "Screening · false positives and base rates"
+   },
+   "difficulty": 1,
+   "tagline": {
+    "zh": "陽性是一張回診單，不是一張診斷書",
+    "en": "A positive screen is a recall slip, not a diagnosis"
+   },
+   "room": "imaging",
+   "minutes": 25,
+   "roles": [
+    {
+     "id": "trainee",
+     "zh": "公衛醫師（受訓）",
+     "en": "Public-health physician trainee"
+    },
+    {
+     "id": "radiographer",
+     "zh": "放射師（篩檢車）",
+     "en": "Radiographer (screening van)"
+    }
+   ],
+   "segs": 8,
+   "beats": 20,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "imaging",
+    "order",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 14,
+   "codex": 8
+  },
+  {
+   "id": "public-health--vaccine-signal",
+   "department": "public-health",
+   "case": "vaccine-signal",
+   "faculty": "western",
+   "title": {
+    "zh": "急診裡的公衛之夜",
+    "en": "A public-health night in the emergency department"
+   },
+   "caseTitle": {
+    "zh": "接種後事件與發燒的疹子",
+    "en": "Events after a jab, and a feverish rash"
+   },
+   "condition": {
+    "zh": "疫苗安全 · 接種後事件",
+    "en": "Vaccine safety · events after immunisation"
+   },
+   "difficulty": 3,
+   "tagline": {
+    "zh": "訊號是問題，不是答案；疹子加發燒，先想麻疹",
+    "en": "A signal is a question, not an answer; rash plus fever, think measles first"
+   },
+   "room": "er",
+   "minutes": 25,
+   "roles": [
+    {
+     "id": "trainee",
+     "zh": "公衛醫師（受訓）",
+     "en": "Public-health physician trainee"
+    },
+    {
+     "id": "icn",
+     "zh": "感染管制護理師",
+     "en": "Infection control nurse"
+    }
+   ],
+   "segs": 7,
+   "beats": 18,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "imaging",
+    "order",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 16,
+   "codex": 9
+  },
+  {
+   "id": "pulmonology",
    "department": "pulmonology",
+   "case": "main",
+   "faculty": "western",
    "title": {
     "zh": "胸腔內科值班日",
     "en": "A shift in pulmonology"
    },
+   "caseTitle": {
+    "zh": "胸腔內科值班日",
+    "en": "A shift in pulmonology"
+   },
+   "condition": null,
+   "difficulty": 2,
    "tagline": {
     "zh": "從晨間查房到夜裡那通血氧警報",
     "en": "From the morning round to the night-time saturation alarm"
@@ -1314,11 +5778,271 @@
    "codex": 8
   },
   {
+   "id": "pulmonology--haemoptysis",
+   "department": "pulmonology",
+   "case": "haemoptysis",
+   "faculty": "western",
+   "title": {
+    "zh": "胸腔內科：會出血的肺",
+    "en": "Pulmonology: the bleeding lung"
+   },
+   "caseTitle": {
+    "zh": "凌晨的大咯血",
+    "en": "Massive haemoptysis before dawn"
+   },
+   "condition": {
+    "zh": "急症 · 大咯血",
+    "en": "Emergency · massive haemoptysis"
+   },
+   "difficulty": 3,
+   "tagline": {
+    "zh": "出血的那一邊朝下",
+    "en": "Bleeding side down"
+   },
+   "room": "icu",
+   "minutes": 25,
+   "roles": [
+    {
+     "id": "fellow",
+     "zh": "胸腔內科研修醫師",
+     "en": "Pulmonology fellow"
+    },
+    {
+     "id": "icu-nurse",
+     "zh": "加護病房護理師",
+     "en": "ICU nurse"
+    }
+   ],
+   "segs": 7,
+   "beats": 22,
+   "minis": [
+    "choice",
+    "drill",
+    "imaging",
+    "order",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 12,
+   "codex": 7
+  },
+  {
+   "id": "pulmonology--tb-clinic",
+   "department": "pulmonology",
+   "case": "tb-clinic",
+   "faculty": "western",
+   "title": {
+    "zh": "胸腔內科：門診與隔離室",
+    "en": "Pulmonology: clinic and isolation room"
+   },
+   "caseTitle": {
+    "zh": "胸腔門診：咳了三週的人",
+    "en": "Chest clinic: three weeks of cough"
+   },
+   "condition": {
+    "zh": "感染 · 肺結核",
+    "en": "Infection · pulmonary tuberculosis"
+   },
+   "difficulty": 2,
+   "tagline": {
+    "zh": "咳嗽超過兩週，先想到它",
+    "en": "Cough beyond two weeks: think of it first"
+   },
+   "room": "clinic",
+   "minutes": 25,
+   "roles": [
+    {
+     "id": "resident",
+     "zh": "胸腔內科住院醫師",
+     "en": "Pulmonology resident"
+    },
+    {
+     "id": "tb-nurse",
+     "zh": "結核病個案管理師",
+     "en": "TB case manager"
+    }
+   ],
+   "segs": 8,
+   "beats": 21,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "imaging",
+    "order",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 13,
+   "codex": 8
+  },
+  {
+   "id": "qigong",
+   "department": "qigong",
+   "case": "main",
+   "faculty": "tcm",
+   "title": {
+    "zh": "氣功導引室值班日",
+    "en": "A shift in the qigong room"
+   },
+   "caseTitle": {
+    "zh": "八段錦晨班",
+    "en": "The Baduanjin morning class"
+   },
+   "condition": {
+    "zh": "養生 · 八段錦教學",
+    "en": "Wellbeing · Baduanjin teaching"
+   },
+   "difficulty": 1,
+   "tagline": {
+    "zh": "八個動作，和一口不能憋的氣",
+    "en": "Eight movements, and one breath you must never hold"
+   },
+   "room": "tuina",
+   "minutes": 25,
+   "roles": [
+    {
+     "id": "intern",
+     "zh": "中醫見習醫師",
+     "en": "TCM clinical clerk"
+    },
+    {
+     "id": "coach",
+     "zh": "導引功法教練",
+     "en": "Qigong coach"
+    }
+   ],
+   "segs": 8,
+   "beats": 21,
+   "minis": [
+    "choice",
+    "drill",
+    "order",
+    "points",
+    "stage",
+    "tongue",
+    "vitals"
+   ],
+   "glossary": 12,
+   "codex": 7
+  },
+  {
+   "id": "qigong--chronic-class",
+   "department": "qigong",
+   "case": "chronic-class",
+   "faculty": "tcm",
+   "title": {
+    "zh": "氣功：病房慢病養生班",
+    "en": "Qigong: the ward chronic-care class"
+   },
+   "caseTitle": {
+    "zh": "病房裡的六字訣",
+    "en": "The Six Sounds on the ward"
+   },
+   "condition": {
+    "zh": "慢性病 · 肺阻塞與糖尿病",
+    "en": "Chronic care · COPD and diabetes"
+   },
+   "difficulty": 2,
+   "tagline": {
+    "zh": "吐氣比吸氣重要的一天",
+    "en": "A day when breathing out mattered more"
+   },
+   "room": "ward",
+   "minutes": 25,
+   "roles": [
+    {
+     "id": "intern",
+     "zh": "中醫見習醫師",
+     "en": "TCM clinical clerk"
+    },
+    {
+     "id": "coach",
+     "zh": "導引功法教練",
+     "en": "Qigong coach"
+    }
+   ],
+   "segs": 6,
+   "beats": 18,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "order",
+    "points",
+    "stage",
+    "tongue",
+    "vitals"
+   ],
+   "glossary": 12,
+   "codex": 7
+  },
+  {
+   "id": "qigong--fall-prevention",
+   "department": "qigong",
+   "case": "fall-prevention",
+   "faculty": "tcm",
+   "title": {
+    "zh": "氣功：跌倒預防門診",
+    "en": "Qigong: the falls-prevention clinic"
+   },
+   "caseTitle": {
+    "zh": "不想再跌倒的阿嬤",
+    "en": "The grandmother who won't fall again"
+   },
+   "condition": {
+    "zh": "老年 · 平衡與跌倒預防",
+    "en": "Older adults · balance and falls"
+   },
+   "difficulty": 3,
+   "tagline": {
+    "zh": "一張椅子、一盞夜燈、一張歪掉的嘴",
+    "en": "A chair, a night light, and a drooping mouth"
+   },
+   "room": "tcm-clinic",
+   "minutes": 25,
+   "roles": [
+    {
+     "id": "intern",
+     "zh": "中醫見習醫師",
+     "en": "TCM clinical clerk"
+    },
+    {
+     "id": "coach",
+     "zh": "導引功法教練",
+     "en": "Qigong coach"
+    }
+   ],
+   "segs": 7,
+   "beats": 19,
+   "minis": [
+    "choice",
+    "drill",
+    "order",
+    "points",
+    "pulse",
+    "stage",
+    "tongue",
+    "vitals"
+   ],
+   "glossary": 12,
+   "codex": 7
+  },
+  {
+   "id": "radiation-oncology",
    "department": "radiation-oncology",
+   "case": "main",
+   "faculty": "western",
    "title": {
     "zh": "放射腫瘤科值班日",
     "en": "A shift in radiation oncology"
    },
+   "caseTitle": {
+    "zh": "放射腫瘤科值班日",
+    "en": "A shift in radiation oncology"
+   },
+   "condition": null,
+   "difficulty": 2,
    "tagline": {
     "zh": "從兩位同姓病人到一次呼吸的位移",
     "en": "From two patients with one surname to the movement of a single breath"
@@ -1352,11 +6076,118 @@
    "codex": 8
   },
   {
+   "id": "radiation-oncology--head-neck-ward",
+   "department": "radiation-oncology",
+   "case": "head-neck-ward",
+   "faculty": "western",
+   "title": {
+    "zh": "放射腫瘤科：頭頸癌病房日",
+    "en": "Radiation oncology: a day on the head-and-neck ward"
+   },
+   "caseTitle": {
+    "zh": "病房：不再合身的面罩",
+    "en": "Ward: the mask that no longer fits"
+   },
+   "condition": {
+    "zh": "頭頸癌 · 住院同步化放療",
+    "en": "Head and neck cancer · inpatient chemoradiation"
+   },
+   "difficulty": 3,
+   "tagline": {
+    "zh": "從一個鬆掉的面罩到一口吞不下去的水",
+    "en": "From a loose mask to a sip of water that will not go down"
+   },
+   "room": "ward",
+   "minutes": 25,
+   "roles": [
+    {
+     "id": "resident",
+     "zh": "放腫科住院醫師",
+     "en": "Radiation-oncology resident"
+    },
+    {
+     "id": "nurse",
+     "zh": "放腫病房護理師",
+     "en": "Radiation-oncology ward nurse"
+    }
+   ],
+   "segs": 8,
+   "beats": 17,
+   "minis": [
+    "choice",
+    "drill",
+    "imaging",
+    "order",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 13,
+   "codex": 9
+  },
+  {
+   "id": "radiation-oncology--palliative-clinic",
+   "department": "radiation-oncology",
+   "case": "palliative-clinic",
+   "faculty": "western",
+   "title": {
+    "zh": "放射腫瘤科：緩和放療門診日",
+    "en": "Radiation oncology: a palliative clinic day"
+   },
+   "caseTitle": {
+    "zh": "緩和門診：先問會不會斷",
+    "en": "Palliative clinic: will it break first?"
+   },
+   "condition": {
+    "zh": "緩和放療 · 骨轉移與再照射",
+    "en": "Palliative RT · bone metastasis and re-irradiation"
+   },
+   "difficulty": 2,
+   "tagline": {
+    "zh": "從一根會痛的大腿骨到一條記得劑量的脊髓",
+    "en": "From a femur that hurts to a spinal cord that remembers its dose"
+   },
+   "room": "clinic",
+   "minutes": 24,
+   "roles": [
+    {
+     "id": "intern",
+     "zh": "實習醫師",
+     "en": "Intern"
+    },
+    {
+     "id": "dosimetrist",
+     "zh": "劑量師",
+     "en": "Dosimetrist"
+    }
+   ],
+   "segs": 8,
+   "beats": 18,
+   "minis": [
+    "choice",
+    "drill",
+    "imaging",
+    "order",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 14,
+   "codex": 8
+  },
+  {
+   "id": "radiology",
    "department": "radiology",
+   "case": "main",
+   "faculty": "western",
    "title": {
     "zh": "影像醫學科值班日",
     "en": "A shift in radiology"
    },
+   "caseTitle": {
+    "zh": "影像醫學科值班日",
+    "en": "A shift in radiology"
+   },
+   "condition": null,
+   "difficulty": 2,
    "tagline": {
     "zh": "判讀室的黑暗、CT 的一通電話、磁場區的髮夾",
     "en": "The dark of the reading room, a call from CT, a hairpin at the magnet door"
@@ -1390,11 +6221,120 @@
    "codex": 9
   },
   {
+   "id": "radiology--angio-limb",
+   "department": "radiology",
+   "case": "angio-limb",
+   "faculty": "western",
+   "title": {
+    "zh": "介入放射值班日",
+    "en": "A day in the angio suite"
+   },
+   "caseTitle": {
+    "zh": "阿財伯的左腳與一條導絲",
+    "en": "Uncle Tsai's left leg and a wire"
+   },
+   "condition": {
+    "zh": "介入放射 · 下肢動脈阻塞",
+    "en": "Interventional · peripheral arterial disease"
+   },
+   "difficulty": 3,
+   "tagline": {
+    "zh": "鉛衣、顯影劑和一個不肯躺平的早上",
+    "en": "Lead aprons, contrast and a morning that would not lie flat"
+   },
+   "room": "imaging",
+   "minutes": 25,
+   "roles": [
+    {
+     "id": "resident",
+     "zh": "放射科住院醫師",
+     "en": "Radiology resident"
+    },
+    {
+     "id": "radiographer",
+     "zh": "放射師",
+     "en": "Radiographer"
+    }
+   ],
+   "segs": 7,
+   "beats": 17,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "imaging",
+    "order",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 14,
+   "codex": 9
+  },
+  {
+   "id": "radiology--nuclear",
+   "department": "radiology",
+   "case": "nuclear",
+   "faculty": "western",
+   "title": {
+    "zh": "核子醫學值班日",
+    "en": "Nuclear medicine day shift"
+   },
+   "caseTitle": {
+    "zh": "熱實驗室的一天",
+    "en": "A day in the hot lab"
+   },
+   "condition": {
+    "zh": "核子醫學 · 輻射安全",
+    "en": "Nuclear medicine · radiation safety"
+   },
+   "difficulty": 1,
+   "tagline": {
+    "zh": "劑量很小，擔心很大",
+    "en": "Small doses, large worries"
+   },
+   "room": "lab",
+   "minutes": 22,
+   "roles": [
+    {
+     "id": "resident",
+     "zh": "核子醫學科住院醫師",
+     "en": "Nuclear medicine resident"
+    },
+    {
+     "id": "radiopharm",
+     "zh": "放射藥師",
+     "en": "Radiopharmacist"
+    }
+   ],
+   "segs": 8,
+   "beats": 21,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "imaging",
+    "order",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 13,
+   "codex": 7
+  },
+  {
+   "id": "rehabilitation",
    "department": "rehabilitation",
+   "case": "main",
+   "faculty": "western",
    "title": {
     "zh": "復健科值班日",
     "en": "A shift in rehabilitation"
    },
+   "caseTitle": {
+    "zh": "復健科值班日",
+    "en": "A shift in rehabilitation"
+   },
+   "condition": null,
+   "difficulty": 2,
    "tagline": {
     "zh": "從團隊會議到港口雜貨店的那條路",
     "en": "From the team meeting to the road to the harbour shop"
@@ -1428,11 +6368,119 @@
    "codex": 9
   },
   {
+   "id": "rehabilitation--icu-early-mobility",
+   "department": "rehabilitation",
+   "case": "icu-early-mobility",
+   "faculty": "western",
+   "title": {
+    "zh": "復健科加護病房日",
+    "en": "A rehab day in the ICU"
+   },
+   "caseTitle": {
+    "zh": "加護病房的第一次坐起",
+    "en": "First sit-up in the ICU"
+   },
+   "condition": {
+    "zh": "重症復健 · 早期活動",
+    "en": "Critical-care rehab · early mobilisation"
+   },
+   "difficulty": 3,
+   "tagline": {
+    "zh": "呼吸器旁的白板、一塊溝通板和床緣的三分鐘",
+    "en": "A whiteboard by the ventilator, a communication board and three minutes on the edge of the bed"
+   },
+   "room": "icu",
+   "minutes": 25,
+   "roles": [
+    {
+     "id": "resident",
+     "zh": "復健科住院醫師",
+     "en": "Rehab resident"
+    },
+    {
+     "id": "pt",
+     "zh": "物理治療師",
+     "en": "Physiotherapist"
+    }
+   ],
+   "segs": 7,
+   "beats": 17,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "imaging",
+    "order",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 13,
+   "codex": 9
+  },
+  {
+   "id": "rehabilitation--knee-replacement",
+   "department": "rehabilitation",
+   "case": "knee-replacement",
+   "faculty": "western",
+   "title": {
+    "zh": "復健科病房日",
+    "en": "A rehab ward day"
+   },
+   "caseTitle": {
+    "zh": "阿雪姨的新膝蓋",
+    "en": "Auntie Hsueh's new knee"
+   },
+   "condition": {
+    "zh": "術後復健 · 全膝關節置換",
+    "en": "Post-op rehab · total knee replacement"
+   },
+   "difficulty": 1,
+   "tagline": {
+    "zh": "新膝蓋、一支助行器和一條喊痛的小腿",
+    "en": "A new knee, a walker and a calf that aches"
+   },
+   "room": "ward",
+   "minutes": 25,
+   "roles": [
+    {
+     "id": "resident",
+     "zh": "復健科住院醫師",
+     "en": "Rehab resident"
+    },
+    {
+     "id": "pt",
+     "zh": "物理治療師",
+     "en": "Physiotherapist"
+    }
+   ],
+   "segs": 7,
+   "beats": 18,
+   "minis": [
+    "choice",
+    "drill",
+    "imaging",
+    "order",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 12,
+   "codex": 9
+  },
+  {
+   "id": "rheumatology",
    "department": "rheumatology",
+   "case": "main",
+   "faculty": "western",
    "title": {
     "zh": "風濕免疫科值班日",
     "en": "A shift in rheumatology"
    },
+   "caseTitle": {
+    "zh": "風濕免疫科值班日",
+    "en": "A shift in rheumatology"
+   },
+   "condition": null,
+   "difficulty": 2,
    "tagline": {
     "zh": "從雙手的晨僵到一顆發燙的膝蓋",
     "en": "From stiff hands at dawn to one hot knee"
@@ -1465,11 +6513,119 @@
    "codex": 8
   },
   {
+   "id": "rheumatology--giant-cell-arteritis",
+   "department": "rheumatology",
+   "case": "giant-cell-arteritis",
+   "faculty": "western",
+   "title": {
+    "zh": "風濕免疫科：急診小夜會診",
+    "en": "Rheumatology: an evening of ER consults"
+   },
+   "caseTitle": {
+    "zh": "急診小夜：梳頭會痛的頭痛",
+    "en": "ER evening: a headache that hurts to comb"
+   },
+   "condition": {
+    "zh": "血管炎 · 巨細胞動脈炎",
+    "en": "Vasculitis · giant cell arteritis"
+   },
+   "difficulty": 3,
+   "tagline": {
+    "zh": "風濕科的急症，常常穿著慢性病的衣服",
+    "en": "Rheumatology emergencies often dress as chronic complaints"
+   },
+   "room": "er",
+   "minutes": 24,
+   "roles": [
+    {
+     "id": "resident",
+     "zh": "風濕科值班住院醫師",
+     "en": "On-call rheumatology resident"
+    },
+    {
+     "id": "ernurse",
+     "zh": "急診護理師",
+     "en": "ER nurse"
+    }
+   ],
+   "segs": 7,
+   "beats": 17,
+   "minis": [
+    "choice",
+    "drill",
+    "imaging",
+    "order",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 12,
+   "codex": 8
+  },
+  {
+   "id": "rheumatology--spondyloarthritis",
+   "department": "rheumatology",
+   "case": "spondyloarthritis",
+   "faculty": "western",
+   "title": {
+    "zh": "風濕免疫科：日間輸注中心",
+    "en": "Rheumatology: the day infusion unit"
+   },
+   "caseTitle": {
+    "zh": "輸注中心：六年的「腰扭到」",
+    "en": "Infusion unit: six years of 'pulled back'"
+   },
+   "condition": {
+    "zh": "脊椎關節炎 · 發炎性背痛",
+    "en": "Spondyloarthritis · inflammatory back pain"
+   },
+   "difficulty": 1,
+   "tagline": {
+    "zh": "抗體陰性的背痛，和停了四個月的點滴",
+    "en": "A back pain with negative antibodies, and a drip paused for four months"
+   },
+   "room": "ward",
+   "minutes": 22,
+   "roles": [
+    {
+     "id": "intern",
+     "zh": "風濕科實習醫師",
+     "en": "Rheumatology intern"
+    },
+    {
+     "id": "infusion",
+     "zh": "輸注室護理師",
+     "en": "Infusion nurse"
+    }
+   ],
+   "segs": 8,
+   "beats": 17,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "imaging",
+    "order",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 12,
+   "codex": 8
+  },
+  {
+   "id": "spine",
    "department": "spine",
+   "case": "main",
+   "faculty": "western",
    "title": {
     "zh": "脊椎外科值班日",
     "en": "A shift in spine surgery"
    },
+   "caseTitle": {
+    "zh": "脊椎外科值班日",
+    "en": "A shift in spine surgery"
+   },
+   "condition": null,
+   "difficulty": 2,
    "tagline": {
     "zh": "紅旗、馬尾、一通不能等的電話",
     "en": "Red flags, a cauda equina and a call that cannot wait"
@@ -1503,11 +6659,1375 @@
    "codex": 8
   },
   {
+   "id": "spine--back-clinic",
+   "department": "spine",
+   "case": "back-clinic",
+   "faculty": "western",
+   "title": {
+    "zh": "脊椎外科門診日",
+    "en": "A spine clinic day"
+   },
+   "caseTitle": {
+    "zh": "星期一的背痛門診",
+    "en": "Monday back-pain clinic"
+   },
+   "condition": {
+    "zh": "感染 · 脊椎骨髓炎",
+    "en": "Infection · spinal osteomyelitis"
+   },
+   "difficulty": 2,
+   "tagline": {
+    "zh": "四個背痛的人，只有一個在發抖",
+    "en": "Four people with back pain; only one is shivering"
+   },
+   "room": "clinic",
+   "minutes": 22,
+   "roles": [
+    {
+     "id": "resident",
+     "zh": "脊椎外科住院醫師（門診）",
+     "en": "Spine resident (clinic)"
+    },
+    {
+     "id": "np",
+     "zh": "脊椎專科護理師",
+     "en": "Spine nurse practitioner"
+    }
+   ],
+   "segs": 8,
+   "beats": 18,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "imaging",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 13,
+   "codex": 8
+  },
+  {
+   "id": "spine--cervical-icu",
+   "department": "spine",
+   "case": "cervical-icu",
+   "faculty": "western",
+   "title": {
+    "zh": "脊椎外科：加護病房的一天",
+    "en": "Spine surgery: a day in the ICU"
+   },
+   "caseTitle": {
+    "zh": "淺水跳水之後",
+    "en": "After the shallow dive"
+   },
+   "condition": {
+    "zh": "外傷 · 頸椎脊髓損傷",
+    "en": "Trauma · cervical cord injury"
+   },
+   "difficulty": 3,
+   "tagline": {
+    "zh": "一個會開玩笑的年輕人、一條往下掉的肺活量",
+    "en": "A young man who jokes, and a vital capacity that keeps falling"
+   },
+   "room": "icu",
+   "minutes": 23,
+   "roles": [
+    {
+     "id": "resident",
+     "zh": "脊椎外科住院醫師",
+     "en": "Spine resident"
+    },
+    {
+     "id": "rt",
+     "zh": "呼吸治療師",
+     "en": "Respiratory therapist"
+    }
+   ],
+   "segs": 7,
+   "beats": 17,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "imaging",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 12,
+   "codex": 8
+  },
+  {
+   "id": "tcm-classics",
+   "department": "tcm-classics",
+   "case": "main",
+   "faculty": "tcm",
+   "title": {
+    "zh": "讀《傷寒論》的門診日",
+    "en": "A clinic day with the Shanghan lun"
+   },
+   "caseTitle": {
+    "zh": "條文與病人",
+    "en": "The clause and the patient"
+   },
+   "condition": {
+    "zh": "經典 · 傷寒論六經辨證",
+    "en": "Classics · six-channel patterns"
+   },
+   "difficulty": 2,
+   "tagline": {
+    "zh": "清晨讀條文，上午遇見兩個口苦的人",
+    "en": "Clauses at dawn, and two bitter mouths before noon"
+   },
+   "room": "tcm-clinic",
+   "minutes": 25,
+   "roles": [
+    {
+     "id": "clerk",
+     "zh": "中醫見習醫師",
+     "en": "TCM clerk"
+    },
+    {
+     "id": "herbalist",
+     "zh": "中藥調劑師",
+     "en": "Herbal dispenser"
+    }
+   ],
+   "segs": 8,
+   "beats": 21,
+   "minis": [
+    "choice",
+    "drill",
+    "herb",
+    "imaging",
+    "order",
+    "pulse",
+    "stage",
+    "tongue",
+    "vitals"
+   ],
+   "glossary": 14,
+   "codex": 8
+  },
+  {
+   "id": "tcm-classics--case-records",
+   "department": "tcm-classics",
+   "case": "case-records",
+   "faculty": "tcm",
+   "title": {
+    "zh": "醫案夜讀",
+    "en": "Case records by lamplight"
+   },
+   "caseTitle": {
+    "zh": "跟師抄方的夜診",
+    "en": "Evening clinic at the master’s side"
+   },
+   "condition": {
+    "zh": "經典 · 名醫醫案討論",
+    "en": "Classics · case-record discussion"
+   },
+   "difficulty": 1,
+   "tagline": {
+    "zh": "一本老醫案、一位心跳漏拍的阿姨，和一枝老鋼筆",
+    "en": "An old casebook, an auntie whose heart skips, and an old fountain pen"
+   },
+   "room": "tcm-clinic",
+   "minutes": 25,
+   "roles": [
+    {
+     "id": "resident",
+     "zh": "中醫住院醫師",
+     "en": "TCM resident"
+    },
+    {
+     "id": "scribe",
+     "zh": "抄方見習生",
+     "en": "Scribe student"
+    }
+   ],
+   "segs": 7,
+   "beats": 18,
+   "minis": [
+    "choice",
+    "drill",
+    "herb",
+    "imaging",
+    "order",
+    "points",
+    "pulse",
+    "stage",
+    "tongue",
+    "vitals"
+   ],
+   "glossary": 13,
+   "codex": 8
+  },
+  {
+   "id": "tcm-classics--wenbing",
+   "department": "tcm-classics",
+   "case": "wenbing",
+   "faculty": "tcm",
+   "title": {
+    "zh": "溫病條文遇上登革熱",
+    "en": "The warm-disease classics meet dengue"
+   },
+   "caseTitle": {
+    "zh": "登革熱季的溫病會診",
+    "en": "A warm-disease consult in dengue season"
+   },
+   "condition": {
+    "zh": "溫病 · 衛氣營血辨證",
+    "en": "Warm disease · the four levels"
+   },
+   "difficulty": 3,
+   "tagline": {
+    "zh": "一個退了燒的病人，和為什麼退燒那一刻最危險",
+    "en": "A patient whose fever broke, and why that is the most dangerous moment"
+   },
+   "room": "ward",
+   "minutes": 25,
+   "roles": [
+    {
+     "id": "resident",
+     "zh": "中醫住院醫師（會診）",
+     "en": "TCM resident (consult)"
+    },
+    {
+     "id": "nurse",
+     "zh": "病房護理師",
+     "en": "Ward nurse"
+    }
+   ],
+   "segs": 7,
+   "beats": 19,
+   "minis": [
+    "choice",
+    "drill",
+    "herb",
+    "imaging",
+    "order",
+    "points",
+    "pulse",
+    "stage",
+    "tongue",
+    "vitals"
+   ],
+   "glossary": 14,
+   "codex": 7
+  },
+  {
+   "id": "tcm-diagnosis",
+   "department": "tcm-diagnosis",
+   "case": "main",
+   "faculty": "tcm",
+   "title": {
+    "zh": "中醫診斷科值班日",
+    "en": "A shift in TCM diagnostics"
+   },
+   "caseTitle": {
+    "zh": "四診合參的第一位病人",
+    "en": "Four examinations, one first visit"
+   },
+   "condition": {
+    "zh": "初診 · 四診合參",
+    "en": "First visit · four examinations"
+   },
+   "difficulty": 1,
+   "tagline": {
+    "zh": "搓熱雙手再把脈；先看人，再看病",
+    "en": "Warm your hands before the pulse; see the person before the disease"
+   },
+   "room": "tcm-clinic",
+   "minutes": 25,
+   "roles": [
+    {
+     "id": "intern",
+     "zh": "中醫見習醫師",
+     "en": "TCM clinical clerk"
+    },
+    {
+     "id": "nurse",
+     "zh": "中醫診間護理師",
+     "en": "TCM clinic nurse"
+    }
+   ],
+   "segs": 7,
+   "beats": 22,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "order",
+    "points",
+    "pulse",
+    "stage",
+    "tongue",
+    "vitals"
+   ],
+   "glossary": 13,
+   "codex": 8
+  },
+  {
+   "id": "tcm-diagnosis--pediatric-inspection",
+   "department": "tcm-diagnosis",
+   "case": "pediatric-inspection",
+   "faculty": "tcm",
+   "title": {
+    "zh": "中醫診斷科：孩子不會說",
+    "en": "TCM diagnostics: the child cannot tell you"
+   },
+   "caseTitle": {
+    "zh": "啞科：兒科望診的一天",
+    "en": "The mute specialty: a day of looking at children"
+   },
+   "condition": {
+    "zh": "兒科 · 望診為主",
+    "en": "Paediatrics · inspection first"
+   },
+   "difficulty": 2,
+   "tagline": {
+    "zh": "家長說一半，你的眼睛說另一半",
+    "en": "The parent tells half; your eyes tell the rest"
+   },
+   "room": "tcm-clinic",
+   "minutes": 26,
+   "roles": [
+    {
+     "id": "intern",
+     "zh": "中醫見習醫師",
+     "en": "TCM clinical clerk"
+    },
+    {
+     "id": "nurse",
+     "zh": "中醫診間護理師",
+     "en": "TCM clinic nurse"
+    }
+   ],
+   "segs": 7,
+   "beats": 22,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "herb",
+    "order",
+    "points",
+    "stage",
+    "tongue",
+    "vitals"
+   ],
+   "glossary": 15,
+   "codex": 8
+  },
+  {
+   "id": "tcm-diagnosis--tongue-pulse-mismatch",
+   "department": "tcm-diagnosis",
+   "case": "tongue-pulse-mismatch",
+   "faculty": "tcm",
+   "title": {
+    "zh": "中醫診斷科：誰在說真話",
+    "en": "TCM diagnostics: who is telling the truth"
+   },
+   "caseTitle": {
+    "zh": "舌脈不符的一天",
+    "en": "When tongue and pulse disagree"
+   },
+   "condition": {
+    "zh": "辨證 · 舌脈不符",
+    "en": "Pattern work · tongue-pulse mismatch"
+   },
+   "difficulty": 3,
+   "tagline": {
+    "zh": "臉說熱，脈說寒；樓梯也會騙人",
+    "en": "The face says heat, the pulse says cold; even a staircase can lie"
+   },
+   "room": "tcm-clinic",
+   "minutes": 28,
+   "roles": [
+    {
+     "id": "intern",
+     "zh": "中醫見習醫師",
+     "en": "TCM clinical clerk"
+    },
+    {
+     "id": "nurse",
+     "zh": "中醫診間護理師",
+     "en": "TCM clinic nurse"
+    }
+   ],
+   "segs": 7,
+   "beats": 23,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "herb",
+    "order",
+    "points",
+    "pulse",
+    "stage",
+    "tongue",
+    "vitals"
+   ],
+   "glossary": 15,
+   "codex": 8
+  },
+  {
+   "id": "tcm-diet",
+   "department": "tcm-diet",
+   "case": "main",
+   "faculty": "tcm",
+   "title": {
+    "zh": "夏季食養門診日",
+    "en": "A summer day at the diet clinic"
+   },
+   "caseTitle": {
+    "zh": "大暑那天的冰青草茶",
+    "en": "Iced herbal tea on the Great Heat"
+   },
+   "condition": {
+    "zh": "暑濕 · 夏季食養",
+    "en": "Summer-heat with damp · seasonal diet"
+   },
+   "difficulty": 1,
+   "tagline": {
+    "zh": "一杯手搖飲、一壺青草茶、一把紙扇",
+    "en": "A bubble tea, a jug of herbal tea, and a paper fan"
+   },
+   "room": "herbal-pharmacy",
+   "minutes": 25,
+   "roles": [
+    {
+     "id": "resident",
+     "zh": "中醫住院醫師",
+     "en": "TCM resident"
+    },
+    {
+     "id": "educator",
+     "zh": "藥膳衛教師",
+     "en": "Diet educator"
+    }
+   ],
+   "segs": 8,
+   "beats": 17,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "herb",
+    "order",
+    "points",
+    "pulse",
+    "stage",
+    "tongue",
+    "vitals"
+   ],
+   "glossary": 15,
+   "codex": 8
+  },
+  {
+   "id": "tcm-diet--diabetes",
+   "department": "tcm-diet",
+   "case": "diabetes",
+   "faculty": "tcm",
+   "title": {
+    "zh": "糖尿病藥膳研發日",
+    "en": "Developing diabetes-friendly dishes"
+   },
+   "caseTitle": {
+    "zh": "無糖的那一鍋",
+    "en": "The sugar-free pot"
+   },
+   "condition": {
+    "zh": "消渴 · 糖尿病飲食",
+    "en": "Xiaoke · diabetes diet"
+   },
+   "difficulty": 3,
+   "tagline": {
+    "zh": "一台糖度計、一碗山藥粥、一位不肯認輸的總鋪師",
+    "en": "A refractometer, a bowl of yam congee, and a banquet chef who won't concede"
+   },
+   "room": "decoction-lab",
+   "minutes": 27,
+   "roles": [
+    {
+     "id": "resident",
+     "zh": "中醫住院醫師",
+     "en": "TCM resident"
+    },
+    {
+     "id": "dietitian",
+     "zh": "糖尿病衛教營養師",
+     "en": "Diabetes dietitian"
+    }
+   ],
+   "segs": 7,
+   "beats": 17,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "herb",
+    "order",
+    "points",
+    "pulse",
+    "stage",
+    "tongue",
+    "vitals"
+   ],
+   "glossary": 15,
+   "codex": 8
+  },
+  {
+   "id": "tcm-diet--postpartum",
+   "department": "tcm-diet",
+   "case": "postpartum",
+   "faculty": "tcm",
+   "title": {
+    "zh": "產後調養門診",
+    "en": "The postpartum clinic"
+   },
+   "caseTitle": {
+    "zh": "月子裡的麻油雞",
+    "en": "Sesame-oil chicken in the confinement month"
+   },
+   "condition": {
+    "zh": "產後調養 · 哺乳期",
+    "en": "Postpartum care · breastfeeding"
+   },
+   "difficulty": 2,
+   "tagline": {
+    "zh": "一壺麻油雞、一包生化湯、一位三週沒睡好的媽媽",
+    "en": "A flask of sesame-oil chicken, a pack of Shenghua Tang, and a mother who hasn't slept in weeks"
+   },
+   "room": "tcm-clinic",
+   "minutes": 27,
+   "roles": [
+    {
+     "id": "resident",
+     "zh": "中醫住院醫師",
+     "en": "TCM resident"
+    },
+    {
+     "id": "nurse",
+     "zh": "母嬰衛教護理師",
+     "en": "Mother-and-baby nurse educator"
+    }
+   ],
+   "segs": 8,
+   "beats": 19,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "herb",
+    "order",
+    "points",
+    "pulse",
+    "stage",
+    "tongue",
+    "vitals"
+   ],
+   "glossary": 15,
+   "codex": 8
+  },
+  {
+   "id": "tcm-fundamentals",
+   "department": "tcm-fundamentals",
+   "case": "main",
+   "faculty": "tcm",
+   "title": {
+    "zh": "中醫基礎理論值班日",
+    "en": "A shift in TCM foundations"
+   },
+   "caseTitle": {
+    "zh": "陰陽五行的第一天",
+    "en": "Day one of yin-yang and five phases"
+   },
+   "condition": {
+    "zh": "理論入門 · 陰陽五行",
+    "en": "Foundations · yin-yang, five phases"
+   },
+   "difficulty": 1,
+   "tagline": {
+    "zh": "老闆太兇，員工拉肚子；水不夠，火就大",
+    "en": "A fierce boss gives the staff diarrhoea; too little water makes the fire look big"
+   },
+   "room": "tcm-clinic",
+   "minutes": 25,
+   "roles": [
+    {
+     "id": "intern",
+     "zh": "中醫見習醫師",
+     "en": "TCM clinical clerk"
+    },
+    {
+     "id": "educator",
+     "zh": "衛教師",
+     "en": "Health educator"
+    }
+   ],
+   "segs": 8,
+   "beats": 22,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "herb",
+    "order",
+    "points",
+    "pulse",
+    "stage",
+    "tongue",
+    "vitals"
+   ],
+   "glossary": 14,
+   "codex": 8
+  },
+  {
+   "id": "tcm-fundamentals--qi-blood-fluids",
+   "department": "tcm-fundamentals",
+   "case": "qi-blood-fluids",
+   "faculty": "tcm",
+   "title": {
+    "zh": "中醫基礎：藥局裡的氣血津液",
+    "en": "TCM foundations: the pharmacy lesson"
+   },
+   "caseTitle": {
+    "zh": "窗口前的氣血津液",
+    "en": "Qi, blood and fluids at the window"
+   },
+   "condition": {
+    "zh": "理論 · 氣血津液",
+    "en": "Foundations · qi, blood, fluids"
+   },
+   "difficulty": 2,
+   "tagline": {
+    "zh": "一個流血，一個流汗，是同一課",
+    "en": "One bleeding, one sweating: the same lesson"
+   },
+   "room": "herbal-pharmacy",
+   "minutes": 25,
+   "roles": [
+    {
+     "id": "intern",
+     "zh": "中醫見習醫師",
+     "en": "TCM clinical clerk"
+    },
+    {
+     "id": "herbalist",
+     "zh": "中藥調劑師",
+     "en": "TCM dispenser"
+    }
+   ],
+   "segs": 7,
+   "beats": 20,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "herb",
+    "order",
+    "stage",
+    "tongue",
+    "vitals"
+   ],
+   "glossary": 13,
+   "codex": 8
+  },
+  {
+   "id": "tcm-fundamentals--zangfu",
+   "department": "tcm-fundamentals",
+   "case": "zangfu",
+   "faculty": "tcm",
+   "title": {
+    "zh": "中醫基礎：臟腑辨證日",
+    "en": "TCM foundations: organ pattern day"
+   },
+   "caseTitle": {
+    "zh": "五臟會說話",
+    "en": "The five organs speak"
+   },
+   "condition": {
+    "zh": "辨證 · 臟腑辨證",
+    "en": "Pattern work · organ patterns"
+   },
+   "difficulty": 3,
+   "tagline": {
+    "zh": "腎在腳底，肝往頭上衝；最後一張牌是中風",
+    "en": "Kidney in the soles, liver surging up; the last card is a stroke"
+   },
+   "room": "acupuncture",
+   "minutes": 27,
+   "roles": [
+    {
+     "id": "intern",
+     "zh": "中醫見習醫師",
+     "en": "TCM clinical clerk"
+    },
+    {
+     "id": "nurse",
+     "zh": "針灸室護理師",
+     "en": "Acupuncture room nurse"
+    }
+   ],
+   "segs": 7,
+   "beats": 18,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "herb",
+    "order",
+    "points",
+    "pulse",
+    "stage",
+    "tongue",
+    "vitals"
+   ],
+   "glossary": 12,
+   "codex": 8
+  },
+  {
+   "id": "tcm-intern-clinic",
+   "department": "tcm-intern-clinic",
+   "case": "main",
+   "faculty": "tcm",
+   "title": {
+    "zh": "中醫實習門診值班日",
+    "en": "A day in the TCM teaching clinic"
+   },
+   "caseTitle": {
+    "zh": "第一次獨立初診",
+    "en": "Your first solo new patient"
+   },
+   "condition": {
+    "zh": "初診 · 胃脘痛",
+    "en": "First visit · epigastric pain"
+   },
+   "difficulty": 1,
+   "tagline": {
+    "zh": "兩個胃痛，一個是心臟",
+    "en": "Two stomach pains; one of them is a heart"
+   },
+   "room": "tcm-clinic",
+   "minutes": 25,
+   "roles": [
+    {
+     "id": "intern",
+     "zh": "中醫實習醫師",
+     "en": "TCM intern"
+    },
+    {
+     "id": "educator",
+     "zh": "衛教護理師",
+     "en": "Education nurse"
+    }
+   ],
+   "segs": 8,
+   "beats": 25,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "herb",
+    "order",
+    "points",
+    "pulse",
+    "tongue",
+    "vitals"
+   ],
+   "glossary": 13,
+   "codex": 8
+  },
+  {
+   "id": "tcm-intern-clinic--follow-up",
+   "department": "tcm-intern-clinic",
+   "case": "follow-up",
+   "faculty": "tcm",
+   "title": {
+    "zh": "中醫實習門診：複診日",
+    "en": "TCM teaching clinic: follow-up day"
+   },
+   "caseTitle": {
+    "zh": "複診日：方跟著證走",
+    "en": "Follow-up day: formula follows pattern"
+   },
+   "condition": {
+    "zh": "複診 · 調方與藥物安全",
+    "en": "Follow-up · adjusting, drug safety"
+   },
+   "difficulty": 2,
+   "tagline": {
+    "zh": "上次很有效，不代表這次照開",
+    "en": "“It worked last time” is not a prescription"
+   },
+   "room": "tcm-clinic",
+   "minutes": 25,
+   "roles": [
+    {
+     "id": "intern",
+     "zh": "中醫實習醫師",
+     "en": "TCM intern"
+    },
+    {
+     "id": "pharmacist",
+     "zh": "中藥藥師",
+     "en": "TCM pharmacist"
+    }
+   ],
+   "segs": 7,
+   "beats": 20,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "herb",
+    "order",
+    "points",
+    "pulse",
+    "tongue",
+    "vitals"
+   ],
+   "glossary": 13,
+   "codex": 8
+  },
+  {
+   "id": "tcm-intern-clinic--ward-consult",
+   "department": "tcm-intern-clinic",
+   "case": "ward-consult",
+   "faculty": "tcm",
+   "title": {
+    "zh": "中醫實習：外科病房會診",
+    "en": "TCM training: a surgical-ward consult"
+   },
+   "caseTitle": {
+    "zh": "病房會診：中西整合",
+    "en": "Ward consult: integrative care"
+   },
+   "condition": {
+    "zh": "整合 · 術後腸麻痺",
+    "en": "Integrative · post-op ileus"
+   },
+   "difficulty": 3,
+   "tagline": {
+    "zh": "回答被問的問題，知道什麼時候停手",
+    "en": "Answer the question asked; know when to stop"
+   },
+   "room": "ward",
+   "minutes": 26,
+   "roles": [
+    {
+     "id": "resident",
+     "zh": "中醫住院醫師",
+     "en": "TCM resident"
+    },
+    {
+     "id": "nurse",
+     "zh": "病房護理師",
+     "en": "Ward nurse"
+    }
+   ],
+   "segs": 7,
+   "beats": 18,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "herb",
+    "order",
+    "points",
+    "pulse",
+    "tongue",
+    "vitals"
+   ],
+   "glossary": 13,
+   "codex": 8
+  },
+  {
+   "id": "tcm-internal",
+   "department": "tcm-internal",
+   "case": "main",
+   "faculty": "tcm",
+   "title": {
+    "zh": "中醫內科值班日",
+    "en": "A shift in TCM internal medicine"
+   },
+   "caseTitle": {
+    "zh": "雨天的三個感冒",
+    "en": "Three colds on a rainy day"
+   },
+   "condition": {
+    "zh": "外感 · 風寒感冒",
+    "en": "External · wind-cold common cold"
+   },
+   "difficulty": 1,
+   "tagline": {
+    "zh": "有汗無汗是第一問；喘不喘比寒熱更早問",
+    "en": "Sweat or no sweat comes first; breathlessness comes even earlier"
+   },
+   "room": "tcm-clinic",
+   "minutes": 26,
+   "roles": [
+    {
+     "id": "intern",
+     "zh": "中醫見習醫師",
+     "en": "TCM clinical clerk"
+    },
+    {
+     "id": "nurse",
+     "zh": "跟診護理師",
+     "en": "Clinic nurse"
+    }
+   ],
+   "segs": 8,
+   "beats": 24,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "herb",
+    "order",
+    "points",
+    "pulse",
+    "stage",
+    "tongue",
+    "vitals"
+   ],
+   "glossary": 14,
+   "codex": 9
+  },
+  {
+   "id": "tcm-internal--insomnia",
+   "department": "tcm-internal",
+   "case": "insomnia",
+   "faculty": "tcm",
+   "title": {
+    "zh": "中醫內科：不寐門診",
+    "en": "TCM internal medicine: insomnia clinic"
+   },
+   "caseTitle": {
+    "zh": "晚診：睡不著的人",
+    "en": "Evening clinic: the sleepless"
+   },
+   "condition": {
+    "zh": "內傷 · 不寐",
+    "en": "Internal damage · insomnia"
+   },
+   "difficulty": 2,
+   "tagline": {
+    "zh": "一個要補，一個要清；一句話要接住",
+    "en": "One to tonify, one to clear, one sentence to catch"
+   },
+   "room": "tcm-clinic",
+   "minutes": 27,
+   "roles": [
+    {
+     "id": "resident",
+     "zh": "中醫住院醫師",
+     "en": "TCM resident"
+    },
+    {
+     "id": "assistant",
+     "zh": "針灸助理",
+     "en": "Acupuncture assistant"
+    }
+   ],
+   "segs": 8,
+   "beats": 20,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "herb",
+    "order",
+    "points",
+    "pulse",
+    "stage",
+    "tongue",
+    "vitals"
+   ],
+   "glossary": 13,
+   "codex": 8
+  },
+  {
+   "id": "tcm-internal--spleen-diarrhea",
+   "department": "tcm-internal",
+   "case": "spleen-diarrhea",
+   "faculty": "tcm",
+   "title": {
+    "zh": "中醫內科：脾胃日",
+    "en": "TCM internal medicine: spleen day"
+   },
+   "caseTitle": {
+    "zh": "灸療室：兩種拉肚子",
+    "en": "The moxa room: two kinds of runs"
+   },
+   "condition": {
+    "zh": "脾胃 · 脾虛泄瀉",
+    "en": "Spleen-stomach · chronic diarrhoea"
+   },
+   "difficulty": 3,
+   "tagline": {
+    "zh": "一個要灸，一個不能灸；粥是最好的藥",
+    "en": "One gets moxa, one must not; porridge is the best medicine"
+   },
+   "room": "acupuncture",
+   "minutes": 26,
+   "roles": [
+    {
+     "id": "resident",
+     "zh": "中醫住院醫師",
+     "en": "TCM resident"
+    },
+    {
+     "id": "moxanurse",
+     "zh": "灸療護理師",
+     "en": "Moxibustion nurse"
+    }
+   ],
+   "segs": 9,
+   "beats": 20,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "herb",
+    "order",
+    "points",
+    "pulse",
+    "stage",
+    "tongue",
+    "vitals"
+   ],
+   "glossary": 13,
+   "codex": 8
+  },
+  {
+   "id": "tcm-specialties",
+   "department": "tcm-specialties",
+   "case": "main",
+   "faculty": "tcm",
+   "title": {
+    "zh": "中醫婦科針灸日",
+    "en": "A TCM gynaecology acupuncture day"
+   },
+   "caseTitle": {
+    "zh": "每個月的那幾天",
+    "en": "Those days every month"
+   },
+   "condition": {
+    "zh": "婦科 · 痛經",
+    "en": "Gynaecology · dysmenorrhoea"
+   },
+   "difficulty": 2,
+   "tagline": {
+    "zh": "一個怕冷的肚子，一個不是痛經的痛",
+    "en": "One cold belly, and one pain that was never period pain"
+   },
+   "room": "acupuncture",
+   "minutes": 25,
+   "roles": [
+    {
+     "id": "intern",
+     "zh": "中醫見習醫師",
+     "en": "TCM clinical clerk"
+    },
+    {
+     "id": "assistant",
+     "zh": "針灸助理",
+     "en": "Acupuncture assistant"
+    }
+   ],
+   "segs": 7,
+   "beats": 22,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "herb",
+    "order",
+    "points",
+    "pulse",
+    "stage",
+    "tongue",
+    "vitals"
+   ],
+   "glossary": 14,
+   "codex": 7
+  },
+  {
+   "id": "tcm-specialties--ankle-sprain",
+   "department": "tcm-specialties",
+   "case": "ankle-sprain",
+   "faculty": "tcm",
+   "title": {
+    "zh": "中醫傷科：腳踝的一天",
+    "en": "TCM traumatology: a day of ankles"
+   },
+   "caseTitle": {
+    "zh": "球場上翻過去的腳踝",
+    "en": "The ankle that rolled on court"
+   },
+   "condition": {
+    "zh": "傷科 · 踝關節扭傷",
+    "en": "Traumatology · ankle sprain"
+   },
+   "difficulty": 2,
+   "tagline": {
+    "zh": "先排除骨折，再談推拿",
+    "en": "Rule out the fracture, then talk tuina"
+   },
+   "room": "tuina",
+   "minutes": 25,
+   "roles": [
+    {
+     "id": "intern",
+     "zh": "中醫見習醫師",
+     "en": "TCM clinical clerk"
+    },
+    {
+     "id": "therapist",
+     "zh": "傷科治療師",
+     "en": "Traumatology therapist"
+    }
+   ],
+   "segs": 7,
+   "beats": 20,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "herb",
+    "imaging",
+    "order",
+    "points",
+    "pulse",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 14,
+   "codex": 6
+  },
+  {
+   "id": "tcm-specialties--eczema",
+   "department": "tcm-specialties",
+   "case": "eczema",
+   "faculty": "tcm",
+   "title": {
+    "zh": "中醫皮膚科：濕疹門診",
+    "en": "TCM dermatology: an eczema clinic"
+   },
+   "caseTitle": {
+    "zh": "抓不完的癢",
+    "en": "The itch that never ends"
+   },
+   "condition": {
+    "zh": "皮膚科 · 濕疹",
+    "en": "Dermatology · eczema"
+   },
+   "difficulty": 3,
+   "tagline": {
+    "zh": "一雙裂開的手，一張不該起水泡的臉",
+    "en": "Cracked hands, and a face that should never have blistered"
+   },
+   "room": "tcm-clinic",
+   "minutes": 25,
+   "roles": [
+    {
+     "id": "intern",
+     "zh": "中醫見習醫師",
+     "en": "TCM clinical clerk"
+    },
+    {
+     "id": "nurse",
+     "zh": "皮膚衛教護理師",
+     "en": "Skin-care nurse educator"
+    }
+   ],
+   "segs": 6,
+   "beats": 20,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "herb",
+    "order",
+    "points",
+    "stage",
+    "tongue",
+    "vitals"
+   ],
+   "glossary": 13,
+   "codex": 7
+  },
+  {
+   "id": "thai-massage",
+   "department": "thai-massage",
+   "case": "main",
+   "faculty": "tcm",
+   "title": {
+    "zh": "泰式按摩治療室值班日",
+    "en": "A shift in the Thai massage room"
+   },
+   "caseTitle": {
+    "zh": "低頭族的肩頸",
+    "en": "A head-down neck and shoulders"
+   },
+   "condition": {
+    "zh": "肌骨 · 辦公室肩頸緊繃",
+    "en": "Musculoskeletal · office neck and shoulders"
+   },
+   "difficulty": 1,
+   "tagline": {
+    "zh": "從 Wai Khru 到最後一位晚班客人",
+    "en": "From the Wai Khru to the last evening client"
+   },
+   "room": "tuina",
+   "minutes": 25,
+   "roles": [
+    {
+     "id": "intern",
+     "zh": "中醫見習醫師",
+     "en": "TCM clinical clerk"
+    },
+    {
+     "id": "therapist",
+     "zh": "泰式按摩治療師",
+     "en": "Thai massage therapist"
+    }
+   ],
+   "segs": 7,
+   "beats": 20,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "order",
+    "points",
+    "pulse",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 13,
+   "codex": 8
+  },
+  {
+   "id": "thai-massage--post-sport",
+   "department": "thai-massage",
+   "case": "post-sport",
+   "faculty": "tcm",
+   "title": {
+    "zh": "泰式按摩：馬拉松隔天",
+    "en": "Thai massage: the day after the marathon"
+   },
+   "caseTitle": {
+    "zh": "馬拉松隔天的兩雙腿",
+    "en": "Two pairs of legs after the marathon"
+   },
+   "condition": {
+    "zh": "運動後 · 延遲性肌肉痠痛",
+    "en": "Post-exercise · delayed-onset soreness"
+   },
+   "difficulty": 2,
+   "tagline": {
+    "zh": "鐵腿可以按，可樂色的尿不行",
+    "en": "Sore legs can be massaged; cola-coloured urine cannot"
+   },
+   "room": "tuina",
+   "minutes": 25,
+   "roles": [
+    {
+     "id": "intern",
+     "zh": "中醫見習醫師",
+     "en": "TCM clinical clerk"
+    },
+    {
+     "id": "therapist",
+     "zh": "泰式按摩治療師",
+     "en": "Thai massage therapist"
+    }
+   ],
+   "segs": 8,
+   "beats": 22,
+   "minis": [
+    "choice",
+    "drill",
+    "order",
+    "points",
+    "pulse",
+    "stage",
+    "tongue",
+    "vitals"
+   ],
+   "glossary": 12,
+   "codex": 8
+  },
+  {
+   "id": "thai-massage--screening",
+   "department": "thai-massage",
+   "case": "screening",
+   "faculty": "tcm",
+   "title": {
+    "zh": "泰式按摩：篩檢的早晨",
+    "en": "Thai massage: a morning of screening"
+   },
+   "caseTitle": {
+    "zh": "週六早上的問卷",
+    "en": "Saturday morning forms"
+   },
+   "condition": {
+    "zh": "安全 · 禁忌篩檢",
+    "en": "Safety · contraindication screening"
+   },
+   "difficulty": 3,
+   "tagline": {
+    "zh": "一張問卷、三位客人、三個不同的答案",
+    "en": "One form, three clients, three different answers"
+   },
+   "room": "tuina",
+   "minutes": 25,
+   "roles": [
+    {
+     "id": "intern",
+     "zh": "中醫見習醫師",
+     "en": "TCM clinical clerk"
+    },
+    {
+     "id": "therapist",
+     "zh": "泰式按摩治療師",
+     "en": "Thai massage therapist"
+    }
+   ],
+   "segs": 7,
+   "beats": 21,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "order",
+    "points",
+    "pulse",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 13,
+   "codex": 8
+  },
+  {
+   "id": "thoracic-surgery",
    "department": "thoracic-surgery",
+   "case": "main",
+   "faculty": "western",
    "title": {
     "zh": "胸腔外科值班日",
     "en": "A shift in thoracic surgery"
    },
+   "caseTitle": {
+    "zh": "胸腔外科值班日",
+    "en": "A shift in thoracic surgery"
+   },
+   "condition": null,
+   "difficulty": 2,
    "tagline": {
     "zh": "一邊肺先休息，另一邊替它呼吸",
     "en": "One lung rests while the other breathes for both"
@@ -1540,11 +8060,272 @@
    "codex": 9
   },
   {
+   "id": "thoracic-surgery--chest-trauma",
+   "department": "thoracic-surgery",
+   "case": "chest-trauma",
+   "faculty": "western",
+   "title": {
+    "zh": "胸腔外科值班夜：急診",
+    "en": "Thoracic surgery on call: the ER"
+   },
+   "caseTitle": {
+    "zh": "外送員的左胸",
+    "en": "The delivery rider's left chest"
+   },
+   "condition": {
+    "zh": "外傷 · 胸部創傷",
+    "en": "Trauma · chest injury"
+   },
+   "difficulty": 3,
+   "tagline": {
+    "zh": "張力性氣胸不等 X 光，胸管是說實話的",
+    "en": "Tension waits for no X-ray; the drain tells the truth"
+   },
+   "room": "er",
+   "minutes": 26,
+   "roles": [
+    {
+     "id": "resident",
+     "zh": "胸腔外科住院醫師",
+     "en": "Thoracic surgery resident"
+    },
+    {
+     "id": "rt",
+     "zh": "呼吸治療師",
+     "en": "Respiratory therapist"
+    }
+   ],
+   "segs": 7,
+   "beats": 20,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "imaging",
+    "order",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 13,
+   "codex": 7
+  },
+  {
+   "id": "thoracic-surgery--hyperhidrosis",
+   "department": "thoracic-surgery",
+   "case": "hyperhidrosis",
+   "faculty": "western",
+   "title": {
+    "zh": "胸腔外科日間手術",
+    "en": "Thoracic surgery day case"
+   },
+   "caseTitle": {
+    "zh": "滴在樂譜上的汗",
+    "en": "Sweat on the score"
+   },
+   "condition": {
+    "zh": "日間手術 · 手汗症",
+    "en": "Day surgery · palmar hyperhidrosis"
+   },
+   "difficulty": 1,
+   "tagline": {
+    "zh": "手乾了很容易，同意書才是最難的一刀",
+    "en": "Dry hands are easy; the consent is the hardest cut"
+   },
+   "room": "clinic",
+   "minutes": 22,
+   "roles": [
+    {
+     "id": "resident",
+     "zh": "胸腔外科住院醫師",
+     "en": "Thoracic surgery resident"
+    },
+    {
+     "id": "pacu-nurse",
+     "zh": "恢復室護理師",
+     "en": "Recovery-room nurse"
+    }
+   ],
+   "segs": 7,
+   "beats": 19,
+   "minis": [
+    "choice",
+    "drill",
+    "imaging",
+    "order",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 12,
+   "codex": 8
+  },
+  {
+   "id": "tuina",
+   "department": "tuina",
+   "case": "main",
+   "faculty": "tcm",
+   "title": {
+    "zh": "推拿科值班日",
+    "en": "A shift in tuina"
+   },
+   "caseTitle": {
+    "zh": "閃到腰的早晨",
+    "en": "The morning a back went out"
+   },
+   "condition": {
+    "zh": "傷科 · 急性腰扭傷",
+    "en": "Trauma · acute lumbar sprain"
+   },
+   "difficulty": 2,
+   "tagline": {
+    "zh": "閃到腰的搬家師傅，和一個不能推的人",
+    "en": "A mover who put his back out, and a patient you must not treat"
+   },
+   "room": "tuina",
+   "minutes": 25,
+   "roles": [
+    {
+     "id": "intern",
+     "zh": "中醫見習醫師",
+     "en": "TCM clinical clerk"
+    },
+    {
+     "id": "therapist",
+     "zh": "推拿治療師",
+     "en": "Tuina therapist"
+    }
+   ],
+   "segs": 7,
+   "beats": 25,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "imaging",
+    "order",
+    "points",
+    "pulse",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 13,
+   "codex": 9
+  },
+  {
+   "id": "tuina--frozen-shoulder",
+   "department": "tuina",
+   "case": "frozen-shoulder",
+   "faculty": "tcm",
+   "title": {
+    "zh": "推拿科：五十肩的一天",
+    "en": "Tuina: a day of frozen shoulders"
+   },
+   "caseTitle": {
+    "zh": "抬不起來的左肩",
+    "en": "The left arm that would not lift"
+   },
+   "condition": {
+    "zh": "肩周炎 · 凍結期",
+    "en": "Frozen shoulder · frozen phase"
+   },
+   "difficulty": 3,
+   "tagline": {
+    "zh": "一個肩膀慢慢鬆，另一個肩膀要送急診",
+    "en": "One shoulder loosens slowly; the other goes to emergency"
+   },
+   "room": "tuina",
+   "minutes": 25,
+   "roles": [
+    {
+     "id": "intern",
+     "zh": "中醫見習醫師",
+     "en": "TCM clinical clerk"
+    },
+    {
+     "id": "therapist",
+     "zh": "推拿治療師",
+     "en": "Tuina therapist"
+    }
+   ],
+   "segs": 6,
+   "beats": 21,
+   "minis": [
+    "choice",
+    "drill",
+    "order",
+    "points",
+    "pulse",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 12,
+   "codex": 8
+  },
+  {
+   "id": "tuina--pediatric-food",
+   "department": "tuina",
+   "case": "pediatric-food",
+   "faculty": "tcm",
+   "title": {
+    "zh": "小兒推拿門診日",
+    "en": "A day in paediatric tuina"
+   },
+   "caseTitle": {
+    "zh": "不吃飯的糖糖",
+    "en": "Tang-Tang will not eat"
+   },
+   "condition": {
+    "zh": "兒科 · 小兒食積",
+    "en": "Paediatrics · food accumulation"
+   },
+   "difficulty": 1,
+   "tagline": {
+    "zh": "一個脹脹的小肚子，和一通不能等到天亮的電話",
+    "en": "A small bloated tummy, and a call that cannot wait for morning"
+   },
+   "room": "tcm-clinic",
+   "minutes": 25,
+   "roles": [
+    {
+     "id": "intern",
+     "zh": "中醫見習醫師",
+     "en": "TCM clinical clerk"
+    },
+    {
+     "id": "therapist",
+     "zh": "小兒推拿治療師",
+     "en": "Paediatric tuina therapist"
+    }
+   ],
+   "segs": 6,
+   "beats": 19,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "herb",
+    "order",
+    "points",
+    "stage",
+    "tongue"
+   ],
+   "glossary": 13,
+   "codex": 8
+  },
+  {
+   "id": "urology",
    "department": "urology",
+   "case": "main",
+   "faculty": "western",
    "title": {
     "zh": "泌尿科值班日",
     "en": "A shift in urology"
    },
+   "caseTitle": {
+    "zh": "泌尿科值班日",
+    "en": "A shift in urology"
+   },
+   "condition": null,
+   "difficulty": 2,
    "tagline": {
     "zh": "一條安全導線、一顆石頭、一顆發燒的腎",
     "en": "A safety wire, a stone and a feverish kidney"
@@ -1577,11 +8358,118 @@
    "codex": 9
   },
   {
+   "id": "urology--colic-mimic",
+   "department": "urology",
+   "case": "colic-mimic",
+   "faculty": "western",
+   "title": {
+    "zh": "泌尿科：急診的腰痛日",
+    "en": "Urology: a day of flank pain in the ER"
+   },
+   "caseTitle": {
+    "zh": "不是每一個腎絞痛",
+    "en": "Not every renal colic"
+   },
+   "condition": {
+    "zh": "急性腹症 · 腎絞痛",
+    "en": "Acute abdomen · renal colic"
+   },
+   "difficulty": 3,
+   "tagline": {
+    "zh": "一顆小石頭、一顆假裝成石頭的動脈瘤、一顆唯一的腎",
+    "en": "A small stone, an aneurysm pretending to be one, and the only kidney she has"
+   },
+   "room": "er",
+   "minutes": 22,
+   "roles": [
+    {
+     "id": "resident",
+     "zh": "泌尿科住院醫師（急診會診）",
+     "en": "Urology resident (ER consults)"
+    },
+    {
+     "id": "triage",
+     "zh": "急診檢傷護理師",
+     "en": "ER triage nurse"
+    }
+   ],
+   "segs": 7,
+   "beats": 17,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "imaging",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 13,
+   "codex": 7
+  },
+  {
+   "id": "urology--stent-clinic",
+   "department": "urology",
+   "case": "stent-clinic",
+   "faculty": "western",
+   "title": {
+    "zh": "泌尿科門診日",
+    "en": "A urology clinic day"
+   },
+   "caseTitle": {
+    "zh": "被遺忘的雙 J 管",
+    "en": "The forgotten stent"
+   },
+   "condition": {
+    "zh": "慢性病 · 結石門診追蹤",
+    "en": "Chronic care · stone clinic"
+   },
+   "difficulty": 1,
+   "tagline": {
+    "zh": "一張登錄表、一條忘了一年的管子、一杯不敢喝的水",
+    "en": "A register, a tube forgotten for a year, and a glass of water nobody dares drink"
+   },
+   "room": "clinic",
+   "minutes": 20,
+   "roles": [
+    {
+     "id": "resident",
+     "zh": "泌尿科住院醫師（門診）",
+     "en": "Urology resident (clinic)"
+    },
+    {
+     "id": "uro-nurse",
+     "zh": "泌尿科門診護理師",
+     "en": "Urology clinic nurse"
+    }
+   ],
+   "segs": 8,
+   "beats": 16,
+   "minis": [
+    "choice",
+    "drill",
+    "imaging",
+    "order",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 12,
+   "codex": 7
+  },
+  {
+   "id": "vascular-surgery",
    "department": "vascular-surgery",
+   "case": "main",
+   "faculty": "western",
    "title": {
     "zh": "血管外科值班日",
     "en": "A shift in vascular surgery"
    },
+   "caseTitle": {
+    "zh": "血管外科值班日",
+    "en": "A shift in vascular surgery"
+   },
+   "condition": null,
+   "difficulty": 2,
    "tagline": {
     "zh": "一條導絲跨過髂動脈，一通電話跨過整個下午",
     "en": "A wire crosses the iliac; one phone call crosses the whole afternoon"
@@ -1613,6 +8501,105 @@
    ],
    "glossary": 13,
    "codex": 8
+  },
+  {
+   "id": "vascular-surgery--acute-limb",
+   "department": "vascular-surgery",
+   "case": "acute-limb",
+   "faculty": "western",
+   "title": {
+    "zh": "血管外科值班：病房會診",
+    "en": "Vascular surgery: a ward consult"
+   },
+   "caseTitle": {
+    "zh": "九點十四分，腳變冷了",
+    "en": "Fourteen past nine, the leg went cold"
+   },
+   "condition": {
+    "zh": "急症 · 急性肢體缺血",
+    "en": "Emergency · acute limb ischaemia"
+   },
+   "difficulty": 3,
+   "tagline": {
+    "zh": "腳不會說謊，但會越來越小聲",
+    "en": "A leg never lies, but it gets quieter"
+   },
+   "room": "ward",
+   "minutes": 25,
+   "roles": [
+    {
+     "id": "resident",
+     "zh": "血管外科住院醫師",
+     "en": "Vascular surgery resident"
+    },
+    {
+     "id": "ward-nurse",
+     "zh": "內科病房護理師",
+     "en": "Medical ward nurse"
+    }
+   ],
+   "segs": 7,
+   "beats": 19,
+   "minis": [
+    "choice",
+    "drill",
+    "imaging",
+    "order",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 13,
+   "codex": 7
+  },
+  {
+   "id": "vascular-surgery--av-fistula",
+   "department": "vascular-surgery",
+   "case": "av-fistula",
+   "faculty": "western",
+   "title": {
+    "zh": "血管外科日間手術日",
+    "en": "Vascular surgery day-surgery list"
+   },
+   "caseTitle": {
+    "zh": "一條留給洗腎的靜脈",
+    "en": "A vein saved for dialysis"
+   },
+   "condition": {
+    "zh": "日間手術 · 洗腎瘻管",
+    "en": "Day surgery · dialysis fistula"
+   },
+   "difficulty": 1,
+   "tagline": {
+    "zh": "洗腎的人，手臂就是命",
+    "en": "For a dialysis patient, the arm is life"
+   },
+   "room": "clinic",
+   "minutes": 22,
+   "roles": [
+    {
+     "id": "resident",
+     "zh": "血管外科住院醫師",
+     "en": "Vascular surgery resident"
+    },
+    {
+     "id": "ds-nurse",
+     "zh": "日間手術室護理師",
+     "en": "Day-surgery nurse"
+    }
+   ],
+   "segs": 7,
+   "beats": 19,
+   "minis": [
+    "choice",
+    "drill",
+    "find",
+    "imaging",
+    "order",
+    "stage",
+    "vitals"
+   ],
+   "glossary": 13,
+   "codex": 7
   }
  ]
 }

@@ -1,0 +1,1362 @@
+{
+ "format": "huatuo-shift-v2",
+ "department": "pulmonology",
+ "case": "haemoptysis",
+ "caseTitle": {
+  "zh": "凌晨的大咯血",
+  "en": "Massive haemoptysis before dawn"
+ },
+ "condition": {
+  "zh": "急症 · 大咯血",
+  "en": "Emergency · massive haemoptysis"
+ },
+ "difficulty": 3,
+ "room": "icu",
+ "title": {
+  "zh": "胸腔內科：會出血的肺",
+  "en": "Pulmonology: the bleeding lung"
+ },
+ "tagline": {
+  "zh": "出血的那一邊朝下",
+  "en": "Bleeding side down"
+ },
+ "minutes": 25,
+ "roles": [
+  {
+   "id": "fellow",
+   "zh": "胸腔內科研修醫師",
+   "en": "Pulmonology fellow",
+   "desc": {
+    "zh": "凌晨的加護病房，你拿著支氣管鏡。你要先確認血從哪裡來，再決定氣道怎麼保護。",
+    "en": "In the small hours of the ICU you hold the bronchoscope. First find where the blood comes from, then decide how to protect the airway."
+   }
+  },
+  {
+   "id": "icu-nurse",
+   "zh": "加護病房護理師",
+   "en": "ICU nurse",
+   "desc": {
+    "zh": "擺位、抽吸、計算出血量、接呼吸器。醫師看支氣管裡，你看整個人。",
+    "en": "Positioning, suction, measuring the blood, the ventilator. The doctors look inside the bronchi; you look at the whole person."
+   }
+  }
+ ],
+ "cast": {
+  "attending": {
+   "name": {
+    "zh": "白主治",
+    "en": "Dr Pai"
+   },
+   "role": {
+    "zh": "胸腔重症主治醫師（師傅）",
+    "en": "Consultant chest physician (mentor)"
+   },
+   "tag": "ATT",
+   "color": "#81296d",
+   "about": {
+    "zh": "凌晨三點也打著領帶，保溫瓶裡是太太煮的薑母茶。口頭禪：「出血的那一邊朝下。」",
+    "en": "Wears a tie even at three in the morning; his flask holds ginger tea his wife brews. Catchphrase: \"Bleeding side down.\""
+   },
+   "body": "mentor"
+  },
+  "charge": {
+   "name": {
+    "zh": "阿蓮",
+    "en": "Ah-Lien"
+   },
+   "role": {
+    "zh": "加護病房護理長",
+    "en": "ICU charge nurse"
+   },
+   "tag": "RN",
+   "color": "#3b8f6a",
+   "about": {
+    "zh": "大咯血的病人一來，她先拿出兩套抽吸和一個量杯。她說：「說『很多』沒用，要說多少。」",
+    "en": "When a bleeding patient arrives she sets out two suction lines and a measuring jug. \"Saying 'a lot' is useless; say how much.\""
+   },
+   "body": "nurse"
+  },
+  "mr-cheng": {
+   "name": {
+    "zh": "鄭先生",
+    "en": "Mr Cheng"
+   },
+   "role": {
+    "zh": "病人：支氣管擴張症，咳血",
+    "en": "Patient: bronchiectasis, coughing blood"
+   },
+   "tag": "PT",
+   "color": "#4a7fb5",
+   "about": {
+    "zh": "五十二歲，漁港補網師傅。小時候得過麻疹肺炎，從此每天早上咳痰。這週發燒、痰變多，今晚咳出一大碗血。",
+    "en": "Fifty-two, mends nets at the fishing harbour. Had measles pneumonia as a child and has coughed sputum every morning since. Fever and more sputum this week; tonight a whole bowl of blood."
+   },
+   "body": "patient"
+  },
+  "cheng-daughter": {
+   "name": {
+    "zh": "鄭小姐",
+    "en": "Ms Cheng"
+   },
+   "role": {
+    "zh": "鄭先生的女兒",
+    "en": "Mr Cheng's daughter"
+   },
+   "tag": "FAM",
+   "color": "#c06c84",
+   "about": {
+    "zh": "護理系三年級，看得出爸爸在怕。口袋裡放著爸爸的補網梭。",
+    "en": "Third-year nursing student who can tell her father is scared. His net-mending shuttle is in her pocket."
+   },
+   "body": "family"
+  },
+  "ms-hsu": {
+   "name": {
+    "zh": "許阿姨",
+    "en": "Mrs Hsu"
+   },
+   "role": {
+    "zh": "病人：急診轉來的「咳血」",
+    "en": "Patient: \"coughing blood\" from the ED"
+   },
+   "tag": "PT",
+   "color": "#b5651d",
+   "about": {
+    "zh": "六十八歲，心律不整在吃抗凝血劑。半夜「咳出血塊」，嚇得叫救護車。一直用衛生紙擦鼻子。",
+    "en": "Sixty-eight, on an anticoagulant for an irregular heartbeat. Woke \"coughing up clots\" and called an ambulance. Keeps dabbing her nose with tissues."
+   },
+   "body": "patient"
+  },
+  "er-doc": {
+   "name": {
+    "zh": "急診蘇醫師",
+    "en": "Dr Su (ED)"
+   },
+   "role": {
+    "zh": "急診主治醫師",
+    "en": "Emergency physician"
+   },
+   "tag": "ER",
+   "color": "#d9534f",
+   "about": {
+    "zh": "今晚急診滿床，電話講得很快：「咳血，要加護，拜託。」",
+    "en": "The ED is full tonight; he talks fast: \"Haemoptysis, needs ICU, please.\""
+   },
+   "phoneOnly": true
+  },
+  "ir": {
+   "name": {
+    "zh": "放射科介入陳醫師",
+    "en": "Dr Chen (interventional radiology)"
+   },
+   "role": {
+    "zh": "介入放射科主治醫師",
+    "en": "Interventional radiologist"
+   },
+   "tag": "IR",
+   "color": "#5b4a9e",
+   "about": {
+    "zh": "半夜被叫起來，第一句話是「斷層血管攝影傳給我看」。",
+    "en": "Woken at night, her first words: \"Send me the CT angiogram.\""
+   },
+   "phoneOnly": true
+  }
+ },
+ "places": {
+  "board": {
+   "name": {
+    "zh": "加護病房白板",
+    "en": "ICU board"
+   },
+   "hot": "whiteboard"
+  },
+  "bed1": {
+   "name": {
+    "zh": "加護一床",
+    "en": "ICU bed 1"
+   },
+   "hot": "field"
+  },
+  "bed3": {
+   "name": {
+    "zh": "加護三床",
+    "en": "ICU bed 3"
+   },
+   "hot": "recovery"
+  },
+  "monitor": {
+   "name": {
+    "zh": "生理監視器",
+    "en": "Patient monitor"
+   },
+   "hot": "monitor"
+  },
+  "vent": {
+   "name": {
+    "zh": "呼吸器",
+    "en": "Ventilator"
+   },
+   "hot": "device"
+  },
+  "bronch": {
+   "name": {
+    "zh": "支氣管鏡車",
+    "en": "Bronchoscopy cart"
+   },
+   "hot": "endoscopy"
+  },
+  "viewer": {
+   "name": {
+    "zh": "影像工作站",
+    "en": "Image viewer"
+   },
+   "hot": "imaging"
+  },
+  "cart": {
+   "name": {
+    "zh": "急救車",
+    "en": "Crash cart"
+   },
+   "hot": "crash-cart"
+  },
+  "station": {
+   "name": {
+    "zh": "護理站",
+    "en": "Nurses' station"
+   },
+   "hot": "desk"
+  }
+ },
+ "glossary": [
+  {
+   "term": {
+    "zh": "咯血",
+    "en": "haemoptysis"
+   },
+   "plain": {
+    "zh": "血從氣管或肺咳出來，常帶泡沫、鮮紅色。",
+    "en": "Blood coughed up from the airways or lungs, often frothy and bright red."
+   }
+  },
+  {
+   "term": {
+    "zh": "大咯血",
+    "en": "massive haemoptysis"
+   },
+   "plain": {
+    "zh": "出血多到影響呼吸或血壓。病人通常不是失血而死，而是被血淹沒氣道窒息。",
+    "en": "Bleeding enough to threaten breathing or blood pressure. Patients die not from blood loss but from drowning in it."
+   }
+  },
+  {
+   "term": {
+    "zh": "吐血",
+    "en": "haematemesis"
+   },
+   "plain": {
+    "zh": "從胃或食道吐出來的血，常是暗紅或咖啡色、帶食物、伴噁心。",
+    "en": "Blood vomited from the stomach or oesophagus, often dark or coffee-coloured, with food and nausea."
+   }
+  },
+  {
+   "term": {
+    "zh": "後鼻腔出血",
+    "en": "posterior epistaxis"
+   },
+   "plain": {
+    "zh": "鼻腔深處出血，血往喉嚨流，吞下去再咳出或吐出，很像咳血。吃抗凝血劑的人常見。",
+    "en": "Bleeding deep in the nose that runs down the throat and is swallowed, then coughed or vomited up, mimicking haemoptysis. Common on anticoagulants."
+   }
+  },
+  {
+   "term": {
+    "zh": "抗凝血劑",
+    "en": "anticoagulant"
+   },
+   "plain": {
+    "zh": "讓血不容易凝固的藥，用來預防中風或血栓。出血時要評估是否需要調整或反轉。",
+    "en": "A drug that slows clotting, used to prevent stroke or clots. When bleeding occurs, whether to hold or reverse it must be assessed."
+   }
+  },
+  {
+   "term": {
+    "zh": "支氣管擴張症",
+    "en": "bronchiectasis"
+   },
+   "plain": {
+    "zh": "支氣管被感染破壞後永久撐大，容易積痰、反覆感染，旁邊的血管也容易出血。",
+    "en": "Airways permanently widened after infection damage; they collect sputum, get infected and their vessels bleed easily."
+   }
+  },
+  {
+   "term": {
+    "zh": "出血側朝下",
+    "en": "bleeding side down"
+   },
+   "plain": {
+    "zh": "讓出血的那一側肺躺在下面，血就不會流進好的那一側。",
+    "en": "Lying the patient on the bleeding side so blood does not spill into the good lung."
+   }
+  },
+  {
+   "term": {
+    "zh": "氣道保護",
+    "en": "airway protection"
+   },
+   "plain": {
+    "zh": "用大號氣管內管插管，讓血抽得出來、支氣管鏡進得去，也讓好的肺有氧氣。",
+    "en": "Intubating with a large tube so blood can be suctioned, the bronchoscope can pass and the good lung gets oxygen."
+   }
+  },
+  {
+   "term": {
+    "zh": "支氣管鏡",
+    "en": "bronchoscopy"
+   },
+   "plain": {
+    "zh": "把細長的鏡子放進氣管，找出血從哪一葉來，抽吸、灌洗、局部止血。",
+    "en": "A thin scope passed into the airways to find which lobe is bleeding, suction it, wash it and apply local measures."
+   }
+  },
+  {
+   "term": {
+    "zh": "冰生理食鹽水灌洗",
+    "en": "cold saline lavage"
+   },
+   "plain": {
+    "zh": "用冰的生理食鹽水沖洗出血的支氣管，讓血管收縮、暫時止血。",
+    "en": "Washing the bleeding airway with cold saline so the vessels constrict and bleeding slows for a while."
+   }
+  },
+  {
+   "term": {
+    "zh": "電腦斷層血管攝影",
+    "en": "CT angiography"
+   },
+   "plain": {
+    "zh": "打顯影劑的電腦斷層，可以看出是哪一條支氣管動脈變粗、在出血，也能排除肺栓塞。",
+    "en": "A contrast CT that shows which bronchial artery is enlarged and bleeding, and can exclude pulmonary embolism."
+   }
+  },
+  {
+   "term": {
+    "zh": "支氣管動脈栓塞",
+    "en": "bronchial artery embolisation"
+   },
+   "plain": {
+    "zh": "介入放射科從大腿的動脈放導管到出血的支氣管動脈，把它塞住止血。",
+    "en": "An interventional radiologist threads a catheter from the groin artery to the bleeding bronchial artery and blocks it."
+   }
+  }
+ ],
+ "codex": [
+  {
+   "id": "bronchoscope",
+   "kind": "equipment",
+   "name": {
+    "zh": "支氣管鏡",
+    "en": "Bronchoscope"
+   },
+   "text": {
+    "zh": "大咯血時用的是工作管道大的鏡子，抽吸力才夠。旁邊要備冰生理食鹽水、止血用藥和氣球。",
+    "en": "In massive bleeding the scope needs a large working channel for enough suction. Cold saline, haemostatic agents and a balloon wait beside it."
+   },
+   "hot": "endoscopy"
+  },
+  {
+   "id": "suction-jar",
+   "kind": "equipment",
+   "name": {
+    "zh": "抽吸收集瓶與量杯",
+    "en": "Suction canister and jug"
+   },
+   "text": {
+    "zh": "阿蓮在收集瓶上貼刻度膠帶，每小時記錄。出血量是寫出來的，不是形容出來的。",
+    "en": "Ah-Lien tapes a scale to the canister and records it hourly. Blood loss is written down, not described."
+   },
+   "hot": "device"
+  },
+  {
+   "id": "ginger-tea",
+   "kind": "item",
+   "name": {
+    "zh": "白主治的薑母茶",
+    "en": "Dr Pai's ginger tea"
+   },
+   "text": {
+    "zh": "凌晨四點，他倒了一杯給你：「太太說值夜班的人要暖胃。」",
+    "en": "At four in the morning he pours you a cup: \"My wife says night workers need warm stomachs.\""
+   }
+  },
+  {
+   "id": "net-shuttle",
+   "kind": "item",
+   "name": {
+    "zh": "補網梭",
+    "en": "Net-mending shuttle"
+   },
+   "text": {
+    "zh": "鄭小姐放在爸爸手裡的木頭補網梭。他醒來第一件事，是用手指確認它還在。",
+    "en": "The wooden shuttle Ms Cheng put in her father's hand. The first thing he did on waking was feel that it was still there."
+   }
+  },
+  {
+   "id": "drowning",
+   "kind": "concept",
+   "name": {
+    "zh": "大咯血死於窒息，不是失血",
+    "en": "Massive haemoptysis kills by drowning"
+   },
+   "text": {
+    "zh": "大咯血的出血量常常不足以讓人失血休克，危險在於血塞住氣道、流進好的那一側肺。所以順序是：出血側朝下、給氧與抽吸、必要時用大號氣管內管插管保護氣道，再用支氣管鏡定位和局部止血，接著電腦斷層血管攝影找出血的支氣管動脈，由介入放射科栓塞。止不住時才考慮手術。全程要量化出血，不能只說「很多」。",
+    "en": "The volume of massive haemoptysis is rarely enough to cause shock; the danger is blood plugging the airway and spilling into the good lung. So: bleeding side down, oxygen and suction, intubation with a large tube to protect the airway if needed, then bronchoscopy to localise and treat, CT angiography to find the bleeding bronchial artery, and embolisation by interventional radiology. Surgery is for failure. Quantify the blood throughout; \"a lot\" is not a measurement."
+   }
+  },
+  {
+   "id": "where-from",
+   "kind": "concept",
+   "name": {
+    "zh": "先確認血從哪裡來",
+    "en": "First, where is the blood from?"
+   },
+   "text": {
+    "zh": "咳出來的血不一定來自肺。後鼻腔出血會往喉嚨流、吞下又咳出；消化道出血會吐出來、被誤認為咳血。看顏色和質地（鮮紅帶泡沫或暗紅帶食物）、問伴隨症狀（咳嗽或噁心）、看鼻腔和咽喉、問有沒有吃抗凝血劑。答錯方向，會讓不需要的支氣管鏡佔住真正需要的人。",
+    "en": "Blood brought up is not always from the lung. A posterior nosebleed runs down the throat and is swallowed and coughed up; gut bleeding is vomited and mistaken for haemoptysis. Look at colour and texture (bright frothy versus dark with food), ask about cough versus nausea, examine nose and throat, ask about anticoagulants. The wrong direction can tie up a bronchoscope someone else truly needs."
+   }
+  },
+  {
+   "id": "localise",
+   "kind": "concept",
+   "name": {
+    "zh": "定位，是為了擺位和栓塞",
+    "en": "Localise to position and embolise"
+   },
+   "text": {
+    "zh": "知道是哪一側、哪一葉在出血，才知道病人要往哪邊躺、管子要放哪一側、介入放射科要找哪一條血管。線索有三層：聽診（出血側常有囉音）、影像（胸部 X 光、電腦斷層血管攝影）、支氣管鏡（直接看到）。三者一致，信心最高。",
+    "en": "Knowing which side and which lobe is bleeding tells you which way to lie the patient, which side to place the tube and which vessel the radiologist must find. The clues come in three layers: auscultation (crackles on the bleeding side), imaging (chest film, CT angiography) and bronchoscopy (direct sight). When all three agree, confidence is highest."
+   }
+  }
+ ],
+ "segs": [
+  {
+   "id": "night",
+   "name": {
+    "zh": "凌晨的加護病房",
+    "en": "The ICU after midnight"
+   },
+   "sub": {
+    "zh": "01:00 · 加護病房白板",
+    "en": "01:00 · ICU board"
+   },
+   "t": 60,
+   "mood": "night",
+   "note": {
+    "zh": "接班",
+    "en": "Shift taken"
+   },
+   "beats": [
+    {
+     "id": "d1",
+     "to": "place:board",
+     "guide": {
+      "zh": "看白板",
+      "en": "Read the board"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "白板：「一床空、三床空。急診滿床。」窗外港口的燈一閃一閃。",
+        "en": "Board: \"Bed 1 empty, bed 3 empty. ED full.\" Harbour lights blink outside."
+       }
+      ],
+      [
+       "charge",
+       {
+        "zh": "空床兩張，我就知道今晚不會空太久。抽吸先準備兩套。",
+        "en": "Two empty beds. I know they will not stay empty. Two suction lines ready."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "d2",
+     "to": "attending",
+     "guide": {
+      "zh": "找白主治",
+      "en": "Find Dr Pai"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "（倒一口薑母茶）問你：大咯血的病人，通常死於什麼？",
+        "en": "(Pouring ginger tea) Question: what usually kills a patient with massive haemoptysis?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "不是失血……是窒息。血塞住氣道。",
+        "en": "Not blood loss... drowning. Blood blocks the airway."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "對。所以記住一句話：出血的那一邊朝下。",
+        "en": "Right. So remember one line: bleeding side down."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "hsu",
+   "name": {
+    "zh": "急診來的「咳血」",
+    "en": "\"Haemoptysis\" from the ED"
+   },
+   "sub": {
+    "zh": "01:20 · 加護三床",
+    "en": "01:20 · ICU bed 3"
+   },
+   "t": 80,
+   "mood": "night",
+   "note": {
+    "zh": "許阿姨：血從鼻子來",
+    "en": "Mrs Hsu: blood from the nose"
+   },
+   "beats": [
+    {
+     "id": "h1",
+     "lines": [
+      [
+       "er-doc",
+       {
+        "zh": "胸腔科嗎？六十八歲女性，咳出血塊，在吃抗凝血劑，生命徵象穩定。急診沒床，先送加護三床。",
+        "en": "Chest team? Sixty-eight-year-old woman coughing up clots, on an anticoagulant, vital signs stable. No ED beds; sending her to ICU bed 3."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "收到。我們先看。",
+        "en": "Got it. We will see her."
+       }
+      ]
+     ],
+     "ring": {
+      "title": {
+       "zh": "急診來電",
+       "en": "ED calling"
+      },
+      "sub": {
+       "zh": "咳血、吃抗凝血劑",
+       "en": "Haemoptysis on an anticoagulant"
+      },
+      "call": true,
+      "from": "er-doc"
+     }
+    },
+    {
+     "id": "h2",
+     "to": "ms-hsu",
+     "guide": {
+      "zh": "看許阿姨",
+      "en": "See Mrs Hsu"
+     },
+     "lines": [
+      [
+       "ms-hsu",
+       {
+        "zh": "我半夜醒來，嘴巴裡都是血塊，咳出來好多……（又擦一次鼻子）",
+        "en": "I woke with clots in my mouth and coughed up so many... (dabs her nose again)"
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "血塊暗紅，沒有泡沫。她的喉嚨後面有一條血一直往下流。",
+        "en": "The clots are dark, not frothy. A trickle of blood runs down the back of her throat."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "choice",
+      "q": {
+       "zh": "許阿姨「咳血」，在吃抗凝血劑。下一步？",
+       "en": "Mrs Hsu \"coughs blood\" on an anticoagulant. Next?"
+      },
+      "options": [
+       {
+        "zh": "先看鼻腔和咽喉，確認血從哪裡來",
+        "en": "Look in the nose and throat: where is it from?",
+        "ok": true,
+        "why": {
+         "zh": "暗紅、沒有泡沫、一直擦鼻子、喉嚨後有血流下：像後鼻腔出血。先確認來源，再決定找耳鼻喉科還是做支氣管鏡。",
+         "en": "Dark, not frothy, dabbing her nose, blood down the back of the throat: this looks like a posterior nosebleed. Confirm the source before choosing ENT or bronchoscopy."
+        },
+        "set": {
+         "source": "checked"
+        }
+       },
+       {
+        "zh": "立刻做支氣管鏡",
+        "en": "Bronchoscopy straight away",
+        "ok": false,
+        "why": {
+         "zh": "支氣管鏡不是第一步。如果血來自鼻子，這個檢查找不到答案，還會佔住鏡子。",
+         "en": "Bronchoscopy is not step one. If the blood is from the nose it will find nothing and tie up the scope."
+        },
+        "set": {
+         "source": "missed"
+        }
+       },
+       {
+        "zh": "先做電腦斷層血管攝影",
+        "en": "CT angiogram first",
+        "ok": false,
+        "why": {
+         "zh": "影像不會看到鼻子後面在流血。先做最簡單的檢查：看。",
+         "en": "Imaging will not show a nosebleed. Do the simplest test first: look."
+        },
+        "set": {
+         "source": "missed"
+        }
+       }
+      ]
+     }
+    },
+    {
+     "id": "h3",
+     "to": "place:bed3",
+     "guide": {
+      "zh": "處理許阿姨",
+      "en": "Manage Mrs Hsu"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "鼻咽後壁有活動性出血，是後鼻腔出血，不是咯血。耳鼻喉科來做後鼻腔填塞，抗凝血劑請心臟科一起評估。",
+        "en": "Active bleeding at the back of the nasopharynx: posterior epistaxis, not haemoptysis. ENT to pack it; cardiology to help decide about the anticoagulant."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "吐血、鼻血、咯血，先分清楚。今晚的鏡子，可能還有別人需要。",
+        "en": "Haematemesis, nosebleed, haemoptysis: tell them apart first. Tonight the scope may be needed by someone else."
+       }
+      ]
+     ],
+     "when": {
+      "flag": "source",
+      "is": "checked"
+     }
+    },
+    {
+     "id": "h3b",
+     "to": "place:bronch",
+     "guide": {
+      "zh": "支氣管鏡看不到出血",
+      "en": "The scope finds no bleeding"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "支氣管鏡一路看到各葉，氣道乾乾淨淨。退出來時，你看到鼻咽後壁有血一直流。",
+        "en": "The scope shows every lobe clean. On withdrawal you see blood trickling down the back of the nasopharynx."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "……是後鼻腔出血。耳鼻喉科來填塞。鏡子送去清洗。",
+        "en": "...A posterior nosebleed. ENT to pack it. Scope sent for cleaning."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "沒關係，學到了。只是清洗要一個多小時，這台鏡子今晚暫時不能用了。",
+        "en": "It is all right, now you know. But cleaning takes over an hour; this scope is out of action for now."
+       }
+      ]
+     ],
+     "when": {
+      "flag": "source",
+      "is": "missed"
+     }
+    }
+   ]
+  },
+  {
+   "id": "cheng",
+   "name": {
+    "zh": "鄭先生",
+    "en": "Mr Cheng"
+   },
+   "sub": {
+    "zh": "02:00 · 加護一床",
+    "en": "02:00 · ICU bed 1"
+   },
+   "t": 120,
+   "mood": "night",
+   "note": {
+    "zh": "鄭先生：右側出血",
+    "en": "Mr Cheng: right-sided bleeding"
+   },
+   "beats": [
+    {
+     "id": "c1",
+     "to": "mr-cheng",
+     "guide": {
+      "zh": "接鄭先生",
+      "en": "Receive Mr Cheng"
+     },
+     "lines": [
+      [
+       "mr-cheng",
+       {
+        "zh": "（咳，滿嘴血）醫生……我咳了一大碗，還在咳……",
+        "en": "(Coughing, mouth full of blood) Doctor... I coughed a whole bowl, it keeps coming..."
+       }
+      ],
+      [
+       "cheng-daughter",
+       {
+        "zh": "他小時候得過麻疹肺炎，每天早上都咳痰。這週發燒，痰變黃變多。",
+        "en": "He had measles pneumonia as a child and coughs sputum every morning. This week, fever and more yellow sputum."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "支氣管擴張症加上感染。血是從哪一邊來的？",
+        "en": "Bronchiectasis plus infection. Which side is the blood from?"
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "pulmonology-v37-pneumonia",
+      "stage": 0
+     }
+    },
+    {
+     "id": "c2",
+     "to": "place:bed1",
+     "guide": {
+      "zh": "聽診找出血側",
+      "en": "Listen for the bleeding side"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "左右對照。出血的那一側，通常有比較多的囉音。",
+        "en": "Compare both sides. The bleeding side usually has more crackles."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "drill",
+      "template": "pulmonology",
+      "drill": "lungs"
+     },
+     "post": [
+      [
+       "me",
+       {
+        "zh": "右下肺囉音明顯，左邊相對乾淨。",
+        "en": "Coarse crackles at the right base; the left is relatively clear."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "c3",
+     "to": "place:monitor",
+     "guide": {
+      "zh": "血氧在掉",
+      "en": "Saturation falling"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "鄭先生又咳出一口血，抽吸瓶的刻度一下子往上跳。監視器上的血氧開始往下滑。",
+        "en": "Mr Cheng coughs another mouthful; the canister scale jumps. On the monitor the saturation begins to slide."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "vitals",
+      "event": "desaturation",
+      "options": [
+       {
+        "zh": "右側朝下、抽吸、高濃度氧氣、準備插管",
+        "en": "Right side down, suction, high-flow oxygen, prepare to intubate",
+        "ok": true,
+        "why": {
+         "zh": "出血的那一邊朝下，血才不會流進好的左肺。抽吸、給氧，同時準備用大號氣管內管保護氣道。",
+         "en": "Bleeding side down keeps blood out of the good left lung. Suction, oxygen, and prepare a large tube to protect the airway."
+        }
+       },
+       {
+        "zh": "左側朝下，讓右肺好好呼吸",
+        "en": "Left side down so the right lung can breathe",
+        "ok": false,
+        "why": {
+         "zh": "這樣血會從右邊流進左邊，兩側都淹了。出血側朝下。",
+         "en": "Blood would pour from right to left and flood both lungs. Bleeding side down."
+        }
+       },
+       {
+        "zh": "先送電腦斷層找原因",
+        "en": "Off to CT to find the cause",
+        "ok": false,
+        "why": {
+         "zh": "氣道不安全的病人不能送去斷層。先保護氣道。",
+         "en": "A patient with an unsafe airway does not go to CT. Protect the airway first."
+        }
+       }
+      ]
+     },
+     "post": [
+      [
+       "charge",
+       {
+        "zh": "出血側朝下，右邊躺好了。抽吸瓶這一個小時，已經到這裡。",
+        "en": "Bleeding side down: he is on his right. The canister has reached this mark in the past hour."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "c4",
+     "to": "cheng-daughter",
+     "guide": {
+      "zh": "向鄭小姐說明",
+      "en": "Explain to Ms Cheng"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "爸爸的血可能會塞住氣管，我們要插管保護他的呼吸，再用支氣管鏡找出血的地方。",
+        "en": "Your father's blood could block his airway. We will put in a breathing tube to protect it, then find the bleeding with a scope."
+       }
+      ],
+      [
+       "cheng-daughter",
+       {
+        "zh": "之後呢？",
+        "en": "And after that?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "可能要請放射科從血管把出血的動脈塞住。每一步我都會先來跟妳說。",
+        "en": "Probably radiology will block the bleeding artery from inside. I will tell you before every step."
+       }
+      ]
+     ],
+     "roles": [
+      "fellow"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "airway",
+   "name": {
+    "zh": "保護氣道",
+    "en": "Protecting the airway"
+   },
+   "sub": {
+    "zh": "02:30 · 加護一床",
+    "en": "02:30 · ICU bed 1"
+   },
+   "t": 150,
+   "mood": "night",
+   "note": {
+    "zh": "插管、支氣管鏡定位",
+    "en": "Intubated, bronchoscopy localised"
+   },
+   "beats": [
+    {
+     "id": "a1",
+     "to": "attending",
+     "guide": {
+      "zh": "排出處置順序",
+      "en": "Order the care"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "大咯血。順序排給我看，一步都不能顛倒。",
+        "en": "Massive haemoptysis. Show me the order; nothing out of sequence."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "order",
+      "q": {
+       "zh": "大咯血的處置順序？",
+       "en": "Order the care of massive haemoptysis"
+      },
+      "steps": [
+       {
+        "zh": "出血側朝下",
+        "en": "Bleeding side down"
+       },
+       {
+        "zh": "給氧與抽吸",
+        "en": "Oxygen and suction"
+       },
+       {
+        "zh": "大號氣管內管保護氣道",
+        "en": "Large tube to protect the airway"
+       },
+       {
+        "zh": "支氣管鏡定位與局部止血",
+        "en": "Bronchoscopy to localise and treat"
+       },
+       {
+        "zh": "電腦斷層血管攝影",
+        "en": "CT angiography"
+       },
+       {
+        "zh": "支氣管動脈栓塞",
+        "en": "Bronchial artery embolisation"
+       }
+      ]
+     },
+     "post": [
+      [
+       "attending",
+       {
+        "zh": "氣道保護是第一件大事。管子要大，鏡子才進得去、血才抽得出來。",
+        "en": "Airway protection comes first. A large tube lets the scope in and the blood out."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "a2",
+     "to": "place:bronch",
+     "guide": {
+      "zh": "做支氣管鏡",
+      "en": "Bronchoscopy"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "大號氣管內管放好、接上呼吸器。支氣管鏡進去，右下葉的開口一直有血冒出來。",
+        "en": "The large tube is in and on the ventilator. The scope goes in: blood keeps welling from the right lower lobe orifice."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "冰生理食鹽水灌洗，一次一點，抽乾淨再看。",
+        "en": "Cold saline lavage, a little at a time, suction clean, look again."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "右下葉出血，灌洗後變慢了。聽診、支氣管鏡兩個都指向右下。",
+        "en": "Right lower lobe bleeding, slower after lavage. Auscultation and bronchoscopy both point there."
+       }
+      ]
+     ],
+     "when": {
+      "flag": "source",
+      "is": "checked"
+     }
+    },
+    {
+     "id": "a2b",
+     "to": "place:bronch",
+     "guide": {
+      "zh": "等鏡子",
+      "en": "Waiting for the scope"
+     },
+     "lines": [
+      [
+       "charge",
+       {
+        "zh": "第一台鏡子還在清洗，備用的在手術室，要等十五分鐘。",
+        "en": "The first scope is still being cleaned; the spare is in theatre, fifteen minutes away."
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "這十五分鐘你們只能抽吸、擺位、盯著血氧。備用鏡子終於推進來，右下葉的開口一直有血冒出來。",
+        "en": "For fifteen minutes there is only suction, positioning and watching the saturation. Then the spare arrives: blood welling from the right lower lobe."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "冰生理食鹽水灌洗。下次先看鼻子，鏡子就會在對的人身上。",
+        "en": "Cold saline lavage. Next time look at the nose first and the scope will be with the right patient."
+       }
+      ]
+     ],
+     "when": {
+      "flag": "source",
+      "is": "missed"
+     }
+    },
+    {
+     "id": "a3",
+     "to": "place:station",
+     "guide": {
+      "zh": "量化出血量",
+      "en": "Measure the blood loss"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "抽吸瓶每小時記錄刻度，扣掉灌洗的量。血紅素、凝血功能送了，血庫備血。",
+        "en": "Canister read hourly, minus the lavage volume. Haemoglobin and clotting sent, blood cross-matched."
+       }
+      ],
+      [
+       "charge",
+       {
+        "zh": "說「很多」沒用，要說多少。很好。",
+        "en": "\"A lot\" is useless; say how much. Good."
+       }
+      ]
+     ],
+     "roles": [
+      "icu-nurse"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "angio",
+   "name": {
+    "zh": "血管攝影",
+    "en": "The angiogram"
+   },
+   "sub": {
+    "zh": "03:30 · 影像工作站",
+    "en": "03:30 · image viewer"
+   },
+   "t": 210,
+   "mood": "night",
+   "note": {
+    "zh": "鄭先生：栓塞止血",
+    "en": "Mr Cheng: embolised"
+   },
+   "beats": [
+    {
+     "id": "g1",
+     "to": "place:viewer",
+     "guide": {
+      "zh": "看電腦斷層血管攝影",
+      "en": "Read the CT angiogram"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "電腦斷層血管攝影出來了。你找什麼？",
+        "en": "The CT angiography is up. What are you looking for?"
+       }
+      ]
+     ],
+     "mini": {
+      "type": "imaging",
+      "region": "chest",
+      "question": {
+       "zh": "鄭先生的電腦斷層血管攝影，右下葉的變化和那條變粗的血管代表什麼？",
+       "en": "Mr Cheng's CT angiogram: what do the right lower lobe changes and that enlarged vessel mean?"
+      },
+      "answer": {
+       "zh": "右下葉支氣管擴張、周圍有出血的磨玻璃影，供應它的支氣管動脈變粗變彎：出血的來源。肺動脈沒有栓塞。下一步是支氣管動脈栓塞。",
+       "en": "Right lower lobe bronchiectasis with surrounding haemorrhage, and a dilated tortuous bronchial artery feeding it: the source. No pulmonary embolism. Next: bronchial artery embolisation."
+      }
+     },
+     "post": [
+      [
+       "attending",
+       {
+        "zh": "咯血的鑑別裡有肺栓塞。他的機率高嗎？斷層剛好也回答了。",
+        "en": "Pulmonary embolism is on the haemoptysis list. Was his probability high? The scan has answered that too."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "g2",
+     "to": "place:viewer",
+     "guide": {
+      "zh": "想一想肺栓塞",
+      "en": "Think about embolism"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "他沒有單側腿腫、沒有長途旅行、沒有新的手術，臨床機率低；斷層也沒看到栓塞。",
+        "en": "No unilateral leg swelling, no long trip, no recent surgery: low clinical probability, and the scan shows no clot."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "pulmonology-v37-embolism",
+      "stage": 1
+     }
+    },
+    {
+     "id": "g3",
+     "lines": [
+      [
+       "ir",
+       {
+        "zh": "影像我看到了。右側支氣管動脈，很明顯。病人送過來，我們準備好了。",
+        "en": "I have the images. Right bronchial artery, very clear. Send him down; we are ready."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "收到。轉送：氧氣、抽吸、呼吸器、右側朝下。我陪他下去。",
+        "en": "Received. Transfer: oxygen, suction, ventilator, right side down. I will go with him."
+       }
+      ]
+     ],
+     "ring": {
+      "title": {
+       "zh": "介入放射科來電",
+       "en": "Interventional radiology calling"
+      },
+      "sub": {
+       "zh": "陳醫師看到出血的血管了",
+       "en": "Dr Chen has found the bleeding vessel"
+      },
+      "call": true,
+      "from": "ir"
+     }
+    }
+   ]
+  },
+  {
+   "id": "dawn",
+   "name": {
+    "zh": "天快亮了",
+    "en": "Nearly dawn"
+   },
+   "sub": {
+    "zh": "05:30 · 加護一床",
+    "en": "05:30 · ICU bed 1"
+   },
+   "t": 330,
+   "mood": "night",
+   "note": {
+    "zh": "出血停止",
+    "en": "Bleeding stopped"
+   },
+   "beats": [
+    {
+     "id": "w1",
+     "to": "cheng-daughter",
+     "guide": {
+      "zh": "和鄭小姐說話",
+      "en": "Talk with Ms Cheng"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "栓塞完成回來，抽吸瓶的刻度一個小時都沒有動。",
+        "en": "Back from embolisation; the canister mark has not moved for an hour."
+       }
+      ],
+      [
+       "cheng-daughter",
+       {
+        "zh": "（把補網梭放進爸爸手裡）他每天補網，說網破了要從邊邊開始補。",
+        "en": "(Placing the shuttle in her father's hand) He mends nets every day. He says you start a tear from its edge."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "我們今晚也是從邊邊補起：先找到破在哪裡。",
+        "en": "Tonight we did the same: first we found where the tear was."
+       }
+      ]
+     ],
+     "item": "net-shuttle"
+    },
+    {
+     "id": "w2",
+     "to": "place:station",
+     "guide": {
+      "zh": "寫支氣管鏡報告",
+      "en": "Write the bronchoscopy report"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "大咯血，右下葉來源，冰生理食鹽水灌洗後減緩，支氣管動脈栓塞成功。支氣管擴張症合併感染，痰培養送出。",
+        "en": "Massive haemoptysis from the right lower lobe, slowed by cold saline lavage, bronchial artery embolisation successful. Bronchiectasis with infection; sputum culture sent."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "再加一句：誰、在什麼情況下，要再叫介入放射科。",
+        "en": "Add one line: who calls interventional radiology again, and when."
+       }
+      ]
+     ],
+     "roles": [
+      "fellow"
+     ]
+    },
+    {
+     "id": "w3",
+     "to": "place:vent",
+     "guide": {
+      "zh": "照顧鄭先生",
+      "en": "Care for Mr Cheng"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "口腔護理、抽吸、右側擺位維持，呼吸器管路沒有血。他握緊了補網梭。",
+        "en": "Mouth care, suction, keeping him right side down; no blood in the ventilator circuit. He tightens his grip on the shuttle."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "（倒了一杯薑母茶給你）太太說值夜班的人要暖胃。",
+        "en": "(Pours you some ginger tea) My wife says night workers need warm stomachs."
+       }
+      ]
+     ],
+     "roles": [
+      "icu-nurse"
+     ],
+     "item": "ginger-tea"
+    }
+   ]
+  },
+  {
+   "id": "handover",
+   "name": {
+    "zh": "晨間交班",
+    "en": "Morning handover"
+   },
+   "sub": {
+    "zh": "07:30 · 加護病房白板",
+    "en": "07:30 · ICU board"
+   },
+   "t": 450,
+   "mood": "day",
+   "note": {
+    "zh": "下班",
+    "en": "Off duty"
+   },
+   "beats": [
+    {
+     "id": "e1",
+     "to": "place:board",
+     "guide": {
+      "zh": "寫交班白板",
+      "en": "Write the handover board"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "白板：「一床鄭先生：大咯血，右下葉，栓塞後穩定。三床許阿姨：後鼻腔出血，已填塞，抗凝血劑暫停待評估。」",
+        "en": "Board: \"Bed 1 Mr Cheng: massive haemoptysis, right lower lobe, stable after embolisation. Bed 3 Mrs Hsu: posterior epistaxis, packed, anticoagulant held pending review.\""
+       }
+      ],
+      [
+       "ms-hsu",
+       {
+        "zh": "（鼻子塞著紗布，含糊地）醫生，我以為我要吐血吐死了。",
+        "en": "(Nose packed, muffled) Doctor, I thought I was going to bleed to death."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "e2",
+     "to": "attending",
+     "guide": {
+      "zh": "和白主治收尾",
+      "en": "Wrap up with Dr Pai"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "今晚兩個「咳血」，哪一個不是？",
+        "en": "Two \"haemoptysis\" patients tonight. Which one was not?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "許阿姨。血從鼻子來。鄭先生才是真的，而且他需要那台鏡子。",
+        "en": "Mrs Hsu. Her blood was from the nose. Mr Cheng was real, and he needed that scope."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "（鬆開領帶）先確認血從哪裡來，再記得出血的那一邊朝下。回家睡吧。",
+        "en": "(Loosening his tie) First, where the blood is from; then, bleeding side down. Go home and sleep."
+       }
+      ]
+     ],
+     "end": true
+    }
+   ]
+  }
+ ],
+ "ending": {
+  "title": {
+   "zh": "天亮了",
+   "en": "Morning"
+  },
+  "sub": {
+   "zh": "兩個「咳血」，一個鼻子，一條血管",
+   "en": "Two \"haemoptyses\": one nose, one artery"
+  },
+  "stats": [
+   "stages",
+   "drills",
+   "imaging",
+   "choices",
+   "calls",
+   "items",
+   "time"
+  ]
+ }
+}

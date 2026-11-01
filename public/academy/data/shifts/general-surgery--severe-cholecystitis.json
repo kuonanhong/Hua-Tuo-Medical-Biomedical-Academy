@@ -1,0 +1,257 @@
+{
+  "format": "huatuo-shift-v2",
+  "department": "general-surgery",
+  "case": "severe-cholecystitis",
+  "caseTitle": {"zh": "九十歲的膽囊", "en": "A gallbladder at ninety"},
+  "condition": {"zh": "感染 · 重症膽囊炎", "en": "Infection · severe cholecystitis"},
+  "difficulty": 2,
+  "room": "imaging",
+  "title": {"zh": "一般外科：超音波與介入日", "en": "General surgery: an ultrasound and intervention day"},
+  "tagline": {"zh": "一支探頭、一條引流管、一個想回澎湖看海的阿公", "en": "One probe, one drain, and a grandpa who wants to see the sea at home again"},
+  "minutes": 22,
+  "roles": [
+    {"id": "resident", "zh": "外科住院醫師（超音波輪訓）", "en": "Surgical resident (ultrasound rotation)", "desc": {"zh": "今天不進刀房，進影像科。你會發現：救命的不一定是刀，有時是一根細細的管子。", "en": "No theatre today; you're in imaging. You'll find that what saves a life isn't always a scalpel. Sometimes it's a thin tube."}},
+    {"id": "sonographer", "zh": "超音波技術師", "en": "Sonographer", "desc": {"zh": "探頭在你手上。角度偏一度，答案就可能不見。", "en": "The probe is in your hand. One degree off and the answer can vanish."}}
+  ],
+  "cast": {
+    "attending": {"name": {"zh": "鍾主治", "en": "Dr Chung"}, "role": {"zh": "一般外科主治醫師（師傅）", "en": "General surgery attending (mentor)"}, "tag": "ATT", "color": "#81296d", "body": "mentor",
+      "about": {"zh": "相信超音波是外科醫師的聽診器。手機裡存著三十年的膽囊照片，沒有一張是自拍。", "en": "Believes ultrasound is the surgeon's stethoscope. His phone holds thirty years of gallbladder pictures and not a single selfie."}},
+    "ir": {"name": {"zh": "介入葛醫師", "en": "Dr Ko (IR)"}, "role": {"zh": "介入放射科醫師", "en": "Interventional radiologist"}, "tag": "IR", "color": "#2563eb", "body": "specialist",
+      "about": {"zh": "穿刺時話很少，只說兩個字：「吸氣」「停」。", "en": "Says almost nothing during a puncture except two words: 'Breathe in.' 'Hold.'"}},
+    "sono": {"name": {"zh": "小蓁", "en": "Chen"}, "role": {"zh": "資深超音波技術師", "en": "Senior sonographer"}, "tag": "SON", "color": "#0e7490", "body": "radiographer",
+      "about": {"zh": "掃過的膽囊比她吃過的飯還多。你的探頭角度一偏，她不用看螢幕就知道。", "en": "Has scanned more gallbladders than she's had hot dinners. When your probe angle slips she knows without looking at the screen."}},
+    "icu-nurse": {"name": {"zh": "志豪", "en": "Chih-hao"}, "role": {"zh": "加護病房護理師", "en": "ICU nurse"}, "tag": "RN", "color": "#3b8f6a", "body": "nurse",
+      "about": {"zh": "推床、監視器、升壓藥，一個人護送下樓。電梯裡也在看血壓。", "en": "Bed, monitor and vasopressors, all escorted downstairs single-handed. Watches the pressure even in the lift."}},
+    "patient": {"name": {"zh": "范阿公", "en": "Grandpa Fan"}, "role": {"zh": "病人・90 歲退休漁夫", "en": "Patient, 90, retired fisherman"}, "tag": "PT", "color": "#6b7280", "body": "patient",
+      "about": {"zh": "澎湖人，失智初期。醒著的時候常問：「今天的浪大不大？」", "en": "From the Penghu islands, early dementia. When awake he often asks: 'Are the waves big today?'"}},
+    "daughter": {"name": {"zh": "范大姐", "en": "Ms Fan"}, "role": {"zh": "家屬・阿公的女兒", "en": "Family, his daughter"}, "tag": "FAM", "color": "#b45309", "body": "family",
+      "about": {"zh": "在台北開美髮店，一路趕來。說話又快又急：「全部都要救！」", "en": "Runs a hair salon in Taipei and came rushing down. Speaks fast and urgently: 'Save everything!'"}},
+    "jui": {"name": {"zh": "阿睿", "en": "Jui"}, "role": {"zh": "病人・20 歲大學籃球隊", "en": "Patient, 20, university basketball team"}, "tag": "PT2", "color": "#7c3aed", "body": "patient",
+      "about": {"zh": "右下腹痛一天，最關心的是下禮拜的比賽。", "en": "A day of right lower abdominal pain; mostly worried about next week's game."}},
+    "er-doc": {"name": {"zh": "急診林醫師", "en": "Dr Lin (ER)"}, "role": {"zh": "急診醫師", "en": "Emergency physician"}, "tag": "ER", "color": "#c2410c", "phoneOnly": true,
+      "about": {"zh": "電話開頭永遠是「拜託，幫我看一下」。", "en": "Every call starts with 'Please, can you just have a look?'"}}
+  },
+  "places": {
+    "us": {"name": {"zh": "超音波機", "en": "Ultrasound machine"}, "hot": "ultrasound"},
+    "table": {"name": {"zh": "介入治療台", "en": "Intervention table"}, "hot": "field"},
+    "monitor": {"name": {"zh": "監視器", "en": "Monitor"}, "hot": "monitor"},
+    "workstation": {"name": {"zh": "判讀工作站", "en": "Reporting workstation"}, "hot": "workstation"},
+    "board": {"name": {"zh": "排程白板", "en": "Schedule whiteboard"}, "hot": "whiteboard"},
+    "crash": {"name": {"zh": "急救車", "en": "Crash cart"}, "hot": "crash-cart"}
+  },
+  "glossary": [
+    {"term": {"zh": "急性膽囊炎", "en": "acute cholecystitis"}, "plain": {"zh": "膽囊發炎，多半是結石卡住膽囊出口。右上腹痛、發燒，嚴重時會引起敗血症。", "en": "Inflammation of the gallbladder, usually from a stone blocking its outlet. Right upper pain and fever; severe cases cause sepsis."}},
+    {"term": {"zh": "Tokyo 分級", "en": "Tokyo grading"}, "plain": {"zh": "國際通用的膽囊炎嚴重度分級。第三級代表已經有器官衰竭。", "en": "The international severity grading of cholecystitis. Grade III means organs are already failing."}},
+    {"term": {"zh": "器官衰竭", "en": "organ dysfunction"}, "plain": {"zh": "感染拖累了其他器官：血壓要靠升壓藥、意識變差、呼吸、腎、肝或血小板出問題。", "en": "Infection dragging other organs down: blood pressure needing vasopressors, confusion, or trouble with breathing, kidneys, liver or platelets."}},
+    {"term": {"zh": "敗血性休克", "en": "septic shock"}, "plain": {"zh": "感染引起的循環衰竭，補液後仍要靠升壓藥維持血壓。死亡率很高，要盡快控制感染來源。", "en": "Circulatory failure from infection, needing vasopressors despite fluids. High mortality; the source must be controlled quickly."}},
+    {"term": {"zh": "來源控制", "en": "source control"}, "plain": {"zh": "把感染的源頭處理掉：引流膿、移除感染的器官或異物。抗生素治不了一包關起來的膿。", "en": "Dealing with the source of infection: draining pus, removing the infected organ or foreign body. Antibiotics can't cure a closed collection."}},
+    {"term": {"zh": "經皮膽囊造瘻", "en": "percutaneous cholecystostomy"}, "plain": {"zh": "在影像導引下，從皮膚放一條細管進膽囊引流。不用全身麻醉，適合太虛弱不能開刀的人。", "en": "Under imaging, a thin tube is passed through the skin into the gallbladder to drain it. No general anaesthetic; suited to those too frail for surgery."}},
+    {"term": {"zh": "經肝路徑", "en": "transhepatic route"}, "plain": {"zh": "導管先穿過一小段肝臟再進膽囊，比較穩，膽汁比較不會漏進腹腔。", "en": "The tube crosses a short stretch of liver before entering the gallbladder: more stable, and bile is less likely to leak into the abdomen."}},
+    {"term": {"zh": "超音波莫菲氏徵象", "en": "sonographic Murphy's sign"}, "plain": {"zh": "探頭壓在膽囊正上方時最痛。病人意識不清或用了止痛藥時不可靠。", "en": "Maximum tenderness with the probe directly over the gallbladder. Unreliable when the patient is confused or has had analgesia."}},
+    {"term": {"zh": "不可壓縮", "en": "non-compressible"}, "plain": {"zh": "超音波探頭加壓，正常腸子會扁掉；發炎的闌尾壓不扁，是闌尾炎的重要表現。", "en": "Under probe pressure normal bowel flattens; an inflamed appendix does not, a key sign of appendicitis."}},
+    {"term": {"zh": "照護目標", "en": "goals of care"}, "plain": {"zh": "和病人與家屬一起決定：治療是為了什麼、哪些願意做、哪些不想要。", "en": "Deciding with the patient and family what treatment is for, what they will accept and what they do not want."}},
+    {"term": {"zh": "間隔性膽囊切除", "en": "interval cholecystectomy"}, "plain": {"zh": "等急性發炎消退、身體恢復後，再排程把膽囊拿掉。也可能評估後決定不做。", "en": "Removing the gallbladder later, once the acute inflammation has settled and the patient has recovered. Or deciding, after review, not to."}},
+    {"term": {"zh": "膽汁培養", "en": "bile culture"}, "plain": {"zh": "把引流出來的膽汁送去培養，找出細菌、調整抗生素。", "en": "Sending the drained bile to grow the bacteria, so the antibiotics can be tailored."}}
+  ],
+  "codex": [
+    {"id": "us-machine", "kind": "equipment", "name": {"zh": "超音波機", "en": "Ultrasound machine"}, "hot": "ultrasound", "text": {"zh": "沒有輻射、可以推到床邊、可以邊看邊做。缺點只有一個：答案在拿探頭的那隻手上。", "en": "No radiation, wheels to the bedside, lets you see while you work. Only one drawback: the answer lives in the hand holding the probe."}},
+    {"id": "ir-table", "kind": "equipment", "name": {"zh": "介入治療台", "en": "Intervention table"}, "hot": "field", "text": {"zh": "旁邊有超音波、透視、急救車。床邊做的小管子，一樣要時間暫停、無菌、核對同意書。", "en": "Ultrasound, fluoroscopy and a crash cart beside it. A little tube placed at the bedside still needs a time-out, sterility and a checked consent."}},
+    {"id": "workstation", "kind": "equipment", "name": {"zh": "判讀工作站", "en": "Reporting workstation"}, "hot": "workstation", "text": {"zh": "今天的家庭會議也在這裡開。螢幕上是膽囊，桌子對面是一個女兒。", "en": "Today's family meeting happened here too. On the screen, a gallbladder; across the desk, a daughter."}},
+    {"id": "bile", "kind": "item", "name": {"zh": "第一管膽汁", "en": "The first tube of bile"}, "text": {"zh": "混濁、黃綠色。送膽汁培養，明天決定要不要換抗生素。", "en": "Cloudy, yellow-green. Sent for bile culture; tomorrow decides whether the antibiotic changes."}},
+    {"id": "boat-photo", "kind": "item", "name": {"zh": "阿公的漁船照片", "en": "Grandpa's boat photo"}, "text": {"zh": "范大姐手機裡的舊照片：一艘藍色的小漁船，阿公站在船頭，很年輕。", "en": "An old photo on Ms Fan's phone: a small blue fishing boat with a young Grandpa standing at the bow."}},
+    {"id": "grade3", "kind": "concept", "name": {"zh": "Tokyo 第三級：先救命，再拿膽囊", "en": "Tokyo Grade III: save the life, then the gallbladder"}, "text": {"zh": "第三級代表器官衰竭。先做器官支持、抗生素與血液培養，再盡快來源控制。只有在器官衰竭能快速逆轉、沒有黃疸、意識障礙或呼吸衰竭等不利因子，且在有經驗的中心，才考慮早期膽囊切除；否則首選膽囊引流，經皮膽囊造瘻最常用。穩定後再評估間隔性膽囊切除，或長期引流。", "en": "Grade III means organ failure. Organ support, antibiotics and blood cultures first, then source control as soon as possible. Early cholecystectomy is considered only if the organ failure reverses quickly, there are no adverse factors such as jaundice, impaired consciousness or respiratory failure, and the centre is experienced; otherwise gallbladder drainage comes first, most often a percutaneous cholecystostomy. Once stable, consider interval cholecystectomy or long-term drainage."}},
+    {"id": "stethoscope", "kind": "concept", "name": {"zh": "超音波是外科醫師的聽診器", "en": "Ultrasound is the surgeon's stethoscope"}, "text": {"zh": "結石會動、後方有聲影；發炎的膽囊壁厚、周圍有積液、頸部卡石；發炎的闌尾不可壓縮。但超音波很看人：病人的意識、止痛、腸氣、體型，還有操作者的手。看不到，不代表沒有；看到了，還要和病人對得上。", "en": "Stones move and cast shadows; an inflamed gallbladder has a thick wall, fluid around it and a stone in the neck; an inflamed appendix will not compress. But ultrasound depends on people: the patient's consciousness, analgesia, bowel gas, build, and the operator's hand. Not seeing it doesn't mean it isn't there; seeing it still has to fit the patient."}},
+    {"id": "goals", "kind": "concept", "name": {"zh": "全部都救，不等於全部都做", "en": "Saving everything is not doing everything"}, "text": {"zh": "高齡重症的家屬常說「全部都要救」。好的回應不是照單全收，也不是說「太老了」，而是先問：他以前怎麼說？他最在意什麼？然後把醫療選擇放進這個目標裡。改變計畫不丟臉；沒說清楚才會讓家屬不安。", "en": "Families of very old, very ill patients often say 'save everything'. A good answer is neither doing all of it nor saying 'he's too old', but asking first: what did he say before? What matters most to him? Then fitting the medical options into that goal. Changing a plan is no shame; failing to explain it is what unsettles families."}}
+  ],
+  "segs": [
+    {"id": "list", "name": {"zh": "超音波排程", "en": "The ultrasound list"}, "sub": {"zh": "08:00 · 排程白板", "en": "08:00 · schedule whiteboard"}, "t": 480, "mood": "day",
+     "note": {"zh": "今天：一個膽囊、一個闌尾、一位加護病房的阿公", "en": "Today: a gallbladder, an appendix, and an ICU grandpa"},
+     "beats": [
+      {"id": "a1", "to": "attending", "guide": {"zh": "看今天的排程", "en": "Read today's list"},
+       "lines": [
+        ["attending", {"zh": "超音波是外科醫師的聽診器。今天跟小蓁學拿探頭。", "en": "Ultrasound is the surgeon's stethoscope. Today you learn to hold the probe from Chen."}],
+        ["me", {"zh": "排程上有一位加護病房的阿公，九十歲，膽囊炎合併休克。", "en": "There's an ICU patient on the list: ninety, cholecystitis with shock."}],
+        ["attending", {"zh": "他是今天的主角。先學基本功，中午他下來。", "en": "He's today's main event. Basics first; he comes down at noon."}]
+       ]},
+      {"id": "a2", "roles": ["sonographer"], "to": "place:us", "guide": {"zh": "開機與核對", "en": "Start up and check"},
+       "lines": [
+        ["me", {"zh": "腹部探頭、腹部預設。病人用兩個辨識資料核對，再開始掃。", "en": "Abdominal probe, abdominal preset. Two identifiers checked before any scanning."}],
+        ["sono", {"zh": "膽囊要空腹看：肋下斜切，再讓病人左側躺。角度每一度都算數。", "en": "Gallbladders are scanned fasting: oblique under the ribs, then the patient rolled onto the left. Every degree counts."}]
+       ]}
+     ]},
+    {"id": "teach", "name": {"zh": "學看膽囊", "en": "Learning the gallbladder"}, "sub": {"zh": "09:00 · 超音波機", "en": "09:00 · ultrasound machine"}, "t": 540, "mood": "day",
+     "note": {"zh": "會動的結石，與不痛的膽囊", "en": "Mobile stones and a painless gallbladder"},
+     "beats": [
+      {"id": "b1", "to": "sono", "guide": {"zh": "跟小蓁學看膽囊", "en": "Learn the gallbladder with Chen"},
+       "lines": [
+        ["sono", {"zh": "門診的病人，膽結石。你看：結石會滾，後面拖著黑色的聲影。", "en": "An outpatient with gallstones. Look: the stones roll, and each casts a black shadow behind it."}],
+        ["me", {"zh": "壁不厚、沒有積液，探頭壓在膽囊上她不痛。", "en": "Thin wall, no fluid, and no pain with the probe over the gallbladder."}],
+        ["sono", {"zh": "那就是沒有發炎的結石。中午那位阿公，你會看到另一個樣子。", "en": "Then they're stones without inflammation. The grandpa at noon will show you something else."}]
+       ],
+       "mini": {"type": "stage", "case": "general-surgery-cholecystitis-lap-chole-cvs", "stage": 1}}
+     ]},
+    {"id": "er-call", "name": {"zh": "籃球隊的右下腹", "en": "The basketball player's right side"}, "sub": {"zh": "10:15 · 超音波機", "en": "10:15 · ultrasound machine"}, "t": 615, "mood": "day",
+     "note": {"zh": "阿睿：闌尾不可壓縮，確診", "en": "Jui: non-compressible appendix, confirmed"},
+     "beats": [
+      {"id": "c1", "ring": {"title": {"zh": "急診會診", "en": "ER consult"}, "sub": {"zh": "「二十歲右下腹痛，幫忙看闌尾」", "en": "'Twenty, right lower pain. Can you check the appendix?'"}, "call": true, "from": "er-doc"},
+       "lines": [
+        ["er-doc", {"zh": "拜託，幫我看一下。二十歲男生，右下腹痛一天，分數卡在中間，不上不下。", "en": "Please, can you just have a look? Twenty-year-old man, a day of right lower pain, score stuck in the middle."}],
+        ["me", {"zh": "推過來，我們剛好有空檔。", "en": "Send him over; we've a gap now."}]
+       ]},
+      {"id": "c2", "to": "jui", "guide": {"zh": "掃阿睿的右下腹", "en": "Scan Jui's right lower abdomen"},
+       "lines": [
+        ["jui", {"zh": "醫師，我下禮拜有比賽……", "en": "Doctor, I've got a game next week..."}],
+        ["sono", {"zh": "漸進加壓。正常的腸子會被壓扁，發炎的闌尾壓不扁。", "en": "Graded compression. Normal bowel flattens; an inflamed appendix won't."}],
+        ["me", {"zh": "這一條：盲端、比正常粗、周圍脂肪發亮，而且不可壓縮。", "en": "This one: blind-ending, thicker than normal, bright fat around it, and non-compressible."}]
+       ],
+       "mini": {"type": "stage", "case": "general-surgery-acute-appendicitis-pathway", "stage": 5},
+       "post": [
+        ["jui", {"zh": "所以……比賽呢？", "en": "So... what about the game?"}],
+        ["me", {"zh": "先把闌尾處理好，急診會接手。球隊會等你。", "en": "Appendix first; the ER team takes it from here. The team will wait for you."}]
+       ]}
+     ]},
+    {"id": "fan", "name": {"zh": "阿公下來了", "en": "Grandpa comes down"}, "sub": {"zh": "11:30 · 介入治療台", "en": "11:30 · intervention table"}, "t": 690, "mood": "day",
+     "note": {"zh": "Tokyo 第三級：休克、意識混亂、血小板低", "en": "Tokyo Grade III: shock, confusion, low platelets"},
+     "beats": [
+      {"id": "d1", "to": "icu-nurse", "guide": {"zh": "接加護病房的阿公", "en": "Receive the ICU grandpa"},
+       "lines": [
+        ["icu-nurse", {"zh": "范阿公，九十歲，膽囊炎第二天。昨晚血壓掉，用升壓藥中，意識比平常亂，血小板也掉了。血液培養和抗生素昨天都做了。", "en": "Grandpa Fan, ninety, day two of cholecystitis. Pressure dropped last night, on vasopressors, more confused than usual, platelets down too. Blood cultures and antibiotics were done yesterday."}],
+        ["me", {"zh": "循環、神經、血液都有器官衰竭。Tokyo 分級第三級，敗血性休克。", "en": "Organ dysfunction in circulation, brain and blood. Tokyo grading Grade III, septic shock."}],
+        ["attending", {"zh": "抗生素有了、器官支持有了。還缺什麼？", "en": "Antibiotics, yes; organ support, yes. What's missing?"}],
+        ["me", {"zh": "來源控制。", "en": "Source control."}]
+       ],
+       "mini": {"type": "stage", "case": "general-surgery-cholecystitis-lap-chole-cvs", "stage": 4}},
+      {"id": "d2", "to": "place:us", "guide": {"zh": "掃阿公的膽囊", "en": "Scan Grandpa's gallbladder"},
+       "lines": [
+        ["patient", {"zh": "……今天的浪大不大？", "en": "...are the waves big today?"}],
+        ["sono", {"zh": "阿公，浪很小。你躺著就好。", "en": "Small waves, Grandpa. Just lie still."}]
+       ],
+       "mini": {"type": "imaging", "region": "abdomen-upper",
+        "question": {"zh": "九十歲、敗血性休克、意識混亂。膽囊脹大、壁增厚分層、周圍有積液、頸部卡石；探頭壓上去他沒有反應。下一步？", "en": "Ninety, in septic shock, confused. The gallbladder is distended with a thick layered wall, fluid around it and a stone in its neck; he doesn't react to probe pressure. What next?"},
+        "answer": {"zh": "急性膽囊炎合併器官衰竭，Tokyo 第三級。他意識混亂又用了止痛藥，超音波莫菲氏徵象不可靠，沒反應不代表沒發炎。高齡、休克、意識障礙，緊急開刀風險很高：在抗生素與器官支持下盡快來源控制，首選經皮膽囊造瘻（經肝路徑），穩定後再評估間隔性膽囊切除或長期引流。", "en": "Acute cholecystitis with organ failure, Tokyo Grade III. He is confused and has had analgesia, so the sonographic Murphy's sign is unreliable; no reaction doesn't mean no inflammation. Very old, shocked and confused, he carries a high risk from emergency surgery: control the source quickly under antibiotics and organ support, first choice a percutaneous cholecystostomy by the transhepatic route, and later consider interval cholecystectomy or long-term drainage."}}},
+      {"id": "d3", "to": "daughter", "guide": {"zh": "跟范大姐談", "en": "Talk with Ms Fan"},
+       "lines": [
+        ["daughter", {"zh": "醫師，全部都要救！現在就開刀把膽囊拿掉，不要放什麼管子！", "en": "Doctor, save everything! Operate now and take the gallbladder out. No tubes!"}]
+       ],
+       "mini": {"type": "choice", "q": {"zh": "女兒要求立刻開刀拿掉膽囊。你怎麼回應？", "en": "His daughter demands immediate surgery. How do you respond?"},
+        "options": [
+         {"zh": "說明引流是救命第一步，談照護目標", "en": "Drainage is the life-saving first step; discuss goals", "ok": true, "set": {"goals": "talked"},
+          "why": {"zh": "第三級、休克中的九十歲病人，先引流控制感染比緊急開刀安全。同時問阿公自己會想要什麼。", "en": "For a ninety-year-old in Grade III shock, drainage is safer than emergency surgery. And ask what Grandpa himself would want."}},
+         {"zh": "照她說的，排緊急膽囊切除", "en": "Do as she asks: emergency cholecystectomy", "ok": false, "set": {"goals": "rushed"},
+          "why": {"zh": "多重器官衰竭時緊急開刀，風險可能比引流高很多。「全部都救」不等於「全部都做」。", "en": "Emergency surgery in multi-organ failure may be far riskier than drainage. 'Save everything' isn't 'do everything'."}},
+         {"zh": "年紀太大了，建議只用藥", "en": "He's too old; medicines only", "ok": false, "set": {"goals": "rushed"},
+          "why": {"zh": "年紀不是答案。引流低侵入、能救命，沒談就放棄，對阿公不公平。", "en": "Age isn't the answer. Drainage is minimally invasive and life-saving; giving up without discussion is unfair to him."}}
+        ]},
+       "post": [
+        ["daughter", {"zh": "……他以前常說，想再回澎湖看一次海。", "en": "...he always said he wanted to see the sea at home one more time."}],
+        ["me", {"zh": "那我們先讓他撐過今天。", "en": "Then let's get him through today first."}]
+       ]}
+     ]},
+    {"id": "drain", "name": {"zh": "一根細細的管子", "en": "One thin tube"}, "sub": {"zh": "13:00 · 介入治療台", "en": "13:00 · intervention table"}, "t": 780, "mood": "day",
+     "note": {"zh": "經皮膽囊造瘻；穿刺後血壓一度下降", "en": "Percutaneous cholecystostomy; a dip in pressure afterwards"},
+     "beats": [
+      {"id": "e1", "to": "ir", "guide": {"zh": "準備經皮膽囊造瘻", "en": "Prepare the cholecystostomy"},
+       "lines": [
+        ["ir", {"zh": "經肝路徑：先穿過一小段肝臟再進膽囊。導管比較穩，膽汁比較不會漏。", "en": "Transhepatic route: through a short stretch of liver into the gallbladder. The tube sits better and bile leaks less."}],
+        ["me", {"zh": "血小板低，我們依規範和加護團隊先處理過了。", "en": "Platelets are low; we've dealt with that per protocol with the ICU team."}]
+       ],
+       "mini": {"type": "order", "q": {"zh": "經皮膽囊造瘻的正確順序？", "en": "Percutaneous cholecystostomy: the right order?"},
+        "steps": [
+         {"zh": "核對病人、同意書與部位", "en": "Confirm patient, consent and site"},
+         {"zh": "確認凝血與血小板", "en": "Check clotting and platelets"},
+         {"zh": "超音波找經肝路徑", "en": "Find the transhepatic path on ultrasound"},
+         {"zh": "局部麻醉，影像下穿刺", "en": "Local anaesthetic, puncture under imaging"},
+         {"zh": "放導管，抽膽汁送培養", "en": "Place the tube, send bile for culture"},
+         {"zh": "固定導管、接袋、記錄", "en": "Secure the tube, bag it, document"}
+        ]}},
+      {"id": "e2", "to": "attending", "guide": {"zh": "時間暫停", "en": "The time-out"},
+       "lines": [
+        ["attending", {"zh": "床邊的、介入的，一樣要時間暫停。", "en": "Bedside or interventional, it still gets a time-out."}],
+        ["me", {"zh": "范阿公、經皮膽囊造瘻、右上腹、同意書已簽、沒有過敏、血小板已處理。", "en": "Grandpa Fan, percutaneous cholecystostomy, right upper abdomen, consent signed, no allergies, platelets addressed."}]
+       ],
+       "mini": {"type": "drill", "template": "general-surgery", "drill": "timeout"},
+       "post": [
+        ["ir", {"zh": "吸氣。停。", "en": "Breathe in. Hold."}]
+       ]},
+      {"id": "e3", "to": "place:monitor", "guide": {"zh": "血壓掉了", "en": "The pressure drops"},
+       "lines": [
+        ["sys", {"zh": "導管放好，抽出混濁發黃的膽汁。就在這時，監視器上的血壓往下掉。", "en": "The tube is in and cloudy yellow bile comes back. At that moment the pressure on the monitor falls."}]
+       ],
+       "mini": {"type": "vitals", "event": "hypotension",
+        "options": [
+         {"zh": "叫人、依醫囑支持循環、查出血與敗血", "en": "Call for help, support circulation per orders, look for bleeding or sepsis", "ok": true,
+          "why": {"zh": "穿刺後休克可能是敗血一時加重、出血或迷走反應。先支持循環，依醫囑調升壓藥，用超音波看有沒有出血或膽汁漏，通知加護團隊。", "en": "Shock after the puncture may be a septic surge, bleeding or a vagal response. Support the circulation, titrate vasopressors per orders, look with ultrasound for bleeding or bile leak, and alert the ICU team."}},
+         {"zh": "做完了，先送回加護病房", "en": "It's done; send him back to ICU", "ok": false,
+          "why": {"zh": "不穩的病人不能在電梯裡惡化。先在這裡穩定。", "en": "An unstable patient must not deteriorate in a lift. Stabilise him here."}},
+         {"zh": "拔掉導管免得出事", "en": "Pull the tube out to be safe", "ok": false,
+          "why": {"zh": "導管就是來源控制，拔掉等於回到原點。先找原因。", "en": "The tube is the source control; removing it puts you back at the start. Find the cause."}}
+        ]},
+       "post": [
+        ["icu-nurse", {"zh": "升壓藥依醫囑調了，輸液也進去了。", "en": "Vasopressor adjusted per orders and fluids are in."}],
+        ["ir", {"zh": "肝周圍乾淨，沒有看到出血。", "en": "Clean around the liver; no bleeding seen."}],
+        ["me", {"zh": "比較像敗血一時加重。血壓回來了。膽汁送膽汁培養。", "en": "More like a transient septic surge. Pressure's back. Bile goes for bile culture."}]
+       ],
+       "item": "bile"}
+     ]},
+    {"id": "goals", "name": {"zh": "家庭會議", "en": "Family meeting"}, "sub": {"zh": "15:30 · 判讀工作站", "en": "15:30 · reporting workstation"}, "t": 930, "mood": "day",
+     "note": {"zh": "照護目標：控制感染，讓他有機會回家", "en": "Goals of care: control the infection, give him a chance to go home"},
+     "beats": [
+      {"id": "f1", "when": {"flag": "goals", "is": "rushed"}, "to": "daughter", "guide": {"zh": "范大姐的疑問", "en": "Ms Fan's question"},
+       "lines": [
+        ["daughter", {"zh": "早上你們說的是另一個方向，現在又放了一根管子。到底哪一個是對的？", "en": "This morning you were heading another way, and now there's a tube in him. Which one is right?"}],
+        ["me", {"zh": "是我早上沒說清楚。以阿公現在的狀況，先引流最安全。其他的，等他穩下來再談。", "en": "I didn't explain it properly this morning. For Grandpa right now, drainage first is safest. The rest we discuss once he's stable."}],
+        ["attending", {"zh": "改計畫不丟臉，沒說清楚才會讓家屬不安。下次先談目標，再談做什麼。", "en": "Changing a plan is no shame; leaving it unexplained is what unsettles families. Next time, goals first, then procedures."}]
+       ]},
+      {"id": "f2", "to": "attending", "guide": {"zh": "一起開家庭會議", "en": "Hold the family meeting together"},
+       "lines": [
+        ["attending", {"zh": "接下來兩條路：穩定後評估間隔性膽囊切除，或者管子留著、長期照顧。要看阿公想要什麼。", "en": "Two roads from here: assess interval cholecystectomy once he's stable, or keep the drain long term. It depends on what Grandpa wants."}],
+        ["daughter", {"zh": "他以前說，最怕一直插管躺在醫院。他想回澎湖看海。", "en": "He always said his biggest fear was lying in hospital full of tubes. He wants to go home and see the sea."}],
+        ["me", {"zh": "那我們的照護目標是：控制感染、不做不必要的侵入治療，讓他有機會回家。", "en": "Then our goals of care are: control the infection, avoid unnecessary invasive treatment, and give him the chance to go home."}]
+       ],
+       "mini": {"type": "stage", "case": "general-surgery-cholecystitis-lap-chole-cvs", "stage": 3},
+       "post": [
+        ["daughter", {"zh": "你看，這是他的船。", "en": "Look, this is his boat."}],
+        ["attending", {"zh": "好的照護目標，不是做最多，是做對的。", "en": "Good goals of care aren't about doing the most. They're about doing the right thing."}]
+       ],
+       "item": "boat-photo"}
+     ]},
+    {"id": "debrief", "name": {"zh": "師傅的三件事", "en": "The mentor's three points"}, "sub": {"zh": "18:00 · 排程白板", "en": "18:00 · schedule whiteboard"}, "t": 1080, "mood": "eve",
+     "note": {"zh": "探頭、管子、和一個問題", "en": "A probe, a tube and a question"},
+     "beats": [
+      {"id": "g1", "to": "attending", "guide": {"zh": "師傅的回顧", "en": "The mentor's debrief"},
+       "lines": [
+        ["attending", {"zh": "今天三件事。你學會了超音波看不到時怎麼說，看到時怎麼對回病人。", "en": "Three things today. You learned what to say when ultrasound sees nothing, and how to match it to the patient when it sees something."}],
+        ["attending", {"zh": "你看到一根細管子可以救命。最後，你問了家屬一個問題：「他以前怎麼說？」", "en": "You saw a thin tube save a life. And you asked the family one question: 'What did he say before?'"}],
+        ["me", {"zh": "那一題，比 Tokyo 分級還難。", "en": "That question was harder than the Tokyo grading."}],
+        ["attending", {"zh": "對。今晚引流袋有事，先看管子，不要先看處方。", "en": "Yes. If the drain bag acts up tonight, look at the tube before you look at the drug chart."}]
+       ]}
+     ]},
+    {"id": "night", "name": {"zh": "安靜的引流袋", "en": "A quiet drain bag"}, "sub": {"zh": "21:30 · 值班電話", "en": "21:30 · on-call phone"}, "t": 1290, "mood": "night",
+     "note": {"zh": "引流量變少：先看管子", "en": "Drain output falls: check the tube first"},
+     "beats": [
+      {"id": "n1", "ring": {"title": {"zh": "加護病房來電", "en": "ICU calling"}, "sub": {"zh": "「阿公的引流袋傍晚之後都沒增加」", "en": "'Grandpa's drain hasn't filled since this evening'"}, "call": true, "from": "icu-nurse"},
+       "lines": [
+        ["icu-nurse", {"zh": "范阿公的引流袋從傍晚就沒什麼增加。血壓穩，升壓藥在減。", "en": "Grandpa Fan's drain hasn't filled much since this evening. Pressure stable, vasopressor coming down."}]
+       ],
+       "mini": {"type": "choice", "q": {"zh": "膽囊引流管突然不太流，第一步？", "en": "The gallbladder drain has nearly stopped. First step?"},
+        "options": [
+         {"zh": "先看管路有沒有扭折、固定與位置", "en": "Check for kinks, fixation and position", "ok": true,
+          "why": {"zh": "最常見的原因是管路折到、被壓住或移位。先從病人身上一路看到引流袋，依規範才考慮沖洗或影像確認。", "en": "Kinks, compression or displacement are commonest. Trace it from the patient to the bag; only then consider a flush per protocol or imaging."}},
+         {"zh": "用力反覆沖洗", "en": "Flush it hard, repeatedly", "ok": false,
+          "why": {"zh": "導管若已移位，猛沖會把膽汁沖進腹腔。", "en": "If the tube has moved, forceful flushing can push bile into the abdomen."}}
+        ]},
+       "post": [
+        ["icu-nurse", {"zh": "找到了：管子在床欄下面折到。拉直以後，膽汁又流了。", "en": "Found it: kinked under the bed rail. Straightened out, the bile's flowing again."}]
+       ]},
+      {"id": "n2", "to": "place:board", "guide": {"zh": "在白板上寫下明天", "en": "Write tomorrow on the board"},
+       "lines": [
+        ["icu-nurse", {"zh": "對了，阿公剛剛醒來問我：「今天的浪大不大？」", "en": "Oh, and Grandpa just woke and asked me: 'Are the waves big today?'"}],
+        ["me", {"zh": "跟他說：浪很小，可以出海。", "en": "Tell him the waves are small. Good day to go out."}],
+        ["sys", {"zh": "白板上，明天的排程最上面一行：范阿公・膽汁培養・引流量・照護目標。", "en": "At the top of tomorrow's list on the whiteboard: Grandpa Fan, bile culture, drain output, goals of care."}]
+       ],
+       "end": true}
+     ]}
+  ],
+  "ending": {"title": {"zh": "下班了", "en": "End of shift"}, "sub": {"zh": "全部都救，不等於全部都做", "en": "Saving everything is not doing everything"},
+    "stats": ["stages", "grades", "choices", "calls", "items", "time"]}
+}

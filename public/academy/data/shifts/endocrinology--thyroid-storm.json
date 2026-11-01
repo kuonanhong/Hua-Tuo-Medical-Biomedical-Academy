@@ -1,0 +1,266 @@
+{
+ "format": "huatuo-shift-v2",
+ "department": "endocrinology",
+ "case": "thyroid-storm",
+ "caseTitle": {"zh": "急診小夜：燒不退的心跳", "en": "ER evening: the heartbeat that ran hot"},
+ "condition": {"zh": "內分泌急症 · 甲狀腺風暴", "en": "Endocrine emergency · thyroid storm"},
+ "difficulty": 3,
+ "room": "er",
+ "title": {"zh": "內分泌科：急診小夜會診", "en": "Endocrinology: an evening of ER consults"},
+ "tagline": {"zh": "檢傷寫焦慮加腸胃炎，監視器寫的是另一件事", "en": "Triage wrote anxiety and gastroenteritis; the monitor wrote something else"},
+ "minutes": 24,
+ "roles": [
+  {"id": "resident", "zh": "內分泌科值班住院醫師", "en": "On-call endocrinology resident",
+   "desc": {"zh": "接急診會診、問出停藥和喉嚨痛、摸甲狀腺、排對處置的順序、在半夜之前把病人安全送上加護病房。",
+            "en": "Take the ER consult, find the stopped tablets and the sore throat, feel the thyroid, get the treatment order right, and have the patient safely in ICU before midnight."}},
+  {"id": "ernurse", "zh": "急診護理師", "en": "ER nurse",
+   "desc": {"zh": "接監視器、降溫、抽血標籤、看住一個坐不住的病人。急診的體溫計和冰枕歸你管。",
+            "en": "Monitor, cooling, labelled bloods, and keeping watch over a patient who cannot sit still. The ER thermometer and the ice packs are yours."}}
+ ],
+ "cast": {
+  "attending": {"name": {"zh": "范主治", "en": "Dr Fan"}, "role": {"zh": "內分泌科值班主治（師傅）", "en": "On-call endocrinologist (mentor)"}, "tag": "ATT", "color": "#7a3b8f", "body": "mentor",
+   "about": {"zh": "內分泌科主治，白袍口袋永遠插一支體溫計。口頭禪：「甲狀腺不會只壞一個器官，它是全身的油門。」",
+             "en": "Endocrinologist with a thermometer permanently in her coat pocket. Catchphrase: 'The thyroid never breaks just one organ. It is the whole body's accelerator.'"}},
+  "nurse-fang": {"name": {"zh": "急診阿芳", "en": "Fang"}, "role": {"zh": "急診資深護理師", "en": "Senior ER nurse"}, "tag": "RN", "color": "#3b8f6a", "body": "nurse",
+   "about": {"zh": "急診資深護理師，冷凍庫裡有一格冰枕貼著「風暴專用」。她量體溫的頻率，比病人眨眼還勤。",
+             "en": "Senior ER nurse who keeps a freezer shelf of ice packs labelled 'storms only'. She takes temperatures more often than patients blink."}},
+  "patient-lian": {"name": {"zh": "阿蓮", "en": "Lian"}, "role": {"zh": "12 床 · 甲狀腺亢進", "en": "Bed 12 · hyperthyroidism"}, "tag": "P12", "color": "#c9596a", "body": "patient",
+   "about": {"zh": "34 歲，夜市切水果攤老闆。兩年前診斷甲狀腺亢進，覺得好了就自己停藥。講話很快、手很抖，一直說芒果會爛掉。（虛擬個案）",
+             "en": "Thirty-four, runs a cut-fruit stall at the night market. Diagnosed with an overactive thyroid two years ago and stopped her tablets once she felt well. Talks fast, hands trembling, keeps saying the mangoes will spoil. (Fictional.)"}},
+  "family-guo": {"name": {"zh": "阿國", "en": "Guo"}, "role": {"zh": "阿蓮的弟弟", "en": "Lian's younger brother"}, "tag": "FAM", "color": "#d08a3a", "body": "family",
+   "about": {"zh": "跟姊姊一起顧攤，圍裙還沒脫就跑來急診。愛開玩笑，緊張的時候更愛。",
+             "en": "Runs the stall with his sister and came straight to the ER still in his apron. Jokes a lot, and more when he is scared."}},
+  "er-doc": {"name": {"zh": "急診小魏", "en": "Dr Wei"}, "role": {"zh": "急診住院醫師", "en": "ER resident"}, "tag": "ER", "color": "#2e8aa8", "body": "resident",
+   "about": {"zh": "急診第一年住院醫師，誠實到會在會診單上寫「我不確定」。這是優點。",
+             "en": "First-year ER resident, honest enough to write 'I am not sure' on a consult form. That is a strength."}},
+  "icu-fellow": {"name": {"zh": "加護病房阿德", "en": "De, ICU fellow"}, "role": {"zh": "內科加護病房總醫師", "en": "Medical ICU fellow"}, "tag": "ICU", "color": "#8a6ac4", "phoneOnly": true,
+   "about": {"zh": "加護病房總醫師，接電話第一句永遠是「床有，你講」。", "en": "ICU fellow whose first words on the phone are always 'I have a bed. Talk.'"}},
+  "lab": {"name": {"zh": "檢驗科", "en": "Laboratory"}, "role": {"zh": "醫檢師（電話）", "en": "Medical technologist (phone)"}, "tag": "LAB", "color": "#6a9c3a", "phoneOnly": true,
+   "about": {"zh": "結果一出就打電話，要你複誦。", "en": "Phones the moment a result is out, and makes you read it back."}}
+ },
+ "places": {
+  "board": {"name": {"zh": "急診交班板", "en": "ER handover board"}, "hot": "whiteboard"},
+  "bed12": {"name": {"zh": "12 床", "en": "Bed 12"}, "hot": "bed"},
+  "resus": {"name": {"zh": "急救區", "en": "Resuscitation bay"}, "hot": "field"},
+  "monitor": {"name": {"zh": "監視器", "en": "Monitor"}, "hot": "monitor"},
+  "drugs": {"name": {"zh": "急診藥車", "en": "ER drug cart"}, "hot": "drugs"},
+  "pacs": {"name": {"zh": "PACS 讀片站", "en": "PACS workstation"}, "hot": "imaging"},
+  "desk": {"name": {"zh": "急診醫師桌", "en": "ER doctors' desk"}, "hot": "desk"}
+ },
+ "glossary": [
+  {"term": {"zh": "甲狀腺風暴", "en": "thyroid storm"}, "plain": {"zh": "甲狀腺亢進失控到全身器官一起出事：高燒、心跳飛快、意識混亂、拉肚子、心臟衰竭。少見，但會致命，要在加護病房處理。", "en": "An overactive thyroid out of control, with organs failing together: high fever, racing heart, confusion, diarrhoea, heart failure. Rare, but it kills, and it belongs in intensive care."}},
+  {"term": {"zh": "葛瑞夫茲病", "en": "Graves' disease"}, "plain": {"zh": "最常見的甲狀腺亢進原因。身體做出抗體一直按甲狀腺的開關，脖子腫、眼睛凸、心跳快、手抖、變瘦。", "en": "The commonest cause of an overactive thyroid. The body makes an antibody that keeps pressing the thyroid's 'on' switch: swollen neck, staring eyes, fast heart, tremor, weight loss."}},
+  {"term": {"zh": "抗甲狀腺藥", "en": "antithyroid drug"}, "plain": {"zh": "讓甲狀腺少做荷爾蒙的口服藥。要吃一段很長的時間，自己停藥是最常見的復發原因。", "en": "Tablets that make the thyroid produce less hormone. They are taken for a long time, and stopping them on one's own is the commonest reason for relapse."}},
+  {"term": {"zh": "顆粒性白血球缺乏症", "en": "agranulocytosis"}, "plain": {"zh": "抗甲狀腺藥少見但嚴重的副作用：對抗細菌的白血球幾乎消失。典型表現就是發燒加喉嚨痛，所以吃這類藥的人一發燒，先驗血球。", "en": "A rare but serious side effect of antithyroid drugs: the white cells that fight bacteria almost vanish. It typically shows as fever with a sore throat, so anyone on these tablets who gets a fever has a blood count first."}},
+  {"term": {"zh": "中性球", "en": "neutrophils"}, "plain": {"zh": "白血球裡負責打細菌的主力。數量太低時，一個普通的喉嚨發炎也可能變成敗血症。", "en": "The white cells that do most of the fighting against bacteria. When they are too few, an ordinary sore throat can become sepsis."}},
+  {"term": {"zh": "心房顫動", "en": "atrial fibrillation"}, "plain": {"zh": "心房不規則地亂顫，心跳又快又亂。甲狀腺亢進是常見的原因之一，也容易讓心臟衰竭。", "en": "The upper chambers quiver irregularly, making the heartbeat fast and chaotic. An overactive thyroid is a common cause, and it pushes the heart towards failure."}},
+  {"term": {"zh": "甲狀腺腫", "en": "goitre"}, "plain": {"zh": "甲狀腺變大。葛瑞夫茲病常是整個均勻腫大，有時候聽診器放上去還聽得到血流的雜音。", "en": "An enlarged thyroid. In Graves' disease it is usually smoothly enlarged all over, and sometimes a stethoscope can hear blood rushing through it."}},
+  {"term": {"zh": "誘因", "en": "trigger"}, "plain": {"zh": "把穩定的病推到危機的那件事：感染、自己停藥、手術、生產、碘顯影劑。找到誘因並處理，危機才會真正過去。", "en": "Whatever pushes a stable illness into crisis: infection, stopped tablets, surgery, childbirth, iodine contrast. The crisis only truly passes once the trigger is found and treated."}},
+  {"term": {"zh": "碘劑", "en": "iodine"}, "plain": {"zh": "大量的碘可以暫時擋住甲狀腺把荷爾蒙放出來。但必須在抑制合成的藥之後才給，不然等於送原料給工廠。", "en": "A large amount of iodine can briefly stop the thyroid releasing its hormone. It must be given after the drug that blocks production, or it simply feeds the factory more raw material."}},
+  {"term": {"zh": "高輸出性心衰竭", "en": "high-output heart failure"}, "plain": {"zh": "心臟不是沒力，是被逼得太快太久，最後跟不上身體的需求，肺開始積水。", "en": "The heart is not weak; it has been driven too fast for too long and finally cannot keep up, and the lungs begin to fill with fluid."}},
+  {"term": {"zh": "ISBAR", "en": "ISBAR"}, "plain": {"zh": "打電話交班的順序：我是誰、病人狀況、背景、我的評估、我要你做什麼。", "en": "The order for a handover call: who I am, the situation, the background, my assessment, what I need from you."}}
+ ],
+ "codex": [
+  {"id": "resus-bay", "kind": "equipment", "name": {"zh": "急救區", "en": "Resuscitation bay"}, "text": {"zh": "監視器、氧氣、抽吸、急救車都在一臂之內。甲狀腺風暴的病人坐不住、會拉管路，所以床欄、靜脈管路固定和一個看得到她的護理師，跟藥一樣重要。", "en": "Monitor, oxygen, suction and crash cart within arm's reach. A patient in thyroid storm cannot keep still and pulls at lines, so bed rails, secured IV lines and a nurse who can see her matter as much as the drugs."}, "hot": "field"},
+  {"id": "monitor", "kind": "equipment", "name": {"zh": "監視器", "en": "Monitor"}, "text": {"zh": "節律、血壓、血氧、體溫。風暴病人的監視器要看趨勢：體溫和心跳一起往上走，比任何一個單一數字都可怕。", "en": "Rhythm, pressure, oxygen, temperature. In a storm watch the trends: temperature and heart rate climbing together are more frightening than any single number."}, "hot": "monitor"},
+  {"id": "cooling", "kind": "equipment", "name": {"zh": "冰枕與降溫毯", "en": "Ice packs and cooling blanket"}, "text": {"zh": "放在腋下和鼠蹊，外面包一層布。退燒藥依醫囑，避免水楊酸類，因為它會把結合在蛋白上的甲狀腺素放出來。", "en": "Placed in the armpits and groins, wrapped in cloth. Antipyretics per orders, avoiding salicylates, because they release thyroid hormone from its carrier proteins."}, "hot": "drugs"},
+  {"id": "pacs", "kind": "equipment", "name": {"zh": "PACS 讀片站", "en": "PACS workstation"}, "text": {"zh": "胸部 X 光推到這裡。先核對姓名與時間，再看心臟大小、肺有沒有水、有沒有肺炎，最後看氣管有沒有被甲狀腺腫推歪。", "en": "The chest X-ray lands here. Check the name and time, then heart size, fluid in the lungs, pneumonia, and finally whether the goitre has pushed the trachea aside."}, "hot": "imaging"},
+  {"id": "pill-bag", "kind": "item", "name": {"zh": "阿蓮兩年前的藥袋", "en": "Lian's two-year-old pill bag"}, "text": {"zh": "一個皺巴巴的藥袋，日期是兩年前，裡面剩半排藥。阿蓮停了三個月，上週心悸又自己吃回去。藥袋說的故事，比病歷完整。", "en": "A crumpled pill bag dated two years ago with half a strip left. Lian stopped for three months and restarted on her own last week when the palpitations came back. The bag tells a fuller story than the notes."}},
+  {"id": "storm-whole-body", "kind": "concept", "name": {"zh": "風暴是全身的事", "en": "A storm is a whole-body event"}, "text": {"zh": "甲狀腺風暴沒有一個單一檢驗可以確診，靠的是臨床：體溫、中樞神經（躁動、混亂）、腸胃與肝（腹瀉、黃疸）、心臟（心跳、心房顫動、心衰竭），再加上一個誘因。醫院常用評分表把這些加起來，但真正重要的是：看到「發燒＋心跳快＋意識改變」在一個甲狀腺病人身上，就升級，不等甲狀腺報告。", "en": "No single test diagnoses thyroid storm; it is clinical. Temperature, the brain (agitation, confusion), gut and liver (diarrhoea, jaundice), the heart (rate, atrial fibrillation, failure), plus a trigger. Hospitals use a scoring table to add these up, but what matters is this: fever, a racing heart and altered thinking in someone with a thyroid problem means escalate now, without waiting for the thyroid results."}},
+  {"id": "factory-then-store", "kind": "concept", "name": {"zh": "先關工廠，再關倉庫", "en": "Close the factory, then the warehouse"}, "text": {"zh": "風暴治療的順序有道理：先控制心跳保護心臟；再用抗甲狀腺藥關掉「工廠」（停止合成）；隔一段時間才給碘劑關掉「倉庫」（停止釋放），否則碘會變成工廠的原料；類固醇幫忙減少轉換、也預防腎上腺不足；同時降溫、補水、處理誘因。順序錯了，藥都對也會出事。", "en": "The order of treatment has a logic. Control the heart rate to protect the heart; close the 'factory' with an antithyroid drug (stop production); only after a while close the 'warehouse' with iodine (stop release), or the iodine becomes raw material for the factory; steroids reduce hormone conversion and cover possible adrenal insufficiency; meanwhile cool, rehydrate and treat the trigger. Get the order wrong and the right drugs can still cause harm."}},
+  {"id": "fever-on-atd", "kind": "concept", "name": {"zh": "吃抗甲狀腺藥的人發燒", "en": "Fever on an antithyroid drug"}, "text": {"zh": "抗甲狀腺藥少見但最危險的副作用是顆粒性白血球缺乏症，常發生在開始或重新開始吃藥的前幾個月。衛教要講清楚：發燒或喉嚨痛，先停藥、當天驗血球。醫師這一端也一樣：給下一顆藥之前，先知道中性球數。", "en": "The rare but most dangerous side effect of antithyroid drugs is agranulocytosis, usually in the first months after starting or restarting. Teach it plainly: fever or a sore throat means stop the tablet and have a blood count that day. The same applies to the doctor: know the neutrophil count before the next tablet."}}
+ ],
+ "segs": [
+  {"id": "handover", "name": {"zh": "小夜接會診", "en": "Evening consult"}, "sub": {"zh": "16:00 · 急診交班板", "en": "16:00 · ER handover board"}, "t": 960, "mood": "day",
+   "note": {"zh": "接下 12 床「焦慮加腸胃炎」", "en": "Took bed 12: 'anxiety and gastroenteritis'"},
+   "beats": [
+    {"id": "h1", "to": "place:board", "guide": {"zh": "到交班板看 12 床", "en": "Read bed 12 on the board"},
+     "ring": {"title": {"zh": "急診會診訊息", "en": "ER consult message"}, "sub": {"zh": "12 床，有甲狀腺病史，心悸、腹瀉、躁動", "en": "Bed 12: thyroid history, palpitations, diarrhoea, agitation"}, "from": "er-doc"},
+     "lines": [
+      ["er-doc", {"zh": "小魏。12 床阿蓮，34 歲，心悸、拉肚子、坐不住。檢傷寫焦慮加腸胃炎。她說以前有甲狀腺，我不確定，所以找你。", "en": "Wei. Bed 12, Lian, 34: palpitations, diarrhoea, cannot sit still. Triage says anxiety and gastroenteritis. She mentioned a thyroid problem; I am not sure, so I called you."}],
+      ["nurse-fang", {"zh": "補一句：她的體溫剛剛比檢傷時高，心跳也是。兩個一起往上爬。", "en": "One more thing: her temperature is higher than at triage, and so is her heart rate. Both climbing together."}],
+      ["attending", {"zh": "（電話）范主治。甲狀腺病人，發燒、心跳快、坐不住。這三個字放在一起，你先想到什麼？", "en": "(On the phone) Dr Fan. A thyroid patient with fever, a racing heart and restlessness. Put those together: what comes to mind first?"}]
+     ],
+     "mini": {"type": "stage", "case": "endocrinology-v37-thyroid-storm", "stage": 0},
+     "post": [
+      ["attending", {"zh": "對，多系統急症，先升級。你寫「我不確定」是對的，小魏，不確定就是要叫人。我二十分鐘到。", "en": "Right: a multi-system emergency, so escalate first. Wei, writing 'not sure' was correct. Not sure means call someone. I will be there soon."}]
+     ]},
+    {"id": "h2", "to": "place:monitor", "guide": {"zh": "把阿蓮接上監視器", "en": "Put Lian on the monitor"}, "roles": ["ernurse"],
+     "lines": [
+      ["nurse-fang", {"zh": "她從觀察區推進急救區。第一件事：連續監視器，心電圖、血氧、體溫一起看。冰枕我先去拿「風暴專用」那一格。", "en": "She is coming from observation into resus. First job: continuous monitoring, rhythm, oxygen and temperature together. I am fetching the ice packs from the 'storms only' shelf."}]
+     ],
+     "mini": {"type": "find", "hot": "monitor", "q": {"zh": "找到急救區的監視器，接上阿蓮", "en": "Find the resus-bay monitor and connect Lian"}},
+     "post": [
+      ["nurse-fang", {"zh": "接好了。心跳不規則，很快。我叫你。", "en": "Connected. Irregular, and fast. I am calling you over."}]
+     ]}
+   ]},
+  {"id": "bed12", "name": {"zh": "12 床阿蓮", "en": "Bed 12, Lian"}, "sub": {"zh": "16:30 · 急救區", "en": "16:30 · resus bay"}, "t": 990, "mood": "day",
+   "note": {"zh": "問出停藥、重吃與喉嚨痛", "en": "Found the stopped pills, the restart, the sore throat"},
+   "beats": [
+    {"id": "b1", "to": "patient-lian", "guide": {"zh": "問阿蓮的用藥與症狀", "en": "Ask Lian about tablets and symptoms"},
+     "lines": [
+      ["patient-lian", {"zh": "醫師我沒事啦，就是心臟跳很快，拉肚子。我要回去，今天的芒果沒切完會爛掉。", "en": "Doctor, I am fine, my heart is just racing and I have diarrhoea. I need to get back; if the mangoes are not cut tonight they will spoil."}],
+      ["me", {"zh": "阿蓮，甲狀腺的藥現在還有吃嗎？有沒有停過、又自己吃回去？", "en": "Lian, are you still taking your thyroid tablets? Did you ever stop them, and then start again yourself?"}],
+      ["patient-lian", {"zh": "……好了就停了啊。上禮拜又開始心悸，我把以前剩下的拿出來吃。這三天喉嚨很痛，大概是感冒。", "en": "...I stopped once I felt better. Last week the palpitations came back, so I took the old leftover ones. My throat has been sore for three days, probably a cold."}],
+      ["sys", {"zh": "自己停藥、上週重新開始吃、發燒、喉嚨痛。這四件事有兩個意思，你要兩個都想到。", "en": "Stopped tablets, restarted last week, fever, a sore throat. Those four facts carry two meanings, and you need to think of both."}]
+     ],
+     "mini": {"type": "choice", "q": {"zh": "上週重新吃抗甲狀腺藥，現在發燒加喉嚨痛。下一顆藥給之前，你先做什麼？", "en": "Restarted an antithyroid drug last week; now fever and a sore throat. Before the next tablet, what do you do first?"},
+      "options": [
+       {"zh": "先驗血球與中性球數，結果前暫停", "en": "Full blood count with neutrophils; hold the tablet until it is back", "ok": true, "set": {"anc-first": true},
+        "why": {"zh": "發燒加喉嚨痛，在剛開始或重新開始吃抗甲狀腺藥的人身上，要先排除顆粒性白血球缺乏症。驗血很快，答案決定今晚的藥怎麼給。", "en": "Fever with a sore throat soon after starting or restarting an antithyroid drug: exclude agranulocytosis first. The count is quick, and the answer decides how tonight's drugs are given."}},
+       {"zh": "喉嚨痛是感冒，抗甲狀腺藥照給", "en": "A sore throat is a cold; give the tablet as usual", "ok": false, "set": {"anc-first": false},
+        "why": {"zh": "可能是感冒，也可能是中性球幾乎沒了。在不知道的情況下多給一顆，賭的是她的骨髓。", "en": "It might be a cold, or her neutrophils might be almost gone. Giving another tablet without knowing is a bet placed with her bone marrow."}},
+       {"zh": "先排甲狀腺超音波確認診斷", "en": "Book a thyroid ultrasound to confirm the diagnosis", "ok": false, "set": {"anc-first": false},
+        "why": {"zh": "超音波今晚回答不了任何急的問題。急的是她的心跳、體溫和中性球。", "en": "An ultrasound answers none of tonight's urgent questions. What is urgent is her heart rate, her temperature and her neutrophils."}}
+      ]},
+     "post": [
+      ["nurse-fang", {"zh": "血球、甲狀腺功能、肝功能、電解質、血液培養，標籤貼好送出。喉嚨拭子也採了。", "en": "Blood count, thyroid function, liver tests, electrolytes, blood cultures: labelled and sent. Throat swab taken as well."}],
+      ["family-guo", {"zh": "（掀開簾子）姊！妳又說妳沒事。醫師，她每次都說沒事，上次沒事是騎車撞到電線桿。", "en": "(Pulling the curtain back) Sis! 'I am fine' again. Doctor, she always says that. The last time she was 'fine' she rode her scooter into a lamppost."}]
+     ]},
+    {"id": "b2", "to": "place:bed12", "guide": {"zh": "從後面摸阿蓮的甲狀腺", "en": "Feel Lian's thyroid from behind"}, "roles": ["resident"],
+     "lines": [
+      ["attending", {"zh": "（到了）摸脖子，從病人後面，請她吞口水。告訴我：大小、質地、表面，還有手放上去的感覺。", "en": "(Arriving) Feel the neck, from behind, and ask her to swallow. Tell me size, texture, surface, and what you feel under your fingers."}]
+     ],
+     "mini": {"type": "drill", "template": "endocrinology", "drill": "thyroidPalp"},
+     "post": [
+      ["me", {"zh": "兩葉都均勻腫大、軟、沒有結節，吞嚥時往上動。手底下好像有東西在嗡嗡震。", "en": "Both lobes smoothly enlarged, soft, no nodules, moving up on swallowing. Something seems to hum under my fingers."}],
+      ["attending", {"zh": "那是血流。聽診器放上去會聽到雜音。均勻的甲狀腺腫加雜音，這就是葛瑞夫茲病的脖子。", "en": "That is blood flow; a stethoscope would hear a bruit. A smooth goitre with a bruit: that is the neck of Graves' disease."}]
+     ]}
+   ]},
+  {"id": "storm", "name": {"zh": "風暴", "en": "The storm"}, "sub": {"zh": "17:30 · 急救區監視器", "en": "17:30 · resus-bay monitor"}, "t": 1050, "mood": "eve",
+   "note": {"zh": "心房顫動，排對風暴處置的順序", "en": "Atrial fibrillation; the storm treatment in order"},
+   "beats": [
+    {"id": "v1", "to": "place:monitor", "guide": {"zh": "監視器在叫，回急救區", "en": "The monitor is alarming: back to resus"},
+     "lines": [
+      ["sys", {"zh": "監視器尖叫。阿蓮的心跳又快又亂，體溫又上去一格。她開始扯手上的點滴，叫你「老闆」。", "en": "The monitor shrieks. Lian's heart is fast and irregular, her temperature a notch higher. She starts tugging at her drip and calls you 'boss'."}],
+      ["nurse-fang", {"zh": "心房顫動，心跳很快，血壓還撐著。她開始混亂了。", "en": "Atrial fibrillation, very fast, blood pressure holding. She is getting confused."}]
+     ],
+     "mini": {"type": "vitals", "event": "tachyarrhythmia",
+      "options": [
+       {"zh": "心電圖、叫師傅、依規範控速並降溫", "en": "Twelve-lead ECG, call the mentor, rate control per protocol, cool her", "ok": true,
+        "why": {"zh": "甲狀腺風暴加心房顫動：保護心臟、把心跳依規範慢下來、降溫、補水，同時準備送加護病房。血壓若掉，就照不穩定心律的流程走。", "en": "Thyroid storm with atrial fibrillation: protect the heart, slow the rate per protocol, cool, rehydrate, and prepare for ICU. If the pressure falls, follow the unstable-arrhythmia pathway."}},
+       {"zh": "給鎮靜讓她安靜下來就好", "en": "Sedate her so she settles", "ok": false,
+        "why": {"zh": "她的躁動是腦在發燒，不是脾氣。只壓住躁動，心跳和體溫還在往上走，你只是看不到了。", "en": "Her agitation is a brain running hot, not temper. Suppress the agitation alone and the heart rate and temperature keep climbing; you simply stop seeing it."}},
+       {"zh": "先送甲狀腺掃描確定診斷", "en": "Send her for a thyroid scan to confirm", "ok": false,
+        "why": {"zh": "風暴是臨床診斷，不等掃描。把一個心房顫動又混亂的人推出急救區，是最危險的一條路。", "en": "Storm is a clinical diagnosis; it does not wait for a scan. Wheeling a confused patient in fast atrial fibrillation out of resus is the most dangerous path there is."}}
+      ]},
+     "post": [
+      ["attending", {"zh": "心跳慢下來一點了。好，現在最容易出錯的地方來了：藥的順序。", "en": "The rate is coming down a little. Now for the part people get wrong: the order of the drugs."}]
+     ]},
+    {"id": "v2", "to": "place:resus", "guide": {"zh": "把風暴處置排對順序", "en": "Put the storm treatment in order"},
+     "lines": [
+      ["attending", {"zh": "每一個藥你都知道。考你的是順序。碘劑為什麼不能第一個給？", "en": "You know every drug. What I am testing is the order. Why can iodine not go first?"}],
+      ["me", {"zh": "因為工廠還開著的時候給碘，等於送原料進去。要先用抗甲狀腺藥關工廠，再關倉庫。", "en": "Because iodine given while the factory is still running is raw material. Close the factory with the antithyroid drug first, then the warehouse."}]
+     ],
+     "mini": {"type": "order", "q": {"zh": "甲狀腺風暴：把處置排對", "en": "Thyroid storm: put the steps in order"},
+      "steps": [
+       {"zh": "監視器、氧氣、降溫、補水", "en": "Monitor, oxygen, cooling, fluids"},
+       {"zh": "依醫囑控制心跳", "en": "Rate control per orders"},
+       {"zh": "確認中性球後，給抑制合成藥", "en": "Neutrophils known: give the production blocker"},
+       {"zh": "隔一段時間，才給碘劑", "en": "Only after an interval: iodine"},
+       {"zh": "依醫囑類固醇，處理誘因", "en": "Steroid per orders; treat the trigger"}
+      ]},
+     "post": [
+      ["attending", {"zh": "對。藥名會換、指引會改，這個順序的道理不會。", "en": "Right. Drug names change and guidelines get revised; the logic of this order does not."}]
+     ]},
+    {"id": "v3", "to": "nurse-fang", "guide": {"zh": "幫阿蓮降溫", "en": "Cool Lian down"}, "roles": ["ernurse"],
+     "lines": [
+      ["nurse-fang", {"zh": "冰枕放腋下、鼠蹊，包一層布，不要直接貼皮膚。退燒藥依醫囑，不用阿斯匹靈這類水楊酸。", "en": "Ice packs in the armpits and groins, wrapped in cloth, never straight on skin. Antipyretic per orders, and no aspirin-type salicylates."}],
+      ["me", {"zh": "因為水楊酸會把黏在蛋白上的甲狀腺素放出來，等於火上加油？", "en": "Because salicylates free thyroid hormone from its carrier proteins: fuel on the fire?"}],
+      ["nurse-fang", {"zh": "答對，冰枕給你抱一個。", "en": "Correct. Have an ice pack as a prize."}]
+     ]}
+   ]},
+  {"id": "lab-call", "name": {"zh": "檢驗科來電", "en": "The lab calls"}, "sub": {"zh": "18:30 · 急診醫師桌", "en": "18:30 · ER doctors' desk"}, "t": 1110, "mood": "eve",
+   "note": {"zh": "中性球正常：誘因是喉嚨，不是藥", "en": "Neutrophils normal: the trigger is the throat, not the drug"},
+   "beats": [
+    {"id": "l1", "to": "place:desk", "guide": {"zh": "接檢驗科電話並複誦", "en": "Take the lab call and read back"}, "when": {"flag": "anc-first", "is": true},
+     "ring": {"title": {"zh": "檢驗科來電", "en": "Laboratory calling"}, "sub": {"zh": "12 床阿蓮：血球結果", "en": "Bed 12, Lian: blood count"}, "call": true, "from": "lab"},
+     "lines": [
+      ["lab", {"zh": "檢驗科。12 床阿蓮，白血球分類出來了，中性球數在正常範圍。甲狀腺素很高，肝指數輕度上升。請複誦。", "en": "Laboratory. Bed 12, Lian: the differential is back, neutrophils within the normal range. Thyroid hormone very high, liver tests mildly raised. Please read back."}],
+      ["me", {"zh": "複誦：中性球正常，甲狀腺素很高，肝指數輕度上升。收到，時間記了。", "en": "Reading back: neutrophils normal, thyroid hormone very high, liver tests mildly raised. Received, time recorded."}],
+      ["attending", {"zh": "好。藥可以照順序給了。你等了十幾分鐘，換到的是一個安心的答案。", "en": "Good. Now the drugs can go in order. You waited a few minutes and bought a safe answer."}]
+     ]},
+    {"id": "l2", "to": "place:desk", "guide": {"zh": "接檢驗科電話並複誦", "en": "Take the lab call and read back"}, "when": {"flag": "anc-first", "is": false},
+     "ring": {"title": {"zh": "檢驗科來電", "en": "Laboratory calling"}, "sub": {"zh": "12 床阿蓮：血球結果", "en": "Bed 12, Lian: blood count"}, "call": true, "from": "lab"},
+     "lines": [
+      ["lab", {"zh": "檢驗科。12 床阿蓮，中性球數在正常範圍，甲狀腺素很高。請複誦。", "en": "Laboratory. Bed 12, Lian: neutrophils within the normal range, thyroid hormone very high. Please read back."}],
+      ["nurse-fang", {"zh": "那顆藥五點就照舊醫囑給了，那時候還沒人知道她的中性球。", "en": "That tablet went in at five on the old order, before anyone knew her neutrophils."}],
+      ["attending", {"zh": "這次是正常的，運氣好。運氣不是計畫。下一個發燒喉嚨痛的病人，先驗血，再給藥。", "en": "Normal this time. Lucky. Luck is not a plan. The next patient with fever and a sore throat gets a count before a tablet."}]
+     ]},
+    {"id": "l3", "to": "attending", "guide": {"zh": "跟師傅整合誘因與器官", "en": "Pull triggers and organs together"},
+     "lines": [
+      ["attending", {"zh": "停藥、重吃、喉嚨發炎、心房顫動、肝指數上升。哪些是誘因，哪些是器官在受苦？兩條線要一起追。", "en": "Stopped tablets, a restart, an inflamed throat, atrial fibrillation, raised liver tests. Which are triggers and which are organs suffering? Follow both lines at once."}]
+     ],
+     "mini": {"type": "stage", "case": "endocrinology-v37-thyroid-storm", "stage": 1},
+     "post": [
+      ["me", {"zh": "誘因：停藥加喉嚨感染。受苦的器官：心臟、腦、肝。喉嚨培養追、心臟超音波排、肝功能每天看。", "en": "Triggers: stopped tablets and a throat infection. Organs suffering: heart, brain, liver. Chase the throat culture, book an echo, check the liver daily."}]
+     ]}
+   ]},
+  {"id": "film", "name": {"zh": "胸部 X 光", "en": "The chest film"}, "sub": {"zh": "19:30 · PACS 讀片站", "en": "19:30 · PACS workstation"}, "t": 1170, "mood": "eve",
+   "note": {"zh": "心臟累了，氣管在中線", "en": "A tired heart; trachea midline"},
+   "beats": [
+    {"id": "x1", "to": "place:pacs", "guide": {"zh": "看阿蓮的胸部 X 光", "en": "Read Lian's chest X-ray"},
+     "lines": [
+      ["attending", {"zh": "她開始喘，躺不平。這張片子要回答三個問題，你先說。", "en": "She is getting breathless and cannot lie flat. This film must answer three questions. You first."}]
+     ],
+     "mini": {"type": "imaging", "region": "chest",
+      "question": {"zh": "甲狀腺風暴合併心房顫動、開始喘：胸部 X 光要回答哪三個問題？", "en": "Thyroid storm with atrial fibrillation, now breathless: what three questions must the chest X-ray answer?"},
+      "answer": {"zh": "一、有沒有高輸出性心衰竭：心臟變大、肺水腫、肋膜積水。二、有沒有肺炎這類誘因。三、甲狀腺腫有沒有把氣管推歪或壓窄，這會影響插管與呼吸道計畫。", "en": "One: is there high-output heart failure, an enlarged heart, pulmonary oedema, effusions. Two: is there a trigger such as pneumonia. Three: has the goitre pushed the trachea aside or narrowed it, which changes any airway plan."}},
+     "post": [
+      ["me", {"zh": "肺門有點充血，沒有肺炎，氣管在中線。心臟是被逼累的，不是壞掉的。", "en": "Some congestion at the hila, no pneumonia, trachea midline. The heart is exhausted from being driven, not broken."}],
+      ["attending", {"zh": "說得好。心跳慢下來，它就有機會回來。", "en": "Well put. Slow the rate and it has a chance to recover."}]
+     ]}
+   ]},
+  {"id": "brother", "name": {"zh": "阿國的藥袋", "en": "Guo's pill bag"}, "sub": {"zh": "20:30 · 12 床簾外", "en": "20:30 · outside bed 12's curtain"}, "t": 1230, "mood": "eve",
+   "note": {"zh": "阿國說出停藥的真正原因", "en": "Guo tells the real reason she stopped"},
+   "beats": [
+    {"id": "f1", "to": "family-guo", "guide": {"zh": "到簾外跟阿國談", "en": "Talk to Guo outside the curtain"},
+     "lines": [
+      ["family-guo", {"zh": "醫師，這是我在攤子抽屜找到的藥袋。兩年前的。我要坦白：是我說那個藥會讓人變胖，她才停的。", "en": "Doctor, I found this pill bag in the stall drawer. Two years old. I have to confess: I told her those pills make you fat, and that is why she stopped."}],
+      ["me", {"zh": "阿國，謝謝你帶來，這個藥袋幫了大忙。體重的事是真的會發生，因為亢進的時候她瘦得太快了。", "en": "Guo, thank you, this bag really helps. The weight part is real: she lost weight too fast while her thyroid was overactive."}],
+      ["me", {"zh": "治好之後體重回來，是回到她本來的樣子。這個藥要吃夠久，停藥要跟醫師一起決定。", "en": "When it is treated, the weight that returns is her own weight coming back. These tablets need a long course, and stopping is a decision made with the doctor."}],
+      ["family-guo", {"zh": "……那我以後當她的鬧鐘。芒果我叫隔壁攤幫忙切了，你跟她說，她比較聽醫生的。", "en": "...Then from now on I am her alarm clock. The stall next door is cutting the mangoes. You tell her; she listens to doctors more than me."}]
+     ],
+     "item": "pill-bag"}
+   ]},
+  {"id": "icu", "name": {"zh": "送加護病房", "en": "Up to ICU"}, "sub": {"zh": "22:00 · 急診醫師桌", "en": "22:00 · ER doctors' desk"}, "t": 1320, "mood": "night",
+   "note": {"zh": "ISBAR 交給加護病房", "en": "ISBAR handover to ICU"},
+   "beats": [
+    {"id": "i1", "to": "place:desk", "guide": {"zh": "用 ISBAR 打給加護病房", "en": "Call ICU in ISBAR"},
+     "ring": {"title": {"zh": "加護病房阿德", "en": "De, ICU fellow"}, "sub": {"zh": "床有，你講", "en": "I have a bed. Talk."}, "call": true, "from": "icu-fellow"},
+     "lines": [
+      ["icu-fellow", {"zh": "阿德。床有，你講。", "en": "De. I have a bed. Talk."}],
+      ["me", {"zh": "內分泌科住院醫師。12 床阿蓮，34 歲，葛瑞夫茲病自行停藥，甲狀腺風暴，誘因是喉嚨感染。", "en": "Endocrinology resident. Bed 12, Lian, 34, Graves' disease, stopped her tablets, now thyroid storm, triggered by a throat infection."}],
+      ["me", {"zh": "心房顫動已依規範控速，降溫中，藥依順序給完，中性球正常。肺有點充血。請收加護病房，持續監測。", "en": "Atrial fibrillation rate-controlled per protocol, cooling under way, drugs given in sequence, neutrophils normal. Mild pulmonary congestion. Please take her to ICU for continuous monitoring."}],
+      ["icu-fellow", {"zh": "清楚。三十分鐘內上來。順序有寫在交班單上吧？上一個風暴病人，碘劑被先給了。", "en": "Clear. Bring her up within the half hour. Is the drug sequence on the handover sheet? Our last storm patient got the iodine first."}]
+     ]},
+    {"id": "i2", "to": "patient-lian", "guide": {"zh": "推床前跟阿蓮說明", "en": "Explain to Lian before the move"},
+     "lines": [
+      ["patient-lian", {"zh": "（安靜很多）醫師，剛剛我是不是叫你老闆？對不起。我現在比較知道自己在哪裡了。", "en": "(Much calmer) Doctor, did I call you 'boss' earlier? Sorry. I know where I am a bit better now."}],
+      ["me", {"zh": "沒關係，那是甲狀腺在講話。今晚去加護病房，讓心臟和體溫慢慢回來。藥以後我們一起決定怎麼吃。", "en": "No problem; that was your thyroid talking. Tonight you go to ICU so your heart and temperature can settle. From now on we decide about the tablets together."}]
+     ]}
+   ]},
+  {"id": "night-handover", "name": {"zh": "夜間交班", "en": "Night handover"}, "sub": {"zh": "23:30 · 急診交班板", "en": "23:30 · ER handover board"}, "t": 1410, "mood": "night",
+   "note": {"zh": "交出誘因、器官與藥的順序", "en": "Handed over triggers, organs, drug order"},
+   "beats": [
+    {"id": "n1", "to": "place:board", "guide": {"zh": "寫下交班重點", "en": "Write the handover"},
+     "lines": [
+      ["attending", {"zh": "交班單上，什麼一定要寫？不是「甲亢」兩個字。", "en": "What must be on the handover sheet? Not just the word 'hyperthyroid'."}]
+     ],
+     "mini": {"type": "stage", "case": "endocrinology-v37-thyroid-storm", "stage": 2},
+     "post": [
+      ["me", {"zh": "誘因兩個、受苦的器官三個、藥的順序和時間、中性球結果、喉嚨培養待回、出院前的停藥衛教。", "en": "Two triggers, three suffering organs, the drug sequence with times, the neutrophil result, throat culture pending, and teaching about stopping tablets before discharge."}]
+     ]},
+    {"id": "n2", "to": "attending", "guide": {"zh": "聽師傅的下班總結", "en": "The mentor's debrief"},
+     "lines": [
+      ["attending", {"zh": "今晚的檢傷單寫的是焦慮和腸胃炎。兩個都不算錯，只是都不完整。", "en": "Tonight's triage sheet said anxiety and gastroenteritis. Neither was wrong; both were incomplete."}],
+      ["attending", {"zh": "甲狀腺病人發燒、心跳快、意識改變，就升級。給藥之前問中性球，碘劑永遠排在後面。", "en": "A thyroid patient with fever, a racing heart and a changed mind: escalate. Ask about neutrophils before the tablet, and iodine always comes later."}],
+      ["nurse-fang", {"zh": "還有，冰枕要還我。「風暴專用」那格空了。", "en": "Also, the ice packs come back to me. The 'storms only' shelf is empty."}],
+      ["family-guo", {"zh": "（傳訊息）醫師，芒果切完了。我姊說等她好了，請急診一人一盒。", "en": "(Text message) Doctor, the mangoes are cut. My sister says when she is better, the whole ER gets a box each."}]
+     ],
+     "end": true}
+   ]}
+ ],
+ "ending": {"title": {"zh": "下班了", "en": "End of shift"}, "sub": {"zh": "甲狀腺不會只壞一個器官；碘劑永遠排後面", "en": "The thyroid never breaks just one organ; iodine always comes later"},
+  "stats": ["stages", "drills", "choices", "calls", "items", "time"]}
+}

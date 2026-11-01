@@ -1,0 +1,284 @@
+{
+ "format": "huatuo-shift-v2",
+ "department": "thai-massage",
+ "case": "main",
+ "caseTitle": {"zh": "低頭族的肩頸", "en": "A head-down neck and shoulders"},
+ "condition": {"zh": "肌骨 · 辦公室肩頸緊繃", "en": "Musculoskeletal · office neck and shoulders"},
+ "difficulty": 1,
+ "title": {"zh": "泰式按摩治療室值班日", "en": "A shift in the Thai massage room"},
+ "tagline": {"zh": "從 Wai Khru 到最後一位晚班客人", "en": "From the Wai Khru to the last evening client"},
+ "room": "tuina",
+ "minutes": 25,
+ "roles": [
+  {"id": "intern", "zh": "中醫見習醫師", "en": "TCM clinical clerk",
+   "desc": {"zh": "篩禁忌、摸脈、認出按摩治不了的手麻和不能仰躺的孕婦；轉診單由你寫。", "en": "Screen contraindications, take the pulse, recognise the numb hand massage cannot fix and the pregnant client who must not lie flat; the referrals are yours."}},
+  {"id": "therapist", "zh": "泰式按摩治療師", "en": "Thai massage therapist",
+   "desc": {"zh": "掌壓、拇指壓、Sen 線與坐姿肩頸序列是你的；用身體重量，不用手指吼叫。", "en": "Palming, thumbing, the Sen lines and the seated neck sequence are yours; speak with body weight, never shout with the fingers."}}
+ ],
+ "cast": {
+  "master": {"name": {"zh": "蘇師傅", "en": "Master Su"}, "role": {"zh": "中醫師，泰式按摩指導（師傅）", "en": "TCM physician, Thai massage lead (mentor)"}, "tag": "SF", "color": "#81296d", "body": "mentor",
+   "about": {"zh": "年輕時在曼谷臥佛寺學了三年。每天開工前合十行 Wai Khru。名言：「按摩是用身體重量說話，不是用手指吼叫。」", "en": "Spent three years at Wat Pho in Bangkok when young. Opens every day with the Wai Khru, palms together. His line: massage speaks with body weight; it never shouts with the fingers."}},
+  "nok": {"name": {"zh": "娜姐", "en": "Khun Nok"}, "role": {"zh": "資深泰式按摩治療師", "en": "Senior Thai massage therapist"}, "tag": "TH", "color": "#2f8f8f", "body": "therapist",
+   "about": {"zh": "來台二十年，中文帶一點清邁腔，笑點很低。掌壓像在揉一塊溫熱的麵團。", "en": "Twenty years in Taiwan, Mandarin with a Chiang Mai lilt, laughs easily. Her palming feels like kneading warm dough."}},
+  "afen": {"name": {"zh": "阿芬護理師", "en": "Nurse A-Fen"}, "role": {"zh": "治療室護理師", "en": "Treatment-room nurse"}, "tag": "RN", "color": "#3b8f6a", "body": "nurse",
+   "about": {"zh": "問卷、血壓計、熱毛巾都歸她。她會在問卷的「孕」字旁邊畫一個圈。", "en": "Questionnaires, the blood-pressure cuff and the hot towels are hers. She circles the word “pregnant” on every form."}},
+  "xiaoyu": {"name": {"zh": "小宇", "en": "A-Yu"}, "role": {"zh": "軟體工程師，肩頸緊、頭痛", "en": "Software engineer, tight neck, headaches"}, "tag": "P1", "color": "#c2703a", "body": "patient",
+   "about": {"zh": "虛構教學個案。二十八歲，一天坐十小時、兩個螢幕。肩頸硬得像石頭、下午頭痛，最近右手夜裡會麻醒，甩一甩才好。", "en": "Fictional teaching case. Twenty-eight, ten hours a day at two screens. Neck like stone, afternoon headaches, and lately his right hand wakes him numb at night until he shakes it out."}},
+  "yijun": {"name": {"zh": "怡君", "en": "Yi-Chun"}, "role": {"zh": "懷孕七個月，腰痠", "en": "Seven months pregnant, aching back"}, "tag": "P2", "color": "#b5651d", "body": "patient",
+   "about": {"zh": "虛構教學個案。第一胎、懷孕七個月，腰痠到睡不好。產檢一切正常，產科醫師說可以做溫和按摩。", "en": "Fictional teaching case. First pregnancy, seven months along, back aching too much to sleep. Antenatal checks normal; her obstetrician has cleared gentle massage."}},
+  "reception": {"name": {"zh": "櫃台", "en": "Reception"}, "role": {"zh": "櫃台（電話）", "en": "Front desk (by phone)"}, "tag": "REC", "color": "#5a6b7a", "phoneOnly": true,
+   "about": {"zh": "電話永遠在響。她的問題永遠是：「可以嗎？」", "en": "The phone never stops. Her question is always the same: “Is that OK?”"}}
+ },
+ "places": {
+  "mat": {"name": {"zh": "泰式按摩墊區", "en": "Thai mat area"}, "hot": "mat"},
+  "couch": {"name": {"zh": "治療床", "en": "Treatment couch"}, "hot": "couch"},
+  "board": {"name": {"zh": "預約白板", "en": "Booking board"}, "hot": "whiteboard"},
+  "desk": {"name": {"zh": "接待與紀錄桌", "en": "Intake and notes desk"}, "hot": "desk"},
+  "sink": {"name": {"zh": "洗手台", "en": "Hand-wash sink"}, "hot": "sink"},
+  "lamp": {"name": {"zh": "熱毛巾與暖燈", "en": "Hot towels and warming lamp"}, "hot": "lamp"},
+  "chart": {"name": {"zh": "問卷與病歷架", "en": "Forms and chart rack"}, "hot": "chart"}
+ },
+ "glossary": [
+  {"term": {"zh": "Wai Khru", "en": "Wai Khru"}, "plain": {"zh": "泰式按摩開工前合十向老師與傳承致敬的儀式。也是治療師自己定下心、把注意力放到身體上的一刻。", "en": "The palms-together salute to one's teachers and the lineage before Thai massage begins. Also the moment the therapist settles and brings attention into the body."}},
+  {"term": {"zh": "Sen 線", "en": "Sen lines"}, "plain": {"zh": "泰式醫學裡的能量線，傳統說有七萬二千條，臨床取其中十條主線。按摩沿著 Sen 線壓按與伸展。", "en": "The energy lines of Thai medicine; tradition counts tens of thousands and clinical practice uses ten principal ones. Massage compresses and stretches along them."}},
+  {"term": {"zh": "Sen Ittha、Pingkhala", "en": "Sen Ittha and Pingkhala"}, "plain": {"zh": "十大 Sen 線裡沿身體左右兩側、經過背部與頸後上行到頭的兩條線。傳統認為與頭痛、頸肩僵硬有關。", "en": "Two of the ten principal lines, running up the left and right of the body through the back and neck to the head. Traditionally linked with headache and neck–shoulder stiffness."}},
+  {"term": {"zh": "掌壓", "en": "palming"}, "plain": {"zh": "用整個手掌、靠身體前傾的重量往下壓，壓力面積大、溫和。泰式按摩的基本功。", "en": "Pressing with the whole palm using the weight of the leaning body; a broad, gentle pressure and the foundation of Thai massage."}},
+  {"term": {"zh": "拇指壓", "en": "thumbing"}, "plain": {"zh": "用拇指指腹沿 Sen 線一點一點壓按，深而準。拇指不能彎到底，否則傷的是治療師自己的關節。", "en": "Pressing point by point along a Sen line with the pad of the thumb, deep and precise. Never hyperextend the thumb, or the therapist's own joint pays."}},
+  {"term": {"zh": "身體重量", "en": "body weight"}, "plain": {"zh": "泰式按摩的力量來源：治療師靠前傾、下沉、跪姿把體重交給手掌，而不是用手臂肌肉硬壓。", "en": "The source of force in Thai massage: the therapist leans, sinks and kneels so that weight flows into the palms, instead of pushing with the arm muscles."}},
+  {"term": {"zh": "緊張型頭痛", "en": "tension-type headache"}, "plain": {"zh": "像一條帶子箍住頭的悶痛，常從肩頸的緊繃牽上來，下午和壓力大時加重。與突然的劇烈頭痛完全不同。", "en": "A dull band-like ache around the head, often pulled up from tight neck and shoulders, worse in the afternoon and under stress. Nothing like a sudden severe headache."}},
+  {"term": {"zh": "風池", "en": "Fengchi"}, "plain": {"zh": "枕骨下、兩條大肌肉之間的凹窩。中醫認為是治頭痛、頸項強痛的要穴。按壓方向朝鼻尖，不要朝對側眼睛深壓。", "en": "The hollow below the skull between the two big neck muscles. In TCM reasoning a key point for headache and stiff neck. Press towards the nose tip, never deeply towards the opposite eye."}},
+  {"term": {"zh": "肩井", "en": "Jianjing"}, "plain": {"zh": "肩膀最高處、大椎與肩峰連線的中點，低頭族最硬的那一塊。孕婦禁用重壓，底下是肺尖。", "en": "The top of the shoulder, midway between the big neck bone and the shoulder tip; the hardest knot in any desk worker. No heavy pressure in pregnancy, and the lung apex lies beneath."}},
+  {"term": {"zh": "弦脈", "en": "wiry pulse"}, "plain": {"zh": "指下像按著繃緊的琴弦。中醫認為主肝鬱氣滯、主痛，壓力大、肩頸緊的人常見。", "en": "Like pressing a taut string. In TCM reasoning it points to liver qi constraint and pain; common in stressed people with tight shoulders."}},
+  {"term": {"zh": "腕隧道症候群", "en": "carpal tunnel syndrome"}, "plain": {"zh": "手腕裡的正中神經被壓住：拇指到中指麻、夜裡麻醒、甩手才好。按摩肩頸不會治好它，要轉診做神經傳導檢查。", "en": "The median nerve squeezed in the wrist: numb thumb to middle finger, waking at night, shaking the hand for relief. Neck massage will not cure it; refer for nerve conduction studies."}},
+  {"term": {"zh": "仰臥低血壓症候群", "en": "supine hypotension syndrome"}, "plain": {"zh": "懷孕後期平躺時，子宮壓住大血管，血回不到心臟：頭暈、冒汗、噁心。翻成左側臥就改善。", "en": "In late pregnancy lying flat lets the uterus compress the great vessels so blood cannot return to the heart: dizziness, sweating, nausea. Turning onto the left side fixes it."}},
+  {"term": {"zh": "禁忌篩檢", "en": "contraindication screening"}, "plain": {"zh": "按摩前的問卷與問診：發燒、急性外傷、血栓、抗凝血藥、骨質疏鬆、懷孕、皮膚病灶、手術後。不是手續，是安全。", "en": "The form and questions before any massage: fever, recent injury, blood clots, anticoagulants, osteoporosis, pregnancy, skin lesions, recent surgery. Not paperwork; safety."}}
+ ],
+ "codex": [
+  {"id": "thai-mat", "kind": "equipment", "name": {"zh": "泰式按摩墊", "en": "The Thai mat"}, "text": {"zh": "泰式按摩在地板的墊子上做，不在高床上，因為治療師要用跪、坐、前傾把身體重量交給手掌，還要做大幅度的被動伸展。", "en": "Thai massage happens on a floor mat, not a high couch, because the therapist kneels, sits and leans to pour body weight into the palms and performs large passive stretches."}, "hot": "mat"},
+  {"id": "hot-towels", "kind": "equipment", "name": {"zh": "熱毛巾與暖燈", "en": "Hot towels and warming lamp"}, "text": {"zh": "開始前擦腳、結束前敷頸。溫度每次用手腕內側先試。", "en": "Feet wiped before the start, neck wrapped before the end. Test the temperature on the inside of your own wrist every time."}, "hot": "lamp"},
+  {"id": "intake-form", "kind": "equipment", "name": {"zh": "禁忌篩檢問卷", "en": "The screening form"}, "text": {"zh": "一張紙，十幾個勾選框。每一個框背後都有一個曾經出事的人。", "en": "One sheet, a dozen tick boxes. Behind every box is someone who once came to harm."}, "hot": "chart"},
+  {"id": "wrist-rest", "kind": "item", "name": {"zh": "小宇的滑鼠腕墊", "en": "A-Yu's wrist rest"}, "text": {"zh": "他說這是新買的，用了反而更麻。你跟他說：墊子不是重點，手腕的角度和休息才是。", "en": "Newly bought, he says, and the numbness got worse. You tell him the pad is not the point; wrist angle and breaks are."}},
+  {"id": "weight-not-force", "kind": "concept", "name": {"zh": "身體重量，不是力氣", "en": "Weight, not strength"}, "text": {"zh": "泰式按摩的壓力來自治療師重心的下沉與前傾：手臂打直、肩膀放鬆、用呼吸的節奏慢慢把重量交出去，到客人的組織「迎上來」就停。用手臂硬壓會又快又痛，客人繃緊反抗，治療師自己的手腕和拇指也會先壞掉。「越痛越有效」是最常見也最有害的迷思。", "en": "Pressure in Thai massage comes from the therapist's centre sinking and leaning: straight arms, loose shoulders, weight given slowly on the breath until the client's tissue “meets” you, then hold. Pushing with the arms is fast and painful, the client braces against it, and the therapist's wrists and thumbs wear out first. “No pain, no gain” is the commonest and most harmful myth."}},
+  {"id": "sen-and-meridians", "kind": "concept", "name": {"zh": "Sen 線與經絡：相似，不相同", "en": "Sen lines and meridians: alike, not the same"}, "text": {"zh": "泰式醫學的 Sen 線與中醫的經絡都是沿身體走的線，都用來解釋為什麼按一處能影響另一處；沿背部上行到頭的 Sen Ittha、Pingkhala，位置與中醫膀胱經有重疊，所以風池、肩井、天宗這些穴位在泰式肩頸序列裡也會被壓到。但兩個系統的理論、數目與走向不同，不要硬套。中醫認為「通則不痛」，泰式說的是讓 lom（風）流動，說法不同，手下的目標相近。", "en": "Thai Sen lines and TCM meridians are both lines along the body that explain why pressing one place affects another; Sen Ittha and Pingkhala, climbing the back to the head, overlap with the bladder channel, which is why Fengchi, Jianjing and Tianzong are pressed in a Thai neck sequence too. But the theories, counts and courses differ, so do not force them onto each other. TCM says where there is flow there is no pain; Thai medicine speaks of moving lom, the wind. Different words, similar aims under the hands."}},
+  {"id": "pregnancy-rules", "kind": "concept", "name": {"zh": "孕婦按摩的規矩", "en": "Massage in pregnancy: the rules"}, "text": {"zh": "先有產科醫師的同意，高風險妊娠不做。姿勢：側臥或坐姿，懷孕後期不平躺久，以免仰臥低血壓症候群。部位：不壓腹部與腰骶部，不做扭轉和大幅度髖部伸展。穴位：中醫認為合谷、三陰交、肩井、崑崙等不宜重刺激，一律避開。力道溫和、時間短、隨時問。任何陰道出血、腹痛、宮縮、頭暈不退，停止並轉產科。", "en": "Clearance from the obstetrician first; none for high-risk pregnancies. Position: side-lying or seated, no long supine periods late in pregnancy because of supine hypotension. Areas: no pressure on the abdomen or lower back and sacrum, no twists or deep hip stretches. Points: in TCM reasoning Hegu, Sanyinjiao, Jianjing and Kunlun are not to be stimulated strongly, so avoid them altogether. Gentle, short, ask constantly. Any bleeding, abdominal pain, contractions or persisting dizziness: stop and refer to obstetrics."}},
+  {"id": "headache-flags", "kind": "concept", "name": {"zh": "頭痛的紅旗：哪些不能按", "en": "Headache red flags: when not to massage"}, "text": {"zh": "緊張型頭痛可以按，但這些不能：一生最痛、幾秒內到頂的雷擊頭痛；伴隨發燒頸部僵硬；伴隨單側無力、口齒不清、視力改變、意識改變；頭部外傷後；年長者新發的頭痛；越來越頻繁越來越重的頭痛。任何一項，停止、轉診或急診。頸部不做快速旋轉手法，椎動脈不是用來測試的。", "en": "Tension-type headache may be massaged; these may not: the worst headache of a life peaking in seconds; fever with a stiff neck; one-sided weakness, slurred speech, visual or conscious change; after head injury; a new headache in an older person; headaches growing more frequent and severe. Any one: stop, refer or send to emergency. No quick rotational neck techniques; the vertebral artery is not for testing."}}
+ ],
+ "segs": [
+  {"id": "waikhru", "name": {"zh": "晨課：Wai Khru", "en": "Morning: Wai Khru"}, "sub": {"zh": "08:00 · 泰式按摩墊區", "en": "08:00 · Thai mat area"}, "t": 480, "mood": "day",
+   "note": {"zh": "合十開工，Jivaka 的故事", "en": "Palms together to begin; the Jivaka story"},
+   "beats": [
+    {"id": "w1", "to": "place:mat", "guide": {"zh": "到墊區參加晨課", "en": "Join the morning ritual at the mats"},
+     "lines": [
+      ["sys", {"zh": "治療室的地墊剛擦過，有檸檬草的味道。蘇師傅跪坐著，娜姐在旁邊，兩人合十。", "en": "The floor mats are freshly wiped and smell of lemongrass. Master Su kneels, Khun Nok beside him, palms together."}],
+      ["master", {"zh": "Wai Khru。向老師致敬，也向今天會躺在這張墊子上的人致敬。然後我問你：泰式按摩的祖師是誰？", "en": "Wai Khru. We salute our teachers, and the people who will lie on this mat today. Then a question: who is the father of Thai massage?"}],
+      ["me", {"zh": "Jivaka Kumar Bhaccha，傳說中佛陀的醫師。", "en": "Jivaka Kumar Bhaccha, the physician of the Buddha in the legend."}],
+      ["master", {"zh": "傳說。記得這兩個字。歷史和傳承都要學，但手下的人是真的。", "en": "Legend. Remember that word. Learn the history and the lineage, but the person under your hands is real."}]
+     ],
+     "mini": {"type": "stage", "case": "thai-massage-thai-history-workflow", "stage": 2},
+     "post": [
+      ["nok", {"zh": "在清邁，我們說 Jivaka 的時候會合十。在這裡也一樣。", "en": "In Chiang Mai we put our palms together when we say Jivaka's name. Here too."}]
+     ]},
+    {"id": "w2", "to": "afen", "guide": {"zh": "看今天的預約", "en": "Check today's bookings"},
+     "lines": [
+      ["afen", {"zh": "九點小宇，工程師，肩頸和頭痛，問卷填好了，手麻那格他打了勾。下午櫃台說可能有一位孕婦。", "en": "Nine o'clock A-Yu, engineer, neck and headaches; form done, and he ticked “numb hand”. This afternoon reception says a pregnant client may come."}],
+      ["master", {"zh": "手麻那一勾，等一下你要問清楚。孕婦那一位，沒有產科的同意不排。", "en": "That tick for a numb hand, you will ask about properly. The pregnant client is not booked without her obstetrician's say."}]
+     ]}
+   ]},
+  {"id": "intake", "name": {"zh": "小宇：接待與篩檢", "en": "A-Yu: intake and screening"}, "sub": {"zh": "09:00 · 接待桌", "en": "09:00 · intake desk"}, "t": 540, "mood": "day",
+   "note": {"zh": "小宇：問卷、脈、「用力一點」", "en": "A-Yu: form, pulse, and “press harder”"},
+   "beats": [
+    {"id": "i1", "to": "xiaoyu", "guide": {"zh": "去接待小宇", "en": "Greet A-Yu"},
+     "lines": [
+      ["xiaoyu", {"zh": "肩膀硬得像石頭，每天下午頭就開始悶痛，像被帶子箍住。右手最近晚上會麻醒，甩一甩才好。", "en": "My shoulders are like stone, every afternoon my head starts aching like a band around it. And lately my right hand wakes me up numb until I shake it out."}],
+      ["me", {"zh": "頭痛是慢慢來的還是突然爆開的？有沒有發燒、看東西模糊、手腳無力？", "en": "Does the headache build slowly or explode? Any fever, blurred vision, weakness in the limbs?"}],
+      ["xiaoyu", {"zh": "慢慢來的，下午三點左右。沒有其他的。", "en": "Builds slowly, around three in the afternoon. Nothing else."}],
+      ["master", {"zh": "緊張型頭痛的樣子。手麻你先記著，等一下回來問。先排流程。", "en": "Looks like tension-type headache. Park the numb hand for now and come back to it. First, the sequence."}]
+     ]},
+    {"id": "i2", "to": "place:desk", "guide": {"zh": "排好接待到結束的流程", "en": "Order the session from intake to close"},
+     "lines": [
+      ["nok", {"zh": "泰式按摩一場是怎麼走的？你排，我看。", "en": "How does a Thai session run from start to finish? You order it, I watch."}]
+     ],
+     "mini": {"type": "order", "q": {"zh": "一場泰式按摩的流程", "en": "The sequence of a Thai massage session"},
+      "steps": [
+       {"zh": "問卷篩檢、問診、同意", "en": "Screening form, questions, consent"},
+       {"zh": "量血壓，換衣、淨手、擦腳", "en": "Blood pressure, change, wash hands, wipe feet"},
+       {"zh": "Wai Khru，仰臥由足部開始", "en": "Wai Khru; begin supine at the feet"},
+       {"zh": "腿部 Sen 線掌壓與伸展", "en": "Leg Sen lines: palming and stretches"},
+       {"zh": "坐姿肩頸與頭部序列", "en": "Seated shoulder, neck and head sequence"},
+       {"zh": "收尾、喝水、衛教與紀錄", "en": "Close, water, advice and notes"}
+      ]},
+     "post": [
+      ["nok", {"zh": "從腳開始，是因為腳最不怕生。信任從腳底建立。", "en": "We start at the feet because feet are the least shy. Trust is built from the soles up."}]
+     ]},
+    {"id": "i3", "to": "xiaoyu", "guide": {"zh": "摸脈", "en": "Take the pulse"},
+     "lines": [
+      ["master", {"zh": "中醫這邊也看一下。壓力大、肩頸緊、下午頭痛。脈呢？", "en": "A look from the TCM side too. Stressed, tight shoulders, afternoon headaches. The pulse?"}]
+     ],
+     "mini": {"type": "pulse", "q": {"zh": "指下如按琴弦、端直而長。這是？", "en": "Straight and long under the fingers, like a lute string. Which pulse?"}, "pulse": "wiry",
+      "options": [
+       {"zh": "弦脈", "en": "Wiry", "ok": true, "why": {"zh": "中醫認為弦主肝鬱、主痛。久坐、壓力、肩頸拘急，肝氣不舒，脈多弦。", "en": "In TCM reasoning wiry points to liver qi constraint and pain. Long sitting, stress and tight shoulders: the liver qi is not free and the pulse turns wiry."}},
+       {"zh": "滑脈", "en": "Slippery", "ok": false, "why": {"zh": "滑脈如珠走盤，多主痰濕、食積、妊娠。不是這位。", "en": "Slippery rolls like beads: phlegm-damp, food stagnation, pregnancy. Not this man."}},
+       {"zh": "遲脈", "en": "Slow", "ok": false, "why": {"zh": "遲脈一息不足四至，多主寒或見於運動員。小宇的脈率正常。", "en": "Slow is fewer beats per breath, cold patterns or athletes. A-Yu's rate is normal."}}
+      ]},
+     "post": [
+      ["master", {"zh": "弦脈，肝鬱氣滯。泰式說是 lom 不流動。說法不同，手下的目標一樣：讓它通。", "en": "A wiry pulse: liver qi constraint. Thai medicine would say the lom does not move. Different words, the same aim under the hands: let it flow."}]
+     ]},
+    {"id": "i4", "to": "xiaoyu", "guide": {"zh": "回答「用力一點」", "en": "Answer “press harder”"},
+     "lines": [
+      ["xiaoyu", {"zh": "對了，麻煩用力一點，越痛越有效。上次去別家按完瘀青三天，超有感。", "en": "Oh, and press hard please, the more it hurts the better. Last place left me bruised for three days, really felt it."}]
+     ],
+     "mini": {"type": "choice", "q": {"zh": "小宇要求「越痛越有效」，你怎麼做？", "en": "A-Yu asks for “no pain, no gain”. What do you do?"},
+      "options": [
+       {"zh": "用身體重量循序加壓，隨時問回饋", "en": "Build pressure with body weight, ask as you go", "ok": true, "set": {"comm": true}, "why": {"zh": "壓到組織迎上來就停。痛到繃緊，肌肉反而更硬；瘀青是傷，不是療效。", "en": "Press until the tissue meets you, then hold. Pain that makes him brace only hardens the muscle; bruises are injury, not effect."}},
+       {"zh": "照他要求，用手臂加壓到他喊痛", "en": "Do as he asks: push with the arms until he yells", "ok": false, "set": {"comm": false}, "why": {"zh": "用手臂硬壓又快又痛，他會繃緊反抗，你的手腕和拇指也會先壞掉。", "en": "Arm pushing is fast and painful, he will brace, and your wrists and thumbs wear out first."}},
+       {"zh": "拒絕按，請他去別家", "en": "Refuse and send him elsewhere", "ok": false, "set": {"comm": false}, "why": {"zh": "他的要求來自錯誤的觀念，不是禁忌。教他，不是趕他。", "en": "His request comes from a myth, not a contraindication. Teach him; do not send him away."}}
+      ]},
+     "post": [
+      ["nok", {"zh": "痛和「痠到想睡」是兩件事。今天你會知道第二種。", "en": "Pain and “so achy I could fall asleep” are two different things. Today you will meet the second."}]
+     ],
+     "item": "wrist-rest"}
+   ]},
+  {"id": "session", "name": {"zh": "墊上：Sen 線與肩頸", "en": "On the mat: Sen lines and neck"}, "sub": {"zh": "09:30 · 泰式按摩墊", "en": "09:30 · Thai mat"}, "t": 570, "mood": "day",
+   "note": {"zh": "掌壓、Sen Ittha、風池肩井天宗", "en": "Palming, Sen Ittha, Fengchi–Jianjing–Tianzong"},
+   "beats": [
+    {"id": "s1", "to": "place:mat", "guide": {"zh": "準備墊子與毛巾", "en": "Prepare the mat and towels"},
+     "lines": [
+      ["nok", {"zh": "先去把墊區準備好：枕頭、蓋毯、熱毛巾。客人躺下前，一切都要就位。", "en": "Set up the mat area first: bolster, blanket, hot towels. Everything in place before the client lies down."}]
+     ],
+     "mini": {"type": "find", "hot": "mat", "q": {"zh": "找到泰式按摩墊區", "en": "Find the Thai mat area"}},
+     "post": [
+      ["nok", {"zh": "好。跪下來，膝蓋打開，重心放低。", "en": "Good. Kneel, knees apart, centre low."}]
+     ]},
+    {"id": "s2", "to": "place:mat", "guide": {"zh": "跟娜姐學掌壓", "en": "Learn palming from Khun Nok"},
+     "lines": [
+      ["nok", {"zh": "掌壓：手臂打直、肩膀放鬆，吐氣的時候身體往前傾，重量就下去了。不是推，是「交給他」。", "en": "Palming: arms straight, shoulders loose, lean forward on the out-breath and the weight goes down by itself. Not a push; you hand it over."}],
+      ["master", {"zh": "按摩是用身體重量說話。", "en": "Massage speaks with body weight."}]
+     ],
+     "mini": {"type": "stage", "case": "thai-massage-thai-palming-workflow", "stage": 2},
+     "post": [
+      ["xiaoyu", {"zh": "……這樣不痛，可是好深。", "en": "…That doesn't hurt, but it goes so deep."}]
+     ]},
+    {"id": "s3", "to": "place:mat", "guide": {"zh": "練習壓按的力道窗", "en": "Practise the pressure window"},
+     "lines": [
+      ["nok", {"zh": "沿著小腿的 Sen 線一點一點拇指壓。太輕沒進去，太重他會縮。找到那個「剛剛好」的窗。", "en": "Thumb press point by point along the calf Sen line. Too light and nothing happens; too heavy and he flinches. Find the “just right” window."}]
+     ],
+     "mini": {"type": "drill", "template": "thai-massage", "drill": "press"},
+     "post": [
+      ["nok", {"zh": "拇指不要彎到底。二十年後你會感謝我。", "en": "Do not hyperextend the thumb. In twenty years you will thank me."}]
+     ]},
+    {"id": "s4", "to": "place:mat", "guide": {"zh": "認識十大 Sen 線", "en": "Meet the ten Sen lines"},
+     "lines": [
+      ["master", {"zh": "他的頭痛從肩頸上來。沿背部兩側上行到頭的是哪兩條 Sen？", "en": "His headache climbs from the shoulders. Which two Sen lines run up either side of the back to the head?"}],
+      ["me", {"zh": "Sen Ittha 和 Sen Pingkhala。", "en": "Sen Ittha and Sen Pingkhala."}],
+      ["master", {"zh": "對。把十條主線走一遍，知道你的手在哪條線上。", "en": "Right. Walk through the ten principal lines so you always know which one your hands are on."}]
+     ],
+     "mini": {"type": "stage", "case": "thai-massage-sen-lines-workflow", "stage": 2},
+     "post": [
+      ["master", {"zh": "Sen Ittha、Pingkhala 的走向和中醫膀胱經有重疊。相似，不相同，不要硬套。", "en": "Sen Ittha and Pingkhala overlap the course of the bladder channel. Alike, not the same; do not force them together."}]
+     ]},
+    {"id": "s5", "to": "place:mat", "guide": {"zh": "坐姿肩頸：取風池、肩井、天宗", "en": "Seated neck: Fengchi, Jianjing, Tianzong"},
+     "lines": [
+      ["nok", {"zh": "請他坐起來，背對你。肩頸序列會壓到幾個中醫也用的點。師傅說你要會認。", "en": "Sit him up with his back to you. The neck sequence lands on a few points TCM also uses. Master says you must know them."}],
+      ["master", {"zh": "風池、肩井、天宗。風池朝鼻尖按，不要往對側眼睛深壓；肩井底下是肺尖，不要往下戳。圖上點給我看。", "en": "Fengchi, Jianjing, Tianzong. Press Fengchi towards the nose tip, never deep towards the opposite eye; the lung apex lies under Jianjing, so no jabbing downwards. Show me on the figure."}]
+     ],
+     "mini": {"type": "points", "q": {"zh": "點出風池、肩井、天宗", "en": "Tap Fengchi, Jianjing and Tianzong"}, "codes": ["GB20", "GB21", "SI11"], "view": "back"},
+     "post": [
+      ["sys", {"zh": "肩井那一下，小宇長長吐了一口氣。", "en": "At Jianjing, A-Yu lets out a long breath."}],
+      ["nok", {"zh": "這就是「痠到想睡」。", "en": "That is “so achy I could fall asleep”."}]
+     ]}
+   ]},
+  {"id": "call", "name": {"zh": "櫃台來電", "en": "Reception calls"}, "sub": {"zh": "11:30 · 接待桌", "en": "11:30 · intake desk"}, "t": 690, "mood": "day",
+   "note": {"zh": "孕婦來電：要產科同意", "en": "A pregnant client: obstetric clearance first"},
+   "beats": [
+    {"id": "c1", "to": "place:desk", "guide": {"zh": "接櫃台的電話", "en": "Answer reception"},
+     "ring": {"title": {"zh": "櫃台來電", "en": "Reception calling"}, "sub": {"zh": "懷孕七個月的客人問下午能不能按", "en": "A client seven months pregnant asks about this afternoon"}, "call": true, "from": "reception"},
+     "lines": [
+      ["reception", {"zh": "有一位懷孕七個月的怡君小姐，腰痠睡不好，問下午可以嗎？", "en": "A Ms Yi-Chun, seven months pregnant, can't sleep for backache, asks if this afternoon is OK?"}],
+      ["me", {"zh": "請她帶產科醫師同意溫和按摩的紀錄或先打電話確認。沒有產科同意不排；有的話下午四點，側臥和坐姿，不平躺。", "en": "Ask her for her obstetrician's note clearing gentle massage, or a phone confirmation. No clearance, no booking; with it, four o'clock, side-lying and seated, no lying flat."}],
+      ["reception", {"zh": "可以嗎？喔，可以。好，我跟她講。", "en": "Is that OK? Oh, it is. Right, I'll tell her."}],
+      ["master", {"zh": "答得對。再加一句：有出血、腹痛、宮縮，不要來，直接去產科。", "en": "Correct. Add one line: any bleeding, abdominal pain or contractions, do not come; go to obstetrics."}]
+     ]}
+   ]},
+  {"id": "numb", "name": {"zh": "那隻會麻的手", "en": "The hand that goes numb"}, "sub": {"zh": "14:00 · 接待桌與墊區", "en": "14:00 · desk and mats"}, "t": 840, "mood": "day",
+   "note": {"zh": "小宇的手麻：轉診，不是按摩", "en": "A-Yu's numb hand: a referral, not a massage"},
+   "beats": [
+    {"id": "n1", "to": "xiaoyu", "guide": {"zh": "回頭問小宇的手麻", "en": "Return to the numb hand"},
+     "lines": [
+      ["me", {"zh": "小宇，手麻是哪幾根手指？晚上麻醒、甩一甩才好，是不是？", "en": "A-Yu, which fingers go numb? Wakes you at night and shaking helps, yes?"}],
+      ["xiaoyu", {"zh": "拇指、食指、中指。對，甩一甩就好。我買了新的腕墊，反而更麻。", "en": "Thumb, index, middle. Yes, shaking fixes it. I bought a new wrist rest and it got worse."}],
+      ["master", {"zh": "拇指到中指、夜間麻醒、甩手緩解。這不是肩頸的問題，是哪裡？", "en": "Thumb to middle finger, waking at night, relief on shaking. This is not the neck. Where is it?"}],
+      ["me", {"zh": "手腕的正中神經：腕隧道症候群。按摩肩頸不會治好它，要轉診做神經傳導檢查。", "en": "The median nerve at the wrist: carpal tunnel syndrome. Neck massage will not fix it; he needs a referral for nerve conduction studies."}],
+      ["master", {"zh": "很好。泰式按摩能做的：前臂的 Sen 線放鬆、手腕不做強力伸展。不能做的：假裝它是肩頸。", "en": "Good. What Thai massage can do: ease the forearm Sen lines, no forceful wrist stretches. What it cannot do: pretend this is the neck."}]
+     ],
+     "set": {"referred-hand": true}},
+    {"id": "n2", "roles": ["therapist"], "to": "place:mat", "guide": {"zh": "教小宇辦公室伸展", "en": "Teach A-Yu desk stretches"},
+     "lines": [
+      ["me", {"zh": "每隔一陣子站起來：下巴往後收、肩膀向後畫圈、手掌貼牆伸展前臂。螢幕上緣與眼睛同高。", "en": "Get up at regular intervals: tuck the chin, roll the shoulders back, press the palm to the wall to stretch the forearm. Top of the screen at eye level."}],
+      ["nok", {"zh": "還有，手腕麻的時候不要甩到天亮，去看醫生。", "en": "And when the wrist goes numb, do not shake it till dawn; see the doctor."}]
+     ],
+     "mini": {"type": "drill", "template": "thai-massage", "drill": "stretch"},
+     "post": [
+      ["xiaoyu", {"zh": "我把鬧鐘設成每小時站起來。……會不會被同事覺得很怪？", "en": "I'll set an alarm to stand up every hour. …Will my colleagues think I'm weird?"}],
+      ["nok", {"zh": "會。然後他們會跟著做。", "en": "Yes. And then they will copy you."}]
+     ]},
+    {"id": "n2i", "roles": ["intern"], "to": "place:desk", "guide": {"zh": "寫轉診單與紀錄", "en": "Write the referral and note"},
+     "lines": [
+      ["me", {"zh": "紀錄：緊張型頭痛，無紅旗；右手正中神經分布麻木、夜間加重，疑腕隧道症候群，轉診神經傳導檢查。今日手法與回饋。", "en": "Note: tension-type headache, no red flags; right-hand numbness in the median distribution, worse at night, suspected carpal tunnel, referred for nerve conduction studies. Today's techniques and his feedback."}],
+      ["master", {"zh": "頭痛的紅旗你也寫一行「已排除」，列出你問了哪些。", "en": "Write a line for the headache red flags too: “excluded”, and list what you asked."}]
+     ]}
+   ]},
+  {"id": "pregnant", "name": {"zh": "怡君：側臥的午後", "en": "Yi-Chun: a side-lying afternoon"}, "sub": {"zh": "16:00 · 治療床", "en": "16:00 · treatment couch"}, "t": 960, "mood": "day",
+   "note": {"zh": "孕婦：左側臥，避開的穴", "en": "Pregnancy: left side, points to avoid"},
+   "beats": [
+    {"id": "p1", "to": "yijun", "guide": {"zh": "去看怡君", "en": "See Yi-Chun"},
+     "lines": [
+      ["yijun", {"zh": "產科醫師說可以溫和按摩，這是紀錄。我只是想好好睡一覺。", "en": "My obstetrician said gentle massage is fine, here's the note. I just want one good night's sleep."}],
+      ["afen", {"zh": "問卷上「孕」我圈起來了，血壓正常。", "en": "I've circled “pregnant” on the form; blood pressure normal."}],
+      ["master", {"zh": "側臥或坐姿、不壓腹部和腰骶、不扭轉。中醫認為哪些穴不宜重刺激？", "en": "Side-lying or seated, no pressure on the abdomen or sacrum, no twists. Which points does TCM say not to stimulate strongly?"}],
+      ["me", {"zh": "合谷、三陰交、肩井、崑崙，一律避開。", "en": "Hegu, Sanyinjiao, Jianjing, Kunlun: all avoided."}],
+      ["sys", {"zh": "怡君在等你們準備的時候，自己在治療床上平躺下來了。沒多久她的臉開始發白、額頭冒汗。", "en": "While you set up, Yi-Chun lies flat on her back on the couch. Within moments her face pales and her forehead beads with sweat."}]
+     ]},
+    {"id": "p2", "to": "yijun", "guide": {"zh": "怡君頭暈了", "en": "Yi-Chun is dizzy"},
+     "lines": [
+      ["yijun", {"zh": "我……有點暈，想吐。", "en": "I… feel faint, a bit sick."}]
+     ],
+     "mini": {"type": "vitals", "event": "hypotension",
+      "options": [
+       {"zh": "立刻協助她翻成左側臥、觀察", "en": "Turn her onto her left side at once, observe", "ok": true, "why": {"zh": "仰臥低血壓症候群：子宮壓住下腔靜脈。左側臥解除壓迫，多半很快改善；不改善或有腹痛出血，轉產科。", "en": "Supine hypotension syndrome: the uterus compresses the vena cava. Left side-lying relieves it and she usually recovers quickly; if not, or with pain or bleeding, refer to obstetrics."}},
+       {"zh": "讓她坐起來深呼吸", "en": "Sit her up and breathe deeply", "ok": false, "why": {"zh": "坐起來比平躺好，但左側臥才是解除壓迫的姿勢，也不會讓她再暈倒。", "en": "Better than flat, but the left side is the position that relieves the compression without risking a faint on sitting."}},
+       {"zh": "繼續平躺，拿糖水給她", "en": "Keep her flat and fetch sugar water", "ok": false, "why": {"zh": "問題不是血糖，是姿勢。平躺越久越糟。", "en": "This is not sugar, it is position. The longer she lies flat the worse it gets."}}
+      ]},
+     "post": [
+      ["yijun", {"zh": "……好多了。原來不能平躺。", "en": "…Much better. So I can't lie flat."}],
+      ["master", {"zh": "今天的按摩就在左側臥和坐姿完成。腰背輕掌壓、腿部放鬆、肩頸溫和。短一點，常問。", "en": "Today's session happens on the left side and seated. Light palming of the back, legs relaxed, gentle neck. Shorter, and ask often."}]
+     ]}
+   ]},
+  {"id": "evening", "name": {"zh": "晚班最後一位", "en": "The last evening client"}, "sub": {"zh": "20:30 · 墊區", "en": "20:30 · mats"}, "t": 1230, "mood": "night",
+   "note": {"zh": "晚班：師傅的話與小宇的訊息", "en": "Evening: the master's word and A-Yu's message"},
+   "beats": [
+    {"id": "e2", "when": {"flag": "comm", "is": true}, "to": "place:desk", "guide": {"zh": "看小宇傳來的訊息", "en": "Read A-Yu's message"},
+     "ring": {"title": {"zh": "小宇訊息", "en": "Message from A-Yu"}, "sub": {"zh": "下午沒有頭痛，鬧鐘有用", "en": "No headache this afternoon; the alarm works"}, "call": false, "from": "xiaoyu"},
+     "lines": [
+      ["sys", {"zh": "訊息：「今天下午第一次沒有頭痛。鬧鐘響的時候全組都跟著站起來了。神經檢查約好了。」", "en": "Message: “First afternoon without a headache. When the alarm went off the whole team stood up with me. Nerve test is booked.”"}],
+      ["nok", {"zh": "痠到想睡，然後睡得好。這就是我們要的。", "en": "Achy enough to sleep, then sleeping well. That is what we want."}]
+     ]},
+    {"id": "e2b", "when": {"flag": "comm", "is": false}, "to": "place:desk", "guide": {"zh": "看小宇傳來的訊息", "en": "Read A-Yu's message"},
+     "ring": {"title": {"zh": "小宇訊息", "en": "Message from A-Yu"}, "sub": {"zh": "肩膀瘀青了，頭還是痛", "en": "Shoulders bruised, head still aches"}, "call": false, "from": "xiaoyu"},
+     "lines": [
+      ["sys", {"zh": "訊息：「肩膀有兩塊瘀青，下午頭還是痛。是不是要再用力一點？」", "en": "Message: “Two bruises on my shoulders and the headache came back this afternoon. Should it be harder next time?”"}],
+      ["master", {"zh": "回他：不是更用力，是更慢、更深、用重量。下次你親自示範給他看什麼叫「組織迎上來」。", "en": "Reply: not harder; slower, deeper, with weight. Next time you show him yourself what “the tissue meeting you” means."}],
+      ["nok", {"zh": "瘀青不是勳章。你今天學到了，他也會。", "en": "Bruises are not medals. You learned that today; so will he."}]
+     ]},
+    {"id": "e1", "to": "master", "guide": {"zh": "收工前聽師傅說話", "en": "Hear the master before closing"},
+     "lines": [
+      ["sys", {"zh": "最後一位客人走了。娜姐在摺毯子，蘇師傅跪坐在墊子上，像早上一樣。", "en": "The last client has gone. Khun Nok folds blankets; Master Su kneels on the mat as he did this morning."}],
+      ["master", {"zh": "今天三件事：一個肩頸、一隻手、一位孕婦。哪一件你最可能忘記？", "en": "Three things today: a neck, a hand, a pregnant woman. Which are you most likely to forget?"}],
+      ["me", {"zh": "那隻手。因為他是來按肩頸的，手麻只是問卷上一個勾。", "en": "The hand. He came for his neck; the numbness was only a tick on a form."}],
+      ["master", {"zh": "禁忌篩檢不是手續：問卷上每一個勾，背後都有一個人。合十，收工。", "en": "Contraindication screening is not paperwork: behind every tick is a person. Palms together; we are done."}]
+     ],
+     "end": true}
+   ]}
+ ],
+ "ending": {"title": {"zh": "收工了", "en": "Closing time"}, "sub": {"zh": "一個肩頸、一隻手、一位孕婦", "en": "A neck, a hand, and a pregnant woman"},
+  "stats": ["stages", "drills", "choices", "calls", "items", "time"]}
+}

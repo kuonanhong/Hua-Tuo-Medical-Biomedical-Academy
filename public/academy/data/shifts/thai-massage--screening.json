@@ -1,0 +1,292 @@
+{
+ "format": "huatuo-shift-v2",
+ "department": "thai-massage",
+ "case": "screening",
+ "caseTitle": {"zh": "週六早上的問卷", "en": "Saturday morning forms"},
+ "condition": {"zh": "安全 · 禁忌篩檢", "en": "Safety · contraindication screening"},
+ "difficulty": 3,
+ "title": {"zh": "泰式按摩：篩檢的早晨", "en": "Thai massage: a morning of screening"},
+ "tagline": {"zh": "一張問卷、三位客人、三個不同的答案", "en": "One form, three clients, three different answers"},
+ "room": "tuina",
+ "minutes": 25,
+ "roles": [
+  {"id": "intern", "zh": "中醫見習醫師", "en": "TCM clinical clerk",
+   "desc": {"zh": "讀問卷、摸脈、比兩腿、先看腳底；決定照做、調整、延後還是轉診，轉診單由你寫。", "en": "Read the form, take the pulse, compare the legs, look at the soles first; decide go, adapt, postpone or refer, and write the referrals."}},
+  {"id": "therapist", "zh": "泰式按摩治療師", "en": "Thai massage therapist",
+   "desc": {"zh": "把「不能做」改成「怎麼做才安全」：側臥、輕掌壓、不扭轉；看到不對就停手。", "en": "Turn “can't” into “how to do it safely”: side-lying, light palming, no twists; stop the moment something looks wrong."}}
+ ],
+ "cast": {
+  "master": {"name": {"zh": "蘇師傅", "en": "Master Su"}, "role": {"zh": "中醫師，泰式按摩指導（師傅）", "en": "TCM physician, Thai massage lead (mentor)"}, "tag": "SF", "color": "#81296d", "body": "mentor",
+   "about": {"zh": "週六早上總是比平常早到，先把問卷夾一張張排好。名言：「問卷上的每一個勾，都是一個曾經出事的人。」", "en": "Always early on Saturdays, lining up the clipboards one by one. His line: every tick box on the form is someone who once came to harm."}},
+  "nok": {"name": {"zh": "娜姐", "en": "Khun Nok"}, "role": {"zh": "資深泰式按摩治療師", "en": "Senior Thai massage therapist"}, "tag": "TH", "color": "#2f8f8f", "body": "therapist",
+   "about": {"zh": "來台二十年，中文帶清邁腔。她說「不能按」不是答案，「怎樣按才安全」才是。", "en": "Twenty years in Taiwan, a Chiang Mai lilt. She says “can't massage” is not an answer; “how to massage safely” is."}},
+  "afen": {"name": {"zh": "阿芬護理師", "en": "Nurse A-Fen"}, "role": {"zh": "治療室護理師", "en": "Treatment-room nurse"}, "tag": "RN", "color": "#3b8f6a", "body": "nurse",
+   "about": {"zh": "血壓計、血氧機、體溫計排成一排，像要閱兵。週六她會多帶一盒巧克力。", "en": "Cuff, oximeter and thermometer lined up as if for inspection. On Saturdays she brings an extra box of chocolates."}},
+  "grandma": {"name": {"zh": "林奶奶", "en": "Grandma Lin"}, "role": {"zh": "七十八歲，背僵硬", "en": "Seventy-eight, stiff back"}, "tag": "P1", "color": "#c2703a", "body": "patient",
+   "about": {"zh": "虛構教學個案。心律不整在吃抗凝血藥，前年跌倒手腕骨折、骨質疏鬆。女兒送她一張「全套泰式按摩含扭轉」的禮券。", "en": "Fictional teaching case. On an anticoagulant for an irregular heartbeat; broke her wrist in a fall two years ago and has osteoporosis. Her daughter gave her a voucher for a “full Thai massage with the twist”."}},
+  "mrchen": {"name": {"zh": "陳先生", "en": "Mr Chen"}, "role": {"zh": "剛出差回來，左小腿腫", "en": "Back from a trip, swollen left calf"}, "tag": "P2", "color": "#b5651d", "body": "patient",
+   "about": {"zh": "虛構教學個案。四十五歲業務經理，昨晚才搭長程夜班飛機回國，在經濟艙坐了一整晚。左小腿又緊又腫，想「把水腫推掉」。", "en": "Fictional teaching case. A forty-five-year-old sales manager who flew home overnight last night, a whole night in economy. His left calf is tight and swollen and he wants the “water pushed out”."}},
+  "wangbo": {"name": {"zh": "王伯", "en": "Uncle Wang"}, "role": {"zh": "糖尿病，想做腳底按摩", "en": "Diabetic, wants a foot massage"}, "tag": "P3", "color": "#8a5a2b", "body": "patient",
+   "about": {"zh": "虛構教學個案。七十歲退休公車司機，糖尿病很多年，腳底常常麻麻的。孫子說泰式腳底按摩很舒服，他就來了。", "en": "Fictional teaching case. A seventy-year-old retired bus driver, diabetic for many years, soles often numb. His grandson said Thai foot massage is lovely, so here he is."}},
+  "daughter": {"name": {"zh": "林奶奶的女兒", "en": "Grandma Lin's daughter"}, "role": {"zh": "家屬（電話）", "en": "Family (by phone)"}, "tag": "FAM", "color": "#8a6d3b", "phoneOnly": true,
+   "about": {"zh": "在外縣市上班，禮券是她送的。每次打電話都先說「我媽很固執」。", "en": "Works in another city and bought the voucher. Every call begins: “My mum is stubborn.”"}},
+  "reception": {"name": {"zh": "櫃台", "en": "Reception"}, "role": {"zh": "櫃台（電話）", "en": "Front desk (by phone)"}, "tag": "REC", "color": "#5a6b7a", "phoneOnly": true,
+   "about": {"zh": "電話永遠在響。她的問題永遠是：「可以嗎？」", "en": "The phone never stops. Her question is always: “Is that OK?”"}}
+ },
+ "places": {
+  "board": {"name": {"zh": "預約白板", "en": "Booking board"}, "hot": "whiteboard"},
+  "desk": {"name": {"zh": "接待與篩檢桌", "en": "Intake and screening desk"}, "hot": "desk"},
+  "mat": {"name": {"zh": "泰式按摩墊區", "en": "Thai mat area"}, "hot": "mat"},
+  "couch": {"name": {"zh": "治療床", "en": "Treatment couch"}, "hot": "couch"},
+  "lamp": {"name": {"zh": "檢查燈", "en": "Examination lamp"}, "hot": "lamp"},
+  "chart": {"name": {"zh": "問卷與病歷架", "en": "Forms and chart rack"}, "hot": "chart"},
+  "door": {"name": {"zh": "治療室門口", "en": "Treatment-room door"}, "hot": "door"}
+ },
+ "glossary": [
+  {"term": {"zh": "禁忌篩檢", "en": "contraindication screening"}, "plain": {"zh": "按摩前的問卷與問診：發燒、急性外傷、血栓、抗凝血藥、骨質疏鬆、懷孕、皮膚傷口、手術後。不是手續，是安全。", "en": "The form and questions before any massage: fever, recent injury, clots, anticoagulants, osteoporosis, pregnancy, broken skin, recent surgery. Not paperwork; safety."}},
+  {"term": {"zh": "深層靜脈血栓", "en": "deep vein thrombosis"}, "plain": {"zh": "腿部深層靜脈裡的血塊。單側小腿腫、緊、熱、痛，久坐長途飛行、手術後、癌症、懷孕都會增加風險。不能按摩。", "en": "A blood clot in a deep leg vein. One calf swollen, tight, warm and painful; long flights, surgery, cancer and pregnancy raise the risk. Never massage it."}},
+  {"term": {"zh": "肺栓塞", "en": "pulmonary embolism"}, "plain": {"zh": "血塊從腿跑到肺血管塞住：突然喘、吸氣胸痛、心跳快、血氧掉。危及生命，叫救護車。", "en": "A clot travels from the leg and blocks a lung artery: sudden breathlessness, chest pain on breathing in, a racing heart, falling oxygen. Life-threatening; call an ambulance."}},
+  {"term": {"zh": "經濟艙症候群", "en": "economy-class syndrome"}, "plain": {"zh": "長時間坐著不動（例如長途飛行），腿部血流變慢而形成血栓的俗稱。", "en": "The everyday name for clots that form when blood slows in the legs during long, cramped sitting, such as a long flight."}},
+  {"term": {"zh": "抗凝血藥", "en": "anticoagulant"}, "plain": {"zh": "讓血不容易凝固的藥，用來預防中風或血栓。吃這種藥的人很容易瘀青、出血，深壓與拇指重壓都要避免。", "en": "Medicine that keeps blood from clotting easily, used to prevent stroke or clots. People taking it bruise and bleed easily, so avoid deep pressure and heavy thumbing."}},
+  {"term": {"zh": "心房顫動", "en": "atrial fibrillation"}, "plain": {"zh": "心房亂跳、脈搏忽快忽慢、毫無規律的心律不整。容易形成血栓、引起中風，所以常要吃抗凝血藥。", "en": "An irregular heart rhythm in which the upper chambers quiver and the pulse is irregularly irregular. Clots form easily and can cause strokes, so anticoagulants are common."}},
+  {"term": {"zh": "結脈", "en": "knotted pulse"}, "plain": {"zh": "脈來緩慢，時有一停，停的時間沒有規律。中醫認為主陰盛氣結、寒痰瘀血；現代臨床遇到要想到心律不整。", "en": "A slow pulse that pauses now and then without a pattern. In TCM reasoning it points to excess yin, bound qi, cold phlegm or stasis; clinically, think of an irregular heart rhythm."}},
+  {"term": {"zh": "骨質疏鬆", "en": "osteoporosis"}, "plain": {"zh": "骨頭變薄變脆。很小的力量，例如扭轉或重壓，就可能讓脊椎壓迫性骨折。", "en": "Bones grow thin and brittle. Very little force, such as a twist or heavy pressure, can cause a spinal compression fracture."}},
+  {"term": {"zh": "脊柱扭轉", "en": "spinal twist"}, "plain": {"zh": "泰式按摩裡把骨盆和肩膀往相反方向轉的大幅度伸展。骨質疏鬆、椎間盤突出、手術後、懷孕都不做。", "en": "The large Thai stretch that turns pelvis and shoulders in opposite directions. Not for osteoporosis, disc herniation, recent surgery or pregnancy."}},
+  {"term": {"zh": "側臥", "en": "side-lying"}, "plain": {"zh": "側躺、膝間夾枕、頭有支撐的姿勢。年長、懷孕或不能久趴久躺的人，大部分泰式手法都能在側臥完成。", "en": "Lying on one side with a pillow between the knees and the head supported. For older, pregnant or frail clients most Thai techniques can be done this way."}},
+  {"term": {"zh": "周邊神經病變", "en": "peripheral neuropathy"}, "plain": {"zh": "糖尿病傷了手腳的末梢神經：麻、刺、感覺變鈍。腳受傷了自己也不知道。", "en": "Diabetes damages the nerves of the hands and feet: numbness, tingling, dulled feeling. Injuries to the foot can go unnoticed."}},
+  {"term": {"zh": "糖尿病足", "en": "diabetic foot"}, "plain": {"zh": "糖尿病人的腳因神經與血管病變，容易出現傷口、潰瘍、感染。每天看腳底；有傷口不按、不熱敷，轉介傷口照護。", "en": "Nerve and vessel damage make diabetic feet prone to wounds, ulcers and infection. Look at the soles daily; no massage or heat on a wound; refer for wound care."}},
+  {"term": {"zh": "湧泉", "en": "Yongquan"}, "plain": {"zh": "腳底前三分之一、腳趾彎曲時出現的凹陷。中醫認為是腎經起點，腳底按摩必經之處。", "en": "On the sole, in the hollow that appears in its front third when the toes curl. In TCM reasoning the starting point of the kidney channel; every foot massage passes through it."}}
+ ],
+ "codex": [
+  {"id": "screen-clipboard", "kind": "equipment", "name": {"zh": "篩檢問卷夾", "en": "The screening clipboard"}, "text": {"zh": "一張紙，十幾個勾選框，背面是「調整與轉診」欄。師傅說最常被跳過的是背面。", "en": "One sheet, a dozen boxes, and on the back a column for “adjustments and referrals”. The master says the back is what people skip."}, "hot": "chart"},
+  {"id": "exam-lamp", "kind": "equipment", "name": {"zh": "檢查燈", "en": "Examination lamp"}, "text": {"zh": "照腳底、看皮膚、看瘀青。腳底按摩前一定先開燈看。", "en": "For soles, skin and bruises. The lamp goes on before every foot massage."}, "hot": "lamp"},
+  {"id": "oximeter", "kind": "equipment", "name": {"zh": "血氧機與血壓計", "en": "Oximeter and BP cuff"}, "text": {"zh": "夾在手指上的小機器看血氧與脈搏；血壓計看血壓。數字不對，就不是按摩的時候。", "en": "The fingertip clip reads oxygen and pulse; the cuff reads pressure. When the numbers are wrong, it is not the time for massage."}, "hot": "desk"},
+  {"id": "boarding-pass", "kind": "item", "name": {"zh": "陳先生的登機證", "en": "Mr Chen's boarding pass"}, "text": {"zh": "還夾在他的護照裡。座位號碼在最後一排靠窗。他說整晚沒起來過，「怕吵醒旁邊的人」。", "en": "Still tucked in his passport. Back row, window seat. He never got up all night, he says, “so as not to wake the man beside me”."}},
+  {"id": "traffic-light", "kind": "concept", "name": {"zh": "篩檢的三種燈號", "en": "The three lights of screening"}, "text": {"zh": "綠燈：沒有禁忌，照常做。黃燈：可以做但要調整，例如高齡骨鬆、吃抗凝血藥、懷孕、糖尿病：改側臥、減輕力道、避開扭轉與某些部位、縮短時間。紅燈：今天不做、轉診或急診，例如發燒、疑似血栓、急性外傷或骨折、不明腫塊、傷口感染、胸痛喘、突發神經症狀。最常見的錯誤不是看不出紅燈，而是把黃燈當成綠燈，或者把黃燈當成紅燈把人趕走。", "en": "Green: no contraindication, carry on. Amber: yes, but adapted: older age with osteoporosis, anticoagulants, pregnancy, diabetes: side-lying, lighter pressure, no twists, avoid certain areas, shorter sessions. Red: not today; refer or send to emergency: fever, suspected clot, acute injury or fracture, an unexplained lump, an infected wound, chest pain or breathlessness, sudden neurological symptoms. The commonest mistake is not missing a red light, but treating amber as green, or treating amber as red and turning the person away."}},
+  {"id": "clot-rules", "kind": "concept", "name": {"zh": "血栓與按摩：為什麼不能推", "en": "Clots and massage: why you never push"}, "text": {"zh": "深層靜脈血栓的典型樣子是單側小腿腫、緊、熱、痛、顏色變深，背景常有長途飛行、手術後、骨折打石膏、癌症、懷孕或荷爾蒙藥物。按壓或推小腿可能讓血塊鬆脫，順著血流跑到肺，變成肺栓塞。處理：不按、不熱敷、不讓他走太多，轉急診做超音波。若已經出現突然喘、吸氣胸痛、心跳快、血氧掉、咳血，是肺栓塞的警訊：坐直、監測、叫救護車。", "en": "A deep vein thrombosis typically means one calf swollen, tight, warm, painful and darker, against a background of a long flight, recent surgery, a cast, cancer, pregnancy or hormone medicines. Pressing or stroking the calf may loosen the clot so it travels to the lungs as a pulmonary embolism. So: no massage, no heat, little walking, emergency ultrasound. Sudden breathlessness, chest pain on breathing in, a racing heart, falling oxygen or coughing blood signal embolism: sit up, monitor, call an ambulance."}},
+  {"id": "elder-adapt", "kind": "concept", "name": {"zh": "高齡、骨鬆、抗凝血：怎麼調整", "en": "Older age, osteoporosis, anticoagulants: adapting"}, "text": {"zh": "姿勢：側臥或坐姿，膝間夾枕，起身慢，先坐一下再站。力道：大面積輕掌壓，不做拇指深壓與肘壓，避免瘀青。動作：不做脊柱扭轉、不做大幅度髖與脊柱伸展、不做跪壓背部。時間：短。中醫認為年老腎精漸虧、骨失所養，手法宜輕柔和緩，「以和為貴」。每一次都問：今天有沒有新的痛、新的瘀青、跌倒過嗎？", "en": "Position: side-lying or seated, a pillow between the knees, rise slowly and sit before standing. Pressure: broad light palming; no deep thumbing or elbows, to avoid bruising. Movements: no spinal twists, no big hip or spine stretches, no kneeling on the back. Time: short. TCM holds that in old age kidney essence wanes and bone goes unnourished, so techniques should be soft and even. Ask every time: any new pain, new bruise, any falls?"}},
+  {"id": "foot-first", "kind": "concept", "name": {"zh": "糖尿病足：先看再摸", "en": "Diabetic feet: look before you touch"}, "text": {"zh": "糖尿病人的腳可能麻到感覺不到傷口。腳底按摩前：開燈看腳底、趾縫、腳跟，看有沒有傷口、水泡、厚繭下出血、紅腫、顏色變深；摸溫度與脈搏。有傷口：不按那隻腳、不泡熱水、不用熱毛巾，轉介糖尿病足或傷口照護門診；紅腫熱痛、流膿、發燒要當天就醫。沒傷口也要力道輕、避免熱敷燙傷。教他每天用鏡子看腳底。", "en": "Diabetic feet may be too numb to feel a wound. Before any foot massage: lamp on, look at the soles, between the toes and the heels for wounds, blisters, bleeding under callus, redness, dark skin; feel the temperature and pulses. A wound: no massage on that foot, no hot soak or towel, refer to a diabetic-foot or wound clinic; redness, heat, pus or fever means seeing a doctor today. Even without a wound: light pressure and no heat that could burn. Teach him to check his soles daily with a mirror."}}
+ ],
+ "segs": [
+  {"id": "open", "name": {"zh": "開門前：讀問卷", "en": "Before opening: the forms"}, "sub": {"zh": "08:00 · 預約白板", "en": "08:00 · booking board"}, "t": 480, "mood": "day",
+   "note": {"zh": "篩檢流程：讀到背面", "en": "Screening: read to the back"},
+   "beats": [
+    {"id": "o1", "to": "place:board", "guide": {"zh": "到白板前聽師傅交代", "en": "Hear the master at the board"},
+     "lines": [
+      ["sys", {"zh": "週六早上，門還沒開，現場掛號的名單已經寫滿半面白板。", "en": "Saturday morning, doors not yet open, and the walk-in list already fills half the board."}],
+      ["master", {"zh": "今天只做一件事：把問卷讀完，連背面一起。禁忌篩檢的順序，你排給我看。", "en": "Today we do one thing: read every form to the end, back included. Show me the order of contraindication screening."}]
+     ],
+     "mini": {"type": "order", "q": {"zh": "按摩前的禁忌篩檢流程", "en": "Contraindication screening before massage"},
+      "steps": [
+       {"zh": "讀問卷：病史、用藥、手術", "en": "Read the form: history, medicines, surgery"},
+       {"zh": "問診確認：懷孕、血栓、抗凝血", "en": "Confirm: pregnancy, clots, blood thinners"},
+       {"zh": "量血壓、脈搏與體溫", "en": "Blood pressure, pulse, temperature"},
+       {"zh": "看皮膚、比較兩側肢體", "en": "Look at skin, compare both limbs"},
+       {"zh": "判斷：照做、調整、延後、轉診", "en": "Decide: go, adapt, postpone, refer"},
+       {"zh": "說明、取得同意、紀錄", "en": "Explain, consent, record"}
+      ]},
+     "post": [
+      ["master", {"zh": "第五步有四個答案，不是兩個。最常見的錯，是只會說「可以」和「不行」。", "en": "Step five has four answers, not two. The commonest mistake is knowing only “yes” and “no”."}]
+     ]},
+    {"id": "o2", "to": "afen", "guide": {"zh": "看今天的現場名單", "en": "Check today's walk-ins"},
+     "lines": [
+      ["afen", {"zh": "第一位林奶奶，女兒送的禮券寫「全套含扭轉」。第二位陳先生，剛下飛機。第三位王伯，要腳底按摩。", "en": "First, Grandma Lin, with a voucher from her daughter: “full set with twist”. Second, Mr Chen, just off a plane. Third, Uncle Wang, wants a foot massage."}],
+      ["nok", {"zh": "禮券、飛機、腳底。三個關鍵字，三個問題。", "en": "Voucher, plane, soles. Three keywords, three questions."}],
+      ["afen", {"zh": "巧克力我放在抽屜，誰今天答對三題誰吃。", "en": "Chocolates are in the drawer. Whoever gets all three right today gets one."}]
+     ]}
+   ]},
+  {"id": "grandma", "name": {"zh": "林奶奶的禮券", "en": "Grandma Lin's voucher"}, "sub": {"zh": "08:30 · 篩檢桌與墊區", "en": "08:30 · screening desk and mats"}, "t": 510, "mood": "day",
+   "note": {"zh": "林奶奶：結脈、抗凝血、不扭轉", "en": "Grandma Lin: knotted pulse, blood thinner, no twist"},
+   "beats": [
+    {"id": "g1", "to": "grandma", "guide": {"zh": "接待林奶奶", "en": "Greet Grandma Lin"},
+     "lines": [
+      ["grandma", {"zh": "女兒送的，我不用很浪費。背硬得像門板，早上起床要翻好幾次身。", "en": "My daughter's gift; it'd be a waste not to use it. My back's stiff as a door, takes me several goes to roll out of bed."}],
+      ["me", {"zh": "奶奶，您平常有在吃什麼藥？有沒有跌倒過、骨折過？", "en": "Grandma, what medicines do you take? Any falls or broken bones?"}],
+      ["grandma", {"zh": "心臟的藥，還有一顆醫生說「讓血不要黏」的。前年跌倒手腕斷過，醫生說骨頭比較鬆。", "en": "Heart pills, and one the doctor says “stops the blood getting sticky”. Broke my wrist in a fall the year before last; the doctor says my bones are thin."}],
+      ["afen", {"zh": "問卷上「抗凝血藥」那格她沒勾，我補勾了。", "en": "She didn't tick the anticoagulant box; I've ticked it for her."}]
+     ]},
+    {"id": "g2", "to": "grandma", "guide": {"zh": "摸林奶奶的脈", "en": "Take Grandma Lin's pulse"},
+     "lines": [
+      ["master", {"zh": "脈給你。數一數，也感覺它停不停。", "en": "The pulse is yours. Count it, and feel whether it stops."}]
+     ],
+     "mini": {"type": "pulse", "q": {"zh": "脈來緩慢，時有一停，停無定數。這是？", "en": "Slow, pausing now and then with no pattern to the pauses. Which pulse?"}, "pulse": "knotted",
+      "options": [
+       {"zh": "結脈", "en": "Knotted", "ok": true, "why": {"zh": "緩而時止、止無定數是結脈。中醫認為主陰盛氣結或瘀血；臨床上要想到心房顫動，再追問抗凝血藥，與她的病史一致。", "en": "Slow with irregular pauses is knotted. In TCM reasoning it points to bound qi or stasis; clinically think of atrial fibrillation and ask about anticoagulants, which fits her history."}},
+       {"zh": "代脈", "en": "Intermittent", "ok": false, "why": {"zh": "代脈也會停，但停有定數、規律地停。她的停頓毫無規律。", "en": "An intermittent pulse also pauses, but at regular intervals. Her pauses have no pattern."}},
+       {"zh": "滑脈", "en": "Slippery", "ok": false, "why": {"zh": "滑脈如珠走盤、流利圓滑，不會停。", "en": "Slippery rolls like pearls on a plate, smoothly, without pausing."}}
+      ]},
+     "post": [
+      ["master", {"zh": "結脈、心房顫動、抗凝血藥、骨質疏鬆。這四個詞放在一起，你的手法要怎麼改？", "en": "Knotted pulse, atrial fibrillation, an anticoagulant, osteoporosis. Put those four together: how do your hands change?"}],
+      ["me", {"zh": "不深壓、不用拇指和手肘、不扭轉，改側臥，時間短。", "en": "No deep pressure, no thumbs or elbows, no twists; side-lying, short."}]
+     ]},
+    {"id": "g3", "to": "grandma", "guide": {"zh": "回答「扭轉」", "en": "Answer the twist request"},
+     "lines": [
+      ["grandma", {"zh": "可是禮券上寫含扭轉，我女兒說扭轉那一下最舒服，喀一聲。不做好可惜。", "en": "But the voucher says the twist is included. My daughter says that's the best bit, the crack. Shame to miss it."}]
+     ],
+     "mini": {"type": "choice", "q": {"zh": "林奶奶堅持要做禮券上的脊柱扭轉。", "en": "Grandma Lin insists on the spinal twist on her voucher."},
+      "options": [
+       {"zh": "側臥輕掌壓，不做扭轉，說明原因", "en": "Side-lying light palming, no twist, explain", "ok": true, "set": {"adapted": true}, "why": {"zh": "骨質疏鬆加抗凝血：扭轉可能造成脊椎壓迫性骨折與出血。黃燈：調整後照樣能做，讓她舒服又安全。", "en": "Osteoporosis plus an anticoagulant: a twist risks a spinal compression fracture and bleeding. An amber light: adapt, and she can still have a comfortable, safe session."}},
+       {"zh": "輕輕扭一下就好", "en": "Just a gentle twist", "ok": false, "set": {"adapted": false}, "why": {"zh": "骨鬆的脊椎，「輕輕」的旋轉也是力量。很小的力就可能骨折，她又容易出血。", "en": "On an osteoporotic spine even a “gentle” rotation is a load. Very little force can fracture it, and she bleeds easily."}},
+       {"zh": "全部不做，請她回家", "en": "Do nothing; send her home", "ok": false, "set": {"adapted": "home"}, "why": {"zh": "把黃燈當紅燈。她沒有紅旗，調整後的按摩對她有幫助。", "en": "Treating amber as red. She has no red flags, and an adapted massage would help her."}}
+      ]},
+     "post": [
+      ["grandma", {"zh": "好啦，你們專業的說了算。那個喀一聲，就留給我女兒自己去做。", "en": "Fine, you're the experts. The crack can be my daughter's treat, then."}]
+     ]},
+    {"id": "g4", "roles": ["therapist"], "to": "place:mat", "guide": {"zh": "側臥輕揉林奶奶的背", "en": "Side-lying, soft kneading"},
+     "lines": [
+      ["nok", {"zh": "側臥，膝蓋中間夾枕頭，頭下墊高。掌根輕揉，像在摸一隻貓，不是在揉麵團。", "en": "Side-lying, pillow between the knees, head propped. Knead softly with the heel of the hand, as if stroking a cat, not kneading dough."}],
+      ["me", {"zh": "奶奶，力道可以嗎？有沒有哪裡痛？", "en": "Grandma, is the pressure all right? Anything hurt?"}]
+     ],
+     "mini": {"type": "drill", "template": "thai-massage", "drill": "knead"},
+     "post": [
+      ["grandma", {"zh": "這樣好，像曬太陽。", "en": "That's nice, like sitting in the sun."}]
+     ]},
+    {"id": "g5", "to": "place:mat", "guide": {"zh": "起身前的安全溝通", "en": "Safe communication before rising"},
+     "lines": [
+      ["nok", {"zh": "起身最容易出事。先側身，用手撐起來坐在床邊，坐一下再站，我扶著。", "en": "Getting up is when accidents happen. Roll to the side, push up to sit on the edge, pause, then stand, with me holding you."}]
+     ],
+     "mini": {"type": "stage", "case": "thai-massage-thai-palming-workflow", "stage": 1},
+     "post": [
+      ["master", {"zh": "瘀青檢查也做：看一下她的背和手臂，寫進紀錄。", "en": "And check for bruises: her back and arms, written into the notes."}]
+     ]}
+   ]},
+  {"id": "chen", "name": {"zh": "剛下飛機的人", "en": "Straight off the plane"}, "sub": {"zh": "09:30 · 篩檢桌", "en": "09:30 · screening desk"}, "t": 570, "mood": "day",
+   "note": {"zh": "陳先生：單側小腿腫，紅燈", "en": "Mr Chen: one swollen calf, red light"},
+   "beats": [
+    {"id": "c1", "to": "mrchen", "guide": {"zh": "接待陳先生", "en": "Greet Mr Chen"},
+     "lines": [
+      ["mrchen", {"zh": "昨晚飛了一整夜，坐經濟艙最後一排。左小腿又緊又腫，幫我把水腫推掉就好，下午還要開會。", "en": "Flew all night, back row of economy. My left calf is tight and swollen. Just push the fluid out, I've a meeting this afternoon."}],
+      ["me", {"zh": "陳先生，我比一下兩邊小腿。……左邊粗一圈，摸起來熱熱的，壓小腿肚會痛嗎？", "en": "Mr Chen, let me compare your calves. …The left is thicker and feels warm. Does it hurt when I press the calf?"}],
+      ["mrchen", {"zh": "會，蠻痛的。右邊就還好。", "en": "Yes, quite a bit. The right's fine."}],
+      ["master", {"zh": "長途飛行、單側、腫、熱、壓痛。經濟艙症候群的樣子。你想到什麼？", "en": "A long flight, one side, swollen, warm, tender. Economy-class syndrome. What are you thinking?"}],
+      ["me", {"zh": "深層靜脈血栓。不能按，推了血塊可能跑到肺。要轉急診做超音波。", "en": "Deep vein thrombosis. No massage; pushing could send the clot to his lungs. Emergency, for an ultrasound."}]
+     ]},
+    {"id": "c2", "to": "mrchen", "guide": {"zh": "讀血栓的禁忌", "en": "Review the clot contraindication"},
+     "lines": [
+      ["mrchen", {"zh": "可是我真的只是坐太久而已……", "en": "But honestly, I just sat too long…"}],
+      ["master", {"zh": "也許是。但「也許」不能用推的來確認。這一段你自己讀一遍，等一下解釋給他聽。", "en": "Perhaps. But you do not test a perhaps by pushing on it. Read this section yourself, then explain it to him."}]
+     ],
+     "mini": {"type": "stage", "case": "thai-massage-thai-safety-workflow", "stage": 2, "member": true},
+     "post": [
+      ["me", {"zh": "陳先生，如果是血栓，按一下就可能讓它跑到肺，那叫肺栓塞。超音波幾分鐘就能看清楚。", "en": "Mr Chen, if it's a clot, one massage could send it to your lungs; that's a pulmonary embolism. An ultrasound settles it quickly."}]
+     ],
+     "item": "boarding-pass"},
+    {"id": "c3", "to": "mrchen", "guide": {"zh": "陳先生喘起來了", "en": "Mr Chen is breathless"},
+     "lines": [
+      ["sys", {"zh": "陳先生站起來拿外套，突然停住，一隻手按著胸口側邊。「吸氣的時候……這邊刺刺的，有點喘。」", "en": "Mr Chen stands to get his jacket and stops, a hand on the side of his chest. “When I breathe in… it stabs here. I'm a bit out of breath.”"}],
+      ["afen", {"zh": "血氧往下掉，心跳很快。", "en": "Oxygen falling, heart racing."}]
+     ],
+     "mini": {"type": "vitals", "event": "desaturation",
+      "options": [
+       {"zh": "坐直、監測、依流程給氧、叫救護車", "en": "Sit up, monitor, oxygen per protocol, ambulance", "ok": true, "why": {"zh": "疑似肺栓塞。讓他坐直好呼吸，持續監測，依流程給氧，叫救護車，不讓他走、不碰他的腿。", "en": "Suspected pulmonary embolism. Sit him up to breathe, keep monitoring, oxygen per protocol, ambulance; he does not walk and nobody touches his leg."}},
+       {"zh": "躺平，按摩小腿讓血液回流", "en": "Lie him flat, massage the calf", "ok": false, "why": {"zh": "這正是不能做的事。按小腿可能讓更多血塊鬆脫。", "en": "The one thing you must not do. Pressing the calf could loosen more clot."}},
+       {"zh": "請他自己搭計程車去急診", "en": "Let him take a taxi to emergency", "ok": false, "why": {"zh": "他可能在路上惡化。需要救護車與監測。", "en": "He could deteriorate on the way. He needs an ambulance and monitoring."}}
+      ]},
+     "post": [
+      ["mrchen", {"zh": "……會議，我請同事幫我開好了。", "en": "…I'll have a colleague take the meeting."}],
+      ["master", {"zh": "這是你今天做得最對的決定，陳先生。", "en": "The best decision you'll make today, Mr Chen."}]
+     ],
+     "set": {"chen-sent": true}}
+   ]},
+  {"id": "call", "name": {"zh": "櫃台來電", "en": "Reception calls"}, "sub": {"zh": "11:00 · 接待桌", "en": "11:00 · intake desk"}, "t": 660, "mood": "day",
+   "note": {"zh": "發燒的客人：延後", "en": "A feverish client: postpone"},
+   "beats": [
+    {"id": "f1", "to": "place:desk", "guide": {"zh": "接櫃台的電話", "en": "Answer reception"},
+     "ring": {"title": {"zh": "櫃台來電", "en": "Reception calling"}, "sub": {"zh": "發燒的客人想來「按一按流流汗」", "en": "A client with a fever wants to “sweat it out”"}, "call": true, "from": "reception"},
+     "lines": [
+      ["reception", {"zh": "有位小姐發燒、全身痠，說按一按流流汗就好了。下午有空檔，可以嗎？", "en": "A woman with a fever and aching all over says a massage and a good sweat will sort her out. We've a slot this afternoon. Is that OK?"}],
+      ["me", {"zh": "發燒不按，請她好了再約。如果頭痛脖子硬、出疹子、很喘，先去看醫生。", "en": "No massage with a fever; rebook when she's well. If she has a headache with a stiff neck, a rash or breathlessness, see a doctor first."}],
+      ["master", {"zh": "再加一句：按摩會讓她更累，也可能把病傳給下一位客人。", "en": "Add: massage would tire her more and might pass the illness to the next client."}],
+      ["reception", {"zh": "可以嗎？喔，不可以。好，我幫她改到下週。", "en": "Is that OK? Oh, it isn't. Right, I'll move her to next week."}]
+     ]}
+   ]},
+  {"id": "wang", "name": {"zh": "王伯的腳底", "en": "Uncle Wang's soles"}, "sub": {"zh": "11:30 · 檢查燈下", "en": "11:30 · under the lamp"}, "t": 690, "mood": "day",
+   "note": {"zh": "王伯：先看腳底，找到傷口", "en": "Uncle Wang: look first, find the wound"},
+   "beats": [
+    {"id": "w1", "to": "wangbo", "guide": {"zh": "接待王伯", "en": "Greet Uncle Wang"},
+     "lines": [
+      ["wangbo", {"zh": "孫子說泰式腳底按摩很舒服。我腳底常常麻麻的，按一按應該會比較有感覺。", "en": "My grandson says Thai foot massage is lovely. My soles are often numb; a massage should wake them up."}],
+      ["me", {"zh": "王伯，糖尿病多久了？腳麻是兩腳都麻嗎？最近腳有沒有受傷？", "en": "Uncle Wang, how long have you had diabetes? Are both feet numb? Any injuries to your feet lately?"}],
+      ["wangbo", {"zh": "很多年了。兩腳都麻。受傷？沒有吧，不痛啊。", "en": "Many years. Both feet. Injuries? Don't think so. Nothing hurts."}],
+      ["master", {"zh": "「不痛」在周邊神經病變的腳上，不代表沒事。燈在哪裡？", "en": "On a foot with peripheral neuropathy, “nothing hurts” proves nothing. Where's the lamp?"}]
+     ],
+     "mini": {"type": "find", "hot": "lamp", "q": {"zh": "找到檢查燈，先看腳底", "en": "Find the examination lamp: look at the soles first"}},
+     "post": [
+      ["nok", {"zh": "腳底按摩，第一個動作是開燈，不是伸手。", "en": "The first move in a foot massage is switching on the lamp, not reaching out."}]
+     ]},
+    {"id": "w2", "to": "wangbo", "guide": {"zh": "取湧泉、太溪、太衝", "en": "Locate Yongquan, Taixi, Taichong"},
+     "lines": [
+      ["nok", {"zh": "泰式腳底按摩會壓到幾個中醫也用的點。你先找湧泉，再找太溪、太衝。", "en": "Thai foot massage passes over points TCM uses too. Find Yongquan first, then Taixi and Taichong."}]
+     ],
+     "mini": {"type": "points", "q": {"zh": "點出湧泉、太溪、太衝", "en": "Tap Yongquan, Taixi and Taichong"}, "codes": ["KI1", "KI3", "LR3"]},
+     "post": [
+      ["sys", {"zh": "你在燈下找湧泉的時候，看見左腳底前掌有一個硬幣大小的傷口，邊緣是厚繭，底下濕濕的。", "en": "As you look for Yongquan under the lamp, you see a coin-sized wound on the ball of the left foot, ringed with thick callus and moist underneath."}],
+      ["wangbo", {"zh": "咦？我完全不知道。", "en": "Eh? I had no idea."}],
+      ["me", {"zh": "這就是糖尿病足最可怕的地方：受傷了，自己感覺不到。", "en": "That's the frightening thing about a diabetic foot: hurt, and you can't feel it."}]
+     ]},
+    {"id": "w3", "to": "wangbo", "guide": {"zh": "決定與轉介", "en": "Decide and refer"},
+     "lines": [
+      ["master", {"zh": "紅燈、黃燈還是綠燈？", "en": "Red, amber or green?"}],
+      ["me", {"zh": "腳是紅燈：不按、不泡熱水、不熱敷，轉介糖尿病足傷口門診，這週就去。紅腫流膿發燒就今天。肩頸可以輕輕按，黃燈。", "en": "The feet are red: no massage, no soaks, no heat; diabetic-foot wound clinic this week, today if red, oozing or feverish. His neck and shoulders can have gentle work: amber."}]
+     ],
+     "mini": {"type": "stage", "case": "thai-massage-thai-feet-legs-workflow", "stage": 7},
+     "post": [
+      ["wangbo", {"zh": "那我回去跟孫子說，腳底按摩沒按到，倒是看到一個洞。", "en": "So I tell my grandson: no foot massage, but they found a hole."}],
+      ["nok", {"zh": "跟他說，阿公的腳以後每天用鏡子看一次。", "en": "Tell him Grandpa checks his feet with a mirror every day from now on."}]
+     ]},
+    {"id": "w4", "roles": ["intern"], "to": "place:desk", "guide": {"zh": "寫三張紀錄", "en": "Write three notes"},
+     "lines": [
+      ["me", {"zh": "林奶奶黃燈：側臥輕掌壓、未扭轉。陳先生紅燈：疑血栓與肺栓塞，救護車。王伯：腳紅燈、肩頸黃燈，轉傷口門診。", "en": "Grandma Lin: amber; side-lying light palming, no twist, no new bruises. Mr Chen: red; suspected clot and embolism, ambulance. Uncle Wang: feet red, neck amber; wound clinic."}],
+      ["afen", {"zh": "三題全對。巧克力。", "en": "Three for three. Chocolate."}]
+     ]}
+   ]},
+  {"id": "debrief", "name": {"zh": "下午的訊息與交班", "en": "Afternoon news, handover"}, "sub": {"zh": "17:30 · 預約白板", "en": "17:30 · booking board"}, "t": 1050, "mood": "eve",
+   "note": {"zh": "陳先生：超音波看到血栓", "en": "Mr Chen: the scan found a clot"},
+   "beats": [
+    {"id": "d1", "when": {"flag": "chen-sent", "is": true}, "to": "place:desk", "guide": {"zh": "看陳先生的訊息", "en": "Read Mr Chen's message"},
+     "ring": {"title": {"zh": "陳先生訊息", "en": "Message from Mr Chen"}, "sub": {"zh": "超音波看到了，已經在治療", "en": "The scan showed it; treatment has started"}, "call": false, "from": "mrchen"},
+     "lines": [
+      ["sys", {"zh": "訊息：「超音波看到左小腿有血栓，肺裡也有小的。已經開始治療，住院觀察。醫生說還好沒有按。」", "en": "Message: “Ultrasound found a clot in my left calf and small ones in my lungs. Treatment started, I'm admitted for observation. The doctor said it's lucky nobody massaged it.”"}],
+      ["nok", {"zh": "還好你看了兩條腿，不是一條。", "en": "Lucky you looked at both legs, not one."}]
+     ]},
+    {"id": "d2", "to": "master", "guide": {"zh": "聽師傅說", "en": "Hear the master out"},
+     "lines": [
+      ["master", {"zh": "今天三個人，一個黃燈、一個紅燈、一個一半一半。哪一個最難？", "en": "Three people today: one amber, one red, one half and half. Which was hardest?"}],
+      ["me", {"zh": "林奶奶。紅燈很明顯，黃燈要想怎麼改，還要讓她不失望。", "en": "Grandma Lin. Red lights are obvious; amber means working out how to adapt, and not disappointing her."}],
+      ["master", {"zh": "對。會說「不行」很簡單，會說「這樣可以」才是功夫。", "en": "Yes. Saying “no” is easy. Saying “this way you can” is the real skill."}]
+     ]}
+   ]},
+  {"id": "night", "name": {"zh": "女兒的電話", "en": "The daughter calls"}, "sub": {"zh": "21:00 · 值班室", "en": "21:00 · on-call room"}, "t": 1260, "mood": "night",
+   "note": {"zh": "林奶奶的女兒來電", "en": "Grandma Lin's daughter calls"},
+   "beats": [
+    {"id": "n1", "when": {"flag": "adapted", "is": true}, "to": "place:desk", "guide": {"zh": "接林奶奶女兒的電話", "en": "Answer Grandma Lin's daughter"},
+     "ring": {"title": {"zh": "家屬來電", "en": "Family calling"}, "sub": {"zh": "林奶奶的女兒", "en": "Grandma Lin's daughter"}, "call": true, "from": "daughter"},
+     "lines": [
+      ["daughter", {"zh": "我媽很固執，可是她說今天你們沒幫她扭，還跟她講為什麼。她下午睡了好久，說像曬太陽。", "en": "My mum is stubborn, but she says you didn't do the twist and explained why. She napped all afternoon; said it was like sitting in the sun."}],
+      ["me", {"zh": "謝謝您。禮券上的扭轉，我們幫她換成側臥的背部放鬆了。", "en": "Thank you. We swapped the twist on the voucher for a side-lying back session."}],
+      ["daughter", {"zh": "下次我陪她去。我自己要做那個喀一聲的。", "en": "Next time I'm coming with her. I want the crack myself."}]
+     ]},
+    {"id": "n1b", "when": {"flag": "adapted", "is": false}, "to": "place:desk", "guide": {"zh": "接林奶奶女兒的電話", "en": "Answer Grandma Lin's daughter"},
+     "ring": {"title": {"zh": "家屬來電", "en": "Family calling"}, "sub": {"zh": "林奶奶背痛加劇", "en": "Grandma Lin's back pain is worse"}, "call": true, "from": "daughter"},
+     "lines": [
+      ["daughter", {"zh": "我媽很固執，痛也不說。可是她晚上翻身會叫，說背中間刺痛，比早上還痛。", "en": "My mum is stubborn and won't admit pain. But she cries out turning over tonight, a sharp pain mid-back, worse than this morning."}],
+      ["me", {"zh": "骨質疏鬆的人扭轉後新的背痛，要排除壓迫性骨折。請帶她去急診照 X 光，跟醫師說她吃抗凝血藥。", "en": "New back pain after a twist in someone with osteoporosis needs a compression fracture ruled out. Please take her to emergency for an X-ray and tell them about her anticoagulant."}],
+      ["master", {"zh": "明天早上，這件事你親自寫進事件報告。我們一起學。", "en": "Tomorrow morning you write this into an incident report yourself. We learn from it together."}]
+     ]},
+    {"id": "n1c", "when": {"flag": "adapted", "is": "home"}, "to": "place:desk", "guide": {"zh": "接林奶奶女兒的電話", "en": "Answer Grandma Lin's daughter"},
+     "ring": {"title": {"zh": "家屬來電", "en": "Family calling"}, "sub": {"zh": "林奶奶白跑一趟", "en": "Grandma Lin went home untreated"}, "call": true, "from": "daughter"},
+     "lines": [
+      ["daughter", {"zh": "我媽很固執，可是她今天很難過。她說坐了一小時車去，你們說她太老了不能按。", "en": "My mum is stubborn, but she's upset today. She says she rode the bus all that way and you said she was too old to be massaged."}],
+      ["me", {"zh": "對不起。她其實可以按，只是不能扭轉、要側臥、要輕。我幫她重新約，這次我們調整好。", "en": "I'm sorry. She could have had a massage, just no twist, side-lying and gentle. I'll rebook her, adapted properly this time."}]
+     ]},
+    {"id": "n2", "to": "place:chart", "guide": {"zh": "把問卷夾歸位", "en": "Put the clipboards away"},
+     "lines": [
+      ["sys", {"zh": "你把今天的問卷一張張歸位。每一張背面的「調整與轉診」欄，都有你的字。", "en": "You file the day's forms one by one. On the back of every sheet, the “adjustments and referrals” column is in your handwriting."}],
+      ["master", {"zh": "（訊息）問卷讀到背面的人，才是能按摩的人。晚安。", "en": "(message) Only those who read the form to the back are fit to massage. Good night."}]
+     ],
+     "end": true}
+   ]}
+ ],
+ "ending": {"title": {"zh": "收工了", "en": "Closing time"}, "sub": {"zh": "一個黃燈、一個紅燈、一隻沒按的腳", "en": "One amber, one red, and a foot left untouched"},
+  "stats": ["stages", "drills", "choices", "calls", "items", "time"]}
+}

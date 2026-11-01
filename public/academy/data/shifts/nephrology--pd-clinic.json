@@ -1,0 +1,1432 @@
+{
+ "format": "huatuo-shift-v2",
+ "department": "nephrology",
+ "case": "pd-clinic",
+ "caseTitle": {
+  "zh": "腹膜透析室的一天",
+  "en": "A day in the peritoneal dialysis unit"
+ },
+ "condition": {
+  "zh": "感染 · 腹膜透析腹膜炎",
+  "en": "Infection · PD peritonitis"
+ },
+ "difficulty": 1,
+ "room": "clinic",
+ "title": {
+  "zh": "腎臟內科：腹膜透析與腎臟門診",
+  "en": "Nephrology: PD unit and kidney clinic"
+ },
+ "tagline": {
+  "zh": "混濁的透析液，是一封求救信",
+  "en": "A cloudy bag is a call for help"
+ },
+ "minutes": 25,
+ "roles": [
+  {
+   "id": "resident",
+   "zh": "腎臟內科住院醫師",
+   "en": "Nephrology resident",
+   "desc": {
+    "zh": "今天在腹膜透析室和腎臟門診。病人大多在家自己洗腎，你看到的是他們生活裡出錯的那一天。",
+    "en": "Today you cover the peritoneal dialysis unit and kidney clinic. Most patients dialyse themselves at home; you see the day something went wrong."
+   }
+  },
+  {
+   "id": "pd-nurse",
+   "zh": "腹膜透析護理師",
+   "en": "PD nurse",
+   "desc": {
+    "zh": "教病人在家換液、看出口、量體重。病人出問題時，第一個打給的是你。",
+    "en": "You teach patients to exchange bags, check the exit site and weigh themselves at home. When trouble comes, you are the first call."
+   }
+  }
+ ],
+ "cast": {
+  "attending": {
+   "name": {
+    "zh": "溫主治",
+    "en": "Dr Wen"
+   },
+   "role": {
+    "zh": "腎臟內科主治醫師（師傅）",
+    "en": "Consultant nephrologist (mentor)"
+   },
+   "tag": "ATT",
+   "color": "#81296d",
+   "about": {
+    "zh": "看到透析液袋一定先舉起來對著窗戶看。口頭禪：「舉起來，對著光。」",
+    "en": "Lifts every dialysis bag to the window before anything else. Catchphrase: \"Hold it up to the light.\""
+   },
+   "body": "mentor"
+  },
+  "meihua": {
+   "name": {
+    "zh": "美華姐",
+    "en": "Mei-Hua"
+   },
+   "role": {
+    "zh": "腹膜透析室資深衛教護理師",
+    "en": "Senior PD educator"
+   },
+   "tag": "RN",
+   "color": "#3b8f6a",
+   "about": {
+    "zh": "教了二十年換液，可以閉著眼睛說出每個病人的出口長什麼樣子。",
+    "en": "Twenty years teaching exchanges; can describe every patient's exit site with her eyes shut."
+   },
+   "body": "nurse"
+  },
+  "hsiu-lan": {
+   "name": {
+    "zh": "秀蘭姨",
+    "en": "Auntie Hsiu-Lan"
+   },
+   "role": {
+    "zh": "病人：腹膜透析三年",
+    "en": "Patient: three years on PD"
+   },
+   "tag": "PT",
+   "color": "#c06c84",
+   "about": {
+    "zh": "五十八歲，開花店。在店後面的小房間換液。這週末女兒結婚，她負責所有的捧花。",
+    "en": "Fifty-eight, runs a flower shop and does her exchanges in the back room. Her daughter marries this weekend and she is making every bouquet."
+   },
+   "body": "patient"
+  },
+  "a-fu": {
+   "name": {
+    "zh": "阿福伯",
+    "en": "Uncle Fu"
+   },
+   "role": {
+    "zh": "病人：血液透析，廔管不響了",
+    "en": "Patient: haemodialysis, silent fistula"
+   },
+   "tag": "PT",
+   "color": "#4a7fb5",
+   "about": {
+    "zh": "七十歲，退休公車司機，每週一三五洗腎。每天早上都會摸摸左手的廔管「跟它說早安」。今天它沒有回答。",
+    "en": "Seventy, retired bus driver, dialyses three times a week. Every morning he touches the fistula in his left arm to \"say good morning\". Today it did not answer."
+   },
+   "body": "patient"
+  },
+  "grandma-kao": {
+   "name": {
+    "zh": "高奶奶",
+    "en": "Grandma Kao"
+   },
+   "role": {
+    "zh": "病人：慢性腎臟病",
+    "en": "Patient: chronic kidney disease"
+   },
+   "tag": "PT",
+   "color": "#b5651d",
+   "about": {
+    "zh": "八十四歲，慢性腎臟病多年。膝蓋痛，吃了鄰居給的止痛藥。最大的心願是參加曾孫的周歲。",
+    "en": "Eighty-four, chronic kidney disease for years. Took a neighbour's painkillers for her knee. Her dearest wish: her great-grandson's first birthday."
+   },
+   "body": "patient"
+  },
+  "kao-grandson": {
+   "name": {
+    "zh": "高先生",
+    "en": "Mr Kao"
+   },
+   "role": {
+    "zh": "高奶奶的孫子",
+    "en": "Grandma Kao's grandson"
+   },
+   "tag": "FAM",
+   "color": "#6a8f3b",
+   "about": {
+    "zh": "奶奶一手帶大的。他說：「奶奶想怎樣，我們就怎樣。」",
+    "en": "Raised by his grandmother. \"Whatever Grandma wants, we will do.\""
+   },
+   "body": "family"
+  },
+  "lab": {
+   "name": {
+    "zh": "檢驗科小玉",
+    "en": "Hsiao-Yu (laboratory)"
+   },
+   "role": {
+    "zh": "醫檢師",
+    "en": "Biomedical scientist"
+   },
+   "tag": "LAB",
+   "color": "#5b4a9e",
+   "about": {
+    "zh": "看透析液抹片看得最仔細，報告時會說「我看了兩遍」。",
+    "en": "Reads dialysate smears most carefully; reports with \"I looked twice.\""
+   },
+   "phoneOnly": true
+  },
+  "access": {
+   "name": {
+    "zh": "通路中心林醫師",
+    "en": "Dr Lin (access centre)"
+   },
+   "role": {
+    "zh": "透析通路中心醫師",
+    "en": "Dialysis access physician"
+   },
+   "tag": "VA",
+   "color": "#d9534f",
+   "about": {
+    "zh": "廔管阻塞的電話，他都說「越早越好，下午帶來」。",
+    "en": "To every blocked-fistula call he says: \"The sooner the better. Bring him this afternoon.\""
+   },
+   "phoneOnly": true
+  }
+ },
+ "places": {
+  "board": {
+   "name": {
+    "zh": "腹膜透析排程板",
+    "en": "PD schedule board"
+   },
+   "hot": "whiteboard"
+  },
+  "desk": {
+   "name": {
+    "zh": "診間桌",
+    "en": "Consulting desk"
+   },
+   "hot": "desk"
+  },
+  "couch": {
+   "name": {
+    "zh": "處置床",
+    "en": "Treatment couch"
+   },
+   "hot": "field"
+  },
+  "exchange": {
+   "name": {
+    "zh": "洗手與換液區",
+    "en": "Hand-wash and exchange area"
+   },
+   "hot": "sink"
+  },
+  "monitor": {
+   "name": {
+    "zh": "生理監視器",
+    "en": "Patient monitor"
+   },
+   "hot": "monitor"
+  },
+  "us": {
+   "name": {
+    "zh": "腎臟超音波",
+    "en": "Renal ultrasound"
+   },
+   "hot": "ultrasound"
+  },
+  "viewer": {
+   "name": {
+    "zh": "影像工作站",
+    "en": "Image viewer"
+   },
+   "hot": "imaging"
+  },
+  "lab": {
+   "name": {
+    "zh": "檢體送驗窗口",
+    "en": "Specimen window"
+   },
+   "hot": "lab"
+  },
+  "waiting": {
+   "name": {
+    "zh": "候診區",
+    "en": "Waiting area"
+   },
+   "hot": "door"
+  }
+ },
+ "glossary": [
+  {
+   "term": {
+    "zh": "腹膜透析",
+    "en": "peritoneal dialysis"
+   },
+   "plain": {
+    "zh": "把透析液灌進肚子，利用腹膜當濾網，把廢物和水分帶出來。病人可以在家自己做。",
+    "en": "Dialysis fluid is run into the abdomen and the peritoneum acts as the filter, drawing out waste and water. Patients do it themselves at home."
+   }
+  },
+  {
+   "term": {
+    "zh": "流出液",
+    "en": "effluent"
+   },
+   "plain": {
+    "zh": "在肚子裡停留一段時間後放出來的透析液。正常是清澈的，混濁要當感染處理。",
+    "en": "Dialysis fluid drained after dwelling in the abdomen. Normally clear; cloudy means infection until proven otherwise."
+   }
+  },
+  {
+   "term": {
+    "zh": "腹膜炎",
+    "en": "peritonitis"
+   },
+   "plain": {
+    "zh": "腹膜被細菌感染，肚子痛、流出液混濁、可能發燒。腹膜透析最常見的嚴重併發症。",
+    "en": "Bacterial infection of the peritoneum: pain, cloudy effluent, perhaps fever. The commonest serious complication of PD."
+   }
+  },
+  {
+   "term": {
+    "zh": "接觸污染",
+    "en": "touch contamination"
+   },
+   "plain": {
+    "zh": "換液時手或接頭碰到不乾淨的東西，細菌就跟著進到肚子裡。",
+    "en": "Hands or connectors touch something unclean during an exchange and bacteria ride in."
+   }
+  },
+  {
+   "term": {
+    "zh": "導管出口",
+    "en": "exit site"
+   },
+   "plain": {
+    "zh": "腹膜透析導管穿出皮膚的地方。紅、腫、有分泌物是感染的警訊。",
+    "en": "Where the PD catheter leaves the skin. Redness, swelling or discharge signal infection."
+   }
+  },
+  {
+   "term": {
+    "zh": "腹腔內抗生素",
+    "en": "intraperitoneal antibiotics"
+   },
+   "plain": {
+    "zh": "把抗生素加進透析液、灌進肚子裡，直接作用在感染的地方。",
+    "en": "Antibiotics added to the dialysis fluid and run into the abdomen, straight to the infection."
+   }
+  },
+  {
+   "term": {
+    "zh": "震顫",
+    "en": "thrill"
+   },
+   "plain": {
+    "zh": "摸動靜脈廔管時，那種像貓咪呼嚕一樣的震動。摸不到，廔管可能塞住了。",
+    "en": "The purring vibration you feel over a working fistula. If it is gone, the fistula may be blocked."
+   }
+  },
+  {
+   "term": {
+    "zh": "廔管阻塞",
+    "en": "fistula thrombosis"
+   },
+   "plain": {
+    "zh": "洗腎用的動靜脈廔管裡形成血栓，血流不過去，就不能透析。要盡快打通。",
+    "en": "A clot inside the dialysis fistula; blood cannot flow and dialysis is impossible. It must be opened quickly."
+   }
+  },
+  {
+   "term": {
+    "zh": "高血鉀",
+    "en": "hyperkalaemia"
+   },
+   "plain": {
+    "zh": "血中鉀離子太高，會讓心臟出現危險的心律。錯過洗腎的病人特別容易發生。",
+    "en": "Too much potassium in the blood, which can cause dangerous heart rhythms. Common when dialysis is missed."
+   }
+  },
+  {
+   "term": {
+    "zh": "慢性腎臟病",
+    "en": "chronic kidney disease"
+   },
+   "plain": {
+    "zh": "腎功能長期、慢慢地變差。要先知道基準值，才看得出新的惡化。",
+    "en": "Kidney function declining slowly over a long time. You need the baseline to spot a new drop."
+   }
+  },
+  {
+   "term": {
+    "zh": "非類固醇消炎止痛藥",
+    "en": "NSAIDs"
+   },
+   "plain": {
+    "zh": "常見的消炎止痛藥。對腎臟不好的人，可能讓腎功能突然變差。",
+    "en": "Common anti-inflammatory painkillers. In weak kidneys they can cause a sudden fall in function."
+   }
+  },
+  {
+   "term": {
+    "zh": "醫病共享決策",
+    "en": "shared decision-making"
+   },
+   "plain": {
+    "zh": "醫師說明各種選擇的好處和代價，病人和家人說出在乎什麼，一起做決定。",
+    "en": "The doctor explains the gains and costs of each option, the patient and family say what matters, and they decide together."
+   }
+  },
+  {
+   "term": {
+    "zh": "保守性腎臟照護",
+    "en": "conservative kidney management"
+   },
+   "plain": {
+    "zh": "不洗腎，但積極照顧：控制症狀、保護剩下的腎功能、照顧生活品質。是一個選擇，不是放棄。",
+    "en": "No dialysis, but active care: symptom control, protecting remaining function, quality of life. A choice, not giving up."
+   }
+  }
+ ],
+ "codex": [
+  {
+   "id": "pd-bag",
+   "kind": "equipment",
+   "name": {
+    "zh": "腹膜透析液袋",
+    "en": "PD bag"
+   },
+   "text": {
+    "zh": "雙袋系統：一袋新液、一袋空的接流出液。換液前洗手、戴口罩、檢查接頭，一步都不能省。",
+    "en": "A twin-bag system: one fresh, one empty for the drain. Hand wash, mask, check the connector before every exchange, no step skipped."
+   },
+   "hot": "sink"
+  },
+  {
+   "id": "cycler",
+   "kind": "equipment",
+   "name": {
+    "zh": "全自動腹膜透析機",
+    "en": "Automated PD cycler"
+   },
+   "text": {
+    "zh": "晚上睡覺時自動灌液、放液。病人白天可以上班、開花店。",
+    "en": "Fills and drains automatically overnight so patients can work by day, or run a flower shop."
+   },
+   "hot": "device"
+  },
+  {
+   "id": "cloudy-bag",
+   "kind": "item",
+   "name": {
+    "zh": "那一袋混濁的流出液",
+    "en": "The cloudy bag"
+   },
+   "text": {
+    "zh": "溫主治把它舉到窗前：透過它看不到窗外的字。秀蘭姨說：「我還以為是燈光的關係。」",
+    "en": "Dr Wen held it to the window: you could not read the sign outside through it. Auntie Hsiu-Lan: \"I thought it was the light.\""
+   }
+  },
+  {
+   "id": "bouquet",
+   "kind": "item",
+   "name": {
+    "zh": "一朵小捧花",
+    "en": "A small posy"
+   },
+   "text": {
+    "zh": "秀蘭姨週末前送來透析室的。卡片寫：「換液前我洗了兩次手。」",
+    "en": "Auntie Hsiu-Lan sent it to the unit before the weekend. The card: \"I washed my hands twice before every exchange.\""
+   }
+  },
+  {
+   "id": "cloudy-rule",
+   "kind": "concept",
+   "name": {
+    "zh": "混濁就是腹膜炎，直到證明不是",
+    "en": "Cloudy is peritonitis until proven otherwise"
+   },
+   "text": {
+    "zh": "腹膜透析病人只要流出液混濁或肚子痛，就要先當腹膜炎處理：留流出液送細胞數與分類、革蘭氏染色、培養（打進血液培養瓶）。檢體一留完就開始經驗性腹腔內抗生素，同時涵蓋革蘭氏陽性和陰性菌，等培養結果再調整。檢查導管出口和隧道，找出原因（最常見是接觸污染），治療後一定要重新訓練換液技術。反覆或黴菌感染要考慮拔管。",
+    "en": "Any cloudy effluent or abdominal pain in a PD patient is peritonitis until proven otherwise: send effluent for cell count and differential, Gram stain and culture in blood culture bottles. As soon as the samples are taken, start empirical intraperitoneal antibiotics covering Gram-positive and Gram-negative organisms, then adjust to the culture. Examine the exit site and tunnel, find the cause (most often touch contamination) and always retrain the exchange technique. Relapsing or fungal infection raises catheter removal."
+   }
+  },
+  {
+   "id": "lifeline",
+   "kind": "concept",
+   "name": {
+    "zh": "廔管是生命線",
+    "en": "The fistula is a lifeline"
+   },
+   "text": {
+    "zh": "動靜脈廔管每天都要看、摸、聽：有沒有紅腫、有沒有震顫、雜音是不是連續的。那隻手不量血壓、不打針、不提重物、睡覺不壓。震顫消失要當天聯絡通路中心，越早打通成功率越高。錯過透析時，要想到高血鉀和積水，必要時先放暫時性導管透析。",
+    "en": "Check the fistula daily: look, feel, listen for redness, thrill and a continuous bruit. No blood pressure, needles, heavy lifting or sleeping on that arm. A lost thrill means calling the access centre the same day; the sooner it is opened, the better the chance. When dialysis is missed, think of hyperkalaemia and fluid overload, with a temporary catheter if needed."
+   }
+  },
+  {
+   "id": "not-everyone",
+   "kind": "concept",
+   "name": {
+    "zh": "不是每個人都要洗腎",
+    "en": "Not everyone needs dialysis"
+   },
+   "text": {
+    "zh": "高齡又有多重疾病的慢性腎臟病病人，洗腎不一定帶來更長或更好的生活。醫病共享決策要說清楚三條路：血液透析、腹膜透析、保守性腎臟照護，以及每條路的日常樣子。不論選哪條，都要避免傷腎的藥（例如非類固醇消炎止痛藥）、控制症狀、照顧營養和心情。肌酸酐突然升高時，先找基準值，再找可逆的原因。",
+    "en": "For very old patients with many illnesses, dialysis does not always bring a longer or better life. Shared decision-making lays out three paths, haemodialysis, peritoneal dialysis and conservative kidney management, and what daily life looks like on each. Whatever the choice: avoid kidney-harming drugs such as NSAIDs, control symptoms, look after nutrition and mood. When creatinine suddenly rises, find the baseline first, then the reversible cause."
+   }
+  }
+ ],
+ "segs": [
+  {
+   "id": "open",
+   "name": {
+    "zh": "腹膜透析室開門",
+    "en": "The PD unit opens"
+   },
+   "sub": {
+    "zh": "08:30 · 腹膜透析排程板",
+    "en": "08:30 · PD schedule board"
+   },
+   "t": 510,
+   "mood": "day",
+   "note": {
+    "zh": "開門",
+    "en": "Unit open"
+   },
+   "beats": [
+    {
+     "id": "o1",
+     "to": "place:board",
+     "guide": {
+      "zh": "看今天的排程",
+      "en": "Read the schedule"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "排程板：「新病人訓練兩位、例行回診六位、出口換藥三位。」電話旁邊貼著一張紙：「肚子痛、袋子混，馬上打來。」",
+        "en": "Board: \"New-patient training ×2, routine reviews ×6, exit-site dressings ×3.\" By the phone a note: \"Belly pain or cloudy bag? Call at once.\""
+       }
+      ],
+      [
+       "meihua",
+       {
+        "zh": "早。今天第一個電話是秀蘭姨，她說袋子「有點霧霧的」。",
+        "en": "Morning. First call today was Auntie Hsiu-Lan; she says her bag is \"a bit misty\"."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "o2",
+     "to": "attending",
+     "guide": {
+      "zh": "找溫主治",
+      "en": "Find Dr Wen"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "問你：腹膜透析的病人說袋子霧霧的，你第一件事做什麼？",
+        "en": "Question: a PD patient says the bag looks misty. What is the first thing you do?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "叫她把袋子帶來，舉起來對著光看。",
+        "en": "Ask her to bring the bag and hold it up to the light."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "對。舉起來，對著光。混濁就是腹膜炎，直到證明不是。",
+        "en": "Right. Hold it up to the light. Cloudy is peritonitis until proven otherwise."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "o3",
+     "to": "place:exchange",
+     "guide": {
+      "zh": "檢查洗手與換液區",
+      "en": "Check the hand-wash and exchange area"
+     },
+     "lines": [
+      [
+       "meihua",
+       {
+        "zh": "換液區是我們教學的地方。洗手台、乾洗手、口罩、計時器，缺一樣都不行。",
+        "en": "The exchange area is where we teach. Sink, hand rub, masks, timer: none may be missing."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "find",
+      "hot": "sink",
+      "q": {
+       "zh": "腹膜透析室的洗手與換液區在哪裡？",
+       "en": "Where is the unit's hand-wash and exchange area?"
+      }
+     },
+     "post": [
+      [
+       "me",
+       {
+        "zh": "洗手步驟圖貼好了，乾洗手補滿。",
+        "en": "Hand-wash poster up, hand rub refilled."
+       }
+      ]
+     ],
+     "roles": [
+      "pd-nurse"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cloudy",
+   "name": {
+    "zh": "混濁的袋子",
+    "en": "The cloudy bag"
+   },
+   "sub": {
+    "zh": "09:00 · 處置床",
+    "en": "09:00 · treatment couch"
+   },
+   "t": 540,
+   "mood": "day",
+   "note": {
+    "zh": "秀蘭姨：腹膜炎，開始治療",
+    "en": "Auntie Hsiu-Lan: peritonitis, treatment started"
+   },
+   "beats": [
+    {
+     "id": "c1",
+     "to": "hsiu-lan",
+     "guide": {
+      "zh": "看秀蘭姨",
+      "en": "See Auntie Hsiu-Lan"
+     },
+     "lines": [
+      [
+       "hsiu-lan",
+       {
+        "zh": "我想說是燈光的關係……可是肚子從昨晚開始悶悶的痛。我週末要做二十束捧花。",
+        "en": "I thought it was the light... but my belly has ached since last night. I have twenty bouquets to make for the weekend."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "（把流出液袋舉到窗前）你看，透過它看不到外面招牌的字。",
+        "en": "(Holding the effluent bag to the window) Look, you cannot read the sign outside through it."
+       }
+      ]
+     ],
+     "item": "cloudy-bag"
+    },
+    {
+     "id": "c2",
+     "to": "place:monitor",
+     "guide": {
+      "zh": "量生命徵象",
+      "en": "Check vital signs"
+     },
+     "lines": [
+      [
+       "meihua",
+       {
+        "zh": "三十八度多，心跳偏快，肚子按壓會痛。",
+        "en": "Thirty-eight point something, pulse a bit fast, tender abdomen."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "vitals",
+      "event": "fever",
+      "options": [
+       {
+        "zh": "當腹膜炎：留流出液檢體，馬上開始抗生素",
+        "en": "Treat as peritonitis: sample the effluent, start antibiotics",
+        "ok": true,
+        "why": {
+         "zh": "混濁、腹痛、發燒，就是腹膜炎。檢體留完立刻給經驗性腹腔內抗生素，不等報告。",
+         "en": "Cloudy, painful and febrile: peritonitis. Take samples, then start empirical intraperitoneal antibiotics without waiting."
+        }
+       },
+       {
+        "zh": "給退燒藥，下週回診再看",
+        "en": "Antipyretic, review next week",
+        "ok": false,
+        "why": {
+         "zh": "腹膜炎拖延會傷腹膜，甚至要拔管。今天就要治療。",
+         "en": "Delayed peritonitis damages the peritoneum and may cost the catheter. Treat today."
+        }
+       },
+       {
+        "zh": "先停腹膜透析，改成觀察",
+        "en": "Stop PD and just observe",
+        "ok": false,
+        "why": {
+         "zh": "停止透析不能治療感染。抗生素正好要經由透析液給。",
+         "en": "Stopping dialysis does not treat infection; the antibiotics go in through the dialysis fluid."
+        }
+       }
+      ]
+     }
+    },
+    {
+     "id": "c3",
+     "to": "place:lab",
+     "guide": {
+      "zh": "留流出液檢體",
+      "en": "Sample the effluent"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "檢體怎麼留，決定培養能不能長出答案。順序給我。",
+        "en": "How you take the sample decides whether the culture gives an answer. The order, please."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "order",
+      "q": {
+       "zh": "腹膜炎流出液檢體的順序？",
+       "en": "Order the effluent sampling"
+      },
+      "steps": [
+       {
+        "zh": "洗手、戴口罩",
+        "en": "Wash hands, mask on"
+       },
+       {
+        "zh": "消毒取樣口",
+        "en": "Disinfect the sampling port"
+       },
+       {
+        "zh": "抽流出液送細胞數與分類",
+        "en": "Draw effluent for cell count"
+       },
+       {
+        "zh": "送革蘭氏染色",
+        "en": "Send a Gram stain"
+       },
+       {
+        "zh": "床邊打入血液培養瓶",
+        "en": "Inoculate culture bottles at the bedside"
+       }
+      ]
+     }
+    },
+    {
+     "id": "c4",
+     "to": "attending",
+     "guide": {
+      "zh": "決定什麼時候開始抗生素",
+      "en": "Decide when to start antibiotics"
+     },
+     "lines": [
+      [
+       "hsiu-lan",
+       {
+        "zh": "可以等報告出來再打嗎？我先回去做捧花。",
+        "en": "Can we wait for the results? I will go back to the bouquets."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "choice",
+      "q": {
+       "zh": "檢體已留好。抗生素什麼時候開始？",
+       "en": "Samples are taken. When do antibiotics start?"
+      },
+      "options": [
+       {
+        "zh": "現在：經驗性腹腔內抗生素",
+        "en": "Now: empirical intraperitoneal antibiotics",
+        "ok": true,
+        "why": {
+         "zh": "檢體留完就開始，同時涵蓋革蘭氏陽性和陰性菌，培養出來再調整。越早開始，腹膜受傷越少。",
+         "en": "Start once samples are taken, covering Gram-positive and negative, then adjust to the culture. The earlier, the less peritoneal damage."
+        },
+        "set": {
+         "ip": "now"
+        }
+       },
+       {
+        "zh": "等培養結果再決定",
+        "en": "Wait for the culture result",
+        "ok": false,
+        "why": {
+         "zh": "培養要好幾天。等待期間細菌不會等你，腹膜會越來越發炎。",
+         "en": "Cultures take days. Meanwhile the bacteria do not wait and the peritoneum inflames further."
+        },
+        "set": {
+         "ip": "wait"
+        }
+       }
+      ]
+     }
+    },
+    {
+     "id": "c5",
+     "to": "place:desk",
+     "guide": {
+      "zh": "開立醫囑",
+      "en": "Write the orders"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "腹膜透析腹膜炎：經驗性腹腔內抗生素依醫囑，止痛，明天回診看流出液，培養結果出來調整。",
+        "en": "PD peritonitis: empirical intraperitoneal antibiotics per protocol, analgesia, review the effluent tomorrow, adjust to culture."
+       }
+      ]
+     ],
+     "roles": [
+      "resident"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "how",
+   "name": {
+    "zh": "怎麼弄髒的",
+    "en": "How it got in"
+   },
+   "sub": {
+    "zh": "10:30 · 洗手與換液區",
+    "en": "10:30 · exchange area"
+   },
+   "t": 630,
+   "mood": "day",
+   "note": {
+    "zh": "找到原因，重新訓練",
+    "en": "Cause found, retraining done"
+   },
+   "beats": [
+    {
+     "id": "w1",
+     "to": "place:exchange",
+     "guide": {
+      "zh": "請秀蘭姨示範換液",
+      "en": "Watch Auntie Hsiu-Lan do an exchange"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "秀蘭姨，用練習袋做一次給我看，跟妳在店裡一樣。",
+        "en": "Auntie Hsiu-Lan, show me an exchange on the practice set, just as you do at the shop."
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "她拿起接頭——才發現自己沒戴口罩，手也剛摸過花材和手機。",
+        "en": "She picks up the connector, then realises she has no mask on and has just handled stems and her phone."
+       }
+      ],
+      [
+       "hsiu-lan",
+       {
+        "zh": "……那天客人在等，我洗手洗得很快。",
+        "en": "...That day a customer was waiting. I washed my hands quickly."
+       }
+      ]
+     ],
+     "roles": [
+      "pd-nurse"
+     ]
+    },
+    {
+     "id": "w2",
+     "to": "place:couch",
+     "guide": {
+      "zh": "檢查導管出口",
+      "en": "Check the exit site"
+     },
+     "lines": [
+      [
+       "meihua",
+       {
+        "zh": "導管出口不紅不腫、沒有分泌物，隧道摸起來不痛。比較像接觸污染。",
+        "en": "Exit site not red or swollen, no discharge, tunnel not tender. More like touch contamination."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "洗手、口罩、接頭不碰任何東西。妳的手會做出好看的捧花，也要守住這根管子。",
+        "en": "Hand wash, mask, connector touches nothing. Your hands make beautiful bouquets; they must guard this tube too."
+       }
+      ],
+      [
+       "hsiu-lan",
+       {
+        "zh": "我懂了。店裡那個房間，以後只放換液的東西。",
+        "en": "I understand. That room at the shop will hold only exchange things from now on."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fistula",
+   "name": {
+    "zh": "阿福伯的廔管",
+    "en": "Uncle Fu's fistula"
+   },
+   "sub": {
+    "zh": "11:30 · 處置床",
+    "en": "11:30 · treatment couch"
+   },
+   "t": 690,
+   "mood": "day",
+   "note": {
+    "zh": "阿福伯：轉通路中心",
+    "en": "Uncle Fu: to the access centre"
+   },
+   "beats": [
+    {
+     "id": "f1",
+     "to": "a-fu",
+     "guide": {
+      "zh": "見阿福伯",
+      "en": "Meet Uncle Fu"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "血液透析室把阿福伯送過來：「廔管摸不到震顫，針打不上，今天沒辦法洗。」",
+        "en": "The haemodialysis unit sends Uncle Fu over: \"No thrill in his fistula, we cannot needle it. No dialysis today.\""
+       }
+      ],
+      [
+       "a-fu",
+       {
+        "zh": "每天早上我都跟它說早安，它都會回答。今天它沒有回答。",
+        "en": "Every morning I say good morning to it and it answers. Today it did not."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "f2",
+     "to": "a-fu",
+     "guide": {
+      "zh": "檢查廔管",
+      "en": "Examine the fistula"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "看、摸、聽。不要只摸一個點。",
+        "en": "Look, feel, listen. Not just one spot."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "drill",
+      "template": "nephrology",
+      "drill": "fistula"
+     },
+     "post": [
+      [
+       "me",
+       {
+        "zh": "外觀不紅，摸不到震顫，聽診沒有雜音。廔管阻塞。",
+        "en": "No redness, no thrill, no bruit. Fistula thrombosis."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "f3",
+     "to": "attending",
+     "guide": {
+      "zh": "想到錯過透析的風險",
+      "en": "Think about the missed session"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "他上次洗腎是前天。今天洗不成，你最擔心什麼？",
+        "en": "His last dialysis was two days ago. No session today: what worries you most?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "高血鉀，還有積水。要抽血、做心電圖，看鉀離子是真的高還是檢體溶血。",
+        "en": "Hyperkalaemia and fluid overload. Bloods and an ECG, and check whether a high potassium is real or haemolysed."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "nephrology-v37-potassium",
+      "stage": 1
+     }
+    },
+    {
+     "id": "f4",
+     "lines": [
+      [
+       "access",
+       {
+        "zh": "廔管阻塞？越早越好，下午帶來，我們試著打通。不行的話先放暫時性導管，今天還是要洗。",
+        "en": "Blocked fistula? The sooner the better. Bring him this afternoon and we will try to open it. If not, a temporary catheter so he still dialyses today."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "收到。抽血結果出來先傳給你。阿福伯，左手不要量血壓、不要提重物。",
+        "en": "Got it. I will send you the bloods. Uncle Fu, no blood pressure cuff or heavy lifting on your left arm."
+       }
+      ]
+     ],
+     "ring": {
+      "title": {
+       "zh": "通路中心回電",
+       "en": "Access centre calling"
+      },
+      "sub": {
+       "zh": "下午可以處理阿福伯",
+       "en": "They can see Uncle Fu this afternoon"
+      },
+      "call": true,
+      "from": "access"
+     }
+    }
+   ]
+  },
+  {
+   "id": "kao",
+   "name": {
+    "zh": "高奶奶的選擇",
+    "en": "Grandma Kao's choice"
+   },
+   "sub": {
+    "zh": "14:00 · 診間",
+    "en": "14:00 · consulting room"
+   },
+   "t": 840,
+   "mood": "day",
+   "note": {
+    "zh": "高奶奶：停止傷腎藥，討論選擇",
+    "en": "Grandma Kao: harmful drug stopped, options discussed"
+   },
+   "beats": [
+    {
+     "id": "k1",
+     "to": "grandma-kao",
+     "guide": {
+      "zh": "看高奶奶",
+      "en": "See Grandma Kao"
+     },
+     "lines": [
+      [
+       "kao-grandson",
+       {
+        "zh": "奶奶的肌酸酐這次跳很高。她膝蓋痛，吃了鄰居給的止痛藥。",
+        "en": "Grandma's creatinine has jumped. Her knee hurt and she took a neighbour's painkillers."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "舊的報告呢？我們先找到她平常的基準值。",
+        "en": "Where are her old results? First we find her usual baseline."
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "去年的報告：慢性腎臟病，肌酸酐穩定。這次明顯升高。那個止痛藥，是非類固醇消炎止痛藥。",
+        "en": "Last year's results: chronic kidney disease, creatinine stable. Now clearly higher. The painkiller was one of the NSAIDs."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "nephrology-v37-aki-baseline",
+      "stage": 0
+     }
+    },
+    {
+     "id": "k2",
+     "to": "place:us",
+     "guide": {
+      "zh": "做腎臟超音波",
+      "en": "Scan the kidneys"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "長軸，量長度，看有沒有水腎。",
+        "en": "Long axis, measure the length, look for hydronephrosis."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "drill",
+      "template": "nephrology",
+      "drill": "us:kidney"
+     }
+    },
+    {
+     "id": "k3",
+     "to": "place:viewer",
+     "guide": {
+      "zh": "看腎臟超音波影像",
+      "en": "Review the renal images"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "兩顆腎臟的大小和亮度告訴你什麼？",
+        "en": "What do the size and brightness of both kidneys tell you?"
+       }
+      ]
+     ],
+     "mini": {
+      "type": "imaging",
+      "region": "abdomen-upper",
+      "question": {
+       "zh": "高奶奶兩顆腎臟都偏小、皮質變亮變薄、沒有水腎。代表什麼？",
+       "en": "Both of Grandma Kao's kidneys are small, with bright thin cortex and no hydronephrosis. What does it mean?"
+      },
+      "answer": {
+       "zh": "長期的慢性腎臟病，不是阻塞。這次的惡化是慢性病上加了急性傷害，最可能是止痛藥。停藥、補足水分、追蹤，部分功能可能回來。",
+       "en": "Long-standing chronic kidney disease, not obstruction. This drop is an acute injury on top, most likely the painkiller. Stop it, keep hydrated, follow up; some function may return."
+      }
+     }
+    },
+    {
+     "id": "k4",
+     "to": "attending",
+     "guide": {
+      "zh": "和高奶奶一家談",
+      "en": "Talk with the Kaos"
+     },
+     "lines": [
+      [
+       "grandma-kao",
+       {
+        "zh": "醫師，我是不是要洗腎了？我只想去曾孫的周歲。",
+        "en": "Doctor, do I need dialysis now? I only want to go to my great-grandson's first birthday."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "先停掉止痛藥，看腎臟回來多少。之後我們把三條路都說清楚：血液透析、腹膜透析、不洗腎但好好照顧。",
+        "en": "First stop the painkiller and see what comes back. Then we will explain all three paths: haemodialysis, peritoneal dialysis, or no dialysis with good care."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "保守性腎臟照護不是放棄，是另一種積極。這是醫病共享決策，奶奶在乎什麼最重要。",
+        "en": "Conservative kidney management is not giving up; it is another kind of active care. This is shared decision-making, and what Grandma values matters most."
+       }
+      ],
+      [
+       "kao-grandson",
+       {
+        "zh": "奶奶想怎樣，我們就怎樣。",
+        "en": "Whatever Grandma wants, we will do."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "k5",
+     "to": "place:desk",
+     "guide": {
+      "zh": "在病歷上加註",
+      "en": "Flag the record"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "病歷和藥歷加註：慢性腎臟病，避免非類固醇消炎止痛藥。膝痛改用對腎臟較安全的方式，兩週後追蹤肌酸酐。",
+        "en": "Record and drug history flagged: chronic kidney disease, avoid NSAIDs. Knee pain managed in kidney-safer ways; creatinine again in two weeks."
+       }
+      ],
+      [
+       "kao-grandson",
+       {
+        "zh": "我會跟鄰居說，藥不要再給奶奶了。",
+        "en": "I will tell the neighbour: no more pills for Grandma."
+       }
+      ]
+     ],
+     "roles": [
+      "resident"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "result",
+   "name": {
+    "zh": "檢驗科的電話",
+    "en": "The laboratory calls"
+   },
+   "sub": {
+    "zh": "15:30 · 診間電話",
+    "en": "15:30 · clinic phone"
+   },
+   "t": 930,
+   "mood": "eve",
+   "note": {
+    "zh": "流出液報告",
+    "en": "Effluent result"
+   },
+   "beats": [
+    {
+     "id": "r1",
+     "lines": [
+      [
+       "lab",
+       {
+        "zh": "秀蘭姨的流出液，白血球很高，以嗜中性球為主。革蘭氏染色有陽性球菌，我看了兩遍。",
+        "en": "Auntie Hsiu-Lan's effluent: very high white cells, mostly neutrophils. Gram-positive cocci on the stain; I looked twice."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "收到，符合接觸污染。培養出來再調整抗生素。",
+        "en": "Received; fits touch contamination. We will adjust the antibiotics when the culture is back."
+       }
+      ]
+     ],
+     "ring": {
+      "title": {
+       "zh": "檢驗科來電",
+       "en": "Laboratory calling"
+      },
+      "sub": {
+       "zh": "秀蘭姨的流出液報告",
+       "en": "Auntie Hsiu-Lan's effluent result"
+      },
+      "call": true,
+      "from": "lab"
+     }
+    },
+    {
+     "id": "r2",
+     "to": "place:desk",
+     "guide": {
+      "zh": "打電話給秀蘭姨",
+      "en": "Phone Auntie Hsiu-Lan"
+     },
+     "lines": [
+      [
+       "hsiu-lan",
+       {
+        "zh": "肚子已經沒那麼痛了，今天下午的袋子好像比較清。我在店裡，戴著口罩。",
+        "en": "My belly hurts less already, and this afternoon's bag looks clearer. I am at the shop, mask on."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "早上就開始抗生素，現在已經在好轉。檢體先留、抗生素馬上給，兩件事都要做。",
+        "en": "Antibiotics since this morning and she is already improving. Samples first, antibiotics at once: both matter."
+       }
+      ]
+     ],
+     "when": {
+      "flag": "ip",
+      "is": "now"
+     }
+    },
+    {
+     "id": "r2b",
+     "to": "place:desk",
+     "guide": {
+      "zh": "打電話給秀蘭姨",
+      "en": "Phone Auntie Hsiu-Lan"
+     },
+     "lines": [
+      [
+       "hsiu-lan",
+       {
+        "zh": "（喘著氣）肚子越來越痛，冷到發抖，袋子更濁了……",
+        "en": "(Breathless) My belly hurts more and more, I am shivering, the bag is cloudier..."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "秀蘭姨，現在回來，我們馬上開始抗生素，今晚先住院。",
+        "en": "Auntie Hsiu-Lan, come back now. We start antibiotics at once, and you stay in tonight."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "沒關係，現在開始。培養要好幾天，細菌不會等。下次檢體留完就給。",
+        "en": "It is all right, we start now. Cultures take days and bacteria do not wait. Next time, give them as soon as the samples are in."
+       }
+      ]
+     ],
+     "when": {
+      "flag": "ip",
+      "is": "wait"
+     }
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "name": {
+    "zh": "關燈前",
+    "en": "Before lights out"
+   },
+   "sub": {
+    "zh": "17:00 · 腹膜透析排程板",
+    "en": "17:00 · PD schedule board"
+   },
+   "t": 1020,
+   "mood": "eve",
+   "note": {
+    "zh": "收尾",
+    "en": "Wrapping up"
+   },
+   "beats": [
+    {
+     "id": "e2",
+     "to": "attending",
+     "guide": {
+      "zh": "和溫主治收尾",
+      "en": "Wrap up with Dr Wen"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "排程板：「阿福伯：廔管下午打通，今晚補洗。秀蘭姨：明天回診、重新訓練。高奶奶：兩週後追蹤。」",
+        "en": "Board: \"Uncle Fu: fistula reopened this afternoon, dialysing tonight. Auntie Hsiu-Lan: review and retraining tomorrow. Grandma Kao: follow-up in two weeks.\""
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "今天三個人，都是在生活裡出錯：趕客人、跟廔管說早安、吃鄰居的藥。你學到什麼？",
+        "en": "Three patients, each tripped up by ordinary life: a waiting customer, a fistula greeting, a neighbour's pills. What did you learn?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "病人在家自己照顧腎臟。我們的工作，是讓他們知道什麼時候要打電話。",
+        "en": "Patients look after their kidneys at home. Our job is to teach them when to call."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "（舉起一個新的透析液袋對著光）清的。這就是我們想看到的。",
+        "en": "(Holding a fresh bag up to the light) Clear. That is what we want to see."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "night",
+   "name": {
+    "zh": "夜裡的專線",
+    "en": "The night hotline"
+   },
+   "sub": {
+    "zh": "21:00 · 腹膜透析專線",
+    "en": "21:00 · PD hotline"
+   },
+   "t": 1260,
+   "mood": "night",
+   "note": {
+    "zh": "下班",
+    "en": "Off duty"
+   },
+   "beats": [
+    {
+     "id": "n1",
+     "to": "place:desk",
+     "guide": {
+      "zh": "接專線電話",
+      "en": "Answer the hotline"
+     },
+     "lines": [
+      [
+       "hsiu-lan",
+       {
+        "zh": "醫師，晚上這袋我舉起來對著燈看了，看得到燈泡了！捧花我做完了十束。",
+        "en": "Doctor, I held tonight's bag up to the lamp and I can see the bulb! Ten bouquets done."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "太好了。明天記得帶今晚的袋子來，也記得洗兩次手。",
+        "en": "Wonderful. Bring tonight's bag tomorrow, and wash your hands twice."
+       }
+      ],
+      [
+       "hsiu-lan",
+       {
+        "zh": "週末那一束最小的，留給你們透析室。",
+        "en": "The smallest posy this weekend is for your unit."
+       }
+      ]
+     ],
+     "ring": {
+      "title": {
+       "zh": "腹膜透析專線",
+       "en": "PD hotline"
+      },
+      "sub": {
+       "zh": "秀蘭姨打來",
+       "en": "Auntie Hsiu-Lan calling"
+      },
+      "call": true,
+      "from": "hsiu-lan"
+     },
+     "item": "bouquet",
+     "end": true
+    }
+   ]
+  }
+ ],
+ "ending": {
+  "title": {
+   "zh": "透析室下班",
+   "en": "Unit closed"
+  },
+  "sub": {
+   "zh": "一袋混濁、一個不響的廔管、一顆鄰居的止痛藥",
+   "en": "A cloudy bag, a silent fistula, a neighbour's pill"
+  },
+  "stats": [
+   "stages",
+   "drills",
+   "imaging",
+   "choices",
+   "calls",
+   "items",
+   "time"
+  ]
+ }
+}

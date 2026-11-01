@@ -1,0 +1,1555 @@
+{
+ "format": "huatuo-shift-v2",
+ "department": "tcm-internal",
+ "case": "spleen-diarrhea",
+ "caseTitle": {
+  "zh": "灸療室：兩種拉肚子",
+  "en": "The moxa room: two kinds of runs"
+ },
+ "condition": {
+  "zh": "脾胃 · 脾虛泄瀉",
+  "en": "Spleen-stomach · chronic diarrhoea"
+ },
+ "difficulty": 3,
+ "title": {
+  "zh": "中醫內科：脾胃日",
+  "en": "TCM internal medicine: spleen day"
+ },
+ "tagline": {
+  "zh": "一個要灸，一個不能灸；粥是最好的藥",
+  "en": "One gets moxa, one must not; porridge is the best medicine"
+ },
+ "room": "acupuncture",
+ "minutes": 26,
+ "roles": [
+  {
+   "id": "resident",
+   "zh": "中醫住院醫師",
+   "en": "TCM resident",
+   "desc": {
+    "zh": "灸療室的一天：一位拉了好幾年的老伯，一位燒到發抖的年輕人。一個要灸，一個不能灸。",
+    "en": "A day in the moxa room: an old man with years of loose stools, a young man shaking with fever. One gets moxa; one must not."
+   }
+  },
+  {
+   "id": "moxanurse",
+   "zh": "灸療護理師",
+   "en": "Moxibustion nurse",
+   "desc": {
+    "zh": "艾條、薑片、抽煙機、皮膚觀察都歸你。燙傷有沒有發生，大半看你。",
+    "en": "Moxa sticks, ginger slices, the smoke extractor and watching the skin are yours. Whether a burn happens is mostly up to you."
+   }
+  }
+ ],
+ "cast": {
+  "master": {
+   "name": {
+    "zh": "范醫師",
+    "en": "Dr Fan"
+   },
+   "role": {
+    "zh": "中醫內科醫師（師傅）",
+    "en": "TCM internist (mentor)"
+   },
+   "tag": "DR",
+   "color": "#81296d",
+   "body": "mentor",
+   "about": {
+    "zh": "相信脾胃病最好的藥是一碗粥。口袋裡有一疊手寫的粥食譜，見人就發。",
+    "en": "Believes the best medicine for the spleen and stomach is a bowl of porridge. Carries a stack of handwritten congee recipes and hands them out freely."
+   }
+  },
+  "nurse": {
+   "name": {
+    "zh": "素貞護理師",
+    "en": "Nurse Su-chen"
+   },
+   "role": {
+    "zh": "灸療護理師",
+    "en": "Moxibustion nurse"
+   },
+   "tag": "RN",
+   "color": "#3b8f6a",
+   "body": "nurse",
+   "about": {
+    "zh": "灸療室的守門人。每個病人上床前，她都要先摸一下他們的手腳。",
+    "en": "Gatekeeper of the moxa room. Before anyone lies down she feels their hands and feet."
+   }
+  },
+  "chinshui": {
+   "name": {
+    "zh": "金水伯",
+    "en": "Uncle Chin-shui"
+   },
+   "role": {
+    "zh": "七十歲，退休漁夫",
+    "en": "Seventy, retired fisherman"
+   },
+   "tag": "P1",
+   "color": "#c2703a",
+   "body": "patient",
+   "about": {
+    "zh": "虛構教學個案。拉肚子拉了好幾年，吃到油的、冰的就跑廁所。很愛講出海的故事。",
+    "en": "Fictional teaching case. Years of loose stools, off to the toilet after anything greasy or cold. Loves a sea story."
+   }
+  },
+  "daughter": {
+   "name": {
+    "zh": "阿珠",
+    "en": "Ah-Chu"
+   },
+   "role": {
+    "zh": "金水伯的女兒",
+    "en": "Uncle Chin-shui's daughter"
+   },
+   "tag": "FAM",
+   "color": "#8a6d3b",
+   "body": "family",
+   "about": {
+    "zh": "帶爸爸來看病，包包裡有一整袋藥。爸爸忘記的事她都記得。",
+    "en": "Brings her father in with a whole bag of his medicines. Remembers everything he forgets."
+   }
+  },
+  "xiaolong": {
+   "name": {
+    "zh": "小龍",
+    "en": "Hsiao-lung"
+   },
+   "role": {
+    "zh": "二十四歲，飯店二廚",
+    "en": "Twenty-four, hotel sous-chef"
+   },
+   "tag": "P2",
+   "color": "#a0522d",
+   "body": "patient",
+   "about": {
+    "zh": "虛構教學個案。昨晚喜宴吃了生蠔。以為扎個針就能回去上班。",
+    "en": "Fictional teaching case. Ate raw oysters at a wedding banquet last night. Thinks a few needles will get him back to work."
+   }
+  },
+  "erdoc": {
+   "name": {
+    "zh": "急診醫師",
+    "en": "ER doctor"
+   },
+   "role": {
+    "zh": "急診（電話）",
+    "en": "Emergency department (by phone)"
+   },
+   "tag": "ER",
+   "color": "#3f6fa8",
+   "phoneOnly": true,
+   "about": {
+    "zh": "很忙，但會回訊。最在意轉診單上有沒有寫「血便」和「體溫」。",
+    "en": "Busy, but always replies. Cares most that a referral states “bloody stools” and “temperature”."
+   }
+  }
+ },
+ "places": {
+  "couch": {
+   "name": {
+    "zh": "灸療床",
+    "en": "Moxa couch"
+   },
+   "hot": "couch"
+  },
+  "moxa": {
+   "name": {
+    "zh": "艾灸與抽煙設備",
+    "en": "Moxa station and extractor"
+   },
+   "hot": "moxa"
+  },
+  "chart": {
+   "name": {
+    "zh": "經絡掛圖",
+    "en": "Channel chart"
+   },
+   "hot": "meridian-chart"
+  },
+  "board": {
+   "name": {
+    "zh": "治療排程白板",
+    "en": "Treatment board"
+   },
+   "hot": "whiteboard"
+  },
+  "sink": {
+   "name": {
+    "zh": "洗手台",
+    "en": "Sink"
+   },
+   "hot": "sink"
+  },
+  "desk": {
+   "name": {
+    "zh": "病歷車",
+    "en": "Charting cart"
+   },
+   "hot": "chart"
+  },
+  "door": {
+   "name": {
+    "zh": "灸療室門口",
+    "en": "Moxa room door"
+   },
+   "hot": "door"
+  }
+ },
+ "glossary": [
+  {
+   "term": {
+    "zh": "泄瀉",
+    "en": "diarrhoea"
+   },
+   "plain": {
+    "zh": "大便次數增多、稀薄甚至如水；中醫分急性的暴瀉與慢性的久瀉。",
+    "en": "More frequent, loose or watery stools; TCM separates sudden acute diarrhoea from long-standing chronic diarrhoea."
+   }
+  },
+  {
+   "term": {
+    "zh": "無濕不成瀉",
+    "en": "no damp, no diarrhoea"
+   },
+   "plain": {
+    "zh": "古人的話：腹瀉幾乎都和濕有關，而脾最怕濕。",
+    "en": "An old saying: diarrhoea almost always involves damp, and damp is what the spleen hates most."
+   }
+  },
+  {
+   "term": {
+    "zh": "脾虛濕盛",
+    "en": "spleen deficiency with damp"
+   },
+   "plain": {
+    "zh": "中醫認為脾運化無力，水濕停在腸道：大便溏、食少、倦怠、舌淡胖苔白膩。",
+    "en": "In TCM the weak spleen cannot transform, so damp lingers in the gut: loose stools, poor appetite, fatigue, a pale swollen tongue with white greasy coat."
+   }
+  },
+  {
+   "term": {
+    "zh": "喜溫喜按",
+    "en": "likes warmth and pressure"
+   },
+   "plain": {
+    "zh": "肚子按下去或熱敷會舒服；中醫認為多屬虛寒。",
+    "en": "The belly feels better pressed or warmed; in TCM this usually means deficiency-cold."
+   }
+  },
+  {
+   "term": {
+    "zh": "隔薑灸",
+    "en": "moxa on ginger"
+   },
+   "plain": {
+    "zh": "在穴位上放一片刺了小孔的薑片，再放艾炷點燃，讓溫熱透進去。",
+    "en": "A pierced slice of ginger on the point with a moxa cone burning on top, letting the warmth soak in."
+   }
+  },
+  {
+   "term": {
+    "zh": "禁針穴",
+    "en": "no-needle point"
+   },
+   "plain": {
+    "zh": "傳統上不可針刺的穴位，例如肚臍的神闕；可以灸，不可以扎。",
+    "en": "Points traditionally never needled, such as CV8 at the navel; moxa yes, needles no."
+   }
+  },
+  {
+   "term": {
+    "zh": "周邊神經病變",
+    "en": "peripheral neuropathy"
+   },
+   "plain": {
+    "zh": "糖尿病等造成手腳感覺變差，燙了也不覺得痛。",
+    "en": "Damage to the nerves of hands and feet, often from diabetes, so heat no longer hurts."
+   }
+  },
+  {
+   "term": {
+    "zh": "濕熱痢",
+    "en": "damp-heat dysentery"
+   },
+   "plain": {
+    "zh": "中醫的痢疾一型：腹痛、裡急後重、大便膿血、發燒、肛門灼熱。",
+    "en": "A TCM type of dysentery: cramps, urgency with straining, stools of blood and mucus, fever, anal burning."
+   }
+  },
+  {
+   "term": {
+    "zh": "裡急後重",
+    "en": "urgency and straining"
+   },
+   "plain": {
+    "zh": "一直想上廁所、上了又拉不乾淨、肛門墜脹。",
+    "en": "Constant urgency, never quite finished, a heavy bearing-down feeling."
+   }
+  },
+  {
+   "term": {
+    "zh": "脫水",
+    "en": "dehydration"
+   },
+   "plain": {
+    "zh": "水分流失過多：口乾、尿少、頭暈、心跳快；老人小孩特別危險。",
+    "en": "Too much fluid lost: dry mouth, little urine, dizziness, a fast heart; especially dangerous for the old and young."
+   }
+  },
+  {
+   "term": {
+    "zh": "急則治標",
+    "en": "treat the branch"
+   },
+   "plain": {
+    "zh": "病情急的時候先處理危及生命的表現，再回頭治根本。",
+    "en": "When things are urgent, deal first with what threatens life, then return to the root."
+   }
+  },
+  {
+   "term": {
+    "zh": "炮製",
+    "en": "processing"
+   },
+   "plain": {
+    "zh": "藥材入藥前的加工，例如炒、炙、蒸；中醫認為會改變藥性。",
+    "en": "How raw herbs are prepared before use, such as stir-frying, honey-frying or steaming; in TCM it changes their action."
+   }
+  },
+  {
+   "term": {
+    "zh": "紅旗",
+    "en": "red flag"
+   },
+   "plain": {
+    "zh": "提示危險情況的徵象；腹瀉加發燒、血便、脫水就是。",
+    "en": "A sign of danger; diarrhoea with fever, bloody stools or dehydration is one."
+   }
+  }
+ ],
+ "codex": [
+  {
+   "id": "extractor",
+   "kind": "equipment",
+   "name": {
+    "zh": "艾灸抽煙設備",
+    "en": "Moxa smoke extractor"
+   },
+   "text": {
+    "zh": "開灸之前先開它。艾煙會刺激咳嗽、觸發煙霧警報，灸療室的窗也要開一條縫。",
+    "en": "On before any moxa is lit. The smoke sets off coughs and smoke alarms; the window stays open a crack too."
+   },
+   "hot": "moxa"
+  },
+  {
+   "id": "ginger",
+   "kind": "equipment",
+   "name": {
+    "zh": "刺孔薑片",
+    "en": "Pierced ginger slices"
+   },
+   "text": {
+    "zh": "新鮮老薑切片，用針刺幾個小孔讓熱透過。薑片乾了、病人喊燙，就換或移開。",
+    "en": "Fresh mature ginger, sliced and pricked so the heat passes through. When a slice dries out or the patient says it is hot, change it or lift it off."
+   },
+   "hot": "moxa"
+  },
+  {
+   "id": "couch",
+   "kind": "equipment",
+   "name": {
+    "zh": "灸療床",
+    "en": "Moxa couch"
+   },
+   "text": {
+    "zh": "床邊放著小水盆和艾灰缸。灸完的艾炷一定要泡水熄滅，不能只是放著。",
+    "en": "A small basin of water and an ash tray beside it. Spent moxa goes into the water to die, never just set aside."
+   },
+   "hot": "couch"
+  },
+  {
+   "id": "congee-card",
+   "kind": "item",
+   "name": {
+    "zh": "范醫師的山藥粥食譜",
+    "en": "Dr Fan’s yam congee card"
+   },
+   "text": {
+    "zh": "手寫的：「山藥、蓮子、白米，小火慢煮。冰的、油的先停。」字很醜，粥很好。",
+    "en": "Handwritten: “Chinese yam, lotus seeds, white rice, slow simmer. No ice, no grease for now.” Ugly writing, good congee."
+   }
+  },
+  {
+   "id": "xiexie-patterns",
+   "kind": "concept",
+   "name": {
+    "zh": "泄瀉的辨證",
+    "en": "Pattern work in diarrhoea"
+   },
+   "text": {
+    "zh": "暴瀉多實：寒濕（水樣、腹痛喜暖）、濕熱（急迫、臭穢、肛門灼熱）、食滯（噯腐、瀉後痛減）。久瀉多虛：脾虛（食後即瀉、倦怠）、腎陽虛（黎明前腹瀉，稱五更瀉）、肝鬱乘脾（緊張即瀉）。中醫認為「無濕不成瀉」，治療都要兼顧祛濕。大便有膿血屬於痢疾，另當別論。",
+    "en": "Sudden diarrhoea is mostly excess: cold-damp (watery, cramps eased by warmth), damp-heat (urgent, foul, anal burning), food stagnation (sour belching, pain eased after the stool). Chronic diarrhoea is mostly deficiency: spleen (loose right after meals, tired), kidney yang (before dawn, the “fifth-watch diarrhoea”), liver overacting on spleen (with stress). In TCM “no damp, no diarrhoea”, so every treatment also drains damp. Stools with blood and mucus are dysentery, a separate disorder."
+   }
+  },
+  {
+   "id": "burns",
+   "kind": "concept",
+   "name": {
+    "zh": "艾灸燙傷的預防與處理",
+    "en": "Preventing and managing moxa burns"
+   },
+   "text": {
+    "zh": "高風險：糖尿病或周邊神經病變、老人、小孩、意識不清、皮膚薄或有疤、睡著的人。預防：先問病史、測感覺、灸時不離人、隨時問熱感、病人說燙就移開。處理：立即停灸、冷水沖、不刺破水泡、無菌覆蓋、記錄通報；水泡大、深、感染或在糖尿病人腳上，轉外科或傷口照護。",
+    "en": "High risk: diabetes or neuropathy, the elderly, children, drowsy or confused patients, thin or scarred skin, anyone asleep. Prevention: take the history, test sensation, never leave the patient, keep asking about the heat, lift it the moment they say hot. Management: stop at once, cool running water, do not pop the blister, cover it sterile, record and report; large, deep or infected blisters, or any on a diabetic foot, go to surgery or wound care."
+   }
+  },
+  {
+   "id": "diarrhoea-flags",
+   "kind": "concept",
+   "name": {
+    "zh": "腹瀉的紅旗",
+    "en": "Red flags in diarrhoea"
+   },
+   "text": {
+    "zh": "發燒、血便或膿血便、嚴重腹痛、脫水（口乾、尿少、頭暈、心跳快）、意識改變、老人或幼兒、持續超過兩週、體重減輕、夜間腹瀉、近期用抗生素。急性的先轉急診補液與檢查；慢性的安排腸胃科與大腸鏡。中醫調理可在之後或同時進行。",
+    "en": "Fever, blood or pus in the stool, severe pain, dehydration (dry mouth, little urine, dizziness, fast heart), confusion, the very old or very young, more than two weeks, weight loss, diarrhoea at night, recent antibiotics. Acute cases go to the emergency department for fluids and tests; chronic ones to gastroenterology and colonoscopy. TCM care follows or runs alongside."
+   }
+  },
+  {
+   "id": "paozhi-spleen",
+   "kind": "concept",
+   "name": {
+    "zh": "炮製為什麼改變藥性",
+    "en": "Why processing changes an herb"
+   },
+   "text": {
+    "zh": "中醫認為同一味藥經過炒、炙、蒸，作用會偏移：白朮土炒或麩炒，健脾止瀉更好；薏苡仁生用偏清利濕熱，炒用偏健脾止瀉；山藥、白扁豆炒過也偏重健脾。參苓白朮散裡很多藥都用炒過的，就是為了脾虛泄瀉。",
+    "en": "In TCM stir-frying, honey-frying or steaming shifts what an herb does: atractylodes fried with earth or bran strengthens the spleen and stops diarrhoea better; raw coix drains damp-heat while fried coix strengthens the spleen; fried Chinese yam and hyacinth bean also lean toward the spleen. Many herbs in Shen Ling Bai Zhu San are fried for exactly this reason."
+   }
+  }
+ ],
+ "segs": [
+  {
+   "id": "open",
+   "name": {
+    "zh": "灸療室開窗",
+    "en": "Opening the moxa room"
+   },
+   "sub": {
+    "zh": "08:00 · 艾灸與抽煙設備",
+    "en": "08:00 · moxa station"
+   },
+   "t": 480,
+   "mood": "day",
+   "note": {
+    "zh": "先開抽煙，再點艾",
+    "en": "Extractor first, moxa second"
+   },
+   "beats": [
+    {
+     "id": "a1",
+     "to": "place:moxa",
+     "guide": {
+      "zh": "灸療室開機",
+      "en": "Open up the moxa room"
+     },
+     "lines": [
+      [
+       "nurse",
+       {
+        "zh": "開灸之前第一件事？",
+        "en": "First thing before any moxa?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "點艾條？",
+        "en": "Light a moxa stick?"
+       }
+      ],
+      [
+       "nurse",
+       {
+        "zh": "錯。上次有人先點火，整層樓的煙霧警報一起唱歌。",
+        "en": "Wrong. Last time someone lit up first, the whole floor’s smoke alarms sang together."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "find",
+      "hot": "moxa",
+      "q": {
+       "zh": "找出艾灸抽煙設備並打開",
+       "en": "Find the moxa smoke extractor and switch it on"
+      }
+     },
+     "post": [
+      [
+       "master",
+       {
+        "zh": "早。今天是脾胃日。脾胃病最好的藥是什麼？",
+        "en": "Morning. Spleen-and-stomach day. What’s the best medicine for the spleen and stomach?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "……參苓白朮散？",
+        "en": "…Shen Ling Bai Zhu San?"
+       }
+      ],
+      [
+       "master",
+       {
+        "zh": "是一碗粥。不過參苓白朮散也可以。",
+        "en": "A bowl of porridge. But Shen Ling Bai Zhu San will do too."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "chinshui",
+   "name": {
+    "zh": "金水伯的老毛病",
+    "en": "Uncle Chin-shui's old trouble"
+   },
+   "sub": {
+    "zh": "08:30 · 灸療床",
+    "en": "08:30 · the moxa couch"
+   },
+   "t": 510,
+   "mood": "day",
+   "note": {
+    "zh": "久瀉、倦怠、喜溫喜按：脾虛",
+    "en": "Chronic, tired, likes warmth: spleen"
+   },
+   "beats": [
+    {
+     "id": "b1",
+     "to": "chinshui",
+     "guide": {
+      "zh": "請金水伯躺上灸療床",
+      "en": "Settle Uncle Chin-shui"
+     },
+     "lines": [
+      [
+       "chinshui",
+       {
+        "zh": "我拉肚子拉好幾年了。吃一點油的、冰的，馬上跑廁所。以前出海三天三夜都沒事！",
+        "en": "Years of the runs. A bit of grease or something cold and I’m off to the toilet. I used to go three days at sea without trouble!"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "大便是什麼樣子？有沒有血、黑便？會不會半夜拉醒？",
+        "en": "What are the stools like? Any blood or black stools? Do they wake you at night?"
+       }
+      ],
+      [
+       "daughter",
+       {
+        "zh": "沒有血，也不會半夜。去年大腸鏡做過，醫生說沒事。",
+        "en": "No blood, not at night. He had a colonoscopy last year; the doctor said it was clear."
+       }
+      ],
+      [
+       "chinshui",
+       {
+        "zh": "就是很累，吃不下，臉黃黃的，阿珠都說我像舊報紙。",
+        "en": "Just tired, no appetite, and a yellow face. Ah-Chu says I look like an old newspaper."
+       }
+      ],
+      [
+       "master",
+       {
+        "zh": "久瀉、食後即瀉、倦怠、面黃。複習久瀉的治法。",
+        "en": "Chronic, loose right after meals, tired, sallow. Revise the treatment of chronic diarrhoea."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "tcm-internal-xiexie-workflow",
+      "stage": 6,
+      "member": true
+     }
+    },
+    {
+     "id": "b2",
+     "to": "chinshui",
+     "guide": {
+      "zh": "看舌",
+      "en": "Look at the tongue"
+     },
+     "lines": [
+      [
+       "nurse",
+       {
+        "zh": "伯伯，舌頭伸出來給醫師看。",
+        "en": "Uncle, put your tongue out for the doctor."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "tongue",
+      "q": {
+       "zh": "舌淡、胖大、苔白膩。怎麼讀？",
+       "en": "Pale, swollen, white greasy coat. Your reading?"
+      },
+      "tongue": {
+       "body": "pale",
+       "coat": "greasy-white",
+       "shape": "swollen"
+      },
+      "options": [
+       {
+        "zh": "脾虛濕盛",
+        "en": "Spleen deficiency with damp",
+        "ok": true,
+        "why": {
+         "zh": "中醫認為舌淡是氣血不足，胖大是脾虛水濕停聚，苔白膩是濕濁；正合無濕不成瀉。",
+         "en": "In TCM a pale tongue means qi and blood are short, a swollen one that damp has collected from a weak spleen, and a white greasy coat is damp turbidity: no damp, no diarrhoea."
+        }
+       },
+       {
+        "zh": "濕熱蘊結",
+        "en": "Damp-heat brewing",
+        "ok": false,
+        "why": {
+         "zh": "濕熱苔黃膩、舌紅。這是白的。",
+         "en": "Damp-heat brings a red tongue with a yellow greasy coat. This one is white."
+        }
+       },
+       {
+        "zh": "陰虛",
+        "en": "Yin deficiency",
+        "ok": false,
+        "why": {
+         "zh": "陰虛舌紅少苔、瘦薄。他的舌又淡又胖，苔還很厚。",
+         "en": "Yin deficiency gives a thin red tongue with scant coat. His is pale, swollen and thickly coated."
+        }
+       }
+      ]
+     }
+    },
+    {
+     "id": "b3",
+     "to": "chinshui",
+     "guide": {
+      "zh": "腹診：按一按肚子",
+      "en": "Palpate the abdomen"
+     },
+     "lines": [
+      [
+       "master",
+       {
+        "zh": "按診。冷熱、軟硬、喜按拒按、有沒有包塊。",
+        "en": "Palpation: warm or cool, soft or firm, does pressure help or hurt, any mass?"
+       }
+      ]
+     ],
+     "mini": {
+      "type": "drill",
+      "template": "tcm-internal",
+      "drill": "palpate"
+     },
+     "post": [
+      [
+       "me",
+       {
+        "zh": "肚子偏涼、軟，按下去他說舒服，沒有包塊。",
+        "en": "Cool and soft; pressure feels good to him; no mass."
+       }
+      ],
+      [
+       "master",
+       {
+        "zh": "喜溫喜按，虛寒。可以灸。",
+        "en": "Likes warmth and pressure: deficiency-cold. Moxa is right for him."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "before",
+   "name": {
+    "zh": "點火之前",
+    "en": "Before the flame"
+   },
+   "sub": {
+    "zh": "09:30 · 灸療床",
+    "en": "09:30 · the moxa couch"
+   },
+   "t": 570,
+   "mood": "day",
+   "note": {
+    "zh": "先問感覺，再談溫度",
+    "en": "Ask about sensation before heat"
+   },
+   "beats": [
+    {
+     "id": "c1",
+     "to": "chinshui",
+     "guide": {
+      "zh": "點艾之前要確認什麼",
+      "en": "Before lighting: check what?"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "艾條已經在手上，打火機也在。金水伯在講他抓到大魚的故事。",
+        "en": "The moxa stick is in your hand, the lighter too. Uncle Chin-shui is telling the story of his biggest catch."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "choice",
+      "q": {
+       "zh": "七十歲、帶了一整袋藥。灸之前你要先確認什麼？",
+       "en": "Seventy, with a whole bag of medicines. Before moxa, what do you check?"
+      },
+      "options": [
+       {
+        "zh": "問糖尿病與手腳麻，測皮膚感覺",
+        "en": "Ask about diabetes and numbness; test sensation",
+        "ok": true,
+        "why": {
+         "zh": "糖尿病周邊神經病變的人燙了也不痛，是艾灸燙傷的高風險。先問、先測，灸時不離人。",
+         "en": "Diabetic peripheral neuropathy means heat no longer hurts: a high burn risk. Ask, test, and never leave the patient during moxa."
+        },
+        "set": {
+         "checked-sensation": true
+        }
+       },
+       {
+        "zh": "不用，他會說燙",
+        "en": "No need, he’ll say if it’s hot",
+        "ok": false,
+        "why": {
+         "zh": "感覺遲鈍的人不會說燙。等他說的時候，水泡已經起來了。",
+         "en": "Someone with numb skin won’t say hot. By the time they do, the blister is there."
+        },
+        "set": {
+         "checked-sensation": false
+        }
+       },
+       {
+        "zh": "只問他今天有沒有吃飯",
+        "en": "Only ask whether he has eaten",
+        "ok": false,
+        "why": {
+         "zh": "空腹要問，但這次最大的風險不在胃。",
+         "en": "Fasting matters, but the biggest risk today is not in the stomach."
+        },
+        "set": {
+         "checked-sensation": false
+        }
+       }
+      ]
+     }
+    },
+    {
+     "id": "c2",
+     "when": {
+      "flag": "checked-sensation",
+      "is": true
+     },
+     "to": "daughter",
+     "guide": {
+      "zh": "看藥袋",
+      "en": "Check the medicine bag"
+     },
+     "lines": [
+      [
+       "daughter",
+       {
+        "zh": "他有糖尿病，在吃降血糖藥。最近說腳底麻麻的，像穿著襪子。",
+        "en": "He’s diabetic, on tablets. Lately he says his soles feel numb, like wearing socks."
+       }
+      ],
+      [
+       "nurse",
+       {
+        "zh": "那腳上不灸，腹部用隔薑灸，距離拉遠一點，我一直在旁邊。",
+        "en": "Then no moxa on the feet; ginger moxa on the belly, kept further off, and I stay right here."
+       }
+      ],
+      [
+       "master",
+       {
+        "zh": "問得好。一句話，省掉一個水泡。",
+        "en": "Well asked. One question saved a blister."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "c3",
+     "to": "place:chart",
+     "guide": {
+      "zh": "指出灸療用的四穴",
+      "en": "Show the four moxa points"
+     },
+     "lines": [
+      [
+       "master",
+       {
+        "zh": "大腸募穴、胃的下合穴、胃募穴，還有一個只能灸、不能扎的。",
+        "en": "The large intestine’s front-mu point, the stomach’s lower he-sea point, the stomach’s front-mu point, and one you may warm but never needle."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "天樞、足三里、中脘……還有肚臍的神闕，禁針穴。",
+        "en": "ST25, ST36, CV12… and CV8 at the navel, a no-needle point."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "points",
+      "q": {
+       "zh": "指出天樞、足三里、中脘、神闕",
+       "en": "Point out ST25, ST36, CV12 and CV8"
+      },
+      "codes": [
+       "ST25",
+       "ST36",
+       "CV12",
+       "CV8"
+      ],
+      "view": "front"
+     },
+     "post": [
+      [
+       "master",
+       {
+        "zh": "神闕可以隔鹽灸、隔薑灸，不能扎。古人說得很清楚。",
+        "en": "CV8 takes moxa over salt or ginger, never a needle. The old texts are clear."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "c4",
+     "to": "place:moxa",
+     "guide": {
+      "zh": "排出隔薑灸步驟",
+      "en": "Order the ginger moxa steps"
+     },
+     "lines": [
+      [
+       "nurse",
+       {
+        "zh": "隔薑灸流程講一遍，我照著做。",
+        "en": "Talk me through ginger moxa and I’ll follow."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "order",
+      "q": {
+       "zh": "隔薑灸的步驟",
+       "en": "Moxa on ginger, step by step"
+      },
+      "steps": [
+       {
+        "zh": "核對病人、問病史與感覺",
+        "en": "Check patient, history, sensation"
+       },
+       {
+        "zh": "擺位、暴露穴位、保暖",
+        "en": "Position, expose, keep warm"
+       },
+       {
+        "zh": "放上刺孔薑片",
+        "en": "Place the pierced ginger slice"
+       },
+       {
+        "zh": "放艾炷點燃",
+        "en": "Set and light the moxa cone"
+       },
+       {
+        "zh": "不離人，隨時問熱感",
+        "en": "Stay; keep asking about heat"
+       },
+       {
+        "zh": "灸畢熄火、看皮膚、記錄",
+        "en": "Extinguish, check skin, record"
+       }
+      ]
+     },
+     "post": [
+      [
+       "chinshui",
+       {
+        "zh": "暖暖的……像以前在船上曬太陽。",
+        "en": "Warm… like sunning myself on the boat."
+       }
+      ],
+      [
+       "nurse",
+       {
+        "zh": "伯伯，覺得燙要馬上講喔。",
+        "en": "Uncle, tell me the moment it feels hot."
+       }
+      ],
+      [
+       "chinshui",
+       {
+        "zh": "好好好。然後那條魚啊——",
+        "en": "Yes, yes. So that fish—"
+       }
+      ]
+     ],
+     "item": "burns"
+    }
+   ]
+  },
+  {
+   "id": "xiaolong",
+   "name": {
+    "zh": "小龍的生蠔",
+    "en": "Hsiao-lung's oysters"
+   },
+   "sub": {
+    "zh": "10:30 · 灸療室門口",
+    "en": "10:30 · the moxa room door"
+   },
+   "t": 630,
+   "mood": "day",
+   "note": {
+    "zh": "發燒、膿血便：不能灸，轉急診",
+    "en": "Fever, bloody stools: no moxa, ER"
+   },
+   "beats": [
+    {
+     "id": "d1",
+     "to": "xiaolong",
+     "guide": {
+      "zh": "攔住小龍",
+      "en": "Stop Hsiao-lung at the door"
+     },
+     "lines": [
+      [
+       "xiaolong",
+       {
+        "zh": "醫生，幫我扎幾針止瀉，我下午還要回去備料。",
+        "en": "Doctor, a few needles to stop the runs, please. I’ve got prep to do this afternoon."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "從什麼時候開始？有發燒嗎？",
+        "en": "Since when? Any fever?"
+       }
+      ],
+      [
+       "xiaolong",
+       {
+        "zh": "昨晚喜宴吃了生蠔，半夜開始。一直想上又拉不乾淨，有血有黏液。全身發冷發抖。",
+        "en": "Raw oysters at a wedding last night, started at midnight. Always need to go and never finish, with blood and mucus. Chills and shaking all over."
+       }
+      ],
+      [
+       "master",
+       {
+        "zh": "裡急後重、膿血便、發燒。這不是泄瀉，是痢疾。濕熱痢，你說說看？",
+        "en": "Urgency and straining, blood and mucus, fever. That isn’t diarrhoea; it’s dysentery. Damp-heat dysentery: tell me."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "d2",
+     "to": "xiaolong",
+     "guide": {
+      "zh": "摸脈",
+      "en": "Take his pulse"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "手很燙。脈來流利圓滑，像珠子滾過，而且很快。",
+        "en": "His hand is hot. The pulse flows smooth and round like rolling beads, and fast."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "pulse",
+      "q": {
+       "zh": "往來流利如珠，而且快。這是什麼脈？",
+       "en": "Smooth like rolling beads, and fast. Which pulse?"
+      },
+      "pulse": "slippery",
+      "options": [
+       {
+        "zh": "滑數：濕熱蘊結",
+        "en": "Slippery and rapid: damp-heat",
+        "ok": true,
+        "why": {
+         "zh": "中醫認為滑主痰濕、食積，數主熱；配發燒、膿血便、裡急後重，是濕熱痢。",
+         "en": "In TCM slippery points to damp and stagnation, rapid to heat; with fever, bloody mucus and straining, it is damp-heat dysentery."
+        }
+       },
+       {
+        "zh": "細弱：脾虛",
+        "en": "Thready and weak: spleen deficiency",
+        "ok": false,
+        "why": {
+         "zh": "那是隔壁床金水伯的脈。小龍的脈又滑又快。",
+         "en": "That’s Uncle Chin-shui on the next couch. Hsiao-lung’s is slippery and fast."
+        }
+       },
+       {
+        "zh": "浮緊：風寒",
+        "en": "Floating and tight: wind-cold",
+        "ok": false,
+        "why": {
+         "zh": "發冷是因為發燒，不是風寒表證。",
+         "en": "His chills come from the fever, not an exterior wind-cold."
+        }
+       }
+      ]
+     }
+    },
+    {
+     "id": "d3",
+     "to": "xiaolong",
+     "guide": {
+      "zh": "發燒、血便：第一步",
+      "en": "Fever and blood: first step"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "耳溫很高。他站著有點晃，嘴唇乾裂，說今天幾乎沒尿。",
+        "en": "His ear temperature is high. He sways standing, lips cracked, and says he has hardly passed urine today."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "vitals",
+      "event": "fever",
+      "options": [
+       {
+        "zh": "讓他坐下、通知醫師、轉急診補液與檢查",
+        "en": "Sit him down, tell the doctor, ER for fluids and tests",
+        "ok": true,
+        "why": {
+         "zh": "發燒、膿血便、脫水是紅旗。先轉急診補液、驗糞便與血液；中醫調理之後再說。",
+         "en": "Fever, bloody stools and dehydration are red flags. Emergency department first for fluids and stool and blood tests; TCM care comes later."
+        }
+       },
+       {
+        "zh": "灸神闕溫中止瀉",
+        "en": "Moxa CV8 to warm and stop it",
+        "ok": false,
+        "why": {
+         "zh": "溫灸用在濕熱上是火上加油，而且延誤補液。",
+         "en": "Warming moxa on damp-heat adds fuel to the fire, and delays the fluids."
+        }
+       },
+       {
+        "zh": "扎針止瀉，讓他回去上班",
+        "en": "Needle to stop it and send him to work",
+        "ok": false,
+        "why": {
+         "zh": "他有脫水、高燒，還是廚師。回去上班，可能把病帶進整間廚房。",
+         "en": "He is dehydrated and feverish, and a chef. Back to work could take it into a whole kitchen."
+        }
+       }
+      ]
+     },
+     "post": [
+      [
+       "master",
+       {
+        "zh": "急則治標。今天中醫最好的處置，是轉診單。",
+        "en": "When it’s urgent, treat the branch. Today TCM’s best treatment is a referral form."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "轉診單寫：生蠔、發燒、膿血便、裡急後重、尿少。",
+        "en": "Referral: raw oysters, fever, blood and mucus, straining, little urine."
+       }
+      ],
+      [
+       "xiaolong",
+       {
+        "zh": "可是我下午要備料……",
+        "en": "But my prep this afternoon…"
+       }
+      ],
+      [
+       "nurse",
+       {
+        "zh": "廚房會感謝你今天不去。",
+        "en": "Your kitchen will thank you for staying away."
+       }
+      ]
+     ],
+     "item": "diarrhoea-flags"
+    }
+   ]
+  },
+  {
+   "id": "noon",
+   "name": {
+    "zh": "午間：一碗粥",
+    "en": "Noon: a bowl of porridge"
+   },
+   "sub": {
+    "zh": "12:00 · 治療排程白板",
+    "en": "12:00 · the treatment board"
+   },
+   "t": 720,
+   "mood": "day",
+   "note": {
+    "zh": "參苓白朮散與炒過的藥",
+    "en": "Shen Ling Bai Zhu San, herbs fried"
+   },
+   "beats": [
+    {
+     "id": "e1",
+     "to": "master",
+     "guide": {
+      "zh": "選出參苓白朮散",
+      "en": "Pick Shen Ling Bai Zhu San"
+     },
+     "lines": [
+      [
+       "master",
+       {
+        "zh": "金水伯的方子：補脾、滲濕、止瀉。參苓白朮散，選出六味。",
+        "en": "Uncle Chin-shui’s formula: strengthen the spleen, drain damp, stop diarrhoea. Shen Ling Bai Zhu San: pick six."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "herb",
+      "q": {
+       "zh": "選出參苓白朮散的六味主藥",
+       "en": "Pick six key herbs of Shen Ling Bai Zhu San"
+      },
+      "formula": "參苓白朮散",
+      "pick": [
+       "人參",
+       "白朮",
+       "茯苓",
+       "山藥",
+       "薏苡仁",
+       "蓮子"
+      ],
+      "distractors": [
+       "大黃",
+       "黃連",
+       "芒硝",
+       "石膏"
+      ]
+     },
+     "post": [
+      [
+       "master",
+       {
+        "zh": "方裡的白朮、山藥、薏苡仁多半用炒過的。為什麼？",
+        "en": "The atractylodes, yam and coix in it are usually fried. Why?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "炮製改變藥性：炒過偏健脾止瀉，生的薏仁偏清利濕熱。",
+        "en": "Processing changes the action: fried leans to strengthening the spleen and stopping diarrhoea; raw coix leans to draining damp-heat."
+       }
+      ],
+      [
+       "master",
+       {
+        "zh": "對。用量依處方。還有這個——",
+        "en": "Right. Amounts per prescription. And this—"
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "他從口袋抽出一張手寫卡片：山藥蓮子粥。",
+        "en": "He pulls a handwritten card from his pocket: yam and lotus-seed congee."
+       }
+      ]
+     ],
+     "item": "congee-card"
+    },
+    {
+     "id": "e2",
+     "to": "master",
+     "guide": {
+      "zh": "聽范醫師講泄瀉辨證",
+      "en": "Dr Fan on diarrhoea patterns"
+     },
+     "lines": [
+      [
+       "master",
+       {
+        "zh": "今天兩個拉肚子的人。一個久瀉屬虛，要補要灸；一個暴下膿血屬實熱，不能灸，要轉。",
+        "en": "Two people with the runs today. One chronic and deficient: tonify and warm. One sudden, bloody, excess heat: no moxa, refer."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "分寒熱虛實，還要先分急不急。",
+        "en": "Cold or heat, deficiency or excess, and first: urgent or not."
+       }
+      ],
+      [
+       "master",
+       {
+        "zh": "還有：膿血便叫痢疾，別跟泄瀉混在一起寫。",
+        "en": "And: blood and mucus is dysentery. Don’t write it up as diarrhoea."
+       }
+      ]
+     ],
+     "item": "xiexie-patterns"
+    }
+   ]
+  },
+  {
+   "id": "skin",
+   "name": {
+    "zh": "金水伯的肚皮",
+    "en": "Uncle Chin-shui's belly"
+   },
+   "sub": {
+    "zh": "14:00 · 灸療床",
+    "en": "14:00 · the moxa couch"
+   },
+   "t": 840,
+   "mood": "day",
+   "note": {
+    "zh": "皮膚說了實話",
+    "en": "The skin tells the truth"
+   },
+   "beats": [
+    {
+     "id": "f1",
+     "when": {
+      "flag": "checked-sensation",
+      "is": true
+     },
+     "to": "chinshui",
+     "guide": {
+      "zh": "灸後看皮膚",
+      "en": "Check the skin after moxa"
+     },
+     "lines": [
+      [
+       "nurse",
+       {
+        "zh": "皮膚微紅，沒有水泡。距離拉遠是對的。",
+        "en": "Slightly pink, no blisters. Keeping it further off was right."
+       }
+      ],
+      [
+       "chinshui",
+       {
+        "zh": "肚子暖到現在。中午吃了一碗粥，到現在都沒跑廁所。",
+        "en": "My belly’s still warm. Had a bowl of congee at lunch and haven’t run to the toilet since."
+       }
+      ],
+      [
+       "master",
+       {
+        "zh": "看吧，粥。",
+        "en": "See? Porridge."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "f2",
+     "when": {
+      "flag": "checked-sensation",
+      "is": false
+     },
+     "to": "chinshui",
+     "guide": {
+      "zh": "灸後看皮膚",
+      "en": "Check the skin after moxa"
+     },
+     "lines": [
+      [
+       "nurse",
+       {
+        "zh": "醫師，伯伯肚臍旁邊起了一個水泡。他說完全不覺得燙。",
+        "en": "Doctor, there’s a blister beside his navel. He says it never felt hot."
+       }
+      ],
+      [
+       "daughter",
+       {
+        "zh": "他有糖尿病，腳底一直麻麻的……你們沒問，我以為不重要。",
+        "en": "He’s diabetic, and his soles have been numb… you didn’t ask, I didn’t think it mattered."
+       }
+      ],
+      [
+       "master",
+       {
+        "zh": "冷水沖、不要弄破、無菌覆蓋、寫事件通報。感覺遲鈍的人，燙了也不會喊。",
+        "en": "Cool water, don’t break it, sterile cover, file an incident report. Numb skin doesn’t cry out."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "是我沒問。下次點火之前，先問感覺。",
+        "en": "I didn’t ask. Next time, sensation before the flame."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "f3",
+     "roles": [
+      "moxanurse"
+     ],
+     "to": "place:sink",
+     "guide": {
+      "zh": "熄艾、清潔、記錄",
+      "en": "Douse, clean, record"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "艾炷全部泡水熄掉，艾灰倒進鐵桶，抽煙機再開一下。",
+        "en": "Every cone into the water, ash into the metal bin, extractor running a while longer."
+       }
+      ],
+      [
+       "nurse",
+       {
+        "zh": "灸療紀錄寫上部位、方式、皮膚狀況。",
+        "en": "The moxa log gets site, method and skin condition."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "message",
+   "name": {
+    "zh": "急診回訊",
+    "en": "The ER replies"
+   },
+   "sub": {
+    "zh": "16:00 · 病歷車",
+    "en": "16:00 · the charting cart"
+   },
+   "t": 960,
+   "mood": "day",
+   "note": {
+    "zh": "小龍在補液",
+    "en": "Hsiao-lung is on fluids"
+   },
+   "beats": [
+    {
+     "id": "g1",
+     "ring": {
+      "title": {
+       "zh": "急診的訊息",
+       "en": "Message from the ER"
+      },
+      "sub": {
+       "zh": "小龍：脫水、細菌性腸炎",
+       "en": "Hsiao-lung: dehydrated, bacterial enteritis"
+      },
+      "call": false,
+      "from": "erdoc"
+     },
+     "to": "place:desk",
+     "guide": {
+      "zh": "看急診的訊息",
+      "en": "Read the ER’s message"
+     },
+     "lines": [
+      [
+       "erdoc",
+       {
+        "zh": "小龍中度脫水，在打點滴，糞便培養送了，暫時不能回廚房。轉診單寫得很好，血便和體溫都有。",
+        "en": "Hsiao-lung is moderately dehydrated and on a drip; stool culture sent; no kitchen for now. Good referral: bloody stools and temperature both stated."
+       }
+      ],
+      [
+       "erdoc",
+       {
+        "zh": "他一直問什麼時候可以回去備料。我說等糞便報告。",
+        "en": "He keeps asking when he can get back to prep. I told him: after the stool results."
+       }
+      ],
+      [
+       "master",
+       {
+        "zh": "等他好了，再來我這裡喝粥。",
+        "en": "When he’s better he can come and have porridge with me."
+       }
+      ]
+     ],
+     "item": "paozhi-spleen"
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "name": {
+    "zh": "收尾",
+    "en": "Wrapping up"
+   },
+   "sub": {
+    "zh": "17:30 · 灸療室門口",
+    "en": "17:30 · the moxa room door"
+   },
+   "t": 1050,
+   "mood": "eve",
+   "note": {
+    "zh": "一個灸，一個轉，兩碗粥",
+    "en": "One warmed, one referred, two congees"
+   },
+   "beats": [
+    {
+     "id": "h1",
+     "to": "master",
+     "guide": {
+      "zh": "聽范醫師的結語",
+      "en": "Dr Fan’s debrief"
+     },
+     "lines": [
+      [
+       "master",
+       {
+        "zh": "今天你學到兩個「不」：不問感覺不點火，膿血發燒不能灸。",
+        "en": "Two “nevers” today: never light before asking about sensation; never warm a fever with blood in the stool."
+       }
+      ],
+      [
+       "master",
+       {
+        "zh": "中醫最厲害的地方，有時候是知道什麼時候不要用中醫。",
+        "en": "TCM’s greatest skill is sometimes knowing when not to use it."
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "他塞給你一張山藥粥食譜。這已經是今天第三張了。",
+        "en": "He hands you a yam congee card. That makes three today."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "night",
+   "name": {
+    "zh": "夜間來電",
+    "en": "A call at night"
+   },
+   "sub": {
+    "zh": "20:00 · 回家路上",
+    "en": "20:00 · on the way home"
+   },
+   "t": 1200,
+   "mood": "night",
+   "note": {
+    "zh": "金水伯的晚餐",
+    "en": "Uncle Chin-shui's dinner"
+   },
+   "beats": [
+    {
+     "id": "n1",
+     "ring": {
+      "title": {
+       "zh": "阿珠來電",
+       "en": "Ah-Chu calling"
+      },
+      "sub": {
+       "zh": "我爸叫我打給你……",
+       "en": "Dad told me to call you…"
+      },
+      "call": true,
+      "from": "daughter"
+     },
+     "lines": [
+      [
+       "daughter",
+       {
+        "zh": "醫生，我爸叫我打來。他說晚上吃了山藥蓮子粥，大便有成形一點，要我跟范醫師說謝謝。",
+        "en": "Doctor, Dad made me call. He had yam and lotus-seed congee tonight, his stool is firmer, and he wants Dr Fan thanked."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "我會轉告。冰的、油的先停，下週回來灸。",
+        "en": "I’ll pass it on. No ice, no grease for now; back next week for moxa."
+       }
+      ],
+      [
+       "daughter",
+       {
+        "zh": "還有，他要我問你那條魚的故事聽完了沒有。",
+        "en": "And he wants to know if you ever heard the end of the fish story."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "n2",
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "你沒有。你決定下週一定要聽完。",
+        "en": "You didn’t. Next week, you decide, you will."
+       }
+      ]
+     ],
+     "end": true
+    }
+   ]
+  }
+ ],
+ "ending": {
+  "title": {
+   "zh": "下班了",
+   "en": "End of shift"
+  },
+  "sub": {
+   "zh": "知道什麼時候不用中醫，也是中醫",
+   "en": "Knowing when not to use TCM is TCM too"
+  },
+  "stats": [
+   "stages",
+   "drills",
+   "choices",
+   "calls",
+   "items",
+   "time"
+  ]
+ }
+}

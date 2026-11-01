@@ -1,0 +1,1629 @@
+{
+ "format": "huatuo-shift-v2",
+ "department": "neurosurgery",
+ "case": "head-injury",
+ "caseTitle": {
+  "zh": "急診的清醒期",
+  "en": "The lucid interval"
+ },
+ "condition": {
+  "zh": "外傷 · 硬腦膜外血腫",
+  "en": "Trauma · extradural haematoma"
+ },
+ "difficulty": 3,
+ "room": "er",
+ "minutes": 25,
+ "title": {
+  "zh": "神經外科值班夜：急診",
+  "en": "Neurosurgery on call: the ER"
+ },
+ "tagline": {
+  "zh": "清醒期是陷阱，瞳孔是時鐘",
+  "en": "The lucid interval is a trap; the pupil is the clock"
+ },
+ "roles": [
+  {
+   "id": "resident",
+   "zh": "神經外科住院醫師",
+   "en": "Neurosurgery resident",
+   "desc": {
+    "zh": "今晚值班的第一年住院醫師。急診會診、GCS、CT、半夜的開顱，還有一位不肯回家的媽媽。",
+    "en": "First-year resident on call tonight. ER consults, GCS, CT, a craniotomy at midnight, and a mother who will not go home."
+   }
+  },
+  {
+   "id": "trauma-nurse",
+   "zh": "急診外傷護理師",
+   "en": "ER trauma nurse",
+   "desc": {
+    "zh": "創傷區是你的地盤。急救車、頸圈、每小時的神經學觀察，瞳孔變了第一個喊的人是你。",
+    "en": "The trauma bay is yours. Crash cart, collar, hourly neuro obs; when a pupil changes, you shout first."
+   }
+  }
+ ],
+ "cast": {
+  "attending": {
+   "name": {
+    "zh": "杜主治",
+    "en": "Dr Tu"
+   },
+   "role": {
+    "zh": "主治醫師（師傅）",
+    "en": "Attending (mentor)"
+   },
+   "tag": "ATT",
+   "color": "#3f6fa8",
+   "about": {
+    "zh": "外傷夜班的定海神針。口頭禪：「頭部外傷，第二次檢查比第一次重要。」",
+    "en": "The calm centre of every trauma night. Her line: 'In head injury the second examination matters more than the first.'"
+   },
+   "body": "mentor"
+  },
+  "er-doc": {
+   "name": {
+    "zh": "急診羅醫師",
+    "en": "Dr Lo (ER)"
+   },
+   "role": {
+    "zh": "急診主治醫師",
+    "en": "ER attending"
+   },
+   "tag": "ER",
+   "color": "#2f6f9f",
+   "about": {
+    "zh": "初級評估做得像呼吸一樣自然。會診單上永遠寫著受傷時間。",
+    "en": "Does a primary survey as naturally as breathing. Every consult note carries the time of injury."
+   },
+   "body": "specialist"
+  },
+  "anaes": {
+   "name": {
+    "zh": "江醫師",
+    "en": "Dr Chiang"
+   },
+   "role": {
+    "zh": "麻醉醫師（夜班）",
+    "en": "Anaesthetist (nights)"
+   },
+   "tag": "AN",
+   "color": "#3b8f6a",
+   "about": {
+    "zh": "半夜插管從不急，但從不慢。她說頸椎在她手裡就不會動。",
+    "en": "Never rushes a midnight intubation, never dawdles. She says the neck does not move while it is in her hands."
+   },
+   "body": "anaesthetist"
+  },
+  "radiographer": {
+   "name": {
+    "zh": "阿凱",
+    "en": "Kai"
+   },
+   "role": {
+    "zh": "CT 放射師",
+    "en": "CT radiographer"
+   },
+   "tag": "CT",
+   "color": "#c27a2c",
+   "about": {
+    "zh": "推病人進 CT 的時候，眼睛看的是監視器不是機器。",
+    "en": "Watches the monitor, not the scanner, while the patient goes through the CT."
+   },
+   "body": "radiographer"
+  },
+  "scrub": {
+   "name": {
+    "zh": "小潘",
+    "en": "Pan"
+   },
+   "role": {
+    "zh": "夜班刷手護理師",
+    "en": "Night scrub nurse"
+   },
+   "tag": "SN",
+   "color": "#9d4b7a",
+   "about": {
+    "zh": "開顱器械半夜十分鐘內可以全部到位。她數骨蠟像數錢。",
+    "en": "Has a craniotomy set open within minutes at any hour. Counts bone wax like cash."
+   },
+   "body": "scrub"
+  },
+  "patient": {
+   "name": {
+    "zh": "小宇",
+    "en": "Hsiao-yu"
+   },
+   "role": {
+    "zh": "病人・19 歲大學生",
+    "en": "Patient, 19, university student"
+   },
+   "tag": "PT",
+   "color": "#6b7280",
+   "about": {
+    "zh": "騎機車被轉彎的車擦到，安全帽帶子沒扣。昏了一下下就醒了，自己走進急診，說只是頭痛。",
+    "en": "Clipped by a turning car on his scooter, helmet strap undone. Out for a moment, then walked into the ER saying it was just a headache."
+   },
+   "body": "patient"
+  },
+  "mother": {
+   "name": {
+    "zh": "小宇媽媽",
+    "en": "Hsiao-yu's mother"
+   },
+   "role": {
+    "zh": "家屬",
+    "en": "Family"
+   },
+   "tag": "FAM",
+   "color": "#b45309",
+   "about": {
+    "zh": "從夜市攤位直接趕來，圍裙還沒脫。她只問一句：「可以帶他回家嗎？」",
+    "en": "Came straight from her night-market stall, apron still on. One question only: 'Can I take him home?'"
+   },
+   "body": "family"
+  },
+  "icu-nurse": {
+   "name": {
+    "zh": "阿芬",
+    "en": "Fen"
+   },
+   "role": {
+    "zh": "神經外科 ICU 夜班護理師",
+    "en": "Neuro ICU night nurse"
+   },
+   "tag": "RN",
+   "color": "#7c3aed",
+   "about": {
+    "zh": "術後第一個小時她每十五分鐘看一次瞳孔。她打來，通常是好消息，有時候不是。",
+    "en": "Checks pupils every quarter hour in the first hour after surgery. When she calls it is usually good news; sometimes not."
+   },
+   "phoneOnly": true
+  }
+ },
+ "places": {
+  "bay": {
+   "name": {
+    "zh": "創傷區",
+    "en": "Trauma bay"
+   },
+   "hot": "field"
+  },
+  "monitor": {
+   "name": {
+    "zh": "監視器",
+    "en": "Monitor"
+   },
+   "hot": "monitor"
+  },
+  "ct": {
+   "name": {
+    "zh": "CT 室",
+    "en": "CT room"
+   },
+   "hot": "imaging"
+  },
+  "crash": {
+   "name": {
+    "zh": "急救車",
+    "en": "Crash cart"
+   },
+   "hot": "crash-cart"
+  },
+  "board": {
+   "name": {
+    "zh": "急診白板",
+    "en": "ER whiteboard"
+   },
+   "hot": "whiteboard"
+  },
+  "desk": {
+   "name": {
+    "zh": "會診桌",
+    "en": "Consult desk"
+   },
+   "hot": "desk"
+  },
+  "obs-bed": {
+   "name": {
+    "zh": "觀察床",
+    "en": "Observation bed"
+   },
+   "hot": "bed"
+  },
+  "theatre": {
+   "name": {
+    "zh": "開刀房",
+    "en": "Operating theatre"
+   },
+   "hot": "instruments"
+  },
+  "icu": {
+   "name": {
+    "zh": "神經外科 ICU",
+    "en": "Neuro ICU"
+   },
+   "hot": "recovery"
+  }
+ },
+ "glossary": [
+  {
+   "term": {
+    "zh": "清醒期",
+    "en": "lucid interval"
+   },
+   "plain": {
+    "zh": "受傷後先昏迷、醒來一段時間看起來很好、然後再度惡化。中間那段「看起來很好」就是陷阱。",
+    "en": "Knocked out, then awake and seemingly fine for a while, then worse again. The 'seemingly fine' stretch is the trap."
+   }
+  },
+  {
+   "term": {
+    "zh": "硬腦膜外血腫",
+    "en": "extradural haematoma"
+   },
+   "plain": {
+    "zh": "血積在頭骨和硬腦膜之間，常常是動脈出血，所以長得快、壓得急。",
+    "en": "Blood collecting between the skull and the dura, often from an artery, so it grows fast and compresses hard."
+   }
+  },
+  {
+   "term": {
+    "zh": "中腦膜動脈",
+    "en": "middle meningeal artery"
+   },
+   "plain": {
+    "zh": "貼著顳骨內面走的動脈。顳骨薄，一裂就把它撕破。",
+    "en": "An artery running along the inside of the thin temporal bone; a fracture there tears it."
+   }
+  },
+  {
+   "term": {
+    "zh": "GCS",
+    "en": "GCS"
+   },
+   "plain": {
+    "zh": "格拉斯哥昏迷指數：睜眼、說話、動作三項分數加總。寫分項，不要只寫總分。",
+    "en": "Glasgow Coma Scale: eye, verbal and motor scores added up. Record the parts, not just the total."
+   }
+  },
+  {
+   "term": {
+    "zh": "鉤迴疝脫",
+    "en": "uncal herniation"
+   },
+   "plain": {
+    "zh": "顳葉內側被壓得往下擠，先壓到同側的動眼神經，所以同一側的瞳孔先放大。",
+    "en": "The inner temporal lobe is pushed downwards and squeezes the oculomotor nerve on the same side, so that pupil dilates first."
+   }
+  },
+  {
+   "term": {
+    "zh": "頸椎保護",
+    "en": "cervical spine protection"
+   },
+   "plain": {
+    "zh": "頭撞到的人，脖子也可能受傷。證明沒事之前，頸圈不拆、翻身要整體翻。",
+    "en": "Anyone who hit their head may also have hurt their neck. Until it is cleared, the collar stays on and turns are log-rolls."
+   }
+  },
+  {
+   "term": {
+    "zh": "二次腦損傷",
+    "en": "secondary brain injury"
+   },
+   "plain": {
+    "zh": "受傷後的低血壓、缺氧、高二氧化碳讓受傷的腦再受一次傷。這一次是可以避免的。",
+    "en": "Low blood pressure, low oxygen or high carbon dioxide after the injury hurt the brain a second time. That one is preventable."
+   }
+  },
+  {
+   "term": {
+    "zh": "初級評估",
+    "en": "primary survey"
+   },
+   "plain": {
+    "zh": "外傷病人到院的第一輪檢查：氣道與頸椎、呼吸、循環、神經狀態、全身露出。順序不能換。",
+    "en": "The first pass on any trauma patient: airway with the neck, breathing, circulation, disability, exposure. The order never changes."
+   }
+  },
+  {
+   "term": {
+    "zh": "快速誘導插管",
+    "en": "rapid sequence induction"
+   },
+   "plain": {
+    "zh": "讓病人很快睡著並放鬆，馬上插管保護氣道，全程有人用手固定頸椎。",
+    "en": "The patient is put to sleep and relaxed quickly and the tube goes in at once, with the neck held still by hand throughout."
+   }
+  },
+  {
+   "term": {
+    "zh": "骨瓣",
+    "en": "bone flap"
+   },
+   "plain": {
+    "zh": "為了進到腦部而鋸下的一塊頭骨。血塊清掉後再固定回去。",
+    "en": "The piece of skull removed to reach the brain, fixed back in place once the clot is out."
+   }
+  },
+  {
+   "term": {
+    "zh": "ISBAR",
+    "en": "ISBAR"
+   },
+   "plain": {
+    "zh": "交班的固定順序：我是誰、哪位病人、現況、背景、評估、我需要你做什麼。半夜的電話最需要它。",
+    "en": "A fixed order for handover: identify, situation, background, assessment, recommendation. Midnight phone calls need it most."
+   }
+  },
+  {
+   "term": {
+    "zh": "神經學觀察",
+    "en": "neuro obs"
+   },
+   "plain": {
+    "zh": "定時量 GCS、瞳孔大小與對光反應、四肢力量。趨勢比單一次數字重要。",
+    "en": "GCS, pupil size and reaction and limb power at set intervals. The trend matters more than any single reading."
+   }
+  }
+ ],
+ "codex": [
+  {
+   "id": "ct-console",
+   "kind": "equipment",
+   "name": {
+    "zh": "CT 主機",
+    "en": "CT scanner"
+   },
+   "text": {
+    "zh": "頭部外傷的真相機器。推進去之前先問：病人現在穩不穩？監視器跟進去了嗎？",
+    "en": "The truth machine for head injury. Before wheeling anyone in: is he stable right now, and is the monitor going with him?"
+   },
+   "hot": "imaging"
+  },
+  {
+   "id": "collar",
+   "kind": "equipment",
+   "name": {
+    "zh": "頸圈",
+    "en": "Cervical collar"
+   },
+   "text": {
+    "zh": "頸椎保護的第一步。拆掉要靠檢查或影像，不是靠病人說「我脖子不痛」。",
+    "en": "Step one of cervical spine protection. It comes off on examination or imaging, not on 'my neck doesn't hurt'."
+   },
+   "hot": "bed"
+  },
+  {
+   "id": "pupil-torch",
+   "kind": "equipment",
+   "name": {
+    "zh": "瞳孔筆燈",
+    "en": "Pupil torch"
+   },
+   "text": {
+    "zh": "最便宜的顱內壓監測器。大小、對光反應、兩側是否一樣，每一次都要寫。",
+    "en": "The cheapest intracranial pressure monitor there is. Size, reaction, symmetry, written down every time."
+   },
+   "hot": "monitor"
+  },
+  {
+   "id": "crash-cart",
+   "kind": "equipment",
+   "name": {
+    "zh": "急救車",
+    "en": "Crash cart"
+   },
+   "text": {
+    "zh": "插管用具、抽吸、急救藥都在這裡。夜班開始先檢查一次，等要用的時候來不及。",
+    "en": "Airway kit, suction and emergency drugs. Check it at the start of the night; there is no time when you need it."
+   },
+   "hot": "crash-cart"
+  },
+  {
+   "id": "gcs-sheet",
+   "kind": "item",
+   "name": {
+    "zh": "GCS 分項紀錄單",
+    "en": "GCS breakdown sheet"
+   },
+   "text": {
+    "zh": "E、V、M 分開寫，附時間。從 15 掉到 13 是哪一項掉的，決定你接下來跑多快。",
+    "en": "E, V and M written separately, with the time. Which part dropped from 15 to 13 decides how fast you run."
+   }
+  },
+  {
+   "id": "helmet",
+   "kind": "item",
+   "name": {
+    "zh": "小宇的安全帽",
+    "en": "Hsiao-yu's helmet"
+   },
+   "text": {
+    "zh": "帽帶沒扣，撞到的時候飛了出去。手術後他媽媽把它帶回家，說要掛在門口。",
+    "en": "Strap undone, it flew off on impact. After the operation his mother took it home to hang by the front door."
+   }
+  },
+  {
+   "id": "lucid",
+   "kind": "concept",
+   "name": {
+    "zh": "清醒期",
+    "en": "The lucid interval"
+   },
+   "text": {
+    "zh": "硬腦膜外血腫的經典劇本：撞、昏、醒、看起來沒事、然後頭痛加劇、嗜睡、瞳孔放大。看起來沒事的那段，就是血在累積的時間。所以 GCS 15 的頭部外傷不等於可以回家；有昏迷、嘔吐、顱骨骨折或抗凝藥的，要 CT。",
+    "en": "The classic script of an extradural: impact, out, awake, apparently fine, then worsening headache, drowsiness, a dilating pupil. 'Apparently fine' is the time the blood is accumulating. So a head injury with GCS 15 is not a discharge; loss of consciousness, vomiting, a skull fracture or anticoagulants mean a CT."
+   }
+  },
+  {
+   "id": "secondary",
+   "kind": "concept",
+   "name": {
+    "zh": "二次腦損傷",
+    "en": "Secondary brain injury"
+   },
+   "text": {
+    "zh": "第一次傷害在撞擊那一秒就決定了，我們改變不了。第二次傷害來自之後的低血壓、低血氧、高二氧化碳、高體溫、低血糖與腦壓升高，這些全部可以預防。神經外科的夜班，一半的工作是防止第二次傷害。",
+    "en": "The first injury is decided in the second of impact and cannot be undone. The second comes afterwards from low pressure, low oxygen, high carbon dioxide, fever, low glucose and rising intracranial pressure, all preventable. Half of a neurosurgical night is preventing that second injury."
+   }
+  }
+ ],
+ "segs": [
+  {
+   "id": "handover",
+   "name": {
+    "zh": "晚間交班",
+    "en": "Evening handover"
+   },
+   "sub": {
+    "zh": "16:00 · 急診白板",
+    "en": "16:00 · ER whiteboard"
+   },
+   "t": 960,
+   "mood": "day",
+   "note": {
+    "zh": "接班：急診有個機車摔的",
+    "en": "Took over: a scooter fall in the ER"
+   },
+   "beats": [
+    {
+     "id": "h1",
+     "to": "attending",
+     "guide": {
+      "zh": "找杜主治接班",
+      "en": "Find Dr Tu to take over"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "小夜班辛苦了。白天沒事，但急診剛會診一個，19 歲機車摔，GCS 15。",
+        "en": "Welcome to the evening shift. Quiet day, but the ER just consulted: 19, scooter fall, GCS 15."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "GCS 15 還會診？",
+        "en": "GCS 15 and they still consulted?"
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "羅醫師說他昏過一下、吐過一次。頭部外傷，第二次檢查比第一次重要。",
+        "en": "Dr Lo says he was out briefly and vomited once. In head injury the second examination matters more than the first."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "我先去看他。",
+        "en": "I'll go and see him first."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "看完告訴我：他是不是在清醒期。",
+        "en": "When you have, tell me: is he in a lucid interval?"
+       }
+      ]
+     ]
+    },
+    {
+     "id": "h1n",
+     "to": "place:crash",
+     "guide": {
+      "zh": "檢查急救車",
+      "en": "Check the crash cart"
+     },
+     "roles": [
+      "trauma-nurse"
+     ],
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "接班先檢查急救車：喉頭鏡亮、抽吸有力、藥品封條完整。",
+        "en": "First thing on taking over: crash cart check. Laryngoscope bright, suction strong, drug seals intact."
+       }
+      ],
+      [
+       "er-doc",
+       {
+        "zh": "創傷區今晚有兩床空的。那個機車的在三號觀察床。",
+        "en": "Two trauma bays free tonight. The scooter boy is on observation bed three."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "find",
+      "hot": "crash-cart",
+      "q": {
+       "zh": "點一下急救車，完成檢查",
+       "en": "Tap the crash cart to complete the check"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "primary",
+   "name": {
+    "zh": "初級評估",
+    "en": "Primary survey"
+   },
+   "sub": {
+    "zh": "16:30 · 觀察床",
+    "en": "16:30 · observation bed"
+   },
+   "t": 990,
+   "mood": "day",
+   "note": {
+    "zh": "小宇留院觀察，安排 CT",
+    "en": "Hsiao-yu kept in and sent for CT"
+   },
+   "beats": [
+    {
+     "id": "p1",
+     "to": "patient",
+     "guide": {
+      "zh": "去看小宇",
+      "en": "Go and see Hsiao-yu"
+     },
+     "lines": [
+      [
+       "patient",
+       {
+        "zh": "醫師，我真的還好，只是頭很痛。可以回家嗎？明天有期中考。",
+        "en": "Doctor, I'm fine, honestly, just a bad headache. Can I go home? I've got a midterm tomorrow."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "等一下再談考試。撞到的時候有昏過去嗎？安全帽呢？",
+        "en": "Exams later. Did you black out when you hit the ground? And the helmet?"
+       }
+      ],
+      [
+       "patient",
+       {
+        "zh": "同學說我躺了一下才醒。帽子……帶子沒扣，飛掉了。",
+        "en": "My friend says I was out for a bit. The helmet... strap wasn't done up, it came off."
+       }
+      ],
+      [
+       "mother",
+       {
+        "zh": "他吐過一次。醫師，可以帶他回家嗎？我顧他就好。",
+        "en": "He was sick once. Doctor, can I take him home? I'll watch him."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "阿姨，先讓我把頭到腳檢查一遍，順序不能亂。",
+        "en": "Let me examine him head to toe first. The order matters."
+       }
+      ]
+     ],
+     "item": "helmet"
+    },
+    {
+     "id": "p2",
+     "to": "place:bay",
+     "guide": {
+      "zh": "照初級評估的順序做",
+      "en": "Run the primary survey in order"
+     },
+     "lines": [
+      [
+       "er-doc",
+       {
+        "zh": "初級評估我做過一輪，你再做一次。外傷病人的檢查是重複出來的。",
+        "en": "I did a primary survey already; do it again. Trauma assessment is repetition."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "頸圈還在。氣道通、呼吸對稱、血壓正常、GCS 15、瞳孔等大。",
+        "en": "Collar on. Airway clear, chest symmetrical, pressure normal, GCS 15, pupils equal."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "order",
+      "q": {
+       "zh": "頭部外傷到院的處理順序",
+       "en": "Order of care for a head injury arriving in the ER"
+      },
+      "steps": [
+       {
+        "zh": "氣道與頸椎保護",
+        "en": "Airway with cervical spine protection"
+       },
+       {
+        "zh": "呼吸與循環",
+        "en": "Breathing and circulation"
+       },
+       {
+        "zh": "GCS、瞳孔、四肢",
+        "en": "GCS, pupils, limbs"
+       },
+       {
+        "zh": "全身露出找其他傷",
+        "en": "Expose and look for other injuries"
+       },
+       {
+        "zh": "頭部 CT",
+        "en": "Head CT"
+       },
+       {
+        "zh": "通知神經外科",
+        "en": "Call neurosurgery"
+       }
+      ]
+     }
+    },
+    {
+     "id": "p3",
+     "to": "mother",
+     "guide": {
+      "zh": "回答媽媽：能不能回家",
+      "en": "Answer the mother: can he go home?"
+     },
+     "lines": [
+      [
+       "mother",
+       {
+        "zh": "他現在講話很清楚啊。我真的可以帶他回家嗎？",
+        "en": "He's talking clearly now. Can I really take him home?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "他昏過、吐過、安全帽沒戴好。這三件事讓我不放心。",
+        "en": "He blacked out, he vomited, and the helmet came off. Those three things worry me."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "choice",
+      "q": {
+       "zh": "GCS 15、曾短暫昏迷與嘔吐一次的頭部外傷，你會？",
+       "en": "Head injury, GCS 15, brief loss of consciousness and one vomit. You...?"
+      },
+      "options": [
+       {
+        "zh": "馬上做頭部 CT，留院每小時觀察",
+        "en": "Head CT now and hourly observation in the ER",
+        "ok": true,
+        "why": {
+         "zh": "對。昏迷加嘔吐就該掃。現在看起來好，是清醒期的典型樣子。",
+         "en": "Right. Loss of consciousness plus vomiting earns a scan. Looking well right now is exactly what a lucid interval looks like."
+        },
+        "set": {
+         "lucid": "ct"
+        }
+       },
+       {
+        "zh": "給頭部外傷衛教單回家",
+        "en": "Discharge with head-injury advice",
+        "ok": false,
+        "why": {
+         "zh": "回家後半夜惡化，趕回來的路程就是腦疝脫的時間。",
+         "en": "If he worsens at midnight, the drive back is the time it takes to herniate."
+        },
+        "set": {
+         "lucid": "home"
+        }
+       },
+       {
+        "zh": "不掃 CT，留院觀察到早上",
+        "en": "No CT, observe until morning",
+        "ok": false,
+        "why": {
+         "zh": "觀察抓得到惡化，抓不到正在長大的血塊。CT 現在就要。",
+         "en": "Observation catches deterioration, not the clot that is already growing. CT now."
+        },
+        "set": {
+         "lucid": "watch"
+        }
+       }
+      ]
+     },
+     "post": [
+      [
+       "mother",
+       {
+        "zh": "好，聽你的。我去跟攤位的人講一聲。",
+        "en": "All right, we'll do as you say. I'll let the stall know."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "p3r",
+     "to": "place:desk",
+     "guide": {
+      "zh": "寫 GCS 分項紀錄",
+      "en": "Write the GCS breakdown"
+     },
+     "roles": [
+      "resident"
+     ],
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "E4、V5、M6，時間、瞳孔都寫上。不要只寫 15。",
+        "en": "E4, V5, M6, with the time and the pupils. Never just '15'."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "對。等一下掉分的時候，你要知道掉的是哪一項。",
+        "en": "Right. When he drops a point, you need to know which part dropped."
+       }
+      ]
+     ],
+     "item": "gcs-sheet"
+    }
+   ]
+  },
+  {
+   "id": "ct",
+   "name": {
+    "zh": "CT 判讀",
+    "en": "Reading the CT"
+   },
+   "sub": {
+    "zh": "17:30 · CT 室",
+    "en": "17:30 · CT room"
+   },
+   "t": 1050,
+   "mood": "eve",
+   "note": {
+    "zh": "小的硬腦膜外血腫，密切觀察",
+    "en": "A small extradural; close observation"
+   },
+   "beats": [
+    {
+     "id": "t1",
+     "to": "place:ct",
+     "guide": {
+      "zh": "和阿凱一起看片子",
+      "en": "Read the scan with Kai"
+     },
+     "lines": [
+      [
+       "radiographer",
+       {
+        "zh": "掃完了。監視器一路跟著，沒事。你自己看。",
+        "en": "Done. Monitor stayed on him the whole way, all fine. Have a look yourself."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "先看骨窗，再看腦。左邊顳骨……有一條線。",
+        "en": "Bone window first, then brain. Left temporal bone... there is a line."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "imaging",
+      "region": "head",
+      "question": {
+       "zh": "左顳骨骨折下方的血塊是什麼形狀？為什麼危險？",
+       "en": "What shape is the clot under the left temporal fracture, and why is it dangerous?"
+      },
+      "answer": {
+       "zh": "凸透鏡形、不跨過顱縫，是硬腦膜外血腫。多半是中腦膜動脈出血，動脈壓力大，所以幾小時內就可能長大到壓迫腦幹。",
+       "en": "Lens-shaped and not crossing the sutures: an extradural haematoma. Usually the middle meningeal artery, and arterial pressure means it can grow within hours until it compresses the brainstem."
+      }
+     },
+     "post": [
+      [
+       "attending",
+       {
+        "zh": "小的硬腦膜外血腫，中線沒偏，GCS 15。你想怎麼做？",
+        "en": "A small extradural, no midline shift, GCS 15. What is your plan?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "留創傷區，每小時神經學觀察，禁食，通知麻醉與開刀房待命，幾小時後再掃。",
+        "en": "Keep him in the bay, hourly neuro obs, nil by mouth, anaesthesia and theatre on standby, rescan in a few hours."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "還有？",
+        "en": "And?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "片子上寫的是左邊，病人的骨折也是左邊。側別先核對好。",
+        "en": "The scan says left and the fracture is on his left. Side confirmed now, not later."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "t2",
+     "to": "place:board",
+     "guide": {
+      "zh": "把側別與影像登在白板",
+      "en": "Log side and images on the board"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "側別和影像序列現在就核對，不要等半夜急著推去開刀房才找。",
+        "en": "Confirm the side and the image series now, not while rushing to theatre at midnight."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "白板：小宇，左顳硬腦膜外血腫，CT 一七三〇，觀察中，開刀房待命。",
+        "en": "Board: Hsiao-yu, left temporal extradural, CT at seventeen-thirty, observing, theatre on standby."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "neurosurgery-preop-who-checklist",
+      "stage": 1
+     }
+    }
+   ]
+  },
+  {
+   "id": "deterioration",
+   "name": {
+    "zh": "惡化",
+    "en": "Deterioration"
+   },
+   "sub": {
+    "zh": "19:30 · 創傷區",
+    "en": "19:30 · trauma bay"
+   },
+   "t": 1170,
+   "mood": "night",
+   "note": {
+    "zh": "GCS 掉到 9，左瞳孔放大，插管後直上開刀房",
+    "en": "GCS down to 9, left pupil dilated, intubated and straight to theatre"
+   },
+   "beats": [
+    {
+     "id": "d1",
+     "to": "place:monitor",
+     "guide": {
+      "zh": "小宇開始變了",
+      "en": "Hsiao-yu is changing"
+     },
+     "lines": [
+      [
+       "er-doc",
+       {
+        "zh": "神外！三號床吐了，叫不太醒，左邊瞳孔變大了，血氧往下掉。",
+        "en": "Neurosurgery! Bed three vomited, hard to rouse, left pupil is bigger, sats are dropping."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "GCS 掉到 9。清醒期結束了。",
+        "en": "GCS 9. The lucid interval is over."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "vitals",
+      "event": "desaturation",
+      "options": [
+       {
+        "zh": "護氣道、抽吸、快速誘導插管、通知開刀房",
+        "en": "Protect the airway, suction, rapid sequence induction, hold the neck, call attending and theatre",
+        "ok": true,
+        "why": {
+         "zh": "GCS 低於 8 保護不了自己的氣道，缺氧是二次腦損傷。先氣道，再往下走。",
+         "en": "Below GCS 8 he cannot protect his airway, and hypoxia is secondary brain injury. Airway first, then everything else."
+        }
+       },
+       {
+        "zh": "給止吐藥，觀察十分鐘",
+        "en": "Antiemetic and observe for ten minutes",
+        "ok": false,
+        "why": {
+         "zh": "嘔吐是腦壓升高的訊號，不是胃的問題。十分鐘是腦疝脫的時間。",
+         "en": "Vomiting is a sign of rising pressure, not a stomach problem. Ten minutes is herniation time."
+        }
+       },
+       {
+        "zh": "先推去再掃一次 CT",
+        "en": "Rescan first",
+        "ok": false,
+        "why": {
+         "zh": "沒保護氣道的 GCS 9 在 CT 機裡缺氧。診斷已經有了，現在要的是減壓。",
+         "en": "A GCS 9 with an unprotected airway desaturates inside the scanner. You already have the diagnosis; what he needs is decompression."
+        }
+       }
+      ]
+     },
+     "post": [
+      [
+       "anaes",
+       {
+        "zh": "快速誘導插管，頸椎我固定。管子進去了，氧氣上來了。",
+        "en": "Rapid sequence induction, I have the neck. Tube is in, saturations coming up."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "d1n",
+     "to": "place:crash",
+     "guide": {
+      "zh": "協助插管與頸椎固定",
+      "en": "Assist intubation and hold the neck"
+     },
+     "roles": [
+      "trauma-nurse"
+     ],
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "抽吸在手邊，喉頭鏡給江醫師，頸圈前片打開、我用手固定頸椎。",
+        "en": "Suction at hand, laryngoscope to Dr Chiang, collar front open, I hold the cervical spine in line."
+       }
+      ],
+      [
+       "anaes",
+       {
+        "zh": "很好。頸椎保護不是頸圈，是你的手。",
+        "en": "Good. Cervical spine protection isn't the collar; it's your hands."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "d2",
+     "to": "attending",
+     "guide": {
+      "zh": "向杜主治報告",
+      "en": "Report to Dr Tu"
+     },
+     "ring": {
+      "title": {
+       "zh": "開刀房來電",
+       "en": "Theatre calling"
+      },
+      "sub": {
+       "zh": "小潘：「房間好了，器械開了。」",
+       "en": "Pan: 'Room is ready, set is open.'"
+      },
+      "call": true,
+      "from": "scrub"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "ISBAR：小宇，19 歲，左顳硬腦膜外血腫，GCS 從 15 掉到 9，左瞳孔放大。已插管，建議立刻開顱。",
+        "en": "ISBAR: Hsiao-yu, 19, left temporal extradural, GCS 15 down to 9, left pupil dilated. Intubated; I recommend immediate craniotomy."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "為什麼是左邊的瞳孔？",
+        "en": "Why the left pupil?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "血塊在左邊，顳葉往下擠壓到同側動眼神經。鉤迴疝脫。",
+        "en": "The clot is on the left; the temporal lobe is pushed down onto the oculomotor nerve on the same side. Uncal herniation."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "對。不用再掃。開刀房走。",
+        "en": "Right. No more scans. Theatre."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "theatre",
+   "name": {
+    "zh": "緊急開顱",
+    "en": "Emergency craniotomy"
+   },
+   "sub": {
+    "zh": "20:00 · 開刀房",
+    "en": "20:00 · operating theatre"
+   },
+   "t": 1200,
+   "mood": "night",
+   "note": {
+    "zh": "血塊清除，中腦膜動脈止血，骨瓣復位",
+    "en": "Clot evacuated, middle meningeal artery controlled, bone flap replaced"
+   },
+   "beats": [
+    {
+     "id": "o1",
+     "to": "place:theatre",
+     "guide": {
+      "zh": "Sign-in：麻醉誘導前核對",
+      "en": "Sign-in before induction"
+     },
+     "lines": [
+      [
+       "scrub",
+       {
+        "zh": "Sign-in。小宇，左顳開顱清除血腫，同意書媽媽簽的，過敏無，血備好了。",
+        "en": "Sign-in. Hsiao-yu, left temporal craniotomy for haematoma, consent signed by his mother, no allergies, blood available."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "側別？",
+        "en": "Side?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "左。片子、骨折、瞳孔、標記，四個都是左。",
+        "en": "Left. Scan, fracture, pupil and mark: all four say left."
+       }
+      ],
+      [
+       "anaes",
+       {
+        "zh": "血壓我會守住。低血壓是二次腦損傷，今晚不會發生。",
+        "en": "I will hold the pressure. Hypotension is secondary brain injury; not tonight."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "neurosurgery-preop-who-checklist",
+      "stage": 6
+     }
+    },
+    {
+     "id": "o2",
+     "to": "place:theatre",
+     "guide": {
+      "zh": "鑽孔與骨瓣",
+      "en": "Burr holes and bone flap"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "骨瓣以骨折線為中心。鑽孔靠近硬腦膜的時候，手要輕。",
+        "en": "Centre the flap on the fracture. Go gently as the burr nears the dura."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "骨瓣下來了。血塊是暗紅色的果凍，一掀開就看到。",
+        "en": "Flap is off. The clot is dark red jelly, right there as the bone lifts."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "吸掉。然後找那條動脈。",
+        "en": "Suck it out. Then find the artery."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "neurosurgery-craniotomy-fundamentals",
+      "stage": 3
+     }
+    },
+    {
+     "id": "o3",
+     "to": "place:theatre",
+     "guide": {
+      "zh": "止血：中腦膜動脈",
+      "en": "Haemostasis: the middle meningeal artery"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "血從骨折線下面湧出來。看到了嗎？中腦膜動脈。",
+        "en": "Blood welling from under the fracture line. See it? Middle meningeal artery."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "吸引放旁邊，雙極電凝對準出血點。",
+        "en": "Suction beside it, bipolar on the bleeding point."
+       }
+      ],
+      [
+       "scrub",
+       {
+        "zh": "骨蠟在這裡，骨緣滲血用它。",
+        "en": "Bone wax here, for the bone edge."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "drill",
+      "template": "neurosurgery",
+      "drill": "haemo"
+     },
+     "post": [
+      [
+       "attending",
+       {
+        "zh": "乾了。硬腦膜縫幾針吊起來，骨瓣復位。他的腦在鬆開了，看到搏動沒有？",
+        "en": "Dry. Tack the dura up, flap back. His brain is relaxing; see it pulsing?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "看到了。",
+        "en": "I see it."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "o3r",
+     "to": "place:desk",
+     "guide": {
+      "zh": "寫手術紀錄",
+      "en": "Write the op note"
+     },
+     "roles": [
+      "resident"
+     ],
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "紀錄：左顳硬腦膜外血腫，中腦膜動脈出血，清除、止血、骨瓣復位。術前 GCS 9，左瞳孔放大。",
+        "en": "Note: left temporal extradural, middle meningeal artery bleed, evacuated, controlled, flap replaced. GCS 9 and dilated left pupil before surgery."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "加一行：從瞳孔放大到劃刀的時間。那是今晚的成績。",
+        "en": "Add one line: time from pupil dilation to incision. That is tonight's grade."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "icu",
+   "name": {
+    "zh": "ICU",
+    "en": "ICU"
+   },
+   "sub": {
+    "zh": "22:30 · 神經外科 ICU",
+    "en": "22:30 · neuro ICU"
+   },
+   "t": 1350,
+   "mood": "night",
+   "note": {
+    "zh": "小宇醒了，四肢會動，瞳孔等大",
+    "en": "Hsiao-yu awake, moving all limbs, pupils equal"
+   },
+   "beats": [
+    {
+     "id": "i1",
+     "to": "place:icu",
+     "guide": {
+      "zh": "去 ICU 看小宇",
+      "en": "Go to the ICU to see Hsiao-yu"
+     },
+     "ring": {
+      "title": {
+       "zh": "ICU 來電",
+       "en": "ICU calling"
+      },
+      "sub": {
+       "zh": "阿芬：「他會握手了，兩邊瞳孔一樣大。」",
+       "en": "Fen: 'He squeezes hands now, pupils equal.'"
+      },
+      "call": true,
+      "from": "icu-nurse"
+     },
+     "lines": [
+      [
+       "icu-nurse",
+       {
+        "zh": "醫師，小宇醒了，兩邊都會動，瞳孔一樣大。媽媽在外面。",
+        "en": "Doctor, Hsiao-yu's awake, moving both sides, pupils equal. Mum is outside."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "我過去。術後神經學觀察每小時，瞳孔每十五分鐘先看一小時。",
+        "en": "On my way. Hourly neuro obs, pupils every quarter hour for the first hour."
+       }
+      ],
+      [
+       "patient",
+       {
+        "zh": "……期中考……",
+        "en": "...the midterm..."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "考試會幫你請假。你剛剛考過更難的了。",
+        "en": "We'll get you excused. You just passed a harder one."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "neurosurgery-craniotomy-fundamentals",
+      "stage": 9
+     }
+    },
+    {
+     "id": "i1n",
+     "to": "place:icu",
+     "guide": {
+      "zh": "用 ISBAR 交接給 ICU",
+      "en": "Hand over to ICU with ISBAR"
+     },
+     "roles": [
+      "trauma-nurse"
+     ],
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "ISBAR：小宇，19 歲，左顳硬腦膜外血腫術後。目前 GCS 11、插管中，瞳孔等大。頸椎尚未排除，頸圈不拆。",
+        "en": "ISBAR: Hsiao-yu, 19, post evacuation of a left temporal extradural. GCS 11, intubated, pupils equal. Cervical spine not yet cleared; collar stays on."
+       }
+      ],
+      [
+       "icu-nurse",
+       {
+        "zh": "收到。頸圈不拆，翻身整體翻。",
+        "en": "Received. Collar on, log-roll for turns."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "i2",
+     "to": "mother",
+     "guide": {
+      "zh": "跟媽媽說明",
+      "en": "Talk to the mother"
+     },
+     "lines": [
+      [
+       "mother",
+       {
+        "zh": "醫師，他剛剛跟我比了一個讚。",
+        "en": "Doctor, he just gave me a thumbs up."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "那是我今晚最想看到的檢查結果。安全帽……",
+        "en": "That is the best test result I have seen tonight. About the helmet..."
+       }
+      ],
+      [
+       "mother",
+       {
+        "zh": "我會把它掛在門口。帶子扣好才准出門。",
+        "en": "I'll hang it by the front door. Strap done up before he leaves the house."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "night-call",
+   "name": {
+    "zh": "深夜的第二通",
+    "en": "The second call"
+   },
+   "sub": {
+    "zh": "23:00 · 會診桌",
+    "en": "23:00 · consult desk"
+   },
+   "t": 1380,
+   "mood": "night",
+   "note": {
+    "zh": "抗凝藥的阿伯：GCS 15 也要掃",
+    "en": "The anticoagulated grandfather: scan even at GCS 15"
+   },
+   "beats": [
+    {
+     "id": "n1",
+     "ring": {
+      "title": {
+       "zh": "急診檢傷來電",
+       "en": "ER triage calling"
+      },
+      "sub": {
+       "zh": "78 歲阿伯浴室滑倒撞頭，GCS 15，有吃抗凝藥",
+       "en": "Man of 78 slipped in the bathroom, GCS 15, on an anticoagulant"
+      },
+      "call": true,
+      "from": "er-doc"
+     },
+     "lines": [
+      [
+       "er-doc",
+       {
+        "zh": "神外，78 歲阿伯浴室撞到頭，GCS 15，沒吐沒昏，但他有在吃抗凝藥。要不要 CT？",
+        "en": "Neurosurgery, 78-year-old hit his head in the bathroom, GCS 15, no vomiting, no blackout, but he takes an anticoagulant. CT or not?"
+       }
+      ]
+     ],
+     "mini": {
+      "type": "choice",
+      "q": {
+       "zh": "吃抗凝藥、GCS 15 的老人頭部外傷，你的建議？",
+       "en": "Elderly head injury on an anticoagulant, GCS 15. Your advice?"
+      },
+      "options": [
+       {
+        "zh": "掃 CT，正常也留觀，依醫囑處理抗凝",
+        "en": "CT, observe even if normal, manage the anticoagulant per protocol",
+        "ok": true,
+        "why": {
+         "zh": "抗凝藥加年紀，出血可以慢慢來、晚一點才出現。GCS 15 不是護身符。",
+         "en": "Anticoagulation plus age means bleeding can be slow and late. GCS 15 is not a talisman."
+        }
+       },
+       {
+        "zh": "GCS 15 沒症狀，回家觀察",
+        "en": "GCS 15 and asymptomatic: home to observe",
+        "ok": false,
+        "why": {
+         "zh": "幾個小時前你剛看過一個 GCS 15 怎麼變成 9 的。",
+         "en": "A few hours ago you watched a GCS 15 become a 9."
+        }
+       }
+      ]
+     },
+     "post": [
+      [
+       "me",
+       {
+        "zh": "掃。片子出來打給我，正常也打。",
+        "en": "Scan him. Call me with the result, even if it's normal."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "late",
+   "name": {
+    "zh": "交班給夜班",
+    "en": "Handover to nights"
+   },
+   "sub": {
+    "zh": "23:30 · 急診白板",
+    "en": "23:30 · ER whiteboard"
+   },
+   "t": 1410,
+   "mood": "night",
+   "note": {
+    "zh": "交給夜班；師傅的問題",
+    "en": "Handed to the night team; the mentor's questions"
+   },
+   "beats": [
+    {
+     "id": "x1",
+     "to": "attending",
+     "guide": {
+      "zh": "向杜主治與夜班交班",
+      "en": "Hand over to Dr Tu and nights"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "小宇 ICU，GCS 14，拔管評估中，瞳孔等大。抗凝藥的阿伯 CT 乾淨，留觀到中午。",
+        "en": "Hsiao-yu in ICU, GCS 14, being assessed for extubation, pupils equal. The anticoagulated grandfather's CT is clean, observing until noon."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "從瞳孔放大到劃刀，幾分？",
+        "en": "Pupil to incision, how long?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "不到一小時。",
+        "en": "Under an hour."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "好。那一小時是這個孩子的一輩子。",
+        "en": "Good. That hour is the rest of that boy's life."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "x1b",
+     "to": "attending",
+     "guide": {
+      "zh": "杜主治提起傍晚的選擇",
+      "en": "Dr Tu brings up the evening's decision"
+     },
+     "when": {
+      "flag": "lucid",
+      "is": "home"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "傍晚媽媽問能不能回家，你差一點說可以。",
+        "en": "When his mother asked to take him home, you nearly said yes."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "對。他當時真的看起來沒事。",
+        "en": "I did. He really looked fine."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "清醒期就是這樣。記住他的臉，下次就不會猶豫。",
+        "en": "That is what a lucid interval looks like. Remember his face; next time you won't hesitate."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "x1c",
+     "to": "attending",
+     "guide": {
+      "zh": "杜主治提起傍晚的選擇",
+      "en": "Dr Tu brings up the evening's decision"
+     },
+     "when": {
+      "flag": "lucid",
+      "is": "ct"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "傍晚你留下他的那一刻，就已經贏了。",
+        "en": "The moment you kept him in this evening, you had already won."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "是他媽媽願意聽。",
+        "en": "His mother was willing to listen."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "是你講得讓她聽得進去。",
+        "en": "You said it in a way she could hear."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "x2",
+     "lines": [
+      [
+       "er-doc",
+       {
+        "zh": "走吧，夜班來了。你的咖啡還在會診桌上，冷的。",
+        "en": "Go on, the night team is here. Your coffee is still on the consult desk, cold."
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "值班結束。急救車的封條換新了；ICU 門口掛著一頂帶子扣好的安全帽。",
+        "en": "End of shift. New seals on the crash cart; outside the ICU hangs a helmet with its strap done up."
+       }
+      ]
+     ],
+     "end": true
+    }
+   ]
+  }
+ ],
+ "ending": {
+  "title": {
+   "zh": "下班了",
+   "en": "End of shift"
+  },
+  "sub": {
+   "zh": "清醒期過了，瞳孔一樣大",
+   "en": "The lucid interval passed; the pupils are equal"
+  },
+  "stats": [
+   "stages",
+   "grades",
+   "choices",
+   "calls",
+   "items",
+   "time"
+  ]
+ }
+}

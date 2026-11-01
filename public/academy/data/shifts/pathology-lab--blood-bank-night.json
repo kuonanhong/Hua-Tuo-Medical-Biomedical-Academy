@@ -1,0 +1,260 @@
+{
+  "format": "huatuo-shift-v2",
+  "department": "pathology-lab",
+  "case": "blood-bank-night",
+  "caseTitle": {"zh": "血庫小夜：一管不對的血", "en": "Blood bank evening: the wrong tube"},
+  "condition": {"zh": "輸血醫學 · 錯血入管", "en": "Transfusion medicine · wrong blood in tube"},
+  "difficulty": 3,
+  "room": "lab",
+  "title": {"zh": "血庫的小夜班", "en": "An evening shift in the blood bank"},
+  "tagline": {"zh": "血型和歷史對不上的時候，先相信歷史", "en": "When the group disagrees with history, trust history first"},
+  "minutes": 25,
+  "roles": [
+    {"id": "path-resident", "zh": "病理科住院醫師（輸血醫學）", "en": "Pathology resident (transfusion medicine)",
+     "desc": {"zh": "接急診的大量輸血、處理一管血型對不上的檢體、回答病房的輸血反應電話。你的每一個決定，都會走到某個人的手臂上。", "en": "Handle the ER's massive transfusion, a sample whose group doesn't match, and the ward's reaction call. Every decision you make ends up in someone's arm."}},
+    {"id": "bb-mls", "zh": "血庫醫檢師", "en": "Blood bank scientist",
+     "desc": {"zh": "收件核對、離心、定血型、交叉試驗、發血。雙人核對你從不跳過，今晚它要救人。", "en": "Sample acceptance, centrifuge, grouping, crossmatch, issue. You never skip the double check, and tonight it saves someone."}}
+  ],
+  "cast": {
+    "attending": {"name": {"zh": "邱主治", "en": "Dr Chiu"}, "role": {"zh": "輸血醫學主治（師傅）", "en": "Transfusion medicine consultant (mentor)"}, "tag": "ATT", "color": "#81296d", "body": "mentor",
+                  "about": {"zh": "辦公室牆上貼著一張泛黃的檢體標籤，是他年輕時差點出事的那一張。每個小夜都泡一碗泡麵，從來沒吃到不糊。", "en": "A yellowed sample label is pinned in his office: the one that nearly went wrong when he was young. Makes a cup of noodles every evening shift and has never eaten one before it went soggy."}},
+    "qin": {"name": {"zh": "秀琴姐", "en": "Hsiu-chin"}, "role": {"zh": "資深血庫醫檢師", "en": "Senior blood bank scientist"}, "tag": "MLS", "color": "#3b8f6a", "body": "tech",
+            "about": {"zh": "在血庫二十幾年。她說：機器會錯，人會錯，兩個人一起看，比較不會錯。", "en": "Twenty-odd years in the blood bank. Her saying: machines err and people err; two people looking together err less."}},
+    "porter": {"name": {"zh": "傳送阿伯", "en": "Uncle Porter"}, "role": {"zh": "檢體與血品傳送", "en": "Sample and blood porter"}, "tag": "PTR", "color": "#7a6a4f", "body": "porter",
+               "about": {"zh": "全院的電梯他都認得。跑起來比電梯快，而且從不把冰桶放倒。", "en": "Knows every lift in the hospital, runs faster than any of them, and has never tipped a cool box."}},
+    "er-nurse": {"name": {"zh": "急診阿哲", "en": "Zhe, emergency nurse"}, "role": {"zh": "急診護理師（電話）", "en": "Emergency nurse (by phone)"}, "tag": "ER", "color": "#c0392b", "phoneOnly": true,
+                 "about": {"zh": "講話很急，但會等你說完。今晚急診的第 3 床和第 4 床，相隔一道簾子。", "en": "Talks fast but lets you finish. Tonight ER bays 3 and 4 are one curtain apart."}},
+    "ward-nurse": {"name": {"zh": "內科病房佩如", "en": "Pei-ju, medical ward"}, "role": {"zh": "病房護理師（電話）", "en": "Ward nurse (by phone)"}, "tag": "RN", "color": "#2f6f8f", "phoneOnly": true,
+                   "about": {"zh": "掛血之前一定在床邊念出病人的名字和血袋號碼。今晚她念完，十五分鐘後打來。", "en": "Always reads the name and bag number aloud at the bedside before hanging blood. Tonight she reads them, then calls fifteen minutes later."}},
+    "xiang": {"name": {"zh": "阿翔（急診 4 床）", "en": "Xiang (ER bay 4)"}, "role": {"zh": "二十二歲，機車車禍", "en": "Twenty-two, motorbike crash"}, "tag": "P4", "color": "#c2703a", "phoneOnly": true,
+              "about": {"zh": "虛構教學個案。外送員，下雨天打滑撞上分隔島。兩年前在本院開過盲腸，血型紀錄是 O 型。", "en": "Fictional teaching case. A food-delivery rider who skidded into a divider in the rain. Had his appendix out here two years ago; the record says group O."}},
+    "auntie-wang": {"name": {"zh": "王阿姨（內科 12 床）", "en": "Auntie Wang (ward bed 12)"}, "role": {"zh": "七十八歲，胃出血後貧血", "en": "Seventy-eight, anaemia after a GI bleed"}, "tag": "P12", "color": "#a0522d", "phoneOnly": true,
+                    "about": {"zh": "虛構教學個案。心臟不太好，腳常腫。下午輸了一袋，晚上第二袋。最喜歡跟護理師聊孫子的成績。", "en": "Fictional teaching case. A weak heart and often swollen ankles. One unit this afternoon, a second this evening. Loves telling nurses about her grandchildren's marks."}}
+  },
+  "places": {
+    "board": {"name": {"zh": "血庫交班白板", "en": "Blood bank handover board"}, "hot": "whiteboard"},
+    "reception": {"name": {"zh": "血庫收件台", "en": "Blood bank reception"}, "hot": "bench"},
+    "centrifuge": {"name": {"zh": "離心機", "en": "Centrifuge"}, "hot": "centrifuge"},
+    "analyser": {"name": {"zh": "血型分析儀", "en": "Blood grouping analyser"}, "hot": "analyser"},
+    "fridge": {"name": {"zh": "血品冰箱", "en": "Blood fridge"}, "hot": "lab"},
+    "scope": {"name": {"zh": "顯微鏡", "en": "Microscope"}, "hot": "microscope"},
+    "ws": {"name": {"zh": "影像與資訊工作站", "en": "Imaging and LIS workstation"}, "hot": "workstation"}
+  },
+  "glossary": [
+    {"term": {"zh": "血型", "en": "blood group"}, "plain": {"zh": "紅血球表面的標記，最重要的是 ABO 和 Rh。輸錯 ABO，病人的抗體會在血管裡把輸進去的紅血球打破。", "en": "Markers on the red cell surface, the key ones being ABO and Rh. Give the wrong ABO and the patient's antibodies burst the transfused cells inside the blood vessels."}},
+    {"term": {"zh": "歷史血型", "en": "historical group"}, "plain": {"zh": "病人以前在本院驗過的血型紀錄。血型一輩子不會變，新結果和歷史對不上，最常見的原因是檢體拿錯人。", "en": "The group recorded when the patient was tested here before. Blood groups don't change; when a new result disagrees with history, the commonest reason is the wrong person's blood in the tube."}},
+    {"term": {"zh": "錯血入管", "en": "wrong blood in tube"}, "plain": {"zh": "標籤上是甲的名字，管子裡卻是乙的血。通常發生在床邊：抽完血才貼標籤、或兩床同時抽血。", "en": "A tube labelled with one patient's name holding another patient's blood. It usually happens at the bedside: labels stuck on after the draw, or two patients bled at once."}},
+    {"term": {"zh": "交叉試驗", "en": "crossmatch"}, "plain": {"zh": "把病人的血清和要輸的紅血球混在一起，看會不會起反應。確認合得來，才發血。", "en": "Mixing the patient's serum with the donor red cells to look for a reaction. Blood is issued only once they're shown to be compatible."}},
+    {"term": {"zh": "抗體篩檢", "en": "antibody screen"}, "plain": {"zh": "檢查病人血裡有沒有 ABO 以外的抗體，例如以前輸過血或懷孕後產生的。有的話要找不帶那個抗原的血。", "en": "A check for antibodies beyond ABO, formed after earlier transfusions or pregnancies. If present, blood lacking that antigen has to be found."}},
+    {"term": {"zh": "大量輸血流程", "en": "massive transfusion protocol"}, "plain": {"zh": "大出血時一通電話啟動的固定流程：血庫依比例連續送出紅血球、血漿、血小板，不用每一袋重新申請。", "en": "A fixed procedure triggered by one call during major bleeding: the blood bank sends red cells, plasma and platelets in a set ratio, in rounds, without a new request for each bag."}},
+    {"term": {"zh": "O 型紅血球", "en": "group O red cells"}, "plain": {"zh": "表面沒有 A 和 B 抗原的紅血球。血型還不確定時，緊急情況先發它最安全。", "en": "Red cells carrying neither A nor B antigen. When the group isn't yet certain, they are the safest to issue in an emergency."}},
+    {"term": {"zh": "床邊核對", "en": "bedside check"}, "plain": {"zh": "掛血前，兩個人在病人旁邊核對：手圈上的名字和病歷號、血袋標籤、血型、有效期限。最後一道防線。", "en": "Before hanging blood, two people check at the patient: name and number on the wristband, the bag label, the group, the expiry. The last line of defence."}},
+    {"term": {"zh": "輸血反應", "en": "transfusion reaction"}, "plain": {"zh": "輸血時或輸完後出現的不良反應：發燒、發冷、起疹子、喘、血壓變化、尿變深。第一步永遠是先停。", "en": "An adverse reaction during or after a transfusion: fever, chills, rash, breathlessness, blood pressure changes, dark urine. The first step is always to stop."}},
+    {"term": {"zh": "直接抗球蛋白試驗", "en": "direct antiglobulin test"}, "plain": {"zh": "檢查病人的紅血球表面有沒有黏上抗體。輸血反應後陽性，要懷疑免疫性溶血。", "en": "A test for antibody stuck to the patient's red cells. Positive after a reaction raises suspicion of immune haemolysis."}},
+    {"term": {"zh": "溶血", "en": "haemolysis"}, "plain": {"zh": "紅血球被打破。輸血後的溶血讓血漿變紅、尿變深、腰痛、血壓掉，是最危險的反應。", "en": "Red cells breaking apart. Haemolysis after transfusion turns plasma red and urine dark, with back pain and falling pressure: the most dangerous reaction."}},
+    {"term": {"zh": "輸血相關循環超負荷", "en": "TACO"}, "plain": {"zh": "輸得太多或太快，心臟負荷不了，水積在肺裡。老人和心臟不好的人最容易，血壓常常偏高。", "en": "Transfusion-associated circulatory overload: too much, too fast, and the heart can't cope, so fluid backs into the lungs. Commonest in the elderly and those with weak hearts; blood pressure is often high."}},
+    {"term": {"zh": "輸血相關急性肺損傷", "en": "TRALI"}, "plain": {"zh": "捐血者血漿裡的抗體傷到病人肺部的血管，讓肺積水。心臟大小正常，血壓常常偏低，常伴發燒。", "en": "Transfusion-related acute lung injury: antibodies in donor plasma damage the patient's lung vessels and the lungs flood. The heart is normal-sized, pressure often low, often with fever."}}
+  ],
+  "codex": [
+    {"id": "blood-fridge", "kind": "equipment", "name": {"zh": "血品冰箱", "en": "Blood fridge"}, "text": {"zh": "溫度每天記錄、警報二十四小時接到值班手機。紅血球一層、待驗區一層、緊急 O 型一層，誰都不能放錯格。", "en": "Temperature logged daily, alarm wired to the duty phone around the clock. A shelf for red cells, one for quarantine, one for emergency group O; nothing goes on the wrong shelf."}, "hot": "lab"},
+    {"id": "centrifuge", "kind": "equipment", "name": {"zh": "離心機", "en": "Centrifuge"}, "text": {"zh": "對稱放管、蓋子關好、停穩再開。轉出來的血漿顏色先看一眼：紅的，就是溶血。", "en": "Balance the tubes, close the lid, open only when stopped. Glance at the plasma colour first: red means haemolysis."}, "hot": "centrifuge"},
+    {"id": "grouping-analyser", "kind": "equipment", "name": {"zh": "血型分析儀", "en": "Blood grouping analyser"}, "text": {"zh": "凝膠卡上的紅血球，往上停住是凝集、沉到底是沒有。機器判讀，人再看一次。", "en": "On the gel card, cells held near the top have agglutinated; cells at the bottom haven't. The machine reads, then a person looks again."}, "hot": "analyser"},
+    {"id": "lis", "kind": "equipment", "name": {"zh": "檢驗資訊系統", "en": "Laboratory information system"}, "text": {"zh": "新的血型一輸入，系統就和歷史血型比對。跳出紅色警示時，不准按「略過」。", "en": "Each new group is compared with the historical group as soon as it's entered. When a red warning pops up, nobody presses “skip”."}, "hot": "workstation"},
+    {"id": "returned-bag", "kind": "item", "name": {"zh": "退回的血袋", "en": "The returned bag"}, "text": {"zh": "王阿姨那一袋，連著輸血管一起送回來，袋口用夾子夾著。標籤上有佩如的簽名和時間。", "en": "Auntie Wang's unit, sent back with its giving set attached and clamped. Pei-ju's signature and the time are on the tag."}},
+    {"id": "two-samples", "kind": "concept", "name": {"zh": "為什麼要兩管、兩個時間", "en": "Why two samples, two times"}, "text": {"zh": "血型一輩子不變，所以新結果和歷史血型對不上，先假設是錯血入管，而不是病人變了。很多醫院規定：沒有歷史血型的病人，要在不同時間由不同的人抽第二管確認，才發同型血；確認之前、又急著要血，就先發 O 型紅血球。錯血入管多半發生在床邊：先貼標籤再抽、兩床同時抽、標籤印好放在口袋。抓到時不要怪人，要找系統的洞。", "en": "A blood group never changes, so when a new result disagrees with history, assume wrong blood in tube before assuming the patient changed. Many hospitals require a second sample, drawn at a different time by a different person, before group-specific blood is issued to a patient without history; until then, if blood is urgent, issue group O red cells. Wrong blood in tube usually happens at the bedside: labels stuck on before the draw, two patients bled together, pre-printed labels in a pocket. When you catch one, don't hunt for someone to blame; look for the hole in the system."}},
+    {"id": "reaction-steps", "kind": "concept", "name": {"zh": "輸血反應：先停，再查", "en": "Transfusion reaction: stop, then investigate"}, "text": {"zh": "病房端：立刻停止輸血、保留靜脈管路改接生理食鹽水、量生命徵象、床邊再核對一次身分和血袋、通知醫師和血庫。血庫端：血袋連管路送回、比對所有文書、看反應後檢體的血漿顏色、做直接抗球蛋白試驗、重驗血型、需要時做血袋培養。從症狀分類：發燒發冷、過敏、溶血、循環超負荷、急性肺損傷、敗血症。每一個反應都要通報，讓下一個人更安全。", "en": "On the ward: stop the transfusion at once, keep the IV line open with saline, take vital signs, recheck identity and bag at the bedside, call the doctor and the blood bank. In the blood bank: the bag comes back with its tubing, all the paperwork is cross-checked, the post-reaction plasma is inspected for colour, a direct antiglobulin test and a repeat group are done, and the bag is cultured if needed. Classify by picture: febrile, allergic, haemolytic, circulatory overload, acute lung injury, sepsis. Every reaction is reported so the next person is safer."}},
+    {"id": "taco-trali", "kind": "concept", "name": {"zh": "肺積水：TACO 還是 TRALI", "en": "Wet lungs: TACO or TRALI"}, "text": {"zh": "兩者胸片都是兩側肺積水，要靠其他線索分：TACO 多半血壓偏高、頸靜脈鼓、心臟變大、出入量偏正、利尿後改善，好發在老人與心臟不好的人；TRALI 多半血壓偏低、常發燒、心臟大小正常、利尿沒有幫助，與捐血者血漿中的抗體有關，要通報血液中心追查捐血者。處理都從停止輸血和支持呼吸開始。", "en": "Both show bilateral wet lungs on the film; other clues separate them. TACO usually brings high blood pressure, distended neck veins, an enlarged heart, a positive fluid balance and improvement with diuretics, and favours the elderly and weak hearts. TRALI usually brings low pressure, often fever, a normal-sized heart and no help from diuretics; it is linked to antibodies in donor plasma and must be reported so the blood centre can trace the donor. Both start with stopping the transfusion and supporting breathing."}}
+  ],
+  "segs": [
+    {"id": "handover", "name": {"zh": "小夜交班", "en": "Evening handover"}, "sub": {"zh": "15:30 · 血庫交班白板", "en": "15:30 · blood bank handover board"}, "t": 930, "mood": "day",
+     "note": {"zh": "收件先對兩個身分", "en": "At reception, two identifiers first"},
+     "beats": [
+      {"id": "h1", "to": "place:board", "guide": {"zh": "在白板聽白班交班", "en": "Day-shift handover at the board"},
+       "lines": [
+        ["sys", {"zh": "下午三點半。邱主治把熱水倒進泡麵碗，蓋上蓋子，然後就忘了它。", "en": "Half past three. Dr Chiu pours hot water into a cup of noodles, puts the lid on, and forgets it."}],
+        ["qin", {"zh": "冰箱溫度正常。緊急 O 型紅血球那一層補滿了。內科 12 床王阿姨晚上還有一袋要發。", "en": "Fridge temperatures normal. The emergency group O shelf is full. Auntie Wang in ward bed 12 has one more unit due tonight."}],
+        ["attending", {"zh": "血庫的夜晚，通常從一通急診電話開始。先把收件台的規矩複習一次。", "en": "A blood bank evening usually starts with a call from the ER. Let's go over the reception rules first."}]
+       ]},
+      {"id": "h2", "roles": ["bb-mls"], "to": "place:reception", "guide": {"zh": "核對收件的檢體", "en": "Check incoming samples"},
+       "lines": [
+        ["qin", {"zh": "收件台是血庫的大門。標籤不對，管子再好也不能進來。你排順序。", "en": "Reception is the blood bank's front door. If the label's wrong, the tube doesn't come in, however good it is. Put the steps in order."}]
+       ],
+       "mini": {"type": "order", "q": {"zh": "血庫收件核對的順序", "en": "Blood bank sample acceptance, in order"},
+                "steps": [
+                 {"zh": "標籤有兩個身分識別", "en": "Two identifiers on the label"},
+                 {"zh": "抽血者簽名與抽血時間", "en": "Drawer's signature and draw time"},
+                 {"zh": "與申請單逐字比對", "en": "Match the request word for word"},
+                 {"zh": "查詢歷史血型", "en": "Look up the historical group"},
+                 {"zh": "任何不符就退件重抽", "en": "Any mismatch: reject and redraw"}
+                ]},
+       "post": [
+        ["qin", {"zh": "歷史血型那一步最重要。血型一輩子不會變，變的通常是管子裡的人。", "en": "The historical group is the step that matters most. Groups never change; what changes is usually whose blood is in the tube."}]
+       ]}
+     ]},
+    {"id": "mtp", "name": {"zh": "大量輸血", "en": "Massive transfusion"}, "sub": {"zh": "17:00 · 血庫收件台", "en": "17:00 · blood bank reception"}, "t": 1020, "mood": "day",
+     "note": {"zh": "血型未定先發 O 型", "en": "Group unknown: issue group O"},
+     "beats": [
+      {"id": "m1", "to": "place:fridge", "guide": {"zh": "接急診的電話", "en": "Take the ER's call"},
+       "ring": {"title": {"zh": "急診啟動大量輸血", "en": "ER activates massive transfusion"}, "sub": {"zh": "4 床機車車禍，血壓掉，要血", "en": "Bay 4 motorbike crash, pressure falling, need blood"}, "call": true, "from": "er-nurse"},
+       "lines": [
+        ["er-nurse", {"zh": "急診 4 床，二十二歲機車車禍，腹內出血，血壓在掉。啟動大量輸血流程！", "en": "ER bay 4, twenty-two, motorbike crash, bleeding into the abdomen, pressure falling. Activating the massive transfusion protocol!"}],
+        ["me", {"zh": "收到。先發緊急 O 型紅血球和血漿，傳送阿伯現在出發。請馬上送一管血型檢體下來。", "en": "Received. Emergency group O red cells and plasma going now; the porter leaves at once. Please send a grouping sample down straight away."}],
+        ["porter", {"zh": "冰桶拿好了。四樓電梯慢，我走樓梯。", "en": "Cool box ready. The fourth-floor lift is slow; I'll take the stairs."}],
+        ["attending", {"zh": "血型還不知道的時候，O 型紅血球是最安全的答案。泡麵等一下。", "en": "When the group is unknown, group O red cells are the safest answer. The noodles can wait."}]
+       ]},
+      {"id": "m2", "roles": ["path-resident"], "to": "place:centrifuge", "guide": {"zh": "把急診檢體離心", "en": "Spin the ER sample"},
+       "lines": [
+        ["porter", {"zh": "急診 4 床的檢體，阿翔。標籤是急診那邊貼的。", "en": "ER bay 4's sample, Xiang. The ER stuck the label on."}],
+        ["qin", {"zh": "對稱放管、蓋子關好。先找到離心機。", "en": "Balance the tubes, close the lid. Find the centrifuge first."}]
+       ],
+       "mini": {"type": "find", "hot": "centrifuge", "q": {"zh": "找到離心機", "en": "Find the centrifuge"}},
+       "post": [
+        ["me", {"zh": "血漿清的，沒有溶血。上分析儀。", "en": "Clear plasma, no haemolysis. Onto the analyser."}]
+       ]},
+      {"id": "m3", "roles": ["bb-mls"], "to": "place:fridge", "guide": {"zh": "雙人核對發出第二輪", "en": "Double-check the second round out"},
+       "lines": [
+        ["qin", {"zh": "第二輪 O 型紅血球和血漿。你念袋號，我看標籤，兩個人一起簽。", "en": "Second round, group O red cells and plasma. You read the bag numbers, I read the labels, and we both sign."}],
+        ["me", {"zh": "袋號、血型、效期、病人姓名病歷號，全部對上。", "en": "Bag numbers, group, expiry, patient name and number, all matching."}],
+        ["porter", {"zh": "走了。冰桶不會倒，我保證。", "en": "Off I go. The cool box won't tip, I promise."}]
+       ]}
+     ]},
+    {"id": "wbit", "name": {"zh": "對不上的血型", "en": "The group that doesn't match"}, "sub": {"zh": "18:30 · 血型分析儀", "en": "18:30 · grouping analyser"}, "t": 1110, "mood": "eve",
+     "note": {"zh": "新結果 A，歷史 O：先相信歷史", "en": "New A, history O: trust history first"},
+     "beats": [
+      {"id": "w1", "to": "place:ws", "guide": {"zh": "看系統跳出的警示", "en": "Read the system's warning"},
+       "lines": [
+        ["sys", {"zh": "檢驗資訊系統跳出紅色視窗：本次血型 A 型。歷史血型：O 型（兩年前）。", "en": "A red window pops up in the lab system: today's group, A. Historical group: O (two years ago)."}],
+        ["qin", {"zh": "血型不會變。變的是什麼？", "en": "Groups don't change. So what did?"}],
+        ["attending", {"zh": "報告和預期不一致，不能據此說哪一個一定錯。這題的原則：通知相關的人，依流程釐清。", "en": "When a result clashes with expectation, you can't yet say which one is wrong. The principle here: notify the right people and clarify by procedure."}]
+       ],
+       "mini": {"type": "stage", "case": "pathology-lab-v38-result-discordance", "stage": 1},
+       "post": [
+        ["me", {"zh": "兩年前的紀錄有兩次獨立的 O 型結果。今天這管，最可能是錯血入管。", "en": "Two years ago there were two independent group O results. Today's tube is most likely wrong blood in tube."}]
+       ]},
+      {"id": "w2", "to": "attending", "guide": {"zh": "決定要發什麼血", "en": "Decide what blood to issue"},
+       "lines": [
+        ["er-nurse", {"zh": "血庫！他驗出來是 A 型對吧？O 型快用完了，直接給 A 型比較快！", "en": "Blood bank! He's group A, right? We're running through the O; just send A, it's quicker!"}]
+       ],
+       "mini": {"type": "choice", "q": {"zh": "新檢體 A 型、歷史 O 型，病人在出血。你發什麼？", "en": "New sample A, history O, patient bleeding. What do you issue?"},
+                "options": [
+                 {"zh": "繼續發 O 型，請急診重抽一管", "en": "Keep issuing group O; ask the ER to redraw", "ok": true, "set": {"issued": "o"},
+                  "why": {"zh": "血型未確認前，O 型紅血球對任何 ABO 都安全；同時請另一個人在床邊重抽、當場貼標籤，釐清錯血入管。", "en": "Until the group is confirmed, group O red cells are safe for any ABO; meanwhile have someone else redraw at the bedside and label it on the spot to resolve the wrong-blood-in-tube question."}},
+                 {"zh": "依新檢體發 A 型血", "en": "Issue group A per the new sample", "ok": false, "set": {"issued": "a"},
+                  "why": {"zh": "如果他真的是 O 型，A 型紅血球會被他的抗 A 抗體在血管裡打破，是最致命的輸血錯誤。", "en": "If he really is group O, his anti-A antibodies will burst group A cells inside his vessels: the deadliest transfusion error."}},
+                 {"zh": "全部停發，等重抽結果", "en": "Stop issuing until the redraw is back", "ok": false, "set": {"issued": "none"},
+                  "why": {"zh": "他正在大出血。等待本身就是危險；O 型紅血球就是為這種時刻準備的。", "en": "He is bleeding heavily. Waiting is itself dangerous; group O red cells exist for exactly this moment."}}
+                ]},
+       "post": [
+        ["attending", {"zh": "血型和歷史對不上的時候，先相信歷史。", "en": "When the group disagrees with history, trust history first."}]
+       ]},
+      {"id": "w3", "when": {"flag": "issued", "is": "o"},
+       "lines": [
+        ["porter", {"zh": "急診重抽的那管，護理師在床邊當場貼的。", "en": "The ER redraw. The nurse labelled it right at the bedside."}],
+        ["qin", {"zh": "O 型。和歷史一樣。剛才那管 A 型，是隔壁 3 床的血，標籤貼錯了。", "en": "Group O, same as history. The earlier group A tube was the patient in bay 3, with the wrong label."}],
+        ["attending", {"zh": "兩床相隔一道簾子，同時抽血，標籤先印好放在口袋。這是系統的洞，不是某一個人的錯。我們今晚就通報。", "en": "Two bays one curtain apart, bled at the same time, labels printed in advance and kept in a pocket. That's a hole in the system, not one person's fault. We report it tonight."}]
+       ]},
+      {"id": "w4", "when": {"flag": "issued", "is": "a"},
+       "lines": [
+        ["er-nurse", {"zh": "血庫，等一下！床邊核對時，我們發現血袋是 A 型，病人手圈的歷史紀錄寫 O 型。我們沒有掛上去。", "en": "Blood bank, hold on! At the bedside check we saw the bag was group A and his wristband record says O. We didn't hang it."}],
+        ["qin", {"zh": "重抽那管出來了：O 型。剛才那管 A 型是隔壁 3 床的血。", "en": "The redraw's back: group O. That group A tube was the patient in bay 3."}],
+        ["attending", {"zh": "這一次，最後一道防線接住了。我們不能每次都靠最後一道。改發 O 型，然後一起寫異常通報。", "en": "This time the last line of defence caught it. We can't rely on the last line every time. Switch to group O, then we write the incident report together."}]
+       ]},
+      {"id": "w5", "when": {"flag": "issued", "is": "none"},
+       "lines": [
+        ["er-nurse", {"zh": "血庫，O 型那批輸完了，血壓又掉！我們在等什麼？", "en": "Blood bank, the group O is all in and his pressure's dropping again! What are we waiting for?"}],
+        ["attending", {"zh": "現在發 O 型紅血球，馬上。重抽那管出來了：O 型，和歷史一樣。安全和速度，在這裡不是二選一。", "en": "Issue group O red cells now. The redraw's back: group O, same as history. Here, safety and speed are not either-or."}]
+       ]},
+      {"id": "w6", "to": "place:analyser", "guide": {"zh": "完成重抽檢體的檢驗", "en": "Finish testing the redraw"},
+       "lines": [
+        ["qin", {"zh": "重抽那管：O 型確認，抗體篩檢陰性。交叉試驗相容，接下來可以發配好的血。", "en": "The redraw: group O confirmed, antibody screen negative. Crossmatch compatible, so crossmatched units can go next."}],
+        ["me", {"zh": "我打給急診：血型確認了，O 型，下一輪是配好的血。也請他們把 3 床重抽一管。", "en": "I'll call the ER: group confirmed, O, and the next round is crossmatched. And ask them to redraw bay 3 too."}],
+        ["attending", {"zh": "3 床那位也被貼錯了名字。一個錯，常常牽著兩個人。", "en": "The bay 3 patient was mislabelled too. One error usually involves two people."}]
+       ]}
+     ]},
+    {"id": "reaction", "name": {"zh": "病房的電話", "en": "A call from the ward"}, "sub": {"zh": "20:00 · 血庫收件台", "en": "20:00 · blood bank reception"}, "t": 1200, "mood": "eve",
+     "note": {"zh": "先停，再查", "en": "Stop, then investigate"},
+     "beats": [
+      {"id": "r1", "to": "place:reception", "guide": {"zh": "接內科病房的電話", "en": "Take the medical ward's call"},
+       "ring": {"title": {"zh": "內科病房來電", "en": "Medical ward calling"}, "sub": {"zh": "12 床輸血中發燒發冷、有點喘", "en": "Bed 12 febrile with chills, a bit breathless, mid-transfusion"}, "call": true, "from": "ward-nurse"},
+       "lines": [
+        ["ward-nurse", {"zh": "12 床王阿姨，第二袋掛上十五分鐘，開始發燒、發抖，說有點喘。我該怎麼做？", "en": "Bed 12, Auntie Wang, fifteen minutes into her second unit: fever, shivering, says she's a bit breathless. What do I do?"}]
+       ],
+       "mini": {"type": "vitals", "event": "fever",
+                "options": [
+                 {"zh": "立刻停輸血、管路改接食鹽水、床邊核對", "en": "Stop now, keep the line with saline, recheck at the bedside", "ok": true,
+                  "why": {"zh": "第一步永遠是先停。保留靜脈管路、量生命徵象、再核對一次身分和血袋，通知醫師，血袋連管路送回血庫。", "en": "The first step is always stop. Keep the IV open, take vital signs, recheck identity and bag, call the doctor, and send the bag with its tubing back to the blood bank."}},
+                 {"zh": "給退燒藥，輸慢一點繼續", "en": "Give an antipyretic and slow it down", "ok": false,
+                  "why": {"zh": "發燒可能是溶血或細菌污染的第一個徵象。還沒排除之前，不能繼續。", "en": "Fever may be the first sign of haemolysis or bacterial contamination. Until those are excluded, it can't continue."}},
+                 {"zh": "先輸完這袋再說", "en": "Finish the unit, then see", "ok": false,
+                  "why": {"zh": "反應的嚴重程度跟輸進去的量有關。繼續輸，就是繼續加重。", "en": "Severity rises with the volume given. Carrying on means making it worse."}}
+                ]},
+       "post": [
+        ["ward-nurse", {"zh": "停了。床邊核對：名字、病歷號、血袋號碼都對。血壓比剛才高，呼吸有點快。", "en": "Stopped. Bedside check: name, record number and bag number all match. Blood pressure higher than before, breathing a bit fast."}],
+        ["me", {"zh": "請血袋連管路送回來，加抽一管反應後的血。我們馬上查。", "en": "Please send the bag back with its tubing, plus a post-reaction blood sample. We'll investigate at once."}]
+       ]},
+      {"id": "r2", "roles": ["bb-mls"], "to": "place:reception", "guide": {"zh": "在血庫端調查反應", "en": "Work up the reaction in the lab"},
+       "lines": [
+        ["porter", {"zh": "王阿姨的血袋和管子，還有一管血。袋口我夾好了。", "en": "Auntie Wang's bag and tubing, plus a tube of blood. I clamped the bag."}],
+        ["qin", {"zh": "反應的調查，順序也是規矩。", "en": "Investigating a reaction has its rules of order too."}]
+       ],
+       "mini": {"type": "order", "q": {"zh": "血庫端輸血反應調查的順序", "en": "Blood bank reaction workup, in order"},
+                "steps": [
+                 {"zh": "比對血袋、申請單與紀錄", "en": "Cross-check bag, request and records"},
+                 {"zh": "離心看反應後血漿顏色", "en": "Spin and inspect post-reaction plasma"},
+                 {"zh": "做直接抗球蛋白試驗", "en": "Direct antiglobulin test"},
+                 {"zh": "重驗病人與血袋血型", "en": "Regroup patient and bag"},
+                 {"zh": "依症狀決定血袋培養", "en": "Culture the bag if indicated"}
+                ]},
+       "item": "returned-bag",
+       "post": [
+        ["qin", {"zh": "文書全對、血漿是清的、直接抗球蛋白試驗陰性、血型相符。看起來不是溶血。", "en": "Paperwork all matches, plasma clear, direct antiglobulin test negative, groups compatible. It doesn't look like haemolysis."}]
+       ]}
+     ]},
+    {"id": "lungs", "name": {"zh": "濕濕的肺", "en": "Wet lungs"}, "sub": {"zh": "21:15 · 影像與資訊工作站", "en": "21:15 · imaging and LIS workstation"}, "t": 1275, "mood": "night",
+     "note": {"zh": "不是溶血，是循環超負荷", "en": "Not haemolysis: circulatory overload"},
+     "beats": [
+      {"id": "l1", "to": "place:ws", "guide": {"zh": "看王阿姨的胸片", "en": "Look at Auntie Wang's chest film"},
+       "lines": [
+        ["attending", {"zh": "病房照了床邊胸片。不是溶血，那她為什麼喘？", "en": "The ward took a portable film. It isn't haemolysis, so why is she breathless?"}],
+        ["attending", {"zh": "輸血相關循環超負荷，還是輸血相關急性肺損傷？片子會給你線索。", "en": "TACO or TRALI? The film will give you clues."}]
+       ],
+       "mini": {"type": "imaging", "region": "chest",
+                "question": {"zh": "七十八歲、心臟不好，下午和晚上各一袋，血壓偏高。胸片兩側肺門周圍模糊、心臟變大、兩側少量肋膜積水。比較像 TACO 還是 TRALI？", "en": "Seventy-eight, weak heart, a unit this afternoon and another tonight, blood pressure up. The film shows hazy lungs around both hila, an enlarged heart and small effusions on both sides. More like TACO or TRALI?"},
+                "answer": {"zh": "比較像 TACO：心臟變大、肋膜積水、血壓偏高、出入量偏正，又是心臟不好的老人。TRALI 通常心臟大小正常、血壓偏低、利尿沒有幫助。處理：停止輸血、坐起、給氧，由病房醫師評估利尿；之後的輸血要慢、量要小，並通報。", "en": "More like TACO: an enlarged heart, effusions, raised blood pressure, positive fluid balance, in an elderly patient with a weak heart. TRALI usually shows a normal-sized heart, low pressure and no response to diuretics. Management: stop the transfusion, sit her up, give oxygen, and the ward doctor assesses for a diuretic; future units go slowly and in smaller amounts, and it is reported."}},
+       "post": [
+        ["ward-nurse", {"zh": "醫師看過了，坐起來、給氧、依醫囑利尿。她說好多了，又開始講孫子考第幾名。", "en": "The doctor's seen her: sitting up, oxygen, diuretic per order. She says she's much better and is back to her grandson's class ranking."}]
+       ]},
+      {"id": "l2", "roles": ["path-resident"], "to": "place:scope", "guide": {"zh": "看王阿姨的血液抹片", "en": "Look at Auntie Wang's blood film"},
+       "lines": [
+        ["attending", {"zh": "直接抗球蛋白試驗陰性，還是要用眼睛確認：抹片上有沒有球形紅血球或碎片？推一片。", "en": "The antiglobulin test is negative, but confirm with your own eyes: any spherocytes or fragments? Make a film."}]
+       ],
+       "mini": {"type": "drill", "template": "pathology-lab", "drill": "smear"},
+       "post": [
+        ["me", {"zh": "紅血球大小比較不一，有一些小的，可是沒有明顯的球形紅血球，也沒有碎片。", "en": "Red cells vary a bit in size with some small ones, but no clear spherocytes and no fragments."}]
+       ]},
+      {"id": "l3", "to": "attending", "guide": {"zh": "和邱主治整合結果", "en": "Pull the results together with Dr Chiu"},
+       "lines": [
+        ["attending", {"zh": "數量和形態分開說。這題寫的是 CBC 與抹片，原則一樣：把症狀時間和其他檢查整合起來。", "en": "Speak of numbers and shapes separately. This exercise is about a CBC and film, but the principle holds: integrate the timing of symptoms with the other tests."}]
+       ],
+       "mini": {"type": "stage", "case": "pathology-lab-v38-cbc-pattern", "stage": 3},
+       "post": [
+        ["me", {"zh": "小紅血球是胃出血後缺鐵的痕跡，不是輸血反應。發燒加上循環超負荷，我寫成：疑似 TACO，溶血已排除。", "en": "The small cells are iron deficiency after her GI bleed, not the reaction. Fever with circulatory overload: I'll report suspected TACO, haemolysis excluded."}],
+        ["attending", {"zh": "好。輸血反應的通報，今晚就送出去。", "en": "Good. The transfusion reaction report goes out tonight."}]
+       ]}
+     ]},
+    {"id": "night", "name": {"zh": "糊掉的泡麵", "en": "Soggy noodles"}, "sub": {"zh": "23:30 · 血庫交班白板", "en": "23:30 · blood bank handover board"}, "t": 1410, "mood": "night",
+     "note": {"zh": "抓到錯，不怪人，補系統的洞", "en": "Catch the error, blame no one, mend the system"},
+     "beats": [
+      {"id": "n1", "to": "attending", "guide": {"zh": "聽邱主治的結語", "en": "Dr Chiu's debrief"},
+       "lines": [
+        ["attending", {"zh": "今晚三件事：血型和歷史對不上，先相信歷史；不確定就發 O 型；輸血反應先停再查。", "en": "Three things tonight: when the group clashes with history, trust history; when unsure, issue group O; with a reaction, stop first and investigate second."}],
+        ["attending", {"zh": "你知道我牆上那張泛黃的標籤是什麼嗎？跟今晚 3 床那管一樣。只是那一次，沒有人去查歷史。", "en": "Know what that yellowed label on my wall is? The same as tonight's bay 3 tube. Only that time, nobody checked the history."}],
+        ["qin", {"zh": "急診說，明天開始抽血後在床邊當場印標籤，不再先印好放口袋。", "en": "The ER says from tomorrow they'll print labels at the bedside after the draw, not in advance into a pocket."}],
+        ["sys", {"zh": "邱主治掀開泡麵的蓋子。麵已經吸飽了湯，糊成一團。他還是吃完了。", "en": "Dr Chiu lifts the lid on his noodles. They've drunk all the soup and turned to mush. He eats every bit anyway."}]
+       ],
+       "end": true}
+     ]}
+  ],
+  "ending": {"title": {"zh": "下班了", "en": "End of shift"}, "sub": {"zh": "血型和歷史對不上的時候，先相信歷史", "en": "When the group disagrees with history, trust history first"},
+             "stats": ["stages", "drills", "choices", "calls", "items", "time"]}
+}

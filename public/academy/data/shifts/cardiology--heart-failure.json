@@ -1,0 +1,1508 @@
+{
+ "format": "huatuo-shift-v2",
+ "department": "cardiology",
+ "case": "heart-failure",
+ "caseTitle": {
+  "zh": "阿嬌姨的湯",
+  "en": "Auntie Chiao's broth"
+ },
+ "condition": {
+  "zh": "慢性病 · 心衰竭惡化",
+  "en": "Chronic · decompensated heart failure"
+ },
+ "difficulty": 1,
+ "room": "ward",
+ "minutes": 22,
+ "title": {
+  "zh": "心臟內科值班日：病房",
+  "en": "Cardiology on the ward"
+ },
+ "tagline": {
+  "zh": "心臟沒有變壞，是水變多了",
+  "en": "The heart did not get worse; the water did"
+ },
+ "roles": [
+  {
+   "id": "resident",
+   "zh": "心臟內科住院醫師",
+   "en": "Cardiology resident",
+   "desc": {
+    "zh": "病房日：先看體重，再看腳踝，再看片子。找出這次心衰竭惡化的原因。",
+    "en": "A ward day: the weight first, then the ankles, then the film. Find out why the heart failure tipped over this time."
+   }
+  },
+  {
+   "id": "ward-nurse",
+   "zh": "心臟內科病房護理師",
+   "en": "Cardiology ward nurse",
+   "desc": {
+    "zh": "量體重、記尿量、教家屬把衛教說回來。她一躺平就喘，第一個看到的是你。",
+    "en": "Weights, urine charts, and getting the family to say the teaching back. When she gasps lying flat, you see it first."
+   }
+  }
+ ],
+ "cast": {
+  "attending": {
+   "name": {
+    "zh": "簡主治",
+    "en": "Dr Chien"
+   },
+   "role": {
+    "zh": "心衰竭主治醫師（師傅）",
+    "en": "Heart-failure attending (mentor)"
+   },
+   "tag": "ATT",
+   "color": "#8a2d3b",
+   "about": {
+    "zh": "查房一定先翻體重表，再掀被子看腳踝。他說：「體重是最誠實的病歷。」",
+    "en": "On rounds he reads the weight chart first and lifts the blanket to see the ankles second. \"The scale is the most honest note in the chart.\""
+   },
+   "body": "mentor"
+  },
+  "hf-nurse": {
+   "name": {
+    "zh": "佳蓉",
+    "en": "Chia-jung"
+   },
+   "role": {
+    "zh": "心衰竭個管師",
+    "en": "Heart-failure nurse specialist"
+   },
+   "tag": "HFN",
+   "color": "#2f7d6d",
+   "about": {
+    "zh": "口袋裡有一支醬油小湯匙，用來跟病人說「這一匙就是一天的鹽」。",
+    "en": "Keeps a soy-sauce teaspoon in her pocket to show patients \"this spoon is a whole day of salt\"."
+   },
+   "body": "nurse"
+  },
+  "patient": {
+   "name": {
+    "zh": "阿嬌姨",
+    "en": "Auntie Chiao"
+   },
+   "role": {
+    "zh": "病人・76 歲牛肉麵攤老闆娘",
+    "en": "Patient, 76, beef-noodle stall owner"
+   },
+   "tag": "PT",
+   "color": "#6b7280",
+   "about": {
+    "zh": "顧湯顧了四十年，一天試湯幾十口。上週停了利尿劑去喝喜酒，膝蓋痛又吃了鄰居給的止痛藥。",
+    "en": "Has tended the broth for forty years, tasting it dozens of times a day. Last week she skipped her water pill for a wedding banquet and took a neighbour's painkiller for her knee."
+   },
+   "body": "patient"
+  },
+  "son": {
+   "name": {
+    "zh": "志明",
+    "en": "Chih-ming"
+   },
+   "role": {
+    "zh": "家屬・兒子，接手麵攤",
+    "en": "Family, son, now runs the stall"
+   },
+   "tag": "FAM",
+   "color": "#b45309",
+   "about": {
+    "zh": "白天是工程師，晚上幫媽媽顧攤。覺得媽媽瘦了，想帶一碗湯給她補。",
+    "en": "Engineer by day, noodle stall by night. Thinks his mother looks thin and wants to bring her a bowl of broth."
+   },
+   "body": "family"
+  },
+  "echo-tech": {
+   "name": {
+    "zh": "小魏",
+    "en": "Wei"
+   },
+   "role": {
+    "zh": "心臟超音波技術師",
+    "en": "Echocardiographer"
+   },
+   "tag": "ECHO",
+   "color": "#3f6fa8",
+   "about": {
+    "zh": "推著超音波機走遍全院。最怕病人一躺平就喘。",
+    "en": "Wheels the echo machine all over the hospital. Dreads patients who gasp the moment they lie flat."
+   },
+   "body": "tech"
+  },
+  "pharmacist": {
+   "name": {
+    "zh": "阿光",
+    "en": "Kuang"
+   },
+   "role": {
+    "zh": "臨床藥師",
+    "en": "Clinical pharmacist"
+   },
+   "tag": "PH",
+   "color": "#4b5fa8",
+   "about": {
+    "zh": "把病人帶來的塑膠袋一包一包倒出來看。他說：「藥袋裡沒有，袋子外面才有。」",
+    "en": "Tips every plastic bag of pills out on the desk. \"What matters is never in the prescription bag; it's the one beside it.\""
+   },
+   "body": "pharmacist"
+  },
+  "night-nurse": {
+   "name": {
+    "zh": "小真",
+    "en": "Chen"
+   },
+   "role": {
+    "zh": "夜班護理師",
+    "en": "Night nurse"
+   },
+   "tag": "NN",
+   "color": "#7c3aed",
+   "about": {
+    "zh": "夜裡會打電話來問「這樣要不要叫你」。答案通常是要。",
+    "en": "Calls at night to ask \"should I wake you for this?\" The answer is usually yes."
+   },
+   "phoneOnly": true
+  }
+ },
+ "places": {
+  "board": {
+   "name": {
+    "zh": "病房白板",
+    "en": "Ward whiteboard"
+   },
+   "hot": "whiteboard"
+  },
+  "scale": {
+   "name": {
+    "zh": "床邊體重椅",
+    "en": "Bedside weighing chair"
+   },
+   "hot": "device"
+  },
+  "bed": {
+   "name": {
+    "zh": "阿嬌姨的床",
+    "en": "Auntie Chiao's bed"
+   },
+   "hot": "bed"
+  },
+  "viewer": {
+   "name": {
+    "zh": "影像工作站",
+    "en": "Imaging workstation"
+   },
+   "hot": "imaging"
+  },
+  "echo": {
+   "name": {
+    "zh": "超音波機",
+    "en": "Echo machine"
+   },
+   "hot": "ultrasound"
+  },
+  "desk": {
+   "name": {
+    "zh": "護理站",
+    "en": "Nurses' station"
+   },
+   "hot": "desk"
+  },
+  "drug-cart": {
+   "name": {
+    "zh": "藥車",
+    "en": "Drug trolley"
+   },
+   "hot": "drugs"
+  },
+  "monitor": {
+   "name": {
+    "zh": "床邊監視器",
+    "en": "Bedside monitor"
+   },
+   "hot": "monitor"
+  }
+ },
+ "glossary": [
+  {
+   "term": {
+    "zh": "心衰竭",
+    "en": "heart failure"
+   },
+   "plain": {
+    "zh": "心臟打不動或放鬆不了，血液與水分積在肺和腳。不是心臟停了，是「泵浦不夠力」。",
+    "en": "The heart cannot pump or relax well, so blood and water back up into the lungs and legs. Not a stopped heart: a pump that falls short."
+   }
+  },
+  {
+   "term": {
+    "zh": "端坐呼吸",
+    "en": "orthopnoea"
+   },
+   "plain": {
+    "zh": "躺平就喘、坐起來才好。積在腳的水躺下時回到胸口，肺就濕了。",
+    "en": "Breathless lying flat, better sitting up. Lying down returns fluid from the legs to the chest and wets the lungs."
+   }
+  },
+  {
+   "term": {
+    "zh": "射出分率",
+    "en": "ejection fraction"
+   },
+   "plain": {
+    "zh": "每次心跳把左心室裡的血打出去的比例。心臟超音波量得到。",
+    "en": "The share of blood the left ventricle pushes out with each beat, measured on an echocardiogram."
+   }
+  },
+  {
+   "term": {
+    "zh": "利尿劑",
+    "en": "diuretic"
+   },
+   "plain": {
+    "zh": "讓腎臟多排鹽和水的藥，俗稱「排水藥」。種類與劑量依醫囑。",
+    "en": "A drug that makes the kidneys pass more salt and water, the \"water pill\". Type and dose per the doctor's orders."
+   }
+  },
+  {
+   "term": {
+    "zh": "每日體重",
+    "en": "daily weight"
+   },
+   "plain": {
+    "zh": "每天早上同一台秤、同樣衣服、上完廁所後量。短期體重上升多半是水。",
+    "en": "Same scale, same clothes, every morning after the toilet. A quick gain in weight is mostly water."
+   }
+  },
+  {
+   "term": {
+    "zh": "限鹽",
+    "en": "salt restriction"
+   },
+   "plain": {
+    "zh": "少吃鹽，水就不會被留在身體裡。湯、醬料、醃漬物是大宗。",
+    "en": "Less salt means less water held in the body. Broth, sauces and pickles carry most of it."
+   }
+  },
+  {
+   "term": {
+    "zh": "肌鈣蛋白",
+    "en": "troponin"
+   },
+   "plain": {
+    "zh": "心肌受傷時跑到血裡的蛋白。高不一定是心肌梗塞，要看趨勢和心電圖。",
+    "en": "A protein that leaks into blood when heart muscle is injured. High does not always mean a heart attack: look at the trend and the ECG."
+   }
+  },
+  {
+   "term": {
+    "zh": "第三心音",
+    "en": "third heart sound"
+   },
+   "plain": {
+    "zh": "心衰竭時在第二心音後聽到的低沉一聲，像「肯-塔-基」的「基」。",
+    "en": "A low extra beat after the second heart sound in heart failure, the \"-ky\" of \"Ken-tuc-ky\"."
+   }
+  },
+  {
+   "term": {
+    "zh": "囉音",
+    "en": "crackles"
+   },
+   "plain": {
+    "zh": "肺底聽到像撕魔鬼氈的細碎聲，代表小氣道裡有水。",
+    "en": "A fine crackling like velcro peeling at the lung bases: fluid in the small airways."
+   }
+  },
+  {
+   "term": {
+    "zh": "肺水腫",
+    "en": "pulmonary oedema"
+   },
+   "plain": {
+    "zh": "水分滲進肺泡，氧氣進不去。胸部 X 光上像蝴蝶翅膀。",
+    "en": "Fluid seeping into the air sacs so oxygen cannot get through. On a chest X-ray it looks like butterfly wings."
+   }
+  },
+  {
+   "term": {
+    "zh": "非類固醇消炎止痛藥",
+    "en": "NSAID"
+   },
+   "plain": {
+    "zh": "常見的消炎止痛藥。會讓腎臟留鹽留水，心衰竭病人要避免。",
+    "en": "Common anti-inflammatory painkillers. They make the kidneys hold salt and water, so heart-failure patients should avoid them."
+   }
+  },
+  {
+   "term": {
+    "zh": "回覆示教",
+    "en": "teach-back"
+   },
+   "plain": {
+    "zh": "衛教後請病人或家屬用自己的話說一遍，確認真的懂了。",
+    "en": "After teaching, ask the patient or family to explain it in their own words, to check it really landed."
+   }
+  },
+  {
+   "term": {
+    "zh": "鉀離子",
+    "en": "potassium"
+   },
+   "plain": {
+    "zh": "心臟電流需要的電解質。利尿劑會把它排掉，太低會心律不整。",
+    "en": "An electrolyte the heart's wiring needs. Diuretics wash it out, and too little causes rhythm problems."
+   }
+  }
+ ],
+ "codex": [
+  {
+   "id": "weigh-chair",
+   "kind": "equipment",
+   "name": {
+    "zh": "床邊體重椅",
+    "en": "Bedside weighing chair"
+   },
+   "text": {
+    "zh": "喘到站不穩的病人也能坐著量。每天同一時間、同一台。",
+    "en": "Lets a breathless patient be weighed sitting down. Same time, same chair, every day."
+   },
+   "hot": "device"
+  },
+  {
+   "id": "echo-cart",
+   "kind": "equipment",
+   "name": {
+    "zh": "攜帶式心臟超音波",
+    "en": "Portable echocardiograph"
+   },
+   "text": {
+    "zh": "看心臟收縮、瓣膜和心包膜。病人喘的時候，坐著也能做。",
+    "en": "Shows contraction, valves and pericardium. If the patient is breathless, it can be done sitting up."
+   },
+   "hot": "ultrasound"
+  },
+  {
+   "id": "monitor",
+   "kind": "equipment",
+   "name": {
+    "zh": "床邊監視器",
+    "en": "Bedside monitor"
+   },
+   "text": {
+    "zh": "血氧、心率、呼吸次數。躺平時血氧往下掉，就是答案。",
+    "en": "Saturation, heart rate, breathing rate. A saturation that falls when she lies flat is itself an answer."
+   },
+   "hot": "monitor"
+  },
+  {
+   "id": "painkiller-box",
+   "kind": "item",
+   "name": {
+    "zh": "鄰居給的止痛藥",
+    "en": "The neighbour's painkillers"
+   },
+   "text": {
+    "zh": "一盒非處方的消炎止痛藥，吃掉一半。這次惡化的共犯。",
+    "en": "A box of over-the-counter anti-inflammatories, half gone. An accomplice in this admission."
+   }
+  },
+  {
+   "id": "weight-diary",
+   "kind": "item",
+   "name": {
+    "zh": "阿嬌姨的體重本",
+    "en": "Auntie Chiao's weight diary"
+   },
+   "text": {
+    "zh": "麵攤的帳本改的。左邊記體重，右邊記「今天試了幾口湯」。",
+    "en": "A converted stall ledger: weight on the left, \"spoonfuls of broth tasted today\" on the right."
+   }
+  },
+  {
+   "id": "triggers",
+   "kind": "concept",
+   "name": {
+    "zh": "心衰竭為什麼又惡化",
+    "en": "Why heart failure tips over"
+   },
+   "text": {
+    "zh": "惡化很少是「心臟突然更壞」。先找誘因：停藥（怕跑廁所）、吃太鹹、喝太多水、消炎止痛藥、感染、心房顫動等心律不整、缺血、血壓失控、甲狀腺問題。找到誘因、拿掉它，比加藥更能防下一次住院。",
+    "en": "Decompensation is rarely \"the heart suddenly got worse\". Look for the trigger: stopped pills (to avoid the toilet), too much salt or fluid, anti-inflammatory painkillers, infection, arrhythmias such as atrial fibrillation, ischaemia, uncontrolled blood pressure, thyroid trouble. Finding and removing the trigger prevents the next admission better than adding a drug."
+   }
+  },
+  {
+   "id": "scale-honest",
+   "kind": "concept",
+   "name": {
+    "zh": "體重是最誠實的病歷",
+    "en": "The scale is the most honest note"
+   },
+   "text": {
+    "zh": "脂肪不會幾天內長出來，短期內上升的體重幾乎都是水。肺積水之前，水先積在腳、在肚子、在體重上。所以出院衛教的核心是：每天量、寫下來、比較昨天、上升就打電話，而不是等到喘才來急診。",
+    "en": "Fat does not appear in a few days; a quick gain is almost all water. Before the lungs flood, water collects in the feet, the belly and on the scale. So the heart of discharge teaching is: weigh daily, write it down, compare with yesterday, phone if it climbs — not wait to be breathless in the ER."
+   }
+  },
+  {
+   "id": "troponin-type",
+   "kind": "concept",
+   "name": {
+    "zh": "肌鈣蛋白高，不等於心肌梗塞",
+    "en": "High troponin is not always a heart attack"
+   },
+   "text": {
+    "zh": "心衰竭、腎功能差、感染、心律不整都會讓肌鈣蛋白輕度上升。心肌梗塞的關鍵是「動態上升或下降」加上缺血證據（症狀、心電圖、影像）。數值平平的輕度升高，多半是心肌受損而不是冠狀動脈塞住，但要在病歷寫清楚你為什麼這樣判斷。",
+    "en": "Heart failure, poor kidneys, infection and arrhythmia all nudge troponin up. A heart attack needs a dynamic rise or fall plus evidence of ischaemia (symptoms, ECG, imaging). A flat, mildly raised value is usually myocardial injury rather than a blocked artery, but write down why you think so."
+   }
+  }
+ ],
+ "segs": [
+  {
+   "id": "weights",
+   "name": {
+    "zh": "晨間體重",
+    "en": "Morning weights"
+   },
+   "sub": {
+    "zh": "06:45 · 病房白板",
+    "en": "06:45 · ward whiteboard"
+   },
+   "t": 405,
+   "mood": "day",
+   "note": {
+    "zh": "阿嬌姨三天胖了一圈，都是水",
+    "en": "Three days of weight gain, all of it water"
+   },
+   "beats": [
+    {
+     "id": "w1",
+     "to": "hf-nurse",
+     "guide": {
+      "zh": "到白板找佳蓉",
+      "en": "Find Chia-jung at the board"
+     },
+     "lines": [
+      [
+       "hf-nurse",
+       {
+        "zh": "早。昨晚收的阿嬌姨，心衰竭急性惡化。三個枕頭才睡得著，腳腫到穿不下拖鞋。",
+        "en": "Morning. Auntie Chiao came in overnight, acute heart failure. Needs three pillows to sleep, ankles too swollen for her slippers."
+       }
+      ],
+      [
+       "hf-nurse",
+       {
+        "zh": "體重比上個月門診多很多。今天開始每日體重，同一台椅子量。",
+        "en": "Much heavier than at last month's clinic. Daily weight starts today, same chair every time."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "體重椅在哪？",
+        "en": "Where's the weighing chair?"
+       }
+      ]
+     ],
+     "mini": {
+      "type": "find",
+      "hot": "device",
+      "q": {
+       "zh": "找到床邊體重椅",
+       "en": "Find the bedside weighing chair"
+      }
+     },
+     "post": [
+      [
+       "hf-nurse",
+       {
+        "zh": "就這台。同一台、同樣衣服、上完廁所。三個「同」。",
+        "en": "This one. Same chair, same clothes, after the toilet. Three \"sames\"."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "w2",
+     "to": "attending",
+     "guide": {
+      "zh": "去找簡主治",
+      "en": "Find Dr Chien"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "早。心衰竭的病人，你第一個看哪個數字？",
+        "en": "Morning. With a heart-failure patient, which number do you look at first?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "血氧？",
+        "en": "Saturation?"
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "體重。脂肪不會三天長出來，三天胖的都是水。",
+        "en": "Weight. Fat doesn't grow in three days; three days of gain is water."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "第二個問題比較難：她為什麼這週惡化？去問。",
+        "en": "The second question is harder: why did she tip over this week? Go and ask."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "round",
+   "name": {
+    "zh": "床邊查房",
+    "en": "Bedside round"
+   },
+   "sub": {
+    "zh": "07:30 · 阿嬌姨的床",
+    "en": "07:30 · Auntie Chiao's bed"
+   },
+   "t": 450,
+   "mood": "day",
+   "note": {
+    "zh": "聽到第三心音與肺底囉音，片子是肺水腫",
+    "en": "Third heart sound, basal crackles, oedema on the film"
+   },
+   "beats": [
+    {
+     "id": "r1",
+     "to": "patient",
+     "guide": {
+      "zh": "去看阿嬌姨",
+      "en": "See Auntie Chiao"
+     },
+     "lines": [
+      [
+       "patient",
+       {
+        "zh": "醫師，我躺下去就像有人坐在我胸口。坐起來就好一點。",
+        "en": "Doctor, lying down it's like someone sitting on my chest. Sitting up is better."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "這叫端坐呼吸。阿嬌姨，最近排水藥有照吃嗎？",
+        "en": "That's orthopnoea. Auntie, have you been taking your water pill?"
+       }
+      ],
+      [
+       "patient",
+       {
+        "zh": "上禮拜喝喜酒，怕一直跑廁所，停了三天啦。",
+        "en": "Last week was a wedding banquet. Didn't want to keep running to the loo, so I stopped for three days."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "我來聽一下心臟和肺。",
+        "en": "Let me listen to your heart and lungs."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "drill",
+      "template": "cardiology",
+      "drill": "ausc"
+     },
+     "post": [
+      [
+       "me",
+       {
+        "zh": "第二心音後面多一聲，是第三心音。兩邊肺底都是囉音。",
+        "en": "An extra sound after the second: a third heart sound. Crackles at both lung bases."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "頸靜脈呢？坐四十五度看。",
+        "en": "And the neck veins? Look at forty-five degrees."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "鼓到耳垂下面。水很多。",
+        "en": "Distended almost to the earlobe. A lot of water."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "r2",
+     "to": "place:viewer",
+     "guide": {
+      "zh": "看昨晚的胸部 X 光",
+      "en": "Review last night's chest film"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "你報。",
+        "en": "Your read."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "imaging",
+      "region": "chest",
+      "question": {
+       "zh": "心臟大小、肺血管與肋膈角各告訴你什麼？",
+       "en": "What do the heart size, the lung vessels and the costophrenic angles tell you?"
+      },
+      "answer": {
+       "zh": "心臟變大；上肺血管比下肺粗（血流重分布）、肺門旁蝴蝶狀陰影與肺底細線（Kerley B 線）是肺水腫；兩側肋膈角變鈍是肋膜積水。整體符合心衰竭急性惡化。",
+       "en": "Enlarged heart; upper-lobe vessels fuller than lower (redistribution), bat-wing shadowing around the hila and fine basal lines (Kerley B lines) mean pulmonary oedema; blunted angles on both sides are effusions. Together: acute decompensated heart failure."
+      }
+     },
+     "post": [
+      [
+       "attending",
+       {
+        "zh": "對。利尿劑依醫囑開始，記錄尿量、腎功能、鉀離子。",
+        "en": "Right. Start the diuretic per protocol; chart urine output, kidney function and potassium."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "r3",
+     "to": "patient",
+     "guide": {
+      "zh": "教阿嬌姨記尿量",
+      "en": "Teach her to record urine output"
+     },
+     "roles": [
+      "ward-nurse"
+     ],
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "阿嬌姨，今天開始尿都尿在這個量杯，我們要知道排了多少水。",
+        "en": "Auntie, from today everything goes in this measuring jug. We need to know how much water is leaving."
+       }
+      ],
+      [
+       "patient",
+       {
+        "zh": "量杯？我們麵攤也有這個，量湯用的。",
+        "en": "A measuring jug? We have those at the stall. For the broth."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "那正好。以前量湯，現在量水出去。",
+        "en": "Perfect. You used to measure broth going in; now we measure water going out."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "echo",
+   "name": {
+    "zh": "床邊超音波",
+    "en": "Bedside echo"
+   },
+   "sub": {
+    "zh": "09:30 · 超音波機",
+    "en": "09:30 · echo machine"
+   },
+   "t": 570,
+   "mood": "day",
+   "note": {
+    "zh": "躺平就掉血氧：坐著做完超音波",
+    "en": "Saturation dropped flat: echo finished sitting up"
+   },
+   "beats": [
+    {
+     "id": "e1",
+     "to": "echo-tech",
+     "guide": {
+      "zh": "小魏推超音波來了",
+      "en": "Wei wheels in the echo"
+     },
+     "lines": [
+      [
+       "echo-tech",
+       {
+        "zh": "阿嬌姨，躺平、往左側一點，我要從心尖照。",
+        "en": "Auntie, lie flat and roll a little to the left, I need the apical view."
+       }
+      ],
+      [
+       "patient",
+       {
+        "zh": "……不行……喘……",
+        "en": "...can't... breathe..."
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "監視器的血氧數字一格一格往下掉。",
+        "en": "The saturation on the monitor ticks down, one notch at a time."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "vitals",
+      "event": "desaturation",
+      "options": [
+       {
+        "zh": "扶她坐起、給氧、叫主治",
+        "en": "Sit her up, oxygen, call the attending",
+        "ok": true,
+        "why": {
+         "zh": "對。端坐呼吸的人躺平會把水倒回肺裡。超音波可以坐著做，病人先。",
+         "en": "Right. Lying flat pours the water back into her lungs. The echo can be done sitting up; the patient comes first."
+        }
+       },
+       {
+        "zh": "再撐一下，照完心尖切面就好",
+        "en": "Hold on, just finish the apical view",
+        "ok": false,
+        "why": {
+         "zh": "影像可以等，缺氧不能等。換姿勢、換切面，不是換病人去配合機器。",
+         "en": "The image can wait; hypoxia cannot. Change the position or the view, not the patient."
+        }
+       },
+       {
+        "zh": "給她鎮靜藥讓她躺得住",
+        "en": "Sedate her so she can lie flat",
+        "ok": false,
+        "why": {
+         "zh": "喘是因為肺濕，不是因為緊張。鎮靜會壓抑呼吸，讓情況更糟。",
+         "en": "She is breathless because her lungs are wet, not because she is anxious. Sedation suppresses breathing and makes it worse."
+        }
+       }
+      ]
+     },
+     "post": [
+      [
+       "echo-tech",
+       {
+        "zh": "坐起來了，血氧回來了。我從劍突下照也可以。",
+        "en": "She's up and the saturation is back. I can use the subcostal view instead."
+       }
+      ],
+      [
+       "patient",
+       {
+        "zh": "早說嘛，我坐著很會配合的。",
+        "en": "Should've said. I'm very cooperative sitting up."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "e2",
+     "to": "echo-tech",
+     "guide": {
+      "zh": "看超音波結果",
+      "en": "Look at the echo"
+     },
+     "lines": [
+      [
+       "echo-tech",
+       {
+        "zh": "左心室擴大，收縮很弱，射出分率明顯下降。瓣膜沒有大問題，心包膜沒積水。",
+        "en": "Left ventricle dilated, contracting weakly, ejection fraction clearly reduced. No major valve problem, no pericardial fluid."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "跟去年比？",
+        "en": "Compared with last year?"
+       }
+      ],
+      [
+       "echo-tech",
+       {
+        "zh": "差不多。心臟沒有突然變壞，是水變多了。",
+        "en": "About the same. The heart didn't suddenly get worse; there's just more water."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "記住這句。這次是誘因的問題，不是心臟的問題。",
+        "en": "Remember that. This time it's about the trigger, not the heart."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "meds",
+   "name": {
+    "zh": "藥袋與數字",
+    "en": "Pill bags and numbers"
+   },
+   "sub": {
+    "zh": "11:00 · 護理站",
+    "en": "11:00 · nurses' station"
+   },
+   "t": 660,
+   "mood": "day",
+   "note": {
+    "zh": "找到止痛藥；肌鈣蛋白平穩",
+    "en": "The painkiller found; troponin flat"
+   },
+   "beats": [
+    {
+     "id": "m1",
+     "to": "pharmacist",
+     "guide": {
+      "zh": "阿光找你核對藥物",
+      "en": "Kuang wants a medication check"
+     },
+     "ring": {
+      "title": {
+       "zh": "藥師訊息",
+       "en": "Message from pharmacy"
+      },
+      "sub": {
+       "zh": "阿光：「阿嬌姨的塑膠袋裡多了一盒東西。」",
+       "en": "Kuang: \"There's an extra box in Auntie Chiao's bag.\""
+      },
+      "call": false,
+      "from": "pharmacist"
+     },
+     "lines": [
+      [
+       "pharmacist",
+       {
+        "zh": "處方藥都對，但這盒是鄰居給的消炎止痛藥，吃掉一半了。",
+        "en": "The prescriptions are fine, but this box is a neighbour's anti-inflammatory. Half gone."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "非類固醇消炎止痛藥。會留鹽留水，還傷腎。",
+        "en": "An NSAID. Holds salt and water, and hurts the kidneys."
+       }
+      ],
+      [
+       "pharmacist",
+       {
+        "zh": "對。腎功能也比上個月差一點。核對要連腎功能一起看。",
+        "en": "Exactly. Her kidney function is a bit worse than last month too. Check the kidneys with the drugs."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "cardiology-coronary-angiography-radial",
+      "stage": 1
+     },
+     "item": "painkiller-box"
+    },
+    {
+     "id": "m2",
+     "to": "attending",
+     "guide": {
+      "zh": "簡主治問肌鈣蛋白",
+      "en": "Dr Chien asks about troponin"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "急診抽的肌鈣蛋白有一點高。心肌梗塞嗎？",
+        "en": "The ER troponin is a little high. Heart attack?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "要看趨勢。兩次都差不多，沒有動態上升，她也沒有胸痛。",
+        "en": "Depends on the trend. Two samples, about the same, no dynamic rise, and she has no chest pain."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "那叫什麼？",
+        "en": "So what is it?"
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "cardiology-nste-acs-risk-stratification",
+      "stage": 1
+     },
+     "post": [
+      [
+       "attending",
+       {
+        "zh": "心衰竭本身就會讓肌鈣蛋白輕度升高。寫清楚你為什麼不是當成心肌梗塞。",
+        "en": "Heart failure alone nudges troponin up. Write down why you are not calling it a heart attack."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "m3",
+     "to": "place:desk",
+     "guide": {
+      "zh": "再做一張心電圖",
+      "en": "Repeat the ECG"
+     },
+     "roles": [
+      "resident"
+     ],
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "比對入院那張：竇性心律，沒有新的 ST 變化，也沒有心房顫動。",
+        "en": "Against the admission ECG: sinus rhythm, no new ST changes, no atrial fibrillation."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "好。心律不整也是誘因之一，排掉一個是一個。",
+        "en": "Good. Arrhythmia is a trigger too; every one you exclude counts."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "cardiology-chest-pain-triage",
+      "stage": 1
+     }
+    }
+   ]
+  },
+  {
+   "id": "family",
+   "name": {
+    "zh": "家屬衛教",
+    "en": "Teaching the family"
+   },
+   "sub": {
+    "zh": "14:00 · 阿嬌姨的床",
+    "en": "14:00 · Auntie Chiao's bed"
+   },
+   "t": 840,
+   "mood": "day",
+   "note": {
+    "zh": "湯、藥、秤：說給兒子聽，也請他說回來",
+    "en": "Broth, pills, scale: taught and said back"
+   },
+   "beats": [
+    {
+     "id": "f1",
+     "to": "son",
+     "guide": {
+      "zh": "志明來了",
+      "en": "Chih-ming arrives"
+     },
+     "ring": {
+      "title": {
+       "zh": "家屬來電",
+       "en": "Family calling"
+      },
+      "sub": {
+       "zh": "志明：「我晚上可以帶一碗湯給我媽補一下嗎？」",
+       "en": "Chih-ming: \"Can I bring Mum a bowl of broth tonight?\""
+      },
+      "call": true,
+      "from": "son"
+     },
+     "lines": [
+      [
+       "son",
+       {
+        "zh": "醫師，我媽瘦了，我想帶一碗牛肉湯給她補。她最愛喝自己熬的。",
+        "en": "Doctor, Mum looks thinner. I want to bring her beef broth to build her up. She loves her own."
+       }
+      ],
+      [
+       "patient",
+       {
+        "zh": "你熬的沒我熬的好啦。",
+        "en": "Yours isn't as good as mine."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "我先解釋一下為什麼她會喘。",
+        "en": "Let me explain first why she got breathless."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "choice",
+      "q": {
+       "zh": "你怎麼跟志明談飲食？",
+       "en": "How do you talk to Chih-ming about food?"
+      },
+      "options": [
+       {
+        "zh": "一起講限鹽和水，請他說一遍",
+        "en": "Explain salt and fluid, ask him to say it back",
+        "ok": true,
+        "why": {
+         "zh": "對。回覆示教才知道他真的懂。湯是鹽和水的雙重來源。",
+         "en": "Right. Teach-back is how you know it landed. Broth is salt and water in one bowl."
+        },
+        "set": {
+         "edu": "teachback"
+        }
+       },
+       {
+        "zh": "給他一張衛教單就好",
+        "en": "Hand him a leaflet",
+        "ok": false,
+        "why": {
+         "zh": "衛教單不會自己被讀。沒有對話，就沒有理解。",
+         "en": "Leaflets do not read themselves. Without a conversation there is no understanding."
+        },
+        "set": {
+         "edu": "leaflet"
+        }
+       },
+       {
+        "zh": "住院中，想吃什麼都可以",
+        "en": "She's in hospital; she can eat what she likes",
+        "ok": false,
+        "why": {
+         "zh": "住院中更要開始練習。一碗湯可以把今天排掉的水全部喝回來。",
+         "en": "Hospital is where the practice starts. One bowl can drink back everything the diuretic took out today."
+        },
+        "set": {
+         "edu": "free"
+        }
+       }
+      ]
+     },
+     "post": [
+      [
+       "son",
+       {
+        "zh": "所以媽媽的湯，是她的病的一半？",
+        "en": "So Mum's broth is half her illness?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "湯沒有錯，是份量。限鹽不是不能喝，我們一起想辦法。",
+        "en": "The broth isn't wrong; it's the amount. Salt restriction doesn't mean none. We'll work it out together."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "f2",
+     "to": "patient",
+     "guide": {
+      "zh": "教每天早上的流程",
+      "en": "Teach the morning routine"
+     },
+     "roles": [
+      "ward-nurse"
+     ],
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "阿嬌姨，回家以後每天早上照這個順序。",
+        "en": "Auntie, at home every morning, in this order."
+       }
+      ],
+      [
+       "patient",
+       {
+        "zh": "比熬湯簡單嗎？",
+        "en": "Easier than making broth?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "簡單很多，但每天都要做。",
+        "en": "Much easier, but every single day."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "order",
+      "q": {
+       "zh": "心衰竭病人每天早上的自我照顧順序",
+       "en": "A heart-failure patient's morning routine, in order"
+      },
+      "steps": [
+       {
+        "zh": "起床先上廁所",
+        "en": "Get up and use the toilet"
+       },
+       {
+        "zh": "穿同樣的衣服量體重",
+        "en": "Weigh in the same clothes"
+       },
+       {
+        "zh": "寫進體重本",
+        "en": "Write it in the diary"
+       },
+       {
+        "zh": "和昨天比較",
+        "en": "Compare with yesterday"
+       },
+       {
+        "zh": "明顯上升或腳腫就打電話",
+        "en": "Phone if it clearly rises or the ankles swell"
+       },
+       {
+        "zh": "照時間吃藥，包括利尿劑",
+        "en": "Take the pills on time, water pill included"
+       }
+      ]
+     },
+     "post": [
+      [
+       "hf-nurse",
+       {
+        "zh": "佳蓉從口袋拿出一支醬油小湯匙：「這一匙，就是妳一天的鹽。」",
+        "en": "Chia-jung takes out her soy-sauce teaspoon: \"This spoon is your whole day of salt.\""
+       }
+      ],
+      [
+       "patient",
+       {
+        "zh": "一匙？我試湯一次就不只了。",
+        "en": "One spoon? I taste more than that in one go."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "f3",
+     "to": "place:desk",
+     "guide": {
+      "zh": "寫出院計畫的初稿",
+      "en": "Draft the discharge plan"
+     },
+     "roles": [
+      "resident"
+     ],
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "出院計畫寫三件事：誘因怎麼拿掉、藥怎麼調、誰在什麼時候打電話給她。",
+        "en": "Three things in the plan: how the trigger is removed, how the drugs change, who calls her and when."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "停止消炎止痛藥，膝蓋痛轉骨科。心衰竭藥物依指引逐步調整。佳蓉出院後一週追蹤。",
+        "en": "Stop the NSAID and refer the knee to orthopaedics. Titrate heart-failure drugs per guideline. Chia-jung phones a week after discharge."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "膝蓋痛也是病。不給她別的辦法，她會再去跟鄰居拿。",
+        "en": "The knee pain is real. Give her nothing else and she'll go back to the neighbour."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "debrief",
+   "name": {
+    "zh": "傍晚回顧",
+    "en": "Evening debrief"
+   },
+   "sub": {
+    "zh": "17:30 · 病房白板",
+    "en": "17:30 · ward whiteboard"
+   },
+   "t": 1050,
+   "mood": "eve",
+   "note": {
+    "zh": "尿量足夠，體重開始往下",
+    "en": "Good urine output; the weight starts falling"
+   },
+   "beats": [
+    {
+     "id": "d1",
+     "to": "patient",
+     "guide": {
+      "zh": "傍晚再看一次阿嬌姨",
+      "en": "Evening check on Auntie Chiao"
+     },
+     "lines": [
+      [
+       "patient",
+       {
+        "zh": "醫師，我今天尿了好多，兩個枕頭就躺得住了。",
+        "en": "Doctor, I've peed so much today. Two pillows and I can lie back."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "腳踝也鬆了。明天早上量體重，我們一起看。",
+        "en": "Your ankles are looser too. We'll look at the scale together tomorrow morning."
+       }
+      ],
+      [
+       "patient",
+       {
+        "zh": "我把麵攤的帳本拿來當體重本。左邊寫體重，右邊寫試了幾口湯。",
+        "en": "I'm using my stall ledger as a weight diary. Weight on the left, spoonfuls of broth on the right."
+       }
+      ]
+     ],
+     "item": "weight-diary"
+    },
+    {
+     "id": "d2",
+     "to": "attending",
+     "guide": {
+      "zh": "簡主治的回顧",
+      "en": "Dr Chien's debrief"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "今天的心衰竭，心臟其實沒變。變的是什麼？",
+        "en": "Today's heart failure: the heart didn't change. What did?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "停了三天利尿劑、鄰居的止痛藥、一天幾十口湯。",
+        "en": "Three days without the water pill, the neighbour's painkiller, dozens of spoonfuls of broth."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "對。我們開的藥只佔一半，另一半在她家廚房。",
+        "en": "Right. Our drugs are only half the treatment. The other half is in her kitchen."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "night",
+   "name": {
+    "zh": "值班夜",
+    "en": "On call tonight"
+   },
+   "sub": {
+    "zh": "22:00 · 值班室電話",
+    "en": "22:00 · on-call phone"
+   },
+   "t": 1320,
+   "mood": "night",
+   "note": {
+    "zh": "夜裡的湯與鉀離子",
+    "en": "Broth and potassium at night"
+   },
+   "beats": [
+    {
+     "id": "n1",
+     "to": "place:monitor",
+     "guide": {
+      "zh": "接夜班電話",
+      "en": "Take the night call"
+     },
+     "ring": {
+      "title": {
+       "zh": "病房來電",
+       "en": "Ward calling"
+      },
+      "sub": {
+       "zh": "小真：「阿嬌姨的鉀離子報告出來了，還有……湯。」",
+       "en": "Chen: \"Auntie Chiao's potassium is back. And... the broth.\""
+      },
+      "call": true,
+      "from": "night-nurse"
+     },
+     "lines": [
+      [
+       "night-nurse",
+       {
+        "zh": "醫師，阿嬌姨晚上的鉀離子偏低，她說有一點心悸。",
+        "en": "Doctor, Auntie Chiao's evening potassium is low and she says her heart is fluttering a bit."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "監視器上是什麼節律？",
+        "en": "What rhythm is on the monitor?"
+       }
+      ],
+      [
+       "night-nurse",
+       {
+        "zh": "竇性心律，偶爾早期收縮。血壓、血氧都穩。",
+        "en": "Sinus, the odd ectopic beat. Pressure and saturation steady."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "補鉀依醫囑，加一張心電圖，明早再抽。利尿劑排水，也排鉀。",
+        "en": "Replace potassium per protocol, add an ECG, recheck in the morning. The diuretic washes out potassium with the water."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "n2",
+     "to": "place:monitor",
+     "guide": {
+      "zh": "小真還有一件事",
+      "en": "Chen has one more thing"
+     },
+     "when": {
+      "flag": "edu",
+      "is": "leaflet"
+     },
+     "lines": [
+      [
+       "night-nurse",
+       {
+        "zh": "還有，志明帶了一大碗牛肉湯來，阿嬌姨喝完了。衛教單在他包包裡，沒拆。",
+        "en": "Also, Chih-ming brought a big bowl of beef broth and she finished it. The leaflet is in his bag, unopened."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "……明天早上的體重會告訴我們。我會再跟志明好好談一次。",
+        "en": "...tomorrow's weight will tell us. I'll sit down with Chih-ming properly again."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "n3",
+     "to": "place:monitor",
+     "guide": {
+      "zh": "小真還有一件事",
+      "en": "Chen has one more thing"
+     },
+     "when": {
+      "flag": "edu",
+      "is": "free"
+     },
+     "lines": [
+      [
+       "night-nurse",
+       {
+        "zh": "還有，志明帶了一大碗牛肉湯，說醫師講想吃什麼都可以。她喝完了，現在要三個枕頭。",
+        "en": "Also, Chih-ming brought a big bowl of broth, said the doctor allowed anything. She finished it and needs three pillows again."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "是我講錯了。先讓她坐起來、監測血氧，我過去。明天重新衛教。",
+        "en": "That was my mistake. Sit her up, watch the saturation, I'm coming. We'll redo the teaching tomorrow."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "n4",
+     "to": "place:monitor",
+     "guide": {
+      "zh": "小真還有一件事",
+      "en": "Chen has one more thing"
+     },
+     "when": {
+      "flag": "edu",
+      "is": "teachback"
+     },
+     "lines": [
+      [
+       "night-nurse",
+       {
+        "zh": "還有，志明帶了湯，但只倒了一小杯，說「醫師說的，一天一匙鹽」。",
+        "en": "Also, Chih-ming brought broth but only poured a little cup. \"The doctor said: one spoon of salt a day.\""
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "他記住了。那一小杯，可以。",
+        "en": "He remembered. That little cup is fine."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "n5",
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "值班結束。阿嬌姨的帳本上，左邊第一行寫著今天的體重，右邊寫著：兩口。",
+        "en": "End of shift. In Auntie Chiao's ledger, the first line on the left is today's weight. On the right: two spoonfuls."
+       }
+      ]
+     ],
+     "end": true
+    }
+   ]
+  }
+ ],
+ "ending": {
+  "title": {
+   "zh": "下班了",
+   "en": "End of shift"
+  },
+  "sub": {
+   "zh": "體重往下，枕頭變少，湯只喝兩口",
+   "en": "Weight down, fewer pillows, two spoonfuls of broth"
+  },
+  "stats": [
+   "stages",
+   "grades",
+   "choices",
+   "calls",
+   "items",
+   "time"
+  ]
+ }
+}

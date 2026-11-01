@@ -1,0 +1,840 @@
+{
+ "format": "huatuo-shift-v2",
+ "department": "moxa-cupping",
+ "case": "main",
+ "caseTitle": {"zh": "艾煙裡的痛經日", "en": "Period pain in the moxa smoke"},
+ "condition": {"zh": "婦科 · 虛寒痛經艾灸", "en": "Gynae · cold-type period pain"},
+ "difficulty": 1,
+ "title": {"zh": "灸法室的一天", "en": "A day in the moxibustion room"},
+ "tagline": {"zh": "一位怕冷的泳將、一陣艾煙，和一個晚了兩週的月經", "en": "A swimmer who is always cold, a puff of moxa smoke, and a period two weeks late"},
+ "room": "acupuncture",
+ "minutes": 25,
+ "roles": [
+  {
+   "id": "resident",
+   "zh": "中醫住院醫師",
+   "en": "TCM resident",
+   "desc": {
+    "zh": "問診、辨證、選穴、施灸。點火之前先問三件事：怕不怕燙、會不會喘、有沒有可能懷孕。",
+    "en": "History, pattern, points and the moxa itself. Before any flame, three questions: heat-sensitive? asthma? could she be pregnant?"
+   }
+  },
+  {
+   "id": "assistant",
+   "zh": "針灸助理",
+   "en": "Acupuncture assistant",
+   "desc": {
+    "zh": "排煙機、艾條、滅火罐和沙盤都歸你。艾條熄了沒，由你說了算。",
+    "en": "Smoke extractor, moxa sticks, snuffing jar and sand tray are yours. Whether a moxa stick is really out is your call."
+   }
+  }
+ ],
+ "cast": {
+  "wen": {
+   "name": {"zh": "溫醫師", "en": "Dr Wen"},
+   "role": {"zh": "灸法科主治醫師（師傅）", "en": "Moxibustion attending (mentor)"},
+   "tag": "ATT",
+   "color": "#9a3b1f",
+   "body": "mentor",
+   "about": {
+    "zh": "姓溫，專長是灸，這個笑話他聽過一千次。口頭禪：「火是工具，不是表演。」",
+    "en": "His surname means “warm” and his speciality is moxa; he has heard the joke a thousand times. Catchphrase: “Fire is a tool, not a show.”"
+   }
+  },
+  "kui": {
+   "name": {"zh": "小葵", "en": "Kui"},
+   "role": {"zh": "針灸助理", "en": "Acupuncture assistant"},
+   "tag": "AST",
+   "color": "#3b8f6a",
+   "body": "nurse",
+   "about": {
+    "zh": "排煙機的濾網是她換的，滅火罐是她擦的。全科只有她記得每一盒艾條的批號。",
+    "en": "She changes the extractor filters and polishes the snuffing jars. The only one who remembers every moxa batch number."
+   }
+  },
+  "yating": {
+   "name": {"zh": "雅婷", "en": "Ya-Ting"},
+   "role": {"zh": "二十歲，怕冷的游泳校隊", "en": "Twenty, a varsity swimmer who is always cold"},
+   "tag": "P1",
+   "color": "#2f6fa3",
+   "body": "patient",
+   "about": {
+    "zh": "虛構教學個案。每天清晨下水，月經第一天總痛到請假。抱著熱水袋才睡得著。小時候有氣喘。",
+    "en": "Fictional teaching case. In the pool every dawn; the first day of each period always costs her training. Sleeps only with a hot-water bottle. Had asthma as a child."
+   }
+  },
+  "yijun": {
+   "name": {"zh": "怡君", "en": "Yi-Jun"},
+   "role": {"zh": "三十一歲，「這次痛得怪」", "en": "Thirty-one, “this time it feels odd”"},
+   "tag": "P2",
+   "color": "#c2703a",
+   "body": "patient",
+   "about": {
+    "zh": "虛構教學個案。上班族，痛經多年，固定來灸。這次說下腹痛不太一樣，月經也還沒來。",
+    "en": "Fictional teaching case. Office worker, years of period pain, a regular for moxa. This time the pain feels different, and her period has not come."
+   }
+  },
+  "coach": {
+   "name": {"zh": "雅婷的教練", "en": "Ya-Ting's coach"},
+   "role": {"zh": "游泳隊教練（訊息）", "en": "Swim coach (messages)"},
+   "tag": "CO",
+   "color": "#5a6b7c",
+   "phoneOnly": true,
+   "about": {"zh": "嗓門比哨子大，關心選手比關心成績多一點點。", "en": "Louder than his whistle; cares about his swimmers slightly more than their times."}
+  },
+  "obgyn": {
+   "name": {"zh": "婦產科醫師", "en": "Obstetrician"},
+   "role": {"zh": "婦產科（電話）", "en": "Obstetrics (phone)"},
+   "tag": "OB",
+   "color": "#81296d",
+   "phoneOnly": true,
+   "about": {"zh": "下午門診最滿的一位，卻總會回轉診電話。", "en": "Runs the fullest afternoon clinic in the building and still returns every referral call."}
+  }
+ },
+ "places": {
+  "board": {"name": {"zh": "治療排程白板", "en": "Treatment board"}, "hot": "whiteboard"},
+  "moxa": {"name": {"zh": "艾灸區與排煙機", "en": "Moxa bay and extractor"}, "hot": "moxa"},
+  "couch": {"name": {"zh": "一號治療床", "en": "Couch one"}, "hot": "couch"},
+  "couch2": {"name": {"zh": "二號治療床", "en": "Couch two"}, "hot": "recovery"},
+  "chart-wall": {"name": {"zh": "經絡掛圖", "en": "Meridian chart"}, "hot": "meridian-chart"},
+  "sink": {"name": {"zh": "洗手台", "en": "Hand-wash sink"}, "hot": "sink"}
+ },
+ "glossary": [
+  {
+   "term": {"zh": "虛寒痛經", "en": "cold-deficiency period pain"},
+   "plain": {
+    "zh": "中醫證型：陽氣不足、寒從內生，經期下腹冷痛，熱敷會舒服。",
+    "en": "A TCM pattern: weak yang lets cold arise inside; a cold, cramping lower belly during periods that feels better with heat."
+   }
+  },
+  {
+   "term": {"zh": "喜溫喜按", "en": "better with warmth and pressure"},
+   "plain": {"zh": "痛的時候想熱敷、想按著；中醫認為多屬虛證或寒證。", "en": "The pain eases with heat and with pressing; in TCM a sign of deficiency or cold."}
+  },
+  {
+   "term": {"zh": "沉遲脈", "en": "deep, slow pulse"},
+   "plain": {
+    "zh": "要重按才清楚、跳得慢的脈；中醫認為主裡寒。運動員本來就心跳慢，要合參。",
+    "en": "A pulse felt only with firm pressure, and slow; in TCM it points to interior cold. Athletes have slow hearts anyway, so weigh it with everything else."
+   }
+  },
+  {
+   "term": {"zh": "齒痕舌", "en": "teeth-marked tongue"},
+   "plain": {"zh": "舌邊有牙齒壓出的波浪痕；中醫認為多與脾陽不足、濕停有關。", "en": "Wavy dents from the teeth along the tongue’s edge; in TCM often linked to weak spleen yang and retained damp."}
+  },
+  {
+   "term": {"zh": "寒凝胞宮", "en": "cold congealing in the womb"},
+   "plain": {"zh": "中醫用語：寒邪使子宮的氣血運行不暢，「不通則痛」。", "en": "A TCM phrase: cold slows the flow of qi and blood in the womb, and “where there is blockage there is pain”."}
+  },
+  {
+   "term": {"zh": "郄穴", "en": "cleft point"},
+   "plain": {"zh": "經氣深聚的穴位，中醫認為善治急性疼痛；脾經郄穴是地機。", "en": "A point where channel qi gathers deep; in TCM good for acute pain. The spleen channel’s cleft point is Diji."}
+  },
+  {
+   "term": {"zh": "交會穴", "en": "crossing point"},
+   "plain": {"zh": "兩條以上經脈交會的穴位；三陰交是脾、肝、腎三經的交會。", "en": "A point where two or more channels meet; Sanyinjiao is where the spleen, liver and kidney channels cross."}
+  },
+  {
+   "term": {"zh": "溫和灸", "en": "mild moxibustion"},
+   "plain": {
+    "zh": "點燃的艾條對準穴位、保持距離不動，讓皮膚溫熱微紅而不灼痛。",
+    "en": "A lit moxa stick held still over the point at a steady distance, so the skin feels warm and pinkens without burning."
+   }
+  },
+  {
+   "term": {"zh": "隔薑灸", "en": "moxa on ginger"},
+   "plain": {
+    "zh": "穴位上先墊一片扎了小孔的鮮薑，再在薑上燒艾炷；中醫認為能溫中散寒。",
+    "en": "A slice of fresh ginger, pricked with small holes, sits on the point and the moxa cone burns on top; in TCM it warms and disperses cold."
+   }
+  },
+  {
+   "term": {"zh": "灸盒", "en": "moxa box"},
+   "plain": {
+    "zh": "放在腹部或背部的木盒，艾條在盒內燃燒，適合大面積溫灸；一定要固定。",
+    "en": "A wooden box placed on the belly or back with moxa burning inside, for warming a wide area; it must be secured."
+   }
+  },
+  {
+   "term": {"zh": "艾煙", "en": "moxa smoke"},
+   "plain": {
+    "zh": "艾絨燃燒的煙；對氣喘或慢性肺病病人可能是誘發因子，要排煙或改用無煙灸法。",
+    "en": "The smoke of burning mugwort; it can trigger asthma or chronic lung disease, so extract it or switch to smokeless moxa."
+   }
+  },
+  {
+   "term": {"zh": "陳艾", "en": "aged mugwort"},
+   "plain": {
+    "zh": "存放多年的艾葉製成的艾絨，中醫認為燃燒較溫和、煙少；新艾燥烈。",
+    "en": "Moxa wool made from mugwort leaves stored for years; in TCM it burns gentler with less smoke, while fresh mugwort burns harsh."
+   }
+  },
+  {
+   "term": {"zh": "子宮外孕", "en": "ectopic pregnancy"},
+   "plain": {
+    "zh": "受精卵著床在子宮以外，多在輸卵管；可能破裂大出血。懷孕早期腹痛要先排除。",
+    "en": "A pregnancy implanted outside the womb, usually in a tube; it can rupture and bleed heavily. Early-pregnancy pain must rule it out first."
+   }
+  },
+  {
+   "term": {"zh": "孕婦禁穴", "en": "points avoided in pregnancy"},
+   "plain": {
+    "zh": "如合谷、三陰交、腹部與腰骶部穴位；孕期不針、不灸，需先和婦產科討論。",
+    "en": "Such as Hegu, Sanyinjiao and points on the belly and low back; in pregnancy they are neither needled nor warmed without obstetric advice."
+   }
+  },
+  {
+   "term": {"zh": "滅火罐", "en": "snuffing jar"},
+   "plain": {"zh": "有蓋的金屬罐，艾條燃端插進去隔絕空氣而熄滅；比用水澆更乾淨可靠。", "en": "A lidded metal jar; the burning end goes in and air is cut off. Cleaner and more reliable than water."}
+  }
+ ],
+ "codex": [
+  {
+   "id": "moxa-bay",
+   "kind": "equipment",
+   "name": {"zh": "艾灸區與排煙機", "en": "Moxa bay and extractor"},
+   "text": {
+    "zh": "排煙罩在床頭上方，先開機再點火。旁邊永遠放三樣：滅火罐、沙盤、一杯水。濾網定期更換，否則煙只是被吹到別處。",
+    "en": "The extractor hood hangs over the head of the couch: switch on before lighting. Three things always sit beside it: snuffing jar, sand tray, a cup of water. Filters are changed on schedule, or the smoke just moves elsewhere."
+   },
+   "hot": "moxa"
+  },
+  {
+   "id": "snuff-jar",
+   "kind": "equipment",
+   "name": {"zh": "滅火罐與沙盤", "en": "Snuffing jar and sand tray"},
+   "text": {
+    "zh": "艾條燃端插入滅火罐、蓋緊，靠隔絕空氣熄滅。艾灰倒進沙盤或水中，確認沒有餘燼才丟。外面黑了，裡面可能還紅。",
+    "en": "The burning end goes into the jar and the lid goes on; no air, no fire. Ash goes into sand or water and is binned only when no ember is left. Black outside can still be red inside."
+   },
+   "hot": "moxa"
+  },
+  {
+   "id": "meridian-chart",
+   "kind": "equipment",
+   "name": {"zh": "經絡掛圖", "en": "Meridian chart"},
+   "text": {
+    "zh": "痛經常用的穴位一條線就看得出來：任脈的關元、脾經的三陰交與地機，加上腰骶部的經外奇穴十七椎。",
+    "en": "The usual period-pain points line up on the chart: Guanyuan on the Conception vessel, Sanyinjiao and Diji on the spleen channel, and the extra point Shiqizhui on the low back."
+   },
+   "hot": "meridian-chart"
+  },
+  {
+   "id": "aged-moxa",
+   "kind": "item",
+   "name": {"zh": "一小包陳艾絨", "en": "A pouch of aged moxa wool"},
+   "text": {
+    "zh": "小葵給的樣本：顏色土黃、細軟、雜質少。和新艾放在一起燒，煙少、火力柔和。中醫認為艾葉要陳放，燥性才退。",
+    "en": "Kui’s sample: earthy yellow, soft, few stalks. Burned beside fresh mugwort it smokes less and glows gentler. In TCM the leaves are aged so their harshness fades."
+   }
+  },
+  {
+   "id": "concept-moxa",
+   "kind": "concept",
+   "name": {"zh": "為什麼用艾：溫通與炮製", "en": "Why mugwort: warming and processing"},
+   "text": {
+    "zh": "中醫認為艾葉辛溫，能溫經散寒、通絡止痛，燃燒時火力溫和而持久，熱能向深處走。艾葉曬乾、搗碎、篩去粗梗成艾絨，越細越純越適合直接接觸皮膚；陳放後燥性減、煙少。施灸方式分艾條懸灸（溫和灸、雀啄灸、迴旋灸）、艾炷灸（直接灸、隔物灸）與溫灸器。熱是工具，劑量靠觀察皮膚與病人的回饋，不靠時鐘。",
+    "en": "In TCM mugwort is acrid and warm: it warms the channels, disperses cold and eases pain, burning steadily so the heat sinks deep. Leaves are dried, crushed and sieved of stalks into wool; the finer and purer, the closer it may go to skin, and ageing tames its harshness and smoke. Methods: suspended sticks (mild, sparrow-pecking, circling), cones (direct or on a medium such as ginger) and moxa boxes. Heat is a tool; the dose is read from the skin and the patient, not the clock."
+   }
+  },
+  {
+   "id": "concept-safety",
+   "kind": "concept",
+   "name": {"zh": "灸法的禁忌與燙傷預防", "en": "Moxa contraindications and burn prevention"},
+   "text": {
+    "zh": "慎用或不用：實熱證與陰虛發熱、感覺遲鈍（糖尿病神經病變、中風患側）、意識不清、幼兒、顏面與大血管處、孕婦腹部與腰骶部。煙會誘發氣喘：先問、先排煙，或改無煙灸、溫灸器。預防燙傷：施灸者手指放在穴位兩旁感溫、隨時撣灰、灸盒要固定、施灸全程有人看。",
+    "en": "Use with care or not at all: excess heat and deficiency-heat patterns, poor sensation (diabetic neuropathy, the affected side after stroke), reduced consciousness, small children, the face and large vessels, the belly and low back in pregnancy. Smoke triggers asthma: ask first, extract it, or use smokeless sticks or a warming device. Burn prevention: the operator’s fingers rest beside the point to feel the heat, ash is flicked off often, boxes are secured, and someone watches throughout."
+   }
+  },
+  {
+   "id": "concept-dysmenorrhea",
+   "kind": "concept",
+   "name": {"zh": "痛經的辨證與紅旗", "en": "Period pain: patterns and red flags"},
+   "text": {
+    "zh": "中醫先分虛實寒熱：冷痛喜溫屬寒，脹痛拒按多氣滯，刺痛有血塊多血瘀，隱痛經後多虛。西醫先分原發與續發。紅旗（先轉婦產科）：可能懷孕或月經延遲、單側劇痛、異常出血、發燒、逐年加重、性交疼痛、摸到腫塊、頭暈或肩膀痛。「這次不一樣」本身就是紅旗。",
+    "en": "TCM sorts deficiency, excess, cold and heat: cold pain eased by warmth is cold; distending pain that resists pressure is qi stagnation; stabbing pain with clots is blood stasis; a dull ache after the period is deficiency. Western medicine sorts primary from secondary. Red flags (refer to obstetrics first): possible pregnancy or a late period, severe one-sided pain, abnormal bleeding, fever, pain worsening year on year, painful sex, a mass, dizziness or shoulder-tip pain. “This time is different” is itself a red flag."
+   }
+  },
+  {
+   "id": "concept-smoke",
+   "kind": "concept",
+   "name": {"zh": "艾煙與呼吸道", "en": "Moxa smoke and the airways"},
+   "text": {
+    "zh": "艾煙含微粒，對氣喘、慢性阻塞性肺病與過敏體質是誘發因子。灸法室要有局部排煙、通風與濾網保養；高風險病人改用無煙艾條、溫灸器或灸盒加排煙。病人喘起來：停灸熄火、移除煙源、坐起、用她自己的急救吸入器、監測血氧，不改善就叫救護車。",
+    "en": "Moxa smoke carries fine particles that can set off asthma, chronic lung disease and allergy. A moxa room needs local extraction, ventilation and filter care; high-risk patients get smokeless sticks, a warming device or a box under the hood. If a patient starts wheezing: stop and snuff the moxa, remove the smoke, sit her up, use her own reliever inhaler, watch the oxygen saturation, and call an ambulance if she does not improve."
+   }
+  }
+ ],
+ "segs": [
+  {
+   "id": "setup",
+   "name": {"zh": "晨間準備", "en": "Morning set-up"},
+   "sub": {"zh": "07:50 · 灸法室", "en": "07:50 · moxa room"},
+   "t": 470,
+   "mood": "day",
+   "note": {"zh": "排煙機、滅火罐、沙盤就位", "en": "Extractor, jar and sand tray ready"},
+   "beats": [
+    {
+     "id": "s1",
+     "to": "place:board",
+     "guide": {"zh": "看治療排程白板", "en": "Check the treatment board"},
+     "lines": [
+      [
+       "sys",
+       {"zh": "灸法室七點五十。窗還開著，排煙機在暖機，空氣裡有昨天的艾香。", "en": "The moxa room at ten to eight. Window open, extractor warming up, yesterday’s mugwort still in the air."}
+      ],
+      ["wen", {"zh": "上午一位痛經新病人、一位老病人。灸法室第一條規矩？", "en": "This morning: a new period-pain patient and a regular. First rule of the moxa room?"}],
+      ["me", {"zh": "先開排煙機，再點火。", "en": "Extractor on before any flame."}],
+      ["wen", {"zh": "第二條：火是工具，不是表演。去看看艾灸區。", "en": "Second rule: fire is a tool, not a show. Go and check the moxa bay."}]
+     ],
+     "mini": {"type": "find", "hot": "moxa", "q": {"zh": "找出艾灸區與排煙機", "en": "Find the moxa bay and its extractor"}},
+     "post": [["kui", {"zh": "濾網昨天換過。滅火罐、沙盤、一杯水，三樣都在。", "en": "Filter changed yesterday. Snuffing jar, sand tray, a cup of water: all three here."}]]
+    },
+    {
+     "id": "s2",
+     "to": "kui",
+     "guide": {"zh": "和小葵核對施灸前準備", "en": "Run the pre-moxa checks with Kui"},
+     "lines": [
+      ["kui", {"zh": "新來的都想先點火。你說，點火前要做幾件事？", "en": "New people always want to light up first. So: what comes before the flame?"}],
+      ["me", {"zh": "我排給妳看。", "en": "Let me put them in order."}]
+     ],
+     "mini": {
+      "type": "order",
+      "q": {"zh": "施灸前到施灸中的正確順序", "en": "The right order, from preparation to moxa"},
+      "steps": [
+       {"zh": "開窗、開排煙機", "en": "Window open, extractor on"},
+       {"zh": "備好滅火罐、沙盤與水", "en": "Snuffing jar, sand tray and water ready"},
+       {"zh": "核對病人並問禁忌", "en": "Check the patient and ask about contraindications"},
+       {"zh": "定位取穴、暴露部位", "en": "Locate the points, expose the area"},
+       {"zh": "點燃艾條，手指在穴旁感溫", "en": "Light the stick; fingers beside the point feel the heat"},
+       {"zh": "全程觀察皮膚與表情", "en": "Watch skin and face throughout"}
+      ]
+     },
+     "post": [["wen", {"zh": "點火排在第五步。前面四步，是為了讓火只做你要它做的事。", "en": "The flame is step five. The first four make sure the fire only does what you ask."}]]
+    }
+   ]
+  },
+  {
+   "id": "yating",
+   "name": {"zh": "雅婷初診", "en": "Ya-Ting's first visit"},
+   "sub": {"zh": "09:00 · 一號治療床", "en": "09:00 · couch one"},
+   "t": 540,
+   "mood": "day",
+   "note": {"zh": "雅婷：虛寒痛經，寒凝胞宮", "en": "Ya-Ting: cold-type pain, cold in the womb"},
+   "beats": [
+    {
+     "id": "y1",
+     "to": "yating",
+     "guide": {"zh": "請雅婷說說她的痛", "en": "Hear Ya-Ting describe the pain"},
+     "lines": [
+      ["yating", {"zh": "每次第一天都痛到在更衣室蹲著。抱熱水袋會好一點。", "en": "Every first day I end up crouched in the changing room. A hot-water bottle helps a bit."}],
+      ["me", {"zh": "按著肚子比較舒服，還是更痛？", "en": "Does pressing on your belly help, or hurt more?"}],
+      ["yating", {"zh": "按著比較好。手腳一年四季都是冰的。", "en": "Pressing helps. My hands and feet are cold all year round."}],
+      ["wen", {"zh": "喜溫喜按，手腳冰冷。來，把脈。", "en": "Better with warmth and pressure, cold hands and feet. Now the pulse."}]
+     ],
+     "mini": {
+      "type": "pulse",
+      "pulse": "slow",
+      "q": {"zh": "雅婷的脈要重按才清楚，而且跳得慢。這是？", "en": "Ya-Ting’s pulse is clear only under firm pressure, and it is slow. Which pulse?"},
+      "options": [
+       {
+        "zh": "沉遲脈",
+        "en": "Deep, slow pulse",
+        "ok": true,
+        "why": {
+         "zh": "沉主裡、遲主寒，配合喜溫喜按與手腳冰冷，中醫認為是裡寒。但她是泳將，心跳本來就慢，脈要和症狀合參。",
+         "en": "Deep means interior, slow means cold; with pain eased by warmth and cold limbs, TCM reads interior cold. But she is a swimmer with a slow heart anyway, so weigh the pulse with the story."
+        }
+       },
+       {
+        "zh": "浮緊脈",
+        "en": "Floating, tight pulse",
+        "ok": false,
+        "why": {"zh": "浮緊是風寒在表，要有惡寒發熱、頭身痛。她的脈在深處。", "en": "Floating-tight means wind-cold on the surface, with chills, fever and aches. Hers sits deep."}
+       },
+       {
+        "zh": "滑數脈",
+        "en": "Slippery, rapid pulse",
+        "ok": false,
+        "why": {"zh": "滑數多見痰熱濕熱。她的脈不滑也不快。", "en": "Slippery-rapid suggests phlegm-heat or damp-heat. Hers is neither slippery nor fast."}
+       },
+       {
+        "zh": "弦脈",
+        "en": "Wiry pulse",
+        "ok": false,
+        "why": {"zh": "弦脈端直有力，多見肝鬱與疼痛。她的脈是沉而慢。", "en": "A wiry pulse is taut and long, seen with liver constraint and pain. Hers is deep and slow."}
+       }
+      ]
+     },
+     "post": [["wen", {"zh": "游泳選手的心跳本來就慢。脈只是四診之一，不能自己定證。", "en": "Swimmers have slow hearts. The pulse is one of four examinations; it never decides alone."}]]
+    },
+    {
+     "id": "y2",
+     "to": "place:couch",
+     "guide": {"zh": "在自然光下看舌", "en": "Look at the tongue in daylight"},
+     "lines": [
+      ["wen", {"zh": "舌要在自然光下看。小葵，窗簾拉開一點。", "en": "Tongues are read in daylight. Kui, open the curtain a little."}],
+      ["wen", {"zh": "看舌質顏色、舌苔，也看舌邊：有沒有齒痕舌？", "en": "Colour, coat, and the edges: is it a teeth-marked tongue?"}],
+      ["kui", {"zh": "好了。雅婷，舌頭伸出來，放鬆就好。", "en": "Done. Ya-Ting, tongue out, nice and relaxed."}]
+     ],
+     "mini": {
+      "type": "tongue",
+      "tongue": {"body": "pale", "coat": "thin-white", "shape": "teeth-marked"},
+      "q": {"zh": "舌淡、苔薄白、舌邊齒痕。加上冷痛喜溫，辨證？", "en": "Pale body, thin white coat, teeth marks at the edges. With cold pain eased by warmth: the pattern?"},
+      "options": [
+       {
+        "zh": "陽虛寒凝",
+        "en": "Yang deficiency with congealed cold",
+        "ok": true,
+        "why": {
+         "zh": "舌淡主虛寒，齒痕提示陽氣不足而濕停；經期冷痛得熱則減，中醫認為寒凝胞宮、氣血不暢，「不通則痛」。",
+         "en": "A pale tongue means deficiency-cold and teeth marks hint at weak yang with damp; cramping eased by heat is, in TCM, cold congealing in the womb: blocked flow, so pain."
+        }
+       },
+       {
+        "zh": "氣滯血瘀",
+        "en": "Qi stagnation, blood stasis",
+        "ok": false,
+        "why": {"zh": "氣滯血瘀多見脹痛刺痛、經血暗有血塊、舌紫暗。", "en": "Stagnation and stasis bring distending or stabbing pain, dark clotted blood and a purplish tongue."}
+       },
+       {
+        "zh": "濕熱下注",
+        "en": "Damp-heat pouring down",
+        "ok": false,
+        "why": {"zh": "濕熱應見舌紅苔黃膩、灼熱痛、帶下黃。", "en": "Damp-heat shows a red tongue with a greasy yellow coat, burning pain and yellow discharge."}
+       },
+       {
+        "zh": "陰虛內熱",
+        "en": "Yin deficiency with heat",
+        "ok": false,
+        "why": {"zh": "陰虛舌紅少苔、怕熱、手足心熱。她怕的是冷。", "en": "Yin deficiency gives a red tongue with little coat and hot palms and soles. She fears the cold."}
+       }
+      ]
+     },
+     "post": [
+      ["me", {"zh": "虛寒痛經，寒凝胞宮。", "en": "Cold-deficiency period pain: cold congealing in the womb."}],
+      ["wen", {"zh": "所以治法？", "en": "So the treatment principle?"}],
+      ["me", {"zh": "溫經散寒、通絡止痛。灸，剛好是溫的。", "en": "Warm the channels, scatter cold, open the flow, ease pain. Moxa happens to be warm."}]
+     ]
+    },
+    {
+     "id": "y3",
+     "to": "place:chart-wall",
+     "guide": {"zh": "在掛圖上選穴", "en": "Choose points at the chart"},
+     "lines": [["wen", {"zh": "腹部一個、腰骶一個、腿上兩個。哪四個？", "en": "One on the belly, one on the low back, two on the leg. Which four?"}]],
+     "mini": {
+      "type": "points",
+      "codes": ["CV4", "EX-B8", "SP6", "SP8"],
+      "q": {"zh": "指出關元、十七椎、三陰交、地機", "en": "Point to Guanyuan, Shiqizhui, Sanyinjiao and Diji"}
+     },
+     "post": [
+      [
+       "wen",
+       {
+        "zh": "地機是脾經郄穴，郄穴治急痛。三陰交是交會穴，一穴通三經。",
+        "en": "Diji is the spleen channel’s cleft point, for acute pain. Sanyinjiao is a crossing point: one point, three channels."
+       }
+      ],
+      ["wen", {"zh": "還有一件事：三陰交是孕婦禁穴。記著，今天會用到。", "en": "One more thing: Sanyinjiao is among the points avoided in pregnancy. Remember it; you will need it today."}],
+      ["me", {"zh": "記住了。", "en": "Noted."}]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "moxa",
+   "name": {"zh": "艾條與艾煙", "en": "Moxa stick and smoke"},
+   "sub": {"zh": "10:00 · 一號治療床", "en": "10:00 · couch one"},
+   "t": 600,
+   "mood": "day",
+   "note": {"zh": "溫和灸看距離；艾煙誘發喘鳴", "en": "Mild moxa by distance; smoke sets off a wheeze"},
+   "beats": [
+    {
+     "id": "m1",
+     "to": "place:couch",
+     "guide": {"zh": "在三陰交溫和灸", "en": "Mild moxa over Sanyinjiao"},
+     "lines": [
+      ["wen", {"zh": "三陰交用溫和灸。距離怎麼抓？", "en": "Mild moxibustion over Sanyinjiao. How do you judge the distance?"}],
+      ["me", {"zh": "皮膚溫熱微紅，病人說「暖」不說「燙」。", "en": "Warm, faintly pink skin; she says “warm”, never “hot”."}],
+      ["wen", {"zh": "還有你自己的手指。", "en": "And your own fingers."}]
+     ],
+     "mini": {"type": "stage", "case": "moxa-cupping-moxa-stick-workflow", "stage": 2},
+     "post": [
+      [
+       "wen",
+       {"zh": "食指中指放在穴位兩旁，你的手指替她感溫。她睡著了也一樣準。", "en": "Index and middle finger beside the point: your fingers feel the heat for her. Still accurate if she dozes off."}
+      ]
+     ]
+    },
+    {
+     "id": "m2",
+     "to": "yating",
+     "guide": {"zh": "練習懸灸的穩定與撣灰", "en": "Practise a steady hover and ash control"},
+     "lines": [
+      ["kui", {"zh": "艾條燒一段就要撣灰。灰掉在皮膚上，就是燙傷。", "en": "Flick the ash off every so often. Ash on skin is a burn."}],
+      ["wen", {"zh": "雀啄灸是一上一下，熱一陣一陣；溫和灸是不動。今天用不動的。", "en": "Sparrow-pecking moxibustion goes up and down in pulses of heat; mild moxa stays still. Today, still."}]
+     ],
+     "mini": {"type": "drill", "template": "moxa-cupping", "drill": "moxa"},
+     "post": [["yating", {"zh": "好暖。比熱水袋深，像冬天泡進溫水池。", "en": "So warm. Deeper than the hot-water bottle, like slipping into a heated pool in winter."}]]
+    },
+    {
+     "id": "m3",
+     "to": "place:couch",
+     "guide": {"zh": "關元用灸盒，十七椎隔薑灸", "en": "Moxa box on Guanyuan, ginger on Shiqizhui"},
+     "lines": [
+      ["wen", {"zh": "腹部大面積用灸盒，十七椎用隔薑灸。薑片要怎樣？", "en": "A moxa box for the wide belly area, moxa on ginger for Shiqizhui. What makes a good slice?"}],
+      ["me", {"zh": "鮮薑、扎幾個小孔。太薄會燙，太乾沒用。", "en": "Fresh, pricked with small holes. Too thin burns, too dry does nothing."}],
+      ["kui", {"zh": "薑片切好了。灸盒用綁帶固定，蓋子留一條縫。", "en": "Ginger’s sliced. The box is strapped on, lid open a crack."}],
+      ["yating", {"zh": "我睡覺很會翻身耶。", "en": "I roll around a lot when I sleep."}],
+      ["wen", {"zh": "所以綁帶要綁，旁邊要有人。", "en": "Which is why there is a strap, and why someone stays."}]
+     ]
+    },
+    {
+     "id": "m4",
+     "to": "yating",
+     "guide": {"zh": "雅婷開始咳嗽", "en": "Ya-Ting starts coughing"},
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "隔簾那頭也在灸，煙比平常多。雅婷開始咳，呼氣帶著細細的哨音。",
+        "en": "Behind the curtain another couch is burning moxa too; the smoke is thicker than usual. Ya-Ting coughs, a thin whistle on each breath out."
+       }
+      ],
+      ["yating", {"zh": "我小時候的氣喘……好像回來了……", "en": "My childhood asthma... I think it’s back..."}]
+     ],
+     "mini": {
+      "type": "vitals",
+      "event": "desaturation",
+      "options": [
+       {
+        "zh": "停灸熄火、排煙、坐起、用她的吸入器並監測",
+        "en": "Snuff it, extract, sit up, own inhaler, monitor",
+        "ok": true,
+        "why": {
+         "zh": "先移除誘因，坐姿比較好呼吸，用她醫師開給她的急救吸入器，監測血氧；說話困難或不回升就叫救護車。",
+         "en": "Remove the trigger first, sit her up to breathe, use the reliever inhaler her own doctor prescribed, and watch the saturation; if she cannot speak in sentences or it does not recover, call an ambulance."
+        }
+       },
+       {
+        "zh": "讓她平躺休息，灸完再說",
+        "en": "Lie her flat and finish the moxa",
+        "ok": false,
+        "why": {"zh": "平躺更喘，煙還在。誘因沒移除，什麼都沒處理。", "en": "Lying flat makes wheezing worse and the smoke is still there. Nothing has been dealt with."}
+       },
+       {
+        "zh": "針刺定喘穴止喘",
+        "en": "Needle Dingchuan to stop the wheeze",
+        "ok": false,
+        "why": {"zh": "急性喘鳴要的是移除誘因和她自己的急救藥，不是加一個新的處置。", "en": "An acute wheeze needs the trigger gone and her own reliever, not a new procedure."}
+       },
+       {
+        "zh": "給她喝溫水，等一下",
+        "en": "Give her warm water and wait",
+        "ok": false,
+        "why": {"zh": "喘鳴加血氧下降，不能「等一下」。", "en": "Wheeze with falling saturation is not a “wait and see”."}
+       }
+      ]
+     },
+     "post": [
+      ["kui", {"zh": "排煙開到最大，兩扇窗全開了。", "en": "Extractor on full, both windows wide open."}],
+      ["yating", {"zh": "好……好一點了。", "en": "Better... a bit better."}],
+      ["wen", {"zh": "血氧回來了。艾煙會誘發氣喘。你剛才問過她會不會喘嗎？", "en": "Saturation’s back. Moxa smoke can trigger asthma. Did you ask her about wheezing beforehand?"}]
+     ]
+    },
+    {
+     "id": "m5",
+     "to": "yating",
+     "guide": {"zh": "和雅婷談以後的灸法", "en": "Plan Ya-Ting’s next sessions"},
+     "roles": ["resident"],
+     "lines": [
+      ["me", {"zh": "雅婷，以後改用無煙艾條或溫灸器，排煙罩下面灸。吸入器每次都帶。", "en": "From now on: smokeless sticks or a warming device, under the hood. Bring your inhaler every time."}],
+      ["yating", {"zh": "教練也一直這樣唸我。", "en": "My coach nags me about that too."}],
+      ["wen", {"zh": "問診單上「氣喘」那一格，從今天起是你的第一格。", "en": "From today, the “asthma” box on the intake form is your first box."}]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "yijun",
+   "name": {"zh": "怡君的「痛經」", "en": "Yi-Jun's “period pain”"},
+   "sub": {"zh": "11:30 · 二號治療床", "en": "11:30 · couch two"},
+   "t": 690,
+   "mood": "day",
+   "note": {"zh": "怡君：月經遲了，先驗孕", "en": "Yi-Jun: period late, test first"},
+   "beats": [
+    {
+     "id": "i1",
+     "to": "yijun",
+     "guide": {"zh": "問怡君這次哪裡不一樣", "en": "Ask Yi-Jun what is different"},
+     "lines": [
+      ["kui", {"zh": "怡君到了。她說要跟上次一樣，灸關元和三陰交。", "en": "Yi-Jun’s here. She wants the same as last time: Guanyuan and Sanyinjiao."}],
+      ["yijun", {"zh": "一樣的位置就好，我午休趕時間。", "en": "Same spots, please. I’m on my lunch break."}],
+      ["me", {"zh": "這次的痛，哪裡不一樣？", "en": "What is different about this pain?"}],
+      ["yijun", {"zh": "比較偏右邊，悶悶的。月經其實晚了兩週，我以為是壓力。", "en": "More on the right, a dull ache. My period is actually two weeks late. I thought it was stress."}],
+      ["wen", {"zh": "你聽到什麼？", "en": "What did you just hear?"}]
+     ],
+     "mini": {
+      "type": "choice",
+      "q": {"zh": "痛經多年的老病人，這次右下腹悶痛、月經晚了兩週。點火之前？", "en": "A long-time patient; this time right-sided dull pain and a period two weeks late. Before any flame?"},
+      "options": [
+       {
+        "zh": "先停：問經期、驗孕，今天不灸",
+        "en": "Stop: ask, test, no moxa today",
+        "ok": true,
+        "why": {
+         "zh": "月經延遲加單側下腹痛，要先排除懷孕，尤其子宮外孕。懷孕時腹部、腰骶與三陰交都不針不灸。",
+         "en": "A late period with one-sided lower pain means pregnancy, and especially ectopic pregnancy, must be ruled out first. In pregnancy the belly, low back and Sanyinjiao are neither needled nor warmed."
+        },
+        "set": {"checked-pregnancy": true}
+       },
+       {
+        "zh": "照上次的處方灸，她是老病人",
+        "en": "Repeat last time’s points; she is a regular",
+        "ok": false,
+        "why": {"zh": "老病人不等於老問題。她說「不一樣」，那就是今天最重要的病史。", "en": "A regular patient is not a regular problem. “Different” is the most important history you will hear today."},
+        "set": {"checked-pregnancy": false}
+       },
+       {
+        "zh": "只灸三陰交，避開肚子",
+        "en": "Only Sanyinjiao; avoid the belly",
+        "ok": false,
+        "why": {"zh": "三陰交本身就是孕婦禁穴。避開肚子不等於安全。", "en": "Sanyinjiao is itself avoided in pregnancy. Skipping the belly does not make it safe."},
+        "set": {"checked-pregnancy": false}
+       }
+      ]
+     },
+     "post": [["yijun", {"zh": "……我沒想過。這裡有驗孕棒嗎？", "en": "...I hadn’t thought of that. Do you have a test here?"}], ["kui", {"zh": "有，我帶妳去。", "en": "We do. I’ll take you."}]]
+    },
+    {
+     "id": "i2",
+     "when": {"flag": "checked-pregnancy", "is": false},
+     "lines": [
+      ["wen", {"zh": "等一下，先別點火。怡君，最後一次月經是什麼時候？", "en": "Wait, no flame yet. Yi-Jun, when was your last period?"}],
+      ["sys", {"zh": "溫醫師把艾條放回盒子裡，看了你一眼，沒有多說。", "en": "Dr Wen puts the moxa stick back in its box and gives you one look. Nothing more."}]
+     ]
+    },
+    {
+     "id": "i3",
+     "to": "place:couch2",
+     "guide": {"zh": "等驗孕結果", "en": "Wait for the test result"},
+     "lines": [
+      ["sys", {"zh": "兩條線。怡君坐在二號床邊，看著它很久沒說話。", "en": "Two lines. Yi-Jun sits on the edge of couch two and looks at it for a long time."}],
+      ["wen", {"zh": "懷孕早期加單側腹痛。我們最怕什麼？誰來確認？", "en": "Early pregnancy and one-sided pain. What do we fear most, and who confirms it?"}]
+     ],
+     "mini": {
+      "type": "imaging",
+      "region": "pelvis",
+      "question": {"zh": "懷孕早期合併單側下腹痛，要先排除什麼？靠什麼確認？", "en": "Early pregnancy with one-sided lower belly pain: what must be ruled out, and how?"},
+      "answer": {
+       "zh": "子宮外孕。由婦產科做超音波確認胚囊在子宮內，必要時抽血追蹤。確認前不針不灸腹部與孕婦禁穴；若劇痛、頭暈、肩膀痛或出血變多，立即去急診。",
+       "en": "Ectopic pregnancy. Obstetrics confirms with ultrasound that the sac is inside the womb, with blood tests if needed. Until then, no needles or moxa on the belly or the pregnancy-avoided points; severe pain, dizziness, shoulder-tip pain or heavier bleeding means the emergency department now."
+      }
+     },
+     "post": [["wen", {"zh": "超音波不是我們做的。我們做的，是不讓她錯過超音波。", "en": "We do not do the scan. Our job is making sure she does not miss it."}]]
+    },
+    {
+     "id": "i4",
+     "to": "yijun",
+     "guide": {"zh": "交代怡君去婦產科", "en": "Send Yi-Jun on to obstetrics"},
+     "roles": ["assistant"],
+     "lines": [
+      [
+       "kui",
+       {
+        "zh": "怡君，婦產科下午幫妳加號。路上痛變厲害、頭暈、肩膀痛，直接去急診。",
+        "en": "Yi-Jun, obstetrics will fit you in this afternoon. If the pain gets worse, you feel faint or your shoulder hurts, go straight to the emergency department."
+       }
+      ],
+      ["yijun", {"zh": "肩膀？", "en": "My shoulder?"}],
+      [
+       "kui",
+       {"zh": "肚子裡如果出血，會刺激橫膈，痛會跑到肩膀。記住就好。", "en": "Bleeding inside the belly irritates the diaphragm, and the pain shows up in the shoulder. Just remember it."}
+      ]
+     ]
+    },
+    {
+     "id": "i5",
+     "to": "place:board",
+     "guide": {"zh": "寫轉診單", "en": "Write the referral"},
+     "roles": ["resident"],
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "轉診單：月經延遲、驗孕陽性、右下腹悶痛、生命徵象穩定、今日未施灸。",
+        "en": "Referral: period late, pregnancy test positive, right lower dull pain, vital signs stable, no moxa given today."
+       }
+      ],
+      ["wen", {"zh": "「今日未施灸」也要寫。婦產科醫師會想知道。", "en": "“No moxa given today” goes in too. The obstetrician will want to know."}]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cleanup",
+   "name": {"zh": "收灸與艾灰", "en": "Snuffing and ash"},
+   "sub": {"zh": "13:30 · 艾灸區", "en": "13:30 · moxa bay"},
+   "t": 810,
+   "mood": "day",
+   "note": {"zh": "艾灰入沙，滅火罐蓋緊", "en": "Ash in sand, jar lid on"},
+   "beats": [
+    {
+     "id": "k1",
+     "to": "place:moxa",
+     "guide": {"zh": "收拾上午的艾條", "en": "Clear the morning's moxa"},
+     "lines": [
+      ["kui", {"zh": "你知道灸法室最常見的火警怎麼來的嗎？", "en": "Know how most moxa-room fire alarms start?"}],
+      ["me", {"zh": "艾條沒熄透就丟進垃圾桶？", "en": "A stick that wasn’t really out, dropped in the bin?"}],
+      ["kui", {"zh": "對。外面黑了，裡面還紅。", "en": "Exactly. Black outside, red inside."}]
+     ],
+     "mini": {
+      "type": "order",
+      "q": {"zh": "艾條熄滅與艾灰處理的順序", "en": "Snuffing moxa and handling the ash, in order"},
+      "steps": [
+       {"zh": "艾條燃端插入滅火罐", "en": "Burning end into the snuffing jar"},
+       {"zh": "蓋緊罐蓋，隔絕空氣", "en": "Lid on tight to cut off air"},
+       {"zh": "艾灰倒入沙盤或水中", "en": "Ash into sand or water"},
+       {"zh": "確認沒有餘燼才丟棄", "en": "Bin it only when no ember remains"},
+       {"zh": "排煙機再運轉一段時間", "en": "Leave the extractor running a while"},
+       {"zh": "記錄艾條批號與異常", "en": "Log the batch number and anything odd"}
+      ]
+     },
+     "post": [["wen", {"zh": "灸法的安全，一半在點火前，一半在熄火後。", "en": "Half of moxa safety happens before the flame, half after it."}]]
+    },
+    {
+     "id": "k2",
+     "to": "kui",
+     "guide": {"zh": "和小葵查這盒艾條", "en": "Check this box of moxa with Kui"},
+     "roles": ["assistant"],
+     "item": "aged-moxa",
+     "lines": [
+      [
+       "kui",
+       {
+        "zh": "這盒煙特別多。我記下批號回報藥局。陳艾燒起來溫和、煙少，新艾燥烈。",
+        "en": "This box smokes far more than usual. I’ve logged the batch for the pharmacy. Aged mugwort burns gentle and clean; fresh mugwort burns harsh."
+       }
+      ],
+      ["me", {"zh": "所以早上的煙……", "en": "So this morning’s smoke..."}],
+      ["kui", {"zh": "一半是隔壁床，一半可能是這盒。拿去，聞聞看什麼叫陳艾。", "en": "Half the next couch, half maybe this box. Here, smell what aged mugwort is like."}]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "callback",
+   "name": {"zh": "婦產科回電", "en": "Obstetrics calls back"},
+   "sub": {"zh": "15:30 · 診間電話", "en": "15:30 · clinic phone"},
+   "t": 930,
+   "mood": "day",
+   "note": {"zh": "怡君：胚囊在子宮內", "en": "Yi-Jun: the sac is in the womb"},
+   "beats": [
+    {
+     "id": "c1",
+     "ring": {"title": {"zh": "婦產科來電", "en": "Obstetrics calling"}, "sub": {"zh": "怡君的超音波結果出來了", "en": "Yi-Jun's scan result is in"}, "call": true, "from": "obgyn"},
+     "lines": [
+      ["obgyn", {"zh": "怡君的超音波，胚囊在子宮內，不是子宮外孕。下週追蹤。", "en": "Yi-Jun’s scan shows the sac inside the womb; not an ectopic pregnancy. Follow-up next week."}],
+      ["me", {"zh": "謝謝。她今天在我們這裡沒有施灸。", "en": "Thank you. She had no moxa with us today."}],
+      ["obgyn", {"zh": "很好。懷孕期間要針要灸，先跟我們討論。", "en": "Good. Any needles or moxa during the pregnancy, talk to us first."}],
+      ["kui", {"zh": "她剛傳訊息給我：「是在子宮裡。」後面三個哭臉。", "en": "She just texted me: “It’s in the womb.” Then three crying faces."}]
+     ]
+    },
+    {
+     "id": "c2",
+     "to": "place:board",
+     "guide": {"zh": "寫雅婷的灸後衛教", "en": "Write Ya-Ting's after-care"},
+     "ring": {
+      "title": {"zh": "教練傳訊息", "en": "Message from the coach"},
+      "sub": {"zh": "雅婷下午可以下水嗎？", "en": "Can Ya-Ting swim this afternoon?"},
+      "call": false,
+      "from": "coach"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "雅婷：經前保暖、游完立刻擦乾換衣、熱水袋別一直壓同一處。",
+        "en": "Ya-Ting: keep warm before periods, dry off and change straight after swimming, don’t leave the hot-water bottle on one spot."
+       }
+      ],
+      ["me", {"zh": "不要自己在宿舍點艾條。痛逐年加重、經血變多、發燒，就回來看。", "en": "No moxa sticks in the dorm on her own. Pain worsening each year, heavier bleeding or fever: come back."}],
+      ["wen", {"zh": "寫得好。衛教要寫成她教練也看得懂的樣子。", "en": "Good. Write after-care so even her coach could follow it."}]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "name": {"zh": "收診回顧", "en": "Closing debrief"},
+   "sub": {"zh": "17:30 · 灸法室", "en": "17:30 · moxa room"},
+   "t": 1050,
+   "mood": "eve",
+   "note": {"zh": "三個問題：怕燙、會喘、懷孕", "en": "Three questions: heat, asthma, pregnancy"},
+   "beats": [
+    {
+     "id": "e1",
+     "when": {"flag": "checked-pregnancy", "is": true},
+     "lines": [["wen", {"zh": "怡君說，你是這幾年第一個問她月經的人。她說那句話時在笑。", "en": "Yi-Jun says you were the first in years to ask about her period. She was smiling when she said it."}]]
+    },
+    {
+     "id": "e1b",
+     "when": {"flag": "checked-pregnancy", "is": false},
+     "lines": [
+      [
+       "wen",
+       {
+        "zh": "怡君的事，你本來要照舊灸。下次老病人說「這次不一樣」，那句話比處方重要。",
+        "en": "With Yi-Jun you were going to repeat the old points. When a regular says “this time is different”, that sentence outranks the prescription."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "e2",
+     "to": "wen",
+     "guide": {"zh": "和溫醫師回顧今天", "en": "Debrief with Dr Wen"},
+     "lines": [
+      ["wen", {"zh": "今天兩個病人，三個問題。說說看。", "en": "Two patients today, three questions. Go on."}],
+      ["me", {"zh": "怕不怕燙、會不會喘、有沒有可能懷孕。", "en": "Heat-sensitive? Asthma? Could she be pregnant?"}],
+      ["wen", {"zh": "還有第四個：火熄了沒。", "en": "And a fourth: is the fire out?"}],
+      ["kui", {"zh": "那一題是我的。", "en": "That one’s mine."}],
+      ["wen", {"zh": "灸是溫的，但灸法室要冷靜。明天見。", "en": "Moxa is warm, but a moxa room runs on a cool head. See you tomorrow."}]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "night",
+   "name": {"zh": "夜間訊息", "en": "Night message"},
+   "sub": {"zh": "21:30 · 宿舍", "en": "21:30 · home"},
+   "t": 1290,
+   "mood": "night",
+   "note": {"zh": "雅婷：抱著熱水袋寫經期日記", "en": "Ya-Ting: diary and hot-water bottle"},
+   "beats": [
+    {
+     "id": "n1",
+     "ring": {
+      "title": {"zh": "雅婷傳訊息", "en": "Message from Ya-Ting"},
+      "sub": {"zh": "今天謝謝你們，肚子暖暖的", "en": "Thank you for today. My belly feels warm"},
+      "call": false,
+      "from": "yating"
+     },
+     "lines": [
+      [
+       "yating",
+       {"zh": "下午有下水，游慢一點。現在抱著熱水袋寫經期日記，吸入器在書包裡。", "en": "Swam this afternoon, slower. Now writing my period diary with the hot-water bottle. Inhaler’s in my bag."}
+      ],
+      ["sys", {"zh": "小葵在群組裡貼了一張照片：滅火罐排成一排，全蓋緊了。", "en": "Kui posts a photo to the team chat: a row of snuffing jars, every lid on tight."}]
+     ],
+     "end": true
+    }
+   ]
+  }
+ ],
+ "ending": {
+  "title": {"zh": "收灸了", "en": "Moxa out"},
+  "sub": {"zh": "怕燙、會喘、懷孕，還有：火熄了沒", "en": "Heat, asthma, pregnancy, and: is the fire out?"},
+  "stats": ["stages", "drills", "choices", "calls", "items", "time"]
+ }
+}

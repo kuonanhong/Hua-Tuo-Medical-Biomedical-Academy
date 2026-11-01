@@ -1,0 +1,1491 @@
+{
+ "format": "huatuo-shift-v2",
+ "department": "emergency",
+ "case": "fast-track",
+ "caseTitle": {
+  "zh": "快速診區：走進來的不一定輕",
+  "en": "Fast track: walking in is not the same as well"
+ },
+ "condition": {
+  "zh": "輕症區 · 隱藏的急症",
+  "en": "Fast track · hidden emergencies"
+ },
+ "difficulty": 1,
+ "room": "clinic",
+ "title": {
+  "zh": "急診快速診區的一天",
+  "en": "A day in the emergency fast track"
+ },
+ "tagline": {
+  "zh": "走進來的，不一定是輕的",
+  "en": "Walking in does not mean it is minor"
+ },
+ "minutes": 25,
+ "roles": [
+  {
+   "id": "resident",
+   "zh": "急診住院醫師",
+   "en": "Emergency resident",
+   "desc": {
+    "zh": "今天輪到快速診區。病人都是自己走進來的，你的工作是找出那個不該待在這裡的人。",
+    "en": "Today you run the fast track. Everyone walked in on their own; your job is to find the one who should not be here."
+   }
+  },
+  {
+   "id": "np",
+   "zh": "急診專科護理師",
+   "en": "Emergency nurse practitioner",
+   "desc": {
+    "zh": "縫合、換藥、衛教都是你的。候診區你一天巡好幾次，常常是第一個發現「臉色不對」的人。",
+    "en": "Suturing, dressings and teaching are yours. You walk the waiting room all day and are often the first to notice a face that looks wrong."
+   }
+  }
+ ],
+ "cast": {
+  "attending": {
+   "name": {
+    "zh": "邱主治",
+    "en": "Dr Chiu"
+   },
+   "role": {
+    "zh": "快速診區主治醫師（師傅）",
+    "en": "Fast-track consultant (mentor)"
+   },
+   "tag": "ATT",
+   "color": "#81296d",
+   "about": {
+    "zh": "口袋裡有一本小冊子，寫滿「差點漏掉的病人」。口頭禪：「走進來的，不一定是輕的。」",
+    "en": "Keeps a little notebook of \"patients I nearly missed\". Catchphrase: \"Walking in does not mean it is minor.\""
+   },
+   "body": "mentor"
+  },
+  "triage": {
+   "name": {
+    "zh": "美玲",
+    "en": "Mei-ling"
+   },
+   "role": {
+    "zh": "檢傷護理師",
+    "en": "Triage nurse"
+   },
+   "tag": "RN",
+   "color": "#3b8f6a",
+   "about": {
+    "zh": "檢傷台坐了十五年，會一邊量血壓一邊看你的鞋子判斷你走了多遠。",
+    "en": "Fifteen years at the triage desk. She takes your blood pressure and reads from your shoes how far you walked."
+   },
+   "body": "nurse"
+  },
+  "a-che": {
+   "name": {
+    "zh": "阿哲",
+    "en": "Ah-Che"
+   },
+   "role": {
+    "zh": "病人：大學生，右胸痛",
+    "en": "Patient: student, right chest pain"
+   },
+   "tag": "PT",
+   "color": "#4a7fb5",
+   "about": {
+    "zh": "十九歲，又高又瘦，期末考前一晚在書桌前右胸突然刺痛。手裡抓著筆記本不放。",
+    "en": "Nineteen, tall and thin. The night before finals a sharp pain hit his right chest at the desk. He will not let go of his notes."
+   },
+   "body": "patient"
+  },
+  "su": {
+   "name": {
+    "zh": "蘇老師",
+    "en": "Ms Su"
+   },
+   "role": {
+    "zh": "病人：國中音樂老師，頭痛",
+    "en": "Patient: music teacher, headache"
+   },
+   "tag": "PT",
+   "color": "#b5651d",
+   "about": {
+    "zh": "四十八歲，偏頭痛二十年。今天搬鋼琴椅時後腦「像被球棒打到」。下午要帶合唱比賽。",
+    "en": "Forty-eight, migraines for twenty years. Lifting a piano bench, the back of her head felt \"hit by a bat\". Her choir competes this afternoon."
+   },
+   "body": "patient"
+  },
+  "hung": {
+   "name": {
+    "zh": "鴻師傅",
+    "en": "Chef Hung"
+   },
+   "role": {
+    "zh": "病人：熱炒店主廚，手掌割傷",
+    "en": "Patient: wok chef, palm cut"
+   },
+   "tag": "PT",
+   "color": "#6a8f3b",
+   "about": {
+    "zh": "四十歲，手臂刺滿龍，殺魚二十年。左手掌被魚刀劃開，自己用毛巾綁好騎車來。只有一個弱點：針。",
+    "en": "Forty, dragon tattoos up both arms, has gutted fish for twenty years. Sliced his left palm, tied a towel round it and rode in. One weakness: needles."
+   },
+   "body": "patient"
+  },
+  "neuro": {
+   "name": {
+    "zh": "神經外科高醫師",
+    "en": "Dr Kao (neurosurgery)"
+   },
+   "role": {
+    "zh": "神經外科值班醫師",
+    "en": "On-call neurosurgeon"
+   },
+   "tag": "NS",
+   "color": "#5b4a9e",
+   "about": {
+    "zh": "電話裡永遠在走路。聽完會說「影像傳給我」，然後你會聽到電梯的聲音。",
+    "en": "Always walking when he answers. He says \"send me the images\" and you hear the lift doors."
+   },
+   "phoneOnly": true
+  },
+  "che-mom": {
+   "name": {
+    "zh": "阿哲媽媽",
+    "en": "Ah-Che's mother"
+   },
+   "role": {
+    "zh": "病人家屬",
+    "en": "Patient's mother"
+   },
+   "tag": "FAM",
+   "color": "#c06c84",
+   "about": {
+    "zh": "在南部上班，電話裡第一句是「他有沒有吃早餐」。",
+    "en": "Works down south. Her first question on the phone: \"Did he eat breakfast?\""
+   },
+   "phoneOnly": true
+  }
+ },
+ "places": {
+  "board": {
+   "name": {
+    "zh": "快速診區白板",
+    "en": "Fast-track board"
+   },
+   "hot": "whiteboard"
+  },
+  "triage": {
+   "name": {
+    "zh": "檢傷台",
+    "en": "Triage desk"
+   },
+   "hot": "desk"
+  },
+  "exam": {
+   "name": {
+    "zh": "診療床",
+    "en": "Examination couch"
+   },
+   "hot": "field"
+  },
+  "suture": {
+   "name": {
+    "zh": "縫合處置床",
+    "en": "Suture bay"
+   },
+   "hot": "recovery"
+  },
+  "ecg": {
+   "name": {
+    "zh": "心電圖機",
+    "en": "ECG machine"
+   },
+   "hot": "device"
+  },
+  "viewer": {
+   "name": {
+    "zh": "影像工作站",
+    "en": "Image viewer"
+   },
+   "hot": "imaging"
+  },
+  "monitor": {
+   "name": {
+    "zh": "生理監視器",
+    "en": "Patient monitor"
+   },
+   "hot": "monitor"
+  },
+  "cart": {
+   "name": {
+    "zh": "急救車",
+    "en": "Crash cart"
+   },
+   "hot": "crash-cart"
+  },
+  "waiting": {
+   "name": {
+    "zh": "候診區",
+    "en": "Waiting area"
+   },
+   "hot": "door"
+  }
+ },
+ "glossary": [
+  {
+   "term": {
+    "zh": "快速診區",
+    "en": "fast track"
+   },
+   "plain": {
+    "zh": "急診裡專看可以自己走動、檢傷等級較輕的病人的區域。求快，但不能求粗。",
+    "en": "The part of the emergency department for patients who can walk and were triaged as less urgent. Fast, but never careless."
+   }
+  },
+  {
+   "term": {
+    "zh": "檢傷升級",
+    "en": "up-triage"
+   },
+   "plain": {
+    "zh": "發現病人比原本判斷的更嚴重，就把他的優先順序往上調，必要時移到急救區。",
+    "en": "Raising a patient's priority when they turn out sicker than first judged, and moving them to resus if needed."
+   }
+  },
+  {
+   "term": {
+    "zh": "自發性氣胸",
+    "en": "spontaneous pneumothorax"
+   },
+   "plain": {
+    "zh": "肺表面的小氣泡破掉，空氣跑進肺和胸壁之間，肺塌下去一部分。常見於高瘦的年輕男性。",
+    "en": "A small bleb on the lung surface bursts, air leaks between lung and chest wall and part of the lung collapses. Typical in tall, thin young men."
+   }
+  },
+  {
+   "term": {
+    "zh": "安全三角",
+    "en": "safe triangle"
+   },
+   "plain": {
+    "zh": "腋下一塊避開心臟、大血管和神經的區域，需要抽氣或放胸管時從這裡進。",
+    "en": "An area under the armpit away from the heart, big vessels and nerves, used when air must be drained from the chest."
+   }
+  },
+  {
+   "term": {
+    "zh": "雷擊頭痛",
+    "en": "thunderclap headache"
+   },
+   "plain": {
+    "zh": "幾秒到一分鐘內就痛到最高點的頭痛。不管以前有沒有偏頭痛，都要先排除顱內出血。",
+    "en": "A headache that peaks within seconds to a minute. Whatever the migraine history, bleeding in the head must be ruled out first."
+   }
+  },
+  {
+   "term": {
+    "zh": "蜘蛛網膜下腔出血",
+    "en": "subarachnoid haemorrhage"
+   },
+   "plain": {
+    "zh": "腦表面薄膜下的出血，最常見的原因是腦動脈瘤破裂。可能再出血，所以要快。",
+    "en": "Bleeding under the thin membranes over the brain, most often from a burst aneurysm. It can bleed again, so speed matters."
+   }
+  },
+  {
+   "term": {
+    "zh": "頸部僵硬",
+    "en": "neck stiffness"
+   },
+   "plain": {
+    "zh": "低頭時脖子又緊又痛，代表腦膜可能受到血或感染的刺激。",
+    "en": "Pain and tightness on bending the head forward, a sign the brain's linings may be irritated by blood or infection."
+   }
+  },
+  {
+   "term": {
+    "zh": "腰椎穿刺",
+    "en": "lumbar puncture"
+   },
+   "plain": {
+    "zh": "從下背抽一點腦脊髓液來檢查。斷層正常但仍高度懷疑出血時才考慮。",
+    "en": "Taking a little spinal fluid from the lower back. Considered when the scan is normal but bleeding is still suspected."
+   }
+  },
+  {
+   "term": {
+    "zh": "屈指肌腱",
+    "en": "flexor tendon"
+   },
+   "plain": {
+    "zh": "把前臂肌肉連到手指、讓手指彎曲的繩索。手掌割傷要逐指檢查。",
+    "en": "The cords that connect forearm muscles to the fingers and bend them. A palm cut means testing each finger."
+   }
+  },
+  {
+   "term": {
+    "zh": "破傷風",
+    "en": "tetanus"
+   },
+   "plain": {
+    "zh": "傷口被一種細菌感染，造成全身肌肉僵直。處理傷口要問最後一次打疫苗是什麼時候。",
+    "en": "An infection from a wound that makes muscles lock rigid. Every wound visit asks when the last vaccine dose was."
+   }
+  },
+  {
+   "term": {
+    "zh": "血管迷走神經性昏厥",
+    "en": "vasovagal faint"
+   },
+   "plain": {
+    "zh": "看到血或針時，心跳和血壓突然變慢變低而暈倒。躺平抬腳通常很快恢復。",
+    "en": "Heart rate and blood pressure drop suddenly at the sight of blood or a needle and the person faints. Lying flat with legs up usually fixes it fast."
+   }
+  },
+  {
+   "term": {
+    "zh": "創傷弧菌",
+    "en": "Vibrio vulnificus"
+   },
+   "plain": {
+    "zh": "海水和海鮮裡的細菌，傷口感染可能在一天內快速擴散，肝病病人特別危險。",
+    "en": "A bacterium of seawater and seafood. A wound infection can spread within a day; people with liver disease are most at risk."
+   }
+  }
+ ],
+ "codex": [
+  {
+   "id": "fast-track-board",
+   "kind": "equipment",
+   "name": {
+    "zh": "快速診區白板",
+    "en": "Fast-track board"
+   },
+   "text": {
+    "zh": "每一列一位病人：主訴、檢傷級數、誰負責、等什麼。邱主治會在旁邊畫一個小問號：最壞的可能想過了嗎？",
+    "en": "One row per patient: complaint, triage level, who owns them, what they wait for. Dr Chiu draws a small question mark beside each: has the worst case been considered?"
+   },
+   "hot": "whiteboard"
+  },
+  {
+   "id": "suture-tray",
+   "kind": "equipment",
+   "name": {
+    "zh": "縫合包",
+    "en": "Suture tray"
+   },
+   "text": {
+    "zh": "持針器、有齒鑷、剪刀、針線、紗布、沖洗用的大針筒。打開之前先確認：傷口探查過了嗎？",
+    "en": "Needle holder, toothed forceps, scissors, sutures, gauze and a big syringe for irrigation. Before opening it: has the wound been explored?"
+   },
+   "hot": "instruments"
+  },
+  {
+   "id": "image-viewer",
+   "kind": "equipment",
+   "name": {
+    "zh": "影像工作站",
+    "en": "Image viewer"
+   },
+   "text": {
+    "zh": "胸部 X 光的氣胸要找一條很細的白線，線外沒有肺紋路。把亮度調暗、放大肺尖，比較容易看到。",
+    "en": "On a chest film, a pneumothorax is a hairline white edge with no lung markings beyond it. Dim the image and zoom on the apex."
+   },
+   "hot": "imaging"
+  },
+  {
+   "id": "che-notes",
+   "kind": "item",
+   "name": {
+    "zh": "阿哲的期末考筆記",
+    "en": "Ah-Che's exam notes"
+   },
+   "text": {
+    "zh": "他照 X 光也不肯放下的那本筆記。最後一頁寫著：「明天考完就睡覺」。",
+    "en": "The notebook he would not put down even for the X-ray. Last page: \"Sleep after the exam tomorrow.\""
+   }
+  },
+  {
+   "id": "hung-menu",
+   "kind": "item",
+   "name": {
+    "zh": "熱炒店的外帶菜單",
+    "en": "The wok shop's takeaway menu"
+   },
+   "text": {
+    "zh": "鴻師傅醒來後塞給專科護理師的。背面寫：「急診的人來，招牌三杯打九折。」",
+    "en": "Chef Hung pressed it on the nurse practitioner after he came round. On the back: \"ER staff, ten percent off the house three-cup chicken.\""
+   }
+  },
+  {
+   "id": "headache-red-flags",
+   "kind": "concept",
+   "name": {
+    "zh": "頭痛的紅旗",
+    "en": "Headache red flags"
+   },
+   "text": {
+    "zh": "突然（一分鐘內到頂）、這輩子最痛、用力時發生、頸部僵硬、意識或神經學變化、四十歲以上新的頭痛型態。渥太華蛛網膜下腔出血規則就是把這些變成檢查清單。一位偏頭痛病人說「這次不一樣」，就要當成不一樣。發作後早期的電腦斷層很敏感；時間拖久或影像正常但仍懷疑，就要考慮腰椎穿刺或血管攝影。",
+    "en": "Sudden peak within a minute, worst ever, onset with exertion, neck stiffness, altered consciousness or new deficits, a new pattern after forty. The Ottawa subarachnoid haemorrhage rule turns these into a checklist. When a migraine patient says \"this one is different\", treat it as different. An early CT is very sensitive; if time has passed or the scan is normal but suspicion remains, consider lumbar puncture or angiography."
+   }
+  },
+  {
+   "id": "triage-snapshot",
+   "kind": "concept",
+   "name": {
+    "zh": "檢傷是快照，不是判決",
+    "en": "Triage is a snapshot, not a verdict"
+   },
+   "text": {
+    "zh": "檢傷級數是病人走進門那一刻的照片。病情會變，所以快速診區要重新評估：每次叫號都重看一眼生命徵象、在候診區巡視、聽家屬說「他平常不是這樣」。發現不對就檢傷升級，不需要不好意思。",
+    "en": "A triage level is a photo of the moment the patient walked in. Patients change, so the fast track re-assesses: a fresh look at vital signs at every call, rounds of the waiting room, listening when family say \"this is not like him\". If something is wrong, up-triage without embarrassment."
+   }
+  },
+  {
+   "id": "ptx-symptoms",
+   "kind": "concept",
+   "name": {
+    "zh": "氣胸看人，不只看片",
+    "en": "Treat the patient, not just the film"
+   },
+   "text": {
+    "zh": "年輕人的原發性自發性氣胸，處置看症狀和生命徵象：喘不明顯、血氧穩，可以觀察和重照；喘、痛到不能說話或越來越大，就要抽氣或放管。出院要交代：還沒吸收前不要搭飛機、終身避免潛水除非手術過、戒菸，變喘馬上回來。",
+    "en": "For a primary spontaneous pneumothorax in a young person, management follows symptoms and vital signs: not breathless and stable oxygen saturation means observe and repeat the film; breathless, in pain or enlarging means aspiration or a drain. Discharge advice: no flying until it has resolved, no diving for life unless operated, stop smoking, return at once if breathless."
+   }
+  }
+ ],
+ "segs": [
+  {
+   "id": "open",
+   "name": {
+    "zh": "快速診區開張",
+    "en": "The fast track opens"
+   },
+   "sub": {
+    "zh": "08:00 · 快速診區白板",
+    "en": "08:00 · fast-track board"
+   },
+   "t": 480,
+   "mood": "day",
+   "note": {
+    "zh": "快速診區開張",
+    "en": "Fast track open"
+   },
+   "beats": [
+    {
+     "id": "o1",
+     "to": "place:board",
+     "guide": {
+      "zh": "看快速診區白板",
+      "en": "Read the fast-track board"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "白板：「發燒三位、扭傷兩位、割傷一位、胸痛一位（年輕）。」旁邊有一個小問號。",
+        "en": "Board: \"Fever ×3, sprains ×2, one cut, one chest pain (young).\" A small question mark beside it."
+       }
+      ],
+      [
+       "triage",
+       {
+        "zh": "早。今天外面看起來都很輕，所以你要特別小心。",
+        "en": "Morning. Everyone out there looks mild today, so be extra careful."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "o2",
+     "to": "attending",
+     "guide": {
+      "zh": "找邱主治",
+      "en": "Find Dr Chiu"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "（翻開小冊子）問你：快速診區最危險的病人是哪一種？",
+        "en": "(Opens the little notebook) Question: who is the most dangerous patient in the fast track?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "……看起來最好的那一種？",
+        "en": "...The one who looks the best?"
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "對。走進來的，不一定是輕的。每個人都問一次：最壞的可能是什麼。",
+        "en": "Yes. Walking in does not mean it is minor. For everyone, ask once: what is the worst it could be?"
+       }
+      ]
+     ]
+    },
+    {
+     "id": "o3",
+     "to": "place:cart",
+     "guide": {
+      "zh": "確認急救車位置",
+      "en": "Check the crash cart"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "快速診區也有急救車。不知道在哪裡的人，到時候會用跑的。",
+        "en": "The fast track has a crash cart too. Anyone who does not know where it is will be running when it matters."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "find",
+      "hot": "crash-cart",
+      "q": {
+       "zh": "快速診區的急救車在哪裡？",
+       "en": "Where is the fast-track crash cart?"
+      }
+     },
+     "post": [
+      [
+       "me",
+       {
+        "zh": "封條完整，電擊器充好電。希望今天它只是家具。",
+        "en": "Seal intact, defibrillator charged. Hopefully it is furniture today."
+       }
+      ]
+     ],
+     "roles": [
+      "np"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "che",
+   "name": {
+    "zh": "期末考的右胸",
+    "en": "Chest pain before finals"
+   },
+   "sub": {
+    "zh": "09:00 · 診療床",
+    "en": "09:00 · examination couch"
+   },
+   "t": 540,
+   "mood": "day",
+   "note": {
+    "zh": "阿哲：氣胸，觀察中",
+    "en": "Ah-Che: pneumothorax, observing"
+   },
+   "beats": [
+    {
+     "id": "c1",
+     "to": "a-che",
+     "guide": {
+      "zh": "去看阿哲",
+      "en": "See Ah-Che"
+     },
+     "lines": [
+      [
+       "a-che",
+       {
+        "zh": "昨晚讀書讀到一半，右邊胸口突然刺一下。吸氣會痛，有一點喘。",
+        "en": "Halfway through revising last night, a stab on the right side. Hurts to breathe in, a bit short of breath."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "有沒有撞到？抽菸嗎？",
+        "en": "Any knock? Do you smoke?"
+       }
+      ],
+      [
+       "a-che",
+       {
+        "zh": "沒撞到。抽……電子菸算嗎？我明天九點要考微積分。",
+        "en": "No knock. Does... vaping count? I have calculus at nine tomorrow."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "胸痛就是胸痛，十九歲也一樣。先把會死人的排掉。",
+        "en": "Chest pain is chest pain, at nineteen too. Rule out what kills first."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "emergency-v37-chest-pain",
+      "stage": 1
+     }
+    },
+    {
+     "id": "c2",
+     "to": "place:ecg",
+     "guide": {
+      "zh": "幫阿哲做心電圖",
+      "en": "Record Ah-Che's ECG"
+     },
+     "lines": [
+      [
+       "triage",
+       {
+        "zh": "胸痛十分鐘內要有心電圖。他是年輕，但規則不看年紀。",
+        "en": "Chest pain gets an ECG within ten minutes. He is young, but the rule is not age-based."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "drill",
+      "template": "emergency",
+      "drill": "ecg"
+     },
+     "post": [
+      [
+       "me",
+       {
+        "zh": "竇性心律，沒有缺血變化。右側呼吸音比較小。",
+        "en": "Sinus rhythm, no ischaemic change. Breath sounds quieter on the right."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "c3",
+     "to": "place:viewer",
+     "guide": {
+      "zh": "看胸部 X 光",
+      "en": "Read the chest film"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "片子來了。高瘦、年輕、突然單側胸痛。你在找什麼？",
+        "en": "Film is up. Tall, thin, young, sudden one-sided pain. What are you looking for?"
+       }
+      ]
+     ],
+     "mini": {
+      "type": "imaging",
+      "region": "chest",
+      "question": {
+       "zh": "阿哲的胸部 X 光，右肺尖那一條細線外面有什麼？",
+       "en": "Ah-Che's chest film: what lies beyond that fine line at the right apex?"
+      },
+      "answer": {
+       "zh": "什麼都沒有：線外沒有肺紋路。那條線是塌下來的肺邊緣，是自發性氣胸。氣管沒有偏，心臟沒有被推走，不是張力性。",
+       "en": "Nothing: no lung markings beyond it. The line is the collapsed lung edge, a spontaneous pneumothorax. The trachea is central and the heart not pushed aside, so it is not under tension."
+      }
+     },
+     "item": "che-notes"
+    },
+    {
+     "id": "c4",
+     "to": "place:exam",
+     "guide": {
+      "zh": "定位安全三角",
+      "en": "Mark the safe triangle"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "他血氧穩、講話完整。今天先觀察、重照。但萬一變大要抽氣，你要知道從哪裡進。",
+        "en": "His oxygen is steady and he talks in full sentences. Observe and repeat the film. But if it grows, you must know where to go in."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "drill",
+      "template": "emergency",
+      "drill": "safetri"
+     },
+     "post": [
+      [
+       "me",
+       {
+        "zh": "安全三角：胸大肌外緣後面、闊背肌前面、乳頭高度以上。只定位，不下針。",
+        "en": "The safe triangle: behind the pectoral edge, in front of latissimus, above nipple level. Landmark only, no needle."
+       }
+      ],
+      [
+       "a-che",
+       {
+        "zh": "所以……我明天可以去考試嗎？",
+        "en": "So... can I sit my exam tomorrow?"
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "su",
+   "name": {
+    "zh": "最痛的一次頭痛",
+    "en": "The worst headache"
+   },
+   "sub": {
+    "zh": "10:30 · 檢傷台",
+    "en": "10:30 · triage desk"
+   },
+   "t": 630,
+   "mood": "day",
+   "note": {
+    "zh": "蘇老師：雷擊頭痛",
+    "en": "Ms Su: thunderclap headache"
+   },
+   "beats": [
+    {
+     "id": "s1",
+     "to": "place:triage",
+     "guide": {
+      "zh": "到檢傷台",
+      "en": "Go to triage"
+     },
+     "lines": [
+      [
+       "triage",
+       {
+        "zh": "蘇老師，偏頭痛二十年，說又發作了，要一針止痛就回學校。可是……",
+        "en": "Ms Su, twenty years of migraine, says it is another attack and wants one injection then back to school. But..."
+       }
+      ],
+      [
+       "triage",
+       {
+        "zh": "她說這次「不一樣」。我把她排在第一個。",
+        "en": "She said this one is \"different\". I put her first in line."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "s2",
+     "to": "su",
+     "guide": {
+      "zh": "問蘇老師的頭痛",
+      "en": "Take Ms Su's history"
+     },
+     "lines": [
+      [
+       "su",
+       {
+        "zh": "我在搬鋼琴椅，後腦突然像被球棒打到，一下子就痛到最高。吐了一次。",
+        "en": "I was lifting the piano bench and the back of my head was hit by a bat. Peaked at once. I vomited once."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "幾點幾分開始的？以前的偏頭痛也這樣嗎？",
+        "en": "What time exactly did it start? Were your migraines ever like this?"
+       }
+      ],
+      [
+       "su",
+       {
+        "zh": "十點零五分，鐘聲剛響。以前是慢慢來，從眼睛後面。這次……不是。",
+        "en": "Five past ten, right after the bell. Before it built slowly, behind the eye. This time... no."
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "低頭時她皺眉：頸部僵硬。神經學檢查暫時正常。",
+        "en": "She winces when you flex her neck: neck stiffness. The neurological exam is normal for now."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "emergency-v37-stroke-time",
+      "stage": 0
+     },
+     "post": [
+      [
+       "attending",
+       {
+        "zh": "她給了你一個精確的發作時間。這是今天最值錢的一句話。",
+        "en": "She gave you an exact onset time. That is the most valuable sentence of the day."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "s3",
+     "to": "attending",
+     "guide": {
+      "zh": "和邱主治討論",
+      "en": "Discuss with Dr Chiu"
+     },
+     "lines": [
+      [
+       "su",
+       {
+        "zh": "吃了止痛藥好多了。醫師，我兩點要帶合唱比賽，可以先走嗎？",
+        "en": "The painkiller helped a lot. Doctor, my choir competes at two. Can I go?"
+       }
+      ]
+     ],
+     "mini": {
+      "type": "choice",
+      "q": {
+       "zh": "一分鐘內到頂的頭痛，止痛後好轉。下一步？",
+       "en": "A headache that peaked in a minute, better after analgesia. Next step?"
+      },
+      "options": [
+       {
+        "zh": "立刻做頭部電腦斷層，留急診",
+        "en": "Head CT now, stays in the ED",
+        "ok": true,
+        "why": {
+         "zh": "雷擊頭痛就是雷擊頭痛，止痛藥有效不代表沒有出血。發作後越早做斷層越敏感。",
+         "en": "A thunderclap headache stays one even if painkillers help. The earlier the CT after onset, the more sensitive it is."
+        },
+        "set": {
+         "su": "ct"
+        }
+       },
+       {
+        "zh": "先在候診區休息觀察",
+        "en": "Let her rest in the waiting area",
+        "ok": false,
+        "why": {
+         "zh": "候診區沒有監視器，也沒有人每五分鐘看她一次。會再出血的病人不應該在椅子上等。",
+         "en": "The waiting area has no monitor and no one checking her every few minutes. A patient who may rebleed should not wait on a chair."
+        },
+        "set": {
+         "su": "wait"
+        }
+       },
+       {
+        "zh": "照偏頭痛處理，開藥回家",
+        "en": "Treat as migraine and discharge",
+        "ok": false,
+        "why": {
+         "zh": "「這次不一樣」加上用力時突然發作、頸部僵硬，是紅旗，不是偏頭痛。",
+         "en": "\"This one is different\" plus sudden onset on exertion and a stiff neck is a red flag, not a migraine."
+        },
+        "set": {
+         "su": "wait"
+        }
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "ct",
+   "name": {
+    "zh": "斷層的答案",
+    "en": "What the CT says"
+   },
+   "sub": {
+    "zh": "11:15 · 影像工作站",
+    "en": "11:15 · image viewer"
+   },
+   "t": 675,
+   "mood": "day",
+   "note": {
+    "zh": "蘇老師：出血，神外接手",
+    "en": "Ms Su: bleed, neurosurgery taking over"
+   },
+   "beats": [
+    {
+     "id": "r1",
+     "to": "place:monitor",
+     "guide": {
+      "zh": "看蘇老師",
+      "en": "Check on Ms Su"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "蘇老師在監護床上，監視器掛好，止吐藥依醫囑給了。斷層十點四十就照完了。",
+        "en": "Ms Su is on a monitored bed, antiemetic given per order. The CT was done at ten-forty."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "你讓她早四十分鐘進了斷層。這四十分鐘，可能就是她和再出血之間的距離。",
+        "en": "You got her scanned forty minutes sooner. Those minutes may be the gap between her and a rebleed."
+       }
+      ]
+     ],
+     "when": {
+      "flag": "su",
+      "is": "ct"
+     }
+    },
+    {
+     "id": "r1b",
+     "to": "place:waiting",
+     "guide": {
+      "zh": "去候診區",
+      "en": "Go to the waiting area"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "候診區傳來嘔吐聲。蘇老師靠在椅背上，叫她要拍肩膀才張開眼睛。",
+        "en": "Retching from the waiting area. Ms Su slumps in her chair and only opens her eyes when you shake her shoulder."
+       }
+      ],
+      [
+       "triage",
+       {
+        "zh": "檢傷升級！推床來，送急救區，斷層室我打過去了。",
+        "en": "Up-triage! Trolley, straight to resus, I have called CT."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "（推著床跑）沒關係，現在就做。這一頁我也寫過在小冊子裡。",
+        "en": "(Running with the trolley) It is all right, we do it now. I have this page in my notebook too."
+       }
+      ]
+     ],
+     "when": {
+      "flag": "su",
+      "is": "wait"
+     }
+    },
+    {
+     "id": "r2",
+     "to": "place:viewer",
+     "guide": {
+      "zh": "讀蘇老師的斷層",
+      "en": "Read Ms Su's CT"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "腦子周圍那些本來應該是黑色的地方，你看到什麼？",
+        "en": "The spaces around the brain that should be black: what do you see?"
+       }
+      ]
+     ],
+     "mini": {
+      "type": "imaging",
+      "region": "head",
+      "question": {
+       "zh": "蘇老師的頭部電腦斷層，腦底部那些星形的白色是什麼？",
+       "en": "Ms Su's head CT: what is the white star shape at the base of the brain?"
+      },
+      "answer": {
+       "zh": "是血：蜘蛛網膜下腔出血，填滿了腦底的腦池。下一步是神經外科、血管攝影找動脈瘤、控制血壓與疼痛、預防再出血。",
+       "en": "Blood: a subarachnoid haemorrhage filling the basal cisterns. Next: neurosurgery, angiography for the aneurysm, control of pain and blood pressure, prevention of a rebleed."
+      }
+     },
+     "post": [
+      [
+       "attending",
+       {
+        "zh": "如果斷層是正常的，你就放心了嗎？",
+        "en": "And if the CT had been normal, would you relax?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "不會。時間拖久了或還是很懷疑，要考慮腰椎穿刺或血管攝影。",
+        "en": "No. If time had passed or suspicion stayed high, a lumbar puncture or angiography."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "r3",
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "神外嗎？急診快速診區，蘇女士四十八歲，雷擊頭痛，斷層蜘蛛網膜下腔出血。意識清楚，頸部僵硬。",
+        "en": "Neurosurgery? Fast track. Ms Su, forty-eight, thunderclap headache, CT shows subarachnoid haemorrhage. Alert, stiff neck."
+       }
+      ],
+      [
+       "neuro",
+       {
+        "zh": "影像傳給我。血壓控制好、床頭抬高、止痛止吐，血管攝影我排。我五分鐘下來。",
+        "en": "Send me the images. Control the pressure, head up, pain and nausea treated. I will book angiography. Down in five."
+       }
+      ],
+      [
+       "su",
+       {
+        "zh": "（小聲）合唱比賽……可以請你打給學校嗎？",
+        "en": "(Quietly) The choir... could you call the school for me?"
+       }
+      ]
+     ],
+     "ring": {
+      "title": {
+       "zh": "神經外科回電",
+       "en": "Neurosurgery calling"
+      },
+      "sub": {
+       "zh": "蘇老師的影像看到了",
+       "en": "They have seen Ms Su's images"
+      },
+      "call": true,
+      "from": "neuro"
+     }
+    }
+   ]
+  },
+  {
+   "id": "hand",
+   "name": {
+    "zh": "主廚的左手",
+    "en": "The chef's left hand"
+   },
+   "sub": {
+    "zh": "13:00 · 縫合處置床",
+    "en": "13:00 · suture bay"
+   },
+   "t": 780,
+   "mood": "day",
+   "note": {
+    "zh": "鴻師傅：縫合完成",
+    "en": "Chef Hung: wound closed"
+   },
+   "beats": [
+    {
+     "id": "h1",
+     "to": "hung",
+     "guide": {
+      "zh": "看鴻師傅的手",
+      "en": "Look at Chef Hung's hand"
+     },
+     "lines": [
+      [
+       "hung",
+       {
+        "zh": "殺石斑殺到一半，刀滑了。毛巾綁緊就好啦，縫一縫我晚上還要開店。",
+        "en": "Halfway through a grouper, the knife slipped. Towel's tight, stitch it up, I open tonight."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "先看手指。每一根分開彎給我看，再摸摸指尖有沒有感覺。",
+        "en": "Fingers first. Bend each one on its own for me, then tell me if the fingertips feel normal."
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "屈指肌腱逐指測試正常，指尖感覺和血流都好。上次打破傷風是當兵的時候。",
+        "en": "Flexor tendon tests normal finger by finger, fingertip sensation and circulation good. His last tetanus shot was in the army."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "order",
+      "q": {
+       "zh": "手掌割傷的處理順序？",
+       "en": "Order the care of a palm laceration"
+      },
+      "steps": [
+       {
+        "zh": "先查血流、感覺與肌腱",
+        "en": "Check circulation, sensation, tendons"
+       },
+       {
+        "zh": "局部麻醉依醫囑",
+        "en": "Local anaesthetic per order"
+       },
+       {
+        "zh": "大量生理食鹽水沖洗",
+        "en": "Irrigate generously with saline"
+       },
+       {
+        "zh": "在清楚視野下探查傷口",
+        "en": "Explore in a clear field"
+       },
+       {
+        "zh": "縫合與包紮",
+        "en": "Close and dress"
+       },
+       {
+        "zh": "補破傷風疫苗與衛教",
+        "en": "Tetanus booster and advice"
+       }
+      ]
+     }
+    },
+    {
+     "id": "h2",
+     "to": "place:suture",
+     "guide": {
+      "zh": "準備縫合",
+      "en": "Set up for suturing"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "縫合包打開，持針器、有齒鑷、針線。沖洗用的大針筒裝滿生理食鹽水。",
+        "en": "Suture tray open: needle holder, toothed forceps, sutures. The big syringe full of saline."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "師傅，等一下打麻藥會刺一下，你可以看旁邊。",
+        "en": "Chef, the local will sting a bit. You might want to look away."
+       }
+      ]
+     ],
+     "roles": [
+      "np"
+     ]
+    },
+    {
+     "id": "h2b",
+     "to": "place:suture",
+     "guide": {
+      "zh": "再檢查一次肌腱",
+      "en": "Re-test the tendons"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "固定其他手指，只彎這一根的最末端……好，深淺兩條都在。",
+        "en": "Hold the others straight, bend just the tip of this one... Good, both tendons work."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "割在手掌，就要逐指查。漏掉一條肌腱，他就再也握不好鍋鏟。",
+        "en": "A palm cut means every finger. Miss a tendon and he never grips a wok properly again."
+       }
+      ]
+     ],
+     "roles": [
+      "resident"
+     ]
+    },
+    {
+     "id": "h3",
+     "to": "place:monitor",
+     "guide": {
+      "zh": "鴻師傅臉色發白",
+      "en": "Chef Hung goes pale"
+     },
+     "lines": [
+      [
+       "hung",
+       {
+        "zh": "那根針……是要插進我手裡的嗎？（眼睛往上吊）",
+        "en": "That needle... is going into my hand? (Eyes roll up)"
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "他整個人往後倒，臉色蒼白、冒冷汗。監視器上心跳和血壓一起往下掉。",
+        "en": "He slumps back, pale and sweating. On the monitor heart rate and blood pressure fall together."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "vitals",
+      "event": "bradycardia",
+      "options": [
+       {
+        "zh": "讓他躺平、抬高雙腳、持續監測",
+        "en": "Lie him flat, raise his legs, monitor",
+        "ok": true,
+        "why": {
+         "zh": "典型的血管迷走神經性昏厥：躺平抬腳讓血回到腦部，通常一兩分鐘就醒。醒來後確認有沒有撞傷、有沒有其他原因。",
+         "en": "A classic vasovagal faint: flat with legs up returns blood to the brain and most wake within a minute or two. Then check for injuries and other causes."
+        }
+       },
+       {
+        "zh": "扶他坐起來喝點水",
+        "en": "Sit him up and give him water",
+        "ok": false,
+        "why": {
+         "zh": "坐起來會讓血更難回到腦部，還可能嗆到。先躺平。",
+         "en": "Sitting up keeps blood from the brain and risks choking. Lie him down first."
+        }
+       },
+       {
+        "zh": "立刻按急救鈕、開始壓胸",
+        "en": "Call the arrest team and start compressions",
+        "ok": false,
+        "why": {
+         "zh": "他有脈搏、有呼吸，只是暈過去。先躺平抬腳，同時看監視器；若沒有脈搏才是急救。",
+         "en": "He has a pulse and is breathing, he has just fainted. Flat and legs up while you watch the monitor; resuscitation is for no pulse."
+        }
+       }
+      ]
+     },
+     "post": [
+      [
+       "hung",
+       {
+        "zh": "（醒來）我殺了二十年的魚……看不得針。不要跟我徒弟講。",
+        "en": "(Coming round) Twenty years gutting fish... and I cannot watch a needle. Do not tell my apprentice."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "血管迷走神經性昏厥，很常見，跟膽子大小無關。",
+        "en": "A vasovagal faint. Very common, and nothing to do with courage."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "你的祕密很安全。縫好了，處理海鮮的手如果紅腫很快變大、起水泡、發燒，要馬上回來，那可能是創傷弧菌。",
+        "en": "Your secret is safe. Stitched. If the hand swells fast, blisters or you get a fever, come straight back: it could be Vibrio vulnificus."
+       }
+      ]
+     ],
+     "item": "hung-menu"
+    }
+   ]
+  },
+  {
+   "id": "after",
+   "name": {
+    "zh": "午後的候診區",
+    "en": "The afternoon waiting room"
+   },
+   "sub": {
+    "zh": "16:00 · 候診區",
+    "en": "16:00 · waiting area"
+   },
+   "t": 960,
+   "mood": "eve",
+   "note": {
+    "zh": "阿哲：可以回家",
+    "en": "Ah-Che: going home"
+   },
+   "beats": [
+    {
+     "id": "f1",
+     "to": "place:waiting",
+     "guide": {
+      "zh": "巡一次候診區",
+      "en": "Walk the waiting area"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "候診區角落，一位排「感冒」的老先生在發抖，呼吸很快，嘴唇有點暗。",
+        "en": "In a corner, an old man queued as \"a cold\" is shivering, breathing fast, lips dusky."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "美玲，這位要檢傷升級，送急救區，先抽血液培養。",
+        "en": "Mei-ling, up-triage this one to resus, blood cultures first."
+       }
+      ],
+      [
+       "triage",
+       {
+        "zh": "收到。（在白板上畫了一個圈）今天第二個了。",
+        "en": "Got it. (Circles him on the board) Second one today."
+       }
+      ]
+     ],
+     "roles": [
+      "np"
+     ]
+    },
+    {
+     "id": "f2",
+     "to": "a-che",
+     "guide": {
+      "zh": "幫阿哲重照片子",
+      "en": "Repeat Ah-Che's film"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "重照的 X 光：氣胸沒有變大，阿哲說話不喘了，血氧穩定。",
+        "en": "The repeat film: the pneumothorax has not grown. Ah-Che talks without breathlessness, saturation steady."
+       }
+      ],
+      [
+       "che-mom",
+       {
+        "zh": "醫師，他有沒有吃早餐？明天可以考試嗎？",
+        "en": "Doctor, did he eat breakfast? Can he sit the exam tomorrow?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "早餐吃了兩個飯糰。可以去考，但不能搭飛機、不能潛水、電子菸要停，變喘馬上回來。",
+        "en": "Two rice balls for breakfast. He can sit it, but no flying, no diving, stop vaping, and come back at once if breathless."
+       }
+      ]
+     ],
+     "ring": {
+      "title": {
+       "zh": "阿哲媽媽來電",
+       "en": "Ah-Che's mother calling"
+      },
+      "sub": {
+       "zh": "她從南部打來，問兩件事",
+       "en": "Calling from the south with two questions"
+      },
+      "call": true,
+      "from": "che-mom"
+     }
+    },
+    {
+     "id": "f3",
+     "to": "place:board",
+     "guide": {
+      "zh": "寫出院衛教單",
+      "en": "Write the discharge advice"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "自發性氣胸觀察後出院：回診照片時間、哪些症狀要馬上回來、不搭飛機到確認吸收。",
+        "en": "Spontaneous pneumothorax, observed and discharged: film follow-up, what brings him back at once, no flying until resolved."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "寫給一個明天要考微積分的人看。短、清楚、他會記得。",
+        "en": "Write it for someone sitting calculus tomorrow. Short, clear, memorable."
+       }
+      ]
+     ],
+     "roles": [
+      "resident"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "name": {
+    "zh": "快速診區打烊",
+    "en": "The fast track closes"
+   },
+   "sub": {
+    "zh": "21:30 · 快速診區白板",
+    "en": "21:30 · fast-track board"
+   },
+   "t": 1290,
+   "mood": "night",
+   "note": {
+    "zh": "下班",
+    "en": "Off duty"
+   },
+   "beats": [
+    {
+     "id": "n1",
+     "lines": [
+      [
+       "neuro",
+       {
+        "zh": "蘇老師的動脈瘤找到了，今晚栓塞完成，在加護病房。她醒來第一句問合唱比賽。",
+        "en": "Ms Su's aneurysm was found and coiled tonight; she is in ICU. Her first question on waking was the choir."
+       }
+      ],
+      [
+       "triage",
+       {
+        "zh": "學校剛打來：她的合唱團拿了第二名，說要把獎狀拿去加護病房。",
+        "en": "The school just called: her choir came second, and they want to bring the certificate to the ICU."
+       }
+      ]
+     ],
+     "ring": {
+      "title": {
+       "zh": "神經外科訊息",
+       "en": "Neurosurgery message"
+      },
+      "sub": {
+       "zh": "蘇老師的動脈瘤處理好了",
+       "en": "Ms Su's aneurysm is secured"
+      },
+      "call": false,
+      "from": "neuro"
+     }
+    },
+    {
+     "id": "n2",
+     "to": "attending",
+     "guide": {
+      "zh": "和邱主治收尾",
+      "en": "Wrap up with Dr Chiu"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "今天三個走進來的人：一個氣胸、一個出血、一個暈針。哪個最危險？",
+        "en": "Three people walked in today: a pneumothorax, a bleed and a fainter. Which was most dangerous?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "蘇老師。她看起來最好，又說止痛藥有效。",
+        "en": "Ms Su. She looked the best and said the painkiller worked."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "（在小冊子上寫一行）所以要問：最壞的可能是什麼。這頁給你寫。",
+        "en": "(Writes a line in the notebook) That is why we ask: what is the worst it could be? This page is yours to write."
+       }
+      ]
+     ],
+     "end": true
+    }
+   ]
+  }
+ ],
+ "ending": {
+  "title": {
+   "zh": "快速診區打烊",
+   "en": "Fast track closed"
+  },
+  "sub": {
+   "zh": "三個走進來的病人，一個不該走回去的",
+   "en": "Three walk-ins, one who should not walk out"
+  },
+  "stats": [
+   "stages",
+   "drills",
+   "imaging",
+   "choices",
+   "calls",
+   "items",
+   "time"
+  ]
+ }
+}

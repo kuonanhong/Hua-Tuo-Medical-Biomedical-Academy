@@ -1,0 +1,1401 @@
+{
+ "format": "huatuo-shift-v2",
+ "department": "tcm-fundamentals",
+ "case": "qi-blood-fluids",
+ "caseTitle": {
+  "zh": "窗口前的氣血津液",
+  "en": "Qi, blood and fluids at the window"
+ },
+ "condition": {
+  "zh": "理論 · 氣血津液",
+  "en": "Foundations · qi, blood, fluids"
+ },
+ "difficulty": 2,
+ "title": {
+  "zh": "中醫基礎：藥局裡的氣血津液",
+  "en": "TCM foundations: the pharmacy lesson"
+ },
+ "tagline": {
+  "zh": "一個流血，一個流汗，是同一課",
+  "en": "One bleeding, one sweating: the same lesson"
+ },
+ "room": "herbal-pharmacy",
+ "minutes": 25,
+ "roles": [
+  {
+   "id": "intern",
+   "zh": "中醫見習醫師",
+   "en": "TCM clinical clerk",
+   "desc": {
+    "zh": "藥局輪訓的一天：課本上的氣、血、津液，在發藥窗口排隊。",
+    "en": "A day on the pharmacy rotation: the qi, blood and fluids of the textbook are queuing at the dispensing window."
+   }
+  },
+  {
+   "id": "herbalist",
+   "zh": "中藥調劑師",
+   "en": "TCM dispenser",
+   "desc": {
+    "zh": "審方、秤藥、四查十對、發藥衛教是你的。窗口外誰臉色不對，你最先看到。",
+    "en": "Checking prescriptions, weighing, the four checks and ten matches, and counselling at the window are yours. You are first to see who looks wrong outside it."
+   }
+  }
+ ],
+ "cast": {
+  "master": {
+   "name": {
+    "zh": "甘老師",
+    "en": "Dr Gan"
+   },
+   "role": {
+    "zh": "中醫師、藥局顧問（師傅）",
+    "en": "TCM physician, pharmacy adviser (mentor)"
+   },
+   "tag": "DR",
+   "color": "#81296d",
+   "body": "mentor",
+   "about": {
+    "zh": "口袋裡永遠有甘草片，說甘草是國老，調和諸藥，也調和他的脾氣。",
+    "en": "Always has licorice slices in his pocket: licorice is the “minister of state” that harmonises every formula, and his temper too."
+   }
+  },
+  "herbalist": {
+   "name": {
+    "zh": "阿蓉調劑師",
+    "en": "Dispenser Jung"
+   },
+   "role": {
+    "zh": "中藥調劑師",
+    "en": "TCM dispenser"
+   },
+   "tag": "HB",
+   "color": "#3b8f6a",
+   "body": "herbalist",
+   "about": {
+    "zh": "秤藥的手比天平還穩。四查十對唸得像在唸經。",
+    "en": "Her hand on the steelyard is steadier than the balance. Recites the four checks and ten matches like a sutra."
+   }
+  },
+  "yun": {
+   "name": {
+    "zh": "小芸",
+    "en": "Hsiao-yun"
+   },
+   "role": {
+    "zh": "二十九歲，早餐店老闆娘",
+    "en": "Twenty-nine, runs a breakfast shop"
+   },
+   "tag": "P1",
+   "color": "#c2703a",
+   "body": "patient",
+   "about": {
+    "zh": "虛構教學個案。每天凌晨四點起床煎蛋餅。想自己買四物湯「補一補」。",
+    "en": "Fictional teaching case. Up at four every morning frying egg pancakes. Wants to buy Si Wu Tang to “top herself up”."
+   }
+  },
+  "atu": {
+   "name": {
+    "zh": "阿土伯",
+    "en": "Uncle A-tu"
+   },
+   "role": {
+    "zh": "六十八歲，工地領班",
+    "en": "Sixty-eight, site foreman"
+   },
+   "tag": "P2",
+   "color": "#a0522d",
+   "body": "patient",
+   "about": {
+    "zh": "虛構教學個案。中午頂著大太陽來幫太太領藥。說自己「做工的人不怕熱」。",
+    "en": "Fictional teaching case. Comes at noon in blazing sun to collect his wife’s medicine. Says “a builder doesn’t mind the heat”."
+   }
+  },
+  "atuwife": {
+   "name": {
+    "zh": "阿土嬸",
+    "en": "Auntie A-tu"
+   },
+   "role": {
+    "zh": "阿土伯的太太（電話）",
+    "en": "Uncle A-tu's wife (by phone)"
+   },
+   "tag": "FAM",
+   "color": "#8a6d3b",
+   "phoneOnly": true,
+   "about": {
+    "zh": "叫先生帶水出門叫了四十年。",
+    "en": "Has told her husband to take water out with him for forty years."
+   }
+  }
+ },
+ "places": {
+  "cabinet": {
+   "name": {
+    "zh": "百子櫃",
+    "en": "Hundred-drawer cabinet"
+   },
+   "hot": "cabinet"
+  },
+  "scale": {
+   "name": {
+    "zh": "調劑檯與戥秤",
+    "en": "Dispensing bench and steelyard"
+   },
+   "hot": "scale"
+  },
+  "granules": {
+   "name": {
+    "zh": "科學中藥顆粒櫃",
+    "en": "Granule cabinet"
+   },
+   "hot": "granules"
+  },
+  "window": {
+   "name": {
+    "zh": "發藥窗口",
+    "en": "Dispensing window"
+   },
+   "hot": "door"
+  },
+  "desk": {
+   "name": {
+    "zh": "用藥諮詢桌",
+    "en": "Counselling desk"
+   },
+   "hot": "desk"
+  },
+  "workstation": {
+   "name": {
+    "zh": "處方工作站",
+    "en": "Prescription workstation"
+   },
+   "hot": "workstation"
+  }
+ },
+ "glossary": [
+  {
+   "term": {
+    "zh": "氣為血之帥",
+    "en": "qi commands blood"
+   },
+   "plain": {
+    "zh": "中醫認為氣能生血、推動血行、固攝血液不外溢，所以氣是血的統帥。",
+    "en": "In TCM qi makes blood, moves it and keeps it inside the vessels, so qi is blood’s commander."
+   }
+  },
+  {
+   "term": {
+    "zh": "血為氣之母",
+    "en": "blood is the mother of qi"
+   },
+   "plain": {
+    "zh": "血能承載氣、滋養氣；大量失血時，氣也跟著散。",
+    "en": "Blood carries and nourishes qi; when much blood is lost, qi scatters with it."
+   }
+  },
+  {
+   "term": {
+    "zh": "氣不攝血",
+    "en": "qi failing to hold blood"
+   },
+   "plain": {
+    "zh": "中醫認為氣虛無力固攝，血溢出脈外：月經量多、容易瘀青、出血不止。",
+    "en": "In TCM weak qi cannot hold blood in: heavy periods, easy bruising, bleeding that won’t stop."
+   }
+  },
+  {
+   "term": {
+    "zh": "津血同源",
+    "en": "fluids and blood share a source"
+   },
+   "plain": {
+    "zh": "津液和血都來自飲食精微，可以互相轉化；傷了一個，另一個也會受影響。",
+    "en": "Fluids and blood both come from the essence of food and can turn into each other; injure one and the other suffers."
+   }
+  },
+  {
+   "term": {
+    "zh": "氣隨津脫",
+    "en": "qi lost with the fluids"
+   },
+   "plain": {
+    "zh": "大汗、大吐、大瀉時，津液大量流失，氣也跟著外脫，人就虛弱、喘、昏沉。",
+    "en": "With heavy sweating, vomiting or diarrhoea, so much fluid is lost that qi escapes with it: weak, breathless, drowsy."
+   }
+  },
+  {
+   "term": {
+    "zh": "氣陰兩傷",
+    "en": "qi and yin both injured"
+   },
+   "plain": {
+    "zh": "中醫認為氣與陰液都受損：疲倦、氣短、口渴、多汗、脈虛。",
+    "en": "In TCM both qi and fluids are depleted: tired, short of breath, thirsty, sweaty, a weak pulse."
+   }
+  },
+  {
+   "term": {
+    "zh": "四物湯",
+    "en": "Si Wu Tang"
+   },
+   "plain": {
+    "zh": "當歸、川芎、白芍、熟地黃四味，補血調血的基礎方；含活血藥，月經量多時要小心。",
+    "en": "Angelica, chuanxiong, white peony and rehmannia: the basic blood formula; it contains blood-moving herbs, so take care with heavy periods."
+   }
+  },
+  {
+   "term": {
+    "zh": "當歸補血湯",
+    "en": "Dang Gui Bu Xue Tang"
+   },
+   "plain": {
+    "zh": "只有黃耆和當歸兩味，而且以黃耆為主；中醫認為補氣才能生血。",
+    "en": "Only astragalus and angelica, with astragalus leading; in TCM tonifying qi is how blood is made."
+   }
+  },
+  {
+   "term": {
+    "zh": "生脈散",
+    "en": "Sheng Mai San"
+   },
+   "plain": {
+    "zh": "人參、麥門冬、五味子；中醫用於氣陰兩傷，汗多、氣短、口渴。",
+    "en": "Ginseng, ophiopogon and schisandra; in TCM for qi and yin both injured: heavy sweat, short breath, thirst."
+   }
+  },
+  {
+   "term": {
+    "zh": "四查十對",
+    "en": "four checks, ten matches"
+   },
+   "plain": {
+    "zh": "調劑核對規範：查處方、查藥品、查配伍禁忌、查用藥合理性，逐一核對十個項目。",
+    "en": "The dispensing check: prescription, medicine, incompatibilities and appropriateness, matching ten items one by one."
+   }
+  },
+  {
+   "term": {
+    "zh": "熱衰竭",
+    "en": "heat exhaustion"
+   },
+   "plain": {
+    "zh": "大量流汗失水失鹽：頭暈、噁心、皮膚濕冷、脈快而弱，意識還清楚。",
+    "en": "Heavy loss of water and salt through sweat: dizziness, nausea, cool clammy skin, a fast weak pulse, still clear-headed."
+   }
+  },
+  {
+   "term": {
+    "zh": "中暑",
+    "en": "heat stroke"
+   },
+   "plain": {
+    "zh": "體溫調節失靈：體溫很高、意識混亂、可能不再流汗或抽搐；要叫救護車並快速降溫。",
+    "en": "Temperature control fails: very high body heat, confusion, perhaps no sweating or a seizure; call an ambulance and cool fast."
+   }
+  },
+  {
+   "term": {
+    "zh": "紅旗",
+    "en": "red flag"
+   },
+   "plain": {
+    "zh": "提示危險的徵象；窗口前也會出現。",
+    "en": "A sign of danger; it turns up at the dispensing window too."
+   }
+  }
+ ],
+ "codex": [
+  {
+   "id": "cabinet",
+   "kind": "equipment",
+   "name": {
+    "zh": "百子櫃",
+    "en": "Hundred-drawer cabinet"
+   },
+   "text": {
+    "zh": "每一格抽屜貼著藥名。黃耆在當歸的左邊，阿蓉說這是甘老師堅持的：氣在血前面。",
+    "en": "Every drawer is labelled. Astragalus sits left of angelica; Dispenser Jung says Dr Gan insisted: qi comes before blood."
+   },
+   "hot": "cabinet"
+  },
+  {
+   "id": "steelyard",
+   "kind": "equipment",
+   "name": {
+    "zh": "戥秤與電子天平",
+    "en": "Steelyard and balance"
+   },
+   "text": {
+    "zh": "傳統戥秤與電子天平並用。秤多少一律照處方，不憑手感。",
+    "en": "The traditional steelyard and an electronic balance side by side. What is weighed always follows the prescription, never the feel of the hand."
+   },
+   "hot": "scale"
+  },
+  {
+   "id": "granules",
+   "kind": "equipment",
+   "name": {
+    "zh": "科學中藥顆粒櫃",
+    "en": "Granule cabinet"
+   },
+   "text": {
+    "zh": "濃縮顆粒按方名與單味排列。生脈散在最上層，夏天補貨最快。",
+    "en": "Concentrated granules by formula and single herb. Sheng Mai San sits on the top shelf and runs out fastest in summer."
+   },
+   "hot": "granules"
+  },
+  {
+   "id": "licorice",
+   "kind": "item",
+   "name": {
+    "zh": "甘老師的甘草片",
+    "en": "Dr Gan’s licorice slices"
+   },
+   "text": {
+    "zh": "他分你一片：「國老，調和諸藥。今天你調和了兩個人。」",
+    "en": "He hands you one: “The minister of state harmonises every formula. Today you harmonised two people.”"
+   }
+  },
+  {
+   "id": "qi-blood",
+   "kind": "concept",
+   "name": {
+    "zh": "氣與血的關係",
+    "en": "How qi and blood relate"
+   },
+   "text": {
+    "zh": "中醫認為氣能生血、行血、攝血：氣虛則血少、血瘀、血溢。血能載氣、養氣：大失血則氣隨血脫。方書常說「有形之血不能速生，無形之氣所當急固」，所以補血方常配補氣藥，當歸補血湯甚至以黃耆為主。月經量多、乏力、心悸、頭暈，中醫可能辨為氣不攝血，西醫則要先查血紅素與婦科原因。",
+    "en": "In TCM qi makes, moves and holds blood: weak qi means scant, stagnant or escaping blood. Blood carries and feeds qi: a great loss of blood lets qi escape with it. Formula texts say “visible blood cannot be made quickly; invisible qi must be secured at once”, so blood formulas carry qi tonics, and Dang Gui Bu Xue Tang is led by astragalus. Heavy periods with fatigue, palpitations and dizziness may be qi failing to hold blood in TCM; in Western terms check haemoglobin and the gynaecological cause first."
+   }
+  },
+  {
+   "id": "fluids",
+   "kind": "concept",
+   "name": {
+    "zh": "津液、汗與血",
+    "en": "Fluids, sweat and blood"
+   },
+   "text": {
+    "zh": "靈樞說「奪血者無汗，奪汗者無血」：津血同源，大汗會耗血，失血的人不可再發汗。大汗、吐瀉時津液大量流失，氣隨津脫，出現氣短乏力、口渴、脈虛。夏天勞動者是高風險；生脈散是中醫用來益氣生津斂汗的代表方，但急性熱傷害要先降溫、補液。",
+    "en": "The Lingshu: “Take blood and there is no sweat; take sweat and there is no blood.” Fluids and blood share a source, so heavy sweating drains blood, and one who has bled must not be sweated. With heavy sweating, vomiting or diarrhoea fluids pour out and qi escapes with them: breathless, weak, thirsty, a weak pulse. Summer labourers are at high risk; Sheng Mai San is TCM’s classic for boosting qi, making fluids and checking sweat, but acute heat injury needs cooling and fluids first."
+   }
+  },
+  {
+   "id": "heat-flags",
+   "kind": "concept",
+   "name": {
+    "zh": "熱衰竭與中暑",
+    "en": "Heat exhaustion versus heat stroke"
+   },
+   "text": {
+    "zh": "熱衰竭：大量流汗、皮膚濕冷、頭暈噁心、脈快而弱、意識清楚：移到陰涼處、平躺抬腳、鬆衣、濕毛巾與風扇降溫，清醒才小口補充含電解質的水。中暑：體溫很高、意識混亂或說話不清、可能不再流汗、抽搐：立刻叫救護車，同時積極降溫。任何意識改變都是紅旗。",
+    "en": "Heat exhaustion: heavy sweat, cool clammy skin, dizziness and nausea, a fast weak pulse, clear mind: move to shade, lie flat with legs up, loosen clothing, cool with wet towels and a fan, sips of an electrolyte drink only when alert. Heat stroke: very high temperature, confusion or slurred speech, perhaps no sweating, seizures: call an ambulance at once and cool aggressively meanwhile. Any change in consciousness is a red flag."
+   }
+  },
+  {
+   "id": "four-ten",
+   "kind": "concept",
+   "name": {
+    "zh": "調劑的四查十對",
+    "en": "The four checks and ten matches"
+   },
+   "text": {
+    "zh": "查處方，對科別、姓名、年齡；查藥品，對藥名、劑型、規格、數量；查配伍禁忌，對藥性、用法用量；查用藥合理性，對臨床診斷。中藥調劑還要看炮製品是否正確、先煎後下有沒有分包標示、有毒藥材有沒有依規管理。",
+    "en": "Check the prescription: match department, name, age. Check the medicine: match name, form, strength, quantity. Check incompatibilities: match properties, directions and amounts. Check appropriateness: match the diagnosis. TCM dispensing also checks the right processed form, that decoct-first and add-late herbs are packed and labelled separately, and that toxic herbs are handled by the rules."
+   }
+  }
+ ],
+ "segs": [
+  {
+   "id": "open",
+   "name": {
+    "zh": "藥局開門",
+    "en": "Pharmacy opens"
+   },
+   "sub": {
+    "zh": "08:00 · 百子櫃",
+    "en": "08:00 · the hundred-drawer cabinet"
+   },
+   "t": 480,
+   "mood": "day",
+   "note": {
+    "zh": "氣在血前面",
+    "en": "Qi comes before blood"
+   },
+   "beats": [
+    {
+     "id": "a1",
+     "to": "place:cabinet",
+     "guide": {
+      "zh": "到百子櫃前報到",
+      "en": "Report at the cabinet"
+     },
+     "lines": [
+      [
+       "master",
+       {
+        "zh": "藥局輪訓第一天。這裡每一格抽屜，都是課本裡的一句話。",
+        "en": "First day of your pharmacy rotation. Every drawer here is a sentence from your textbook."
+       }
+      ],
+      [
+       "herbalist",
+       {
+        "zh": "黃耆放在當歸左邊，是甘老師堅持的。",
+        "en": "Astragalus sits to the left of angelica. Dr Gan insisted."
+       }
+      ],
+      [
+       "master",
+       {
+        "zh": "氣為血之帥。氣在前，血在後。先複習血是怎麼生出來、怎麼跑的。",
+        "en": "Qi commands blood. Qi in front, blood behind. First, revise how blood is made and how it moves."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "tcm-fundamentals-blood-fluids-workflow",
+      "stage": 2
+     }
+    },
+    {
+     "id": "a2",
+     "to": "place:scale",
+     "guide": {
+      "zh": "排出調劑流程",
+      "en": "Order the dispensing steps"
+     },
+     "lines": [
+      [
+       "herbalist",
+       {
+        "zh": "在藥局，理論之前先學規矩。調劑流程排給我看。",
+        "en": "In the pharmacy, rules come before theory. Show me the dispensing steps."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "order",
+      "q": {
+       "zh": "中藥調劑的流程",
+       "en": "TCM dispensing, in order"
+      },
+      "steps": [
+       {
+        "zh": "收方與審方",
+        "en": "Receive and review the prescription"
+       },
+       {
+        "zh": "核對病人資料",
+        "en": "Confirm the patient’s details"
+       },
+       {
+        "zh": "依處方調配秤取",
+        "en": "Measure exactly per prescription"
+       },
+       {
+        "zh": "複核：四查十對",
+        "en": "Recheck: four checks, ten matches"
+       },
+       {
+        "zh": "包裝與標示",
+        "en": "Pack and label"
+       },
+       {
+        "zh": "發藥與用藥指導",
+        "en": "Dispense and counsel"
+       }
+      ]
+     },
+     "post": [
+      [
+       "herbalist",
+       {
+        "zh": "秤多少照處方，不憑手感。手感是給老師傅表演用的。",
+        "en": "Amounts follow the prescription, never the feel of the hand. The feel is for old masters showing off."
+       }
+      ],
+      [
+       "master",
+       {
+        "zh": "我聽到了。",
+        "en": "I heard that."
+       }
+      ]
+     ],
+     "item": "four-ten"
+    }
+   ]
+  },
+  {
+   "id": "yun",
+   "name": {
+    "zh": "小芸要四物湯",
+    "en": "Hsiao-yun wants Si Wu Tang"
+   },
+   "sub": {
+    "zh": "09:30 · 發藥窗口",
+    "en": "09:30 · the dispensing window"
+   },
+   "t": 570,
+   "mood": "day",
+   "note": {
+    "zh": "補血之前，先問血去哪裡了",
+    "en": "Before adding blood, ask where it went"
+   },
+   "beats": [
+    {
+     "id": "b1",
+     "to": "yun",
+     "guide": {
+      "zh": "窗口來了一位客人",
+      "en": "Someone at the window"
+     },
+     "lines": [
+      [
+       "yun",
+       {
+        "zh": "我要買四物湯，補血。最近好累，站起來會頭暈，臉很白。",
+        "en": "I’d like Si Wu Tang, to build my blood. I’m so tired lately, dizzy when I stand, and so pale."
+       }
+      ],
+      [
+       "herbalist",
+       {
+        "zh": "月經呢？",
+        "en": "And your periods?"
+       }
+      ],
+      [
+       "yun",
+       {
+        "zh": "量很多，要用夜用的，一次拖十天。爬樓梯心臟會跳很快。",
+        "en": "Very heavy, night pads in the daytime, and it drags on for ten days. Stairs make my heart race."
+       }
+      ],
+      [
+       "master",
+       {
+        "zh": "她要補血。可是在補之前，你要先問：血去哪裡了？",
+        "en": "She wants to build blood. Before building, ask: where has the blood gone?"
+       }
+      ]
+     ]
+    },
+    {
+     "id": "b2",
+     "to": "yun",
+     "guide": {
+      "zh": "決定怎麼回應",
+      "en": "Decide your response"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "小芸已經把錢包拿出來了。",
+        "en": "Hsiao-yun already has her purse out."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "choice",
+      "q": {
+       "zh": "小芸想自己買四物湯。你怎麼做？",
+       "en": "Hsiao-yun wants to buy Si Wu Tang herself. What do you do?"
+      },
+      "options": [
+       {
+        "zh": "先請醫師評估，建議抽血與婦科",
+        "en": "Doctor’s assessment first; blood test and gynaecology",
+        "ok": true,
+        "why": {
+         "zh": "經量多又久、頭暈、心悸、蒼白，可能是貧血，要找出流血的原因。四物湯含活血的川芎、當歸，經量多時不宜自己吃。",
+         "en": "Long heavy periods with dizziness, palpitations and pallor may be anaemia, and the cause of the bleeding must be found. Si Wu Tang contains blood-moving chuanxiong and angelica, not for self-treating heavy periods."
+        },
+        "set": {
+         "referred": true
+        }
+       },
+       {
+        "zh": "賣給她四物湯，補血最快",
+        "en": "Sell her Si Wu Tang; fastest for blood",
+        "ok": false,
+        "why": {
+         "zh": "血一直在流，四物湯裡的活血藥可能讓量更多；而且原因還沒找。",
+         "en": "The blood is still pouring out; the blood-moving herbs may make it heavier, and the cause is still unknown."
+        },
+        "set": {
+         "referred": false
+        }
+       },
+       {
+        "zh": "建議加一包人參，氣血一起補",
+        "en": "Add ginseng to tonify both",
+        "ok": false,
+        "why": {
+         "zh": "方向不算錯，但跳過了診斷。窗口不是診間。",
+         "en": "Not the wrong direction, but it skips the diagnosis. The window is not a consulting room."
+        },
+        "set": {
+         "referred": false
+        }
+       }
+      ]
+     }
+    },
+    {
+     "id": "b3",
+     "to": "place:desk",
+     "guide": {
+      "zh": "諮詢桌：看舌",
+      "en": "At the desk: the tongue"
+     },
+     "lines": [
+      [
+       "master",
+       {
+        "zh": "小芸，來諮詢桌坐一下，我幫你看看。",
+        "en": "Hsiao-yun, sit at the counselling desk a moment and let me look."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "tongue",
+      "q": {
+       "zh": "舌淡白、瘦薄、苔薄白。怎麼讀？",
+       "en": "Pale-white, thin, thin white coat. Your reading?"
+      },
+      "tongue": {
+       "body": "pale",
+       "coat": "thin-white",
+       "shape": "thin"
+      },
+      "options": [
+       {
+        "zh": "氣血兩虛：血不上榮",
+        "en": "Qi and blood both deficient",
+        "ok": true,
+        "why": {
+         "zh": "中醫認為舌淡白是血少不能上榮，瘦薄是氣血不足以充養。",
+         "en": "In TCM a pale-white tongue means too little blood reaches it, and a thin one that qi and blood cannot fill it."
+        }
+       },
+       {
+        "zh": "陰虛火旺",
+        "en": "Yin deficiency with fire",
+        "ok": false,
+        "why": {
+         "zh": "陰虛舌紅；她的舌淡得幾乎沒有顏色。",
+         "en": "Yin deficiency gives a red tongue; hers has almost no colour."
+        }
+       },
+       {
+        "zh": "痰濕內盛",
+        "en": "Phlegm-damp",
+        "ok": false,
+        "why": {
+         "zh": "痰濕舌胖、苔厚膩。她的舌又瘦、苔又薄。",
+         "en": "Phlegm-damp brings a swollen tongue and thick greasy coat; hers is thin with a thin coat."
+        }
+       }
+      ]
+     }
+    },
+    {
+     "id": "b4",
+     "to": "yun",
+     "guide": {
+      "zh": "診脈",
+      "en": "Take the pulse"
+     },
+     "lines": [
+      [
+       "master",
+       {
+        "zh": "脈你來。指頭放輕，再慢慢按下去。",
+        "en": "You take the pulse. Light fingers first, then press slowly."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "drill",
+      "template": "tcm-fundamentals",
+      "drill": "pulse"
+     },
+     "post": [
+      [
+       "me",
+       {
+        "zh": "脈細而無力，按下去就快沒了。",
+        "en": "Thready and forceless; press and it almost vanishes."
+       }
+      ],
+      [
+       "master",
+       {
+        "zh": "氣不攝血：氣虛管不住血，血一直流。",
+        "en": "Qi failing to hold blood: weak qi can’t keep blood in, so it keeps flowing."
+       }
+      ],
+      [
+       "master",
+       {
+        "zh": "而血為氣之母，血少了，氣更沒有依靠。",
+        "en": "And blood is the mother of qi: with less blood, qi has nothing to lean on."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "b5",
+     "to": "place:cabinet",
+     "guide": {
+      "zh": "選出當歸補血湯",
+      "en": "Pick Dang Gui Bu Xue Tang"
+     },
+     "lines": [
+      [
+       "master",
+       {
+        "zh": "四物湯是補血的基礎方。可是有一個補血方只有兩味，而且主角不是補血藥。",
+        "en": "Si Wu Tang is the basic blood formula. But one blood formula has only two herbs, and its lead isn’t a blood herb at all."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "herb",
+      "q": {
+       "zh": "選出當歸補血湯的組成",
+       "en": "Select the herbs of Dang Gui Bu Xue Tang"
+      },
+      "formula": "當歸補血湯",
+      "pick": [
+       "黃耆",
+       "當歸"
+      ],
+      "distractors": [
+       "熟地黃",
+       "川芎",
+       "白芍",
+       "大黃"
+      ]
+     },
+     "post": [
+      [
+       "me",
+       {
+        "zh": "黃耆是補氣藥，卻是補血湯的主角。",
+        "en": "Astragalus is a qi tonic, yet it leads the blood formula."
+       }
+      ],
+      [
+       "master",
+       {
+        "zh": "方書說：有形之血不能速生，無形之氣所當急固。用不用、用多少，等檢查完由醫師開。",
+        "en": "The formula texts say visible blood cannot be made quickly; invisible qi must be secured at once. Whether and how much, the doctor decides after the tests."
+       }
+      ]
+     ],
+     "item": "qi-blood"
+    }
+   ]
+  },
+  {
+   "id": "atu",
+   "name": {
+    "zh": "中午的阿土伯",
+    "en": "Uncle A-tu at noon"
+   },
+   "sub": {
+    "zh": "12:00 · 發藥窗口",
+    "en": "12:00 · the dispensing window"
+   },
+   "t": 720,
+   "mood": "day",
+   "note": {
+    "zh": "大汗、喘、頭暈：熱衰竭",
+    "en": "Pouring sweat, breathless: heat exhaustion"
+   },
+   "beats": [
+    {
+     "id": "c1",
+     "to": "atu",
+     "guide": {
+      "zh": "窗口外有人不對勁",
+      "en": "Something’s wrong outside"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "外面三十幾度。阿土伯衣服濕透，扶著窗口的檯面，汗一直滴。",
+        "en": "It is scorching outside. Uncle A-tu is soaked through, leaning on the counter, sweat dripping."
+       }
+      ],
+      [
+       "atu",
+       {
+        "zh": "我來幫我太太領藥……做工的人不怕熱……就是頭有點暈，想吐……",
+        "en": "Here for my wife’s medicine… a builder doesn’t mind the heat… just a bit dizzy, a bit sick…"
+       }
+      ],
+      [
+       "herbalist",
+       {
+        "zh": "阿伯，你今天喝了多少水？",
+        "en": "Uncle, how much water have you had today?"
+       }
+      ],
+      [
+       "atu",
+       {
+        "zh": "水？早上一杯咖啡啊。",
+        "en": "Water? A coffee this morning."
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "他的膝蓋一軟，阿蓉從窗口裡衝出來扶住他。",
+        "en": "His knees buckle; Dispenser Jung rushes out from behind the window to catch him."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "c2",
+     "to": "atu",
+     "guide": {
+      "zh": "第一時間處置",
+      "en": "Immediate response"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "皮膚濕冷，脈快而弱，血壓偏低。他還認得你，說得出今天星期幾。",
+        "en": "Skin cool and clammy, pulse fast and weak, blood pressure low. He still knows you and can say what day it is."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "vitals",
+      "event": "hypotension",
+      "options": [
+       {
+        "zh": "移到陰涼處平躺抬腳、鬆衣降溫、通知醫師",
+        "en": "Shade, lie flat legs up, loosen, cool; call the doctor",
+        "ok": true,
+        "why": {
+         "zh": "意識清楚、大汗、濕冷、脈快弱、血壓低，是熱衰竭。先降溫、平躺；清醒才小口補充電解質水。意識改變、體溫很高就是中暑，叫救護車。",
+         "en": "Clear-headed, heavy sweat, clammy, fast weak pulse, low pressure: heat exhaustion. Cool him and lie him flat; sips of electrolyte drink only once alert. Confusion or a very high temperature means heat stroke: ambulance."
+        }
+       },
+       {
+        "zh": "先泡一杯生脈飲給他",
+        "en": "Make him a Sheng Mai drink first",
+        "ok": false,
+        "why": {
+         "zh": "生脈散是之後的調理。現在要先降溫、平躺、評估意識。",
+         "en": "Sheng Mai San is for recovery. Now: cool him, lay him flat, check his consciousness."
+        }
+       },
+       {
+        "zh": "扶他坐著，等他自己好",
+        "en": "Sit him up and wait",
+        "ok": false,
+        "why": {
+         "zh": "血壓低時坐著可能再昏倒。平躺抬腳讓血回到頭部。",
+         "en": "Sitting with low pressure risks another collapse. Flat with legs up sends blood back to the head."
+        }
+       }
+      ]
+     },
+     "post": [
+      [
+       "herbalist",
+       {
+        "zh": "冰毛巾、電風扇來了。阿伯，我們躺一下。",
+        "en": "Cold towels and a fan coming. Uncle, let’s lie down a while."
+       }
+      ],
+      [
+       "master",
+       {
+        "zh": "體溫量了嗎？講話清楚嗎？",
+        "en": "Temperature? Is his speech clear?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "體溫有點高但不是極高，講話清楚，認得人。",
+        "en": "Somewhat raised but not extreme; speech clear, knows who we are."
+       }
+      ],
+      [
+       "master",
+       {
+        "zh": "熱衰竭。如果開始胡言亂語、體溫衝上去、不流汗，就是中暑，立刻叫救護車。",
+        "en": "Heat exhaustion. If he starts talking nonsense, the temperature soars or he stops sweating, it is heat stroke: ambulance at once."
+       }
+      ]
+     ],
+     "item": "heat-flags"
+    },
+    {
+     "id": "c3",
+     "to": "master",
+     "guide": {
+      "zh": "甘老師的提問",
+      "en": "Dr Gan’s question"
+     },
+     "lines": [
+      [
+       "master",
+       {
+        "zh": "大汗之後為什麼會喘、會沒力？用今天的課說。",
+        "en": "Why breathless and weak after pouring sweat? Use today’s lesson."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "津血同源。汗出太多，津液大量流失，氣隨津脫。",
+        "en": "Fluids and blood share a source. Sweat pours out and the fluids go: qi lost with the fluids."
+       }
+      ],
+      [
+       "master",
+       {
+        "zh": "靈樞說：奪汗者無血，奪血者無汗。剛剛那兩個人，一個流血、一個流汗，是同一課。",
+        "en": "The Lingshu: take sweat and there is no blood; take blood and there is no sweat. Those two this morning, one bleeding and one sweating, were the same lesson."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "tcm-fundamentals-blood-fluids-workflow",
+      "stage": 3
+     }
+    }
+   ]
+  },
+  {
+   "id": "recover",
+   "name": {
+    "zh": "阿土伯醒過來",
+    "en": "Uncle A-tu comes round"
+   },
+   "sub": {
+    "zh": "13:00 · 用藥諮詢桌",
+    "en": "13:00 · the counselling desk"
+   },
+   "t": 780,
+   "mood": "day",
+   "note": {
+    "zh": "降溫在先，生脈在後",
+    "en": "Cool first, Sheng Mai later"
+   },
+   "beats": [
+    {
+     "id": "d1",
+     "to": "place:granules",
+     "guide": {
+      "zh": "找出生脈散顆粒",
+      "en": "Find Sheng Mai San granules"
+     },
+     "lines": [
+      [
+       "master",
+       {
+        "zh": "他現在清醒、在喝電解質水，血壓也回來了。醫師評估後，之後調理的方子可能會是什麼？",
+        "en": "He’s alert, sipping electrolytes, pressure back up. After the doctor’s assessment, what might help him recover?"
+       }
+      ]
+     ],
+     "mini": {
+      "type": "find",
+      "hot": "granules",
+      "q": {
+       "zh": "在顆粒櫃找出生脈散",
+       "en": "Find Sheng Mai San in the granule cabinet"
+      }
+     },
+     "post": [
+      [
+       "herbalist",
+       {
+        "zh": "最上層。夏天補貨最快的那一罐。",
+        "en": "Top shelf. The jar we restock fastest every summer."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "d2",
+     "to": "place:desk",
+     "guide": {
+      "zh": "選出生脈散的組成",
+      "en": "Pick Sheng Mai San’s herbs"
+     },
+     "lines": [
+      [
+       "master",
+       {
+        "zh": "生脈散三味：一味補氣、一味養陰、一味斂汗。",
+        "en": "Sheng Mai San has three: one boosts qi, one nourishes yin, one checks sweating."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "herb",
+      "q": {
+       "zh": "選出生脈散的組成",
+       "en": "Select the herbs of Sheng Mai San"
+      },
+      "formula": "生脈散",
+      "pick": [
+       "人參",
+       "麥門冬",
+       "五味子"
+      ],
+      "distractors": [
+       "麻黃",
+       "桂枝",
+       "大黃",
+       "生薑"
+      ]
+     },
+     "post": [
+      [
+       "master",
+       {
+        "zh": "氣陰兩傷用生脈散，中醫說益氣生津、斂陰止汗。但這是事後的調理，不是急救。用量由醫師開。",
+        "en": "For qi and yin both injured, Sheng Mai San boosts qi, makes fluids and checks sweat. But it is for afterwards, not first aid. The doctor sets the amounts."
+       }
+      ],
+      [
+       "atu",
+       {
+        "zh": "我做了四十年工，第一次被小姐從窗口跳出來接住。",
+        "en": "Forty years on building sites, and the first time a young lady jumped out of a window to catch me."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "d3",
+     "ring": {
+      "title": {
+       "zh": "阿土嬸來電",
+       "en": "Auntie A-tu calling"
+      },
+      "sub": {
+       "zh": "我先生還沒回來，是不是在你們那裡？",
+       "en": "My husband’s not back; is he with you?"
+      },
+      "call": true,
+      "from": "atuwife"
+     },
+     "to": "place:window",
+     "guide": {
+      "zh": "接阿土嬸的電話",
+      "en": "Take Auntie A-tu’s call"
+     },
+     "lines": [
+      [
+       "atuwife",
+       {
+        "zh": "我先生去領藥，到現在還沒回來，手機也不接！",
+        "en": "My husband went for my medicine and hasn’t come back; he isn’t answering!"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "他在這裡，剛剛熱到頭暈，現在躺著休息、在喝水，已經好多了。醫師看過了。",
+        "en": "He’s here. The heat made him dizzy, but he’s lying down, drinking, and much better. The doctor has seen him."
+       }
+      ],
+      [
+       "atuwife",
+       {
+        "zh": "我叫他帶水出門，叫了四十年！",
+        "en": "I’ve told him to take water for forty years!"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "今天開始，他會帶的。",
+        "en": "From today, he will."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "teach",
+   "name": {
+    "zh": "午後：氣血津液一張圖",
+    "en": "Afternoon: one map"
+   },
+   "sub": {
+    "zh": "15:00 · 處方工作站",
+    "en": "15:00 · the workstation"
+   },
+   "t": 900,
+   "mood": "day",
+   "note": {
+    "zh": "氣生血、血載氣、津血同源",
+    "en": "Qi makes blood, blood carries qi"
+   },
+   "beats": [
+    {
+     "id": "e1",
+     "roles": [
+      "herbalist"
+     ],
+     "to": "place:workstation",
+     "guide": {
+      "zh": "審阿土嬸的處方",
+      "en": "Review Auntie A-tu’s script"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "阿土嬸的處方：四查十對做完，沒有配伍禁忌，先煎、後下分包標示好了。",
+        "en": "Auntie A-tu’s prescription: four checks and ten matches done, no incompatibilities, decoct-first and add-late packed and labelled separately."
+       }
+      ],
+      [
+       "master",
+       {
+        "zh": "連她先生一起，今天你發了兩份藥：一份藥袋，一份教訓。",
+        "en": "With her husband, you dispensed two things today: a bag of herbs and a lesson."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "e2",
+     "roles": [
+      "intern"
+     ],
+     "to": "place:workstation",
+     "guide": {
+      "zh": "畫出氣血津液關係圖",
+      "en": "Draw the qi-blood-fluids map"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "氣生血、行血、攝血；血載氣、養氣；津液和血同源，汗和血互相影響。",
+        "en": "Qi makes, moves and holds blood; blood carries and feeds qi; fluids and blood share a source, so sweat and blood affect each other."
+       }
+      ],
+      [
+       "master",
+       {
+        "zh": "加上兩個人：小芸在「攝血」那條線上，阿土伯在「津血同源」那條線上。",
+        "en": "Add the two people: Hsiao-yun sits on the “holding blood” line, Uncle A-tu on “fluids and blood share a source”."
+       }
+      ]
+     ],
+     "item": "fluids"
+    }
+   ]
+  },
+  {
+   "id": "debrief",
+   "name": {
+    "zh": "關門",
+    "en": "Closing up"
+   },
+   "sub": {
+    "zh": "17:30 · 百子櫃",
+    "en": "17:30 · the hundred-drawer cabinet"
+   },
+   "t": 1050,
+   "mood": "eve",
+   "note": {
+    "zh": "窗口前也有紅旗",
+    "en": "Red flags reach the window too"
+   },
+   "beats": [
+    {
+     "id": "f1",
+     "to": "master",
+     "guide": {
+      "zh": "聽甘老師的結語",
+      "en": "Dr Gan’s debrief"
+     },
+     "lines": [
+      [
+       "master",
+       {
+        "zh": "藥局不只是拿藥的地方。今天窗口前來了兩個紅旗：一個流血，一個流汗。",
+        "en": "A pharmacy isn’t just where medicine is collected. Two red flags came to the window today: one bleeding, one sweating."
+       }
+      ],
+      [
+       "master",
+       {
+        "zh": "病人要什麼藥，先問為什麼要。",
+        "en": "When a patient asks for a medicine, first ask why."
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "他從口袋拿出一片甘草，分給你。",
+        "en": "He takes a licorice slice from his pocket and gives you one."
+       }
+      ]
+     ],
+     "item": "licorice"
+    }
+   ]
+  },
+  {
+   "id": "night",
+   "name": {
+    "zh": "夜間訊息",
+    "en": "A night message"
+   },
+   "sub": {
+    "zh": "21:30 · 回家路上",
+    "en": "21:30 · on the way home"
+   },
+   "t": 1290,
+   "mood": "night",
+   "note": {
+    "zh": "小芸的血",
+    "en": "Hsiao-yun's blood"
+   },
+   "beats": [
+    {
+     "id": "n1",
+     "ring": {
+      "title": {
+       "zh": "小芸的訊息",
+       "en": "Message from Hsiao-yun"
+      },
+      "sub": {
+       "zh": "跟你們說一下……",
+       "en": "Just letting you know…"
+      },
+      "call": false,
+      "from": "yun"
+     },
+     "lines": [
+      [
+       "yun",
+       {
+        "zh": "跟你們說一下今天的事——",
+        "en": "Just letting you know about today—"
+       }
+      ]
+     ]
+    },
+    {
+     "id": "n2",
+     "when": {
+      "flag": "referred",
+      "is": true
+     },
+     "lines": [
+      [
+       "yun",
+       {
+        "zh": "抽血說我貧血很明顯，醫生開了鐵劑，下週婦科超音波看是不是有肌瘤。還好沒有自己亂吃。",
+        "en": "The blood test says I’m clearly anaemic. I’m on iron, and next week gynaecology will scan for fibroids. Glad I didn’t just dose myself."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "很好。頭暈加重、喘、心悸或出血更多，就直接去急診。",
+        "en": "Good. If the dizziness worsens, or breathlessness, palpitations or heavier bleeding, go straight to the ER."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "n3",
+     "when": {
+      "flag": "referred",
+      "is": false
+     },
+     "lines": [
+      [
+       "yun",
+       {
+        "zh": "四物湯喝了兩天，月經好像更多了，今天煎蛋餅的時候差點昏倒。",
+        "en": "Two days of Si Wu Tang and the bleeding seems heavier. I nearly fainted frying pancakes today."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "先停四物湯。明天一早去抽血、看婦科；如果頭暈到站不住或出血很多，直接去急診。",
+        "en": "Stop the Si Wu Tang. Blood test and gynaecology first thing tomorrow; if you can’t stand for dizziness or the bleeding is heavy, go to the ER."
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "你在筆記本寫：病人要什麼藥，先問為什麼要。",
+        "en": "In your notebook: when a patient asks for a medicine, first ask why."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "n4",
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "你把甘草片放進嘴裡。很甜，甜得有點過頭。",
+        "en": "You put the licorice in your mouth. Sweet, a little too sweet."
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "明天早上，你決定去小芸的早餐店買蛋餅。",
+        "en": "Tomorrow morning, you decide, you will buy an egg pancake at Hsiao-yun’s shop."
+       }
+      ]
+     ],
+     "end": true
+    }
+   ]
+  }
+ ],
+ "ending": {
+  "title": {
+   "zh": "下班了",
+   "en": "End of shift"
+  },
+  "sub": {
+   "zh": "病人要什麼藥，先問為什麼要",
+   "en": "When a patient asks for a medicine, ask why"
+  },
+  "stats": [
+   "stages",
+   "drills",
+   "choices",
+   "calls",
+   "items",
+   "time"
+  ]
+ }
+}

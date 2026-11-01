@@ -1,0 +1,233 @@
+{
+ "format": "huatuo-shift-v2",
+ "department": "gynecology",
+ "case": "pmb-clinic",
+ "caseTitle": {"zh": "停經十年後的那一點血", "en": "One spot of blood, ten years on"},
+ "condition": {"zh": "腫瘤 · 停經後出血", "en": "Cancer work-up · postmenopausal bleeding"},
+ "difficulty": 2,
+ "room": "clinic",
+ "title": {"zh": "婦科門診日", "en": "A day in gynaecology clinic"},
+ "tagline": {"zh": "停經後出血，一次都不正常", "en": "Bleeding after the menopause is never normal, not even once"},
+ "minutes": 25,
+ "roles": [
+  {"id": "resident", "zh": "婦科住院醫師", "en": "Gynaecology resident",
+   "desc": {"zh": "門診一整天。病史、超音波、取樣、說明。最難的不是取樣，是讓人不害怕地等報告。", "en": "Clinic all day. History, scans, sampling, explaining. The hard part isn't the biopsy; it's helping someone wait for the result without fear."}},
+  {"id": "clinic-nurse", "zh": "婦科門診護理師", "en": "Gynaecology clinic nurse",
+   "desc": {"zh": "準備器械、陪在床邊、看著臉色。檢查時病人握住的是妳的手。", "en": "Set out the instruments, stay at the bedside, watch her colour. During the exam, it's your hand she holds."}}
+ ],
+ "cast": {
+  "attending": {"name": {"zh": "杜主治", "en": "Dr Tu"}, "role": {"zh": "婦科腫瘤主治醫師（師傅）", "en": "Gynae-oncology attending (mentor)"}, "tag": "ATT", "color": "#86198f", "body": "mentor",
+   "about": {"zh": "說話慢、聽得多。桌上有一本手寫筆記，叫「我沒問到的問題」。", "en": "Speaks slowly, listens a lot. Keeps a handwritten notebook on the desk titled 'Questions I forgot to ask'."}},
+  "su-chen": {"name": {"zh": "素珍", "en": "Su-chen"}, "role": {"zh": "婦科門診護理師", "en": "Gynaecology clinic nurse"}, "tag": "RN", "color": "#3b8f6a", "body": "nurse",
+   "about": {"zh": "陪過幾千次內診。會先握住病人的手，才說「會有一點涼」。", "en": "Has stood through thousands of examinations. Takes the patient's hand before she says 'this will feel a bit cold'."}},
+  "auntie": {"name": {"zh": "江阿姨", "en": "Mrs Chiang"}, "role": {"zh": "病人・62 歲", "en": "Patient, 62"}, "tag": "PT1", "color": "#6b7280", "body": "patient",
+   "about": {"zh": "退休數學老師，停經十年，有糖尿病。上週內褲上有一點血，說是「天氣熱」。女兒押著來的。", "en": "Retired maths teacher, ten years past menopause, diabetic. Found a spot of blood last week and blamed 'the heat'. Her daughter marched her in."}},
+  "daughter": {"name": {"zh": "江小姐", "en": "Ms Chiang"}, "role": {"zh": "江阿姨的女兒", "en": "Mrs Chiang's daughter"}, "tag": "FAM", "color": "#b45309", "body": "family",
+   "about": {"zh": "社區藥師，手上一張寫滿問題的紙，已經劃掉兩題。", "en": "A community pharmacist holding a sheet of questions, two already crossed off."}},
+  "ms-hsieh": {"name": {"zh": "謝小姐", "en": "Ms Hsieh"}, "role": {"zh": "病人・47 歲", "en": "Patient, 47"}, "tag": "PT2", "color": "#2563eb", "body": "patient",
+   "about": {"zh": "會計主管，子宮肌瘤追蹤五年。這半年肚子變大很快，想「一次用微創切乾淨」。", "en": "Finance manager, fibroids followed for five years. Her belly has grown fast these six months; she wants it 'all out by keyhole in one go'."}},
+  "path": {"name": {"zh": "病理科", "en": "Pathology"}, "role": {"zh": "病理科醫師", "en": "Pathologist"}, "tag": "PATH", "color": "#475569", "phoneOnly": true,
+   "about": {"zh": "只在電話裡。檢體量不夠時會直說：「這個我不能告訴你沒事。」", "en": "Only on the phone. When a sample is too scant, says plainly: 'I can't tell you this is fine.'"}},
+  "er-doc": {"name": {"zh": "孫醫師", "en": "Dr Sun"}, "role": {"zh": "急診醫師", "en": "ER physician"}, "tag": "ER", "color": "#2f6f9f", "phoneOnly": true,
+   "about": {"zh": "夜裡打來的電話。病人做過什麼療程，他總是先查好。", "en": "The night caller. Always checks what treatment a patient has had before ringing."}}
+ },
+ "places": {
+  "desk": {"name": {"zh": "診桌", "en": "Clinic desk"}, "hot": "desk"},
+  "couch": {"name": {"zh": "內診檯", "en": "Examination couch"}, "hot": "bed"},
+  "scan": {"name": {"zh": "超音波機", "en": "Ultrasound machine"}, "hot": "ultrasound"},
+  "tray": {"name": {"zh": "取樣器械盤", "en": "Sampling tray"}, "hot": "instruments"},
+  "monitor": {"name": {"zh": "生理監視器", "en": "Monitor"}, "hot": "monitor"},
+  "chart": {"name": {"zh": "病歷電腦", "en": "Notes computer"}, "hot": "chart"}
+ },
+ "glossary": [
+  {"term": {"zh": "停經後出血", "en": "postmenopausal bleeding"}, "plain": {"zh": "停經超過一年後又出血，不管多少、幾次。大部分是良性的，但一定要排除子宮內膜癌。", "en": "Any bleeding more than a year after periods stop, however little or rare. Mostly benign, but endometrial cancer must always be ruled out."}},
+  {"term": {"zh": "子宮內膜癌", "en": "endometrial cancer"}, "plain": {"zh": "長在子宮內膜的癌，最常見的早期症狀就是停經後出血。早發現時治療效果很好。", "en": "Cancer of the womb lining; its commonest early sign is postmenopausal bleeding. Found early, it is very treatable."}},
+  {"term": {"zh": "無對抗性雌激素", "en": "unopposed oestrogen"}, "plain": {"zh": "只有雌激素刺激內膜、沒有黃體素平衡，內膜會一直變厚。肥胖、糖尿病、某些藥物都會造成。", "en": "Oestrogen stimulating the lining without progesterone to balance it, so the lining keeps thickening. Obesity, diabetes and some medicines cause it."}},
+  {"term": {"zh": "子宮內膜厚度", "en": "endometrial thickness"}, "plain": {"zh": "經陰道超音波量的內膜厚度。停經後很薄比較放心；變厚或看不清楚就要取樣。", "en": "The lining's thickness on transvaginal scan. Thin after menopause is reassuring; thick or poorly seen means sampling."}},
+  {"term": {"zh": "子宮內膜取樣", "en": "endometrial sampling"}, "plain": {"zh": "用細管從子宮頸伸進去，抽一點內膜送病理。門診就能做，會像經痛一樣痛一下。", "en": "A thin tube passed through the cervix to draw off a little lining for pathology. Done in clinic; it cramps like a period for a moment."}},
+  {"term": {"zh": "子宮頸狹窄", "en": "cervical stenosis"}, "plain": {"zh": "子宮頸口變得很窄，停經後常見，取樣管放不進去。", "en": "A narrowed cervical canal, common after menopause, so the sampler will not pass."}},
+  {"term": {"zh": "迷走神經反射", "en": "vasovagal reaction"}, "plain": {"zh": "撐開子宮頸時刺激迷走神經，心跳突然變慢、血壓掉、冒冷汗、想吐，甚至昏倒。", "en": "Stretching the cervix triggers the vagus nerve: the heart slows suddenly, pressure drops, sweating, nausea, even fainting."}},
+  {"term": {"zh": "子宮鏡", "en": "hysteroscopy"}, "plain": {"zh": "用細鏡子從子宮頸進去直接看子宮腔，看到哪裡怪就在哪裡切片。取樣失敗或不夠時的下一步。", "en": "A fine scope through the cervix to look directly inside the womb and biopsy what looks wrong. The next step when sampling fails or falls short."}},
+  {"term": {"zh": "平滑肌肉瘤", "en": "leiomyosarcoma"}, "plain": {"zh": "子宮肌肉長出的惡性腫瘤，很少見，術前和良性肌瘤很難分。", "en": "A rare cancer of the womb's muscle, hard to tell apart from a benign fibroid before surgery."}},
+  {"term": {"zh": "碎瘤", "en": "morcellation"}, "plain": {"zh": "微創手術時把肌瘤切碎取出。如果其實是惡性的，碎片會散在肚子裡，所以有疑慮時要用袋子包著做或不做。", "en": "Cutting a fibroid into pieces to remove it through keyhole wounds. If it is secretly malignant, fragments spread through the abdomen, so with any doubt it is done inside a bag or not at all."}},
+  {"term": {"zh": "磁振造影", "en": "MRI"}, "plain": {"zh": "用磁場照的影像，不用輻射。看肌瘤內部有沒有不規則、出血壞死或擴散受限等可疑特徵。", "en": "Imaging with magnets instead of radiation. Shows whether a fibroid has suspicious internal features: irregularity, bleeding, necrosis, restricted diffusion."}},
+  {"term": {"zh": "卵巢過度刺激症候群", "en": "ovarian hyperstimulation syndrome"}, "plain": {"zh": "試管療程用藥後卵巢腫大、液體漏到肚子和胸腔：腹脹、尿少、喘。嚴重時要住院，也容易血栓。", "en": "After fertility drugs the ovaries swell and fluid leaks into the abdomen and chest: bloating, little urine, breathlessness. Severe cases are admitted, and clots are a risk."}}
+ ],
+ "codex": [
+  {"id": "pipelle", "kind": "equipment", "name": {"zh": "內膜取樣管", "en": "Endometrial sampler"}, "hot": "instruments", "text": {"zh": "像一根很細的吸管，抽活塞產生負壓，前後移動同時轉圈取樣。", "en": "Like a very fine straw; pulling the plunger creates suction, then it is moved in and out while rotating to collect tissue."}},
+  {"id": "tv-scan", "kind": "equipment", "name": {"zh": "門診超音波", "en": "Clinic ultrasound"}, "hot": "ultrasound", "text": {"zh": "經陰道看內膜，經腹看大的肌瘤。兩支探頭各有各的問題要回答。", "en": "Transvaginal for the lining, transabdominal for a big fibroid. Each probe answers its own question."}},
+  {"id": "question-list", "kind": "item", "name": {"zh": "江小姐的問題清單", "en": "Ms Chiang's list of questions"}, "text": {"zh": "「是不是癌？」「要等多久？」「糖尿病有關嗎？」最後一題是：「媽媽會不會怕？」", "en": "'Is it cancer?' 'How long will we wait?' 'Is the diabetes related?' The last one: 'Will Mum be scared?'"}},
+  {"id": "path-form", "kind": "item", "name": {"zh": "病理申請單", "en": "Pathology request form"}, "text": {"zh": "寫著：停經十年、出血一次、內膜增厚、取樣量少、建議子宮鏡。病理科最想看到的就是這幾行。", "en": "Reads: ten years post-menopause, one bleed, thickened lining, scant sample, hysteroscopy advised. Exactly the lines pathology wants to see."}},
+  {"id": "once-abnormal", "kind": "concept", "name": {"zh": "一次都不正常", "en": "Never normal, not even once"}, "text": {"zh": "停經一年後的任何出血都要評估。大部分是萎縮性內膜或息肉，但大約十分之一是子宮內膜癌，而這往往是它唯一的早期警訊。肥胖、糖尿病、未生育、使用某些藥物、家族遺傳都會提高風險。流程：病史、經陰道超音波量內膜、取樣，必要時子宮鏡。", "en": "Any bleeding a year or more after the menopause is investigated. Most is atrophy or a polyp, but roughly one in ten is endometrial cancer, and this is often its only early sign. Obesity, diabetes, no children, certain medicines and family history raise the risk. Pathway: history, transvaginal measurement of the lining, sampling, hysteroscopy if needed."}},
+  {"id": "no-sample-not-normal", "kind": "concept", "name": {"zh": "取不到，不等於沒事", "en": "No sample is not a normal result"}, "text": {"zh": "門診取樣可能因子宮頸狹窄放不進去，或取到的量太少。病理報告「量不足」不是「正常」。症狀還在、內膜還厚，下一步就是子宮鏡直視下切片。", "en": "Office sampling can fail because the cervix is too narrow, or yield too little. A pathology report of 'insufficient' is not 'normal'. With ongoing symptoms or a thick lining, the next step is hysteroscopy with directed biopsy."}},
+  {"id": "fast-fibroid", "kind": "concept", "name": {"zh": "長很快的肌瘤，先別急著碎", "en": "A fast-growing fibroid: don't rush to morcellate"}, "text": {"zh": "停經前肌瘤長大多半仍是良性，但術前無法完全排除平滑肌肉瘤。長得快、停經後還在長、影像上有可疑特徵時，先做磁振造影等評估；手術時避免不在袋內的碎瘤，必要時改成完整取出。", "en": "Before menopause a growing fibroid is still usually benign, but leiomyosarcoma cannot be fully excluded beforehand. Rapid growth, growth after the menopause or suspicious imaging means assessment such as MRI first; at surgery, no morcellation outside a bag, and removal in one piece if needed."}}
+ ],
+ "segs": [
+  {"id": "open", "name": {"zh": "開診", "en": "Clinic opens"}, "sub": {"zh": "08:00 · 診間", "en": "08:00 · clinic room"}, "t": 480, "mood": "day",
+   "note": {"zh": "器械盤與一本筆記", "en": "An instrument tray and a notebook"},
+   "beats": [
+    {"id": "o1", "to": "attending", "guide": {"zh": "找杜主治報到", "en": "Report to Dr Tu"},
+     "lines": [
+      ["attending", {"zh": "今天門診第一位：六十二歲，停經十年，出血一次。", "en": "First patient today: sixty-two, ten years past menopause, one episode of bleeding."}],
+      ["me", {"zh": "只有一次，可能是萎縮性的吧？", "en": "Only once; probably atrophy?"}],
+      ["attending", {"zh": "可能。但停經後出血，一次都不正常。今天你要證明它是萎縮，而不是假設它是。", "en": "Possibly. But bleeding after the menopause is never normal, not once. Today you prove it's atrophy rather than assume it."}]
+     ]},
+    {"id": "o2", "roles": ["clinic-nurse"], "to": "place:tray", "guide": {"zh": "準備取樣器械盤", "en": "Set the sampling tray"},
+     "lines": [
+      ["me", {"zh": "窺器兩種大小、取樣管、消毒、子宮頸鉗、檢體瓶、病理單。生理監視器開機。", "en": "Two sizes of speculum, sampler, antiseptic, tenaculum, specimen pot, pathology form. Monitor switched on."}],
+      ["attending", {"zh": "監視器也開？", "en": "The monitor too?"}],
+      ["me", {"zh": "有人會昏倒的時候，你就會想它已經是開著的。", "en": "When someone faints, you'll be glad it's already on."}]
+     ]}
+   ]},
+  {"id": "history", "name": {"zh": "江阿姨", "en": "Mrs Chiang"}, "sub": {"zh": "08:30 · 診桌", "en": "08:30 · clinic desk"}, "t": 510, "mood": "day",
+   "note": {"zh": "風險因子與一張問題清單", "en": "Risk factors and a list of questions"},
+   "beats": [
+    {"id": "h1", "to": "auntie", "guide": {"zh": "問病史與風險", "en": "History and risk"},
+     "lines": [
+      ["auntie", {"zh": "就一點點，天氣熱嘛。是我女兒大驚小怪。", "en": "Just a spot. It's the heat. My daughter's making a fuss."}],
+      ["daughter", {"zh": "媽，你有糖尿病，體重也……我查過了，要檢查。", "en": "Mum, you're diabetic, and your weight... I looked it up. You need checking."}],
+      ["me", {"zh": "江小姐說得對。停經後出血要排除子宮內膜癌。糖尿病和體重會讓無對抗性雌激素刺激內膜。", "en": "Your daughter is right. Postmenopausal bleeding means ruling out endometrial cancer. Diabetes and weight let unopposed oestrogen stimulate the lining."}],
+      ["auntie", {"zh": "……那你從頭講，我是數學老師，我聽得懂機率。", "en": "...then start from the beginning. I taught maths; I understand probability."}]
+     ],
+     "item": "question-list"}
+   ]},
+  {"id": "scan", "name": {"zh": "內膜", "en": "The lining"}, "sub": {"zh": "09:00 · 超音波機", "en": "09:00 · ultrasound"}, "t": 540, "mood": "day",
+   "note": {"zh": "內膜偏厚，要取樣", "en": "Lining thickened: sample it"},
+   "beats": [
+    {"id": "u1", "to": "place:scan", "guide": {"zh": "經陰道超音波", "en": "Transvaginal scan"},
+     "lines": [
+      ["attending", {"zh": "停經後出血的超音波，要回答哪一題？說了再看。", "en": "What question does the scan answer in postmenopausal bleeding? Say it, then look."}]
+     ],
+     "mini": {"type": "imaging", "region": "pelvis",
+      "question": {"zh": "停經後出血，經陰道超音波要看什麼？", "en": "Postmenopausal bleeding: what does the transvaginal scan look for?"},
+      "answer": {"zh": "子宮內膜厚度：很薄而且看得清楚，比較放心；變厚、不均勻、有血流或看不清楚，就要取樣。另外看有沒有息肉、肌瘤、卵巢腫塊與積液。", "en": "Endometrial thickness: thin and clearly seen is reassuring; thick, uneven, vascular or poorly seen means sampling. Also polyps, fibroids, ovarian masses and fluid."}},
+     "post": [["sys", {"zh": "內膜比停經後該有的厚，邊緣不太規則。", "en": "The lining is thicker than it should be after menopause, with a slightly irregular edge."}],
+              ["me", {"zh": "要取樣。", "en": "It needs sampling."}]]},
+    {"id": "u2", "to": "daughter", "guide": {"zh": "回答清單上的第一題", "en": "Answer the first question on the list"},
+     "lines": [
+      ["daughter", {"zh": "第一題：是不是癌？", "en": "Question one: is it cancer?"}],
+      ["me", {"zh": "現在還不知道。內膜厚可能是增生、息肉，也可能是癌。取樣就是為了回答這一題。", "en": "We don't know yet. A thick lining can be overgrowth, a polyp, or cancer. Sampling is how we answer that question."}],
+      ["auntie", {"zh": "好，那就取。機率要靠資料，不是靠猜。", "en": "Then take it. Probability needs data, not guesses."}]
+     ]}
+   ]},
+  {"id": "sample", "name": {"zh": "取樣", "en": "Sampling"}, "sub": {"zh": "09:40 · 內診檯", "en": "09:40 · examination couch"}, "t": 580, "mood": "day",
+   "note": {"zh": "她昏倒了，管子也放不進去", "en": "She fainted, and the sampler would not pass"},
+   "beats": [
+    {"id": "p1", "to": "place:couch", "guide": {"zh": "取樣的順序", "en": "Sampling, in order"},
+     "lines": [
+      ["attending", {"zh": "動手前，順序說一次。", "en": "Before you start, say the order."}]
+     ],
+     "mini": {"type": "order", "q": {"zh": "門診子宮內膜取樣的順序", "en": "Office endometrial sampling, in order"},
+      "steps": [
+       {"zh": "說明、同意、陪伴者在場", "en": "Explain, consent, chaperone present"},
+       {"zh": "內診確認子宮方向", "en": "Bimanual exam for uterine direction"},
+       {"zh": "放窺器、消毒子宮頸", "en": "Speculum in, clean the cervix"},
+       {"zh": "取樣管沿子宮方向放入", "en": "Pass the sampler along the uterine axis"},
+       {"zh": "負壓、前後轉動取樣", "en": "Suction, rotate in and out"},
+       {"zh": "放入檢體瓶、標示送病理", "en": "Into the pot, label, to pathology"}
+      ]}},
+    {"id": "p2", "to": "place:tray", "guide": {"zh": "子宮頸放不進去", "en": "The cervix won't let it through"},
+     "lines": [
+      ["sys", {"zh": "子宮頸口很緊，取樣管頂在入口。你換了細一點的，輕輕再推一次。", "en": "The cervical os is tight, likely cervical stenosis, and the sampler stops at the entrance. You switch to a finer one and push gently once more."}]
+     ],
+     "mini": {"type": "stage", "case": "gynecology-abnormal-uterine-bleeding-palm-coein", "stage": 6}},
+    {"id": "p3", "to": "place:monitor", "guide": {"zh": "她臉色變了", "en": "Her colour changes"},
+     "lines": [
+      ["su-chen", {"zh": "阿姨？阿姨你看我。……醫師，她在冒冷汗，手好冰。", "en": "Auntie? Look at me. ...Doctor, she's sweating and her hands are ice cold."}],
+      ["sys", {"zh": "監視器上心跳一路往下掉，血壓也跟著掉。", "en": "On the monitor her heart rate slides down, and her pressure follows."}]
+     ],
+     "mini": {"type": "vitals", "event": "bradycardia",
+      "options": [
+       {"zh": "停止操作、取出器械、平躺抬腳、呼叫", "en": "Stop, remove instruments, lie flat, legs up, call", "ok": true,
+        "why": {"zh": "對。迷走神經反射：先拿掉刺激，讓血回到心臟。大多數幾分鐘內恢復；持續心跳慢依醫囑處理。", "en": "Right. A vasovagal reaction: remove the stimulus and get blood back to the heart. Most recover within minutes; persistent slowing is treated per protocol."}},
+       {"zh": "加快速度把樣本取完", "en": "Hurry and finish the sample", "ok": false,
+        "why": {"zh": "刺激還在，心跳會更慢。樣本可以改天，昏倒的人不能等。", "en": "The stimulus continues and the heart slows further. The sample can wait; a fainting patient can't."}},
+       {"zh": "扶她坐起來喝水", "en": "Sit her up for a drink of water", "ok": false,
+        "why": {"zh": "坐起來血更回不了腦部，會真的昏過去。先平躺抬腳。", "en": "Sitting up starves the brain further and she'll pass out. Flat with legs up first."}}
+      ]},
+     "post": [["auntie", {"zh": "……我剛才去哪裡了？", "en": "...where did I just go?"}],
+              ["su-chen", {"zh": "你去了一下下，回來了。手給我。", "en": "Away for a moment, and back now. Give me your hand."}]]},
+    {"id": "p4", "to": "attending", "guide": {"zh": "取樣失敗之後", "en": "After the failed sampling"},
+     "lines": [
+      ["attending", {"zh": "檢體只有一點點，子宮頸也太緊。病理會怎麼回？下一步？", "en": "Only a scrap of tissue, and the cervix too tight. What will pathology say, and what next?"}]
+     ],
+     "mini": {"type": "stage", "case": "gynecology-abnormal-uterine-bleeding-palm-coein", "stage": 7},
+     "post": [["me", {"zh": "量不足不等於正常。安排子宮鏡，麻醉下擴張子宮頸、直接看、看到哪裡切哪裡。", "en": "Insufficient isn't normal. Book a hysteroscopy: dilate under anaesthesia, look directly, biopsy what looks wrong."}],
+              ["auntie", {"zh": "數學老師最討厭樣本數不夠。好，排吧。", "en": "Nothing a maths teacher hates more than a small sample. Book it."}]],
+     "item": "path-form"}
+   ]},
+  {"id": "hsieh", "name": {"zh": "長很快的肌瘤", "en": "The fast-growing fibroid"}, "sub": {"zh": "11:00 · 超音波機", "en": "11:00 · ultrasound"}, "t": 660, "mood": "day",
+   "note": {"zh": "謝小姐：先評估，不急著碎", "en": "Ms Hsieh: assess first, don't rush to morcellate"},
+   "beats": [
+    {"id": "f1", "roles": ["resident"], "to": "ms-hsieh", "guide": {"zh": "經腹超音波", "en": "Transabdominal scan"},
+     "lines": [
+      ["ms-hsieh", {"zh": "半年前還好好的，現在褲子都扣不起來。", "en": "Six months ago it was fine. Now I can't do my trousers up."}],
+      ["me", {"zh": "肌瘤太大，經陰道看不完整。先經腹看大小、邊界和血流。", "en": "It's too big for a transvaginal view. Transabdominal first: size, edges and blood flow."}]
+     ],
+     "mini": {"type": "drill", "template": "gynecology", "drill": "us:pelvis"},
+     "post": [["sys", {"zh": "肌瘤比半年前的紀錄大了一圈，內部不均勻，中間有一塊不規則的區域。", "en": "The fibroid is a size larger than six months ago, uneven inside, with an irregular area in the middle."}]]},
+    {"id": "f2", "to": "attending", "guide": {"zh": "惡性警訊", "en": "Warning signs"},
+     "lines": [
+      ["attending", {"zh": "停經前的肌瘤長大，多半還是良性。但哪些地方讓你不放心？", "en": "Fibroids that grow before menopause are usually still benign. So what makes you uneasy here?"}]
+     ],
+     "mini": {"type": "stage", "case": "gynecology-fibroids-medical-uae-myomectomy", "stage": 2}},
+    {"id": "f3", "to": "ms-hsieh", "guide": {"zh": "她想微創一次切乾淨", "en": "She wants it out by keyhole, in one go"},
+     "lines": [
+      ["ms-hsieh", {"zh": "我同事用微創切的，切碎拿出來，三天就上班。我也要那樣。", "en": "My colleague had keyhole surgery, they cut it up and took it out, back at work in three days. I want that."}]
+     ],
+     "mini": {"type": "choice", "q": {"zh": "肌瘤半年長很快、內部不規則，怎麼建議？", "en": "Fibroid grew fast, irregular inside: your advice?"},
+      "options": [
+       {"zh": "先做磁振造影評估，再決定手術方式", "en": "MRI assessment first, then choose the operation", "ok": true, "set": {"fibroid": "mri"},
+        "why": {"zh": "對。長很快加上影像不規則，術前要盡量排除平滑肌肉瘤；結果決定能不能碎瘤、要不要袋內或完整取出。", "en": "Right. Fast growth with irregular imaging means doing what we can to exclude leiomyosarcoma first; the result decides whether morcellation is acceptable, contained in a bag, or replaced by removal in one piece."}},
+       {"zh": "照她的意思，微創碎瘤取出", "en": "As she wishes: keyhole with morcellation", "ok": false, "set": {"fibroid": "morcellate"},
+        "why": {"zh": "如果是惡性的，碎瘤會把腫瘤碎片散在整個肚子，讓分期和預後變差。", "en": "If it's malignant, morcellation scatters tumour through the abdomen, worsening stage and outlook."}},
+       {"zh": "繼續追蹤，半年後再看", "en": "Keep watching, recheck in six months", "ok": false, "set": {"fibroid": "watch"},
+        "why": {"zh": "她有症狀、長得快、影像不規則。再等半年不合理。", "en": "She has symptoms, rapid growth and irregular imaging. Another six months isn't reasonable."}}
+      ]},
+     "post": [["ms-hsieh", {"zh": "……所以不是不能微創，是要先知道它是什麼。", "en": "...so it's not that keyhole is off the table; it's knowing what it is first."}],
+              ["me", {"zh": "對。知道了，我們才知道怎麼拿最安全。", "en": "Exactly. Once we know, we know the safest way to take it out."}]]}
+   ]},
+  {"id": "afternoon", "name": {"zh": "下午的電話", "en": "An afternoon call"}, "sub": {"zh": "15:30 · 診桌", "en": "15:30 · clinic desk"}, "t": 930, "mood": "day",
+   "note": {"zh": "病理的直話與一本筆記", "en": "Pathology's plain words and a notebook"},
+   "beats": [
+    {"id": "a1", "ring": {"title": {"zh": "病理科來電", "en": "Pathology calling"}, "sub": {"zh": "早上的檢體量很少", "en": "This morning's sample is scant"}, "call": true, "from": "path"},
+     "lines": [
+      ["path", {"zh": "早上那個內膜檢體，只有一點點，我看到幾個不太好看的細胞，但這個量我不能告訴你沒事。", "en": "This morning's endometrial sample is tiny. I can see a few cells I don't like, but with this little I can't tell you it's fine."}],
+      ["me", {"zh": "了解。子宮鏡已經排了，會在申請單寫清楚。", "en": "Understood. Hysteroscopy is booked, and it'll be clear on the request."}]
+     ]},
+    {"id": "a2", "roles": ["clinic-nurse"], "to": "daughter", "guide": {"zh": "回電給江小姐", "en": "Call Ms Chiang back"},
+     "lines": [
+      ["daughter", {"zh": "清單上最後一題：媽媽會不會怕？", "en": "The last question on my list: will Mum be scared?"}],
+      ["me", {"zh": "會。所以子宮鏡那天我也在，她可以握我的手。妳也可以來。", "en": "Yes. That's why I'll be there on the day; she can hold my hand. You can come too."}]
+     ]},
+    {"id": "a3", "to": "attending", "guide": {"zh": "杜主治的筆記", "en": "Dr Tu's notebook"},
+     "lines": [
+      ["attending", {"zh": "我這本筆記，寫的都是我忘了問的問題。今天你會加哪一題？", "en": "This notebook is all the questions I forgot to ask. Which one would you add today?"}],
+      ["me", {"zh": "「妳怕不怕？」江小姐問了，我沒問。", "en": "'Are you frightened?' Ms Chiang asked it. I didn't."}]
+     ]}
+   ]},
+  {"id": "night", "name": {"zh": "夜裡的腹脹", "en": "Bloating at night"}, "sub": {"zh": "21:00 · 值班電話", "en": "21:00 · on-call phone"}, "t": 1260, "mood": "night",
+   "note": {"zh": "取卵後的喘：卵巢過度刺激", "en": "Breathless after egg retrieval: hyperstimulation"},
+   "beats": [
+    {"id": "n1", "ring": {"title": {"zh": "急診來電", "en": "ER calling"}, "sub": {"zh": "取卵後三天，腹脹、尿少、會喘", "en": "Three days after egg retrieval: bloated, little urine, breathless"}, "call": true, "from": "er-doc"},
+     "lines": [
+      ["er-doc", {"zh": "三十二歲，試管療程，三天前取卵。肚子越來越脹，今天尿很少，躺下會喘。", "en": "Thirty-two, IVF, egg retrieval three days ago. Belly getting bigger, very little urine today, breathless lying down."}],
+      ["me", {"zh": "要想到卵巢過度刺激症候群。量體重、腹圍、血氧，抽血看濃縮與腎功能，超音波看腹水胸水。我馬上下去。", "en": "Think ovarian hyperstimulation syndrome. Weight, girth, oxygen saturation; bloods for haemoconcentration and kidneys; scan for ascites and pleural fluid. I'm coming down."}],
+      ["er-doc", {"zh": "她很怕療程白做了。", "en": "She's scared the whole cycle was for nothing."}],
+      ["me", {"zh": "跟她說，處理好身體，胚胎可以冷凍等她。", "en": "Tell her: we look after her body first, and the embryos can be frozen to wait for her."}]
+     ]},
+    {"id": "n2", "when": {"flag": "fibroid", "is": "morcellate"}, "to": "place:chart", "guide": {"zh": "杜主治改了醫囑", "en": "Dr Tu revised the plan"},
+     "lines": [
+      ["sys", {"zh": "杜主治在謝小姐的病歷上加了一句：術前磁振造影；如有疑慮，不做袋外碎瘤。", "en": "Dr Tu has added a line to Ms Hsieh's notes: MRI before surgery; if in doubt, no morcellation outside a bag."}],
+      ["me", {"zh": "我只聽到她想要什麼，沒先問它是什麼。", "en": "I heard what she wanted before asking what it was."}]
+     ]},
+    {"id": "n3", "to": "place:chart", "guide": {"zh": "寫完今天最後一筆", "en": "Write today's last note"},
+     "lines": [
+      ["sys", {"zh": "子宮鏡排在下週二。江阿姨的病歷最後一行寫著：病人自己說，「我要資料，不要猜。」", "en": "Hysteroscopy booked for next Tuesday. The last line in Mrs Chiang's notes: patient's own words, 'I want data, not guesses.'"}],
+      ["sys", {"zh": "值班未完。杜主治的筆記本多了一頁：「妳怕不怕？」", "en": "The night goes on. Dr Tu's notebook has a new page: 'Are you frightened?'"}]
+     ],
+     "end": true}
+   ]}
+ ],
+ "ending": {"title": {"zh": "下班了", "en": "End of shift"}, "sub": {"zh": "停經後出血，一次都不正常", "en": "Bleeding after the menopause: never normal"}, "stats": ["stages", "grades", "choices", "calls", "items", "time"]}
+}

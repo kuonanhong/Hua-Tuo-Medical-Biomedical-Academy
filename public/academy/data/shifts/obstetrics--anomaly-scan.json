@@ -1,0 +1,247 @@
+{
+ "format": "huatuo-shift-v2",
+ "department": "obstetrics",
+ "case": "anomaly-scan",
+ "caseTitle": {"zh": "看見與說出口之間", "en": "Between seeing and saying"},
+ "condition": {"zh": "胎兒醫學 · 結構性超音波", "en": "Fetal medicine · anomaly scan"},
+ "difficulty": 2,
+ "room": "imaging",
+ "title": {"zh": "胎兒醫學超音波日", "en": "A fetal-medicine scanning day"},
+ "tagline": {"zh": "看到的說清楚，沒看到的也要說清楚", "en": "Say clearly what you saw, and just as clearly what you did not"},
+ "minutes": 25,
+ "roles": [
+  {"id": "resident", "zh": "產科住院醫師", "en": "Obstetrics resident",
+   "desc": {"zh": "胎兒醫學輪訓。一天十幾個肚子，每個都要從頭看到腳，再用家長聽得懂的話說出來。", "en": "Fetal-medicine rotation. A dozen bumps a day, each scanned head to toe, then explained in words parents understand."}},
+  {"id": "sonographer", "zh": "產科超音波技師", "en": "Obstetric sonographer",
+   "desc": {"zh": "妳掃得最多、看得最早，但診斷要由醫師說。妳的那句「醫師，你來看一下」，是整間診室最重的一句話。", "en": "You scan the most and see it first, but the diagnosis is the doctor's to give. Your 'Doctor, could you take a look?' is the heaviest sentence in the room."}}
+ ],
+ "cast": {
+  "attending": {"name": {"zh": "蘇主治", "en": "Dr Su"}, "role": {"zh": "胎兒醫學主治醫師（師傅）", "en": "Fetal-medicine attending (mentor)"}, "tag": "ATT", "color": "#7e22ce", "body": "mentor",
+   "about": {"zh": "看過幾萬個胎兒心臟。說壞消息前，會先把螢幕轉向家長，再拉一張椅子。", "en": "Has looked at tens of thousands of fetal hearts. Before bad news he turns the screen towards the parents and pulls up a chair."}},
+  "sono": {"name": {"zh": "美玲", "en": "Mei-ling"}, "role": {"zh": "產科超音波技師", "en": "Obstetric sonographer"}, "tag": "SON", "color": "#0f766e", "body": "radiographer",
+   "about": {"zh": "掃描時不說話，掃完只說一句：「醫師，你來看一下。」大家都怕那一句。", "en": "Silent while scanning, then just one line: 'Doctor, could you take a look?' Everyone dreads that line."}},
+  "mrs-kao": {"name": {"zh": "高太太", "en": "Mrs Kao"}, "role": {"zh": "病人・29 歲・二十一週", "en": "Patient, 29, twenty-one weeks"}, "tag": "PT1", "color": "#db2777", "body": "patient",
+   "about": {"zh": "第一胎，早期篩檢低風險。上網查了一整晚「心臟白點」。", "en": "First baby, low-risk early screening. Spent all night searching 'white spot in the heart'."}},
+  "grandma": {"name": {"zh": "高婆婆", "en": "Grandma Kao"}, "role": {"zh": "高太太的婆婆", "en": "Mrs Kao's mother-in-law"}, "tag": "FAM", "color": "#b45309", "body": "family",
+   "about": {"zh": "最想知道男生女生。帶了一個紅包，被美玲推了三次回去。", "en": "Mostly wants to know boy or girl. Brought a red envelope; Mei-ling has pushed it back three times."}},
+  "ms-cheng": {"name": {"zh": "鄭小姐", "en": "Ms Cheng"}, "role": {"zh": "病人・35 歲・二十二週", "en": "Patient, 35, twenty-two weeks"}, "tag": "PT2", "color": "#2563eb", "body": "patient",
+   "about": {"zh": "建築師，試了三年才懷孕。習慣看圖說話，今天想自己看懂每一張圖。", "en": "An architect who tried for three years. Thinks in drawings and wants to understand every image herself."}},
+  "mrs-wang": {"name": {"zh": "王太太", "en": "Mrs Wang"}, "role": {"zh": "病人・38 歲・三十二週", "en": "Patient, 38, thirty-two weeks"}, "tag": "PT3", "color": "#6b7280", "body": "patient",
+   "about": {"zh": "第三胎，前兩胎都剖腹。二十週說胎盤偏低，今天回來追蹤。", "en": "Third baby, two previous caesareans. The placenta was low at twenty weeks; back today for the follow-up."}},
+  "cardio": {"name": {"zh": "黃醫師", "en": "Dr Huang"}, "role": {"zh": "小兒心臟科醫師", "en": "Paediatric cardiologist"}, "tag": "PC", "color": "#9d174d", "phoneOnly": true,
+   "about": {"zh": "只在電話與會議裡。聽完描述會說：「影片傳給我，我自己看。」", "en": "Only on the phone and in meetings. After any description: 'Send me the clip, I'll look myself.'"}},
+  "er-doc": {"name": {"zh": "江醫師", "en": "Dr Chiang"}, "role": {"zh": "急診醫師", "en": "ER physician"}, "tag": "ER", "color": "#2f6f9f", "phoneOnly": true,
+   "about": {"zh": "夜裡的電話。孕婦一進急診，他第一句就問週數。", "en": "The night phone. The moment a pregnant woman arrives, his first question is the gestation."}}
+ },
+ "places": {
+  "scan": {"name": {"zh": "高階超音波", "en": "Ultrasound suite"}, "hot": "ultrasound"},
+  "couch": {"name": {"zh": "檢查床", "en": "Scanning couch"}, "hot": "bed"},
+  "reading": {"name": {"zh": "讀片桌", "en": "Reading desk"}, "hot": "workstation"},
+  "monitor": {"name": {"zh": "監視器", "en": "Monitor"}, "hot": "monitor"},
+  "waiting": {"name": {"zh": "候診區門口", "en": "Waiting-area door"}, "hot": "door"},
+  "desk": {"name": {"zh": "諮詢桌", "en": "Counselling desk"}, "hot": "desk"}
+ },
+ "glossary": [
+  {"term": {"zh": "結構性超音波", "en": "anomaly scan"}, "plain": {"zh": "大約二十週做的詳細超音波，從頭到腳一個器官一個器官看結構。能發現很多問題，但不是全部。", "en": "A detailed scan around twenty weeks, checking each organ's structure from head to toe. It finds a great deal, but not everything."}},
+  {"term": {"zh": "軟指標", "en": "soft marker"}, "plain": {"zh": "超音波上的小變化，本身不是病，只是跟某些染色體異常的機率有一點關係。單獨出現、篩檢又低風險時，通常不改變處理。", "en": "A small ultrasound variation that is not a disease in itself, only loosely linked to some chromosomal conditions. On its own, after low-risk screening, it usually changes nothing."}},
+  {"term": {"zh": "心內強回音點", "en": "echogenic intracardiac focus"}, "plain": {"zh": "心室裡一個小白點，是腱索的鈣化，不影響心臟功能。最常見的軟指標之一。", "en": "A bright spot inside a ventricle from calcium in the heart strings; it does not affect how the heart works. One of the commonest soft markers."}},
+  {"term": {"zh": "四腔切面", "en": "four-chamber view"}, "plain": {"zh": "一次看到心臟四個腔室的切面。很重要，但很多嚴重的心臟病在這個切面看起來完全正常。", "en": "A view showing all four heart chambers at once. Essential, yet many serious heart defects look perfectly normal on it."}},
+  {"term": {"zh": "流出道", "en": "outflow tracts"}, "plain": {"zh": "主動脈和肺動脈離開心臟的那一段。正常時兩條交叉而過；平行就要想到大動脈轉位。", "en": "Where the aorta and pulmonary artery leave the heart. Normally they cross; running side by side suggests transposition."}},
+  {"term": {"zh": "大動脈轉位", "en": "transposition of the great arteries"}, "plain": {"zh": "主動脈和肺動脈接反了。在子宮裡沒事，出生後動脈導管一關就會缺氧，要在有兒心外科的醫院出生。", "en": "The aorta and pulmonary artery are connected the wrong way round. Fine in the womb, but once the ductus closes after birth the baby turns blue, so delivery belongs at a hospital with paediatric heart surgery."}},
+  {"term": {"zh": "動脈導管", "en": "ductus arteriosus"}, "plain": {"zh": "胎兒時期連接肺動脈和主動脈的小血管，出生後幾天內會關起來。", "en": "A small fetal vessel joining the pulmonary artery and aorta; it closes within days of birth."}},
+  {"term": {"zh": "多專科會議", "en": "multidisciplinary meeting"}, "plain": {"zh": "胎兒醫學、小兒心臟、新生兒、遺傳、社工一起討論，給家長一個完整的計畫。", "en": "Fetal medicine, paediatric cardiology, neonatology, genetics and social work together, so parents get one complete plan."}},
+  {"term": {"zh": "前置胎盤", "en": "placenta praevia"}, "plain": {"zh": "胎盤蓋住或很靠近子宮頸內口。後期可能突然無痛性大出血，通常要剖腹產。", "en": "The placenta covers or lies very near the inner opening of the cervix. Late in pregnancy it can bleed suddenly and painlessly; birth is usually by caesarean."}},
+  {"term": {"zh": "經陰道超音波", "en": "transvaginal ultrasound"}, "plain": {"zh": "探頭放在陰道裡，看胎盤邊緣到子宮頸內口的距離最準。前置胎盤做這個是安全的。", "en": "A probe placed in the vagina; the most accurate way to measure the placental edge to the cervix. Safe in placenta praevia."}},
+  {"term": {"zh": "內診", "en": "digital vaginal examination"}, "plain": {"zh": "用手指伸入陰道檢查子宮頸。懷疑前置胎盤時絕對不做，可能引發大出血。", "en": "Examining the cervix with the fingers. Never done when placenta praevia is possible: it can trigger torrential bleeding."}},
+  {"term": {"zh": "胎盤早期剝離", "en": "placental abruption"}, "plain": {"zh": "胎盤在寶寶出生前就從子宮壁剝開。肚子痛、子宮變硬，出血可能藏在裡面看不到。", "en": "The placenta peels off the womb before birth. Pain, a hard womb, and bleeding that may stay hidden inside."}}
+ ],
+ "codex": [
+  {"id": "us-suite", "kind": "equipment", "name": {"zh": "高階超音波", "en": "High-end ultrasound"}, "hot": "ultrasound", "text": {"zh": "能錄影片、做彩色都卜勒。心臟一定錄影片，靜止的圖看不出血往哪裡流。", "en": "Records clips and colour Doppler. Hearts are always recorded as clips; a still image cannot show which way the blood goes."}},
+  {"id": "tv-probe", "kind": "equipment", "name": {"zh": "經陰道探頭", "en": "Transvaginal probe"}, "hot": "ultrasound", "text": {"zh": "前置胎盤看得最清楚的工具。套上保護套、說明、同意，再輕輕放。", "en": "The clearest view of a low placenta. Covered, explained, consented, then gently placed."}},
+  {"id": "reading-desk", "kind": "equipment", "name": {"zh": "讀片桌", "en": "Reading desk"}, "hot": "workstation", "text": {"zh": "影片回放、量測、寫報告的地方。告訴家長之前，先在這裡確定自己看到什麼。", "en": "Where clips are replayed, measured and reported. Before telling parents anything, be sure here of what you saw."}},
+  {"id": "kao-photo", "kind": "item", "name": {"zh": "高婆婆要的側臉照", "en": "Grandma Kao's profile photo"}, "text": {"zh": "鼻子很挺，像爸爸。婆婆說像她。男生女生沒有寫。", "en": "A straight little nose, like Dad's. Grandma says like hers. Boy or girl: not written."}},
+  {"id": "heart-clip", "kind": "item", "name": {"zh": "鄭小姐寶寶的心臟影片", "en": "The clip of Ms Cheng's baby's heart"}, "text": {"zh": "兩條大血管平行離開心臟。黃醫師看完回了一句：「同意，轉位。」", "en": "Two great vessels leaving the heart side by side. Dr Huang watched it and replied: 'Agreed: transposition.'"}},
+  {"id": "soft-markers", "kind": "concept", "name": {"zh": "軟指標不是診斷", "en": "A soft marker is not a diagnosis"}, "text": {"zh": "軟指標只輕微改變機率。要把它放回整體：早期篩檢的結果、有沒有其他發現。單獨的心內強回音點，在篩檢低風險的媽媽身上，不需要侵入性檢查，也不必追蹤。說明時先說「這不是病」，再說機率。", "en": "A soft marker shifts the odds only slightly. Put it back in context: the earlier screening result and any other findings. An isolated echogenic focus in a woman with low-risk screening needs no invasive test and no follow-up. When explaining, say 'this is not a disease' before you talk about numbers."}},
+  {"id": "four-chamber", "kind": "concept", "name": {"zh": "四腔正常不等於心臟正常", "en": "A normal four-chamber view is not a normal heart"}, "text": {"zh": "大動脈轉位、法洛氏四重症等，四腔切面可能完全正常。所以心臟要看完整組切面：四腔、左右流出道、三血管切面。產前知道的大動脈轉位，可以安排在有兒心外科的醫院出生，出生後馬上處理，結果比出生後才發現好得多。", "en": "Transposition, tetralogy and others can show a perfectly normal four-chamber view. So the heart gets the full set: four chambers, left and right outflow tracts, three-vessel view. Transposition known before birth can be delivered where paediatric heart surgery is on hand and treated straight away, with far better outcomes than when found after birth."}},
+  {"id": "no-finger", "kind": "concept", "name": {"zh": "前置胎盤不內診", "en": "No fingers in praevia"}, "text": {"zh": "後期無痛性鮮紅出血，在確認胎盤位置之前，一律當前置胎盤處理：不內診。先穩定循環、兩條靜脈、配血，Rh 陰性評估抗 D，用窺器看出血量、用超音波看胎盤。早產週數依醫囑給胎兒肺成熟藥物，計畫剖腹產。", "en": "Painless bright bleeding late in pregnancy is placenta praevia until the placenta is located: no digital examination. Stabilise, two lines, crossmatch, anti-D assessment if Rh negative; a speculum to see the bleeding, ultrasound to see the placenta. If preterm, steroids for the baby's lungs per protocol, and plan a caesarean."}}
+ ],
+ "segs": [
+  {"id": "list", "name": {"zh": "今天的名單", "en": "Today's list"}, "sub": {"zh": "08:30 · 高階超音波", "en": "08:30 · ultrasound suite"}, "t": 510, "mood": "day",
+   "note": {"zh": "名單上十二個，今天會記得三個", "en": "Twelve on the list; you will remember three"},
+   "beats": [
+    {"id": "l1", "to": "attending", "guide": {"zh": "找蘇主治報到", "en": "Report to Dr Su"},
+     "lines": [
+      ["attending", {"zh": "結構性超音波，今天十二個。大部分都會是好消息。", "en": "Anomaly scans, twelve today. Most will be good news."}],
+      ["me", {"zh": "那其他的呢？", "en": "And the rest?"}],
+      ["attending", {"zh": "看到的說清楚，沒看到的也要說清楚。先學會一個順序，從頭到腳。", "en": "Say clearly what you saw, and just as clearly what you didn't. First learn an order, head to toe."}]
+     ]},
+    {"id": "l2", "to": "place:reading", "guide": {"zh": "一個固定的順序", "en": "A fixed order"},
+     "lines": [
+      ["sono", {"zh": "我每一個都照同一個順序掃，這樣漏掉的時候我會知道。", "en": "I scan every one in the same order, so if I miss something, I know where."}]
+     ],
+     "mini": {"type": "order", "q": {"zh": "結構性超音波的檢查順序", "en": "Anomaly-scan survey order"},
+      "steps": [
+       {"zh": "頭顱與腦部", "en": "Skull and brain"},
+       {"zh": "臉：側臉與上唇", "en": "Face: profile and upper lip"},
+       {"zh": "脊椎長軸與橫切", "en": "Spine, long and cross section"},
+       {"zh": "心臟四腔與流出道", "en": "Heart: four chambers and outflows"},
+       {"zh": "腹壁、胃、腎、膀胱", "en": "Abdominal wall, stomach, kidneys, bladder"},
+       {"zh": "四肢、胎盤、羊水", "en": "Limbs, placenta, fluid"}
+      ]},
+     "post": [["attending", {"zh": "心臟那一步最常被縮短。今天不准縮短。", "en": "The heart step is the one people cut short. Not today."}]]}
+   ]},
+  {"id": "kao", "name": {"zh": "心臟裡的白點", "en": "A white spot in the heart"}, "sub": {"zh": "09:00 · 檢查床", "en": "09:00 · scanning couch"}, "t": 540, "mood": "day",
+   "note": {"zh": "高太太：軟指標，不是病", "en": "Mrs Kao: a soft marker, not a disease"},
+   "beats": [
+    {"id": "k1", "to": "mrs-kao", "guide": {"zh": "掃描：頭、胎盤、羊水", "en": "Scan: head, placenta, fluid"},
+     "lines": [
+      ["grandma", {"zh": "醫師，男的女的？", "en": "Doctor, boy or girl?"}],
+      ["me", {"zh": "婆婆，今天我們看的是器官。先從頭開始。", "en": "Grandma, today we're looking at organs. Starting with the head."}]
+     ],
+     "mini": {"type": "drill", "template": "obstetrics", "drill": "us:fetal"},
+     "post": [["sys", {"zh": "頭、臉、脊椎、四肢、胎盤、羊水都正常。左心室裡有一個小白點。", "en": "Head, face, spine, limbs, placenta and fluid all normal. One small white dot in the left ventricle."}],
+              ["mrs-kao", {"zh": "……那個白點，是不是我昨天查到的那個？", "en": "...that white dot, is it the one I read about last night?"}]]},
+    {"id": "k2", "roles": ["sonographer"], "to": "place:scan", "guide": {"zh": "把心臟錄完整", "en": "Record the full heart"},
+     "lines": [
+      ["me", {"zh": "四腔、兩條流出道、三血管切面都錄了。白點以外，心臟結構都正常。", "en": "Four chambers, both outflows and the three-vessel view all recorded. Apart from the dot, the heart's structure is normal."}],
+      ["grandma", {"zh": "小姐，這個紅包妳拿著。", "en": "Young lady, take this red envelope."}],
+      ["me", {"zh": "婆婆，第四次了，真的不行啦。", "en": "Grandma, that's the fourth time. Really, I can't."}]
+     ]},
+    {"id": "k3", "to": "mrs-kao", "guide": {"zh": "說明軟指標", "en": "Explain the soft marker"},
+     "lines": [
+      ["attending", {"zh": "早期篩檢低風險，其他都正常。你來說，先說哪一句？", "en": "Low-risk early screening, everything else normal. You tell her. Which sentence comes first?"}]
+     ],
+     "mini": {"type": "stage", "case": "obstetrics-aneuploidy-screening-anomaly-scan", "stage": 7},
+     "post": [["me", {"zh": "高太太，這不是病。它叫心內強回音點，是很常見的軟指標，不影響心臟。妳的篩檢是低風險，不需要再做其他檢查。", "en": "Mrs Kao, this is not a disease. It's called an echogenic intracardiac focus, a very common soft marker; it doesn't affect the heart. Your screening was low risk, and no further tests are needed."}],
+              ["mrs-kao", {"zh": "（哭著笑）我昨天一整晚沒睡。", "en": "(laughing through tears) I didn't sleep at all last night."}],
+              ["grandma", {"zh": "那照片可以印一張嗎？側臉的。", "en": "So can we print a photo? The side view."}]],
+     "item": "kao-photo"}
+   ]},
+  {"id": "cheng", "name": {"zh": "你來看一下", "en": "Could you take a look"}, "sub": {"zh": "10:30 · 高階超音波", "en": "10:30 · ultrasound suite"}, "t": 630, "mood": "day",
+   "note": {"zh": "鄭小姐：四腔正常，流出道平行", "en": "Ms Cheng: normal four chambers, parallel outflows"},
+   "beats": [
+    {"id": "c1", "roles": ["sonographer"], "to": "place:scan", "guide": {"zh": "流出道不對", "en": "The outflows are wrong"},
+     "lines": [
+      ["me", {"zh": "四腔很漂亮。左心室出去的那條……往後分叉，是肺動脈。兩條沒有交叉。", "en": "Beautiful four-chamber view. The vessel leaving the left ventricle... it dives back and branches: pulmonary artery. They don't cross."}],
+      ["me", {"zh": "（按下呼叫）醫師，你來看一下。", "en": "(pressing the call button) Doctor, could you take a look?"}]
+     ]},
+    {"id": "c2", "to": "place:scan", "guide": {"zh": "結構性超音波：心臟", "en": "Anomaly scan: the heart"},
+     "lines": [
+      ["ms-cheng", {"zh": "怎麼了？你們兩個的表情變了。", "en": "What is it? Both your faces just changed."}],
+      ["attending", {"zh": "我們再多看幾個切面，看完我一定全部跟妳說。", "en": "We're going to look at a few more views, and when we're done I'll tell you everything."}]
+     ],
+     "mini": {"type": "stage", "case": "obstetrics-aneuploidy-screening-anomaly-scan", "stage": 6},
+     "post": [["sys", {"zh": "兩條大血管平行離開心臟：主動脈從右心室出來，肺動脈從左心室出來。", "en": "The two great vessels leave the heart side by side: aorta from the right ventricle, pulmonary artery from the left."}]],
+     "item": "heart-clip"},
+    {"id": "c3", "to": "ms-cheng", "guide": {"zh": "怎麼告訴她", "en": "How to tell her"},
+     "lines": [
+      ["attending", {"zh": "主治確認了。現在要不要說、怎麼說？", "en": "Confirmed by the attending. Do we tell her now, and how?"}]
+     ],
+     "mini": {"type": "choice", "q": {"zh": "懷疑大動脈轉位，怎麼跟鄭小姐說？", "en": "Suspected transposition of the great arteries: how do you tell Ms Cheng?"},
+      "options": [
+       {"zh": "現在坐下來說清楚，安排會議", "en": "Sit down now, say it clearly, book the meeting", "ok": true, "set": {"told": "now"},
+        "why": {"zh": "對。她已經看到大家的表情。誠實、具體、給計畫：心臟科會一起看，這是可以治療的心臟病。", "en": "Right. She has already seen your faces. Honest, specific, with a plan: cardiology will look too, and this is a treatable heart condition."}},
+       {"zh": "先說還好，等報告出來", "en": "Say it's probably fine, wait for the report", "ok": false, "set": {"told": "later"},
+        "why": {"zh": "她會帶著一個錯誤的安心回家，之後的信任就難了。", "en": "She'd go home with false reassurance, and trust is hard to rebuild after that."}},
+       {"zh": "直接給她看網路上的資料", "en": "Point her to information online", "ok": false, "set": {"told": "web"},
+        "why": {"zh": "網路不會告訴她「她的寶寶」怎麼了，也不會告訴她接下來的計畫。", "en": "The internet can't tell her about her baby, or what the plan is."}}
+      ]},
+     "post": [["ms-cheng", {"zh": "所以兩條管子接反了。在肚子裡沒事，出生後才有事。那就是要在對的地方出生。", "en": "So two pipes are connected the wrong way. Fine inside, a problem after birth. Then it has to happen in the right place."}],
+              ["attending", {"zh": "妳說得比我還清楚。", "en": "You put it better than I did."}]]}
+   ]},
+  {"id": "mdt", "name": {"zh": "多專科會議", "en": "The multidisciplinary meeting"}, "sub": {"zh": "13:00 · 讀片桌", "en": "13:00 · reading desk"}, "t": 780, "mood": "day",
+   "note": {"zh": "在哪裡生，跟怎麼生一樣重要", "en": "Where to deliver matters as much as how"},
+   "beats": [
+    {"id": "m1", "ring": {"title": {"zh": "小兒心臟科來電", "en": "Paediatric cardiology calling"}, "sub": {"zh": "黃醫師：影片看完了", "en": "Dr Huang: I've seen the clip"}, "call": true, "from": "cardio"},
+     "lines": [
+      ["cardio", {"zh": "同意，大動脈轉位，心室中隔看起來完整。我下週幫她做胎兒心臟超音波。", "en": "Agreed: transposition, ventricular septum looks intact. I'll do a fetal echo next week."}],
+      ["cardio", {"zh": "出生後動脈導管一關就會缺氧。要在有兒心外科的醫院生。", "en": "Once the ductus arteriosus closes after birth the baby will desaturate. Delivery has to be where there's paediatric heart surgery."}]
+     ]},
+    {"id": "m2", "to": "attending", "guide": {"zh": "會議要決定的事", "en": "What the meeting decides"},
+     "lines": [
+      ["attending", {"zh": "多專科會議要給她一個計畫。哪些人、哪些事？", "en": "The multidisciplinary meeting has to give her one plan. Who, and what?"}]
+     ],
+     "mini": {"type": "stage", "case": "obstetrics-aneuploidy-screening-anomaly-scan", "stage": 8},
+     "post": [["me", {"zh": "胎兒醫學、小兒心臟、新生兒科、遺傳諮詢、社工。決定生產地點、出生後第一小時誰在場、要不要做基因檢查。", "en": "Fetal medicine, paediatric cardiology, neonatology, genetics, social work. Decide where she delivers, who is there in the first hour, and whether she wants genetic testing."}],
+              ["attending", {"zh": "還有一件：她試了三年。問她需要什麼。", "en": "One more: she tried for three years. Ask her what she needs."}]]},
+    {"id": "m3", "when": {"flag": "told", "is": "later"}, "to": "ms-cheng", "guide": {"zh": "鄭小姐回來了", "en": "Ms Cheng has come back"},
+     "lines": [
+      ["ms-cheng", {"zh": "早上你說還好，可是你們在讀片桌討論了一個小時。到底怎麼了？", "en": "This morning you said it was fine, but you've been at the reading desk for an hour. What's going on?"}],
+      ["me", {"zh": "對不起，早上我應該直接說。坐下來，我從頭講，心臟科醫師也會打給妳。", "en": "I'm sorry; I should have told you this morning. Please sit down. I'll start from the beginning, and the cardiologist will ring you too."}]
+     ]}
+   ]},
+  {"id": "praevia", "name": {"zh": "低處的胎盤", "en": "A low placenta"}, "sub": {"zh": "15:00 · 檢查床", "en": "15:00 · scanning couch"}, "t": 900, "mood": "day",
+   "note": {"zh": "王太太：不內診，先穩住", "en": "Mrs Wang: no fingers, stabilise first"},
+   "beats": [
+    {"id": "p1", "to": "mrs-wang", "guide": {"zh": "追蹤胎盤位置", "en": "Recheck the placenta"},
+     "lines": [
+      ["mrs-wang", {"zh": "二十週說胎盤低，現在三十二週，會不會自己往上跑？", "en": "At twenty weeks they said low. I'm thirty-two now. Has it moved up by itself?"}],
+      ["me", {"zh": "常常會。用經陰道超音波量最準，前置胎盤做這個是安全的。", "en": "It often does. Transvaginal ultrasound measures it best, and it's safe even if the placenta is low."}]
+     ],
+     "mini": {"type": "imaging", "region": "pelvis",
+      "question": {"zh": "追蹤低位胎盤，要看什麼？", "en": "Following up a low placenta: what do you look at?"},
+      "answer": {"zh": "胎盤下緣到子宮頸內口的距離，有沒有蓋住內口。前兩胎剖腹，還要看胎盤是不是長在舊疤上、有沒有植入的跡象（胎盤植入）。", "en": "The distance from the placental edge to the internal os, and whether it covers it. With two previous caesareans, also whether it sits over the old scar and shows signs of growing into it (placenta accreta)."}},
+     "post": [["sys", {"zh": "胎盤完全蓋住子宮頸內口，位置在舊疤上方，界線清楚。", "en": "The placenta completely covers the internal os over the old scar, with a clear boundary."}],
+              ["attending", {"zh": "前置胎盤。安排住院討論與麻醉、血庫的計畫。今天先到候診區等一下床位。", "en": "Placenta praevia. We'll arrange admission with anaesthesia and the blood bank. For now, wait in the waiting area for a bed."}]]},
+    {"id": "p2", "to": "place:waiting", "guide": {"zh": "候診區有人喊", "en": "A shout from the waiting area"},
+     "lines": [
+      ["sono", {"zh": "醫師！王太太在候診區，椅子上都是血。她說不會痛。", "en": "Doctor! Mrs Wang in the waiting area: blood all over the chair. She says it doesn't hurt."}],
+      ["sys", {"zh": "鮮紅色出血，無痛。臉色變白，心跳變快。", "en": "Bright red, painless bleeding. She's gone pale; her pulse is climbing."}]
+     ],
+     "mini": {"type": "vitals", "event": "bleeding",
+      "options": [
+       {"zh": "呼叫、兩條大靜脈、配血、側躺", "en": "Call, two wide lines, crossmatch, left tilt", "ok": true,
+        "why": {"zh": "對。前置胎盤出血先穩住媽媽：叫產房與麻醉、兩條大靜脈、抽血配血、左側躺、胎心監測。", "en": "Right. In a praevia bleed, stabilise the mother: call labour ward and anaesthesia, two wide lines, bloods and crossmatch, left tilt, fetal monitoring."}},
+       {"zh": "先等出血自己停", "en": "Wait for the bleeding to settle", "ok": false,
+        "why": {"zh": "前置胎盤的出血可能一下子變很大。等，是最貴的選擇。", "en": "A praevia bleed can become massive at any moment. Waiting is the most expensive option."}},
+       {"zh": "讓她自己走去產房", "en": "Let her walk to labour ward", "ok": false,
+        "why": {"zh": "正在出血、臉色發白的人不走路。床推過去。", "en": "Someone pale and bleeding doesn't walk. The bed goes to her."}}
+      ]}},
+    {"id": "p3", "to": "attending", "guide": {"zh": "檢查怎麼做", "en": "How to examine her"},
+     "lines": [
+      ["attending", {"zh": "產房問你要不要先內診看子宮頸開了沒。你說？", "en": "Labour ward asks if they should do a digital vaginal examination to see if the cervix is open. Your answer?"}]
+     ],
+     "mini": {"type": "choice", "q": {"zh": "已知前置胎盤出血，要怎麼檢查？", "en": "Known praevia, bleeding: how do you examine?"},
+      "options": [
+       {"zh": "不內診；窺器與超音波", "en": "No digital exam; speculum and ultrasound", "ok": true, "set": {"exam": "safe"},
+        "why": {"zh": "對。手指可能把胎盤戳破、出血更多。窺器看出血量，超音波看胎盤與胎兒。", "en": "Right. A finger can disrupt the placenta and worsen the bleeding. Speculum for the bleeding, ultrasound for placenta and baby."}},
+       {"zh": "輕輕內診一下看開幾公分", "en": "A gentle exam to check dilatation", "ok": false, "set": {"exam": "digital"},
+        "why": {"zh": "再輕也不行。前置胎盤一律不內診。", "en": "However gentle, no. Never a digital exam in praevia."}}
+      ]},
+     "post": [["sys", {"zh": "床推往產房。蘇主治打給麻醉科和血庫。", "en": "The bed heads for labour ward. Dr Su rings anaesthesia and the blood bank."}]]}
+   ]},
+  {"id": "evening", "name": {"zh": "收工前", "en": "Before going home"}, "sub": {"zh": "18:00 · 讀片桌", "en": "18:00 · reading desk"}, "t": 1080, "mood": "eve",
+   "note": {"zh": "三個媽媽，三種說法", "en": "Three mothers, three ways of telling"},
+   "beats": [
+    {"id": "e0", "when": {"flag": "exam", "is": "digital"}, "to": "attending", "guide": {"zh": "產房的消息", "en": "News from labour ward"},
+     "lines": [
+      ["attending", {"zh": "產房說內診的時候出血一下子變多，直接進了手術室。媽媽和寶寶都平安，但輸了血。", "en": "Labour ward says the bleeding surged during the vaginal exam and she went straight to theatre. Mother and baby are fine, but she needed blood."}],
+      ["me", {"zh": "……前置胎盤不內診。我會記一輩子。", "en": "...no fingers in praevia. I'll remember that for life."}]
+     ]},
+    {"id": "e1", "to": "attending", "guide": {"zh": "蘇主治的回顧", "en": "Dr Su's debrief"},
+     "lines": [
+      ["attending", {"zh": "今天你說了三次話。白點：先說不是病。轉位：說清楚，也給計畫。胎盤：說「不」。", "en": "You spoke three times today. The white dot: 'not a disease' first. Transposition: clear words, and a plan. The placenta: you said 'no'."}],
+      ["me", {"zh": "最難的是第二次。", "en": "The second was the hardest."}],
+      ["attending", {"zh": "因為那次你看到的跟沒看到的一樣重要。四腔正常，你沒有停下來。", "en": "Because what you hadn't yet seen mattered as much as what you had. The four chambers were normal, and you didn't stop there."}]
+     ]}
+   ]},
+  {"id": "night", "name": {"zh": "夜裡的車禍", "en": "A crash at night"}, "sub": {"zh": "22:00 · 值班電話", "en": "22:00 · on-call phone"}, "t": 1320, "mood": "night",
+   "note": {"zh": "孕婦外傷：沒痛也要監測", "en": "Trauma in pregnancy: monitor even without pain"},
+   "beats": [
+    {"id": "n1", "ring": {"title": {"zh": "急診來電", "en": "ER calling"}, "sub": {"zh": "二十九週孕婦，輕微車禍", "en": "Twenty-nine weeks, minor car crash"}, "call": true, "from": "er-doc"},
+     "lines": [
+      ["er-doc", {"zh": "二十九週，追撞，有繫安全帶。媽媽只有頸部痠，肚子不痛，沒有出血。可以讓她回家嗎？", "en": "Twenty-nine weeks, rear-ended, seat belt on. Mother has only a stiff neck, no abdominal pain, no bleeding. Can she go home?"}],
+      ["me", {"zh": "先不要。胎盤早期剝離可能晚幾個小時才出現。左側躺，送產房做胎心監測至少四個小時，抽血看血型，Rh 陰性要評估抗 D。", "en": "Not yet. Placental abruption can show up hours later. Left tilt, up to labour ward for fetal monitoring for at least four hours, bloods including group; if Rh negative, assess for anti-D."}],
+      ["er-doc", {"zh": "好，我送上去。她問寶寶有沒有被安全帶勒到。", "en": "OK, sending her up. She's asking if the belt squashed the baby."}],
+      ["me", {"zh": "跟她說安全帶繫對了，是在保護寶寶。我們監測就是為了確定。", "en": "Tell her the belt worn properly protects the baby. The monitoring is how we make sure."}]
+     ]},
+    {"id": "n2", "to": "place:reading", "guide": {"zh": "關掉讀片桌", "en": "Shut down the reading desk"},
+     "lines": [
+      ["sys", {"zh": "訊息來自產房：王太太和寶寶都穩定。另一則來自鄭小姐：「謝謝你們沒有騙我。」", "en": "A message from labour ward: Mrs Wang and baby stable. Another from Ms Cheng: 'Thank you for not lying to me.'"}],
+      ["sys", {"zh": "值班未完。螢幕上停著一張側臉，鼻子很挺。", "en": "The night goes on. A profile is frozen on the screen: a straight little nose."}]
+     ],
+     "end": true}
+   ]}
+ ],
+ "ending": {"title": {"zh": "下班了", "en": "End of shift"}, "sub": {"zh": "看到的說清楚，沒看到的也說清楚", "en": "Say what you saw, and what you did not"}, "stats": ["stages", "grades", "choices", "calls", "items", "time"]}
+}

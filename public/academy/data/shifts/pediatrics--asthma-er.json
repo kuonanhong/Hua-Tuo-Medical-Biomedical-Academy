@@ -1,0 +1,257 @@
+{
+  "format": "huatuo-shift-v2",
+  "department": "pediatrics",
+  "case": "asthma-er",
+  "caseTitle": {"zh": "會背捷運站名的小喘喘", "en": "The wheezy boy who knows every metro stop"},
+  "condition": {"zh": "呼吸 · 兒童氣喘急性發作", "en": "Respiratory · acute childhood asthma"},
+  "difficulty": 1,
+  "room": "er",
+  "title": {"zh": "兒科急診的一天", "en": "A day in the children's emergency room"},
+  "tagline": {"zh": "喘鳴聲變小，不一定是好消息", "en": "A quieter wheeze is not always good news"},
+  "minutes": 25,
+  "roles": [
+    {"id": "ped-resident", "zh": "小兒科住院醫師", "en": "Paediatric resident",
+     "desc": {"zh": "聽診左右比、看呼吸輔助肌、讀胸片。他變安靜的時候，你要分得出是好轉還是累了。", "en": "Compare left with right, watch the accessory muscles, read the film. When he goes quiet, you must tell better from exhausted."}},
+    {"id": "rt", "zh": "呼吸治療師", "en": "Respiratory therapist",
+     "desc": {"zh": "吸藥輔助器、氧氣、吹泡泡。家裡那兩支顏色不同的吸入劑，是你今天要解開的謎。", "en": "Spacer, oxygen, soap bubbles. The two differently coloured inhalers at home are today's mystery for you to solve."}}
+  ],
+  "cast": {
+    "attending": {"name": {"zh": "范主治", "en": "Dr Fan"}, "role": {"zh": "兒科急診主治（師傅）", "en": "Paediatric emergency attending (mentor)"}, "tag": "ATT", "color": "#81296d", "body": "mentor",
+                  "about": {"zh": "白袍口袋裡永遠有一罐泡泡水。她說：能吹泡泡的孩子，呼吸還有餘裕。", "en": "A pot of bubble mixture always in her coat pocket. Her rule: a child who can blow bubbles still has breath to spare."}},
+    "mi": {"name": {"zh": "小米", "en": "Mi"}, "role": {"zh": "兒科急診護理師", "en": "Paediatric emergency nurse"}, "tag": "RN", "color": "#3b8f6a", "body": "nurse",
+           "about": {"zh": "打針前會先問小孩最喜歡什麼，然後一直聊那個。今天聊的是捷運。", "en": "Before any needle she asks what the child loves and keeps talking about it. Today it's the metro."}},
+    "hao": {"name": {"zh": "浩浩", "en": "Hao"}, "role": {"zh": "七歲，氣喘發作", "en": "Seven, asthma attack"}, "tag": "PT", "color": "#c2703a", "body": "patient",
+            "about": {"zh": "虛構教學個案。小學一年級，會背全台北的捷運站名。半夜咳醒，清晨喘到說話要分好幾段。", "en": "Fictional teaching case. First grade, can recite every Taipei metro stop. Woke coughing at night; by dawn he needed several breaths per sentence."}},
+    "mother": {"name": {"zh": "浩浩媽媽", "en": "Hao's mother"}, "role": {"zh": "家屬", "en": "Family"}, "tag": "FAM", "color": "#8a6d3b", "body": "family",
+               "about": {"zh": "在超商上大夜班，下班直接抱著孩子衝來急診。包包裡有兩支吸入劑，一藍一橘。", "en": "Works night shifts at a convenience store and came straight from work with him in her arms. Two inhalers in her bag: one blue, one orange."}},
+    "grandpa": {"name": {"zh": "浩浩阿公", "en": "Hao's grandpa"}, "role": {"zh": "白天照顧者（電話）", "en": "Daytime carer (by phone)"}, "tag": "GP", "color": "#5a6b8a", "phoneOnly": true,
+                "about": {"zh": "放學接送、煮晚餐、管藥。他相信橘色那支是「急救用的」。", "en": "Does school pick-up, dinner and the medicines. He believes the orange one is “for emergencies”."}},
+    "school-nurse": {"name": {"zh": "學校護理師", "en": "School nurse"}, "role": {"zh": "國小健康中心（訊息）", "en": "Primary-school health room (message)"}, "tag": "SN", "color": "#2f6f8f", "phoneOnly": true,
+                     "about": {"zh": "全校的咳嗽她都記得。浩浩的名字最近出現得特別多。", "en": "Remembers every cough in the school. Hao's name has been coming up a lot lately."}}
+  },
+  "places": {
+    "bay": {"name": {"zh": "兒科急診 3 床", "en": "Paeds ER bay 3"}, "hot": "bed"},
+    "monitor": {"name": {"zh": "床邊監視器", "en": "Bedside monitor"}, "hot": "monitor"},
+    "neb": {"name": {"zh": "氧氣與噴霧設備", "en": "Oxygen and nebuliser"}, "hot": "device"},
+    "ws": {"name": {"zh": "影像工作站", "en": "Imaging workstation"}, "hot": "imaging"},
+    "resus": {"name": {"zh": "急救區", "en": "Resuscitation bay"}, "hot": "crash-cart"},
+    "board": {"name": {"zh": "急診白板", "en": "ER whiteboard"}, "hot": "whiteboard"},
+    "desk": {"name": {"zh": "護理站", "en": "Nurses' station"}, "hot": "desk"}
+  },
+  "glossary": [
+    {"term": {"zh": "氣喘", "en": "asthma"}, "plain": {"zh": "呼吸道長期容易發炎、敏感。遇到感冒、冷空氣、菸味或運動，氣管收縮、黏膜腫、痰變多，就喘起來。", "en": "Airways that stay prone to inflammation and over-reaction. With a cold, cold air, smoke or exercise they tighten, swell and fill with mucus, and breathing gets hard."}},
+    {"term": {"zh": "喘鳴", "en": "wheeze"}, "plain": {"zh": "空氣擠過變窄的氣管時發出的高音哨聲，吐氣時最明顯。", "en": "The high whistling sound of air squeezing through narrowed airways, loudest when breathing out."}},
+    {"term": {"zh": "寂靜胸", "en": "silent chest"}, "plain": {"zh": "喘得太嚴重，空氣幾乎進不去，連喘鳴聲都聽不到了。聽起來安靜，其實最危險。", "en": "So little air is moving that even the wheeze disappears. It sounds quiet and is the most dangerous sign of all."}},
+    {"term": {"zh": "呼吸輔助肌", "en": "accessory muscles"}, "plain": {"zh": "脖子和肋骨間的肌肉。平常呼吸用不到；喘的時候看得到它們在用力，肋骨間會凹進去。", "en": "Neck and between-rib muscles not used in quiet breathing. In a struggling child you see them working and the skin between the ribs sucking in."}},
+    {"term": {"zh": "血氧", "en": "oxygen saturation"}, "plain": {"zh": "指夾讀出血液帶氧的比例。手冷、亂動會讀不準，先看孩子，再看數字。", "en": "The finger-clip reading of how much oxygen the blood carries. Cold or wriggling fingers fool it; look at the child, then the number."}},
+    {"term": {"zh": "緩解型吸入劑", "en": "reliever inhaler"}, "plain": {"zh": "喘起來時用的支氣管擴張劑，幾分鐘內把氣管撐開。浩浩家的是藍色那支。", "en": "The bronchodilator used during an attack, opening the airways within minutes. In Hao's home, it's the blue one."}},
+    {"term": {"zh": "控制型吸入劑", "en": "preventer inhaler"}, "plain": {"zh": "每天用、讓氣管慢慢消炎的藥。不會馬上有感覺，但能減少發作。浩浩家的是橘色那支。", "en": "Taken every day to calm airway inflammation slowly. You feel nothing at once, but attacks become rarer. In Hao's home, it's the orange one."}},
+    {"term": {"zh": "吸藥輔助器", "en": "spacer"}, "plain": {"zh": "接在吸入劑前面的透明筒子。藥先噴進筒裡，孩子再慢慢吸，進到肺裡的藥比直接噴多很多。", "en": "A clear tube fitted to the inhaler. The puff goes into the tube and the child breathes it in slowly, getting far more medicine into the lungs than a direct puff."}},
+    {"term": {"zh": "過度充氣", "en": "hyperinflation"}, "plain": {"zh": "氣喘時空氣吸得進、吐不太出來，肺被撐得太滿，X 光上肺變黑變長、橫膈變平。", "en": "In asthma, air gets in but can't get out, so the lungs over-fill: on X-ray they look dark and long with flattened diaphragms."}},
+    {"term": {"zh": "痰栓", "en": "mucus plug"}, "plain": {"zh": "黏稠的痰塞住一段小氣管，後面那一小塊肺就塌下去。X 光上看起來像肺炎，但常常咳出來就好了。", "en": "Thick mucus blocking a small airway so the lung beyond collapses. On X-ray it can mimic pneumonia but often clears once it's coughed up."}},
+    {"term": {"zh": "氣喘行動計畫", "en": "asthma action plan"}, "plain": {"zh": "一張寫給家人和學校的紙：綠燈每天做什麼、黃燈加什麼藥、紅燈什麼時候直接來急診。", "en": "A sheet for family and school: what to do every day on green, what to add on yellow, and when red means straight to the emergency room."}},
+    {"term": {"zh": "二手菸", "en": "second-hand smoke"}, "plain": {"zh": "別人抽菸散出的煙，還有留在衣服、頭髮、沙發上的味道，都會刺激孩子的氣管。陽台抽也帶得進來。", "en": "Smoke from someone else's cigarette, and the residue left on clothes, hair and sofas, all irritate a child's airways. Smoking on the balcony still brings it inside."}}
+  ],
+  "codex": [
+    {"id": "spacer", "kind": "equipment", "name": {"zh": "吸藥輔助器", "en": "Spacer"}, "text": {"zh": "透明筒，一端接吸入劑，一端咬嘴或面罩。學齡兒童用咬嘴、小小孩用面罩。用完洗乾淨、自然風乾。", "en": "A clear tube: inhaler at one end, mouthpiece or mask at the other. Mouthpiece for school-age children, mask for toddlers. Wash after use and let it air-dry."}, "hot": "device"},
+    {"id": "oximeter", "kind": "equipment", "name": {"zh": "血氧與監視器", "en": "Oximeter and monitor"}, "text": {"zh": "孩子的手冷或亂動時，波形會亂。先看波形漂不漂亮，再相信數字。", "en": "Cold or wriggling hands scramble the trace. Check the waveform looks clean before trusting the number."}, "hot": "monitor"},
+    {"id": "nebuliser", "kind": "equipment", "name": {"zh": "氧氣與噴霧設備", "en": "Oxygen and nebuliser"}, "text": {"zh": "嚴重發作或需要氧氣時使用。輕中度時，吸入劑接輔助器的效果和噴霧一樣好，而且回家也能用。", "en": "Used in severe attacks or when oxygen is needed. In mild to moderate attacks, an inhaler with a spacer works as well as a nebuliser, and it's what he'll use at home."}, "hot": "device"},
+    {"id": "resus-bay", "kind": "equipment", "name": {"zh": "兒科急救區", "en": "Paediatric resuscitation bay"}, "text": {"zh": "依體重排好的急救用品、各尺寸面罩。孩子越安靜越要靠近這裡。", "en": "Kit arranged by weight, masks in every size. The quieter a wheezy child becomes, the closer he should be to this bay."}, "hot": "crash-cart"},
+    {"id": "metro-plan", "kind": "item", "name": {"zh": "捷運路線圖行動計畫", "en": "The metro-map action plan"}, "text": {"zh": "浩浩把氣喘行動計畫畫成三條捷運線：綠線每天搭、黃線要轉乘藍色那支、紅線直達急診站。終點站叫「可以跑步站」。", "en": "Hao drew his asthma action plan as three metro lines: ride the green line daily, change to the blue inhaler on yellow, red runs express to the ER stop. The terminus is called “Can Run Station”."}},
+    {"id": "danger-signs", "kind": "concept", "name": {"zh": "兒童氣喘的危險徵象", "en": "Danger signs in a child's asthma"}, "text": {"zh": "看孩子勝過看數字：說話只能一個字一個字、吃不下喝不下、呼吸輔助肌明顯用力、肋骨間凹陷、嘴唇發紫、血氧掉、越來越想睡或煩躁、還有寂靜胸——喘鳴聲消失不代表變好，可能代表空氣快進不去了。任何一項出現，叫上級、加強治療、準備急救區。", "en": "Watch the child more than the numbers: speaking a word at a time, unable to eat or drink, accessory muscles straining, skin pulling in between the ribs, blue lips, falling saturation, growing drowsiness or agitation, and a silent chest. A wheeze that disappears may mean almost no air is moving, not improvement. Any one of these: call senior help, step up treatment, get the resuscitation bay ready."}},
+    {"id": "reliever-preventer", "kind": "concept", "name": {"zh": "緩解型和控制型不是同一種藥", "en": "Reliever and preventer are different drugs"}, "text": {"zh": "緩解型（支氣管擴張劑）幾分鐘內撐開氣管，喘的時候用；控制型（吸入型類固醇等）每天用、慢慢消炎，用了沒有立刻的感覺。家人最常見的錯誤是：把控制型當急救用、或因為「沒感覺」就停掉。顏色依廠牌不同，教家人看藥名和用途，不要只記顏色。每次用都接吸藥輔助器；用完類固醇要漱口。", "en": "A reliever (bronchodilator) opens the airways within minutes and is for attacks; a preventer (an inhaled steroid or similar) is used daily to calm inflammation slowly and gives no instant feeling. The commonest family mistakes: using the preventer as the rescue inhaler, or stopping it because it “does nothing”. Colours vary by brand, so teach the name and purpose, not just the colour. Always use a spacer; rinse the mouth after a steroid."}},
+    {"id": "cxr-when", "kind": "concept", "name": {"zh": "氣喘什麼時候要照胸片", "en": "When an asthmatic child needs a film"}, "text": {"zh": "典型的氣喘發作不需要例行照 X 光。需要照的情況：兩側呼吸音明顯不對稱、懷疑氣胸、發燒懷疑肺炎、懷疑吸入異物、或治療反應很差。照了要看：氣胸、縱膈氣腫、肺炎、痰栓造成的肺塌陷、過度充氣。", "en": "A typical asthma attack does not need a routine X-ray. Film when breath sounds are clearly asymmetric, pneumothorax is suspected, fever suggests pneumonia, an inhaled foreign body is possible, or treatment isn't working. Look for pneumothorax, air in the mediastinum, pneumonia, collapse from a mucus plug, and hyperinflation."}}
+  ],
+  "segs": [
+    {"id": "morning", "name": {"zh": "清晨的 3 床", "en": "Bay 3 at dawn"}, "sub": {"zh": "07:40 · 兒科急診 3 床", "en": "07:40 · paeds ER bay 3"}, "t": 460, "mood": "day",
+     "note": {"zh": "右邊比左邊安靜", "en": "The right side is quieter than the left"},
+     "beats": [
+      {"id": "m1", "to": "place:board", "guide": {"zh": "在白板聽夜班交班", "en": "Night handover at the board"},
+       "lines": [
+        ["sys", {"zh": "早上七點四十。范主治把泡泡水放在白板架上，聽夜班交班。", "en": "Seven forty. Dr Fan sets her bubble mixture on the whiteboard ledge and listens to the night handover."}],
+        ["mi", {"zh": "3 床浩浩，七歲，有氣喘。半夜咳醒，清晨六點半來，已經做了第一輪吸入治療。", "en": "Bay 3, Hao, seven, known asthma. Woke coughing at night, arrived half past six, first round of inhaled treatment done."}],
+        ["attending", {"zh": "第一輪之後，他說話是一整句，還是一段一段？", "en": "After round one, is he speaking in full sentences or in pieces?"}],
+        ["me", {"zh": "我去聽、去看，再回來告訴你。", "en": "I'll go and listen and look, then come back and tell you."}]
+       ]},
+      {"id": "m2", "roles": ["ped-resident"], "to": "hao", "guide": {"zh": "替浩浩聽診", "en": "Listen to Hao's chest"},
+       "lines": [
+        ["hao", {"zh": "醫生……你知道……板南線……有幾站嗎？", "en": "Doctor… do you know… how many stops… the Bannan line has?"}],
+        ["sys", {"zh": "他每說兩三個字就要換氣，脖子的呼吸輔助肌一抽一抽。", "en": "He breathes every two or three words; the accessory muscles in his neck tug with each one."}],
+        ["attending", {"zh": "左右比著聽。只聽一邊，會漏掉一半的故事。", "en": "Compare side to side. Listen to one side only and you miss half the story."}]
+       ],
+       "mini": {"type": "drill", "template": "pediatrics", "drill": "lungs"},
+       "post": [
+        ["me", {"zh": "兩側都有喘鳴，可是右下比左下安靜很多。", "en": "Wheeze on both sides, but the right base is much quieter than the left."}],
+        ["attending", {"zh": "不對稱。記下來，等一下它會決定要不要照片子。", "en": "Asymmetric. Note it; it'll decide whether we take a film."}]
+       ]},
+      {"id": "m3", "roles": ["rt"], "to": "place:neb", "guide": {"zh": "用輔助器給第二輪", "en": "Second round with a spacer"},
+       "lines": [
+        ["attending", {"zh": "這一輪用吸入劑接輔助器。他回家要用的就是這個，現在就讓他學。", "en": "This round, inhaler and spacer. It's what he'll use at home, so let him learn it now."}]
+       ],
+       "mini": {"type": "order", "q": {"zh": "吸入劑接輔助器的步驟", "en": "Inhaler with a spacer, step by step"},
+                "steps": [
+                 {"zh": "打開蓋子、搖一搖吸入劑", "en": "Cap off, shake the inhaler"},
+                 {"zh": "接上輔助器", "en": "Fit it to the spacer"},
+                 {"zh": "嘴唇包緊咬嘴", "en": "Lips sealed around the mouthpiece"},
+                 {"zh": "按一下，把藥噴進筒裡", "en": "Press once into the spacer"},
+                 {"zh": "慢慢吸吐幾次再拿開", "en": "Several slow breaths, then remove"},
+                 {"zh": "類固醇用完要漱口", "en": "Rinse the mouth after a steroid"}
+                ]},
+       "post": [
+        ["me", {"zh": "很好。現在當作在等捷運，慢慢吸，一站、兩站、三站。", "en": "Good. Pretend you're waiting for the train: slow breaths, one stop, two stops, three stops."}],
+        ["hao", {"zh": "……下一站，市政府。", "en": "…Next stop, City Hall."}]
+       ]}
+     ]},
+    {"id": "home", "name": {"zh": "藍色和橘色", "en": "Blue and orange"}, "sub": {"zh": "09:00 · 3 床旁", "en": "09:00 · beside bay 3"}, "t": 540, "mood": "day",
+     "note": {"zh": "控制型被當成急救用", "en": "The preventer was used as the rescue inhaler"},
+     "beats": [
+      {"id": "h1", "to": "mother", "guide": {"zh": "問媽媽家裡的藥", "en": "Ask the mother about home medicines"},
+       "lines": [
+        ["mother", {"zh": "這兩支都是醫生開的。阿公說橘色是急救用的，所以平常都沒用。", "en": "Both are from the doctor. Grandpa says the orange one's for emergencies, so normally we don't use it."}],
+        ["attending", {"zh": "這題寫的是相似的藥瓶。原則一樣：交給專業的人核對原包裝，不要猜。", "en": "This exercise is about look-alike medicine bottles, but the principle holds: have a professional check the original packs; don't guess."}]
+       ],
+       "mini": {"type": "stage", "case": "pediatrics-v38-caregiver-records", "stage": 2},
+       "post": [
+        ["me", {"zh": "藍色是緩解型吸入劑，喘的時候用；橘色是控制型吸入劑，要每天用。顏色剛好跟阿公記的相反。", "en": "Blue is the reliever inhaler, for attacks; orange is the preventer inhaler, for every day. The exact opposite of what Grandpa remembered."}],
+        ["mother", {"zh": "難怪……橘色那支用了都沒感覺，我們就收起來了。三個月了。", "en": "No wonder… the orange one never seemed to do anything, so we put it away. Three months ago."}]
+       ]}
+     ]},
+    {"id": "film", "name": {"zh": "安靜的右下肺", "en": "The quiet right base"}, "sub": {"zh": "10:30 · 影像工作站", "en": "10:30 · imaging workstation"}, "t": 630, "mood": "day",
+     "note": {"zh": "過度充氣加一個痰栓，沒有氣胸", "en": "Hyperinflation and a mucus plug, no pneumothorax"},
+     "beats": [
+      {"id": "f1", "to": "place:ws", "guide": {"zh": "到工作站看胸片", "en": "Read the chest film"},
+       "lines": [
+        ["attending", {"zh": "氣喘發作通常不用照片子。這次為什麼要照？", "en": "An asthma attack usually doesn't need a film. Why this time?"}],
+        ["me", {"zh": "因為右下呼吸音比左邊小，要排除氣胸、肺炎或吸到東西。", "en": "Because the right base is quieter than the left: rule out pneumothorax, pneumonia or something inhaled."}]
+       ],
+       "mini": {"type": "imaging", "region": "chest",
+                "question": {"zh": "胸片兩側肺又黑又長、橫膈變平，右心邊緣旁有一塊模糊的白。這是什麼？要不要給抗生素？", "en": "Both lungs dark and long, diaphragms flattened, a hazy white patch beside the right heart border. What is it, and does he need antibiotics?"},
+                "answer": {"zh": "兩側是過度充氣，氣喘的典型表現。右心邊緣旁的白影最可能是右中葉被痰栓塞住的小塌陷，不是肺炎：沒有發燒、局部咳出痰後常會改善。沒有氣胸。先治療氣喘和協助排痰，不需要因為這塊白就給抗生素。", "en": "Both lungs are hyperinflated, typical of asthma. The haze by the right heart border is most likely a small right-middle-lobe collapse from a mucus plug, not pneumonia: no fever, and it often clears once the plug is coughed out. No pneumothorax. Treat the asthma and help him clear secretions; that patch alone is no reason for antibiotics."}},
+       "post": [
+        ["attending", {"zh": "解釋了右下為什麼安靜。片子回答的是你聽診提出的問題。", "en": "That explains the quiet base. The film answered the question your stethoscope asked."}]
+       ]}
+     ]},
+    {"id": "quiet", "name": {"zh": "變安靜了", "en": "Gone quiet"}, "sub": {"zh": "12:00 · 3 床", "en": "12:00 · bay 3"}, "t": 720, "mood": "day",
+     "note": {"zh": "寂靜胸：安靜不是好消息", "en": "Silent chest: quiet is not good news"},
+     "beats": [
+      {"id": "q1", "to": "hao", "guide": {"zh": "看看變安靜的浩浩", "en": "Check on quiet Hao"},
+       "lines": [
+        ["mother", {"zh": "醫生你聽，他不咻咻叫了！是不是好了？", "en": "Doctor, listen, the whistling has stopped! Is he better?"}],
+        ["sys", {"zh": "浩浩眼睛半閉，不再背捷運站。肋骨之間一吸就凹下去。", "en": "Hao's eyes are half closed; he has stopped reciting stations. The skin between his ribs sucks in with every breath."}]
+       ],
+       "mini": {"type": "choice", "q": {"zh": "喘鳴變小，但他很累、肋間凹陷。你怎麼判斷？", "en": "Wheeze quieter, but he's exhausted and his ribs pull in. Your read?"},
+                "options": [
+                 {"zh": "可能是寂靜胸，立刻叫主治", "en": "Possible silent chest: call the attending now", "ok": true, "set": {"silent-caught": true},
+                  "why": {"zh": "喘鳴消失加上疲倦、凹陷，代表空氣快進不去了。這是危險徵象，不是好轉。", "en": "A vanishing wheeze plus exhaustion and recession means almost no air is moving. That's a danger sign, not improvement."}},
+                 {"zh": "喘鳴變小，代表好轉", "en": "Quieter wheeze means improvement", "ok": false, "set": {"silent-caught": false},
+                  "why": {"zh": "好轉的孩子會講話、會吵、想喝水。安靜又累的孩子，要先想到寂靜胸。", "en": "A child who's improving talks, fusses and wants a drink. A quiet, tired child makes you think silent chest first."}},
+                 {"zh": "他累了，讓他睡一下", "en": "He's tired; let him sleep", "ok": false, "set": {"silent-caught": false},
+                  "why": {"zh": "喘的孩子變想睡，是呼吸肌快撐不住了。不能讓他「睡一下」。", "en": "A wheezy child getting sleepy means his breathing muscles are tiring. He can't just “have a nap”."}}
+                ]}},
+      {"id": "q2", "to": "place:monitor", "guide": {"zh": "監視器響了", "en": "The monitor alarms"},
+       "lines": [
+        ["sys", {"zh": "監視器的血氧數字往下掉，波形很漂亮，不是夾子鬆了。", "en": "The oxygen saturation on the monitor falls. The trace is clean; it isn't a loose probe."}]
+       ],
+       "mini": {"type": "vitals", "event": "desaturation",
+                "options": [
+                 {"zh": "坐直給氧，依流程加強治療，叫主治", "en": "Sit him up, oxygen, step up treatment per protocol, call the attending", "ok": true,
+                  "why": {"zh": "坐直讓橫膈好用力；給氧、依嚴重發作流程加強支氣管擴張與全身性治療，請上級評估是否需要加護病房。", "en": "Upright lets the diaphragm work; oxygen, step up bronchodilator and systemic treatment per the severe-attack protocol, and senior review for intensive care."}},
+                 {"zh": "讓他平躺休息", "en": "Lay him flat to rest", "ok": false,
+                  "why": {"zh": "平躺讓呼吸更費力。喘的孩子要坐著，或讓媽媽抱著坐。", "en": "Lying flat makes breathing harder. A wheezy child sits up, or sits on his mother's lap."}},
+                 {"zh": "先送去照第二張 X 光", "en": "Send him for a second X-ray first", "ok": false,
+                  "why": {"zh": "血氧在掉的時候，治療優先。要照也是穩定後，在急救區用床邊機器照。", "en": "While saturation is falling, treatment comes first. Any film comes later, by portable machine in the resus bay."}}
+                ]},
+       "post": [
+        ["attending", {"zh": "推到急救區。加強治療，加護病房打招呼。泡泡水給我。", "en": "Into the resus bay. Step up treatment, ICU heads-up. Pass me the bubbles."}]
+       ]},
+      {"id": "q3", "when": {"flag": "silent-caught", "is": true},
+       "lines": [
+        ["sys", {"zh": "你在警報響之前就把范主治叫來了。急救區的面罩已經擺好。", "en": "You'd called Dr Fan before the alarm went off. The resus-bay mask was already laid out."}],
+        ["attending", {"zh": "你比監視器早了一步。這一步，在氣喘的孩子身上很值錢。", "en": "You were one step ahead of the monitor. With an asthmatic child, that step is worth a lot."}]
+       ]},
+      {"id": "q4", "when": {"flag": "silent-caught", "is": false},
+       "lines": [
+        ["sys", {"zh": "是監視器先發現的。你轉身的時候，小米已經推著急救車過來。", "en": "The monitor noticed first. When you turned round, Mi was already wheeling the crash cart over."}],
+        ["attending", {"zh": "記住這個安靜。下次安靜的喘喘孩子，先叫人，再聽診。", "en": "Remember this quiet. Next time a wheezy child goes quiet, call for help first, then listen."}]
+       ]},
+      {"id": "q5", "to": "hao", "guide": {"zh": "看浩浩回來了沒", "en": "See whether Hao is coming back"},
+       "lines": [
+        ["sys", {"zh": "一個小時後，喘鳴聲又出來了，而且變大聲。浩浩睜開眼。", "en": "An hour later the wheeze returns, louder. Hao opens his eyes."}],
+        ["attending", {"zh": "喘鳴回來了。這一次，大聲是好消息。", "en": "The wheeze is back. This time, loud is good news."}],
+        ["hao", {"zh": "……范醫生，泡泡……給我吹。", "en": "…Dr Fan… bubbles… let me blow."}],
+        ["sys", {"zh": "一串小泡泡飄起來。急救區裡好幾個大人同時鬆了口氣。", "en": "A string of small bubbles drifts up. Several adults in the resus bay breathe out at once."}]
+       ]}
+     ]},
+    {"id": "school", "name": {"zh": "學校的那一面", "en": "The school side"}, "sub": {"zh": "14:30 · 護理站", "en": "14:30 · nurses' station"}, "t": 870, "mood": "day",
+     "note": {"zh": "一次急診看不到全貌", "en": "One ER visit never shows the whole picture"},
+     "beats": [
+      {"id": "s1", "to": "place:desk", "guide": {"zh": "看學校護理師的訊息", "en": "Read the school nurse's message"},
+       "ring": {"title": {"zh": "學校護理師的訊息", "en": "Message from the school nurse"}, "sub": {"zh": "浩浩每週體育課都咳，下課都坐在旁邊", "en": "Hao coughs every PE lesson and sits out at break"}, "call": false, "from": "school-nurse"},
+       "lines": [
+        ["attending", {"zh": "今天在急診看到的是最糟的一刻。這題寫的是語言發展，原則一樣：不同場合的觀察要放在一起。", "en": "Today in the ER we saw the worst moment. This exercise is about language development, but the principle holds: put observations from different settings together."}]
+       ],
+       "mini": {"type": "stage", "case": "pediatrics-v38-development-context", "stage": 3},
+       "post": [
+        ["me", {"zh": "夜咳、體育課咳、下課坐旁邊、控制型停了三個月。他不是今天才發作，是三個月都沒控制好。", "en": "Night cough, cough at PE, sitting out at break, preventer stopped for three months. This didn't start today; it's three months of poor control."}]
+       ]},
+      {"id": "s2", "roles": ["rt"], "to": "mother", "guide": {"zh": "教媽媽和浩浩用輔助器", "en": "Teach mother and Hao the spacer"},
+       "lines": [
+        ["me", {"zh": "媽媽，你來按，浩浩來吸。我們用捷運站數呼吸：吸一站、吐一站。", "en": "Mum, you press, Hao breathes. We count breaths in metro stops: in one stop, out one stop."}],
+        ["mother", {"zh": "原來要接這個筒子。我們以前都直接對嘴噴。", "en": "So it goes through this tube. We always just sprayed it straight into his mouth."}],
+        ["me", {"zh": "直接噴，大部分藥會黏在喉嚨。接上吸藥輔助器，進到肺的藥多很多。", "en": "Sprayed straight in, most of it sticks to the throat. With a spacer, far more reaches the lungs."}]
+       ]}
+     ]},
+    {"id": "plan", "name": {"zh": "三條捷運線", "en": "Three metro lines"}, "sub": {"zh": "16:30 · 3 床旁", "en": "16:30 · beside bay 3"}, "t": 990, "mood": "eve",
+     "note": {"zh": "行動計畫和陽台上的菸", "en": "The action plan, and the balcony cigarettes"},
+     "beats": [
+      {"id": "p1", "to": "hao", "guide": {"zh": "和浩浩一起畫行動計畫", "en": "Draw the action plan with Hao"},
+       "lines": [
+        ["me", {"zh": "這張是氣喘行動計畫。綠燈每天用橘色那支；黃燈加藍色那支；紅燈直接來急診。", "en": "This is your asthma action plan. Green: the orange one every day; yellow: add the blue one; red: straight to the ER."}],
+        ["hao", {"zh": "像捷運！綠線、黃線、紅線。終點站叫……可以跑步站！", "en": "Like the metro! Green line, yellow line, red line. And the last stop is… Can Run Station!"}]
+       ],
+       "item": "metro-plan"},
+      {"id": "p2", "roles": ["ped-resident"], "to": "mother", "guide": {"zh": "和媽媽談家裡的菸", "en": "Talk with the mother about smoking"},
+       "lines": [
+        ["mother", {"zh": "他爸爸都在陽台抽，不會在家裡抽。這樣應該沒關係吧？", "en": "His dad only smokes on the balcony, never inside. That's fine, isn't it?"}],
+        ["attending", {"zh": "菸味會跟著衣服、頭髮、手指回到屋裡。二手菸不只是煙，也是那個味道。", "en": "The smoke comes back in on his clothes, hair and fingers. Second-hand smoke isn't just smoke; it's that smell too."}],
+        ["attending", {"zh": "戒菸門診可以幫爸爸。不是為了罵他，是為了讓浩浩到得了終點站。", "en": "The quit-smoking clinic can help his dad. Not to scold him; to get Hao to the last stop."}]
+       ]},
+      {"id": "p3", "roles": ["rt"], "to": "place:resus", "guide": {"zh": "把急救區整理回原狀", "en": "Reset the resus bay"},
+       "lines": [
+        ["mi", {"zh": "下一個孩子隨時會來。面罩、管路，依體重放回原位。", "en": "The next child could come any minute. Masks and tubing back in their places by weight."}]
+       ],
+       "mini": {"type": "find", "hot": "crash-cart", "q": {"zh": "找到兒科急救車，補齊面罩", "en": "Find the paediatric crash cart and restock the masks"}},
+       "post": [
+        ["mi", {"zh": "補好了。浩浩今晚轉病房觀察，因為血氧掉過一次。", "en": "Restocked. Hao goes to the ward overnight for observation, because his saturation dropped once."}]
+       ]}
+     ]},
+    {"id": "handover", "name": {"zh": "交班", "en": "Handover"}, "sub": {"zh": "18:00 · 急診白板", "en": "18:00 · ER whiteboard"}, "t": 1080, "mood": "eve",
+     "note": {"zh": "安靜不是好消息；大聲有時是", "en": "Quiet isn't good news; sometimes loud is"},
+     "beats": [
+      {"id": "x1", "to": "attending", "guide": {"zh": "交班並聽范主治的結語", "en": "Hand over; hear Dr Fan's debrief"},
+       "lines": [
+        ["me", {"zh": "浩浩：氣喘急性發作，中午一度寂靜胸、血氧下降，加強治療後回穩；胸片過度充氣加右中葉痰栓，無氣胸。", "en": "Hao: acute asthma, a silent chest with desaturation at noon, settled with stepped-up treatment; film shows hyperinflation and a right-middle-lobe mucus plug, no pneumothorax."}],
+        ["me", {"zh": "控制型停了三個月，已重新衛教輔助器和行動計畫；爸爸轉介戒菸門診。", "en": "Preventer stopped for three months; spacer and action plan retaught; dad referred to the quit-smoking clinic."}],
+        ["attending", {"zh": "今天三件事：左右比著聽；安靜又累的喘喘孩子要先叫人；藥要記名字和用途，不只記顏色。", "en": "Three things today: compare side to side; a quiet, tired wheezy child means call for help first; know medicines by name and purpose, not colour."}],
+        ["sys", {"zh": "她把泡泡水放回口袋。罐子比早上輕了一點。", "en": "She pockets the bubble mixture. The pot is a little lighter than this morning."}]
+       ]}
+     ]},
+    {"id": "night", "name": {"zh": "阿公的電話", "en": "Grandpa's call"}, "sub": {"zh": "22:00 · 值班室", "en": "22:00 · on-call room"}, "t": 1320, "mood": "night",
+     "note": {"zh": "藍色喘的時候用，橘色每天用", "en": "Blue for attacks, orange every day"},
+     "beats": [
+      {"id": "n1", "to": "place:desk", "guide": {"zh": "接阿公的電話", "en": "Take Grandpa's call"},
+       "ring": {"title": {"zh": "浩浩阿公來電", "en": "Hao's grandpa calling"}, "sub": {"zh": "我是不是一直拿錯藥給他？", "en": "Have I been giving him the wrong medicine?"}, "call": true, "from": "grandpa"},
+       "lines": [
+        ["grandpa", {"zh": "醫生，媳婦說我把兩支藥記反了。是不是我害孫子住院的？", "en": "Doctor, my daughter-in-law says I mixed up the two inhalers. Did I put my grandson in hospital?"}],
+        ["me", {"zh": "阿公，不是你害的。兩支長得很像，很多家庭都記反。現在我們一起重新記。", "en": "Grandpa, it's not your fault. They look alike and lots of families mix them up. Let's learn them again together."}],
+        ["me", {"zh": "橘色是控制型，每天早晚用；藍色是緩解型，喘的時候用。兩支都接那個透明的筒子。", "en": "Orange is the preventer, every morning and evening; blue is the reliever, for attacks. Both go through the clear tube."}],
+        ["grandpa", {"zh": "橘色每天、藍色喘的時候、都接筒子。我寫在月曆上。", "en": "Orange every day, blue when he wheezes, both through the tube. I'm writing it on the calendar."}],
+        ["grandpa", {"zh": "……還有，我叫他爸爸明天去那個戒菸門診。我陪他去。", "en": "…And I've told his dad to go to that quit-smoking clinic tomorrow. I'll take him."}],
+        ["sys", {"zh": "電話掛上。護理站的白板上，不知道是誰畫了一條小小的捷運線。", "en": "The line goes quiet. On the station whiteboard, someone has drawn a tiny metro line."}]
+       ],
+       "end": true}
+     ]}
+  ],
+  "ending": {"title": {"zh": "下班了", "en": "End of shift"}, "sub": {"zh": "安靜的喘喘孩子，先叫人", "en": "A quiet wheezy child: call for help first"},
+             "stats": ["stages", "drills", "choices", "calls", "items", "time"]}
+}

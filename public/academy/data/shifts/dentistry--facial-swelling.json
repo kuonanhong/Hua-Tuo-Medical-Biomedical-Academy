@@ -1,0 +1,240 @@
+{
+ "format": "huatuo-shift-v2",
+ "department": "dentistry",
+ "case": "facial-swelling",
+ "caseTitle": {"zh": "腫到吞不下去的那顆牙", "en": "The tooth that closed his throat"},
+ "condition": {"zh": "感染 · 齒源性蜂窩組織炎", "en": "Infection · odontogenic cellulitis"},
+ "difficulty": 3,
+ "room": "er",
+ "title": {"zh": "牙科急診夜", "en": "A dental night in the ER"},
+ "tagline": {"zh": "腫的是臉，問題在牙，危險在呼吸", "en": "The swelling is in the face, the cause in a tooth, the danger in the airway"},
+ "minutes": 25,
+ "roles": [
+  {"id": "resident", "zh": "牙科住院醫師", "en": "Dental resident",
+   "desc": {"zh": "晚上的口腔顎面外科值班。急診叫你的時候，不是牙痛，就是臉腫，或是一顆掉出來的牙。", "en": "Oral and maxillofacial surgery on call at night. When the ER calls it's toothache, a swollen face, or a tooth that has fallen out."}},
+  {"id": "er-nurse", "zh": "急診護理師", "en": "ER nurse",
+   "desc": {"zh": "看人吞口水，就知道誰快不行了。妳讓病人坐著、給他一個吐口水的杯子，那就是氣道照護。", "en": "You can tell who is in trouble by how they swallow. Sitting a patient up and handing him a spit cup is airway care."}}
+ ],
+ "cast": {
+  "attending": {"name": {"zh": "溫主治", "en": "Dr Wen"}, "role": {"zh": "口腔顎面外科主治（師傅）", "en": "Oral & maxillofacial attending (mentor)"}, "tag": "ATT", "color": "#0e7490", "body": "mentor",
+   "about": {"zh": "看過最腫的臉，也拔過最難的智齒。口頭禪：「先看呼吸，再看牙。」", "en": "Has seen the most swollen faces and pulled the hardest wisdom teeth. Catchphrase: 'Airway first, then the tooth.'"}},
+  "nurse": {"name": {"zh": "嘉玲", "en": "Chia-ling"}, "role": {"zh": "急診資深護理師", "en": "Senior ER nurse"}, "tag": "RN", "color": "#3b8f6a", "body": "nurse",
+   "about": {"zh": "口袋裡永遠有紙杯。她說：「會吐口水的病人，比不會的安全。」", "en": "Always has paper cups in her pocket. Her saying: 'A patient who can spit is safer than one who can't.'"}},
+  "mr-liu": {"name": {"zh": "劉先生", "en": "Mr Liu"}, "role": {"zh": "病人・42 歲", "en": "Patient, 42"}, "tag": "PT1", "color": "#6b7280", "body": "patient",
+   "about": {"zh": "計程車司機，左下智齒痛了一週，靠止痛藥撐著開車。今天臉腫到下巴底下，說話像含著東西。", "en": "Taxi driver. Lower-left wisdom tooth aching for a week; kept driving on painkillers. Today the swelling reached under his chin and he talks as if his mouth is full."}},
+  "mrs-liu": {"name": {"zh": "劉太太", "en": "Mrs Liu"}, "role": {"zh": "家屬", "en": "Family"}, "tag": "FAM", "color": "#b45309", "body": "family",
+   "about": {"zh": "說上週有去診所要抗生素，醫師不給。很生氣。", "en": "Says he asked a clinic for antibiotics last week and was refused. She's angry about it."}},
+  "kai-kai": {"name": {"zh": "凱凱", "en": "Kai-kai"}, "role": {"zh": "病人・9 歲", "en": "Patient, 9"}, "tag": "PT2", "color": "#c2410c", "body": "patient",
+   "about": {"zh": "騎腳踏車撞到欄杆，一顆上門牙整顆掉出來。很勇敢，只哭了一次。", "en": "Rode his bike into a railing and knocked a front tooth clean out. Very brave; cried only once."}},
+  "kai-mum": {"name": {"zh": "凱凱媽媽", "en": "Kai-kai's mother"}, "role": {"zh": "家屬", "en": "Family"}, "tag": "MUM", "color": "#9d4b7a", "body": "family",
+   "about": {"zh": "在網路上查到要泡牛奶，一路握著那杯牛奶來。", "en": "Read online to put it in milk, and held the cup of milk all the way here."}},
+  "anaes": {"name": {"zh": "簡醫師", "en": "Dr Chien"}, "role": {"zh": "麻醉科醫師", "en": "Anaesthetist"}, "tag": "AN", "color": "#2f6f9f", "phoneOnly": true,
+   "about": {"zh": "只在電話裡。聽到「口底腫、流口水」就說：「不要讓他躺下，我帶內視鏡過去。」", "en": "Only on the phone. Hears 'floor of mouth swollen, drooling' and says: 'Don't lie him down. I'm bringing the scope.'"}},
+  "er-doc": {"name": {"zh": "林醫師", "en": "Dr Lin"}, "role": {"zh": "急診醫師", "en": "ER physician"}, "tag": "ER", "color": "#475569", "phoneOnly": true,
+   "about": {"zh": "夜裡的電話。牙齒的事他會先問一句：「牙在哪裡？」", "en": "The night phone. With teeth, his first question is always: 'Where's the tooth?'"}}
+ },
+ "places": {
+  "chair": {"name": {"zh": "急診診療椅", "en": "ER treatment chair"}, "hot": "bed"},
+  "monitor": {"name": {"zh": "監視器", "en": "Monitor"}, "hot": "monitor"},
+  "trolley": {"name": {"zh": "牙科急診推車", "en": "Dental emergency trolley"}, "hot": "instruments"},
+  "imaging": {"name": {"zh": "影像工作站", "en": "Imaging workstation"}, "hot": "imaging"},
+  "board": {"name": {"zh": "急診白板", "en": "ER whiteboard"}, "hot": "whiteboard"},
+  "desk": {"name": {"zh": "值班桌", "en": "Duty desk"}, "hot": "desk"}
+ },
+ "glossary": [
+  {"term": {"zh": "齒源性感染", "en": "odontogenic infection"}, "plain": {"zh": "從牙齒開始的感染：蛀牙或智齒發炎，細菌從牙根跑到周圍組織，可以一路擴散到臉和脖子。", "en": "An infection that starts in a tooth: decay or an inflamed wisdom tooth lets bacteria escape from the root into the surrounding tissue, and it can spread to the face and neck."}},
+  {"term": {"zh": "蜂窩組織炎", "en": "cellulitis"}, "plain": {"zh": "感染在軟組織裡散開，又紅又腫又熱又痛，還沒有形成一包膿。", "en": "Infection spreading through soft tissue: red, swollen, hot and painful, not yet collected into a pocket of pus."}},
+  {"term": {"zh": "路德維希咽峽炎", "en": "Ludwig's angina"}, "plain": {"zh": "下巴底下和口底兩側的空間都被感染撐開，舌頭被往上往後推，可能堵住呼吸道。是牙科最危險的急症之一。", "en": "Infection filling the spaces under the jaw and floor of the mouth on both sides, pushing the tongue up and back until it can block the airway. One of dentistry's most dangerous emergencies."}},
+  {"term": {"zh": "牙關緊閉", "en": "trismus"}, "plain": {"zh": "嘴巴打不開。感染刺激咀嚼肌造成。張口越小，口內檢查與插管越困難。", "en": "Being unable to open the mouth, from infection irritating the chewing muscles. The smaller the opening, the harder the examination and the intubation."}},
+  {"term": {"zh": "口底", "en": "floor of the mouth"}, "plain": {"zh": "舌頭下面那一塊。口底被腫脹撐高，舌頭就沒有地方去，只能往後。", "en": "The area beneath the tongue. When swelling lifts it, the tongue has nowhere to go but backwards."}},
+  {"term": {"zh": "熱馬鈴薯聲", "en": "hot-potato voice"}, "plain": {"zh": "說話像嘴裡含著燙的馬鈴薯，含糊悶住。代表口咽腫脹，是氣道警訊。", "en": "Speech that sounds muffled, as if through a mouthful of hot potato. It signals swelling in the throat and is an airway warning."}},
+  {"term": {"zh": "環口攝影", "en": "panoramic radiograph"}, "plain": {"zh": "一張片子看完整口的牙齒與上下顎。用來找出是哪一顆牙惹的禍。", "en": "One film showing all the teeth and both jaws. Used to find which tooth is to blame."}},
+  {"term": {"zh": "清醒纖維內視鏡插管", "en": "awake fibreoptic intubation"}, "plain": {"zh": "病人清醒、自己呼吸時，用細的內視鏡經鼻子看著聲帶把管子放進去。困難氣道時最安全的方法之一。", "en": "Passing a breathing tube through the nose along a thin scope while the patient is awake and breathing on their own. One of the safest approaches to a difficult airway."}},
+  {"term": {"zh": "源頭控制", "en": "source control"}, "plain": {"zh": "把感染的源頭處理掉：拔牙或根管、切開引流。抗生素只是輔助，不能取代它。", "en": "Removing the source of infection: extraction or root treatment, incision and drainage. Antibiotics help but cannot replace it."}},
+  {"term": {"zh": "牙齒脫落", "en": "avulsion"}, "plain": {"zh": "整顆牙連牙根從齒槽掉出來。恆牙越快放回去，保住的機會越大。", "en": "A whole tooth, root and all, knocked out of its socket. The sooner a permanent tooth goes back, the better its chances."}},
+  {"term": {"zh": "牙周韌帶", "en": "periodontal ligament"}, "plain": {"zh": "牙根表面一層活的細胞，把牙齒「綁」在骨頭上。乾掉或被刷掉，植回去也會被骨頭吸收。", "en": "A living layer of cells on the root surface that binds the tooth to the bone. Let it dry or scrub it off and a replanted tooth is slowly replaced by bone."}},
+  {"term": {"zh": "彈性固定", "en": "flexible splint"}, "plain": {"zh": "用細線和樹脂把植回的牙跟鄰牙輕輕連在一起，讓它有一點點動，牙周韌帶才長得好。", "en": "A fine wire and resin linking the replanted tooth loosely to its neighbours; a little movement helps the ligament heal."}},
+  {"term": {"zh": "乳牙", "en": "primary tooth"}, "plain": {"zh": "小朋友的第一副牙。乳牙掉出來絕對不植回去，會傷到下面正在長的恆牙。", "en": "A child's first set of teeth. A knocked-out primary tooth is never put back: it can damage the permanent tooth growing beneath."}}
+ ],
+ "codex": [
+  {"id": "pano", "kind": "equipment", "name": {"zh": "環口攝影機", "en": "Panoramic X-ray unit"}, "hot": "imaging", "text": {"zh": "病人要站或坐得住、咬得住咬合片。腫到不能平躺的人，坐著照剛好。", "en": "The patient must stand or sit and bite on the block. Someone too swollen to lie flat is fine sitting up."}},
+  {"id": "splint-kit", "kind": "equipment", "name": {"zh": "外傷固定組", "en": "Trauma splint kit"}, "hot": "instruments", "text": {"zh": "細鋼線、流動樹脂、光照燈、生理食鹽水。凌晨也要在推車最上層。", "en": "Fine wire, flowable resin, curing light, saline. Top shelf of the trolley, even at three in the morning."}},
+  {"id": "spit-cup", "kind": "item", "name": {"zh": "嘉玲的紙杯", "en": "Chia-ling's paper cup"}, "text": {"zh": "劉先生坐著吐口水用的。杯子拿得住，代表氣道暫時還守得住。", "en": "For Mr Liu to spit into, sitting up. While he can hold the cup, the airway is holding too."}},
+  {"id": "milk-tooth", "kind": "item", "name": {"zh": "泡在牛奶裡的門牙", "en": "A front tooth in milk"}, "text": {"zh": "凱凱的右上正中門牙。牙根完整，媽媽一路握著杯子沒放手。", "en": "Kai-kai's upper right central incisor, root intact. His mother never let go of the cup."}},
+  {"id": "airway-first", "kind": "concept", "name": {"zh": "先看呼吸，再看牙", "en": "Airway first, then the tooth"}, "text": {"zh": "臉腫的病人，第一眼不是看牙，是看警訊：聲音悶、流口水、吞不下、口底腫高、舌頭被推起、張口困難、坐著前傾才喘得過來。有任何一個，就讓他坐著、給氧、叫麻醉與耳鼻喉科、不要鎮靜、不要讓他躺平去照片子，氣道計畫先於一切。", "en": "With a swollen face, look first for warning signs, not the tooth: muffled voice, drooling, unable to swallow, raised floor of mouth, tongue pushed up, trismus, sitting forward to breathe. Any one of them: keep him sitting, oxygen, call anaesthesia and ENT, no sedation, no lying flat for scans. The airway plan comes before everything."}},
+  {"id": "antibiotics-not-source", "kind": "concept", "name": {"zh": "抗生素不能取代拔牙", "en": "Antibiotics do not replace the extraction"}, "text": {"zh": "單純牙髓炎的痛來自牙髓裡，抗生素到不了，所以不給；要的是根管或拔牙。感染擴散到軟組織、發燒、腫脹時，抗生素才需要，而且一定要同時源頭控制：拔牙、引流。上週的醫師沒有錯，錯在牙一直沒處理。", "en": "Simple pulpitis hurts inside the pulp where antibiotics cannot reach, so none are given; it needs root treatment or extraction. Once infection spreads into soft tissue with fever and swelling, antibiotics are needed, always together with source control: extraction and drainage. Last week's dentist was not wrong; the tooth was never dealt with."}},
+  {"id": "avulsion-clock", "kind": "concept", "name": {"zh": "掉出來的牙，時間就是韌帶", "en": "For a knocked-out tooth, time is ligament"}, "text": {"zh": "恆牙掉出來，牙根上的牙周韌帶細胞在乾燥中很快死亡。最好立刻植回；不行就泡在牛奶、生理食鹽水或口水裡帶來，不要泡清水、不要包衛生紙。拿牙冠不碰牙根，用生理食鹽水輕沖、不要刷。乳牙則永遠不植回。", "en": "When a permanent tooth is knocked out, the ligament cells on the root die quickly once dry. Best replanted at once; otherwise carried in milk, saline or saliva, never water, never wrapped in tissue. Hold the crown, not the root; rinse gently with saline, never scrub. Primary teeth are never replanted."}}
+ ],
+ "segs": [
+  {"id": "start", "name": {"zh": "值班開始", "en": "On call begins"}, "sub": {"zh": "18:00 · 急診白板", "en": "18:00 · ER whiteboard"}, "t": 1080, "mood": "eve",
+   "note": {"zh": "溫主治的一句話", "en": "Dr Wen's one sentence"},
+   "beats": [
+    {"id": "s1", "to": "attending", "guide": {"zh": "找溫主治報到", "en": "Report to Dr Wen"},
+     "lines": [
+      ["attending", {"zh": "急診叫牙科，通常是三種：痛的、腫的、掉的。最危險的是腫的。", "en": "When the ER calls dentistry it's one of three: pain, swelling, or something knocked out. Swelling is the dangerous one."}],
+      ["me", {"zh": "因為會蜂窩組織炎？", "en": "Because of cellulitis?"}],
+      ["attending", {"zh": "因為會吞不下去、喘不過來。先看呼吸，再看牙。", "en": "Because they stop swallowing and then stop breathing. Airway first, then the tooth."}],
+      ["sys", {"zh": "白板上寫著：18:30，42 歲男性，左臉與下巴腫，說話不清楚。", "en": "On the whiteboard: 18:30, man of 42, left face and under-chin swelling, speech unclear."}]
+     ]}
+   ]},
+  {"id": "liu", "name": {"zh": "計程車司機", "en": "The taxi driver"}, "sub": {"zh": "18:40 · 急診診療椅", "en": "18:40 · ER treatment chair"}, "t": 1120, "mood": "eve",
+   "note": {"zh": "劉先生：警訊在脖子，源頭在智齒", "en": "Mr Liu: warning signs in the neck, source in a wisdom tooth"},
+   "beats": [
+    {"id": "l1", "to": "mr-liu", "guide": {"zh": "口外檢查與氣道警訊", "en": "Extra-oral exam and airway signs"},
+     "lines": [
+      ["mr-liu", {"zh": "（含糊）醫師……口水吞不下去。", "en": "(muffled) Doctor... can't swallow my spit."}],
+      ["mrs-liu", {"zh": "上週去診所要抗生素，醫師不給，才會變這樣！", "en": "He asked a clinic for antibiotics last week and they refused. That's why!"}],
+      ["attending", {"zh": "先不管抗生素。你看到什麼？從臉外面開始。", "en": "Forget the antibiotics for now. What do you see? Start outside the mouth."}]
+     ],
+     "mini": {"type": "stage", "case": "dentistry-comprehensive-oral-exam-charting", "stage": 1},
+     "post": [["me", {"zh": "左下顎下腫、越過中線到下巴底下，熱、硬。熱馬鈴薯聲、流口水、牙關緊閉，口底被撐高。", "en": "Swelling under the left jaw crossing the midline under the chin, hot and firm. Hot-potato voice, drooling, trismus, floor of the mouth raised."}],
+              ["attending", {"zh": "齒源性感染，正往路德維希咽峽炎走。現在第一件事？", "en": "An odontogenic infection heading for Ludwig's angina. First thing now?"}],
+              ["me", {"zh": "讓他坐著，叫麻醉。", "en": "Keep him sitting up. Call anaesthesia."}]]},
+    {"id": "l2", "roles": ["er-nurse"], "to": "mr-liu", "guide": {"zh": "坐著、給氧、一個紙杯", "en": "Sit up, oxygen, a paper cup"},
+     "lines": [
+      ["me", {"zh": "劉先生，坐著不要躺，口水吐在杯子裡就好。氧氣給你，我在旁邊。", "en": "Mr Liu, stay sitting, don't lie down; spit into the cup. Here's oxygen. I'm right here."}],
+      ["mrs-liu", {"zh": "他一直想躺下來休息。", "en": "He keeps wanting to lie down for a rest."}],
+      ["me", {"zh": "現在躺下，舌頭會往後掉。坐著比較安全。", "en": "Lying down now, his tongue falls back. Sitting is safer."}]
+     ],
+     "item": "spit-cup"},
+    {"id": "l3", "roles": ["resident"], "to": "place:chair", "guide": {"zh": "找出是哪一顆牙", "en": "Find the guilty tooth"},
+     "lines": [
+      ["attending", {"zh": "嘴只開一點點，口鏡從旁邊進去，看左下最後面那顆。動作輕，不要讓他嗆到。", "en": "He can barely open; slide the mirror in from the side and look at the lower-left last molar. Gently; don't make him gag."}]
+     ],
+     "mini": {"type": "drill", "template": "dentistry", "drill": "dental"},
+     "post": [["sys", {"zh": "左下智齒半埋，遠心面一個大蛀洞，牙齦又腫又流膿。", "en": "Lower-left wisdom tooth half buried, a large cavity on its back surface, gum swollen and oozing pus."}]]}
+   ]},
+  {"id": "airway", "name": {"zh": "他想躺下", "en": "He wants to lie down"}, "sub": {"zh": "19:20 · 急診診療椅", "en": "19:20 · ER treatment chair"}, "t": 1160, "mood": "eve",
+   "note": {"zh": "氣道計畫先於一切", "en": "The airway plan before everything"},
+   "beats": [
+    {"id": "a1", "to": "place:monitor", "guide": {"zh": "監視器在叫", "en": "The monitor alarms"},
+     "lines": [
+      ["sys", {"zh": "等照片子時，劉先生趁沒人注意躺平了。血氧往下掉，呼吸有雜音。", "en": "While waiting for X-ray Mr Liu lay flat when no one was looking. His saturation is falling and his breathing is noisy."}]
+     ],
+     "mini": {"type": "vitals", "event": "desaturation",
+      "options": [
+       {"zh": "扶他坐起前傾、給氧、呼叫麻醉", "en": "Sit him up and forward, oxygen, call anaesthesia", "ok": true,
+        "why": {"zh": "對。坐起來讓舌頭和口底往前，給氧，叫懂困難氣道的人來。不要鎮靜。", "en": "Right. Sitting up lets the tongue and floor of mouth fall forward. Oxygen, and call the people who manage difficult airways. No sedation."}},
+       {"zh": "給鎮靜劑讓他放鬆", "en": "Sedate him so he relaxes", "ok": false,
+        "why": {"zh": "鎮靜會讓他失去自己撐住氣道的力氣，可能直接完全阻塞。", "en": "Sedation removes the effort keeping his airway open; it can close completely."}},
+       {"zh": "馬上平躺插管", "en": "Lay him flat and intubate now", "ok": false,
+        "why": {"zh": "口底腫、張口小，一般插管很可能失敗。要由麻醉在清醒下用內視鏡處理。", "en": "With a raised floor of mouth and trismus, ordinary intubation will probably fail. Anaesthesia secures it awake, with a scope."}}
+      ]},
+     "post": [["sys", {"zh": "坐起來前傾後，血氧慢慢回升。嘉玲把紙杯放回他手上。", "en": "Sitting up and forward, his saturation creeps back. Chia-ling puts the paper cup back in his hand."}]]},
+    {"id": "a2", "ring": {"title": {"zh": "麻醉科回電", "en": "Anaesthesia calling back"}, "sub": {"zh": "簡醫師：不要讓他躺下", "en": "Dr Chien: don't let him lie down"}, "call": true, "from": "anaes"},
+     "lines": [
+      ["anaes", {"zh": "口底腫、流口水、張口困難。不要讓他躺下、不要鎮靜。我帶內視鏡，準備清醒纖維內視鏡插管，耳鼻喉科待命。", "en": "Raised floor of mouth, drooling, trismus. Don't lie him down, don't sedate. I'm bringing the scope for an awake fibreoptic intubation, ENT on standby."}],
+      ["me", {"zh": "收到。CT 讓他坐著先送，有人陪著。", "en": "Understood. He goes to CT sitting up, with someone beside him."}]
+     ]}
+   ]},
+  {"id": "images", "name": {"zh": "片子與抗生素", "en": "Films and antibiotics"}, "sub": {"zh": "20:00 · 影像工作站", "en": "20:00 · imaging workstation"}, "t": 1200, "mood": "eve",
+   "note": {"zh": "環口攝影找源頭，CT 看範圍", "en": "Panoramic film for the source, CT for the spread"},
+   "beats": [
+    {"id": "i1", "to": "place:imaging", "guide": {"zh": "環口攝影：哪一顆牙", "en": "Panoramic film: which tooth"},
+     "lines": [
+      ["attending", {"zh": "源頭要找。環口攝影坐著照，看什麼？", "en": "We need the source. A panoramic radiograph, taken sitting up. What are you looking for?"}]
+     ],
+     "mini": {"type": "stage", "case": "dentistry-dental-radiography-selection-justification", "stage": 3}},
+    {"id": "i2", "to": "place:imaging", "guide": {"zh": "頸部 CT", "en": "The neck CT"},
+     "lines": [
+      ["attending", {"zh": "CT 打顯影劑。麻醉和外科要的是什麼？", "en": "Contrast CT of the neck. What do anaesthesia and surgery need from it?"}]
+     ],
+     "mini": {"type": "imaging", "region": "neck",
+      "question": {"zh": "齒源性深頸部感染的頸部 CT 要看什麼？", "en": "Neck CT in a deep odontogenic infection: what do you look for?"},
+      "answer": {"zh": "哪些空間被侵犯（下顎下、舌下、咽旁）、有沒有形成膿瘍要引流、有沒有氣體、呼吸道被擠窄多少、有沒有往下擴散到縱膈腔。", "en": "Which spaces are involved (submandibular, sublingual, parapharyngeal), whether an abscess has formed to drain, any gas, how narrow the airway has become, and any spread down towards the mediastinum."}},
+     "post": [["sys", {"zh": "左下顎下與舌下空間膿瘍，越過中線；呼吸道被往右擠。沒有往縱膈腔走。", "en": "Abscess in the left submandibular and sublingual spaces, crossing the midline; airway pushed to the right. No spread to the mediastinum."}]]},
+    {"id": "i3", "to": "mrs-liu", "guide": {"zh": "回答劉太太", "en": "Answer Mrs Liu"},
+     "lines": [
+      ["mrs-liu", {"zh": "所以是那個診所害的對不對？不給抗生素。", "en": "So it's that clinic's fault, right? No antibiotics."}],
+      ["me", {"zh": "上週如果只是牙髓發炎，抗生素到不了，醫師不給是對的。問題是那顆牙一直沒拔。", "en": "If last week it was only pulp inflammation, antibiotics can't reach it; not giving them was right. The trouble is the tooth was never taken out."}]
+     ],
+     "mini": {"type": "stage", "case": "dentistry-pulpitis-root-canal-treatment", "stage": 4},
+     "post": [["me", {"zh": "現在感染擴散到脖子、會發燒，抗生素要打，依醫囑。但真正救他的是源頭控制：拔牙和引流。", "en": "Now the infection has spread into his neck with fever, so antibiotics go in, per protocol. But what really saves him is source control: extraction and drainage."}],
+              ["mrs-liu", {"zh": "……好。那今晚就拔。", "en": "...right. Then out it comes tonight."}]]}
+   ]},
+  {"id": "kai", "name": {"zh": "泡在牛奶裡的牙", "en": "A tooth in milk"}, "sub": {"zh": "21:00 · 急診診療椅", "en": "21:00 · ER treatment chair"}, "t": 1260, "mood": "night",
+   "note": {"zh": "凱凱：植回、固定", "en": "Kai-kai: replant and splint"},
+   "beats": [
+    {"id": "k0", "ring": {"title": {"zh": "急診來電", "en": "ER calling"}, "sub": {"zh": "9 歲男孩，門牙整顆掉出來", "en": "Boy of 9, front tooth knocked out"}, "call": true, "from": "er-doc"},
+     "lines": [
+      ["er-doc", {"zh": "九歲，腳踏車撞欄杆，右上門牙整顆掉了。媽媽泡在牛奶裡帶來。牙在哪裡？在杯子裡。", "en": "Nine years old, bike into a railing, upper right front tooth out. Mum brought it in milk. Where's the tooth? In the cup."}],
+      ["me", {"zh": "牙齒脫落泡牛奶，太好了。不要讓任何人去洗它，我馬上到。", "en": "An avulsion in milk: perfect. Don't let anyone wash it. I'm on my way."}]
+     ]},
+    {"id": "k1", "to": "kai-mum", "guide": {"zh": "這顆牙怎麼辦", "en": "What to do with the tooth"},
+     "lines": [
+      ["kai-mum", {"zh": "牙根上有一點沙子。要不要先用牙刷刷乾淨再放回去？", "en": "There's a bit of grit on the root. Should we brush it clean before it goes back?"}],
+      ["attending", {"zh": "你決定怎麼處理這顆牙。", "en": "Your decision: how do we handle the tooth?"}]
+     ],
+     "mini": {"type": "choice", "q": {"zh": "九歲恆門牙脫落，泡牛奶帶來，牙根有沙？", "en": "Nine-year-old, permanent incisor out, in milk, grit on the root?"},
+      "options": [
+       {"zh": "拿牙冠、食鹽水輕沖，儘快植回", "en": "Hold the crown, gentle saline rinse, replant soon", "ok": true, "set": {"root": "rinsed"},
+        "why": {"zh": "對。牙周韌帶在牙根上，只能輕沖不能刷。越快植回，保住的機會越大。", "en": "Right. The periodontal ligament lives on the root; rinse gently, never scrub. The sooner it goes back, the better its chances."}},
+       {"zh": "用牙刷把牙根刷乾淨", "en": "Brush the root clean", "ok": false, "set": {"root": "scrubbed"},
+        "why": {"zh": "刷掉的是活的牙周韌帶。牙會植得回去，但之後可能被骨頭慢慢吸收。", "en": "Brushing strips the living ligament. The tooth will go back in, but bone may slowly replace it later."}},
+       {"zh": "先泡著，明天門診再植", "en": "Leave it in milk, replant in clinic tomorrow", "ok": false, "set": {"root": "delayed"},
+        "why": {"zh": "牛奶只能延長時間，不能停住時間。今晚植回。", "en": "Milk buys time; it doesn't stop the clock. It goes back tonight."}}
+      ]},
+     "post": [["kai-kai", {"zh": "會很痛嗎？", "en": "Will it hurt a lot?"}],
+              ["me", {"zh": "先打麻藥，你只會覺得有人在推。推完你就有門牙了。", "en": "Numbing first. You'll only feel pushing. Then you'll have your front tooth back."}]],
+     "item": "milk-tooth"},
+    {"id": "k2", "to": "attending", "guide": {"zh": "植回的步驟", "en": "The replantation steps"},
+     "lines": [
+      ["attending", {"zh": "順序說一次再動手。", "en": "Say the order before you start."}]
+     ],
+     "mini": {"type": "order", "q": {"zh": "恆牙脫落植回的順序", "en": "Replanting a knocked-out permanent tooth"},
+      "steps": [
+       {"zh": "拿牙冠，不碰牙根", "en": "Hold the crown, not the root"},
+       {"zh": "生理食鹽水輕沖，不刷", "en": "Gentle saline rinse, no scrubbing"},
+       {"zh": "局部麻醉、輕沖齒槽血塊", "en": "Local anaesthetic, rinse clot from socket"},
+       {"zh": "輕壓植回原位、確認咬合", "en": "Press gently home, check the bite"},
+       {"zh": "彈性固定", "en": "Flexible splint"},
+       {"zh": "照片、破傷風、回診衛教", "en": "Radiograph, tetanus, follow-up advice"}
+      ]},
+     "post": [["sys", {"zh": "門牙回到原位，細線和樹脂把它跟兩邊的牙連起來。", "en": "The incisor is back home, linked to its neighbours by fine wire and resin."}]]},
+    {"id": "k3", "roles": ["er-nurse"], "to": "kai-mum", "guide": {"zh": "回家衛教", "en": "Advice for home"},
+     "lines": [
+      ["me", {"zh": "軟的食物、刷牙要刷但要輕、漱口水依醫囑。破傷風今天打過了。回診時間寫在這張紙上。", "en": "Soft food, keep brushing but gently, mouthwash per the doctor. Tetanus done today. Follow-up date is on this sheet."}],
+      ["kai-mum", {"zh": "下次我還是會選牛奶。", "en": "Next time I'd still pick milk."}],
+      ["me", {"zh": "最好是沒有下次，但牛奶是對的。", "en": "Best there's no next time. But milk was right."}]
+     ]}
+   ]},
+  {"id": "phone", "name": {"zh": "乳牙的電話", "en": "A call about a baby tooth"}, "sub": {"zh": "22:00 · 值班桌", "en": "22:00 · duty desk"}, "t": 1320, "mood": "night",
+   "note": {"zh": "乳牙掉了，不植回", "en": "A primary tooth out: never replant"},
+   "beats": [
+    {"id": "p1", "ring": {"title": {"zh": "急診轉接", "en": "ER transferring a call"}, "sub": {"zh": "3 歲女童門牙撞掉，家長在電話上", "en": "Girl of 3, front tooth knocked out; parent on the line"}, "call": true, "from": "er-doc"},
+     "lines": [
+      ["er-doc", {"zh": "三歲，在沙發上跳，上門牙掉了。爸爸問要不要像剛才那個一樣泡牛奶趕快來植。", "en": "Three years old, jumping on the sofa, upper front tooth out. Dad asks whether to put it in milk and rush in to have it replanted like the last one."}],
+      ["me", {"zh": "三歲的是乳牙，乳牙不植回，會傷到下面的恆牙。請他壓住止血，明天門診看下面的牙有沒有受傷。", "en": "At three it's a primary tooth. Primary teeth are never replanted; it can damage the permanent tooth beneath. Pressure to stop the bleeding, and clinic tomorrow to check the tooth underneath."}],
+      ["er-doc", {"zh": "他說那牙齒要留著給牙仙子嗎？", "en": "He asks whether to keep the tooth for the tooth fairy."}],
+      ["me", {"zh": "可以。牙仙子不收恆牙，收乳牙。", "en": "Yes. The tooth fairy only takes primary teeth anyway."}]
+     ]}
+   ]},
+  {"id": "debrief", "name": {"zh": "回顧", "en": "Debrief"}, "sub": {"zh": "23:30 · 值班桌", "en": "23:30 · duty desk"}, "t": 1410, "mood": "night",
+   "note": {"zh": "一個紙杯、一杯牛奶、一顆乳牙", "en": "A paper cup, a cup of milk, a baby tooth"},
+   "beats": [
+    {"id": "d0", "when": {"flag": "root", "is": "scrubbed"}, "to": "attending", "guide": {"zh": "溫主治看了片子", "en": "Dr Wen looks at the film"},
+     "lines": [
+      ["attending", {"zh": "牙植回去了，位置很好。但牙根刷過，牙周韌帶傷了，以後可能被骨頭慢慢取代。", "en": "The tooth is back and well placed. But the root was brushed, the ligament damaged; in time bone may slowly replace it."}],
+      ["me", {"zh": "我會跟凱凱媽媽說清楚，追蹤時特別注意。下次只沖不刷。", "en": "I'll explain it to Kai-kai's mother and watch for it at follow-up. Rinse, never scrub, next time."}]
+     ]},
+    {"id": "d0b", "when": {"flag": "root", "is": "delayed"}, "to": "attending", "guide": {"zh": "溫主治改了計畫", "en": "Dr Wen changed the plan"},
+     "lines": [
+      ["attending", {"zh": "你說明天再植，我把它改成今晚了。牛奶能延長時間，不能停住時間。", "en": "You said tomorrow; I changed it to tonight. Milk buys time, it doesn't stop the clock."}],
+      ["me", {"zh": "記住了。恆牙掉了，今晚就植。", "en": "Noted. A knocked-out permanent tooth goes back tonight."}]
+     ]},
+    {"id": "d1", "to": "attending", "guide": {"zh": "溫主治的回顧", "en": "Dr Wen's debrief"},
+     "lines": [
+      ["attending", {"zh": "劉先生在手術室，清醒插管很順，膿引流了，智齒拔了。", "en": "Mr Liu is in theatre. The awake intubation went smoothly, the pus is drained, the wisdom tooth is out."}],
+      ["attending", {"zh": "你今晚最好的一件事，不是拔牙，是第一眼就叫他坐著。", "en": "The best thing you did tonight wasn't the extraction. It was telling him to sit up at first sight."}],
+      ["me", {"zh": "先看呼吸，再看牙。", "en": "Airway first, then the tooth."}]
+     ]},
+    {"id": "d2", "to": "place:desk", "guide": {"zh": "回到值班桌", "en": "Back to the duty desk"},
+     "lines": [
+      ["nurse", {"zh": "劉太太說謝謝。她說下次牙痛不會再撐一週了。", "en": "Mrs Liu says thank you. She says next time he won't sit on a toothache for a week."}],
+      ["sys", {"zh": "值班未完。嘉玲口袋裡的紙杯少了一個，桌上多了一杯沒喝的牛奶。", "en": "The night goes on. One paper cup gone from Chia-ling's pocket, and an untouched cup of milk on the desk."}]
+     ],
+     "end": true}
+   ]}
+ ],
+ "ending": {"title": {"zh": "下班了", "en": "End of shift"}, "sub": {"zh": "先看呼吸，再看牙", "en": "Airway first, then the tooth"}, "stats": ["stages", "grades", "choices", "calls", "items", "time"]}
+}

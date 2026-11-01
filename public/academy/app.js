@@ -39,9 +39,24 @@
     const host = root.querySelector('[data-shift-card]'); if (!host) return;
     shiftIndex().then(idx => {
       if (token !== routeToken || !host.isConnected) return;
-      const PREF = ['general-surgery', 'emergency', 'cardiology', 'neurosurgery', 'orthopedics', 'obstetrics'];
-      const all = idx.shifts || []; const list = PREF.map(id => all.find(s => s.department === id)).filter(Boolean).concat(all.filter(s => !PREF.includes(s.department))).slice(0, 6); if (!list.length) { host.remove(); return; }
-      host.innerHTML = `<div class="section-head"><div><span class="eyebrow">${t('shiftTitle')}</span><h2>${esc(t('shiftHomeCard'))}</h2><p class="subtext">${esc(t('shiftHomeSub'))}</p></div><a class="button light small" href="#shift">${esc(t('shiftAllDepts'))} →</a></div><div class="grid cols-3">${list.map(s => { const m = DEPTS.departments.find(d => d.id === s.department) || { id: s.department, title: s.department, titleEn: s.department, accent: '#2f6f8f', glyph: 'stethoscope' }; return `<a class="card dept-card" href="#shift?department=${esc(s.department)}"><span class="ic">${window.HT.icons.dept ? window.HT.icons.dept(m.id, m.accent, m.glyph, 44) : ''}</span><span style="min-width:0"><b>▶ ${esc(pk(m, 'title'))}</b><small>${esc(zh() ? (s.title && s.title.zh) || '' : (s.title && s.title.en) || '')} · ≈${s.minutes || 25} ${esc(t('shiftMinutes'))}</small></span></a>`; }).join('')}</div>`;
+      // v4.1: one tile per department (several cases each), three western + three TCM when both faculties ship scripts
+      const PREF = ['general-surgery', 'emergency', 'cardiology', 'tcm-diagnosis', 'acupuncture-technique', 'tuina', 'neurosurgery', 'orthopedics', 'obstetrics', 'herbs', 'moxa-cupping', 'tcm-internal'];
+      const all = idx.shifts || []; const byDept = {}; all.forEach(s => { (byDept[s.department] = byDept[s.department] || []).push(s); }); const ids = Object.keys(byDept); if (!ids.length) { host.remove(); return; }
+      const facOf = id => ((DEPTS.departments.find(d => d.id === id) || {}).faculty) || 'western'; const nFac = new Set(ids.map(facOf)).size;
+      const list = PREF.filter(id => byDept[id]).concat(ids.filter(id => !PREF.includes(id))).filter((id, i, a) => a.indexOf(id) === i).slice(0, 6); const cases = n => (n => { const L = (window.HT.i18n && window.HT.i18n.current) || 'en'; const w = window.HT.i18n && window.HT.i18n.t ? window.HT.i18n.t('shiftCases') : ''; return /^zh/.test(L) ? `${n} 個病例` : L === 'en' || !w || w === 'shiftCases' ? `${n} case${n === 1 ? '' : 's'}` : `${n} ${w}`; })(n);
+      host.innerHTML = `<div class="section-head"><div><span class="eyebrow">${t('shiftTitle')}</span><h2>${esc(t('shiftHomeCard'))}</h2><p class="subtext">${esc(t('shiftHomeSub'))} · ${esc(cases(all.length))} · ${ids.length} ${((k, z, e) => { const v = window.HT.i18n && window.HT.i18n.t ? window.HT.i18n.t(k) : null; return v && v !== k ? v : (zh() ? z : e); })('shiftDeptUnit', '科', 'departments')}${nFac > 1 ? ' · ' + esc(((k, z, e) => { const v = window.HT.i18n && window.HT.i18n.t ? window.HT.i18n.t(k) : null; return v && v !== k ? v : (zh() ? z : e); })('shiftFacultyWestern', '西醫臨床', 'Western clinical') + ' + ' + ((k, z, e) => { const v = window.HT.i18n && window.HT.i18n.t ? window.HT.i18n.t(k) : null; return v && v !== k ? v : (zh() ? z : e); })('shiftFacultyTcm', '中醫藥針灸推拿', 'TCM')) : ''}</p></div><a class="button light small" href="#shift">${esc(String(t('shiftAllDepts')).replace(/\d+/, String(ids.length)))} →</a></div><div class="grid cols-3">${list.map(id => { const cs = byDept[id]; const s = cs[0]; const m = DEPTS.departments.find(d => d.id === id) || { id, title: id, titleEn: id, accent: '#2f6f8f', glyph: 'stethoscope' }; return `<a class="card dept-card" href="#shift?department=${esc(id)}" style="--fac:${facOf(id) === 'tcm' ? '#b5432f' : '#2f6f8f'}"><span class="ic">${window.HT.icons.dept ? window.HT.icons.dept(m.id, m.accent, m.glyph, 44) : ''}</span><span style="min-width:0"><b>▶ ${esc(pk(m, 'title'))}</b><small>${esc(cs.length > 1 ? cases(cs.length) : zh() ? (s.title && s.title.zh) || '' : (s.title && s.title.en) || '')} · ≈${s.minutes || 25} ${esc(t('shiftMinutes'))}</small></span></a>`; }).join('')}</div>`;
+    });
+  }
+
+  // v4.1: the TCM library pages (#acu, #pharmacy, #tcm) get a small ▶ 全螢幕值班 row for their departments listed in the shift index
+  function tcmShiftEntry(root, ids, token) {
+    shiftIndex().then(idx => {
+      if (token !== routeToken || !root.isConnected || root.querySelector('[data-shift-entry]')) return;
+      const listed = new Set((idx.shifts || []).map(s => s.department)); const have = ids.filter(id => listed.has(id)); if (!have.length) return;
+      const head = root.querySelector('.section-head'); if (!head) return; const label = t('shiftStart') !== 'shiftStart' ? t('shiftStart') : (zh() ? '全螢幕值班' : 'Full-screen shift');
+      const row = document.createElement('div'); row.className = 'row'; row.setAttribute('data-shift-entry', ''); row.style.cssText = 'display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-top:8px';
+      row.innerHTML = `<span class="small muted">▶ ${esc(label)}：</span>` + have.map(id => { const m = DEPTS.departments.find(d => d.id === id) || { id, title: id, titleEn: id }; const n = (idx.shifts || []).filter(s => s.department === id).length; return `<a class="button small ${m.faculty === 'tcm' ? 'primary' : ''}" href="#shift?department=${esc(id)}">${esc(pk(m, 'title'))}${n > 1 ? ` <small>· ${n}</small>` : ''}</a>`; }).join('');
+      head.appendChild(row);
     });
   }
 
@@ -191,12 +206,12 @@
       else if (page === 'intern') intern(main, params);
       else if (page === 'workbench') workbenchPage(main, params);
       else if (page === 'procedures') { const r = await window.HT.procedures.render(main, params, decodeURIComponent(parts[1] || '')); if (typeof r === 'function') pageCleanup = r; }
-      else if (page === 'acu') { const r = await window.HT.acuAtlas.render(main, params); if (typeof r === 'function') pageCleanup = r; }
-      else if (page === 'pharmacy') { const r = await window.HT.pharmacyLab.render(main, params); if (typeof r === 'function') pageCleanup = r; }
+      else if (page === 'acu') { const r = await window.HT.acuAtlas.render(main, params); if (typeof r === 'function') pageCleanup = r; tcmShiftEntry(main, ['acupuncture-technique', 'acupoints', 'moxa-cupping'], token); }
+      else if (page === 'pharmacy') { const r = await window.HT.pharmacyLab.render(main, params); if (typeof r === 'function') pageCleanup = r; tcmShiftEntry(main, ['herbs', 'formulas', 'tcm-diet', 'pharmacology'], token); }
       else if (page === 'imaging') { const r = window.HT.realImaging.mount(main, { department: params.get('department') || '' }); if (typeof r === 'function') pageCleanup = r; }
       else if (page === 'twins') { const r = await window.HT.twins.render(main, params); if (typeof r === 'function') pageCleanup = r; }
       else if (page === 'parkinson' || page === 'resources' || page === 'learn') { await window.HT.contentHub.ensure(); window.HT.contentHub.render(main, page === 'resources' ? 'resources' : 'parkinson', page === 'learn' ? decodeURIComponent(parts[1] || '') : undefined); }
-      else if (page === 'tcm') { await window.HT.tcmLibrary.ensure(); const r = window.HT.tcmLibrary.render(main, params.get('tab'), params.get('filter')); if (typeof r === 'function') pageCleanup = r; }
+      else if (page === 'tcm') { await window.HT.tcmLibrary.ensure(); const r = window.HT.tcmLibrary.render(main, params.get('tab'), params.get('filter')); if (typeof r === 'function') pageCleanup = r; tcmShiftEntry(main, ['tcm-diagnosis', 'tcm-internal', 'herbs', 'formulas', 'acupoints', 'tcm-fundamentals'], token); }
       else if (page === 'nobel') window.HT.explorer.nobel(main, params.get('which'));
       else if (page === 'ai') window.HT.explorer.aiPage(main);
       else if (page === 'progress') progressPage(main);

@@ -1,0 +1,260 @@
+{
+  "format": "huatuo-shift-v2",
+  "department": "pain-medicine",
+  "case": "opioid-clinic",
+  "caseTitle": {"zh": "減藥的勇氣", "en": "The courage to taper"},
+  "condition": {"zh": "慢性病 · 長期鴉片類", "en": "Chronic pain · long-term opioids"},
+  "difficulty": 2,
+  "room": "clinic",
+  "title": {"zh": "疼痛科：多專業門診日", "en": "Pain medicine: a multidisciplinary clinic day"},
+  "tagline": {"zh": "一本疼痛日記、一支鼻噴劑、一位接生了半個鎮的奶奶", "en": "A pain diary, a nasal spray, and a grandma who delivered half the town"},
+  "minutes": 22,
+  "roles": [
+    {"id": "resident", "zh": "疼痛科住院醫師", "en": "Pain medicine resident", "desc": {"zh": "今天沒有針、沒有 C 臂。你的工具是問題、時間，和一個願意一起慢慢來的計畫。", "en": "No needles, no C-arm today. Your tools are questions, time and a plan that's willing to go slowly together."}},
+    {"id": "psych", "zh": "臨床心理師", "en": "Clinical psychologist", "desc": {"zh": "你聽的是痛背後的那些話：害怕、睡不著、被說「像老房子」的那一天。", "en": "You listen for the words behind the pain: fear, sleeplessness, the day someone said 'your spine is like an old house'."}}
+  ],
+  "cast": {
+    "attending": {"name": {"zh": "喬主治", "en": "Dr Chiao"}, "role": {"zh": "疼痛科主治醫師（師傅）", "en": "Pain medicine attending (mentor)"}, "tag": "ATT", "color": "#81296d", "body": "mentor",
+      "about": {"zh": "口頭禪：「分數不是目標，生活才是。」診間牆上貼的是病人畫的圖，不是證書。", "en": "Catchphrase: 'The score isn't the goal; life is.' The clinic wall shows drawings by patients, not certificates."}},
+    "angie": {"name": {"zh": "安琪", "en": "Angie"}, "role": {"zh": "資深臨床心理師", "en": "Senior clinical psychologist"}, "tag": "PSY", "color": "#7c3aed", "body": "specialist",
+      "about": {"zh": "問問題的速度很慢，慢到病人會把真正的答案說出來。", "en": "Asks questions slowly, slowly enough that patients give the real answer."}},
+    "pharmacist": {"name": {"zh": "藥師小方", "en": "Fang (pharmacist)"}, "role": {"zh": "疼痛科臨床藥師", "en": "Pain clinic pharmacist"}, "tag": "PH", "color": "#0e7490", "body": "pharmacist",
+      "about": {"zh": "背得出每一位病人的處方史。最常問的一句：「這個藥，還在幫你嗎？」", "en": "Knows every patient's prescribing history by heart. Her favourite question: 'Is this medicine still helping you?'"}},
+    "chung": {"name": {"zh": "阿忠", "en": "Chung"}, "role": {"zh": "病人・56 歲前工地主任", "en": "Patient, 56, former site foreman"}, "tag": "PT1", "color": "#6b7280", "body": "patient",
+      "about": {"zh": "多年前從鷹架摔下來，腰椎骨折固定後一直痛。鴉片類吃了好幾年，劑量一路往上，痛沒有少，生活越來越小。", "en": "Fell from scaffolding years ago; the lumbar fracture was fixed but the pain stayed. Several years on opioids, the dose creeping up, the pain no less, his life getting smaller."}},
+    "wife": {"name": {"zh": "阿忠嫂", "en": "Mrs Chung"}, "role": {"zh": "家屬・阿忠的太太", "en": "Family, Chung's wife"}, "tag": "FAM", "color": "#b45309", "body": "family",
+      "about": {"zh": "上個月打電話來說他白天坐著就睡著。今天跟來，手上抓著一張寫滿問題的紙。", "en": "Phoned last month to say he falls asleep sitting up. Came along today clutching a page full of questions."}},
+    "yang": {"name": {"zh": "楊奶奶", "en": "Grandma Yang"}, "role": {"zh": "病人・79 歲退休助產士", "en": "Patient, 79, retired midwife"}, "tag": "PT2", "color": "#2563eb", "body": "patient",
+      "about": {"zh": "接生了半個鎮的孩子，從不怕痛。去年長了皮蛇，好了以後，衣服碰到胸口就像火燒。", "en": "Delivered half the town's babies and never feared pain. Had shingles last year; since it healed, clothes touching her chest feel like fire."}},
+    "rou": {"name": {"zh": "小柔", "en": "Rou"}, "role": {"zh": "家屬・楊奶奶的孫女", "en": "Family, Grandma Yang's granddaughter"}, "tag": "FAM2", "color": "#be185d", "body": "family",
+      "about": {"zh": "大學生，當年也是奶奶接生的。手機裡有一張表，記著奶奶每晚醒來幾次。", "en": "A university student whom Grandma also delivered. Keeps a chart on her phone of how often Grandma wakes each night."}},
+    "er-doc": {"name": {"zh": "急診許醫師", "en": "Dr Hsu (ER)"}, "role": {"zh": "急診醫師", "en": "Emergency physician"}, "tag": "ER", "color": "#c2410c", "phoneOnly": true,
+      "about": {"zh": "晚上的電話總是很短，但會把病人的問題原封不動轉達。", "en": "Night calls are always brief, but she passes on the patient's question word for word."}}
+  },
+  "places": {
+    "desk": {"name": {"zh": "診間", "en": "Consulting room"}, "hot": "desk"},
+    "bed": {"name": {"zh": "檢查床", "en": "Examination couch"}, "hot": "bed"},
+    "board": {"name": {"zh": "團隊討論板", "en": "Team board"}, "hot": "whiteboard"},
+    "rx": {"name": {"zh": "處方系統", "en": "Prescribing system"}, "hot": "workstation"},
+    "oximeter": {"name": {"zh": "血氧機", "en": "Pulse oximeter"}, "hot": "monitor"},
+    "waiting": {"name": {"zh": "候診區", "en": "Waiting area"}, "hot": "door"}
+  },
+  "glossary": [
+    {"term": {"zh": "慢性疼痛", "en": "chronic pain"}, "plain": {"zh": "持續超過組織正常癒合時間的痛。它不只是傷口的訊號，也和神經系統、睡眠、情緒、生活交纏在一起。", "en": "Pain lasting beyond normal tissue healing. It is not just a signal from an injury; it is tangled up with the nervous system, sleep, mood and daily life."}},
+    {"term": {"zh": "鴉片類", "en": "opioids"}, "plain": {"zh": "嗎啡一類的強效止痛藥。急性劇痛很有用，長期用在慢性疼痛效果常常越來越差，風險越來越多。", "en": "Strong painkillers of the morphine family. Very useful for severe acute pain; used long term for chronic pain they often help less and less while the risks grow."}},
+    {"term": {"zh": "減量", "en": "tapering"}, "plain": {"zh": "依計畫慢慢降低藥量，速度和病人一起決定，可以暫停或調整。不是突然停藥。", "en": "Lowering the dose slowly to a plan whose pace is agreed with the patient and can pause or change. Not stopping suddenly."}},
+    {"term": {"zh": "戒斷", "en": "withdrawal"}, "plain": {"zh": "長期使用後突然停藥，身體出現的反應：焦躁、流汗、腹瀉、疼痛加劇、失眠。", "en": "The body's reaction when a long-used drug stops suddenly: agitation, sweating, diarrhoea, worse pain, insomnia."}},
+    {"term": {"zh": "鴉片類引起的痛覺過敏", "en": "opioid-induced hyperalgesia"}, "plain": {"zh": "長期使用鴉片類後，神經系統反而對痛更敏感，加藥讓痛變得更廣、更難形容。", "en": "After long opioid use the nervous system becomes more sensitive to pain, and raising the dose makes the pain spread and become harder to describe."}},
+    {"term": {"zh": "黃旗", "en": "yellow flags"}, "plain": {"zh": "會讓疼痛變成慢性的心理社會因素：怕動、災難化思考、憂鬱、工作與家庭的壓力。", "en": "Psychosocial factors that push pain towards chronicity: fear of movement, catastrophising, low mood, work and family stress."}},
+    {"term": {"zh": "災難化思考", "en": "catastrophising"}, "plain": {"zh": "把痛想成最壞的結果：「一定是脊椎壞掉了」「我這輩子完了」。這種想法本身會讓痛更大。", "en": "Thinking of pain in worst-case terms: 'my spine must be broken', 'my life is over'. The thinking itself makes the pain bigger."}},
+    {"term": {"zh": "活動節奏", "en": "pacing"}, "plain": {"zh": "每天固定做一段量的活動，好的日子不多做、壞的日子不完全不動，再慢慢往上加。", "en": "A fixed amount of activity each day: not overdoing good days, not stopping on bad ones, and building up slowly."}},
+    {"term": {"zh": "帶狀皰疹後神經痛", "en": "post-herpetic neuralgia"}, "plain": {"zh": "俗稱皮蛇的帶狀皰疹好了以後，受傷的神經持續痛。老人特別常見。", "en": "Nerve pain that persists after shingles has healed. Especially common in older people."}},
+    {"term": {"zh": "皮節", "en": "dermatome"}, "plain": {"zh": "一條脊神經根負責感覺的那一片皮膚。帶狀皰疹沿著一個皮節走，所以是一側、一條帶子。", "en": "The strip of skin supplied by one spinal nerve root. Shingles follows one dermatome, so it is one-sided and band-shaped."}},
+    {"term": {"zh": "神經病變性疼痛", "en": "neuropathic pain"}, "plain": {"zh": "神經本身受傷造成的痛：燒灼、電擊、輕碰就痛。一般止痛藥效果差，要用神經痛的藥。", "en": "Pain from damage to the nerves themselves: burning, electric, painful to light touch. Ordinary painkillers work poorly; nerve-pain medicines are used."}},
+    {"term": {"zh": "加巴噴丁類", "en": "gabapentinoids"}, "plain": {"zh": "常用的神經痛藥。會頭暈想睡；和鴉片類一起用，呼吸抑制的風險加乘。", "en": "Common nerve-pain medicines. They cause dizziness and drowsiness; combined with opioids the risk of breathing suppression multiplies."}},
+    {"term": {"zh": "拮抗劑鼻噴劑", "en": "naloxone nasal spray"}, "plain": {"zh": "能暫時逆轉鴉片類過量的鼻噴藥，家人在家就能用。用了還是要叫救護車，因為它的作用可能比鴉片類短。", "en": "A nasal spray that temporarily reverses opioid overdose, usable by family at home. An ambulance is still needed, since it may wear off before the opioid does."}}
+  ],
+  "codex": [
+    {"id": "oximeter", "kind": "equipment", "name": {"zh": "血氧機", "en": "Pulse oximeter"}, "hot": "monitor", "text": {"zh": "夾在手指上，告訴你血氧。可是它不會告訴你呼吸變慢了；那要你自己數。", "en": "Clips on a finger and tells you the oxygen level. It won't tell you breathing has slowed; you count that yourself."}},
+    {"id": "rx-system", "kind": "equipment", "name": {"zh": "處方系統", "en": "Prescribing system"}, "hot": "workstation", "text": {"zh": "小方的武器。查得到每一個門診開過什麼。阿忠的神經痛藥，原來另一個門診也開了一份。", "en": "Fang's weapon: it shows what every clinic has prescribed. Chung's nerve-pain tablets, it turned out, were also prescribed by another clinic."}},
+    {"id": "team-board", "kind": "equipment", "name": {"zh": "團隊討論板", "en": "Team board"}, "hot": "whiteboard", "text": {"zh": "醫師、心理師、藥師的名字排在一起。慢性疼痛沒有一個人能單獨治好。", "en": "Doctor, psychologist and pharmacist side by side. Nobody treats chronic pain alone."}},
+    {"id": "diary", "kind": "item", "name": {"zh": "阿忠的疼痛日記", "en": "Chung's pain diary"}, "text": {"zh": "記的不是分數，是今天走了多遠、睡了多久、有沒有跟孫子在公園坐一下。第一頁寫著：「巷口・報紙」。", "en": "It records not scores but how far he walked, how long he slept, whether he sat in the park with his grandson. Page one says: 'end of the lane, newspaper'."}},
+    {"id": "naloxone-kit", "kind": "item", "name": {"zh": "拮抗劑鼻噴劑", "en": "Naloxone nasal spray"}, "text": {"zh": "阿忠嫂把它放在電視旁邊，全家都找得到。上午學怎麼用，下午差一點就用上。", "en": "Mrs Chung keeps it next to the television where the whole family can find it. Learned in the morning; nearly needed by the afternoon."}},
+    {"id": "why-not-working", "kind": "concept", "name": {"zh": "為什麼鴉片類越吃越沒用", "en": "Why opioids stop working"}, "text": {"zh": "長期使用會產生耐受，同樣的量效果變差；有些人還會出現鴉片類引起的痛覺過敏。副作用卻一直累積：嗜睡、跌倒、便秘、睡眠呼吸中止、荷爾蒙下降、情緒低落、過量風險。慢性疼痛的目標是功能與生活，不是把分數壓到零；運動治療、心理治療、睡眠與其他藥物，常比加量更有幫助。", "en": "Long-term use brings tolerance, so the same dose does less, and some people develop opioid-induced hyperalgesia. Meanwhile side effects pile up: drowsiness, falls, constipation, sleep apnoea, low hormones, low mood, overdose risk. In chronic pain the goal is function and life, not a score of zero; exercise therapy, psychological therapy, sleep and other medicines often help more than a higher dose."}},
+    {"id": "taper", "kind": "concept", "name": {"zh": "減量的原則", "en": "Principles of tapering"}, "text": {"zh": "慢慢來、一起決定、可以暫停；同時加上非藥物治療、處理睡眠與情緒；給家裡拮抗劑鼻噴劑，因為耐受下降後如果吃回原量更容易過量；固定追蹤，絕不放棄病人。突然停藥會戒斷、劇痛，有人因此轉向非法藥物，往往比繼續吃更危險。", "en": "Go slowly, decide together, allow pauses; add non-drug treatment and deal with sleep and mood; give naloxone for home, because once tolerance falls, going back to the old dose is likelier to cause overdose; follow up regularly and never abandon the patient. Stopping suddenly brings withdrawal and severe pain, drives some people to illicit drugs, and is often more dangerous than carrying on."}},
+    {"id": "elderly-neuro", "kind": "concept", "name": {"zh": "老人的神經痛", "en": "Nerve pain in older people"}, "text": {"zh": "帶狀皰疹後神經痛是神經病變性疼痛，一般止痛藥效果差。老人用神經痛藥要從低開始、慢慢調，注意頭暈、跌倒與夜間起床；局部貼片的全身副作用少，是好選擇。最危險的是多個鎮靜性藥物疊在一起：鴉片類、加巴噴丁類、安眠藥，尤其有睡眠呼吸中止的人。", "en": "Post-herpetic neuralgia is neuropathic pain and responds poorly to ordinary painkillers. In older people nerve-pain medicines start low and go slow, watching for dizziness, falls and night-time trips to the toilet; topical patches have few whole-body effects and are a good option. The real danger is stacking sedating drugs: opioids, gabapentinoids, sleeping pills, especially with sleep apnoea."}}
+  ],
+  "segs": [
+    {"id": "huddle", "name": {"zh": "團隊晨會", "en": "Morning huddle"}, "sub": {"zh": "08:00 · 團隊討論板", "en": "08:00 · team board"}, "t": 480, "mood": "day",
+     "note": {"zh": "今天：一個減量、一位奶奶", "en": "Today: a taper and a grandma"},
+     "beats": [
+      {"id": "a1", "to": "attending", "guide": {"zh": "參加團隊晨會", "en": "Join the morning huddle"},
+       "lines": [
+        ["attending", {"zh": "今天兩位主角。阿忠，鴉片類吃了好幾年還是痛；楊奶奶，帶狀皰疹後神經痛，晚上睡不著。", "en": "Two main characters today. Chung, years on opioids and still in pain; Grandma Yang, post-herpetic neuralgia, can't sleep at night."}],
+        ["pharmacist", {"zh": "阿忠的劑量這兩年一路往上。另外，處方系統顯示別的門診也開了神經痛的藥給他。", "en": "Chung's dose has climbed for two years. And the prescribing system shows another clinic is also giving him a nerve-pain medicine."}],
+        ["attending", {"zh": "分數不是目標，生活才是。今天先問他想要什麼樣的生活。", "en": "The score isn't the goal; life is. Today we start by asking what life he wants."}]
+       ]},
+      {"id": "a2", "roles": ["psych"], "to": "place:board", "guide": {"zh": "準備問卷", "en": "Prepare the questionnaires"},
+       "lines": [
+        ["me", {"zh": "我準備了恐懼迴避和災難化思考的問卷，還有睡眠與情緒的量表。", "en": "I've got the fear-avoidance and catastrophising questionnaires ready, plus sleep and mood scales."}],
+        ["attending", {"zh": "很好。這些黃旗，比片子更能預測他會不會好。", "en": "Good. Those yellow flags predict recovery better than any scan."}]
+       ]}
+     ]},
+    {"id": "chung", "name": {"zh": "阿忠的故事", "en": "Chung's story"}, "sub": {"zh": "08:30 · 診間", "en": "08:30 · consulting room"}, "t": 510, "mood": "day",
+     "note": {"zh": "阿忠：痛沒少，生活變小了", "en": "Chung: the pain hasn't shrunk, his life has"},
+     "beats": [
+      {"id": "b1", "to": "chung", "guide": {"zh": "聽阿忠說", "en": "Listen to Chung"},
+       "lines": [
+        ["chung", {"zh": "我以前一個人帶整個工地，現在連走到巷口買報紙都不行。", "en": "I used to run a whole building site. Now I can't walk to the end of the lane for a newspaper."}],
+        ["wife", {"zh": "他白天坐著就睡著，晚上打呼很大聲，有時候還停一下。", "en": "He nods off sitting up in the daytime, snores loudly at night, and sometimes stops breathing for a moment."}],
+        ["angie", {"zh": "你怕動了會更糟嗎？", "en": "Are you afraid moving will make it worse?"}],
+        ["chung", {"zh": "怕。以前有醫生說我的脊椎「像老房子」。", "en": "Yes. A doctor once told me my spine was 'like an old house'."}],
+        ["angie", {"zh": "這一句話，可能比骨折還傷人。", "en": "That one sentence may have hurt more than the fracture."}]
+       ],
+       "mini": {"type": "stage", "case": "pain-medicine-pain-assessment-classification-clinic", "stage": 3}},
+      {"id": "b2", "to": "place:bed", "guide": {"zh": "重新檢查他的背", "en": "Re-examine his back"},
+       "lines": [
+        ["attending", {"zh": "三年來，有人好好摸過他的背嗎？重新檢查。", "en": "In three years, has anyone properly examined his back? Do it again."}]
+       ],
+       "mini": {"type": "drill", "template": "pain-medicine", "drill": "palpBack"},
+       "post": [
+        ["me", {"zh": "左側薦髂關節壓痛，腰旁肌肉很緊，神經學正常。", "en": "Left sacroiliac joint tender, paraspinal muscles tight, neurology normal."}],
+        ["attending", {"zh": "有一部分是機械性的痛，可以用運動治療處理，不一定要靠鴉片類。", "en": "Part of this is mechanical pain that exercise therapy can address; it needn't all fall on opioids."}]
+       ]},
+      {"id": "b3", "to": "attending", "guide": {"zh": "藥為什麼沒用了", "en": "Why the drugs stopped working"},
+       "lines": [
+        ["attending", {"zh": "藥一直加，痛沒少。為什麼？", "en": "The dose keeps rising and the pain doesn't fall. Why?"}],
+        ["me", {"zh": "耐受；還有鴉片類引起的痛覺過敏，身體反而對痛更敏感。", "en": "Tolerance; and opioid-induced hyperalgesia, where the body becomes more sensitive to pain."}],
+        ["attending", {"zh": "副作用卻一直累積：嗜睡、跌倒、便秘、睡眠呼吸中止。他太太說的打呼停一下，你要記下來。", "en": "Meanwhile side effects pile up: drowsiness, falls, constipation, sleep apnoea. Note what his wife said about the snoring pauses."}]
+       ]}
+     ]},
+    {"id": "taper", "name": {"zh": "減藥的勇氣", "en": "The courage to taper"}, "sub": {"zh": "10:00 · 診間", "en": "10:00 · consulting room"}, "t": 600, "mood": "day",
+     "note": {"zh": "共同目標：走到巷口；慢慢減量", "en": "Shared goal: the end of the lane; a slow taper"},
+     "beats": [
+      {"id": "c1", "to": "chung", "guide": {"zh": "談減量", "en": "Talk about tapering"},
+       "lines": [
+        ["chung", {"zh": "所以你們要把我的藥停掉？我會痛死。", "en": "So you're going to stop my pills? The pain will kill me."}]
+       ],
+       "mini": {"type": "choice", "q": {"zh": "長期鴉片類、痛沒少、白天嗜睡。怎麼做？", "en": "Years of opioids, no less pain, daytime sleepiness. What now?"},
+        "options": [
+         {"zh": "一起訂目標，慢慢減量，可隨時調整", "en": "Set goals together; taper slowly, adjustable", "ok": true, "set": {"taper": "slow"},
+          "why": {"zh": "減量要慢、要討論、病人參與速度，同時加上運動、心理、睡眠的方法。目的是更安全、生活更大，不是處罰。", "en": "Tapering is slow, discussed, its pace shared with the patient, with exercise, psychological and sleep strategies alongside. The aim is safety and a bigger life, not punishment."}},
+         {"zh": "今天開始全部停掉", "en": "Stop everything from today", "ok": false, "set": {"taper": "abrupt"},
+          "why": {"zh": "突然停藥會戒斷、劇痛、情緒崩潰，有人會轉去找非法藥物。突然停，常比繼續吃更危險。", "en": "Stopping suddenly brings withdrawal, severe pain and distress, and some people turn to illicit drugs. A sudden stop is often more dangerous than continuing."}},
+         {"zh": "痛還在，再加一點", "en": "Still in pain; raise the dose a bit", "ok": false, "set": {"taper": "escalate"},
+          "why": {"zh": "加了好幾年痛都沒少，再加只會增加嗜睡與過量的風險。", "en": "Years of increases haven't reduced the pain; more only adds drowsiness and overdose risk."}}
+        ]},
+       "post": [
+        ["chung", {"zh": "……慢慢來的話，我試試看。", "en": "...if it's slow, I'll give it a go."}]
+       ]},
+      {"id": "c2", "to": "chung", "guide": {"zh": "訂共同目標", "en": "Agree a shared goal"},
+       "lines": [
+        ["me", {"zh": "分數先放一邊。三個月後，你想做到什麼？", "en": "Forget the score for now. In three months, what do you want to be able to do?"}],
+        ["chung", {"zh": "自己走到巷口買報紙。帶孫子去公園坐一下。", "en": "Walk to the end of the lane for my paper. Sit in the park with my grandson."}],
+        ["angie", {"zh": "那就用活動節奏：每天固定走一段，好的日子不多走，壞的日子也不完全不動。", "en": "Then we use pacing: the same walk every day, no extra on good days, not nothing on bad ones."}]
+       ],
+       "mini": {"type": "stage", "case": "pain-medicine-pain-assessment-classification-clinic", "stage": 8},
+       "post": [
+        ["me", {"zh": "這本疼痛日記，記的不是分數，是你走了多遠。", "en": "This pain diary records not scores but how far you walked."}]
+       ],
+       "item": "diary"},
+      {"id": "c3", "to": "pharmacist", "guide": {"zh": "藥師的安全計畫", "en": "The pharmacist's safety plan"},
+       "lines": [
+        ["pharmacist", {"zh": "減量時風險會變：耐受下降後，萬一又吃回原來的量，更容易過量。家裡要放一支拮抗劑鼻噴劑。", "en": "Tapering changes the risk: once tolerance drops, going back to the old dose is likelier to cause overdose. Keep a naloxone nasal spray at home."}],
+        ["wife", {"zh": "我要怎麼用？", "en": "How do I use it?"}]
+       ],
+       "mini": {"type": "order", "q": {"zh": "家人發現他叫不醒，正確的順序？", "en": "Family find him unrousable: the right order?"},
+        "steps": [
+         {"zh": "大聲叫名字、用力搓胸骨", "en": "Shout his name, rub the breastbone hard"},
+         {"zh": "打 119 求救", "en": "Call emergency services"},
+         {"zh": "依說明噴拮抗劑鼻噴劑", "en": "Give the naloxone spray as instructed"},
+         {"zh": "側躺成復甦姿勢", "en": "Roll him into the recovery position"},
+         {"zh": "仍沒反應，依說明再給一次", "en": "No response: repeat as instructed"},
+         {"zh": "陪在旁邊等救護人員", "en": "Stay with him until help arrives"}
+        ]},
+       "post": [
+        ["wife", {"zh": "我會放在電視旁邊，誰都找得到。", "en": "I'll keep it by the TV where anyone can find it."}],
+        ["pharmacist", {"zh": "另外，另一個門診開的神經痛藥，我們統一由這裡開，不要兩份。", "en": "And the nerve-pain tablets from the other clinic: we'll prescribe them from here only, not two lots."}]
+       ],
+       "item": "naloxone-kit"}
+     ]},
+    {"id": "yang", "name": {"zh": "楊奶奶的胸口", "en": "Grandma Yang's chest"}, "sub": {"zh": "11:30 · 檢查床", "en": "11:30 · examination couch"}, "t": 690, "mood": "day",
+     "note": {"zh": "楊奶奶：帶狀皰疹後神經痛", "en": "Grandma Yang: post-herpetic neuralgia"},
+     "beats": [
+      {"id": "d1", "to": "yang", "guide": {"zh": "看楊奶奶", "en": "See Grandma Yang"},
+       "lines": [
+        ["yang", {"zh": "我接生了半個鎮的孩子，從來沒怕過痛。可是這個痛，衣服碰到就像火燒。", "en": "I've delivered half this town and never feared pain. But this one: a blouse touches me and it's fire."}],
+        ["rou", {"zh": "去年長皮蛇，好了以後一直痛。我記了，她一個晚上醒好幾次。", "en": "She had shingles last year and it's hurt ever since it healed. I've been keeping count: she wakes several times a night."}],
+        ["me", {"zh": "右側胸口到背後一條帶子，輕輕碰就痛。", "en": "A band from the right chest round to the back; light touch hurts."}]
+       ],
+       "mini": {"type": "imaging", "region": "skin",
+        "question": {"zh": "右胸到背後一條單側、不過中線的帶狀皮膚，有舊疤與色素沉著，輕觸就劇痛。這是什麼？為什麼痛的形狀是一條帶子？", "en": "A one-sided band of skin from the right chest to the back, not crossing the midline, with old scars and pigmentation; light touch is agony. What is it, and why is the pain shaped like a band?"},
+        "answer": {"zh": "帶狀皰疹後神經痛。水痘病毒潛伏在一條神經根，再活化時沿著那條神經的皮節發作，所以是一側、一條帶子、不過中線。皮疹好了，受傷的神經仍持續發出錯誤的痛訊號，是神經病變性疼痛：燒灼、電擊感、輕觸就痛。", "en": "Post-herpetic neuralgia. The chickenpox virus lies dormant in one nerve root and, when reactivated, flares along that nerve's dermatome: one side, one band, not crossing the midline. After the rash heals the damaged nerve keeps sending false pain signals: neuropathic pain, burning, electric, painful to light touch."}},
+       "post": [
+        ["yang", {"zh": "一條帶子……難怪像被繩子綁住。", "en": "A band... no wonder it feels like I'm tied with rope."}]
+       ]},
+      {"id": "d2", "to": "attending", "guide": {"zh": "這是哪一種痛", "en": "What kind of pain is this?"},
+       "lines": [
+        ["attending", {"zh": "傷害性的痛和神經病變性疼痛，治療一樣嗎？", "en": "Is nociceptive pain treated the same as neuropathic pain?"}],
+        ["me", {"zh": "不一樣。神經痛對一般止痛藥反應差，要用神經痛的藥，例如加巴噴丁類，或局部貼片。", "en": "No. Nerve pain responds poorly to ordinary painkillers; it needs nerve-pain medicines such as gabapentinoids, or a topical patch."}],
+        ["attending", {"zh": "她七十九歲。", "en": "She's seventy-nine."}],
+        ["me", {"zh": "從低開始、慢慢調，注意頭暈和晚上起床跌倒。先試局部貼片，全身副作用少。", "en": "Start low, go slow, watch for dizziness and night-time falls. Try the topical patch first; fewer whole-body effects."}]
+       ],
+       "mini": {"type": "stage", "case": "pain-medicine-pain-assessment-classification-clinic", "stage": 5},
+       "post": [
+        ["yang", {"zh": "從低開始、慢慢來。跟接生一樣，急不得。", "en": "Start low, go slow. Like a delivery: you can't hurry it."}]
+       ]}
+     ]},
+    {"id": "drowsy", "name": {"zh": "他睡得很熟", "en": "He's sleeping soundly"}, "sub": {"zh": "13:30 · 候診區", "en": "13:30 · waiting area"}, "t": 810, "mood": "day",
+     "note": {"zh": "候診區叫不醒：鴉片類加神經痛藥", "en": "Unrousable in the waiting area: opioid plus nerve-pain drug"},
+     "beats": [
+      {"id": "e1", "to": "wife", "guide": {"zh": "候診區有人叫不醒", "en": "Someone won't wake in the waiting area"},
+       "lines": [
+        ["wife", {"zh": "醫生！他等領藥的時候睡著了，叫不太醒，嘴唇有點紫！", "en": "Doctor! He fell asleep waiting for his prescription and I can barely wake him. His lips look blue!"}],
+        ["me", {"zh": "他今天早上吃了什麼？", "en": "What did he take this morning?"}],
+        ["wife", {"zh": "他說今天要看醫生很緊張，多吃了一顆……還有另一個門診的神經痛藥。", "en": "He was nervous about today, so he took an extra one... and the nerve-pain tablet from the other clinic."}]
+       ],
+       "mini": {"type": "stage", "case": "pain-medicine-opioid-induced-respiratory-depression-ward", "stage": 0}},
+      {"id": "e2", "to": "place:oximeter", "guide": {"zh": "夾上血氧機", "en": "Put on the pulse oximeter"},
+       "lines": [
+        ["sys", {"zh": "血氧往下掉，呼吸又慢又淺，打呼聲停了一下。", "en": "Saturation is falling; breathing slow and shallow; the snoring stops for a moment."}]
+       ],
+       "mini": {"type": "vitals", "event": "desaturation",
+        "options": [
+         {"zh": "叫人、刺激、暢通呼吸道、給氧", "en": "Call for help, stimulate, open the airway, oxygen", "ok": true,
+          "why": {"zh": "鴉片類加上加巴噴丁類與睡眠呼吸中止，呼吸抑制會加乘。叫人、刺激、暢通呼吸道、給氧；叫不醒或呼吸太慢就依規範給拮抗劑，並持續觀察。", "en": "Opioids plus gabapentinoids plus sleep apnoea multiply respiratory depression. Call for help, stimulate, open the airway, give oxygen; if he won't rouse or breathes too slowly, give naloxone per protocol and keep watching."}},
+         {"zh": "讓他睡，只是累了", "en": "Let him sleep; he's just tired", "ok": false,
+          "why": {"zh": "「睡得很熟」是呼吸抑制最常見的偽裝。數呼吸、看血氧、叫醒他。", "en": "'Sleeping soundly' is respiratory depression's commonest disguise. Count breaths, check saturation, wake him."}},
+         {"zh": "只給氧氣，繼續觀察", "en": "Oxygen only and observe", "ok": false,
+          "why": {"zh": "氧氣拉得高血氧，卻掩蓋了呼吸變慢與二氧化碳上升。要刺激、評估、備拮抗劑。", "en": "Oxygen lifts the saturation but hides slowing breaths and rising carbon dioxide. Stimulate, assess, have naloxone ready."}}
+        ]},
+       "post": [
+        ["me", {"zh": "刺激之後他醒了，呼吸變快，血氧回來。拮抗劑在旁邊備著。", "en": "He's rousing with stimulation, breathing faster, saturation recovering. Naloxone is standing by."}],
+        ["pharmacist", {"zh": "多吃的一顆，加上神經痛藥，加上睡眠呼吸中止。就是這個組合。", "en": "One extra tablet, plus the nerve-pain drug, plus sleep apnoea. That's the combination."}],
+        ["attending", {"zh": "上午才教他太太用鼻噴劑，下午就差點用上。送急診觀察，拮抗劑可能比藥效先退。", "en": "We taught his wife the spray this morning and nearly needed it this afternoon. ER for observation; naloxone can wear off before the drug does."}]
+       ]}
+     ]},
+    {"id": "debrief", "name": {"zh": "師傅的話", "en": "The mentor's words"}, "sub": {"zh": "17:30 · 團隊討論板", "en": "17:30 · team board"}, "t": 1050, "mood": "eve",
+     "note": {"zh": "減量計畫加睡眠檢查；處方統一", "en": "Taper plan, sleep study, one prescriber"},
+     "beats": [
+      {"id": "f1", "to": "attending", "guide": {"zh": "團隊回顧", "en": "Team debrief"},
+       "lines": [
+        ["attending", {"zh": "今天差一點。也因為差一點，阿忠和他太太都懂了為什麼要減。", "en": "Today was close. And because it was close, Chung and his wife now understand why we're tapering."}],
+        ["angie", {"zh": "他在急診跟我說：「我不想再讓我太太嚇成那樣。」這是最好的動機。", "en": "In the ER he told me: 'I never want to frighten my wife like that again.' That's the best motivation there is."}],
+        ["me", {"zh": "減量計畫加上睡眠檢查。神經痛的藥由我們統一開，不要兩個門診各開一份。", "en": "Taper plan plus a sleep study. Nerve-pain medicine from us only, not one lot from each clinic."}],
+        ["attending", {"zh": "還有楊奶奶：老人的神經痛，從低開始、慢慢來，還要問她晚上起來會不會頭暈。", "en": "And Grandma Yang: in older people, nerve pain means start low, go slow, and ask whether she's dizzy getting up at night."}]
+       ]}
+     ]},
+    {"id": "night", "name": {"zh": "計畫還算數嗎", "en": "Does the plan still stand?"}, "sub": {"zh": "21:30 · 值班電話", "en": "21:30 · on-call phone"}, "t": 1290, "mood": "night",
+     "note": {"zh": "阿忠回家；楊奶奶睡著了", "en": "Chung goes home; Grandma Yang sleeps"},
+     "beats": [
+      {"id": "n1", "ring": {"title": {"zh": "急診來電", "en": "ER calling"}, "sub": {"zh": "「阿忠觀察完了，他問早上的計畫還算數嗎」", "en": "'Chung's observation is done; he asks if this morning's plan stands'"}, "call": true, "from": "er-doc"},
+       "lines": [
+        ["er-doc", {"zh": "阿忠觀察了幾個小時，清醒、呼吸正常，可以回家。他問：早上說的計畫還算數嗎？", "en": "Chung has been observed for several hours: alert, breathing normally, fit for home. He asks: does this morning's plan still stand?"}]
+       ]},
+      {"id": "n2", "when": {"flag": "taper", "is": "slow"},
+       "lines": [
+        ["me", {"zh": "算數。明天開始照計畫的第一步，慢慢來。鼻噴劑帶回家。", "en": "It stands. Step one of the plan from tomorrow, slowly. The spray goes home with him."}],
+        ["er-doc", {"zh": "他太太說，已經放在電視旁邊了。", "en": "His wife says it's already by the TV."}]
+       ]},
+      {"id": "n3", "when": {"flag": "taper", "is": "abrupt"},
+       "lines": [
+        ["er-doc", {"zh": "他說你早上叫他今天全部停，他很怕今晚會戒斷，問可不可以不要停。", "en": "He says you told him this morning to stop everything today. He's scared of withdrawal tonight and asks if he really must."}],
+        ["me", {"zh": "我改計畫：不突然停。明天回門診，一起訂慢慢減的步驟。突然停，常比繼續吃更危險。", "en": "I'm changing the plan: no sudden stop. Back to clinic tomorrow to agree a slow taper together. A sudden stop is often more dangerous than carrying on."}]
+       ]},
+      {"id": "n4", "when": {"flag": "taper", "is": "escalate"},
+       "lines": [
+        ["me", {"zh": "早上我還想幫他加藥……今天下午證明了，那只會讓他更危險。", "en": "This morning I wanted to raise his dose... this afternoon proved that would only make him less safe."}],
+        ["me", {"zh": "不加。明天回門診，一起訂慢慢減的計畫，鼻噴劑帶回家。", "en": "No increase. Back to clinic tomorrow to agree a slow taper together, and the spray goes home with him."}]
+       ]},
+      {"id": "n5", "ring": {"title": {"zh": "小柔的訊息", "en": "A message from Rou"}, "sub": {"zh": "「奶奶貼了貼片，睡著了」", "en": "'Grandma has her patch on and she's asleep'"}, "call": false, "from": "rou"},
+       "lines": [
+        ["rou", {"zh": "醫生，奶奶第一次貼貼片，現在睡著了，起來上廁所也沒有頭暈。她說：謝謝你們慢慢來。", "en": "Doctor, Grandma's first night with the patch: she's asleep, and no dizziness when she got up for the toilet. She says thank you for going slowly."}],
+        ["me", {"zh": "分數不是目標，生活才是。今晚，一個人睡著了，一個人回家了。", "en": "The score isn't the goal; life is. Tonight one person is asleep and another is home."}]
+       ],
+       "end": true}
+     ]}
+  ],
+  "ending": {"title": {"zh": "下班了", "en": "End of shift"}, "sub": {"zh": "分數不是目標，生活才是", "en": "The score isn't the goal; life is"},
+    "stats": ["stages", "grades", "choices", "calls", "items", "time"]}
+}

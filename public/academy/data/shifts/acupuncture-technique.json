@@ -1,0 +1,329 @@
+{
+ "format": "huatuo-shift-v2",
+ "department": "acupuncture-technique",
+ "case": "main",
+ "caseTitle": {"zh": "落枕的一天", "en": "A day of stiff necks"},
+ "condition": {"zh": "經筋病 · 落枕", "en": "Sinew channel · acute stiff neck"},
+ "difficulty": 1,
+ "title": {"zh": "針灸治療室值班日", "en": "A shift in the acupuncture room"},
+ "tagline": {"zh": "一根針、一聲「酸了」和一個沒吃早餐的阿姨", "en": "One needle, one “that aches”, and an auntie who skipped breakfast"},
+ "room": "acupuncture",
+ "minutes": 25,
+ "roles": [
+  {"id": "intern", "zh": "中醫見習醫師", "en": "TCM clerk",
+   "desc": {"zh": "跟著周醫師問診、把脈、取穴、進針；每一針之前先想一次安全。", "en": "Take the history with Dr Zhou, read the pulse, locate the points and needle; think safety before every needle."}},
+  {"id": "assistant", "zh": "針灸助理", "en": "Acupuncture assistant",
+   "desc": {"zh": "針盤、體位、留針觀察、出針清點都在你手上；病人臉色變了，你最先看到。", "en": "Needle tray, positioning, watching during retention, the count at the end; when a patient's colour changes, you see it first."}}
+ ],
+ "cast": {
+  "zhou": {"name": {"zh": "周醫師", "en": "Dr Zhou"}, "role": {"zh": "針灸科主治醫師（師傅）", "en": "Acupuncture attending (mentor)"}, "tag": "ATT", "color": "#81296d", "body": "mentor",
+   "about": {"zh": "下針前一定先數兩次針盤。口頭禪：針的第一課是乾淨，第二課是安全，第三課才是手法。", "en": "Counts the needle tray twice before every needle. Catchphrase: lesson one is clean, lesson two is safe, lesson three is technique."}},
+  "amei": {"name": {"zh": "阿美", "en": "A-Mei"}, "role": {"zh": "針灸助理", "en": "Acupuncture assistant"}, "tag": "AST", "color": "#3b8f6a", "body": "nurse",
+   "about": {"zh": "能同時看三張床的臉色。抽屜裡永遠有一包餅乾，專門給沒吃早餐的病人。", "en": "Can watch three couches' faces at once. Always keeps a packet of biscuits in the drawer for patients who skipped breakfast."}},
+  "akai": {"name": {"zh": "阿凱", "en": "A-Kai"}, "role": {"zh": "二十八歲，沙發上睡醒的落枕", "en": "Twenty-eight, stiff neck from a night on the sofa"}, "tag": "P1", "color": "#c2703a", "body": "patient",
+   "about": {"zh": "虛構教學個案。軟體工程師，打電動打到在沙發睡著，早上頭轉不過來。", "en": "Fictional teaching case. Software engineer who fell asleep gaming on the sofa and woke unable to turn his head."}},
+  "xiuying": {"name": {"zh": "秀英阿姨", "en": "Auntie Xiu-Ying"}, "role": {"zh": "六十五歲，市場攤商，老主顧", "en": "Sixty-five, market vendor, a regular"}, "tag": "P2", "color": "#b5651d", "body": "patient",
+   "about": {"zh": "虛構教學個案。清晨三點起床顧攤，常常忙到忘記吃。最會忍痛，也最會忍餓。", "en": "Fictional teaching case. Up at three to run her stall, often too busy to eat. Best at enduring pain, and hunger."}},
+  "akai-mum": {"name": {"zh": "阿凱的媽媽", "en": "A-Kai's mother"}, "role": {"zh": "家屬（電話）", "en": "Family (by phone)"}, "tag": "FAM", "color": "#8a6d3b", "phoneOnly": true,
+   "about": {"zh": "聽鄰居說針會斷在身體裡，立刻打來問。", "en": "Heard from a neighbour that needles snap off inside you and rang at once."}},
+  "ward-nurse": {"name": {"zh": "內科病房護理師", "en": "Medical ward nurse"}, "role": {"zh": "病房護理師（電話）", "en": "Ward nurse (by phone)"}, "tag": "RN", "color": "#3f6fa8", "phoneOnly": true,
+   "about": {"zh": "會診單是她催的。問問題之前已經把藥單看過一遍。", "en": "She chased the consult. Reads the drug chart before she asks the question."}}
+ },
+ "places": {
+  "board": {"name": {"zh": "治療排程白板", "en": "Treatment board"}, "hot": "whiteboard"},
+  "tray": {"name": {"zh": "無菌針盤", "en": "Sterile needle tray"}, "hot": "needles"},
+  "chart-wall": {"name": {"zh": "經絡掛圖", "en": "Meridian chart"}, "hot": "meridian-chart"},
+  "couch1": {"name": {"zh": "一號治療床", "en": "Couch 1"}, "hot": "couch"},
+  "sink": {"name": {"zh": "洗手台", "en": "Hand-wash sink"}, "hot": "sink"}
+ },
+ "glossary": [
+  {"term": {"zh": "落枕", "en": "stiff neck"}, "plain": {"zh": "睡醒後頸部突然僵硬疼痛、轉頭受限，多半是頸部肌肉與經筋受寒或姿勢不良。", "en": "Waking with a suddenly stiff, painful neck that will not turn; usually neck muscles and sinews chilled or strained by a bad sleeping position."}},
+  {"term": {"zh": "經筋", "en": "sinew channel"}, "plain": {"zh": "中醫對肌肉、肌腱、筋膜系統的描述，依經絡分布；落枕屬於經筋病。", "en": "TCM's description of the muscle, tendon and fascia system arranged along the meridians; a stiff neck is a sinew-channel problem."}},
+  {"term": {"zh": "遠道取穴", "en": "distal point selection"}, "plain": {"zh": "不在痛處下針，而在同一條經絡的遠端取穴，例如脖子痛針手上的穴。", "en": "Needling not at the painful spot but at a point far along the same meridian, for example a hand point for the neck."}},
+  {"term": {"zh": "運動針法", "en": "motion needling"}, "plain": {"zh": "遠端留針的同時，請病人慢慢活動患部，讓氣血隨動作而通。", "en": "While a distal needle is retained, the patient slowly moves the painful part so, in TCM terms, qi and blood move with it."}},
+  {"term": {"zh": "得氣", "en": "de qi"}, "plain": {"zh": "針下出現酸、麻、脹、重的感覺，醫師手下覺得針被輕輕吸住；中醫認為這是針刺起效的訊號。", "en": "The ache, tingling, fullness or heaviness felt at the needle, while the practitioner feels the needle gently gripped; in TCM the sign the needle is working."}},
+  {"term": {"zh": "押手", "en": "pressing hand"}, "plain": {"zh": "不持針的那隻手，用來固定皮膚與穴位，讓進針穩、準、少痛。", "en": "The hand that does not hold the needle; it fixes the skin and point so insertion is steady, accurate and less painful."}},
+  {"term": {"zh": "留針", "en": "needle retention"}, "plain": {"zh": "進針得氣後把針留在穴位上一段時間，期間要有人觀察病人。", "en": "Leaving the needles in place for a period after de qi; someone must watch the patient throughout."}},
+  {"term": {"zh": "暈針", "en": "needle faint"}, "plain": {"zh": "針刺時或留針中頭暈、噁心、臉色蒼白、冒冷汗甚至昏倒；空腹、緊張、疲勞、坐姿都是危險因子。", "en": "Dizziness, nausea, pallor, cold sweat or even collapse during needling or retention; an empty stomach, anxiety, fatigue and sitting up all raise the risk."}},
+  {"term": {"zh": "一次性無菌針", "en": "single-use sterile needle"}, "plain": {"zh": "出廠滅菌、單包裝、用一次就丟的毫針；拆封才算無菌。", "en": "A factory-sterilised, individually packed filiform needle used once and discarded; it counts as sterile only once opened."}},
+  {"term": {"zh": "銳器盒", "en": "sharps box"}, "plain": {"zh": "裝用過針具的硬殼容器，出針後針直接進去，不能回套、不能放桌上。", "en": "The rigid container for used needles; a withdrawn needle goes straight in, never recapped, never left on the bench."}},
+  {"term": {"zh": "浮緊脈", "en": "floating-tight pulse"}, "plain": {"zh": "輕按就摸到、像按在拉緊的繩子上的脈；中醫認為多見於風寒在表。", "en": "A pulse felt on light touch that feels like a taut cord; in TCM typically wind-cold on the exterior."}},
+  {"term": {"zh": "肺尖", "en": "lung apex"}, "plain": {"zh": "肺的最上端，位在鎖骨上方、肩井穴的深處；肩頸穴位刺太深可能造成氣胸。", "en": "The top of the lung, just above the collarbone and deep to the shoulder points; needling too deep there risks a pneumothorax."}},
+  {"term": {"zh": "抗凝血劑", "en": "anticoagulant"}, "plain": {"zh": "讓血液不易凝固的藥；吃這類藥的人針後較易出血或瘀青。", "en": "A medicine that stops blood clotting easily; people taking one bleed or bruise more readily after needling."}},
+  {"term": {"zh": "相對禁忌", "en": "relative contraindication"}, "plain": {"zh": "不是絕對不能做，而是要評估風險、調整做法或先與主治討論。", "en": "Not an absolute no: a situation where the risk must be weighed, the method adapted or the attending consulted first."}}
+ ],
+ "codex": [
+  {"id": "needle-tray", "kind": "equipment", "name": {"zh": "無菌針盤與銳器盒", "en": "Sterile tray and sharps box"}, "hot": "needles",
+   "text": {"zh": "一次性無菌針依長短粗細分格，酒精棉、乾棉球、針管在旁；銳器盒放在伸手可及處。開工先數針，收工再數一次。", "en": "Single-use needles sorted by length and gauge, alcohol swabs, dry cotton and guide tubes beside them; the sharps box within reach. Count at the start, count again at the end."}},
+  {"id": "infrared-lamp", "kind": "equipment", "name": {"zh": "紅外線燈", "en": "Infrared lamp"}, "hot": "lamp",
+   "text": {"zh": "留針時溫暖局部。距離依病人感覺調整，感覺減退的部位不用，以免燙傷。", "en": "Warms the area during retention. Distance is set by the patient's sensation; never used over numb skin, to avoid burns."}},
+  {"id": "couch", "kind": "equipment", "name": {"zh": "治療床與隔簾", "en": "Treatment couch and curtain"}, "hot": "couch",
+   "text": {"zh": "容易暈針的人一律臥位。隔簾拉上保護隱私，但助理要能隨時看到病人的臉。", "en": "Anyone at risk of fainting is treated lying down. The curtain protects privacy, but the assistant must always be able to see the patient's face."}},
+  {"id": "edu-sheet", "kind": "item", "name": {"zh": "落枕衛教單", "en": "Stiff-neck advice sheet"},
+   "text": {"zh": "熱敷、枕頭高度、避免直吹冷氣、緩慢活動；出現手麻無力、發燒、外傷史立即回診。", "en": "Warm compress, pillow height, no air-conditioning blowing on the neck, gentle movement; return at once for numb or weak arms, fever or any injury."}},
+  {"id": "concept-accident", "kind": "concept", "name": {"zh": "針刺意外的預防與處理", "en": "Preventing and handling needle accidents"},
+   "text": {"zh": "暈針：先出針、平臥抬腿、保暖、監測，嚴重時啟動急救。滯針：安撫病人、循經輕按、勿硬拔。彎針：順彎緩出。斷針：固定病人、勿按壓、依殘端處理並通報。氣胸：胸背肩頸穴位勿深刺；針後胸痛呼吸困難，立即轉診。", "en": "Needle faint: withdraw, lie flat with legs raised, warm, monitor, escalate if severe. Stuck needle: calm the patient, light pressure along the channel, never force. Bent needle: ease out along the bend. Broken needle: keep the patient still, do not press, retrieve per the stump and report. Pneumothorax: never needle deep over chest, back or shoulder; chest pain or breathlessness after needling means immediate referral."}},
+  {"id": "concept-distal", "kind": "concept", "name": {"zh": "遠道取穴與運動針法", "en": "Distal points and motion needling"},
+   "text": {"zh": "中醫認為經絡所過，主治所及：頸項痛可取手上的落枕穴、後溪，留針時請病人慢慢轉頭。好處是患處不被針固定住，活動本身成為治療的一部分。", "en": "In TCM a meridian treats what it passes through: neck pain can be treated at the hand's Luozhen point and Houxi, with the patient slowly turning the head while the needles stay in. The painful part is not pinned down, and movement becomes part of the treatment."}},
+  {"id": "concept-contra", "kind": "concept", "name": {"zh": "針刺禁忌與紅旗", "en": "Needling contraindications and red flags"},
+   "text": {"zh": "孕婦禁針合谷、三陰交、肩井與腹腰骶部；出血傾向與抗凝血劑屬相對禁忌；局部感染、潰瘍、腫瘤處不針；極度疲勞、空腹、酒後緩針。頸痛合併外傷、發燒、手麻無力、意識改變，先轉診排除骨折、感染與中樞問題。", "en": "In pregnancy avoid Hegu, Sanyinjiao, Jianjing and the abdomen, lower back and sacrum; bleeding tendency and anticoagulants are relative contraindications; never needle infected, ulcerated or tumour sites; postpone when exhausted, fasting or drunk. Neck pain with injury, fever, numb or weak arms or altered consciousness is referred first to rule out fracture, infection and central causes."}},
+  {"id": "concept-deqi", "kind": "concept", "name": {"zh": "得氣：病人的感覺與醫師的手感", "en": "De qi: what the patient feels and the hand feels"},
+   "text": {"zh": "病人覺得酸麻脹重，醫師覺得針下沉緊「如魚吞鉤」。古籍說「氣至而有效」，但得氣不是越痛越好；銳痛、放電感要退針調整。", "en": "The patient feels ache, tingling, fullness or heaviness; the practitioner feels the needle gripped, “like a fish taking the hook”. The classics say the effect follows the arrival of qi, but de qi is not “the more pain the better”: sharp or electric pain means withdraw a little and adjust."}}
+ ],
+ "segs": [
+  {"id": "prep", "name": {"zh": "開工：針盤", "en": "Opening: the tray"}, "sub": {"zh": "07:50 · 針灸治療室", "en": "07:50 · the acupuncture room"}, "t": 470, "mood": "day",
+   "note": {"zh": "針盤清點完成", "en": "Needle tray counted"},
+   "beats": [
+    {"id": "p1", "to": "place:board", "guide": {"zh": "到治療排程白板集合", "en": "Gather at the treatment board"},
+     "lines": [
+      ["sys", {"zh": "針灸治療室，早上七點五十分。紅外線燈還沒開，隔簾一張張拉開。", "en": "The acupuncture room, ten to eight. The infrared lamps are still off; the curtains are drawn back one by one."}],
+      ["zhou", {"zh": "今天三件事：阿凱的落枕、秀英阿姨的肩頸、下午病房會診電話。", "en": "Three things today: A-Kai's stiff neck, Auntie Xiu-Ying's shoulders, and a ward consult call this afternoon."}],
+      ["zhou", {"zh": "第一件事永遠一樣。去找針盤和銳器盒。", "en": "The first thing never changes. Go and find the needle tray and the sharps box."}]
+     ],
+     "mini": {"type": "find", "hot": "needles", "q": {"zh": "找出無菌針盤與銳器盒", "en": "Find the sterile needle tray and the sharps box"}},
+     "post": [
+      ["amei", {"zh": "針盤我擺好了，銳器盒換新的。昨天那盒滿了。", "en": "Tray's laid out, and the sharps box is a fresh one. Yesterday's was full."}]
+     ]},
+    {"id": "p2", "to": "amei", "guide": {"zh": "跟阿美核對針具", "en": "Check the needles with A-Mei"},
+     "lines": [
+      ["amei", {"zh": "一次性無菌針，拆封才算無菌。過期的我挑出來了。", "en": "Single-use sterile needle: it only counts as sterile once you open it. I pulled the expired ones."}],
+      ["me", {"zh": "針管呢？", "en": "And the guide tubes?"}],
+      ["amei", {"zh": "管針給怕痛的人。阿凱怕不怕我不知道，先放著。", "en": "Tube needles for the ones who are scared of pain. Whether A-Kai is, I don't know yet; I'll leave them out."}]
+     ],
+     "mini": {"type": "stage", "case": "acupuncture-technique-needle-types-workflow", "stage": 3},
+     "post": [
+      ["zhou", {"zh": "針的第一課不是怎麼刺，是怎麼確定它乾淨。", "en": "Lesson one with a needle is not how to insert it. It's how you know it is clean."}]
+     ]}
+   ]},
+  {"id": "akai", "name": {"zh": "阿凱的落枕", "en": "A-Kai's stiff neck"}, "sub": {"zh": "08:30 · 一號治療床", "en": "08:30 · couch 1"}, "t": 510, "mood": "day",
+   "note": {"zh": "阿凱：遠端取穴，邊針邊轉頭", "en": "A-Kai: distal points, turning while needled"},
+   "beats": [
+    {"id": "k1", "to": "akai", "guide": {"zh": "請阿凱到一號床", "en": "Bring A-Kai to couch 1"},
+     "lines": [
+      ["akai", {"zh": "醫師，我昨晚打電動打到在沙發睡著，早上頭轉不過來。", "en": "Doctor, I fell asleep gaming on the sofa last night and this morning my head won't turn."}],
+      ["me", {"zh": "哪一邊？手會麻嗎？有沒有撞到、發燒？", "en": "Which side? Any numbness in the arms? Any knock to the head, any fever?"}],
+      ["akai", {"zh": "右邊。手不麻，沒撞到。就是一轉就像被電到。", "en": "Right side. Arms are fine, no knock. It's just like an electric shock when I turn."}],
+      ["zhou", {"zh": "落枕很常見。下針之前，第一步是什麼？", "en": "A stiff neck is common. Before any needle, what is step one?"}]
+     ],
+     "mini": {"type": "choice", "q": {"zh": "阿凱說「超痛，快幫我針」。你先做什麼？", "en": "A-Kai says “it really hurts, just needle me”. What do you do first?"},
+      "options": [
+       {"zh": "檢查頸部活動與神經症狀，排除紅旗", "en": "Examine neck movement and nerve signs, rule out red flags", "ok": true, "set": {"screened": true},
+        "why": {"zh": "落枕是排除性診斷：外傷、發燒、手麻無力、頸部劇烈僵硬要先排除再針。", "en": "A stiff neck is a diagnosis of exclusion: injury, fever, numb or weak arms and severe rigidity are ruled out before any needle."}},
+       {"zh": "直接針落枕穴，他很痛", "en": "Needle the stiff-neck point straight away, he's in pain", "ok": false, "set": {"screened": false},
+        "why": {"zh": "痛不是跳過檢查的理由。頸椎骨折和腦膜炎的脖子也很僵。", "en": "Pain is no reason to skip the examination. A fractured neck and meningitis are stiff too."}},
+       {"zh": "先開熱敷包回家休息", "en": "Send him home with a heat pack", "ok": false, "set": {"screened": false},
+        "why": {"zh": "還沒檢查就決定處置，順序反了。", "en": "Deciding the treatment before examining him puts the order backwards."}}
+      ]},
+     "post": [
+      ["zhou", {"zh": "轉頭、側彎、聳肩、手的力氣與感覺。都正常，才叫落枕。", "en": "Rotation, side bending, shrugging, arm strength and sensation. Only when all are normal do we call it a stiff neck."}]
+     ]},
+    {"id": "k2", "to": "akai", "guide": {"zh": "幫阿凱把脈", "en": "Read A-Kai's pulse"},
+     "lines": [
+      ["akai", {"zh": "脈也要看喔？我是脖子痛。", "en": "You're checking my pulse too? It's my neck that hurts."}],
+      ["zhou", {"zh": "脖子長在身體上。手伸出來。", "en": "Your neck is attached to a body. Hand out, please."}]
+     ],
+     "mini": {"type": "pulse", "pulse": "tight", "q": {"zh": "阿凱的脈輕按就有，像按在拉緊的繩子上。這是什麼脈？", "en": "A-Kai's pulse is there on light touch and feels like a taut cord. Which pulse is this?"},
+      "options": [
+       {"zh": "浮緊脈", "en": "Floating-tight pulse", "ok": true, "why": {"zh": "浮主表、緊主寒。中醫認為風寒客於經筋，寒主收引，所以脖子緊、脈也緊。", "en": "Floating points to the exterior, tight to cold. In TCM wind-cold has lodged in the sinew channel; cold contracts, so the neck is tight and so is the pulse."}},
+       {"zh": "弦細脈", "en": "Wiry-thin pulse", "ok": false, "why": {"zh": "弦細多見於肝鬱血虛，這條脈不細。", "en": "Wiry-thin suggests liver constraint with blood deficiency; this pulse is not thin."}},
+       {"zh": "滑數脈", "en": "Slippery-rapid pulse", "ok": false, "why": {"zh": "滑數偏痰熱，他沒有熱象。", "en": "Slippery-rapid points to phlegm-heat; he shows no heat signs."}},
+       {"zh": "沉遲脈", "en": "Deep-slow pulse", "ok": false, "why": {"zh": "沉遲是裡寒，這條脈是輕按就有的。", "en": "Deep-slow means interior cold; this one is there on light touch."}}
+      ]},
+     "post": [
+      ["zhou", {"zh": "風寒客於經筋。局部要鬆，遠端要通。", "en": "Wind-cold in the sinew channel. Loosen locally, open distally."}]
+     ]},
+    {"id": "k3", "to": "place:chart-wall", "guide": {"zh": "在經絡掛圖上選穴", "en": "Choose the points on the meridian chart"},
+     "lines": [
+      ["zhou", {"zh": "遠道取穴。手上一個穴、一個經外奇穴，讓他邊針邊轉頭。選哪些？", "en": "Distal point selection. One hand point, one extra point, and let him turn his head while needled. Which ones?"}]
+     ],
+     "mini": {"type": "points", "codes": ["EX-UE8", "SI3", "GB20"], "q": {"zh": "指出落枕穴（外勞宮）、後溪與風池", "en": "Point to Luozhen (Wailaogong), Houxi and Fengchi"}},
+     "post": [
+      ["zhou", {"zh": "後溪通督脈，督脈走脊柱。針遠端、動患部，這叫運動針法。", "en": "Houxi opens the Du channel, which runs up the spine. Needle distally, move the painful part: that is motion needling."}]
+     ]},
+    {"id": "k4", "to": "akai", "guide": {"zh": "依步驟進行針刺", "en": "Needle in the right order"},
+     "lines": [
+      ["amei", {"zh": "體位好了。坐姿，手放桌上。阿凱，等一下會酸，不會像被電。", "en": "Positioned. Sitting, hand on the table. A-Kai, it'll ache in a moment; it won't feel like a shock."}]
+     ],
+     "mini": {"type": "order", "q": {"zh": "把針刺操作排成正確順序", "en": "Put the needling procedure in the right order"},
+      "steps": [
+       {"zh": "核對病人與部位，擺好體位", "en": "Confirm patient and site, position"},
+       {"zh": "取穴定位，消毒皮膚", "en": "Locate the points, disinfect"},
+       {"zh": "押手固定，進針", "en": "Pressing hand fixes, insert"},
+       {"zh": "行針至得氣", "en": "Manipulate until de qi"},
+       {"zh": "留針觀察，請他慢慢轉頭", "en": "Retain, watch, have him turn slowly"},
+       {"zh": "出針按壓，清點針數", "en": "Withdraw, press, count the needles"}
+      ]},
+     "post": [
+      ["akai", {"zh": "酸酸脹脹的，有點麻。", "en": "Achy and full… a bit tingly."}],
+      ["zhou", {"zh": "那就是得氣。現在，慢慢把頭轉向右邊。慢。", "en": "That is de qi. Now turn your head to the right, slowly. Slowly."}]
+     ]},
+    {"id": "k5", "to": "amei", "guide": {"zh": "練習得氣的手感", "en": "Practise the feel of de qi"},
+     "lines": [
+      ["amei", {"zh": "提插捻轉的幅度，太大病人痛，太小沒得氣。來，練手感。", "en": "Lifting, thrusting, twirling: too much and it hurts, too little and no de qi. Come, train the hand."}]
+     ],
+     "mini": {"type": "drill", "template": "acupuncture-technique", "drill": "deqi"},
+     "post": [
+      ["amei", {"zh": "針下像魚吞鉤，輕輕被吸住，就是了。", "en": "When the needle feels like a fish taking the hook, gently gripped, that's it."}]
+     ]},
+    {"id": "k6", "roles": ["intern"], "to": "akai", "guide": {"zh": "練習單手指切進針", "en": "Practise single-hand insertion"},
+     "lines": [
+      ["zhou", {"zh": "押手比刺手重要。押手在，針就不會晃，病人就不會怕。", "en": "The pressing hand matters more than the needling hand. With it in place the needle does not wobble, and the patient does not flinch."}]
+     ],
+     "mini": {"type": "stage", "case": "acupuncture-technique-insertion-workflow", "stage": 2},
+     "post": [
+      ["zhou", {"zh": "指切進針：拇指甲掐住穴旁，針沿甲緣進。穩，準，快。", "en": "Nail-press insertion: the thumbnail beside the point, the needle enters along the nail. Steady, accurate, quick."}]
+     ]}
+   ]},
+  {"id": "mum", "name": {"zh": "媽媽來電", "en": "Mum calls"}, "sub": {"zh": "10:30 · 治療室電話", "en": "10:30 · the room phone"}, "t": 630, "mood": "day",
+   "note": {"zh": "阿凱媽媽：針不會斷在裡面", "en": "A-Kai's mum: the needle will not snap off"},
+   "beats": [
+    {"id": "m1",
+     "ring": {"title": {"zh": "阿凱的媽媽來電", "en": "A-Kai's mother calling"}, "sub": {"zh": "鄰居說針會斷在身體裡，還會傳染？", "en": "A neighbour says needles snap off inside you, and spread disease?"}, "call": true, "from": "akai-mum"},
+     "lines": [
+      ["akai-mum", {"zh": "醫師，鄰居說針會斷在裡面，還會傳染，是不是？", "en": "Doctor, the neighbour says the needle snaps off inside and you catch things. Is that true?"}],
+      ["me", {"zh": "我們用一次性無菌針，用完直接進銳器盒，不會重複使用。", "en": "We use a single-use sterile needle for every point; it goes straight into the sharps box afterwards and is never reused."}],
+      ["me", {"zh": "斷針非常罕見。留針時我們不讓他大動作，針也不會刺到底。", "en": "A broken needle is very rare. He makes no big movements during retention, and the needle is never inserted to its full length."}],
+      ["akai-mum", {"zh": "那他可以邊針邊打電動嗎？", "en": "So can he play games while the needles are in?"}],
+      ["me", {"zh": "可以轉頭，不能打電動。", "en": "He can turn his head. He cannot play games."}],
+      ["zhou", {"zh": "跟家屬說話，誠實比保證重要。「非常罕見」是實話，「絕不可能」不是。", "en": "With family, honesty beats reassurance. “Very rare” is true; “never” is not."}]
+     ]}
+   ]},
+  {"id": "out", "name": {"zh": "出針與衛教", "en": "Withdrawal and advice"}, "sub": {"zh": "11:20 · 一號治療床", "en": "11:20 · couch 1"}, "t": 680, "mood": "day",
+   "note": {"zh": "阿凱：頭轉得過來了", "en": "A-Kai: the head turns again"},
+   "beats": [
+    {"id": "o1", "to": "akai", "guide": {"zh": "幫阿凱出針", "en": "Withdraw A-Kai's needles"},
+     "lines": [
+      ["akai", {"zh": "欸？我可以轉到後面了！", "en": "Hey, I can look behind me!"}],
+      ["amei", {"zh": "出針要按壓，手上的穴容易出一點血。乾棉球，壓住。", "en": "Press after each needle comes out; hand points bleed a drop. Dry cotton, hold it."}],
+      ["me", {"zh": "一、二、三。進三出三。", "en": "One, two, three. Three in, three out."}]
+     ]},
+    {"id": "o1a", "when": {"flag": "screened", "is": true},
+     "lines": [
+      ["zhou", {"zh": "你一開始就檢查了神經症狀，所以我們針得安心。好習慣。", "en": "You checked the nerve signs at the start, so we needled with an easy mind. Good habit."}]
+     ]},
+    {"id": "o1b", "when": {"flag": "screened", "is": false},
+     "lines": [
+      ["zhou", {"zh": "你剛剛差點沒檢查就下針。這次是落枕，下次可能不是。先問，先看，再針。", "en": "You nearly needled without examining. This time it was a stiff neck; next time it may not be. Ask, look, then needle."}]
+     ]},
+    {"id": "o2", "roles": ["assistant"], "to": "place:tray", "guide": {"zh": "清點針數並處理銳器", "en": "Count the needles, deal with sharps"},
+     "lines": [
+      ["amei", {"zh": "出針之後的收尾，順序不能亂。", "en": "The tidy-up after withdrawal has an order, and it does not change."}]
+     ],
+     "mini": {"type": "order", "q": {"zh": "出針後的收尾順序", "en": "The order after the needles come out"},
+      "steps": [
+       {"zh": "核對出針數與進針數相符", "en": "Check needles out equals needles in"},
+       {"zh": "針直接放入銳器盒，不回套", "en": "Straight into the sharps box, no recapping"},
+       {"zh": "檢查針孔，出血處按壓", "en": "Inspect the sites, press any bleeding"},
+       {"zh": "記錄針數、穴位與病人反應", "en": "Record count, points and the patient's response"}
+      ]},
+     "post": [
+      ["amei", {"zh": "記錄寫「無不良反應」之前，要真的問過他。", "en": "Before you write “no adverse reaction”, you actually ask him."}]
+     ]},
+    {"id": "o3", "to": "akai", "guide": {"zh": "給阿凱衛教", "en": "Give A-Kai his advice"},
+     "lines": [
+      ["me", {"zh": "回去熱敷，枕頭別太高，別對著冷氣睡。手麻、發燒、無力，馬上回來。", "en": "Warm compress at home, pillow not too high, no air-con blowing on your neck. Numb arms, fever or weakness: come straight back."}],
+      ["akai", {"zh": "那沙發……", "en": "And the sofa…"}],
+      ["me", {"zh": "沙發不是床。", "en": "The sofa is not a bed."}],
+      ["akai", {"zh": "好啦。", "en": "Fine."}]
+     ],
+     "item": "edu-sheet"}
+   ]},
+  {"id": "xiuying", "name": {"zh": "秀英阿姨", "en": "Auntie Xiu-Ying"}, "sub": {"zh": "14:00 · 一號治療床", "en": "14:00 · couch 1"}, "t": 840, "mood": "day",
+   "note": {"zh": "秀英阿姨：暈針，處理得當", "en": "Auntie Xiu-Ying: needle faint, handled well"},
+   "beats": [
+    {"id": "x1", "to": "xiuying", "guide": {"zh": "請秀英阿姨到治療床", "en": "Bring Auntie Xiu-Ying to the couch"},
+     "lines": [
+      ["xiuying", {"zh": "醫師，老樣子，肩膀硬得像石頭。我早上顧攤忙到沒吃。", "en": "Doctor, same as ever, shoulders like rock. Too busy at the stall to eat this morning."}],
+      ["me", {"zh": "沒吃早餐？那午餐呢？", "en": "No breakfast? What about lunch?"}],
+      ["xiuying", {"zh": "也沒。先針，等一下再吃。", "en": "Neither. Needles first, I'll eat after."}],
+      ["zhou", {"zh": "記住她這句話。肩井在肩上，下面是什麼？", "en": "Remember what she just said. Jianjing sits on the shoulder; what lies beneath it?"}],
+      ["me", {"zh": "肺尖。不能深刺。", "en": "The lung apex. No deep needling."}]
+     ],
+     "mini": {"type": "stage", "case": "acupuncture-technique-angle-depth-workflow", "stage": 4},
+     "post": [
+      ["zhou", {"zh": "肩頸胸背的角度和深度不是技巧，是安全。依穴位標準深度，不多一分。", "en": "On the shoulders, chest and back, angle and depth are not technique, they are safety. Standard depth for the point, not a fraction more."}]
+     ]},
+    {"id": "x2", "to": "xiuying", "guide": {"zh": "練習背部斜刺", "en": "Practise oblique needling on the back"},
+     "lines": [
+      ["zhou", {"zh": "肺俞在胸膜危險區。斜刺，針尖朝脊柱，不往深處追感覺。", "en": "Feishu is in the pleural danger zone. Oblique, tip towards the spine, and never chase sensation deeper."}]
+     ],
+     "mini": {"type": "drill", "template": "acupuncture-technique", "drill": "needle:back"},
+     "post": [
+      ["amei", {"zh": "阿姨，會酸就說，不要忍。", "en": "Auntie, say so when it aches. Don't just bear it."}],
+      ["xiuying", {"zh": "我這個人最會忍……", "en": "Bearing things is what I'm best at…"}]
+     ]},
+    {"id": "x3", "to": "xiuying", "guide": {"zh": "留針時看著阿姨", "en": "Watch Auntie during retention"},
+     "lines": [
+      ["sys", {"zh": "留針沒多久，阿姨臉色發白，額頭冒汗。「頭暈……想吐。」", "en": "Not long into needle retention, Auntie goes pale and her forehead beads with sweat. “Dizzy… I feel sick.”"}],
+      ["amei", {"zh": "醫師！", "en": "Doctor!"}]
+     ],
+     "mini": {"type": "vitals", "event": "hypotension",
+      "options": [
+       {"zh": "立刻全部出針，平臥抬腿，保暖，監測並通知醫師", "en": "Withdraw all needles, lie flat with legs raised, keep warm, monitor, tell the doctor", "ok": true,
+        "why": {"zh": "暈針的第一步永遠是出針與平臥；大多數人幾分鐘內恢復，恢復前不離開視線。", "en": "The first step in a needle faint is always needles out and lying flat; most recover within minutes and stay in sight until they do."}},
+       {"zh": "扶她坐起來喝溫水", "en": "Sit her up with warm water", "ok": false,
+        "why": {"zh": "坐起更容易昏倒跌傷。先躺，醒了再喝。", "en": "Sitting up makes collapse and a fall more likely. Lie down first, drink when recovered."}},
+       {"zh": "繼續留針，等她好轉", "en": "Keep the needles in and wait", "ok": false,
+        "why": {"zh": "針還在，刺激還在。出針是處理暈針的第一個動作。", "en": "While the needles stay, the stimulus stays. Withdrawal is the first act in handling a faint."}}
+      ]},
+     "post": [
+      ["zhou", {"zh": "暈針。空腹、疲勞、緊張、坐姿、第一次，都是危險因子。她早上就告訴你了。", "en": "A needle faint. Fasting, fatigue, anxiety, sitting up, first time: all risk factors. She told you this morning."}],
+      ["xiuying", {"zh": "我說我沒吃嘛……", "en": "I did say I hadn't eaten…"}],
+      ["amei", {"zh": "餅乾。躺好再吃。", "en": "Biscuits. Once you're settled lying down."}]
+     ]}
+   ]},
+  {"id": "ward", "name": {"zh": "病房會診電話", "en": "Ward consult call"}, "sub": {"zh": "16:30 · 治療室電話", "en": "16:30 · the room phone"}, "t": 990, "mood": "day",
+   "note": {"zh": "抗凝血劑：相對禁忌，先討論", "en": "Anticoagulant: relative contraindication, discuss first"},
+   "beats": [
+    {"id": "w1",
+     "ring": {"title": {"zh": "病房來電", "en": "Ward calling"}, "sub": {"zh": "7 床想針灸治腰痛，在吃抗凝血劑", "en": "Bed 7 wants acupuncture for back pain; on an anticoagulant"}, "call": true, "from": "ward-nurse"},
+     "lines": [
+      ["ward-nurse", {"zh": "7 床腰痛想針灸。他有心房顫動，在吃抗凝血劑。可以嗎？", "en": "Bed 7 has back pain and wants acupuncture. He has atrial fibrillation and takes an anticoagulant. Can you?"}],
+      ["zhou", {"zh": "你回答。", "en": "You answer."}]
+     ],
+     "mini": {"type": "choice", "q": {"zh": "吃抗凝血劑的住院病人想針灸。你怎麼回？", "en": "An inpatient on an anticoagulant wants acupuncture. Your answer?"},
+      "options": [
+       {"zh": "先和主治討論凝血狀況，再決定淺刺或不針", "en": "Discuss clotting with the attending, then shallow needling or none", "ok": true,
+        "why": {"zh": "出血傾向是相對禁忌：看凝血與血小板，避開深部與大血管，出針多壓一會兒。", "en": "Bleeding tendency is a relative contraindication: check clotting and platelets, avoid deep points and large vessels, press longer after withdrawal."}},
+       {"zh": "可以，針灸很安全", "en": "Yes, acupuncture is safe", "ok": false,
+        "why": {"zh": "一般安全，不代表每個人都一樣。深部血腫在抗凝的病人不是小事。", "en": "Generally safe is not the same as safe for everyone. A deep haematoma in an anticoagulated patient is no small thing."}},
+       {"zh": "絕對不能針", "en": "Absolutely not", "ok": false,
+        "why": {"zh": "這是相對禁忌，不是絕對禁忌。評估之後常常可以做。", "en": "It is a relative, not an absolute, contraindication. After assessment it is often possible."}}
+      ]},
+     "post": [
+      ["zhou", {"zh": "相對禁忌的意思是：先想清楚，再做。不是不做。", "en": "Relative contraindication means think it through first, then act. Not “don't”."}]
+     ]}
+   ]},
+  {"id": "handover", "name": {"zh": "交班與師傅的話", "en": "Handover and the mentor"}, "sub": {"zh": "17:30 · 治療排程白板", "en": "17:30 · the treatment board"}, "t": 1050, "mood": "eve",
+   "note": {"zh": "交班完成：先數針", "en": "Handover done: count the needles first"},
+   "beats": [
+    {"id": "h1", "to": "zhou", "guide": {"zh": "找周醫師交班", "en": "Hand over to Dr Zhou"},
+     "lines": [
+      ["zhou", {"zh": "今天最重要的一件事？", "en": "The most important thing today?"}],
+      ["me", {"zh": "暈針的危險因子，病人自己會告訴你。只要你有聽。", "en": "The patient tells you their own needle-faint risk factors. If you listen."}],
+      ["zhou", {"zh": "還有？", "en": "And?"}],
+      ["me", {"zh": "遠道取穴配合活動。還有肺尖。", "en": "Distal points with movement. And the lung apex."}],
+      ["zhou", {"zh": "還有針盤。明天還是先數針。去洗手。", "en": "And the tray. Tomorrow you still count the needles first. Go and wash your hands."}]
+     ]},
+    {"id": "h2", "to": "place:sink", "guide": {"zh": "洗手，下班", "en": "Wash your hands, go home"},
+     "lines": [
+      ["sys", {"zh": "洗手台的水有點冷。隔簾一張張拉上，紅外線燈一盞盞關掉。", "en": "The water at the sink is a little cold. The curtains close one by one, the infrared lamps go off one by one."}],
+      ["amei", {"zh": "餅乾剩最後一包。你今天有吃午餐嗎？", "en": "Last packet of biscuits. Did you eat lunch today?"}]
+     ]}
+   ]},
+  {"id": "night", "name": {"zh": "夜間訊息", "en": "Night message"}, "sub": {"zh": "21:30 · 值班室", "en": "21:30 · on-call room"}, "t": 1290, "mood": "night",
+   "note": {"zh": "阿凱：今晚睡床", "en": "A-Kai: sleeping in a bed tonight"},
+   "beats": [
+    {"id": "n1",
+     "ring": {"title": {"zh": "阿凱傳訊息", "en": "Message from A-Kai"}, "sub": {"zh": "頭可以轉了！附一張轉頭貼圖", "en": "Head turns! With a head-turning sticker"}, "call": false, "from": "akai"},
+     "lines": [
+      ["akai", {"zh": "醫師，頭可以轉了。我今晚睡床，枕頭換矮的。", "en": "Doctor, my head turns. Sleeping in the bed tonight, swapped for a lower pillow."}],
+      ["me", {"zh": "很好。別對著冷氣。", "en": "Good. Not under the air-con."}],
+      ["sys", {"zh": "周醫師的訊息晚一點才進來：「明天的針盤，還是先數針。」", "en": "Dr Zhou's message comes in later: “Tomorrow's tray: count the needles first.”"}]
+     ],
+     "end": true}
+   ]}
+ ],
+ "ending": {"title": {"zh": "下班了", "en": "End of shift"}, "sub": {"zh": "乾淨、安全，然後才是手法", "en": "Clean, safe, and only then technique"},
+  "stats": ["stages", "drills", "choices", "calls", "items", "time"]}
+}

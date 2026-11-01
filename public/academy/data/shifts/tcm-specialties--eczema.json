@@ -1,0 +1,259 @@
+{
+ "format": "huatuo-shift-v2",
+ "department": "tcm-specialties",
+ "case": "eczema",
+ "caseTitle": {"zh": "抓不完的癢", "en": "The itch that never ends"},
+ "condition": {"zh": "皮膚科 · 濕疹", "en": "Dermatology · eczema"},
+ "difficulty": 3,
+ "title": {"zh": "中醫皮膚科：濕疹門診", "en": "TCM dermatology: an eczema clinic"},
+ "tagline": {"zh": "一雙裂開的手，一張不該起水泡的臉", "en": "Cracked hands, and a face that should never have blistered"},
+ "room": "tcm-clinic",
+ "minutes": 25,
+ "roles": [
+  {"id": "intern", "zh": "中醫見習醫師", "en": "TCM clinical clerk",
+   "desc": {"zh": "看皮損、分急慢性、看舌摸脈；認出長在濕疹上的危險。和西醫治療並行，不叫人停藥。", "en": "Read the skin, sort acute from chronic, look at tongue and pulse; spot the danger that grows on top of eczema. Work alongside Western treatment; never tell anyone to stop it."}},
+  {"id": "nurse", "zh": "皮膚衛教護理師", "en": "Skin-care nurse educator",
+   "desc": {"zh": "保濕衛教、手套與洗手方法、外用藥試敷是你的；家長的焦慮，也是你的。", "en": "Moisturising lessons, gloves and hand-washing, patch-testing topical products are yours; so is the parents' anxiety."}}
+ ],
+ "cast": {
+  "master": {"name": {"zh": "葉醫師", "en": "Dr Yeh"}, "role": {"zh": "中醫皮膚科主治（師傅）", "en": "TCM dermatology attending (mentor)"}, "tag": "SF", "color": "#81296d", "body": "mentor",
+   "about": {"zh": "說話溫柔，看皮膚時會戴上老花眼鏡、拉近放大燈。名言：「皮膚是內臟的鏡子；但鏡子著火了，先滅火。」", "en": "Softly spoken; puts on her reading glasses and pulls the magnifier lamp close to look at skin. Her line: the skin mirrors the organs, but when the mirror catches fire, put the fire out first."}},
+  "amei": {"name": {"zh": "阿美護理師", "en": "Nurse A-Mei"}, "role": {"zh": "皮膚衛教護理師", "en": "Skin-care nurse educator"}, "tag": "RN", "color": "#3b8f6a", "body": "nurse",
+   "about": {"zh": "包包裡有十幾種保濕乳液的試用包。教小朋友擦乳液時，會叫他們先在手背上堆一個雪人。", "en": "Carries samples of a dozen moisturisers. Teaches children to build a little snowman of cream on the back of the hand before spreading it."}},
+  "lin": {"name": {"zh": "林小姐", "en": "Ms Lin"}, "role": {"zh": "髮型設計師，手部濕疹", "en": "Hairdresser, hand eczema"}, "tag": "P1", "color": "#c2703a", "body": "patient",
+   "about": {"zh": "虛構教學個案。三十二歲，開了一家小髮廊。雙手濕疹反覆好幾年，指縫裂開，晚上癢到抓破。每天洗頭洗到手泡皺。", "en": "Fictional teaching case. Thirty-two, runs a small hair salon. Eczema on both hands for years, cracks between the fingers, scratching until they bleed at night. Her hands spend all day in shampoo and water."}},
+  "enen": {"name": {"zh": "小恩", "en": "En-En"}, "role": {"zh": "六歲，異位性皮膚炎", "en": "Six, atopic dermatitis"}, "tag": "P2", "color": "#b5651d", "body": "patient",
+   "about": {"zh": "虛構教學個案。嬰兒時期就有異位性皮膚炎。最愛恐龍，每一隻的名字都會唸，包括很長的那種。", "en": "Fictional teaching case. Atopic dermatitis since infancy. Loves dinosaurs and can pronounce every one of them, including the very long ones."}},
+  "mother": {"name": {"zh": "小恩的媽媽", "en": "En-En's mother"}, "role": {"zh": "家屬，陪同就診", "en": "His mother"}, "tag": "FAM", "color": "#8a6d3b", "body": "family",
+   "about": {"zh": "很怕類固醇，網路看了很多。上週把皮膚科開的藥膏停了，改擦朋友送的「純天然草本膏」。", "en": "Frightened of steroids after a lot of reading online. Last week she stopped the dermatologist's cream and switched to a friend's “all-natural herbal balm”."}},
+  "derm": {"name": {"zh": "兒童皮膚科住院醫師", "en": "Paediatric dermatology resident"}, "role": {"zh": "急診會診（電話）", "en": "Emergency consult (by phone)"}, "tag": "DR", "color": "#4a5d8a", "phoneOnly": true,
+   "about": {"zh": "說話快、謝謝講得更快。最常問：「有沒有靠近眼睛？」", "en": "Talks fast, thanks even faster. Always asks: “Is it near the eyes?”"}}
+ },
+ "places": {
+  "desk": {"name": {"zh": "脈枕診桌", "en": "Pulse desk"}, "hot": "pulse-desk"},
+  "lamp": {"name": {"zh": "放大燈與舌診燈", "en": "Magnifier and tongue lamp"}, "hot": "lamp"},
+  "couch": {"name": {"zh": "隔簾後的檢查床", "en": "Couch behind the curtain"}, "hot": "couch"},
+  "cabinet": {"name": {"zh": "藥材標本櫃", "en": "Herb specimen cabinet"}, "hot": "cabinet"},
+  "sink": {"name": {"zh": "洗手台", "en": "Hand-wash sink"}, "hot": "sink"},
+  "chart": {"name": {"zh": "病歷架", "en": "Chart rack"}, "hot": "chart"}
+ },
+ "glossary": [
+  {"term": {"zh": "濕瘡", "en": "damp sore"}, "plain": {"zh": "中醫對濕疹的稱呼。皮疹多樣、對稱、劇癢、容易滲水、反覆發作，中醫認為與風、濕、熱、血虛有關。", "en": "The TCM name for eczema: varied, symmetrical, intensely itchy rashes that weep easily and keep coming back; TCM links them with wind, damp, heat and blood deficiency."}},
+  {"term": {"zh": "異位性皮膚炎", "en": "atopic dermatitis"}, "plain": {"zh": "最常見的一種濕疹，常從嬰幼兒開始，皮膚屏障先天比較弱，容易乾、癢，常合併過敏性鼻炎或氣喘。", "en": "The commonest kind of eczema, often starting in infancy. The skin barrier is weaker from birth, so skin is dry and itchy, often alongside hay fever or asthma."}},
+  {"term": {"zh": "苔蘚化", "en": "lichenification"}, "plain": {"zh": "長期抓、長期發炎後，皮膚變厚、變粗、紋路變深，像樹皮。是慢性濕疹的樣子。", "en": "After long scratching and inflammation the skin thickens, coarsens and its lines deepen like bark. The look of chronic eczema."}},
+  {"term": {"zh": "血虛風燥", "en": "blood deficiency with wind-dryness"}, "plain": {"zh": "中醫的慢性濕疹證型：病久耗血，血虛不能滋養皮膚，於是乾燥、增厚、脫屑、裂口、夜間癢甚。", "en": "A TCM pattern of chronic eczema: long illness drains the blood, which can no longer moisten the skin, so it turns dry, thick, scaly and cracked, itching most at night."}},
+  {"term": {"zh": "濕熱浸淫", "en": "damp-heat soaking"}, "plain": {"zh": "中醫的急性濕疹證型：皮膚潮紅、水泡、滲水、糜爛、灼熱劇癢，舌紅苔黃膩。", "en": "A TCM pattern of acute eczema: red skin, blisters, weeping, raw patches, burning itch, a red tongue with a greasy yellow coat."}},
+  {"term": {"zh": "治風先治血", "en": "to treat wind, first treat blood"}, "plain": {"zh": "中醫名句，下一句是「血行風自滅」。癢在中醫屬「風」，慢性的癢從養血、活血著手，常取血海。", "en": "A TCM maxim that continues “when blood moves, wind dies down by itself”. Itch belongs to wind in TCM; chronic itch is approached by nourishing and moving blood, often through Xuehai."}},
+  {"term": {"zh": "裂紋舌", "en": "cracked tongue"}, "plain": {"zh": "舌面上有深淺不一的裂溝。中醫認為多見於陰血不足、津液虧損，但也有人天生就有，要配合其他表現判斷。", "en": "Fissures of varying depth across the tongue. In TCM reasoning often a sign of deficient yin, blood and fluids, though some people are born with it, so read it alongside everything else."}},
+  {"term": {"zh": "保濕劑", "en": "emollient"}, "plain": {"zh": "修補皮膚屏障的乳液或乳霜，是所有濕疹治療的基礎。洗完手、洗完澡趁皮膚還微濕時擦，擦得夠厚。", "en": "A lotion or cream that repairs the skin barrier: the foundation of all eczema treatment. Apply generously after washing, while the skin is still slightly damp."}},
+  {"term": {"zh": "類固醇藥膏", "en": "steroid cream"}, "plain": {"zh": "皮膚科常用的抗發炎外用藥。依醫師指示的強度、部位、時間使用是安全的；自行亂擦或突然停用都可能出問題。", "en": "The anti-inflammatory cream dermatologists use most. Used at the strength, site and duration the doctor sets it is safe; using it haphazardly or stopping it abruptly can cause trouble."}},
+  {"term": {"zh": "卡波西水痘樣疹", "en": "eczema herpeticum"}, "plain": {"zh": "濕疹皮膚被疱疹病毒感染：一群一群、大小一致、中間凹陷的小水泡或糜爛，會痛、擴散很快，常伴發燒。是急症，要當天就醫用抗病毒藥。", "en": "Herpes virus infecting eczematous skin: clusters of uniform, punched-out little blisters or erosions that hurt and spread fast, often with fever. An emergency needing same-day antiviral treatment."}},
+  {"term": {"zh": "試敷", "en": "patch test"}, "plain": {"zh": "新的外用藥先擦在手臂內側一小塊，觀察有沒有紅、癢、起疹，再決定能不能用在大面積或臉上。", "en": "A new topical product goes on a small patch of the inner arm first to watch for redness, itch or rash before it is used widely or on the face."}},
+  {"term": {"zh": "血海", "en": "Xuehai"}, "plain": {"zh": "大腿內側、膝蓋上方的脾經穴，名字就是「血之海」。中醫認為善治血分的病，與「治風先治血」的思路相連。", "en": "A spleen-channel point on the inner thigh above the knee; its name means “sea of blood”. In TCM reasoning it treats disorders of the blood, linked to the maxim about treating wind through blood."}},
+  {"term": {"zh": "曲池", "en": "Quchi"}, "plain": {"zh": "手肘彎曲時肘橫紋外側端的凹陷，大腸經合穴。中醫認為能清熱、祛風止癢，皮膚病常用。", "en": "The hollow at the outer end of the elbow crease when the elbow is bent: the sea point of the large-intestine channel. In TCM reasoning it clears heat and dispels wind to stop itch; common in skin disease."}}
+ ],
+ "codex": [
+  {"id": "magnifier", "kind": "equipment", "name": {"zh": "放大燈與舌診燈", "en": "Magnifier and tongue lamp"}, "text": {"zh": "日光色的燈，看皮損的顏色、邊界、水泡、滲出，也看舌色。燈光不對，紅的會看成紫的。", "en": "Daylight-coloured light for the colour, edges, blisters and weeping of a rash, and for the tongue. Wrong light makes red look purple."}, "hot": "lamp"},
+  {"id": "glove-kit", "kind": "equipment", "name": {"zh": "棉手套與防水手套", "en": "Cotton liners and waterproof gloves"}, "text": {"zh": "碰水、碰洗髮精的工作戴防水手套，裡面先戴一層棉手套吸汗。晚上厚擦保濕，再戴棉手套睡覺。", "en": "Waterproof gloves for wet work and shampoo, with cotton liners underneath to soak up sweat. At night a thick layer of emollient under cotton gloves."}, "hot": "sink"},
+  {"id": "dino-sticker", "kind": "item", "name": {"zh": "小恩的恐龍貼紙", "en": "En-En's dinosaur sticker"}, "text": {"zh": "阿美給他的：一隻長脖子的恐龍。他說要貼在醫院手環上，「這樣醫生就知道我很勇敢」。", "en": "From Nurse A-Mei: a long-necked dinosaur. He wants it on his hospital wristband “so the doctors know I'm brave”."}},
+  {"id": "eczema-stages", "kind": "concept", "name": {"zh": "濕瘡辨證：急性、亞急性、慢性", "en": "Eczema patterns: acute, subacute, chronic"}, "text": {"zh": "急性：紅、腫、水泡、滲出、灼熱劇癢，中醫多辨濕熱浸淫，外治用清熱燥濕的溶液冷濕敷。亞急性：滲出減少、結痂脫屑，多屬脾虛濕蘊，健脾利濕。慢性：皮膚增厚、苔蘚化、乾裂、夜癢，多屬血虛風燥，養血潤燥、祛風止癢，外用油膏保濕。中醫外治講「急性用溶液、亞急性用糊劑、慢性用膏」，乾對乾、濕對濕。辨證是方向，劑型與處方由醫師依個人決定。", "en": "Acute: red, swollen, blistered, weeping, burning itch; TCM usually reads damp-heat and uses cool wet compresses of heat-clearing, damp-drying solutions. Subacute: less weeping, crusting and scaling; spleen deficiency with damp, so strengthen the spleen and drain damp. Chronic: thick, lichenified, cracked skin itching at night; blood deficiency with wind-dryness, so nourish blood, moisten dryness, dispel wind, with ointments to seal moisture. TCM external rules: solutions for acute, pastes for subacute, ointments for chronic; dry treats dry and wet treats wet. Patterns give direction; the physician sets the form and prescription for each person."}},
+  {"id": "steroid-fear", "kind": "concept", "name": {"zh": "類固醇恐懼與中西整合", "en": "Steroid fear and integrated care"}, "text": {"zh": "很多家長害怕類固醇，於是自行停藥，濕疹反彈、抓破、感染。醫師依部位與年齡選擇適當強度、短期使用，加上保濕，是有實證的安全做法。所謂「純天然」的藥膏可能含有未標示的類固醇或致敏成分，來源不明就先停、帶來檢查。中醫可以作為輔助：體質調理、飲食作息、外用保濕與止癢，但要和皮膚科醫師同步，不取代、不叫人停藥。尊重家長的擔心，解釋，再一起做計畫。", "en": "Many parents fear steroids and stop them on their own; the eczema rebounds, is scratched raw and gets infected. Appropriate strengths for the site and age, used in short courses with emollients, are a safe, evidence-based approach. So-called “all-natural” balms may contain undeclared steroids or sensitisers; stop any of unknown origin and bring it in for checking. TCM can complement care through constitution, diet and routine, moisturising and soothing topicals, but in step with the dermatologist, never replacing them or telling anyone to stop. Respect the parent's fear, explain, then plan together."}},
+  {"id": "eczema-flags", "kind": "concept", "name": {"zh": "濕疹上的紅旗", "en": "Red flags on eczema"}, "text": {"zh": "卡波西水痘樣疹：一群群中間凹陷的小水泡或糜爛、會痛、擴散快、發燒，當天急診抗病毒，靠近眼睛要看眼科。細菌感染：黃色結痂、流膿、紅腫熱痛擴大、發燒。紅皮症：全身大片發紅脫屑、怕冷發抖。這些都不是加強濕敷或加中藥能處理的，先轉診。另外，病灶單側、邊界清楚不對稱、久治不癒的「濕疹」，要想到黴菌或其他皮膚病，請皮膚科確認。", "en": "Eczema herpeticum: clusters of punched-out blisters or erosions that hurt, spread fast and bring fever: same-day emergency antivirals, and an eye review if near the eyes. Bacterial infection: honey-coloured crusts, pus, spreading redness and heat, fever. Erythroderma: red, peeling skin over most of the body with chills. None of these is fixed by more compresses or more herbs: refer first. And “eczema” that is one-sided, sharply bordered, asymmetrical or never heals may be fungal or something else entirely; ask a dermatologist."}},
+  {"id": "hand-care", "kind": "concept", "name": {"zh": "手部濕疹：工作中的皮膚保護", "en": "Hand eczema: protecting skin at work"}, "text": {"zh": "美髮、餐飲、醫療、清潔工作的手長時間碰水和清潔劑，皮膚屏障被一點一點洗掉。做法：碰水工作戴防水手套、裡面加棉手套；用溫水不用熱水、短洗、拍乾；每次洗完立刻擦保濕；晚上厚擦再戴棉手套；找出並避開致敏的成分（例如某些染髮劑），必要時轉皮膚科做貼膚測試。中醫認為久病耗血、血虛生風化燥，內調養血潤燥，外護屏障，兩邊一起做。", "en": "Hairdressers, kitchen, healthcare and cleaning workers keep their hands in water and detergents, and the barrier is washed away bit by bit. So: waterproof gloves with cotton liners for wet work; warm not hot water, short washes, pat dry; emollient straight after every wash; a thick layer under cotton gloves at night; identify and avoid sensitisers such as some hair dyes, with patch testing by a dermatologist if needed. TCM holds that long illness drains blood and blood deficiency breeds wind and dryness: nourish and moisten from within, protect the barrier from without, both at once."}}
+ ],
+ "segs": [
+  {"id": "morning", "name": {"zh": "晨會：乾對乾，濕對濕", "en": "Morning: dry for dry, wet for wet"}, "sub": {"zh": "08:30 · 脈枕診桌", "en": "08:30 · pulse desk"}, "t": 510, "mood": "day",
+   "note": {"zh": "晨會：濕瘡三期", "en": "Morning: three stages of eczema"},
+   "beats": [
+    {"id": "m1", "to": "master", "guide": {"zh": "聽葉醫師晨會", "en": "Join Dr Yeh's morning meeting"},
+     "lines": [
+      ["sys", {"zh": "中醫診間的標本櫃旁，阿美把十幾種保濕乳液的試用包排成一排，像一盒彩色糖果。", "en": "Beside the specimen cabinet A-Mei lines up a dozen moisturiser samples like a box of coloured sweets."}],
+      ["master", {"zh": "濕疹中醫叫濕瘡。急性、亞急性、慢性，皮膚長什麼樣子？", "en": "TCM calls eczema damp sore. Acute, subacute, chronic: what does the skin look like in each?"}],
+      ["me", {"zh": "急性紅腫、水泡、滲水；亞急性結痂脫屑；慢性變厚、乾裂、苔蘚化。", "en": "Acute: red, swollen, blistered, weeping. Subacute: crusts and scales. Chronic: thick, cracked, lichenified."}],
+      ["master", {"zh": "外治的口訣：急性用溶液、慢性用膏。乾對乾，濕對濕。先把放大燈準備好。", "en": "The external rule: solutions for acute, ointments for chronic. Dry for dry, wet for wet. Now get the magnifier ready."}]
+     ],
+     "mini": {"type": "find", "hot": "lamp", "q": {"zh": "找到放大燈與舌診燈", "en": "Find the magnifier and tongue lamp"}},
+     "post": [
+      ["master", {"zh": "日光色。燈光不對，紅的會看成紫的，濕熱會看成血瘀。", "en": "Daylight colour. Wrong light makes red look purple, and damp-heat look like stasis."}]
+     ]},
+    {"id": "m2", "to": "amei", "guide": {"zh": "看今天的掛號", "en": "Check today's list"},
+     "lines": [
+      ["amei", {"zh": "早上林小姐，髮型設計師，手部濕疹複診。下午小恩，六歲，異位性皮膚炎。媽媽電話裡說「最近臉上冒出很多小水泡」。", "en": "This morning, Ms Lin, a hairdresser, hand eczema follow-up. This afternoon En-En, six, atopic dermatitis. His mum said on the phone that “lots of little blisters have popped up on his face lately”."}],
+      ["master", {"zh": "「臉上很多小水泡」。這一句，下午之前你要先想好可能是什麼。", "en": "“Lots of little blisters on his face.” Before the afternoon, think through what that could be."}]
+     ]}
+   ]},
+  {"id": "lin", "name": {"zh": "林小姐的手", "en": "Ms Lin's hands"}, "sub": {"zh": "09:00 · 脈枕診桌", "en": "09:00 · pulse desk"}, "t": 540, "mood": "day",
+   "note": {"zh": "林小姐：血虛風燥、曲池血海", "en": "Ms Lin: blood deficiency, Quchi and Xuehai"},
+   "beats": [
+    {"id": "l1", "to": "lin", "guide": {"zh": "看林小姐的手", "en": "Look at Ms Lin's hands"},
+     "lines": [
+      ["lin", {"zh": "一天洗十幾顆頭，手泡到皺。指縫一直裂，晚上癢到抓破，早上床單上有血點。", "en": "A dozen or more heads a day; my hands are always pruney. The gaps between my fingers keep splitting, the itch at night makes me scratch till they bleed, and there are blood spots on the sheets in the morning."}],
+      ["me", {"zh": "在放大燈下看：手指和手掌的皮膚變厚、紋路很深、乾裂，沒有流膿、沒有水泡。這是苔蘚化，慢性期。", "en": "Under the magnifier: the skin of the fingers and palms is thick, the lines deep, dry and cracked; no pus, no blisters. Lichenification: the chronic stage."}],
+      ["master", {"zh": "有沒有黃色結痂、紅腫擴大、發燒？最近有換染劑嗎？", "en": "Any honey-coloured crusts, spreading redness, fever? Any new hair dye lately?"}],
+      ["lin", {"zh": "都沒有。染劑……上個月換了一個新牌子，好像那之後更嚴重。", "en": "None of those. The dye… I switched brands last month, and it seems worse since."}]
+     ]},
+    {"id": "l2", "roles": ["intern"], "to": "place:lamp", "guide": {"zh": "調好舌診燈的角度", "en": "Set the tongue lamp angle"},
+     "lines": [
+      ["master", {"zh": "看舌之前先調燈：日光色、從前上方照、不要反光。請她舌頭自然伸出，不要用力。", "en": "Set the lamp before the tongue: daylight, from above and in front, no glare. Ask her to put her tongue out naturally, without straining."}]
+     ],
+     "mini": {"type": "drill", "template": "tcm-specialties", "drill": "tongue"},
+     "post": [
+      ["master", {"zh": "伸太用力，舌色會變紅；伸太久，舌會乾。看舌要快。", "en": "Straining reddens the tongue; leaving it out too long dries it. Look quickly."}]
+     ]},
+    {"id": "l3", "to": "lin", "guide": {"zh": "看林小姐的舌頭", "en": "Look at Ms Lin's tongue"},
+     "lines": [
+      ["lin", {"zh": "啊——。這樣可以嗎？", "en": "Aaah. Like this?"}]
+     ],
+     "mini": {"type": "tongue", "q": {"zh": "舌淡、苔薄白、舌面有裂紋。怎麼讀？", "en": "Pale tongue, thin white coat, fissures across the surface. How do you read it?"}, "tongue": {"body": "pale", "coat": "thin-white", "shape": "cracked"},
+      "options": [
+       {"zh": "血虛風燥：舌淡有裂紋", "en": "Blood deficiency with wind-dryness", "ok": true, "why": {"zh": "舌淡主血虛，裂紋主陰血不足、津液虧。配上皮膚乾厚、裂口、夜間癢甚，中醫辨為血虛風燥。", "en": "A pale tongue means blood deficiency, fissures mean deficient yin, blood and fluids. With dry thick skin, cracks and itching worst at night, TCM reads blood deficiency with wind-dryness."}},
+       {"zh": "濕熱浸淫：舌紅苔黃膩", "en": "Damp-heat soaking: red, greasy yellow", "ok": false, "why": {"zh": "濕熱是急性期的舌：紅、苔黃膩。她的舌淡、苔薄，皮膚是乾的不是濕的。", "en": "Damp-heat is the acute-stage tongue: red with a greasy yellow coat. Hers is pale with a thin coat, and her skin is dry, not weeping."}},
+       {"zh": "脾虛濕蘊：舌胖有齒痕", "en": "Spleen deficiency with damp", "ok": false, "why": {"zh": "脾虛濕蘊的舌偏胖、有齒痕、苔白膩。她的舌不胖。", "en": "Spleen-damp tongues are puffy, tooth-marked and greasy-white. Hers isn't puffy."}}
+      ]},
+     "post": [
+      ["master", {"zh": "裂紋舌也有人天生就有，所以要配皮膚和全身一起看。今天三個證據都指向同一個方向。", "en": "Some people are born with a cracked tongue, so read it with the skin and the whole person. Today all three point the same way."}]
+     ]},
+    {"id": "l4", "to": "place:chart", "guide": {"zh": "複習血虛風燥型", "en": "Review the blood-deficiency pattern"},
+     "lines": [
+      ["master", {"zh": "血虛風燥這一型，古方用當歸飲子。讀完，說說為什麼要「養血」來止癢。", "en": "For blood deficiency with wind-dryness the classical formula is Danggui Yinzi. Read, then tell me why nourishing blood stops itch."}]
+     ],
+     "mini": {"type": "stage", "case": "tcm-specialties-shiyi-skin-workflow", "stage": 4, "member": true},
+     "post": [
+      ["me", {"zh": "治風先治血，血行風自滅。血養足了，皮膚潤了，風就沒地方待。", "en": "To treat wind, first treat blood; when blood moves, wind dies down by itself. Nourish the blood, moisten the skin, and the wind has nowhere to stay."}]
+     ]},
+    {"id": "l5", "to": "place:cabinet", "guide": {"zh": "從標本櫃挑出養血潤燥的藥", "en": "Pick blood-nourishing herbs"},
+     "lines": [
+      ["master", {"zh": "處方和份量我依她的體質開。你從標本櫃裡挑：哪些是當歸飲子思路裡養血潤燥、祛風止癢的藥？", "en": "I'll write the prescription and amounts for her constitution. From the cabinet, pick the herbs that nourish blood, moisten dryness and dispel wind in the Danggui Yinzi approach."}]
+     ],
+     "mini": {"type": "herb", "q": {"zh": "選出養血潤燥、祛風止癢的藥", "en": "Select the herbs that nourish blood, moisten and dispel wind"}, "pick": ["當歸", "生地黃", "白芍", "何首烏", "白蒺藜", "防風"], "distractors": ["黃連", "大黃", "石膏", "龍膽"]},
+     "post": [
+      ["master", {"zh": "黃連、龍膽那一排苦寒，是急性濕熱用的。用在她又乾又裂的手上，會更乾。", "en": "Coptis and gentian are bitter and cold, for acute damp-heat. On her dry, cracked hands they would only dry things further."}]
+     ]},
+    {"id": "l6", "to": "lin", "guide": {"zh": "取曲池、血海、三陰交", "en": "Locate Quchi, Xuehai, Sanyinjiao"},
+     "lines": [
+      ["master", {"zh": "曲池清熱止癢，血海養血活血，三陰交調肝脾腎三陰。圖上點給我看。", "en": "Quchi clears heat and stops itch, Xuehai nourishes and moves blood, Sanyinjiao regulates the three yin of liver, spleen and kidney. Show me."}]
+     ],
+     "mini": {"type": "points", "q": {"zh": "點出曲池、血海、三陰交", "en": "Tap Quchi, Xuehai and Sanyinjiao"}, "codes": ["LI11", "SP10", "SP6"], "view": "front"},
+     "post": [
+      ["lin", {"zh": "按血海的時候，腿好熱。", "en": "When you pressed Xuehai my leg went all warm."}]
+     ]},
+    {"id": "l7", "to": "place:sink", "guide": {"zh": "排好手部照護的順序", "en": "Order the hand-care routine"},
+     "lines": [
+      ["amei", {"zh": "藥是一半，另一半是她每天洗幾十次手的方式。手部照護的順序你排給她看。", "en": "Medicine is half of it; the other half is how she washes her hands dozens of times a day. Order her hand-care routine."}]
+     ],
+     "mini": {"type": "order", "q": {"zh": "手部濕疹的日常照護", "en": "Daily care for hand eczema"},
+      "steps": [
+       {"zh": "工作先戴棉手套，再戴防水手套", "en": "Cotton liners, then waterproof gloves"},
+       {"zh": "用溫水短洗，不用熱水", "en": "Short washes in warm, not hot, water"},
+       {"zh": "輕輕拍乾，不用力搓", "en": "Pat dry; never rub hard"},
+       {"zh": "趁微濕立刻擦保濕劑", "en": "Emollient at once, skin still damp"},
+       {"zh": "依醫囑擦藥", "en": "Treatment cream as prescribed"},
+       {"zh": "睡前厚擦保濕，戴棉手套", "en": "Thick emollient and cotton gloves at night"}
+      ]},
+     "post": [
+      ["lin", {"zh": "原來我一直用熱水沖手，還用毛巾大力擦。難怪。", "en": "So I've been rinsing in hot water and scrubbing with the towel all along. No wonder."}]
+     ]},
+    {"id": "l8", "roles": ["nurse"], "to": "lin", "guide": {"zh": "教林小姐試敷與染劑", "en": "Patch tests and the new dye"},
+     "lines": [
+      ["me", {"zh": "新的外用藥，先在手臂內側試敷一小塊，觀察一兩天沒紅沒癢再用。染劑換回原本的牌子，必要時請皮膚科做貼膚測試。", "en": "Any new topical goes on a small patch of the inner arm first; if there's no redness or itch after a day or two, go ahead. Switch back to your old dye, and if needed the dermatologist can do patch testing."}],
+      ["lin", {"zh": "我回去先把新染劑收起來。還有，熱水器調低一點。", "en": "I'll put the new dye away tonight. And turn the water heater down."}]
+     ]}
+   ]},
+  {"id": "enen", "name": {"zh": "小恩的臉", "en": "En-En's face"}, "sub": {"zh": "14:00 · 隔簾後的檢查床", "en": "14:00 · couch behind the curtain"}, "t": 840, "mood": "day",
+   "note": {"zh": "小恩：停藥、草本膏、疱疹", "en": "En-En: stopped cream, herbal balm, herpes"},
+   "beats": [
+    {"id": "e1", "to": "mother", "guide": {"zh": "聽小恩媽媽說", "en": "Listen to En-En's mother"},
+     "lines": [
+      ["sys", {"zh": "小恩抱著一隻恐龍玩偶，臉一直往媽媽衣服裡埋。嘴角和臉頰有一片紅紅的。", "en": "En-En hugs a toy dinosaur and keeps burying his face in his mother's shirt. There's a red patch around his mouth and cheek."}],
+      ["mother", {"zh": "我上週把皮膚科的類固醇藥膏停了，我真的很怕。改擦朋友送的純天然草本膏，結果越來越紅。昨天開始臉上冒小水泡。", "en": "Last week I stopped the dermatologist's steroid cream; I'm truly scared of it. I switched to a friend's all-natural herbal balm, and he's got redder and redder. Since yesterday little blisters keep popping up on his face."}],
+      ["mother", {"zh": "醫生，可不可以只用中藥就好？", "en": "Doctor, can we just use Chinese medicine instead?"}]
+     ],
+     "mini": {"type": "choice", "q": {"zh": "媽媽想停掉皮膚科藥膏，只用中藥。", "en": "His mother wants to drop the dermatologist's cream and use only TCM."},
+      "options": [
+       {"zh": "理解擔心，中西並行，草本膏先停", "en": "Hear her fear; both together; stop the balm", "ok": true, "set": {"integrate": true}, "why": {"zh": "尊重她的害怕，解釋依醫囑使用類固醇的安全性；來源不明的草本膏可能含未標示的類固醇或致敏成分，先停並帶來檢查。中醫作輔助，和皮膚科同步。", "en": "Respect her fear and explain that steroids used as prescribed are safe; a balm of unknown origin may hide steroids or sensitisers, so stop it and bring it in. TCM complements, in step with the dermatologist."}},
+       {"zh": "好，停掉西藥，只用中藥", "en": "Fine: stop Western medicine, TCM only", "ok": false, "set": {"integrate": false}, "why": {"zh": "自行停藥是這次惡化的原因之一。中醫不取代皮膚科的治療。", "en": "Stopping on her own is one reason for this flare. TCM does not replace dermatology treatment."}},
+       {"zh": "責備她不該自己停藥", "en": "Tell her off for stopping", "ok": false, "set": {"integrate": false}, "why": {"zh": "責備只會讓她下次不敢說實話。先聽、再解釋、再一起計畫。", "en": "Scolding only teaches her to hide things next time. Listen, explain, then plan together."}}
+      ]}},
+    {"id": "e2", "to": "enen", "guide": {"zh": "在放大燈下看小恩的臉", "en": "Look at En-En's face under the lamp"},
+     "lines": [
+      ["me", {"zh": "小恩，我可以用這個恐龍燈看看你的臉嗎？……嘴角和臉頰是一群一群的小水泡，大小差不多，中間凹下去，有的破了。", "en": "En-En, can I look at your face with this dinosaur lamp? …Around his mouth and cheek: clusters of little blisters, all the same size, dimpled in the middle, some broken."}],
+      ["enen", {"zh": "會痛，不是癢。是痛。", "en": "It hurts. Not itchy. Hurts."}],
+      ["mother", {"zh": "昨晚還有發燒，我以為是感冒。", "en": "He had a fever last night too. I thought it was a cold."}],
+      ["master", {"zh": "一群群、中間凹陷、會痛、擴散快、發燒，長在濕疹上。你早上想好的那個答案是什麼？", "en": "Clusters, punched-out centres, painful, spreading fast, fever, on top of eczema. What was the answer you prepared this morning?"}],
+      ["me", {"zh": "卡波西水痘樣疹，濕疹皮膚被疱疹病毒感染。要當天急診用抗病毒藥。", "en": "Eczema herpeticum: herpes virus on eczematous skin. Same-day emergency, antivirals."}]
+     ]},
+    {"id": "e3", "to": "enen", "guide": {"zh": "小恩在發燒", "en": "En-En is feverish"},
+     "lines": [
+      ["amei", {"zh": "耳溫量到了，他在發燒，精神比剛剛差。", "en": "Ear temperature's in: he's feverish, and flatter than a moment ago."}]
+     ],
+     "mini": {"type": "vitals", "event": "fever",
+      "options": [
+       {"zh": "當天轉急診，不塗任何東西，防接觸", "en": "Emergency today, nothing on the skin, limit contact", "ok": true, "why": {"zh": "卡波西水痘樣疹是急症，要抗病毒治療。水泡上不擦藥膏、不濕敷；病毒會傳染，避免碰觸和接觸小嬰兒。靠近眼睛要請眼科看。", "en": "Eczema herpeticum is an emergency needing antivirals. Nothing on the blisters, no compresses; the virus spreads, so avoid touching and keep him away from babies. Near the eyes means an eye review."}},
+       {"zh": "用清熱解毒的中藥濕敷觀察", "en": "Herbal wet compress; observe", "ok": false, "why": {"zh": "濕敷在這裡會擴散病毒、延誤治療。這不是濕熱浸淫，是病毒感染。", "en": "A compress here spreads the virus and delays treatment. This is not damp-heat; it is a viral infection."}},
+       {"zh": "給退燒、回家，明天再看", "en": "Fever medicine, home, review tomorrow", "ok": false, "why": {"zh": "這種感染擴散很快，可能侵犯眼睛或變得更嚴重。不能等到明天。", "en": "This infection spreads fast and can reach the eyes or worsen. It cannot wait until tomorrow."}}
+      ]},
+     "post": [
+      ["mother", {"zh": "……是我停藥害的嗎？", "en": "…Did I cause this by stopping the cream?"}],
+      ["master", {"zh": "停藥讓皮膚屏障更差，病毒比較容易進去，但這不是誰的錯。現在最重要的是今天就治療，而且你帶他來了。", "en": "Stopping weakened the skin barrier and made it easier for the virus, but this is nobody's fault. What matters now is treatment today, and you brought him here."}]
+     ],
+     "set": {"en-sent": true}},
+    {"id": "e4", "roles": ["intern"], "to": "place:chart", "guide": {"zh": "寫轉診單", "en": "Write the referral"},
+     "lines": [
+      ["me", {"zh": "六歲異位性皮膚炎，上週自行停類固醇改用不明草本膏。昨起臉部群集凹陷性水泡、疼痛、發燒，疑卡波西水痘樣疹。未濕敷未用藥。", "en": "Six-year-old, atopic dermatitis; stopped topical steroid last week for a herbal balm of unknown origin. Since yesterday clustered punched-out facial blisters and erosions, painful, febrile: suspected eczema herpeticum. No compress or treatment given."}],
+      ["master", {"zh": "再加一句：草本膏請家屬帶去給醫師看成分。", "en": "Add: family asked to bring the herbal balm so its contents can be checked."}]
+     ]},
+    {"id": "e4n", "roles": ["nurse"], "to": "enen", "guide": {"zh": "安撫小恩和媽媽", "en": "Comfort En-En and his mother"},
+     "lines": [
+      ["me", {"zh": "小恩，你知道最勇敢的恐龍是哪一隻嗎？這張貼紙送你，貼在醫院手環上，醫生就知道你很勇敢。", "en": "En-En, do you know which dinosaur is the bravest? This sticker's yours. Put it on your hospital wristband so the doctors know you're brave."}],
+      ["enen", {"zh": "這是腕龍。它的脖子很長。", "en": "That's a Brachiosaurus. It has a very long neck."}],
+      ["me", {"zh": "媽媽，路上不要讓他摸臉，摸了要洗手。家裡如果有小嬰兒，先不要抱。", "en": "Mum, don't let him touch his face on the way, and wash hands if he does. If there's a baby at home, no cuddles for now."}]
+     ],
+     "item": "dino-sticker"}
+   ]},
+  {"id": "call", "name": {"zh": "急診會診回電", "en": "The consult calls back"}, "sub": {"zh": "17:00 · 病歷架", "en": "17:00 · chart rack"}, "t": 1020, "mood": "eve",
+   "note": {"zh": "小恩：住院抗病毒，眼睛沒事", "en": "En-En: admitted for antivirals, eyes clear"},
+   "beats": [
+    {"id": "c1", "when": {"flag": "en-sent", "is": true}, "to": "place:chart", "guide": {"zh": "接兒童皮膚科的電話", "en": "Take the dermatology call"},
+     "ring": {"title": {"zh": "兒童皮膚科來電", "en": "Paediatric dermatology"}, "sub": {"zh": "小恩的後續", "en": "About En-En"}, "call": true, "from": "derm"},
+     "lines": [
+      ["derm", {"zh": "有沒有靠近眼睛？……沒有，眼科看過了，眼睛沒事。確定是卡波西水痘樣疹，住院打抗病毒藥。", "en": "Near the eyes? …No, ophthalmology has checked; eyes are clear. Confirmed eczema herpeticum; admitted for antivirals."}],
+      ["derm", {"zh": "等感染控制好，我們會重新跟媽媽討論濕疹的藥。那罐草本膏，我們會送去驗。", "en": "Once the infection is controlled we'll go over his eczema treatment with his mother again. The herbal balm is going off for testing."}],
+      ["me", {"zh": "謝謝你們。媽媽很怕類固醇，麻煩多跟她解釋一點。", "en": "Thank you. His mum is very frightened of steroids; please explain it to her gently."}]
+     ]}
+   ]},
+  {"id": "debrief", "name": {"zh": "師傅的一句話", "en": "The master's word"}, "sub": {"zh": "18:00 · 脈枕診桌", "en": "18:00 · pulse desk"}, "t": 1080, "mood": "eve",
+   "note": {"zh": "鏡子著火，先滅火", "en": "When the mirror burns, put out the fire"},
+   "beats": [
+    {"id": "d1", "to": "master", "guide": {"zh": "聽師傅說", "en": "Hear the master out"},
+     "lines": [
+      ["master", {"zh": "今天兩個濕疹。一個要養血潤燥、慢慢來；一個連一滴濕敷都不能上。你怎麼分的？", "en": "Two eczemas today. One to nourish and moisten, slowly; one that could not take a single drop of compress. How did you tell them apart?"}],
+      ["me", {"zh": "林小姐是乾、厚、裂、夜癢，沒有感染。小恩是一群群凹陷的水泡、會痛、發燒，長在停藥後的濕疹上。", "en": "Ms Lin: dry, thick, cracked, itching at night, no infection. En-En: clusters of punched-out blisters, painful, feverish, on eczema left untreated."}],
+      ["master", {"zh": "皮膚是內臟的鏡子；鏡子著火了，先滅火。滅完火，再照鏡子。", "en": "The skin mirrors the organs; when the mirror catches fire, put the fire out first. Then look in the mirror."}]
+     ]}
+   ]},
+  {"id": "night", "name": {"zh": "媽媽的訊息", "en": "A message from Mum"}, "sub": {"zh": "21:30 · 值班室", "en": "21:30 · on-call room"}, "t": 1290, "mood": "night",
+   "note": {"zh": "小恩媽媽的訊息", "en": "En-En's mother writes"},
+   "beats": [
+    {"id": "n1", "when": {"flag": "integrate", "is": true}, "to": "place:chart", "guide": {"zh": "看小恩媽媽的訊息", "en": "Read the mother's message"},
+     "ring": {"title": {"zh": "家屬訊息", "en": "Family message"}, "sub": {"zh": "小恩媽媽：皮膚科醫師跟我做了計畫", "en": "En-En's mum: the dermatologist made a plan with me"}, "call": false, "from": "mother"},
+     "lines": [
+      ["sys", {"zh": "訊息：「小恩睡了，腕龍貼紙在手環上。皮膚科醫師跟我說了藥膏怎麼擦、擦多久。出院後，我想再帶他來調體質，可以嗎？」", "en": "Message: “En-En's asleep, Brachiosaurus on his wristband. The dermatologist explained how to use the cream and for how long. After discharge I'd like to bring him back for constitutional care. Is that OK?”"}],
+      ["me", {"zh": "回她：當然可以。我們會和皮膚科一起，藥膏照醫囑、保濕照阿美教的，中醫在旁邊幫忙。", "en": "Reply: Of course. We'll work with dermatology: the cream as prescribed, moisturising as A-Mei taught, and TCM alongside."}]
+     ]},
+    {"id": "n1b", "when": {"flag": "integrate", "is": false}, "to": "place:chart", "guide": {"zh": "看小恩媽媽的訊息", "en": "Read the mother's message"},
+     "ring": {"title": {"zh": "家屬訊息", "en": "Family message"}, "sub": {"zh": "小恩媽媽：我到底該聽誰的？", "en": "En-En's mum: who am I supposed to believe?"}, "call": false, "from": "mother"},
+     "lines": [
+      ["sys", {"zh": "訊息：「下午你們好像同意只用中藥，可是皮膚科醫師說要繼續擦藥膏。我到底該聽誰的？」", "en": "Message: “This afternoon you seemed to agree to TCM only, but the dermatologist says to keep using the cream. Who am I supposed to believe?”"}],
+      ["me", {"zh": "回她：對不起，下午我沒說清楚。請照皮膚科醫師的藥膏計畫，中醫只做輔助，我們會一起跟醫師配合。", "en": "Reply: I'm sorry, I wasn't clear this afternoon. Please follow the dermatologist's plan for the cream; TCM is only there to help, and we'll coordinate with the doctor together."}],
+      ["master", {"zh": "（訊息）明天早上，把「中西並行」寫在她病歷第一行。", "en": "(message) Tomorrow morning, put “integrated care” on the first line of her notes."}]
+     ]},
+    {"id": "n2", "to": "place:lamp", "guide": {"zh": "關掉放大燈", "en": "Switch off the magnifier"},
+     "lines": [
+      ["sys", {"zh": "你關掉放大燈。標本櫃上，阿美的保濕試用包還排成一排，旁邊多了一張恐龍貼紙，是小恩留給你的。", "en": "You switch off the magnifier. On the specimen cabinet A-Mei's moisturiser samples still stand in a row, and beside them is a dinosaur sticker En-En left for you."}]
+     ],
+     "end": true}
+   ]}
+ ],
+ "ending": {"title": {"zh": "下班了", "en": "End of shift"}, "sub": {"zh": "一雙慢慢潤回來的手，一張先滅火的臉", "en": "Hands slowly moistened, and a face whose fire came first"},
+  "stats": ["stages", "drills", "choices", "calls", "items", "time"]}
+}

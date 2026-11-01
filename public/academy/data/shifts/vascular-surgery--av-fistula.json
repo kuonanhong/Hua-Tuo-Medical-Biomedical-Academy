@@ -1,0 +1,1405 @@
+{
+ "format": "huatuo-shift-v2",
+ "department": "vascular-surgery",
+ "case": "av-fistula",
+ "caseTitle": {
+  "zh": "一條留給洗腎的靜脈",
+  "en": "A vein saved for dialysis"
+ },
+ "condition": {
+  "zh": "日間手術 · 洗腎瘻管",
+  "en": "Day surgery · dialysis fistula"
+ },
+ "difficulty": 1,
+ "room": "clinic",
+ "minutes": 22,
+ "title": {
+  "zh": "血管外科日間手術日",
+  "en": "Vascular surgery day-surgery list"
+ },
+ "tagline": {
+  "zh": "洗腎的人，手臂就是命",
+  "en": "For a dialysis patient, the arm is life"
+ },
+ "roles": [
+  {
+   "id": "resident",
+   "zh": "血管外科住院醫師",
+   "en": "Vascular surgery resident",
+   "desc": {
+    "zh": "日間手術日：一條要變成洗腎生命線的手腕靜脈。先保護它，再找到它，再把它接上動脈。",
+    "en": "A day-surgery day: one wrist vein that must become a dialysis lifeline. Protect it, find it, then join it to an artery."
+   }
+  },
+  {
+   "id": "ds-nurse",
+   "zh": "日間手術室護理師",
+   "en": "Day-surgery nurse",
+   "desc": {
+    "zh": "報到、核對、陪病人清醒地度過手術，教她回家後怎麼每天摸、聽、保護這條瘻管。",
+    "en": "Admission, checks, keeping an awake patient company through surgery, and teaching her to feel, listen to and protect the fistula every day at home."
+   }
+  }
+ ],
+ "cast": {
+  "attending": {
+   "name": {
+    "zh": "莊主治",
+    "en": "Dr Chuang"
+   },
+   "role": {
+    "zh": "血管通路主治醫師（師傅）",
+    "en": "Vascular access surgeon (mentor)"
+   },
+   "tag": "ATT",
+   "color": "#1f6f8b",
+   "about": {
+    "zh": "聽瘻管像聽音樂，說得出雜音的音高。口頭禪：「洗腎的人，手臂就是命。」",
+    "en": "Listens to fistulas like music and can name the pitch of a bruit. Catchphrase: \"For a dialysis patient, the arm is life.\""
+   },
+   "body": "mentor"
+  },
+  "vasc-tech": {
+   "name": {
+    "zh": "小柯",
+    "en": "Ko"
+   },
+   "role": {
+    "zh": "血管超音波技術師",
+    "en": "Vascular sonographer"
+   },
+   "tag": "VT",
+   "color": "#3f6fa8",
+   "about": {
+    "zh": "畫靜脈地圖的人。會用筆在皮膚上把頭靜脈從手腕一路畫到手肘。",
+    "en": "The vein cartographer. Draws the cephalic vein on the skin in pen from wrist to elbow."
+   },
+   "body": "tech"
+  },
+  "student": {
+   "name": {
+    "zh": "小琪",
+    "en": "Chi"
+   },
+   "role": {
+    "zh": "護理系實習生",
+    "en": "Student nurse"
+   },
+   "tag": "SN",
+   "color": "#9d4b7a",
+   "about": {
+    "zh": "第一週實習，打針很準，還不知道哪隻手不能打。",
+    "en": "First week on placement. Excellent with a needle; doesn't yet know which arm is off limits."
+   },
+   "body": "student"
+  },
+  "patient": {
+   "name": {
+    "zh": "阿娟老師",
+    "en": "Teacher Chuan"
+   },
+   "role": {
+    "zh": "病人・58 歲退休音樂老師",
+    "en": "Patient, 58, retired music teacher"
+   },
+   "tag": "PT",
+   "color": "#6b7280",
+   "about": {
+    "zh": "糖尿病腎病變，快要洗腎了。拉二胡四十年，孫女學校的音樂會想上台。",
+    "en": "Diabetic kidney disease, close to needing dialysis. Forty years of playing the erhu; wants to perform at her granddaughter's school concert."
+   },
+   "body": "patient"
+  },
+  "husband": {
+   "name": {
+    "zh": "阿娟老師的先生",
+    "en": "Mr Chuan"
+   },
+   "role": {
+    "zh": "家屬・退休公車技師",
+    "en": "Family, retired bus mechanic"
+   },
+   "tag": "FAM",
+   "color": "#b45309",
+   "about": {
+    "zh": "修了一輩子引擎。聽到「震顫」就說：「像引擎怠速。」",
+    "en": "Fixed engines all his life. Hears \"thrill\" and says: \"Like an engine idling.\""
+   },
+   "body": "family"
+  },
+  "dialysis-nurse": {
+   "name": {
+    "zh": "美玲護理長",
+    "en": "Sister Mei-ling"
+   },
+   "role": {
+    "zh": "血液透析室護理長",
+    "en": "Dialysis unit sister"
+   },
+   "tag": "HD",
+   "color": "#2f7d6d",
+   "about": {
+    "zh": "每週替上百條瘻管下針。哪條皮膚變薄、哪條在發亮，她最先知道。",
+    "en": "Needles a hundred fistulas a week. Knows first when the skin over one goes thin and shiny."
+   },
+   "phoneOnly": true
+  }
+ },
+ "places": {
+  "reception": {
+   "name": {
+    "zh": "日間手術報到處",
+    "en": "Day-surgery reception"
+   },
+   "hot": "desk"
+  },
+  "bay": {
+   "name": {
+    "zh": "術前準備床",
+    "en": "Pre-op bay"
+   },
+   "hot": "bed"
+  },
+  "duplex": {
+   "name": {
+    "zh": "超音波機",
+    "en": "Duplex scanner"
+   },
+   "hot": "ultrasound"
+  },
+  "theatre": {
+   "name": {
+    "zh": "日間手術室",
+    "en": "Day-surgery theatre"
+   },
+   "hot": "field"
+  },
+  "instruments": {
+   "name": {
+    "zh": "顯微血管器械",
+    "en": "Fine vascular instruments"
+   },
+   "hot": "instruments"
+  },
+  "monitor": {
+   "name": {
+    "zh": "手術室監視器",
+    "en": "Theatre monitor"
+   },
+   "hot": "monitor"
+  },
+  "recovery": {
+   "name": {
+    "zh": "恢復區",
+    "en": "Recovery area"
+   },
+   "hot": "recovery"
+  },
+  "phone": {
+   "name": {
+    "zh": "值班電話",
+    "en": "On-call phone"
+   },
+   "hot": "chart"
+  }
+ },
+ "glossary": [
+  {
+   "term": {
+    "zh": "動靜脈瘻管",
+    "en": "AV fistula"
+   },
+   "plain": {
+    "zh": "把手腕的動脈和靜脈接在一起，讓靜脈變粗、血流變快，洗腎時好下針。",
+    "en": "Joining an artery and a vein at the wrist so the vein grows wide and fast-flowing, easy to needle for dialysis."
+   }
+  },
+  {
+   "term": {
+    "zh": "血液透析",
+    "en": "haemodialysis"
+   },
+   "plain": {
+    "zh": "用機器把血引出來洗乾淨再送回去，取代壞掉的腎臟。俗稱洗腎。",
+    "en": "A machine draws blood out, cleans it and returns it, standing in for failed kidneys. \"Dialysis\" for short."
+   }
+  },
+  {
+   "term": {
+    "zh": "透析導管",
+    "en": "dialysis catheter"
+   },
+   "plain": {
+    "zh": "插在頸部大靜脈的管子，緊急洗腎用。感染和血栓的風險比瘻管高。",
+    "en": "A tube in a large neck vein for urgent dialysis. Higher risk of infection and clotting than a fistula."
+   }
+  },
+  {
+   "term": {
+    "zh": "靜脈保護",
+    "en": "vein preservation"
+   },
+   "plain": {
+    "zh": "預定做瘻管的手臂不打針、不抽血、不量血壓，把靜脈留給洗腎。",
+    "en": "No needles, blood tests or blood-pressure cuffs on the arm planned for a fistula: save its veins for dialysis."
+   }
+  },
+  {
+   "term": {
+    "zh": "頭靜脈",
+    "en": "cephalic vein"
+   },
+   "plain": {
+    "zh": "沿著前臂大拇指那一側往上走的淺層靜脈，最常用來做瘻管。",
+    "en": "The superficial vein running up the thumb side of the forearm, the commonest choice for a fistula."
+   }
+  },
+  {
+   "term": {
+    "zh": "橈動脈",
+    "en": "radial artery"
+   },
+   "plain": {
+    "zh": "手腕大拇指側摸得到脈搏的那條動脈。",
+    "en": "The artery whose pulse you feel at the thumb side of the wrist."
+   }
+  },
+  {
+   "term": {
+    "zh": "吻合",
+    "en": "anastomosis"
+   },
+   "plain": {
+    "zh": "把兩條血管縫在一起，讓血從一條流進另一條。",
+    "en": "Sewing two vessels together so blood flows from one into the other."
+   }
+  },
+  {
+   "term": {
+    "zh": "震顫",
+    "en": "thrill"
+   },
+   "plain": {
+    "zh": "手放在瘻管上感覺到的嗡嗡震動，像貓咪呼嚕。摸不到就要趕快回來。",
+    "en": "The buzzing vibration felt with a hand over the fistula, like a cat purring. If it disappears, come back quickly."
+   }
+  },
+  {
+   "term": {
+    "zh": "雜音",
+    "en": "bruit"
+   },
+   "plain": {
+    "zh": "用聽診器在瘻管上聽到的連續咻咻聲。",
+    "en": "The continuous whooshing heard with a stethoscope over the fistula."
+   }
+  },
+  {
+   "term": {
+    "zh": "成熟",
+    "en": "maturation"
+   },
+   "plain": {
+    "zh": "瘻管做好後要等一段時間，靜脈變粗變厚，才能下針洗腎。",
+    "en": "After the operation the vein needs time to widen and thicken before it can be needled."
+   }
+  },
+  {
+   "term": {
+    "zh": "竊血症候群",
+    "en": "steal syndrome"
+   },
+   "plain": {
+    "zh": "太多血被瘻管「偷走」，手指冰冷、麻、痛。少見，但要注意。",
+    "en": "Too much blood \"stolen\" by the fistula, leaving fingers cold, numb or painful. Uncommon, but watch for it."
+   }
+  },
+  {
+   "term": {
+    "zh": "神經阻斷",
+    "en": "nerve block"
+   },
+   "plain": {
+    "zh": "把手臂的神經麻掉，病人清醒、手術區不痛，也讓血管放鬆變粗。",
+    "en": "Numbing the arm's nerves so the patient stays awake and pain-free, and the vessels relax and widen."
+   }
+  },
+  {
+   "term": {
+    "zh": "低血糖",
+    "en": "hypoglycaemia"
+   },
+   "plain": {
+    "zh": "血糖太低：冒冷汗、手抖、心悸、反應變慢，甚至昏迷。",
+    "en": "Blood sugar too low: cold sweat, shaking, palpitations, slowing down, even unconsciousness."
+   }
+  }
+ ],
+ "codex": [
+  {
+   "id": "duplex",
+   "kind": "equipment",
+   "name": {
+    "zh": "雙功能超音波",
+    "en": "Duplex ultrasound"
+   },
+   "text": {
+    "zh": "看得到靜脈多粗、有沒有狹窄或血栓，也看得到動脈的血流。手術前的地圖。",
+    "en": "Shows the vein's width and any narrowing or clot, and the artery's flow. The map before surgery."
+   },
+   "hot": "ultrasound"
+  },
+  {
+   "id": "fine-set",
+   "kind": "equipment",
+   "name": {
+    "zh": "顯微血管器械",
+    "en": "Fine vascular instruments"
+   },
+   "text": {
+    "zh": "細持針器、血管夾、極細的縫線。手腕的血管比原子筆芯還細。",
+    "en": "Fine needle holders, small vascular clamps, very fine sutures. Wrist vessels are narrower than a pen refill."
+   },
+   "hot": "instruments"
+  },
+  {
+   "id": "handheld-doppler",
+   "kind": "equipment",
+   "name": {
+    "zh": "手持式都卜勒",
+    "en": "Handheld Doppler"
+   },
+   "text": {
+    "zh": "貼在皮膚上就能聽到血流的聲音。吻合完第一個聽的就是它。",
+    "en": "Placed on the skin it lets you hear blood flow. The first thing you listen with after the join."
+   },
+   "hot": "device"
+  },
+  {
+   "id": "bracelet",
+   "kind": "item",
+   "name": {
+    "zh": "「保護此手臂」手環",
+    "en": "The \"protect this arm\" bracelet"
+   },
+   "text": {
+    "zh": "粉紅色的塑膠手環，戴在左手。上面寫：不打針、不抽血、不量血壓。",
+    "en": "A pink plastic band on her left wrist: no needles, no blood tests, no blood-pressure cuff."
+   }
+  },
+  {
+   "id": "fistula-first",
+   "kind": "concept",
+   "name": {
+    "zh": "為什麼瘻管優先",
+    "en": "Why fistula first"
+   },
+   "text": {
+    "zh": "自己的動靜脈瘻管感染少、血栓少、用得最久，所以洗腎血管通路的首選是它，其次是人工血管，透析導管則盡量只作過渡。但瘻管需要時間成熟，所以要在真正需要洗腎之前就做好——太晚做，第一次洗腎只能從脖子插管。",
+    "en": "A native AV fistula gets fewer infections and clots and lasts longest, so it is the first choice for dialysis access, then a graft, with catheters kept as a bridge. A fistula needs time to mature, so it must be made before dialysis is actually needed; leave it late and the first session goes through a neck catheter."
+   }
+  },
+  {
+   "id": "look-listen-feel",
+   "kind": "concept",
+   "name": {
+    "zh": "看、聽、摸：瘻管的每日檢查",
+    "en": "Look, listen, feel: the daily fistula check"
+   },
+   "text": {
+    "zh": "看：皮膚有沒有紅腫、發亮變薄、結痂不掉、手指發白。聽：耳朵貼近或用聽診器，雜音應該連續。摸：震顫應該像貓咪呼嚕。震顫消失、手冰冷麻痛、或瘤樣擴張上的皮膚發亮破皮，都要當天回來。日常保護：不在這手量血壓抽血、不戴緊手錶、不壓著睡。",
+    "en": "Look: redness, swelling, thin shiny skin, scabs that will not heal, white fingers. Listen: the bruit should be continuous. Feel: the thrill should purr like a cat. A lost thrill, a cold, numb, painful hand, or shiny broken skin over a bulge means come back the same day. Daily care: no blood pressure or blood tests on that arm, no tight watch, do not sleep on it."
+   }
+  },
+  {
+   "id": "diabetic-fasting",
+   "kind": "concept",
+   "name": {
+    "zh": "糖尿病病人禁食的陷阱",
+    "en": "The fasting diabetic's trap"
+   },
+   "text": {
+    "zh": "禁食等開刀時照平常打胰島素或吃降血糖藥，血糖會一路往下掉。腎功能差的人藥物排得慢，更容易低血糖。術前要有明確的用藥指示，報到時要量血糖；清醒手術中病人突然冒汗、說話變慢，先想到低血糖。",
+    "en": "Taking the usual insulin or tablets while fasting for surgery sends blood sugar sliding, and poor kidneys clear these drugs slowly, so hypoglycaemia is likelier still. Give explicit pre-op instructions and check glucose at admission; if an awake patient suddenly sweats and slows down mid-operation, think hypoglycaemia first."
+   }
+  }
+ ],
+ "segs": [
+  {
+   "id": "admit",
+   "name": {
+    "zh": "日間手術報到",
+    "en": "Day-surgery admission"
+   },
+   "sub": {
+    "zh": "07:30 · 報到處",
+    "en": "07:30 · reception"
+   },
+   "t": 450,
+   "mood": "day",
+   "note": {
+    "zh": "左手的靜脈，留給洗腎",
+    "en": "The left arm's veins, saved for dialysis"
+   },
+   "beats": [
+    {
+     "id": "a1",
+     "to": "attending",
+     "guide": {
+      "zh": "到報到處找莊主治",
+      "en": "Find Dr Chuang at reception"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "早。阿娟老師，糖尿病腎病變，快要開始血液透析了。今天做左手腕的動靜脈瘻管。",
+        "en": "Morning. Teacher Chuan, diabetic kidney disease, close to starting haemodialysis. Left wrist AV fistula today."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "為什麼不等要洗腎了再插脖子的管子就好？",
+        "en": "Why not wait until she needs dialysis and just put in a neck catheter?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "透析導管感染和血栓多。瘻管要時間成熟，所以要提早做。",
+        "en": "Dialysis catheters clot and get infected more. A fistula needs time for maturation, so we make it early."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "對。洗腎的人，手臂就是命。",
+        "en": "Right. For a dialysis patient, the arm is life."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "a2",
+     "to": "student",
+     "guide": {
+      "zh": "小琪準備打點滴",
+      "en": "Chi is about to put in a drip"
+     },
+     "lines": [
+      [
+       "student",
+       {
+        "zh": "學姊、醫師，阿娟老師左手的靜脈比較明顯，我打左手好不好？",
+        "en": "Doctor, her left arm veins are much easier. Can I put the drip in the left?"
+       }
+      ],
+      [
+       "patient",
+       {
+        "zh": "我無所謂，哪隻都可以，右手要拉弓就是了。",
+        "en": "Either is fine by me. I just need my right for the bow."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "choice",
+      "q": {
+       "zh": "小琪想在預定做瘻管的左手打點滴，你會？",
+       "en": "Chi wants the drip in the left arm, the fistula arm. You...?"
+      },
+      "options": [
+       {
+        "zh": "不行，改右手，並戴上保護手環",
+        "en": "No; use the right arm and band the left",
+        "ok": true,
+        "why": {
+         "zh": "對。靜脈保護：預定做瘻管的手臂不打針、不抽血、不量血壓。每一個針孔都可能是一段瘢痕。",
+         "en": "Right. Vein preservation: no needles, blood tests or cuffs on the fistula arm. Every puncture can leave a scarred segment."
+        },
+        "set": {
+         "vein": "saved"
+        }
+       },
+       {
+        "zh": "打在手背就好，不會影響手腕",
+        "en": "Use the back of the hand; it won't matter",
+        "ok": false,
+        "why": {
+         "zh": "手背的靜脈就是頭靜脈的上游。刺破、瘀血、發炎，都會傷到我們要用的那一段。",
+         "en": "The back-of-hand veins drain into the very cephalic vein we need. A puncture, bruise or phlebitis can damage it."
+        },
+        "set": {
+         "vein": "punctured"
+        }
+       },
+       {
+        "zh": "病人說可以，就打左手",
+        "en": "The patient agreed, so left it is",
+        "ok": false,
+        "why": {
+         "zh": "病人不知道這條靜脈的價值，我們知道。保護它是我們的責任。",
+         "en": "She doesn't know what that vein is worth. We do, and protecting it is our job."
+        },
+        "set": {
+         "vein": "punctured"
+        }
+       }
+      ]
+     },
+     "post": [
+      [
+       "student",
+       {
+        "zh": "原來這隻手是要留給洗腎的。我記住了。",
+        "en": "So that arm is being saved for dialysis. I'll remember."
+       }
+      ]
+     ],
+     "item": "bracelet"
+    },
+    {
+     "id": "a3",
+     "to": "patient",
+     "guide": {
+      "zh": "報到核對與量血糖",
+      "en": "Admission checks and glucose"
+     },
+     "roles": [
+      "ds-nurse"
+     ],
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "阿娟老師，昨晚半夜後就沒吃東西了？早上的胰島素呢？",
+        "en": "Teacher Chuan, nothing to eat since midnight? And this morning's insulin?"
+       }
+      ],
+      [
+       "patient",
+       {
+        "zh": "照平常打了啊，習慣了。",
+        "en": "Same as always. Habit."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "……我記下來，跟麻醉和莊主治講。血糖現在還可以，我們每一段時間測一次。",
+        "en": "...I'll note that and tell anaesthesia and Dr Chuang. Glucose is fine right now; we'll keep checking."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mapping",
+   "name": {
+    "zh": "畫靜脈地圖",
+    "en": "Mapping the vein"
+   },
+   "sub": {
+    "zh": "08:15 · 超音波機",
+    "en": "08:15 · duplex scanner"
+   },
+   "t": 495,
+   "mood": "day",
+   "note": {
+    "zh": "脈搏摸過、靜脈畫好",
+    "en": "Pulses felt, vein mapped"
+   },
+   "beats": [
+    {
+     "id": "m1",
+     "to": "patient",
+     "guide": {
+      "zh": "摸手臂的脈搏",
+      "en": "Feel the arm pulses"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "先摸。肱動脈、橈動脈、尺動脈，兩邊比較。",
+        "en": "Feel first. Brachial, radial, ulnar, both sides compared."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "左邊橈動脈和尺動脈都摸得到。壓住橈動脈，手掌還是粉紅的，尺動脈供血夠。",
+        "en": "The left radial artery and ulnar artery are both palpable. With the radial compressed the palm stays pink: the ulnar supply is enough."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "vascular-surgery-clinic-assessment-abi-duplex",
+      "stage": 1
+     }
+    },
+    {
+     "id": "m2",
+     "to": "vasc-tech",
+     "guide": {
+      "zh": "小柯在畫地圖",
+      "en": "Ko is mapping"
+     },
+     "lines": [
+      [
+       "vasc-tech",
+       {
+        "zh": "頭靜脈從手腕到手肘一路通，夠粗，沒有血栓。我用筆畫在皮膚上了。",
+        "en": "Cephalic vein continuous from wrist to elbow, wide enough, no clot. I've drawn it on the skin."
+       }
+      ],
+      [
+       "patient",
+       {
+        "zh": "畫得好像樂譜。",
+        "en": "It looks like a stave of music."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "vascular-surgery-clinic-assessment-abi-duplex",
+      "stage": 7
+     }
+    },
+    {
+     "id": "m3",
+     "to": "vasc-tech",
+     "guide": {
+      "zh": "手腕上的瘀青",
+      "en": "A bruise at the wrist"
+     },
+     "when": {
+      "flag": "vein",
+      "is": "punctured"
+     },
+     "lines": [
+      [
+       "vasc-tech",
+       {
+        "zh": "等一下，手腕這段頭靜脈旁邊有新的瘀血，是剛剛的針孔嗎？",
+        "en": "Hang on, there's a fresh bruise beside the cephalic vein at the wrist. From the drip just now?"
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "這一段我們不敢用了，要往上移一點做。少一段靜脈，就少一段將來能用的地方。",
+        "en": "We won't trust that segment now; we move a little higher. Each lost segment is a site she can't use in future."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "m4",
+     "to": "place:duplex",
+     "guide": {
+      "zh": "一起看影像",
+      "en": "Read the scan together"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "你來說，什麼樣的靜脈和動脈適合做瘻管？",
+        "en": "You tell me: what makes an artery and vein good for a fistula?"
+       }
+      ]
+     ],
+     "mini": {
+      "type": "imaging",
+      "region": "upper-limb",
+      "question": {
+       "zh": "前臂的動脈和靜脈要看哪些條件？",
+       "en": "What do you look for in the forearm artery and vein?"
+      },
+      "answer": {
+       "zh": "靜脈：夠粗、從吻合處往上一路通、沒有狹窄或血栓、離皮膚不深；動脈：夠粗、血流好、沒有嚴重鈣化。手掌另有足夠的尺動脈供血。",
+       "en": "Vein: wide enough, continuous upward from the join, no narrowing or clot, not too deep under the skin. Artery: wide enough, good flow, not heavily calcified. And enough ulnar supply to the hand."
+      }
+     },
+     "post": [
+      [
+       "attending",
+       {
+        "zh": "糖尿病的動脈常常鈣化。今天這條還可以。",
+        "en": "Diabetic arteries are often calcified. This one will do."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "m5",
+     "to": "patient",
+     "guide": {
+      "zh": "標記手術部位",
+      "en": "Mark the operative site"
+     },
+     "roles": [
+      "resident"
+     ],
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "阿娟老師，我在左手腕畫一個箭頭，進刀房前大家都會再核對一次。",
+        "en": "Teacher Chuan, I'm drawing an arrow on your left wrist. Everyone checks it again before theatre."
+       }
+      ],
+      [
+       "patient",
+       {
+        "zh": "左手。拉琴按弦的那隻。",
+        "en": "The left. My string hand."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "對，右手的弓不會動到。同意書上也寫清楚了左手。",
+        "en": "Yes, your bow hand is untouched. The consent says left, clearly."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "theatre",
+   "name": {
+    "zh": "清醒的手術",
+    "en": "Awake surgery"
+   },
+   "sub": {
+    "zh": "09:30 · 日間手術室",
+    "en": "09:30 · day-surgery theatre"
+   },
+   "t": 570,
+   "mood": "day",
+   "note": {
+    "zh": "吻合完成；低血糖及時發現",
+    "en": "Join complete; hypoglycaemia caught in time"
+   },
+   "beats": [
+    {
+     "id": "t1",
+     "to": "place:theatre",
+     "guide": {
+      "zh": "神經阻斷後開始",
+      "en": "Start after the nerve block"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "神經阻斷讓手不痛，也讓血管放鬆變粗。時間暫停：左手腕、橈動脈頭靜脈瘻管。",
+        "en": "The nerve block numbs the arm and relaxes the vessels. Time-out: left wrist, radiocephalic fistula."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "手持式都卜勒呢？吻合完要聽。",
+        "en": "Where's the handheld Doppler? We'll listen after the join."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "find",
+      "hot": "device",
+      "q": {
+       "zh": "找到無菌的手持式都卜勒",
+       "en": "Find the sterile handheld Doppler"
+      }
+     }
+    },
+    {
+     "id": "t2",
+     "to": "place:instruments",
+     "guide": {
+      "zh": "縫吻合",
+      "en": "Sew the anastomosis"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "靜脈側邊接到動脈側邊。針從內往外穿動脈，內膜要帶到。",
+        "en": "Vein to the side of the artery. Needle inside-out through the artery, catching the intima."
+       }
+      ],
+      [
+       "patient",
+       {
+        "zh": "醫師，你們縫得像在拉慢板。",
+        "en": "Doctor, you're sewing like an adagio."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "吻合本來就是慢板。",
+        "en": "An anastomosis is an adagio."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "drill",
+      "template": "vascular-surgery",
+      "drill": "anast"
+     }
+    },
+    {
+     "id": "t3",
+     "to": "place:monitor",
+     "guide": {
+      "zh": "阿娟老師不太對",
+      "en": "Something's wrong with Teacher Chuan"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "阿娟老師額頭冒冷汗，說話越來越慢：「醫師……我……哪一段……」",
+        "en": "Teacher Chuan is sweating at the brow and her speech slows: \"Doctor... I... which bar...\""
+       }
+      ]
+     ],
+     "mini": {
+      "type": "vitals",
+      "event": "hypoglycaemia",
+      "options": [
+       {
+        "zh": "暫停、測血糖，依醫囑補糖",
+        "en": "Pause, check glucose, treat per protocol",
+        "ok": true,
+        "why": {
+         "zh": "對。禁食加早上的胰島素，加上腎功能差，低血糖不意外。手術可以等，腦不能等。",
+         "en": "Right. Fasting plus this morning's insulin plus poor kidneys: no surprise. Surgery can wait; the brain cannot."
+        }
+       },
+       {
+        "zh": "她緊張，給一點鎮靜",
+        "en": "She's anxious; give a little sedation",
+        "ok": false,
+        "why": {
+         "zh": "冒汗和變慢不是緊張。鎮靜會把低血糖的警訊蓋掉。",
+         "en": "Sweating and slowing aren't nerves. Sedation hides the warning signs of hypoglycaemia."
+        }
+       },
+       {
+        "zh": "快縫完了，先縫完再說",
+        "en": "Nearly done; finish first",
+        "ok": false,
+        "why": {
+         "zh": "測一次血糖只要很短的時間。讓她昏過去才是拖延。",
+         "en": "A glucose check takes moments. Letting her lose consciousness is the real delay."
+        }
+       }
+      ]
+     },
+     "post": [
+      [
+       "patient",
+       {
+        "zh": "……好多了。剛剛整首曲子都忘了。",
+        "en": "...much better. I'd forgotten the whole piece."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "都卜勒：咻——咻——連續的。吻合處摸得到震顫。",
+        "en": "Doppler: whoosh, whoosh, continuous. A thrill over the join."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "聽，這條的音高很好。",
+        "en": "Listen. Lovely pitch on this one."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "recovery",
+   "name": {
+    "zh": "恢復區",
+    "en": "Recovery"
+   },
+   "sub": {
+    "zh": "11:00 · 恢復區",
+    "en": "11:00 · recovery area"
+   },
+   "t": 660,
+   "mood": "day",
+   "note": {
+    "zh": "看、聽、摸，教會先生也教會她",
+    "en": "Look, listen, feel: taught to both"
+   },
+   "beats": [
+    {
+     "id": "r1",
+     "to": "husband",
+     "guide": {
+      "zh": "讓先生摸震顫",
+      "en": "Let her husband feel the thrill"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "手輕輕放在傷口上方，有沒有嗡嗡的震動？",
+        "en": "Rest your hand lightly above the wound. Feel a buzzing?"
+       }
+      ],
+      [
+       "husband",
+       {
+        "zh": "有！像引擎怠速。",
+        "en": "Yes! Like an engine idling."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "對，那叫震顫。每天摸一次，摸不到就要馬上回來。",
+        "en": "That's the thrill. Feel it every day; if it's gone, come straight back."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "r2",
+     "to": "patient",
+     "guide": {
+      "zh": "教回家的手臂照顧",
+      "en": "Teach arm care at home"
+     },
+     "roles": [
+      "ds-nurse"
+     ],
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "阿娟老師，回家以後照這個順序照顧它。",
+        "en": "Teacher Chuan, at home, look after it in this order."
+       }
+      ],
+      [
+       "patient",
+       {
+        "zh": "比練琴簡單嗎？",
+        "en": "Easier than practising?"
+       }
+      ]
+     ],
+     "mini": {
+      "type": "order",
+      "q": {
+       "zh": "瘻管術後回家的照顧順序",
+       "en": "Caring for a new fistula at home, in order"
+      },
+      "steps": [
+       {
+        "zh": "每天摸震顫、聽雜音",
+        "en": "Feel the thrill and listen daily"
+       },
+       {
+        "zh": "看傷口和手指的顏色",
+        "en": "Check the wound and finger colour"
+       },
+       {
+        "zh": "這手不量血壓、不抽血",
+        "en": "No cuffs or blood tests on this arm"
+       },
+       {
+        "zh": "不戴緊手錶、不壓著睡",
+        "en": "No tight watch; don't sleep on it"
+       },
+       {
+        "zh": "傷口好了開始握球運動",
+        "en": "Once healed, start squeeze-ball exercise"
+       },
+       {
+        "zh": "震顫消失或手冰麻就回來",
+        "en": "Thrill gone or hand cold and numb: return"
+       }
+      ]
+     },
+     "post": [
+      [
+       "patient",
+       {
+        "zh": "握球運動我可以，二胡也算嗎？",
+        "en": "Squeeze-ball I can do. Does the erhu count?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "傷口好了，左手按弦也是運動。等莊主治說可以。",
+        "en": "Once it's healed, fingering the strings is exercise too. When Dr Chuang says so."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "r3",
+     "to": "place:phone",
+     "guide": {
+      "zh": "寫手術紀錄",
+      "en": "Write the op note"
+     },
+     "roles": [
+      "resident"
+     ],
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "手術紀錄寫清楚：哪條動脈、哪條靜脈、吻合方式、結束時有沒有震顫與雜音。",
+        "en": "Op note: which artery, which vein, type of join, and whether there was a thrill and bruit at the end."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "還有術中低血糖、處理與結果，以及下次禁食的胰島素指示。",
+        "en": "And the intra-operative hypoglycaemia, its treatment and outcome, plus insulin instructions for any future fast."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "最後一句，會救下一次的她。",
+        "en": "That last line will save her next time."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dialysis",
+   "name": {
+    "zh": "透析室來電",
+    "en": "The dialysis unit calls"
+   },
+   "sub": {
+    "zh": "14:00 · 值班電話",
+    "en": "14:00 · on-call phone"
+   },
+   "t": 840,
+   "mood": "day",
+   "note": {
+    "zh": "發亮的瘤樣擴張：今天就來看",
+    "en": "A shiny aneurysm: seen today"
+   },
+   "beats": [
+    {
+     "id": "d1",
+     "to": "place:phone",
+     "guide": {
+      "zh": "接美玲護理長的電話",
+      "en": "Take Sister Mei-ling's call"
+     },
+     "ring": {
+      "title": {
+       "zh": "透析室來電",
+       "en": "Dialysis unit calling"
+      },
+      "sub": {
+       "zh": "美玲：「林伯伯的瘻管有一段在發亮，你要不要看？」",
+       "en": "Mei-ling: \"Mr Lin's fistula has a shiny patch. Want to see it?\""
+      },
+      "call": true,
+      "from": "dialysis-nurse"
+     },
+     "lines": [
+      [
+       "dialysis-nurse",
+       {
+        "zh": "林伯伯的瘻管有一段鼓起來，上面的皮膚變薄、發亮，還有一個結痂一直不掉。",
+        "en": "Mr Lin's fistula has a bulging segment. The skin over it is thin and shiny, with a scab that won't come off."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "今天還要在那裡下針嗎？",
+        "en": "Is anyone needling there today?"
+       }
+      ]
+     ],
+     "mini": {
+      "type": "choice",
+      "q": {
+       "zh": "瘤樣擴張上皮膚發亮、結痂不掉，你怎麼回？",
+       "en": "Shiny skin and a non-healing scab over a fistula bulge. Your answer?"
+      },
+      "options": [
+       {
+        "zh": "不在那裡下針，今天就送來看",
+        "en": "No needling there; send him today",
+        "ok": true,
+        "why": {
+         "zh": "對。發亮變薄、結痂不掉是破裂的警訊。避開這段，今天評估，必要時手術修補。",
+         "en": "Right. Thin, shiny skin and a non-healing scab warn of rupture. Avoid that segment, assess today, repair if needed."
+        }
+       },
+       {
+        "zh": "照常下針，下週門診再看",
+        "en": "Needle as usual; clinic next week",
+        "ok": false,
+        "why": {
+         "zh": "這種皮膚可能在洗腎時或回家路上破掉，出血會非常快。",
+         "en": "That skin can burst during dialysis or on the way home, and the bleeding is rapid."
+        }
+       },
+       {
+        "zh": "貼一塊紗布保護就好",
+        "en": "Just cover it with gauze",
+        "ok": false,
+        "why": {
+         "zh": "紗布擋不住瘻管的壓力。需要的是評估，不是遮起來。",
+         "en": "Gauze cannot hold back fistula pressure. It needs assessing, not hiding."
+        }
+       }
+      ]
+     },
+     "post": [
+      [
+       "dialysis-nurse",
+       {
+        "zh": "好，那段不下針，我讓他下午過去。",
+        "en": "Right, nobody needles there. I'll send him over this afternoon."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "一條瘻管會成熟，也會老。美玲的眼睛比超音波還早。",
+        "en": "A fistula matures, and it ages. Mei-ling's eyes see it before any scanner."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "home",
+   "name": {
+    "zh": "出院",
+    "en": "Going home"
+   },
+   "sub": {
+    "zh": "16:30 · 恢復區",
+    "en": "16:30 · recovery area"
+   },
+   "t": 990,
+   "mood": "day",
+   "note": {
+    "zh": "震顫在，手指粉紅，回家",
+    "en": "Thrill present, fingers pink, home"
+   },
+   "beats": [
+    {
+     "id": "h1",
+     "to": "patient",
+     "guide": {
+      "zh": "出院前最後檢查",
+      "en": "Final check before home"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "震顫還在、手指粉紅、溫的，不麻不痛。沒有竊血症候群的跡象。",
+        "en": "Thrill still there, fingers pink and warm, no numbness or pain. No sign of steal syndrome."
+       }
+      ],
+      [
+       "patient",
+       {
+        "zh": "醫師，音樂會在兩個月後。我可以上台嗎？",
+        "en": "Doctor, the concert is in two months. Can I play?"
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "瘻管成熟要一段時間，拉琴不影響它。左手按弦，記得別戴緊的護腕。",
+        "en": "The fistula needs time to mature, and playing won't harm it. Left hand on the strings, just no tight wrist support."
+       }
+      ],
+      [
+       "husband",
+       {
+        "zh": "那我去把她的護腕換成鬆的。",
+        "en": "Then I'll swap her wrist support for a loose one."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "h2",
+     "to": "attending",
+     "guide": {
+      "zh": "莊主治的回顧",
+      "en": "Dr Chuang's debrief"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "今天這條瘻管，最重要的一步是哪一步？",
+        "en": "Today's fistula: which step mattered most?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "吻合？",
+        "en": "The anastomosis?"
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "是早上那支沒打在左手的點滴。手術只是把保護下來的東西接起來。",
+        "en": "The drip that didn't go into her left arm this morning. Surgery only joins up what was protected."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "night",
+   "name": {
+    "zh": "值班夜",
+    "en": "On call tonight"
+   },
+   "sub": {
+    "zh": "21:30 · 值班電話",
+    "en": "21:30 · on-call phone"
+   },
+   "t": 1290,
+   "mood": "night",
+   "note": {
+    "zh": "「嗡嗡聲不見了」：鬆開外層繃帶",
+    "en": "\"The buzzing has gone\": loosen the outer bandage"
+   },
+   "beats": [
+    {
+     "id": "n1",
+     "to": "place:phone",
+     "guide": {
+      "zh": "接阿娟老師的電話",
+      "en": "Take Teacher Chuan's call"
+     },
+     "ring": {
+      "title": {
+       "zh": "病人來電",
+       "en": "Patient calling"
+      },
+      "sub": {
+       "zh": "阿娟老師：「醫師，我摸不到嗡嗡聲了！」",
+       "en": "Teacher Chuan: \"Doctor, I can't feel the buzzing!\""
+      },
+      "call": true,
+      "from": "patient"
+     },
+     "lines": [
+      [
+       "patient",
+       {
+        "zh": "醫師，我摸了好幾次，摸不到嗡嗡聲了！是不是塞住了？",
+        "en": "Doctor, I've tried again and again and I can't feel the buzzing! Is it blocked?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "先別慌。妳先生在旁邊嗎？外層的彈性繃帶是不是纏得很緊？",
+        "en": "Don't panic. Is your husband there? Is the outer elastic bandage wound very tight?"
+       }
+      ],
+      [
+       "husband",
+       {
+        "zh": "她自己又加纏了兩圈，說怕碰到。",
+        "en": "She wrapped two extra turns herself, afraid of knocking it."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "把外層多纏的鬆開，紗布不要動。手輕輕放在傷口上方，再摸一次。",
+        "en": "Unwind the extra outer turns, leave the gauze alone. Rest your hand lightly above the wound and feel again."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "n2",
+     "lines": [
+      [
+       "husband",
+       {
+        "zh": "……有了！怠速聲回來了。",
+        "en": "...there it is! The engine's idling again."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "太緊會壓住瘻管。如果鬆開還是摸不到，就要馬上來急診，不要等到早上。",
+        "en": "Too tight can squeeze the fistula. If it's still gone after loosening, come to the ER at once, don't wait till morning."
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "值班結束。電話那頭隱約傳來二胡的聲音，拉的是慢板。",
+        "en": "End of shift. Faintly down the line comes the sound of an erhu, playing an adagio."
+       }
+      ]
+     ],
+     "end": true
+    }
+   ]
+  }
+ ],
+ "ending": {
+  "title": {
+   "zh": "下班了",
+   "en": "End of shift"
+  },
+  "sub": {
+   "zh": "一條瘻管在手腕下呼嚕，像引擎怠速",
+   "en": "A fistula purring at the wrist, like an idling engine"
+  },
+  "stats": [
+   "stages",
+   "grades",
+   "choices",
+   "calls",
+   "items",
+   "time"
+  ]
+ }
+}

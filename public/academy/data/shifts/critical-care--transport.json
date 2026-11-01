@@ -1,0 +1,1448 @@
+{
+ "format": "huatuo-shift-v2",
+ "department": "critical-care",
+ "case": "transport",
+ "caseTitle": {
+  "zh": "帶著呼吸器去影像科",
+  "en": "Taking the ventilator to radiology"
+ },
+ "condition": {
+  "zh": "復甦後照護 · 院內轉送",
+  "en": "Post-arrest care · in-hospital transfer"
+ },
+ "difficulty": 3,
+ "room": "imaging",
+ "title": {
+  "zh": "重症醫學：加護病房帶著走",
+  "en": "Critical care: the ICU on wheels"
+ },
+ "tagline": {
+  "zh": "病人離開加護病房，加護病房就要跟著走",
+  "en": "When the patient leaves the ICU, the ICU goes too"
+ },
+ "minutes": 25,
+ "roles": [
+  {
+   "id": "fellow",
+   "zh": "重症研修醫師",
+   "en": "Critical care fellow",
+   "desc": {
+    "zh": "今天你負責帶加護病房的病人去影像科。電梯、斷層台、核磁共振室，都是沒有加護病房的地方。",
+    "en": "Today you take ICU patients to radiology. The lift, the CT table and the MRI room are all places without an ICU."
+   }
+  },
+  {
+   "id": "transport-nurse",
+   "zh": "加護病房轉送護理師",
+   "en": "ICU transfer nurse",
+   "desc": {
+    "zh": "幫浦、氧氣、監視器、管路，出門前全部經過你的手。你是那個會說「等一下，還沒好」的人。",
+    "en": "Pumps, oxygen, monitor and lines all pass through your hands before you leave. You are the one who says \"wait, not yet\"."
+   }
+  }
+ ],
+ "cast": {
+  "attending": {
+   "name": {
+    "zh": "杜主治",
+    "en": "Dr Tu"
+   },
+   "role": {
+    "zh": "重症主治醫師（師傅）",
+    "en": "Consultant intensivist (mentor)"
+   },
+   "tag": "ATT",
+   "color": "#81296d",
+   "about": {
+    "zh": "手腕上永遠套著一捲膠帶，像手環一樣。轉送前一定唸檢核表，從不靠記憶。口頭禪：「病人離開加護病房，加護病房就要跟著走。」",
+    "en": "Always wears a roll of tape on her wrist like a bracelet. Reads the checklist before every transfer, never from memory. Catchphrase: \"When the patient leaves the ICU, the ICU goes too.\""
+   },
+   "body": "mentor"
+  },
+  "radiographer": {
+   "name": {
+    "zh": "阿彬",
+    "en": "Ah-Pin"
+   },
+   "role": {
+    "zh": "電腦斷層放射師",
+    "en": "CT radiographer"
+   },
+   "tag": "RAD",
+   "color": "#2a7f9e",
+   "about": {
+    "zh": "斷層室是他的地盤。會提醒你：「管子比你想的短，床比你想的長。」",
+    "en": "The CT suite is his turf. His reminder: \"The tubing is shorter than you think and the table longer.\""
+   },
+   "body": "radiographer"
+  },
+  "mr-fan": {
+   "name": {
+    "zh": "范老師",
+    "en": "Mr Fan"
+   },
+   "role": {
+    "zh": "病人：心跳停止後，插管中",
+    "en": "Patient: after cardiac arrest, intubated"
+   },
+   "tag": "PT",
+   "color": "#4a7fb5",
+   "about": {
+    "zh": "四十五歲，國中羽球社指導老師。昨晚練球時突然倒下，學生壓胸、用電擊器，救回心跳。現在鎮靜插管中。",
+    "en": "Forty-five, coaches the school badminton club. Collapsed at practice last night; students did CPR and used the defibrillator and got his heart back. Now sedated and intubated."
+   },
+   "body": "patient"
+  },
+  "mrs-fan": {
+   "name": {
+    "zh": "范太太",
+    "en": "Mrs Fan"
+   },
+   "role": {
+    "zh": "范老師的太太",
+    "en": "Mr Fan's wife"
+   },
+   "tag": "FAM",
+   "color": "#c06c84",
+   "about": {
+    "zh": "國小護理師，看得懂監視器，所以更害怕。包包裡有女兒畫的「爸爸加油」。",
+    "en": "A school nurse who can read the monitor, which scares her more. In her bag, their daughter's drawing: \"Go Daddy\"."
+   },
+   "body": "family"
+  },
+  "a-hsiang": {
+   "name": {
+    "zh": "阿翔",
+    "en": "Ah-Hsiang"
+   },
+   "role": {
+    "zh": "羽球社學生，做了心肺復甦",
+    "en": "Badminton student who did CPR"
+   },
+   "tag": "STU",
+   "color": "#e0a030",
+   "about": {
+    "zh": "十七歲，健康教育課剛學過壓胸。他一直在想：「我是不是壓斷了老師的骨頭？」",
+    "en": "Seventeen, learned CPR in health class last month. He cannot stop wondering: \"Did I break Coach's bones?\""
+   },
+   "body": "student"
+  },
+  "ms-tseng": {
+   "name": {
+    "zh": "曾小姐",
+    "en": "Ms Tseng"
+   },
+   "role": {
+    "zh": "病人：加護七床，腦炎",
+    "en": "Patient: ICU bed 7, encephalitis"
+   },
+   "tag": "PT",
+   "color": "#6a8f3b",
+   "about": {
+    "zh": "二十二歲，大學合唱團。腦炎合併抽搐，插管鎮靜中。今天要做腦部核磁共振。",
+    "en": "Twenty-two, university choir. Encephalitis with seizures, intubated and sedated. Brain MRI today."
+   },
+   "body": "patient"
+  },
+  "cardio": {
+   "name": {
+    "zh": "心臟科吳醫師",
+    "en": "Dr Wu (cardiology)"
+   },
+   "role": {
+    "zh": "心臟科主治醫師",
+    "en": "Consultant cardiologist"
+   },
+   "tag": "CAR",
+   "color": "#d9534f",
+   "about": {
+    "zh": "說話很快，會先問「斷層有沒有排除主動脈剝離？」",
+    "en": "Talks fast. First question: \"Did the CT rule out aortic dissection?\""
+   },
+   "phoneOnly": true
+  },
+  "night-nurse": {
+   "name": {
+    "zh": "小安",
+    "en": "Hsiao-An"
+   },
+   "role": {
+    "zh": "加護病房夜班護理師",
+    "en": "ICU night nurse"
+   },
+   "tag": "RN",
+   "color": "#3b8f6a",
+   "about": {
+    "zh": "夜班。體溫升高零點幾度她都會打電話。",
+    "en": "Night shift. Calls you for a temperature rise of a few tenths."
+   },
+   "phoneOnly": true
+  }
+ },
+ "places": {
+  "board": {
+   "name": {
+    "zh": "影像科排程白板",
+    "en": "Radiology schedule board"
+   },
+   "hot": "whiteboard"
+  },
+  "scanner": {
+   "name": {
+    "zh": "電腦斷層掃描台",
+    "en": "CT scanner table"
+   },
+   "hot": "field"
+  },
+  "console": {
+   "name": {
+    "zh": "影像工作站",
+    "en": "Image console"
+   },
+   "hot": "imaging"
+  },
+  "vent": {
+   "name": {
+    "zh": "轉送呼吸器",
+    "en": "Transport ventilator"
+   },
+   "hot": "device"
+  },
+  "pumps": {
+   "name": {
+    "zh": "輸液幫浦",
+    "en": "Infusion pumps"
+   },
+   "hot": "drugs"
+  },
+  "monitor": {
+   "name": {
+    "zh": "轉送監視器",
+    "en": "Transport monitor"
+   },
+   "hot": "monitor"
+  },
+  "cart": {
+   "name": {
+    "zh": "急救車",
+    "en": "Crash cart"
+   },
+   "hot": "crash-cart"
+  },
+  "waiting": {
+   "name": {
+    "zh": "影像科候診區",
+    "en": "Radiology waiting area"
+   },
+   "hot": "door"
+  },
+  "desk": {
+   "name": {
+    "zh": "放射師控制台",
+    "en": "Radiographer desk"
+   },
+   "hot": "desk"
+  }
+ },
+ "glossary": [
+  {
+   "term": {
+    "zh": "自發性循環恢復",
+    "en": "return of spontaneous circulation"
+   },
+   "plain": {
+    "zh": "心跳停止後經過急救，心臟自己恢復跳動、打出血壓。",
+    "en": "After an arrest and resuscitation, the heart beats on its own and makes a blood pressure again."
+   }
+  },
+  {
+   "term": {
+    "zh": "心室顫動",
+    "en": "ventricular fibrillation"
+   },
+   "plain": {
+    "zh": "心室亂顫、打不出血液的致命心律。需要盡快電擊。",
+    "en": "A lethal rhythm where the ventricles quiver and pump no blood. It needs a shock as soon as possible."
+   }
+  },
+  {
+   "term": {
+    "zh": "院內轉送",
+    "en": "in-hospital transfer"
+   },
+   "plain": {
+    "zh": "把重症病人從加護病房送去做檢查或手術。路上的監測和照護要和加護病房一樣。",
+    "en": "Moving a critically ill patient from ICU to a scan or theatre. Monitoring and care on the way must match the ICU."
+   }
+  },
+  {
+   "term": {
+    "zh": "轉送檢核表",
+    "en": "transfer checklist"
+   },
+   "plain": {
+    "zh": "出發前一項一項確認：目的地準備好、管路固定、氧氣與電量足夠、藥物與人員到位。",
+    "en": "A step-by-step check before leaving: destination ready, lines secured, enough oxygen and battery, drugs and people in place."
+   }
+  },
+  {
+   "term": {
+    "zh": "氣管內管",
+    "en": "endotracheal tube"
+   },
+   "plain": {
+    "zh": "從嘴巴放進氣管、接呼吸器的管子。移動病人時最怕它滑出來。",
+    "en": "The tube from mouth to windpipe that connects to the ventilator. Its slipping out is the great fear when moving a patient."
+   }
+  },
+  {
+   "term": {
+    "zh": "二氧化碳波形",
+    "en": "capnography"
+   },
+   "plain": {
+    "zh": "每一口呼出的二氧化碳畫成波形。波形消失，先想管子跑掉了。",
+    "en": "A waveform of carbon dioxide in each breath out. If it vanishes, first suspect the tube has come out."
+   }
+  },
+  {
+   "term": {
+    "zh": "DOPES",
+    "en": "DOPES"
+   },
+   "plain": {
+    "zh": "插管病人突然缺氧時的檢查順序：管子移位、阻塞、氣胸、設備故障、空氣堆積。",
+    "en": "The checklist when an intubated patient suddenly desaturates: Displacement, Obstruction, Pneumothorax, Equipment, Stacked breaths."
+   }
+  },
+  {
+   "term": {
+    "zh": "升壓藥",
+    "en": "vasopressor"
+   },
+   "plain": {
+    "zh": "讓血管收縮、把血壓撐起來的藥，通常用幫浦持續給。斷掉幾分鐘血壓就會掉。",
+    "en": "A drug that tightens blood vessels to hold up blood pressure, usually run continuously on a pump. Interrupt it and the pressure falls within minutes."
+   }
+  },
+  {
+   "term": {
+    "zh": "體溫控制",
+    "en": "temperature control"
+   },
+   "plain": {
+    "zh": "心跳停止救回後，避免發燒、把體溫控制在目標範圍，以保護大腦。",
+    "en": "After resuscitation, preventing fever and keeping temperature in a target range to protect the brain."
+   }
+  },
+  {
+   "term": {
+    "zh": "神經預後評估",
+    "en": "neuroprognostication"
+   },
+   "plain": {
+    "zh": "判斷大腦能恢復多少。不能太早，要等鎮靜藥退、用多種檢查一起看。",
+    "en": "Judging how much the brain will recover. Never too early: wait for sedation to clear and combine several tests."
+   }
+  },
+  {
+   "term": {
+    "zh": "肋骨骨折",
+    "en": "rib fractures"
+   },
+   "plain": {
+    "zh": "有效的胸外按壓常常會壓斷肋骨。這是救命的代價，通常會癒合。",
+    "en": "Effective chest compressions often break ribs. It is the price of saving a life and usually heals."
+   }
+  },
+  {
+   "term": {
+    "zh": "核磁共振安全分區",
+    "en": "MRI safety zones"
+   },
+   "plain": {
+    "zh": "核磁共振室分區管制，最內區有強磁場，鐵製物品會被吸過去變成飛彈。",
+    "en": "MRI suites are zoned; the inner room has a powerful magnet that turns iron objects into projectiles."
+   }
+  }
+ ],
+ "codex": [
+  {
+   "id": "transport-vent",
+   "kind": "equipment",
+   "name": {
+    "zh": "轉送呼吸器",
+    "en": "Transport ventilator"
+   },
+   "text": {
+    "zh": "比加護病房的呼吸器小、靠電池和氧氣鋼瓶運作。出發前要在病人身上試跑，確認潮氣量和二氧化碳波形都在。",
+    "en": "Smaller than the ICU machine, runs on battery and a cylinder. Run it on the patient before leaving and confirm volumes and the capnography waveform."
+   },
+   "hot": "device"
+  },
+  {
+   "id": "ct-scanner",
+   "kind": "equipment",
+   "name": {
+    "zh": "電腦斷層掃描儀",
+    "en": "CT scanner"
+   },
+   "text": {
+    "zh": "床會往洞裡移動。每一條管線都要留夠長度，不然床一動，管子就被拉走。",
+    "en": "The table slides into the bore. Every line needs slack, or the table moves and pulls it out."
+   },
+   "hot": "field"
+  },
+  {
+   "id": "tape-bracelet",
+   "kind": "item",
+   "name": {
+    "zh": "杜主治的膠帶手環",
+    "en": "Dr Tu's tape bracelet"
+   },
+   "text": {
+    "zh": "今天在斷層台上，那捲膠帶重新固定了一條氣管內管。她說她從住院醫師開始就這樣戴。",
+    "en": "On the CT table today that roll re-secured an endotracheal tube. She has worn it like this since residency."
+   }
+  },
+  {
+   "id": "daughter-drawing",
+   "kind": "item",
+   "name": {
+    "zh": "「爸爸加油」",
+    "en": "\"Go Daddy\""
+   },
+   "text": {
+    "zh": "范太太把女兒的畫貼在轉送呼吸器的側邊。畫裡的爸爸拿著羽球拍，比病床大三倍。",
+    "en": "Mrs Fan taped their daughter's drawing to the side of the transport ventilator. In it, Daddy holds a racket and is three times bigger than the bed."
+   }
+  },
+  {
+   "id": "icu-on-wheels",
+   "kind": "concept",
+   "name": {
+    "zh": "轉送就是把加護病房帶著走",
+    "en": "A transfer is the ICU on wheels"
+   },
+   "text": {
+    "zh": "院內轉送是重症病人最危險的時刻之一：管子滑脫、管路被拉、幫浦沒電、氧氣用完、電梯卡住。先問「這個檢查會改變處置嗎？」值得再走。出發前用轉送檢核表：目的地準備好了嗎、氣管內管和管路固定了嗎、轉送呼吸器試跑了嗎、升壓藥夠不夠、氧氣與電量有沒有餘裕、急救藥物和球袋帶了嗎、誰陪同。路上的監測要和加護病房一樣。",
+    "en": "In-hospital transfer is one of the most dangerous moments for a critically ill patient: tubes slip, lines catch, pumps die, oxygen runs out, lifts stall. First ask whether the scan will change management; then go. Use the transfer checklist: destination ready, tube and lines secured, transport ventilator trialled, enough vasopressor, spare oxygen and battery, emergency drugs and bag, who escorts. Monitoring on the way must match the ICU."
+   }
+  },
+  {
+   "id": "dopes",
+   "kind": "concept",
+   "name": {
+    "zh": "DOPES：插管病人突然缺氧",
+    "en": "DOPES: sudden desaturation on a ventilator"
+   },
+   "text": {
+    "zh": "先把病人從呼吸器拔下來、用球袋手動通氣，排除機器問題，再依序檢查：管子移位（看深度、聽兩側、看二氧化碳波形）、阻塞（痰、咬管、管子折到）、氣胸（單側呼吸音、超音波）、設備（氧氣、管路、電源）、空氣堆積（呼氣不完全）。轉送中最常見的是第一個字母。",
+    "en": "Take the patient off the ventilator and hand-bag to exclude the machine, then check in order: Displacement (depth, both sides, capnography), Obstruction (secretions, biting, kinks), Pneumothorax (one-sided sounds, ultrasound), Equipment (oxygen, circuit, power), Stacked breaths (incomplete exhalation). During transfer the first letter is the usual culprit."
+   }
+  },
+  {
+   "id": "not-too-early",
+   "kind": "concept",
+   "name": {
+    "zh": "不要太早下結論",
+    "en": "Do not decide too early"
+   },
+   "text": {
+    "zh": "心跳停止後的大腦，前幾天常常看起來比實際更糟：鎮靜藥、體溫、休克都會影響檢查。神經預後評估通常要等復甦後數天、鎮靜藥效退去，再合併神經學檢查、腦波、誘發電位、影像和血液指標一起判斷。太早說「不會醒」，可能讓預言自己成真。和家屬談時，誠實說不確定，也說什麼時候會更清楚。",
+    "en": "In the first days after an arrest the brain often looks worse than it is: sedatives, temperature and shock all cloud the exam. Neuroprognostication usually waits several days after resuscitation for sedation to clear, then combines examination, EEG, evoked potentials, imaging and blood markers. Saying \"he won't wake\" too early can make it come true. With families, be honest about uncertainty and say when things will be clearer."
+   }
+  }
+ ],
+ "segs": [
+  {
+   "id": "morning",
+   "name": {
+    "zh": "復甦後的早晨",
+    "en": "The morning after the arrest"
+   },
+   "sub": {
+    "zh": "07:30 · 影像科排程白板",
+    "en": "07:30 · radiology schedule board"
+   },
+   "t": 450,
+   "mood": "day",
+   "note": {
+    "zh": "交班完成",
+    "en": "Handover done"
+   },
+   "beats": [
+    {
+     "id": "m1",
+     "to": "place:board",
+     "guide": {
+      "zh": "看今天的排程",
+      "en": "Read today's schedule"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "排程：「09:00 加護三床范老師，頭部與胸部電腦斷層。14:00 加護七床曾小姐，腦部核磁共振。」",
+        "en": "Schedule: \"09:00 ICU bed 3 Mr Fan, head and chest CT. 14:00 ICU bed 7 Ms Tseng, brain MRI.\""
+       }
+      ],
+      [
+       "radiographer",
+       {
+        "zh": "加護病房的病人？那我先把斷層台旁邊的東西清空。上次差點拉掉一條中心靜脈導管。",
+        "en": "ICU patients? Then I will clear round the CT table. Last time we nearly pulled out a central line."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "m2",
+     "to": "attending",
+     "guide": {
+      "zh": "找杜主治",
+      "en": "Find Dr Tu"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "范老師：昨晚練球時心室顫動，學生壓胸、電擊，自發性循環恢復。心電圖沒有典型的心肌梗塞。",
+        "en": "Mr Fan: ventricular fibrillation at practice last night, students did CPR and shocked him, return of spontaneous circulation. No classic infarct on the ECG."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "問你：院內轉送有風險，為什麼還要帶他出去做斷層？",
+        "en": "Question: an in-hospital transfer is risky, so why take him out for a CT?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "找原因：出血、肺栓塞、主動脈剝離，還有壓胸造成的傷。結果會改變下一步。",
+        "en": "To find the cause: bleeding, embolism, dissection, and injuries from CPR. The answer changes what we do next."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "prep",
+   "name": {
+    "zh": "出發之前",
+    "en": "Before leaving"
+   },
+   "sub": {
+    "zh": "08:30 · 加護三床出發前",
+    "en": "08:30 · ICU bed 3, before leaving"
+   },
+   "t": 510,
+   "mood": "day",
+   "note": {
+    "zh": "轉送準備完成",
+    "en": "Ready to move"
+   },
+   "beats": [
+    {
+     "id": "p1",
+     "to": "mr-fan",
+     "guide": {
+      "zh": "評估范老師",
+      "en": "Assess Mr Fan"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "鎮靜中，升壓藥一個幫浦在跑。手腳是溫的，尿量還可以。轉送呼吸器上貼著一張畫。",
+        "en": "Sedated, one vasopressor pump running. Warm hands and feet, urine output fair. A drawing is taped to the transport ventilator."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "血壓靠升壓藥撐著。在加護病房穩，不等於在電梯裡也穩。",
+        "en": "His pressure leans on the vasopressor. Stable in the ICU is not stable in the lift."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "critical-care-v37-shock-trends",
+      "stage": 1
+     },
+     "item": "daughter-drawing"
+    },
+    {
+     "id": "p2",
+     "to": "place:monitor",
+     "guide": {
+      "zh": "做一張十二導程心電圖",
+      "en": "Record a 12-lead ECG"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "出發前再做一張，給心臟科比較。導程貼準。",
+        "en": "One more before we go, for cardiology to compare. Place the leads properly."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "drill",
+      "template": "critical-care",
+      "drill": "ecg"
+     },
+     "post": [
+      [
+       "me",
+       {
+        "zh": "前壁的 ST 段比昨晚更明顯了一點。我拍照傳給心臟科。",
+        "en": "Anterior ST changes a little clearer than last night. I will photograph it for cardiology."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "p3",
+     "to": "place:pumps",
+     "guide": {
+      "zh": "檢查升壓藥幫浦",
+      "en": "Check the vasopressor pump"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "升壓藥的針筒剩不多了，大概夠……來回？",
+        "en": "The vasopressor syringe is getting low. Enough for... the round trip?"
+       }
+      ]
+     ],
+     "mini": {
+      "type": "choice",
+      "q": {
+       "zh": "升壓藥剩不多，斷層來回不確定夠不夠。",
+       "en": "The vasopressor is low; it may not last the trip."
+      },
+      "options": [
+       {
+        "zh": "先換一管新的再出發",
+        "en": "Change to a fresh syringe first",
+        "ok": true,
+        "why": {
+         "zh": "路上換藥要開蓋、要空出一隻手，還可能斷藥。出發前換好，路上就少一件事。",
+         "en": "Changing en route needs a free hand and risks an interruption. Change before leaving and the trip has one fewer problem."
+        },
+        "set": {
+         "pump": "fresh"
+        }
+       },
+       {
+        "zh": "應該夠，先走，斷層室在等",
+        "en": "It should do; CT is waiting",
+        "ok": false,
+        "why": {
+         "zh": "「應該」不是轉送用語。斷層室可以等五分鐘，升壓藥不能斷五分鐘。",
+         "en": "\"Should\" is not a transfer word. CT can wait five minutes; the vasopressor cannot stop for five."
+        },
+        "set": {
+         "pump": "low"
+        }
+       }
+      ]
+     }
+    },
+    {
+     "id": "p4",
+     "to": "attending",
+     "guide": {
+      "zh": "唸轉送檢核表",
+      "en": "Read the transfer checklist"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "（拉下手腕上的膠帶）轉送檢核表，大聲唸。",
+        "en": "(Pulls the tape off her wrist) Transfer checklist, out loud."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "order",
+      "q": {
+       "zh": "轉送檢核表的順序？",
+       "en": "Order the transfer checklist"
+      },
+      "steps": [
+       {
+        "zh": "確認斷層室準備好接",
+        "en": "Confirm CT is ready to receive"
+       },
+       {
+        "zh": "固定氣管內管與所有管路",
+        "en": "Secure the tube and all lines"
+       },
+       {
+        "zh": "換上轉送呼吸器並試跑",
+        "en": "Switch to transport ventilator, trial it"
+       },
+       {
+        "zh": "確認幫浦藥量與電量",
+        "en": "Check pump volumes and batteries"
+       },
+       {
+        "zh": "氧氣鋼瓶、球袋與急救藥",
+        "en": "Cylinder, bag and emergency drugs"
+       },
+       {
+        "zh": "通知電梯，出發",
+        "en": "Call the lift and go"
+       }
+      ]
+     },
+     "post": [
+      [
+       "me",
+       {
+        "zh": "二氧化碳波形在，氣管內管深度在嘴角記號，氧氣鋼瓶滿的加一支備用。",
+        "en": "Capnography trace present, endotracheal tube depth at the lip mark, cylinder full plus a spare."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "p5",
+     "to": "place:desk",
+     "guide": {
+      "zh": "打給斷層室",
+      "en": "Call the CT suite"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "阿彬，加護三床現在出發。插管、一個升壓藥、要做頭和胸，請先把床旁邊清出來。",
+        "en": "Ah-Pin, ICU bed 3 leaving now. Intubated, one vasopressor, head and chest. Please clear round the table."
+       }
+      ],
+      [
+       "radiographer",
+       {
+        "zh": "清好了。電梯我按住了。",
+        "en": "Cleared. I am holding the lift."
+       }
+      ]
+     ],
+     "roles": [
+      "fellow"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "table",
+   "name": {
+    "zh": "斷層台上",
+    "en": "On the CT table"
+   },
+   "sub": {
+    "zh": "09:10 · 電腦斷層掃描台",
+    "en": "09:10 · CT table"
+   },
+   "t": 550,
+   "mood": "day",
+   "note": {
+    "zh": "管子重新放好",
+    "en": "Tube replaced"
+   },
+   "beats": [
+    {
+     "id": "t1",
+     "to": "place:scanner",
+     "guide": {
+      "zh": "把范老師移上斷層台",
+      "en": "Slide Mr Fan onto the table"
+     },
+     "lines": [
+      [
+       "radiographer",
+       {
+        "zh": "管子比你想的短，床比你想的長。誰顧頭？",
+        "en": "The tubing is shorter than you think and the table longer. Who has the head?"
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "我顧頭和管子。數到三：一、二、三。",
+        "en": "I have the head and tube. On three: one, two, three."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "t2",
+     "to": "place:monitor",
+     "guide": {
+      "zh": "血氧突然往下掉",
+      "en": "The saturation drops"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "掃描床往前滑了一下。監視器上的二氧化碳波形變平，血氧開始往下掉，呼吸器在叫。",
+        "en": "The table glides forward. The capnography trace goes flat, saturation falls, the ventilator alarms."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "vitals",
+      "event": "desaturation",
+      "options": [
+       {
+        "zh": "拔離呼吸器、球袋通氣、照 DOPES 查管子",
+        "en": "Off the vent, hand-bag, check the tube by DOPES",
+        "ok": true,
+        "why": {
+         "zh": "二氧化碳波形消失，第一個想管子移位。手動通氣、看深度、聽兩側，確認後重新插管。",
+         "en": "A vanished waveform means displacement until proven otherwise. Hand-bag, check the depth, listen both sides, then re-intubate."
+        }
+       },
+       {
+        "zh": "調高呼吸器的氧氣濃度",
+        "en": "Turn up the ventilator oxygen",
+        "ok": false,
+        "why": {
+         "zh": "管子不在氣管裡，氧氣再高也送不到肺。先找原因。",
+         "en": "If the tube is out of the trachea, no amount of oxygen reaches the lungs. Find the cause."
+        }
+       },
+       {
+        "zh": "先把掃描做完再處理",
+        "en": "Finish the scan first",
+        "ok": false,
+        "why": {
+         "zh": "缺氧的病人不能等掃描。先救人，片子可以再照。",
+         "en": "A hypoxic patient does not wait for a scan. Rescue first; the images can be repeated."
+        }
+       }
+      ]
+     },
+     "post": [
+      [
+       "attending",
+       {
+        "zh": "深度從嘴角記號往外跑了。氣囊在聲帶上面。重新插。",
+        "en": "The depth has slipped out from the lip mark. The cuff is above the cords. Re-intubate."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "t3",
+     "to": "place:scanner",
+     "guide": {
+      "zh": "重新插管",
+      "en": "Re-intubate"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "左手上提，看到聲門再放。我在旁邊。",
+        "en": "Lift with the left, pass it only when you see the cords. I am right here."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "drill",
+      "template": "critical-care",
+      "drill": "airway"
+     },
+     "post": [
+      [
+       "me",
+       {
+        "zh": "二氧化碳波形回來了，兩側呼吸音對稱。",
+        "en": "Capnography back, equal breath sounds."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "（撕下一段膠帶）固定。這就是我戴它的原因。",
+        "en": "(Tears off a strip of tape) Secure it. This is why I wear it."
+       }
+      ]
+     ],
+     "item": "tape-bracelet"
+    },
+    {
+     "id": "t4",
+     "to": "place:pumps",
+     "guide": {
+      "zh": "幫浦也在叫",
+      "en": "The pump is alarming too"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "就在管子剛放好的時候，升壓藥幫浦響了：「針筒將空」。血壓開始往下滑。",
+        "en": "Just as the tube is secured, the vasopressor pump sounds: \"syringe nearly empty\". The pressure starts to slide."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "新的針筒在包裡……我換！",
+        "en": "The fresh syringe is in the bag... changing it!"
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "一次只能處理一件事的時候，最怕同時來兩件。下次出發前換好。",
+        "en": "When you can only fix one thing at a time, two at once is the nightmare. Next time change it before leaving."
+       }
+      ]
+     ],
+     "when": {
+      "flag": "pump",
+      "is": "low"
+     }
+    },
+    {
+     "id": "t4b",
+     "to": "place:pumps",
+     "guide": {
+      "zh": "看一眼幫浦",
+      "en": "Glance at the pump"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "幸好升壓藥是新換的。剛剛那三分鐘，我們只需要處理一件事。",
+        "en": "Good that the vasopressor was fresh. In those three minutes we only had one problem to solve."
+       }
+      ]
+     ],
+     "when": {
+      "flag": "pump",
+      "is": "fresh"
+     }
+    }
+   ]
+  },
+  {
+   "id": "answer",
+   "name": {
+    "zh": "影像的答案",
+    "en": "What the scan shows"
+   },
+   "sub": {
+    "zh": "10:00 · 影像工作站",
+    "en": "10:00 · image console"
+   },
+   "t": 600,
+   "mood": "day",
+   "note": {
+    "zh": "沒有出血、沒有栓塞",
+    "en": "No bleed, no embolism"
+   },
+   "beats": [
+    {
+     "id": "a1",
+     "to": "place:console",
+     "guide": {
+      "zh": "讀范老師的斷層",
+      "en": "Read Mr Fan's CT"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "頭部沒有出血。胸部呢？你先看肋骨。",
+        "en": "No bleed in the head. The chest? Start with the ribs."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "imaging",
+      "region": "chest",
+      "question": {
+       "zh": "范老師的胸部斷層，前胸好幾根肋骨和肺部的斑塊是什麼？",
+       "en": "Mr Fan's chest CT: what are the breaks in several front ribs and the patches in the lungs?"
+      },
+      "answer": {
+       "zh": "肋骨骨折和肺挫傷，是有效壓胸常見的結果。沒有氣胸、沒有肺栓塞、沒有主動脈剝離。",
+       "en": "Rib fractures and lung contusions, common after effective CPR. No pneumothorax, no embolism, no aortic dissection."
+      }
+     }
+    },
+    {
+     "id": "a2",
+     "lines": [
+      [
+       "cardio",
+       {
+        "zh": "斷層排除剝離和肺栓塞了？加上前壁變化，我下午幫他做冠狀動脈攝影。",
+        "en": "Dissection and embolism ruled out? With those anterior changes, I will do a coronary angiogram this afternoon."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "收到。回加護病房後再傳一張新的心電圖給你。",
+        "en": "Got it. I will send a fresh ECG when he is back in ICU."
+       }
+      ]
+     ],
+     "ring": {
+      "title": {
+       "zh": "心臟科來電",
+       "en": "Cardiology calling"
+      },
+      "sub": {
+       "zh": "吳醫師看到斷層和心電圖了",
+       "en": "Dr Wu has the CT and the ECG"
+      },
+      "call": true,
+      "from": "cardio"
+     }
+    },
+    {
+     "id": "a3",
+     "to": "mrs-fan",
+     "guide": {
+      "zh": "到候診區找范太太",
+      "en": "Find Mrs Fan in the waiting area"
+     },
+     "lines": [
+      [
+       "a-hsiang",
+       {
+        "zh": "（站在范太太旁邊）醫師……我是不是壓斷了老師的骨頭？",
+        "en": "(Standing beside Mrs Fan) Doctor... did I break Coach's bones?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "是有肋骨骨折。那是你壓得夠深、夠用力的證據。沒有你，就沒有今天的斷層。",
+        "en": "There are rib fractures. That is proof you pushed deep and hard enough. Without you there would be no scan today."
+       }
+      ],
+      [
+       "mrs-fan",
+       {
+        "zh": "他……會醒來嗎？我看得懂監視器，我只是想知道。",
+        "en": "Will he... wake up? I can read the monitor. I just want to know."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "choice",
+      "q": {
+       "zh": "范太太問他會不會醒來。你怎麼回答？",
+       "en": "Mrs Fan asks whether he will wake. Your answer?"
+      },
+      "options": [
+       {
+        "zh": "現在還太早，幾天後會更清楚",
+        "en": "Too early now; clearer in a few days",
+        "ok": true,
+        "why": {
+         "zh": "神經預後評估要等鎮靜退去、體溫控制穩定，再用多種檢查一起看。誠實說不確定，也說什麼時候會更清楚。",
+         "en": "Neuroprognostication waits for sedation to clear and temperature control to settle, then combines tests. Be honest about uncertainty and say when it will be clearer."
+        }
+       },
+       {
+        "zh": "要有心理準備，可能醒不來",
+        "en": "Prepare yourself; he may not wake",
+        "ok": false,
+        "why": {
+         "zh": "太早下結論可能錯，也可能讓預言自己成真。現在的資訊還不夠。",
+         "en": "An early verdict may be wrong and may become self-fulfilling. There is not enough information yet."
+        }
+       },
+       {
+        "zh": "放心，他一定會醒",
+        "en": "Don't worry, he will definitely wake",
+        "ok": false,
+        "why": {
+         "zh": "沒有人能保證。給家屬的是誠實和時間表，不是承諾。",
+         "en": "No one can promise that. Families need honesty and a timeline, not guarantees."
+        }
+       }
+      ]
+     },
+     "post": [
+      [
+       "me",
+       {
+        "zh": "神經預後評估要等鎮靜退了、體溫穩了，我們會一起看，也會每天跟妳說。",
+        "en": "Neuroprognostication waits until sedation clears and temperature settles. We will look together and update you daily."
+       }
+      ],
+      [
+       "mrs-fan",
+       {
+        "zh": "（把女兒的畫拿出來看）好。幾天。我們等。",
+        "en": "(Looking at their daughter's drawing) All right. A few days. We will wait."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mri",
+   "name": {
+    "zh": "核磁共振的鐵器",
+    "en": "Iron and the magnet"
+   },
+   "sub": {
+    "zh": "14:00 · 核磁共振室外",
+    "en": "14:00 · outside the MRI room"
+   },
+   "t": 840,
+   "mood": "day",
+   "note": {
+    "zh": "曾小姐安全掃完",
+    "en": "Ms Tseng scanned safely"
+   },
+   "beats": [
+    {
+     "id": "r1",
+     "to": "ms-tseng",
+     "guide": {
+      "zh": "帶曾小姐做核磁共振",
+      "en": "Take Ms Tseng to MRI"
+     },
+     "lines": [
+      [
+       "radiographer",
+       {
+        "zh": "這裡是核磁共振安全分區，最內區什麼鐵器都不能進。",
+        "en": "These are the MRI safety zones. Nothing iron enters the inner room."
+       }
+      ],
+      [
+       "radiographer",
+       {
+        "zh": "安全篩檢表她沒辦法自己填。身上有沒有金屬？植入物？",
+        "en": "She cannot fill in the safety form herself. Any metal? Implants?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "家屬確認沒有植入物，胸部 X 光也沒有看到金屬。心電圖貼片換成核磁共振相容的。",
+        "en": "Family confirm no implants, and the chest film shows no metal. ECG pads changed to MRI-conditional ones."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "r2",
+     "to": "place:vent",
+     "guide": {
+      "zh": "看看床上帶了什麼",
+      "en": "Check what is on the bed"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "床尾掛著一支鐵製氧氣鋼瓶，轉送呼吸器是一般型號。",
+        "en": "A steel oxygen cylinder hangs at the foot of the bed; the transport ventilator is a standard model."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "choice",
+      "q": {
+       "zh": "進核磁共振室前，床上的鐵製氧氣鋼瓶和一般呼吸器怎麼辦？",
+       "en": "Before the MRI room: the steel cylinder and standard ventilator?"
+      },
+      "options": [
+       {
+        "zh": "全部留在外面，換相容的呼吸器",
+        "en": "Leave them out; use the MRI-safe ventilator",
+        "ok": true,
+        "why": {
+         "zh": "核磁共振安全分區的最內區，鐵製鋼瓶會被吸進磁鐵變成飛彈。換成相容的呼吸器與延長管路，幫浦留在外面。",
+         "en": "In the inner MRI safety zone a steel cylinder is pulled into the magnet like a missile. Use an MRI-conditional ventilator and long lines; pumps stay outside."
+        }
+       },
+       {
+        "zh": "鋼瓶綁緊就可以帶進去",
+        "en": "Strap the cylinder tight and take it in",
+        "ok": false,
+        "why": {
+         "zh": "綁得再緊，磁力也會把它拉走。這樣的意外曾經造成死亡。",
+         "en": "However tight, the magnet will take it. Accidents like this have killed people."
+        }
+       },
+       {
+        "zh": "快快掃，鋼瓶放在床尾就好",
+        "en": "Scan quickly, leave it at the foot",
+        "ok": false,
+        "why": {
+         "zh": "磁場一直都在，不分快慢。鐵器不進最內區。",
+         "en": "The field is always on, quick or not. No iron in the inner room."
+        }
+       }
+      ]
+     }
+    },
+    {
+     "id": "r3",
+     "to": "place:pumps",
+     "guide": {
+      "zh": "接長管路",
+      "en": "Run the long lines"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "幫浦留在控制室，延長管路穿過波導孔。曾小姐戴耳塞，監視器換成相容型。",
+        "en": "Pumps stay in the control room, extension lines through the waveguide. Earplugs for Ms Tseng, MRI-safe monitor on."
+       }
+      ],
+      [
+       "radiographer",
+       {
+        "zh": "你是今年第一個沒讓我喊「停！」的人。",
+        "en": "You are the first this year who did not make me shout \"Stop!\""
+       }
+      ]
+     ],
+     "roles": [
+      "transport-nurse"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "back",
+   "name": {
+    "zh": "回到加護病房",
+    "en": "Back in the ICU"
+   },
+   "sub": {
+    "zh": "16:30 · 加護三床",
+    "en": "16:30 · ICU bed 3"
+   },
+   "t": 990,
+   "mood": "eve",
+   "note": {
+    "zh": "設定通氣與體溫目標",
+    "en": "Ventilation and temperature targets set"
+   },
+   "beats": [
+    {
+     "id": "b1",
+     "to": "place:vent",
+     "guide": {
+      "zh": "調整呼吸器目標",
+      "en": "Set the ventilation targets"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "心跳停止後的大腦怕兩件事：缺氧，還有二氧化碳太高或太低。你的目標是什麼？",
+        "en": "After an arrest the brain fears two things: low oxygen, and carbon dioxide too high or too low. What are your targets?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "血氧不缺也不過量，二氧化碳維持正常，避免發燒，持續體溫控制。",
+        "en": "Oxygen neither low nor excessive, normal carbon dioxide, no fever, ongoing temperature control."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "critical-care-v37-respiratory-failure",
+      "stage": 1
+     }
+    },
+    {
+     "id": "b2",
+     "to": "place:board",
+     "guide": {
+      "zh": "寫轉送紀錄",
+      "en": "Write the transfer note"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "轉送中氣管內管移位，依 DOPES 處理，重新插管成功，期間最低血氧與時間記錄。",
+        "en": "Tube displaced in transit, managed by DOPES, re-intubated successfully; lowest saturation and duration recorded."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "寫清楚，也寫我們學到什麼。下一個帶他出門的人會看。",
+        "en": "Write it clearly, and what we learned. The next person to take him out will read it."
+       }
+      ]
+     ],
+     "roles": [
+      "fellow"
+     ]
+    },
+    {
+     "id": "b3",
+     "to": "place:vent",
+     "guide": {
+      "zh": "整理轉送包",
+      "en": "Restock the transfer bag"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "球袋、口咽呼吸道、膠帶、備用針筒補齊。轉送呼吸器充電，氧氣鋼瓶換滿的。",
+        "en": "Bag, airways, tape, spare syringes restocked. Transport ventilator charging, cylinder swapped for a full one."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "下一次轉送，從這一刻就開始準備了。",
+        "en": "The next transfer starts being prepared right now."
+       }
+      ]
+     ],
+     "roles": [
+      "transport-nurse"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "night",
+   "name": {
+    "zh": "夜裡的兩通電話",
+    "en": "Two calls in the night"
+   },
+   "sub": {
+    "zh": "21:30 · 值班室",
+    "en": "21:30 · on-call room"
+   },
+   "t": 1290,
+   "mood": "night",
+   "note": {
+    "zh": "下班",
+    "en": "Off duty"
+   },
+   "beats": [
+    {
+     "id": "n1",
+     "lines": [
+      [
+       "night-nurse",
+       {
+        "zh": "三床范老師體溫往上爬了一點，降溫設備已經接上，照體溫控制的目標在調。",
+        "en": "Bed 3, Mr Fan, temperature creeping up a little. Cooling device on, adjusting to the temperature-control target."
+       }
+      ],
+      [
+       "night-nurse",
+       {
+        "zh": "還有，心導管室說下午找到一條塞住的冠狀動脈，已經放了支架。",
+        "en": "Also, the cath lab found a blocked coronary artery this afternoon and placed a stent."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "謝謝。預防發燒繼續，鎮靜不要加深，明早神經學檢查我來看。",
+        "en": "Thanks. Keep preventing fever, do not deepen sedation, I will do the neuro exam in the morning."
+       }
+      ]
+     ],
+     "ring": {
+      "title": {
+       "zh": "加護病房夜班來電",
+       "en": "ICU night nurse calling"
+      },
+      "sub": {
+       "zh": "三床體溫升高，還有心導管結果",
+       "en": "Bed 3 temperature up, plus cath lab result"
+      },
+      "call": true,
+      "from": "night-nurse"
+     }
+    },
+    {
+     "id": "n2",
+     "to": "attending",
+     "guide": {
+      "zh": "和杜主治收尾",
+      "en": "Wrap up with Dr Tu"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "今天哪一個時刻最危險？",
+        "en": "Which moment today was the most dangerous?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "斷層台往前滑的那一下。一秒鐘，管子就跑了。",
+        "en": "The table gliding forward. One second and the tube was out."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "（把一捲新膠帶套到你手腕上）病人離開加護病房，加護病房就要跟著走。明天見。",
+        "en": "(Slips a new roll of tape onto your wrist) When the patient leaves the ICU, the ICU goes too. See you tomorrow."
+       }
+      ]
+     ],
+     "end": true
+    }
+   ]
+  }
+ ],
+ "ending": {
+  "title": {
+   "zh": "轉送日結束",
+   "en": "Transfer day done"
+  },
+  "sub": {
+   "zh": "一條管子、一管升壓藥、一支不能進去的鋼瓶",
+   "en": "One tube, one syringe, one cylinder that stayed outside"
+  },
+  "stats": [
+   "stages",
+   "drills",
+   "imaging",
+   "choices",
+   "calls",
+   "items",
+   "time"
+  ]
+ }
+}

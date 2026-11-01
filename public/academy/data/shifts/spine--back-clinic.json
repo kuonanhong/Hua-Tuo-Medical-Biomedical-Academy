@@ -1,0 +1,262 @@
+{
+  "format": "huatuo-shift-v2",
+  "department": "spine",
+  "case": "back-clinic",
+  "caseTitle": {"zh": "星期一的背痛門診", "en": "Monday back-pain clinic"},
+  "condition": {"zh": "感染 · 脊椎骨髓炎", "en": "Infection · spinal osteomyelitis"},
+  "difficulty": 2,
+  "room": "clinic",
+  "title": {"zh": "脊椎外科門診日", "en": "A spine clinic day"},
+  "tagline": {"zh": "四個背痛的人，只有一個在發抖", "en": "Four people with back pain; only one is shivering"},
+  "minutes": 22,
+  "roles": [
+    {"id": "resident", "zh": "脊椎外科住院醫師（門診）", "en": "Spine resident (clinic)", "desc": {"zh": "門診沒有刀、沒有監視器，只有問診、檢查和判斷。背痛很常見，所以紅旗才難找。", "en": "No scalpel, no monitor in clinic: only history, examination and judgement. Back pain is common, which is exactly why red flags are hard to find."}},
+    {"id": "np", "zh": "脊椎專科護理師", "en": "Spine nurse practitioner", "desc": {"zh": "你負責候診區的紅旗問卷、傷口門診與電話追蹤。很多時候，第一個發現不對勁的是你。", "en": "You run the waiting-room red-flag questionnaire, the wound clinic and the phone follow-ups. Often you are the first to notice something is wrong."}}
+  ],
+  "cast": {
+    "attending": {"name": {"zh": "何主治", "en": "Dr Ho"}, "role": {"zh": "脊椎外科主治醫師（師傅）", "en": "Spine attending (mentor)"}, "tag": "ATT", "color": "#81296d", "body": "mentor",
+      "about": {"zh": "看門診從不看錶，每個病人卻都準時看完。口頭禪：「背痛很常見，所以紅旗才難找。」", "en": "Never looks at the clock in clinic, yet every patient is seen on time. Catchphrase: 'Back pain is common; that's why red flags are hard to find.'"}},
+    "nurse": {"name": {"zh": "素琴", "en": "Su-chin"}, "role": {"zh": "門診護理師", "en": "Clinic nurse"}, "tag": "RN", "color": "#3b8f6a", "body": "nurse",
+      "about": {"zh": "門診的節奏由她決定。額溫槍從不離手，誰在發抖逃不過她的眼睛。", "en": "Sets the rhythm of the clinic. The thermometer never leaves her hand, and nobody shivers unnoticed."}},
+    "cheng": {"name": {"zh": "小鄭", "en": "Cheng"}, "role": {"zh": "病人・31 歲軟體工程師", "en": "Patient, 31, software engineer"}, "tag": "PT1", "color": "#2563eb", "body": "patient",
+      "about": {"zh": "加班坐了一週後腰痛，帶著網路查到的十個病名來，堅持要照 MRI。", "en": "Back pain after a week of overtime at his desk. Arrives with ten diagnoses from the internet and insists on an MRI."}},
+    "chien": {"name": {"zh": "簡阿姨", "en": "Mrs Chien"}, "role": {"zh": "病人・72 歲退休國文老師", "en": "Patient, 72, retired literature teacher"}, "tag": "PT2", "color": "#b45309", "body": "patient",
+      "about": {"zh": "類風濕關節炎吃類固醇十幾年。上週搬花盆，背就直不起來了。說話像在批改作文。", "en": "On steroids for rheumatoid arthritis for over a decade. Lifted a flowerpot last week and couldn't straighten up. Talks as if marking an essay."}},
+    "lin": {"name": {"zh": "林大哥", "en": "Mr Lin"}, "role": {"zh": "病人・58 歲計程車司機", "en": "Patient, 58, taxi driver"}, "tag": "PT3", "color": "#6b7280", "body": "patient",
+      "about": {"zh": "糖尿病，三週前腳底的傷口才剛好。說背痛「晚上比白天痛」，在候診區一直發抖。", "en": "Diabetic; a sore on his sole healed only three weeks ago. Says his back is 'worse at night than by day' and is shivering in the waiting room."}},
+    "yeh": {"name": {"zh": "葉先生", "en": "Mr Yeh"}, "role": {"zh": "病人・50 歲腰椎融合術後", "en": "Patient, 50, after lumbar fusion"}, "tag": "PT4", "color": "#7c3aed", "body": "patient",
+      "about": {"zh": "開完刀兩週，昨天打了一個大噴嚏，傷口下端裂開一小段。", "en": "Two weeks after surgery, one big sneeze yesterday opened the lower end of his wound a little."}},
+    "lab": {"name": {"zh": "醫檢師阿芬", "en": "Fen (lab)"}, "role": {"zh": "微生物室醫檢師", "en": "Microbiology scientist"}, "tag": "LAB", "color": "#0e7490", "phoneOnly": true,
+      "about": {"zh": "危急值一定請你複誦一次，才肯掛電話。", "en": "Never hangs up on a critical result until you have read it back."}}
+  },
+  "places": {
+    "desk": {"name": {"zh": "診間", "en": "Consulting room"}, "hot": "desk"},
+    "bed": {"name": {"zh": "檢查床", "en": "Examination couch"}, "hot": "bed"},
+    "imaging": {"name": {"zh": "影像螢幕", "en": "Image screen"}, "hot": "imaging"},
+    "procedure": {"name": {"zh": "門診處置室", "en": "Clinic procedure room"}, "hot": "field"},
+    "waiting": {"name": {"zh": "候診區", "en": "Waiting area"}, "hot": "door"},
+    "sink": {"name": {"zh": "洗手台", "en": "Sink"}, "hot": "sink"}
+  },
+  "glossary": [
+    {"term": {"zh": "非特異性下背痛", "en": "non-specific low back pain"}, "plain": {"zh": "找不到單一結構原因的腰痛，九成以上的背痛屬於這種。多數幾週內改善，重點是保持活動。", "en": "Low back pain without a single structural cause: the vast majority of back pain. Most improves within weeks; the key is to keep moving."}},
+    {"term": {"zh": "紅旗", "en": "red flags"}, "plain": {"zh": "提示背痛背後可能有嚴重原因的線索：發燒、體重減輕、夜間痛、癌症病史、外傷、長期類固醇、大小便或腳的神經症狀。", "en": "Clues that back pain may hide something serious: fever, weight loss, night pain, a cancer history, trauma, long-term steroids, bladder, bowel or leg nerve symptoms."}},
+    {"term": {"zh": "夜間痛", "en": "night pain"}, "plain": {"zh": "躺著休息也痛、半夜痛醒。機械性的腰痛通常休息會好，夜間痛要想到感染或腫瘤。", "en": "Pain at rest that wakes you at night. Mechanical back pain usually eases with rest; night pain raises the thought of infection or tumour."}},
+    {"term": {"zh": "壓迫性骨折", "en": "compression fracture"}, "plain": {"zh": "椎體被壓扁，常是前方塌成楔形。骨質疏鬆的人，搬個東西或咳嗽就可能發生。", "en": "A vertebral body squashed, often wedged at the front. With osteoporosis, lifting something or a cough can be enough."}},
+    {"term": {"zh": "骨質疏鬆", "en": "osteoporosis"}, "plain": {"zh": "骨頭變薄變脆。長期類固醇、停經、年紀都是危險因子。第一次骨折常是它第一次被發現。", "en": "Thin, brittle bone. Long-term steroids, menopause and age are risk factors. A first fracture is often when it is first found."}},
+    {"term": {"zh": "椎間盤炎", "en": "discitis"}, "plain": {"zh": "椎間盤的感染，常和上下兩節椎體的骨髓炎一起出現。細菌多半從血液而來。", "en": "Infection of the disc, usually with osteomyelitis of the vertebrae above and below. The bacteria mostly arrive through the blood."}},
+    {"term": {"zh": "硬膜外膿瘍", "en": "epidural abscess"}, "plain": {"zh": "脊椎管裡、硬膜外面的一包膿。變大會壓到神經，造成無力與大小便失控，是急症。", "en": "A collection of pus inside the spinal canal outside the dura. As it grows it compresses nerves, causing weakness and loss of bladder or bowel control: an emergency."}},
+    {"term": {"zh": "血液培養", "en": "blood cultures"}, "plain": {"zh": "抽血放進培養瓶，看能不能長出細菌、是哪一種、對哪些抗生素有效。要在抗生素之前抽。", "en": "Blood drawn into culture bottles to grow any bacteria, identify them and test which antibiotics work. Taken before antibiotics."}},
+    {"term": {"zh": "發炎指數", "en": "inflammatory markers"}, "plain": {"zh": "血液裡反映發炎程度的檢驗。背痛加上發炎指數很高，要想到感染。", "en": "Blood tests that reflect inflammation. Back pain with very high markers should make you think of infection."}},
+    {"term": {"zh": "影像導引切片", "en": "image-guided biopsy"}, "plain": {"zh": "在 CT 或透視下用針取一小塊組織送培養與病理，找出是哪一種細菌或病變。", "en": "A needle sample taken under CT or fluoroscopy and sent for culture and pathology, to identify the organism or the disease."}},
+    {"term": {"zh": "金黃色葡萄球菌", "en": "Staphylococcus aureus"}, "plain": {"zh": "脊椎感染最常見的細菌。在血液中出現時，要另外檢查心臟瓣膜有沒有被感染。", "en": "The commonest cause of spinal infection. When it is found in the blood, the heart valves must be checked for infection too."}},
+    {"term": {"zh": "心內膜炎", "en": "endocarditis"}, "plain": {"zh": "心臟瓣膜的感染。細菌會從這裡不斷撒到全身，包括脊椎。用心臟超音波找。", "en": "Infection of the heart valves, from which bacteria keep seeding the body, the spine included. Looked for with an echocardiogram."}},
+    {"term": {"zh": "傷口裂開", "en": "wound dehiscence"}, "plain": {"zh": "縫合的傷口分開。脊椎手術後出現時，要先排除深部感染，不能只看表面。", "en": "A closed wound coming apart. After spinal surgery deep infection must be excluded first; the surface is not the whole story."}}
+  ],
+  "codex": [
+    {"id": "exam-couch", "kind": "equipment", "name": {"zh": "檢查床與反射槌", "en": "Couch and reflex hammer"}, "hot": "bed", "text": {"zh": "直腿抬高、肌力、感覺、反射。門診最強的影像，是一張檢查床和一雙有耐心的手。", "en": "Straight-leg raise, power, sensation, reflexes. The strongest imaging in clinic is a couch and a pair of patient hands."}},
+    {"id": "procedure-room", "kind": "equipment", "name": {"zh": "門診處置室", "en": "Clinic procedure room"}, "hot": "field", "text": {"zh": "換藥、拆線、清創、縫合。燈很亮，器械包很小，無菌原則一樣不能少。", "en": "Dressings, suture removal, debridement, stitching. Bright light, small sets, and no less sterile technique."}},
+    {"id": "image-screen", "kind": "equipment", "name": {"zh": "影像螢幕", "en": "Image screen"}, "hot": "imaging", "text": {"zh": "今天它證明了兩件事：一張 X 光可以找到骨質疏鬆，一張 MRI 可以找到一包膿。今天它也幫小鄭省下了一張不需要的片子。", "en": "Today it proved two things: an X-ray can find osteoporosis and an MRI can find pus. It also spared Cheng a scan he didn't need."}},
+    {"id": "handout", "kind": "item", "name": {"zh": "「背痛不等於壞掉」衛教單", "en": "'Back pain isn't damage' leaflet"}, "text": {"zh": "給小鄭的：保持活動、照常工作、坐一段時間就起來走、什麼情況要馬上回來。", "en": "For Cheng: stay active, keep working, get up and walk after sitting a while, and when to come back at once."}},
+    {"id": "culture-bottles", "kind": "item", "name": {"zh": "林大哥的血液培養瓶", "en": "Mr Lin's blood culture bottles"}, "text": {"zh": "兩套、兩個部位、在抗生素之前。今晚其中一瓶先叫了。", "en": "Two sets, two sites, before any antibiotic. Tonight one of them called first."}},
+    {"id": "no-imaging", "kind": "concept", "name": {"zh": "為什麼不幫每個背痛照 MRI", "en": "Why not MRI every back"}, "text": {"zh": "沒有紅旗的下背痛，早期照 MRI 不會讓人好得更快，卻常照出與疼痛無關的椎間盤膨出與退化，讓人更怕動、更久不好。取而代之的是：完整問診與檢查、解釋、保持活動、清楚的安全網，以及在紅旗出現時毫不猶豫地照。", "en": "In low back pain without red flags, early MRI does not speed recovery, yet it often shows disc bulges and wear unrelated to the pain, making people fear movement and recover more slowly. Instead: a full history and exam, explanation, staying active, a clear safety net, and imaging without hesitation when a red flag appears."}},
+    {"id": "spinal-infection", "kind": "concept", "name": {"zh": "脊椎感染：先找細菌，再給藥", "en": "Spinal infection: find the bug, then treat"}, "text": {"zh": "病人穩定、沒有神經症狀時，先抽血液培養，必要時做影像導引切片，拿到細菌再給針對性的抗生素，療程很長，猜錯代價很大。但若有敗血症或神經變差，培養後立刻給抗生素，神經變差就緊急減壓。還要找來源：皮膚、腳、牙、泌尿道、心臟；金黃色葡萄球菌菌血症一定要找心內膜炎。", "en": "If the patient is stable without neurological deficit, take blood cultures, and if needed an image-guided biopsy, and give targeted antibiotics once the organism is known: the course is long and a wrong guess is costly. But with sepsis or neurological decline, give antibiotics immediately after cultures and decompress urgently if the nerves worsen. Find the source too: skin, feet, teeth, urinary tract, heart; Staphylococcus aureus in the blood always means looking for endocarditis."}},
+    {"id": "sentinel-fracture", "kind": "concept", "name": {"zh": "第一次骨折是警鐘", "en": "The first fracture is an alarm"}, "text": {"zh": "輕微外力造成的壓迫性骨折，是骨質疏鬆第一次開口說話。止痛、早期活動之外，要評估骨密度、檢討類固醇、開始治療骨頭，並轉介骨折聯絡服務。不然下一次可能是髖部。若有癌症病史、體重減輕、椎弓根破壞或不典型的塌陷，要想到腫瘤。", "en": "A compression fracture from minor force is osteoporosis speaking for the first time. Beyond pain relief and early movement: assess bone density, review the steroids, start bone treatment, and refer to a fracture liaison service, or the next one may be a hip. A cancer history, weight loss, a destroyed pedicle or an atypical collapse should raise the thought of tumour."}}
+  ],
+  "segs": [
+    {"id": "open", "name": {"zh": "開診前", "en": "Before clinic"}, "sub": {"zh": "08:00 · 診間", "en": "08:00 · consulting room"}, "t": 480, "mood": "day",
+     "note": {"zh": "今天四個背痛；候診區有人發抖", "en": "Four back pains today; someone is shivering outside"},
+     "beats": [
+      {"id": "o1", "to": "attending", "guide": {"zh": "和何主治看掛號單", "en": "Go over the list with Dr Ho"},
+       "lines": [
+        ["attending", {"zh": "今天四個背痛。背痛很常見，所以紅旗才難找。", "en": "Four back pains today. Back pain is common, which is why red flags are hard to find."}],
+        ["me", {"zh": "每一位都問一樣的紅旗：發燒、體重、夜間痛、癌症、外傷、類固醇、大小便、腳無力。", "en": "Same red flags for everyone: fever, weight, night pain, cancer, trauma, steroids, bladder and bowel, weak legs."}],
+        ["attending", {"zh": "還有一面旗子不在表上：你自己覺得哪裡怪怪的。", "en": "And one flag that isn't on the list: your own sense that something's off."}]
+       ]},
+      {"id": "o2", "roles": ["np"], "to": "nurse", "guide": {"zh": "看候診區的問卷", "en": "Check the waiting-room forms"},
+       "lines": [
+        ["me", {"zh": "紅旗問卷收齊了。林大哥勾了「發燒」和「晚上痛醒」，他在發抖。", "en": "Red-flag forms are in. Mr Lin ticked 'fever' and 'woken by pain at night', and he's shivering."}],
+        ["nurse", {"zh": "我量了，他在燒。先讓他躺檢查床，排在第三個，不要讓他坐在門口吹冷氣。", "en": "I took it: he's febrile. He lies on the couch, third in line, not sitting by the door in the air-con."}]
+       ]}
+     ]},
+    {"id": "cheng", "name": {"zh": "要 MRI 的工程師", "en": "The engineer who wants an MRI"}, "sub": {"zh": "08:30 · 診間", "en": "08:30 · consulting room"}, "t": 510, "mood": "day",
+     "note": {"zh": "小鄭：非特異性下背痛", "en": "Cheng: non-specific low back pain"},
+     "beats": [
+      {"id": "c1", "to": "cheng", "guide": {"zh": "看小鄭", "en": "See Cheng"},
+       "lines": [
+        ["cheng", {"zh": "醫師，我查過了：椎間盤突出、僵直性脊椎炎、腫瘤……我要照 MRI。", "en": "Doctor, I've looked it up: disc herniation, ankylosing spondylitis, tumour... I want an MRI."}],
+        ["me", {"zh": "我們先問完、檢查完，再決定。", "en": "Let's finish the history and exam, then decide."}],
+        ["sys", {"zh": "沒有紅旗；直腿抬高陰性；肌力、感覺、反射都正常。腰兩側的肌肉很緊。", "en": "No red flags; straight-leg raise negative; power, sensation and reflexes normal. The muscles either side of his spine are tight."}]
+       ],
+       "mini": {"type": "stage", "case": "spine-red-flags-back-pain-triage", "stage": 5}},
+      {"id": "c2", "to": "cheng", "guide": {"zh": "回答 MRI 的要求", "en": "Answer the MRI request"},
+       "lines": [
+        ["cheng", {"zh": "所以可以照吧？照了我比較安心。", "en": "So I can have the scan? I'd feel better."}]
+       ],
+       "mini": {"type": "choice", "q": {"zh": "沒有紅旗的非特異性下背痛，他堅持照 MRI。", "en": "Non-specific low back pain, no red flags, and he insists on an MRI."},
+        "options": [
+         {"zh": "解釋不需要，給活動計畫與安全網", "en": "Explain why not; activity plan and safety net", "ok": true, "set": {"mri": "no"},
+          "why": {"zh": "這時照 MRI 不會讓人好得快，卻常照出和疼痛無關的「退化」，讓人更怕動。", "en": "An MRI now won't speed recovery, but it often shows 'degeneration' unrelated to the pain and makes people afraid to move."}},
+         {"zh": "照吧，讓他安心", "en": "Order it to reassure him", "ok": false, "set": {"mri": "yes"},
+          "why": {"zh": "安心只維持到報告出來。三十歲的椎間盤也會「膨出」，那幾個字會跟著他很多年。", "en": "The reassurance lasts until the report. Thirty-year-old discs bulge too, and those words can follow him for years."}}
+        ]},
+       "post": [
+        ["cheng", {"zh": "那我要躺著休息嗎？", "en": "Should I rest in bed then?"}],
+        ["me", {"zh": "不要躺。照常上班，坐一段時間就起來走。腳麻、腳軟、大小便不對，馬上回來。", "en": "No bed rest. Keep working, get up and walk after sitting a while. Numb or weak legs, bladder or bowel changes: come straight back."}]
+       ],
+       "item": "handout"}
+     ]},
+    {"id": "chien", "name": {"zh": "搬花盆之後", "en": "After the flowerpot"}, "sub": {"zh": "10:00 · 檢查床", "en": "10:00 · examination couch"}, "t": 600, "mood": "day",
+     "note": {"zh": "簡阿姨：骨質疏鬆的壓迫性骨折", "en": "Mrs Chien: an osteoporotic compression fracture"},
+     "beats": [
+      {"id": "j1", "to": "chien", "guide": {"zh": "看簡阿姨", "en": "See Mrs Chien"},
+       "lines": [
+        ["chien", {"zh": "搬個花盆而已，背就像被人打了一拳。這篇作文，我給它不及格。", "en": "Just lifting a flowerpot, and my back felt punched. I'm giving this essay a failing grade."}],
+        ["me", {"zh": "類固醇吃多久了？", "en": "How long on steroids?"}],
+        ["chien", {"zh": "類風濕關節炎，十幾年了。", "en": "For my rheumatoid arthritis, over ten years."}],
+        ["me", {"zh": "胸腰交界這一節壓了最痛。輕微外力加長期類固醇，要想到壓迫性骨折。", "en": "Most tender here at the thoracolumbar junction. Minor force plus long-term steroids: think compression fracture."}]
+       ],
+       "mini": {"type": "stage", "case": "spine-red-flags-back-pain-triage", "stage": 4},
+       "post": [
+        ["attending", {"zh": "X 光：一節椎體前方塌成楔形，後壁完整，神經學正常。", "en": "X-ray: one vertebral body wedged at the front, back wall intact, neurology normal."}],
+        ["attending", {"zh": "壓迫性骨折不是終點，是骨質疏鬆第一次開口說話。下一步？", "en": "A compression fracture isn't the end; it's osteoporosis speaking for the first time. Next?"}],
+        ["me", {"zh": "止痛、早期活動，安排骨密度，轉骨折聯絡個管師，和風濕科討論類固醇。", "en": "Analgesia, early mobilising, a bone density scan, referral to the fracture liaison nurse, and a steroid review with rheumatology."}],
+        ["chien", {"zh": "好，這個批改我接受。", "en": "Very well. I accept that correction."}]
+       ]}
+     ]},
+    {"id": "lin", "name": {"zh": "發抖的林大哥", "en": "Mr Lin, shivering"}, "sub": {"zh": "11:00 · 檢查床", "en": "11:00 · examination couch"}, "t": 660, "mood": "day",
+     "note": {"zh": "林大哥：發燒、夜間痛、腳上剛好的傷口", "en": "Mr Lin: fever, night pain, a recently healed foot wound"},
+     "beats": [
+      {"id": "l1", "to": "lin", "guide": {"zh": "看林大哥", "en": "See Mr Lin"},
+       "lines": [
+        ["lin", {"zh": "背痛兩個禮拜，晚上比白天痛，翻身就痛醒。", "en": "Two weeks of back pain, worse at night than by day; turning over wakes me."}],
+        ["me", {"zh": "最近有傷口、感染、打過針嗎？", "en": "Any recent wounds, infections or injections?"}],
+        ["lin", {"zh": "三週前腳底破一個洞，在診所換藥，好了啊。", "en": "A hole in my sole three weeks ago; the clinic dressed it and it healed."}],
+        ["me", {"zh": "糖尿病、腳上的傷口、夜間痛、發燒。這是感染的紅旗。", "en": "Diabetes, a foot wound, night pain, fever. Those are infection red flags."}]
+       ],
+       "mini": {"type": "stage", "case": "spine-red-flags-back-pain-triage", "stage": 3}},
+      {"id": "l2", "to": "nurse", "guide": {"zh": "他在發抖", "en": "He's shivering"},
+       "lines": [
+        ["nurse", {"zh": "又燒起來了，在發冷顫。", "en": "His temperature's up again, and he's having rigors."}]
+       ],
+       "mini": {"type": "vitals", "event": "fever",
+        "options": [
+         {"zh": "抽兩套血液培養，評估敗血症，通知", "en": "Two sets of blood cultures, assess for sepsis, escalate", "ok": true,
+          "why": {"zh": "穩定、沒有神經症狀的脊椎感染，抗生素可以等培養或切片之後，提高找到細菌的機會；若敗血症或神經變差，培養後立刻給。", "en": "In a stable spinal infection without neurological signs, antibiotics can wait for cultures or biopsy to raise the yield; with sepsis or neurological decline, give them right after cultures."}},
+         {"zh": "先打一針廣效抗生素", "en": "Give a broad antibiotic shot first", "ok": false,
+          "why": {"zh": "培養前給藥，之後的切片可能什麼都長不出來，治療只能猜。除非他已經敗血症。", "en": "Antibiotics before cultures may leave the biopsy sterile and the treatment a guess. Unless he is already septic."}},
+         {"zh": "給退燒藥，回家觀察", "en": "Antipyretic and home to watch", "ok": false,
+          "why": {"zh": "糖尿病、夜間痛、發燒的背痛，不能回家觀察。", "en": "Back pain with diabetes, night pain and fever is not a watch-at-home problem."}}
+        ]},
+       "post": [
+        ["nurse", {"zh": "血壓穩、意識清楚，腳的力量正常。", "en": "Pressure stable, alert, leg strength normal."}],
+        ["me", {"zh": "血液培養抽好了，發炎指數加急，今天就排 MRI。", "en": "Blood cultures taken, inflammatory markers urgent, MRI today."}],
+        ["attending", {"zh": "全脊椎都照。感染不一定只在一個地方。", "en": "Whole spine. Infection isn't always in one place."}]
+       ],
+       "item": "culture-bottles"},
+      {"id": "l3", "ring": {"title": {"zh": "放射科訊息", "en": "Radiology message"}, "sub": {"zh": "「緊急 MRI 排在下午一點，請空腹」", "en": "'Urgent MRI at one this afternoon; nil by mouth'"}, "call": false},
+       "lines": [
+        ["sys", {"zh": "放射科回覆：緊急 MRI 排進下午第一個空檔。發炎指數也出來了，高得很明顯。", "en": "Radiology replies: urgent MRI in the first afternoon slot. The inflammatory markers are back too, clearly high."}],
+        ["me", {"zh": "我帶他過去，沿路看腳的力量。", "en": "I'll take him down and check his legs on the way."}]
+       ]}
+     ]},
+    {"id": "mri", "name": {"zh": "MRI 上的答案", "en": "The answer on the MRI"}, "sub": {"zh": "13:30 · 影像螢幕", "en": "13:30 · image screen"}, "t": 810, "mood": "day",
+     "note": {"zh": "椎間盤炎合併小硬膜外膿瘍；住院", "en": "Discitis with a small epidural abscess; admitted"},
+     "beats": [
+      {"id": "i1", "to": "place:imaging", "guide": {"zh": "看林大哥的 MRI", "en": "Read Mr Lin's MRI"},
+       "lines": [
+        ["attending", {"zh": "說吧。", "en": "Go on."}],
+        ["me", {"zh": "兩節腰椎椎體加中間的椎間盤，訊號都不對，前面還有一小包東西。", "en": "Two lumbar bodies and the disc between them are abnormal, with a small collection in front of the canal."}]
+       ],
+       "mini": {"type": "imaging", "region": "spine",
+        "question": {"zh": "相鄰兩節椎體與中間椎間盤訊號異常、打顯影劑後增強，椎管前方有一小塊邊緣增強的積液。林大哥沒有神經症狀。這是什麼？下一步？", "en": "Two adjacent vertebrae and their disc are abnormal and enhance with contrast, with a small rim-enhancing collection in front of the canal. Mr Lin has no neurological signs. What is it, and what next?"},
+        "answer": {"zh": "椎間盤炎合併脊椎骨髓炎，以及小的硬膜外膿瘍。沒有神經症狀、生命徵象穩定：住院、等血液培養，培養沒長就做影像導引切片，拿到細菌再給針對性抗生素；密集做神經學檢查，一出現無力、麻木或大小便改變就緊急減壓。同時找來源：腳、皮膚、心臟。", "en": "Discitis with vertebral osteomyelitis and a small epidural abscess. With no neurological signs and stable observations: admit, await blood cultures, image-guided biopsy if they are negative, then targeted antibiotics; frequent neurological checks, with urgent decompression at the first weakness, numbness or bladder or bowel change. Look for the source too: foot, skin, heart."}},
+       "post": [
+        ["attending", {"zh": "沒有神經症狀，所以今天不是開刀日，是找細菌、勤看腳的日子。", "en": "No neurological signs, so today isn't an operating day. It's a find-the-bug, check-the-legs-often day."}],
+        ["me", {"zh": "我寫給病房：看哪幾條肌肉、多久看一次、什麼情況立刻叫我。", "en": "I'll write for the ward: which muscles, how often, and when to call me at once."}]
+       ]},
+      {"id": "i2", "roles": ["np"], "to": "lin", "guide": {"zh": "向林大哥說明住院", "en": "Explain the admission to Mr Lin"},
+       "lines": [
+        ["me", {"zh": "林大哥，今天要住院。背上有感染，我們要先找出是哪一種細菌。", "en": "Mr Lin, you're staying in today. There's an infection in your back and first we need to know which bug."}],
+        ["lin", {"zh": "可是今天下午還有兩個預約的客人……", "en": "But I've two booked fares this afternoon..."}],
+        ["me", {"zh": "客人可以等，你的腳不能等。腳麻、腳軟、小便不順，馬上按鈴。", "en": "The fares can wait; your legs can't. Numb, weak legs or trouble passing urine: press the bell at once."}],
+        ["lin", {"zh": "好……我打給我太太，叫她幫我取消。", "en": "All right... I'll ring my wife to cancel them."}]
+       ]}
+     ]},
+    {"id": "wound", "name": {"zh": "打噴嚏之後", "en": "After the sneeze"}, "sub": {"zh": "15:30 · 門診處置室", "en": "15:30 · clinic procedure room"}, "t": 930, "mood": "day",
+     "note": {"zh": "葉先生：淺層傷口裂開，先排除深部感染", "en": "Mr Yeh: superficial dehiscence, deep infection excluded first"},
+     "beats": [
+      {"id": "w1", "to": "yeh", "guide": {"zh": "看葉先生的傷口", "en": "Look at Mr Yeh's wound"},
+       "lines": [
+        ["yeh", {"zh": "開完刀兩週，昨天一個大噴嚏，傷口下面裂開一小段。", "en": "Two weeks after surgery, one big sneeze yesterday and the bottom of the wound split a little."}],
+        ["me", {"zh": "有發燒嗎？有沒有流膿、變紅、越來越痛？", "en": "Any fever? Pus, redness, pain getting worse?"}],
+        ["yeh", {"zh": "都沒有，就是裂開。", "en": "None of that. It just opened."}]
+       ],
+       "mini": {"type": "choice", "q": {"zh": "脊椎術後兩週傷口裂開，第一步？", "en": "A spinal wound opens at two weeks. First step?"},
+        "options": [
+         {"zh": "先評估深部感染再決定", "en": "Assess for deep infection, then decide", "ok": true,
+          "why": {"zh": "脊椎術後的傷口裂開，可能是深部感染的第一個跡象。體溫、分泌物、傷口底部、發炎指數，看完再決定縫不縫。", "en": "A wound opening after spinal surgery may be the first sign of deep infection. Temperature, discharge, the wound base, inflammatory markers: then decide whether to close."}},
+         {"zh": "直接縫起來", "en": "Just stitch it closed", "ok": false,
+          "why": {"zh": "如果底下有感染，縫起來等於把它關在裡面，晚幾週以更大的問題回來。", "en": "If there's infection underneath, closing it shuts it in, and it returns weeks later as something bigger."}}
+        ]}},
+      {"id": "w2", "to": "place:procedure", "guide": {"zh": "縫合淺層裂口", "en": "Close the superficial gap"},
+       "lines": [
+        ["attending", {"zh": "沒發燒、沒分泌物，底部是乾淨的肉芽，筋膜完整。淺層傷口裂開，可以縫。", "en": "No fever, no discharge, clean granulation at the base, fascia intact. A superficial wound dehiscence: we can close it."}],
+        ["me", {"zh": "清創、沖洗，單純間斷縫合幾針。", "en": "Debride, irrigate, a few simple interrupted sutures."}]
+       ],
+       "mini": {"type": "drill", "template": "spine", "drill": "suture"},
+       "post": [
+        ["yeh", {"zh": "縫完比打噴嚏還快。", "en": "Quicker than the sneeze."}],
+        ["attending", {"zh": "下週回來看。只要流出東西，不要等到下週。", "en": "Back next week. If anything leaks out, don't wait for next week."}]
+       ]}
+     ]},
+    {"id": "evening", "name": {"zh": "關診", "en": "Closing clinic"}, "sub": {"zh": "18:00 · 診間", "en": "18:00 · consulting room"}, "t": 1080, "mood": "eve",
+     "note": {"zh": "師傅的三件事", "en": "The mentor's three points"},
+     "beats": [
+      {"id": "e1", "to": "attending", "guide": {"zh": "師傅的回顧", "en": "The mentor's debrief"},
+       "lines": [
+        ["attending", {"zh": "四個背痛，四種答案。哪一個最難？", "en": "Four back pains, four answers. Which was hardest?"}],
+        ["me", {"zh": "小鄭。不照 MRI，比照 MRI 難開口。", "en": "Cheng. Not ordering an MRI was harder to say than ordering one."}],
+        ["attending", {"zh": "對。第二件：你在林大哥身上先抽培養，再談抗生素。第三件：你沒有直接縫葉先生的傷口。", "en": "Yes. Second: with Mr Lin you took cultures before talking antibiotics. Third: you didn't just stitch Mr Yeh's wound."}],
+        ["attending", {"zh": "今晚林大哥的培養可能會長。電話響了，記得想到心臟。", "en": "Mr Lin's cultures may grow tonight. When the phone rings, think of the heart."}]
+       ]}
+     ]},
+    {"id": "night", "name": {"zh": "夜裡的培養瓶", "en": "The culture bottle at night"}, "sub": {"zh": "21:30 · 值班桌", "en": "21:30 · on-call desk"}, "t": 1290, "mood": "night",
+     "note": {"zh": "血液培養長出葡萄球菌；安排心臟超音波", "en": "Cultures grow staphylococci; echo booked"},
+     "beats": [
+      {"id": "n1", "ring": {"title": {"zh": "微生物室危急值", "en": "Microbiology critical result"}, "sub": {"zh": "「林大哥的血液培養：革蘭氏陽性球菌」", "en": "'Mr Lin's blood culture: Gram-positive cocci'"}, "call": true, "from": "lab"},
+       "lines": [
+        ["lab", {"zh": "危急值：林大哥的血液培養，革蘭氏陽性球菌，成串像葡萄。", "en": "Critical result: Mr Lin's blood culture, Gram-positive cocci in clusters, like grapes."}],
+        ["me", {"zh": "我複誦：林大哥、血液培養、革蘭氏陽性球菌成串。可能是金黃色葡萄球菌。", "en": "Reading back: Mr Lin, blood culture, Gram-positive cocci in clusters. Probably Staphylococcus aureus."}],
+        ["lab", {"zh": "正確。鑑定和藥敏明後天出來。", "en": "Correct. Identification and sensitivities in a day or two."}]
+       ]},
+      {"id": "n2", "to": "place:desk", "guide": {"zh": "開立下一步", "en": "Order the next steps"},
+       "lines": [
+        ["me", {"zh": "細菌有了，依感染科建議開始抗生素。重抽血液培養，確認菌血症會清掉。", "en": "We have the organism; antibiotics start per infectious diseases advice. Repeat blood cultures to show the bacteraemia clears."}],
+        ["me", {"zh": "金黃色葡萄球菌在血裡，要找心內膜炎。安排心臟超音波。", "en": "Staphylococcus aureus in the blood: look for endocarditis. Book an echocardiogram."}]
+       ],
+       "mini": {"type": "find", "hot": "desk", "q": {"zh": "點一下值班桌的電腦，開立心臟超音波", "en": "Tap the on-call computer and order the echocardiogram"}},
+       "post": [
+        ["sys", {"zh": "何主治回訊：「對。也請病房今晚多看一次他的腳。」", "en": "Dr Ho texts back: 'Right. And ask the ward to check his legs once more tonight.'"}]
+       ]},
+      {"id": "n3", "when": {"flag": "mri", "is": "yes"}, "ring": {"title": {"zh": "小鄭的訊息", "en": "A message from Cheng"}, "sub": {"zh": "「MRI 排在下個月，我這個月先別動？」", "en": "'MRI is next month; should I avoid moving till then?'"}, "call": false, "from": "cheng"},
+       "lines": [
+        ["cheng", {"zh": "醫師，MRI 排在下個月。我這個月是不是都別動比較好，免得變嚴重？", "en": "Doctor, the MRI's next month. Should I not move until then so it doesn't get worse?"}],
+        ["me", {"zh": "不是。動才會好。那張片子……其實你不需要等它。", "en": "No. Moving is how it gets better. That scan... honestly, you don't need to wait for it."}],
+        ["sys", {"zh": "你明白了：一張「讓他安心」的單子，讓他害怕了一整個月。", "en": "You see it now: a scan ordered 'for reassurance' has given him a month of fear."}]
+       ]},
+      {"id": "n4", "when": {"flag": "mri", "is": "no"}, "ring": {"title": {"zh": "小鄭的訊息", "en": "A message from Cheng"}, "sub": {"zh": "「今天走了三次樓梯」", "en": "'Took the stairs three times today'"}, "call": false, "from": "cheng"},
+       "lines": [
+        ["cheng", {"zh": "醫師，衛教單上說要動。我今天走了三次樓梯，好像沒那麼痛了。", "en": "Doctor, the leaflet said keep moving. I took the stairs three times today and it seems less sore."}],
+        ["me", {"zh": "很好。照這樣走下去。", "en": "Great. Keep going like that."}]
+       ]},
+      {"id": "n5", "to": "place:desk", "guide": {"zh": "關燈前", "en": "Before lights out"},
+       "lines": [
+        ["sys", {"zh": "值班桌上，林大哥的病歷開著：心臟超音波已排、神經學檢查表貼在第一頁。", "en": "On the on-call desk Mr Lin's chart is open: echo booked, neuro check sheet clipped to the front."}],
+        ["me", {"zh": "四個背痛，一個在發抖。紅旗不會自己舉起來，要有人去找。", "en": "Four back pains, one shivering. Red flags don't raise themselves; someone has to look."}]
+       ],
+       "end": true}
+     ]}
+  ],
+  "ending": {"title": {"zh": "下班了", "en": "End of shift"}, "sub": {"zh": "背痛很常見，所以紅旗才難找", "en": "Back pain is common; that's why red flags are hard to find"},
+    "stats": ["stages", "grades", "choices", "calls", "items", "time"]}
+}

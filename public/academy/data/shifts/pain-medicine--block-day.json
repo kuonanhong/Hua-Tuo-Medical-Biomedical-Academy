@@ -1,0 +1,1685 @@
+{
+ "format": "huatuo-shift-v2",
+ "department": "pain-medicine",
+ "case": "block-day",
+ "caseTitle": {
+  "zh": "C 臂下的一天",
+  "en": "A day under the C-arm"
+ },
+ "condition": {
+  "zh": "介入 · 影像導引神經阻斷",
+  "en": "Interventional · image-guided nerve blocks"
+ },
+ "difficulty": 3,
+ "room": "imaging",
+ "title": {
+  "zh": "疼痛科：介入治療日",
+  "en": "Pain medicine: block day"
+ },
+ "tagline": {
+  "zh": "針在影像裡，病人在你手裡",
+  "en": "The needle is on the screen; the patient is in your hands"
+ },
+ "minutes": 26,
+ "roles": [
+  {
+   "id": "resident",
+   "zh": "疼痛科住院醫師",
+   "en": "Pain medicine resident",
+   "desc": {
+    "zh": "今天排了三個注射。你的工作是在每一針之前，先找出不該打的理由。",
+    "en": "Three injections on the list. Your job is to find, before every needle, the reason not to do it."
+   }
+  },
+  {
+   "id": "rad",
+   "zh": "放射師",
+   "en": "Radiographer",
+   "desc": {
+    "zh": "C 臂是你的，角度是你調的，鉛衣是你發的。影像品質好，針才會準；劑量紀錄是你簽的。",
+    "en": "The C-arm is yours: you set the angles and hand out the lead. Good images make accurate needles, and the dose log carries your signature."
+   }
+  }
+ ],
+ "cast": {
+  "attending": {
+   "name": {
+    "zh": "高主治",
+    "en": "Dr Kao"
+   },
+   "role": {
+    "zh": "疼痛科主治醫師（師傅）",
+    "en": "Consultant in pain medicine (mentor)"
+   },
+   "tag": "ATT",
+   "color": "#81296d",
+   "about": {
+    "zh": "打針之前一定用手摸三次。口頭禪：「影像是地圖，不是目的地。」急救車的脂肪乳劑效期她背得出來。",
+    "en": "Palpates three times before every needle. Catchphrase: 'The image is the map, not the destination.' Knows the expiry date of the lipid emulsion on the crash cart by heart."
+   },
+   "body": "mentor"
+  },
+  "rad-mei": {
+   "name": {
+    "zh": "小玫",
+    "en": "Mei"
+   },
+   "role": {
+    "zh": "放射師",
+    "en": "Radiographer"
+   },
+   "tag": "RAD",
+   "color": "#4d6d8e",
+   "about": {
+    "zh": "C 臂的角度她調一次就對。鉛衣沒穿好的人會被她瞪到穿好。",
+    "en": "Gets the C-arm angle right first time. If your lead apron is loose, she stares until it is not."
+   },
+   "body": "radiographer"
+  },
+  "nurse": {
+   "name": {
+    "zh": "阿蓉",
+    "en": "A-Jung"
+   },
+   "role": {
+    "zh": "介入治療室護理師",
+    "en": "Procedure-room nurse"
+   },
+   "tag": "RN",
+   "color": "#3b8f6a",
+   "about": {
+    "zh": "監視器貼好、靜脈留置針打好、急救車就在門後。她問「最後一次吃藥是什麼時候」的時候，答案常常改變一整天。",
+    "en": "Monitor on, cannula in, crash cart behind the door. When she asks 'when did you last take your tablets?', the answer often changes the whole day."
+   },
+   "body": "nurse"
+  },
+  "mrs-huang": {
+   "name": {
+    "zh": "黃阿姨",
+    "en": "Mrs Huang"
+   },
+   "role": {
+    "zh": "病人：腰椎狹窄，硬膜外注射",
+    "en": "Patient: spinal stenosis, epidural injection"
+   },
+   "tag": "P1",
+   "color": "#c2453d",
+   "about": {
+    "zh": "六十八歲，走兩百公尺腿就痠麻要蹲下，菜市場逛不完。心房顫動在吃新型口服抗凝血劑，「心臟科沒說要停啊」。",
+    "en": "Sixty-eight; after two hundred metres her legs ache and go numb and she has to crouch, so the market is never finished. Atrial fibrillation on a new oral anticoagulant: 'cardiology never said to stop it'."
+   },
+   "body": "patient"
+  },
+  "mr-liu": {
+   "name": {
+    "zh": "劉先生",
+    "en": "Mr Liu"
+   },
+   "role": {
+    "zh": "病人：下背痛，小面關節阻斷",
+    "en": "Patient: low back pain, facet block"
+   },
+   "tag": "P2",
+   "color": "#8a5a2b",
+   "about": {
+    "zh": "五十五歲會計師，背痛三個月，被轉來「打小面關節」。問他晚上痛不痛，他說「半夜會痛醒」。五年前攝護腺癌，「早就好了」。",
+    "en": "Fifty-five, accountant, three months of back pain, referred for 'a facet block'. Ask about nights and he says 'it wakes me'. Prostate cancer five years ago, 'long cured'."
+   },
+   "body": "patient"
+  },
+  "a-hsueh": {
+   "name": {
+    "zh": "阿雪",
+    "en": "A-Hsueh"
+   },
+   "role": {
+    "zh": "病人：手部複雜性區域疼痛",
+    "en": "Patient: complex regional pain of the hand"
+   },
+   "tag": "P3",
+   "color": "#b8742c",
+   "about": {
+    "zh": "四十五歲裁縫師，手腕骨折癒合後整隻手變得又腫又紫，碰到布就像火燒。今天做星狀神經節阻斷。她帶了一塊想再摸一次的絲。",
+    "en": "Forty-five, seamstress. After her wrist fracture healed, the whole hand turned swollen and purple and cloth feels like fire. Today a stellate ganglion block. She has brought a piece of silk she wants to touch again."
+   },
+   "body": "patient"
+  },
+  "aps-nurse": {
+   "name": {
+    "zh": "芳姐",
+    "en": "Fang-jie"
+   },
+   "role": {
+    "zh": "外科病房護理師",
+    "en": "Surgical-ward nurse"
+   },
+   "tag": "APS",
+   "color": "#6a8f3b",
+   "about": {
+    "zh": "病人說「按了沒效」，她不會自己猜，會打給你。",
+    "en": "When a patient says 'the button does nothing', she does not guess; she calls you."
+   },
+   "phoneOnly": true
+  },
+  "huang-son": {
+   "name": {
+    "zh": "黃先生",
+    "en": "Mr Huang"
+   },
+   "role": {
+    "zh": "黃阿姨的兒子",
+    "en": "Mrs Huang's son"
+   },
+   "tag": "FAM",
+   "color": "#8c5a9e",
+   "about": {
+    "zh": "媽媽的藥袋是他整理的。心臟科門診也是他陪的。",
+    "en": "He sorts his mother's pills and goes with her to cardiology."
+   },
+   "phoneOnly": true
+  },
+  "hsueh-husband": {
+   "name": {
+    "zh": "阿雪的先生",
+    "en": "A-Hsueh's husband"
+   },
+   "role": {
+    "zh": "家屬",
+    "en": "Family"
+   },
+   "tag": "FAM",
+   "color": "#b06f3b",
+   "about": {
+    "zh": "晚上會打來問「這樣正常嗎」。問得很對。",
+    "en": "Calls in the evening to ask 'is this normal?'. The right question."
+   },
+   "phoneOnly": true
+  }
+ },
+ "places": {
+  "board": {
+   "name": {
+    "zh": "排程白板",
+    "en": "Schedule board"
+   },
+   "hot": "whiteboard"
+  },
+  "table": {
+   "name": {
+    "zh": "透視治療台",
+    "en": "Fluoroscopy table"
+   },
+   "hot": "field"
+  },
+  "carm": {
+   "name": {
+    "zh": "C 臂",
+    "en": "C-arm"
+   },
+   "hot": "carm"
+  },
+  "us": {
+   "name": {
+    "zh": "超音波機",
+    "en": "Ultrasound machine"
+   },
+   "hot": "ultrasound"
+  },
+  "monitor": {
+   "name": {
+    "zh": "監視器",
+    "en": "Monitor"
+   },
+   "hot": "monitor"
+  },
+  "cart": {
+   "name": {
+    "zh": "急救車",
+    "en": "Crash cart"
+   },
+   "hot": "crash-cart"
+  },
+  "viewer": {
+   "name": {
+    "zh": "影像工作站",
+    "en": "Imaging workstation"
+   },
+   "hot": "imaging"
+  },
+  "desk": {
+   "name": {
+    "zh": "紀錄桌",
+    "en": "Records desk"
+   },
+   "hot": "desk"
+  }
+ },
+ "glossary": [
+  {
+   "term": {
+    "zh": "硬膜外注射",
+    "en": "epidural injection"
+   },
+   "plain": {
+    "zh": "把藥打到包著脊髓與神經根的硬膜外面那層空間。腰椎狹窄的腿痛常用。靠近脊髓，所以出血與感染的規矩最嚴。",
+    "en": "Medicine placed in the space just outside the membrane that wraps the spinal cord and nerve roots. Common for leg pain from spinal stenosis. Close to the cord, so the rules on bleeding and infection are strictest."
+   }
+  },
+  {
+   "term": {
+    "zh": "小面關節",
+    "en": "facet joint"
+   },
+   "plain": {
+    "zh": "每節脊椎後方成對的小關節。退化會造成局部背痛，但「背痛」太多種，先確定不是別的。",
+    "en": "The small paired joints at the back of each vertebra. Wear causes local back pain, but 'back pain' has many causes; rule out the others first."
+   }
+  },
+  {
+   "term": {
+    "zh": "內側枝阻斷",
+    "en": "medial branch block"
+   },
+   "plain": {
+    "zh": "把少量局部麻醉藥打在支配小面關節的小神經旁，看痛會不會暫時消失。是診斷性阻斷，不是治療。",
+    "en": "A small amount of local anaesthetic beside the tiny nerve that supplies a facet joint, to see whether the pain disappears for a while. A diagnostic block, not a treatment."
+   }
+  },
+  {
+   "term": {
+    "zh": "星狀神經節阻斷",
+    "en": "stellate ganglion block"
+   },
+   "plain": {
+    "zh": "在頸部下方的交感神經節旁注射，讓同側手臂的交感神經暫時安靜。複雜性區域疼痛常用。旁邊就是椎動脈，所以量少、慢打、邊看影像。",
+    "en": "An injection beside the sympathetic ganglion at the base of the neck, quietening the sympathetic nerves to the arm on that side. Used in complex regional pain. The vertebral artery is right there, so small volumes, slowly, under live imaging."
+   }
+  },
+  {
+   "term": {
+    "zh": "新型口服抗凝血劑",
+    "en": "new oral anticoagulant"
+   },
+   "plain": {
+    "zh": "不用抽血監測的口服抗凝血藥，心房顫動常用。要做神經軸注射前得停一段時間，停幾天由心臟科一起決定。",
+    "en": "Oral anticoagulants that need no blood monitoring, common in atrial fibrillation. Must be paused before a neuraxial injection; how many days is decided together with cardiology."
+   }
+  },
+  {
+   "term": {
+    "zh": "硬膜外血腫",
+    "en": "epidural haematoma"
+   },
+   "plain": {
+    "zh": "硬膜外空間出血，血塊壓住脊髓。背痛加上腿越來越沒力、大小便失禁。幾小時內要核磁共振和手術，晚了就癱瘓。",
+    "en": "Bleeding into the epidural space; the clot compresses the cord. Back pain plus legs growing weaker, loss of bladder control. MRI and surgery within hours; late means paralysis."
+   }
+  },
+  {
+   "term": {
+    "zh": "局部麻醉藥中毒",
+    "en": "local anaesthetic systemic toxicity"
+   },
+   "plain": {
+    "zh": "局部麻醉藥進到血液裡太多或太快。嘴麻、耳鳴、躁動，然後抽搐、心律不整、心跳停止。打在動脈裡，一點點就會抽搐。",
+    "en": "Too much local anaesthetic in the blood, or too fast. Numb mouth, ringing ears, agitation, then seizures, arrhythmia and cardiac arrest. Into an artery, even a tiny amount causes a seizure."
+   }
+  },
+  {
+   "term": {
+    "zh": "脂肪乳劑",
+    "en": "lipid emulsion"
+   },
+   "plain": {
+    "zh": "局部麻醉藥中毒的解藥：靜脈注射的脂肪，把藥從心臟和腦「吸」出來。放在急救車上，依醫囑使用，效期要有人背。",
+    "en": "The antidote to local anaesthetic toxicity: intravenous fat that pulls the drug out of heart and brain. Kept on the crash cart, given per protocol, and somebody should know its expiry by heart."
+   }
+  },
+  {
+   "term": {
+    "zh": "霍納氏症候群",
+    "en": "Horner's syndrome"
+   },
+   "plain": {
+    "zh": "星狀神經節阻斷成功的記號：同側眼皮下垂、瞳孔變小、臉不出汗、聲音有點啞。幾小時會消。呼吸困難和脖子腫不是它。",
+    "en": "The sign that a stellate ganglion block worked: droopy eyelid, small pupil and a dry face on that side, sometimes a hoarse voice. Fades in hours. Breathing difficulty and a swelling neck are not Horner's."
+   }
+  },
+  {
+   "term": {
+    "zh": "紅旗",
+    "en": "red flags"
+   },
+   "plain": {
+    "zh": "背痛病人身上提醒你「這可能不是普通背痛」的線索：癌症病史、半夜痛醒、體重減輕、發燒、大小便問題、腿無力。有紅旗，先影像，不先打針。",
+    "en": "Clues in a back-pain patient that say 'this may not be ordinary back pain': a cancer history, pain that wakes them, weight loss, fever, bladder or bowel trouble, leg weakness. Red flags mean imaging first, not a needle."
+   }
+  },
+  {
+   "term": {
+    "zh": "診斷性阻斷",
+    "en": "diagnostic block"
+   },
+   "plain": {
+    "zh": "用少量局部麻醉藥暫時關掉一條神經，看痛會不會跟著不見。答案是「是不是這裡」，不是「好了」。",
+    "en": "Switching one nerve off briefly with a little local anaesthetic to see whether the pain goes with it. The answer is 'is it here?', not 'is it cured?'"
+   }
+  },
+  {
+   "term": {
+    "zh": "C 臂",
+    "en": "C-arm"
+   },
+   "plain": {
+    "zh": "可以繞著病人轉的 X 光機，形狀像字母 C。打針時即時看針尖和顯影劑在哪。每一張影像都有劑量。",
+    "en": "An X-ray machine shaped like the letter C that swings round the patient, showing needle tip and contrast live. Every image carries a dose."
+   }
+  },
+  {
+   "term": {
+    "zh": "時間暫停",
+    "en": "time-out"
+   },
+   "plain": {
+    "zh": "下針前全隊停下來核對：病人、部位、左右、過敏、抗凝血劑、急救車在哪。介入治療室也有。",
+    "en": "Before the needle the whole team stops to confirm patient, site, side, allergies, anticoagulants, and where the crash cart is. Procedure rooms have one too."
+   }
+  },
+  {
+   "term": {
+    "zh": "複雜性區域疼痛症候群",
+    "en": "complex regional pain syndrome"
+   },
+   "plain": {
+    "zh": "受傷後整個肢體出現與傷勢不成比例的痛、腫、變色、溫度改變、碰一下就像火燒。越早復健越好，阻斷是為了讓復健做得下去。",
+    "en": "After an injury the whole limb develops pain out of proportion to the damage, with swelling, colour and temperature change, and a touch that burns. Early rehabilitation matters most; blocks exist to make rehabilitation possible."
+   }
+  }
+ ],
+ "codex": [
+  {
+   "id": "carm-unit",
+   "kind": "equipment",
+   "name": {
+    "zh": "C 臂",
+    "en": "C-arm"
+   },
+   "text": {
+    "zh": "即時透視看針尖、看顯影劑擴散。角度對了針就準；角度錯了，再好的手也在猜。",
+    "en": "Live fluoroscopy for needle tip and contrast spread. The right angle makes the needle accurate; the wrong angle makes the best hands guess."
+   },
+   "hot": "carm"
+  },
+  {
+   "id": "lead",
+   "kind": "equipment",
+   "name": {
+    "zh": "鉛衣與甲狀腺護罩",
+    "en": "Lead apron and thyroid shield"
+   },
+   "text": {
+    "zh": "每一張影像都有劑量，病人一次，你一輩子。穿好，站對邊，少踩一腳。",
+    "en": "Every image carries a dose: once for the patient, a career for you. Wear it properly, stand on the right side, press the pedal less."
+   },
+   "hot": "device"
+  },
+  {
+   "id": "cart-lipid",
+   "kind": "equipment",
+   "name": {
+    "zh": "急救車與脂肪乳劑",
+    "en": "Crash cart and lipid emulsion"
+   },
+   "text": {
+    "zh": "介入治療室的急救車比病房多一樣東西：脂肪乳劑和它的流程卡。門後，不是走廊。",
+    "en": "The procedure-room crash cart carries one thing the ward's does not: lipid emulsion and its protocol card. Behind the door, not down the corridor."
+   },
+   "hot": "crash-cart"
+  },
+  {
+   "id": "us-probe",
+   "kind": "equipment",
+   "name": {
+    "zh": "超音波機",
+    "en": "Ultrasound machine"
+   },
+   "text": {
+    "zh": "頸部阻斷看血管與神經的地圖。C 臂看骨頭，超音波看會流血的東西。",
+    "en": "For neck blocks, the map of vessels and nerves. The C-arm sees bone; ultrasound sees the things that bleed."
+   },
+   "hot": "ultrasound"
+  },
+  {
+   "id": "liu-film",
+   "kind": "item",
+   "name": {
+    "zh": "劉先生的影像",
+    "en": "Mr Liu's images"
+   },
+   "text": {
+    "zh": "今天沒有打的那一針換來的：腰椎影像上一節椎體不對勁。轉腫瘤科與脊椎外科，當天。",
+    "en": "What the needle you did not place bought: one vertebra on his lumbar films that is not right. Referred to oncology and spine surgery the same day."
+   }
+  },
+  {
+   "id": "silk",
+   "kind": "item",
+   "name": {
+    "zh": "阿雪的那塊絲",
+    "en": "A-Hsueh's piece of silk"
+   },
+   "text": {
+    "zh": "阻斷後一小時，她用那隻手摸了一下。沒有說話，只是點頭。",
+    "en": "An hour after the block she touched it with that hand. Said nothing; just nodded."
+   }
+  },
+  {
+   "id": "map-not-destination",
+   "kind": "concept",
+   "name": {
+    "zh": "影像是地圖，不是目的地",
+    "en": "The image is the map, not the destination"
+   },
+   "text": {
+    "zh": "影像導引讓針到達目標，不能告訴你目標對不對。病史、紅旗、神經學檢查、用手摸三次，決定要不要打；C 臂只負責打準。先決定，再開機。",
+    "en": "Image guidance gets the needle to the target; it cannot tell you whether the target is right. History, red flags, the neurological examination and three palpations decide whether to inject; the C-arm only makes it accurate. Decide first, switch on second."
+   }
+  },
+  {
+   "id": "neuraxial-anticoag",
+   "kind": "concept",
+   "name": {
+    "zh": "神經軸與抗凝血劑",
+    "en": "Neuraxial needles and anticoagulants"
+   },
+   "text": {
+    "zh": "硬膜外空間是封閉的，一點出血就能壓住脊髓，而且症狀出現得慢、處理的時間窗很短。所以神經軸注射前抗凝血劑要停夠久，停幾天由心臟科一起定，停藥的風險也要算進去。這一針永遠可以改天。",
+    "en": "The epidural space is closed: a little bleeding can compress the cord, the symptoms come on slowly and the window to act is short. So anticoagulants are paused long enough before a neuraxial injection, the interval set with cardiology, with the risk of pausing weighed too. This needle can always wait for another day."
+   }
+  },
+  {
+   "id": "diagnostic-logic",
+   "kind": "concept",
+   "name": {
+    "zh": "診斷性阻斷的邏輯",
+    "en": "The logic of a diagnostic block"
+   },
+   "text": {
+    "zh": "阻斷後痛消失，只證明「這條神經參與了」，不證明「只有它」。安慰劑效應真實存在，所以常做兩次、比較時間長短。阻斷是問題，不是答案。",
+    "en": "Pain vanishing after a block proves only that this nerve is involved, not that it is the only one. Placebo is real, so blocks are often repeated and their durations compared. A block is a question, not an answer."
+   }
+  },
+  {
+   "id": "last-rule",
+   "kind": "concept",
+   "name": {
+    "zh": "局部麻醉藥中毒的預防",
+    "en": "Preventing local anaesthetic toxicity"
+   },
+   "text": {
+    "zh": "回抽、小量分次、邊看影像、問病人「嘴麻嗎、耳鳴嗎」、知道總量上限。頸部的針尖旁邊是椎動脈，回抽沒有血不等於不在血管裡。急救車和脂肪乳劑要在針進去之前就在門後。",
+    "en": "Aspirate, inject in small increments, watch the image, ask the patient 'numb mouth? ringing ears?', know the ceiling dose. In the neck the vertebral artery sits beside the tip, and a negative aspiration does not prove you are out of a vessel. Crash cart and lipid belong behind the door before the needle goes in."
+   }
+  }
+ ],
+ "segs": [
+  {
+   "id": "open",
+   "name": {
+    "zh": "開機",
+    "en": "Switching on"
+   },
+   "sub": {
+    "zh": "08:00 · 排程白板",
+    "en": "08:00 · schedule board"
+   },
+   "t": 480,
+   "mood": "day",
+   "note": {
+    "zh": "C 臂與急救車就位",
+    "en": "C-arm and crash cart ready"
+   },
+   "beats": [
+    {
+     "id": "o1",
+     "to": "place:board",
+     "guide": {
+      "zh": "看今天的排程",
+      "en": "Today's schedule"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "白板：08:30 黃阿姨，腰椎硬膜外注射。11:00 劉先生，腰椎小面關節內側枝阻斷。13:30 阿雪，星狀神經節阻斷。",
+        "en": "Board: 08:30 Mrs Huang, lumbar epidural injection. 11:00 Mr Liu, lumbar facet medial branch block. 13:30 A-Hsueh, stellate ganglion block."
+       }
+      ],
+      [
+       "nurse",
+       {
+        "zh": "早。三個都到了。急救車我檢查過了，脂肪乳劑在最下層。",
+        "en": "Morning. All three are here. Crash cart checked; the lipid emulsion is in the bottom drawer."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "o2",
+     "to": "attending",
+     "guide": {
+      "zh": "找高主治",
+      "en": "Find Dr Kao"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "早。今天三針。你先告訴我：C 臂能幫你決定什麼？",
+        "en": "Morning. Three needles today. First tell me: what can the C-arm decide for you?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "針在哪裡。不能決定該不該打。",
+        "en": "Where the needle is. Not whether it should be there."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "對。影像是地圖，不是目的地。每一針之前，先找不該打的理由。",
+        "en": "Right. The image is the map, not the destination. Before every needle, look for the reason not to."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "o3",
+     "to": "place:carm",
+     "guide": {
+      "zh": "C 臂開機與鉛衣",
+      "en": "C-arm check and lead"
+     },
+     "lines": [
+      [
+       "rad-mei",
+       {
+        "zh": "C 臂暖機好了，每日品管過。鉛衣穿好，甲狀腺護罩扣上。踩一腳就是一次劑量。",
+        "en": "C-arm warmed up, daily QC passed. Lead on, thyroid shield fastened. Every pedal press is a dose."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "扣好了。",
+        "en": "Fastened."
+       }
+      ],
+      [
+       "rad-mei",
+       {
+        "zh": "（看了一眼）再扣一次。",
+        "en": "(one glance) Fasten it again."
+       }
+      ]
+     ],
+     "roles": [
+      "rad"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "huang",
+   "name": {
+    "zh": "黃阿姨",
+    "en": "Mrs Huang"
+   },
+   "sub": {
+    "zh": "08:30 · 透視治療台",
+    "en": "08:30 · fluoroscopy table"
+   },
+   "t": 510,
+   "mood": "day",
+   "note": {
+    "zh": "黃阿姨的注射改期，與心臟科協調",
+    "en": "Mrs Huang's injection rescheduled with cardiology"
+   },
+   "beats": [
+    {
+     "id": "h1",
+     "to": "mrs-huang",
+     "guide": {
+      "zh": "請黃阿姨趴好",
+      "en": "Settle Mrs Huang prone"
+     },
+     "lines": [
+      [
+       "mrs-huang",
+       {
+        "zh": "醫師，打這一針我就能逛完菜市場了嗎？",
+        "en": "Doctor, after this injection can I finish the market?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "這一針是整個計畫的一部分：讓腿痛退一些，你才走得動、復健做得下去。不是只有針。",
+        "en": "This injection is one part of a plan: it eases the leg pain enough for you to walk and do the exercises. It is never only the needle."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "pain-medicine-acute-postoperative-multimodal-analgesia",
+      "stage": 2
+     },
+     "post": [
+      [
+       "mrs-huang",
+       {
+        "zh": "聽起來比我想的複雜。",
+        "en": "Sounds more complicated than I thought."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "好的治療通常都是。",
+        "en": "Good treatment usually is."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "h2",
+     "to": "place:table",
+     "guide": {
+      "zh": "先用手找節段",
+      "en": "Find the level by hand"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "開 C 臂之前，先摸。髂骨嵴的連線、棘突、間隙。三次。",
+        "en": "Before the C-arm, palpate. The line between the iliac crests, the spinous processes, the gaps. Three times."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "drill",
+      "template": "pain-medicine",
+      "drill": "lumbar"
+     },
+     "post": [
+      [
+       "me",
+       {
+        "zh": "節段標好了。",
+        "en": "Level marked."
+       }
+      ],
+      [
+       "nurse",
+       {
+        "zh": "（在旁邊）阿姨，你的抗凝血劑最後一次是什麼時候吃的？",
+        "en": "(beside you) Mrs Huang, when did you last take your anticoagulant?"
+       }
+      ],
+      [
+       "mrs-huang",
+       {
+        "zh": "今天早上啊。心臟科沒說要停。",
+        "en": "This morning. Cardiology never said to stop it."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "h3",
+     "to": "attending",
+     "guide": {
+      "zh": "抗凝血劑沒停，怎麼辦？",
+      "en": "Anticoagulant not stopped"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "新型口服抗凝血劑，今天早上吃的。硬膜外注射。你的決定？",
+        "en": "A new oral anticoagulant, taken this morning. An epidural injection. Your decision?"
+       }
+      ]
+     ],
+     "mini": {
+      "type": "choice",
+      "q": {
+       "zh": "黃阿姨的硬膜外注射，今天打不打？",
+       "en": "Mrs Huang's epidural: today or not?"
+      },
+      "options": [
+       {
+        "zh": "取消，與心臟科共同決定停藥天數再排",
+        "en": "Cancel; set the pause with cardiology and rebook",
+        "ok": true,
+        "why": {
+         "zh": "神經軸注射遇上抗凝血劑，硬膜外血腫的風險不能用「針很細」抵銷。停幾天、要不要過渡，心臟科一起定。這一針永遠可以改天。",
+         "en": "A neuraxial needle on an anticoagulant: the risk of epidural haematoma is not offset by 'a fine needle'. How long to pause, and whether to bridge, is set with cardiology. This needle can always wait."
+        },
+        "set": {
+         "anticoag": "defer"
+        }
+       },
+       {
+        "zh": "照打，針很細，硬膜外空間不大",
+        "en": "Proceed; fine needle, small space",
+        "ok": false,
+        "why": {
+         "zh": "封閉的空間正是問題：一點血就能壓住脊髓，症狀慢慢來，發現時常常已經晚了。",
+         "en": "The closed space is the problem: a little blood compresses the cord, the symptoms creep in, and by the time they are noticed it is often late."
+        },
+        "set": {
+         "anticoag": "proceed"
+        }
+       },
+       {
+        "zh": "叫她從今天開始停，明天再來打",
+        "en": "Tell her to stop from today and come back tomorrow",
+        "ok": false,
+        "why": {
+         "zh": "停一天不夠，而且停藥本身有中風風險，不是門診隨口決定的事。要有天數、有心臟科、有紀錄。",
+         "en": "One day is not enough, and pausing carries its own stroke risk; it is not decided on the spot. It needs an interval, cardiology, and a record."
+        },
+        "set": {
+         "anticoag": "defer"
+        }
+       }
+      ]
+     }
+    },
+    {
+     "id": "h4",
+     "to": "mrs-huang",
+     "guide": {
+      "zh": "跟黃阿姨解釋",
+      "en": "Explain to Mrs Huang"
+     },
+     "lines": [
+      [
+       "mrs-huang",
+       {
+        "zh": "那我今天白來了？",
+        "en": "So I came for nothing?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "沒有白來。你今天救了自己一次。我們跟心臟科排好停藥的天數，再約你回來。",
+        "en": "Not for nothing. You saved yourself a close call today. We will set the pause with cardiology and book you back."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "阿姨，這一針永遠可以改天。脊髓不行。",
+        "en": "Mrs Huang, this needle can always wait. The spinal cord cannot."
+       }
+      ]
+     ],
+     "when": {
+      "flag": "anticoag",
+      "is": "defer"
+     }
+    },
+    {
+     "id": "h4b",
+     "to": "mrs-huang",
+     "guide": {
+      "zh": "高主治攔住你",
+      "en": "Dr Kao stops you"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "停。抗凝血劑沒停的硬膜外注射，我不會讓你打。阿蓉，針收起來。",
+        "en": "Stop. An epidural on an unpaused anticoagulant: I will not let you do it. A-Jung, put the needle away."
+       }
+      ],
+      [
+       "nurse",
+       {
+        "zh": "收了。阿姨，今天不打，我們改期。",
+        "en": "Away. Mrs Huang, not today; we will rebook."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "……對不起。我在想針，沒在想她的血。",
+        "en": "...I am sorry. I was thinking about the needle, not her blood."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "今天我在。記住硬膜外血腫的樣子，下次我不一定在。",
+        "en": "Today I was here. Remember what an epidural haematoma looks like; next time I may not be."
+       }
+      ]
+     ],
+     "when": {
+      "flag": "anticoag",
+      "is": "proceed"
+     }
+    }
+   ]
+  },
+  {
+   "id": "aps-call",
+   "name": {
+    "zh": "病房來電",
+    "en": "The ward calls"
+   },
+   "sub": {
+    "zh": "10:00 · 紀錄桌電話",
+    "en": "10:00 · records-desk phone"
+   },
+   "t": 600,
+   "mood": "day",
+   "note": {
+    "zh": "病房的「按了沒效」處理完成",
+    "en": "The ward's 'button does nothing' sorted"
+   },
+   "beats": [
+    {
+     "id": "p1",
+     "ring": {
+      "title": {
+       "zh": "芳姐來電",
+       "en": "Fang-jie calling"
+      },
+      "sub": {
+       "zh": "病人說 PCA 按了沒效",
+       "en": "Patient says the PCA button does nothing"
+      },
+      "call": true,
+      "from": "aps-nurse"
+     },
+     "lines": [
+      [
+       "aps-nurse",
+       {
+        "zh": "醫師，十二床術後第一天，說按了沒效，按鈕按到手痠。我沒有自己調，先打給你。",
+        "en": "Doctor, bed twelve, day one after surgery, says the button does nothing and his thumb is sore. I have not touched the settings; I am calling you first."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "謝謝你沒自己調。我們一樣一樣看：管路、按的次數、鎖定時間、痛的位置。",
+        "en": "Thank you for not touching it. Let us go through it: the line, the presses, the lockout, where the pain is."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "pain-medicine-pca-setup-monitoring",
+      "stage": 5
+     },
+     "post": [
+      [
+       "aps-nurse",
+       {
+        "zh": "原來是這樣。我現在去看管路。",
+        "en": "So that is it. I will check the line now."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "liu",
+   "name": {
+    "zh": "劉先生",
+    "en": "Mr Liu"
+   },
+   "sub": {
+    "zh": "11:00 · 透視治療台",
+    "en": "11:00 · fluoroscopy table"
+   },
+   "t": 660,
+   "mood": "day",
+   "note": {
+    "zh": "劉先生的紅旗找到，影像與轉診完成",
+    "en": "Mr Liu's red flags found; imaging and referral done"
+   },
+   "beats": [
+    {
+     "id": "l1",
+     "to": "mr-liu",
+     "guide": {
+      "zh": "請劉先生坐下",
+      "en": "Sit Mr Liu down"
+     },
+     "lines": [
+      [
+       "mr-liu",
+       {
+        "zh": "醫師，他們說我是小面關節，打一針就好。我下午還要回去結帳。",
+        "en": "Doctor, they said it is the facet joint, one injection and done. I need to be back at the ledgers this afternoon."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "打針之前我們先聊一下。晚上痛嗎？",
+        "en": "Before any needle, let us talk. Does it hurt at night?"
+       }
+      ],
+      [
+       "mr-liu",
+       {
+        "zh": "半夜會痛醒。還有，褲子鬆了兩個洞，我以為是減肥成功。",
+        "en": "It wakes me. And my belt is two holes looser; I assumed the diet worked."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "五年前的攝護腺癌，之後有追蹤嗎？",
+        "en": "The prostate cancer five years ago: any follow-up since?"
+       }
+      ],
+      [
+       "mr-liu",
+       {
+        "zh": "早就好了，沒再去。",
+        "en": "Long cured. Stopped going."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "pain-medicine-pain-assessment-classification-clinic",
+      "stage": 2
+     },
+     "post": [
+      [
+       "attending",
+       {
+        "zh": "（低聲）半夜痛醒、體重減輕、癌症病史。你聽到幾面紅旗？",
+        "en": "(quietly) Woken by pain, weight loss, a cancer history. How many red flags did you hear?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "三面。",
+        "en": "Three."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "l2",
+     "to": "place:table",
+     "guide": {
+      "zh": "觸診：小面關節與薦髂關節",
+      "en": "Palpate: facet and sacroiliac"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "先摸。小面關節、薦髂關節、還有正中間的棘突。告訴我哪裡痛。",
+        "en": "Palpate first. The facet joints, the sacroiliac joints, and the spinous processes down the middle. Tell me where it hurts."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "drill",
+      "template": "pain-medicine",
+      "drill": "palpBack"
+     },
+     "post": [
+      [
+       "me",
+       {
+        "zh": "小面關節壓痛不明顯。正中間一節棘突敲下去，他整個人縮起來。",
+        "en": "Little tenderness over the facets. One spinous process in the midline: tap it and he folds."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "正中線的敲痛不是小面關節會給你的東西。",
+        "en": "Midline percussion tenderness is not something a facet joint gives you."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "l3",
+     "to": "place:viewer",
+     "guide": {
+      "zh": "先看影像",
+      "en": "Images first"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "今天不打針。先把影像調出來看。什麼發現會讓你今天的針永遠不打？",
+        "en": "No needle today. Pull up the images first. What finding would make today's needle one you never place?"
+       }
+      ]
+     ],
+     "mini": {
+      "type": "imaging",
+      "region": "spine",
+      "question": {
+       "zh": "下背痛病人的影像上，什麼發現會讓你取消注射、改為轉診？",
+       "en": "On a back-pain patient's images, what finding cancels the injection and turns it into a referral?"
+      },
+      "answer": {
+       "zh": "椎體被破壞或塌陷、椎弓根「消失」、椎體後緣突向椎管、硬膜外有腫塊壓迫脊髓或神經根，或是感染的徵象：椎間盤與相鄰椎體終板一起被破壞。有癌症病史加紅旗的病人，這些都要當天轉腫瘤科或脊椎外科，而且優先安排核磁共振。",
+       "en": "A vertebral body destroyed or collapsed, a pedicle that has 'vanished', the back of the body bulging into the canal, an epidural mass pressing on cord or roots, or the signs of infection: a disc and both adjacent endplates eaten away together. In a patient with a cancer history and red flags, any of these means same-day referral to oncology or spine surgery and a priority MRI."
+      }
+     },
+     "item": "liu-film"
+    },
+    {
+     "id": "l4",
+     "to": "attending",
+     "guide": {
+      "zh": "影像決策與轉診",
+      "en": "Imaging decision and referral"
+     },
+     "lines": [
+      [
+       "mr-liu",
+       {
+        "zh": "所以我今天不打針？那我的痛呢？",
+        "en": "So no injection today? What about my pain?"
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "今天不打針，就是今天最重要的治療。我們幫你安排緊急核磁共振，腫瘤科今天會看你。痛，我們一樣會處理。",
+        "en": "Not injecting today is the most important treatment you get today. We are arranging an urgent MRI and oncology will see you today. The pain we will treat all the same."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "pain-medicine-pain-assessment-classification-clinic",
+      "stage": 6
+     },
+     "post": [
+      [
+       "mr-liu",
+       {
+        "zh": "……結帳的事，我請同事。",
+        "en": "...The ledgers can wait for a colleague."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "hsueh",
+   "name": {
+    "zh": "阿雪：星狀神經節",
+    "en": "A-Hsueh: the stellate"
+   },
+   "sub": {
+    "zh": "13:30 · 超音波機",
+    "en": "13:30 · ultrasound machine"
+   },
+   "t": 810,
+   "mood": "day",
+   "note": {
+    "zh": "阿雪的阻斷完成，事件處理完畢",
+    "en": "A-Hsueh's block done; the event managed"
+   },
+   "beats": [
+    {
+     "id": "s1",
+     "to": "a-hsueh",
+     "guide": {
+      "zh": "請阿雪躺好",
+      "en": "Settle A-Hsueh"
+     },
+     "lines": [
+      [
+       "a-hsueh",
+       {
+        "zh": "醫師，我帶了一塊絲。阻斷完我想摸摸看，一下下就好。",
+        "en": "Doctor, I brought a piece of silk. After the block I want to touch it, just once."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "好。複雜性區域疼痛症候群的阻斷，是為了讓你的手敢被碰、敢做復健。先核對。",
+        "en": "Yes. A block for complex regional pain syndrome is there so your hand can bear touch and bear rehabilitation. Checks first."
+       }
+      ],
+      [
+       "nurse",
+       {
+        "zh": "監視器貼好、靜脈留置針好了。時間暫停誰念？",
+        "en": "Monitor on, cannula in. Who reads the time-out?"
+       }
+      ]
+     ],
+     "mini": {
+      "type": "order",
+      "q": {
+       "zh": "介入治療室的時間暫停，順序是？",
+       "en": "The procedure-room time-out, in order"
+      },
+      "steps": [
+       {
+        "zh": "核對病人、部位、左右",
+        "en": "Confirm patient, site, side"
+       },
+       {
+        "zh": "過敏、抗凝血劑、紅旗",
+        "en": "Allergies, anticoagulants, red flags"
+       },
+       {
+        "zh": "監視器、靜脈留置針、急救車",
+        "en": "Monitor, cannula, crash cart"
+       },
+       {
+        "zh": "影像定位與皮膚標記",
+        "en": "Image the target and mark the skin"
+       },
+       {
+        "zh": "消毒鋪單，開始",
+        "en": "Prep, drape, begin"
+       }
+      ]
+     }
+    },
+    {
+     "id": "s2",
+     "to": "place:us",
+     "guide": {
+      "zh": "超音波導引下進針",
+      "en": "Needle under ultrasound"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "超音波：頸動脈、甲狀腺、頸長肌、椎動脈。針尖一直看著。回抽，小量，問她嘴麻不麻。",
+        "en": "Ultrasound: carotid, thyroid, longus colli, vertebral artery. Keep the tip in view. Aspirate, small increments, ask about a numb mouth."
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "回抽沒有血。第一小量打進去。兩秒後，阿雪的眼睛往上翻，手臂開始抖。",
+        "en": "Aspiration clear. The first small increment goes in. Two seconds later A-Hsueh's eyes roll up and her arm begins to jerk."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "vitals",
+      "event": "seizure",
+      "options": [
+       {
+        "zh": "停針、叫人、氣道給氧、抗抽搐與脂肪乳劑依醫囑",
+        "en": "Stop, call for help, airway and oxygen, anticonvulsant and lipid per protocol",
+        "ok": true,
+        "why": {
+         "zh": "針尖旁邊就是椎動脈：一點點局部麻醉藥進到動脈直接到腦，幾秒就抽搐。這是局部麻醉藥中毒。拔針、叫人、氧氣、抗抽搐藥與脂肪乳劑依醫囑，監視器盯緊心律。",
+         "en": "The vertebral artery sits beside the tip: a trace of local anaesthetic into it goes straight to the brain and seizes within seconds. This is local anaesthetic systemic toxicity. Needle out, call for help, oxygen, anticonvulsant and lipid per protocol, eyes on the rhythm."
+        }
+       },
+       {
+        "zh": "量很少，繼續打完再觀察",
+        "en": "Tiny volume; finish and observe",
+        "ok": false,
+        "why": {
+         "zh": "動脈內不看量。她已經在抽搐了。",
+         "en": "Volume means nothing inside an artery. She is already seizing."
+        }
+       },
+       {
+        "zh": "先照一張 X 光看針在哪",
+        "en": "X-ray first to see where the needle is",
+        "ok": false,
+        "why": {
+         "zh": "針已經告訴你它在哪了。現在是氣道、氧氣、抗抽搐、脂肪乳劑，不是影像。",
+         "en": "The needle has already told you where it is. Now it is airway, oxygen, anticonvulsant and lipid, not imaging."
+        }
+       }
+      ]
+     },
+     "post": [
+      [
+       "nurse",
+       {
+        "zh": "急救車來了。氧氣給了。心律目前竇性。",
+        "en": "Crash cart here. Oxygen on. Rhythm sinus for now."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "s3",
+     "to": "place:cart",
+     "guide": {
+      "zh": "找脂肪乳劑",
+      "en": "Find the lipid emulsion"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "脂肪乳劑。你知道它在哪一層。",
+        "en": "Lipid emulsion. You know which drawer."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "find",
+      "hot": "crash-cart",
+      "q": {
+       "zh": "點選急救車，拿出脂肪乳劑與流程卡。",
+       "en": "Tap the crash cart and take out the lipid emulsion and its protocol card."
+      }
+     },
+     "post": [
+      [
+       "me",
+       {
+        "zh": "最下層。流程卡在旁邊。依醫囑給。",
+        "en": "Bottom drawer. Protocol card beside it. Given per protocol."
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "抽搐停了。阿雪的眼睛慢慢對焦。監視器的數字一個一個回到該在的地方。",
+        "en": "The seizure stops. A-Hsueh's eyes slowly focus. One by one the numbers on the monitor return to where they belong."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "s4",
+     "to": "attending",
+     "guide": {
+      "zh": "事後：順序再講一遍",
+      "en": "Afterwards: the sequence again"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "剛剛三十秒內發生的事，照順序講一遍。以後你會教別人。",
+        "en": "What happened in those thirty seconds, in order. One day you will teach it."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "order",
+      "q": {
+       "zh": "局部麻醉藥中毒：處理順序",
+       "en": "Local anaesthetic toxicity: the order of actions"
+      },
+      "steps": [
+       {
+        "zh": "停止注射，拔針",
+        "en": "Stop injecting, needle out"
+       },
+       {
+        "zh": "呼叫協助，急救車到位",
+        "en": "Call for help, crash cart in"
+       },
+       {
+        "zh": "氣道、氧氣、抽吸",
+        "en": "Airway, oxygen, suction"
+       },
+       {
+        "zh": "抗抽搐與脂肪乳劑依醫囑",
+        "en": "Anticonvulsant and lipid per protocol"
+       },
+       {
+        "zh": "持續監測心律，通知加護病房",
+        "en": "Keep monitoring the rhythm; inform intensive care"
+       }
+      ]
+     },
+     "post": [
+      [
+       "a-hsueh",
+       {
+        "zh": "（虛弱地）我剛剛……去哪裡了？",
+        "en": "(weakly) Where did I... just go?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "你去了一下下，現在回來了。我們會在加護病房觀察你一晚。手，我們改天再做，用另一個方法。",
+        "en": "You went away for a moment and you are back now. We will watch you in intensive care overnight. The hand we will do another day, a different way."
+       }
+      ],
+      [
+       "a-hsueh",
+       {
+        "zh": "絲還在我口袋。",
+        "en": "The silk is still in my pocket."
+       }
+      ]
+     ],
+     "item": "silk"
+    }
+   ]
+  },
+  {
+   "id": "report",
+   "name": {
+    "zh": "記錄與通報",
+    "en": "Records and report"
+   },
+   "sub": {
+    "zh": "16:00 · 紀錄桌",
+    "en": "16:00 · records desk"
+   },
+   "t": 960,
+   "mood": "day",
+   "note": {
+    "zh": "事件通報完成，高主治的反思",
+    "en": "Event reported; Dr Kao's debrief"
+   },
+   "beats": [
+    {
+     "id": "e1",
+     "to": "place:desk",
+     "guide": {
+      "zh": "寫事件通報",
+      "en": "Write the event report"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "不是找誰的錯，是寫下順序：回抽、量、時間、症狀、處理、結果。下一個人會讀。",
+        "en": "Not to find who was at fault, but to set down the sequence: aspiration, volume, timing, symptoms, actions, outcome. The next person will read it."
+       }
+      ]
+     ],
+     "roles": [
+      "resident"
+     ]
+    },
+    {
+     "id": "e1b",
+     "to": "place:carm",
+     "guide": {
+      "zh": "劑量紀錄與影像歸檔",
+      "en": "Dose log and image archive"
+     },
+     "lines": [
+      [
+       "rad-mei",
+       {
+        "zh": "今天三個病人的透視時間與劑量都簽好了。劉先生的影像已經傳給腫瘤科。",
+        "en": "Fluoroscopy times and doses for all three signed off. Mr Liu's images are already with oncology."
+       }
+      ]
+     ],
+     "roles": [
+      "rad"
+     ]
+    },
+    {
+     "id": "e2",
+     "to": "attending",
+     "guide": {
+      "zh": "高主治的反思",
+      "en": "Dr Kao's debrief"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "今天三針，打了幾針？",
+        "en": "Three needles today. How many went in?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "半針。黃阿姨沒打，劉先生沒打，阿雪打到一半。",
+        "en": "Half. Not Mrs Huang, not Mr Liu, and A-Hsueh only halfway."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "對。而今天三個病人都比早上安全。影像是地圖，不是目的地。回家吧。",
+        "en": "Yes. And all three patients are safer tonight than they were this morning. The image is the map, not the destination. Go home."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "night",
+   "name": {
+    "zh": "夜間值班",
+    "en": "Night on call"
+   },
+   "sub": {
+    "zh": "21:30 · 值班室電話",
+    "en": "21:30 · on-call phone"
+   },
+   "t": 1290,
+   "mood": "night",
+   "note": {
+    "zh": "夜間的兩通電話處理完成",
+    "en": "Two evening calls handled"
+   },
+   "beats": [
+    {
+     "id": "n1",
+     "ring": {
+      "title": {
+       "zh": "黃先生訊息",
+       "en": "Message from Mr Huang"
+      },
+      "sub": {
+       "zh": "媽媽問心臟科要說什麼",
+       "en": "Mum wants to know what to ask cardiology"
+      },
+      "call": false,
+      "from": "huang-son"
+     },
+     "lines": [
+      [
+       "huang-son",
+       {
+        "zh": "醫師，我媽明天心臟科回診，她說要問「停幾天」。還有什麼要問的嗎？",
+        "en": "Doctor, my mother sees cardiology tomorrow and wants to ask 'how many days'. Anything else she should ask?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "問停幾天、要不要過渡用藥、停藥期間要注意什麼。心臟科回覆後我們再排日期。她今天問對了問題。",
+        "en": "Ask how many days, whether a bridging plan is needed, and what to watch for while paused. Once cardiology answers we set the date. She asked the right question today."
+       }
+      ]
+     ],
+     "when": {
+      "flag": "anticoag",
+      "is": "defer"
+     }
+    },
+    {
+     "id": "n1b",
+     "ring": {
+      "title": {
+       "zh": "高主治訊息",
+       "en": "Message from Dr Kao"
+      },
+      "sub": {
+       "zh": "今天那一針",
+       "en": "About today's needle"
+      },
+      "call": false
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "（訊息）今天那一針我攔住了。記得硬膜外血腫的樣子：背痛加上腿越來越沒力、大小便失禁，幾小時內要核磁共振。下次我不在。",
+        "en": "(message) I stopped that needle today. Remember what an epidural haematoma looks like: back pain plus legs growing weaker and loss of bladder control, MRI and surgery within hours. Next time I may not be there."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "記住了。我把它寫在時間暫停卡的第一行。",
+        "en": "Remembered. I have written it on the first line of the time-out card."
+       }
+      ]
+     ],
+     "when": {
+      "flag": "anticoag",
+      "is": "proceed"
+     }
+    },
+    {
+     "id": "n2",
+     "ring": {
+      "title": {
+       "zh": "阿雪的先生來電",
+       "en": "A-Hsueh's husband calling"
+      },
+      "sub": {
+       "zh": "她聲音啞、眼皮垂，這樣正常嗎？",
+       "en": "Hoarse voice and a droopy eyelid: is that normal?"
+      },
+      "call": true,
+      "from": "hsueh-husband"
+     },
+     "lines": [
+      [
+       "hsueh-husband",
+       {
+        "zh": "醫師，加護病房說她很穩，但她講話啞啞的、右邊眼皮垂下來、半邊臉不流汗。這樣正常嗎？",
+        "en": "Doctor, intensive care says she is stable, but her voice is hoarse, her right eyelid droops and half her face is not sweating. Is that normal?"
+       }
+      ]
+     ],
+     "mini": {
+      "type": "choice",
+      "q": {
+       "zh": "星狀神經節阻斷後的這些變化，怎麼解釋？",
+       "en": "How do you explain these changes after a stellate ganglion block?"
+      },
+      "options": [
+       {
+        "zh": "是霍納氏症候群，阻斷有效的記號，幾小時會退",
+        "en": "Horner's syndrome: the sign the block worked; fades in hours",
+        "ok": true,
+        "why": {
+         "zh": "眼皮下垂、瞳孔縮小、臉不出汗、聲音啞，是交感神經被暫時關掉的表現。要教家屬的是紅旗：呼吸困難、脖子腫、吞嚥困難，立刻叫人。",
+         "en": "Droopy eyelid, small pupil, dry face and a hoarse voice are the sympathetic nerves switched off for a while. What the family must learn are the red flags: trouble breathing, a swelling neck, difficulty swallowing, call at once."
+        }
+       },
+       {
+        "zh": "是中風，馬上啟動中風小組",
+        "en": "A stroke; activate the stroke team",
+        "ok": false,
+        "why": {
+         "zh": "單側眼皮下垂加不出汗、沒有肢體無力或口齒不清，符合霍納氏症候群。但加護病房會持續做神經學檢查，有變化就升級。",
+         "en": "One-sided ptosis with a dry face and no limb weakness or slurred speech fits Horner's. Intensive care keeps doing neurological checks all the same and escalates on any change."
+        }
+       },
+       {
+        "zh": "沒事，叫他別再打來",
+        "en": "Nothing; tell him to stop calling",
+        "ok": false,
+        "why": {
+         "zh": "他問對了問題。該做的是解釋，加上教他什麼時候一定要再打來。",
+         "en": "He asked the right question. What he needs is an explanation, plus exactly when he must call again."
+        }
+       }
+      ]
+     },
+     "post": [
+      [
+       "hsueh-husband",
+       {
+        "zh": "好，我盯著她的脖子和呼吸。她說口袋裡的絲還在。",
+        "en": "Right, I will watch her neck and her breathing. She says the silk is still in her pocket."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "n3",
+     "to": "place:desk",
+     "guide": {
+      "zh": "睡前最後一件事",
+      "en": "Last thing before sleep"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "你把今天的時間暫停卡重寫一遍，在「抗凝血劑」旁邊畫了星號，在「脂肪乳劑」旁邊寫了抽屜號碼。",
+        "en": "You rewrite today's time-out card: a star beside 'anticoagulant', the drawer number beside 'lipid emulsion'."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "（訊息）地圖畫好了。晚安。",
+        "en": "(message) The map is drawn. Good night."
+       }
+      ]
+     ],
+     "t": 1320,
+     "end": true
+    }
+   ]
+  }
+ ],
+ "ending": {
+  "title": {
+   "zh": "關機了",
+   "en": "Switched off"
+  },
+  "sub": {
+   "zh": "三針排程、半針打下、三個更安全的人",
+   "en": "Three needles booked, half a needle placed, three people safer"
+  },
+  "stats": [
+   "stages",
+   "drills",
+   "choices",
+   "calls",
+   "items",
+   "time"
+  ]
+ }
+}

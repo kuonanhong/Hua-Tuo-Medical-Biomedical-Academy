@@ -1,0 +1,256 @@
+{
+  "format": "huatuo-shift-v2",
+  "department": "medical-genetics",
+  "case": "pgx-lab",
+  "caseTitle": {"zh": "吃藥之前先驗的那個基因", "en": "The gene to test before the pill"},
+  "condition": {"zh": "藥物基因體 · HLA 檢測", "en": "Pharmacogenomics · HLA testing"},
+  "difficulty": 1,
+  "room": "biomed-lab",
+  "title": {"zh": "分子診斷實驗室的一天", "en": "A day in the molecular diagnostics lab"},
+  "tagline": {"zh": "陰性只回答被問的那一題", "en": "A negative answers only the question asked"},
+  "minutes": 25,
+  "roles": [
+    {"id": "gen-resident", "zh": "遺傳科住院醫師", "en": "Clinical genetics resident",
+     "desc": {"zh": "畫家系圖、回答神經科的電話、解釋報告的範圍。病人的女兒問「那我呢」的時候，你要把機率說清楚。", "en": "Draw the pedigree, answer neurology's call, explain the report's scope. When the patient's daughter asks “what about me?”, make the probability clear."}},
+    {"id": "mol-mls", "zh": "分子檢驗醫檢師", "en": "Molecular laboratory scientist",
+     "desc": {"zh": "萃取、配反應、上機、看對照組。前後區分開走，一步都不能回頭。", "en": "Extract, set up, run, check the controls. Pre- and post-amplification areas kept apart, and never a step backwards."}}
+  ],
+  "cast": {
+    "mentor": {"name": {"zh": "莫主任", "en": "Dr Mo"}, "role": {"zh": "分子診斷實驗室主任（師傅）", "en": "Molecular diagnostics director (mentor)"}, "tag": "DIR", "color": "#81296d", "body": "mentor",
+               "about": {"zh": "移液器上貼著小貓貼紙，說這樣比較不會拿錯。口頭禪：對照組是實驗室裡唯一不會說謊的人。", "en": "Kitten stickers on her pipettes so she never grabs the wrong one. Her motto: the controls are the only people in the lab who never lie."}},
+    "bo": {"name": {"zh": "小柏", "en": "Bo"}, "role": {"zh": "資深分子醫檢師", "en": "Senior molecular scientist"}, "tag": "MLS", "color": "#3b8f6a", "body": "tech",
+           "about": {"zh": "會用 3D 列印機印出蛋白質模型，拿來跟病人解釋。印表機旁邊堆滿了失敗的作品。", "en": "Prints protein models on the 3D printer to explain things to patients. The printer is surrounded by failed attempts."}},
+    "hou": {"name": {"zh": "侯阿姨", "en": "Auntie Hou"}, "role": {"zh": "五十八歲，三叉神經痛", "en": "Fifty-eight, trigeminal neuralgia"}, "tag": "PT", "color": "#c2703a", "body": "patient",
+            "about": {"zh": "虛構教學個案。退休裁縫。右臉像被電到一樣痛，刷牙、吹到風都會發作。她說：最痛的時候，連笑都不敢。", "en": "Fictional teaching case. A retired tailor. Electric-shock pain in her right cheek, set off by brushing her teeth or a breeze. She says: at its worst, she doesn't dare smile."}},
+    "daughter": {"name": {"zh": "侯阿姨的女兒", "en": "Auntie Hou's daughter"}, "role": {"zh": "家屬", "en": "Family"}, "tag": "FAM", "color": "#8a6d3b", "body": "family",
+                 "about": {"zh": "國中數學老師。什麼都想算成機率，算完還要再問一次。", "en": "A secondary-school maths teacher. Turns everything into a probability, then asks again to be sure."}},
+    "neuro": {"name": {"zh": "神經科鍾醫師", "en": "Dr Chung, neurology"}, "role": {"zh": "開單的醫師（電話）", "en": "Requesting physician (by phone)"}, "tag": "NEU", "color": "#2f6f8f", "phoneOnly": true,
+              "about": {"zh": "很心疼病人的痛，總想今天就讓她好一點。", "en": "Hates to see a patient in pain and always wants to make it better today."}},
+    "ward-nurse": {"name": {"zh": "風濕科病房小如", "en": "Ru, rheumatology ward"}, "role": {"zh": "病房護理師（電話）", "en": "Ward nurse (by phone)"}, "tag": "RN", "color": "#3b5f8f", "phoneOnly": true,
+                   "about": {"zh": "看到病人嘴唇破皮就會多看一眼眼睛。", "en": "Sees cracked lips and immediately looks at the eyes too."}},
+    "lai": {"name": {"zh": "賴伯伯（病房 8 床）", "en": "Uncle Lai (ward bed 8)"}, "role": {"zh": "七十二歲，痛風新用藥", "en": "Seventy-two, new gout medicine"}, "tag": "P8", "color": "#a0522d", "phoneOnly": true,
+            "about": {"zh": "虛構教學個案。退休漁夫。三週前開始吃降尿酸的藥，這兩天發燒、嘴巴破、身上起紅斑。", "en": "Fictional teaching case. A retired fisherman. Started a uric-acid-lowering drug three weeks ago; for two days, fever, mouth sores and red patches."}}
+  },
+  "places": {
+    "bench": {"name": {"zh": "萃取工作台", "en": "Extraction bench"}, "hot": "bench"},
+    "hood": {"name": {"zh": "前處理無菌操作台", "en": "Pre-amplification hood"}, "hot": "hood"},
+    "printer": {"name": {"zh": "3D 列印機", "en": "3D printer"}, "hot": "printer3d"},
+    "ws": {"name": {"zh": "報告工作站", "en": "Reporting workstation"}, "hot": "workstation"},
+    "desk": {"name": {"zh": "諮詢桌", "en": "Counselling desk"}, "hot": "desk"},
+    "scope": {"name": {"zh": "顯微鏡", "en": "Microscope"}, "hot": "microscope"}
+  },
+  "glossary": [
+    {"term": {"zh": "藥物基因體學", "en": "pharmacogenomics"}, "plain": {"zh": "研究基因怎麼影響一個人對藥物的反應：有沒有效、會不會中毒、會不會嚴重過敏。", "en": "How genes shape a person's response to a medicine: whether it works, whether it poisons, whether it triggers a severe reaction."}},
+    {"term": {"zh": "人類白血球抗原", "en": "HLA"}, "plain": {"zh": "細胞表面的「身分證展示架」，把小片段展示給免疫細胞看。某些型別會把特定藥物也放上去，讓免疫系統誤以為是敵人。", "en": "Display stands on the cell surface that show small fragments to immune cells. Certain types also hold particular drugs, so the immune system mistakes them for an enemy."}},
+    {"term": {"zh": "等位基因", "en": "allele"}, "plain": {"zh": "同一個基因的不同版本。每個人從爸爸和媽媽各拿一個。", "en": "A version of a gene. Everyone receives one from each parent."}},
+    {"term": {"zh": "三叉神經痛", "en": "trigeminal neuralgia"}, "plain": {"zh": "臉部神經突然像被電到一樣的劇痛，幾秒鐘，一天可以很多次。刷牙、洗臉、吹風都會引發。", "en": "Sudden, electric-shock pain along a facial nerve, lasting seconds, many times a day. Brushing teeth, washing or a breeze can set it off."}},
+    {"term": {"zh": "史蒂文生氏-強生症候群", "en": "Stevens-Johnson syndrome"}, "plain": {"zh": "嚴重的藥物過敏：發燒、皮膚起暗紅斑、起水泡脫皮，嘴巴、眼睛、生殖器黏膜破。範圍更大就叫毒性表皮溶解症。", "en": "A severe drug reaction: fever, dusky red patches, blisters and peeling skin, raw mouth, eyes and genitals. When more skin is involved it is called toxic epidermal necrolysis."}},
+    {"term": {"zh": "黏膜", "en": "mucous membranes"}, "plain": {"zh": "嘴唇、口腔、眼睛、生殖器的濕潤表面。皮疹加上黏膜破，要立刻想到嚴重藥物反應。", "en": "The moist linings of the lips, mouth, eyes and genitals. A rash with raw membranes means think severe drug reaction at once."}},
+    {"term": {"zh": "聚合酶連鎖反應", "en": "PCR"}, "plain": {"zh": "把一小段特定的 DNA 複製成幾百萬份，才看得到、測得到。", "en": "Copying one specific stretch of DNA millions of times so it can be seen and measured."}},
+    {"term": {"zh": "無模板對照", "en": "no-template control"}, "plain": {"zh": "只加水不加 DNA 的那一管。如果它出現訊號，代表有污染，整批結果都不能信。", "en": "The tube with water instead of DNA. If it lights up, there's contamination and the whole run can't be trusted."}},
+    {"term": {"zh": "單向動線", "en": "one-way workflow"}, "plain": {"zh": "人和東西只能從前處理區走向放大後的區域，不能倒著走，避免複製好的 DNA 污染下一批。", "en": "People and materials move only from the pre-amplification area towards the post-amplification area, never back, so copied DNA can't contaminate the next run."}},
+    {"term": {"zh": "檢測範圍", "en": "testing scope"}, "plain": {"zh": "這份檢驗到底測了哪個基因、哪個型別。陰性只代表「測的那一個沒有」，不代表其他都沒有。", "en": "Exactly which gene and which variant a test looked at. A negative means only “not the one we tested”, not “nothing at all”."}},
+    {"term": {"zh": "帶因", "en": "carrier"}, "plain": {"zh": "身上帶著某個基因型別。帶 HLA 型別不是生病，是「吃某些藥要小心」的標記。", "en": "Having a particular gene type. Carrying an HLA type isn't an illness; it's a marker meaning “careful with certain medicines”."}},
+    {"term": {"zh": "家系圖", "en": "pedigree"}, "plain": {"zh": "用標準符號畫出的家族樹，標出誰有什麼病或反應。藥物反應也可以畫進去。", "en": "A family tree in standard symbols marking who has which illness or reaction. Drug reactions can be drawn in too."}}
+  ],
+  "codex": [
+    {"id": "pre-pcr-hood", "kind": "equipment", "name": {"zh": "前處理無菌操作台", "en": "Pre-amplification hood"}, "text": {"zh": "配反應的專用台：自己的移液器、自己的手套、紫外燈。放大過的 DNA 永遠不准進來。", "en": "The dedicated set-up station: its own pipettes, its own gloves, a UV lamp. Amplified DNA is never allowed in."}, "hot": "hood"},
+    {"id": "extraction-bench", "kind": "equipment", "name": {"zh": "萃取工作台", "en": "Extraction bench"}, "text": {"zh": "從一管血裡把 DNA 拿出來。每一管的標籤，在開蓋前、開蓋後各念一次。", "en": "Where DNA is drawn out of a tube of blood. Each tube's label is read aloud before and after opening."}, "hot": "bench"},
+    {"id": "printer3d", "kind": "equipment", "name": {"zh": "3D 列印機", "en": "3D printer"}, "text": {"zh": "小柏用它印蛋白質模型。他說病人摸得到的東西，比圖片好懂十倍。", "en": "Bo prints protein models on it. He says something a patient can hold is ten times easier to grasp than a picture."}, "hot": "printer3d"},
+    {"id": "report-ws", "kind": "equipment", "name": {"zh": "報告工作站", "en": "Reporting workstation"}, "text": {"zh": "報告第一行寫結果，第二行寫測了什麼、沒測什麼。第二行比第一行更常救人。", "en": "Line one of the report gives the result; line two says what was and wasn't tested. Line two saves people more often than line one."}, "hot": "workstation"},
+    {"id": "hla-model", "kind": "item", "name": {"zh": "3D 列印的 HLA 模型", "en": "The printed HLA model"}, "text": {"zh": "一個手掌大的白色蛋白質，中間有一道溝，溝裡卡著一顆紅色的小珠子——代表那顆藥。侯阿姨把它放進包包，說要拿給以後的每一個醫生看。", "en": "A palm-sized white protein with a groove down the middle and a small red bead lodged in it: the drug. Auntie Hou puts it in her bag to show every future doctor."}},
+    {"id": "hla-drug", "kind": "concept", "name": {"zh": "為什麼一個基因會讓藥變成毒", "en": "How one gene turns a drug into a poison"}, "text": {"zh": "某些 HLA 型別的展示溝，剛好能卡住特定的藥物分子。免疫細胞看到「長得不一樣的展示品」，以為細胞被感染，開始攻擊皮膚和黏膜，造成史蒂文生氏-強生症候群。在台灣，治療癲癇或三叉神經痛的某種常用藥和 HLA-B*15:02 關係很強；降尿酸的某種常用藥和 HLA-B*58:01 有關。開藥前先驗，是台灣藥物基因體學最成功的例子之一。帶這個型別不是生病，只是那顆藥不適合你。", "en": "The display groove of some HLA types happens to hold a particular drug molecule. Immune cells see an “odd-looking exhibit”, assume the cell is infected, and attack skin and mucous membranes: Stevens-Johnson syndrome. In Taiwan, a common drug for epilepsy and trigeminal neuralgia is strongly linked to HLA-B*15:02, and a common uric-acid-lowering drug to HLA-B*58:01. Testing before prescribing is one of Taiwan's great pharmacogenomics successes. Carrying the type isn't an illness; it just means that pill isn't for you."}},
+    {"id": "pcr-workflow", "kind": "concept", "name": {"zh": "單向動線與三種對照", "en": "One-way workflow and three controls"}, "text": {"zh": "PCR 能把一個分子變成幾百萬個，所以最大的敵人是污染。實驗室分前後區，人和東西只能往前走：萃取、在前處理台配反應、上機放大、在後區判讀。每一批都要三種對照：已知帶因的陽性對照（證明系統會亮）、已知不帶因的陰性對照（證明不會亂亮）、只加水的無模板對照（證明沒有污染）。任何一個對照不對，整批重做，病人的結果不發。", "en": "PCR turns one molecule into millions, so contamination is the great enemy. The lab is split into before and after areas, and people and materials only move forward: extract, set up in the pre-amplification hood, amplify, read in the post area. Every run carries three controls: a known-carrier positive (the system can light up), a known non-carrier negative (it doesn't light up wrongly), and a water-only no-template control (nothing is contaminated). If any control is wrong, the run is repeated and no patient result goes out."}},
+    {"id": "negative-scope", "kind": "concept", "name": {"zh": "陰性只回答被問的那一題", "en": "A negative answers only the question asked"}, "text": {"zh": "HLA-B*15:02 陰性，只代表「這一個型別沒有」。它和降尿酸藥相關的 HLA-B*58:01 是不同的型別，也不代表對其他藥物不會過敏，更不代表永遠不會有嚴重藥物反應。報告和病歷要寫清楚測了什麼、沒測什麼。用新藥的頭幾週，發燒加上皮疹或黏膜破，仍然要立刻停藥就醫。", "en": "Negative for HLA-B*15:02 means only “not this type”. HLA-B*58:01, linked to the uric-acid drug, is a different type; a negative says nothing about other drugs and never promises freedom from severe reactions. The report and chart must state what was and wasn't tested. In the first weeks of any new drug, fever with a rash or raw membranes still means stop it and seek care at once."}}
+  ],
+  "segs": [
+    {"id": "morning", "name": {"zh": "急件", "en": "An urgent request"}, "sub": {"zh": "08:00 · 萃取工作台", "en": "08:00 · extraction bench"}, "t": 480, "mood": "day",
+     "note": {"zh": "開藥前先驗的那個基因", "en": "The gene to test before prescribing"},
+     "beats": [
+      {"id": "r1", "to": "place:bench", "guide": {"zh": "看今天的急件", "en": "Read today's urgent request"},
+       "lines": [
+        ["sys", {"zh": "早上八點。莫主任把貼著小貓的移液器排成一排，像在點名。", "en": "Eight a.m. Dr Mo lines up her kitten-stickered pipettes as if taking a register."}],
+        ["bo", {"zh": "神經科急件：侯阿姨，三叉神經痛，要驗 HLA-B*15:02。鍾醫師想用那顆常用的止痛抗癲癇藥。", "en": "Urgent from neurology: Auntie Hou, trigeminal neuralgia, HLA-B*15:02 please. Dr Chung wants to start that common anti-seizure drug for the pain."}],
+        ["mentor", {"zh": "這是藥物基因體學在台灣最成功的一題。為什麼要先驗？", "en": "This is Taiwan's great pharmacogenomics success story. Why test first?"}],
+        ["me", {"zh": "帶這個型別的人吃那顆藥，比較容易發生史蒂文生氏-強生症候群。", "en": "People carrying that type are at much higher risk of Stevens-Johnson syndrome on that drug."}]
+       ]},
+      {"id": "r2", "roles": ["mol-mls"], "to": "place:hood", "guide": {"zh": "準備前處理操作台", "en": "Prepare the pre-amplification hood"},
+       "lines": [
+        ["mentor", {"zh": "今天你負責前區。放大過的東西，一樣都不准進那個台子。", "en": "You're on the front end today. Nothing amplified goes near that hood."}]
+       ],
+       "mini": {"type": "find", "hot": "hood", "q": {"zh": "找到前處理無菌操作台", "en": "Find the pre-amplification hood"}},
+       "post": [
+        ["me", {"zh": "紫外燈照過了，專用移液器、新手套、新的濾嘴吸管都備好。", "en": "UV cycle done; dedicated pipettes, fresh gloves and new filter tips laid out."}]
+       ]}
+     ]},
+    {"id": "hou", "name": {"zh": "侯阿姨", "en": "Auntie Hou"}, "sub": {"zh": "08:40 · 諮詢桌", "en": "08:40 · counselling desk"}, "t": 520, "mood": "day",
+     "note": {"zh": "姊姊多年前的一場皮膚反應", "en": "A sister's skin reaction, years ago"},
+     "beats": [
+      {"id": "h1", "roles": ["gen-resident"], "to": "hou", "guide": {"zh": "替侯阿姨畫家系圖", "en": "Draw Auntie Hou's pedigree"},
+       "lines": [
+        ["hou", {"zh": "抽血是為了什麼？我只是臉痛……", "en": "What's the blood test for? It's just my face that hurts…"}],
+        ["me", {"zh": "有些人的基因，讓某種止痛藥容易引起嚴重的皮膚過敏。先驗，再決定能不能吃。", "en": "In some people, a gene makes one pain medicine likely to cause a severe skin reaction. We test first, then decide."}],
+        ["hou", {"zh": "……我姊姊年輕時吃了癲癇的藥，全身脫皮，住了燒燙傷病房。", "en": "…My elder sister took a seizure drug when she was young. Her skin peeled all over; she ended up in the burns unit."}],
+        ["mentor", {"zh": "把這個畫進家系圖。藥物反應也是家族史。", "en": "Draw that into the pedigree. Drug reactions are family history too."}]
+       ],
+       "mini": {"type": "drill", "template": "medical-genetics", "drill": "pedigree"},
+       "post": [
+        ["me", {"zh": "姊姊：嚴重藥物反應，標註藥名不詳、住燒燙傷病房。哥哥：未知，不是「沒有」。", "en": "Sister: severe drug reaction, drug name unknown, burns unit. Brother: unknown, not “none”."}]
+       ]},
+      {"id": "h2", "to": "bo", "guide": {"zh": "看小柏的 3D 模型", "en": "See Bo's 3D model"},
+       "lines": [
+        ["bo", {"zh": "阿姨，這是印出來的人類白血球抗原。中間這一道溝，是用來展示東西給免疫細胞看的。", "en": "Auntie, this is a printed HLA. The groove down the middle is where things are displayed to immune cells."}],
+        ["bo", {"zh": "某些型別的溝，剛好卡得住那顆藥。免疫細胞一看：咦，長得怪怪的，就開始攻擊皮膚。", "en": "In some types the groove holds that drug. The immune cells look and think: that's odd, and start attacking the skin."}],
+        ["hou", {"zh": "像我做衣服，扣子卡錯扣眼，整件就歪了。", "en": "Like dressmaking: one button in the wrong hole and the whole garment hangs crooked."}],
+        ["bo", {"zh": "……阿姨，你解釋得比我好。", "en": "…Auntie, you explain it better than I do."}]
+       ]}
+     ]},
+    {"id": "call", "name": {"zh": "神經科的電話", "en": "Neurology calls"}, "sub": {"zh": "10:30 · 報告工作站", "en": "10:30 · reporting workstation"}, "t": 630, "mood": "day",
+     "note": {"zh": "等結果的那幾個小時，用別的方法止痛", "en": "For the hours of waiting, other pain relief"},
+     "beats": [
+      {"id": "c1", "to": "place:ws", "guide": {"zh": "接鍾醫師的電話", "en": "Take Dr Chung's call"},
+       "ring": {"title": {"zh": "神經科來電", "en": "Neurology calling"}, "sub": {"zh": "她痛得受不了，可以先開始吃嗎？", "en": "She's in agony. Can she start the drug now?"}, "call": true, "from": "neuro"},
+       "lines": [
+        ["neuro", {"zh": "侯阿姨痛到不敢吃飯。我想今天就讓她開始吃，結果出來再調整，可以嗎？", "en": "Auntie Hou's pain is so bad she won't eat. I'd like her to start today and adjust once the result's in. All right?"}]
+       ],
+       "mini": {"type": "choice", "q": {"zh": "結果今天下午會出來。你怎麼回答？", "en": "The result will be out this afternoon. Your answer?"},
+                "options": [
+                 {"zh": "等今天的結果，先用其他方式止痛", "en": "Wait for today's result; other pain relief meanwhile", "ok": true, "set": {"start": "waited"},
+                  "why": {"zh": "急件今天就有結果。嚴重皮膚反應一旦發生很難收回，幾個小時的等待換來安全；止痛可以先用別的選擇。", "en": "The urgent result is due today. A severe skin reaction is hard to undo once it starts; a few hours' wait buys safety, and pain can be eased other ways meanwhile."}},
+                 {"zh": "先開始吃，結果出來再說", "en": "Start now; act on the result later", "ok": false, "set": {"start": "started"},
+                  "why": {"zh": "先驗後用，就是為了不讓藥先進到身體裡。這幾個小時，正是檢驗存在的理由。", "en": "Test-then-treat exists so the drug doesn't go in first. Those few hours are the whole reason the test exists."}},
+                 {"zh": "急件也要排隊，請等兩週", "en": "Urgent or not, it queues for two weeks", "ok": false, "set": {"start": "delayed"},
+                  "why": {"zh": "病人正在痛。實驗室的工作，是讓安全和速度一起到。", "en": "She is in pain now. The lab's job is to deliver safety and speed together."}}
+                ]},
+       "post": [
+        ["mentor", {"zh": "實驗室的承諾是：快，而且對。不是只選一個。", "en": "The lab's promise: fast, and right. Not one or the other."}]
+       ]}
+     ]},
+    {"id": "pcr", "name": {"zh": "往前走，不回頭", "en": "Forward, never back"}, "sub": {"zh": "11:30 · 前處理操作台", "en": "11:30 · pre-amplification hood"}, "t": 690, "mood": "day",
+     "note": {"zh": "三種對照，一條單向動線", "en": "Three controls, one way through"},
+     "beats": [
+      {"id": "p1", "roles": ["mol-mls"], "to": "place:hood", "guide": {"zh": "依序完成這一批", "en": "Run the batch in order"},
+       "lines": [
+        ["mentor", {"zh": "單向動線。順序排給我看，順便告訴我三種對照各放在哪一步。", "en": "One-way workflow. Order the steps, and tell me where the three controls go."}]
+       ],
+       "mini": {"type": "order", "q": {"zh": "HLA 基因檢測的流程", "en": "The HLA testing workflow"},
+                "steps": [
+                 {"zh": "核對標籤後萃取 DNA", "en": "Check labels, extract DNA"},
+                 {"zh": "檢查 DNA 的量與品質", "en": "Check DNA quantity and quality"},
+                 {"zh": "前處理台配反應加三種對照", "en": "Set up in the hood with three controls"},
+                 {"zh": "上機放大", "en": "Amplify"},
+                 {"zh": "後區判讀，先看對照", "en": "Read in the post area, controls first"},
+                 {"zh": "寫報告並註明檢測範圍", "en": "Report, stating the testing scope"}
+                ]},
+       "post": [
+        ["me", {"zh": "陽性對照亮、陰性對照不亮、無模板對照完全安靜。這一批可以讀。", "en": "Positive control lit, negative control dark, no-template control silent. This run can be read."}],
+        ["mentor", {"zh": "對照組是實驗室裡唯一不會說謊的人。", "en": "The controls are the only people in the lab who never lie."}]
+       ]},
+      {"id": "p2", "roles": ["gen-resident"], "to": "place:scope", "guide": {"zh": "問莫主任為什麼不能回頭", "en": "Ask Dr Mo why there's no going back"},
+       "lines": [
+        ["me", {"zh": "為什麼後區的東西不能拿回前區？洗乾淨也不行？", "en": "Why can't anything go back from the post area to the front? Not even cleaned?"}],
+        ["mentor", {"zh": "聚合酶連鎖反應放大過的 DNA 有幾百萬份，飄在空氣裡、黏在手套上。一顆跑回前區，下一個病人就可能被驗成陽性。", "en": "DNA amplified by PCR exists in millions of copies, floating in the air and clinging to gloves. Let one get back to the front and the next patient could test positive."}],
+        ["me", {"zh": "所以無模板對照就是抓這個的。", "en": "So that's what the no-template control catches."}]
+       ]}
+     ]},
+    {"id": "ward", "name": {"zh": "病房的另一通電話", "en": "Another call from the ward"}, "sub": {"zh": "14:00 · 報告工作站", "en": "14:00 · reporting workstation"}, "t": 840, "mood": "day",
+     "note": {"zh": "陰性只回答被問的那一題", "en": "A negative answers only the question asked"},
+     "beats": [
+      {"id": "w1", "to": "place:ws", "guide": {"zh": "接風濕科病房的電話", "en": "Take the rheumatology ward's call"},
+       "ring": {"title": {"zh": "風濕科病房來電", "en": "Rheumatology ward calling"}, "sub": {"zh": "8 床發燒、嘴巴破、皮膚起紅斑", "en": "Bed 8: fever, mouth sores, red patches"}, "call": true, "from": "ward-nurse"},
+       "lines": [
+        ["ward-nurse", {"zh": "8 床賴伯伯，降尿酸的藥吃了三週。昨天開始發燒，今天嘴巴破、眼睛紅、胸口一片片暗紅斑。", "en": "Bed 8, Uncle Lai, three weeks on the uric-acid drug. Fever since yesterday; today mouth sores, red eyes and dusky red patches on his chest."}]
+       ],
+       "mini": {"type": "vitals", "event": "fever",
+                "options": [
+                 {"zh": "立刻停掉可疑藥物，請醫師評估皮膚黏膜", "en": "Stop the suspect drug now; doctor to assess skin and membranes", "ok": true,
+                  "why": {"zh": "新藥幾週內、發燒加上皮疹和黏膜破，要先想嚴重藥物反應。第一步是停藥，再評估範圍、會診皮膚科與眼科。", "en": "Within weeks of a new drug, fever with a rash and raw membranes means severe drug reaction until proven otherwise. Stop the drug first, then assess extent and call dermatology and ophthalmology."}},
+                 {"zh": "給退燒藥，繼續觀察", "en": "Give an antipyretic and observe", "ok": false,
+                  "why": {"zh": "退燒藥蓋住了發燒，蓋不住正在擴大的皮膚反應。可疑藥物還在吃，反應就還在加重。", "en": "An antipyretic hides the fever, not the spreading reaction. While the suspect drug continues, so does the damage."}},
+                 {"zh": "可能是感染，先加一個抗生素", "en": "Probably infection; add an antibiotic", "ok": false,
+                  "why": {"zh": "多加一種新藥，可能多一個過敏來源。先停可疑藥物，再找原因。", "en": "Adding another new drug may add another trigger. Stop the suspect drug first, then look for causes."}}
+                ]},
+       "post": [
+        ["ward-nurse", {"zh": "已經停了。醫師在看。可是……他以前驗過藥物過敏基因，是陰性的啊？", "en": "Stopped. The doctor's with him. But… he was tested for a drug-allergy gene before, and it was negative?"}]
+       ]},
+      {"id": "w2", "to": "mentor", "guide": {"zh": "查賴伯伯以前的報告", "en": "Pull up Uncle Lai's old report"},
+       "lines": [
+        ["mentor", {"zh": "把他的舊報告叫出來。陰性，陰性的是哪一題？", "en": "Bring up his old report. Negative, yes; negative for which question?"}]
+       ],
+       "mini": {"type": "stage", "case": "medical-genetics-v38-negative-scope", "stage": 0},
+       "post": [
+        ["me", {"zh": "五年前驗的是 HLA-B*15:02，為了另一顆藥。降尿酸藥相關的是 HLA-B*58:01，從來沒驗過。", "en": "Five years ago they tested HLA-B*15:02, for a different drug. The type linked to the uric-acid drug is HLA-B*58:01, and it was never tested."}],
+        ["mentor", {"zh": "陰性只回答被問的那一題。報告第二行寫的檢測範圍，比第一行更常救人。", "en": "A negative answers only the question asked. Line two of a report, the testing scope, saves people more often than line one."}]
+       ]},
+      {"id": "w3", "to": "place:ws", "guide": {"zh": "看賴伯伯的皮膚照片", "en": "Look at Uncle Lai's skin photos"},
+       "lines": [
+        ["ward-nurse", {"zh": "皮膚科拍的照片上傳了。你們幫忙看一下。", "en": "Dermatology's photos are uploaded. Have a look for us."}]
+       ],
+       "mini": {"type": "imaging", "region": "skin",
+                "question": {"zh": "照片：胸背有暗紅色、中間偏紫的斑塊，部分起水泡；嘴唇糜爛結痂、眼睛發紅。這代表什麼？下一步？", "en": "Photos: dusky red patches with purplish centres over chest and back, some blistering; eroded, crusted lips and red eyes. What does it mean, and what next?"},
+                "answer": {"zh": "暗紅斑、水泡加上兩處以上黏膜受侵犯，符合史蒂文生氏-強生症候群的樣子；要評估脫皮面積，範圍大就是毒性表皮溶解症。可疑藥物永遠停用並記錄過敏，轉到能照顧大面積皮膚傷口的單位，眼科及早介入。之後可以補驗 HLA-B*58:01，幫助家人和紀錄，但不改變今天的處置。", "en": "Dusky patches and blisters with two or more mucosal sites involved fit Stevens-Johnson syndrome; the area of detached skin must be assessed, and if extensive it is toxic epidermal necrolysis. Stop the suspect drug permanently and record the allergy, transfer to a unit that can manage extensive skin loss, and involve ophthalmology early. HLA-B*58:01 can be tested afterwards to help the family and the record, but it doesn't change today's care."}},
+       "post": [
+        ["mentor", {"zh": "他的藥物過敏，要用藥名寫進健保卡和病歷。家人以後用那顆藥前，也可以先驗。", "en": "His allergy goes on his health card and chart by drug name. His family can be tested before ever taking that drug."}]
+       ]}
+     ]},
+    {"id": "result", "name": {"zh": "結果出來了", "en": "The result is out"}, "sub": {"zh": "16:00 · 報告工作站", "en": "16:00 · reporting workstation"}, "t": 960, "mood": "eve",
+     "note": {"zh": "侯阿姨：HLA-B*15:02 帶因", "en": "Auntie Hou: HLA-B*15:02 carrier"},
+     "beats": [
+      {"id": "s1", "to": "place:ws", "guide": {"zh": "簽出侯阿姨的報告", "en": "Sign out Auntie Hou's report"},
+       "lines": [
+        ["bo", {"zh": "侯阿姨：HLA-B*15:02 陽性。對照組全部正常。", "en": "Auntie Hou: HLA-B*15:02 positive. All controls correct."}],
+        ["me", {"zh": "報告第一行：帶因。第二行：只檢測 HLA-B*15:02，不代表對其他藥物或其他型別的風險。", "en": "Line one: carrier. Line two: only HLA-B*15:02 tested; says nothing about risk with other drugs or other types."}]
+       ]},
+      {"id": "s2", "when": {"flag": "start", "is": "waited"},
+       "lines": [
+        ["neuro", {"zh": "收到。那顆藥她不能用，我改別的方案。還好早上沒先開。", "en": "Got it. She can't have that drug; I'll use another plan. Glad I didn't start it this morning."}],
+        ["mentor", {"zh": "幾個小時的等待，換來一張不會脫皮的臉。", "en": "A few hours of waiting bought a face that won't peel."}]
+       ]},
+      {"id": "s3", "when": {"flag": "start", "is": "started"},
+       "lines": [
+        ["neuro", {"zh": "她中午已經吃了第一顆……我馬上請她停，改別的藥，請病房每天看皮膚和嘴巴。", "en": "She took the first tablet at lunch… I'll stop it at once, switch drugs and have the skin and mouth checked daily."}],
+        ["mentor", {"zh": "多半不會因為一顆就出事，但接下來幾週要看緊。先驗後用，就是為了不用「多半」。", "en": "One tablet probably won't do it, but she needs close watching for weeks. Test-then-treat exists so we don't have to rely on “probably”."}]
+       ]},
+      {"id": "s4", "when": {"flag": "start", "is": "delayed"},
+       "lines": [
+        ["mentor", {"zh": "我把它改回急件了，結果剛剛才出來。侯阿姨痛了一整天，在診間哭。", "en": "I moved it back to urgent and the result has only just come out. Auntie Hou spent the whole day in pain and cried in clinic."}],
+        ["mentor", {"zh": "安全不是慢的藉口。急件就是急件。", "en": "Safety is no excuse for slowness. Urgent means urgent."}]
+       ]}
+     ]},
+    {"id": "family", "name": {"zh": "那我呢？", "en": "What about me?"}, "sub": {"zh": "17:00 · 諮詢桌", "en": "17:00 · counselling desk"}, "t": 1020, "mood": "eve",
+     "note": {"zh": "每個孩子是獨立的一次機會", "en": "Each child is an independent chance"},
+     "beats": [
+      {"id": "f1", "to": "daughter", "guide": {"zh": "回答女兒的問題", "en": "Answer the daughter's question"},
+       "lines": [
+        ["daughter", {"zh": "我哥去年驗過，是陰性。媽媽是帶因。所以我一定是陽性，對吧？二分之一嘛。", "en": "My brother was tested last year: negative. Mum's a carrier. So I must be positive, right? It's one in two."}],
+        ["mentor", {"zh": "數學老師，這一題你最拿手。前一個孩子的結果，會改變下一個嗎？", "en": "Maths teacher, this one's your speciality. Does one child's result change the next?"}]
+       ],
+       "mini": {"type": "stage", "case": "medical-genetics-v38-inheritance-probability", "stage": 1},
+       "post": [
+        ["daughter", {"zh": "……不會。每個孩子都是獨立擲一次硬幣。哥哥是反面，我還是一半一半。", "en": "…No. Each child is a separate coin toss. My brother got tails; I'm still fifty-fifty."}],
+        ["me", {"zh": "對。媽媽有兩個等位基因，一個帶、一個不帶，每個孩子各拿到其中一個。", "en": "Right. Your mum has two alleles at this spot, one carrying the type and one not; each child gets one of the two."}],
+        ["me", {"zh": "而且帶因不是生病。驗一次，寫進病歷，以後醫生開那顆藥前就會知道。", "en": "And being a carrier isn't an illness. Test once, put it in the record, and every future doctor will know before prescribing that drug."}]
+       ]},
+      {"id": "f2", "to": "hou", "guide": {"zh": "把模型交給侯阿姨", "en": "Give Auntie Hou the model"},
+       "lines": [
+        ["bo", {"zh": "阿姨，這個模型送你。以後看醫生，就拿出來說：我的扣眼，卡得住那顆藥。", "en": "Auntie, the model's yours. At any future appointment, show it and say: my buttonhole catches that drug."}],
+        ["hou", {"zh": "我會把它縫一個布套。這輩子第一次有人送我扣子以外的東西。", "en": "I'll sew it a little cloth cover. First time in my life anyone's given me something that isn't a button."}]
+       ],
+       "item": "hla-model"}
+     ]},
+    {"id": "night", "name": {"zh": "晚上的訊息", "en": "An evening message"}, "sub": {"zh": "21:00 · 回家路上", "en": "21:00 · on the way home"}, "t": 1260, "mood": "night",
+     "note": {"zh": "快，而且對", "en": "Fast, and right"},
+     "beats": [
+      {"id": "n1", "guide": {"zh": "看手機的訊息", "en": "Read the message on your phone"},
+       "ring": {"title": {"zh": "鍾醫師的訊息", "en": "Message from Dr Chung"}, "sub": {"zh": "侯阿姨晚上第一次笑了", "en": "Auntie Hou smiled for the first time tonight"}, "call": false, "from": "neuro"},
+       "lines": [
+        ["neuro", {"zh": "換了藥，晚上痛比較少了。她說今天第一次敢笑。還有，風濕科說賴伯伯穩定下來了，眼科也看過了。", "en": "New drug on board; less pain this evening. She says today she dared to smile for the first time. And rheumatology says Uncle Lai has stabilised; ophthalmology has seen him."}],
+        ["sys", {"zh": "公車經過醫院大樓。實驗室那一層的燈還亮著，3D 列印機又在印新的東西。", "en": "The bus passes the hospital. The lab floor's lights are still on; the 3D printer is making something new."}],
+        ["sys", {"zh": "你想起莫主任的話：快，而且對。不是只選一個。", "en": "You remember Dr Mo's words: fast, and right. Not one or the other."}]
+       ],
+       "end": true}
+     ]}
+  ],
+  "ending": {"title": {"zh": "下班了", "en": "End of shift"}, "sub": {"zh": "陰性只回答被問的那一題", "en": "A negative answers only the question asked"},
+             "stats": ["stages", "drills", "choices", "calls", "items", "time"]}
+}

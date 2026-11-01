@@ -1,0 +1,276 @@
+{
+ "format": "huatuo-shift-v2",
+ "department": "ent",
+ "case": "epistaxis",
+ "caseTitle": {"zh": "止不住的鼻血之夜", "en": "The night the nose would not stop"},
+ "condition": {"zh": "出血 · 後鼻腔鼻出血", "en": "Bleeding · posterior epistaxis"},
+ "difficulty": 2,
+ "room": "er",
+ "title": {"zh": "耳鼻喉科急診夜", "en": "An ENT night in the ER"},
+ "tagline": {"zh": "捏對地方、看對方向、不要把頭往後仰", "en": "Pinch the right spot, look the right way, and never tip the head back"},
+ "minutes": 25,
+ "roles": [
+  {"id": "resident", "zh": "耳鼻喉科住院醫師", "en": "ENT resident",
+   "desc": {"zh": "頭燈、吸引、鼻鏡。急診的夜裡，耳鼻喉科的病人不是在流血就是吞不下去。", "en": "Headlight, suction, speculum. On an ER night, ENT patients are either bleeding or cannot swallow."}},
+  {"id": "er-nurse", "zh": "急診護理師", "en": "ER nurse",
+   "desc": {"zh": "先量血壓，再給紗布。血壓、靜脈、血型，三件事做完，醫師才有時間看鼻子。", "en": "Blood pressure first, gauze second. Pressure, a line and a blood group done, and the doctor has time to look at the nose."}}
+ ],
+ "cast": {
+  "attending": {"name": {"zh": "賴主治", "en": "Dr Lai"}, "role": {"zh": "值班主治醫師（師傅）", "en": "On-call attending (mentor)"}, "tag": "ATT", "color": "#7c2d12", "body": "mentor",
+   "about": {"zh": "值了二十年的夜。口頭禪：「鼻血先看血壓，再看鼻子。」", "en": "Twenty years of nights. Catchphrase: 'With a nosebleed, look at the blood pressure before the nose.'"}},
+  "nurse": {"name": {"zh": "阿國", "en": "Kuo"}, "role": {"zh": "急診資深護理師", "en": "Senior ER nurse"}, "tag": "RN", "color": "#3b8f6a", "body": "nurse",
+   "about": {"zh": "檢傷三秒鐘，紗布永遠在口袋。看過的鼻血比看過的日出多。", "en": "Triages in three seconds, gauze always in a pocket. Has seen more nosebleeds than sunrises."}},
+  "mr-wu": {"name": {"zh": "吳伯伯", "en": "Mr Wu"}, "role": {"zh": "病人・71 歲", "en": "Patient, 71"}, "tag": "PT1", "color": "#6b7280", "body": "patient",
+   "about": {"zh": "退休公車司機，心房顫動，吃抗凝血劑。開了三十年公車，今晚第一次坐救護車。", "en": "Retired bus driver with atrial fibrillation on an anticoagulant. Thirty years driving buses; tonight his first ride in an ambulance."}},
+  "daughter": {"name": {"zh": "吳小姐", "en": "Ms Wu"}, "role": {"zh": "吳伯伯的女兒", "en": "Mr Wu's daughter"}, "tag": "FAM", "color": "#b45309", "body": "family",
+   "about": {"zh": "在家叫爸爸頭往後仰，被爸爸罵。其實爸爸是對的。", "en": "Told her father to tip his head back and got told off. Her father was right."}},
+  "lun": {"name": {"zh": "阿倫", "en": "Lun"}, "role": {"zh": "病人・26 歲", "en": "Patient, 26"}, "tag": "PT2", "color": "#0f766e", "body": "patient",
+   "about": {"zh": "宵夜吃虱目魚，吞了三口飯想把魚刺壓下去。沒壓下去。", "en": "Milkfish for a late supper; swallowed three mouthfuls of rice to push the bone down. It did not go down."}},
+  "niuniu": {"name": {"zh": "妞妞", "en": "Niu-niu"}, "role": {"zh": "病人・3 歲", "en": "Patient, 3"}, "tag": "PT3", "color": "#8a6d3b", "body": "patient",
+   "about": {"zh": "半夜哭醒說右耳痛，有點燒。帶了一隻兔子，兔子也有耳朵。", "en": "Woke crying at midnight with a sore right ear and a bit of a fever. Brought a rabbit; the rabbit has ears too."}},
+  "mother": {"name": {"zh": "妞妞媽媽", "en": "Niu-niu's mother"}, "role": {"zh": "家屬", "en": "Family"}, "tag": "MUM", "color": "#9d4b7a", "body": "family",
+   "about": {"zh": "上次是直接拿抗生素回家的。她想這次也一樣。", "en": "Last time she went home with antibiotics straight away. She expects the same tonight."}},
+  "er-doc": {"name": {"zh": "江醫師", "en": "Dr Chiang"}, "role": {"zh": "急診醫師", "en": "ER physician"}, "tag": "ER", "color": "#2f6f9f", "phoneOnly": true,
+   "about": {"zh": "只在電話裡。他打來的時候，通常已經先幫你量好血壓了。", "en": "Only ever on the phone. By the time he calls, he has usually taken the blood pressure for you."}}
+ },
+ "places": {
+  "bay": {"name": {"zh": "急救區病床", "en": "Resus bay"}, "hot": "bed"},
+  "monitor": {"name": {"zh": "監視器", "en": "Monitor"}, "hot": "monitor"},
+  "trolley": {"name": {"zh": "耳鼻喉科推車", "en": "ENT trolley"}, "hot": "instruments"},
+  "board": {"name": {"zh": "急診白板", "en": "ER whiteboard"}, "hot": "whiteboard"},
+  "imaging": {"name": {"zh": "影像工作站", "en": "Imaging workstation"}, "hot": "imaging"},
+  "sink": {"name": {"zh": "洗手台", "en": "Sink"}, "hot": "sink"},
+  "desk": {"name": {"zh": "值班桌", "en": "Duty desk"}, "hot": "desk"}
+ },
+ "glossary": [
+  {"term": {"zh": "後鼻腔出血", "en": "posterior epistaxis"}, "plain": {"zh": "出血點在鼻腔深處，血往喉嚨流而不是往前滴。常見於老人、高血壓、吃抗凝血劑的人，比前鼻出血難止。", "en": "The bleeding point is deep in the nose, so blood runs down the throat instead of out the front. Common in older people, high blood pressure and anticoagulants; harder to stop than an anterior bleed."}},
+  {"term": {"zh": "利特爾區", "en": "Little's area"}, "plain": {"zh": "鼻中隔前下方一小塊血管交會的地方，九成的鼻血從這裡來。用手指捏鼻翼軟處，壓的就是它。", "en": "A small patch low on the front of the septum where several vessels meet; nine in ten nosebleeds start here. Pinching the soft part of the nose presses exactly on it."}},
+  {"term": {"zh": "燒灼", "en": "cautery"}, "plain": {"zh": "看到出血點之後，用硝酸銀棒或電燒把那個點封住。只燒一邊，兩邊同時燒會把鼻中隔燒穿。", "en": "Once the bleeding point is seen, it is sealed with a silver nitrate stick or electrocautery. One side only; cauterising both sides can perforate the septum."}},
+  {"term": {"zh": "鼻填塞", "en": "nasal packing"}, "plain": {"zh": "找不到出血點或燒灼無效時，把可膨脹的海綿或紗條塞進鼻腔壓迫止血。", "en": "When no bleeding point is found or cautery fails, an expanding sponge or ribbon gauze is packed into the nose to press on the bleed."}},
+  {"term": {"zh": "後鼻腔氣球", "en": "posterior balloon"}, "plain": {"zh": "雙氣囊導管：後氣囊堵住後鼻孔，前氣囊壓前鼻腔。放了就要住院，因為它可能影響呼吸與血氧。", "en": "A double-balloon catheter: the back balloon blocks the back of the nose, the front one presses the front. Once in, the patient is admitted, because it can affect breathing and oxygen levels."}},
+  {"term": {"zh": "抗凝血劑", "en": "anticoagulant"}, "plain": {"zh": "讓血不容易凝固的藥，心房顫動的病人靠它預防中風。流鼻血時不能自己說停就停。", "en": "A medicine that stops blood clotting easily; people with atrial fibrillation take it to prevent strokes. It is not simply stopped because of a nosebleed."}},
+  {"term": {"zh": "心房顫動", "en": "atrial fibrillation"}, "plain": {"zh": "心跳不規則的常見心律問題，心房裡容易形成血塊而造成中風，所以要吃抗凝血劑。", "en": "A common irregular heart rhythm; clots can form in the atria and cause strokes, which is why anticoagulants are prescribed."}},
+  {"term": {"zh": "頭燈", "en": "headlight"}, "plain": {"zh": "戴在額頭上的燈，兩隻手才都空得出來：一手鼻鏡、一手吸引。", "en": "A lamp worn on the forehead so both hands are free: one for the speculum, one for suction."}},
+  {"term": {"zh": "側頸 X 光", "en": "lateral neck X-ray"}, "plain": {"zh": "從側面拍的頸部 X 光，看得到不透光的異物、椎前軟組織腫脹和不該有的空氣。很多魚刺照不出來。", "en": "A side-on X-ray of the neck showing radio-opaque foreign bodies, swelling in front of the spine and air where it should not be. Many fish bones do not show at all."}},
+  {"term": {"zh": "軟式內視鏡", "en": "flexible nasendoscope"}, "plain": {"zh": "細細軟軟的鏡子，從鼻孔進去看鼻咽、舌根、會厭和聲帶。魚刺最常卡的地方它都看得到。", "en": "A thin, bendy scope passed through the nostril to see the back of the nose, tongue base, epiglottis and vocal cords, the places fish bones like best."}},
+  {"term": {"zh": "急性中耳炎", "en": "acute otitis media"}, "plain": {"zh": "中耳發炎積膿，鼓膜又紅又向外膨出。只有紅不膨出，常常是哭出來的。", "en": "Infection with pus in the middle ear: the drum is red and bulging outward. Red without bulging is often just from crying."}},
+  {"term": {"zh": "延遲處方", "en": "delayed prescription"}, "plain": {"zh": "先給止痛、把抗生素處方留著，兩三天沒好再領。減少抗生素，併發症沒有變多。", "en": "Pain relief now, with an antibiotic prescription held back and filled only if things are no better in two or three days. Fewer antibiotics, no more complications."}},
+  {"term": {"zh": "小腦中風", "en": "cerebellar stroke"}, "plain": {"zh": "供應內耳的血管也供應小腦，突然聽不到加上天旋地轉，可能不是耳朵而是中風。要做神經學檢查。", "en": "The artery to the inner ear also feeds the cerebellum; sudden deafness with spinning vertigo may be a stroke rather than an ear problem. It needs a neurological examination."}}
+ ],
+ "codex": [
+  {"id": "headlight", "kind": "equipment", "name": {"zh": "頭燈", "en": "Headlight"}, "hot": "instruments", "text": {"zh": "鼻血的第一件裝備。光跟著你的眼睛走，兩隻手留給鼻鏡和吸引。", "en": "The first piece of kit for a nosebleed. The light follows your eyes; both hands stay free for speculum and suction."}},
+  {"id": "nasal-speculum", "kind": "equipment", "name": {"zh": "鼻鏡", "en": "Nasal speculum"}, "hot": "instruments", "text": {"zh": "上下撐開鼻孔，不要左右。對準鼻中隔前下方，先看利特爾區。", "en": "Opens the nostril up and down, never side to side. Aim at the lower front of the septum and look at Little's area first."}},
+  {"id": "balloon-catheter", "kind": "equipment", "name": {"zh": "後鼻腔氣球導管", "en": "Posterior balloon catheter"}, "hot": "drugs", "text": {"zh": "前填塞止不住、血往喉嚨流時用。放進去的那一刻，病人就變成住院病人。", "en": "For when anterior packing fails and blood runs down the throat. The moment it goes in, the patient becomes an inpatient."}},
+  {"id": "silver-stick", "kind": "item", "name": {"zh": "一支硝酸銀棒", "en": "A silver nitrate stick"}, "text": {"zh": "看到出血點、吸乾、輕輕點一圈再點中間。只燒一邊。", "en": "See the point, suction it dry, touch a ring around it and then the centre. One side only."}},
+  {"id": "fish-bone", "kind": "item", "name": {"zh": "阿倫的魚刺", "en": "Lun's fish bone"}, "text": {"zh": "從舌根旁邊夾出來的。他說要帶回家給朋友看，證明不是心理作用。", "en": "Plucked from beside the tongue base. He wanted to take it home to prove to his friends it was not in his head."}},
+  {"id": "no-head-back", "kind": "concept", "name": {"zh": "不要頭往後仰", "en": "Never tip the head back"}, "text": {"zh": "頭往後仰，血不是停了，是流進喉嚨和胃裡：吐血、嗆到、看不出流了多少。正確是前傾、捏鼻翼軟處、持續壓。", "en": "Tipping the head back does not stop the bleed; it sends the blood down the throat and into the stomach: vomiting, choking and no idea how much was lost. Lean forward, pinch the soft part of the nose and keep pressing."}},
+  {"id": "anticoag-decision", "kind": "concept", "name": {"zh": "抗凝血劑不是你一個人的決定", "en": "Anticoagulation is not your decision alone"}, "text": {"zh": "鼻血會止，中風不會回頭。暫停、逆轉或照常吃，要看出血嚴重度、腎功能、最後一次服藥時間，而且要跟心臟科一起決定。", "en": "A nosebleed stops; a stroke does not come back. Pausing, reversing or continuing depends on how bad the bleed is, kidney function and the time of the last dose, and it is decided with cardiology."}},
+  {"id": "ear-or-brain", "kind": "concept", "name": {"zh": "耳朵還是小腦", "en": "Ear or cerebellum"}, "text": {"zh": "突然聽不到加上眩暈，先做神經學檢查：複視、構音、步態、眼震。沒有中樞徵象才是耳朵的病；有，就是中風路徑。", "en": "Sudden deafness with vertigo gets a neurological examination first: double vision, speech, gait, nystagmus. No central signs, it is the ear; any central sign, it is the stroke pathway."}}
+ ],
+ "segs": [
+  {"id": "start", "name": {"zh": "夜班開始", "en": "Night shift begins"}, "sub": {"zh": "15:30 · 急診白板", "en": "15:30 · ER whiteboard"}, "t": 930, "mood": "day",
+   "note": {"zh": "交班：賴主治的一句話與一台推車", "en": "Handover: Dr Lai's one sentence and a trolley"},
+   "beats": [
+    {"id": "s1", "to": "attending", "guide": {"zh": "找賴主治報到", "en": "Report to Dr Lai"},
+     "lines": [
+      ["attending", {"zh": "今晚你跟我。急診的耳鼻喉科只有三種病人：流血的、吞不下去的、痛到哭的。", "en": "You're with me tonight. ER ENT has three kinds of patient: the ones bleeding, the ones who can't swallow, and the ones crying with pain."}],
+      ["me", {"zh": "流血的最急？", "en": "The bleeding ones first?"}],
+      ["attending", {"zh": "不一定。鼻血先看血壓，再看鼻子。血壓撐不住的鼻血，才是急的。", "en": "Not always. With a nosebleed, look at the blood pressure before the nose. The nosebleed with a failing blood pressure is the urgent one."}],
+      ["sys", {"zh": "白板上寫著：救護車 16:30，71 歲男性鼻出血，抗凝血劑。", "en": "On the whiteboard: ambulance 16:30, man of 71, nosebleed, anticoagulant."}]
+     ]},
+    {"id": "s2", "to": "place:trolley", "guide": {"zh": "檢查耳鼻喉科推車", "en": "Check the ENT trolley"},
+     "lines": [
+      ["nurse", {"zh": "推車我補過了。你自己找一次，等一下手忙的時候才找得到。", "en": "I've restocked the trolley. Find things once yourself now, so you can find them later with your hands full."}],
+      ["me", {"zh": "頭燈、鼻鏡、吸引管、硝酸銀棒、前填塞海綿、後鼻腔氣球導管。", "en": "Headlight, nasal speculum, suction, silver nitrate sticks, anterior packs, posterior balloon catheter."}]
+     ],
+     "mini": {"type": "find", "hot": "instruments", "q": {"zh": "點一下推車，確認頭燈與鼻鏡在最上層", "en": "Tap the trolley and confirm the headlight and speculum are on the top shelf"}},
+     "post": [["nurse", {"zh": "頭燈電池是滿的。這是我唯一會先檢查的東西。", "en": "Headlight battery is full. It's the one thing I always check first."}]]}
+   ]},
+  {"id": "epistaxis", "name": {"zh": "救護車到了", "en": "The ambulance arrives"}, "sub": {"zh": "16:30 · 急救區", "en": "16:30 · resus bay"}, "t": 990, "mood": "day",
+   "note": {"zh": "吳伯伯：前傾、捏住、找到出血點", "en": "Mr Wu: lean forward, pinch, find the point"},
+   "beats": [
+    {"id": "e1", "to": "mr-wu", "guide": {"zh": "到病床邊：第一個動作", "en": "To the bedside: the first move"},
+     "lines": [
+      ["daughter", {"zh": "醫師，他在家流了一個多小時。我叫他頭往後仰他不肯。", "en": "Doctor, he's been bleeding at home for over an hour. I told him to tip his head back and he wouldn't."}],
+      ["mr-wu", {"zh": "我開公車的時候看過乘客流鼻血，司機訓練有教。", "en": "I've seen passengers with nosebleeds on my bus. They taught us in driver training."}],
+      ["nurse", {"zh": "血壓偏高、心跳不規則，血氧好。靜脈我先打。", "en": "Blood pressure up, pulse irregular, oxygen fine. I'll get a line in."}],
+      ["attending", {"zh": "問你：現在叫他怎麼坐、怎麼壓？", "en": "You tell me: how should he sit, and where does he press?"}]
+     ],
+     "mini": {"type": "choice", "q": {"zh": "鼻出血的第一步姿勢與壓迫？", "en": "First-aid posture and pressure for a nosebleed?"},
+      "options": [
+       {"zh": "前傾、捏鼻翼軟處、持續壓、冰敷", "en": "Lean forward, pinch the soft nose, keep pressing, ice", "ok": true, "set": {"posture": "forward"},
+        "why": {"zh": "對。捏鼻翼軟處就是壓利特爾區；前傾讓血流出來而不是吞下去。", "en": "Right. Pinching the soft part presses Little's area; leaning forward lets blood come out instead of being swallowed."}},
+       {"zh": "頭往後仰、捏鼻樑硬骨", "en": "Head back, pinch the bony bridge", "ok": false, "set": {"posture": "back"},
+        "why": {"zh": "鼻樑是骨頭，壓了沒用；頭後仰血全進喉嚨和胃，等一下會吐。", "en": "The bridge is bone; pressing it does nothing. Head back sends every drop down the throat and into the stomach, and he will vomit."}},
+       {"zh": "塞衛生紙，躺平休息", "en": "Stuff in tissue and lie flat", "ok": false, "set": {"posture": "flat"},
+        "why": {"zh": "衛生紙壓不到出血點，躺平血往後流。", "en": "Tissue never reaches the bleeding point, and lying flat sends blood backwards."}}
+      ]},
+     "post": [["mr-wu", {"zh": "我就說。前傾，捏軟的地方。", "en": "What did I say. Forward, pinch the soft bit."}]]},
+    {"id": "e2", "roles": ["er-nurse"], "to": "place:monitor", "guide": {"zh": "靜脈、抽血、血型", "en": "Line, bloods, blood group"},
+     "lines": [
+      ["me", {"zh": "兩條靜脈，抽全血球、凝血功能、血型與抗體篩檢。抗凝血劑最後一次吃是什麼時候？", "en": "Two lines; full blood count, clotting, group and antibody screen. When was the last anticoagulant dose?"}],
+      ["daughter", {"zh": "今天早餐後。", "en": "After breakfast today."}],
+      ["me", {"zh": "記下來，心臟科等一下會問。血壓我五分鐘量一次，往下掉我就按鈴。", "en": "Noted; cardiology will ask. I'll check the pressure every five minutes and ring if it starts dropping."}]
+     ]},
+    {"id": "e3", "roles": ["resident"], "to": "place:bay", "guide": {"zh": "頭燈、鼻鏡、找出血點", "en": "Headlight, speculum, find the point"},
+     "lines": [
+      ["attending", {"zh": "戴頭燈。鼻鏡上下撐，先吸血塊，再看利特爾區。", "en": "Headlight on. Speculum opens up and down; suction the clot, then look at Little's area."}],
+      ["me", {"zh": "左側鼻中隔前下方有一個滲血點。局部麻醉與血管收縮劑依醫囑噴過了。", "en": "An oozing point low on the left septum. Topical anaesthetic and vasoconstrictor sprayed per protocol."}],
+      ["attending", {"zh": "看得到就燒。吸乾、點一圈、點中間。只燒這一邊。", "en": "If you can see it, cauterise it. Dry it, a ring around it, then the centre. This side only."}]
+     ],
+     "mini": {"type": "drill", "template": "ent", "drill": "haemo"},
+     "post": [["sys", {"zh": "出血點封住了。吳伯伯第一次放開鼻子，沒有血。", "en": "The point is sealed. Mr Wu lets go of his nose for the first time; no blood."}]],
+     "item": "silver-stick"},
+    {"id": "e4", "to": "attending", "guide": {"zh": "跟賴主治排處置順序", "en": "Set the order of management with Dr Lai"},
+     "lines": [
+      ["attending", {"zh": "這次順利。如果剛才找不到出血點呢？把整個鼻出血的順序說一遍。", "en": "That went well. And if you had not found the point? Walk me through the whole sequence for a nosebleed."}]
+     ],
+     "mini": {"type": "order", "q": {"zh": "鼻出血處置的順序", "en": "Order of management for epistaxis"},
+      "steps": [
+       {"zh": "前傾捏鼻翼、量血壓", "en": "Lean forward, pinch, blood pressure"},
+       {"zh": "頭燈吸引，找出血點", "en": "Headlight and suction, find the point"},
+       {"zh": "看得到就燒灼", "en": "Cauterise if visible"},
+       {"zh": "無效：前鼻填塞", "en": "If not: anterior nasal packing"},
+       {"zh": "仍出血：後鼻腔氣球、住院", "en": "Still bleeding: posterior balloon, admit"}
+      ]},
+     "post": [["attending", {"zh": "順序對。記住最後一步的意思：放了氣球就是住院，而且要盯血氧。", "en": "Right order. Remember what the last step means: a balloon is an admission, and you watch the oxygen."}]]}
+   ]},
+  {"id": "fishbone", "name": {"zh": "魚刺", "en": "The fish bone"}, "sub": {"zh": "18:30 · 影像工作站", "en": "18:30 · imaging workstation"}, "t": 1110, "mood": "eve",
+   "note": {"zh": "阿倫的魚刺：X 光沒看到，內視鏡看到了", "en": "Lun's fish bone: invisible on X-ray, found on the scope"},
+   "beats": [
+    {"id": "f0", "ring": {"title": {"zh": "急診來電", "en": "ER calling"}, "sub": {"zh": "26 歲男性，宵夜吃魚後喉嚨刺痛", "en": "Man of 26, sharp throat pain after fish at supper"}, "call": true, "from": "er-doc"},
+     "lines": [
+      ["er-doc", {"zh": "阿倫，26 歲，吃虱目魚之後左邊喉嚨刺痛，吞了三口飯沒壓下去。會吞口水，不喘。側頸 X 光我先照了。", "en": "Lun, 26, sharp left throat pain after milkfish; three mouthfuls of rice didn't push it down. Swallowing saliva, not short of breath. I've done a lateral neck X-ray."}],
+      ["me", {"zh": "先跟他說不要再吞飯了。我去看片子，然後用軟式內視鏡看。", "en": "Tell him no more rice first. I'll look at the film, then scope him."}]
+     ]},
+    {"id": "f1", "to": "place:imaging", "guide": {"zh": "看側頸 X 光", "en": "Read the lateral neck X-ray"},
+     "lines": [
+      ["attending", {"zh": "側頸 X 光看什麼？先說，再點開。", "en": "What do you look for on a lateral neck film? Say it, then open it."}]
+     ],
+     "mini": {"type": "imaging", "region": "neck",
+      "question": {"zh": "魚刺的側頸 X 光要看哪三件事？", "en": "What three things do you look for on a lateral neck X-ray for a fish bone?"},
+      "answer": {"zh": "不透光的異物（很多魚刺照不出來）、椎前軟組織有沒有腫脹、軟組織裡有沒有不該有的空氣。片子正常不代表沒有魚刺。", "en": "A radio-opaque foreign body (many fish bones do not show), swelling of the soft tissue in front of the spine, and air in the soft tissues where it should not be. A normal film does not mean no bone."}}
+    },
+    {"id": "f2", "roles": ["resident"], "to": "lun", "guide": {"zh": "軟式內視鏡找魚刺", "en": "Find the bone with the flexible scope"},
+     "lines": [
+      ["lun", {"zh": "醫師，是不是心理作用？X 光不是沒看到？", "en": "Doctor, is it in my head? The X-ray didn't show anything, did it?"}],
+      ["me", {"zh": "魚刺大多照不出來。鼻子噴一點藥，軟式內視鏡從鼻孔進去，你會想吞口水，忍一下。", "en": "Most fish bones don't show. A little spray in the nose, the flexible nasendoscope goes through the nostril; you'll want to swallow, hold it."}],
+      ["sys", {"zh": "舌根左側、扁桃腺下方，一根細細的白刺斜插著。喉鉗一夾。", "en": "Left of the tongue base, below the tonsil, a thin white spike stuck in at an angle. One grip of the forceps."}],
+      ["lun", {"zh": "……沒了。真的沒了。可以給我帶回家嗎？", "en": "...it's gone. It's really gone. Can I take it home?"}]
+     ],
+     "item": "fish-bone"}
+   ]},
+  {"id": "rebleed", "name": {"zh": "再出血", "en": "The rebleed"}, "sub": {"zh": "20:00 · 急救區", "en": "20:00 · resus bay"}, "t": 1200, "mood": "night",
+   "note": {"zh": "吳伯伯後鼻腔出血：氣球、住院、心臟科", "en": "Mr Wu's posterior bleed: balloon, admission, cardiology"},
+   "beats": [
+    {"id": "r1", "to": "place:monitor", "guide": {"zh": "監視器在叫：血壓掉了", "en": "The monitor alarms: pressure falling"},
+     "lines": [
+      ["nurse", {"zh": "醫師！吳伯伯又流了，這次是從喉嚨出來，血壓往下掉。", "en": "Doctor! Mr Wu is bleeding again, down the throat this time, and the pressure is dropping."}],
+      ["sys", {"zh": "前鼻腔乾的，血從後面流進咽喉。後鼻腔出血。", "en": "The front of the nose is dry; blood is running from the back into the throat. Posterior epistaxis."}]
+     ],
+     "mini": {"type": "vitals", "event": "hypotension",
+      "options": [
+       {"zh": "呼叫、兩條大靜脈、配血、氧氣、後鼻腔氣球", "en": "Call for help, two wide lines, crossmatch, oxygen, posterior balloon", "ok": true,
+        "why": {"zh": "對。先穩住循環並呼叫，同時放後鼻腔氣球止血。吃抗凝血劑的人，配血不能等。", "en": "Right. Stabilise the circulation and call for help while the posterior balloon goes in. On an anticoagulant, the crossmatch cannot wait."}},
+       {"zh": "再燒一次剛才的點", "en": "Cauterise the same point again", "ok": false,
+        "why": {"zh": "這次不是前面的點。血從後面來，燒前面沒有用。", "en": "This is not the anterior point. The blood comes from behind; cauterising the front does nothing."}},
+       {"zh": "叫他躺平、頭後仰等血止", "en": "Lie him flat with his head back and wait", "ok": false,
+        "why": {"zh": "血會進氣道。後鼻腔出血不會自己等到止。", "en": "The blood will go into the airway. A posterior bleed does not stop by waiting."}}
+      ]},
+     "post": [
+      ["sys", {"zh": "後氣囊到位、前氣囊充起。喉嚨的血慢下來，血壓跟著回來。", "en": "Back balloon seated, front balloon inflated. The flow down the throat slows; the pressure climbs back."}],
+      ["attending", {"zh": "住院。血氧連續監測，氣球在的每一個小時都要有人看他。", "en": "Admit him. Continuous oximetry; someone looks at him every hour the balloon is in."}]
+     ]},
+    {"id": "r1b", "when": {"flag": "posture", "is": "back"}, "to": "daughter", "guide": {"zh": "吳小姐拿著一個臉盆", "en": "Ms Wu is holding a basin"},
+     "lines": [
+      ["daughter", {"zh": "醫師，他剛才吐了一大口黑黑的血。", "en": "Doctor, he just vomited a mouthful of dark blood."}],
+      ["me", {"zh": "那是前面頭後仰的時候吞下去的。從現在起只前傾。", "en": "That is what he swallowed earlier with his head back. From now on, forward only."}]
+     ]},
+    {"id": "r2", "to": "attending", "guide": {"zh": "抗凝血劑怎麼辦", "en": "What about the anticoagulant"},
+     "lines": [
+      ["attending", {"zh": "女兒在問：藥要不要停。你怎麼回答？", "en": "The daughter is asking whether the tablets should stop. Your answer?"}]
+     ],
+     "mini": {"type": "choice", "q": {"zh": "心房顫動吃抗凝血劑的鼻出血病人，藥怎麼辦？", "en": "A nosebleed on an anticoagulant for atrial fibrillation: what about the drug?"},
+      "options": [
+       {"zh": "依出血嚴重度與心臟科討論暫停或逆轉", "en": "Weigh severity, discuss pausing or reversal with cardiology", "ok": true, "set": {"anticoag": "discuss"},
+        "why": {"zh": "對。止血是我們的事，中風風險是心臟科的事，兩邊一起決定。記下最後服藥時間。", "en": "Right. Haemostasis is ours; stroke risk is cardiology's. Decide together, and note the time of the last dose."}},
+       {"zh": "直接停藥，鼻血止了再說", "en": "Just stop it until the bleeding settles", "ok": false, "set": {"anticoag": "stop"},
+        "why": {"zh": "鼻血會止，中風不會回頭。停藥不是你一個人的決定。", "en": "The nosebleed will stop; a stroke does not come back. Stopping is not your decision alone."}},
+       {"zh": "照常吃，跟鼻血無關", "en": "Keep taking it; nothing to do with the nose", "ok": false, "set": {"anticoag": "ignore"},
+        "why": {"zh": "後鼻腔出血加抗凝血劑，當然有關。至少要評估。", "en": "A posterior bleed on an anticoagulant is absolutely related. At minimum it needs assessing."}}
+      ]},
+     "post": [["mr-wu", {"zh": "醫師，我中過一次小風。藥的事你們慢慢商量，我不急。", "en": "Doctor, I had a small stroke once. Take your time deciding about the tablets; I'm in no hurry."}]]}
+   ]},
+  {"id": "dizzy", "name": {"zh": "電話裡的眩暈", "en": "Vertigo on the phone"}, "sub": {"zh": "21:00 · 值班桌", "en": "21:00 · duty desk"}, "t": 1260, "mood": "night",
+   "note": {"zh": "突發聽損加眩暈：先排除小腦", "en": "Sudden deafness with vertigo: rule out the cerebellum first"},
+   "beats": [
+    {"id": "z1", "ring": {"title": {"zh": "急診來電", "en": "ER calling"}, "sub": {"zh": "58 歲男性，忽然左耳聽不到又天旋地轉", "en": "Man of 58, suddenly deaf in the left ear and the room spinning"}, "call": true, "from": "er-doc"},
+     "lines": [
+      ["er-doc", {"zh": "58 歲男性，一小時前忽然左耳聽不到，天旋地轉，吐了兩次。我想當耳朵的問題轉你們門診。", "en": "Man of 58, suddenly deaf in the left ear an hour ago, spinning vertigo, vomited twice. I'd like to send him to your clinic as an ear problem."}],
+      ["me", {"zh": "先不要。突發聽損加眩暈，要先確定不是小腦中風。複視、構音、步態、眼震，一樣一樣檢查。", "en": "Not yet. Sudden deafness with vertigo has to be shown not to be a cerebellar stroke first. Double vision, speech, gait, nystagmus, one by one."}]
+     ],
+     "mini": {"type": "stage", "case": "ent-sudden-sensorineural-hearing-loss", "stage": 4},
+     "post": [["attending", {"zh": "好。沒有中樞徵象，才是耳朵的病。有，就是中風路徑，不是我們的門診。", "en": "Good. No central signs, it is the ear. Any central sign, it is the stroke pathway, not our clinic."}]]}
+   ]},
+  {"id": "toddler", "name": {"zh": "半夜的耳朵", "en": "An ear at midnight"}, "sub": {"zh": "22:00 · 急診小兒區", "en": "22:00 · paediatric ER bay"}, "t": 1320, "mood": "night",
+   "note": {"zh": "妞妞：右耳急性中耳炎，止痛與延遲處方", "en": "Niu-niu: right acute otitis media, analgesia and a delayed prescription"},
+   "beats": [
+    {"id": "t1", "ring": {"title": {"zh": "急診來電", "en": "ER calling"}, "sub": {"zh": "3 歲女童，右耳痛、低燒、精神還好", "en": "Girl of 3, right ear pain, low fever, reasonably well"}, "call": true, "from": "er-doc"},
+     "lines": [
+      ["er-doc", {"zh": "3 歲妹妹，哭醒說右耳痛，體溫三十八度多，精神還可以，沒有耳漏。媽媽要抗生素。", "en": "A girl of three woke crying with right ear pain, temperature just over thirty-eight, reasonably well, no discharge. Mum wants antibiotics."}],
+      ["me", {"zh": "先讓我看鼓膜。哭過的耳朵會紅，不代表發炎。", "en": "Let me see the drum first. An ear that has been crying goes red; that does not mean infection."}]
+     ]},
+    {"id": "t2", "to": "niuniu", "guide": {"zh": "耳鏡：拉直耳道看鼓膜", "en": "Otoscope: straighten the canal, see the drum"},
+     "lines": [
+      ["niuniu", {"zh": "兔兔先看。", "en": "Bunny first."}],
+      ["me", {"zh": "好，兔兔先。小朋友的耳朵往後下拉，耳道才直。妞妞換妳。", "en": "All right, bunny first. In small children the ear is pulled back and down to straighten the canal. Your turn, Niu-niu."}]
+     ],
+     "mini": {"type": "drill", "template": "ent", "drill": "oto"},
+     "post": [
+      ["sys", {"zh": "右鼓膜紅、向外膨出、光錐不見了。左鼓膜琥珀色，有液面。", "en": "Right drum red, bulging outward, light reflex gone. Left drum amber with a fluid level."}],
+      ["attending", {"zh": "兩隻耳朵，兩個不同的診斷。說。", "en": "Two ears, two different diagnoses. Go."}]
+     ]},
+    {"id": "t3", "to": "mother", "guide": {"zh": "判讀耳鏡所見", "en": "Interpret the otoscopy"},
+     "lines": [
+      ["me", {"zh": "右耳是急性中耳炎，膨出才是關鍵。左耳是積液，不是發炎。", "en": "The right ear is acute otitis media; the bulge is the key. The left has fluid, not infection."}]
+     ],
+     "mini": {"type": "stage", "case": "ent-acute-otitis-media-grommets", "stage": 1}},
+    {"id": "t4", "to": "mother", "guide": {"zh": "抗生素還是觀察", "en": "Antibiotics or observation"},
+     "lines": [
+      ["mother", {"zh": "上次直接拿抗生素，這次可以一樣嗎？", "en": "Last time we got antibiotics straight away. Can we do the same?"}],
+      ["me", {"zh": "三歲、單側、沒有耳漏、精神還好。今晚最重要的是止痛，抗生素我們來談怎麼給。", "en": "Three years old, one side, no discharge, reasonably well. Tonight the most important thing is pain relief; let's talk about how the antibiotic is given."}]
+     ],
+     "mini": {"type": "stage", "case": "ent-acute-otitis-media-grommets", "stage": 4},
+     "post": [
+      ["me", {"zh": "延遲處方：止痛依醫囑先給，處方放著，兩三天沒好再領。惡化隨時回來。", "en": "A delayed prescription: pain relief per protocol now, the prescription held back, filled only if she is no better in two or three days. Back any time if she worsens."}],
+      ["mother", {"zh": "所以不是不給，是先不給。", "en": "So it's not no antibiotics, it's not yet."}],
+      ["niuniu", {"zh": "兔兔也要藥。", "en": "Bunny needs medicine too."}]
+     ]}
+   ]},
+  {"id": "late", "name": {"zh": "夜深了", "en": "Deep night"}, "sub": {"zh": "23:30 · 值班桌", "en": "23:30 · duty desk"}, "t": 1410, "mood": "night",
+   "note": {"zh": "一個氣球、一根魚刺、兩隻耳朵、一通不是耳朵的電話", "en": "A balloon, a fish bone, two ears and one call that was not an ear"},
+   "beats": [
+    {"id": "d1", "to": "attending", "guide": {"zh": "賴主治的回顧", "en": "Dr Lai's debrief"},
+     "lines": [
+      ["attending", {"zh": "今晚三件事。吳伯伯血壓掉的時候你先呼叫，才放氣球。", "en": "Three things tonight. When Mr Wu's pressure dropped you called for help before the balloon."}],
+      ["attending", {"zh": "電話裡那個眩暈，你沒有收進門診。那通電話救的可能是一個小腦。", "en": "The vertigo on the phone: you did not book it into clinic. That call may have saved a cerebellum."}],
+      ["me", {"zh": "第三件？", "en": "And the third?"}],
+      ["attending", {"zh": "妞妞的媽媽走的時候沒有生氣。延遲處方要說得讓人聽懂，你做到了。", "en": "Niu-niu's mother left without being angry. A delayed prescription has to be explained so it makes sense, and you managed it."}]
+     ]},
+    {"id": "d1b", "when": {"flag": "anticoag", "is": "stop"}, "to": "attending", "guide": {"zh": "賴主治多問一句", "en": "Dr Lai has one more question"},
+     "lines": [
+      ["attending", {"zh": "你本來要直接停抗凝血劑。打給心臟科了嗎？", "en": "You were going to stop the anticoagulant outright. Did you call cardiology?"}],
+      ["me", {"zh": "打了。他們說先暫停、明早評估逆轉與何時恢復。", "en": "I did. They said pause it, and reassess reversal and restarting in the morning."}],
+      ["attending", {"zh": "這才是決定。不是你一個人的。", "en": "That is a decision. Not yours alone."}]
+     ]},
+    {"id": "d2", "to": "place:desk", "guide": {"zh": "回到值班桌", "en": "Back to the duty desk"},
+     "lines": [
+      ["nurse", {"zh": "病房說吳伯伯氣球在位、血氧穩、睡了。", "en": "The ward says Mr Wu's balloon is in place, oxygen steady, and he's asleep."}],
+      ["me", {"zh": "一個氣球、一根魚刺、兩隻耳朵、一通不是耳朵的電話。沒有人把頭往後仰。", "en": "A balloon, a fish bone, two ears and one call that was not an ear. Nobody tipped their head back."}],
+      ["sys", {"zh": "值班未完。頭燈掛回推車最上層，電池還有一半。", "en": "The night goes on. The headlight goes back on the top shelf of the trolley, battery still half full."}]
+     ],
+     "end": true}
+   ]}
+ ],
+ "ending": {"title": {"zh": "下班了", "en": "End of shift"}, "sub": {"zh": "鼻血先看血壓，再看鼻子", "en": "Blood pressure before the nose"}, "stats": ["stages", "grades", "choices", "calls", "items", "time"]}
+}

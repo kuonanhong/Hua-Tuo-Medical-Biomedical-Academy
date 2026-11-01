@@ -1,0 +1,265 @@
+{
+  "format": "huatuo-shift-v2",
+  "department": "foundations",
+  "case": "living-anatomy",
+  "caseTitle": {"zh": "會說話的教科書", "en": "The textbook that talks back"},
+  "condition": {"zh": "活體解剖 · 教學超音波", "en": "Living anatomy · teaching ultrasound"},
+  "difficulty": 1,
+  "room": "imaging",
+  "title": {"zh": "超音波教學室的一天", "en": "A day in the ultrasound teaching room"},
+  "tagline": {"zh": "看到的是觀察，說出來的病名是推論", "en": "What you see is observation; a diagnosis is inference"},
+  "minutes": 25,
+  "roles": [
+    {"id": "student-lead", "zh": "醫學生小組長", "en": "Medical student group lead",
+     "desc": {"zh": "在同學身上找體表標記、看肚皮的層次、量心跳。同學的脖子裡出現一個黑黑的圓圈時，你要知道什麼該說、什麼不該說。", "en": "Find surface landmarks on classmates, see the layers of the belly wall, count heartbeats. When a dark circle appears in a classmate's neck, know what to say and what not to."}},
+    {"id": "sonographer", "zh": "超音波技術師", "en": "Sonographer",
+     "desc": {"zh": "開機、溫凝膠、調深度、教學生拿探頭。你知道螢幕上的大小會騙人，也知道教學掃描不是診斷。", "en": "Power up, warm the gel, set the depth, teach the probe grip. You know on-screen size can deceive, and that a teaching scan is not a diagnosis."}}
+  ],
+  "cast": {
+    "mentor": {"name": {"zh": "譚老師", "en": "Dr Tan"}, "role": {"zh": "解剖生理學講師（師傅）", "en": "Anatomy and physiology lecturer (mentor)"}, "tag": "TCH", "color": "#81296d", "body": "mentor",
+               "about": {"zh": "口袋裡永遠有三支可水洗的彩色筆。他說：活人是最好的教科書，而且會回嘴。", "en": "Always three washable markers in his pocket. His saying: the living body is the best textbook, and it talks back."}},
+    "mei": {"name": {"zh": "阿梅", "en": "Mei"}, "role": {"zh": "超音波技術師", "en": "Sonographer"}, "tag": "SON", "color": "#2f6f8f", "body": "radiographer",
+            "about": {"zh": "凝膠一定先溫過。她說：冷凝膠會讓同學縮起來，縮起來的肚子什麼都看不到。", "en": "Always warms the gel first. Her saying: cold gel makes people flinch, and a flinching belly shows nothing."}},
+    "kai": {"name": {"zh": "阿凱", "en": "Kai"}, "role": {"zh": "一年級醫學生（志願者）", "en": "First-year student (volunteer)"}, "tag": "S1", "color": "#c2703a", "body": "student",
+            "about": {"zh": "籃球校隊，自願當全班的「活體教科書」。條件是：畫完要讓他拍照上傳。", "en": "On the basketball team and volunteered as the class's living textbook. His condition: he gets to post photos of the drawings."}},
+    "zhen": {"name": {"zh": "小禎", "en": "Zhen"}, "role": {"zh": "一年級醫學生（志願者）", "en": "First-year student (volunteer)"}, "tag": "S2", "color": "#6b8e23", "body": "student",
+             "about": {"zh": "合唱團女高音，自願讓大家看頸部。她說要知道自己的甲狀腺長什麼樣子，唱歌比較有安全感。", "en": "A choir soprano who volunteered for the neck scans. She says knowing what her thyroid looks like makes her feel safer singing."}},
+    "hao": {"name": {"zh": "阿豪", "en": "Hao"}, "role": {"zh": "一年級醫學生（志願者）", "en": "First-year student (volunteer)"}, "tag": "S3", "color": "#6a5acd", "body": "student",
+            "about": {"zh": "安靜、愛跑步。有時候心臟會突然「跳很快一陣子再停」，他以為大家都這樣。", "en": "Quiet, loves running. Sometimes his heart suddenly “races for a while, then stops”; he assumed everyone's did."}},
+    "clinic": {"name": {"zh": "校園健康中心", "en": "Campus health centre"}, "role": {"zh": "校醫（電話）", "en": "Campus doctor (by phone)"}, "tag": "DOC", "color": "#5a6b8a", "phoneOnly": true,
+               "about": {"zh": "教學超音波發現的事，都由這裡接手安排正式檢查。", "en": "Anything found on a teaching scan is handed here to arrange proper tests."}}
+  },
+  "places": {
+    "board": {"name": {"zh": "教學室白板", "en": "Teaching room whiteboard"}, "hot": "whiteboard"},
+    "us": {"name": {"zh": "超音波機", "en": "Ultrasound machine"}, "hot": "ultrasound"},
+    "couch": {"name": {"zh": "檢查床", "en": "Exam couch"}, "hot": "bed"},
+    "step": {"name": {"zh": "階梯測驗區", "en": "Step-test corner"}, "hot": "device"},
+    "monitor": {"name": {"zh": "心電監視器", "en": "ECG monitor"}, "hot": "monitor"},
+    "aed": {"name": {"zh": "自動體外心臟除顫器", "en": "AED"}, "hot": "crash-cart"},
+    "desk": {"name": {"zh": "老師的桌子", "en": "Teacher's desk"}, "hot": "desk"}
+  },
+  "glossary": [
+    {"term": {"zh": "探頭", "en": "probe"}, "plain": {"zh": "超音波手裡拿的那一支，會發出和接收聲波。上面有一個小標記，對應螢幕的左邊。", "en": "The handheld part of the ultrasound that sends and receives sound waves. A small mark on it matches the left of the screen."}},
+    {"term": {"zh": "回音", "en": "echo"}, "plain": {"zh": "聲波碰到組織反彈回來的訊號。反彈越多越亮，像骨頭；幾乎不反彈就是黑的，像液體。", "en": "The signal of sound bouncing back from tissue. More bounce looks brighter, like bone; almost none looks black, like fluid."}},
+    {"term": {"zh": "無回音", "en": "anechoic"}, "plain": {"zh": "螢幕上全黑、沒有回音的區域，通常代表液體：血管、膀胱，或一個小水泡。", "en": "A completely black area on screen with no echo, usually fluid: a vessel, the bladder, or a little cyst."}},
+    {"term": {"zh": "教學掃描", "en": "teaching scan"}, "plain": {"zh": "為了學解剖而做的超音波，不是醫療檢查。機器、時間、操作者都不是為了診斷設計的。", "en": "Ultrasound done to learn anatomy, not a medical test. The machine, the time and the operator aren't set up for diagnosis."}},
+    {"term": {"zh": "偶然發現", "en": "incidental finding"}, "plain": {"zh": "不是在找它，卻剛好看到的東西。多數沒有意義，但需要正確的人用正確的方式確認。", "en": "Something seen by chance while looking for something else. Most mean nothing, but the right person must check them the right way."}},
+    {"term": {"zh": "頸動脈", "en": "carotid artery"}, "plain": {"zh": "脖子兩側送血到腦的大動脈。超音波上是會跳動、壓不扁的黑色圓管；旁邊壓得扁的是頸靜脈。", "en": "The large neck arteries carrying blood to the brain. On ultrasound, a pulsing black tube that won't squash; the one beside it that squashes is the jugular vein."}},
+    {"term": {"zh": "胸骨角", "en": "sternal angle"}, "plain": {"zh": "胸骨上方摸得到的一個小橫脊，旁邊就是第二肋骨。從這裡開始數肋骨，最不會數錯。", "en": "A small ridge you can feel near the top of the breastbone, level with the second rib. Count ribs from here and you rarely miscount."}},
+    {"term": {"zh": "心動週期", "en": "cardiac cycle"}, "plain": {"zh": "心臟一次收縮加一次放鬆。超音波上看得到瓣膜一開一關，像在拍手。", "en": "One contraction and one relaxation of the heart. On ultrasound the valves open and shut like clapping hands."}},
+    {"term": {"zh": "心輸出量", "en": "cardiac output"}, "plain": {"zh": "心臟一分鐘打出去的血量。運動時會大幅增加。", "en": "How much blood the heart pumps each minute. It rises steeply with exercise."}},
+    {"term": {"zh": "指示劑稀釋法", "en": "indicator dilution"}, "plain": {"zh": "打進一定量的染料或冷水，在下游測它被稀釋了多少，就能算出血流量。加護病房量心輸出量就是用這個原理。", "en": "Inject a known amount of dye or cold fluid and measure how diluted it is downstream to calculate blood flow. ICU cardiac-output measurements use this principle."}},
+    {"term": {"zh": "陣發性上心室心搏過速", "en": "SVT"}, "plain": {"zh": "心臟電路多了一條捷徑，讓心跳突然一下子變得很快、很規律，又突然停。年輕人常見，多半可以治療。", "en": "Supraventricular tachycardia: an extra shortcut in the heart's wiring makes the beat suddenly very fast and regular, then stop just as suddenly. Common in the young and usually treatable."}},
+    {"term": {"zh": "迷走神經刺激", "en": "vagal manoeuvre"}, "plain": {"zh": "用特定姿勢和閉氣用力，刺激迷走神經讓心跳慢下來。要在受過訓練的人指導下做。", "en": "A set position and strained breath-hold that stimulate the vagus nerve to slow the heart. Done under the guidance of trained staff."}}
+  ],
+  "codex": [
+    {"id": "us-machine", "kind": "equipment", "name": {"zh": "教學超音波機", "en": "Teaching ultrasound machine"}, "text": {"zh": "三支探頭：線性看淺的，凸面看肚子，相位陣列看心臟。螢幕右邊那一排刻度，就是比例尺。", "en": "Three probes: linear for the shallow, curved for the abdomen, phased array for the heart. The scale down the right of the screen is your ruler."}, "hot": "ultrasound"},
+    {"id": "gel-warmer", "kind": "equipment", "name": {"zh": "凝膠溫熱器", "en": "Gel warmer"}, "text": {"zh": "凝膠趕走探頭和皮膚之間的空氣，聲波才進得去。溫的凝膠，讓志願者不會縮起來。", "en": "Gel drives out the air between probe and skin so sound can pass. Warm gel keeps volunteers from flinching."}, "hot": "ultrasound"},
+    {"id": "aed", "kind": "equipment", "name": {"zh": "自動體外心臟除顫器", "en": "AED"}, "text": {"zh": "運動測驗一定放在伸手可及的地方。打開它會用聲音教你每一步。", "en": "Always within reach of an exercise test. Open it and it talks you through every step."}, "hot": "crash-cart"},
+    {"id": "step-box", "kind": "equipment", "name": {"zh": "階梯測驗箱與心電監視", "en": "Step box and ECG monitor"}, "text": {"zh": "上下踏步，前後量心跳和血壓。開始前先問篩檢問題，比任何儀器都重要。", "en": "Step up and down, with pulse and pressure measured before and after. The screening questions asked first matter more than any device."}, "hot": "device"},
+    {"id": "marker-map", "kind": "item", "name": {"zh": "阿凱身上的彩色地圖", "en": "The coloured map on Kai"}, "text": {"zh": "胸骨角、肋骨、心尖、肝的下緣，用三種顏色畫在阿凱身上。他拍了照，寫：「我是會走路的解剖圖譜。」", "en": "Sternal angle, ribs, apex beat and the liver edge, drawn on Kai in three colours. He posted a photo captioned: “I am a walking anatomy atlas.”"}},
+    {"id": "incidental-policy", "kind": "concept", "name": {"zh": "教學掃描看到了東西怎麼辦", "en": "When a teaching scan finds something"}, "text": {"zh": "教學掃描不是醫療檢查：機器、時間、操作者都不是為診斷設計的。所以事先就要說清楚：可能會看到意外的東西、看到時會怎麼處理。真的看到時：停止在那個地方繼續教學、不在同學面前討論、不說病名；私下、平靜地告訴當事人「我們看到一個需要正式檢查確認的地方，多數這種發現沒有大礙」；依規定轉給校醫或醫師安排正式檢查；記錄下來。不說、或當場說成病名，都會傷人。", "en": "A teaching scan is not a medical test: machine, time and operator aren't set up for diagnosis. So explain beforehand that something unexpected might be seen and what happens then. When it happens: stop teaching on that spot, don't discuss it in front of classmates, don't name a disease; tell the person privately and calmly, “we've seen something that needs a proper scan to check, and most findings like this turn out to be nothing serious”; refer to the campus doctor per policy for formal testing; record it. Saying nothing, or naming a disease on the spot, both cause harm."}},
+    {"id": "indicator-dilution", "kind": "concept", "name": {"zh": "稀釋了，東西不會不見", "en": "Diluted, not disappeared"}, "text": {"zh": "把一定量的染料打進流動的血裡，染料的總量沒變，只是分散到更多的血中，所以濃度下降。在下游一直測濃度，畫出濃度隨時間的曲線：血流越快，染料越快被沖淡、曲線下的面積越小。用「打進去的量」除以「曲線下的面積」，就是流量。加護病房用冷的生理食鹽水代替染料，測溫度變化，原理一樣。", "en": "Inject a known amount of dye into flowing blood: the total amount doesn't change, it just spreads through more blood, so the concentration falls. Measure concentration downstream over time and draw the curve: the faster the flow, the quicker the dye washes out and the smaller the area under the curve. Amount injected divided by the area under the curve gives the flow. ICUs use cold saline instead of dye and track temperature; the principle is identical."}},
+    {"id": "scale-depth", "kind": "concept", "name": {"zh": "螢幕上的大小會騙人", "en": "On-screen size can deceive"}, "text": {"zh": "超音波畫面的大小，取決於深度和放大倍率。把深度調淺，同一條血管在螢幕上就變大。所以比較兩張圖之前，先看比例尺和深度設定，用卡尺量，不要用眼睛比。這是「觀察」和「推論」的界線：「螢幕上看起來比較大」是觀察；「他的頸動脈比較粗」是推論，需要相同條件的測量來支持。", "en": "The size on an ultrasound image depends on depth and zoom. Set a shallower depth and the same vessel looks bigger. So before comparing two images, check the scale and depth, and measure with calipers rather than by eye. This is the line between observation and inference: “it looks bigger on screen” is an observation; “his carotid is wider” is an inference that needs measurement under the same conditions."}}
+  ],
+  "segs": [
+    {"id": "briefing", "name": {"zh": "開機之前", "en": "Before switching on"}, "sub": {"zh": "08:30 · 教學室白板", "en": "08:30 · teaching room whiteboard"}, "t": 510, "mood": "day",
+     "note": {"zh": "先說好：看到意外的東西怎麼辦", "en": "Agree first: what if we see something unexpected"},
+     "beats": [
+      {"id": "b1", "to": "mentor", "guide": {"zh": "聽譚老師的開場", "en": "Hear Dr Tan's briefing"},
+       "lines": [
+        ["sys", {"zh": "早上八點半。譚老師從口袋掏出三支彩色筆，排在白板架上。", "en": "Half past eight. Dr Tan takes three coloured markers from his pocket and lines them up on the whiteboard ledge."}],
+        ["mentor", {"zh": "今天的教科書會說話、會怕癢、還會回嘴。志願者先簽同意書。", "en": "Today's textbook talks, is ticklish and answers back. Volunteers sign consent first."}],
+        ["mentor", {"zh": "同意書上有一行：教學掃描不是診斷，但可能有偶然發現。看到了，我們私下告訴你，轉給校醫安排正式檢查。", "en": "One line on the form: a teaching scan isn't a diagnosis, but there may be an incidental finding. If so, we tell you privately and the campus doctor arranges proper tests."}],
+        ["kai", {"zh": "老師，畫完可以讓我拍照嗎？", "en": "Sir, can I take photos once you've drawn on me?"}]
+       ]},
+      {"id": "b2", "roles": ["sonographer"], "to": "place:us", "guide": {"zh": "開機並準備凝膠", "en": "Power up and prepare the gel"},
+       "lines": [
+        ["mei", {"zh": "凝膠先溫，探頭先擦。冷凝膠一上去，阿凱的肚子會縮成一團。", "en": "Warm the gel, wipe the probes. Cold gel and Kai's belly will curl up into a ball."}]
+       ],
+       "mini": {"type": "find", "hot": "ultrasound", "q": {"zh": "找到教學超音波機", "en": "Find the teaching ultrasound machine"}},
+       "post": [
+        ["mei", {"zh": "三支探頭都擦好了，凝膠是溫的。探頭上的小標記，對應螢幕左邊。", "en": "All three probes wiped, gel warm. The little mark on the probe matches the left of the screen."}]
+       ]}
+     ]},
+    {"id": "surface", "name": {"zh": "會走路的圖譜", "en": "The walking atlas"}, "sub": {"zh": "09:00 · 檢查床", "en": "09:00 · exam couch"}, "t": 540, "mood": "day",
+     "note": {"zh": "從胸骨角開始數，最不會數錯", "en": "Count from the sternal angle and you rarely miscount"},
+     "beats": [
+      {"id": "s1", "roles": ["student-lead"], "to": "kai", "guide": {"zh": "在阿凱身上找體表標記", "en": "Find surface landmarks on Kai"},
+       "lines": [
+        ["mentor", {"zh": "心尖在哪裡？先別猜。從哪裡開始數肋骨？", "en": "Where's the apex beat? Don't guess. Where do you start counting ribs?"}],
+        ["me", {"zh": "胸骨角。旁邊是第二肋骨，往下數。", "en": "The sternal angle. The second rib is beside it; count down from there."}]
+       ],
+       "mini": {"type": "drill", "template": "foundations", "drill": "landmarks"},
+       "post": [
+        ["me", {"zh": "第五肋間、鎖骨中線附近，摸得到心尖在跳。我用紅筆圈起來。", "en": "Fifth intercostal space, near the midclavicular line: the apex beat. I'll circle it in red."}],
+        ["kai", {"zh": "好癢！不過畫得很好看。", "en": "That tickles! Looks good though."}]
+       ]},
+      {"id": "s2", "to": "place:couch", "guide": {"zh": "用超音波看肚皮的層次", "en": "See the belly wall layers on ultrasound"},
+       "lines": [
+        ["mei", {"zh": "線性探頭放在肚臍旁邊。螢幕從上到下，一層一層說出來。", "en": "Linear probe beside the navel. Name the layers from top to bottom of the screen."}]
+       ],
+       "mini": {"type": "drill", "template": "foundations", "drill": "layers"},
+       "post": [
+        ["me", {"zh": "皮膚、皮下脂肪、腹直肌鞘、腹直肌、腹膜，然後是會滑動的腸子。", "en": "Skin, subcutaneous fat, the rectus sheath, rectus muscle, peritoneum, and then gliding bowel."}],
+        ["mentor", {"zh": "解剖台上切出來的層次，在這裡會呼吸、會動。阿凱，吸氣。", "en": "The layers we cut on the dissection table breathe and move here. Kai, breathe in."}],
+        ["kai", {"zh": "……我的肝下來了！", "en": "…My liver just moved down!"}]
+       ],
+       "item": "marker-map"}
+     ]},
+    {"id": "neck", "name": {"zh": "脖子裡的黑圓圈", "en": "A dark circle in the neck"}, "sub": {"zh": "10:00 · 檢查床", "en": "10:00 · exam couch"}, "t": 600, "mood": "day",
+     "note": {"zh": "說「需要確認」，不說病名", "en": "Say “needs checking”, never a diagnosis"},
+     "beats": [
+      {"id": "n1", "to": "zhen", "guide": {"zh": "看小禎的頸部", "en": "Scan Zhen's neck"},
+       "lines": [
+        ["mei", {"zh": "探頭橫放在頸部中間。氣管在中間，兩邊是甲狀腺，再外面是頸動脈和頸靜脈。", "en": "Probe across the middle of the neck. Trachea in the centre, thyroid either side, then the carotid artery and jugular vein further out."}],
+        ["zhen", {"zh": "唱高音的時候，它們會動嗎？", "en": "Do they move when I sing high notes?"}]
+       ],
+       "mini": {"type": "imaging", "region": "neck",
+                "question": {"zh": "小禎的右側甲狀腺裡，有一個邊界清楚、全黑的小圓圈，後面比較亮。這是觀察還是診斷？接下來怎麼做？", "en": "Inside Zhen's right thyroid lobe: a small, sharply outlined, completely black circle with brightness behind it. Is that an observation or a diagnosis? What next?"},
+                "answer": {"zh": "「邊界清楚、無回音、後方增強」是觀察，看起來像液體；說它是「囊腫」已經是推論，說是「腫瘤」更不行。甲狀腺的小結節或囊腫在成人很常見，多數沒有大礙。但這是教學掃描，不是診斷：停止在這裡教學、不在同學面前討論，私下平靜地告訴她，依規定轉給校醫安排正式檢查。", "en": "“Well-defined, anechoic, with enhancement behind” is observation: it looks like fluid. Calling it a cyst is already inference, and calling it a tumour is worse. Small thyroid nodules or cysts are very common in adults and mostly harmless. But this is a teaching scan, not a diagnosis: stop teaching on that spot, don't discuss it in front of classmates, tell her privately and calmly, and refer to the campus doctor per policy for a proper scan."}},
+       "post": [
+        ["sys", {"zh": "旁邊的同學開始交頭接耳。有人小聲說：「那是不是……」", "en": "Classmates start whispering. Someone mutters: “Isn't that…”"}]
+       ]},
+      {"id": "n2", "to": "zhen", "guide": {"zh": "決定怎麼處理", "en": "Decide how to handle it"},
+       "lines": [
+        ["zhen", {"zh": "你們都不說話了。是不是看到什麼？", "en": "You've all gone quiet. Did you see something?"}]
+       ],
+       "mini": {"type": "choice", "q": {"zh": "教學掃描看到一個黑色圓圈。你怎麼做？", "en": "A dark circle on a teaching scan. What do you do?"},
+                "options": [
+                 {"zh": "停在這、私下平靜說明，轉校醫", "en": "Stop here, explain privately and calmly, refer to the campus doctor", "ok": true, "set": {"handled": true},
+                  "why": {"zh": "教學掃描不能診斷。私下、不說病名、說明多數沒有大礙、交給正式檢查，是對她最誠實也最溫柔的方式。", "en": "A teaching scan can't diagnose. Privately, no disease names, explaining most such findings are harmless, and handing over to proper testing is the most honest and kindest way."}},
+                 {"zh": "當場告訴大家，這是很好的教材", "en": "Show the class; it's great teaching material", "ok": false, "set": {"handled": false},
+                  "why": {"zh": "她不是教材，是一個人。在同學面前討論她的身體，傷害隱私，也讓她更害怕。", "en": "She's a person, not material. Discussing her body in front of classmates breaches privacy and frightens her more."}},
+                 {"zh": "假裝沒看到，繼續上課", "en": "Pretend not to have seen it; carry on", "ok": false, "set": {"handled": false},
+                  "why": {"zh": "她已經注意到大家的沉默。不說，她會自己去猜，猜得通常比真相更可怕。", "en": "She has already noticed the silence. Say nothing and she'll guess, and guesses are usually scarier than the truth."}}
+                ]},
+       "post": [
+        ["mentor", {"zh": "我們換阿凱的脖子繼續。小禎，下課留一下，我們兩個在旁邊說。", "en": "We'll carry on with Kai's neck. Zhen, stay a moment after class and we'll talk on our own."}]
+       ]},
+      {"id": "n3", "roles": ["sonographer"], "to": "place:desk", "guide": {"zh": "依規定記錄偶然發現", "en": "Record the finding per policy"},
+       "lines": [
+        ["mei", {"zh": "教學掃描的偶然發現，要寫在紀錄表上：日期、部位、看到什麼、誰通知了她、轉給誰。只寫觀察，不寫病名。", "en": "An incidental finding on a teaching scan goes on the log: date, site, what was seen, who told her, who it was referred to. Observations only, no diagnosis."}],
+        ["me", {"zh": "「右側甲狀腺內一處邊界清楚的無回音區。已私下告知，轉校園健康中心。」", "en": "“Well-defined anechoic area in the right thyroid lobe. Volunteer informed privately; referred to the campus health centre.”"}]
+       ]}
+     ]},
+    {"id": "scale", "name": {"zh": "誰的頸動脈比較粗", "en": "Whose carotid is wider"}, "sub": {"zh": "11:00 · 超音波機", "en": "11:00 · ultrasound machine"}, "t": 660, "mood": "day",
+     "note": {"zh": "先看比例尺，再比大小", "en": "Check the scale before comparing sizes"},
+     "beats": [
+      {"id": "c1", "to": "kai", "guide": {"zh": "比較兩張頸動脈影像", "en": "Compare two carotid images"},
+       "lines": [
+        ["kai", {"zh": "你們看！我的頸動脈比阿豪的粗一倍！打籃球的人就是不一樣。", "en": "Look! My carotid is twice as wide as Hao's! That's what basketball does."}],
+        ["mei", {"zh": "你那張深度調得比較淺。這題寫的是顯微照片，原則一樣：先核對倍率和尺度。", "en": "Yours was taken at a shallower depth. This exercise is about micrographs, but the principle is the same: check the magnification and scale first."}]
+       ],
+       "mini": {"type": "stage", "case": "foundations-v38-observation-inference", "stage": 1},
+       "post": [
+        ["me", {"zh": "用卡尺照比例尺量：兩條差不多粗。「看起來比較大」是觀察，「比較粗」是推論，要同樣條件量了才算。", "en": "Measured with calipers against the scale: about the same. “Looks bigger” is observation; “is wider” is inference, and only counts once measured under the same conditions."}],
+        ["kai", {"zh": "……那籃球對我的頸動脈沒有幫助嗎？", "en": "…So basketball did nothing for my carotid?"}],
+        ["mentor", {"zh": "對你的心臟有幫助。下午就看得到。", "en": "It helps your heart. You'll see this afternoon."}]
+       ]},
+      {"id": "c2", "roles": ["sonographer"], "to": "kai", "guide": {"zh": "帶大家看阿凱的心臟", "en": "Show everyone Kai's heart"},
+       "lines": [
+        ["mei", {"zh": "換相位陣列探頭，放在胸骨左邊。看：瓣膜一開一關，這就是一次心動週期。", "en": "Switch to the phased-array probe, left of the sternum. Watch: the valves open and shut. That's one cardiac cycle."}],
+        ["kai", {"zh": "它在拍手！我的心臟在幫我拍手！", "en": "It's clapping! My heart is applauding me!"}],
+        ["mentor", {"zh": "收縮時瓣膜怎麼動，放鬆時又怎麼動？說給我聽，不要只看。", "en": "How do the valves move in contraction, and in relaxation? Tell me; don't just watch."}]
+       ]}
+     ]},
+    {"id": "exercise", "name": {"zh": "階梯測驗", "en": "The step test"}, "sub": {"zh": "13:30 · 階梯測驗區", "en": "13:30 · step-test corner"}, "t": 810, "mood": "day",
+     "note": {"zh": "篩檢問題比任何儀器都重要", "en": "Screening questions matter more than any device"},
+     "beats": [
+      {"id": "e1", "roles": ["student-lead"], "to": "place:step", "guide": {"zh": "準備階梯測驗", "en": "Set up the step test"},
+       "lines": [
+        ["mentor", {"zh": "運動生理學實驗。開始前的順序，比踏多快重要。", "en": "Exercise physiology. The order before starting matters more than the stepping pace."}]
+       ],
+       "mini": {"type": "order", "q": {"zh": "階梯測驗的安全順序", "en": "Step test safety, in order"},
+                "steps": [
+                 {"zh": "問篩檢問題：胸痛、昏倒、心悸", "en": "Screening: chest pain, fainting, palpitations"},
+                 {"zh": "確認除顫器在伸手可及處", "en": "AED within reach"},
+                 {"zh": "量休息時心跳與血壓", "en": "Resting pulse and blood pressure"},
+                 {"zh": "開始踏步，說好停止訊號", "en": "Start stepping; agree a stop signal"},
+                 {"zh": "量恢復期的心跳與血壓", "en": "Recovery pulse and blood pressure"}
+                ]},
+       "post": [
+        ["hao", {"zh": "心悸……有時候心臟會突然跳很快一陣子再停。這算嗎？", "en": "Palpitations… sometimes my heart suddenly races for a while, then stops. Does that count?"}],
+        ["mentor", {"zh": "算。今天你當記錄員，不踏。下課後去健康中心。", "en": "It counts. You're recorder today, not stepper. Health centre after class."}],
+        ["hao", {"zh": "可是我只是幫阿凱數一下……", "en": "But I'm only counting for Kai…"}]
+       ]},
+      {"id": "e2", "to": "hao", "guide": {"zh": "阿豪按著胸口", "en": "Hao is clutching his chest"},
+       "lines": [
+        ["sys", {"zh": "阿豪幫阿凱數完踏步，自己也忍不住上去踏了幾下。他突然停下來，手按胸口，說心臟跳得好快。", "en": "After counting for Kai, Hao can't resist a few steps himself. He suddenly stops, hand on his chest: his heart is racing."}],
+        ["sys", {"zh": "監視器上，心跳非常快、非常規律，像機關槍。", "en": "On the monitor the rate is very fast and very regular, like a machine gun."}]
+       ],
+       "mini": {"type": "vitals", "event": "tachyarrhythmia",
+                "options": [
+                 {"zh": "停下、坐下、監測、叫校醫、除顫器備好", "en": "Stop, sit, monitor, call the campus doctor, AED ready", "ok": true,
+                  "why": {"zh": "規律的快心跳在年輕人多半是陣發性上心室心搏過速。先停、讓他坐或躺、看他清不清醒、叫有經驗的人；迷走神經刺激由受訓人員指導。", "en": "A fast regular rate in a young person is usually SVT. Stop, sit or lie him down, check he's alert, get someone experienced; a vagal manoeuvre is guided by trained staff."}},
+                 {"zh": "叫他繼續踏，心跳會自己穩", "en": "Tell him to keep stepping; it'll settle", "ok": false,
+                  "why": {"zh": "運動讓心臟更忙。停下來，是任何心律不整的第一步。", "en": "Exercise makes the heart busier. Stopping is the first step with any arrhythmia."}},
+                 {"zh": "大家圍過來看監視器學習", "en": "Everyone gather round the monitor to learn", "ok": false,
+                  "why": {"zh": "他是病人，不是示範。給他空間，讓需要的人靠近。", "en": "He's a patient, not a demonstration. Give him room and let the right people in."}}
+                ]},
+       "post": [
+        ["clinic", {"zh": "我在路上。他清醒嗎？血壓呢？先讓他躺著。", "en": "On my way. Is he alert? Blood pressure? Keep him lying down."}],
+        ["sys", {"zh": "校醫指導他做了一次迷走神經刺激。監視器上的機關槍，突然停了，回到正常的節奏。", "en": "The campus doctor guides him through a vagal manoeuvre. On the monitor the machine gun stops abruptly and a normal rhythm returns."}],
+        ["clinic", {"zh": "很像陣發性上心室心搏過速。我會幫他轉心臟科。你們有把那一段心電圖存下來嗎？", "en": "Sounds very much like SVT. I'll refer him to cardiology. Did you save that stretch of ECG?"}]
+       ]},
+      {"id": "e3", "roles": ["sonographer"], "to": "place:monitor", "guide": {"zh": "存下那一段心電圖", "en": "Save that ECG strip"},
+       "lines": [
+        ["mei", {"zh": "存好了，從開始到結束都有。對心臟科來說，這一段比任何描述都有用。", "en": "Saved, from onset to the end. For cardiology, that strip is worth more than any description."}],
+        ["hao", {"zh": "原來不是大家都這樣……", "en": "So it isn't like this for everyone…"}],
+        ["mentor", {"zh": "不是。而且你今天把它說出來了，這是最重要的一步。", "en": "No. And today you said it out loud, which was the most important step."}]
+       ]}
+     ]},
+    {"id": "dilution", "name": {"zh": "一杯茶裡的染料", "en": "Dye in a cup of tea"}, "sub": {"zh": "15:00 · 老師的桌子", "en": "15:00 · teacher's desk"}, "t": 900, "mood": "day",
+     "note": {"zh": "稀釋了，東西不會不見", "en": "Diluted, not disappeared"},
+     "beats": [
+      {"id": "d1", "to": "mentor", "guide": {"zh": "看譚老師的茶杯實驗", "en": "Watch Dr Tan's teacup demonstration"},
+       "lines": [
+        ["sys", {"zh": "譚老師在一杯熱水裡滴了一滴食用色素，然後慢慢倒進一個大水壺。顏色越來越淡。", "en": "Dr Tan drips one drop of food colouring into a cup of hot water, then slowly pours it into a large jug. The colour fades."}],
+        ["mentor", {"zh": "色素消失了嗎？加護病房怎麼用這個原理，量出心臟一分鐘打多少血？", "en": "Has the colour vanished? How does an ICU use this to measure how much blood the heart pumps per minute?"}]
+       ],
+       "mini": {"type": "stage", "case": "foundations-v38-dilution-units", "stage": 0},
+       "post": [
+        ["me", {"zh": "色素的量沒變，只是體積變大、濃度下降。打進一定量的指示劑，在下游測濃度變化，就能算出心輸出量。", "en": "The amount of dye hasn't changed; the volume grew and the concentration fell. Inject a known amount of indicator, track its concentration downstream, and you can calculate cardiac output."}],
+        ["mentor", {"zh": "指示劑稀釋法。加護病房用冷的食鹽水當指示劑，測的是溫度。原理一樣。", "en": "Indicator dilution. ICUs use cold saline as the indicator and measure temperature. Same principle."}],
+        ["kai", {"zh": "那我的心輸出量，打籃球的時候是不是很大？", "en": "So is my cardiac output huge when I'm playing basketball?"}],
+        ["mentor", {"zh": "是。這就是早上我說的：籃球幫的是你的心臟。", "en": "Yes. That's what I meant this morning: basketball helps your heart."}]
+       ]}
+     ]},
+    {"id": "wrap", "name": {"zh": "收工", "en": "Wrapping up"}, "sub": {"zh": "16:30 · 教學室白板", "en": "16:30 · teaching room whiteboard"}, "t": 990, "mood": "eve",
+     "note": {"zh": "活人是最好的教科書，而且會回嘴", "en": "The living body is the best textbook, and it talks back"},
+     "beats": [
+      {"id": "w1", "to": "mentor", "guide": {"zh": "聽譚老師的結語", "en": "Dr Tan's debrief"},
+       "lines": [
+        ["mentor", {"zh": "今天三件事：從胸骨角開始數；看到的是觀察，說出口的病名是推論；教學掃描看到東西，私下、平靜、轉給對的人。", "en": "Three things today: count from the sternal angle; what you see is observation, a diagnosis you say aloud is inference; a finding on a teaching scan goes privately, calmly, to the right person."}],
+        ["mentor", {"zh": "還有：今天兩位志願者把自己的身體借給我們。謝謝他們，比謝謝任何一本教科書都重要。", "en": "And: two volunteers lent us their bodies today. Thanking them matters more than thanking any textbook."}],
+        ["sys", {"zh": "他把三支彩色筆收回口袋。紅色那支，短了一截。", "en": "He pockets the three markers. The red one is noticeably shorter."}]
+       ]}
+     ]},
+    {"id": "night", "name": {"zh": "晚上的訊息", "en": "An evening message"}, "sub": {"zh": "21:00 · 宿舍", "en": "21:00 · dorm room"}, "t": 1260, "mood": "night",
+     "note": {"zh": "不說、或說成病名，都會傷人", "en": "Silence or a premature diagnosis both hurt"},
+     "beats": [
+      {"id": "x1", "when": {"flag": "handled", "is": true},
+       "ring": {"title": {"zh": "小禎的訊息", "en": "Message from Zhen"}, "sub": {"zh": "校醫幫我約好正式檢查了", "en": "The campus doctor booked me a proper scan"}, "call": false, "from": "zhen"},
+       "lines": [
+        ["zhen", {"zh": "校醫幫我約了下週的正式檢查。他說這種很常見，多數沒事。謝謝你們沒有在大家面前講。", "en": "The campus doctor booked a proper scan for next week. He says these are very common and mostly nothing. Thank you for not saying it in front of everyone."}],
+        ["zhen", {"zh": "我明天還是會去合唱團。高音照唱。", "en": "I'm still going to choir tomorrow. High notes and all."}]
+       ]},
+      {"id": "x2", "when": {"flag": "handled", "is": false},
+       "ring": {"title": {"zh": "小禎的訊息", "en": "Message from Zhen"}, "sub": {"zh": "我查了一晚上……是不是很嚴重？", "en": "I've been searching all night… is it serious?"}, "call": false, "from": "zhen"},
+       "lines": [
+        ["zhen", {"zh": "我上網查了一整晚，越看越怕。同學在群組裡說那可能是腫瘤。是不是很嚴重？", "en": "I've been searching online all night and I'm more and more scared. Someone in the group chat said it might be a tumour. Is it serious?"}],
+        ["mentor", {"zh": "回她：教學掃描不能診斷，這種發現多數沒有大礙，明天我陪你去健康中心安排正式檢查。然後請群組刪掉那句話。", "en": "Reply: a teaching scan can't diagnose, most such findings are harmless, and tomorrow I'll take you to the health centre for a proper scan. Then ask the group to delete that message."}]
+       ]},
+      {"id": "x3", "guide": {"zh": "看阿凱和阿豪的訊息", "en": "Read Kai's and Hao's messages"},
+       "lines": [
+        ["sys", {"zh": "又一則訊息：阿凱上傳了一張照片，身上畫著紅藍綠三色的心尖和肋骨，寫著「我是會走路的解剖圖譜」。", "en": "Another message: Kai has posted a photo of himself covered in red, blue and green ribs and apex beat, captioned “I am a walking anatomy atlas.”"}],
+        ["hao", {"zh": "心臟科約好了。醫生說那一段心電圖存得很好，可能可以治好。原來我不是大家都這樣。", "en": "Cardiology appointment booked. The doctor said that saved ECG strip was really useful, and it can probably be fixed. Turns out not everyone is like me."}],
+        ["sys", {"zh": "你回了一個字：讚。然後把明天要用的凝膠，先放進溫熱器。", "en": "You reply with a thumbs-up, then put tomorrow's gel into the warmer."}]
+       ],
+       "end": true}
+     ]}
+  ],
+  "ending": {"title": {"zh": "下班了", "en": "End of shift"}, "sub": {"zh": "看到的是觀察，說出來的病名是推論", "en": "What you see is observation; a diagnosis is inference"},
+             "stats": ["stages", "drills", "choices", "calls", "items", "time"]}
+}

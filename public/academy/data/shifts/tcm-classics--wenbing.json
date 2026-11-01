@@ -1,0 +1,760 @@
+{
+ "format": "huatuo-shift-v2",
+ "department": "tcm-classics",
+ "case": "wenbing",
+ "caseTitle": {"zh": "登革熱季的溫病會診", "en": "A warm-disease consult in dengue season"},
+ "condition": {"zh": "溫病 · 衛氣營血辨證", "en": "Warm disease · the four levels"},
+ "difficulty": 3,
+ "title": {"zh": "溫病條文遇上登革熱", "en": "The warm-disease classics meet dengue"},
+ "tagline": {"zh": "一個退了燒的病人，和為什麼退燒那一刻最危險", "en": "A patient whose fever broke, and why that is the most dangerous moment"},
+ "room": "ward",
+ "minutes": 25,
+ "roles": [
+  {
+   "id": "resident",
+   "zh": "中醫住院醫師（會診）",
+   "en": "TCM resident (consult)",
+   "desc": {
+    "zh": "感染科病房的中醫會診。讀病歷、四診、寫建議——每一條建議都先經過主責醫師。",
+    "en": "The TCM consult on the infectious-diseases ward. Read the chart, examine, write advice, and every piece of advice goes through the primary physician first."
+   }
+  },
+  {
+   "id": "nurse",
+   "zh": "病房護理師",
+   "en": "Ward nurse",
+   "desc": {
+    "zh": "生命徵象、蚊帳、出血點、輸入輸出量。今晚最早看到危險的人，通常是你。",
+    "en": "Vital signs, mosquito nets, bleeding spots, fluid balance. Tonight you are usually the first to see danger coming."
+   }
+  }
+ ],
+ "cast": {
+  "zheng": {
+   "name": {"zh": "鄭醫師", "en": "Dr Cheng"},
+   "role": {"zh": "中醫部主治醫師（師傅）", "en": "TCM attending (mentor)"},
+   "tag": "ATT",
+   "color": "#81296d",
+   "body": "mentor",
+   "about": {"zh": "把《溫病條辨》讀到書脊裂開。最常說：「溫病傳得快，你要比它快。」", "en": "Read the Wenbing tiaobian until its spine split. Says most often: “Warm disease moves fast; be faster.”"}
+  },
+  "tsai": {
+   "name": {"zh": "蔡醫師", "en": "Dr Tsai"},
+   "role": {"zh": "感染科主治醫師", "en": "Infectious-diseases attending"},
+   "tag": "ID",
+   "color": "#2f6f8f",
+   "body": "specialist",
+   "about": {"zh": "阿德的主責醫師。歡迎中醫會診，規則只有一條：所有建議先跟他說。", "en": "A-De’s primary physician. Welcomes the TCM consult, with one rule: every suggestion goes through him first."}
+  },
+  "qi": {
+   "name": {"zh": "小琪", "en": "Chi"},
+   "role": {"zh": "感染科病房護理師", "en": "Infectious-diseases ward nurse"},
+   "tag": "RN",
+   "color": "#3b8f6a",
+   "body": "nurse",
+   "about": {"zh": "電蚊拍是她的第二支筆。蚊帳每一角都塞好才離開。", "en": "Her mosquito racket is her second pen. She leaves only when every corner of the net is tucked in."}
+  },
+  "ade": {
+   "name": {"zh": "阿德", "en": "A-De"},
+   "role": {"zh": "四十五歲，魚市場攤商", "en": "Forty-five, fish-market stallholder"},
+   "tag": "P1",
+   "color": "#2f6fa3",
+   "body": "patient",
+   "about": {
+    "zh": "虛構教學個案。登革熱發燒第四天，全身骨頭痛，說像被貨車輾過。最擔心的是攤位沒人顧。",
+    "en": "Fictional teaching case. Day four of dengue fever, aching to the bone, “like being run over by a lorry”. Most worried about who is minding his stall."
+   }
+  },
+  "adesao": {
+   "name": {"zh": "阿德嫂", "en": "A-De's wife"},
+   "role": {"zh": "家屬", "en": "Family"},
+   "tag": "FAM",
+   "color": "#c2703a",
+   "body": "family",
+   "about": {"zh": "帶了刮痧板和一罐薄荷膏來，說「刮一刮燒就退」。", "en": "Arrived with a guasha board and a tin of menthol balm: “a scrape will bring the fever down.”"}
+  },
+  "lab": {
+   "name": {"zh": "檢驗科", "en": "Laboratory"},
+   "role": {"zh": "檢驗科（電話）", "en": "Laboratory (phone)"},
+   "tag": "LAB",
+   "color": "#5a6b7c",
+   "phoneOnly": true,
+   "about": {"zh": "危急值一出來，馬上打來，從不等。", "en": "Phones the moment a critical value appears. Never waits."}
+  }
+ },
+ "places": {
+  "board": {"name": {"zh": "病房白板", "en": "Ward whiteboard"}, "hot": "whiteboard"},
+  "bed": {"name": {"zh": "阿德的病床（蚊帳）", "en": "A-De's bed (under the net)"}, "hot": "bed"},
+  "station": {"name": {"zh": "護理站與病歷", "en": "Nurses’ station and charts"}, "hot": "chart"},
+  "monitor": {"name": {"zh": "床邊監視器", "en": "Bedside monitor"}, "hot": "monitor"},
+  "crash": {"name": {"zh": "急救車", "en": "Crash cart"}, "hot": "crash-cart"}
+ },
+ "glossary": [
+  {
+   "term": {"zh": "溫病", "en": "warm disease"},
+   "plain": {
+    "zh": "中醫對急性發熱、傳變快的外感熱病的總稱；清代葉天士、吳鞠通是代表。",
+    "en": "TCM’s umbrella for acute fevers that progress fast; Ye Tianshi and Wu Jutong of the Qing dynasty are its great names."
+   }
+  },
+  {
+   "term": {"zh": "衛氣營血", "en": "the four levels"},
+   "plain": {"zh": "葉天士的溫病辨證：由淺入深分衛分、氣分、營分、血分四層。", "en": "Ye Tianshi’s scheme for warm disease: from shallow to deep, the defence, qi, nutritive and blood levels."}
+  },
+  {
+   "term": {"zh": "衛分證", "en": "defence level"},
+   "plain": {"zh": "發熱、微惡風寒、頭痛、咽痛、脈浮數；病在最表淺。", "en": "Fever, slight chill, headache, sore throat, a floating rapid pulse; the shallowest layer."}
+  },
+  {
+   "term": {"zh": "氣分證", "en": "qi level"},
+   "plain": {"zh": "壯熱不惡寒、口渴、汗出、面紅、脈洪大；正邪交爭最劇烈。", "en": "High fever without chills, thirst, sweating, a flushed face, a surging pulse; the fiercest fight."}
+  },
+  {
+   "term": {"zh": "營分證", "en": "nutritive level"},
+   "plain": {"zh": "身熱夜甚、心煩不寐、斑疹隱隱、舌絳；中醫認為熱已入深。", "en": "Fever worse at night, restless sleeplessness, faint rash, a crimson tongue; in TCM the heat has gone deep."}
+  },
+  {
+   "term": {"zh": "血分證", "en": "blood level"},
+   "plain": {
+    "zh": "出血（牙齦、鼻、皮下、便血）、斑疹顯露、神昏、舌深絳；最深最危。",
+    "en": "Bleeding (gums, nose, skin, stool), obvious spots, clouded mind, a deep crimson tongue; the deepest and most dangerous."
+   }
+  },
+  {
+   "term": {"zh": "洪脈", "en": "surging pulse"},
+   "plain": {"zh": "脈來如波濤，來盛去衰；中醫認為主氣分熱盛。", "en": "A pulse like a breaking wave, strong as it arrives and fading as it goes; in TCM blazing qi-level heat."}
+  },
+  {
+   "term": {"zh": "舌絳", "en": "crimson tongue"},
+   "plain": {"zh": "深紅色的舌；中醫認為熱入營血。", "en": "A deep red tongue; in TCM heat has entered the nutritive and blood levels."}
+  },
+  {
+   "term": {"zh": "辛涼平劑", "en": "cool-acrid balanced formula"},
+   "plain": {"zh": "吳鞠通對銀翹散的稱呼：味辛性涼、力道平和，治溫病初起。", "en": "Wu Jutong’s name for Yinqiao San: acrid and cool, moderate in strength, for the opening stage of warm disease."}
+  },
+  {
+   "term": {"zh": "登革熱", "en": "dengue"},
+   "plain": {
+    "zh": "斑蚊傳播的病毒感染：高燒、頭痛、眼窩後痛、肌肉骨頭痛、出疹；少數會進展成重症。",
+    "en": "A virus spread by Aedes mosquitoes: high fever, headache, pain behind the eyes, aching muscles and bones, rash; a few progress to severe disease."
+   }
+  },
+  {
+   "term": {"zh": "警示徵象", "en": "warning signs"},
+   "plain": {
+    "zh": "登革熱轉重症的訊號：腹痛、持續嘔吐、黏膜出血、嗜睡或躁動、肝腫大、血比容上升而血小板快速下降。",
+    "en": "Signals of severe dengue: belly pain, persistent vomiting, mucosal bleeding, lethargy or restlessness, an enlarged liver, rising haematocrit with a fast-falling platelet count."
+   }
+  },
+  {
+   "term": {"zh": "血漿滲漏", "en": "plasma leakage"},
+   "plain": {
+    "zh": "重症登革熱時血管會漏，水分跑到組織間，血液變濃、血壓下降；常在退燒前後發生。",
+    "en": "In severe dengue the vessels leak, fluid escapes into the tissues, the blood thickens and the pressure falls; it often happens as the fever breaks."
+   }
+  },
+  {
+   "term": {"zh": "防蚊隔離", "en": "mosquito precautions"},
+   "plain": {"zh": "病毒血症期間病人掛蚊帳，避免被叮再傳給別人。", "en": "During the viraemic phase the patient sleeps under a net so mosquitoes cannot carry the virus on."}
+  },
+  {
+   "term": {"zh": "會診", "en": "consult"},
+   "plain": {
+    "zh": "主責團隊請其他專科提供意見；建議寫在會診單，由主責醫師決定。",
+    "en": "The primary team asks another specialty for an opinion; advice goes on the consult form and the primary physician decides."
+   }
+  }
+ ],
+ "codex": [
+  {
+   "id": "mosquito-net",
+   "kind": "equipment",
+   "name": {"zh": "蚊帳與電蚊拍", "en": "Mosquito net and racket"},
+   "text": {
+    "zh": "登革熱發燒期，病人血中有病毒。病房裡一隻斑蚊，就可能把病帶給下一床。所以蚊帳要掛、要塞好，電蚊拍放床頭。",
+    "en": "In the febrile phase the virus is in the blood. One Aedes mosquito on the ward can carry it to the next bed. So the net goes up and gets tucked in, and the racket sits on the bedside table."
+   },
+   "hot": "bed"
+  },
+  {
+   "id": "ward-board",
+   "kind": "equipment",
+   "name": {"zh": "病房白板：趨勢圖", "en": "Ward board: the trend chart"},
+   "text": {
+    "zh": "小琪每天把血小板與血比容畫成兩條線。兩條線交叉的那一天——血比容上升、血小板下降——就是要最緊張的那一天。",
+    "en": "Chi draws platelets and haematocrit as two lines every day. The day they cross, haematocrit rising as platelets fall, is the day to be most alert."
+   },
+   "hot": "whiteboard"
+  },
+  {
+   "id": "four-levels-sketch",
+   "kind": "item",
+   "name": {"zh": "鄭醫師的衛氣營血手繪圖", "en": "Dr Cheng's four-level sketch"},
+   "text": {
+    "zh": "一張紙上畫了四層同心圓，最外圈寫「衛」，最內圈寫「血」。旁邊用鉛筆加了一行：「退燒≠退病」。",
+    "en": "Four concentric circles on a sheet of paper, “defence” outermost, “blood” at the centre. Pencilled beside them: “fever gone ≠ illness gone”."
+   }
+  },
+  {
+   "id": "ye-tianshi",
+   "kind": "person",
+   "name": {"zh": "葉天士", "en": "Ye Tianshi"},
+   "text": {
+    "zh": "清代溫病學家，《溫熱論》開頭：「溫邪上受，首先犯肺，逆傳心包。」提出衛氣營血辨證，以及「在衛汗之可也，到氣才可清氣，入營猶可透熱轉氣，入血就恐耗血動血，直須涼血散血」。",
+    "en": "Qing-dynasty master of warm disease. His treatise opens: “Warm pathogens are received from above, attack the lung first, and may pass in reverse to the pericardium.” He set out the four levels and how to treat each: release at defence, clear at qi, vent heat back out from nutritive, cool and scatter the blood at the blood level."
+   }
+  },
+  {
+   "id": "concept-levels",
+   "kind": "concept",
+   "name": {"zh": "衛氣營血辨證", "en": "The four levels in practice"},
+   "text": {
+    "zh": "衛分：發熱微惡寒、咽痛、脈浮數，治宜辛涼解表（銀翹散）。氣分：壯熱、口渴、汗出、脈洪大，治宜清氣（白虎湯一類）。營分：身熱夜甚、心煩、斑疹隱隱、舌絳，治宜清營透熱（清營湯一類）。血分：出血、神昏、舌深絳，治宜涼血散血。中醫認為傳變可順傳、可逆傳，也可兩層同病。辨層次的目的，是預見下一步。",
+    "en": "Defence: fever with slight chill, sore throat, floating rapid pulse; release with cool-acrid herbs (Yinqiao San). Qi: high fever, thirst, sweating, surging pulse; clear qi-level heat (the Baihu Tang family). Nutritive: fever worse at night, restlessness, faint spots, crimson tongue; clear the nutritive level and vent heat (the Qingying Tang family). Blood: bleeding, clouded mind, deep crimson tongue; cool and scatter the blood. In TCM progression may be orderly, may leap, or two levels may be affected at once. The point of naming the level is to see the next step coming."
+   }
+  },
+  {
+   "id": "concept-dengue",
+   "kind": "concept",
+   "name": {"zh": "登革熱的三期與危險期", "en": "Dengue: three phases and the critical one"},
+   "text": {
+    "zh": "發燒期：高燒、頭痛、眼窩後痛、骨頭痛，掛蚊帳。危險期：常在退燒前後，血管滲漏、血比容上升、血小板下降，可能休克或出血；警示徵象是腹痛、持續嘔吐、黏膜出血、嗜睡躁動、肝腫大。恢復期：胃口回來、出現「紅海中的白色小島」樣疹子。退燒那一刻不是放心的時候，是最該盯緊的時候。不要自行服用消炎止痛藥。",
+    "en": "Febrile phase: high fever, headache, pain behind the eyes, aching bones; net up. Critical phase: often around defervescence; leaking vessels, rising haematocrit, falling platelets, possible shock or bleeding. Warning signs: belly pain, persistent vomiting, mucosal bleeding, lethargy or agitation, enlarged liver. Recovery phase: appetite returns, a rash like white islands in a red sea. The moment the fever breaks is not the time to relax; it is the time to watch hardest. No self-medicating with anti-inflammatory painkillers."
+   }
+  },
+  {
+   "id": "concept-integration",
+   "kind": "concept",
+   "name": {"zh": "出血風險下的中醫會診", "en": "TCM consults when bleeding is a risk"},
+   "text": {
+    "zh": "血小板低或有出血傾向時：不刮痧、不拔罐、不刺絡放血；針刺要非常謹慎，多半先不針。中藥避開活血化瘀類，所有中藥建議寫在會診單，由主責醫師同意後才用，並留意與西藥的交互作用。中醫的角色是輔助與觀察：舌脈與症狀的變化，常常和檢驗趨勢說同一件事。",
+    "en": "With low platelets or a bleeding tendency: no guasha, no cupping, no bloodletting; needling only with great caution, and usually not at all. Avoid blood-moving herbs; every herbal suggestion goes on the consult form and is used only with the primary physician’s agreement, watching for interactions with Western drugs. TCM’s role is supportive and observational: the tongue, pulse and symptoms often tell the same story as the lab trend."
+   }
+  }
+ ],
+ "segs": [
+  {
+   "id": "consult",
+   "name": {"zh": "會診單", "en": "The consult request"},
+   "sub": {"zh": "16:30 · 護理站", "en": "16:30 · nurses’ station"},
+   "t": 990,
+   "mood": "day",
+   "note": {"zh": "先讀病歷，再到床邊", "en": "Chart first, bedside second"},
+   "beats": [
+    {
+     "id": "k1",
+     "to": "place:station",
+     "guide": {"zh": "讀阿德的病歷", "en": "Read A-De's chart"},
+     "ring": {
+      "title": {"zh": "會診通知", "en": "Consult request"},
+      "sub": {"zh": "登革熱第四天，家屬希望中醫一起看", "en": "Dengue day four; family would like TCM involved"},
+      "call": false,
+      "from": "tsai"
+     },
+     "lines": [
+      ["zheng", {"zh": "會診第一步？", "en": "First step of a consult?"}],
+      ["me", {"zh": "先讀病歷和檢驗，再到床邊。", "en": "Read the chart and labs, then go to the bedside."}],
+      ["zheng", {"zh": "登革熱發燒第四天。溫病傳得快，你要比它快。衛氣營血，排一次。", "en": "Dengue, fever day four. Warm disease moves fast; be faster. Put the four levels in order."}]
+     ],
+     "mini": {
+      "type": "order",
+      "q": {"zh": "衛氣營血由淺入深的順序與特徵", "en": "The four levels, shallow to deep, with their signs"},
+      "steps": [
+       {"zh": "衛分：發熱微惡寒、咽痛", "en": "Defence: fever, slight chill, sore throat"},
+       {"zh": "氣分：壯熱口渴、汗出", "en": "Qi: high fever, thirst, sweating"},
+       {"zh": "營分：身熱夜甚、斑疹隱隱", "en": "Nutritive: worse at night, faint spots"},
+       {"zh": "血分：出血、神昏", "en": "Blood: bleeding, clouded mind"}
+      ]
+     },
+     "post": [
+      [
+       "zheng",
+       {
+        "zh": "葉天士說「衛之後方言氣，營之後方言血」。順序是用來預見下一步的。",
+        "en": "Ye Tianshi wrote, “after defence comes qi; after nutritive comes blood.” The order is there so you can see the next step coming."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "k2",
+     "to": "tsai",
+     "guide": {"zh": "和蔡醫師打招呼", "en": "Check in with Dr Tsai"},
+     "lines": [
+      ["tsai", {"zh": "歡迎。規則只有一條：任何建議，先跟我說。藥、針、外治都一樣。", "en": "Welcome. One rule: any suggestion comes to me first. Herbs, needles, external treatments, all of it."}],
+      ["me", {"zh": "了解。會診單寫建議，您決定。", "en": "Understood. Advice on the consult form; you decide."}],
+      ["zheng", {"zh": "溫病學的書他也讀過一點。別班門弄斧。", "en": "He has read a bit of warm-disease theory too. Don’t show off."}]
+     ],
+     "mini": {"type": "stage", "case": "tcm-classics-wenbing-workflow", "stage": 2, "member": true},
+     "post": [["tsai", {"zh": "你們的「衛氣營血」和我們的「三期」，今晚會在同一個病人身上見面。", "en": "Your four levels and our three phases are going to meet in the same patient tonight."}]]
+    }
+   ]
+  },
+  {
+   "id": "bedside",
+   "name": {"zh": "蚊帳裡的四診", "en": "Examining under the net"},
+   "sub": {"zh": "17:00 · 阿德的病床", "en": "17:00 · A-De's bed"},
+   "t": 1020,
+   "mood": "day",
+   "note": {"zh": "阿德：氣分大熱，洪脈", "en": "A-De: qi-level heat, surging pulse"},
+   "beats": [
+    {
+     "id": "b1",
+     "to": "ade",
+     "guide": {"zh": "掀開蚊帳看阿德", "en": "Lift the net and see A-De"},
+     "lines": [
+      ["qi", {"zh": "防蚊隔離：蚊帳掀一角就好，進去馬上塞回來。", "en": "Mosquito precautions: lift one corner only, and tuck it back the moment you’re in."}],
+      [
+       "ade",
+       {"zh": "第一天發冷發燒、眼睛後面痛。現在只剩熱，熱到一直想喝冰的。", "en": "Day one, chills and fever and pain behind my eyes. Now it’s just heat. I want cold drinks all the time."}
+      ],
+      ["ade", {"zh": "全身骨頭痛，像被貨車輾過。我攤位今天誰顧啊？", "en": "Every bone aches, like a lorry ran me over. Who’s minding my stall today?"}],
+      ["zheng", {"zh": "壯熱、口渴、汗出、面紅。把脈。", "en": "High fever, thirst, sweating, flushed face. Take the pulse."}]
+     ],
+     "mini": {
+      "type": "pulse",
+      "pulse": "surging",
+      "q": {"zh": "阿德的脈來勢洶湧、如浪拍岸，去時減弱。這是？", "en": "A-De’s pulse surges in like a wave breaking and fades as it leaves. Which pulse?"},
+      "options": [
+       {
+        "zh": "洪脈",
+        "en": "Surging pulse",
+        "ok": true,
+        "why": {
+         "zh": "洪脈來盛去衰，中醫認為主氣分熱盛。配合壯熱、口渴、汗出，病在氣分。",
+         "en": "Surging arrives strong and fades away; in TCM blazing qi-level heat. With high fever, thirst and sweat, the illness is at the qi level."
+        }
+       },
+       {
+        "zh": "浮數脈",
+        "en": "Floating, rapid pulse",
+        "ok": false,
+        "why": {"zh": "浮數是衛分，第一天的脈。他已經不怕冷了。", "en": "Floating-rapid is the defence level, a day-one pulse. He no longer feels cold."}
+       },
+       {
+        "zh": "細數脈",
+        "en": "Thin, rapid pulse",
+        "ok": false,
+        "why": {"zh": "細數多見營陰受損，是更深的層次。現在的脈還是大的。", "en": "Thin-rapid suggests the nutritive level is being drained, a deeper layer. His pulse is still big."}
+       },
+       {"zh": "沉遲脈", "en": "Deep, slow pulse", "ok": false, "why": {"zh": "沉遲主裡寒，和高燒對不上。", "en": "Deep-slow means interior cold; it does not fit a high fever."}}
+      ]
+     },
+     "post": [
+      ["zheng", {"zh": "氣分證。正邪交爭最激烈的時候。", "en": "Qi level. The fiercest point of the fight."}],
+      ["zheng", {"zh": "他第一天是衛分證，今天是氣分證。下一步會往哪裡走？", "en": "Day one he was at the defence level; today the qi level. Where next?"}],
+      ["me", {"zh": "營分。", "en": "The nutritive level."}]
+     ]
+    },
+    {
+     "id": "b2",
+     "to": "adesao",
+     "guide": {"zh": "阿德嫂拿出刮痧板", "en": "A-De's wife takes out a guasha board"},
+     "lines": [
+      ["adesao", {"zh": "醫師，我帶了刮痧板。刮一刮燒就退，我們家都這樣。", "en": "Doctor, I brought my guasha board. A scrape brings the fever down; it always works at home."}],
+      ["zheng", {"zh": "你怎麼跟她說？", "en": "What will you tell her?"}]
+     ],
+     "mini": {
+      "type": "choice",
+      "q": {"zh": "登革熱第四天、血小板偏低，家屬要刮痧退燒。你？", "en": "Dengue day four, platelets low, the family wants guasha for the fever. You?"},
+      "options": [
+       {
+        "zh": "婉拒並說明出血風險，告訴護理師",
+        "en": "Decline, explain bleeding risk, tell the nurse",
+        "ok": true,
+        "why": {
+         "zh": "血小板低時刮痧會造成皮下出血，也會讓醫護分不清哪些是出血點、哪些是痧。說明原因，她才會真的收起來。",
+         "en": "With low platelets guasha causes bleeding under the skin, and the team can no longer tell bleeding spots from sha. Explain why, and she will really put it away."
+        },
+        "set": {"no-guasha": true}
+       },
+       {
+        "zh": "輕輕刮背就好",
+        "en": "A light scrape on the back is fine",
+        "ok": false,
+        "why": {"zh": "出血風險下沒有「輕輕」。而且會遮住真正的出血點。", "en": "With a bleeding risk there is no “light”, and it hides the real bleeding spots."},
+        "set": {"no-guasha": false}
+       },
+       {
+        "zh": "改拔罐，比較不會出血",
+        "en": "Cups instead; less bleeding",
+        "ok": false,
+        "why": {"zh": "拔罐的負壓一樣會造成皮下出血。", "en": "Cupping suction causes bleeding under the skin just the same."},
+        "set": {"no-guasha": false}
+       }
+      ]
+     },
+     "post": [
+      ["adesao", {"zh": "原來會流血喔……那我收起來。", "en": "It can make him bleed? Then I’ll put it away."}],
+      ["qi", {"zh": "那包止痛藥我也先收著，登革熱不能自己吃消炎止痛藥。", "en": "I’ll hold onto that packet of painkillers too. No self-medicating anti-inflammatories with dengue."}]
+     ]
+    },
+    {
+     "id": "b3",
+     "when": {"flag": "no-guasha", "is": false},
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "沒多久，小琪掀開蚊帳：阿德背上一條條紫紅，分不清哪些是痧、哪些是出血點。",
+        "en": "Before long Chi lifts the net: purple-red streaks down A-De’s back, and no telling which are sha and which are bleeding spots."
+       }
+      ],
+      ["qi", {"zh": "這下我們看不出他有沒有新的出血點了。我得跟蔡醫師報告。", "en": "Now we can’t tell whether he has new bleeding spots. I have to tell Dr Tsai."}]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "reading",
+   "name": {"zh": "病房裡讀溫病", "en": "Reading at the station"},
+   "sub": {"zh": "18:30 · 護理站", "en": "18:30 · nurses’ station"},
+   "t": 1110,
+   "mood": "eve",
+   "note": {"zh": "銀翹散與今晚不針的理由", "en": "Yinqiao San, and why no needles tonight"},
+   "beats": [
+    {
+     "id": "r1",
+     "to": "place:station",
+     "guide": {"zh": "在護理站複習溫病初起的方", "en": "Revise the opening-stage formula"},
+     "lines": [
+      ["zheng", {"zh": "如果他第一天就來，吳鞠通會用什麼？", "en": "If he had come on day one, what would Wu Jutong have used?"}],
+      ["me", {"zh": "辛涼平劑，銀翹散。", "en": "The cool-acrid balanced formula: Yinqiao San."}]
+     ],
+     "mini": {
+      "type": "herb",
+      "q": {"zh": "托盤上哪些屬於銀翹散？", "en": "Which herbs on the tray belong to Yinqiao San?"},
+      "pick": ["金銀花", "連翹", "薄荷", "牛蒡子", "淡豆豉", "荊芥"],
+      "distractors": ["麻黃", "桂枝", "紅花", "丹參"],
+      "formula": "銀翹散"
+     },
+     "post": [
+      [
+       "zheng",
+       {
+        "zh": "還有桔梗、竹葉、甘草，用蘆根湯煎。麻黃桂枝辛溫，溫病初起不用。",
+        "en": "Plus Jiegeng, bamboo leaf and liquorice, boiled with reed-root broth. Mahuang and Guizhi are acrid-warm: not for early warm disease."
+       }
+      ],
+      ["zheng", {"zh": "紅花、丹參活血。血小板低的病人，活血藥更不能隨便用。", "en": "Honghua and Danshen move the blood. With low platelets, blood-moving herbs are even more off-limits."}]
+     ]
+    },
+    {
+     "id": "r2",
+     "to": "place:station",
+     "guide": {"zh": "找古籍常用的退熱穴", "en": "Locate the classic fever points"},
+     "lines": [["zheng", {"zh": "溫病退熱，古籍常提大椎、曲池、合谷。指出來，用他的手量。", "en": "For fever, the classics often name Dazhui, Quchi and Hegu. Point them out, measuring with his hand."}]],
+     "mini": {
+      "type": "points",
+      "codes": ["GV14", "LI11", "LI4"],
+      "q": {"zh": "指出大椎、曲池、合谷", "en": "Point to Dazhui, Quchi and Hegu"}
+     },
+     "post": [["zheng", {"zh": "知道在哪，也要知道今晚為什麼不針：血小板低，針刺有出血風險。", "en": "Know where they are, and know why we don’t needle tonight: low platelets, a bleeding risk."}]]
+    },
+    {
+     "id": "r3",
+     "to": "place:station",
+     "guide": {"zh": "練習同身寸取穴", "en": "Practise proportional measurement"},
+     "lines": [
+      [
+       "zheng",
+       {"zh": "曲池在屈肘時肘橫紋外端。合谷在拇指食指之間。量給我看。", "en": "Quchi sits at the outer end of the elbow crease when bent; Hegu between thumb and index finger. Show me."}
+      ]
+     ],
+     "mini": {"type": "drill", "template": "tcm-classics", "drill": "cun"},
+     "post": [["zheng", {"zh": "學會了不用，比學會了亂用好。", "en": "Knowing how and choosing not to beats knowing how and using it wrongly."}]]
+    },
+    {
+     "id": "r4",
+     "to": "place:station",
+     "guide": {"zh": "寫中醫會診建議", "en": "Write the TCM consult note"},
+     "roles": ["resident"],
+     "lines": [
+      ["me", {"zh": "會診建議：目前屬氣分證。不建議刮痧、拔罐、刺絡與針刺。", "en": "Consult: currently qi-level pattern. Advise against guasha, cupping, bloodletting and needling."}],
+      [
+       "me",
+       {"zh": "中藥建議經主責醫師同意後使用，避開活血類。請留意警示徵象。", "en": "Any herbs only with the primary physician’s agreement, avoiding blood-movers. Please watch for warning signs."}
+      ],
+      ["zheng", {"zh": "最後一句寫得好。會診單不是秀學問的地方。", "en": "Good last line. A consult form is not the place to show off."}]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "defervesce",
+   "name": {"zh": "燒退了", "en": "The fever breaks"},
+   "sub": {"zh": "20:00 · 阿德的病床", "en": "20:00 · A-De's bed"},
+   "t": 1200,
+   "mood": "night",
+   "note": {"zh": "退燒：營分，危險期開始", "en": "Fever gone: nutritive level, critical phase"},
+   "beats": [
+    {
+     "id": "d1",
+     "to": "ade",
+     "guide": {"zh": "檢驗科來電後去看阿德", "en": "After the lab call, go to A-De"},
+     "ring": {
+      "title": {"zh": "檢驗科危急值", "en": "Lab critical value"},
+      "sub": {"zh": "血小板危急值，血比容上升", "en": "Platelets critical, haematocrit rising"},
+      "call": true,
+      "from": "lab"
+     },
+     "lines": [
+      ["lab", {"zh": "阿德的血小板到危急值，血比容比早上高。", "en": "A-De’s platelets have hit a critical value; haematocrit is up since this morning."}],
+      ["ade", {"zh": "燒退了！我好了吧？明天要進貨。", "en": "Fever’s gone! I’m better, right? I’ve got stock coming tomorrow."}],
+      ["zheng", {"zh": "退燒的這一刻，是什麼？", "en": "This moment, the fever breaking: what is it?"}],
+      ["me", {"zh": "……是危險期的開始。", "en": "...The start of the critical phase."}]
+     ]
+    },
+    {
+     "id": "d2",
+     "to": "ade",
+     "guide": {"zh": "看阿德的舌", "en": "Look at A-De's tongue"},
+     "lines": [["ade", {"zh": "燒是退了，可是心煩，睡不著。皮膚好像有點點。", "en": "Fever’s gone, but I’m restless and can’t sleep. There are little spots on my skin."}]],
+     "mini": {
+      "type": "tongue",
+      "tongue": {"body": "crimson", "coat": "peeled", "shape": "normal"},
+      "q": {"zh": "燒退了，但心煩不寐、皮膚隱約點點、舌絳少苔。在哪一層？", "en": "Fever gone, but restless, faint spots, crimson tongue with patchy coat. Which level?"},
+      "options": [
+       {
+        "zh": "營分",
+        "en": "Nutritive level",
+        "ok": true,
+        "why": {
+         "zh": "身熱夜甚、心煩不寐、斑疹隱隱、舌絳，中醫認為熱已入營。燒退了，不代表病退了。",
+         "en": "Restlessness, sleeplessness, faint spots and a crimson tongue: in TCM the heat has entered the nutritive level. The fever is gone; the illness is not."
+        }
+       },
+       {
+        "zh": "已經好了",
+        "en": "Recovered",
+        "ok": false,
+        "why": {"zh": "恢復期會胃口回來、精神變好。他是心煩、睡不著、舌絳。", "en": "Recovery brings appetite and energy back. He is restless, sleepless, crimson-tongued."}
+       },
+       {"zh": "衛分", "en": "Defence level", "ok": false, "why": {"zh": "衛分是最表淺的第一天。他已經走得很深了。", "en": "Defence is day one, the shallowest. He has gone much deeper."}},
+       {
+        "zh": "氣分",
+        "en": "Qi level",
+        "ok": false,
+        "why": {"zh": "氣分是壯熱、口渴、脈洪。他的熱退了，舌卻更紅。", "en": "Qi level means high fever, thirst, a surging pulse. His fever has fallen and his tongue has darkened."}
+       }
+      ]
+     },
+     "post": [
+      [
+       "zheng",
+       {"zh": "古人說的「營分證」，和蔡醫師說的「危險期」，從兩個方向看見同一個警訊。", "en": "The ancients’ nutritive level and Dr Tsai’s critical phase are two ways of seeing the same warning."}
+      ],
+      ["zheng", {"zh": "這是類比，不是等號。但它讓你不會在這一刻放心。", "en": "It’s an analogy, not an equation. But it stops you relaxing at this moment."}]
+     ]
+    },
+    {
+     "id": "d3",
+     "to": "tsai",
+     "guide": {"zh": "和蔡醫師討論床邊超音波", "en": "Discuss the bedside ultrasound with Dr Tsai"},
+     "lines": [["tsai", {"zh": "我要做床邊超音波。你們中醫猜猜看，我在找什麼？", "en": "I’m doing a bedside ultrasound. Have a guess, TCM: what am I looking for?"}]],
+     "mini": {
+      "type": "imaging",
+      "region": "abdomen-upper",
+      "question": {"zh": "登革熱退燒前後，床邊超音波要找什麼？", "en": "Around defervescence in dengue, what does the bedside ultrasound look for?"},
+      "answer": {
+       "zh": "血漿滲漏的證據：腹水、肋膜積水、膽囊壁水腫增厚。配合血比容上升、血小板下降，判斷是否進入危險期，並決定輸液與監測強度。",
+       "en": "Evidence of plasma leakage: fluid in the belly, fluid around the lungs, a thickened oedematous gallbladder wall. With rising haematocrit and falling platelets, it tells whether he is in the critical phase and how hard to monitor and give fluids."
+      }
+     },
+     "post": [
+      ["tsai", {"zh": "膽囊壁水腫，有一點腹水。他在漏了。", "en": "Gallbladder wall oedema, a little free fluid. He’s leaking."}],
+      ["qi", {"zh": "我把監測加密，輸入輸出量開始記。", "en": "I’ll step up the observations and start a fluid balance chart."}]
+     ]
+    },
+    {
+     "id": "d4",
+     "to": "qi",
+     "guide": {"zh": "和小琪排危險期的護理", "en": "Plan critical-phase nursing with Chi"},
+     "roles": ["nurse"],
+     "lines": [
+      [
+       "qi",
+       {
+        "zh": "危險期護理三件事：生命徵象加密、輸入輸出量、看黏膜和皮膚有沒有出血。",
+        "en": "Critical-phase nursing, three things: closer vital signs, fluid in and out, and checking gums and skin for bleeding."
+       }
+      ],
+      ["me", {"zh": "尿量變少也要報告？", "en": "Report it if urine output drops too?"}],
+      ["qi", {"zh": "尿量是腎臟替血壓說話。變少就打電話，不等下一輪。", "en": "Urine is the kidneys speaking for the blood pressure. If it drops, phone; don’t wait for the next round."}]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "crisis",
+   "name": {"zh": "牙齦流血", "en": "Bleeding gums"},
+   "sub": {"zh": "21:30 · 阿德的病床", "en": "21:30 · A-De's bed"},
+   "t": 1290,
+   "mood": "night",
+   "note": {"zh": "休克前兆：叫人，不是刮痧", "en": "Shock coming: call for help, not guasha"},
+   "beats": [
+    {
+     "id": "c1",
+     "to": "ade",
+     "guide": {"zh": "小琪按下呼叫鈴", "en": "Chi presses the call bell"},
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "阿德說肚子痛，刷牙杯裡的水是紅的。手腳冰冷，脈細，監視器上的血壓往下掉。",
+        "en": "A-De says his belly hurts; the water in his rinsing cup is red. Cold hands and feet, a thin pulse, and the blood pressure on the monitor is falling."
+       }
+      ],
+      ["adesao", {"zh": "他是不是又發燒了？我是不是該……", "en": "Is the fever back? Should I..."}]
+     ],
+     "mini": {
+      "type": "vitals",
+      "event": "hypotension",
+      "options": [
+       {
+        "zh": "平躺，通知蔡醫師與快速反應小組，監測",
+        "en": "Flat, call Dr Tsai and the rapid response team, monitor",
+        "ok": true,
+        "why": {
+         "zh": "腹痛、黏膜出血、四肢冰冷、脈細、血壓下降：登革熱休克的警示。平躺、立刻叫主責與快速反應小組，依休克流程處理。",
+         "en": "Belly pain, mucosal bleeding, cold limbs, a thin pulse, falling pressure: dengue shock. Lie him flat, call the primary team and rapid response at once, and follow the shock protocol."
+        }
+       },
+       {
+        "zh": "刮痧放血退熱",
+        "en": "Guasha or bloodletting for heat",
+        "ok": false,
+        "why": {"zh": "他正在出血。任何讓皮膚出血的處置都會讓情況更糟。", "en": "He is bleeding already. Anything that makes skin bleed makes it worse."}
+       },
+       {
+        "zh": "針人中、合谷急救",
+        "en": "Needle Renzhong and Hegu",
+        "ok": false,
+        "why": {"zh": "血小板低又休克，針刺不是急救，會延誤真正的處置。", "en": "Shocked with low platelets, needles are not resuscitation; they delay the real treatment."}
+       },
+       {
+        "zh": "讓他喝熱薑湯",
+        "en": "Hot ginger tea",
+        "ok": false,
+        "why": {"zh": "這不是寒證，也不是喝東西能處理的休克。", "en": "This is neither a cold pattern nor a shock that a drink can fix."}
+       }
+      ]
+     },
+     "post": [
+      ["tsai", {"zh": "依登革熱休克流程處理。謝謝你們第一時間叫我。", "en": "Dengue shock protocol. Thank you for calling me straight away."}],
+      [
+       "zheng",
+       {
+        "zh": "血分證：出血、四肢厥冷。古人寫「直須涼血散血」，今天要先做的是叫對的人。",
+        "en": "The blood level: bleeding, cold limbs. The ancients wrote “cool and scatter the blood”. Today the first thing is to call the right people."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "c2",
+     "to": "qi",
+     "guide": {"zh": "和小琪處理床邊", "en": "Work the bedside with Chi"},
+     "roles": ["nurse"],
+     "lines": [
+      ["qi", {"zh": "急救車推過來了。蚊帳我捲到一邊，但不拆——他血裡還有病毒。", "en": "Crash cart’s here. I’ve rolled the net aside but not taken it down; there’s still virus in his blood."}],
+      ["qi", {"zh": "出血點我用筆圈起來、標時間，這樣明天才看得出新的舊的。", "en": "I’m circling the bleeding spots in pen with the time, so tomorrow we can tell new from old."}]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "after",
+   "name": {"zh": "穩住之後", "en": "Once he is stable"},
+   "sub": {"zh": "22:30 · 護理站", "en": "22:30 · nurses’ station"},
+   "t": 1350,
+   "mood": "night",
+   "note": {"zh": "兩套語言，同一個病人", "en": "Two languages, one patient"},
+   "beats": [
+    {
+     "id": "a1",
+     "when": {"flag": "no-guasha", "is": true},
+     "lines": [
+      [
+       "tsai",
+       {
+        "zh": "阿德血壓穩了。阿德嫂沒刮痧，所以出血點一眼就看得出來。這很重要。",
+        "en": "A-De’s pressure is holding. His wife never scraped him, so the bleeding spots were obvious at a glance. That mattered."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "a2",
+     "when": {"flag": "no-guasha", "is": false},
+     "lines": [
+      [
+       "tsai",
+       {
+        "zh": "他背上的痧和出血點混在一起，我們花了一點時間才分清楚。下次先擋下來。",
+        "en": "The sha on his back mixed with the bleeding spots; it took us a while to sort out. Stop it earlier next time."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "a3",
+     "to": "adesao",
+     "guide": {"zh": "和阿德嫂說明", "en": "Explain to A-De's wife"},
+     "roles": ["resident"],
+     "lines": [
+      ["adesao", {"zh": "他燒退了我還以為好了，差點帶他回家。", "en": "When his fever broke I thought he was better. I nearly took him home."}],
+      [
+       "me",
+       {
+        "zh": "登革熱退燒的時候最要小心。肚子痛、吐、流血、很想睡，要馬上說。",
+        "en": "With dengue, the fever breaking is when to be most careful. Belly pain, vomiting, bleeding, drowsiness: tell us straight away."
+       }
+      ],
+      ["adesao", {"zh": "攤位的事我叫我弟去顧了。你們顧他就好。", "en": "I’ve got my brother minding the stall. You just mind him."}]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "name": {"zh": "交班前", "en": "Before handover"},
+   "sub": {"zh": "23:30 · 病房白板", "en": "23:30 · ward board"},
+   "t": 1410,
+   "mood": "night",
+   "note": {"zh": "退燒≠退病", "en": "Fever gone ≠ illness gone"},
+   "beats": [
+    {
+     "id": "e1",
+     "to": "zheng",
+     "guide": {"zh": "和鄭醫師收尾", "en": "Wrap up with Dr Cheng"},
+     "item": "four-levels-sketch",
+     "lines": [
+      ["zheng", {"zh": "溫病傳得快，你要比它快。今晚你快在哪裡？", "en": "Warm disease moves fast; be faster. Where were you fast tonight?"}],
+      ["me", {"zh": "燒退的時候，沒有放心。", "en": "When the fever broke, I didn’t relax."}],
+      [
+       "zheng",
+       {
+        "zh": "這張圖給你。最外圈是衛，最裡面是血。旁邊那行字，比圖重要。",
+        "en": "Take this sketch. Defence on the outside, blood at the centre. The line beside it matters more than the drawing."
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "鉛筆字寫著：「退燒≠退病」。小琪在白板上把兩條線交叉的地方畫了一個圈。",
+        "en": "In pencil: “fever gone ≠ illness gone”. On the whiteboard, Chi circles the point where the two lines cross."
+       }
+      ]
+     ],
+     "end": true
+    }
+   ]
+  }
+ ],
+ "ending": {
+  "title": {"zh": "會診結束", "en": "Consult closed"},
+  "sub": {"zh": "退燒不等於退病：溫病傳得快，你要比它快", "en": "Fever gone is not illness gone: be faster than warm disease"},
+  "stats": ["stages", "drills", "choices", "calls", "items", "time"]
+ }
+}

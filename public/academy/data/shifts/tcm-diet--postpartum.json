@@ -1,0 +1,314 @@
+{
+  "format": "huatuo-shift-v2",
+  "department": "tcm-diet",
+  "case": "postpartum",
+  "caseTitle": {"zh": "月子裡的麻油雞", "en": "Sesame-oil chicken in the confinement month"},
+  "condition": {"zh": "產後調養 · 哺乳期", "en": "Postpartum care · breastfeeding"},
+  "difficulty": 2,
+  "room": "tcm-clinic",
+  "title": {"zh": "產後調養門診", "en": "The postpartum clinic"},
+  "tagline": {"zh": "一壺麻油雞、一包生化湯、一位三週沒睡好的媽媽", "en": "A flask of sesame-oil chicken, a pack of Shenghua Tang, and a mother who hasn't slept in weeks"},
+  "minutes": 27,
+  "roles": [
+    {"id": "resident", "zh": "中醫住院醫師", "en": "TCM resident",
+     "desc": {"zh": "跟婦科師傅看產後門診。坐月子的規矩要聽懂、要尊重，也要知道哪一條今天不能照做。", "en": "With the gynaecology mentor in the postpartum clinic. Understand and respect the confinement rules, and know which one must not be followed today."}},
+    {"id": "nurse", "zh": "母嬰衛教護理師", "en": "Mother-and-baby nurse educator",
+     "desc": {"zh": "量血壓、看惡露、教哺乳，也負責問那一句最難問的話：「妳還好嗎？」", "en": "Blood pressure, lochia checks, breastfeeding help, and the hardest question of all: “How are you, really?”"}}
+  ],
+  "cast": {
+    "mentor": {"name": {"zh": "宋老師", "en": "Teacher Song"}, "role": {"zh": "中醫婦科主治（師傅）", "en": "TCM gynaecology attending (mentor)"}, "tag": "MD", "color": "#81296d", "body": "mentor",
+               "about": {"zh": "三個孩子的媽。她說：「坐月子的規矩，一半是智慧，一半是婆婆。兩半都要尊重，但只有一半要照做。」", "en": "Mother of three. “Confinement rules are half wisdom, half mother-in-law,” she says. “Respect both halves; follow only one.”"}},
+    "ching": {"name": {"zh": "小晴", "en": "Ching"}, "role": {"zh": "母嬰衛教護理師", "en": "Mother-and-baby nurse educator"}, "tag": "RN", "color": "#3b8f6a", "body": "nurse",
+              "about": {"zh": "包包裡永遠有三樣東西：一瓶米酒水、一張產後憂鬱量表、一盒面紙。三樣都常用完。", "en": "Always carries three things: a bottle of alcohol-free rice-wine water, a postnatal depression questionnaire, and a box of tissues. All three run out often."}},
+    "su": {"name": {"zh": "蘇小姐", "en": "Ms Su"}, "role": {"zh": "三十一歲，產後第十六天", "en": "Thirty-one, sixteen days after birth"}, "tag": "P", "color": "#c2703a", "body": "patient",
+           "about": {"zh": "虛構教學個案。銀行行員，第一胎，哺乳中。寶寶很會吃、很少睡。她已經忘記上次睡滿三小時是什麼時候。", "en": "Fictional teaching case. Bank clerk, first baby, breastfeeding. The baby feeds well and sleeps little. She can't remember the last time she slept three hours straight."}},
+    "hung": {"name": {"zh": "洪媽媽", "en": "Mrs Hung"}, "role": {"zh": "蘇小姐的婆婆", "en": "Ms Su's mother-in-law"}, "tag": "FAM", "color": "#8a6d3b", "body": "family",
+             "about": {"zh": "帶著一個大保溫壺和一本手寫的月子筆記。三十年前她坐月子，被自己的婆婆關在房間裡一整個月。", "en": "Arrives with a big flask and a handwritten confinement notebook. Thirty years ago her own mother-in-law shut her in a bedroom for the whole month."}},
+    "zhe": {"name": {"zh": "阿哲", "en": "Zhe"}, "role": {"zh": "蘇小姐的先生（電話）", "en": "Ms Su's husband (by phone)"}, "tag": "HUS", "color": "#5f7f3f", "phoneOnly": true,
+            "about": {"zh": "工程師，下班第一件事是問：「今天有睡嗎？」答案通常是沒有。", "en": "An engineer whose first question after work is “Did you sleep today?” The answer is usually no."}},
+    "ob": {"name": {"zh": "婦產科方醫師", "en": "Dr Fang, obstetrics"}, "role": {"zh": "婦產科主治（電話）", "en": "Obstetrics attending (by phone)"}, "tag": "OB", "color": "#3f6fa8", "phoneOnly": true,
+           "about": {"zh": "接中醫部的電話從不嫌煩。她說：「你們先看到的，往往是我們最晚知道的。」", "en": "Never minds calls from the TCM department. “What you see first,” she says, “is often what we hear about last.”"}}
+  },
+  "places": {
+    "pulse": {"name": {"zh": "脈枕診桌", "en": "Pulse desk"}, "hot": "pulse-desk"},
+    "lamp": {"name": {"zh": "舌診燈", "en": "Tongue lamp"}, "hot": "lamp"},
+    "couch": {"name": {"zh": "隔簾哺乳角", "en": "Curtained nursing corner"}, "hot": "couch"},
+    "cabinet": {"name": {"zh": "藥膳標本櫃", "en": "Diet specimen cabinet"}, "hot": "cabinet"},
+    "board": {"name": {"zh": "衛教白板", "en": "Teaching whiteboard"}, "hot": "whiteboard"},
+    "chart": {"name": {"zh": "經絡掛圖", "en": "Meridian chart"}, "hot": "meridian-chart"},
+    "desk": {"name": {"zh": "衛教桌", "en": "Counselling desk"}, "hot": "desk"},
+    "sink": {"name": {"zh": "洗手台", "en": "Hand-wash sink"}, "hot": "sink"}
+  },
+  "glossary": [
+    {"term": {"zh": "坐月子", "en": "confinement month"}, "plain": {"zh": "產後約一個月的休養傳統。休息、保暖、營養都有道理；不洗頭、不喝水這類規矩，現在已經不建議。", "en": "The month-long rest tradition after birth. Rest, warmth and good food make sense; rules like no hair-washing and no water are no longer advised."}},
+    {"term": {"zh": "惡露", "en": "lochia"}, "plain": {"zh": "產後從子宮排出的血和組織。一開始鮮紅，慢慢變淡變少。第二週以後還很多、有大血塊、有臭味或發燒，要看婦產科。", "en": "Blood and tissue discharged from the womb after birth; bright red at first, then paler and less. Still heavy after the second week, large clots, a bad smell or fever: see obstetrics."}},
+    {"term": {"zh": "生化湯", "en": "Shenghua Tang"}, "plain": {"zh": "當歸、川芎、桃仁、炮薑、炙甘草。中醫認為「生新化瘀」，幫助惡露排出。醫師評估後短期使用，不是整個月子的飲料。", "en": "Dang gui, chuanxiong, peach kernel, blast-fried ginger and honey-fried liquorice. In TCM reasoning it “makes the new and clears the old”, helping lochia out. Short-term, after a doctor's assessment; not a drink for the whole month."}},
+    {"term": {"zh": "產後多虛多瘀", "en": "deficient and stagnant after birth"}, "plain": {"zh": "中醫認為生產耗氣失血是「虛」，子宮內殘留的血是「瘀」。所以產後要先處理瘀，再補虛。", "en": "In TCM reasoning, birth spends qi and blood (deficiency) and leaves old blood in the womb (stasis). So stasis is dealt with first, deficiency after."}},
+    {"term": {"zh": "先化後補", "en": "clear first, then nourish"}, "plain": {"zh": "產後的順序：惡露排乾淨之前不急著大補；排乾淨之後，才依體質補氣血。", "en": "The postpartum sequence: no heavy tonics until the lochia has cleared; after that, nourish qi and blood to suit the constitution."}},
+    {"term": {"zh": "氣血兩虛", "en": "qi and blood both deficient"}, "plain": {"zh": "臉色淡、頭暈、倦怠、心悸、舌淡、脈細弱。中醫認為是產後最常見的虛。", "en": "Pale face, dizziness, fatigue, palpitations, pale tongue, thin weak pulse. In TCM reasoning, the commonest deficiency after birth."}},
+    {"term": {"zh": "細脈", "en": "thready pulse"}, "plain": {"zh": "脈細如線，但清楚摸得到。中醫認為主血虛、氣血不足。", "en": "A pulse as fine as a thread yet clearly felt. TCM reads blood deficiency, qi and blood running low."}},
+    {"term": {"zh": "子宮復舊", "en": "involution"}, "plain": {"zh": "產後子宮慢慢縮回原本大小的過程。復舊不好，惡露會拖很久或突然變多。", "en": "The womb shrinking back to its usual size after birth. When it lags, lochia drags on or suddenly increases."}},
+    {"term": {"zh": "回乳", "en": "drying up the milk"}, "plain": {"zh": "讓乳汁減少。大量炒麥芽是傳統的回乳藥，哺乳媽媽不要拿來當茶喝。", "en": "Reducing milk supply. Large amounts of roasted barley sprout are the traditional remedy for it, so breastfeeding mothers should not drink it as tea."}},
+    {"term": {"zh": "米酒水", "en": "rice-wine water"}, "plain": {"zh": "把米酒的酒精蒸餾掉、保留香氣的水。哺乳期煮月子料理，常用來代替米酒。", "en": "Rice wine distilled to remove the alcohol but keep the aroma. Used instead of rice wine in confinement cooking while breastfeeding."}},
+    {"term": {"zh": "姿勢性低血壓", "en": "postural hypotension"}, "plain": {"zh": "從躺或坐站起來時血壓掉下來：頭暈、眼前發黑、冒冷汗。失血、貧血、喝水太少時更容易。", "en": "Blood pressure falling on standing: dizziness, blacking out, cold sweat. More likely with blood loss, anaemia or too little to drink."}},
+    {"term": {"zh": "產後憂鬱", "en": "postnatal depression"}, "plain": {"zh": "不只是產後情緒起伏。持續的低落、失去興趣、睡不著或一直想睡、覺得自己是壞媽媽。需要篩檢、陪伴與治療，不是撐過去就好。", "en": "More than the baby blues: persistent low mood, loss of interest, sleeping too little or too much, feeling like a bad mother. It needs screening, support and treatment, not just enduring."}},
+    {"term": {"zh": "愛丁堡產後憂鬱量表", "en": "Edinburgh scale"}, "plain": {"zh": "產後憂鬱的篩檢問卷。最後一題直接問有沒有傷害自己的念頭；任何一點「有」，都要當天轉介。", "en": "The screening questionnaire for postnatal depression. Its last question asks directly about thoughts of self-harm; any “yes” means referral that same day."}},
+    {"term": {"zh": "乳腺炎", "en": "mastitis"}, "plain": {"zh": "乳房局部紅腫熱痛，常伴隨發燒、全身痠痛。要就醫；多數情況可以繼續哺乳。", "en": "A red, hot, painful patch in the breast, often with fever and aches. See a doctor; breastfeeding can usually continue."}},
+    {"term": {"zh": "安神", "en": "calm the spirit"}, "plain": {"zh": "中醫認為讓心神安定、比較睡得著的治法。神門、膻中是常用的穴。", "en": "In TCM reasoning, settling the mind so sleep comes more easily. Shenmen and Danzhong are common points for it."}}
+  ],
+  "codex": [
+    {"id": "nursing-corner", "kind": "equipment", "name": {"zh": "隔簾哺乳角", "en": "The curtained nursing corner"}, "text": {"zh": "診間最裡面拉了一道淡綠色的簾子，裡面有治療床、哺乳枕、一張小凳子給家屬。小晴說這裡比脈枕還重要。", "en": "A pale green curtain at the back of the clinic hides a couch, a nursing pillow and a stool for family. Ching says it matters more than the pulse pillow."}, "hot": "couch"},
+    {"id": "board", "kind": "equipment", "name": {"zh": "衛教白板", "en": "Teaching whiteboard"}, "text": {"zh": "左邊寫「先化」，右邊寫「後補」，中間畫一個箭頭，箭頭上寫：「惡露乾淨、醫師說可以」。", "en": "“Clear first” on the left, “nourish after” on the right, an arrow between them labelled: “lochia clear, doctor agrees”."}, "hot": "whiteboard"},
+    {"id": "cabinet", "kind": "equipment", "name": {"zh": "藥膳標本櫃", "en": "Diet specimen cabinet"}, "text": {"zh": "當歸、川芎、桃仁擺在左邊，貼紅卡「活血」；枸杞、紅棗、山藥擺右邊，貼綠卡。炒麥芽單獨一格，貼黃卡「回乳」。", "en": "Dang gui, chuanxiong and peach kernel on the left with red “blood-moving” cards; goji, jujube and yam on the right with green ones. Roasted barley sprout has its own shelf with a yellow card: “reduces milk”."}, "hot": "cabinet"},
+    {"id": "notebook", "kind": "item", "name": {"zh": "洪媽媽的月子筆記", "en": "Mrs Hung's confinement notebook"}, "text": {"zh": "三十年前的字和今天的字寫在同一頁。舊的一行：「不可洗頭。」新的一行，是洪媽媽自己寫的：「溫水洗，馬上吹乾。」", "en": "Thirty-year-old handwriting and today's on the same page. The old line: “Never wash hair.” The new line, in Mrs Hung's own hand: “Warm water, dry it at once.”"}},
+    {"id": "c-sequence", "kind": "concept", "name": {"zh": "產後先化後補", "en": "Clear first, nourish after"}, "text": {"zh": "中醫認為產後多虛多瘀。惡露未淨時以化瘀為主，生化湯就是這一段的方，醫師評估後短期使用；惡露轉淡變少就停。之後才依體質補：氣血兩虛用補氣養血的藥膳，如四物雞湯、黃耆當歸類，並看哺乳、睡眠、消化調整。順序反了，一邊補一邊還在出血；化瘀拖太久，出血就停不下來。", "en": "In TCM reasoning the postpartum body is both deficient and stagnant. While lochia flows, the focus is clearing stasis, and Shenghua Tang belongs here, short-term after assessment, stopped once lochia pales and lessens. Only then nourish to constitution: for qi and blood deficiency, dishes such as Four Substances chicken or astragalus with dang gui, adjusted for breastfeeding, sleep and digestion. Reverse the order and you tonify into ongoing bleeding; prolong the clearing and the bleeding won't stop."}},
+    {"id": "c-shenghua", "kind": "concept", "name": {"zh": "生化湯：何時用、何時停", "en": "Shenghua Tang: when to start, when to stop"}, "text": {"zh": "生化湯含當歸、川芎、桃仁等活血藥，中醫用來幫助排出惡露。它是一段時間的藥，不是一個月的飲料。惡露量多、鮮紅不減、有大血塊、頭暈心悸，要停藥並轉婦產科；剖腹產、正在大量出血、有凝血問題或吃抗凝藥的人，更要先問醫師。", "en": "Shenghua Tang holds blood-moving herbs, dang gui, chuanxiong, peach kernel, used in TCM to help lochia out. It is a short course, not a month's drink. Heavy or persistently bright lochia, large clots, dizziness or palpitations: stop it and refer to obstetrics. After a caesarean, with active heavy bleeding, a clotting problem or anticoagulants, ask the doctor first."}},
+    {"id": "c-redflags", "kind": "concept", "name": {"zh": "產後紅旗", "en": "Postpartum red flags"}, "text": {"zh": "大量出血或血塊、頭暈快昏倒：急診。發燒、惡露有臭味、下腹痛：感染，就醫。乳房紅腫熱痛加發燒：乳腺炎，就醫。單側小腿腫痛、突然喘、胸痛：血栓，急診。劇烈頭痛、視力模糊、上腹痛：產後子癲前症，急診。持續低落、睡不著、有傷害自己或寶寶的念頭：當天就醫或撥安心專線。藥膳不處理紅旗。", "en": "Heavy bleeding or clots, faintness: emergency. Fever, foul lochia, lower belly pain: infection, see a doctor. A red, hot, painful breast with fever: mastitis, see a doctor. One swollen painful calf, sudden breathlessness, chest pain: clot, emergency. Severe headache, blurred vision, upper belly pain: postpartum pre-eclampsia, emergency. Persistent low mood, no sleep, any thought of harming herself or the baby: same-day help or a crisis line. Diet does not treat red flags."}},
+    {"id": "c-breastfeeding", "kind": "concept", "name": {"zh": "哺乳期的藥膳宜忌", "en": "Diet and herbs while breastfeeding"}, "text": {"zh": "酒精會進入母乳，月子料理用米酒水或水代替米酒；久煮也煮不乾淨酒精。大量炒麥芽回乳，不當茶喝。大黃、番瀉葉這類峻瀉藥哺乳期忌用。補品不是越多越好：麻油雞油重，消化不好的媽媽一週幾次就夠。喝溫開水沒有禁忌，哺乳的人反而更需要。", "en": "Alcohol passes into breast milk, so confinement dishes use rice-wine water or plain water; long cooking does not remove it all. Roasted barley sprout in quantity dries the milk; not a tea. Strong purgatives like rhubarb and senna are avoided while nursing. More tonic is not better: sesame-oil chicken is rich, a few times a week is plenty for a sluggish stomach. Warm water has no taboo; a nursing mother needs more of it, not less."}}
+  ],
+  "segs": [
+    {"id": "prep", "name": {"zh": "先化後補", "en": "Clear, then nourish"}, "sub": {"zh": "08:30 · 衛教白板", "en": "08:30 · teaching whiteboard"}, "t": 510, "mood": "day",
+     "note": {"zh": "產後多虛多瘀；哺乳角", "en": "Deficient and stagnant; the nursing corner"},
+     "beats": [
+      {"id": "p1", "to": "mentor", "guide": {"zh": "到白板前找宋老師", "en": "Find Teacher Song at the whiteboard"},
+       "lines": [
+        ["sys", {"zh": "產後門診八點半。白板左邊寫「先化」，右邊寫「後補」，中間畫了一個箭頭。", "en": "Postpartum clinic, half past eight. “Clear first” on the left of the whiteboard, “nourish after” on the right, an arrow between."}],
+        ["mentor", {"zh": "中醫怎麼看剛生完的身體？一句話。", "en": "How does TCM see a body that has just given birth? One sentence."}],
+        ["me", {"zh": "產後多虛多瘀。生產耗了氣血，子宮裡還有瘀。", "en": "Deficient and stagnant after birth: qi and blood spent, old blood still in the womb."}],
+        ["mentor", {"zh": "所以順序是先化後補。這個箭頭上要寫什麼條件，才能從左邊走到右邊？排給我看。", "en": "So the order is clear first, then nourish. What has to be true before you cross that arrow? Lay it out."}]
+       ],
+       "mini": {"type": "order", "q": {"zh": "產後調養「先化後補」的順序", "en": "The postpartum sequence: clear first, then nourish"},
+                "steps": [
+                 {"zh": "確認惡露量與有無紅旗", "en": "Check lochia and red flags"},
+                 {"zh": "醫師評估後短期用生化湯", "en": "Short Shenghua course if assessed"},
+                 {"zh": "惡露轉淡變少就停", "en": "Stop once lochia pales and eases"},
+                 {"zh": "再依體質補氣血", "en": "Then nourish to constitution"},
+                 {"zh": "回診追蹤哺乳與睡眠", "en": "Follow up feeding and sleep"}
+                ]},
+       "post": [
+        ["mentor", {"zh": "第三步最常被跳過。很多家庭把生化湯當成一個月的飲料。", "en": "Step three is the one families skip. Many treat Shenghua Tang as a drink for the whole month."}]
+       ]},
+      {"id": "p2", "to": "ching", "guide": {"zh": "找小晴準備哺乳角", "en": "Help Ching ready the nursing corner"},
+       "lines": [
+        ["ching", {"zh": "今天第一位是蘇小姐，帶寶寶來。哺乳角在哪你知道嗎？簾子要先拉好。", "en": "First today is Ms Su, with her baby. You know where the nursing corner is? Get the curtain drawn first."}]
+       ],
+       "mini": {"type": "find", "hot": "couch", "q": {"zh": "找到隔簾後的哺乳角", "en": "Find the curtained nursing corner"}},
+       "post": [
+        ["ching", {"zh": "哺乳枕、小凳子、面紙。面紙不是給寶寶的。", "en": "Nursing pillow, stool, tissues. The tissues aren't for the baby."}]
+       ]}
+     ]},
+    {"id": "su", "name": {"zh": "第十六天", "en": "Day sixteen"}, "sub": {"zh": "09:00 · 脈枕診桌", "en": "09:00 · pulse desk"}, "t": 540, "mood": "day",
+     "note": {"zh": "舌淡瘦、脈細：氣血兩虛；惡露還很多", "en": "Pale thin tongue, thready pulse: qi and blood deficient; lochia still heavy"},
+     "beats": [
+      {"id": "s1", "to": "su", "guide": {"zh": "請蘇小姐坐下", "en": "Seat Ms Su"},
+       "lines": [
+        ["su", {"zh": "我好累。寶寶一直要喝，我站起來就頭暈。", "en": "I'm so tired. The baby wants to feed all the time, and I get dizzy when I stand up."}],
+        ["hung", {"zh": "她就是太虛！我每天燉麻油雞，米酒整瓶下，生化湯也每天喝，要吃滿一個月。", "en": "She's just weak! I make sesame-oil chicken every day, a whole bottle of rice wine in it, and Shenghua Tang every day, for the full month."}],
+        ["hung", {"zh": "還有，月子不能喝水，口渴就喝米酒水。不能洗頭。", "en": "And no water during the confinement month; if she's thirsty, rice-wine water. No washing her hair."}],
+        ["mentor", {"zh": "洪媽媽很用心。惡露現在怎麼樣？", "en": "Mrs Hung, you've taken real care. How is the lochia now?"}],
+        ["su", {"zh": "還是紅的，量……其實比上週多。有時候有血塊。", "en": "Still red, and… actually more than last week. Sometimes clots."}],
+        ["mentor", {"zh": "記下來。先看舌。", "en": "Note that. Tongue first."}]
+       ],
+       "mini": {"type": "tongue", "q": {"zh": "蘇小姐的舌：淡白而瘦薄，苔薄白。頭暈、倦怠、心悸。證型？", "en": "Ms Su's tongue: pale and thin, with a thin white coat. Dizzy, exhausted, palpitations. The pattern?"},
+                "tongue": {"body": "pale", "coat": "thin-white", "shape": "thin"},
+                "options": [
+                 {"zh": "氣血兩虛", "en": "Qi and blood both deficient", "ok": true, "why": {"zh": "舌淡白主氣血不足，瘦薄主血虛不能充養。生產失血、哺乳耗血、睡不好，中醫認為是典型的產後氣血兩虛。", "en": "A pale tongue means qi and blood are short; thin means too little blood to fill it. Blood lost at birth, spent on milk, sleep lost: textbook postpartum deficiency of both."}},
+                 {"zh": "陰虛火旺", "en": "Yin deficiency with fire", "ok": false, "why": {"zh": "陰虛火旺舌紅少苔、手腳心熱、盜汗。她的舌是淡的。", "en": "Yin deficiency with fire gives a red tongue with little coat, hot palms and soles, night sweats. Hers is pale."}},
+                 {"zh": "濕熱下注", "en": "Damp-heat pouring down", "ok": false, "why": {"zh": "濕熱舌紅苔黃膩，惡露臭、發燒。她沒有這些。", "en": "Damp-heat gives a red tongue with greasy yellow coat, foul lochia, fever. None of that here."}},
+                 {"zh": "實熱", "en": "Excess heat", "ok": false, "why": {"zh": "實熱舌紅苔黃、口渴、便秘、脈洪數。和淡瘦舌、頭暈正好相反。", "en": "Excess heat gives a red tongue, yellow coat, thirst, constipation and a surging rapid pulse. The opposite of a pale thin tongue and dizziness."}}
+                ]},
+       "post": [
+        ["mentor", {"zh": "氣血兩虛。洪媽媽說「她就是太虛」，沒說錯。問題是為什麼還在虛下去。", "en": "Qi and blood both deficient. Mrs Hung's “she's just weak” isn't wrong. The question is why she is still getting weaker."}]
+       ]},
+      {"id": "s2", "to": "place:pulse", "guide": {"zh": "摸蘇小姐的脈", "en": "Take Ms Su's pulse"},
+       "lines": [
+        ["mentor", {"zh": "輕、中、重，三層都摸。寬窄和力氣，你感覺到什麼？", "en": "Light, middle, deep, all three. Width and strength: what do you feel?"}],
+        ["me", {"zh": "很細，像一條線，但摸得到。沒什麼力，有點快。", "en": "Very fine, like a thread, but definitely there. Not much strength, a little fast."}]
+       ],
+       "mini": {"type": "pulse", "q": {"zh": "蘇小姐的脈：細如線、清楚可摸、無力。這是什麼脈？", "en": "Ms Su's pulse: fine as a thread, clearly felt, without strength. Name it."},
+                "pulse": "thready",
+                "options": [
+                 {"zh": "細脈", "en": "Thready pulse", "ok": true, "why": {"zh": "脈細如線、應指明顯，是細脈，中醫認為主血虛、氣血不足。偏快而無力，也要想到她可能還在失血。", "en": "Fine as a thread yet distinct: the thready pulse, which TCM reads as blood deficiency. Slightly fast and weak, it should also make you think she may still be losing blood."}},
+                 {"zh": "滑脈", "en": "Slippery pulse", "ok": false, "why": {"zh": "滑脈如珠走盤，懷孕時常見。產後十六天、頭暈，不是滑。", "en": "Slippery rolls like pearls, typical in pregnancy. Sixteen days postpartum and dizzy: not slippery."}},
+                 {"zh": "洪脈", "en": "Surging pulse", "ok": false, "why": {"zh": "洪脈寬大有力，主熱盛。她的脈細而無力。", "en": "Surging is broad and strong, a sign of great heat. Hers is fine and weak."}},
+                 {"zh": "弦脈", "en": "Wiry pulse", "ok": false, "why": {"zh": "弦脈端直以長，如按琴弦，主肝鬱、主痛。她的脈軟而細。", "en": "Wiry is long and taut like a string, pointing to constraint or pain. Hers is soft and fine."}}
+                ]},
+       "post": [
+        ["mentor", {"zh": "細而偏快。虛的人脈快，要問：哪裡還在流？", "en": "Thready and a little fast. When a depleted person's pulse runs fast, ask: where is it still leaking?"}]
+       ]}
+     ]},
+    {"id": "dizzy", "name": {"zh": "站起來的那一下", "en": "The moment she stood"}, "sub": {"zh": "09:40 · 隔簾哺乳角", "en": "09:40 · nursing corner"}, "t": 580, "mood": "day",
+     "note": {"zh": "姿勢性低血壓；第十六天的血塊是紅旗", "en": "Postural drop; clots on day sixteen are a red flag"},
+     "beats": [
+      {"id": "d1", "to": "place:couch", "guide": {"zh": "蘇小姐起身時頭暈", "en": "Ms Su is dizzy on standing"},
+       "lines": [
+        ["sys", {"zh": "寶寶在哺乳角哭了。蘇小姐一站起來，臉色刷白，扶住簾子的手在抖。", "en": "The baby cries in the nursing corner. Ms Su stands, turns white, and the hand on the curtain is shaking."}],
+        ["su", {"zh": "眼前……黑黑的。", "en": "Everything's… going dark."}]
+       ],
+       "mini": {"type": "vitals", "event": "hypotension",
+                "options": [
+                 {"zh": "扶她平躺抬腿，量血壓，看出血量", "en": "Lay her flat, legs up, BP, check the bleeding", "ok": true, "why": {"zh": "產後頭暈、冒冷汗、站起就發黑，先防跌倒：平躺、抬高雙腿、量血壓脈搏，同時看護墊的出血量。這是在找原因，不只是讓她舒服。", "en": "Postpartum dizziness, cold sweat, blacking out on standing: prevent the fall first. Lie flat, legs raised, pressure and pulse, and check the pad for blood loss at the same time. That is finding the cause, not just comfort."}},
+                 {"zh": "先喝一碗麻油雞補一補", "en": "A bowl of sesame-oil chicken first", "ok": false, "why": {"zh": "快昏倒的人不吃東西，可能嗆到。而且還不知道她為什麼頭暈。", "en": "Someone about to faint shouldn't eat; she may choke. And we don't yet know why she's dizzy."}},
+                 {"zh": "扶她坐著繼續餵奶", "en": "Sit her up and keep feeding", "ok": false, "why": {"zh": "坐著可能還是會昏倒，懷裡抱著寶寶更危險。先讓她躺下，寶寶交給家屬。", "en": "Sitting she may still faint, with the baby in her arms. Lie her down; hand the baby to family."}}
+                ]},
+       "post": [
+        ["ching", {"zh": "血壓偏低、脈快，是姿勢性低血壓。護墊整片濕透，有兩個大血塊。", "en": "Pressure low, pulse fast: postural hypotension. The pad is soaked through, with two large clots."}],
+        ["mentor", {"zh": "第十六天，惡露變多、有血塊、頭暈、脈細數。這是紅旗。", "en": "Day sixteen, more lochia, clots, dizziness, a thin fast pulse. That's a red flag."}],
+        ["hung", {"zh": "生化湯就是在排惡露啊，排多一點不是好事嗎？", "en": "Shenghua Tang is meant to clear the lochia. Isn't clearing more a good thing?"}]
+       ]},
+      {"id": "d2", "to": "mentor", "guide": {"zh": "決定生化湯怎麼辦", "en": "Decide about the Shenghua Tang"},
+       "lines": [
+        ["mentor", {"zh": "洪媽媽問的是好問題。你來回答她，也決定今天怎麼做。", "en": "Mrs Hung's question is a good one. You answer her, and decide what happens today."}]
+       ],
+       "mini": {"type": "choice", "q": {"zh": "產後第十六天，惡露增多有血塊、頭暈、血壓偏低，每天喝生化湯。你怎麼做？", "en": "Day sixteen: more lochia with clots, dizziness, low pressure, daily Shenghua Tang. What do you do?"},
+                "options": [
+                 {"zh": "停生化湯，今天轉婦產科評估", "en": "Stop Shenghua Tang; obstetrics today", "ok": true, "set": {"ob-referred": true}, "why": {"zh": "生化湯活血化瘀，是一段時間的藥。第十六天出血反而變多、有血塊、頭暈，要排除子宮復舊不全或胎盤殘留，這需要婦產科的超音波，不是藥膳。", "en": "Shenghua Tang moves blood and is a short course. Bleeding increasing on day sixteen with clots and dizziness needs poor involution or retained tissue ruled out, which takes an obstetric ultrasound, not a diet."}},
+                 {"zh": "婆婆說喝滿一個月，繼續", "en": "Mother-in-law says the full month; continue", "ok": false, "set": {"ob-referred": false}, "why": {"zh": "活血藥加上持續出血，是火上加油。傳統要尊重，但紅旗出現時，規矩要讓路。", "en": "Blood-moving herbs on top of ongoing bleeding add fuel. Tradition deserves respect, but when a red flag appears the rules give way."}},
+                 {"zh": "改喝四物湯補血就好", "en": "Switch to Four Substances to build blood", "ok": false, "set": {"ob-referred": false}, "why": {"zh": "四物湯裡也有當歸、川芎。而且出血原因沒查清楚之前，補什麼都太早。", "en": "Four Substances also holds dang gui and chuanxiong. And until the cause of bleeding is known, any tonic is premature."}}
+                ]}}
+     ]},
+    {"id": "ob", "name": {"zh": "婦產科與婆婆", "en": "Obstetrics, and the mother-in-law"}, "sub": {"zh": "11:30 · 衛教桌", "en": "11:30 · counselling desk"}, "t": 690, "mood": "day",
+     "note": {"zh": "子宮復舊不全；生化湯是一段時間的藥", "en": "Poor involution; Shenghua Tang is a short course"},
+     "beats": [
+      {"id": "o1", "when": {"flag": "ob-referred", "is": true}, "ring": {"title": {"zh": "婦產科方醫師來電", "en": "Dr Fang, obstetrics"}, "sub": {"zh": "蘇小姐的超音波", "en": "Ms Su's ultrasound"}, "call": true, "from": "ob"},
+       "lines": [
+        ["ob", {"zh": "超音波看是子宮復舊不全，有一點點殘留，已經處理了。血色素偏低，我開了補鐵。", "en": "Ultrasound shows poor involution with a little retained tissue; we've dealt with it. Her haemoglobin is low; I've started iron."}],
+        ["ob", {"zh": "生化湯請停。飲食調養可以開始，記得她在餵奶。謝謝你們早上就送來。", "en": "Please stop the Shenghua Tang. Diet support can start; remember she's breastfeeding. Thank you for sending her this morning."}],
+        ["me", {"zh": "收到。生化湯停，先化的階段結束，下午我們開始談後補。", "en": "Noted. Shenghua Tang stops, the clearing phase is over, and this afternoon we start on nourishing."}]
+       ]},
+      {"id": "o2", "when": {"flag": "ob-referred", "is": false}, "to": "mentor", "guide": {"zh": "宋老師叫住你", "en": "Teacher Song stops you"},
+       "lines": [
+        ["mentor", {"zh": "第十六天、血塊、頭暈、血壓低，生化湯還在喝。你剛剛要她繼續？", "en": "Day sixteen, clots, dizziness, low pressure, still on Shenghua Tang. You told her to carry on?"}],
+        ["me", {"zh": "……我想尊重婆婆的安排。", "en": "…I wanted to respect the mother-in-law's plan."}],
+        ["mentor", {"zh": "尊重是用聽的，不是用照做的。打給婦產科。", "en": "You respect it by listening, not by complying. Phone obstetrics."}],
+        ["sys", {"zh": "方醫師當天看了：子宮復舊不全，少量殘留，處理後出血減少。她在電話裡說：「這種的，早上就可以送來。」", "en": "Dr Fang saw her that day: poor involution, a little retained tissue, bleeding eased after treatment. On the phone she said: “Cases like this, you can send me in the morning.”"}]
+       ]},
+      {"id": "o3", "to": "hung", "guide": {"zh": "跟洪媽媽談生化湯", "en": "Talk Shenghua Tang with Mrs Hung"},
+       "lines": [
+        ["hung", {"zh": "我那時候也是喝一個月啊。我婆婆把我關在房間，不能洗頭、不能下床。", "en": "I drank it for a whole month too. My mother-in-law shut me in a room: no hair-washing, no getting out of bed."}],
+        ["hung", {"zh": "我以為我現在對她好，就是照那樣做……只是不要關她。", "en": "I thought being good to her now meant doing it all the same… just without locking her in."}],
+        ["mentor", {"zh": "妳很疼她。我們一起看生化湯裡面有什麼，就知道為什麼它只喝一段時間。", "en": "You love her dearly. Let's look at what's inside Shenghua Tang together; then you'll see why it's only for a while."}]
+       ],
+       "mini": {"type": "herb", "q": {"zh": "生化湯裡，屬於活血化瘀、出血多時要停的藥是哪幾味？", "en": "Which herbs in Shenghua Tang move the blood, and so must stop when bleeding is heavy?"},
+                "pick": ["當歸", "川芎", "桃仁"],
+                "distractors": ["山藥", "茯苓", "大棗", "蓮子"]},
+       "post": [
+        ["me", {"zh": "當歸、川芎、桃仁都活血，另外還有炮薑溫經、炙甘草調和。生新化瘀，是幫惡露排出，不是補。", "en": "Dang gui, chuanxiong and peach kernel all move blood, plus blast-fried ginger to warm and honey-fried liquorice to harmonise. It makes new and clears old; it helps lochia out. It isn't a tonic."}],
+        ["hung", {"zh": "原來它是「推」的，不是「補」的。", "en": "So it pushes. It doesn't build."}],
+        ["mentor", {"zh": "對。推完了就停，接下來才輪到補。", "en": "Exactly. Once the pushing's done, stop; then it's time to build."}]
+       ]}
+     ]},
+    {"id": "milk", "name": {"zh": "保溫壺裡有什麼", "en": "What's in the flask"}, "sub": {"zh": "13:30 · 衛教桌", "en": "13:30 · counselling desk"}, "t": 810, "mood": "day",
+     "note": {"zh": "米酒水代替米酒；炒麥芽會回乳", "en": "Rice-wine water for rice wine; barley sprout dries milk"},
+     "beats": [
+      {"id": "m1", "to": "ching", "guide": {"zh": "和小晴看保溫壺", "en": "Look in the flask with Ching"},
+       "lines": [
+        ["ching", {"zh": "洪媽媽的保溫壺：麻油雞，米酒整瓶，還有一包炒麥芽說要泡茶消脹氣。", "en": "Mrs Hung's flask: sesame-oil chicken with a whole bottle of rice wine, plus a bag of roasted barley sprout for a tea against bloating."}],
+        ["hung", {"zh": "米酒煮那麼久，酒精早就沒了吧？", "en": "After all that cooking, surely the alcohol's gone?"}]
+       ],
+       "mini": {"type": "choice", "q": {"zh": "哺乳中的蘇小姐，麻油雞怎麼煮比較好？", "en": "For Ms Su, who is breastfeeding, how should the sesame-oil chicken be made?"},
+                "options": [
+                 {"zh": "用米酒水或水代替米酒", "en": "Use rice-wine water or water instead", "ok": true, "why": {"zh": "酒精會進入母乳。久煮只能減少，煮不乾淨。米酒水保留香氣、去掉酒精，是哺乳期的做法。麻油和老薑適量就好。", "en": "Alcohol passes into breast milk. Long cooking reduces it but never removes it all. Rice-wine water keeps the aroma without the alcohol, the breastfeeding version. Sesame oil and old ginger in moderation."}},
+                 {"zh": "煮久了酒精都沒了，照放", "en": "It cooks off; carry on", "ok": false, "why": {"zh": "燉很久，還是會留一部分酒精。整瓶下去，留下來的不少。", "en": "Even after long simmering some alcohol stays. Start with a whole bottle and what remains is not little."}},
+                 {"zh": "米酒越多越補，奶越多", "en": "More wine, more tonic, more milk", "ok": false, "why": {"zh": "酒精不會讓奶變多，反而可能影響寶寶睡眠與泌乳反射。", "en": "Alcohol doesn't increase milk; it may disturb the baby's sleep and the let-down reflex."}}
+                ]},
+       "post": [
+        ["ching", {"zh": "還有那包炒麥芽。大量炒麥芽是回乳的，她在餵奶，不要當茶喝。", "en": "And the roasted barley sprout. In quantity it is used for drying up the milk. She's nursing; it's not a tea for her."}],
+        ["hung", {"zh": "回乳？我以為是幫消化的……還好還沒泡。", "en": "Dries the milk? I thought it was for digestion… good thing I hadn't brewed it yet."}],
+        ["ching", {"zh": "還有，溫開水可以喝，餵奶的人更要喝。頭可以用溫水洗，馬上吹乾。", "en": "And she can drink warm water; nursing mothers need more, not less. Hair can be washed in warm water and dried straight away."}]
+       ]},
+      {"id": "m2", "to": "place:cabinet", "guide": {"zh": "把月子藥材分清楚", "en": "Sort out the confinement herbs"},
+       "lines": [
+        ["ching", {"zh": "洪媽媽帶來一大袋月子藥材，全混在一起。分一分：哪些放回櫃子、哪些留著、炒麥芽單獨挑出來。", "en": "Mrs Hung brought a big bag of confinement herbs, all jumbled. Sort them: what goes back to the cabinet, what she keeps, and the barley sprout set apart."}]
+       ],
+       "mini": {"type": "drill", "template": "tcm-diet", "drill": "herbsort"},
+       "post": [
+        ["mentor", {"zh": "左邊紅卡是活血的，現在先收起來；右邊綠卡是補的，等一下用得到；黃卡那一格，餵奶期間不碰。", "en": "Red cards on the left move blood; put them away for now. Green cards on the right nourish; we'll need them shortly. The yellow-card shelf stays untouched while she's nursing."}]
+       ]},
+      {"id": "m3", "roles": ["resident"], "to": "mentor", "guide": {"zh": "學補血藥膳的時機", "en": "Learn when blood-building dishes start"},
+       "lines": [
+        ["mentor", {"zh": "先化的階段結束了，現在才輪到補。四物雞湯很多人在月子吃，什麼時候可以、要注意什麼？", "en": "The clearing phase is over; only now is it time to build. Many people eat Four Substances chicken during confinement. When is it right, and what needs care?"}]
+       ],
+       "mini": {"type": "stage", "case": "tcm-diet-sijunzi-diet-workflow", "stage": 3},
+       "post": [
+        ["me", {"zh": "惡露乾淨、婦產科說出血穩定之後才開始。四物裡有當歸川芎，出血又變多就停。", "en": "Only once the lochia's clear and obstetrics says the bleeding is settled. Four Substances has dang gui and chuanxiong; if bleeding picks up again, stop."}],
+        ["mentor", {"zh": "還要看她的胃。氣血兩虛的人，補得太油太快，反而消化不了。", "en": "And watch her stomach. With qi and blood both deficient, tonics that are too rich or too fast just won't be digested."}]
+       ]}
+     ]},
+    {"id": "tears", "name": {"zh": "簾子後面", "en": "Behind the curtain"}, "sub": {"zh": "15:00 · 隔簾哺乳角", "en": "15:00 · nursing corner"}, "t": 900, "mood": "day",
+     "note": {"zh": "產後憂鬱篩檢；安神穴；乳房與血栓紅旗", "en": "Depression screening; calming points; breast and clot red flags"},
+     "beats": [
+      {"id": "t1", "to": "su", "guide": {"zh": "簾子後面，蘇小姐在哭", "en": "Behind the curtain, Ms Su is crying"},
+       "lines": [
+        ["sys", {"zh": "從婦產科回來，寶寶睡著了。蘇小姐抱著哺乳枕，眼淚一直掉。", "en": "Back from obstetrics, the baby asleep. Ms Su hugs the nursing pillow; the tears won't stop."}],
+        ["su", {"zh": "我是不是很差的媽媽？寶寶一哭，我就想跟著哭。今天還差點昏倒。", "en": "Am I a terrible mother? Every time the baby cries I want to cry too. And today I nearly fainted."}],
+        ["ching", {"zh": "（把面紙遞過去）妳不差。我們可以多問妳幾個問題嗎？", "en": "(Passing the tissues) You're not terrible. Can we ask you a few more questions?"}]
+       ],
+       "mini": {"type": "choice", "q": {"zh": "產後第十六天，蘇小姐一直哭、說自己是壞媽媽。你怎麼做？", "en": "Day sixteen; Ms Su keeps crying and calls herself a bad mother. What do you do?"},
+                "options": [
+                 {"zh": "陪她說，做量表，直接問安全", "en": "Listen, screen, ask directly about safety", "ok": true, "set": {"epds-done": true}, "why": {"zh": "產後憂鬱要篩檢，不是安慰一句就好。用愛丁堡產後憂鬱量表，最後一題直接問有沒有傷害自己的念頭。直接問不會讓人更想傷害自己，反而讓她有機會說。", "en": "Postnatal depression needs screening, not a quick reassurance. Use the Edinburgh scale; its last question asks directly about thoughts of self-harm. Asking does not plant the idea; it gives her a chance to say it."}},
+                 {"zh": "坐月子大家都這樣，喝湯就好", "en": "Everyone's like this; have some soup", "ok": false, "set": {"epds-done": false}, "why": {"zh": "「大家都這樣」會讓她把話吞回去。情緒的紅旗和出血的紅旗一樣要問清楚。", "en": "“Everyone's like this” makes her swallow her words. Mood red flags must be asked about as carefully as bleeding ones."}},
+                 {"zh": "開甘麥大棗湯，喝了就會好", "en": "Prescribe Ganmai Dazao; it'll fix it", "ok": false, "set": {"epds-done": false}, "why": {"zh": "甘麥大棗湯是古籍治臟躁的方，可以當輔助，但不能代替篩檢、陪伴和轉介。", "en": "Ganmai Dazao Tang is a classical formula for restless sorrow and may support care, but it cannot replace screening, support and referral."}}
+                ]},
+       "post": [
+        ["su", {"zh": "沒有想傷害自己。只是很累，覺得自己做不好。", "en": "No, I don't want to hurt myself. I'm just so tired, and I feel like I'm failing."}],
+        ["ching", {"zh": "謝謝妳說出來。如果哪一天有那種念頭、完全睡不著，或聽到看到奇怪的東西，當天就要就醫，或打安心專線。", "en": "Thank you for telling us. If one day those thoughts come, or you can't sleep at all, or you hear or see strange things, get help that same day, or call a crisis line."}],
+        ["mentor", {"zh": "睡眠是第一個藥。今晚讓先生用擠出來的奶餵一次夜奶，妳睡一段完整的。", "en": "Sleep is the first medicine. Tonight let your husband do one night feed with pumped milk, and you sleep one unbroken stretch."}]
+       ]},
+      {"id": "t2", "to": "place:chart", "guide": {"zh": "教蘇小姐兩個安神的穴", "en": "Show Ms Su two calming points"},
+       "lines": [
+        ["mentor", {"zh": "睡前可以自己按兩個穴，中醫認為能安神、寬胸。在圖上點給她看。", "en": "Two points she can press before sleep; in TCM reasoning they calm the spirit and open the chest. Show her on the chart."}]
+       ],
+       "mini": {"type": "points", "q": {"zh": "點出膻中與神門", "en": "Locate Danzhong (CV17) and Shenmen (HT7)"}, "codes": ["CV17", "HT7"], "view": "front"},
+       "post": [
+        ["me", {"zh": "膻中在兩乳頭連線中點；神門在手腕掌側橫紋、小指那一側的凹陷。輕輕揉，配合慢慢吐氣。", "en": "Danzhong is midway between the nipples; Shenmen on the palm-side wrist crease, in the hollow on the little-finger side. Rub gently while breathing out slowly."}],
+        ["ching", {"zh": "按膻中的時候順便摸一下乳房。如果有一塊紅腫熱痛又發燒，是乳腺炎，要就醫，不要硬撐。", "en": "While pressing Danzhong, check the breasts too. A red, hot, painful patch with fever is mastitis: see a doctor, don't tough it out."}],
+        ["mentor", {"zh": "還有兩個：一邊小腿腫痛、突然喘，或劇烈頭痛、看不清楚，都是急診。", "en": "Two more: one swollen painful calf or sudden breathlessness, or a severe headache with blurred vision. Both mean emergency."}]
+       ]}
+     ]},
+    {"id": "plan", "name": {"zh": "改寫月子筆記", "en": "Rewriting the notebook"}, "sub": {"zh": "17:00 · 衛教桌", "en": "17:00 · counselling desk"}, "t": 1020, "mood": "eve",
+     "note": {"zh": "舊規矩和新規矩寫在同一頁", "en": "Old rules and new on the same page"},
+     "beats": [
+      {"id": "e1", "to": "hung", "guide": {"zh": "和洪媽媽一起改筆記", "en": "Rewrite the notebook with Mrs Hung"},
+       "lines": [
+        ["hung", {"zh": "你們說，我寫。我的字比較漂亮。", "en": "You tell me, I write. My handwriting's nicer."}],
+        ["me", {"zh": "生化湯：停。麻油雞：米酒水，一週幾次。溫開水：可以喝。炒麥芽：不要。", "en": "Shenghua Tang: stopped. Sesame-oil chicken: rice-wine water, a few times a week. Warm water: yes. Barley sprout: no."}],
+        ["hung", {"zh": "洗頭呢？", "en": "And washing her hair?"}],
+        ["ching", {"zh": "溫水洗，馬上吹乾。", "en": "Warm water, dried at once."}],
+        ["hung", {"zh": "（寫完，停了一下）我那一個月沒洗頭，現在想起來還會癢。", "en": "(Writes it, pauses) I didn't wash my hair that whole month. Thinking of it still makes my scalp itch."}],
+        ["mentor", {"zh": "洪媽媽，坐月子最好的規矩，妳今天自己加了一條：有人陪她。", "en": "Mrs Hung, the best confinement rule of all, you added yourself today: someone stays with her."}]
+       ],
+       "item": "notebook"},
+      {"id": "e2", "roles": ["nurse"], "to": "place:board", "guide": {"zh": "在白板寫回診提醒", "en": "Write the follow-up on the board"},
+       "lines": [
+        ["ching", {"zh": "回診兩件事：婦產科複查出血和血色素；我們這裡再做一次量表，順便看哺乳和睡眠。", "en": "Two follow-ups: obstetrics to recheck bleeding and haemoglobin; here, the questionnaire again, plus feeding and sleep."}],
+        ["me", {"zh": "補氣血的藥膳呢？", "en": "And the nourishing dishes?"}],
+        ["ching", {"zh": "等婦產科說出血穩定。箭頭上的條件，我們自己也要遵守。", "en": "Once obstetrics says the bleeding is settled. The condition on that arrow applies to us too."}]
+       ]}
+     ]},
+    {"id": "night", "name": {"zh": "先生的訊息", "en": "A message from her husband"}, "sub": {"zh": "21:00 · 值班手機", "en": "21:00 · the on-call phone"}, "t": 1260, "mood": "night",
+     "note": {"zh": "她睡了一段完整的", "en": "She slept one whole stretch"},
+     "beats": [
+      {"id": "n1", "when": {"flag": "epds-done", "is": true}, "ring": {"title": {"zh": "阿哲傳訊息", "en": "Message from Zhe"}, "sub": {"zh": "她說今天第一次有人問她好不好", "en": "She says it's the first time anyone asked how she was"}, "from": "zhe"},
+       "lines": [
+        ["zhe", {"zh": "今晚我用擠出來的奶餵夜奶，她睡了好長一段。她說，今天是第一次有人問她好不好。", "en": "Tonight I did a night feed with pumped milk and she slept a long stretch. She said today was the first time anyone asked how she was."}],
+        ["zhe", {"zh": "我媽把筆記貼在冰箱上了。「溫水洗，馬上吹乾」那一行，她用紅筆圈起來。", "en": "Mum stuck the notebook on the fridge. She circled “warm water, dried at once” in red."}]
+       ]},
+      {"id": "n2", "when": {"flag": "epds-done", "is": false}, "ring": {"title": {"zh": "阿哲來電", "en": "Zhe calling"}, "sub": {"zh": "她在浴室哭了好久", "en": "She's been crying in the bathroom a long time"}, "call": true, "from": "zhe"},
+       "lines": [
+        ["zhe", {"zh": "她在浴室哭了好久，說覺得自己撐不下去。我不知道該怎麼辦。", "en": "She's been crying in the bathroom a long time; she says she can't keep going. I don't know what to do."}],
+        ["me", {"zh": "請陪在她身邊，直接問她：有沒有想傷害自己或寶寶？只要有一點點，現在就去急診，或打安心專線。", "en": "Stay with her and ask her directly: is she thinking of hurting herself or the baby? If there's even a little of that, go to emergency now, or call a crisis line."}],
+        ["zhe", {"zh": "……她說沒有，只是太累了，覺得沒有人懂。", "en": "…She says no; she's just exhausted and feels nobody understands."}],
+        ["me", {"zh": "下午我只叫她喝湯，沒有好好問她。是我漏了。明天一早小晴會打給她做量表，我們陪她把醫師約好。", "en": "This afternoon I only told her to have soup and didn't really ask. I missed it. First thing tomorrow Ching will call her to do the questionnaire, and we'll get her an appointment together."}]
+       ]},
+      {"id": "n3", "to": "place:board", "guide": {"zh": "擦白板，下班", "en": "Clean the board and go home"},
+       "lines": [
+        ["sys", {"zh": "你把白板擦乾淨，只留中間那個箭頭和上面的字：「惡露乾淨、醫師說可以」。", "en": "You wipe the whiteboard, leaving only the arrow in the middle and its label: “lochia clear, doctor agrees”."}],
+        ["sys", {"zh": "想了想，你在箭頭下面多加了一行小字：「還有，問她好不好。」", "en": "After a moment you add a small line beneath it: “And ask her how she is.”"}]
+       ],
+       "end": true}
+     ]}
+  ],
+  "ending": {"title": {"zh": "下班了", "en": "End of shift"}, "sub": {"zh": "一包停掉的生化湯、一頁改寫的筆記、一段完整的睡眠", "en": "One course stopped, one page rewritten, one unbroken sleep"},
+             "stats": ["choices", "stages", "drills", "calls", "items", "time"]}
+}

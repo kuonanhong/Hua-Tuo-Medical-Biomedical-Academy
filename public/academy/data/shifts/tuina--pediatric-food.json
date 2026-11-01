@@ -1,0 +1,271 @@
+{
+ "format": "huatuo-shift-v2",
+ "department": "tuina",
+ "case": "pediatric-food",
+ "caseTitle": {"zh": "不吃飯的糖糖", "en": "Tang-Tang will not eat"},
+ "condition": {"zh": "兒科 · 小兒食積", "en": "Paediatrics · food accumulation"},
+ "difficulty": 1,
+ "title": {"zh": "小兒推拿門診日", "en": "A day in paediatric tuina"},
+ "tagline": {"zh": "一個脹脹的小肚子，和一通不能等到天亮的電話", "en": "A small bloated tummy, and a call that cannot wait for morning"},
+ "room": "tcm-clinic",
+ "minutes": 25,
+ "roles": [
+  {"id": "intern", "zh": "中醫見習醫師", "en": "TCM clinical clerk",
+   "desc": {"zh": "望小孩的面色、看舌苔、摸肚子，說服阿嬤暫停補品；夜裡那通電話，由你判斷要不要去急診。", "en": "Read the child's complexion, tongue and belly, talk the grandmother out of the tonics; and when the phone rings at night, you decide whether it is an emergency."}},
+  {"id": "therapist", "zh": "小兒推拿治療師", "en": "Paediatric tuina therapist",
+   "desc": {"zh": "溫手、介質、清胃經、運內八卦、摩腹、捏脊，還有讓三歲小孩不哭的本事。", "en": "Warm hands, lubricant, clearing the stomach line, the inner bagua, abdominal rubbing, spinal pinching, and the art of keeping a three-year-old from crying."}}
+ ],
+ "cast": {
+  "master": {"name": {"zh": "許師傅", "en": "Master Hsu"}, "role": {"zh": "中醫兒科醫師（師傅）", "en": "TCM paediatrician (mentor)"}, "tag": "SF", "color": "#81296d", "body": "mentor",
+   "about": {"zh": "白袍口袋裡永遠有貼紙。跟小孩說話會蹲下來，跟家長說話會站起來。", "en": "Always has stickers in his coat pocket. Crouches to talk to children, stands up to talk to parents."}},
+  "xiaohua": {"name": {"zh": "小花姐", "en": "Sister Hsiao-Hua"}, "role": {"zh": "小兒推拿治療師", "en": "Paediatric tuina therapist"}, "tag": "PT", "color": "#2f8f8f", "body": "therapist",
+   "about": {"zh": "手永遠是暖的，據說是因為她每天早上先搓三百下。會一邊推一邊唱歌，走音但有效。", "en": "Her hands are always warm; the story is she rubs them three hundred times every morning. Sings while she works, off-key but effective."}},
+  "amei": {"name": {"zh": "阿美護理師", "en": "Nurse A-Mei"}, "role": {"zh": "兒科診間護理師", "en": "Paediatric clinic nurse"}, "tag": "RN", "color": "#3b8f6a", "body": "nurse",
+   "about": {"zh": "量身高體重體溫，順便記住每個小孩最喜歡的卡通。", "en": "Measures height, weight and temperature, and remembers every child's favourite cartoon on the side."}},
+  "tangtang": {"name": {"zh": "糖糖", "en": "Tang-Tang"}, "role": {"zh": "三歲，不吃飯、肚子脹", "en": "Three years old, off her food, bloated"}, "tag": "P1", "color": "#c2703a", "body": "patient",
+   "about": {"zh": "虛構教學個案。三歲，幼兒園小班。上週末生日吃了很多蛋糕和炸雞，之後不吃飯、肚子脹、口臭、晚上翻來覆去、大便酸臭。抱著一隻缺耳朵的兔子。", "en": "Fictional teaching case. Three years old, first year of kindergarten. Ate a great deal of cake and fried chicken at her birthday last weekend; since then she will not eat, her belly is bloated, her breath sour, she tosses at night and her stools smell sour. Carries a rabbit with one ear missing."}},
+  "grandma": {"name": {"zh": "糖糖阿嬤", "en": "Tang-Tang's grandmother"}, "role": {"zh": "家屬，白天照顧者", "en": "Family, daytime carer"}, "tag": "FAM", "color": "#8a6d3b", "body": "family",
+   "about": {"zh": "信奉「多吃才會長大」。保溫瓶裡裝著人參雞湯，是早上燉的。", "en": "Believes children grow by eating more. Her thermos holds ginseng chicken soup, stewed this morning."}},
+  "mum": {"name": {"zh": "糖糖媽媽", "en": "Tang-Tang's mother"}, "role": {"zh": "家屬（電話）", "en": "Family (by phone)"}, "tag": "MUM", "color": "#5a6b7a", "phoneOnly": true,
+   "about": {"zh": "上班中，用訊息和電話參與一切。晚上接手照顧。", "en": "At work, present through messages and calls. Takes over in the evening."}}
+ },
+ "places": {
+  "desk": {"name": {"zh": "脈枕診桌", "en": "Consulting desk"}, "hot": "pulse-desk"},
+  "couch": {"name": {"zh": "隔簾後的治療床", "en": "Couch behind the curtain"}, "hot": "couch"},
+  "lamp": {"name": {"zh": "舌診燈", "en": "Tongue lamp"}, "hot": "lamp"},
+  "bronze": {"name": {"zh": "針灸銅人", "en": "Bronze acupuncture figure"}, "hot": "bronze"},
+  "cabinet": {"name": {"zh": "藥材標本櫃", "en": "Herb specimen cabinet"}, "hot": "cabinet"},
+  "board": {"name": {"zh": "衛教白板", "en": "Education whiteboard"}, "hot": "whiteboard"},
+  "sink": {"name": {"zh": "洗手台", "en": "Hand-wash sink"}, "hot": "sink"},
+  "notes": {"name": {"zh": "紀錄桌", "en": "Notes desk"}, "hot": "desk"}
+ },
+ "glossary": [
+  {"term": {"zh": "食積", "en": "food accumulation"}, "plain": {"zh": "中醫對「吃太多、消化不了」的說法：食物停在脾胃裡，肚子脹、口臭、不想吃、睡不安、大便酸臭。小孩特別常見。", "en": "The TCM name for “too much food, not digested”: food stalls in the spleen–stomach, giving bloating, sour breath, no appetite, restless sleep and sour-smelling stools. Very common in children."}},
+  {"term": {"zh": "脾常不足", "en": "spleen often insufficient"}, "plain": {"zh": "中醫兒科的基本觀念：小孩的消化功能還沒長好，吃多、吃油、吃補都容易積。", "en": "A basic idea of TCM paediatrics: a child's digestion is not yet mature, so overeating, greasy food and tonics easily cause accumulation."}},
+  {"term": {"zh": "舌苔厚膩", "en": "thick greasy coating"}, "plain": {"zh": "舌頭上那層苔又厚又像抹了油。中醫認為是食積或痰濕停在裡面的外在表現。", "en": "The tongue coating is thick and looks oily. In TCM reasoning it is the outward sign of food or damp stuck inside."}},
+  {"term": {"zh": "山根青筋", "en": "blue vein at the nose bridge"}, "plain": {"zh": "兩眼之間鼻樑根部隱約的青色血管。古籍認為小兒見此多與脾胃積滯或受驚有關，是望診的線索之一，不是診斷。", "en": "A faint blue vessel at the root of the nose between the eyes. The classics link it in children to digestive stagnation or fright; one clue in inspection, not a diagnosis."}},
+  {"term": {"zh": "介質", "en": "medium"}, "plain": {"zh": "推拿前抹在皮膚上的滑石粉、嬰兒油或薑汁，讓手法滑順不磨破小孩細嫩的皮膚。", "en": "Talc, baby oil or ginger juice applied before tuina so the hands glide and do not chafe a child's delicate skin."}},
+  {"term": {"zh": "清胃經", "en": "clearing the stomach line"}, "plain": {"zh": "小兒推拿特定穴：拇指掌面近掌端那一節，從指根向指尖直推為清。中醫認為能消食和胃。", "en": "A paediatric tuina line on the palm side of the thumb's base segment; pushing from the root towards the tip is “clearing”. In TCM reasoning it disperses food and harmonises the stomach."}},
+  {"term": {"zh": "揉板門", "en": "kneading Banmen"}, "plain": {"zh": "板門在手掌大魚際的中央，用拇指揉。小兒推拿治食積、腹脹的常用穴。", "en": "Banmen sits in the middle of the thenar eminence; knead it with the thumb. A standard paediatric point for food accumulation and bloating."}},
+  {"term": {"zh": "運內八卦", "en": "the inner bagua"}, "plain": {"zh": "以掌心為圓心、在手掌畫圓的手法。中醫認為能寬胸理氣、消食化痰，小孩多半覺得癢癢的。", "en": "Drawing circles on the palm around its centre. In TCM reasoning it opens the chest, moves qi and disperses food; most children find it ticklish."}},
+  {"term": {"zh": "摩腹", "en": "abdominal rubbing"}, "plain": {"zh": "手掌輕貼肚子，順時針慢慢畫圓。順著大腸的方向，中醫認為能理氣消食、通便。", "en": "The palm rests lightly on the belly and circles slowly clockwise, following the colon. In TCM reasoning it moves qi, disperses food and eases the bowels."}},
+  {"term": {"zh": "捏脊", "en": "spinal pinching"}, "plain": {"zh": "從尾椎沿脊柱兩側把皮膚捏起來、一路往上推捻到頸部。小兒推拿的收功手法，中醫認為能健脾和胃、強壯身體。", "en": "Pinching the skin up on both sides of the spine from the tailbone and rolling it up to the neck. The closing technique of paediatric tuina; in TCM reasoning it strengthens the spleen and stomach."}},
+  {"term": {"zh": "保和丸", "en": "Baohe Wan"}, "plain": {"zh": "消食導滯的代表方：山楂消肉食、神麴消穀食、萊菔子消麵食，加陳皮、半夏、茯苓、連翹。小孩用不用、怎麼用，依醫師處方。", "en": "The representative formula for dispersing food: hawthorn for meat, medicated leaven for grain, radish seed for flour foods, with tangerine peel, pinellia, poria and forsythia. Whether and how a child takes it is for the physician to prescribe."}},
+  {"term": {"zh": "腸套疊", "en": "intussusception"}, "plain": {"zh": "一段腸子套進另一段腸子裡。嬰幼兒會一陣一陣劇烈哭鬧、縮腿、嘔吐，之後可能排出果醬樣血便。這是急診，不是推拿。", "en": "One segment of bowel telescopes into the next. Infants and toddlers cry in violent bursts, draw up their legs and vomit; later a jelly-like bloody stool may appear. An emergency, never tuina."}},
+  {"term": {"zh": "陣發性哭鬧", "en": "crying in bursts"}, "plain": {"zh": "哭一陣、停一陣、再哭一陣，間隔時安靜甚至蒼白無力。與一直哭不同，是腸套疊的典型警訊。", "en": "Crying, then quiet, then crying again, pale and listless in between. Different from continuous crying, and the classic warning sign of intussusception."}}
+ ],
+ "codex": [
+  {"id": "bronze-figure", "kind": "equipment", "name": {"zh": "針灸銅人", "en": "Bronze acupuncture figure"}, "text": {"zh": "全身標著經絡穴位的銅人。對三歲小孩來說，是診間裡最酷的玩具，也是最好的破冰工具。", "en": "A bronze figure marked with every channel and point. To a three-year-old it is the coolest toy in the room, and the best ice-breaker."}, "hot": "bronze"},
+  {"id": "tongue-lamp", "kind": "equipment", "name": {"zh": "舌診燈", "en": "Tongue lamp"}, "text": {"zh": "接近日光的白燈。看舌苔的顏色要在這種光下，黃光會把白苔看成黃苔。", "en": "A daylight-white lamp. Coating colour must be read under it; a warm bulb turns a white coating yellow."}, "hot": "lamp"},
+  {"id": "talc", "kind": "equipment", "name": {"zh": "介質罐", "en": "The lubricant pot"}, "text": {"zh": "滑石粉、嬰兒油，冬天還有溫過的薑汁。小兒推拿的手法快而輕，沒有介質會把皮膚磨紅。", "en": "Talc, baby oil, and in winter warmed ginger juice. Paediatric strokes are quick and light; without a medium the skin chafes."}, "hot": "cabinet"},
+  {"id": "sticker", "kind": "item", "name": {"zh": "糖糖給的貼紙", "en": "Tang-Tang's sticker"}, "text": {"zh": "一隻兔子貼紙，有兩隻耳朵。她說她的兔子少一隻耳朵，所以這張給你。", "en": "A rabbit sticker, with both ears. She said her rabbit is missing one, so this one is for you."}},
+  {"id": "pediatric-features", "kind": "concept", "name": {"zh": "小兒的生理特點與推拿為什麼輕", "en": "Why children are different and why the hands are light"}, "text": {"zh": "中醫說小兒「臟腑嬌嫩、形氣未充」、「脾常不足、肝常有餘」：消化弱、容易積食，也容易化熱、驚風。所以小兒推拿用特定穴（多在手掌前臂）、手法輕快柔和、次數多而不重，不做扳法與重按。小孩的皮膚薄，介質不能省；小孩不會說「痛」，哭聲和臉色就是回饋。", "en": "TCM says a child's organs are tender and unformed, the spleen often insufficient, the liver often in excess: digestion is weak, food stagnates easily, heat and convulsions follow easily. So paediatric tuina uses special points (mostly on the hand and forearm), strokes that are quick, light and gentle, many repetitions rather than force, and never thrusts or heavy pressing. The skin is thin, so the medium is never skipped; a child cannot say “pain”, so crying and colour are the feedback."}},
+  {"id": "food-stagnation", "kind": "concept", "name": {"zh": "食積的辨證與治法", "en": "Food accumulation: pattern and method"}, "text": {"zh": "問：吃了什麼、吃了多少、什麼時候開始。望：腹脹、口臭、舌苔厚膩、山根青筋。觸：肚子脹滿、喜按或拒按。單純食積，治以消食導滯；積久化熱，加清熱；本來脾虛的孩子，消積之後還要健脾。推拿以清胃經、揉板門、運內八卦、摩腹、捏脊為主。飲食要跟著改，不然推完又積。", "en": "Ask: what, how much, since when. Look: bloated belly, sour breath, thick greasy coating, a blue vein at the nose bridge. Touch: distension that likes or refuses pressure. Simple accumulation is treated by dispersing food; long-standing stagnation that has turned to heat needs clearing too; a child with a weak spleen needs strengthening once the food is cleared. Tuina centres on clearing the stomach line, kneading Banmen, the inner bagua, abdominal rubbing and spinal pinching. The diet must change with it, or the belly refills."}},
+  {"id": "red-flags-child", "kind": "concept", "name": {"zh": "小兒腹痛的紅旗：什麼時候不是食積", "en": "Red flags in a child's belly: when it is not food"}, "text": {"zh": "陣發性劇烈哭鬧、縮腿、臉色蒼白、嘔吐（尤其吐綠色膽汁）、果醬樣血便、肚子摸到硬塊或拒按、高燒、精神萎靡、嗜睡、脫水（尿少、哭沒眼淚、囟門凹陷）。任何一項，停止推拿，直接兒科急診。腸套疊的孩子拖越久，腸子壞死的風險越高。", "en": "Violent crying in bursts, drawing up the legs, pallor, vomiting (especially green bile), jelly-like bloody stool, a hard mass or a belly that refuses touch, high fever, listlessness, drowsiness, dehydration (little urine, tearless crying, a sunken fontanelle). Any one of these: stop tuina and go straight to paediatric emergency. The longer an intussusception waits, the greater the risk of dead bowel."}},
+  {"id": "tonics", "kind": "concept", "name": {"zh": "為什麼不吃飯的孩子不能補", "en": "Why a child who will not eat must not be tonified"}, "text": {"zh": "家長看到孩子不吃，直覺是「補」。但中醫認為食積是「實」，補是給「虛」用的；人參雞湯、滋補藥膳會讓停在裡面的東西更難消化，越補越脹。順序是：先消、再養、最後才補，而且小孩多半不需要補，需要的是清淡少量多餐。", "en": "Parents see a child refusing food and reach for tonics. But in TCM reasoning food accumulation is an excess, and tonics are for deficiency; ginseng chicken soup and rich medicinal dishes make what is stuck harder to digest. The order is disperse, then nourish, then tonify, and most children need no tonifying at all, only light food in small frequent meals."}}
+ ],
+ "segs": [
+  {"id": "morning", "name": {"zh": "開診前", "en": "Before clinic"}, "sub": {"zh": "08:20 · 中醫兒科診間", "en": "08:20 · TCM paediatric clinic"}, "t": 500, "mood": "day",
+   "note": {"zh": "開診：銅人與貼紙就位", "en": "Clinic opens: bronze figure and stickers ready"},
+   "beats": [
+    {"id": "m1", "to": "place:desk", "guide": {"zh": "到診桌準備開診", "en": "Set up at the desk"},
+     "lines": [
+      ["sys", {"zh": "中醫兒科診間，早上八點二十分。桌上有脈枕、貼紙盒，和一隻不知道誰留下的塑膠恐龍。", "en": "The TCM paediatric clinic, twenty past eight. On the desk: a pulse cushion, a box of stickers, and a plastic dinosaur nobody has claimed."}],
+      ["master", {"zh": "早。今天第一位是三歲的糖糖，阿嬤帶來的，主訴不吃飯、肚子脹。小兒推拿和大人推拿最大的不同是什麼？", "en": "Morning. First today is Tang-Tang, three years old, brought by her grandmother: not eating, bloated. What is the biggest difference between paediatric and adult tuina?"}],
+      ["me", {"zh": "特定穴多在手掌前臂，手法輕快柔和、次數多而不重，不做扳法。", "en": "Special points mostly on the hand and forearm, strokes quick, light and gentle, many repetitions rather than force, no thrusts."}],
+      ["master", {"zh": "還有一個：小孩不會說「痛」。哭聲和臉色就是你的回饋。", "en": "One more: a child cannot say “pain”. Crying and colour are your feedback."}]
+     ]},
+    {"id": "m2", "to": "xiaohua", "guide": {"zh": "跟小花姐準備破冰工具", "en": "Help Sister Hsiao-Hua break the ice"},
+     "lines": [
+      ["xiaohua", {"zh": "三歲的小孩進診間會先找「最酷的東西」。你先幫我找到銅人，等一下讓她摸一下，手就不怕我了。", "en": "A three-year-old looks for the coolest thing in the room first. Find me the bronze figure; once she has touched it, she will not be afraid of my hands."}]
+     ],
+     "mini": {"type": "find", "hot": "bronze", "q": {"zh": "找到針灸銅人", "en": "Find the bronze acupuncture figure"}},
+     "post": [
+      ["xiaohua", {"zh": "好。手搓熱，我們開診。", "en": "Good. Warm your hands; we are open."}]
+     ]}
+   ]},
+  {"id": "visit", "name": {"zh": "糖糖與阿嬤", "en": "Tang-Tang and grandmother"}, "sub": {"zh": "09:00 · 診桌與舌診燈", "en": "09:00 · desk and tongue lamp"}, "t": 540, "mood": "day",
+   "note": {"zh": "糖糖：食積，先消不補", "en": "Tang-Tang: food accumulation, disperse before anything"},
+   "beats": [
+    {"id": "v1", "to": "tangtang", "guide": {"zh": "蹲下來跟糖糖打招呼", "en": "Crouch and say hello to Tang-Tang"},
+     "lines": [
+      ["sys", {"zh": "糖糖躲在阿嬤腿後面，抱著一隻缺耳朵的兔子，眼睛盯著銅人。", "en": "Tang-Tang hides behind her grandmother's legs, hugging a one-eared rabbit, eyes fixed on the bronze figure."}],
+      ["grandma", {"zh": "醫師，她這禮拜都不吃飯，肚子鼓鼓的，嘴巴臭，晚上一直翻。我早上燉了人參雞湯她也只喝兩口。", "en": "Doctor, she hasn't eaten all week, her tummy's round, her breath smells, she tosses all night. I stewed ginseng chicken soup this morning and she only took two sips."}],
+      ["me", {"zh": "阿嬤，這之前有沒有吃特別多的時候？", "en": "Grandma, was there a time before this when she ate a great deal?"}],
+      ["grandma", {"zh": "上禮拜六她生日，蛋糕、炸雞、汽水……小孩子嘛，開心。", "en": "Her birthday last Saturday: cake, fried chicken, fizzy drinks… children, you know, they were happy."}],
+      ["master", {"zh": "吃了什麼、吃了多少、什麼時候開始。你已經問到了。再看看她的臉：山根青筋、嘴唇紅。然後舌頭。", "en": "What, how much, since when: you have it. Now look at her face: the vein at the nose bridge, the red lips. Then the tongue."}]
+     ]},
+    {"id": "v2", "to": "place:lamp", "guide": {"zh": "在舌診燈下看舌", "en": "Read the tongue under the lamp"},
+     "lines": [
+      ["xiaohua", {"zh": "糖糖，我們來比賽誰的舌頭伸得長！啊——", "en": "Tang-Tang, let's see who can stick their tongue out further! Aaah—"}],
+      ["sys", {"zh": "糖糖把舌頭伸出來，比小花姐還長。", "en": "Tang-Tang sticks out her tongue, further than Sister Hsiao-Hua."}]
+     ],
+     "mini": {"type": "tongue", "q": {"zh": "舌質偏紅、苔黃厚而膩。這是哪一種證？", "en": "Reddish body, thick yellow greasy coating. Which pattern?"}, "tongue": {"body": "red", "coat": "greasy-yellow", "shape": "normal"},
+      "options": [
+       {"zh": "食積化熱", "en": "Food accumulation turning to heat", "ok": true, "why": {"zh": "舌苔厚膩是積滯停於中焦；苔黃、舌紅、口臭、唇紅，是積久化熱。治以消食導滯、略佐清熱。", "en": "A thick greasy coating is stagnation in the middle burner; a yellow coating, red body, sour breath and red lips show it has turned to heat. Disperse food and gently clear heat."}},
+       {"zh": "脾虛濕困", "en": "Spleen deficiency with damp", "ok": false, "why": {"zh": "脾虛濕困多見舌淡胖、有齒痕、苔白膩，孩子面色萎黃、容易拉肚子。糖糖的舌是紅的、苔是黃的。", "en": "Spleen deficiency with damp shows a pale swollen tongue with teeth marks and a white greasy coating, a sallow child who gets diarrhoea. Tang-Tang's tongue is red and the coating yellow."}},
+       {"zh": "陰虛內熱", "en": "Yin deficiency heat", "ok": false, "why": {"zh": "陰虛的舌紅而少苔甚至剝苔、乾。這條舌頭的苔又厚又膩，不是少苔。", "en": "Yin deficiency gives a red tongue with little or peeled, dry coating. This coating is thick and greasy, the opposite of scant."}},
+       {"zh": "正常小兒舌象", "en": "A normal child's tongue", "ok": false, "why": {"zh": "正常是淡紅舌、薄白苔。厚膩黃苔不是正常。", "en": "Normal is a pale-red body with a thin white coating. Thick greasy yellow is not normal."}}
+      ]},
+     "post": [
+      ["master", {"zh": "食積化熱。小孩「脾常不足」，一頓生日就夠積一個禮拜。", "en": "Food accumulation turning to heat. A child's spleen is often insufficient; one birthday is enough to block a week."}]
+     ]},
+    {"id": "v3", "to": "grandma", "guide": {"zh": "回答阿嬤的補品問題", "en": "Answer grandmother about the tonics"},
+     "lines": [
+      ["grandma", {"zh": "那人參雞湯要不要繼續？不吃飯就是虛，虛就要補啊。晚上我還要燉四物給她。", "en": "So should I keep up the ginseng soup? Not eating means she's weak, and weak means tonics. I'm making her a four-herb stew tonight too."}]
+     ],
+     "mini": {"type": "choice", "q": {"zh": "阿嬤想繼續補，你怎麼說？", "en": "Grandmother wants to keep tonifying. What do you say?"},
+      "options": [
+       {"zh": "先停補品，清淡少量多餐", "en": "Stop the tonics; light food, small frequent meals", "ok": true, "set": {"diet": true}, "why": {"zh": "中醫認為食積是實，補是給虛用的。先消、再養、最後才補。粥、蔬菜、少油少甜，餓一點沒關係。", "en": "In TCM reasoning accumulation is an excess and tonics are for deficiency. Disperse first, nourish next, tonify last. Congee, vegetables, little oil or sugar; a little hunger is fine."}},
+       {"zh": "補了才有力氣吃，繼續燉", "en": "Tonics give her strength to eat; keep stewing", "ok": false, "set": {"diet": false}, "why": {"zh": "越補越脹。停在裡面的東西還沒消，再加滋膩的湯只會更難消化。", "en": "The more you tonify, the more she bloats. What is stuck has not cleared; rich soup makes it harder still."}},
+       {"zh": "乾脆餓一天，讓腸胃休息", "en": "Fast her for a day to rest the gut", "ok": false, "set": {"diet": false}, "why": {"zh": "三歲小孩不能整天不吃不喝，會脫水、低血糖。是「少量清淡」，不是「不吃」。", "en": "A three-year-old cannot go a whole day without food and drink; she will dehydrate and her sugar will drop. “Small and light”, not “nothing”."}}
+      ]},
+     "post": [
+      ["grandma", {"zh": "……那雞湯我自己喝。", "en": "…Then I'll drink the soup myself."}],
+      ["master", {"zh": "阿嬤，這是今天最好的決定。", "en": "Grandma, that is the best decision of the day."}]
+     ]},
+    {"id": "v4", "to": "place:couch", "guide": {"zh": "排好小兒推拿流程", "en": "Plan the paediatric sequence"},
+     "lines": [
+      ["xiaohua", {"zh": "阿嬤抱著她坐，背靠著阿嬤，手伸出來給我。流程你排，我來唱歌。", "en": "Grandmother holds her on her lap, back against her, hand out to me. You order the steps; I do the singing."}]
+     ],
+     "mini": {"type": "order", "q": {"zh": "小兒食積推拿的流程", "en": "Paediatric tuina sequence for food accumulation"},
+      "steps": [
+       {"zh": "洗手、溫手、檢查指甲", "en": "Wash, warm the hands, check the nails"},
+       {"zh": "抹介質，先讓她摸摸你的手", "en": "Apply the medium; let her touch your hand"},
+       {"zh": "清胃經、揉板門、運內八卦", "en": "Clear stomach line, knead Banmen, inner bagua"},
+       {"zh": "摩腹、揉中脘、揉天樞", "en": "Rub the abdomen, knead Zhongwan and Tianshu"},
+       {"zh": "按揉足三里", "en": "Press and knead Zusanli"},
+       {"zh": "捏脊收功，衛教飲食", "en": "Spinal pinching to close; diet advice"}
+      ]},
+     "post": [
+      ["master", {"zh": "手上的穴先做，肚子後做，捏脊永遠最後。小孩翻臉很快，重要的要先做完。", "en": "Hand points first, belly next, spinal pinching always last. A child's mood turns fast; the important work goes first."}]
+     ]},
+    {"id": "v5", "to": "place:couch", "guide": {"zh": "跟小花姐學揉法", "en": "Learn kneading from Hsiao-Hua"},
+     "lines": [
+      ["xiaohua", {"zh": "揉板門：拇指貼在大魚際中間，小圓、快、輕，皮膚跟著動但不滑開。一邊揉一邊數，她會跟你一起數。", "en": "Kneading Banmen: thumb on the middle of the thenar, small fast light circles, the skin moves with you but your thumb never slides. Count out loud; she will count with you."}],
+      ["tangtang", {"zh": "一、二、三、五！", "en": "One, two, three, five!"}]
+     ],
+     "mini": {"type": "drill", "template": "tuina", "drill": "knead"},
+     "post": [
+      ["xiaohua", {"zh": "清胃經從指根推向指尖，運內八卦繞掌心畫圈。她笑了就是對的。", "en": "Clear the stomach line from root to tip, and circle the palm for the inner bagua. If she laughs, you are doing it right."}]
+     ]},
+    {"id": "v6", "to": "place:couch", "guide": {"zh": "取中脘、天樞、足三里", "en": "Locate Zhongwan, Tianshu, Zusanli"},
+     "lines": [
+      ["master", {"zh": "肚子上的穴：中脘是胃的募穴，天樞是大腸的募穴，再加腿上的足三里。小孩的穴用他自己的手指比例量。圖上點給我看。", "en": "Belly points: Zhongwan, the stomach's alarm point; Tianshu, the large intestine's; plus Zusanli on the leg. A child's points are measured by the child's own finger widths. Show me on the figure."}]
+     ],
+     "mini": {"type": "points", "q": {"zh": "點出中脘、天樞、足三里", "en": "Tap Zhongwan, Tianshu and Zusanli"}, "codes": ["CV12", "ST25", "ST36"], "view": "front"},
+     "post": [
+      ["master", {"zh": "肚子上的手法只有輕揉和摩，絕不重按。先摸一下肚子軟不軟、有沒有硬塊，這一步不能跳過。", "en": "On the belly only light kneading and rubbing, never deep pressure. First feel whether it is soft and whether there is any mass; that step is never skipped."}]
+     ]},
+    {"id": "v7", "to": "place:couch", "guide": {"zh": "摩腹：理氣消食", "en": "Abdominal rubbing to disperse food"},
+     "lines": [
+      ["xiaohua", {"zh": "摩腹：整個手掌貼著，順時針、慢慢的，像在畫一個太陽。順著大腸的方向走，不要逆。", "en": "Abdominal rubbing: the whole palm on the belly, clockwise, slow, as if drawing a sun. Follow the colon; never go backwards."}]
+     ],
+     "mini": {"type": "stage", "case": "tuina-mo-fa-workflow", "stage": 4},
+     "post": [
+      ["sys", {"zh": "糖糖的肚子咕嚕叫了一聲。全診間都聽到了。", "en": "Tang-Tang's tummy gurgles. The whole clinic hears it."}],
+      ["tangtang", {"zh": "肚肚在講話。", "en": "Tummy's talking."}]
+     ]},
+    {"id": "v8", "roles": ["therapist"], "to": "place:couch", "guide": {"zh": "捏脊收功", "en": "Close with spinal pinching"},
+     "lines": [
+      ["me", {"zh": "糖糖趴在阿嬤腿上，我從尾椎兩邊把皮膚捏起來，一路往上推到脖子。像小火車爬山。", "en": "Tang-Tang lies across her grandmother's lap; I pinch the skin up beside the tailbone and roll it up to the neck. Like a little train climbing a hill."}],
+      ["xiaohua", {"zh": "捏起來的皮要夠、推要連續、力道要她覺得癢而不是痛。最後一遍可以「捏三提一」。", "en": "Lift enough skin, keep the roll continuous, pressure that tickles rather than hurts. On the last pass you may lift on every third pinch."}]
+     ],
+     "mini": {"type": "stage", "case": "tuina-tuina-pediatric-digestion-workflow", "stage": 5, "member": true},
+     "post": [
+      ["tangtang", {"zh": "再一次！", "en": "Again!"}]
+     ]},
+    {"id": "v8i", "roles": ["intern"], "to": "place:notes", "guide": {"zh": "寫紀錄與衛教單", "en": "Write the note and advice sheet"},
+     "lines": [
+      ["me", {"zh": "主訴、飲食史、望診（山根青筋、唇紅）、舌象、腹診軟無硬塊、辨證食積化熱、手法、衛教。", "en": "Complaint, dietary history, inspection (nose-bridge vein, red lips), tongue, soft belly without mass, pattern: food accumulation turning to heat, techniques, advice."}],
+      ["master", {"zh": "衛教單上畫一個摩腹的箭頭，順時針，阿嬤在家才不會畫反。", "en": "Draw a clockwise arrow for the belly rub on the advice sheet, or grandmother will go the wrong way at home."}]
+     ]}
+   ]},
+  {"id": "cabinet", "name": {"zh": "藥材櫃前", "en": "At the herb cabinet"}, "sub": {"zh": "10:30 · 藥材標本櫃", "en": "10:30 · herb specimen cabinet"}, "t": 630, "mood": "day",
+   "note": {"zh": "媽媽的訊息：保和丸是什麼", "en": "Mum's message: what is Baohe Wan"},
+   "beats": [
+    {"id": "c1", "to": "place:cabinet", "guide": {"zh": "看媽媽傳來的訊息", "en": "Read the message from mum"},
+     "ring": {"title": {"zh": "糖糖媽媽訊息", "en": "Message from Tang-Tang's mum"}, "sub": {"zh": "阿嬤說要吃保和丸，那是什麼？安全嗎？", "en": "Grandma says Baohe Wan; what is it, is it safe?"}, "call": false, "from": "mum"},
+     "lines": [
+      ["sys", {"zh": "訊息：「醫師您好，我在上班。阿嬤說您提到保和丸，那是什麼？小孩吃安全嗎？推拿會不會傷到她？」", "en": "Message: “Hello doctor, I'm at work. Grandma says you mentioned Baohe Wan; what is it, is it safe for a child, and can the tuina hurt her?”"}],
+      ["master", {"zh": "好問題，三個都要答。先說方：消食導滯的代表方。櫃子裡把屬於保和丸的藥挑出來。", "en": "Good questions, all three deserve answers. The formula first: the representative one for dispersing food. Pick its herbs out of the cabinet."}]
+     ],
+     "mini": {"type": "herb", "q": {"zh": "挑出屬於保和丸的藥材", "en": "Pick the herbs that belong to Baohe Wan"}, "formula": "保和丸",
+      "pick": ["山楂", "神麴", "萊菔子", "陳皮", "茯苓"], "distractors": ["人參", "鹿茸", "熟地黃", "阿膠"]},
+     "post": [
+      ["master", {"zh": "山楂消肉食、神麴消穀食、萊菔子消麵食；陳皮、半夏理氣化痰，茯苓健脾，連翹清積熱。你挑掉的那幾味，全是阿嬤保溫瓶裡的東西。", "en": "Hawthorn for meat, leaven for grain, radish seed for flour; tangerine peel and pinellia move qi and phlegm, poria strengthens the spleen, forsythia clears the heat of stagnation. The ones you left out are exactly what is in grandmother's thermos."}],
+      ["me", {"zh": "回訊息：保和丸是消食的方，是否服用與劑型依醫師處方；推拿手法輕柔、不扳不重按，在吃飽後一段時間才做。", "en": "Reply: Baohe Wan disperses food; whether and in what form she takes it is for the physician to prescribe. The tuina is gentle, no thrusts or deep pressure, and done well after a meal, never right after."}]
+     ]}
+   ]},
+  {"id": "home", "name": {"zh": "下午：教阿嬤", "en": "Afternoon: teaching grandmother"}, "sub": {"zh": "14:30 · 衛教白板", "en": "14:30 · education whiteboard"}, "t": 870, "mood": "day",
+   "note": {"zh": "居家摩腹與飲食", "en": "Home belly rub and diet"},
+   "beats": [
+    {"id": "h1", "to": "place:board", "guide": {"zh": "在白板前教居家照護", "en": "Teach home care at the board"},
+     "lines": [
+      ["xiaohua", {"zh": "阿嬤，回家每天睡前摩腹，手要暖、順時針、輕輕的，她覺得舒服就對。不要在剛吃飽的時候做。", "en": "Grandma, every night before bed rub her belly: warm hand, clockwise, light; if she likes it you are doing it right. Never straight after a meal."}],
+      ["grandma", {"zh": "順時針是……這樣？", "en": "Clockwise is… this way?"}],
+      ["sys", {"zh": "阿嬤在空中畫了一個逆時針。小花姐把她的手翻過來。", "en": "Grandmother draws an anticlockwise circle in the air. Sister Hsiao-Hua gently turns her hand around."}],
+      ["master", {"zh": "還有最重要的：什麼情況不是食積、要直接去兒科急診？你來說。", "en": "And the most important part: when is it not food, and time for paediatric emergency? You tell her."}],
+      ["me", {"zh": "一陣一陣的劇烈哭鬧、縮腿、臉色白、一直吐、血便、肚子硬或不給摸、高燒、很沒精神。任何一項，不要再推，直接去急診。", "en": "Violent crying in bursts, drawing up the legs, pale, repeated vomiting, blood in the stool, a hard belly or one she will not let you touch, high fever, very listless. Any one of these: no more rubbing, straight to emergency."}]
+     ]},
+    {"id": "h2", "when": {"flag": "diet", "is": true}, "to": "grandma", "guide": {"zh": "阿嬤的午餐報告", "en": "Grandmother's lunch report"},
+     "lines": [
+      ["grandma", {"zh": "中午我給她喝白粥配一點青菜，她自己吃了半碗！雞湯我喝掉了。", "en": "At lunch I gave her plain congee with a few greens and she ate half a bowl by herself! I drank the soup."}],
+      ["master", {"zh": "半碗自己吃的粥，比一鍋餵進去的雞湯有價值。", "en": "Half a bowl she ate herself is worth more than a pot of soup spooned in."}]
+     ],
+     "item": "sticker"},
+    {"id": "h2b", "when": {"flag": "diet", "is": false}, "to": "grandma", "guide": {"zh": "阿嬤的午餐報告", "en": "Grandmother's lunch report"},
+     "lines": [
+      ["grandma", {"zh": "中午雞湯她又只喝兩口，然後肚子更鼓了。", "en": "At lunch she took two sips of the soup again, and her tummy's even rounder."}],
+      ["master", {"zh": "早上那個問題，我們再回答一次：先消，不補。今天晚上白粥。", "en": "Let us answer this morning's question again: disperse first, no tonics. Plain congee tonight."}],
+      ["grandma", {"zh": "……好啦。", "en": "…All right."}]
+     ],
+     "item": "sticker"}
+   ]},
+  {"id": "debrief", "name": {"zh": "關診", "en": "Closing clinic"}, "sub": {"zh": "17:30 · 診桌", "en": "17:30 · consulting desk"}, "t": 1050, "mood": "eve",
+   "note": {"zh": "師傅的問題：為什麼先消不補", "en": "The master's question: why disperse before tonify"},
+   "beats": [
+    {"id": "d1", "roles": ["therapist"], "to": "place:sink", "guide": {"zh": "清潔介質罐與治療床", "en": "Clean the medium pot and couch"},
+     "lines": [
+      ["me", {"zh": "介質罐蓋好、治療床消毒、兔子玩偶的耳朵……找不到。", "en": "Medium pot sealed, couch disinfected, the rabbit's missing ear… nowhere to be found."}],
+      ["amei", {"zh": "那隻耳朵三個月前就不見了。她說兔子聽一邊就夠了。", "en": "That ear went missing three months ago. She says one ear is enough for a rabbit."}]
+     ]},
+    {"id": "d2", "to": "master", "guide": {"zh": "聽師傅說一句話", "en": "Hear the master out"},
+     "lines": [
+      ["master", {"zh": "今天你學的最重要的事不是手法。是什麼？", "en": "The most important thing you learned today was not a technique. What was it?"}],
+      ["me", {"zh": "不吃飯的孩子不一定虛。先問吃了什麼，先消再養；還有，什麼時候不是食積。", "en": "A child who will not eat is not necessarily deficient. Ask what she ate, disperse before nourishing; and know when it is not food at all."}],
+      ["master", {"zh": "第三句最重要。今晚記得開手機。", "en": "The third part matters most. Keep your phone on tonight."}]
+     ]}
+   ]},
+  {"id": "night", "name": {"zh": "不能等到天亮的電話", "en": "The call that cannot wait"}, "sub": {"zh": "23:10 · 值班室", "en": "23:10 · on-call room"}, "t": 1390, "mood": "night",
+   "note": {"zh": "媽媽來電：一陣一陣哭、吐、縮腿", "en": "Mum calls: crying in bursts, vomiting, legs drawn up"},
+   "beats": [
+    {"id": "n1", "to": "place:notes", "guide": {"zh": "接糖糖媽媽的電話", "en": "Answer Tang-Tang's mother"},
+     "ring": {"title": {"zh": "糖糖媽媽來電", "en": "Tang-Tang's mum calling"}, "sub": {"zh": "她哭一陣停一陣，吐了兩次，腿縮起來", "en": "Crying in bursts, vomited twice, legs drawn up"}, "call": true, "from": "mum"},
+     "lines": [
+      ["mum", {"zh": "醫師，她九點多開始一陣一陣哭得很慘，然後又安靜下來、臉白白的，剛吐了兩次。阿嬤說是推拿推到的，叫我再幫她摩肚子……", "en": "Doctor, since about nine she's been crying in bursts, terribly, then going quiet and pale, and she's just vomited twice. Grandma says it's from the tuina today and that I should rub her tummy again…"}],
+      ["me", {"zh": "哭的時候腿會縮起來嗎？大便有沒有血或像果醬？", "en": "Does she draw her legs up when she cries? Any blood or jelly in the stool?"}],
+      ["mum", {"zh": "腿會縮！大便還沒有。", "en": "Her legs, yes! No stool yet."}]
+     ],
+     "mini": {"type": "choice", "q": {"zh": "陣發性哭鬧、縮腿、蒼白、嘔吐。你的指示？", "en": "Crying in bursts, legs drawn up, pale, vomiting. Your instruction?"},
+      "options": [
+       {"zh": "不要再推，立刻帶去兒科急診", "en": "No more rubbing; paediatric emergency now", "ok": true, "set": {"referred": true}, "why": {"zh": "這是腸套疊的典型表現，不是食積。拖越久腸子壞死風險越高；果醬樣血便是晚期徵象，不要等它出現。", "en": "This is the classic picture of intussusception, not food accumulation. The longer it waits the higher the risk of dead bowel; the jelly stool is a late sign, do not wait for it."}},
+       {"zh": "再摩腹一下，看會不會排氣", "en": "Rub the belly again and see if she passes wind", "ok": false, "set": {"referred": false}, "why": {"zh": "套疊的腸子不能揉。任何腹部手法都可能讓情況更糟，也會延誤。", "en": "Telescoped bowel must not be rubbed. Any abdominal technique can worsen it and costs time."}},
+       {"zh": "觀察到早上再回門診", "en": "Watch until morning, come to clinic", "ok": false, "set": {"referred": false}, "why": {"zh": "這種病等不到天亮。陣發性哭鬧加嘔吐加縮腿，就是現在去急診。", "en": "This cannot wait for morning. Bursts of crying plus vomiting plus drawn-up legs means emergency now."}}
+      ]},
+     "post": [
+      ["me", {"zh": "媽媽，這不是推拿造成的，也不是食積。現在就帶她去兒科急診，告訴醫師：一陣一陣哭、吐、縮腿，九點開始。路上不要餵東西。", "en": "This is not from the tuina and it is not food. Please take her to paediatric emergency right now and tell them: crying in bursts, vomiting, legs drawn up, since nine. Nothing to eat on the way."}],
+      ["mum", {"zh": "好，我們現在出門。", "en": "OK, we're leaving now."}]
+     ]},
+    {"id": "n2", "to": "place:notes", "guide": {"zh": "等急診的消息", "en": "Wait for news from emergency"},
+     "ring": {"title": {"zh": "糖糖媽媽訊息", "en": "Message from Tang-Tang's mum"}, "sub": {"zh": "急診超音波：腸套疊，已處理", "en": "Emergency ultrasound: intussusception, treated"}, "call": false, "from": "mum"},
+     "lines": [
+      ["sys", {"zh": "凌晨的訊息：「超音波是腸套疊，急診已經處理好了，她睡著了。謝謝你叫我們馬上去。阿嬤說她再也不講推拿的壞話了。」", "en": "A message in the small hours: “Ultrasound showed intussusception; emergency has treated it and she's asleep. Thank you for telling us to go at once. Grandma says she'll never speak ill of tuina again.”"}],
+      ["master", {"zh": "（訊息）白天你學手法，晚上你學什麼時候不用手。兩件都會了，才叫小兒推拿。", "en": "(message) By day you learned the hands; by night you learned when not to use them. Only with both is it paediatric tuina."}]
+     ],
+     "end": true}
+   ]}
+ ],
+ "ending": {"title": {"zh": "下班了", "en": "End of shift"}, "sub": {"zh": "先消不補，和一通不能等的電話", "en": "Disperse before tonify, and a call that could not wait"},
+  "stats": ["stages", "drills", "choices", "calls", "items", "time"]}
+}

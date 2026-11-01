@@ -1,0 +1,1542 @@
+{
+ "format": "huatuo-shift-v2",
+ "department": "tcm-internal",
+ "case": "insomnia",
+ "caseTitle": {
+  "zh": "晚診：睡不著的人",
+  "en": "Evening clinic: the sleepless"
+ },
+ "condition": {
+  "zh": "內傷 · 不寐",
+  "en": "Internal damage · insomnia"
+ },
+ "difficulty": 2,
+ "title": {
+  "zh": "中醫內科：不寐門診",
+  "en": "TCM internal medicine: insomnia clinic"
+ },
+ "tagline": {
+  "zh": "一個要補，一個要清；一句話要接住",
+  "en": "One to tonify, one to clear, one sentence to catch"
+ },
+ "room": "tcm-clinic",
+ "minutes": 27,
+ "roles": [
+  {
+   "id": "resident",
+   "zh": "中醫住院醫師",
+   "en": "TCM resident",
+   "desc": {
+    "zh": "晚診的不寐門診：兩個睡不著的人，兩種不同的「火」，還有一句不能放過的話。",
+    "en": "The evening insomnia clinic: two sleepless people, two different kinds of “fire”, and one sentence you must not let pass."
+   }
+  },
+  {
+   "id": "assistant",
+   "zh": "針灸助理",
+   "en": "Acupuncture assistant",
+   "desc": {
+    "zh": "針盤、治療床、觀察留針的病人都歸你。暈針的第一個徵兆，通常是你先看到。",
+    "en": "Needle trays, couches and the patients lying with needles in are yours. The first sign of a faint is usually yours to see."
+   }
+  }
+ ],
+ "cast": {
+  "master": {
+   "name": {
+    "zh": "溫醫師",
+    "en": "Dr Wen"
+   },
+   "role": {
+    "zh": "中醫內科醫師（師傅）",
+    "en": "TCM internist (mentor)"
+   },
+   "tag": "DR",
+   "color": "#81296d",
+   "body": "mentor",
+   "about": {
+    "zh": "專看失眠，自己每天九點半準時睡。整個晚診都在打哈欠，打得病人也跟著打。",
+    "en": "Treats insomnia and sleeps at half past nine sharp herself. Yawns through the whole evening clinic until the patients start yawning too."
+   }
+  },
+  "assistant": {
+   "name": {
+    "zh": "阿娥",
+    "en": "Ah-O"
+   },
+   "role": {
+    "zh": "針灸助理",
+    "en": "Acupuncture assistant"
+   },
+   "tag": "AS",
+   "color": "#3b8f6a",
+   "body": "nurse",
+   "about": {
+    "zh": "在針灸室做了十五年，看臉色比看血壓計快。口袋裡永遠有糖。",
+    "en": "Fifteen years in the needle room; reads a face faster than a blood-pressure cuff. Always has sweets in her pocket."
+   }
+  },
+  "chiuhsiang": {
+   "name": {
+    "zh": "秋香",
+    "en": "Chiu-hsiang"
+   },
+   "role": {
+    "zh": "四十七歲，照顧失智母親",
+    "en": "Forty-seven, caring for a mother with dementia"
+   },
+   "tag": "P1",
+   "color": "#c2703a",
+   "body": "patient",
+   "about": {
+    "zh": "虛構教學個案。白天上班，晚上照顧媽媽，已經半年沒睡過整夜。說話很輕，很怕麻煩人。",
+    "en": "Fictional teaching case. Works by day, cares for her mother by night, hasn’t slept a whole night in six months. Speaks softly, hates to be a bother."
+   }
+  },
+  "hao": {
+   "name": {
+    "zh": "阿豪",
+    "en": "Ah-Hao"
+   },
+   "role": {
+    "zh": "三十五歲，軟體工程師",
+    "en": "Thirty-five, software engineer"
+   },
+   "tag": "P2",
+   "color": "#a0522d",
+   "body": "patient",
+   "about": {
+    "zh": "虛構教學個案。專案上線週，一天三杯咖啡。第一次扎針，嘴巴說不怕。",
+    "en": "Fictional teaching case. Launch week, three coffees a day. First time with needles; says he isn’t scared."
+   }
+  },
+  "wife": {
+   "name": {
+    "zh": "阿豪的太太",
+    "en": "Ah-Hao's wife"
+   },
+   "role": {
+    "zh": "家屬（電話）",
+    "en": "Family (by phone)"
+   },
+   "tag": "FAM",
+   "color": "#8a6d3b",
+   "phoneOnly": true,
+   "about": {
+    "zh": "說阿豪打呼像在裝潢，還會突然停。",
+    "en": "Says Ah-Hao snores like a renovation crew, and sometimes it suddenly stops."
+   }
+  }
+ },
+ "places": {
+  "pulse-desk": {
+   "name": {
+    "zh": "脈枕診桌",
+    "en": "Pulse desk"
+   },
+   "hot": "pulse-desk"
+  },
+  "lamp": {
+   "name": {
+    "zh": "舌診燈",
+    "en": "Tongue lamp"
+   },
+   "hot": "lamp"
+  },
+  "couch": {
+   "name": {
+    "zh": "隔簾治療床",
+    "en": "Curtained couch"
+   },
+   "hot": "couch"
+  },
+  "cabinet": {
+   "name": {
+    "zh": "藥材標本櫃",
+    "en": "Herb specimen cabinet"
+   },
+   "hot": "cabinet"
+  },
+  "board": {
+   "name": {
+    "zh": "晚診白板",
+    "en": "Evening-clinic board"
+   },
+   "hot": "whiteboard"
+  },
+  "desk": {
+   "name": {
+    "zh": "書寫桌",
+    "en": "Writing desk"
+   },
+   "hot": "desk"
+  },
+  "bronze": {
+   "name": {
+    "zh": "針灸銅人",
+    "en": "Bronze figure"
+   },
+   "hot": "bronze"
+  }
+ },
+ "glossary": [
+  {
+   "term": {
+    "zh": "不寐",
+    "en": "insomnia"
+   },
+   "plain": {
+    "zh": "中醫對失眠的稱呼：難入睡、易醒、早醒或整夜多夢。",
+    "en": "TCM’s name for sleeplessness: trouble falling asleep, waking easily or early, or a night full of dreams."
+   }
+  },
+  {
+   "term": {
+    "zh": "心脾兩虛",
+    "en": "heart-spleen deficiency"
+   },
+   "plain": {
+    "zh": "中醫認為思慮勞倦傷了脾與心：多夢易醒、心悸健忘、疲倦食少、面色淡。",
+    "en": "In TCM, worry and exhaustion wear down spleen and heart: dream-filled light sleep, palpitations, forgetfulness, fatigue, poor appetite, a pale face."
+   }
+  },
+  {
+   "term": {
+    "zh": "思慮傷脾",
+    "en": "worry harms the spleen"
+   },
+   "plain": {
+    "zh": "中醫認為長期憂思讓脾的運化變差，氣血生成不足，心也失去濡養。",
+    "en": "In TCM, long worry slows the spleen’s transformation, so less qi and blood are made and the heart goes unnourished."
+   }
+  },
+  {
+   "term": {
+    "zh": "肝火擾心",
+    "en": "liver fire harassing the heart"
+   },
+   "plain": {
+    "zh": "中醫認為壓力與怒氣化火，上擾心神：難入睡、煩躁、口苦、目赤、頭脹痛。",
+    "en": "In TCM, stress and anger turn to fire that disturbs the mind: hard to fall asleep, irritable, bitter mouth, red eyes, a pounding head."
+   }
+  },
+  {
+   "term": {
+    "zh": "安神",
+    "en": "calming the spirit"
+   },
+   "plain": {
+    "zh": "讓心神安定、容易入睡的治法，例如酸棗仁、神門。",
+    "en": "Methods that settle the mind so sleep comes, such as jujube seed or HT7."
+   }
+  },
+  {
+   "term": {
+    "zh": "齒痕舌",
+    "en": "tooth-marked tongue"
+   },
+   "plain": {
+    "zh": "舌邊有牙齒壓出的痕跡，中醫認為多與脾虛、濕盛有關。",
+    "en": "Tooth impressions along the tongue’s edges; in TCM often linked to spleen deficiency or damp."
+   }
+  },
+  {
+   "term": {
+    "zh": "弦數",
+    "en": "wiry and rapid"
+   },
+   "plain": {
+    "zh": "脈端直如弦又跳得快；中醫認為多見於肝火、肝鬱化熱。",
+    "en": "A pulse taut like a string and fast; in TCM it goes with liver fire or constraint turned to heat."
+   }
+  },
+  {
+   "term": {
+    "zh": "四關",
+    "en": "four gates"
+   },
+   "plain": {
+    "zh": "雙側合谷與太衝的合稱，中醫認為能開鬱、平肝、鎮靜。",
+    "en": "The paired LI4 and LR3 on both sides; in TCM they open constraint, calm the liver and settle the mind."
+   }
+  },
+  {
+   "term": {
+    "zh": "暈針",
+    "en": "needle fainting"
+   },
+   "plain": {
+    "zh": "針刺中出現頭暈、臉色蒼白、冷汗、噁心甚至昏倒；饑餓、疲勞、緊張的人特別容易。",
+    "en": "Dizziness, pallor, cold sweat, nausea or even fainting during needling; the hungry, tired and anxious are most at risk."
+   }
+  },
+  {
+   "term": {
+    "zh": "頭低腳高",
+    "en": "head down, feet up"
+   },
+   "plain": {
+    "zh": "暈針或血壓低時讓病人平躺、腳墊高，幫助血液回到頭部。",
+    "en": "Lying the patient flat with legs raised in a faint or low blood pressure, to help blood back to the head."
+   }
+  },
+  {
+   "term": {
+    "zh": "睡眠呼吸中止",
+    "en": "sleep apnoea"
+   },
+   "plain": {
+    "zh": "睡覺時呼吸道塌陷、呼吸反覆停止，常伴大聲打呼與白天嗜睡；要做睡眠檢查。",
+    "en": "The airway collapses during sleep and breathing repeatedly stops, often with loud snoring and daytime sleepiness; needs a sleep study."
+   }
+  },
+  {
+   "term": {
+    "zh": "身心科",
+    "en": "psychiatry clinic"
+   },
+   "plain": {
+    "zh": "處理憂鬱、焦慮、失眠等身心問題的科別，台灣常這樣稱呼精神科門診。",
+    "en": "The clinic for depression, anxiety, sleep and related problems; in Taiwan the friendly name for psychiatry outpatients."
+   }
+  },
+  {
+   "term": {
+    "zh": "紅旗",
+    "en": "red flag"
+   },
+   "plain": {
+    "zh": "提示危險情況的徵象；在失眠門診，最重要的紅旗常常是一句話。",
+    "en": "A sign of danger; in an insomnia clinic the most important red flag is often a single sentence."
+   }
+  }
+ ],
+ "codex": [
+  {
+   "id": "zao-ren",
+   "kind": "equipment",
+   "name": {
+    "zh": "酸棗仁標本",
+    "en": "Sour jujube seed"
+   },
+   "text": {
+    "zh": "扁扁的紅褐色小種子。中醫認為能養心安神，是失眠方裡的常客；入煎劑前常搗碎。",
+    "en": "Flat, red-brown little seeds. In TCM they nourish the heart and calm the spirit, a regular in sleep formulas, usually crushed before decocting."
+   },
+   "hot": "cabinet"
+  },
+  {
+   "id": "couch",
+   "kind": "equipment",
+   "name": {
+    "zh": "隔簾治療床",
+    "en": "Curtained couch"
+   },
+   "text": {
+    "zh": "失眠的人第一次扎針，一律躺著扎。阿娥說：坐著暈，摔的是頭；躺著暈，只是臉白。",
+    "en": "First-time insomnia patients are always needled lying down. Ah-O says: faint sitting and you crack your head; faint lying down and you just go pale."
+   },
+   "hot": "couch"
+  },
+  {
+   "id": "sweets",
+   "kind": "item",
+   "name": {
+    "zh": "阿娥口袋裡的糖",
+    "en": "Ah-O’s pocket sweets"
+   },
+   "text": {
+    "zh": "暈針的人醒來第一口，就是這顆。她口袋裡從來不缺。",
+    "en": "The first thing a fainted patient tastes on coming round. Her pocket is never empty."
+   }
+  },
+  {
+   "id": "eyemask",
+   "kind": "item",
+   "name": {
+    "zh": "溫醫師的眼罩",
+    "en": "Dr Wen’s eye mask"
+   },
+   "text": {
+    "zh": "收診時她送你的，上面繡著「九點半」。「你今天睡得著，就算出師一半。」",
+    "en": "A parting gift as clinic closes, embroidered “9:30”. “If you sleep tonight, you’re halfway to graduating.”"
+   }
+  },
+  {
+   "id": "bumei-four",
+   "kind": "concept",
+   "name": {
+    "zh": "不寐的四種常見證型",
+    "en": "Four common insomnia patterns"
+   },
+   "text": {
+    "zh": "肝火擾心：難入睡、煩躁、口苦目赤、舌紅苔黃、脈弦數。痰熱擾心：胸悶痰多、噁心、苔黃膩、脈滑數。心脾兩虛：多夢易醒、心悸健忘、食少神疲、舌淡、脈細弱。心腎不交：心煩、腰痠、潮熱盜汗、舌紅少苔、脈細數。實證以清為主，虛證以補為主。",
+    "en": "Liver fire: hard to fall asleep, irritable, bitter mouth, red eyes, red tongue with yellow coat, wiry rapid pulse. Phlegm-heat: chest oppression, phlegm, nausea, yellow greasy coat, slippery rapid pulse. Heart-spleen deficiency: light dream-filled sleep, palpitations, forgetfulness, poor appetite, pale tongue, thready weak pulse. Heart-kidney disharmony: restlessness, aching back, hot flushes, night sweats, red tongue with scant coat, thready rapid pulse. Excess patterns are cleared; deficiency patterns are tonified."
+   }
+  },
+  {
+   "id": "faint",
+   "kind": "concept",
+   "name": {
+    "zh": "暈針的預防與處理",
+    "en": "Preventing and managing needle fainting"
+   },
+   "text": {
+    "zh": "高風險：饑餓、疲勞、緊張、體弱、第一次扎針、坐位。預防：先吃點東西、躺著扎、手法輕、一直看臉色。徵兆：頭暈、臉色蒼白、冷汗、噁心、脈弱。處理：立即出針、平臥頭低腳高、鬆衣保暖、清醒後給溫糖水、監測血壓脈搏；意識不清或不恢復就啟動急救。事後記錄並通報。",
+    "en": "High risk: hunger, fatigue, anxiety, frailty, first needling, sitting up. Prevention: eat something first, lie down, gentle technique, keep watching the face. Signs: dizziness, pallor, cold sweat, nausea, a weak pulse. Response: remove all needles at once, lie flat with feet raised, loosen clothing and keep warm, warm sweet drink once alert, check pulse and pressure; unconscious or not recovering means the emergency chain. Record and report afterwards."
+   }
+  },
+  {
+   "id": "sleep-flags",
+   "kind": "concept",
+   "name": {
+    "zh": "失眠背後的紅旗",
+    "en": "Red flags behind insomnia"
+   },
+   "text": {
+    "zh": "憂鬱與自殺念頭：直接問「有沒有想過傷害自己或不想活」，問了不會增加風險；有就當天轉身心科，台灣可撥安心專線 1925。大聲打呼伴呼吸暫停、白天嗜睡：轉睡眠檢查。另外要問咖啡因、酒、藥物、疼痛、夜尿、甲狀腺。照顧者過勞可轉介長照專線 1966 申請喘息服務。",
+    "en": "Depression and suicidal thoughts: ask directly whether they have thought of harming themselves or not wanting to live; asking does not raise the risk. If yes, same-day psychiatry; in Taiwan the 1925 helpline is open around the clock. Loud snoring with pauses and daytime sleepiness: refer for a sleep study. Also ask about caffeine, alcohol, medicines, pain, night urination and the thyroid. An exhausted carer can be linked to respite care through Taiwan’s 1966 long-term-care line."
+   }
+  },
+  {
+   "id": "worry-spleen",
+   "kind": "concept",
+   "name": {
+    "zh": "思慮為什麼傷脾",
+    "en": "Why worry harms the spleen"
+   },
+   "text": {
+    "zh": "中醫認為脾主思、主運化，是氣血生化之源。日夜憂思，脾氣鬱結、運化不足，氣血來源變少；心主血脈、藏神，血不養心則神不安，於是多夢易醒、心悸健忘。歸脾湯一面補脾益氣生血，一面養心安神，正是針對這條鏈。",
+    "en": "In TCM the spleen governs thought and transformation and is the source of qi and blood. Endless worry knots spleen qi and slows transformation, so less qi and blood are made; the heart houses the spirit and needs blood, so the spirit is unsettled: light, dream-filled sleep, palpitations, forgetfulness. Gui Pi Tang strengthens the spleen to make qi and blood while nourishing the heart to calm the spirit, aiming at exactly this chain."
+   }
+  }
+ ],
+ "segs": [
+  {
+   "id": "open",
+   "name": {
+    "zh": "晚診開診",
+    "en": "Evening clinic opens"
+   },
+   "sub": {
+    "zh": "17:30 · 晚診白板",
+    "en": "17:30 · evening-clinic board"
+   },
+   "t": 1050,
+   "mood": "eve",
+   "note": {
+    "zh": "溫醫師打第一個哈欠",
+    "en": "Dr Wen’s first yawn"
+   },
+   "beats": [
+    {
+     "id": "a1",
+     "to": "place:board",
+     "guide": {
+      "zh": "看今晚的白板",
+      "en": "Read tonight’s board"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "白板寫著：不寐門診。底下溫醫師畫了一個在打哈欠的月亮。",
+        "en": "The board says: insomnia clinic. Beneath it Dr Wen has drawn a yawning moon."
+       }
+      ],
+      [
+       "master",
+       {
+        "zh": "今晚兩個睡不著的人。失眠先分虛實：實的要清，虛的要補。（打哈欠）",
+        "en": "Two sleepless people tonight. Sort insomnia into excess and deficiency first: excess is cleared, deficiency is tonified. (yawns)"
+       }
+      ],
+      [
+       "assistant",
+       {
+        "zh": "溫醫師，才五點半。",
+        "en": "Dr Wen, it’s only half past five."
+       }
+      ],
+      [
+       "master",
+       {
+        "zh": "我的身體很守時。去櫃子找安神的酸棗仁。",
+        "en": "My body keeps good time. Find the sour jujube seed in the cabinet, for calming the spirit."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "find",
+      "hot": "cabinet",
+      "q": {
+       "zh": "在標本櫃找出酸棗仁",
+       "en": "Find the sour jujube seed in the cabinet"
+      }
+     },
+     "post": [
+      [
+       "master",
+       {
+        "zh": "扁扁紅褐色那個。入煎劑前常搗碎，才煎得出來。",
+        "en": "The flat red-brown ones. Usually crushed before decocting, or nothing comes out."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "chiuhsiang",
+   "name": {
+    "zh": "秋香的夜",
+    "en": "Chiu-hsiang's nights"
+   },
+   "sub": {
+    "zh": "18:00 · 脈枕診桌",
+    "en": "18:00 · the pulse desk"
+   },
+   "t": 1080,
+   "mood": "eve",
+   "note": {
+    "zh": "多夢易醒、心悸健忘：心脾兩虛",
+    "en": "Light sleep, palpitations: heart-spleen deficiency"
+   },
+   "beats": [
+    {
+     "id": "b1",
+     "to": "chiuhsiang",
+     "guide": {
+      "zh": "請秋香入座",
+      "en": "Seat Chiu-hsiang"
+     },
+     "lines": [
+      [
+       "chiuhsiang",
+       {
+        "zh": "不好意思，我一個人來的。媽媽晚上會起來找人，我半年沒睡過整夜了。",
+        "en": "Sorry, I came alone. Mum gets up at night looking for people; I haven’t slept through in six months."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "睡著以後呢？",
+        "en": "And once you fall asleep?"
+       }
+      ],
+      [
+       "chiuhsiang",
+       {
+        "zh": "一直做夢，一點聲音就醒。白天心臟怦怦跳，東西放哪裡都忘記，吃也吃不下。",
+        "en": "Dreams all night, any sound wakes me. In the day my heart races, I forget where I put things, and I can’t eat."
+       }
+      ],
+      [
+       "master",
+       {
+        "zh": "想太多、累太久。中醫說思慮傷脾。複習一下這一型。",
+        "en": "Too much worry, too long tired. TCM calls it worry harming the spleen. Revise this pattern."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "tcm-internal-bumei-workflow",
+      "stage": 4,
+      "member": true
+     },
+     "post": [
+      [
+       "me",
+       {
+        "zh": "多夢易醒、心悸健忘、食少神疲：心脾兩虛。",
+        "en": "Light dream-filled sleep, palpitations, forgetfulness, poor appetite, fatigue: heart-spleen deficiency."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "b2",
+     "to": "place:lamp",
+     "guide": {
+      "zh": "在舌診燈下看舌",
+      "en": "Read the tongue"
+     },
+     "lines": [
+      [
+       "assistant",
+       {
+        "zh": "秋香姐，舌頭輕輕伸出來就好，不用伸到底。",
+        "en": "Just put your tongue out gently, no need to push it all the way."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "tongue",
+      "q": {
+       "zh": "舌淡、苔薄白、邊有齒痕。怎麼讀？",
+       "en": "Pale, thin white coat, tooth-marked edges. Your reading?"
+      },
+      "tongue": {
+       "body": "pale",
+       "coat": "thin-white",
+       "shape": "teeth-marked"
+      },
+      "options": [
+       {
+        "zh": "氣血不足、脾虛：符合心脾兩虛",
+        "en": "Qi and blood short, spleen weak",
+        "ok": true,
+        "why": {
+         "zh": "中醫認為舌淡是氣血不能上榮，齒痕是脾虛不運；和疲倦、食少、心悸一致。",
+         "en": "In TCM a pale tongue means qi and blood are not reaching it, and tooth marks mean a weak spleen not transforming; it matches the fatigue, poor appetite and palpitations."
+        }
+       },
+       {
+        "zh": "舌紅苔黃：肝火擾心",
+        "en": "Red, yellow coat: liver fire",
+        "ok": false,
+        "why": {
+         "zh": "舌是淡的，苔是白的。火在別的病人身上。",
+         "en": "The tongue is pale and the coat is white. The fire belongs to another patient."
+        }
+       },
+       {
+        "zh": "苔黃膩：痰熱",
+        "en": "Yellow greasy coat: phlegm-heat",
+        "ok": false,
+        "why": {
+         "zh": "苔薄而白，不膩也不黃。",
+         "en": "The coat is thin and white, neither greasy nor yellow."
+        }
+       }
+      ]
+     },
+     "post": [
+      [
+       "master",
+       {
+        "zh": "齒痕舌，是脾虛留下的牙印。",
+        "en": "A tooth-marked tongue: the weak spleen leaves its bite."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tired",
+   "name": {
+    "zh": "活著好累",
+    "en": "So tired of living"
+   },
+   "sub": {
+    "zh": "18:40 · 脈枕診桌",
+    "en": "18:40 · the pulse desk"
+   },
+   "t": 1120,
+   "mood": "eve",
+   "note": {
+    "zh": "那一句話，要接住",
+    "en": "That sentence must be caught"
+   },
+   "beats": [
+    {
+     "id": "c1",
+     "to": "chiuhsiang",
+     "guide": {
+      "zh": "聽她說完",
+      "en": "Let her finish"
+     },
+     "lines": [
+      [
+       "chiuhsiang",
+       {
+        "zh": "其實……有時候覺得活著好累。如果能睡下去不要醒，好像也不錯。",
+        "en": "Actually… sometimes I feel so tired of living. If I could sleep and not wake up, that might be all right."
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "診間很安靜。溫醫師沒有打哈欠。",
+        "en": "The room goes quiet. Dr Wen does not yawn."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "choice",
+      "q": {
+       "zh": "秋香說「活著好累」。你怎麼回應？",
+       "en": "Chiu-hsiang says she is tired of living. How do you respond?"
+      },
+      "options": [
+       {
+        "zh": "直接問有沒有傷害自己的念頭與計畫",
+        "en": "Ask directly about thoughts or plans of self-harm",
+        "ok": true,
+        "why": {
+         "zh": "直接問不會增加風險，反而讓人鬆一口氣。有念頭就當天轉身心科，並確認身邊有人。",
+         "en": "Asking directly does not raise the risk; it often brings relief. If the thoughts are there, same-day psychiatry and someone with her tonight."
+        },
+        "set": {
+         "asked-mood": true
+        }
+       },
+       {
+        "zh": "安慰她：大家都很累，睡好就好",
+        "en": "Reassure her: everyone’s tired, sleep fixes it",
+        "ok": false,
+        "why": {
+         "zh": "好意，但把紅旗蓋住了。這句話需要的是一個問題，不是安慰。",
+         "en": "Kind, but it covers the red flag. That sentence needs a question, not comfort."
+        },
+        "set": {
+         "asked-mood": false
+        }
+       },
+       {
+        "zh": "多開一點安神的藥",
+        "en": "Add more spirit-calming herbs",
+        "ok": false,
+        "why": {
+         "zh": "安神藥處理睡眠，處理不了這句話背後的危險。",
+         "en": "Calming herbs treat sleep; they cannot treat the danger behind that sentence."
+        },
+        "set": {
+         "asked-mood": false
+        }
+       }
+      ]
+     }
+    },
+    {
+     "id": "c2",
+     "when": {
+      "flag": "asked-mood",
+      "is": true
+     },
+     "to": "chiuhsiang",
+     "guide": {
+      "zh": "接住她",
+      "en": "Stay with her"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "秋香姐，你有沒有想過要傷害自己，或想過怎麼做？",
+        "en": "Chiu-hsiang, have you thought about hurting yourself, or how you might?"
+       }
+      ],
+      [
+       "chiuhsiang",
+       {
+        "zh": "沒有計畫……只是很累。謝謝你問，從來沒人問過。",
+        "en": "No plan… just exhausted. Thank you for asking. Nobody ever has."
+       }
+      ],
+      [
+       "master",
+       {
+        "zh": "今晚我們幫你掛明天的身心科。照顧媽媽這件事，也可以申請喘息服務。",
+        "en": "We’ll book you into the psychiatry clinic tomorrow. And for your mother’s care, you can apply for respite."
+       }
+      ]
+     ],
+     "set": {
+      "mood-referred": true
+     }
+    },
+    {
+     "id": "c3",
+     "when": {
+      "flag": "asked-mood",
+      "is": false
+     },
+     "to": "master",
+     "guide": {
+      "zh": "看溫醫師怎麼做",
+      "en": "Watch Dr Wen"
+     },
+     "lines": [
+      [
+       "master",
+       {
+        "zh": "秋香，我想問清楚一點：你有沒有想過要傷害自己？",
+        "en": "Chiu-hsiang, I want to ask plainly: have you thought of harming yourself?"
+       }
+      ],
+      [
+       "chiuhsiang",
+       {
+        "zh": "沒有計畫……只是很累。",
+        "en": "No plan… just exhausted."
+       }
+      ],
+      [
+       "master",
+       {
+        "zh": "（轉頭小聲對你）這句話要接住，用問題接，不是用安慰。明天身心科我來掛。",
+        "en": "(quietly, to you) That sentence has to be caught, with a question, not comfort. I’ll book psychiatry for tomorrow."
+       }
+      ]
+     ],
+     "set": {
+      "mood-referred": true
+     }
+    },
+    {
+     "id": "c4",
+     "to": "place:desk",
+     "guide": {
+      "zh": "選出歸脾湯的組成",
+      "en": "Pick Gui Pi Tang’s herbs"
+     },
+     "lines": [
+      [
+       "master",
+       {
+        "zh": "身心科之外，中醫這邊也幫她。心脾兩虛的代表方？",
+        "en": "Alongside psychiatry, TCM helps too. The representative formula for heart-spleen deficiency?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "歸脾湯：補脾益氣生血、養心安神。",
+        "en": "Gui Pi Tang: strengthen the spleen to make qi and blood, nourish the heart to calm the spirit."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "herb",
+      "q": {
+       "zh": "選出歸脾湯的組成",
+       "en": "Select herbs of Gui Pi Tang"
+      },
+      "formula": "歸脾湯",
+      "pick": [
+       "黃耆",
+       "龍眼肉",
+       "酸棗仁",
+       "當歸",
+       "遠志",
+       "人參"
+      ],
+      "distractors": [
+       "黃連",
+       "龍膽",
+       "大黃",
+       "麻黃"
+      ]
+     },
+     "post": [
+      [
+       "master",
+       {
+        "zh": "黃連、龍膽是清火的，給下一位。她要補，不要清。用量依處方。",
+        "en": "Coptis and gentian clear fire; they’re for the next patient. She needs tonifying, not clearing. Amounts per prescription."
+       }
+      ]
+     ],
+     "item": "worry-spleen"
+    }
+   ]
+  },
+  {
+   "id": "hao",
+   "name": {
+    "zh": "阿豪的火",
+    "en": "Ah-Hao's fire"
+   },
+   "sub": {
+    "zh": "19:30 · 脈枕診桌",
+    "en": "19:30 · the pulse desk"
+   },
+   "t": 1170,
+   "mood": "eve",
+   "note": {
+    "zh": "弦數、口苦、目赤：肝火擾心",
+    "en": "Wiry, bitter mouth, red eyes: liver fire"
+   },
+   "beats": [
+    {
+     "id": "d1",
+     "to": "hao",
+     "guide": {
+      "zh": "請阿豪入座",
+      "en": "Seat Ah-Hao"
+     },
+     "lines": [
+      [
+       "hao",
+       {
+        "zh": "專案上線週，躺下去腦袋還在跑程式。口很苦、眼睛紅、頭脹，一點小事就想罵人。",
+        "en": "Launch week. I lie down and my brain keeps compiling. Bitter mouth, red eyes, pounding head, and I snap at everyone."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "晚餐吃了嗎？昨晚睡多久？",
+        "en": "Have you had dinner? How long did you sleep last night?"
+       }
+      ],
+      [
+       "hao",
+       {
+        "zh": "還沒吃，昨晚睡三個鐘頭吧。咖啡今天三杯。",
+        "en": "No dinner yet. Maybe three hours last night. Three coffees today."
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "阿娥在旁邊默默從口袋掏出一顆糖，又放回去。",
+        "en": "Beside you, Ah-O quietly takes a sweet from her pocket, then puts it back."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "d2",
+     "to": "hao",
+     "guide": {
+      "zh": "診脈",
+      "en": "Take the pulse"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "指下繃直有力，又快，像一根被撥得很急的弦。",
+        "en": "Taut and strong under your fingers, and fast, like a string plucked in a hurry."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "pulse",
+      "q": {
+       "zh": "端直有力而快。這是什麼脈？",
+       "en": "Taut, strong and fast. Which pulse?"
+      },
+      "pulse": "wiry",
+      "options": [
+       {
+        "zh": "弦數：肝火擾心",
+        "en": "Wiry and rapid: liver fire",
+        "ok": true,
+        "why": {
+         "zh": "中醫認為弦主肝、數主熱；配上口苦、目赤、易怒、難入睡，是肝火上擾心神。",
+         "en": "In TCM wiry points to the liver and rapid to heat; with a bitter mouth, red eyes, irritability and difficulty falling asleep, this is liver fire harassing the heart."
+        }
+       },
+       {
+        "zh": "細弱：心脾兩虛",
+        "en": "Thready and weak: heart-spleen deficiency",
+        "ok": false,
+        "why": {
+         "zh": "那是秋香的脈。阿豪的脈有力得很。",
+         "en": "That was Chiu-hsiang’s. Ah-Hao’s pulse has plenty of force."
+        }
+       },
+       {
+        "zh": "滑數：痰熱",
+        "en": "Slippery and rapid: phlegm-heat",
+        "ok": false,
+        "why": {
+         "zh": "滑脈圓滑如珠；這條是直的、繃的。",
+         "en": "Slippery rolls like beads; this one is straight and taut."
+        }
+       }
+      ]
+     },
+     "post": [
+      [
+       "master",
+       {
+        "zh": "同樣睡不著，一個要補、一個要清。黃連、龍膽在這裡。",
+        "en": "Both sleepless; one needs tonifying, one needs clearing. This is where coptis and gentian belong."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "d3",
+     "to": "place:bronze",
+     "guide": {
+      "zh": "指出安神與平肝的穴",
+      "en": "Show the calming points"
+     },
+     "lines": [
+      [
+       "master",
+       {
+        "zh": "針灸：寧心、安眠、平肝。給我四個穴。",
+        "en": "Needles: settle the heart, help sleep, calm the liver. Four points."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "points",
+      "q": {
+       "zh": "指出神門、安眠、太衝、印堂",
+       "en": "Point out HT7, Anmian, LR3 and Yintang"
+      },
+      "codes": [
+       "HT7",
+       "EX-HN16",
+       "LR3",
+       "EX-HN3"
+      ]
+     },
+     "post": [
+      [
+       "master",
+       {
+        "zh": "太衝配合谷叫四關，平肝開鬱。他第一次扎，躺著扎，先吃東西。",
+        "en": "LR3 with LI4 are the four gates, calming the liver. First time for him: lie him down and feed him first."
+       }
+      ],
+      [
+       "hao",
+       {
+        "zh": "吃東西？不用啦，我趕著回去改程式。",
+        "en": "Eat? No need, I have to get back to fix some code."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "d4",
+     "to": "place:couch",
+     "guide": {
+      "zh": "合谷進針",
+      "en": "Needle LI4"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "阿豪，躺好，手放鬆。會有一點痠脹。",
+        "en": "Ah-Hao, lie back, relax your hand. You’ll feel a dull ache."
+       }
+      ],
+      [
+       "hao",
+       {
+        "zh": "我不怕針。完全不怕。（手在抖）",
+        "en": "I’m not scared of needles. Not at all. (his hand is shaking)"
+       }
+      ]
+     ],
+     "mini": {
+      "type": "drill",
+      "template": "tcm-internal",
+      "drill": "needle:hand"
+     },
+     "post": [
+      [
+       "assistant",
+       {
+        "zh": "四關都下好了。我會一直看他的臉。",
+        "en": "All four gates are in. I’ll keep my eyes on his face."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "faint",
+   "name": {
+    "zh": "暈針",
+    "en": "The faint"
+   },
+   "sub": {
+    "zh": "20:00 · 隔簾治療床",
+    "en": "20:00 · the curtained couch"
+   },
+   "t": 1200,
+   "mood": "night",
+   "note": {
+    "zh": "饑餓、疲勞、緊張，三個都中",
+    "en": "Hungry, exhausted, anxious: all three"
+   },
+   "beats": [
+    {
+     "id": "e1",
+     "to": "hao",
+     "guide": {
+      "zh": "阿豪臉色不對",
+      "en": "Ah-Hao looks wrong"
+     },
+     "lines": [
+      [
+       "assistant",
+       {
+        "zh": "醫師！阿豪臉白了，額頭冒冷汗。",
+        "en": "Doctor! Ah-Hao has gone white, cold sweat on his forehead."
+       }
+      ],
+      [
+       "hao",
+       {
+        "zh": "我……有點想吐，眼前黑黑的……",
+        "en": "I… feel sick… everything’s going dark…"
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "脈細弱，血壓計顯示血壓往下掉。",
+        "en": "His pulse is thready and weak; the cuff shows his pressure falling."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "vitals",
+      "event": "hypotension",
+      "options": [
+       {
+        "zh": "立即出針、平臥頭低腳高、保暖、觀察",
+        "en": "Needles out, head down, feet up, keep warm",
+        "ok": true,
+        "why": {
+         "zh": "暈針第一步：所有針立刻拔出，平臥頭低腳高，鬆衣保暖；清醒後給溫糖水。意識不清或不恢復就啟動急救。",
+         "en": "First step in needle fainting: all needles out at once, flat with feet raised, loosen clothes, keep warm; a warm sweet drink once alert. Unconscious or not recovering means the emergency chain."
+        }
+       },
+       {
+        "zh": "繼續留針，再加一針人中",
+        "en": "Keep the needles in, add GV26",
+        "ok": false,
+        "why": {
+         "zh": "病人在暈，第一件事是把針拿掉，不是再加針。",
+         "en": "The patient is fainting; first take the needles out, don’t add more."
+        }
+       },
+       {
+        "zh": "扶他坐起來走一走",
+        "en": "Sit him up and walk him around",
+        "ok": false,
+        "why": {
+         "zh": "血壓在掉，坐起來只會更暈、更容易摔。",
+         "en": "His pressure is falling; sitting up makes it worse and risks a fall."
+        }
+       }
+      ]
+     },
+     "post": [
+      [
+       "sys",
+       {
+        "zh": "腳墊高一會兒，阿豪的臉慢慢有了顏色。阿娥把那顆糖剝開，放進溫水裡。",
+        "en": "With his feet up a while, colour slowly returns. Ah-O unwraps the sweet and stirs it into warm water."
+       }
+      ],
+      [
+       "hao",
+       {
+        "zh": "……我是不是暈倒了？好丟臉。",
+        "en": "…did I faint? How embarrassing."
+       }
+      ],
+      [
+       "assistant",
+       {
+        "zh": "不丟臉。沒吃飯、沒睡覺、又緊張，三個都中，不暈才奇怪。",
+        "en": "Not embarrassing. No dinner, no sleep, and nervous: all three. It’d be odd if you hadn’t."
+       }
+      ]
+     ],
+     "item": "sweets"
+    },
+    {
+     "id": "e2",
+     "roles": [
+      "assistant"
+     ],
+     "to": "place:couch",
+     "guide": {
+      "zh": "寫暈針紀錄：排步驟",
+      "en": "Log the faint: order steps"
+     },
+     "lines": [
+      [
+       "master",
+       {
+        "zh": "暈針紀錄要寫處理經過。順序排給我看。",
+        "en": "The fainting log records what was done. Show me the order."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "order",
+      "q": {
+       "zh": "暈針的處理順序",
+       "en": "Managing a needle faint, in order"
+      },
+      "steps": [
+       {
+        "zh": "立即停止並全部出針",
+        "en": "Stop and remove every needle"
+       },
+       {
+        "zh": "平臥、頭低腳高",
+        "en": "Lie flat, feet raised"
+       },
+       {
+        "zh": "鬆開衣領、保暖",
+        "en": "Loosen collar, keep warm"
+       },
+       {
+        "zh": "清醒後給溫糖水",
+        "en": "Warm sweet drink once alert"
+       },
+       {
+        "zh": "監測血壓與脈搏",
+        "en": "Check pressure and pulse"
+       },
+       {
+        "zh": "記錄並通報",
+        "en": "Record and report"
+       }
+      ]
+     },
+     "post": [
+      [
+       "master",
+       {
+        "zh": "最後一步最常被忘。沒寫下來，下次就又是「第一次」。",
+        "en": "The last step is the one people forget. If it isn’t written down, next time is another “first time”."
+       }
+      ]
+     ],
+     "item": "faint"
+    },
+    {
+     "id": "e3",
+     "roles": [
+      "resident"
+     ],
+     "to": "master",
+     "guide": {
+      "zh": "師傅的提問",
+      "en": "Dr Wen’s question"
+     },
+     "lines": [
+      [
+       "master",
+       {
+        "zh": "暈針能不能預防？",
+        "en": "Could the faint have been prevented?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "能。先讓他吃點東西、躺著扎、手法輕、一直看臉色。他說不用吃，我沒有堅持。",
+        "en": "Yes. Feed him first, needle lying down, gentle hands, watch the face. He said he didn’t need to eat and I didn’t insist."
+       }
+      ],
+      [
+       "master",
+       {
+        "zh": "病人說不用的時候，就是我們要堅持的時候。",
+        "en": "When the patient says there’s no need, that’s exactly when we insist."
+       }
+      ]
+     ],
+     "item": "faint"
+    }
+   ]
+  },
+  {
+   "id": "call",
+   "name": {
+    "zh": "阿豪太太來電",
+    "en": "Ah-Hao's wife calls"
+   },
+   "sub": {
+    "zh": "21:00 · 書寫桌",
+    "en": "21:00 · the writing desk"
+   },
+   "t": 1260,
+   "mood": "night",
+   "note": {
+    "zh": "打呼會停：轉睡眠檢查",
+    "en": "Snoring that stops: sleep study"
+   },
+   "beats": [
+    {
+     "id": "f1",
+     "ring": {
+      "title": {
+       "zh": "阿豪的太太來電",
+       "en": "Ah-Hao's wife calling"
+      },
+      "sub": {
+       "zh": "聽說他在你們那邊暈倒？",
+       "en": "I heard he fainted at your place?"
+      },
+      "call": true,
+      "from": "wife"
+     },
+     "to": "place:desk",
+     "guide": {
+      "zh": "接阿豪太太的電話",
+      "en": "Take the wife’s call"
+     },
+     "lines": [
+      [
+       "wife",
+       {
+        "zh": "他說他在你們那裡暈倒了？他現在還好嗎？",
+        "en": "He says he fainted at your clinic? Is he all right now?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "他現在很好，吃過東西了。沒吃飯、沒睡好又緊張，所以暈針。",
+        "en": "He’s fine now and has eaten. No dinner, no sleep and nerves: that’s why he fainted."
+       }
+      ],
+      [
+       "wife",
+       {
+        "zh": "他說他睡不著。可是他一睡著，打呼像在裝潢，還會突然停好久，停到我都想搖他。",
+        "en": "He says he can’t sleep. But once he does, he snores like a renovation crew, and sometimes it stops for so long I want to shake him."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "f2",
+     "to": "place:desk",
+     "guide": {
+      "zh": "判斷要不要轉診",
+      "en": "Decide on referral"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "大聲打呼、呼吸會停、白天頭脹嗜睡、一天三杯咖啡撐著。",
+        "en": "Loud snoring, breathing pauses, a heavy head and sleepiness by day, three coffees to stay upright."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "choice",
+      "q": {
+       "zh": "打呼伴呼吸暫停，你怎麼處理？",
+       "en": "Snoring with breathing pauses: what now?"
+      },
+      "options": [
+       {
+        "zh": "轉睡眠檢查，排除睡眠呼吸中止",
+        "en": "Refer for a sleep study to rule out apnoea",
+        "ok": true,
+        "why": {
+         "zh": "睡眠呼吸中止會讓人睡不好、白天嗜睡、血壓上升；要做睡眠檢查。中醫可同時調理。",
+         "en": "Sleep apnoea wrecks sleep, causes daytime sleepiness and raises blood pressure; it needs a sleep study, with TCM care alongside."
+        }
+       },
+       {
+        "zh": "那是肝火，清肝火就好",
+        "en": "That’s liver fire; clear it",
+        "ok": false,
+        "why": {
+         "zh": "肝火能解釋煩躁，解釋不了呼吸停止。",
+         "en": "Liver fire explains the irritability, not breathing that stops."
+        }
+       },
+       {
+        "zh": "叫他側睡就好",
+        "en": "Just tell him to sleep on his side",
+        "ok": false,
+        "why": {
+         "zh": "側睡可能有幫助，但要先確定是不是睡眠呼吸中止。",
+         "en": "Side-sleeping may help, but first find out whether it is sleep apnoea."
+        }
+       }
+      ]
+     },
+     "post": [
+      [
+       "wife",
+       {
+        "zh": "睡眠檢查？好，我押他去。順便把咖啡藏起來。",
+        "en": "A sleep study? Fine, I’ll drag him there. And I’ll hide the coffee."
+       }
+      ]
+     ],
+     "item": "sleep-flags"
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "name": {
+    "zh": "收診",
+    "en": "Closing time"
+   },
+   "sub": {
+    "zh": "21:30 · 晚診白板",
+    "en": "21:30 · evening-clinic board"
+   },
+   "t": 1290,
+   "mood": "night",
+   "note": {
+    "zh": "一個要補，一個要清，兩個都要轉",
+    "en": "One tonified, one cleared, both referred"
+   },
+   "beats": [
+    {
+     "id": "g1",
+     "to": "master",
+     "guide": {
+      "zh": "聽溫醫師的結語",
+      "en": "Dr Wen’s debrief"
+     },
+     "lines": [
+      [
+       "master",
+       {
+        "zh": "今晚兩個不寐：秋香是虛，要補；阿豪是實，要清。",
+        "en": "Two kinds of insomnia tonight: Chiu-hsiang is deficient and needs tonifying; Ah-Hao is excess and needs clearing."
+       }
+      ],
+      [
+       "master",
+       {
+        "zh": "可是今晚最重要的兩件事都不是方子：一句「活著好累」，一聲停掉的打呼。",
+        "en": "But the two most important things tonight weren’t formulas: one “tired of living”, and one snore that stopped."
+       }
+      ],
+      [
+       "master",
+       {
+        "zh": "（打了今晚最大的一個哈欠）九點半了。這個給你。",
+        "en": "(the biggest yawn of the evening) It’s half past nine. This is for you."
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "一個眼罩，上面繡著「九點半」。",
+        "en": "An eye mask, embroidered “9:30”."
+       }
+      ]
+     ],
+     "item": "eyemask"
+    }
+   ]
+  },
+  {
+   "id": "late",
+   "name": {
+    "zh": "深夜訊息",
+    "en": "A late message"
+   },
+   "sub": {
+    "zh": "23:30 · 回家路上",
+    "en": "23:30 · on the way home"
+   },
+   "t": 1410,
+   "mood": "night",
+   "note": {
+    "zh": "秋香今晚有人陪",
+    "en": "Chiu-hsiang isn’t alone tonight"
+   },
+   "beats": [
+    {
+     "id": "n1",
+     "when": {
+      "flag": "mood-referred",
+      "is": true
+     },
+     "ring": {
+      "title": {
+       "zh": "秋香的訊息",
+       "en": "Message from Chiu-hsiang"
+      },
+      "sub": {
+       "zh": "謝謝你們今天……",
+       "en": "Thank you for today…"
+      },
+      "call": false,
+      "from": "chiuhsiang"
+     },
+     "lines": [
+      [
+       "chiuhsiang",
+       {
+        "zh": "弟弟說這個週末他來顧媽媽。明天早上我去身心科。謝謝你們今天問我那句話。",
+        "en": "My brother says he’ll look after Mum this weekend. Tomorrow morning I’m going to the psychiatry clinic. Thank you for asking me that today."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "謝謝你願意說。今晚如果撐不住，隨時撥安心專線，或直接去急診。",
+        "en": "Thank you for telling us. If tonight gets too heavy, call the helpline any time, or go straight to the emergency department."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "n2",
+     "when": {
+      "flag": "asked-mood",
+      "is": false
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "你想起溫醫師那句話：用問題接，不是用安慰。下一次，你會先問。",
+        "en": "You remember Dr Wen’s words: catch it with a question, not comfort. Next time, you will ask first."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "n3",
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "你戴上眼罩。不到九點半，但你很快就睡著了。",
+        "en": "You put on the eye mask. It is long past half past nine, and you are asleep almost at once."
+       }
+      ]
+     ],
+     "end": true
+    }
+   ]
+  }
+ ],
+ "ending": {
+  "title": {
+   "zh": "收診了",
+   "en": "Clinic closed"
+  },
+  "sub": {
+   "zh": "病人說不用的時候，就是要堅持的時候",
+   "en": "When the patient says there’s no need, insist"
+  },
+  "stats": [
+   "stages",
+   "drills",
+   "choices",
+   "calls",
+   "items",
+   "time"
+  ]
+ }
+}

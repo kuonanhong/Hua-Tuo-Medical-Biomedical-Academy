@@ -1,0 +1,293 @@
+{
+ "format": "huatuo-shift-v2",
+ "department": "acupuncture-technique",
+ "case": "migraine",
+ "caseTitle": {"zh": "夜診：兩個頭痛", "en": "Evening clinic: two headaches"},
+ "condition": {"zh": "頭痛 · 偏頭痛與紅旗", "en": "Headache · migraine and red flags"},
+ "difficulty": 2,
+ "title": {"zh": "中醫夜診的頭痛之夜", "en": "A night of headaches in the TCM clinic"},
+ "tagline": {"zh": "一個十幾年都一樣的頭痛，和一個這輩子第一次的", "en": "One headache that has been the same for years, and one that is the first of its kind"},
+ "room": "tcm-clinic",
+ "minutes": 25,
+ "roles": [
+  {"id": "resident", "zh": "中醫住院醫師", "en": "TCM resident",
+   "desc": {"zh": "夜診主力：問診、脈舌、取穴、進針、寫病歷。每個頭痛先問一句：這次和以前一樣嗎？", "en": "The evening clinic's workhorse: history, pulse and tongue, points, needles, notes. Every headache starts with one question: is this one like the others?"}},
+  {"id": "nurse", "zh": "夜診護理師", "en": "Evening clinic nurse",
+   "desc": {"zh": "生命徵象、留針觀察、轉診單與救護車都是你叫的。你的血壓計常常比醫師快。", "en": "Vital signs, watching during retention, referral forms and the ambulance are yours. Your blood-pressure cuff is often faster than the doctor."}}
+ ],
+ "cast": {
+  "ye": {"name": {"zh": "葉醫師", "en": "Dr Yeh"}, "role": {"zh": "針灸科主治醫師（師傅）", "en": "Acupuncture attending (mentor)"}, "tag": "ATT", "color": "#81296d", "body": "mentor",
+   "about": {"zh": "夜診守門人。每個頭痛都先問「這次和以前一樣嗎」，說這一句話救過的人比任何穴位都多。", "en": "Keeper of the evening clinic. Asks every headache “is this one like the others?” and says that question has saved more people than any point."}},
+  "pan": {"name": {"zh": "小潘", "en": "Pan"}, "role": {"zh": "夜診護理師", "en": "Evening clinic nurse"}, "tag": "RN", "color": "#3b8f6a", "body": "nurse",
+   "about": {"zh": "血壓計永遠在手邊。留針時會把燈調暗、把嘔吐袋放好，從不問為什麼。", "en": "Blood-pressure cuff always to hand. Dims the lamp and sets out a sick bag during retention without being asked."}},
+  "shufen": {"name": {"zh": "淑芬", "en": "Shu-Fen"}, "role": {"zh": "四十五歲，月底結帳的偏頭痛", "en": "Forty-five, month-end migraines"}, "tag": "P1", "color": "#c2703a", "body": "patient",
+   "about": {"zh": "虛構教學個案。會計。十幾年來每到月底右側太陽穴跳痛、畏光、噁心，先兆是眼前的鋸齒光。", "en": "Fictional teaching case. An accountant. For over a decade, every month-end brings a throbbing right temple, light sensitivity and nausea, heralded by zigzag lights."}},
+  "jianhong": {"name": {"zh": "建宏", "en": "Jian-Hong"}, "role": {"zh": "五十二歲，開車時突發劇痛", "en": "Fifty-two, sudden severe pain while driving"}, "tag": "P2", "color": "#b5651d", "body": "patient",
+   "about": {"zh": "虛構教學個案。卡車司機，從來沒頭痛過。今天開車時後腦「像被人敲一棒」，脖子也硬了。", "en": "Fictional teaching case. A truck driver who has never had a headache. Today, while driving, the back of his head felt “hit with a bat”, and his neck went stiff."}},
+  "er-doc": {"name": {"zh": "急診醫師", "en": "Emergency physician"}, "role": {"zh": "急診（電話）", "en": "Emergency department (by phone)"}, "tag": "ER", "color": "#3f6fa8", "phoneOnly": true,
+   "about": {"zh": "會回電告訴你轉診的病人後來怎麼了。這種醫師不多。", "en": "Rings back to tell you what happened to the patient you referred. Not many do."}},
+  "daughter": {"name": {"zh": "淑芬的女兒", "en": "Shu-Fen's daughter"}, "role": {"zh": "家屬（訊息）", "en": "Family (by message)"}, "tag": "FAM", "color": "#8a6d3b", "phoneOnly": true,
+   "about": {"zh": "高中生。媽媽頭痛時負責把窗簾拉上、把家裡弄安靜。", "en": "A high-schooler. When her mother's head hurts she draws the curtains and keeps the house quiet."}}
+ },
+ "places": {
+  "board": {"name": {"zh": "夜診名單白板", "en": "Evening list board"}, "hot": "whiteboard"},
+  "desk": {"name": {"zh": "脈枕診桌", "en": "Pulse desk"}, "hot": "pulse-desk"},
+  "lamp": {"name": {"zh": "舌診燈", "en": "Tongue lamp"}, "hot": "lamp"},
+  "bronze": {"name": {"zh": "針灸銅人", "en": "Bronze acupuncture figure"}, "hot": "bronze"},
+  "chart-wall": {"name": {"zh": "經絡掛圖", "en": "Meridian chart"}, "hot": "meridian-chart"},
+  "couch": {"name": {"zh": "隔簾後的治療床", "en": "Couch behind the curtain"}, "hot": "couch"}
+ },
+ "glossary": [
+  {"term": {"zh": "偏頭痛", "en": "migraine"}, "plain": {"zh": "反覆發作、常單側搏動性的頭痛，伴畏光、噁心；多數人每次發作的樣子都很像。", "en": "Recurrent, often one-sided throbbing headaches with light sensitivity and nausea; for most people every attack looks much the same."}},
+  {"term": {"zh": "先兆", "en": "aura"}, "plain": {"zh": "頭痛來之前出現的短暫神經症狀，例如眼前鋸齒狀閃光；偏頭痛病人常有固定的先兆。", "en": "Brief nerve symptoms before the pain starts, such as zigzag flashes in the vision; migraine patients often have the same aura each time."}},
+  {"term": {"zh": "循經辨位", "en": "channel-based localisation"}, "plain": {"zh": "依頭痛部位對應經絡：前額陽明、兩側少陽、後頭太陽、巔頂厥陰，再循經取穴。", "en": "Mapping the site of the headache to a meridian: forehead Yangming, temples Shaoyang, occiput Taiyang, vertex Jueyin, then choosing points along it."}},
+  {"term": {"zh": "少陽經", "en": "Shaoyang channel"}, "plain": {"zh": "膽經與三焦經，循行於頭的兩側；中醫認為側頭痛多與少陽經有關。", "en": "The Gallbladder and Sanjiao meridians, which run along the sides of the head; in TCM temple headaches usually belong here."}},
+  {"term": {"zh": "弦脈", "en": "wiry pulse"}, "plain": {"zh": "像按在琴弦上，端直而長；中醫認為多見於肝鬱、疼痛與痰飲。", "en": "A pulse like a pressed violin string, straight and long; in TCM it accompanies liver constraint, pain and phlegm-fluid."}},
+  {"term": {"zh": "肝陽上亢", "en": "liver yang rising"}, "plain": {"zh": "中醫證型：情緒壓力使肝氣鬱而化火，陽氣上衝頭面，見頭痛、面紅、煩躁、弦脈、舌紅。", "en": "A TCM pattern: stress constrains liver qi, which turns to heat and surges upward, giving headache, flushing, irritability, a wiry pulse and a red tongue."}},
+  {"term": {"zh": "原穴", "en": "yuan-source point"}, "plain": {"zh": "每條經脈上代表該臟腑原氣的穴位，例如肝經的太衝。", "en": "The point on each meridian said to hold its organ's source qi, for example Taichong on the Liver meridian."}},
+  {"term": {"zh": "斜刺", "en": "oblique insertion"}, "plain": {"zh": "針與皮膚約成四十五度角進針，用在肌肉薄或下方有重要器官的部位。", "en": "Inserting the needle at roughly forty-five degrees to the skin, used where muscle is thin or something important lies beneath."}},
+  {"term": {"zh": "延髓", "en": "medulla"}, "plain": {"zh": "腦幹最下段，管呼吸心跳；風池、風府深處就是它，針尖絕不可向上深刺。", "en": "The lowest part of the brainstem, controlling breathing and heartbeat; it lies deep to Fengchi and Fengfu, so the needle must never be aimed upward and deep."}},
+  {"term": {"zh": "雷擊性頭痛", "en": "thunderclap headache"}, "plain": {"zh": "突然在很短時間內達到最痛的劇烈頭痛，「這輩子最痛」；要當作腦出血處理，立即轉診急診。", "en": "A severe headache that peaks within moments, “the worst of my life”; treated as a brain bleed until proven otherwise, with immediate emergency referral."}},
+  {"term": {"zh": "紅旗", "en": "red flag"}, "plain": {"zh": "提示可能有危險疾病的症狀或病史，看到就先轉診，不先做常規治療。", "en": "A symptom or history that signals possible serious disease; when you see one, refer first and treat routinely later."}},
+  {"term": {"zh": "電針", "en": "electroacupuncture"}, "plain": {"zh": "在已得氣的針上夾導線，通以微弱電流；有心律調節器等植入電子裝置者禁用。", "en": "Clipping leads to needles already at de qi and passing a weak current; forbidden with a pacemaker or other implanted electronic device."}},
+  {"term": {"zh": "心律調節器", "en": "pacemaker"}, "plain": {"zh": "植入胸口、幫心臟維持節律的電子裝置；電針的電流可能干擾它。", "en": "An electronic device implanted in the chest to keep the heart in rhythm; electroacupuncture current can interfere with it."}},
+  {"term": {"zh": "頭痛日記", "en": "headache diary"}, "plain": {"zh": "記下每次發作的時間、先兆、誘因、睡眠、月經與用藥，複診時一起看。", "en": "A record of each attack's time, aura, triggers, sleep, period and medicines, reviewed together at follow-up."}}
+ ],
+ "codex": [
+  {"id": "bronze-figure", "kind": "equipment", "name": {"zh": "針灸銅人", "en": "Bronze acupuncture figure"}, "hot": "bronze",
+   "text": {"zh": "刻有經絡與穴位的人形教具。它不會喊痛、不會暈針，所以先在它身上找穴，再到病人身上核對體表標誌。", "en": "A human figure marked with meridians and points. It never complains or faints, so points are found here first and then confirmed on the patient's own landmarks."}},
+  {"id": "meridian-chart", "kind": "equipment", "name": {"zh": "經絡掛圖", "en": "Meridian chart"}, "hot": "meridian-chart",
+   "text": {"zh": "十四經循行一覽。頭痛循經辨位的第一站：前額、兩側、後頭、巔頂各屬哪條經。", "en": "The fourteen meridians at a glance. First stop for channel-based localisation of a headache: which meridian owns the forehead, temples, occiput and vertex."}},
+  {"id": "electro-unit", "kind": "equipment", "name": {"zh": "電針機", "en": "Electroacupuncture unit"}, "hot": "electro",
+   "text": {"zh": "輸出先歸零再開機，導線同側成對夾在針柄上，由零慢慢調到病人可耐受的輕微跳動；取下前先歸零。心律調節器、癲癇、孕婦腹部禁用。", "en": "Output to zero before switching on, leads clipped in pairs on the same side, turned up from zero to a mild twitch the patient tolerates; back to zero before removing. Not with pacemakers, epilepsy or over a pregnant abdomen."}},
+  {"id": "tongue-lamp", "kind": "equipment", "name": {"zh": "舌診燈", "en": "Tongue lamp"}, "hot": "lamp",
+   "text": {"zh": "接近日光的燈色。看舌質顏色與苔色一定在這盞燈下，黃光會把淡舌看成紅舌。", "en": "Daylight-coloured light. Tongue body and coating colour are always read under it; a warm lamp turns a pale tongue red."}},
+  {"id": "headache-diary", "kind": "item", "name": {"zh": "淑芬的頭痛日記", "en": "Shu-Fen's headache diary"},
+   "text": {"zh": "月底那一格永遠有字。日記讓誘因現形：睡眠、咖啡、月經、結帳。", "en": "The month-end square is never empty. The diary makes triggers visible: sleep, coffee, periods, the books."}},
+  {"id": "concept-headache", "kind": "concept", "name": {"zh": "頭痛的辨證思路", "en": "How TCM reasons about headache"},
+   "text": {"zh": "先分外感與內傷：外感多急、伴惡寒發熱；內傷多反覆、與情緒飲食勞倦相關。再循經辨位選經，再依脈舌定證：弦而舌紅屬肝陽上亢，滑而苔膩屬痰濁，細弱而舌淡屬血虛，澀而舌紫屬瘀血。中醫認為治法隨證：平肝、化痰、補血、活血，取穴也跟著變。", "en": "First exterior versus interior: exterior headaches are acute with chills and fever; interior ones recur and track mood, diet and fatigue. Then localise by channel, then settle the pattern from pulse and tongue: wiry with a red tongue is liver yang rising, slippery with a greasy coat is phlegm, thin-weak with a pale tongue is blood deficiency, choppy with a purple tongue is stasis. In TCM the method follows the pattern, calming, transforming, nourishing or moving, and the points follow the method."}},
+  {"id": "concept-redflags", "kind": "concept", "name": {"zh": "頭痛紅旗與轉診", "en": "Headache red flags and referral"},
+   "text": {"zh": "突發雷擊性、新發神經症狀（無力、言語不清、複視、意識改變）、發燒合併頸僵、外傷後、癌症或免疫低下病史、五十歲後新發、姿勢或用力時加劇、持續惡化。任何一項：先轉診急診，再談針灸。", "en": "Sudden thunderclap onset, new neurological signs (weakness, slurred speech, double vision, altered consciousness), fever with a stiff neck, after injury, cancer or immune suppression, new onset after fifty, worse with posture or straining, steadily progressive. Any one of these: emergency referral first, acupuncture later."}},
+  {"id": "concept-electro-safety", "kind": "concept", "name": {"zh": "電針的禁忌與安全", "en": "Electroacupuncture contraindications and safety"},
+   "text": {"zh": "禁用：心律調節器與植入式電子裝置、癲癇病史慎用、孕婦腹腰部、心前區跨心臟通電、頸動脈竇附近。操作：輸出歸零再開、同側成對、慢慢調、不越過病人可耐受、取下前歸零。留針期間有人觀察。", "en": "Forbidden with pacemakers and other implanted electronics; caution in epilepsy; never over a pregnant abdomen or back, never across the heart, never near the carotid sinus. In practice: zero before on, pairs on the same side, turn up slowly, never beyond what the patient tolerates, zero before off. Someone watches throughout retention."}},
+  {"id": "concept-fengchi", "kind": "concept", "name": {"zh": "風池的解剖危險區", "en": "The danger zone beneath Fengchi"},
+   "text": {"zh": "風池位於枕骨下、胸鎖乳突肌與斜方肌之間的凹陷。深處向上是延髓，外側有椎動脈。針尖朝鼻尖或對側眼球方向，依穴位標準深度，絕不可向上、向內深刺。", "en": "Fengchi lies below the occiput in the hollow between the sternocleidomastoid and trapezius. Upward and deep is the medulla; lateral is the vertebral artery. The tip points toward the nose or the opposite eye, to the point's standard depth, and never upward or inward and deep."}}
+ ],
+ "segs": [
+  {"id": "setup", "name": {"zh": "夜診前", "en": "Before the evening clinic"}, "sub": {"zh": "16:30 · 中醫診間", "en": "16:30 · the TCM consulting room"}, "t": 990, "mood": "day",
+   "note": {"zh": "夜診名單：兩個頭痛", "en": "Evening list: two headaches"},
+   "beats": [
+    {"id": "s1", "to": "place:board", "guide": {"zh": "看夜診名單", "en": "Read the evening list"},
+     "lines": [
+      ["sys", {"zh": "中醫診間，下午四點半。日診剛散，夜診名單已經寫上白板。", "en": "The TCM consulting room, half past four. Day clinic just emptied; the evening list is already on the board."}],
+      ["ye", {"zh": "淑芬月底又來了。還有一個初診，主訴頭痛。每個頭痛我都先問一句：這次和以前一樣嗎？", "en": "Shu-Fen is back for month-end. And a new patient, complaint: headache. I ask every headache one thing first: is this one like the others?"}],
+      ["me", {"zh": "一樣的頭痛，是安心的頭痛？", "en": "A headache like the others is a safe headache?"}],
+      ["ye", {"zh": "比較安心。不一樣的，先當紅旗。去把銅人推過來。", "en": "Safer. One unlike the others is a red flag until proven otherwise. Go and wheel the bronze figure over."}]
+     ],
+     "mini": {"type": "find", "hot": "bronze", "q": {"zh": "找出針灸銅人", "en": "Find the bronze acupuncture figure"}},
+     "post": [
+      ["ye", {"zh": "銅人不會喊痛，不會暈針。先在它身上找穴，再到人身上核對。", "en": "The bronze figure never complains and never faints. Find the points on him first, then confirm them on the person."}]
+     ]},
+    {"id": "s2", "to": "place:chart-wall", "guide": {"zh": "在經絡掛圖前複習", "en": "Revise at the meridian chart"},
+     "lines": [
+      ["ye", {"zh": "頭痛循經辨位：前額陽明、兩側少陽、後頭太陽、巔頂厥陰。太陽穴怎麼找？", "en": "Channel-based localisation for headache: forehead Yangming, temples Shaoyang, occiput Taiyang, vertex Jueyin. How do you find Taiyang?"}],
+      ["me", {"zh": "眉梢與外眼角之間向後約一橫指的凹陷。用病人的手指。", "en": "The hollow about one finger-breadth behind the midpoint between the eyebrow tail and the outer canthus. Using the patient's finger."}]
+     ],
+     "mini": {"type": "stage", "case": "acupuncture-technique-cun-measurement-workflow", "stage": 3},
+     "post": [
+      ["ye", {"zh": "指寸是病人的指，不是你的。你的手比淑芬大。", "en": "Finger-cun means the patient's finger, not yours. Your hand is bigger than Shu-Fen's."}]
+     ]}
+   ]},
+  {"id": "shufen", "name": {"zh": "淑芬的偏頭痛", "en": "Shu-Fen's migraine"}, "sub": {"zh": "17:30 · 脈枕診桌", "en": "17:30 · the pulse desk"}, "t": 1050, "mood": "eve",
+   "note": {"zh": "淑芬：肝陽上亢，少陽取穴", "en": "Shu-Fen: liver yang rising, Shaoyang points"},
+   "beats": [
+    {"id": "f1", "to": "shufen", "guide": {"zh": "請淑芬到脈枕診桌", "en": "Bring Shu-Fen to the pulse desk"},
+     "ring": {"title": {"zh": "淑芬的女兒傳訊息", "en": "Message from Shu-Fen's daughter"}, "sub": {"zh": "媽媽又頭痛了，窗簾我拉好了，拜託你們", "en": "Mum's head again. Curtains are drawn. Please help her"}, "call": false, "from": "daughter"},
+     "lines": [
+      ["shufen", {"zh": "月底結帳，又來了。右邊太陽穴一跳一跳，看光會痛，想吐。", "en": "Month-end closing, and here it is. Right temple throbbing, light hurts, I feel sick."}],
+      ["me", {"zh": "這次和以前一樣嗎？", "en": "Is this one like the others?"}],
+      ["shufen", {"zh": "一樣，十幾年了。先兆也一樣，眼前有鋸齒光。", "en": "The same, for over ten years. Same aura too, zigzag lights."}],
+      ["ye", {"zh": "問得對。手伸出來。", "en": "Right question. Hand out, please."}]
+     ],
+     "mini": {"type": "pulse", "pulse": "wiry", "q": {"zh": "淑芬的脈像按在琴弦上，端直而長。這是？", "en": "Shu-Fen's pulse feels like a pressed violin string, straight and long. Which pulse?"},
+      "options": [
+       {"zh": "弦脈", "en": "Wiry pulse", "ok": true, "why": {"zh": "弦主肝、主痛。月底壓力、煩躁、側頭跳痛，中醫認為是肝氣鬱而陽亢的脈。", "en": "Wiry belongs to the liver and to pain. Month-end stress, irritability and a throbbing temple: in TCM the pulse of constrained liver qi turning to rising yang."}},
+       {"zh": "浮緊脈", "en": "Floating-tight pulse", "ok": false, "why": {"zh": "浮緊是風寒在表，她沒有惡寒發熱。", "en": "Floating-tight means wind-cold on the exterior; she has no chills or fever."}},
+       {"zh": "細弱脈", "en": "Thin-weak pulse", "ok": false, "why": {"zh": "細弱屬血虛，這條脈有力。", "en": "Thin-weak belongs to blood deficiency; this pulse is forceful."}},
+       {"zh": "滑脈", "en": "Slippery pulse", "ok": false, "why": {"zh": "滑脈如珠走盤，多見痰濕；她的脈是直的。", "en": "A slippery pulse rolls like beads, usually phlegm-damp; hers is straight."}}
+      ]}},
+    {"id": "f2", "to": "place:lamp", "guide": {"zh": "在舌診燈下看舌", "en": "Read the tongue under the lamp"},
+     "lines": [
+      ["ye", {"zh": "舌在燈下看。黃光會騙人。", "en": "Tongue under the lamp. Warm light lies."}]
+     ],
+     "mini": {"type": "tongue", "tongue": {"body": "red", "coat": "yellow", "shape": "normal"}, "q": {"zh": "舌紅、苔薄黃，配合弦脈、煩躁、壓力大。辨證？", "en": "Red body, thin yellow coat, with a wiry pulse, irritability and stress. The pattern?"},
+      "options": [
+       {"zh": "肝陽上亢", "en": "Liver yang rising", "ok": true, "why": {"zh": "弦脈、舌紅苔黃、情緒誘發、側頭痛，中醫認為是肝鬱化火、陽亢上擾清竅。", "en": "Wiry pulse, red tongue with yellow coat, triggered by stress, temple pain: in TCM constrained liver qi turning to fire and rising to disturb the head."}},
+       {"zh": "風寒頭痛", "en": "Wind-cold headache", "ok": false, "why": {"zh": "風寒應見苔薄白、惡寒、脈浮緊。", "en": "Wind-cold would show a thin white coat, chills and a floating-tight pulse."}},
+       {"zh": "痰濁頭痛", "en": "Phlegm-turbidity headache", "ok": false, "why": {"zh": "痰濁多見頭重如裹、苔白膩、脈滑。", "en": "Phlegm gives a heavy wrapped head, a greasy white coat and a slippery pulse."}},
+       {"zh": "血虛頭痛", "en": "Blood-deficiency headache", "ok": false, "why": {"zh": "血虛舌淡、脈細、勞累後隱痛。", "en": "Blood deficiency shows a pale tongue, a thin pulse and a dull ache after exertion."}}
+      ]}},
+    {"id": "f3", "to": "place:bronze", "guide": {"zh": "在銅人上取穴", "en": "Locate the points on the bronze figure"},
+     "lines": [
+      ["ye", {"zh": "側頭痛屬少陽經。局部兩個，遠端兩個。選哪四個？", "en": "Temple pain belongs to the Shaoyang channel. Two local, two distal. Which four?"}]
+     ],
+     "mini": {"type": "points", "codes": ["EX-HN5", "GB8", "GB20", "LR3"], "q": {"zh": "指出太陽、率谷、風池、太衝", "en": "Point to Taiyang, Shuaigu, Fengchi and Taichong"}},
+     "post": [
+      ["ye", {"zh": "太衝是肝經原穴，中醫認為能平肝潛陽。風池呢？", "en": "Taichong is the Liver meridian's yuan-source point; in TCM it calms the liver and anchors yang. And Fengchi?"}],
+      ["me", {"zh": "向鼻尖，不能向上深刺。", "en": "Toward the nose, never upward and deep."}]
+     ]},
+    {"id": "f4", "to": "shufen", "guide": {"zh": "練習風池的安全方向", "en": "Practise the safe direction at Fengchi"},
+     "lines": [
+      ["ye", {"zh": "風池深處是延髓，外側是椎動脈。針尖向鼻尖或對側眼球，依穴位標準深度。", "en": "Deep to Fengchi is the medulla, lateral is the vertebral artery. Tip toward the nose or the opposite eye, to the point's standard depth."}]
+     ],
+     "mini": {"type": "drill", "template": "acupuncture-technique", "drill": "needle:neck"},
+     "post": [
+      ["shufen", {"zh": "以前的醫師說這裡最有效。", "en": "My old doctor said this point works best."}],
+      ["ye", {"zh": "最有效的穴，也是最要小心的穴。", "en": "The most effective point is also the one to be most careful with."}]
+     ]},
+    {"id": "f5", "to": "place:couch", "guide": {"zh": "到治療床斜刺率谷與太陽", "en": "To the couch: oblique at Shuaigu and Taiyang"},
+     "lines": [
+      ["ye", {"zh": "頭皮下面是骨頭，所以率谷平刺、太陽斜刺。角度不對，針會頂在骨膜上，很痛。", "en": "Bone lies under the scalp, so Shuaigu takes a transverse and Taiyang an oblique insertion. Wrong angle and the needle sits on periosteum, which hurts."}]
+     ],
+     "mini": {"type": "stage", "case": "acupuncture-technique-angle-depth-workflow", "stage": 3},
+     "post": [
+      ["pan", {"zh": "淑芬，留針的時候燈調暗一點好嗎？嘔吐袋在旁邊。", "en": "Shu-Fen, shall I dim the lamp while the needles are in? Sick bag's beside you."}],
+      ["shufen", {"zh": "謝謝你。每次都記得。", "en": "Thank you. You always remember."}]
+     ]},
+    {"id": "f6", "roles": ["nurse"], "to": "pan", "guide": {"zh": "和小潘確認留針觀察", "en": "Agree the retention watch with Pan"},
+     "lines": [
+      ["pan", {"zh": "頭痛病人留針，看什麼？", "en": "Headache patient with needles in: what do we watch?"}],
+      ["me", {"zh": "臉色、冒汗、噁心想吐，還有她說的每一句話。痛變了就叫我。", "en": "Colour, sweating, nausea, and every word she says. If the pain changes, call me."}],
+      ["pan", {"zh": "血壓我也先量一次，放在旁邊。", "en": "I'll take a blood pressure now too, and keep it handy."}]
+     ]}
+   ]},
+  {"id": "jianhong", "name": {"zh": "初診：建宏", "en": "New patient: Jian-Hong"}, "sub": {"zh": "18:30 · 脈枕診桌", "en": "18:30 · the pulse desk"}, "t": 1110, "mood": "eve",
+   "note": {"zh": "建宏：雷擊性頭痛，轉診急診", "en": "Jian-Hong: thunderclap headache, emergency referral"},
+   "beats": [
+    {"id": "j1", "to": "jianhong", "guide": {"zh": "請建宏到診桌", "en": "Bring Jian-Hong to the desk"},
+     "lines": [
+      ["pan", {"zh": "初診那位說他痛到站不住，我先讓他進來。", "en": "The new patient says he can't stand for the pain. I brought him straight in."}],
+      ["jianhong", {"zh": "醫師，剛剛開車突然痛起來。這輩子沒這麼痛過。", "en": "Doctor, it hit me suddenly while I was driving. Never had pain like this in my life."}],
+      ["me", {"zh": "以前有偏頭痛嗎？這次和以前一樣嗎？", "en": "Any migraines before? Is this one like the others?"}],
+      ["jianhong", {"zh": "從來沒頭痛過。像被人從後面敲一棒。脖子也硬了。", "en": "Never had a headache. Like being hit from behind with a bat. My neck's gone stiff too."}],
+      ["ye", {"zh": "你聽到了什麼？", "en": "What did you just hear?"}]
+     ],
+     "mini": {"type": "choice", "q": {"zh": "突發「這輩子最痛」、頸部僵硬、從無頭痛病史。下一步？", "en": "Sudden “worst of my life”, stiff neck, no headache history. Next step?"},
+      "options": [
+       {"zh": "立即轉診急診，今晚不針", "en": "Emergency referral now; no needles tonight", "ok": true, "set": {"referred": true},
+        "why": {"zh": "雷擊性頭痛加頸僵是紅旗，要排除蜘蛛膜下腔出血。針灸不是不能，是現在不該。", "en": "A thunderclap headache with a stiff neck is a red flag for subarachnoid haemorrhage. Acupuncture is not forbidden; it is simply not for now."}},
+       {"zh": "先針風池試試能不能緩解", "en": "Try Fengchi first and see if it eases", "ok": false, "set": {"referred": false},
+        "why": {"zh": "緩解了也不代表安全，反而會延誤。紅旗先走轉診。", "en": "Easing would not make it safe, only delay it. Red flags go to referral first."}},
+       {"zh": "量血壓，正常就針", "en": "Check the blood pressure; needle if normal", "ok": false, "set": {"referred": false},
+        "why": {"zh": "血壓正常不能排除腦出血。病史本身已經夠了。", "en": "A normal blood pressure does not rule out a brain bleed. The history alone is enough."}}
+      ]},
+     "post": [
+      ["ye", {"zh": "雷擊性頭痛。小潘，血壓。", "en": "Thunderclap headache. Pan, blood pressure."}]
+     ]},
+    {"id": "j2", "to": "jianhong", "guide": {"zh": "量建宏的生命徵象", "en": "Take Jian-Hong's vital signs"},
+     "lines": [
+      ["sys", {"zh": "小潘量血壓時眉頭皺起來。建宏按著後腦，說看東西有點花。", "en": "Pan frowns at the cuff. Jian-Hong holds the back of his head and says his vision is blurring."}]
+     ],
+     "mini": {"type": "vitals", "event": "hypertension",
+      "options": [
+       {"zh": "停止治療，半坐臥，再量一次，叫救護車轉診", "en": "No treatment, semi-recumbent, repeat the reading, ambulance and referral", "ok": true,
+        "why": {"zh": "劇烈頭痛加高血壓加視力模糊，可能是出血的結果也可能是原因。急診的事交給急診，我們負責安全送達。", "en": "Severe headache, high blood pressure and blurred vision may be the result of a bleed or its cause. The emergency department's job is theirs; ours is getting him there safely."}},
+       {"zh": "針太衝幫他降血壓", "en": "Needle Taichong to bring the pressure down", "ok": false,
+        "why": {"zh": "這不是門診可以處理的血壓。先轉診，不要在診間花時間。", "en": "This is not a blood pressure for the clinic to manage. Refer; do not spend time in the consulting room."}},
+       {"zh": "給他止痛藥，觀察一下", "en": "Give a painkiller and observe", "ok": false,
+        "why": {"zh": "止痛會遮住病程，也不是我們該開的藥。觀察的地方是急診。", "en": "Analgesia masks the course and is not ours to give here. The place to observe him is the emergency department."}}
+      ]},
+     "post": [
+      ["ye", {"zh": "紅旗加血壓，不用再討論了。轉診單，寫清楚時間。", "en": "Red flag plus that pressure: nothing more to discuss. Referral form, and write down the time it started."}]
+     ]},
+    {"id": "j3", "to": "place:desk", "guide": {"zh": "想一想：何時需要影像", "en": "Think: when is imaging needed?"},
+     "lines": [
+      ["ye", {"zh": "等救護車的時候，回答我：什麼樣的頭痛需要影像與急診？", "en": "While we wait for the ambulance, tell me: which headaches need imaging and the emergency department?"}]
+     ],
+     "mini": {"type": "imaging", "region": "head",
+      "question": {"zh": "哪些頭痛需要影像檢查與急診評估？", "en": "Which headaches need imaging and emergency assessment?"},
+      "answer": {"zh": "突發雷擊性；新發神經症狀；發燒合併頸僵；外傷後；癌症或免疫低下；五十歲後新發；用力或姿勢加劇；持續惡化。建宏符合第一項就夠了。", "en": "Thunderclap onset; new neurological signs; fever with a stiff neck; after injury; cancer or immune suppression; new after fifty; worse on straining or posture; steadily worsening. Jian-Hong meets the first, and that is enough."}},
+     "post": [
+      ["ye", {"zh": "頭痛的影像不是門診開的，是急診做的。我們的工作是認出紅旗。", "en": "Headache imaging is not ordered from here; it is done in the emergency department. Our job is to recognise the red flag."}]
+     ]},
+    {"id": "j4", "roles": ["nurse"], "to": "pan", "guide": {"zh": "和小潘完成轉診", "en": "Complete the referral with Pan"},
+     "lines": [
+      ["pan", {"zh": "救護車快到了，轉診單我印好了。還要寫什麼？", "en": "Ambulance is nearly here, referral printed. What else goes on it?"}],
+      ["me", {"zh": "突發劇烈頭痛、頸僵、視力模糊、血壓高、從無頭痛病史，還有開始的時間。", "en": "Sudden severe headache, stiff neck, blurred vision, high blood pressure, no headache history, and the time it began."}],
+      ["pan", {"zh": "開始的時間最重要。急診每次都先問這個。", "en": "The start time matters most. The emergency department always asks that first."}]
+     ]}
+   ]},
+  {"id": "shufen2", "name": {"zh": "回到淑芬", "en": "Back to Shu-Fen"}, "sub": {"zh": "19:30 · 隔簾後的治療床", "en": "19:30 · the couch behind the curtain"}, "t": 1170, "mood": "eve",
+   "note": {"zh": "淑芬：電針教學，頭痛日記", "en": "Shu-Fen: electroacupuncture lesson, headache diary"},
+   "beats": [
+    {"id": "r1", "to": "shufen", "guide": {"zh": "回到淑芬身邊", "en": "Return to Shu-Fen"},
+     "lines": [
+      ["shufen", {"zh": "剛剛外面好像很忙？", "en": "Sounded busy out there?"}],
+      ["me", {"zh": "有一位要去急診。妳的頭呢？", "en": "Someone had to go to the emergency department. How is your head?"}],
+      ["shufen", {"zh": "輕一點了。還在跳，但是慢了。", "en": "Lighter. Still throbbing, but slower."}],
+      ["ye", {"zh": "她頸肩也緊，率谷與風池一對，上電針。先問她一件事。", "en": "Her neck and shoulders are tight too; Shuaigu and Fengchi as a pair, on electroacupuncture. First ask her one thing."}],
+      ["me", {"zh": "淑芬，妳有沒有心律調節器或其他植入的電子裝置？", "en": "Shu-Fen, do you have a pacemaker or any other implanted electronic device?"}],
+      ["shufen", {"zh": "沒有。我只有計算機。", "en": "No. I only have a calculator."}]
+     ],
+     "mini": {"type": "order", "q": {"zh": "電針操作的正確順序", "en": "The correct sequence for electroacupuncture"},
+      "steps": [
+       {"zh": "確認無心律調節器等禁忌", "en": "Confirm no pacemaker or other contraindication"},
+       {"zh": "針刺得氣後，同側成對夾導線", "en": "After de qi, clip leads in same-side pairs"},
+       {"zh": "輸出歸零，再開機", "en": "Output to zero, then switch on"},
+       {"zh": "由零慢慢調到可耐受的輕微跳動", "en": "Turn up slowly to a mild tolerable twitch"},
+       {"zh": "留針期間觀察，不隨意加大", "en": "Watch during retention; do not keep turning up"},
+       {"zh": "先歸零關機，再取下導線出針", "en": "Zero and off first, then remove leads and needles"}
+      ]}},
+    {"id": "r2", "to": "shufen", "guide": {"zh": "練習導線夾接", "en": "Practise clipping the leads"},
+     "lines": [
+      ["ye", {"zh": "導線夾在針柄，不碰皮膚，不跨過正中線，不跨過心臟。", "en": "Clips on the needle handle, not the skin; never across the midline, never across the heart."}]
+     ],
+     "mini": {"type": "drill", "template": "acupuncture-technique", "drill": "electro"},
+     "post": [
+      ["shufen", {"zh": "像有人在輕輕敲門。", "en": "Like someone gently knocking."}],
+      ["ye", {"zh": "敲門就好，不要撞門。", "en": "Knocking is enough. No battering."}]
+     ]},
+    {"id": "r3", "when": {"flag": "referred", "is": true},
+     "lines": [
+      ["ye", {"zh": "你今晚沒針建宏。有時候最好的一針，是不下的那一針。", "en": "You did not needle Jian-Hong tonight. Sometimes the best needle is the one you do not use."}]
+     ]},
+    {"id": "r3b", "when": {"flag": "referred", "is": false},
+     "lines": [
+      ["ye", {"zh": "你剛才想先針建宏。幸好小潘的血壓計比你快。記住：雷擊性頭痛，先轉診。", "en": "You wanted to needle Jian-Hong first. Lucky Pan's cuff was quicker than you. Remember: thunderclap headache, refer first."}]
+     ]},
+    {"id": "r4", "roles": ["resident"], "to": "place:desk", "guide": {"zh": "寫病歷、交頭痛日記", "en": "Write the note, hand over the diary"},
+     "lines": [
+      ["me", {"zh": "淑芬，這本頭痛日記：發作時間、先兆、睡眠、咖啡、月經、用藥，每次都記。", "en": "Shu-Fen, this headache diary: time of attack, aura, sleep, coffee, period, medicines. Every time."}],
+      ["shufen", {"zh": "月底一定會有一格。", "en": "The month-end square will always be full."}],
+      ["me", {"zh": "那就看看能不能讓它變小。", "en": "Then let's see if we can make it smaller."}]
+     ],
+     "item": "headache-diary"}
+   ]},
+  {"id": "ercall", "name": {"zh": "急診回電", "en": "The ED rings back"}, "sub": {"zh": "21:30 · 診間電話", "en": "21:30 · the clinic phone"}, "t": 1290, "mood": "night",
+   "note": {"zh": "建宏：蜘蛛膜下腔出血，已會診", "en": "Jian-Hong: subarachnoid bleed, neurosurgery consulted"},
+   "beats": [
+    {"id": "e1",
+     "ring": {"title": {"zh": "急診醫師回電", "en": "Emergency physician calling"}, "sub": {"zh": "建宏的電腦斷層出來了", "en": "Jian-Hong's CT is back"}, "call": true, "from": "er-doc"},
+     "lines": [
+      ["er-doc", {"zh": "你們轉來的建宏，電腦斷層是蜘蛛膜下腔出血，神經外科已經接手。", "en": "Jian-Hong, the one you sent: CT shows a subarachnoid haemorrhage. Neurosurgery has taken over."}],
+      ["me", {"zh": "謝謝你回電。", "en": "Thank you for ringing back."}],
+      ["er-doc", {"zh": "謝謝你們把開始的時間寫清楚。那是今晚最有用的一行字。", "en": "Thank you for writing down the start time. Most useful line I read tonight."}],
+      ["ye", {"zh": "這通電話，比任何一針都重要。", "en": "That phone call matters more than any needle."}]
+     ]}
+   ]},
+  {"id": "close", "name": {"zh": "收診", "en": "Closing the clinic"}, "sub": {"zh": "22:00 · 中醫診間", "en": "22:00 · the TCM consulting room"}, "t": 1320, "mood": "night",
+   "note": {"zh": "收診：那一句問話", "en": "Closed: that one question"},
+   "beats": [
+    {"id": "c1", "to": "ye", "guide": {"zh": "找葉醫師收診", "en": "Close with Dr Yeh"},
+     "lines": [
+      ["ye", {"zh": "今晚兩個頭痛。一個十幾年都一樣，一個這輩子第一次。差別在哪裡？", "en": "Two headaches tonight. One the same for over ten years, one the first of its life. Where was the difference?"}],
+      ["me", {"zh": "在那一句「這次和以前一樣嗎」。", "en": "In the question: is this one like the others."}],
+      ["ye", {"zh": "對。穴位可以查書，那句話要變成習慣。回去睡覺，明天別頭痛。", "en": "Yes. Points can be looked up; that question has to become a habit. Go and sleep. No headaches tomorrow."}],
+      ["pan", {"zh": "我把燈關了。嘔吐袋還剩很多。", "en": "Lights off. Plenty of sick bags left."}]
+     ],
+     "end": true}
+   ]}
+ ],
+ "ending": {"title": {"zh": "夜診結束", "en": "Clinic closed"}, "sub": {"zh": "這次和以前一樣嗎？", "en": "Is this one like the others?"},
+  "stats": ["stages", "drills", "choices", "calls", "items", "time"]}
+}

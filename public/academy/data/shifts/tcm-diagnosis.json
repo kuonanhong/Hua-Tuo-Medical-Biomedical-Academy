@@ -1,0 +1,341 @@
+{
+  "format": "huatuo-shift-v2",
+  "department": "tcm-diagnosis",
+  "case": "main",
+  "caseTitle": {"zh": "四診合參的第一位病人", "en": "Four examinations, one first visit"},
+  "condition": {"zh": "初診 · 四診合參", "en": "First visit · four examinations"},
+  "difficulty": 1,
+  "title": {"zh": "中醫診斷科值班日", "en": "A shift in TCM diagnostics"},
+  "tagline": {"zh": "搓熱雙手再把脈；先看人，再看病", "en": "Warm your hands before the pulse; see the person before the disease"},
+  "room": "tcm-clinic",
+  "minutes": 25,
+  "roles": [
+    {"id": "intern", "zh": "中醫見習醫師", "en": "TCM clinical clerk",
+     "desc": {"zh": "跟著周醫師望聞問切，親手把脈、看舌、寫初診病歷。", "en": "Follow Dr Chou through the four examinations: take the pulse, read the tongue, write the first-visit note."}},
+    {"id": "nurse", "zh": "中醫診間護理師", "en": "TCM clinic nurse",
+     "desc": {"zh": "舌診燈、體溫、脈搏與衛教單都在你手上；病人離開診間後的樣子你最清楚。", "en": "The tongue lamp, temperatures, pulses and the education sheet are yours; you know best what happens after they leave."}}
+  ],
+  "cast": {
+    "master": {"name": {"zh": "周醫師", "en": "Dr Chou"}, "role": {"zh": "中醫師（師傅）", "en": "TCM physician (mentor)"}, "tag": "DR", "color": "#81296d", "body": "mentor",
+               "about": {"zh": "把脈前一定先把雙手搓熱。保溫杯裡的桂圓紅棗茶永遠放到涼。", "en": "Always warms her hands before a pulse. The longan and red-date tea in her flask always goes cold."}},
+    "nurse": {"name": {"zh": "阿美護理師", "en": "Nurse A-Mei"}, "role": {"zh": "中醫診間護理師", "en": "TCM clinic nurse"}, "tag": "RN", "color": "#3b8f6a", "body": "nurse",
+              "about": {"zh": "記得每位病人喝什麼茶。舌診燈的色溫由她管，沒人敢亂調。", "en": "Remembers what tea every patient drinks. The tongue lamp's colour temperature is hers; nobody touches it."}},
+    "hsiuchin": {"name": {"zh": "秀琴阿姨", "en": "Auntie Hsiu-Chin"}, "role": {"zh": "五十八歲，早市賣菜", "en": "Fifty-eight, sells vegetables at the morning market"}, "tag": "P1", "color": "#c2703a", "body": "patient",
+                 "about": {"zh": "虛構教學個案。凌晨三點起床，站一整天。最近累到站在攤位上都想睡。", "en": "Fictional teaching case. Up at three every morning, on her feet all day. Lately so tired she dozes at the stall."}},
+    "son": {"name": {"zh": "阿姨的兒子", "en": "Hsiu-Chin's son"}, "role": {"zh": "家屬（電話）", "en": "Family (by phone)"}, "tag": "FAM", "color": "#8a6d3b", "phoneOnly": true,
+            "about": {"zh": "在外縣市上班，靠電話照顧媽媽。鄰居送的補品都先問他。", "en": "Works in another county and looks after his mother by phone. Every gift of tonic goes past him first."}},
+    "hsiaoyu": {"name": {"zh": "小宇", "en": "Hsiao-Yu"}, "role": {"zh": "二十歲，大學生", "en": "Twenty, university student"}, "tag": "P2", "color": "#b5651d", "body": "patient",
+                "about": {"zh": "虛構教學個案。喉嚨痛三天，明天期中考。只想要一帖藥和一張准假單。", "en": "Fictional teaching case. Sore throat for three days, mid-terms tomorrow. Wants one prescription and one sick note."}}
+  },
+  "places": {
+    "pulse-desk": {"name": {"zh": "脈枕診桌", "en": "Pulse desk"}, "hot": "pulse-desk"},
+    "lamp": {"name": {"zh": "舌診燈", "en": "Tongue lamp"}, "hot": "lamp"},
+    "board": {"name": {"zh": "診間白板", "en": "Clinic whiteboard"}, "hot": "whiteboard"},
+    "bronze": {"name": {"zh": "針灸銅人", "en": "Bronze acupuncture figure"}, "hot": "bronze"},
+    "desk": {"name": {"zh": "書寫桌", "en": "Writing desk"}, "hot": "desk"}
+  },
+  "glossary": [
+    {"term": {"zh": "四診合參", "en": "four examinations"}, "plain": {"zh": "望、聞、問、切四種方法一起用，互相印證，不靠單一線索下結論。", "en": "Inspection, listening and smelling, questioning and palpation used together so that each checks the others; no conclusion rests on one clue."}},
+    {"term": {"zh": "望神", "en": "inspecting the spirit"}, "plain": {"zh": "看病人的眼神、精神、反應與動作，判斷整體的生命力與病情輕重。", "en": "Reading the eyes, alertness, responses and movements to judge overall vitality and how serious things are."}},
+    {"term": {"zh": "少神", "en": "lack of spirit"}, "plain": {"zh": "精神不振、聲音低、懶得說話、動作慢；中醫認為多見於虛證。", "en": "Low energy, a quiet voice, little wish to talk, slow movements; in TCM thinking it points toward a deficiency pattern."}},
+    {"term": {"zh": "齒痕舌", "en": "tooth-marked tongue"}, "plain": {"zh": "舌邊有牙齒壓出的印子，常與舌胖同見；中醫認為是脾虛、水濕停聚的表現。", "en": "Indentations along the tongue's edge, usually with a swollen tongue; read in TCM as spleen deficiency with retained dampness."}},
+    {"term": {"zh": "弱脈", "en": "weak pulse"}, "plain": {"zh": "沉、細、沒有力氣的脈，要重按才摸得到；中醫認為主氣血不足或陽虛。", "en": "A deep, thin pulse without strength, felt only on firm pressure; in TCM it suggests deficiency of qi and blood or of yang."}},
+    {"term": {"zh": "浮中沉", "en": "light, medium and deep pressure"}, "plain": {"zh": "診脈時手指分三層加壓：輕取、中取、重按，看脈在哪一層出現。", "en": "Three levels of finger pressure when taking the pulse: light, medium and deep, to find at which level the pulse appears."}},
+    {"term": {"zh": "寸關尺", "en": "cun, guan and chi"}, "plain": {"zh": "手腕橈動脈上的三個診脈位置，食指、中指、無名指各按一處。", "en": "The three pulse positions along the radial artery at the wrist, one under each of the index, middle and ring fingers."}},
+    {"term": {"zh": "八綱辨證", "en": "eight principles"}, "plain": {"zh": "用表裡、寒熱、虛實、陰陽八個綱領整理四診資料，陰陽是總綱。", "en": "Sorting the findings by exterior/interior, cold/heat, deficiency/excess and yin/yang; yin and yang sum up the rest."}},
+    {"term": {"zh": "陽虛", "en": "yang deficiency"}, "plain": {"zh": "中醫認為身體的溫煦與推動力量不足：怕冷、手腳冰、疲倦、大便軟、舌淡、脈弱。", "en": "In TCM, too little warming and driving force: cold intolerance, cold limbs, fatigue, loose stools, a pale tongue and a weak pulse."}},
+    {"term": {"zh": "紅旗", "en": "red flag"}, "plain": {"zh": "提示可能有危險疾病的症狀，出現時要先排除急重症，再談調理。", "en": "A symptom that may signal a dangerous disease; when it appears, exclude the serious causes before any regulating treatment."}},
+    {"term": {"zh": "轉診", "en": "referral"}, "plain": {"zh": "把病人介紹給另一科或另一位醫師評估或治療，並寫清楚原因。", "en": "Sending a patient to another specialty or doctor for assessment or treatment, with the reason written down clearly."}},
+    {"term": {"zh": "辨證論治", "en": "pattern-based treatment"}, "plain": {"zh": "先整理出病人目前的證型，再依證型決定治法與方藥；同病可以異治。", "en": "Work out the patient's present pattern first, then choose the treatment from it; the same disease may be treated differently."}},
+    {"term": {"zh": "五色主病", "en": "five colours"}, "plain": {"zh": "望面色的口訣：中醫認為青主寒痛瘀、赤主熱、黃主虛濕、白主虛寒失血、黑主腎虛水飲。", "en": "The facial-colour rule of thumb: in TCM, green-blue for cold, pain and stasis; red for heat; yellow for deficiency and damp; white for deficiency, cold and blood loss; black for kidney deficiency and fluids."}}
+  ],
+  "codex": [
+    {"id": "pulse-pillow", "kind": "equipment", "name": {"zh": "脈枕與診桌", "en": "Pulse pillow and desk"}, "text": {"zh": "病人手腕下墊脈枕，手心朝上，手臂與心臟同高。醫師的手要先搓熱。", "en": "The wrist rests on the pillow, palm up, arm level with the heart. The examiner's hands are warmed first."}, "hot": "pulse-desk"},
+    {"id": "tongue-lamp", "kind": "equipment", "name": {"zh": "舌診燈", "en": "Tongue lamp"}, "text": {"zh": "望舌要用自然光或標準色溫的燈；有色光源會讓舌色判讀失真。伸舌時間要短。", "en": "Inspect the tongue in daylight or under a standard-colour lamp; tinted light distorts tongue colour. Keep the tongue out only briefly."}, "hot": "lamp"},
+    {"id": "bronze-man", "kind": "equipment", "name": {"zh": "針灸銅人", "en": "Bronze acupuncture figure"}, "text": {"zh": "宋代起用來教學與考試的穴位模型。診間用它向病人解釋穴位與禁忌。", "en": "A point model used for teaching and examinations since the Song dynasty. In clinic it helps explain points and their cautions to patients."}, "hot": "bronze"},
+    {"id": "meridian-chart", "kind": "equipment", "name": {"zh": "經絡掛圖", "en": "Meridian chart"}, "text": {"zh": "十四經循行與穴位的掛圖。辨證完要對照經絡選穴時用。", "en": "The fourteen channels and their points. Used when choosing points after the pattern is settled."}, "hot": "meridian-chart"},
+    {"id": "sweet-potato", "kind": "item", "name": {"zh": "阿姨的地瓜", "en": "Auntie's sweet potatoes"}, "text": {"zh": "秀琴阿姨攤位上的地瓜，紙條寫著「給瘦瘦的醫生」。", "en": "Sweet potatoes from Auntie Hsiu-Chin's stall, with a note: “for the thin doctor”."}},
+    {"id": "eight-principles", "kind": "concept", "name": {"zh": "八綱辨證的用法", "en": "Using the eight principles"}, "text": {"zh": "表裡定病位深淺，寒熱定病性，虛實定正邪盛衰，最後歸入陰陽。中醫認為它是所有辨證方法的總框架：先問「哪裡、什麼性質、誰強誰弱」，再談臟腑與氣血。", "en": "Exterior/interior locates the depth, cold/heat names the nature, deficiency/excess weighs the body against the illness, and yin/yang sums it up. In TCM it is the frame beneath every other method: ask where, what kind and who is winning before naming organs or qi and blood."}},
+    {"id": "why-four", "kind": "concept", "name": {"zh": "為什麼不能只把脈", "en": "Why the pulse alone is not enough"}, "text": {"zh": "脈會被情緒、運動、飲食、天氣、藥物改變；舌會被食物染苔；問診會被病人的記憶篩選。四診合參就是讓每一診替另一診校正，矛盾時才有「舍脈從症、舍症從脈」的判斷。", "en": "The pulse shifts with mood, exertion, food, weather and medicines; the tongue coat can be stained by food; the history is filtered by memory. The four examinations correct one another, and only then can a mismatch be judged."}},
+    {"id": "integration-red-flags", "kind": "concept", "name": {"zh": "中西醫整合與轉診紅旗", "en": "Integration and red flags"}, "text": {"zh": "中醫辨證與西醫檢查不是二選一。喘、水腫、心悸、胸痛、突發神經症狀、不明體重減輕、出血，出現就先排除危險原因；轉診單寫清楚症狀與時間，中醫調理同時進行。", "en": "A TCM pattern and a Western work-up are not either/or. Breathlessness, swelling, palpitations, chest pain, sudden neurological signs, unexplained weight loss or bleeding mean exclude the dangerous causes first; write the referral with symptoms and timing, and continue TCM care alongside."}}
+  ],
+  "segs": [
+    {"id": "morning", "name": {"zh": "晨間準備", "en": "Morning set-up"}, "sub": {"zh": "07:40 · 中醫診間", "en": "07:40 · the TCM clinic"}, "t": 460, "mood": "day",
+     "note": {"zh": "手搓熱了，燈調好了", "en": "Hands warmed, lamp set"},
+     "beats": [
+      {"id": "a1", "to": "place:pulse-desk", "guide": {"zh": "到脈枕診桌報到", "en": "Report to the pulse desk"},
+       "lines": [
+        ["sys", {"zh": "中醫診間，早上七點四十分。脈枕還是涼的，周醫師正在用雙手搓熱它。", "en": "The TCM clinic, twenty to eight. The pulse pillow is still cold; Dr Chou is warming it between her palms."}],
+        ["master", {"zh": "早。第一件事不是把脈，是把手搓熱。病人的手腕會記得你的溫度。", "en": "Morning. The first job is not the pulse, it is warming your hands. A patient's wrist remembers your temperature."}],
+        ["me", {"zh": "周醫師早。今天初診幾位？", "en": "Morning, Dr Chou. How many first visits today?"}],
+        ["master", {"zh": "兩位。先問你：四診合參，為什麼不能只把脈？", "en": "Two. First a question: the four examinations together; why not just the pulse?"}],
+        ["me", {"zh": "脈會受情緒、運動、天氣影響，要和望、聞、問互相印證。", "en": "The pulse shifts with mood, exertion and weather; it has to be checked against looking, listening and asking."}],
+        ["master", {"zh": "對。只靠一診下結論，叫猜，不叫辨證論治。", "en": "Right. A conclusion from one examination is a guess, not pattern-based treatment."}]
+       ],
+       "mini": {"type": "find", "hot": "whiteboard", "q": {"zh": "找出今天的初診名單", "en": "Find today's first-visit list"}},
+       "post": [
+        ["nurse", {"zh": "名單在這：秀琴阿姨八點半，小宇下午兩點。阿姨是賣菜的，一定會帶東西來。", "en": "Here's the list: Auntie Hsiu-Chin at half past eight, Hsiao-Yu at two. Auntie sells vegetables; she will bring something."}]
+       ]},
+      {"id": "a2", "to": "place:lamp", "guide": {"zh": "檢查舌診燈", "en": "Check the tongue lamp"},
+       "lines": [
+        ["nurse", {"zh": "舌診燈先開一下。色溫偏了，舌色就會看錯。", "en": "Switch the tongue lamp on first. If the colour temperature drifts, you misread the tongue."}],
+        ["master", {"zh": "望診靠光。自然光最好，沒有就用標準色溫的燈，別在黃燈下看舌頭。", "en": "Inspection depends on light. Daylight is best; otherwise a standard-colour lamp, never a yellow bulb."}],
+        ["me", {"zh": "記下來：舌診用自然光或標準燈，避免有色光源。", "en": "Noted: daylight or a standard lamp for the tongue, no tinted light."}]
+       ]}
+     ]},
+    {"id": "first-visit", "name": {"zh": "秀琴阿姨初診", "en": "Auntie Hsiu-Chin"}, "sub": {"zh": "08:30 · 脈枕診桌", "en": "08:30 · the pulse desk"}, "t": 510, "mood": "day",
+     "note": {"zh": "望神、問診、舌、脈，四診都到了", "en": "Spirit, history, tongue, pulse: all four done"},
+     "beats": [
+      {"id": "s1", "to": "hsiuchin", "guide": {"zh": "請秀琴阿姨入座", "en": "Seat Auntie Hsiu-Chin"},
+       "lines": [
+        ["sys", {"zh": "秀琴阿姨拎著一袋地瓜走進來，坐下時先嘆了口氣。", "en": "Auntie Hsiu-Chin comes in carrying a bag of sweet potatoes and sighs as she sits."}],
+        ["hsiuchin", {"zh": "醫生，我最近很累，頭暈暈的，站在攤位上都想睡。", "en": "Doctor, I'm so tired lately, light-headed. I could fall asleep standing at the stall."}],
+        ["master", {"zh": "阿姨還沒開口之前，你看到什麼？", "en": "Before Auntie said a word, what did you see?"}],
+        ["me", {"zh": "面色偏白沒光澤，聲音小，走路慢，眼神沒什麼神采。", "en": "A pale face without lustre, a quiet voice, slow steps, little light in the eyes."}],
+        ["master", {"zh": "這叫望神。得神、少神、失神，她是哪一種？進去看。", "en": "That is inspecting the spirit. Spirit present, lacking or lost: which is she? Go and look."}]
+       ],
+       "mini": {"type": "stage", "case": "tcm-diagnosis-wang-shen-workflow", "stage": 3},
+       "post": [
+        ["master", {"zh": "少神：精神不振、聲低懶言、動作遲緩。這是虛證的第一條線索，不是結論。", "en": "Lack of spirit: low energy, quiet voice, slow movements. The first clue of deficiency, not a conclusion."}]
+       ]},
+      {"id": "s2", "to": "hsiuchin", "guide": {"zh": "問診：寒熱、汗、二便", "en": "Ask: cold, sweat, bowels"},
+       "lines": [
+        ["me", {"zh": "阿姨，您怕冷還是怕熱？手腳會不會冰？", "en": "Auntie, do you feel the cold or the heat more? Are your hands and feet cold?"}],
+        ["hsiuchin", {"zh": "怕冷啊，夏天也要穿襪子。大便軟軟的，一天兩三次。", "en": "The cold. I wear socks even in summer. Stools are soft, two or three times a day."}],
+        ["me", {"zh": "晚上會不會喘？腳會不會腫？", "en": "Any breathlessness at night? Do your feet swell?"}],
+        ["hsiuchin", {"zh": "這幾個禮拜腳踝會腫，爬樓梯會喘，晚上心臟會蹦蹦跳。", "en": "These past weeks my ankles swell, stairs make me breathless, and at night my heart thumps."}],
+        ["sys", {"zh": "周醫師沒有抬頭，但筆停了一下。", "en": "Dr Chou does not look up, but her pen pauses."}]
+       ],
+       "mini": {"type": "choice", "q": {"zh": "阿姨說爬樓梯會喘、腳踝腫、夜裡心悸。這幾句話你怎麼處理？", "en": "Auntie reports breathlessness on stairs, ankle swelling and palpitations at night. What do you do with that?"},
+                "options": [
+                 {"zh": "記為紅旗，問完向師傅提出並建議檢查", "en": "Log it as a red flag, raise it with the mentor, suggest tests", "ok": true, "set": {"red-flag": true},
+                  "why": {"zh": "喘、水腫、心悸要先排除心臟與甲狀腺問題；中醫辨證和西醫檢查可以同時進行。", "en": "Breathlessness, swelling and palpitations need heart and thyroid causes excluded first; the TCM pattern and the work-up can run side by side."}},
+                 {"zh": "寫成陽虛水泛，繼續辨證", "en": "Write “yang deficiency with water overflow” and move on", "ok": false, "set": {"red-flag": false},
+                  "why": {"zh": "證型也許沒錯，但紅旗症狀先要排除危險原因，不能被一個漂亮的證名蓋過去。", "en": "The pattern may be right, but red-flag symptoms need dangerous causes excluded first; a tidy pattern name must not cover them."}},
+                 {"zh": "叫阿姨多穿衣服、早點睡", "en": "Tell Auntie to dress warmer and sleep earlier", "ok": false, "set": {"red-flag": false},
+                  "why": {"zh": "衛教是好意，但問診走到這裡要停下來想：這是不是要轉診的訊號？", "en": "Kind advice, but at this point in the history you stop and ask: is this a referral signal?"}}
+                ]},
+       "post": [
+        ["hsiuchin", {"zh": "醫生你問得好仔細。我兒子都說我愛操煩。", "en": "You ask so carefully, doctor. My son says I worry too much."}]
+       ]},
+      {"id": "s3", "to": "place:lamp", "guide": {"zh": "請阿姨伸舌，看舌象", "en": "Ask Auntie to show her tongue"},
+       "lines": [
+        ["me", {"zh": "阿姨，嘴巴張開，舌頭自然伸出來，不要用力。", "en": "Auntie, open your mouth and let the tongue come out naturally, no straining."}],
+        ["nurse", {"zh": "燈我調好了。從正面看，別讓她伸太久，舌色會變。", "en": "Lamp is set. Look from the front, and don't keep her tongue out long or the colour changes."}]
+       ],
+       "mini": {"type": "tongue", "q": {"zh": "舌淡胖、邊有齒痕、苔白。這個舌象提示什麼？", "en": "Pale, swollen, tooth-marked edges, white coat. What does this tongue suggest?"},
+                "tongue": {"body": "pale", "coat": "thin-white", "shape": "teeth-marked"},
+                "options": [
+                 {"zh": "齒痕舌、舌淡：脾陽虛、水濕不化", "en": "Tooth-marked, pale: spleen yang deficiency with dampness", "ok": true,
+                  "why": {"zh": "中醫認為舌淡主虛寒；胖大有齒痕是水濕停聚，脾陽不足把舌頭「泡」胖了。", "en": "In TCM a pale tongue means deficiency-cold; swollen with tooth marks means retained dampness, the tongue “soaked” by weak spleen yang."}},
+                 {"zh": "舌紅少苔：陰虛內熱", "en": "Red with little coat: yin deficiency heat", "ok": false,
+                  "why": {"zh": "陰虛的舌紅而乾、苔少或剝；阿姨的舌是淡而濕潤。", "en": "A yin-deficient tongue is red and dry with a thin or peeled coat; Auntie's is pale and moist."}},
+                 {"zh": "舌紫暗有瘀斑：血瘀", "en": "Purple with stasis spots: blood stasis", "ok": false,
+                  "why": {"zh": "沒有紫暗，也沒有瘀斑；別把淡白看成紫。", "en": "No purple, no stasis spots; do not read pale as purple."}}
+                ]},
+       "post": [
+        ["master", {"zh": "齒痕舌和望神對上了。還差脈。", "en": "The tooth-marked tongue agrees with the spirit. The pulse is still missing."}]
+       ]},
+      {"id": "s4", "to": "place:pulse-desk", "guide": {"zh": "說出診脈的步驟", "en": "State the pulse-taking steps"},
+       "lines": [
+        ["master", {"zh": "診脈不是一摸就有答案。順序說一遍，再上手。", "en": "The pulse does not answer at a touch. Say the order first, then put your fingers down."}]
+       ],
+       "mini": {"type": "order", "q": {"zh": "脈診的操作順序", "en": "The order of pulse-taking"},
+                "steps": [
+                 {"zh": "請病人靜坐休息片刻", "en": "Let the patient sit and rest briefly"},
+                 {"zh": "手臂平放，腕下墊脈枕", "en": "Arm flat, pillow under the wrist"},
+                 {"zh": "中指先定關，再布寸尺", "en": "Middle finger finds guan, then cun and chi"},
+                 {"zh": "浮中沉三候，舉按尋", "en": "Light, medium and deep pressure in turn"},
+                 {"zh": "兩手都診，各診一段時間", "en": "Both wrists, each for a proper while"},
+                 {"zh": "記錄脈位、脈率、脈形、脈勢", "en": "Record depth, rate, shape and strength"}
+                ]},
+       "post": [
+        ["nurse", {"zh": "阿姨剛騎車從市場過來，讓她喘口氣再把，不然脈會跑。", "en": "Auntie just cycled over from the market. Let her catch her breath first, or the pulse will lie."}]
+       ]},
+      {"id": "s5", "to": "hsiuchin", "guide": {"zh": "三指定位、浮中沉", "en": "Three fingers, three depths"},
+       "lines": [
+        ["me", {"zh": "阿姨，手放上來，手心朝上，放鬆。", "en": "Auntie, rest your hand here, palm up, and relax."}],
+        ["master", {"zh": "寸關尺三指用指目，不是指腹。浮中沉慢慢加壓，別一下壓死。", "en": "Cun, guan and chi under the fingertips, not the pads. Light, medium and deep pressure slowly; never crush it at once."}]
+       ],
+       "mini": {"type": "drill", "template": "tcm-diagnosis", "drill": "pulse"},
+       "post": [
+        ["master", {"zh": "指下別急著下結論，先感覺它在哪一層出現。", "en": "Don't rush to name it. Feel first at which level it appears."}]
+       ]},
+      {"id": "s6", "to": "hsiuchin", "guide": {"zh": "說出你摸到的脈象", "en": "Name the pulse you feel"},
+       "lines": [
+        ["sys", {"zh": "你閉上眼睛。輕取摸不到，中取隱約，重按才有一條細細軟軟的脈。", "en": "You close your eyes. Nothing on light pressure, a hint at medium, and only on deep pressure a thin, soft thread."}]
+       ],
+       "mini": {"type": "pulse", "q": {"zh": "重按才摸得到，細而無力。這是什麼脈？", "en": "Felt only on deep pressure, thin and without strength. Which pulse is this?"}, "pulse": "weak",
+                "options": [
+                 {"zh": "弱脈：沉細無力，主氣血不足、陽虛", "en": "Weak pulse: deep, thin, forceless; qi-blood or yang deficiency", "ok": true,
+                  "why": {"zh": "中醫認為陽氣不足推不動脈，所以脈沉而軟弱；配合畏寒、舌淡，陽虛的判斷更穩。", "en": "In TCM, insufficient yang cannot drive the pulse, so it sinks and softens; with cold intolerance and a pale tongue, yang deficiency stands firmer."}},
+                 {"zh": "浮數脈：主表熱", "en": "Floating-rapid: exterior heat", "ok": false,
+                  "why": {"zh": "浮脈輕取即得，數脈快；阿姨的脈是沉下去才有，而且不快。", "en": "A floating pulse is there at a touch and a rapid one is fast; Auntie's appears only deep, and it is not fast."}},
+                 {"zh": "弦脈：主肝鬱、痛證", "en": "Wiry: liver constraint or pain", "ok": false,
+                  "why": {"zh": "弦脈像按琴弦，端直有力；這條脈是軟的。", "en": "A wiry pulse feels like a taut string, straight and firm; this one is soft."}}
+                ]},
+       "post": [
+        ["master", {"zh": "少神、齒痕舌、弱脈，問診怕冷便溏。四診合參，總綱是什麼？", "en": "Lack of spirit, tooth-marked tongue, weak pulse, cold intolerance and loose stools. Four examinations together: the summary?"}],
+        ["me", {"zh": "裡證、虛證、寒證，屬陽虛。", "en": "Interior, deficiency, cold; yang deficiency."}],
+        ["master", {"zh": "八綱辨證就是這樣用的。但她還說了一句話，你沒忘吧？", "en": "That is the eight principles at work. But she said one more thing. You haven't forgotten?"}]
+       ]}
+     ]},
+    {"id": "son-call", "name": {"zh": "兒子來電", "en": "The son calls"}, "sub": {"zh": "10:40 · 書寫桌", "en": "10:40 · the writing desk"}, "t": 640, "mood": "day",
+     "note": {"zh": "人參茶先收起來，轉診單寫好了", "en": "Ginseng tea put away, referral written"},
+     "beats": [
+      {"id": "c1", "to": "place:desk", "guide": {"zh": "回書寫桌接電話", "en": "Take the call at the desk"},
+       "ring": {"title": {"zh": "阿姨的兒子來電", "en": "Hsiu-Chin's son calling"}, "sub": {"zh": "鄰居送的人參茶，媽媽可以喝嗎？", "en": "A neighbour gave Mum ginseng tea; can she drink it?"}, "call": true, "from": "son"},
+       "lines": [
+        ["son", {"zh": "醫生，鄰居送我媽一盒人參茶，說補氣。她今天可以開始喝嗎？", "en": "Doctor, a neighbour gave Mum a box of ginseng tea, says it boosts qi. Can she start today?"}],
+        ["me", {"zh": "先別喝。辨證還沒定案前自己進補，可能補錯方向。麻煩把盒子帶來。", "en": "Not yet. Taking tonics before the pattern is settled can push the wrong way. Please bring the box in."}],
+        ["son", {"zh": "還有，她這幾天晚上要墊兩個枕頭才睡得著，躺平會喘。", "en": "Also, these past nights she needs two pillows to sleep. Lying flat makes her breathless."}],
+        ["sys", {"zh": "你把這句話寫下來，畫了兩個圈。", "en": "You write that down and circle it twice."}],
+        ["me", {"zh": "這很重要，我馬上跟周醫師說。", "en": "That matters. I'll tell Dr Chou right now."}]
+       ]},
+      {"id": "c1y", "when": {"flag": "red-flag", "is": true},
+       "lines": [
+        ["master", {"zh": "你早上就把喘和腳腫記成紅旗了，現在加上躺平會喘，今天就轉診。", "en": "You logged the breathlessness and swelling as a red flag this morning. Add breathlessness lying flat, and we refer today."}],
+        ["master", {"zh": "中醫可以同時調理，但心臟和甲狀腺要先讓西醫看。轉診單你來寫。", "en": "TCM care continues alongside, but the heart and thyroid go to Western medicine first. You write the referral."}]
+       ]},
+      {"id": "c1n", "when": {"flag": "red-flag", "is": false},
+       "lines": [
+        ["master", {"zh": "早上她說喘、腳腫、心悸，你寫了陽虛水泛就往下走了。", "en": "This morning she said breathless, swollen, palpitations, and you wrote yang deficiency with water overflow and moved on."}],
+        ["me", {"zh": "……我把症狀套進證型，沒停下來想紅旗。", "en": "…I fitted the symptoms into a pattern and never stopped to think red flag."}],
+        ["master", {"zh": "證名不是保護傘。現在補救：轉診心臟科，病歷補上紅旗。問診走到紅旗，要停。", "en": "A pattern name is not an umbrella. Fix it now: refer to cardiology and add the red flag to the note. When the history reaches a red flag, you stop."}]
+       ]},
+      {"id": "c2", "to": "master", "guide": {"zh": "寫轉診單給師傅簽", "en": "Write the referral for signing"},
+       "lines": [
+        ["me", {"zh": "轉診原因：勞力性喘、下肢水腫、端坐呼吸、心悸，建議心臟與甲狀腺評估。", "en": "Reason for referral: exertional breathlessness, leg swelling, orthopnoea, palpitations; cardiac and thyroid assessment requested."}],
+        ["master", {"zh": "很好。轉診不是把病人推出去，是把危險的那一塊交給對的人，其他的我們一起顧。", "en": "Good. A referral is not pushing a patient away; it hands the dangerous part to the right person while we look after the rest together."}]
+       ],
+       "set": {"referral": true}}
+     ]},
+    {"id": "lunch", "name": {"zh": "午間：八綱", "en": "Noon: eight principles"}, "sub": {"zh": "12:10 · 診間白板", "en": "12:10 · the whiteboard"}, "t": 730, "mood": "day",
+     "note": {"zh": "八綱寫上白板，銅人複習取穴", "en": "Eight principles on the board, points on the bronze figure"},
+     "beats": [
+      {"id": "l1", "to": "place:board", "guide": {"zh": "在白板上寫下八綱", "en": "Write the eight principles"},
+       "lines": [
+        ["sys", {"zh": "周醫師的保溫杯裡是桂圓紅棗茶，從早上到現在一口沒喝。", "en": "Dr Chou's flask holds longan and red-date tea, untouched since morning."}],
+        ["master", {"zh": "八綱：表裡、寒熱、虛實、陰陽。前六個是分析，陰陽是總綱。", "en": "Eight principles: exterior-interior, cold-heat, deficiency-excess, yin-yang. The first six analyse; yin and yang sum up."}],
+        ["master", {"zh": "阿姨是裡、虛、寒，歸陰。小宇下午來，你猜會是哪一邊？", "en": "Auntie is interior, deficient, cold: yin. Hsiao-Yu comes this afternoon. Which side, do you guess?"}],
+        ["me", {"zh": "看了才知道。", "en": "I'll know when I've looked."}],
+        ["master", {"zh": "這個回答我給滿分。", "en": "Full marks for that answer."}]
+       ],
+       "item": "eight-principles"},
+      {"id": "l2", "to": "place:bronze", "guide": {"zh": "在銅人上指出溫補要穴", "en": "Show the warming points"},
+       "lines": [
+        ["master", {"zh": "順便問你：阿姨這種脾腎陽虛，臨床常灸哪裡？在銅人上指給我看。", "en": "While we're here: for spleen-kidney yang deficiency like Auntie's, where is moxa commonly applied? Show me on the bronze figure."}]
+       ],
+       "mini": {"type": "points", "q": {"zh": "指出常用的溫補要穴：足三里、關元、氣海", "en": "Point out the common warming points: ST36, CV4, CV6"}, "codes": ["ST36", "CV4", "CV6"], "view": "front"},
+       "post": [
+        ["master", {"zh": "關元、氣海在小腹，孕婦慎用。取穴的禁忌和取穴本身一樣重要。", "en": "CV4 and CV6 sit on the lower abdomen; caution in pregnancy. A point's cautions matter as much as the point."}]
+       ]}
+     ]},
+    {"id": "afternoon", "name": {"zh": "小宇的喉嚨", "en": "Hsiao-Yu's throat"}, "sub": {"zh": "14:00 · 脈枕診桌", "en": "14:00 · the pulse desk"}, "t": 840, "mood": "day",
+     "note": {"zh": "一寒一熱，一虛一實", "en": "One cold, one hot; one deficient, one excess"},
+     "beats": [
+      {"id": "w1", "to": "hsiaoyu", "guide": {"zh": "請小宇進來", "en": "Bring Hsiao-Yu in"},
+       "lines": [
+        ["sys", {"zh": "小宇戴著口罩進來，聲音沙啞，臉頰紅得像剛跑完操場。", "en": "Hsiao-Yu comes in masked, hoarse, cheeks as red as if he had just run laps."}],
+        ["hsiaoyu", {"zh": "醫生，我喉嚨痛三天，口很渴，一直想喝冰的。明天要期中考。", "en": "Doctor, sore throat for three days, really thirsty, craving cold drinks. Mid-terms tomorrow."}],
+        ["master", {"zh": "先望色。五色主病，他臉上是哪一色？", "en": "Colour first. Five colours, five patterns: which is on his face?"}]
+       ],
+       "mini": {"type": "stage", "case": "tcm-diagnosis-wang-se-workflow", "stage": 2},
+       "post": [
+        ["master", {"zh": "赤色主熱。配上聲音高亢、口渴喜冷飲，和早上的阿姨正好是兩個極端。", "en": "Red means heat. With a loud voice and a thirst for cold drinks, he is the opposite pole to this morning's Auntie."}]
+       ]},
+      {"id": "w2", "to": "hsiaoyu", "guide": {"zh": "聞診與問診", "en": "Listen, smell, ask"},
+       "lines": [
+        ["me", {"zh": "小宇，咳嗽嗎？痰什麼顏色？大便呢？", "en": "Hsiao-Yu, any cough? What colour is the phlegm? And your bowels?"}],
+        ["hsiaoyu", {"zh": "有點咳，痰黃黃的。大便三天沒上，口氣我自己都聞得到。", "en": "A bit of a cough, yellow phlegm. No bowel movement for three days, and I can smell my own breath."}],
+        ["nurse", {"zh": "聞診兩件事：聽聲音、嗅氣味。他聲音高、口氣濁，都是熱象。", "en": "Listening and smelling: his voice is loud and his breath heavy, both signs of heat."}],
+        ["master", {"zh": "那他的八綱呢？", "en": "So, his eight principles?"}],
+        ["me", {"zh": "表證未盡、裡熱已起，實證、熱證，屬陽。", "en": "Exterior not yet cleared, interior heat begun; excess, heat; yang."}]
+       ],
+       "mini": {"type": "choice", "q": {"zh": "咽痛的病人，哪一種情況要立刻轉急診，不留在中醫診間？", "en": "A patient with a sore throat: which situation goes straight to the emergency department?"},
+                "options": [
+                 {"zh": "吞嚥困難、流口水、張口困難或呼吸費力", "en": "Can't swallow, drooling, can't open the mouth, laboured breathing", "ok": true,
+                  "why": {"zh": "這些提示深頸部感染或氣道受威脅，是急症紅旗，馬上轉診。", "en": "These suggest a deep neck infection or a threatened airway: an emergency red flag, refer at once."}},
+                 {"zh": "口渴想喝冰水", "en": "Thirsty for iced water", "ok": false,
+                  "why": {"zh": "這是熱象，不是急症。", "en": "A heat sign, not an emergency."}},
+                 {"zh": "三天沒大便", "en": "No bowel movement for three days", "ok": false,
+                  "why": {"zh": "便秘要處理，但不是今天跑急診的理由。", "en": "Constipation needs attention, but it is not today's reason for the emergency department."}}
+                ]},
+       "post": [
+        ["hsiaoyu", {"zh": "我吞得下，就是痛。可以不用去急診吧？", "en": "I can swallow, it just hurts. I don't need the emergency room, right?"}],
+        ["me", {"zh": "可以。但剛才那些情況一出現，馬上去。", "en": "Right. But if any of those appear, go immediately."}]
+       ]},
+      {"id": "w3", "roles": ["nurse"], "to": "hsiaoyu", "guide": {"zh": "量體溫與脈搏", "en": "Temperature and pulse"},
+       "lines": [
+        ["me", {"zh": "小宇，先量個體溫。", "en": "Hsiao-Yu, temperature first."}],
+        ["sys", {"zh": "體溫計嗶了一聲，數字比平常高，脈搏也快。", "en": "The thermometer beeps: higher than normal, and the pulse is quick."}]
+       ],
+       "mini": {"type": "vitals", "event": "fever",
+                "options": [
+                 {"zh": "通知醫師、補充水分、觀察呼吸與精神", "en": "Tell the doctor, fluids, watch breathing and alertness", "ok": true,
+                  "why": {"zh": "發燒先評估整體狀況與氣道，再由醫師決定處置。", "en": "With a fever, assess the whole picture and the airway first; the doctor decides the treatment."}},
+                 {"zh": "立刻給退燒藥", "en": "Give an antipyretic right away", "ok": false,
+                  "why": {"zh": "用藥要醫囑；護理師先評估、先通報。", "en": "Medicines need an order; the nurse assesses and reports first."}},
+                 {"zh": "請他先回家休息", "en": "Send him home to rest", "ok": false,
+                  "why": {"zh": "評估沒做完不能放人。", "en": "Nobody leaves before the assessment is complete."}}
+                ]},
+       "post": [
+        ["master", {"zh": "發燒加咽痛，中醫辨為風熱犯肺、裡熱已成；西醫要看喉嚨有沒有化膿。兩邊一起看。", "en": "Fever with a sore throat: in TCM, wind-heat attacking the lung with interior heat formed; Western medicine checks for pus in the throat. We look both ways."}]
+       ]},
+      {"id": "w4", "roles": ["intern"], "to": "hsiaoyu", "guide": {"zh": "看舌、把脈，完成辨證", "en": "Tongue, pulse, finish the pattern"},
+       "lines": [
+        ["me", {"zh": "舌紅苔黃，脈浮數。風熱在表，裡熱已起。", "en": "Red tongue, yellow coat, floating-rapid pulse. Wind-heat at the exterior, interior heat begun."}],
+        ["master", {"zh": "很好。治則呢？", "en": "Good. The treatment principle?"}],
+        ["me", {"zh": "疏風清熱、利咽。方藥請師傅定。", "en": "Disperse wind, clear heat, soothe the throat. The formula is yours to set."}],
+        ["master", {"zh": "會定。處方是我的事，辨證是我們一起的事。", "en": "I will. The prescription is my job; the pattern is ours together."}]
+       ],
+       "set": {"xiaoyu-done": true}}
+     ]},
+    {"id": "evening", "name": {"zh": "收尾與病歷", "en": "Notes and debrief"}, "sub": {"zh": "17:30 · 書寫桌", "en": "17:30 · the writing desk"}, "t": 1050, "mood": "eve",
+     "note": {"zh": "病歷寫完，地瓜收下了", "en": "Notes done, sweet potatoes accepted"},
+     "beats": [
+      {"id": "e1", "to": "place:desk", "guide": {"zh": "寫初診病歷", "en": "Write the first-visit note"},
+       "lines": [
+        ["master", {"zh": "初診病歷怎麼寫？順序排給我看。", "en": "How is a first-visit note written? Put the order in front of me."}]
+       ],
+       "mini": {"type": "order", "q": {"zh": "中醫初診病歷的書寫順序", "en": "Order of a TCM first-visit note"},
+                "steps": [
+                 {"zh": "主訴與現病史", "en": "Chief complaint and history"},
+                 {"zh": "四診摘要：望聞問切", "en": "Four-examination summary"},
+                 {"zh": "辨證：病名與證型", "en": "Pattern: disease and pattern name"},
+                 {"zh": "治則治法", "en": "Treatment principle"},
+                 {"zh": "處方由師傅核定", "en": "Prescription, checked by the mentor"},
+                 {"zh": "衛教、紅旗與回診安排", "en": "Education, red flags, follow-up"}
+                ]},
+       "post": [
+        ["master", {"zh": "最後一欄最重要。病人回家後靠的是那幾句話。", "en": "The last line matters most. Once home, those few sentences are all they have."}]
+       ]},
+      {"id": "e2", "roles": ["nurse"], "to": "nurse", "guide": {"zh": "和阿美核對衛教單", "en": "Check the education sheet"},
+       "lines": [
+        ["nurse", {"zh": "阿姨的衛教單：保暖、少生冷、轉診單別弄丟、喘加重就急診。我打電話提醒她兒子。", "en": "Auntie's sheet: keep warm, less raw and cold food, don't lose the referral, worse breathlessness means emergency. I'll ring her son."}],
+        ["sys", {"zh": "阿姨早上留下的那袋地瓜還在桌上，貼著紙條：「給瘦瘦的醫生」。", "en": "The bag of sweet potatoes Auntie left this morning is still on the desk, with a note: “for the thin doctor”."}]
+       ],
+       "item": "sweet-potato"},
+      {"id": "e3", "to": "master", "guide": {"zh": "聽周醫師的結語", "en": "Dr Chou's debrief"},
+       "lines": [
+        ["master", {"zh": "今天兩個病人，一寒一熱，一虛一實。你學到的不是答案，是順序。", "en": "Two patients today, one cold and one hot, one deficient and one excess. What you learned is not the answer but the order."}],
+        ["master", {"zh": "望神讓你起疑，問診讓你發現紅旗，舌脈讓你確認。少一個，就少一條腿。", "en": "Inspecting the spirit made you suspicious, the history found the red flag, tongue and pulse confirmed. Drop one and the stool loses a leg."}],
+        ["sys", {"zh": "保溫杯裡的桂圓紅棗茶，終於被她喝了一口。涼的。", "en": "She finally takes a sip of the longan and red-date tea. Cold."}]
+       ]}
+     ]},
+    {"id": "night", "name": {"zh": "夜間訊息", "en": "An evening message"}, "sub": {"zh": "21:00 · 回家路上", "en": "21:00 · on the way home"}, "t": 1260, "mood": "night",
+     "note": {"zh": "心臟科掛好了", "en": "Cardiology booked"},
+     "beats": [
+      {"id": "n1",
+       "ring": {"title": {"zh": "阿姨兒子的訊息", "en": "Message from Hsiu-Chin's son"}, "sub": {"zh": "心臟科掛好了，人參茶收起來了", "en": "Cardiology booked; the ginseng tea is put away"}, "call": false, "from": "son"},
+       "lines": [
+        ["son", {"zh": "醫生，心臟科下週的號掛好了，人參茶收起來了。我媽說你把手搓熱才把脈，她記得。", "en": "Doctor, cardiology is booked for next week and the ginseng tea is put away. Mum says you warmed your hands before her pulse. She remembers."}],
+        ["me", {"zh": "謝謝您。如果喘得更厲害或躺不平，不要等下週，直接急診。", "en": "Thank you. If the breathlessness worsens or she can't lie flat, don't wait for next week; go straight to emergency."}],
+        ["sys", {"zh": "你關掉舌診燈。明天還有初診，手要先搓熱。", "en": "You switch off the tongue lamp. More first visits tomorrow; warm hands first."}]
+       ],
+       "end": true}
+     ]}
+  ],
+  "ending": {"title": {"zh": "下班了", "en": "End of shift"}, "sub": {"zh": "四診合參：少一診，就少一條腿", "en": "Four examinations: drop one and the stool loses a leg"},
+             "stats": ["stages", "drills", "choices", "calls", "items", "time"]}
+}

@@ -1,0 +1,292 @@
+{
+ "format": "huatuo-shift-v2",
+ "department": "oncology",
+ "case": "germline-clinic",
+ "caseTitle": {"zh": "門診：報告上的那一行 BRCA", "en": "Clinic: the BRCA line on the report"},
+ "condition": {"zh": "腫瘤遺傳 · 家族諮詢", "en": "Cancer genetics · family counselling"},
+ "difficulty": 2,
+ "room": "clinic",
+ "title": {"zh": "腫瘤醫學科：遺傳諮詢門診日", "en": "Oncology: a day in the genetics clinic"},
+ "tagline": {"zh": "從腫瘤報告上的一行字到一整個家族", "en": "From one line on a tumour report to a whole family"},
+ "minutes": 24,
+ "roles": [
+  {"id": "intern", "zh": "實習醫師", "en": "Intern",
+   "desc": {"zh": "分辨檢體來源、讀懂變異分級、在白板上畫三代家族譜、陪病人做決定而不是替她決定。",
+            "en": "Tell tumour from blood, read variant classes, draw three generations on the whiteboard, and sit with a patient's decision instead of making it for her."}},
+  {"id": "counsellor", "zh": "遺傳諮詢師", "en": "Genetic counsellor",
+   "desc": {"zh": "檢測前諮詢、知情同意、家族譜、結果揭露、級聯檢測的名單。你講的每一句話，病人回家會重講給五個人聽。",
+            "en": "Pre-test counselling, informed consent, pedigrees, result disclosure, the cascade list. Every sentence you say gets repeated to five relatives at dinner."}}
+ ],
+ "cast": {
+  "attending": {"name": {"zh": "蔡主治", "en": "Dr Tsai"}, "role": {"zh": "主治醫師（師傅）", "en": "Attending (mentor)"}, "tag": "ATT", "color": "#6b3fa0", "body": "mentor",
+   "about": {"zh": "腫瘤科主治，兼遺傳門診。口袋裡有一把畫家族譜用的模板尺。從不說「基因不好」，只說「這一段寫法不一樣」。冷掉的茶永遠在桌角。",
+             "en": "Oncologist who also runs the genetics clinic, with a pedigree stencil in her pocket. Never says 'bad genes', only 'this passage is spelled differently'. A cold tea lives permanently on the corner of her desk."}},
+  "gc-yun": {"name": {"zh": "小芸", "en": "Yun"}, "role": {"zh": "遺傳諮詢師", "en": "Genetic counsellor"}, "tag": "GC", "color": "#2e8aa8", "body": "specialist",
+   "about": {"zh": "遺傳諮詢師，三色筆畫家族譜：黑色是人，紅色是癌症，綠色是已經檢測過的人。她說諮詢室裡最重要的句子是「你可以不要」。",
+             "en": "Genetic counsellor who draws pedigrees in three colours: black for people, red for cancers, green for those already tested. She says the most important sentence in the room is 'you are allowed to say no'."}},
+  "patient-hsu": {"name": {"zh": "徐女士", "en": "Mrs Hsu"}, "role": {"zh": "乳癌治療中病人", "en": "Breast cancer, on treatment"}, "tag": "PH", "color": "#c9596a", "body": "patient",
+   "about": {"zh": "45 歲，國小老師，乳癌化療中，手臂有人工血管。腫瘤檢測報告上寫了一行「BRCA1 變異」，她把姊姊和女兒都帶來了，想今天就「全部檢查清楚」。（虛擬個案）",
+             "en": "A 45-year-old primary-school teacher on chemotherapy for breast cancer, with a port in her arm. Her tumour report carries one line, 'BRCA1 variant', and she has brought her sister and her daughter to 'get everyone checked today'. (Fictional.)"}},
+  "sister-ling": {"name": {"zh": "阿玲", "en": "Ling"}, "role": {"zh": "徐女士的姊姊", "en": "Mrs Hsu's elder sister"}, "tag": "SIS", "color": "#d08a3a", "body": "family",
+   "about": {"zh": "48 歲，開早餐店。今天提早收攤來陪妹妹。「要抽血就抽，我不怕」，但她還沒聽過結果可能代表什麼。",
+             "en": "A 48-year-old who runs a breakfast shop and closed early to come. 'If there is a blood test, take it, I am not afraid', though nobody has yet told her what a result could mean."}},
+  "daughter-he": {"name": {"zh": "小禾", "en": "He"}, "role": {"zh": "徐女士的女兒", "en": "Mrs Hsu's daughter"}, "tag": "DAU", "color": "#8a6ac4", "body": "student",
+   "about": {"zh": "19 歲，大一，下週期中考。媽媽說「順便幫妳也抽一管」，她一直看著地板沒說話。",
+             "en": "Nineteen, a first-year student with midterms next week. Her mother said 'they can take a tube from you while we are here'; she has been looking at the floor ever since."}},
+  "patient-kao": {"name": {"zh": "高先生", "en": "Mr Kao"}, "role": {"zh": "新診斷大腸癌", "en": "Newly diagnosed colon cancer"}, "tag": "PK", "color": "#6a9c3a", "body": "patient",
+   "about": {"zh": "38 歲，工程師，大腸癌術後。報告上微衛星不穩定那一格寫「無法判讀」。母親和舅舅都年輕時得過癌症，他是家裡第一個敢來問的人。（虛擬個案）",
+             "en": "A 38-year-old engineer after colon surgery. The microsatellite-instability box on his report says 'uninterpretable'. His mother and uncle both had cancer young; he is the first in the family brave enough to ask. (Fictional.)"}},
+  "patient-fan": {"name": {"zh": "范太太", "en": "Mrs Fan"}, "role": {"zh": "回診看結果", "en": "Back for a result"}, "tag": "PF", "color": "#b8762e", "body": "patient",
+   "about": {"zh": "57 歲，卵巢癌治療結束。一個月前抽了遺傳檢測的血，今天來看結果。報告上寫著「意義未明變異」，她在候診區已經查了三個小時。（虛擬個案）",
+             "en": "A 57-year-old who has finished treatment for ovarian cancer. Blood was drawn for germline testing a month ago; today is the result. It reads 'variant of uncertain significance', and she has been searching her phone in the waiting room for three hours. (Fictional.)"}},
+  "nurse-fang": {"name": {"zh": "注射室阿芳", "en": "Nurse Fang"}, "role": {"zh": "化療注射室護理師", "en": "Infusion-unit nurse"}, "tag": "RN", "color": "#3b8f6a", "body": "nurse",
+   "about": {"zh": "化療注射室的護理師，一眼看得出人工血管周圍哪裡不對。電話永遠簡短：「來一下。」",
+             "en": "The infusion-unit nurse who can see at a glance when something around a port is wrong. Her calls are always short: 'Come a moment.'"}}
+ },
+ "places": {
+  "board": {"name": {"zh": "家族譜白板", "en": "Pedigree whiteboard"}, "hot": "whiteboard"},
+  "consult-desk": {"name": {"zh": "諮詢桌", "en": "Consultation desk"}, "hot": "desk"},
+  "pacs": {"name": {"zh": "PACS 讀片站", "en": "PACS workstation"}, "hot": "imaging"},
+  "infusion-bay": {"name": {"zh": "化療注射室", "en": "Infusion bay"}, "hot": "recovery"},
+  "port-trolley": {"name": {"zh": "換藥車", "en": "Dressing trolley"}, "hot": "instruments"},
+  "monitor": {"name": {"zh": "注射室監視器", "en": "Infusion-bay monitor"}, "hot": "monitor"},
+  "sample-bench": {"name": {"zh": "檢體桌", "en": "Sample bench"}, "hot": "lab"},
+  "door": {"name": {"zh": "診間門口", "en": "Clinic door"}, "hot": "door"}
+ },
+ "glossary": [
+  {"term": {"zh": "腫瘤檢測", "en": "tumour testing"}, "plain": {"zh": "直接檢查腫瘤組織裡的基因變化，目的是選治療。腫瘤裡找到的變異，不一定是天生帶的。", "en": "Testing the genes inside the tumour tissue itself, to choose treatment. A variant found in the tumour is not necessarily one the person was born with."}},
+  {"term": {"zh": "體細胞變異", "en": "somatic variant"}, "plain": {"zh": "只在腫瘤細胞裡出現、後天發生的基因改變。不會遺傳給孩子。", "en": "A gene change that arose in the tumour cells during life. It is not inherited and not passed on."}},
+  {"term": {"zh": "生殖細胞系變異", "en": "germline variant"}, "plain": {"zh": "全身每個細胞都有、從父母其中一方來的基因改變，孩子有一半機會得到。要用血液或口水檢測確認。", "en": "A gene change present in every cell, inherited from one parent, with a one-in-two chance of passing to each child. Confirmed on blood or saliva, not on tumour."}},
+  {"term": {"zh": "遺傳諮詢", "en": "genetic counselling"}, "plain": {"zh": "檢測之前先把可能的結果、對家人的影響、可以不做的權利講清楚，再由本人決定。", "en": "Before any test, explaining the possible results, what they mean for relatives and the right to decline, so the person can decide for themselves."}},
+  {"term": {"zh": "知情同意", "en": "informed consent"}, "plain": {"zh": "本人聽懂之後自己簽的同意。成年人只能替自己同意，媽媽不能替 19 歲的女兒簽。", "en": "Consent the person gives after understanding. An adult consents only for themselves; a mother cannot sign for her nineteen-year-old daughter."}},
+  {"term": {"zh": "意義未明變異", "en": "variant of uncertain significance"}, "plain": {"zh": "基因上一處少見的寫法，目前的證據還不足以說它有害或無害。它不是陽性，也不是陰性，不能拿來幫家人做檢測。", "en": "An uncommon spelling in a gene that current evidence cannot yet call harmful or harmless. Neither positive nor negative, and not a basis for testing relatives."}},
+  {"term": {"zh": "家族譜", "en": "pedigree"}, "plain": {"zh": "三代以上的家族圖：誰得過什麼癌、幾歲、誰檢測過。畫出來之後，風險常常比報告更清楚。", "en": "A family diagram of three or more generations: who had which cancer, at what age, who has been tested. Once drawn, the risk is often clearer than any report."}},
+  {"term": {"zh": "級聯檢測", "en": "cascade testing"}, "plain": {"zh": "先在生病的本人確認致病變異之後，再一個一個邀請血親檢測同一個位置。順序反了，結果會沒有意義。", "en": "Once a disease-causing variant is confirmed in the affected person, relatives are invited one by one to test for that same position. In the wrong order the results mean nothing."}},
+  {"term": {"zh": "人工血管", "en": "port"}, "plain": {"zh": "埋在皮下、接到大靜脈的小盒子，化療從這裡打。每次用針前後都要用無菌技術照顧，周圍紅腫、痛、滲液都要立刻說。", "en": "A small reservoir under the skin connected to a large vein, through which chemotherapy is given. Accessed aseptically every time; redness, pain or leakage around it must be reported at once."}},
+  {"term": {"zh": "無菌非觸碰技術", "en": "aseptic non-touch technique"}, "plain": {"zh": "照顧針口和導管時，手不碰任何會接觸傷口的關鍵部位。重點不是手套，是不碰。", "en": "Caring for a needle site or line without the hands touching any key part that meets the wound. The point is not the gloves; it is not touching."}},
+  {"term": {"zh": "輸注反應", "en": "infusion reaction"}, "plain": {"zh": "藥物滴注中出現潮紅、發冷、喘、血壓下降。第一步永遠是停藥、保留靜脈管路、叫人，依規範處理。", "en": "Flushing, chills, wheeze or a falling blood pressure during a drug infusion. Step one is always stop the drug, keep the line, call for help, and follow the protocol."}},
+  {"term": {"zh": "微衛星不穩定", "en": "microsatellite instability"}, "plain": {"zh": "腫瘤修補基因失靈時留下的指紋。它是篩檢，提示要不要往遺傳性大腸癌的方向查，本身不是遺傳診斷。", "en": "The fingerprint left when a tumour's DNA-repair genes fail. A screen that points towards or away from hereditary colon cancer; not itself a genetic diagnosis."}}
+ ],
+ "codex": [
+  {"id": "pedigree-board", "kind": "equipment", "name": {"zh": "家族譜白板", "en": "Pedigree whiteboard"}, "text": {"zh": "方形是男、圓形是女、塗黑是得過癌、斜線是過世、箭頭指著今天坐在你面前的人。畫到第三代，很多「不知道」會自己浮出來。", "en": "Squares for men, circles for women, filled in for a cancer, a slash for the dead, an arrow for the person in front of you today. By the third generation, the 'don't knows' surface by themselves."}, "hot": "whiteboard"},
+  {"id": "port-site", "kind": "equipment", "name": {"zh": "人工血管與換藥車", "en": "Port and dressing trolley"}, "text": {"zh": "徐女士手臂上的人工血管。注射室的換藥車上層乾淨、下層廢棄，阿芳換敷料前會先看針口周圍的皮膚，再碰任何東西。", "en": "Mrs Hsu's port. Clean on the top shelf, waste below; Nurse Fang looks at the skin around the needle site before she touches anything."}, "hot": "instruments"},
+  {"id": "infusion-chair", "kind": "equipment", "name": {"zh": "化療注射椅", "en": "Infusion chair"}, "text": {"zh": "可以躺平的椅子，旁邊掛著監視器與急救車的位置圖。輸注反應來的時候，椅子要能在十秒內放平。", "en": "A chair that reclines flat, with the monitor and the crash-cart map beside it. When an infusion reaction comes, the chair has to be flat within ten seconds."}, "hot": "recovery"},
+  {"id": "pacs", "kind": "equipment", "name": {"zh": "PACS 讀片站", "en": "PACS workstation"}, "text": {"zh": "遺傳門診也要看片。影像回答「現在有沒有病灶」，不回答「她有沒有帶因」。兩個問題用兩種工具。", "en": "Even the genetics clinic reads images. Imaging answers 'is there a lesion now', not 'does she carry the variant'. Two questions, two tools."}, "hot": "imaging"},
+  {"id": "sample-bench", "kind": "equipment", "name": {"zh": "檢體桌與同意書", "en": "Sample bench and consent"}, "text": {"zh": "遺傳檢測的血管、條碼、同意書三件一起走。少了同意書，檢驗中心會把管子退回來，而且應該退回來。", "en": "Germline tube, barcode and consent form travel together. Without the consent form the laboratory sends the tube back, and it should."}, "hot": "lab"},
+  {"id": "stencil", "kind": "item", "name": {"zh": "蔡主治的家族譜模板尺", "en": "Dr Tsai's pedigree stencil"}, "text": {"zh": "一把透明的塑膠尺，上面是方形、圓形和斜線的孔。她說：「畫得整齊，家屬才會相信你知道自己在講什麼。」今天她把它借給你。", "en": "A clear plastic stencil with square, circle and slash cut-outs. 'Draw it neatly and the family will believe you know what you are talking about.' Today she lends it to you."}},
+  {"id": "tumour-vs-germline", "kind": "concept", "name": {"zh": "腫瘤檢測不是遺傳檢測", "en": "Tumour testing is not germline testing"}, "text": {"zh": "腫瘤報告上的 BRCA1 變異，可能是腫瘤後天長出來的體細胞變異，也可能是天生的生殖細胞系變異。只看腫瘤分不出來，要抽血或口水再測一次。在那之前，誰都還不是「帶因者」，包括她自己。", "en": "A BRCA1 variant on a tumour report may be a somatic change the tumour acquired, or a germline change she was born with. Tumour alone cannot tell; blood or saliva must be tested. Until then nobody is a 'carrier', including her."}},
+  {"id": "vus-not-answer", "kind": "concept", "name": {"zh": "意義未明不是答案", "en": "Uncertain is not an answer"}, "text": {"zh": "意義未明變異是「我們還不知道」。不能當陽性加強追蹤、不能當陰性放心、不能拿來幫家人檢測。處置照她本人和家族的病史走，而且分類會隨證據更新，要留聯絡方式。", "en": "A variant of uncertain significance means 'we do not know yet'. Not a positive to escalate on, not a negative to relax on, not a basis for testing relatives. Manage by her own and her family's history, and keep contact details, because the class can change."}},
+  {"id": "right-not-to-know", "kind": "concept", "name": {"zh": "順序與不知道的權利", "en": "Order of testing and the right not to know"}, "text": {"zh": "先測生病的本人，確認致病變異，再做級聯檢測。每一位血親都是成年人，各自聽諮詢、各自決定、各自簽。媽媽的焦慮不是女兒的同意；想晚一點知道，也是一種選擇。", "en": "Test the affected person first, confirm the variant, then cascade. Every relative is an adult who hears the counselling, decides and signs for themselves. A mother's anxiety is not her daughter's consent, and choosing to know later is also a choice."}}
+ ],
+ "segs": [
+  {"id": "morning", "name": {"zh": "晨會", "en": "Morning meeting"}, "sub": {"zh": "08:00 · 家族譜白板", "en": "08:00 · pedigree whiteboard"}, "t": 480, "mood": "day",
+   "note": {"zh": "接下徐女士報告上的那一行", "en": "Took over the line on Mrs Hsu's report"},
+   "beats": [
+    {"id": "m1", "to": "place:board", "guide": {"zh": "到白板聽今天的名單", "en": "Hear today's list at the board"},
+     "lines": [
+      ["gc-yun", {"zh": "今天三組：徐女士，乳癌化療中，腫瘤檢測寫 BRCA1 變異，帶了姊姊和女兒。高先生，微衛星「無法判讀」。范太太看結果。", "en": "Three today. Mrs Hsu, on chemotherapy for breast cancer, tumour report says BRCA1 variant, and she has brought her sister and daughter. Mr Kao, microsatellite instability 'uninterpretable'. Mrs Fan for a result."}],
+      ["attending", {"zh": "先問第一個問題：徐女士那一行 BRCA1，是從什麼檢體測出來的？", "en": "First question first: that BRCA1 line of Mrs Hsu's, what specimen was it found in?"}],
+      ["me", {"zh": "腫瘤組織。報告抬頭寫的是腫瘤檢測。", "en": "Tumour tissue. The header says tumour testing."}],
+      ["attending", {"zh": "所以她今天還不是帶因者，她姊姊和女兒更不是。這句話你早上要講三次。", "en": "So today she is not a carrier, and her sister and daughter even less so. You will say that sentence three times this morning."}]
+     ],
+     "mini": {"type": "stage", "case": "oncology-v38-germline-counselling", "stage": 0},
+     "post": [
+      ["attending", {"zh": "腫瘤裡的變異可能是體細胞變異，也可能是生殖細胞系變異。分不出來之前，不要讓任何人開始害怕。", "en": "A variant in the tumour may be a somatic variant or a germline variant. Until we can tell, nobody starts being afraid."}]
+     ]},
+    {"id": "m2", "to": "place:consult-desk", "guide": {"zh": "把遺傳檢測流程排好", "en": "Set out the germline-testing pathway"}, "roles": ["counsellor"],
+     "lines": [
+      ["gc-yun", {"zh": "徐女士想今天「全部抽一抽」。你把流程排給我看，我再去跟她講。", "en": "Mrs Hsu wants 'everyone's blood taken today'. Lay out the pathway for me and I will take it to her."}]
+     ],
+     "mini": {"type": "order", "q": {"zh": "把遺傳檢測的流程排對", "en": "Put the germline-testing pathway in order"},
+      "steps": [
+       {"zh": "檢測前遺傳諮詢", "en": "Pre-test genetic counselling"},
+       {"zh": "本人知情同意並簽署", "en": "The person's own informed consent"},
+       {"zh": "抽血、條碼與同意書一起送", "en": "Blood, barcode and consent sent together"},
+       {"zh": "登錄追蹤單與負責人", "en": "Log the tracker and the owner"},
+       {"zh": "約定結果揭露的方式", "en": "Agree how the result will be disclosed"},
+       {"zh": "確認後才排級聯檢測", "en": "Cascade testing only after confirmation"}
+      ]},
+     "post": [
+      ["gc-yun", {"zh": "對。抽血是第三步，不是第一步。而且三個人就是三份諮詢、三份同意，沒有「順便」。", "en": "Right. The blood draw is step three, not step one. And three people means three counselling sessions and three consents; there is no 'while we are here'."}]
+     ]}
+   ]},
+  {"id": "hsu", "name": {"zh": "徐女士一家", "en": "The Hsu family"}, "sub": {"zh": "08:40 · 諮詢桌", "en": "08:40 · consultation desk"}, "t": 520, "mood": "day",
+   "note": {"zh": "徐女士：先測本人，各自同意", "en": "Mrs Hsu: index first, each consents"},
+   "beats": [
+    {"id": "s1", "to": "patient-hsu", "guide": {"zh": "請徐女士一家進來", "en": "Bring the Hsu family in"},
+     "lines": [
+      ["patient-hsu", {"zh": "醫師，報告說我有 BRCA1。我姊姊、我女兒，今天可以一起抽嗎？我想一次弄清楚。", "en": "Doctor, the report says I have BRCA1. My sister and my daughter, can they be tested today too? I want it all settled at once."}],
+      ["sister-ling", {"zh": "要抽就抽，我店都收了。", "en": "If there is a test, take it. I closed the shop for this."}],
+      ["sys", {"zh": "小禾坐在最旁邊的椅子，看著地板。", "en": "He sits on the chair furthest away, looking at the floor."}],
+      ["me", {"zh": "徐女士，先講一件好消息：這份報告測的是腫瘤，不是您的血。所以目前還不能說您「有 BRCA1」。", "en": "Mrs Hsu, first some good news: this report tested the tumour, not your blood. So right now we cannot say you 'have BRCA1'."}]
+     ],
+     "mini": {"type": "choice", "q": {"zh": "徐女士要求今天幫姊姊和 19 歲的女兒一起抽血。你怎麼做？", "en": "Mrs Hsu asks for her sister and her nineteen-year-old daughter to be tested today. What do you do?"},
+      "options": [
+       {"zh": "先測徐女士本人；姊姊、女兒各自諮詢、各自決定", "en": "Test Mrs Hsu first; sister and daughter each counselled and deciding for themselves", "ok": true, "set": {"own-consent": true},
+        "why": {"zh": "先在生病的本人確認是不是生殖細胞系變異，才有級聯檢測的意義。每位成年人自己聽、自己簽、也可以說不要。", "en": "Confirm whether it is germline in the affected person first; only then does cascade testing mean anything. Each adult hears it, signs it, and may decline."}},
+       {"zh": "三個人今天一起抽，比較有效率", "en": "Draw all three today; it is more efficient", "ok": false, "set": {"own-consent": false},
+        "why": {"zh": "姊姊和女兒沒有聽過諮詢，不知道結果可能代表什麼。沒有本人的知情同意，檢驗中心也應該退件。", "en": "The sister and daughter have had no counselling and do not know what a result could mean. Without their own informed consent, the laboratory should reject the tubes."}},
+       {"zh": "女兒還年輕，先不要告訴她這件事", "en": "The daughter is young; keep her out of it for now", "ok": false, "set": {"own-consent": false},
+        "why": {"zh": "她 19 歲，是成年人，而且她已經坐在這裡了。她有知道的權利，也有不知道的權利，兩個都是她的，不是我們的。", "en": "She is nineteen, an adult, and she is already in the room. She has the right to know and the right not to know; both are hers, not ours."}}
+      ]},
+     "post": [
+      ["attending", {"zh": "小芸，姊姊和小禾請妳分開談。徐女士，我們先把您自己這一管弄清楚。", "en": "Yun, please see the sister and He separately. Mrs Hsu, let us first get your own tube right."}]
+     ]},
+    {"id": "s2", "to": "gc-yun", "guide": {"zh": "跟小芸做徐女士的同意", "en": "Take Mrs Hsu's consent with Yun"},
+     "lines": [
+      ["gc-yun", {"zh": "徐女士，抽血之前我要講三種可能的結果：有害、無害、還不知道。還有，您可以在任何一步停下來。", "en": "Mrs Hsu, before the blood I must tell you the three possible results: harmful, harmless, not yet known. And you may stop at any step."}],
+      ["patient-hsu", {"zh": "「還不知道」也是一種結果？那我幹嘛抽？", "en": "'Not yet known' counts as a result? Then why am I doing this?"}],
+      ["attending", {"zh": "好問題。這題你來回答，講完請她用自己的話講一遍。", "en": "Good question. You answer it, and then ask her to say it back in her own words."}]
+     ],
+     "mini": {"type": "stage", "case": "oncology-v38-germline-counselling", "stage": 1},
+     "post": [
+      ["patient-hsu", {"zh": "所以抽血是幫我自己決定後面的治療和追蹤，家人的事等結果出來再說。好，這一管我簽。", "en": "So the blood is for my own treatment and follow-up decisions, and the family part waits for the result. All right, this tube I sign."}],
+      ["sys", {"zh": "阿玲在門外用手機查「BRCA」。小禾還在看地板，但抬頭看了小芸一眼。", "en": "Outside, Ling is searching 'BRCA' on her phone. He is still looking at the floor, but glances up at Yun once."}]
+     ]},
+    {"id": "s3", "to": "place:sample-bench", "guide": {"zh": "送檢：三件一起走", "en": "Send the sample: three things together"}, "roles": ["intern"],
+     "lines": [
+      ["sys", {"zh": "血管、條碼、簽好的同意書。你核對雙識別，寫上檢體「周邊血」、目的「生殖細胞系確認」，登錄追蹤單，負責人寫自己。", "en": "Tube, barcode, signed consent. You check two identifiers, write specimen 'peripheral blood', purpose 'germline confirmation', log the tracker and put your own name in the owner column."}]
+     ]}
+   ]},
+  {"id": "infusion-call", "name": {"zh": "注射室來電", "en": "Infusion unit calling"}, "sub": {"zh": "10:30 · 化療注射室", "en": "10:30 · infusion bay"}, "t": 630, "mood": "day",
+   "note": {"zh": "徐女士的人工血管針口微腫", "en": "Mrs Hsu's port site slightly swollen"},
+   "beats": [
+    {"id": "c1", "to": "patient-hsu", "guide": {"zh": "接電話，到注射室", "en": "Take the call, go to the infusion bay"},
+     "ring": {"title": {"zh": "注射室來電", "en": "Infusion unit"}, "sub": {"zh": "徐女士人工血管周圍有點腫", "en": "Mrs Hsu's port site looks a little swollen"}, "call": true, "from": "nurse-fang"},
+     "lines": [
+      ["nurse-fang", {"zh": "阿芳。徐女士在打化療，人工血管針口旁邊有一點腫，她說不痛。來一下。", "en": "Fang here. Mrs Hsu is on her infusion and there is a little swelling beside the port needle. She says it does not hurt. Come a moment."}],
+      ["patient-hsu", {"zh": "早上才講完遺傳的事，現在換手臂出狀況。醫師，我今天是不是很麻煩？", "en": "Genetics this morning and now my arm. Doctor, am I being a lot of trouble today?"}],
+      ["me", {"zh": "一點都不。針口旁邊腫，第一件事是先停下來看，化療藥不能漏到皮下。阿芳，先暫停滴注。", "en": "Not at all. Swelling beside the needle means we stop and look first; chemotherapy must not leak under the skin. Fang, pause the infusion."}]
+     ]},
+    {"id": "c2", "to": "place:port-trolley", "guide": {"zh": "用無菌非觸碰技術處理針口", "en": "Attend to the port site with aseptic non-touch technique"},
+     "lines": [
+      ["nurse-fang", {"zh": "抽回血順，沒有外滲，是敷料壓到的淺腫。但敷料要重換。無菌非觸碰技術，關鍵部位不碰，來。", "en": "Blood draws back freely, no extravasation; it is shallow swelling from the dressing. But the dressing must be redone. Aseptic non-touch technique, key parts untouched. Go."}]
+     ],
+     "mini": {"type": "drill", "template": "oncology", "drill": "aseptic"},
+     "post": [
+      ["nurse-fang", {"zh": "好了。徐女士，針口以後紅、痛、滲液、或是打藥時脹，立刻按鈴。不要「先忍一下」。", "en": "Done. Mrs Hsu, from now on, redness, pain, leakage or a swelling feeling during the drug: press the bell at once. No 'bearing it for a while'."}],
+      ["patient-hsu", {"zh": "我女兒也是這樣，什麼都先忍一下。", "en": "My daughter is the same. She bears everything for a while first."}]
+     ]}
+   ]},
+  {"id": "pacs", "name": {"zh": "午間讀片", "en": "Noon imaging review"}, "sub": {"zh": "12:00 · PACS 讀片站", "en": "12:00 · PACS workstation"}, "t": 720, "mood": "day",
+   "note": {"zh": "影像回答現在，不回答帶因", "en": "Imaging answers 'now', not 'carrier'"},
+   "beats": [
+    {"id": "p1", "to": "place:pacs", "guide": {"zh": "跟師傅看徐女士的乳房影像", "en": "Review Mrs Hsu's breast imaging with the mentor"},
+     "lines": [
+      ["attending", {"zh": "徐女士另一邊乳房的磁振造影回來了。先核對姓名、出生日期、檢查日期。然後告訴我：這張片能回答遺傳的問題嗎？", "en": "Mrs Hsu's MRI of the other breast is back. Check name, date of birth, study date. Then tell me: can this image answer the genetic question?"}]
+     ],
+     "mini": {"type": "imaging", "region": "breast",
+      "question": {"zh": "遺傳結果還沒回來。對側乳房的磁振造影在今天的決策裡回答什麼、不回答什麼？", "en": "The germline result is not back. What does the contralateral breast MRI answer in today's decisions, and what does it not?"},
+      "answer": {"zh": "它回答「對側現在有沒有病灶」，是治療與追蹤的基準，不回答「她有沒有生殖細胞系變異」。帶因與否要等血液檢測；如果確認帶因，追蹤的方式和頻率才會改變，而且那是另一場討論。", "en": "It answers 'is there a lesion on the other side now', a baseline for treatment and surveillance. It does not answer 'does she carry a germline variant'. That waits for the blood test; if confirmed, surveillance would change, and that is a separate conversation."}},
+     "post": [
+      ["attending", {"zh": "兩個問題，兩種工具。把影像當成遺傳答案，和把腫瘤報告當成遺傳答案，是同一個錯誤。", "en": "Two questions, two tools. Treating the image as a genetic answer is the same mistake as treating the tumour report as one."}]
+     ]}
+   ]},
+  {"id": "kao", "name": {"zh": "高先生的家族", "en": "Mr Kao's family"}, "sub": {"zh": "14:00 · 諮詢桌與白板", "en": "14:00 · desk and whiteboard"}, "t": 840, "mood": "day",
+   "note": {"zh": "高先生：先畫三代，再補檢測", "en": "Mr Kao: three generations before the repeat test"},
+   "beats": [
+    {"id": "k1", "to": "patient-kao", "guide": {"zh": "請高先生進來", "en": "Call Mr Kao in"},
+     "lines": [
+      ["patient-kao", {"zh": "醫師，報告上微衛星不穩定那格寫「無法判讀」。我查了，這跟遺傳有關。所以我是遺傳性的嗎？", "en": "Doctor, the microsatellite-instability box says 'uninterpretable'. I looked it up; it is linked to heredity. So is mine hereditary?"}],
+      ["me", {"zh": "高先生，「無法判讀」是這一格沒有成立，不是陽性也不是陰性。而且腫瘤檢測和遺傳檢測是兩件事。", "en": "Mr Kao, 'uninterpretable' means this box never properly happened; it is not positive and not negative. And tumour testing and germline testing are two different things."}],
+      ["attending", {"zh": "這一題你來講清楚：腫瘤上的篩檢、血液的遺傳檢測、家族史，三個各回答什麼。", "en": "You explain this one: the screen on the tumour, the germline test on blood, and the family history. What does each answer?"}]
+     ],
+     "mini": {"type": "stage", "case": "oncology-v38-biomarker-inconclusive", "stage": 3},
+     "post": [
+      ["attending", {"zh": "對。下一步是請病理用剩餘組織補做修補蛋白的免疫染色，同時把家族史畫出來。畫出來，有時候比補測更快告訴我們方向。", "en": "Right. Next: ask pathology to repeat with mismatch-repair immunostaining on the remaining tissue, and draw the family history meanwhile. The drawing sometimes shows the direction faster than the repeat test."}]
+     ]},
+    {"id": "k2", "to": "place:board", "guide": {"zh": "到白板畫高家三代", "en": "Draw three generations of the Kao family"}, "roles": ["counsellor"],
+     "lines": [
+      ["gc-yun", {"zh": "方形是男、圓形是女、塗黑是癌症、斜線是過世。高先生，從您的外公外婆開始。", "en": "Squares for men, circles for women, filled in for cancer, a slash for the dead. Mr Kao, start with your maternal grandparents."}],
+      ["patient-kao", {"zh": "外婆……子宮的，五十幾歲。舅舅大腸，四十出頭。媽媽大腸，四十五。我三十八。", "en": "Grandmother... the womb, in her fifties. Uncle, colon, early forties. Mother, colon, forty-five. Me, thirty-eight."}]
+     ],
+     "mini": {"type": "find", "hot": "whiteboard", "q": {"zh": "找到家族譜白板，把高家三代畫上去", "en": "Find the pedigree whiteboard and draw the three generations"}},
+     "post": [
+      ["gc-yun", {"zh": "三代、同一側、年輕發病、大腸加子宮。這張家族譜本身就是轉介遺傳檢測的理由，不用等那一格補出來。", "en": "Three generations, one side, young onset, colon plus womb. This pedigree is itself a reason to refer for germline testing, without waiting for that box to be repeated."}],
+      ["patient-kao", {"zh": "我媽一直說是「我們家體質不好」。原來體質可以畫出來。", "en": "My mother always said 'our family has a weak constitution'. I did not know a constitution could be drawn."}]
+     ]}
+   ]},
+  {"id": "fan", "name": {"zh": "范太太看結果", "en": "Mrs Fan's result"}, "sub": {"zh": "15:30 · 諮詢桌", "en": "15:30 · consultation desk"}, "t": 930, "mood": "day",
+   "note": {"zh": "范太太：意義未明不是答案", "en": "Mrs Fan: uncertain is not an answer"},
+   "beats": [
+    {"id": "f1", "to": "patient-fan", "guide": {"zh": "向范太太揭露結果", "en": "Disclose Mrs Fan's result"},
+     "lines": [
+      ["patient-fan", {"zh": "我在外面查了三個小時。「意義未明變異」，網路上有人說這就是有，有人說沒事。醫師，到底是哪一個？", "en": "I have been searching for three hours out there. 'Variant of uncertain significance': some say it means yes, some say it is nothing. Doctor, which is it?"}],
+      ["attending", {"zh": "范太太，答案是第三種：我們還不知道。這句話很難聽，但它是誠實的。你來解釋它不能拿來做什麼。", "en": "Mrs Fan, the answer is a third thing: we do not know yet. It is a hard sentence to hear, but it is honest. You explain what it cannot be used for."}]
+     ],
+     "mini": {"type": "stage", "case": "oncology-v38-germline-counselling", "stage": 2},
+     "post": [
+      ["patient-fan", {"zh": "所以不能叫我女兒去驗這個位置……那我女兒怎麼辦？", "en": "So my daughter cannot be tested for this position... then what about my daughter?"}],
+      ["me", {"zh": "她的風險照您和家族的病史來算，不是照這個變異。而且這個分類以後可能改，我們會留您的聯絡方式，有更新會通知您。", "en": "Her risk is worked out from your history and the family's, not from this variant. And this class may change later; we keep your contact details and will tell you if it does."}]
+     ]},
+    {"id": "f2", "to": "place:consult-desk", "guide": {"zh": "寫下揭露紀錄與追蹤", "en": "Record the disclosure and the follow-up"},
+     "lines": [
+      ["attending", {"zh": "（把模板尺放在你桌上）今天畫了兩張家族譜，畫得不錯。這把借你，明天還我。", "en": "(Putting her stencil on your desk) Two pedigrees today, neatly drawn. Borrow this; return it tomorrow."}],
+      ["gc-yun", {"zh": "揭露紀錄要寫三件事：她聽到了什麼、她的理解、我們約好的更新方式。寫完我簽名。", "en": "The disclosure note has three parts: what she was told, what she understood, how we agreed to update her. I countersign when it is done."}]
+     ],
+     "item": "stencil"}
+   ]},
+  {"id": "reaction", "name": {"zh": "注射室事件", "en": "Infusion-bay event"}, "sub": {"zh": "16:30 · 注射室監視器", "en": "16:30 · infusion-bay monitor"}, "t": 990, "mood": "eve",
+   "note": {"zh": "三號椅輸注反應", "en": "Infusion reaction at chair three"},
+   "beats": [
+    {"id": "r1", "to": "place:monitor", "guide": {"zh": "接電話，衝到注射室", "en": "Take the call, run to the infusion bay"},
+     "ring": {"title": {"zh": "注射室來電", "en": "Infusion unit"}, "sub": {"zh": "三號椅的伯伯潮紅、喘，血壓在掉", "en": "Chair three: flushed, wheezy, pressure falling"}, "call": true, "from": "nurse-fang"},
+     "lines": [
+      ["nurse-fang", {"zh": "阿芳。三號椅的伯伯打標靶抗體到一半，臉紅、說胸口緊、開始喘，血壓在掉。我已經把藥停了。", "en": "Fang. Chair three, halfway through his antibody infusion: flushed, says his chest is tight, getting wheezy, pressure falling. I have stopped the drug."}],
+      ["sys", {"zh": "椅子已經放平。監視器上的血壓數字一格一格往下。徐女士在隔壁椅子握著自己的手臂看著你。", "en": "The chair is already flat. The blood pressure on the monitor steps downward. In the next chair Mrs Hsu holds her own arm and watches you."}]
+     ],
+     "mini": {"type": "vitals", "event": "hypotension",
+      "options": [
+       {"zh": "停藥保留管路、叫人、平躺、依規範處理與監測", "en": "Drug stopped, line kept, call for help, lie flat, treat per protocol and monitor", "ok": true,
+        "why": {"zh": "輸注反應的第一步永遠是停藥、保留靜脈管路、叫人、放平，再依機構規範處理與持續監測。順序對，大部分的反應都停在這裡。", "en": "The first steps of an infusion reaction are always: stop the drug, keep the line, call for help, lie flat, then treat per the unit protocol and keep monitoring. In the right order, most reactions stop here."}},
+       {"zh": "把滴速調慢，繼續打完", "en": "Slow the rate and finish the bag", "ok": false,
+        "why": {"zh": "血壓在掉、有喘，這不是調速度的時候。停藥，叫人。", "en": "Pressure falling and wheeze: this is not the moment to adjust a rate. Stop the drug and call for help."}},
+       {"zh": "應該是緊張，先安撫看看", "en": "Probably anxiety; reassure first", "ok": false,
+        "why": {"zh": "潮紅、胸緊、喘加上血壓下降，是輸注反應直到證明不是。安撫可以同時做，但不能取代處置。", "en": "Flushing, chest tightness, wheeze and a falling pressure are an infusion reaction until proven otherwise. Reassure at the same time, never instead."}}
+      ]},
+     "post": [
+      ["attending", {"zh": "血壓回來了。阿芳，記錄時間、症狀、處置，這次反應要寫進他的病歷首頁，下次給藥前每個人都要看到。", "en": "Pressure is back. Fang, record the time, symptoms and actions; this reaction goes on the front page of his chart so everyone sees it before the next dose."}]
+     ]}
+   ]},
+  {"id": "end-of-day", "name": {"zh": "交班與下班", "en": "Handover and home"}, "sub": {"zh": "17:30 · 家族譜白板", "en": "17:30 · pedigree whiteboard"}, "t": 1050, "mood": "eve",
+   "note": {"zh": "完成晚間交班", "en": "Evening handover done"},
+   "beats": [
+    {"id": "e1", "to": "place:board", "guide": {"zh": "到白板交班", "en": "Hand over at the board"}, "when": {"flag": "own-consent", "is": true},
+     "lines": [
+      ["gc-yun", {"zh": "阿玲聽完諮詢，決定下個月自己來，不是今天。小禾說考完試再跟我約，她要自己想。兩個人都謝謝你早上沒有「順便」。", "en": "Ling, after counselling, chose to come back next month on her own, not today. He will book with me after her exams; she wants to think for herself. Both said thank you for not doing it 'while we were here'."}],
+      ["attending", {"zh": "這就是順序對的樣子：本人先、家人各自、沒有人被抽到不知道為什麼的血。", "en": "That is what the right order looks like: the index person first, relatives each on their own, and nobody's blood taken for a reason they did not understand."}]
+     ]},
+    {"id": "e2", "to": "place:board", "guide": {"zh": "到白板交班", "en": "Hand over at the board"}, "when": {"flag": "own-consent", "is": false},
+     "lines": [
+      ["gc-yun", {"zh": "檢驗中心把阿玲和小禾的管子退回來了：沒有本人同意書。阿玲說「抽都抽了」有點生氣。小禾抽完血哭了，她根本沒想要知道。", "en": "The laboratory sent Ling's and He's tubes back: no consent of their own. Ling is annoyed that 'the blood was already taken'. He cried after the draw; she never wanted to know."}],
+      ["attending", {"zh": "兩管血、兩個不高興的人、零個結果。順序反了，效率就是這個樣子。明天你親自跟小禾道歉，然後把選擇還給她。", "en": "Two tubes, two unhappy people, zero results. That is what efficiency looks like when the order is reversed. Tomorrow you apologise to He in person, and give the choice back to her."}]
+     ]},
+    {"id": "e3", "to": "gc-yun", "guide": {"zh": "跟小芸核對追蹤名單", "en": "Go through the follow-up list with Yun"}, "roles": ["counsellor"],
+     "lines": [
+      ["gc-yun", {"zh": "追蹤單：徐女士的血液結果、高先生病理補染的回覆、范太太的分類更新。每一欄都有負責人。", "en": "The tracker: Mrs Hsu's blood result, pathology's repeat stain for Mr Kao, any reclassification for Mrs Fan. Every row has an owner."}],
+      ["me", {"zh": "范太太那一欄的負責人可以寫我嗎？我想親自打那通電話。", "en": "May I own Mrs Fan's row? I want to make that call myself."}],
+      ["gc-yun", {"zh": "可以。那通電話可能是三年後，記得把名字留在那裡。", "en": "You may. That call might be three years from now; make sure your name stays on the row."}]
+     ]},
+    {"id": "e4", "to": "attending", "guide": {"zh": "聽師傅的下班總結", "en": "The mentor's debrief"},
+     "lines": [
+      ["attending", {"zh": "今天四個病人，每個人都帶著一個「已經確定」的想法進來：我有、我女兒有、我是遺傳的、網路說有。", "en": "Four patients today, each arriving with something already 'certain': I have it, my daughter has it, mine is hereditary, the internet says so."}],
+      ["attending", {"zh": "我們做的事只有一件：把「確定」拆回成問題，然後一個一個問對人、用對工具。", "en": "We did one thing only: took each 'certain' apart into questions, then asked the right person with the right tool, one by one."}],
+      ["attending", {"zh": "記住，遺傳門診最常開的處方不是檢測，是時間。模板尺明天還我。", "en": "Remember, the prescription written most often in this clinic is not a test; it is time. Stencil back tomorrow."}]
+     ]}
+   ]},
+  {"id": "night", "name": {"zh": "夜間一則訊息", "en": "One message at night"}, "sub": {"zh": "21:30 · 值班室", "en": "21:30 · on-call room"}, "t": 1290, "mood": "night",
+   "note": {"zh": "夜間：徐女士的一則訊息", "en": "Night: a message from Mrs Hsu"},
+   "beats": [
+    {"id": "x1", "to": "place:consult-desk", "guide": {"zh": "看小芸轉來的訊息", "en": "Read the message Yun forwarded"},
+     "ring": {"title": {"zh": "小芸的訊息", "en": "Message from Yun"}, "sub": {"zh": "徐女士剛傳來的話，轉給你", "en": "Mrs Hsu just wrote; forwarding to you"}, "call": false, "from": "gc-yun"},
+     "lines": [
+      ["gc-yun", {"zh": "徐女士傳來：「今天謝謝你們。我本來以為愛她們就是替她們決定。回家路上小禾牽了我的手。」轉給你看。", "en": "From Mrs Hsu: 'Thank you for today. I thought loving them meant deciding for them. On the way home He held my hand.' Thought you should see it."}],
+      ["me", {"zh": "……收到。追蹤單上她那一欄，我加一句：家人各自決定中。", "en": "...Received. On her row of the tracker I am adding one line: family deciding, each for themselves."}],
+      ["sys", {"zh": "你把模板尺放進白袍口袋，關燈。明天還要還。", "en": "You put the stencil in your coat pocket and turn off the light. It is due back tomorrow."}]
+     ],
+     "end": true}
+   ]}
+ ],
+ "ending": {"title": {"zh": "下班了", "en": "End of shift"}, "sub": {"zh": "先測本人，家人各自決定；不知道，也是一種答案", "en": "Index first, relatives decide for themselves; 'not yet known' is also an answer"},
+  "stats": ["stages", "drills", "choices", "calls", "items", "time"]}
+}

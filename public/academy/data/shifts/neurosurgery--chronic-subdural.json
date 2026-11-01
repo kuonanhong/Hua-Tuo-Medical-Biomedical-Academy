@@ -1,0 +1,1483 @@
+{
+ "format": "huatuo-shift-v2",
+ "department": "neurosurgery",
+ "case": "chronic-subdural",
+ "caseTitle": {
+  "zh": "三週前的那一跤",
+  "en": "The fall three weeks ago"
+ },
+ "condition": {
+  "zh": "慢性病 · 慢性硬腦膜下血腫",
+  "en": "Chronic · chronic subdural haematoma"
+ },
+ "difficulty": 1,
+ "room": "ward",
+ "minutes": 22,
+ "title": {
+  "zh": "神經外科值班日：病房",
+  "en": "Neurosurgery on the ward"
+ },
+ "tagline": {
+  "zh": "老人的腦有空間，所以症狀來得晚",
+  "en": "An old brain has room, so the symptoms come late"
+ },
+ "roles": [
+  {
+   "id": "resident",
+   "zh": "神經外科住院醫師",
+   "en": "Neurosurgery resident",
+   "desc": {
+    "zh": "病房日。查房、看片、談同意書、下午一台局部麻醉的鑽孔，晚上一通電話。",
+    "en": "A ward day: rounds, scans, a consent conversation, burr holes under local in the afternoon, one phone call at night."
+   }
+  },
+  {
+   "id": "physio",
+   "zh": "物理治療師",
+   "en": "Physiotherapist",
+   "desc": {
+    "zh": "阿公走路為什麼拖？術後什麼時候可以下床？跌倒是這個病的起點，也不能是終點。",
+    "en": "Why does Grandpa shuffle? When can he get up after surgery? A fall started this illness; it must not end it."
+   }
+  }
+ ],
+ "cast": {
+  "attending": {
+   "name": {
+    "zh": "郭主治",
+    "en": "Dr Kuo"
+   },
+   "role": {
+    "zh": "主治醫師（師傅）",
+    "en": "Attending (mentor)"
+   },
+   "tag": "ATT",
+   "color": "#3f6fa8",
+   "about": {
+    "zh": "鑽過上千個孔。他說：「慢性硬腦膜下血腫是老人的病，手術是年輕人的事，判斷才是我的事。」",
+    "en": "A thousand burr holes behind him. 'Chronic subdurals are an old person's disease, the operation is a young person's job, and the judgement is mine.'"
+   },
+   "body": "mentor"
+  },
+  "ward-nurse": {
+   "name": {
+    "zh": "美惠",
+    "en": "Mei-hui"
+   },
+   "role": {
+    "zh": "神經外科病房護理師",
+    "en": "Neurosurgery ward nurse"
+   },
+   "tag": "RN",
+   "color": "#9d4b7a",
+   "about": {
+    "zh": "病房的早晨從她的白板開始。她記得每一床昨天握手的力氣。",
+    "en": "The ward's morning starts at her whiteboard. She remembers yesterday's grip strength in every bed."
+   },
+   "body": "nurse"
+  },
+  "pharmacist": {
+   "name": {
+    "zh": "阿德",
+    "en": "Te"
+   },
+   "role": {
+    "zh": "臨床藥師",
+    "en": "Clinical pharmacist"
+   },
+   "tag": "PH",
+   "color": "#2f6f9f",
+   "about": {
+    "zh": "每個病人吃什麼抗凝藥、最後一次什麼時候吃，他比家屬還清楚。",
+    "en": "Knows which anticoagulant every patient takes and when the last dose was, better than the family does."
+   },
+   "body": "pharmacist"
+  },
+  "patient": {
+   "name": {
+    "zh": "王阿公",
+    "en": "Grandpa Wang"
+   },
+   "role": {
+    "zh": "病人・82 歲退休書法老師",
+    "en": "Patient, 82, retired calligraphy teacher"
+   },
+   "tag": "PT",
+   "color": "#6b7280",
+   "about": {
+    "zh": "三週前在浴室滑了一下，「沒摔到頭啦」。這兩週字越寫越小，走路拖，右手拿筆會抖。心房顫動，長期吃抗凝藥。",
+    "en": "Slipped in the bathroom three weeks ago, 'didn't hit my head'. For two weeks his characters have been shrinking, his walk shuffles, his brush hand shakes. Atrial fibrillation, long-term anticoagulant."
+   },
+   "body": "patient"
+  },
+  "daughter": {
+   "name": {
+    "zh": "王小姐",
+    "en": "Ms Wang"
+   },
+   "role": {
+    "zh": "家屬・阿公的女兒",
+    "en": "Family, his daughter"
+   },
+   "tag": "FAM",
+   "color": "#b45309",
+   "about": {
+    "zh": "帶了阿公這三週寫的字來，一張比一張小。她說：「我以為是老了。」",
+    "en": "Brought the characters he wrote these three weeks, each page smaller than the last. 'I thought it was just age.'"
+   },
+   "body": "family"
+  },
+  "mrs-lin": {
+   "name": {
+    "zh": "林太太",
+    "en": "Mrs Lin"
+   },
+   "role": {
+    "zh": "7 床・分流術後第一天",
+    "en": "Bed 7, day one after a shunt"
+   },
+   "tag": "PT2",
+   "color": "#0f766e",
+   "about": {
+    "zh": "45 歲會計師，水腦症，昨天裝了腦室腹腔分流。今天坐起來就頭痛，躺下就好。",
+    "en": "Accountant of 45 with hydrocephalus; a ventriculoperitoneal shunt yesterday. Today her head hurts when she sits up and settles when she lies down."
+   },
+   "body": "patient"
+  },
+  "night-nurse": {
+   "name": {
+    "zh": "小琪",
+    "en": "Chi"
+   },
+   "role": {
+    "zh": "夜班護理師",
+    "en": "Night nurse"
+   },
+   "tag": "NN",
+   "color": "#7c3aed",
+   "about": {
+    "zh": "夜裡的病房她用腳步聲認人。阿公拔引流管的手被她抓住兩次。",
+    "en": "Knows the night ward by footsteps. Caught Grandpa's hand on the drain twice."
+   },
+   "phoneOnly": true
+  }
+ },
+ "places": {
+  "board": {
+   "name": {
+    "zh": "病房白板",
+    "en": "Ward whiteboard"
+   },
+   "hot": "whiteboard"
+  },
+  "bed-wang": {
+   "name": {
+    "zh": "王阿公的床",
+    "en": "Grandpa Wang's bed"
+   },
+   "hot": "bed"
+  },
+  "bed-7": {
+   "name": {
+    "zh": "7 床",
+    "en": "Bed 7"
+   },
+   "hot": "recovery"
+  },
+  "desk": {
+   "name": {
+    "zh": "護理站",
+    "en": "Nurses' station"
+   },
+   "hot": "desk"
+  },
+  "viewer": {
+   "name": {
+    "zh": "影像工作站",
+    "en": "Imaging workstation"
+   },
+   "hot": "imaging"
+  },
+  "drug-cart": {
+   "name": {
+    "zh": "藥車",
+    "en": "Drug trolley"
+   },
+   "hot": "drugs"
+  },
+  "drain": {
+   "name": {
+    "zh": "引流袋",
+    "en": "Drain bag"
+   },
+   "hot": "drain"
+  },
+  "theatre": {
+   "name": {
+    "zh": "開刀房",
+    "en": "Operating theatre"
+   },
+   "hot": "field"
+  },
+  "corridor": {
+   "name": {
+    "zh": "走廊",
+    "en": "Corridor"
+   },
+   "hot": "door"
+  }
+ },
+ "glossary": [
+  {
+   "term": {
+    "zh": "慢性硬腦膜下血腫",
+    "en": "chronic subdural haematoma"
+   },
+   "plain": {
+    "zh": "腦表面和硬腦膜之間慢慢累積的舊血，常在輕微撞擊後幾週才出現症狀，老人與吃抗凝藥的人最常見。",
+    "en": "Old blood collecting slowly between the brain surface and the dura, often showing weeks after a minor knock; commonest in the old and the anticoagulated."
+   }
+  },
+  {
+   "term": {
+    "zh": "機油色",
+    "en": "machine-oil fluid"
+   },
+   "plain": {
+    "zh": "慢性硬腦膜下血腫放出來的液體是深褐色、像機油。看到這個顏色就知道是舊血。",
+    "en": "What drains from a chronic subdural is dark brown like engine oil. That colour tells you it is old blood."
+   }
+  },
+  {
+   "term": {
+    "zh": "橋靜脈",
+    "en": "bridging veins"
+   },
+   "plain": {
+    "zh": "從腦表面跨到硬腦膜的小靜脈。腦萎縮後被拉長，一點點震動就會撕裂。",
+    "en": "Small veins crossing from the brain surface to the dura. Stretched by brain shrinkage, they tear with the slightest jolt."
+   }
+  },
+  {
+   "term": {
+    "zh": "中線偏移",
+    "en": "midline shift"
+   },
+   "plain": {
+    "zh": "CT 上腦的中線被血塊推到另一邊。偏得越多，壓得越緊。",
+    "en": "On CT the brain's midline is pushed across by the clot. The more the shift, the tighter the squeeze."
+   }
+  },
+  {
+   "term": {
+    "zh": "鑽孔引流",
+    "en": "burr-hole drainage"
+   },
+   "plain": {
+    "zh": "在頭骨上鑽一兩個小孔，把舊血沖出來、放一條引流管。常在局部麻醉下完成。",
+    "en": "One or two small holes in the skull to wash out the old blood and leave a drain. Often done under local anaesthesia."
+   }
+  },
+  {
+   "term": {
+    "zh": "抗凝藥",
+    "en": "anticoagulant"
+   },
+   "plain": {
+    "zh": "讓血不容易凝固的藥，預防心房顫動造成的中風，但也讓小出血變成大出血。",
+    "en": "A drug that stops blood clotting, to prevent stroke in atrial fibrillation; it also turns small bleeds into big ones."
+   }
+  },
+  {
+   "term": {
+    "zh": "逆轉",
+    "en": "reversal"
+   },
+   "plain": {
+    "zh": "手術前把抗凝藥的作用中和掉。用什麼、什麼時候用，依團隊的流程。",
+    "en": "Neutralising the anticoagulant's effect before surgery. What and when follows the team's protocol."
+   }
+  },
+  {
+   "term": {
+    "zh": "旋前漂移",
+    "en": "pronator drift"
+   },
+   "plain": {
+    "zh": "閉眼雙手平舉手心向上，無力的那隻手會慢慢往內轉、往下掉。很小的無力也看得到。",
+    "en": "Arms out, palms up, eyes closed: the weak arm slowly turns inward and drifts down. It shows even slight weakness."
+   }
+  },
+  {
+   "term": {
+    "zh": "局部麻醉",
+    "en": "local anaesthesia"
+   },
+   "plain": {
+    "zh": "只把頭皮麻掉，病人清醒。老人家不用全身麻醉，恢復快很多。",
+    "en": "Only the scalp is numbed and the patient stays awake. Sparing an elderly patient a general anaesthetic speeds recovery."
+   }
+  },
+  {
+   "term": {
+    "zh": "復發",
+    "en": "recurrence"
+   },
+   "plain": {
+    "zh": "慢性硬腦膜下血腫引流後有一部分會再積。所以要追蹤 CT，也要討論抗凝藥何時恢復。",
+    "en": "A proportion of chronic subdurals re-accumulate after drainage, hence the follow-up CT and the conversation about restarting anticoagulation."
+   }
+  },
+  {
+   "term": {
+    "zh": "過度引流",
+    "en": "over-drainage"
+   },
+   "plain": {
+    "zh": "分流管排掉太多腦脊髓液，坐起來頭痛、躺下就好。閥門可以依醫囑調整。",
+    "en": "A shunt removing too much spinal fluid: headache on sitting up, relief on lying down. The valve can be adjusted per protocol."
+   }
+  },
+  {
+   "term": {
+    "zh": "腦室腹腔分流",
+    "en": "ventriculoperitoneal shunt"
+   },
+   "plain": {
+    "zh": "一條細管從腦室經皮下到腹腔，把多餘的腦脊髓液引到肚子裡吸收。",
+    "en": "A fine tube from the brain's ventricle under the skin to the abdomen, draining excess spinal fluid to be absorbed."
+   }
+  },
+  {
+   "term": {
+    "zh": "譫妄",
+    "en": "delirium"
+   },
+   "plain": {
+    "zh": "住院老人常見的急性意識混亂，日夜顛倒、拔管子。要先排除新的腦部問題，再找原因。",
+    "en": "Acute confusion common in hospitalised elderly: days and nights swapped, lines pulled. Rule out a new brain problem first, then look for causes."
+   }
+  }
+ ],
+ "codex": [
+  {
+   "id": "burr-drill",
+   "kind": "equipment",
+   "name": {
+    "zh": "顱骨鑽",
+    "en": "Cranial perforator"
+   },
+   "text": {
+    "zh": "鑽到內板會自動停的鑽頭。手要穩，但不用使勁。",
+    "en": "A drill bit that stops itself as it breaks through the inner table. Steady hands, no force."
+   },
+   "hot": "instruments"
+  },
+  {
+   "id": "drain-bag",
+   "kind": "equipment",
+   "name": {
+    "zh": "硬腦膜下引流袋",
+    "en": "Subdural drain bag"
+   },
+   "text": {
+    "zh": "靠重力引流，袋子放低於頭部。術後看它流了多少、什麼顏色。",
+    "en": "Drains by gravity, bag kept below head level. After surgery you watch the volume and the colour."
+   },
+   "hot": "drain"
+  },
+  {
+   "id": "viewer",
+   "kind": "equipment",
+   "name": {
+    "zh": "影像工作站",
+    "en": "Imaging workstation"
+   },
+   "text": {
+    "zh": "慢性硬腦膜下血腫在 CT 上是新月形、跨顱縫。比對兩週前的片子看它長多快。",
+    "en": "A chronic subdural is crescent-shaped on CT and crosses the sutures. Compare with an earlier scan to see how fast it grew."
+   },
+   "hot": "imaging"
+  },
+  {
+   "id": "shunt-valve",
+   "kind": "equipment",
+   "name": {
+    "zh": "可調式分流閥",
+    "en": "Programmable shunt valve"
+   },
+   "text": {
+    "zh": "皮下摸得到的小閥門，用磁性工具調整引流量。調完要記錄設定值。",
+    "en": "A small valve under the scalp, adjusted with a magnetic tool. The setting is recorded after every change."
+   },
+   "hot": "device"
+  },
+  {
+   "id": "calligraphy",
+   "kind": "item",
+   "name": {
+    "zh": "阿公的三張字",
+    "en": "Grandpa's three pages"
+   },
+   "text": {
+    "zh": "同一個「永」字，三週內越寫越小、越寫越抖。病歷上最好的神經學紀錄。",
+    "en": "The same character written three times in three weeks, each smaller and shakier. The best neurological record in the chart."
+   }
+  },
+  {
+   "id": "thanks-char",
+   "kind": "item",
+   "name": {
+    "zh": "出院前寫的「謝」",
+    "en": "The 'thanks' he wrote before discharge"
+   },
+   "text": {
+    "zh": "引流管拔掉的隔天寫的。筆畫回來了，大小也回來了。",
+    "en": "Written the day after the drain came out. The strokes are back, and so is the size."
+   }
+  },
+  {
+   "id": "room",
+   "kind": "concept",
+   "name": {
+    "zh": "老人的腦有空間",
+    "en": "An old brain has room"
+   },
+   "text": {
+    "zh": "年紀大了腦會萎縮，頭骨裡多出空間。血可以慢慢累積好幾週都沒有症狀，等到壓迫出現時，血塊已經很大。所以老人撞到頭後幾週才變慢、變呆、走路不穩，第一個要想的就是慢性硬腦膜下血腫。",
+    "en": "With age the brain shrinks and leaves space inside the skull. Blood can accumulate for weeks without symptoms, and by the time compression shows, the clot is large. An elderly person who turns slow, muddled or unsteady weeks after a knock on the head should make you think of a chronic subdural first."
+   }
+  },
+  {
+   "id": "balance",
+   "kind": "concept",
+   "name": {
+    "zh": "抗凝與出血的天平",
+    "en": "The anticoagulation balance"
+   },
+   "text": {
+    "zh": "心房顫動不吃抗凝藥會中風，吃了又會出血。手術前要逆轉，手術後什麼時候恢復，要看復發風險、中風風險與病人本人的想法。這不是一個人決定的事：神經外科、心臟科、藥師與家屬一起。",
+    "en": "Atrial fibrillation without an anticoagulant means stroke; with one, bleeding. Reverse before surgery; when to restart depends on recurrence risk, stroke risk and the patient's own view. Nobody decides that alone: neurosurgery, cardiology, pharmacy and family together."
+   }
+  }
+ ],
+ "segs": [
+  {
+   "id": "handover",
+   "name": {
+    "zh": "晨間交班",
+    "en": "Morning handover"
+   },
+   "sub": {
+    "zh": "07:30 · 病房白板",
+    "en": "07:30 · ward whiteboard"
+   },
+   "t": 450,
+   "mood": "day",
+   "note": {
+    "zh": "交班：王阿公與 7 床",
+    "en": "Handover: Grandpa Wang and bed 7"
+   },
+   "beats": [
+    {
+     "id": "h1",
+     "to": "ward-nurse",
+     "guide": {
+      "zh": "到白板找美惠",
+      "en": "Find Mei-hui at the whiteboard"
+     },
+     "lines": [
+      [
+       "ward-nurse",
+       {
+        "zh": "早。昨晚急診收的王阿公，82 歲，三週前浴室滑倒，這兩週變慢、右手抖、走路拖。",
+        "en": "Morning. Grandpa Wang came in overnight, 82, slipped in the bathroom three weeks ago, slower these two weeks, right hand shaky, shuffling."
+       }
+      ],
+      [
+       "ward-nurse",
+       {
+        "zh": "有心房顫動，吃抗凝藥。CT 急診看過了，說是慢性硬腦膜下血腫。",
+        "en": "Atrial fibrillation on an anticoagulant. The ER read the CT as a chronic subdural haematoma."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "最後一次抗凝藥什麼時候吃的？",
+        "en": "When was the last dose of the anticoagulant?"
+       }
+      ],
+      [
+       "ward-nurse",
+       {
+        "zh": "女兒說昨天早上。阿德會來。7 床林太太分流術後第一天，坐起來頭痛，躺下就好。",
+        "en": "The daughter says yesterday morning. Te is coming by. Bed 7, Mrs Lin, day one after her shunt, headache sitting up, fine lying down."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "h2",
+     "to": "attending",
+     "guide": {
+      "zh": "去找郭主治",
+      "en": "Find Dr Kuo"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "早。慢性硬腦膜下血腫放出來的液體是什麼顏色？",
+        "en": "Morning. What colour is the fluid you drain from a chronic subdural?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "機油色。深褐色的舊血。",
+        "en": "Machine-oil fluid. Dark brown old blood."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "為什麼老人家撞一下就有？",
+        "en": "Why does an old person get one from a bump?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "腦萎縮，橋靜脈被拉長，一震就裂。腦有空間，所以幾週後才有症狀。",
+        "en": "The brain shrinks, the bridging veins are stretched and tear with a jolt. There's room in the skull, so symptoms come weeks later."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "好。去看他寫的字。",
+        "en": "Good. Go and look at his handwriting."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "round",
+   "name": {
+    "zh": "查房",
+    "en": "Ward round"
+   },
+   "sub": {
+    "zh": "08:15 · 王阿公的床",
+    "en": "08:15 · Grandpa Wang's bed"
+   },
+   "t": 495,
+   "mood": "day",
+   "note": {
+    "zh": "阿公的檢查與影像看完了",
+    "en": "Grandpa examined and his scan reviewed"
+   },
+   "beats": [
+    {
+     "id": "r1",
+     "to": "patient",
+     "guide": {
+      "zh": "去看王阿公",
+      "en": "Go and see Grandpa Wang"
+     },
+     "lines": [
+      [
+       "patient",
+       {
+        "zh": "醫師，我沒摔到頭啦，只是扶了一下牆。",
+        "en": "Doctor, I didn't hit my head, I just caught the wall."
+       }
+      ],
+      [
+       "daughter",
+       {
+        "zh": "爸，你看這三張。同一個字，越寫越小。",
+        "en": "Dad, look at these three pages. Same character, smaller every time."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "阿公，雙手平舉手心向上，閉眼睛。右手慢慢往下掉了。",
+        "en": "Grandpa, arms out, palms up, eyes closed. The right arm is drifting down."
+       }
+      ],
+      [
+       "patient",
+       {
+        "zh": "我自己都沒感覺。",
+        "en": "I didn't even feel that."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "這叫旋前漂移，很小的無力也看得到。你的字其實早就在告訴你了。",
+        "en": "That's pronator drift; it shows even slight weakness. Your handwriting has been telling you for weeks."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "neurosurgery-preop-who-checklist",
+      "stage": 0
+     },
+     "item": "calligraphy"
+    },
+    {
+     "id": "r2",
+     "to": "place:viewer",
+     "guide": {
+      "zh": "和郭主治看 CT",
+      "en": "Review the CT with Dr Kuo"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "片子你報。",
+        "en": "You read it."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "imaging",
+      "region": "head",
+      "question": {
+       "zh": "左側腦表面的這層液體是什麼形狀？有沒有中線偏移？",
+       "en": "What shape is the collection over the left brain surface, and is there midline shift?"
+      },
+      "answer": {
+       "zh": "新月形、跨過顱縫、密度不均（有新有舊），是慢性硬腦膜下血腫；中線往右偏，所以有症狀、要引流。",
+       "en": "Crescent-shaped, crossing the sutures, mixed density (old and newer blood): a chronic subdural. The midline is pushed right, which is why he has symptoms and needs drainage."
+      }
+     },
+     "post": [
+      [
+       "attending",
+       {
+        "zh": "有症狀、有偏移，就引流。今天下午，局部麻醉。先把抗凝藥的事弄清楚。",
+        "en": "Symptomatic with shift: we drain. This afternoon, under local. Sort out the anticoagulant first."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "r2p",
+     "to": "patient",
+     "guide": {
+      "zh": "評估阿公的步態與跌倒風險",
+      "en": "Assess gait and fall risk"
+     },
+     "roles": [
+      "physio"
+     ],
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "阿公，從椅子站起來，走到門口再回來。慢慢來。",
+        "en": "Grandpa, up from the chair, walk to the door and back. Take your time."
+       }
+      ],
+      [
+       "patient",
+       {
+        "zh": "腳好像黏在地上。",
+        "en": "My feet feel stuck to the floor."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "步幅小、右腳拖、轉身要好幾步。術前先記下來，術後比對。床邊鈴、防滑鞋、夜裡下床要叫人。",
+        "en": "Short steps, right foot dragging, several steps to turn. Recorded before surgery to compare after. Bell within reach, grip shoes, call before getting up at night."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "anticoag",
+   "name": {
+    "zh": "抗凝藥與同意書",
+    "en": "Anticoagulant and consent"
+   },
+   "sub": {
+    "zh": "10:00 · 護理站",
+    "en": "10:00 · nurses' station"
+   },
+   "t": 600,
+   "mood": "day",
+   "note": {
+    "zh": "逆轉依醫囑，同意書談清楚",
+    "en": "Reversal per protocol; consent properly discussed"
+   },
+   "beats": [
+    {
+     "id": "a1",
+     "to": "pharmacist",
+     "guide": {
+      "zh": "跟阿德確認抗凝藥",
+      "en": "Confirm the anticoagulant with Te"
+     },
+     "ring": {
+      "title": {
+       "zh": "藥師訊息",
+       "en": "Message from pharmacy"
+      },
+      "sub": {
+       "zh": "阿德：「王阿公的抗凝藥查到了，來護理站。」",
+       "en": "Te: 'Found Grandpa Wang's anticoagulant. Come to the station.'"
+      },
+      "call": false,
+      "from": "pharmacist"
+     },
+     "lines": [
+      [
+       "pharmacist",
+       {
+        "zh": "口服抗凝藥，昨天早上最後一次。下午要開的話，逆轉依流程，我已經跟血庫講了。",
+        "en": "Oral anticoagulant, last dose yesterday morning. If you operate this afternoon, reversal follows the protocol; I've spoken to the blood bank."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "術後什麼時候恢復？",
+        "en": "And when does it restart after surgery?"
+       }
+      ],
+      [
+       "pharmacist",
+       {
+        "zh": "這題不是我一個人答。神外、心臟科、你們、家屬，一起。復發風險對中風風險。",
+        "en": "Not a question I answer alone. Neurosurgery, cardiology, you, the family, together. Recurrence risk against stroke risk."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "對。天平的兩端都是命。",
+        "en": "Right. Both pans of that balance hold a life."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "neurosurgery-preop-who-checklist",
+      "stage": 2
+     }
+    },
+    {
+     "id": "a2",
+     "to": "daughter",
+     "guide": {
+      "zh": "女兒問：一定要開嗎？",
+      "en": "The daughter asks: must he have surgery?"
+     },
+     "lines": [
+      [
+       "daughter",
+       {
+        "zh": "醫師，他 82 歲了。一定要開刀嗎？會不會開完人就不行了？",
+        "en": "Doctor, he's 82. Does he have to have surgery? Will it finish him?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "我先說明：這不是大手術，但也不是沒有風險。",
+        "en": "Let me explain. It isn't a big operation, but it isn't risk-free either."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "choice",
+      "q": {
+       "zh": "有症狀、有中線偏移的 82 歲慢性硬腦膜下血腫，你怎麼跟女兒談？",
+       "en": "Symptomatic chronic subdural with midline shift in an 82-year-old. How do you talk to the daughter?"
+      },
+      "options": [
+       {
+        "zh": "說明鑽孔引流、局部麻醉、風險與不開的後果，一起決定",
+        "en": "Explain burr-hole drainage under local, its risks and the risks of not operating; decide together",
+        "ok": true,
+        "why": {
+         "zh": "對。有症狀加偏移，引流是標準做法，而且局部麻醉負擔小。但決定要一起做。",
+         "en": "Right. Symptomatic with shift, drainage is standard and local anaesthesia is kind. The decision is still shared."
+        },
+        "set": {
+         "consent": "shared"
+        }
+       },
+       {
+        "zh": "不開，吃藥等它自己吸收",
+        "en": "No surgery; medication and wait for it to absorb",
+        "ok": false,
+        "why": {
+         "zh": "沒有症狀的小血腫可以等。他有無力、有偏移，等下去會更糟。",
+         "en": "Small silent collections can be watched. He has weakness and shift; waiting makes it worse."
+        },
+        "set": {
+         "consent": "wait"
+        }
+       },
+       {
+        "zh": "跟她說一定要開，不用多解釋",
+        "en": "Tell her it must be done and leave it there",
+        "ok": false,
+        "why": {
+         "zh": "「一定要」不是說明。她需要知道為什麼、怎麼做、會怎樣。",
+         "en": "'Must' is not an explanation. She needs the why, the how and the what-then."
+        },
+        "set": {
+         "consent": "rush"
+        }
+       }
+      ]
+     },
+     "post": [
+      [
+       "daughter",
+       {
+        "zh": "我懂了。他寫字給我看的時候，我就該帶他來了。",
+        "en": "I understand. I should have brought him in when he first showed me his writing."
+       }
+      ],
+      [
+       "patient",
+       {
+        "zh": "開啦。我還要寫春聯。",
+        "en": "Do it. I've got New Year couplets to write."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "a3",
+     "to": "place:desk",
+     "guide": {
+      "zh": "寫風險特異性同意書",
+      "en": "Write the risk-specific consent"
+     },
+     "roles": [
+      "resident"
+     ],
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "同意書上寫這個手術特有的風險：復發、出血、感染、癲癇、腦不張開。不要寫一串通用的。",
+        "en": "Write the risks specific to this operation: recurrence, bleeding, infection, seizure, the brain not re-expanding. Not a generic list."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "還有抗凝藥何時恢復要另外談。",
+        "en": "And a separate conversation about restarting the anticoagulant."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "neurosurgery-preop-who-checklist",
+      "stage": 4
+     }
+    }
+   ]
+  },
+  {
+   "id": "burr",
+   "name": {
+    "zh": "鑽孔引流",
+    "en": "Burr-hole drainage"
+   },
+   "sub": {
+    "zh": "13:00 · 開刀房",
+    "en": "13:00 · operating theatre"
+   },
+   "t": 780,
+   "mood": "day",
+   "note": {
+    "zh": "機油色的液體沖到清，引流管放好",
+    "en": "Machine-oil fluid washed clear, drain in place"
+   },
+   "beats": [
+    {
+     "id": "b1",
+     "to": "place:theatre",
+     "guide": {
+      "zh": "局部麻醉下切開頭皮",
+      "en": "Scalp incision under local"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "阿公，會有一點壓力，不會痛。痛就說。",
+        "en": "Grandpa, you'll feel some pressure, no pain. Say if it hurts."
+       }
+      ],
+      [
+       "patient",
+       {
+        "zh": "好。你們開你們的，我想我的春聯。",
+        "en": "Fine. You do your work; I'll think about my couplets."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "沿標記線切，到骨膜。不要急。",
+        "en": "Along the mark, down to the periosteum. No hurry."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "drill",
+      "template": "neurosurgery",
+      "drill": "incise"
+     }
+    },
+    {
+     "id": "b2",
+     "to": "place:theatre",
+     "guide": {
+      "zh": "鑽孔、放液、沖洗、置管",
+      "en": "Burr hole, release, irrigate, drain"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "硬腦膜一開，深褐色的液體自己流出來了。機油色。",
+        "en": "The dura opens and dark brown fluid runs out on its own. Machine-oil fluid."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "溫生理食鹽水沖到清。引流管放進去，袋子低於頭。",
+        "en": "Warm saline until it runs clear. Drain in, bag below head level."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "order",
+      "q": {
+       "zh": "鑽孔引流的步驟順序",
+       "en": "Steps of burr-hole drainage, in order"
+      },
+      "steps": [
+       {
+        "zh": "標記與局部麻醉",
+        "en": "Mark and infiltrate local anaesthetic"
+       },
+       {
+        "zh": "切開頭皮到骨膜",
+        "en": "Incise the scalp to the periosteum"
+       },
+       {
+        "zh": "鑽孔",
+        "en": "Burr hole"
+       },
+       {
+        "zh": "切開硬腦膜放出液體",
+        "en": "Open the dura and release the fluid"
+       },
+       {
+        "zh": "溫生理食鹽水沖洗到清",
+        "en": "Irrigate with warm saline until clear"
+       },
+       {
+        "zh": "放置引流管並縫合固定",
+        "en": "Place the drain and close"
+       }
+      ]
+     },
+     "post": [
+      [
+       "patient",
+       {
+        "zh": "好了嗎？我剛剛想到上聯了。",
+        "en": "Done? I've just thought of the first line."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "好了。下聯回病房想，先平躺一段時間，引流袋不要高過頭。",
+        "en": "Done. Think of the second line on the ward: lie flat for a while, bag never above the head."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bed7",
+   "name": {
+    "zh": "7 床的頭痛",
+    "en": "Bed 7's headache"
+   },
+   "sub": {
+    "zh": "15:00 · 7 床",
+    "en": "15:00 · bed 7"
+   },
+   "t": 900,
+   "mood": "day",
+   "note": {
+    "zh": "林太太：姿勢性頭痛，過度引流",
+    "en": "Mrs Lin: postural headache, over-drainage"
+   },
+   "beats": [
+    {
+     "id": "s1",
+     "to": "mrs-lin",
+     "guide": {
+      "zh": "去看林太太",
+      "en": "Go and see Mrs Lin"
+     },
+     "lines": [
+      [
+       "mrs-lin",
+       {
+        "zh": "醫師，我一坐起來頭就像被吸住，躺下來就沒事。是不是壞掉了？",
+        "en": "Doctor, the moment I sit up my head feels sucked in; lying down it's gone. Is it broken?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "坐起來痛、躺下好，是分流管排太多了。閥門可以調。",
+        "en": "Worse sitting, better lying: the shunt is draining too much. The valve can be adjusted."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "choice",
+      "q": {
+       "zh": "腦室腹腔分流術後第一天，姿勢性頭痛，你會？",
+       "en": "Day one after a ventriculoperitoneal shunt, postural headache. You...?"
+      },
+      "options": [
+       {
+        "zh": "先平躺緩解，通知主治依醫囑調閥門",
+        "en": "Lie her flat for relief and ask the attending to adjust the valve per protocol",
+        "ok": true,
+        "why": {
+         "zh": "對。過度引流的頭痛躺下就緩解；可調式閥門就是為這個設計的。",
+         "en": "Right. Over-drainage headache settles lying down, and programmable valves exist for exactly this."
+        }
+       },
+       {
+        "zh": "止痛藥，鼓勵她多坐起來適應",
+        "en": "Analgesia and encourage her to sit up and get used to it",
+        "ok": false,
+        "why": {
+         "zh": "過度引流不是適應的問題。硬撐著坐，風險是腦表面的小靜脈被拉裂。",
+         "en": "Over-drainage is not something to get used to. Sitting through it risks tearing the small veins over the brain."
+        }
+       },
+       {
+        "zh": "立刻急 CT 排除分流失效",
+        "en": "Urgent CT to rule out shunt failure",
+        "ok": false,
+        "why": {
+         "zh": "分流失效的頭痛是躺著也痛、越來越想睡。她的症狀剛好相反。",
+         "en": "Shunt failure headache persists lying down and brings drowsiness. Hers is the opposite picture."
+        }
+       }
+      ]
+     },
+     "post": [
+      [
+       "mrs-lin",
+       {
+        "zh": "原來不是壞掉，是太認真。",
+        "en": "So it isn't broken, just overdoing it."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "對。等一下郭主治會來調，調完我們記下設定值。",
+        "en": "Exactly. Dr Kuo will adjust it shortly, and we record the setting."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "evening",
+   "name": {
+    "zh": "傍晚的抽搐",
+    "en": "The evening seizure"
+   },
+   "sub": {
+    "zh": "17:30 · 王阿公的床",
+    "en": "17:30 · Grandpa Wang's bed"
+   },
+   "t": 1050,
+   "mood": "eve",
+   "note": {
+    "zh": "術後癲癇處理完，下床計畫定了",
+    "en": "Post-op seizure handled; mobilisation planned"
+   },
+   "beats": [
+    {
+     "id": "e1",
+     "to": "place:bed-wang",
+     "guide": {
+      "zh": "美惠喊人：阿公在抽",
+      "en": "Mei-hui calls: Grandpa is seizing"
+     },
+     "lines": [
+      [
+       "ward-nurse",
+       {
+        "zh": "醫師！王阿公右手右腳在抽，眼睛往左看，叫不醒！",
+        "en": "Doctor! Grandpa Wang's right arm and leg are jerking, eyes to the left, not responding!"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "計時開始。",
+        "en": "Start the clock."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "vitals",
+      "event": "seizure",
+      "options": [
+       {
+        "zh": "側臥護氣道、氧氣、計時、依醫囑給藥、通知主治",
+        "en": "Side-lying, airway, oxygen, time it, medication per protocol, call the attending",
+        "ok": true,
+        "why": {
+         "zh": "對。術後癲癇是已知的併發症。先保護，再止，再找原因，之後 CT。",
+         "en": "Right. Post-operative seizure is a known complication. Protect, stop, then look for the cause, then CT."
+        }
+       },
+       {
+        "zh": "壓住四肢，塞東西進嘴巴防咬舌",
+        "en": "Hold the limbs down and put something in his mouth",
+        "ok": false,
+        "why": {
+         "zh": "塞東西進嘴只會弄斷牙齒、堵住氣道。側臥、讓它過去、計時。",
+         "en": "Anything in the mouth breaks teeth and blocks the airway. Side-lying, let it pass, time it."
+        }
+       },
+       {
+        "zh": "等它自己停，不用通知任何人",
+        "en": "Wait for it to stop; no need to tell anyone",
+        "ok": false,
+        "why": {
+         "zh": "發作後要重新評估神經學、看引流、安排 CT。這不是一個人吞下去的事。",
+         "en": "After a seizure you re-examine, check the drain, arrange a CT. Not something to keep to yourself."
+        }
+       }
+      ]
+     },
+     "post": [
+      [
+       "ward-nurse",
+       {
+        "zh": "停了。側臥中，血氧回來了。",
+        "en": "It's stopped. On his side, saturations back up."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "引流管還在、顏色沒變新。抗癲癇依醫囑，今晚再掃一次。",
+        "en": "Drain still in, nothing fresh in it. Anticonvulsant per protocol, rescan tonight."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "e1p",
+     "to": "patient",
+     "guide": {
+      "zh": "訂下床計畫",
+      "en": "Set the mobilisation plan"
+     },
+     "roles": [
+      "physio"
+     ],
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "平躺的時間過了之後，先坐床邊，再站，再走。每一步要有人在旁邊。",
+        "en": "Once the flat-lying period is over: sit on the edge, then stand, then walk. Someone beside him at every step."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "引流管拔掉前不要走遠。跌倒是這個病的起點，不能是終點。",
+        "en": "No long walks until the drain is out. A fall began this illness; it must not end it."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "床邊鈴、防滑鞋、夜燈。女兒說她會陪夜。",
+        "en": "Bell, grip shoes, night light. His daughter says she'll stay the night."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "e2",
+     "to": "attending",
+     "guide": {
+      "zh": "郭主治的回顧",
+      "en": "Dr Kuo's debrief"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "今天你學到的一句話是什麼？",
+        "en": "One sentence you learned today?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "老人的腦有空間，所以症狀來得晚。",
+        "en": "An old brain has room, so the symptoms come late."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "還有一句：字會先告訴你。",
+        "en": "And another: the handwriting tells you first."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "e2b",
+     "to": "attending",
+     "guide": {
+      "zh": "郭主治提起上午的談話",
+      "en": "Dr Kuo brings up the morning conversation"
+     },
+     "when": {
+      "flag": "consent",
+      "is": "wait"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "上午你想讓女兒等血腫自己吸收。",
+        "en": "This morning you wanted to let the daughter wait for the clot to absorb."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "對。我怕 82 歲開刀。",
+        "en": "I did. I was afraid of operating on an 82-year-old."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "怕是對的，但要怕對的事。有症狀、有偏移，等才是危險。",
+        "en": "Fear is right, as long as you fear the right thing. With symptoms and shift, waiting is the danger."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "e2c",
+     "to": "attending",
+     "guide": {
+      "zh": "郭主治提起上午的談話",
+      "en": "Dr Kuo brings up the morning conversation"
+     },
+     "when": {
+      "flag": "consent",
+      "is": "rush"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "上午你跟女兒說「一定要開」，就沒再講了。",
+        "en": "This morning you told the daughter 'it must be done' and stopped there."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "我以為講清楚結論就夠。",
+        "en": "I thought a clear conclusion was enough."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "結論沒有過程，家屬帶回家的只有害怕。下次把為什麼說完。",
+        "en": "A conclusion without the reasoning leaves a family with nothing but fear. Next time finish the why."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "night",
+   "name": {
+    "zh": "值班夜",
+    "en": "On call tonight"
+   },
+   "sub": {
+    "zh": "22:00 · 值班室電話",
+    "en": "22:00 · on-call phone"
+   },
+   "t": 1320,
+   "mood": "night",
+   "note": {
+    "zh": "夜裡的譫妄，先排除腦，再找原因",
+    "en": "Night-time delirium: rule out the brain, then find the cause"
+   },
+   "beats": [
+    {
+     "id": "n1",
+     "to": "place:bed-wang",
+     "guide": {
+      "zh": "接電話，去看阿公",
+      "en": "Take the call and go to Grandpa"
+     },
+     "ring": {
+      "title": {
+       "zh": "病房來電",
+       "en": "Ward calling"
+      },
+      "sub": {
+       "zh": "小琪：「王阿公一直要拔引流管，說要回家寫字。」",
+       "en": "Chi: 'Grandpa Wang keeps pulling at the drain, says he must go home to write.'"
+      },
+      "call": true,
+      "from": "night-nurse"
+     },
+     "lines": [
+      [
+       "night-nurse",
+       {
+        "zh": "醫師，阿公日夜顛倒了，一直要拔引流管。女兒拉不住。",
+        "en": "Doctor, Grandpa has his days and nights swapped, keeps going for the drain. His daughter can't hold him."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "先看瞳孔、握力、引流管的顏色和量。像不像傍晚之前？",
+        "en": "First pupils, grip, drain colour and volume. Is he like he was before this evening?"
+       }
+      ],
+      [
+       "night-nurse",
+       {
+        "zh": "瞳孔等大，兩手都有力，引流是淡褐色、沒變多。",
+        "en": "Pupils equal, both grips strong, drain light brown, no increase."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "我過去。神經學沒變，就是譫妄。找原因：疼痛、尿滯留、燈光、沒戴助聽器。",
+        "en": "On my way. Neuro unchanged, so delirium. Look for causes: pain, retention, lights, missing hearing aid."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "neurosurgery-craniotomy-fundamentals",
+      "stage": 9
+     }
+    },
+    {
+     "id": "n2",
+     "to": "patient",
+     "guide": {
+      "zh": "坐在阿公床邊",
+      "en": "Sit by Grandpa's bed"
+     },
+     "lines": [
+      [
+       "patient",
+       {
+        "zh": "……上聯「舊血隨水去」。",
+        "en": "...first line: 'Old blood leaves with the water'."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "阿公，下聯明天寫。引流管再陪你一晚，我陪你一下。",
+        "en": "Grandpa, the second line tomorrow. The drain keeps you company one more night, and so will I for a bit."
+       }
+      ],
+      [
+       "daughter",
+       {
+        "zh": "他戴上助聽器就安靜了。原來是聽不到我們在說什麼。",
+        "en": "He settled once the hearing aid went in. He couldn't hear what we were saying."
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "值班結束。引流袋裡的顏色越來越淡；護理站上放著一張剛寫好的「謝」字。",
+        "en": "End of shift. The drain runs ever paler; on the nurses' station lies a freshly written 'thanks'."
+       }
+      ]
+     ],
+     "item": "thanks-char",
+     "end": true
+    }
+   ]
+  }
+ ],
+ "ending": {
+  "title": {
+   "zh": "下班了",
+   "en": "End of shift"
+  },
+  "sub": {
+   "zh": "字變大了，腳不拖了",
+   "en": "The characters grew back; the shuffle is gone"
+  },
+  "stats": [
+   "stages",
+   "grades",
+   "choices",
+   "calls",
+   "items",
+   "time"
+  ]
+ }
+}

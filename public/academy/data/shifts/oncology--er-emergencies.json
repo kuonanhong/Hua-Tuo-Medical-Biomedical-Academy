@@ -1,0 +1,272 @@
+{
+ "format": "huatuo-shift-v2",
+ "department": "oncology",
+ "case": "er-emergencies",
+ "caseTitle": {"zh": "急診小夜：背痛與心悸", "en": "ER evening: a back and a heartbeat"},
+ "condition": {"zh": "腫瘤急症 · 脊髓壓迫／腫瘤溶解", "en": "Oncology emergencies · cord compression / tumour lysis"},
+ "difficulty": 3,
+ "room": "er",
+ "title": {"zh": "腫瘤醫學科：急診小夜班", "en": "Oncology: the evening shift in the ER"},
+ "tagline": {"zh": "癌症病人的背痛不是背痛，心悸不是緊張", "en": "In a cancer patient, back pain is not back pain and palpitations are not nerves"},
+ "minutes": 24,
+ "roles": [
+  {"id": "resident", "zh": "腫瘤科值班住院醫師", "en": "On-call oncology resident",
+   "desc": {"zh": "接急診會診、做神經學檢查、讀危急值、打電話給放腫科和脊椎外科、在凌晨之前把每件事寫成可追蹤的結論。",
+            "en": "Take the ER consults, examine the legs, read the critical value, phone radiation oncology and the spine team, and turn everything into a traceable conclusion before midnight."}},
+  {"id": "ernurse", "zh": "急診護理師", "en": "ER nurse",
+   "desc": {"zh": "檢傷、監視器、急救車、翻身時保護脊椎、第一個發現尿袋沒有變重的人。急診的時鐘是你在看。",
+            "en": "Triage, monitors, the crash cart, log-rolling with the spine protected, and the first to notice the urine bag has not got heavier. You are the one watching the ER clock."}}
+ ],
+ "cast": {
+  "attending": {"name": {"zh": "杜主治", "en": "Dr Tu"}, "role": {"zh": "腫瘤科值班主治（師傅）", "en": "On-call oncologist (mentor)"}, "tag": "ATT", "color": "#6b3fa0", "body": "mentor",
+   "about": {"zh": "腫瘤科值班主治，晚上在家待命，接到電話十五分鐘就到。口頭禪：「癌症病人的任何新症狀，先當急症，再當副作用。」",
+             "en": "On-call oncologist, at home on standby and in the building fifteen minutes after any call. Catchphrase: 'Any new symptom in a cancer patient is an emergency first and a side effect second.'"}},
+  "nurse-kai": {"name": {"zh": "急診阿凱", "en": "Kai"}, "role": {"zh": "急診資深護理師", "en": "Senior ER nurse"}, "tag": "RN", "color": "#3b8f6a", "body": "nurse",
+   "about": {"zh": "急診小夜的資深護理師，會在你還沒開口前把心電圖貼好。信念：尿袋比病人誠實。",
+             "en": "Senior nurse on the ER evening shift, who has the ECG leads on before you have asked. Belief: the urine bag is more honest than the patient."}},
+  "patient-chen": {"name": {"zh": "陳先生", "en": "Mr Chen"}, "role": {"zh": "3 床 · 攝護腺癌骨轉移", "en": "Bed 3 · prostate cancer, bone metastases"}, "tag": "P3", "color": "#b8762e", "body": "patient",
+   "about": {"zh": "68 歲，退休郵差，攝護腺癌骨轉移治療中，上個月還在爬山。背痛兩週，今天早上腿「重重的」，在玄關絆了一跤。檢傷寫：背痛，等骨科。（虛擬個案）",
+             "en": "A 68-year-old retired postman on treatment for prostate cancer with bone metastases, hiking last month. Two weeks of back pain, legs 'heavy' since this morning, tripped in the hallway. Triage note: back pain, awaiting orthopaedics. (Fictional.)"}},
+  "family-chen": {"name": {"zh": "陳太太", "en": "Mrs Chen"}, "role": {"zh": "陳先生的太太", "en": "Mr Chen's wife"}, "tag": "FAM", "color": "#d08a3a", "body": "family",
+   "about": {"zh": "帶著保溫瓶和先生的登山杖來急診。想問一個問題問了兩個小時不敢問：「骨轉移，是不是就是末期？」",
+             "en": "Came to the ER with a thermos and her husband's hiking pole. Has been working up to one question for two hours: 'Bone metastases: does that mean the end?'"}},
+  "patient-lin": {"name": {"zh": "小林", "en": "Lin"}, "role": {"zh": "7 床 · 淋巴瘤化療第三天", "en": "Bed 7 · lymphoma, day three after chemotherapy"}, "tag": "P7", "color": "#c9596a", "body": "patient",
+   "about": {"zh": "22 歲，大學生，高惡性度淋巴瘤，三天前在外院打了第一次化療。今晚吐、小腿抽筋、心悸，尿很少。急診寫：化療副作用，觀察。（虛擬個案）",
+             "en": "A 22-year-old student with high-grade lymphoma, first chemotherapy three days ago at another hospital. Tonight: vomiting, calf cramps, palpitations, very little urine. ER note: chemotherapy side effects, observe. (Fictional.)"}},
+  "er-doc": {"name": {"zh": "急診小鄭", "en": "Dr Cheng"}, "role": {"zh": "急診住院醫師", "en": "ER resident"}, "tag": "ER", "color": "#2e8aa8", "body": "resident",
+   "about": {"zh": "急診第二年住院醫師，同時顧十二床。會診單寫得很短，但只要你說「我現在過去」，他會把床位留給你。",
+             "en": "Second-year ER resident covering twelve beds. His consult requests are short, but say 'I am coming now' and he will keep the bay for you."}},
+  "radiographer": {"name": {"zh": "夜班放射師阿南", "en": "Nan, night radiographer"}, "role": {"zh": "磁振造影夜班放射師", "en": "Night MRI radiographer"}, "tag": "MRI", "color": "#8a6ac4", "phoneOnly": true,
+   "about": {"zh": "晚上一個人顧磁振造影。你打電話說「疑似脊髓壓迫」，他會把下一個時段讓出來。", "en": "Runs the MRI alone at night. Say 'suspected cord compression' on the phone and he gives you the next slot."}},
+  "lab": {"name": {"zh": "檢驗科", "en": "Laboratory"}, "role": {"zh": "醫檢師（電話）", "en": "Medical technologist (phone)"}, "tag": "LAB", "color": "#6a9c3a", "phoneOnly": true,
+   "about": {"zh": "危急值一定打電話，一定要你複誦。", "en": "Phones every critical value and always makes you read it back."}}
+ },
+ "places": {
+  "board": {"name": {"zh": "急診交班板", "en": "ER handover board"}, "hot": "whiteboard"},
+  "bed3": {"name": {"zh": "3 床", "en": "Bed 3"}, "hot": "bed"},
+  "bay7": {"name": {"zh": "7 床（急救區）", "en": "Bay 7 (resus area)"}, "hot": "field"},
+  "monitor": {"name": {"zh": "監視器", "en": "Monitor"}, "hot": "monitor"},
+  "pacs": {"name": {"zh": "PACS 讀片站", "en": "PACS workstation"}, "hot": "imaging"},
+  "crash-cart": {"name": {"zh": "急救車", "en": "Crash cart"}, "hot": "crash-cart"},
+  "gas-bench": {"name": {"zh": "血液氣體分析儀", "en": "Blood-gas analyser"}, "hot": "lab"},
+  "desk": {"name": {"zh": "急診醫師桌", "en": "ER doctors' desk"}, "hot": "desk"}
+ },
+ "glossary": [
+  {"term": {"zh": "惡性脊髓壓迫", "en": "malignant spinal cord compression"}, "plain": {"zh": "脊椎的腫瘤或轉移壓到脊髓。幾小時到幾天內會從背痛變成走不了路、尿不出來，是腫瘤科最急的急症之一，越早處理，腿保住的機會越大。", "en": "A tumour or metastasis in the spine pressing on the spinal cord. Within hours to days it turns back pain into legs that will not walk and a bladder that will not empty. One of oncology's most urgent emergencies; the earlier it is treated, the better the legs do."}},
+  {"term": {"zh": "紅旗症狀", "en": "red flags"}, "plain": {"zh": "提示「這不是普通問題」的警訊。癌症病人的背痛：胸椎痛、躺平更痛、半夜痛醒、腿無力、麻、小便改變，任何一個都要當天處理。", "en": "Warning signs that say 'this is not the ordinary problem'. For back pain in a cancer patient: thoracic pain, worse lying flat, waking at night, leg weakness, numbness, any change in passing urine. Any one of them means the same day."}},
+  {"term": {"zh": "骨轉移", "en": "bone metastasis"}, "plain": {"zh": "癌細胞跑到骨頭裡。它是分期裡的 M，表示疾病有遠端轉移，但很多骨轉移的病人會帶著它生活好幾年。", "en": "Cancer cells that have settled in bone. It is the M of staging, meaning distant spread, yet many people live with bone metastases for years."}},
+  {"term": {"zh": "遠端轉移", "en": "distant metastasis"}, "plain": {"zh": "癌細胞到了遠處的器官。描述疾病跑到哪裡，不是倒數計時。", "en": "Cancer cells in a distant organ. It describes where the disease has gone; it is not a countdown."}},
+  {"term": {"zh": "神經學檢查", "en": "neurological examination"}, "plain": {"zh": "測腿的力氣、感覺到哪一個高度、反射、肛門張力與膀胱。癌症病人背痛時，這五分鐘比任何 X 光都重要。", "en": "Testing leg power, the level to which sensation is normal, reflexes, anal tone and the bladder. In a cancer patient with back pain, these five minutes matter more than any X-ray."}},
+  {"term": {"zh": "全脊椎磁振造影", "en": "whole-spine MRI"}, "plain": {"zh": "整條脊椎的磁振造影。疑似脊髓壓迫時要照整條，因為轉移常常不只一處，X 光看不到脊髓。", "en": "MRI of the entire spine. For suspected cord compression the whole spine is imaged, because metastases are often multiple and an X-ray cannot see the cord."}},
+  {"term": {"zh": "脊椎保護", "en": "spinal precautions"}, "plain": {"zh": "在排除不穩定之前，病人平躺、整個人一起翻身（圓木翻身）、不坐起、不自己下床。", "en": "Until instability is excluded, the patient lies flat, is turned as one unit (log-roll), does not sit up and does not get out of bed unaided."}},
+  {"term": {"zh": "腫瘤溶解症候群", "en": "tumour lysis syndrome"}, "plain": {"zh": "化療讓大量腫瘤細胞同時死掉，細胞裡的鉀、磷、尿酸一下子倒進血液，腎臟來不及排。高惡性度淋巴瘤化療後的前幾天最危險。", "en": "Chemotherapy kills a mass of tumour cells at once and their potassium, phosphate and uric acid pour into the blood faster than the kidneys can clear. The first days after chemotherapy for a high-grade lymphoma are the most dangerous."}},
+  {"term": {"zh": "高血鉀", "en": "hyperkalaemia"}, "plain": {"zh": "血液裡的鉀太高。心臟會先出事：心悸、心律不整、心跳停止。先做心電圖，依規範處理，不等複驗。", "en": "Too much potassium in the blood. The heart suffers first: palpitations, arrhythmia, arrest. ECG first, treat per protocol, do not wait for a repeat sample."}},
+  {"term": {"zh": "危急值", "en": "critical value"}, "plain": {"zh": "檢驗結果危險到檢驗科必須立刻打電話通知的數值。接電話的人要複誦、記錄時間與姓名。", "en": "A laboratory result dangerous enough that the laboratory must telephone at once. Whoever answers reads it back and records the time and the names."}},
+  {"term": {"zh": "心電圖", "en": "ECG"}, "plain": {"zh": "記錄心臟電氣活動的圖。高血鉀會改變它的形狀，有時候比抽血更早告訴你鉀太高。", "en": "A tracing of the heart's electrical activity. Hyperkalaemia changes its shape, sometimes before the blood result tells you the potassium is high."}},
+  {"term": {"zh": "尿量", "en": "urine output"}, "plain": {"zh": "一段時間內排出的尿。腎臟在不在工作，尿袋先知道。腫瘤溶解和敗血症都會讓它變少。", "en": "How much urine is passed over a period. Whether the kidneys are working, the bag knows first. Tumour lysis and sepsis both make it fall."}},
+  {"term": {"zh": "ISBAR", "en": "ISBAR"}, "plain": {"zh": "打電話交班的順序：我是誰、病人狀況、背景、我的評估、我要你做什麼。半夜叫人，照這個順序講。", "en": "The order for a handover call: who I am, the situation, the background, my assessment, what I need from you. When you wake someone at night, speak in this order."}}
+ ],
+ "codex": [
+  {"id": "handover-board", "kind": "equipment", "name": {"zh": "急診交班板", "en": "ER handover board"}, "text": {"zh": "每一床一行：床號、主訴、等誰。3 床那一行寫「背痛，等骨科」。癌症病人在急診最危險的一行字，就是看起來很普通的那一行。", "en": "One line per bed: number, complaint, who they are waiting for. Bed 3 reads 'back pain, awaiting orthopaedics'. The most dangerous line on an ER board for a cancer patient is the one that looks ordinary."}, "hot": "whiteboard"},
+  {"id": "resus-bay", "kind": "equipment", "name": {"zh": "急救區", "en": "Resuscitation bay"}, "text": {"zh": "監視器、氧氣、抽吸、急救車都在手臂的距離內。小林從觀察區搬進來的那一刻，急診的時鐘開始走。", "en": "Monitor, oxygen, suction and the crash cart within arm's reach. The moment Lin is moved here from the observation area, the ER clock starts."}, "hot": "field"},
+  {"id": "monitor", "kind": "equipment", "name": {"zh": "監視器", "en": "Monitor"}, "text": {"zh": "急診的監視器看三件事：節律、血壓、血氧。高血鉀的病人，節律那一條線會先告訴你。", "en": "An ER monitor watches three things: rhythm, pressure, oxygen. In hyperkalaemia the rhythm trace speaks first."}, "hot": "monitor"},
+  {"id": "pacs", "kind": "equipment", "name": {"zh": "PACS 讀片站", "en": "PACS workstation"}, "text": {"zh": "夜裡的磁振造影片會直接推到這裡。先核對姓名、出生日期、檢查時間，再找脊髓被壓到的那一節，然後往上往下找第二處。", "en": "The night MRI lands here. Check name, date of birth and study time, find the level where the cord is pinched, then look above and below for the second one."}, "hot": "imaging"},
+  {"id": "crash-cart", "kind": "equipment", "name": {"zh": "急救車", "en": "Crash cart"}, "text": {"zh": "上鎖、貼封條、每班清點。小夜班開始的第一件事，是知道它在哪裡、封條完不完整。", "en": "Locked, sealed, checked every shift. The first job of the evening shift is to know where it is and whether the seal is intact."}, "hot": "crash-cart"},
+  {"id": "gas-analyser", "kind": "equipment", "name": {"zh": "血液氣體分析儀", "en": "Blood-gas analyser"}, "text": {"zh": "急診角落的小機器，幾分鐘內給你鉀、鈣、乳酸。正式報告要等檢驗科，但懷疑高血鉀的時候，這幾分鐘可以救一顆心臟。", "en": "The small machine in the corner that gives potassium, calcium and lactate within minutes. The formal report comes from the laboratory, but when you suspect hyperkalaemia those minutes can save a heart."}, "hot": "lab"},
+  {"id": "chemo-schedule", "kind": "item", "name": {"zh": "小林的外院化療時間表", "en": "Lin's outside chemotherapy schedule"}, "text": {"zh": "一張摺了四摺的 A4，寫著外院化療的日期與藥名。沒有它，你不知道今天是第三天。腫瘤科的急診會診，第一個問題永遠是「上一次治療是哪一天」。", "en": "An A4 sheet folded in four, with the dates and drug names from the other hospital. Without it you would not know today is day three. The first question of any oncology consult in the ER is 'when was the last treatment'."}},
+  {"id": "back-pain-red-flags", "kind": "concept", "name": {"zh": "癌症病人的背痛不是背痛", "en": "Back pain in a cancer patient is not back pain"}, "text": {"zh": "有骨轉移病史的人出現新的或變化的背痛，先問紅旗症狀：胸椎、躺平更痛、夜痛、腿無力、麻、小便改變。有任何一項，當天神經學檢查、脊椎保護、通知師傅、全脊椎磁振造影、聯絡放腫科與脊椎外科。X 光不能排除脊髓壓迫，「明早門診」不是選項。", "en": "New or changing back pain in someone with bone metastases: ask the red flags first. Thoracic, worse lying flat, night pain, weak legs, numbness, any bladder change. Any one of them means a neurological examination the same day, spinal precautions, the mentor informed, whole-spine MRI, and radiation oncology and the spine team contacted. An X-ray cannot exclude cord compression, and 'clinic tomorrow morning' is not an option."}},
+  {"id": "tls-clock", "kind": "concept", "name": {"zh": "化療後的時鐘：腫瘤溶解", "en": "The clock after chemotherapy: tumour lysis"}, "text": {"zh": "高惡性度淋巴瘤、白血病、腫瘤量大的病人，化療後的頭幾天是腫瘤溶解的高風險期。噁心、抽筋、心悸、尿少，每一個聽起來都像「副作用」，合在一起是高血鉀、高磷、低鈣、高尿酸和腎臟衰竭。心電圖、血液氣體、尿量，三樣先看，再決定它是不是副作用。", "en": "High-grade lymphoma, leukaemia, bulky disease: the first days after chemotherapy are the high-risk window for tumour lysis. Nausea, cramps, palpitations and low urine each sound like 'a side effect'; together they are hyperkalaemia, hyperphosphataemia, hypocalcaemia, hyperuricaemia and kidney failure. ECG, blood gas and urine output first, and only then decide whether it is a side effect."}},
+  {"id": "m-not-countdown", "kind": "concept", "name": {"zh": "M 是地圖，不是倒數", "en": "M is a map, not a countdown"}, "text": {"zh": "骨轉移是分期的 M：疾病到了遠處。它改變治療的目標與方式，不是一個日期。陳太太問的「是不是末期」，正確的回答是先把分期講成地圖，再談這個人今天最需要保住的是什麼：今晚，是他的腿。", "en": "Bone metastasis is the M of staging: the disease has reached a distant place. It changes the goal and the shape of treatment; it is not a date. When Mrs Chen asks 'is it the end', the honest answer starts by explaining staging as a map, then turns to what this person most needs kept today. Tonight, that is his legs."}}
+ ],
+ "segs": [
+  {"id": "handover", "name": {"zh": "小夜交班", "en": "Evening handover"}, "sub": {"zh": "15:30 · 急診交班板", "en": "15:30 · ER handover board"}, "t": 930, "mood": "day",
+   "note": {"zh": "接下 3 床「背痛，等骨科」", "en": "Took over bed 3: 'back pain, awaiting ortho'"},
+   "beats": [
+    {"id": "h1", "to": "place:board", "guide": {"zh": "到交班板接會診", "en": "Take the consults at the board"},
+     "lines": [
+      ["nurse-kai", {"zh": "阿凱。腫瘤科的會診有一張：3 床陳先生，68 歲，攝護腺癌骨轉移，背痛兩週，今天跌倒。檢傷寫背痛，等骨科。", "en": "Kai. One oncology consult: bed 3, Mr Chen, 68, prostate cancer with bone metastases, two weeks of back pain, fell today. Triage says back pain, awaiting orthopaedics."}],
+      ["me", {"zh": "骨轉移、背痛兩週、今天跌倒。阿凱，他是絆到，還是腿軟？", "en": "Bone metastases, two weeks of back pain, a fall today. Kai, did he trip, or did his legs give way?"}],
+      ["nurse-kai", {"zh": "……他太太說「腿重重的」。這個問題我沒問。", "en": "...His wife said 'his legs were heavy'. I did not ask that question."}],
+      ["attending", {"zh": "（電話）杜主治。我在路上。這一床，下一個問題是什麼？不是等骨科。", "en": "(On the phone) Dr Tu. I am on my way. For this bed, what is the next question? It is not 'wait for orthopaedics'."}]
+     ],
+     "mini": {"type": "stage", "case": "oncology-v38-discordant-biopsy", "stage": 2},
+     "post": [
+      ["attending", {"zh": "對。下一個問題是「脊髓有沒有被壓到」。這個問題今晚要回答，不是明天。", "en": "Right. The next question is 'is the cord being compressed'. That question gets answered tonight, not tomorrow."}]
+     ]},
+    {"id": "h2", "to": "place:crash-cart", "guide": {"zh": "確認急救車位置與封條", "en": "Check the crash cart and its seal"}, "roles": ["ernurse"],
+     "lines": [
+      ["nurse-kai", {"zh": "小夜第一件事：急救車在哪、封條有沒有破、去顫器電夠不夠。今晚我有預感會用到。", "en": "First job of the evening: where the crash cart is, whether the seal is intact, whether the defibrillator is charged. I have a feeling about tonight."}]
+     ],
+     "mini": {"type": "find", "hot": "crash-cart", "q": {"zh": "找到急救車，確認封條完整", "en": "Find the crash cart and confirm the seal is intact"}},
+     "post": [
+      ["nurse-kai", {"zh": "封條完整，清點簽名。好，現在去 3 床。", "en": "Seal intact, checklist signed. Now, bed 3."}]
+     ]}
+   ]},
+  {"id": "bed3", "name": {"zh": "3 床陳先生", "en": "Bed 3, Mr Chen"}, "sub": {"zh": "16:00 · 3 床", "en": "16:00 · bed 3"}, "t": 960, "mood": "day",
+   "note": {"zh": "陳先生：紅旗，今晚磁振造影", "en": "Mr Chen: red flags, MRI tonight"},
+   "beats": [
+    {"id": "b1", "to": "patient-chen", "guide": {"zh": "去 3 床問紅旗症狀", "en": "Ask bed 3 the red-flag questions"},
+     "lines": [
+      ["patient-chen", {"zh": "醫師，就是背痛啦，老毛病。只是這兩週躺下去更痛，半夜會痛醒。今天早上腿怪怪的，像灌了鉛。", "en": "Doctor, it is just my back, the old thing. Only these two weeks it hurts more lying down, and it wakes me at night. This morning my legs felt odd, like lead."}],
+      ["me", {"zh": "痛的位置是腰，還是更高、像一條帶子繞著胸口？小便有沒有變慢、變急、或是沒有感覺？", "en": "Is the pain in the low back, or higher, like a band around the chest? Has passing urine become slow, urgent, or hard to feel?"}],
+      ["patient-chen", {"zh": "……是胸口後面這裡。小便，今天早上等很久才出來。這有關係嗎？", "en": "...It is here, behind the chest. Urine, this morning I waited a long time before it came. Is that related?"}],
+      ["sys", {"zh": "胸椎痛、躺平更痛、夜痛、腿無力、排尿改變。五個紅旗症狀，他剛剛說了五個。", "en": "Thoracic pain, worse lying flat, night pain, leg weakness, a change in passing urine. Five red flags; he has just named all five."}]
+     ],
+     "mini": {"type": "choice", "q": {"zh": "骨轉移病人，背痛兩週，今天腿無力、排尿變慢。你怎麼做？", "en": "Bone metastases, two weeks of back pain, legs weak and urine slow today. What do you do?"},
+      "options": [
+       {"zh": "神經學檢查、脊椎保護、通知師傅、今晚磁振造影", "en": "Neurological exam, flat with spinal precautions, inform the mentor, whole-spine MRI tonight", "ok": true, "set": {"mscc-fast": true},
+        "why": {"zh": "這是惡性脊髓壓迫直到證明不是。腿還會動的現在，就是最好的時間。每一個小時都算。", "en": "This is malignant spinal cord compression until proven otherwise. Now, while the legs still move, is the best time there will be. Every hour counts."}},
+       {"zh": "先止痛，明早骨科門診再評估", "en": "Analgesia now, orthopaedic clinic tomorrow morning", "ok": false, "set": {"mscc-fast": false},
+        "why": {"zh": "明天早上，他可能已經不會走了。壓迫發生後能不能再站起來，取決於治療時腿還有多少力氣。", "en": "By tomorrow morning he may no longer walk. Whether someone stands again after compression depends on how much power the legs still had when treatment began."}},
+       {"zh": "先照腰椎 X 光，有問題再說", "en": "Lumbar X-ray first, decide after", "ok": false, "set": {"mscc-fast": false},
+        "why": {"zh": "他痛的是胸椎，而且 X 光看不到脊髓。等一張不會回答問題的片子，是用他的腿在付時間。", "en": "His pain is thoracic, and an X-ray cannot see the cord. Waiting for an image that cannot answer the question is paid for with his legs."}}
+      ]},
+     "post": [
+      ["nurse-kai", {"zh": "床放平，翻身我們一起圓木翻身，不坐起來。阿南那邊我先打電話占時段。", "en": "Bed flat, log-roll together, no sitting up. I will phone Nan to hold a slot."}]
+     ]},
+    {"id": "b2", "to": "place:bed3", "guide": {"zh": "把疑似脊髓壓迫的處置排序", "en": "Order the steps for suspected cord compression"},
+     "lines": [
+      ["attending", {"zh": "（到了）順序講給我聽。做對順序，比做得快更重要；兩個都對，最好。", "en": "(Arriving) Tell me the order. Getting the order right matters more than being quick; both right is best."}]
+     ],
+     "mini": {"type": "order", "q": {"zh": "疑似惡性脊髓壓迫：把處置排對", "en": "Suspected malignant cord compression: put the steps in order"},
+      "steps": [
+       {"zh": "神經學檢查並記錄時間與等級", "en": "Neurological exam, timed and graded"},
+       {"zh": "平躺、脊椎保護、圓木翻身", "en": "Flat, spinal precautions, log-roll"},
+       {"zh": "通知師傅，依醫囑給藥", "en": "Inform the mentor; medication per orders"},
+       {"zh": "緊急全脊椎磁振造影", "en": "Urgent whole-spine MRI"},
+       {"zh": "聯絡放腫科與脊椎外科", "en": "Contact radiation oncology and spine"}
+      ]},
+     "post": [
+      ["attending", {"zh": "腿的力氣現在幾分、感覺到哪一節、肛門張力，寫清楚時間。今晚每一次複查都要跟這一次比。", "en": "Leg power now, the sensory level, anal tone, with the time written clearly. Every re-check tonight is compared with this one."}]
+     ]},
+    {"id": "b3", "to": "place:pacs", "guide": {"zh": "跟師傅講磁振造影要回答什麼", "en": "Tell the mentor what the MRI must answer"},
+     "lines": [
+      ["attending", {"zh": "阿南留了時段。進去之前先想好：這張片子要回答哪三個問題？", "en": "Nan is holding a slot. Before he goes in, decide: which three questions must this scan answer?"}]
+     ],
+     "mini": {"type": "imaging", "region": "spine",
+      "question": {"zh": "疑似惡性脊髓壓迫的全脊椎磁振造影，要回答哪三個問題？為什麼不是只照會痛的那一段？", "en": "What three questions must the whole-spine MRI answer in suspected malignant cord compression, and why not image only the painful segment?"},
+      "answer": {"zh": "一、脊髓有沒有被壓到、在哪一節。二、有沒有第二處、第三處壓迫，因為轉移常常不只一處，而治療範圍要包含全部。三、脊椎穩不穩定，決定能不能坐起、要不要外科。只照會痛的那一段，會漏掉沒有症狀的另一處。", "en": "One: is the cord compressed, and at which level. Two: is there a second or third site, because metastases are often multiple and the treatment field must include them all. Three: is the spine stable, which decides whether he may sit up and whether surgery is needed. Image only the painful segment and the silent second site is missed."}},
+     "post": [
+      ["attending", {"zh": "好。片子一回來，打給放腫科值班和脊椎外科。你用 ISBAR 講，我在旁邊聽。", "en": "Good. The moment the scan is back, phone the radiation-oncology and spine on-calls. You speak in ISBAR; I listen beside you."}]
+     ]}
+   ]},
+  {"id": "wife", "name": {"zh": "陳太太的問題", "en": "Mrs Chen's question"}, "sub": {"zh": "17:30 · 3 床簾外", "en": "17:30 · outside the curtain, bed 3"}, "t": 1050, "mood": "eve",
+   "note": {"zh": "陳太太：M 是地圖，不是倒數", "en": "Mrs Chen: M is a map, not a countdown"},
+   "beats": [
+    {"id": "w1", "to": "family-chen", "guide": {"zh": "去簾外回答陳太太", "en": "Answer Mrs Chen outside the curtain"},
+     "lines": [
+      ["family-chen", {"zh": "醫師，我問一個，你不要騙我。骨轉移，是不是就是末期？網路都這樣寫。", "en": "Doctor, one question, and do not lie to me. Bone metastases: is that the end? That is what everything online says."}],
+      ["me", {"zh": "陳太太，我不會騙您。「骨轉移」是分期裡的一個字母，叫 M。我先講它是什麼意思，再講今晚最重要的事。", "en": "Mrs Chen, I will not. 'Bone metastasis' is one letter in staging, the M. Let me explain what it means first, then what matters most tonight."}],
+      ["attending", {"zh": "N 和 M 這兩個字母，你來講。講完請她講一遍。", "en": "You explain the two letters, N and M. Then ask her to say it back."}]
+     ],
+     "mini": {"type": "stage", "case": "oncology-v38-stage-not-grade", "stage": 1},
+     "post": [
+      ["family-chen", {"zh": "所以 M 是遠端轉移，說它跑到骨頭了，不是說還剩多久。那今晚最重要的事是？", "en": "So M is distant metastasis, it has gone to the bone, not how long is left. Then what matters most tonight?"}],
+      ["me", {"zh": "他的腿。今晚我們要保住他的腿。您帶來的登山杖，我幫您放床邊，他還要用。", "en": "His legs. Tonight we are keeping his legs. The hiking pole you brought, I will put beside the bed; he will need it again."}]
+     ]}
+   ]},
+  {"id": "bay7", "name": {"zh": "7 床小林", "en": "Bay 7, Lin"}, "sub": {"zh": "18:30 · 7 床", "en": "18:30 · bay 7"}, "t": 1110, "mood": "eve",
+   "note": {"zh": "小林：化療第三天，不是副作用", "en": "Lin: day three, not a side effect"},
+   "beats": [
+    {"id": "l1", "to": "patient-lin", "guide": {"zh": "接會診，去 7 床", "en": "Take the consult, go to bay 7"},
+     "ring": {"title": {"zh": "急診小鄭來電", "en": "Dr Cheng calling"}, "sub": {"zh": "22 歲淋巴瘤剛化療，吐、抽筋、心悸", "en": "22-year-old, lymphoma, just had chemo: vomiting, cramps, palpitations"}, "call": true, "from": "er-doc"},
+     "lines": [
+      ["er-doc", {"zh": "小鄭。7 床小林，22 歲，淋巴瘤，三天前外院第一次化療。吐、抽筋、心悸。我本來想當副作用放他回家，但他今天幾乎沒尿。", "en": "Cheng. Bay 7, Lin, 22, lymphoma, first chemotherapy three days ago elsewhere. Vomiting, calf cramps, palpitations. I was going to call it side effects and send him home, but he says he has barely passed urine today."}],
+      ["patient-lin", {"zh": "醫師，我只是吐，外院說化療會吐很正常。可是我的心跳好像在亂跳，而且小腿一直抽。我可以回去了嗎？明天有考試。", "en": "Doctor, I am just vomiting; the other hospital said that is normal after chemo. But my heart feels like it is skipping, and my calves keep cramping. Can I go? I have an exam tomorrow."}],
+      ["me", {"zh": "小林，高惡性度淋巴瘤化療後第三天，吐加抽筋加心悸加尿少，這四個合在一起有一個名字。阿凱，心電圖，先抽血氣。", "en": "Lin, day three after chemotherapy for a high-grade lymphoma: vomiting plus cramps plus palpitations plus low urine has a name. Kai, ECG, and a blood gas now."}]
+     ],
+     "mini": {"type": "stage", "case": "oncology-v38-biomarker-inconclusive", "stage": 1},
+     "post": [
+      ["attending", {"zh": "對。心電圖、血氣、尿量，三樣先看，再決定它是不是副作用。腫瘤溶解症候群不等正式報告。", "en": "Right. ECG, blood gas, urine output: those three first, and only then decide whether it is a side effect. Tumour lysis syndrome does not wait for the formal report."}],
+      ["patient-lin", {"zh": "外院給我一張時間表，在我包包裡，要嗎？", "en": "The other hospital gave me a schedule, it is in my bag. Do you want it?"}]
+     ],
+     "item": "chemo-schedule"},
+    {"id": "l2", "to": "place:bay7", "guide": {"zh": "處理小林的導管敷料", "en": "Attend to Lin's line dressing"}, "roles": ["ernurse"],
+     "lines": [
+      ["nurse-kai", {"zh": "他手臂上有外院放的導管，敷料被吐的時候弄濕、翹起來了。等一下要從這裡給輸液，先重換。無菌非觸碰技術，來。", "en": "He has a line in his arm from the other hospital; the dressing got wet and lifted when he vomited. We will be running fluids through it shortly, so redress first. Aseptic non-touch technique. Go."}]
+     ],
+     "mini": {"type": "drill", "template": "oncology", "drill": "aseptic"},
+     "post": [
+      ["nurse-kai", {"zh": "敷料好了，回血順。他的尿袋我掛起來了，從現在開始每小時看。", "en": "Dressing done, flushes well. His urine bag is up, and from now on I am checking it hourly."}]
+     ]},
+    {"id": "l3", "to": "place:gas-bench", "guide": {"zh": "到血氣分析儀看結果", "en": "Read the blood gas at the analyser"}, "roles": ["resident"],
+     "lines": [
+      ["sys", {"zh": "血氣幾分鐘就出來：鉀偏高、鈣偏低。正式報告還在檢驗科，但這台小機器已經把方向指給你了。", "en": "The gas is out in minutes: potassium high, calcium low. The formal report is still in the laboratory, but this small machine has already pointed the way."}],
+      ["me", {"zh": "阿凱，小林搬到急救區，監視器接上。輸液依醫囑，心電圖拿來我看。師傅，小林的血氣鉀高，我懷疑腫瘤溶解。", "en": "Kai, move Lin to the resus bay and put him on the monitor. Fluids per orders, and bring me the ECG. Dr Tu, Lin's gas potassium is high; I suspect tumour lysis."}],
+      ["attending", {"zh": "同意。在正式危急值來之前就動，是血氣存在的理由。", "en": "Agreed. Acting before the formal critical value arrives is the reason the gas analyser exists."}]
+     ]}
+   ]},
+  {"id": "critical", "name": {"zh": "危急值", "en": "Critical value"}, "sub": {"zh": "20:00 · 監視器", "en": "20:00 · monitor"}, "t": 1200, "mood": "night",
+   "note": {"zh": "小林高血鉀：心律不整", "en": "Lin hyperkalaemic: arrhythmia"},
+   "beats": [
+    {"id": "v1", "to": "place:monitor", "guide": {"zh": "接危急值，衝回 7 床", "en": "Take the critical value, run to bay 7"},
+     "ring": {"title": {"zh": "檢驗科來電", "en": "Laboratory calling"}, "sub": {"zh": "7 床小林：鉀危急值，請複誦", "en": "Bay 7, Lin: critical potassium, please read back"}, "call": true, "from": "lab"},
+     "lines": [
+      ["lab", {"zh": "檢驗科。7 床小林，鉀危急值，磷也高，鈣偏低，肌酸酐比外院的基準高了一倍。請複誦。", "en": "Laboratory. Bay 7, Lin: critical potassium, phosphate high, calcium low, creatinine double his outside baseline. Please read back."}],
+      ["me", {"zh": "複誦：小林，鉀危急值、高磷、低鈣、肌酸酐上升。收到，時間記錄了。", "en": "Read back: Lin, critical potassium, high phosphate, low calcium, rising creatinine. Received, time recorded."}],
+      ["sys", {"zh": "你還沒掛電話，監視器就開始叫。小林的心跳又快又亂，心電圖的波形變了形。", "en": "Before you have hung up, the monitor starts to alarm. Lin's heart is fast and irregular, and the ECG complexes have changed shape."}]
+     ],
+     "mini": {"type": "vitals", "event": "tachyarrhythmia",
+      "options": [
+       {"zh": "心電圖、依規範處理高血鉀、監測、叫師傅與重症", "en": "Twelve-lead ECG, treat hyperkalaemia per protocol, continuous monitoring, call the mentor and ICU", "ok": true,
+        "why": {"zh": "這是腫瘤溶解症候群的高血鉀在打心臟。保護心臟、把鉀處理掉、顧腎臟，三件事依規範同時進行，而且要有重症團隊知道。", "en": "This is tumour-lysis hyperkalaemia hitting the heart. Protect the heart, deal with the potassium, look after the kidneys, all per protocol and at the same time, with the ICU team aware."}},
+       {"zh": "先補水觀察，等複驗確認再說", "en": "Fluids and observe; wait for the repeat sample", "ok": false,
+        "why": {"zh": "心電圖已經變形了，這就是確認。等複驗的那十幾分鐘，心臟可能停。", "en": "The ECG has already changed; that is the confirmation. In the minutes spent waiting for a repeat, the heart may stop."}},
+       {"zh": "年輕人心悸是焦慮，給鎮靜觀察", "en": "Palpitations in a young man are anxiety; sedate and observe", "ok": false,
+        "why": {"zh": "二十二歲、化療第三天、危急值鉀、心電圖變形。這裡沒有一個字是焦慮。", "en": "Twenty-two, day three after chemotherapy, critical potassium, a changed ECG. Not one word of that is anxiety."}}
+      ]},
+     "post": [
+      ["attending", {"zh": "節律回來了。重症團隊下來看他，腎臟科也知道了。小林，你今晚不回家，考試我幫你寫證明。", "en": "Rhythm is back. The ICU team is coming down and nephrology knows. Lin, you are not going home tonight; I will write the note for your exam."}],
+      ["patient-lin", {"zh": "……我以為吐就只是吐。", "en": "...I thought vomiting was just vomiting."}]
+     ]}
+   ]},
+  {"id": "mri", "name": {"zh": "磁振造影回來了", "en": "The MRI is back"}, "sub": {"zh": "21:30 · PACS 讀片站", "en": "21:30 · PACS workstation"}, "t": 1290, "mood": "night",
+   "note": {"zh": "陳先生：壓迫確認，放腫科已到", "en": "Mr Chen: compression confirmed, RT on the way"},
+   "beats": [
+    {"id": "r1", "to": "place:pacs", "guide": {"zh": "接阿南電話，去看片", "en": "Take Nan's call, read the scan"}, "when": {"flag": "mscc-fast", "is": true},
+     "ring": {"title": {"zh": "放射師阿南來電", "en": "Nan calling"}, "sub": {"zh": "陳先生的片子推到 PACS 了", "en": "Mr Chen's scan is on PACS"}, "call": true, "from": "radiographer"},
+     "lines": [
+      ["radiographer", {"zh": "阿南。陳先生的全脊椎做完了，片子推上去了。你們四點就打來占時段，我六點就把他排進去了。", "en": "Nan. Mr Chen's whole spine is done and pushed up. You called at four to hold the slot, so I had him in by six."}],
+      ["attending", {"zh": "胸椎一節壓迫，往下還有第二處沒有症狀的轉移。腿的力氣跟四點的紀錄一樣，沒有變差。放腫科值班已經在路上。", "en": "Compression at one thoracic level, and a second, silent metastasis lower down. Leg power is the same as the four o'clock record, no worse. The radiation-oncology on-call is on her way."}],
+      ["me", {"zh": "四點的紀錄救了我們一次：有東西可以比。", "en": "The four o'clock record saved us once already: there was something to compare against."}]
+     ]},
+    {"id": "r2", "to": "place:pacs", "guide": {"zh": "接阿南電話，去看片", "en": "Take Nan's call, read the scan"}, "when": {"flag": "mscc-fast", "is": false},
+     "ring": {"title": {"zh": "放射師阿南來電", "en": "Nan calling"}, "sub": {"zh": "陳先生的片子推到 PACS 了", "en": "Mr Chen's scan is on PACS"}, "call": true, "from": "radiographer"},
+     "lines": [
+      ["radiographer", {"zh": "阿南。陳先生的全脊椎做完了。你們八點才打來說急，我把後面的人挪開才排進去。", "en": "Nan. Mr Chen's whole spine is done. You only called at eight to say it was urgent; I had to move people to fit him in."}],
+      ["attending", {"zh": "胸椎一節壓迫，往下第二處轉移。他的腿比四點弱了一級，排尿要導了。四個小時，我們用他的腿付的。放腫科在路上。", "en": "Compression at one thoracic level, a second metastasis lower down. His legs are one grade weaker than at four, and he now needs a catheter. Four hours, paid for with his legs. Radiation oncology is on the way."}],
+      ["me", {"zh": "記住了。癌症病人的背痛，紅旗問完就動，不等骨科，不等 X 光。", "en": "Noted. Back pain in a cancer patient: ask the red flags and move, without waiting for orthopaedics or an X-ray."}]
+     ]},
+    {"id": "r3", "to": "attending", "guide": {"zh": "用 ISBAR 打給放腫科與脊椎外科", "en": "Phone RT and spine in ISBAR"},
+     "lines": [
+      ["attending", {"zh": "你來打。我是誰、病人怎麼了、背景、我的評估、我要你做什麼。講慢一點，半夜被叫醒的人需要順序。", "en": "You make the calls. Who I am, what is happening, the background, my assessment, what I need. Speak slowly; people woken at night need the order."}],
+      ["me", {"zh": "腫瘤科住院醫師。3 床陳先生，攝護腺癌骨轉移，惡性脊髓壓迫，胸椎一處加第二處，腿力有紀錄。請今晚評估放射治療與穩定度。", "en": "Oncology resident. Bed 3, Mr Chen, prostate cancer with bone metastases, malignant spinal cord compression at one thoracic level plus a second distal site, leg power documented. Requesting radiotherapy assessment tonight and spine review for stability."}],
+      ["attending", {"zh": "很好。紅旗問得出來、順序排得對、電話講得清楚，今晚你做了腫瘤科最老的三件事。", "en": "Good. You asked the red flags, kept the order and made a clear call. Tonight you did the three oldest things in oncology."}]
+     ]}
+   ]},
+  {"id": "night-handover", "name": {"zh": "夜間交班", "en": "Night handover"}, "sub": {"zh": "23:00 · 急診交班板", "en": "23:00 · ER handover board"}, "t": 1380, "mood": "night",
+   "note": {"zh": "交給大夜，兩個時鐘都在走", "en": "Handed to the night team, both clocks running"},
+   "beats": [
+    {"id": "e1", "to": "place:board", "guide": {"zh": "到交班板交給大夜", "en": "Hand over to the night team at the board"},
+     "lines": [
+      ["me", {"zh": "3 床陳先生：惡性脊髓壓迫，胸椎加第二處，脊椎保護中，依醫囑給藥，放腫科今晚處理，腿力每兩小時複查比對。", "en": "Bed 3, Mr Chen: malignant cord compression, thoracic plus a second site, spinal precautions, medication per orders, radiation oncology treating tonight, leg power re-checked and compared two-hourly."}],
+      ["me", {"zh": "7 床小林：腫瘤溶解症候群，高血鉀已依規範處理，節律穩定，重症與腎臟科接手，尿量每小時，電解質依醫囑複驗。", "en": "Bay 7, Lin: tumour lysis syndrome, hyperkalaemia treated per protocol, rhythm stable, ICU and nephrology taking over, hourly urine output, electrolytes repeated per orders."}],
+      ["nurse-kai", {"zh": "兩床都有「下一次複查」和「比對基準」。這樣的交班我接得下去。", "en": "Both beds have a 'next check' and a 'baseline to compare'. That is a handover I can take."}]
+     ]},
+    {"id": "e2", "to": "nurse-kai", "guide": {"zh": "跟阿凱清點急救車", "en": "Count the crash cart with Kai"}, "roles": ["ernurse"],
+     "lines": [
+      ["nurse-kai", {"zh": "急救車今晚沒開封，但我們差一點。清點、簽名、把陳先生的登山杖放到他看得到的地方。", "en": "The crash cart stayed sealed tonight, but it was close. Count, sign, and put Mr Chen's hiking pole where he can see it."}]
+     ]},
+    {"id": "e3", "to": "attending", "guide": {"zh": "聽師傅的下班總結", "en": "The mentor's debrief"},
+     "lines": [
+      ["attending", {"zh": "今天兩個病人，檢傷單上寫的都是最普通的字：背痛、化療後想吐。", "en": "Two patients tonight, each with the most ordinary words on the triage sheet: back pain, nausea after chemo."}],
+      ["attending", {"zh": "癌症病人的新症狀，先當急症，再當副作用。問紅旗、看時鐘、找基準比對。這三件事比任何新藥都老。", "en": "A new symptom in a cancer patient is an emergency first and a side effect second. Ask the red flags, watch the clock, find a baseline to compare. Three things older than any new drug."}],
+      ["patient-chen", {"zh": "（簾後）醫師，我的腳趾頭剛剛動了。太太，妳看到沒有？", "en": "(Behind the curtain) Doctor, my toes just moved. Dear, did you see?"}],
+      ["family-chen", {"zh": "看到了。登山杖我放在這裡，你明年還要爬。", "en": "I saw. The pole is right here; you are climbing again next year."}]
+     ],
+     "end": true}
+   ]}
+ ],
+ "ending": {"title": {"zh": "下班了", "en": "End of shift"}, "sub": {"zh": "先當急症，再當副作用；問紅旗、看時鐘、找基準", "en": "Emergency first, side effect second; red flags, the clock, a baseline"},
+  "stats": ["stages", "drills", "choices", "calls", "items", "time"]}
+}

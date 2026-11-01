@@ -1,0 +1,229 @@
+{
+ "format": "huatuo-shift-v2",
+ "department": "pediatric-surgery",
+ "case": "volvulus",
+ "caseTitle": {"zh": "綠色的嘔吐", "en": "Green vomit"},
+ "condition": {"zh": "急性腹症 · 中腸扭轉", "en": "Acute abdomen · midgut volvulus"},
+ "difficulty": 3,
+ "room": "icu",
+ "title": {"zh": "新生兒加護的夜", "en": "A night in the neonatal unit"},
+ "tagline": {"zh": "綠色的吐，不等天亮", "en": "Green vomit does not wait for morning"},
+ "minutes": 25,
+ "roles": [
+  {"id": "resident", "zh": "小兒外科住院醫師", "en": "Paediatric surgery resident",
+   "desc": {"zh": "晚上的小兒外科只有你。電話從社區診所打來，你決定寶寶今晚在哪裡。", "en": "At night, paediatric surgery is you. The call comes from a community clinic, and you decide where the baby spends tonight."}},
+  {"id": "transport", "zh": "新生兒轉送護理師", "en": "Neonatal transport nurse",
+   "desc": {"zh": "保溫箱、氧氣、胃管、清單。救護車上只有妳和寶寶，所有事情出發前就要想好。", "en": "Incubator, oxygen, gastric tube, checklist. In the ambulance it is just you and the baby, so everything is thought through before you leave."}}
+ ],
+ "cast": {
+  "attending": {"name": {"zh": "范主治", "en": "Dr Fan"}, "role": {"zh": "小兒外科主治醫師（師傅）", "en": "Paediatric surgery attending (mentor)"}, "tag": "ATT", "color": "#155e75", "body": "mentor",
+   "about": {"zh": "手很大，縫的病人很小。口頭禪：「綠色的吐，不等天亮。」", "en": "Big hands, tiny patients. Catchphrase: 'Green vomit does not wait for morning.'"}},
+  "pei-chun": {"name": {"zh": "佩君", "en": "Pei-chun"}, "role": {"zh": "新生兒轉送護理師", "en": "Neonatal transport nurse"}, "tag": "TN", "color": "#3b8f6a", "body": "nurse",
+   "about": {"zh": "保溫箱推車走過的路比救護車司機還熟。轉送清單貼在保溫箱蓋子內側。", "en": "Knows the incubator's routes better than the ambulance drivers. Her checklist is taped inside the incubator lid."}},
+  "neo": {"name": {"zh": "鄧醫師", "en": "Dr Teng"}, "role": {"zh": "新生兒科主治醫師", "en": "Neonatology attending"}, "tag": "NEO", "color": "#7c3aed", "body": "specialist",
+   "about": {"zh": "加護病房的主人。先問寶寶的顏色，再問寶寶的數字。", "en": "Runs the unit. Asks about the baby's colour before the baby's numbers."}},
+  "a-te": {"name": {"zh": "阿德", "en": "A-te"}, "role": {"zh": "放射師", "en": "Radiographer"}, "tag": "RAD", "color": "#2563eb", "body": "radiographer",
+   "about": {"zh": "半夜被叫來做顯影檢查，從不抱怨，只問：「多大的寶寶？」", "en": "Called in at night for contrast studies; never complains, only asks: 'How big is the baby?'"}},
+  "hsiao-mi": {"name": {"zh": "小米", "en": "Hsiao-mi"}, "role": {"zh": "病人・出生第二天", "en": "Patient, day two of life"}, "tag": "PT", "color": "#c2410c", "body": "patient",
+   "about": {"zh": "在社區婦產科診所出生，第一天吃奶很好，第二天開始吐綠色的。", "en": "Born at a community maternity clinic. Fed well on day one; on day two the vomit turned green."}},
+  "dad": {"name": {"zh": "小米爸爸", "en": "Hsiao-mi's father"}, "role": {"zh": "家屬", "en": "Family"}, "tag": "DAD", "color": "#475569", "body": "family",
+   "about": {"zh": "開車跟在救護車後面一小時。手機裡全是小米昨天第一次喝奶的照片。", "en": "Drove behind the ambulance for an hour. His phone is full of photos of Hsiao-mi's first feed yesterday."}},
+  "clinic-doc": {"name": {"zh": "莊醫師", "en": "Dr Chuang"}, "role": {"zh": "社區婦產科診所醫師", "en": "Community maternity clinic doctor"}, "tag": "GP", "color": "#b45309", "phoneOnly": true,
+   "about": {"zh": "接生過兩千個寶寶。打來的第一句話是：「這個我不放心。」", "en": "Has delivered two thousand babies. His first words on the phone: 'I'm not happy about this one.'"}}
+ },
+ "places": {
+  "board": {"name": {"zh": "加護病房白板", "en": "NICU whiteboard"}, "hot": "whiteboard"},
+  "bay": {"name": {"zh": "保溫台床位", "en": "Warmer bay"}, "hot": "bed"},
+  "monitor": {"name": {"zh": "監視器", "en": "Monitor"}, "hot": "monitor"},
+  "fluoro": {"name": {"zh": "透視攝影室", "en": "Fluoroscopy room"}, "hot": "imaging"},
+  "phone": {"name": {"zh": "值班桌電話", "en": "Duty-desk phone"}, "hot": "desk"},
+  "theatre": {"name": {"zh": "往手術室", "en": "To theatre"}, "hot": "door"}
+ },
+ "glossary": [
+  {"term": {"zh": "膽汁性嘔吐", "en": "bilious vomiting"}, "plain": {"zh": "吐出綠色的東西，代表阻塞在膽汁流入腸子的地方以下。新生兒吐綠色，在證明不是之前都當作腸扭轉。", "en": "Green vomit means a blockage below where bile enters the bowel. In a newborn, green vomit is volvulus until proven otherwise."}},
+  {"term": {"zh": "腸旋轉不良", "en": "malrotation"}, "plain": {"zh": "胎兒時期腸子沒有轉到正確的位置，固定腸子的根部很窄，容易整串扭起來。", "en": "The bowel did not rotate into place before birth, leaving it hung on a narrow root that can twist as a whole."}},
+  {"term": {"zh": "中腸扭轉", "en": "midgut volvulus"}, "plain": {"zh": "整段小腸繞著血管根部扭轉，血流被勒住。幾個小時內腸子就可能壞死。", "en": "The whole small bowel twists around its blood supply and strangles it. Within hours the bowel can die."}},
+  {"term": {"zh": "胃管引流", "en": "gastric tube drainage"}, "plain": {"zh": "從鼻子或嘴巴放一條管子到胃，打開讓胃裡的東西流出來，減少嘔吐和吸入肺部。", "en": "A tube passed through the nose or mouth into the stomach and left open to drain, so there is less vomiting and less risk of it reaching the lungs."}},
+  {"term": {"zh": "轉送前穩定", "en": "pre-transfer stabilisation"}, "plain": {"zh": "出發前先把呼吸、體溫、血糖、靜脈、胃管和文件都弄好。救護車上能做的事很少。", "en": "Before leaving: breathing, temperature, blood sugar, a drip, a gastric tube and the paperwork all sorted. Very little can be done in an ambulance."}},
+  {"term": {"zh": "新生兒低血糖", "en": "neonatal hypoglycaemia"}, "plain": {"zh": "新生兒不能吃又在生病時，血糖很快就掉，可能抽搐。轉送前和路上都要量。", "en": "A sick newborn who cannot feed drops their sugar quickly and can have fits. It is checked before and during transfer."}},
+  {"term": {"zh": "上消化道攝影", "en": "upper GI contrast study"}, "plain": {"zh": "從胃管打顯影劑，在 X 光透視下看它從胃經十二指腸走到哪裡。是診斷腸旋轉不良的標準檢查。", "en": "Contrast put down the gastric tube and watched on X-ray as it leaves the stomach and runs through the duodenum. The standard test for malrotation."}},
+  {"term": {"zh": "十二指腸空腸曲", "en": "duodenojejunal flexure"}, "plain": {"zh": "十二指腸轉進空腸的那個轉角，正常應該在脊椎左邊、和胃差不多高。不在那裡就是腸旋轉不良。", "en": "The corner where the duodenum turns into the jejunum; normally left of the spine at about the level of the stomach. Anywhere else means malrotation."}},
+  {"term": {"zh": "螺旋狀", "en": "corkscrew"}, "plain": {"zh": "扭轉的十二指腸在顯影下像開瓶器一樣一圈一圈往下，是中腸扭轉的典型樣子。", "en": "On contrast, a twisted duodenum spirals down like a corkscrew: the classic look of midgut volvulus."}},
+  {"term": {"zh": "Ladd 氏手術", "en": "Ladd's procedure"}, "plain": {"zh": "治療腸旋轉不良的手術：解開扭轉、切斷異常的帶子、加寬腸繫膜根部、切除闌尾，把小腸放右邊、大腸放左邊。", "en": "The operation for malrotation: untwist the bowel, divide the abnormal bands, widen the mesenteric root, remove the appendix, and lay the small bowel to the right and the colon to the left."}},
+  {"term": {"zh": "第二眼手術", "en": "second-look operation"}, "plain": {"zh": "腸子顏色不確定時，先不切，隔一段時間再打開看一次，盡量保留活的腸子。", "en": "When the bowel's colour is uncertain, nothing is cut yet; the abdomen is reopened a little later to look again, keeping as much living bowel as possible."}},
+  {"term": {"zh": "ISBAR", "en": "ISBAR"}, "plain": {"zh": "交班的固定順序：自我介紹、狀況、背景、評估、建議。電話裡最好用。", "en": "A set order for handover: Identify, Situation, Background, Assessment, Recommendation. Especially useful on the phone."}}
+ ],
+ "codex": [
+  {"id": "transport-box", "kind": "equipment", "name": {"zh": "轉送保溫箱", "en": "Transport incubator"}, "hot": "bed", "text": {"zh": "保溫、氧氣、監視器、抽吸，全部裝在一台推車上。蓋子內側貼著佩君的清單。", "en": "Warmth, oxygen, monitor and suction on one trolley. Pei-chun's checklist is taped inside the lid."}},
+  {"id": "ng-tube", "kind": "equipment", "name": {"zh": "胃管與引流袋", "en": "Gastric tube and drainage bag"}, "hot": "drugs", "text": {"zh": "綠色的液體流到袋子裡，就不會流進肺裡。引流量要記錄，也是之後的線索。", "en": "Green fluid in the bag is fluid not in the lungs. The volume is charted; it is a clue later on."}},
+  {"id": "fluoro-unit", "kind": "equipment", "name": {"zh": "透視攝影機", "en": "Fluoroscopy unit"}, "hot": "imaging", "text": {"zh": "看顯影劑一路往下走的即時 X 光。新生兒照射時間越短越好。", "en": "Real-time X-ray for following contrast downstream. With newborns, the shorter the screening the better."}},
+  {"id": "first-feed", "kind": "item", "name": {"zh": "第一次喝奶的照片", "en": "The first-feed photo"}, "text": {"zh": "小米爸爸手機裡的照片：昨天早上，小米閉著眼睛喝奶，嘴角有一滴奶。", "en": "From her father's phone: yesterday morning, eyes closed, feeding, a drop of milk at the corner of her mouth."}},
+  {"id": "checklist", "kind": "item", "name": {"zh": "佩君的轉送清單", "en": "Pei-chun's transfer checklist"}, "text": {"zh": "呼吸、體溫、血糖、靜脈、胃管、文件、家長、對方醫院知道我們要來了嗎？", "en": "Breathing, temperature, sugar, line, gastric tube, papers, parents. Does the receiving hospital know we're coming?"}},
+  {"id": "green-now", "kind": "concept", "name": {"zh": "綠色的吐不等天亮", "en": "Green vomit does not wait"}, "text": {"zh": "新生兒膽汁性嘔吐的原因很多，但最危險的是中腸扭轉：腸子幾個小時內就可能壞死，而寶寶一開始常常看起來還好、肚子還軟。所以不管精神多好，綠色嘔吐都要禁食、放胃管引流、打點滴、當天做上消化道攝影；不穩定就直接進手術室。", "en": "Green vomiting in a newborn has many causes, but the deadliest is midgut volvulus: the bowel can die within hours, while the baby often still looks well with a soft tummy. So however well the baby seems: nil by mouth, gastric drainage, a drip and an upper GI study the same day; if unstable, straight to theatre."}},
+  {"id": "counter-clockwise", "kind": "concept", "name": {"zh": "逆時針解開", "en": "Untwist counter-clockwise"}, "text": {"zh": "中腸扭轉通常是順時針扭，所以從手術者的角度逆時針轉回來（「把時間轉回去」）。解開後用溫生理食鹽水紗布包著，等幾分鐘看顏色回來；壞死的才切，不確定的留給第二眼手術。", "en": "Midgut volvulus usually twists clockwise, so from the surgeon's view it is turned back counter-clockwise ('turn back the clock'). Then wrap it in warm saline swabs and wait to see the colour return; only dead bowel is removed, and uncertain bowel is left for a second look."}},
+  {"id": "transfer-treats", "kind": "concept", "name": {"zh": "轉送也是治療", "en": "Transfer is treatment"}, "text": {"zh": "轉送不是把寶寶從 A 搬到 B。出發前的穩定（呼吸、體溫、血糖、靜脈、胃管）決定寶寶到院時的狀態；路上出事時能做的很少，所以要預想；到院時用固定順序交班，接手的人才不會漏掉。", "en": "A transfer is not moving a baby from A to B. Stabilisation before leaving (breathing, warmth, sugar, line, gastric tube) decides the state on arrival; little can be done if things go wrong en route, so they are anticipated; and a structured handover on arrival means nothing is dropped."}}
+ ],
+ "segs": [
+  {"id": "handover", "name": {"zh": "夜班交班", "en": "Night handover"}, "sub": {"zh": "16:00 · 加護病房白板", "en": "16:00 · NICU whiteboard"}, "t": 960, "mood": "day",
+   "note": {"zh": "空著的床位先準備好", "en": "The empty bay made ready"},
+   "beats": [
+    {"id": "s1", "to": "attending", "guide": {"zh": "找范主治交班", "en": "Handover with Dr Fan"},
+     "lines": [
+      ["attending", {"zh": "今晚加護病房的手術寶寶都穩定。最麻煩的通常是還沒來的那一個。", "en": "All the surgical babies in the unit are stable tonight. The trickiest is usually the one who hasn't arrived yet."}],
+      ["neo", {"zh": "三號保溫台空著，我們留給你。", "en": "Warmer three is empty. We're keeping it for you."}],
+      ["attending", {"zh": "記住一句：綠色的吐，不等天亮。", "en": "Remember one line: green vomit does not wait for morning."}]
+     ]},
+    {"id": "s2", "to": "place:bay", "guide": {"zh": "準備三號保溫台", "en": "Prepare warmer three"},
+     "lines": [
+      ["pei-chun", {"zh": "保溫台先暖起來，胃管、抽吸、血糖機放旁邊。空床位也要隨時能用。", "en": "Warm the warmer first; gastric tube, suction and glucose meter beside it. An empty bay must be ready at any moment."}]
+     ],
+     "mini": {"type": "find", "hot": "bed", "q": {"zh": "點一下三號保溫台，確認已預熱並備好胃管", "en": "Tap warmer three: pre-warmed, gastric tube ready"}}}
+   ]},
+  {"id": "call", "name": {"zh": "診所的電話", "en": "The clinic calls"}, "sub": {"zh": "19:00 · 值班桌電話", "en": "19:00 · duty-desk phone"}, "t": 1140, "mood": "eve",
+   "note": {"zh": "決定：今晚就來", "en": "Decision: tonight"},
+   "beats": [
+    {"id": "c1", "ring": {"title": {"zh": "社區診所來電", "en": "Community clinic calling"}, "sub": {"zh": "出生第二天，吐綠色的", "en": "Day two of life, vomiting green"}, "call": true, "from": "clinic-doc"},
+     "lines": [
+      ["clinic-doc", {"zh": "這個我不放心。足月女嬰，第二天，下午開始吐，最後兩次是綠色的。精神還好，肚子軟。", "en": "I'm not happy about this one. Term girl, day two, vomiting since this afternoon, the last two green. Alert, tummy soft."}],
+      ["me", {"zh": "胎便有解嗎？", "en": "Has she passed meconium?"}],
+      ["clinic-doc", {"zh": "昨天有。她爸爸說是不是換奶粉就好。", "en": "Yesterday, yes. Her father asked whether changing formula would fix it."}]
+     ]},
+    {"id": "c2", "to": "place:phone", "guide": {"zh": "你的建議", "en": "Your advice"},
+     "lines": [
+      ["attending", {"zh": "精神好、肚子軟、吐綠色。你在電話裡怎麼說？", "en": "Alert, soft tummy, bilious vomiting. What do you say on the phone?"}]
+     ],
+     "mini": {"type": "choice", "q": {"zh": "新生兒吐綠色、精神好、肚子軟，建議？", "en": "Newborn, green vomit, alert, soft tummy: advice?"},
+      "options": [
+       {"zh": "禁食、胃管、點滴，今晚轉來", "en": "Nil by mouth, tube, drip, transfer tonight", "ok": true, "set": {"timing": "now"},
+        "why": {"zh": "對。綠色的吐在證明不是之前都當腸扭轉。寶寶看起來好，不代表腸子好。", "en": "Right. Green vomit is volvulus until proven otherwise. A baby who looks well does not mean bowel that is well."}},
+       {"zh": "診所觀察一晚，明早再看", "en": "Observe at the clinic, review in the morning", "ok": false, "set": {"timing": "morning"},
+        "why": {"zh": "腸扭轉幾個小時就可能壞死。等天亮的代價可能是一大段腸子。", "en": "A volvulus can kill bowel within hours. Waiting for morning may cost a long stretch of it."}},
+       {"zh": "先換成水解奶粉試試", "en": "Try a hydrolysed formula first", "ok": false, "set": {"timing": "formula"},
+        "why": {"zh": "綠色不是奶粉的問題，是阻塞的位置。繼續餵只會吐更多、吸入更多。", "en": "Green isn't about the formula; it's about where the blockage is. Feeding means more vomiting and more risk of aspiration."}}
+      ]},
+     "post": [["clinic-doc", {"zh": "好，我放胃管、打點滴，請你們的轉送小組來接。", "en": "Right. I'll start gastric tube drainage and a drip; please send your transport team."}]]}
+   ]},
+  {"id": "transfer", "name": {"zh": "接寶寶", "en": "Fetching the baby"}, "sub": {"zh": "20:00 · 轉送出發", "en": "20:00 · transport leaves"}, "t": 1200, "mood": "eve",
+   "note": {"zh": "出發前想好，路上才不慌", "en": "Think before leaving, stay calm on the road"},
+   "beats": [
+    {"id": "t0", "when": {"flag": "timing", "is": "morning"}, "ring": {"title": {"zh": "社區診所再來電", "en": "Clinic calling again"}, "sub": {"zh": "寶寶肚子變脹，尿布有血", "en": "Tummy swelling, blood in the nappy"}, "call": true, "from": "clinic-doc"},
+     "lines": [
+      ["clinic-doc", {"zh": "你說觀察，可是現在她肚子脹起來，尿布有一點血便，在哭。", "en": "You said observe, but now her tummy is swelling, there's a little blood in the nappy, and she's crying."}],
+      ["me", {"zh": "我判斷錯了。禁食、胃管、點滴，轉送小組現在出發。", "en": "I got that wrong. Nil by mouth, tube, drip; the transport team is leaving now."}]
+     ]},
+    {"id": "t1", "to": "pei-chun", "guide": {"zh": "轉送前檢查", "en": "Pre-transfer check"},
+     "lines": [
+      ["pei-chun", {"zh": "轉送前穩定比路上重要。出發前先在電話裡把清單跑一次，到那邊再想就太晚了。", "en": "Pre-transfer stabilisation matters more than the journey. We run the checklist on the phone before leaving; thinking of it there is too late."}],
+      ["me", {"zh": "呼吸、體溫、血糖防新生兒低血糖、靜脈、胃管開放引流、文件、家長同意。", "en": "Breathing, temperature, sugar against neonatal hypoglycaemia, line, gastric tube on free drainage, paperwork, parental consent."}]
+     ],
+     "mini": {"type": "stage", "case": "pediatric-surgery-antenatal-counselling-neonatal-transfer", "stage": 7},
+     "item": "checklist"},
+    {"id": "t2", "roles": ["transport"], "to": "place:monitor", "guide": {"zh": "救護車上的突發", "en": "Trouble in the ambulance"},
+     "lines": [
+      ["sys", {"zh": "救護車上，小米又吐了一口綠色，血氧往下掉。", "en": "In the ambulance Hsiao-mi brings up another mouthful of green, and her saturation dips."}],
+      ["me", {"zh": "側躺、抽口鼻、抽胃管，給氧。胃管是不是塞住了？……是，沖通了。", "en": "On her side, suction mouth and nose, aspirate the tube, oxygen. Is the gastric tube blocked? ...yes. Flushed and draining."}]
+     ],
+     "mini": {"type": "stage", "case": "pediatric-surgery-antenatal-counselling-neonatal-transfer", "stage": 8}}
+   ]},
+  {"id": "arrival", "name": {"zh": "到院", "en": "Arrival"}, "sub": {"zh": "21:00 · 三號保溫台", "en": "21:00 · warmer three"}, "t": 1260, "mood": "night",
+   "note": {"zh": "到院交班與一張照片", "en": "Arrival handover and a photo"},
+   "beats": [
+    {"id": "a1", "to": "pei-chun", "guide": {"zh": "聽到院交班", "en": "Take the arrival handover"},
+     "lines": [
+      ["pei-chun", {"zh": "用 ISBAR 交：轉送護理師佩君。小米，出生第二天，綠色嘔吐。", "en": "ISBAR: Pei-chun, transport nurse. Hsiao-mi, day two, green vomiting."}],
+      ["pei-chun", {"zh": "路上吐一次、胃管塞住已處理。現在血氧、體溫、血糖都好。建議儘快顯影。", "en": "One vomit en route, blocked tube cleared. Saturation, temperature and sugar now fine. Recommend a contrast study as soon as possible."}]
+     ],
+     "mini": {"type": "stage", "case": "pediatric-surgery-antenatal-counselling-neonatal-transfer", "stage": 9}},
+    {"id": "a2", "to": "dad", "guide": {"zh": "跟小米爸爸說話", "en": "Talk to Hsiao-mi's father"},
+     "lines": [
+      ["dad", {"zh": "醫師，她昨天喝奶喝得很好，你看。是不是換奶粉就好了？", "en": "Doctor, she fed so well yesterday, look. Wouldn't changing her formula fix it?"}],
+      ["me", {"zh": "綠色的吐跟奶粉無關。我們懷疑腸子轉的位置不對、可能扭到了。今晚就要照一個顯影。", "en": "Green vomit isn't about the formula. We think her bowel may sit in the wrong place and may have twisted. She needs a contrast study tonight."}],
+      ["dad", {"zh": "今晚？……好。照片給你看，她很乖。", "en": "Tonight? ...OK. Here, look at the photo. She's such a good girl."}]
+     ],
+     "item": "first-feed"}
+   ]},
+  {"id": "contrast", "name": {"zh": "螺旋", "en": "The corkscrew"}, "sub": {"zh": "21:40 · 透視攝影室", "en": "21:40 · fluoroscopy room"}, "t": 1300, "mood": "night",
+   "note": {"zh": "十二指腸不過中線，像開瓶器", "en": "The duodenum never crosses: a corkscrew"},
+   "beats": [
+    {"id": "x1", "ring": {"title": {"zh": "放射科訊息", "en": "Radiology message"}, "sub": {"zh": "阿德：透視室開好了，直接推下來", "en": "A-te: fluoroscopy is ready, bring her down"}, "call": false, "from": "a-te"}, "to": "place:fluoro", "guide": {"zh": "上消化道攝影", "en": "Upper GI contrast study"},
+     "lines": [
+      ["a-te", {"zh": "多大的寶寶？……好，照射時間我盡量短。顯影劑從胃管打。", "en": "How big is the baby? ...right, I'll keep the screening short. Contrast goes down the gastric tube."}],
+      ["attending", {"zh": "看哪一個點？說了再看。", "en": "Which landmark do you watch? Say it, then look."}]
+     ],
+     "mini": {"type": "imaging", "region": "abdomen-upper",
+      "question": {"zh": "上消化道攝影診斷腸旋轉不良，要看什麼？", "en": "Upper GI contrast for malrotation: what do you look for?"},
+      "answer": {"zh": "十二指腸空腸曲的位置：正常在脊椎左邊、跟胃差不多高。它停在中線或右邊就是腸旋轉不良；十二指腸往下像開瓶器一樣螺旋，或顯影劑突然停住，就是中腸扭轉，要立刻手術。", "en": "The position of the duodenojejunal flexure: normally left of the spine at about the level of the stomach. On or right of the midline means malrotation; a duodenum spiralling down like a corkscrew, or contrast stopping abruptly, means midgut volvulus and immediate surgery."}},
+     "post": [["sys", {"zh": "十二指腸沒有越過中線，在右邊一圈一圈往下轉：螺旋狀。", "en": "The duodenum never crosses the midline; it spirals down on the right: a corkscrew."}]]},
+    {"id": "x2", "to": "place:monitor", "guide": {"zh": "回到保溫台：血壓掉", "en": "Back at the warmer: pressure falls"},
+     "lines": [
+      ["neo", {"zh": "她變灰了。末梢冰、回填變慢、血壓往下掉。", "en": "She's gone grey. Cold peripheries, slow refill, pressure dropping."}]
+     ],
+     "mini": {"type": "vitals", "event": "hypotension",
+      "options": [
+       {"zh": "依醫囑輸液、呼叫、直接進手術室", "en": "Fluid per protocol, call, straight to theatre", "ok": true,
+        "why": {"zh": "對。腸子在缺血，休克的原因在肚子裡。邊復甦邊推進手術室，真正的治療是把扭轉解開。", "en": "Right. The bowel is ischaemic and the shock is in the abdomen. Resuscitate on the way; the real treatment is untwisting it."}},
+       {"zh": "先穩定到明天早上再開", "en": "Stabilise until morning, then operate", "ok": false,
+        "why": {"zh": "缺血的腸子不會等你穩定，延遲只會讓它壞死得更多。", "en": "Ischaemic bowel won't wait for stability; delay only means more of it dies."}},
+       {"zh": "再做一次腹部超音波確認", "en": "An ultrasound to confirm first", "ok": false,
+        "why": {"zh": "診斷已經有了。休克的寶寶不再做檢查，直接去手術室。", "en": "You have the diagnosis. A shocked baby goes to theatre, not to more tests."}}
+      ]}}
+   ]},
+  {"id": "theatre", "name": {"zh": "把時間轉回去", "en": "Turning back the clock"}, "sub": {"zh": "22:30 · 手術室", "en": "22:30 · operating theatre"}, "t": 1350, "mood": "night",
+   "note": {"zh": "Ladd 氏手術，腸子粉紅回來", "en": "Ladd's procedure; the bowel pinks up"},
+   "beats": [
+    {"id": "o1", "to": "attending", "guide": {"zh": "劃刀前暫停", "en": "Time-out before incision"},
+     "lines": [
+      ["attending", {"zh": "半夜也不省。寶寶、手術、血、保暖、抗生素，一樣一樣念。", "en": "No shortcuts at night either. Baby, operation, blood, warming, antibiotics: one by one."}]
+     ],
+     "mini": {"type": "drill", "template": "pediatric-surgery", "drill": "timeout"}},
+    {"id": "o2", "to": "attending", "guide": {"zh": "Ladd 氏手術的順序", "en": "The steps of Ladd's procedure"},
+     "lines": [
+      ["sys", {"zh": "肚子打開，小腸是暗紫色的，整串繞著根部轉了兩圈。", "en": "The abdomen opens on dusky purple small bowel, twisted twice around its root."}],
+      ["attending", {"zh": "先做什麼、再做什麼？排出來。", "en": "What first, what next? Put it in order."}]
+     ],
+     "mini": {"type": "order", "q": {"zh": "Ladd 氏手術的步驟", "en": "Steps of Ladd's procedure"},
+      "steps": [
+       {"zh": "逆時針解開扭轉", "en": "Untwist counter-clockwise"},
+       {"zh": "溫紗布包住，看顏色回來", "en": "Warm swabs, watch the colour return"},
+       {"zh": "切斷 Ladd 氏帶", "en": "Divide Ladd's bands"},
+       {"zh": "加寬腸繫膜根部", "en": "Widen the mesenteric root"},
+       {"zh": "切除闌尾", "en": "Remove the appendix"},
+       {"zh": "小腸放右、大腸放左", "en": "Small bowel right, colon left"}
+      ]},
+     "post": [["sys", {"zh": "溫紗布下，暗紫慢慢變成粉紅。腸子在蠕動。", "en": "Under the warm swabs the purple slowly turns pink. The bowel begins to move."}]]},
+    {"id": "o3", "roles": ["resident"], "to": "place:theatre", "guide": {"zh": "闌尾：結紮", "en": "The appendix: ligate"},
+     "lines": [
+      ["attending", {"zh": "盲腸會留在左邊，以後闌尾炎會痛在奇怪的地方，所以現在切掉。你來綁。", "en": "The caecum will end up on the left, so any future appendicitis would hurt in a strange place. That's why it comes out now. You tie."}]
+     ],
+     "mini": {"type": "drill", "template": "pediatric-surgery", "drill": "ligate"}},
+    {"id": "o4", "roles": ["transport"], "to": "place:bay", "guide": {"zh": "回程整理保溫箱", "en": "Reset the transport incubator"},
+     "lines": [
+      ["me", {"zh": "保溫箱消毒、氧氣補滿、清單換新的一張。下一個寶寶可能今晚就來。", "en": "Incubator cleaned, oxygen refilled, a fresh checklist in the lid. The next baby could come tonight."}],
+      ["neo", {"zh": "妳的清單我想影印一份給全科。", "en": "I'd like to photocopy your checklist for the whole unit."}]
+     ]}
+   ]},
+  {"id": "debrief", "name": {"zh": "回顧", "en": "Debrief"}, "sub": {"zh": "23:40 · 三號保溫台", "en": "23:40 · warmer three"}, "t": 1420, "mood": "night",
+   "note": {"zh": "一整段腸子，都還在", "en": "All the bowel, still there"},
+   "beats": [
+    {"id": "d0", "when": {"flag": "timing", "is": "morning"}, "to": "attending", "guide": {"zh": "范主治說的那段腸子", "en": "The bowel Dr Fan mentions"},
+     "lines": [
+      ["attending", {"zh": "有一段腸子顏色一直不確定。我們先不切，四十八小時內第二眼手術再看。", "en": "One segment never quite pinked up. We didn't cut it; a second-look operation within forty-eight hours will decide."}],
+      ["me", {"zh": "如果電話裡我直接叫她來，可能就沒有那一段了。", "en": "If I'd told them to come straight away, that segment might not exist."}],
+      ["attending", {"zh": "所以你會記得這通電話。下一次，綠色的吐，不等天亮。", "en": "Which is why you'll remember that call. Next time: green vomit doesn't wait."}]
+     ]},
+    {"id": "d1", "to": "dad", "guide": {"zh": "告訴小米爸爸", "en": "Tell Hsiao-mi's father"},
+     "lines": [
+      ["me", {"zh": "腸子扭了兩圈，我們解開了，顏色回來了。她在加護病房睡。", "en": "The bowel was twisted twice round. We untwisted it and the colour came back. She's asleep in the unit."}],
+      ["dad", {"zh": "……我可以再拍一張照片嗎？今天的。", "en": "...can I take another photo? Today's one."}]
+     ]},
+    {"id": "d2", "to": "attending", "guide": {"zh": "范主治的回顧", "en": "Dr Fan's debrief"},
+     "lines": [
+      ["attending", {"zh": "今晚最重要的決定不在手術室，是七點那通電話。", "en": "Tonight's most important decision wasn't in theatre. It was the seven o'clock phone call."}],
+      ["attending", {"zh": "再來是佩君出發前的清單。路上那口綠色，她早就想好了。", "en": "Then Pei-chun's checklist before she left. That green vomit in the ambulance, she'd planned for it."}],
+      ["sys", {"zh": "值班未完。三號保溫台的燈調暗了，小米的胃管引流袋裡，液體是清的。", "en": "The night goes on. The lights over warmer three are dimmed; in Hsiao-mi's drainage bag the fluid is clear."}]
+     ],
+     "end": true}
+   ]}
+ ],
+ "ending": {"title": {"zh": "下班了", "en": "End of shift"}, "sub": {"zh": "綠色的吐，不等天亮", "en": "Green vomit does not wait for morning"}, "stats": ["stages", "grades", "choices", "calls", "items", "time"]}
+}

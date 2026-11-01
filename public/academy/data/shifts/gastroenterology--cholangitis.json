@@ -1,0 +1,1356 @@
+{
+ "format": "huatuo-shift-v2",
+ "department": "gastroenterology",
+ "case": "cholangitis",
+ "caseTitle": {
+  "zh": "急診的黃疸與高燒",
+  "en": "Jaundice and fever in the ED"
+ },
+ "condition": {
+  "zh": "膽道感染 · 急性膽管炎",
+  "en": "Biliary sepsis · acute cholangitis"
+ },
+ "difficulty": 3,
+ "room": "er",
+ "title": {
+  "zh": "消化內科：夜間膽道急症",
+  "en": "Gastroenterology: a biliary emergency at night"
+ },
+ "tagline": {
+  "zh": "膽管塞住了，抗生素只是一半",
+  "en": "When the duct is blocked, antibiotics are only half"
+ },
+ "minutes": 25,
+ "roles": [
+  {
+   "id": "fellow",
+   "zh": "消化內科研修醫師",
+   "en": "Gastroenterology fellow",
+   "desc": {
+    "zh": "今晚你值消化內科的班，急診會診一通接一通。你要判斷誰的膽管今晚就要打開。",
+    "en": "You are the gastroenterology fellow on call tonight, with ED consults one after another. You decide whose bile duct must be opened tonight."
+   }
+  },
+  {
+   "id": "ercp-nurse",
+   "zh": "膽胰內視鏡護理師",
+   "en": "ERCP nurse",
+   "desc": {
+    "zh": "十二指腸鏡、導絲、支架、透視，還有做完以後那一套最細的清洗流程，都是你的。",
+    "en": "Duodenoscope, guidewires, stents, fluoroscopy, and afterwards the most meticulous cleaning routine in the hospital: all yours."
+   }
+  }
+ ],
+ "cast": {
+  "attending": {
+   "name": {
+    "zh": "石主治",
+    "en": "Dr Shih"
+   },
+   "role": {
+    "zh": "膽胰內視鏡主治醫師（師傅）",
+    "en": "Consultant interventional endoscopist (mentor)"
+   },
+   "tag": "ATT",
+   "color": "#81296d",
+   "about": {
+    "zh": "鉛衣穿得像大衣，一整天不脫。做內視鏡時會小聲哼老歌。口頭禪：「膽管塞住，就要打開。」",
+    "en": "Wears his lead apron like an overcoat all day. Hums old songs while scoping. Catchphrase: \"A blocked duct must be opened.\""
+   },
+   "body": "mentor"
+  },
+  "er-doc": {
+   "name": {
+    "zh": "急診江醫師",
+    "en": "Dr Chiang (ED)"
+   },
+   "role": {
+    "zh": "急診主治醫師",
+    "en": "Emergency physician"
+   },
+   "tag": "ER",
+   "color": "#d9534f",
+   "about": {
+    "zh": "會診單寫得像電報：年紀、發燒、黃疸、血壓、我很擔心。",
+    "en": "Writes consults like telegrams: age, fever, jaundice, blood pressure, I am worried."
+   },
+   "body": "specialist"
+  },
+  "grandma-lee": {
+   "name": {
+    "zh": "李阿嬤",
+    "en": "Grandma Lee"
+   },
+   "role": {
+    "zh": "病人：發燒、黃疸",
+    "en": "Patient: fever and jaundice"
+   },
+   "tag": "PT",
+   "color": "#b5651d",
+   "about": {
+    "zh": "八十二歲，年輕時在糖廠工作。有輕度失智，平常每天會叫媳婦的名字。今天叫不出來了。",
+    "en": "Eighty-two, worked at the sugar refinery when young. Mild dementia; usually calls her daughter-in-law by name every day. Today she cannot."
+   },
+   "body": "patient"
+  },
+  "mrs-lee": {
+   "name": {
+    "zh": "李太太",
+    "en": "Mrs Lee"
+   },
+   "role": {
+    "zh": "李阿嬤的媳婦",
+    "en": "Grandma Lee's daughter-in-law"
+   },
+   "tag": "FAM",
+   "color": "#c06c84",
+   "about": {
+    "zh": "照顧婆婆十年。她說：「媽今天不是失智，是不對勁。」",
+    "en": "Has cared for her mother-in-law for ten years. Says: \"Today Mum isn't just demented, something is wrong.\""
+   },
+   "body": "family"
+  },
+  "anaes": {
+   "name": {
+    "zh": "麻醉科林醫師",
+    "en": "Dr Lin (anaesthesia)"
+   },
+   "role": {
+    "zh": "麻醉科主治醫師",
+    "en": "Consultant anaesthetist"
+   },
+   "tag": "ANA",
+   "color": "#2a7f9e",
+   "about": {
+    "zh": "在內視鏡室的角落守著呼吸道和血壓。話不多，每句都跟氧氣有關。",
+    "en": "Guards airway and blood pressure from the corner of the endoscopy room. Says little, and all of it about oxygen."
+   },
+   "body": "anaesthetist"
+  },
+  "mr-kuo": {
+   "name": {
+    "zh": "郭先生",
+    "en": "Mr Kuo"
+   },
+   "role": {
+    "zh": "病人：下午切了瘜肉",
+    "en": "Patient: polyp removed this afternoon"
+   },
+   "tag": "PT",
+   "color": "#4a7fb5",
+   "about": {
+    "zh": "五十八歲，公務員。下午大腸鏡切了一顆瘜肉，晚上肚子越來越痛。照著衛教單打了電話。",
+    "en": "Fifty-eight, civil servant. Had a polyp removed at colonoscopy this afternoon; tonight his belly hurts more and more. He phoned the number on the leaflet."
+   },
+   "body": "patient"
+  },
+  "lab": {
+   "name": {
+    "zh": "檢驗科小梅",
+    "en": "Hsiao-Mei (laboratory)"
+   },
+   "role": {
+    "zh": "微生物科醫檢師",
+    "en": "Microbiology scientist"
+   },
+   "tag": "LAB",
+   "color": "#5b4a9e",
+   "about": {
+    "zh": "培養瓶一報陽性就打電話，第一句是「革蘭氏染色的結果是」。",
+    "en": "Phones the moment a bottle flags positive; first words: \"The Gram stain shows\"."
+   },
+   "phoneOnly": true
+  }
+ },
+ "places": {
+  "board": {
+   "name": {
+    "zh": "急診會診板",
+    "en": "ED consult board"
+   },
+   "hot": "whiteboard"
+  },
+  "bay": {
+   "name": {
+    "zh": "急診留觀床",
+    "en": "ED observation bay"
+   },
+   "hot": "field"
+  },
+  "bay2": {
+   "name": {
+    "zh": "急診二床",
+    "en": "ED bay 2"
+   },
+   "hot": "recovery"
+  },
+  "monitor": {
+   "name": {
+    "zh": "生理監視器",
+    "en": "Patient monitor"
+   },
+   "hot": "monitor"
+  },
+  "us": {
+   "name": {
+    "zh": "床邊超音波",
+    "en": "Bedside ultrasound"
+   },
+   "hot": "ultrasound"
+  },
+  "viewer": {
+   "name": {
+    "zh": "影像工作站",
+    "en": "Image viewer"
+   },
+   "hot": "imaging"
+  },
+  "endo": {
+   "name": {
+    "zh": "內視鏡室",
+    "en": "Endoscopy suite"
+   },
+   "hot": "endoscopy"
+  },
+  "sink": {
+   "name": {
+    "zh": "內視鏡清洗槽",
+    "en": "Scope cleaning sink"
+   },
+   "hot": "sink"
+  },
+  "desk": {
+   "name": {
+    "zh": "醫師工作站",
+    "en": "Doctors' desk"
+   },
+   "hot": "desk"
+  }
+ },
+ "glossary": [
+  {
+   "term": {
+    "zh": "急性膽管炎",
+    "en": "acute cholangitis"
+   },
+   "plain": {
+    "zh": "膽管被結石塞住，膽汁裡的細菌往回跑，造成感染。可能很快變成敗血症。",
+    "en": "A stone blocks the bile duct and bacteria in the trapped bile cause infection. It can turn into sepsis quickly."
+   }
+  },
+  {
+   "term": {
+    "zh": "夏柯三症狀",
+    "en": "Charcot's triad"
+   },
+   "plain": {
+    "zh": "發燒、黃疸、右上腹痛。三個一起出現，要想到膽管炎。",
+    "en": "Fever, jaundice and right upper abdominal pain. Together they point to cholangitis."
+   }
+  },
+  {
+   "term": {
+    "zh": "黃疸",
+    "en": "jaundice"
+   },
+   "plain": {
+    "zh": "膽紅素在血中累積，皮膚和眼白變黃。膽管阻塞是常見原因。",
+    "en": "Bilirubin builds up in the blood and the skin and whites of the eyes turn yellow. A blocked bile duct is a common cause."
+   }
+  },
+  {
+   "term": {
+    "zh": "總膽管",
+    "en": "common bile duct"
+   },
+   "plain": {
+    "zh": "把膽汁從肝和膽囊送到十二指腸的主要管子。結石卡在這裡就會阻塞。",
+    "en": "The main tube carrying bile from liver and gallbladder to the duodenum. A stone stuck here blocks it."
+   }
+  },
+  {
+   "term": {
+    "zh": "膽道引流",
+    "en": "biliary drainage"
+   },
+   "plain": {
+    "zh": "把塞住的膽管打開，讓感染的膽汁流出來。嚴重膽管炎光靠抗生素不夠。",
+    "en": "Opening the blocked duct so infected bile can flow out. Antibiotics alone are not enough in severe cholangitis."
+   }
+  },
+  {
+   "term": {
+    "zh": "內視鏡逆行性膽胰管攝影",
+    "en": "ERCP"
+   },
+   "plain": {
+    "zh": "用十二指腸鏡找到膽管開口，在透視下放導絲、取石或放支架。",
+    "en": "A duodenoscope finds the bile duct opening; under X-ray a guidewire goes in to remove stones or place a stent."
+   }
+  },
+  {
+   "term": {
+    "zh": "十二指腸鏡",
+    "en": "duodenoscope"
+   },
+   "plain": {
+    "zh": "鏡頭在側面的內視鏡，前端有一個抬鉗器。構造複雜，清洗要特別仔細。",
+    "en": "An endoscope that looks sideways, with a small elevator at the tip. Its complex design needs especially careful cleaning."
+   }
+  },
+  {
+   "term": {
+    "zh": "膽道支架",
+    "en": "biliary stent"
+   },
+   "plain": {
+    "zh": "放在膽管裡的小管子，撐開阻塞讓膽汁流出。病人不穩時先放支架，結石改天再取。",
+    "en": "A small tube placed in the bile duct to hold it open. In an unstable patient a stent goes in first and the stone comes out another day."
+   }
+  },
+  {
+   "term": {
+    "zh": "乳頭切開",
+    "en": "sphincterotomy"
+   },
+   "plain": {
+    "zh": "把膽管開口的括約肌切開一點，方便取石。之後要注意出血。",
+    "en": "A small cut in the muscle at the bile duct opening to let stones out. Bleeding must be watched for afterwards."
+   }
+  },
+  {
+   "term": {
+    "zh": "脂肪酶",
+    "en": "lipase"
+   },
+   "plain": {
+    "zh": "胰臟分泌的酵素。膽結石也可能同時引起胰臟炎，所以要一起看。",
+    "en": "An enzyme from the pancreas. Gallstones can cause pancreatitis at the same time, so check it too."
+   }
+  },
+  {
+   "term": {
+    "zh": "腹腔游離氣體",
+    "en": "free air"
+   },
+   "plain": {
+    "zh": "腸子破洞後，空氣跑到腹腔。站姿胸部 X 光可以看到橫膈下的一條黑邊。",
+    "en": "Air escaping into the abdomen through a hole in the bowel. An upright chest film shows a dark crescent under the diaphragm."
+   }
+  },
+  {
+   "term": {
+    "zh": "高層次消毒",
+    "en": "high-level disinfection"
+   },
+   "plain": {
+    "zh": "內視鏡清洗的最後步驟，殺死幾乎所有微生物。前面的手工刷洗沒做好，這一步也救不回來。",
+    "en": "The final stage of scope reprocessing, killing nearly all microbes. If the manual brushing before it is poor, this step cannot save it."
+   }
+  }
+ ],
+ "codex": [
+  {
+   "id": "duodenoscope",
+   "kind": "equipment",
+   "name": {
+    "zh": "十二指腸鏡",
+    "en": "Duodenoscope"
+   },
+   "text": {
+    "zh": "側視的鏡頭，前端有可以抬起導管的抬鉗器。抬鉗器縫隙是全院最難清洗的地方之一。",
+    "en": "A side-viewing scope with an elevator that lifts the catheter. The elevator's crevices are among the hardest places in the hospital to clean."
+   },
+   "hot": "endoscopy"
+  },
+  {
+   "id": "bedside-us",
+   "kind": "equipment",
+   "name": {
+    "zh": "床邊超音波",
+    "en": "Bedside ultrasound"
+   },
+   "text": {
+    "zh": "看膽囊結石、總膽管有沒有擴張。沒辦法每次都看到卡住的那顆石頭，但看得到它造成的後果。",
+    "en": "Shows gallstones and whether the common bile duct is dilated. It cannot always see the stuck stone, but it sees the damage."
+   },
+   "hot": "ultrasound"
+  },
+  {
+   "id": "scope-sink",
+   "kind": "equipment",
+   "name": {
+    "zh": "內視鏡清洗槽",
+    "en": "Scope cleaning sink"
+   },
+   "text": {
+    "zh": "床邊預清潔、測漏、手工刷洗每一個管道和抬鉗器、沖洗、高層次消毒、乾燥、存放。少一步都不行。",
+    "en": "Bedside pre-clean, leak test, manual brushing of every channel and the elevator, rinse, high-level disinfection, drying, storage. No step may be skipped."
+   },
+   "hot": "sink"
+  },
+  {
+   "id": "pus-photo",
+   "kind": "item",
+   "name": {
+    "zh": "那一張「膿」的照片",
+    "en": "The photo of the pus"
+   },
+   "text": {
+    "zh": "導絲進去、支架放好的那一刻，黃綠色的膿從乳頭湧出來。石主治說：「這張照片，比任何抗生素都有說服力。」",
+    "en": "The moment the stent went in, yellow-green pus welled from the papilla. Dr Shih: \"This photo is more convincing than any antibiotic.\""
+   }
+  },
+  {
+   "id": "lee-name",
+   "kind": "item",
+   "name": {
+    "zh": "李阿嬤叫出的名字",
+    "en": "The name Grandma Lee said"
+   },
+   "text": {
+    "zh": "凌晨前，李阿嬤睜開眼睛，叫了一聲「阿玲」。媳婦哭了。",
+    "en": "Before midnight Grandma Lee opened her eyes and said \"Ah-Ling\". Her daughter-in-law cried."
+   }
+  },
+  {
+   "id": "open-the-duct",
+   "kind": "concept",
+   "name": {
+    "zh": "膽管塞住，就要打開",
+    "en": "A blocked duct must be opened"
+   },
+   "text": {
+    "zh": "急性膽管炎是「塞住的管子加上細菌」。抗生素只能處理一半，嚴重時一定要做膽道引流。發燒、黃疸、右上腹痛是夏柯三症狀；再加上意識改變和休克，就是最嚴重的型態，要在初步復甦後盡快引流。病人不穩時，不要逞強取石：先放膽道支架讓膿流出來，等穩定了再處理結石。內視鏡做不到，也可以由放射科經皮穿肝引流。",
+    "en": "Acute cholangitis is a blocked tube plus bacteria. Antibiotics treat only half; severe cases need biliary drainage. Fever, jaundice and right upper quadrant pain make Charcot's triad; add confusion and shock and it is the gravest form, needing drainage as soon as initial resuscitation allows. In an unstable patient do not insist on removing the stone: place a biliary stent to let the pus out and deal with the stone once stable. If endoscopy fails, radiology can drain through the liver."
+   }
+  },
+  {
+   "id": "confusion-new",
+   "kind": "concept",
+   "name": {
+    "zh": "失智病人的「新」混亂",
+    "en": "New confusion in dementia"
+   },
+   "text": {
+    "zh": "失智病人的意識變差，很容易被說成「失智變嚴重」。家屬說「今天不一樣」時，要當成急性變化：感染、脫水、低血糖、藥物、疼痛、尿滯留。家屬是最好的基準值。",
+    "en": "When a person with dementia becomes more confused it is easy to blame the dementia. When family say \"today is different\", treat it as an acute change: infection, dehydration, low sugar, drugs, pain, urinary retention. Family are the best baseline."
+   }
+  },
+  {
+   "id": "scope-clean",
+   "kind": "concept",
+   "name": {
+    "zh": "內視鏡清洗是感染管制",
+    "en": "Scope cleaning is infection control"
+   },
+   "text": {
+    "zh": "十二指腸鏡的抬鉗器構造複雜，國外曾經發生抗藥性細菌經由清洗不完全的鏡子傳給下一位病人。所以流程一步都不能省：床邊預清潔、測漏、手工刷洗、沖洗、高層次消毒或滅菌、徹底乾燥、懸掛存放，並定期做內視鏡培養監測。清洗紀錄要能追溯到每一位病人。",
+    "en": "The duodenoscope's elevator is intricate; abroad, resistant bacteria have spread to later patients through incompletely cleaned scopes. So no step is skipped: bedside pre-clean, leak test, manual brushing, rinse, high-level disinfection or sterilisation, thorough drying, hanging storage, and regular surveillance cultures. Every cleaning record must trace back to each patient."
+   }
+  }
+ ],
+ "segs": [
+  {
+   "id": "consult",
+   "name": {
+    "zh": "急診會診",
+    "en": "The ED consult"
+   },
+   "sub": {
+    "zh": "16:30 · 急診會診板",
+    "en": "16:30 · ED consult board"
+   },
+   "t": 990,
+   "mood": "eve",
+   "note": {
+    "zh": "接到會診",
+    "en": "Consult received"
+   },
+   "beats": [
+    {
+     "id": "c1",
+     "lines": [
+      [
+       "er-doc",
+       {
+        "zh": "消化內科嗎？八十二歲阿嬤，發燒、黃疸、右上腹痛，意識比平常差。血壓偏低，我很擔心。",
+        "en": "Gastroenterology? Eighty-two-year-old, fever, jaundice, right upper quadrant pain, more confused than usual. Pressure low. I am worried."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "血液培養抽了嗎？抗生素先給，我十分鐘到。",
+        "en": "Blood cultures drawn? Give the antibiotics now; I am there in ten."
+       }
+      ]
+     ],
+     "ring": {
+      "title": {
+       "zh": "急診會診",
+       "en": "ED consult"
+      },
+      "sub": {
+       "zh": "八十二歲，發燒、黃疸、血壓偏低",
+       "en": "Eighty-two, fever, jaundice, low pressure"
+      },
+      "call": true,
+      "from": "er-doc"
+     }
+    },
+    {
+     "id": "c2",
+     "to": "attending",
+     "guide": {
+      "zh": "找石主治",
+      "en": "Find Dr Shih"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "（還穿著鉛衣）發燒、黃疸、右上腹痛，這叫什麼？",
+        "en": "(Still in his lead apron) Fever, jaundice, right upper quadrant pain: what is that called?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "夏柯三症狀。要想急性膽管炎。",
+        "en": "Charcot's triad. Think acute cholangitis."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "再加上意識改變和血壓低呢？那就不是明天的事。膽管塞住，就要打開。",
+        "en": "And with confusion and low pressure? Then it is not tomorrow's job. A blocked duct must be opened."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "c3",
+     "to": "place:endo",
+     "guide": {
+      "zh": "先把內視鏡室準備好",
+      "en": "Get the endoscopy suite ready"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "十二指腸鏡測漏過、導絲兩種、塑膠支架各尺寸、透視機開機。麻醉科也先打聲招呼。",
+        "en": "Duodenoscope leak-tested, two kinds of guidewire, plastic stents in all sizes, fluoroscopy on. Anaesthesia warned too."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "還沒決定要做，就先準備好。這叫不浪費病人的時間。",
+        "en": "Ready before we decide. That is not wasting the patient's time."
+       }
+      ]
+     ],
+     "roles": [
+      "ercp-nurse"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "lee",
+   "name": {
+    "zh": "李阿嬤",
+    "en": "Grandma Lee"
+   },
+   "sub": {
+    "zh": "17:00 · 急診留觀床",
+    "en": "17:00 · ED observation bay"
+   },
+   "t": 1020,
+   "mood": "eve",
+   "note": {
+    "zh": "總膽管擴張",
+    "en": "Dilated common bile duct"
+   },
+   "beats": [
+    {
+     "id": "l1",
+     "to": "mrs-lee",
+     "guide": {
+      "zh": "聽李太太說",
+      "en": "Listen to Mrs Lee"
+     },
+     "lines": [
+      [
+       "mrs-lee",
+       {
+        "zh": "媽平常每天會叫我「阿玲」。今天叫不出來。大家都說是失智變嚴重，可是不是。",
+        "en": "Every day Mum calls me \"Ah-Ling\". Today she can't. Everyone says her dementia is worse, but it isn't."
+       }
+      ],
+      [
+       "grandma-lee",
+       {
+        "zh": "（發抖）好冷……這裡是糖廠嗎？",
+        "en": "(Shivering) So cold... is this the sugar refinery?"
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "眼白發黃，右上腹壓痛，寒顫。黃疸是這兩天才出現的。",
+        "en": "Yellow eyes, right upper quadrant tenderness, rigors. The jaundice is only two days old."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "l2",
+     "to": "place:us",
+     "guide": {
+      "zh": "床邊超音波",
+      "en": "Bedside ultrasound"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "探頭給你。看膽囊，再往下看總膽管。",
+        "en": "Here is the probe. The gallbladder first, then follow the common bile duct."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "drill",
+      "template": "gastroenterology",
+      "drill": "us:gb"
+     },
+     "post": [
+      [
+       "me",
+       {
+        "zh": "膽囊滿滿的結石，總膽管擴張得很明顯。末端看不清楚，但上面撐開了。",
+        "en": "Gallbladder full of stones, the common bile duct clearly dilated. Cannot see the lower end, but it is distended above."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "l3",
+     "to": "place:desk",
+     "guide": {
+      "zh": "看抽血報告",
+      "en": "Review the bloods"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "報告：白血球高、膽紅素高、肝指數上升，脂肪酶也輕微上升。",
+        "en": "Results: high white count, high bilirubin, raised liver enzymes, and a mildly raised lipase."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "脂肪酶也動了。膽結石也可能同時卡出胰臟炎。兩個一起想。",
+        "en": "The lipase moved too. A gallstone can cause pancreatitis at the same time. Think of both."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "gastroenterology-v37-pancreatitis",
+      "stage": 1
+     }
+    }
+   ]
+  },
+  {
+   "id": "shock",
+   "name": {
+    "zh": "血壓往下掉",
+    "en": "The pressure falls"
+   },
+   "sub": {
+    "zh": "18:00 · 急診留觀床",
+    "en": "18:00 · ED observation bay"
+   },
+   "t": 1080,
+   "mood": "eve",
+   "note": {
+    "zh": "決定緊急引流",
+    "en": "Urgent drainage decided"
+   },
+   "beats": [
+    {
+     "id": "s1",
+     "to": "place:monitor",
+     "guide": {
+      "zh": "李阿嬤的血壓在掉",
+      "en": "Grandma Lee's pressure falls"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "輸液進去一袋了，血壓又往下滑。阿嬤叫不太醒，手腳冰冷。",
+        "en": "One bag of fluid in and the pressure slides again. Grandma barely rouses; hands and feet cold."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "vitals",
+      "event": "hypotension",
+      "options": [
+       {
+        "zh": "敗血症處置持續，聯絡緊急膽道引流",
+        "en": "Keep resuscitating, arrange urgent drainage",
+        "ok": true,
+        "why": {
+         "zh": "急性膽管炎合併休克和意識改變，是最嚴重的型態。培養、抗生素、輸液、升壓藥依醫囑，同時把膽管打開。",
+         "en": "Cholangitis with shock and confusion is the gravest form. Cultures, antibiotics, fluids and vasopressor per order, and open the duct."
+        }
+       },
+       {
+        "zh": "只要抗生素有效，血壓會回來",
+        "en": "If the antibiotics work, the pressure will recover",
+        "ok": false,
+        "why": {
+         "zh": "膿被關在膽管裡，抗生素進不去。引流才是感染源控制。",
+         "en": "The pus is trapped in the duct where antibiotics cannot reach. Drainage is the source control."
+        }
+       },
+       {
+        "zh": "先給鎮靜藥讓她安靜",
+        "en": "Sedate her to calm her down",
+        "ok": false,
+        "why": {
+         "zh": "她的混亂是敗血症造成的。鎮靜藥會讓血壓更低、呼吸更差。",
+         "en": "Her confusion is from sepsis. Sedatives lower the pressure further and depress breathing."
+        }
+       }
+      ]
+     },
+     "post": [
+      [
+       "er-doc",
+       {
+        "zh": "升壓藥接上了。血壓暫時撐住。",
+        "en": "Vasopressor on. Pressure holding for now."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "s2",
+     "to": "attending",
+     "guide": {
+      "zh": "排出處置順序",
+      "en": "Order the care"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "急性膽管炎合併休克。順序排給我看。",
+        "en": "Acute cholangitis with shock. Show me the order."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "order",
+      "q": {
+       "zh": "急性膽管炎合併休克的處置順序？",
+       "en": "Order the care of cholangitis with shock"
+      },
+      "steps": [
+       {
+        "zh": "抽血液培養",
+        "en": "Draw blood cultures"
+       },
+       {
+        "zh": "立刻給抗生素",
+        "en": "Give antibiotics at once"
+       },
+       {
+        "zh": "輸液與升壓藥依醫囑",
+        "en": "Fluids and vasopressor per order"
+       },
+       {
+        "zh": "超音波確認膽管擴張",
+        "en": "Confirm a dilated duct on ultrasound"
+       },
+       {
+        "zh": "緊急膽道引流",
+        "en": "Urgent biliary drainage"
+       }
+      ]
+     }
+    },
+    {
+     "id": "s3",
+     "to": "attending",
+     "guide": {
+      "zh": "決定什麼時候引流",
+      "en": "Decide when to drain"
+     },
+     "lines": [
+      [
+       "er-doc",
+       {
+        "zh": "血壓撐住了。石主治已經做了一整天，要不要等明天早上？",
+        "en": "The pressure is holding. Dr Shih has scoped all day. Wait till morning?"
+       }
+      ]
+     ],
+     "mini": {
+      "type": "choice",
+      "q": {
+       "zh": "李阿嬤靠升壓藥撐住血壓。膽道引流什麼時候做？",
+       "en": "Grandma Lee's pressure leans on a vasopressor. When to drain?"
+      },
+      "options": [
+       {
+        "zh": "今晚，初步復甦後盡快",
+        "en": "Tonight, as soon as resuscitated",
+        "ok": true,
+        "why": {
+         "zh": "嚴重膽管炎要在初步復甦後盡快引流。病人不穩，就只放支架，不取石，時間越短越好。",
+         "en": "Severe cholangitis needs drainage as soon as initial resuscitation allows. If unstable, just a stent, no stone extraction, the shorter the better."
+        },
+        "set": {
+         "drain": "now"
+        }
+       },
+       {
+        "zh": "抗生素先打一晚，明早再做",
+        "en": "Antibiotics overnight, scope in the morning",
+        "ok": false,
+        "why": {
+         "zh": "升壓藥撐住的血壓不是穩定。膿留在膽管裡一整夜，可能等不到早上。",
+         "en": "A pressure held up by a vasopressor is not stability. A night of pus in the duct may not last till morning."
+        },
+        "set": {
+         "drain": "later"
+        }
+       }
+      ]
+     }
+    },
+    {
+     "id": "s4",
+     "to": "place:desk",
+     "guide": {
+      "zh": "解釋給李太太聽",
+      "en": "Explain to Mrs Lee"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "阿嬤的膽管被石頭塞住，裡面化膿了。要做膽道引流：從嘴巴放內視鏡進去，讓膿流出來。",
+        "en": "A stone has blocked Grandma's bile duct and it is full of pus. She needs biliary drainage: a scope through the mouth to let the pus out."
+       }
+      ],
+      [
+       "mrs-lee",
+       {
+        "zh": "有危險嗎？……可是不做更危險，對不對？",
+        "en": "Is it risky? ...But not doing it is riskier, isn't it?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "對。麻醉科會在旁邊顧她的呼吸和血壓。",
+        "en": "Yes. Anaesthesia will be beside her guarding breathing and pressure."
+       }
+      ]
+     ],
+     "roles": [
+      "fellow"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "kuo",
+   "name": {
+    "zh": "郭先生的電話",
+    "en": "Mr Kuo's call"
+   },
+   "sub": {
+    "zh": "19:30 · 急診二床",
+    "en": "19:30 · ED bay 2"
+   },
+   "t": 1170,
+   "mood": "eve",
+   "note": {
+    "zh": "郭先生：穿孔，外科接手",
+    "en": "Mr Kuo: perforation, surgeons in"
+   },
+   "beats": [
+    {
+     "id": "k1",
+     "lines": [
+      [
+       "mr-kuo",
+       {
+        "zh": "醫師，我下午切了瘜肉，衛教單說肚子很痛要打這支電話。現在痛到不能直起腰。",
+        "en": "Doctor, I had a polyp removed this afternoon. The leaflet said to call if the pain got bad. I cannot stand up straight."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "郭先生，請你現在來急診，不要吃東西。我會先跟急診說。",
+        "en": "Mr Kuo, come to the ED now and do not eat. I will tell them you are coming."
+       }
+      ]
+     ],
+     "ring": {
+      "title": {
+       "zh": "內視鏡室專線",
+       "en": "Endoscopy hotline"
+      },
+      "sub": {
+       "zh": "下午切瘜肉的病人，肚子很痛",
+       "en": "This afternoon's polyp patient, severe pain"
+      },
+      "call": true,
+      "from": "mr-kuo"
+     }
+    },
+    {
+     "id": "k2",
+     "to": "mr-kuo",
+     "guide": {
+      "zh": "檢查郭先生",
+      "en": "Examine Mr Kuo"
+     },
+     "lines": [
+      [
+       "mr-kuo",
+       {
+        "zh": "我照衛教單打電話，是不是很麻煩？",
+        "en": "I called like the leaflet said. Am I a nuisance?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "你做得完全正確。肚子我按一下，從不痛的地方開始。",
+        "en": "You did exactly right. Let me press your belly, starting where it does not hurt."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "drill",
+      "template": "gastroenterology",
+      "drill": "palp"
+     },
+     "post": [
+      [
+       "me",
+       {
+        "zh": "整個肚子硬，放手時更痛。腹膜炎的徵象。",
+        "en": "The whole abdomen is rigid and hurts more on letting go. Signs of peritonitis."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "k3",
+     "to": "place:viewer",
+     "guide": {
+      "zh": "看站姿胸部 X 光",
+      "en": "Read the upright chest film"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "（從內視鏡室走過來）站著照的胸部 X 光，你要看橫膈下面。",
+        "en": "(Walking over from endoscopy) An upright chest film: look under the diaphragm."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "imaging",
+      "region": "chest",
+      "question": {
+       "zh": "郭先生的站姿胸部 X 光，右橫膈下那一條黑色新月形是什麼？",
+       "en": "Mr Kuo's upright chest film: what is the dark crescent under the right diaphragm?"
+      },
+      "answer": {
+       "zh": "腹腔游離氣體：腸子穿孔了。禁食、抗生素、照會外科。切瘜肉後的疼痛，沒有游離氣體時也可能是電燒後症候群，但有游離氣體就是穿孔。",
+       "en": "Free air: the bowel is perforated. Nil by mouth, antibiotics, call surgery. Pain after polypectomy without free air may be a post-coagulation syndrome, but free air means perforation."
+      }
+     },
+     "post": [
+      [
+       "me",
+       {
+        "zh": "橫膈下有腹腔游離氣體。禁食、抗生素、照會外科。",
+        "en": "Free air under the diaphragm. Nil by mouth, antibiotics, surgery called."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "他打了衛教單上的電話，所以今晚來得及。衛教單是寫來被用的。",
+        "en": "He rang the number on the leaflet, so tonight there is time. Leaflets are written to be used."
+       }
+      ]
+     ]
+    },
+    {
+     "id": "k4",
+     "to": "place:desk",
+     "guide": {
+      "zh": "打給一般外科",
+      "en": "Call general surgery"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "外科嗎？五十八歲，下午大腸鏡切瘜肉，現在腹膜炎徵象，站姿胸部 X 光有游離氣體。已禁食、給抗生素。",
+        "en": "Surgery? Fifty-eight, polypectomy this afternoon, now peritonitic, free air on the upright film. Nil by mouth, antibiotics given."
+       }
+      ],
+      [
+       "sys",
+       {
+        "zh": "外科總醫師：「十分鐘到，先別讓他喝水。」",
+        "en": "Surgical chief resident: \"Ten minutes. No water for him.\""
+       }
+      ]
+     ],
+     "roles": [
+      "fellow"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ercp",
+   "name": {
+    "zh": "內視鏡室",
+    "en": "The endoscopy suite"
+   },
+   "sub": {
+    "zh": "20:30 · 內視鏡室",
+    "en": "20:30 · endoscopy suite"
+   },
+   "t": 1230,
+   "mood": "night",
+   "note": {
+    "zh": "支架放好，膿流出來",
+    "en": "Stent in, pus drained"
+   },
+   "beats": [
+    {
+     "id": "e1",
+     "to": "place:endo",
+     "guide": {
+      "zh": "李阿嬤上了內視鏡台",
+      "en": "Grandma Lee is on the table"
+     },
+     "lines": [
+      [
+       "anaes",
+       {
+        "zh": "血壓靠升壓藥，氧氣面罩，鎮靜我會很小心。你們動作要快。",
+        "en": "Pressure on a vasopressor, oxygen mask, I will go gently with sedation. Be quick."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "（哼著老歌）今晚不取石，只引流。導絲進去，放膽道支架，出來。",
+        "en": "(Humming an old song) No stone tonight, only drainage. Guidewire in, biliary stent, out."
+       }
+      ]
+     ],
+     "when": {
+      "flag": "drain",
+      "is": "now"
+     }
+    },
+    {
+     "id": "e1b",
+     "to": "place:monitor",
+     "guide": {
+      "zh": "十點，李阿嬤又變差了",
+      "en": "At ten Grandma Lee worsens"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "晚上十點，留觀床的監視器響個不停：升壓藥加量了，血壓還在掉，阿嬤手腳出現花斑。",
+        "en": "At ten the observation monitor will not stop: the vasopressor is up and the pressure still falls; mottling on her limbs."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "石主治……她撐不到早上。",
+        "en": "Dr Shih... she will not last till morning."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "（已經穿好鉛衣）我知道。現在做，條件比剛才差。下次記得，升壓藥撐住的不叫穩定。",
+        "en": "(Already in his apron) I know. We go now, in worse shape than before. Remember: a pressure held by a vasopressor is not stable."
+       }
+      ]
+     ],
+     "when": {
+      "flag": "drain",
+      "is": "later"
+     }
+    },
+    {
+     "id": "e2",
+     "to": "place:endo",
+     "guide": {
+      "zh": "找到乳頭，放支架",
+      "en": "Find the papilla, place the stent"
+     },
+     "lines": [
+      [
+       "sys",
+       {
+        "zh": "十二指腸鏡到了乳頭。導絲在透視下進入總膽管，支架推進去——黃綠色的膿湧了出來。",
+        "en": "The duodenoscope reaches the papilla. Under fluoroscopy the guidewire enters the common bile duct, the stent slides in, and yellow-green pus wells out."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "（停止哼歌）拍照。這張照片比任何抗生素都有說服力。",
+        "en": "(Stops humming) Photograph it. More convincing than any antibiotic."
+       }
+      ],
+      [
+       "anaes",
+       {
+        "zh": "血壓……開始往上了。",
+        "en": "Pressure... starting to climb."
+       }
+      ]
+     ],
+     "item": "pus-photo"
+    }
+   ]
+  },
+  {
+   "id": "after",
+   "name": {
+    "zh": "清洗與交班",
+    "en": "Cleaning and handover"
+   },
+   "sub": {
+    "zh": "22:30 · 內視鏡清洗區",
+    "en": "22:30 · scope reprocessing"
+   },
+   "t": 1350,
+   "mood": "night",
+   "note": {
+    "zh": "鏡子乾淨，交班完成",
+    "en": "Scope clean, handover done"
+   },
+   "beats": [
+    {
+     "id": "a1",
+     "to": "place:sink",
+     "guide": {
+      "zh": "清洗十二指腸鏡",
+      "en": "Reprocess the duodenoscope"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "床邊預清潔、測漏，抬鉗器上下都刷，每個管道刷到刷子乾淨為止，再進高層次消毒。",
+        "en": "Bedside pre-clean, leak test, brush the elevator up and down, every channel until the brush comes out clean, then high-level disinfection."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "十二指腸鏡的抬鉗器，是全院最難洗的地方之一。你洗的不是鏡子，是下一個病人。",
+        "en": "The duodenoscope elevator is one of the hardest places in the hospital to clean. You are not washing a scope; you are protecting the next patient."
+       }
+      ]
+     ],
+     "roles": [
+      "ercp-nurse"
+     ]
+    },
+    {
+     "id": "a2",
+     "to": "place:desk",
+     "guide": {
+      "zh": "寫報告與交班",
+      "en": "Write the report and handover"
+     },
+     "lines": [
+      [
+       "me",
+       {
+        "zh": "急性膽管炎合併休克，緊急內視鏡逆行性膽胰管攝影，放膽道支架，未做乳頭切開、未取石。",
+        "en": "Acute cholangitis with shock: urgent ERCP, biliary stent placed, no sphincterotomy, no stone extraction."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "結石下次再取。乳頭切開那天，要交班注意出血：黑便、頭暈、血紅素。",
+        "en": "The stone comes out another day. On the day of the sphincterotomy, hand over the bleeding watch: black stools, dizziness, haemoglobin."
+       }
+      ]
+     ],
+     "mini": {
+      "type": "stage",
+      "case": "gastroenterology-v37-bleeding",
+      "stage": 2
+     }
+    }
+   ]
+  },
+  {
+   "id": "late",
+   "name": {
+    "zh": "夜深了",
+    "en": "Late at night"
+   },
+   "sub": {
+    "zh": "23:40 · 急診留觀床",
+    "en": "23:40 · ED observation bay"
+   },
+   "t": 1420,
+   "mood": "night",
+   "note": {
+    "zh": "下班",
+    "en": "Off duty"
+   },
+   "beats": [
+    {
+     "id": "n1",
+     "lines": [
+      [
+       "lab",
+       {
+        "zh": "革蘭氏染色的結果是：李阿嬤血液培養，革蘭氏陰性桿菌。",
+        "en": "The Gram stain shows: Grandma Lee's blood culture, Gram-negative rods."
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "收到，符合膽道來源。抗生素繼續，等鑑定和藥物敏感試驗。",
+        "en": "Received, fits a biliary source. Antibiotics continue pending identification and sensitivities."
+       }
+      ]
+     ],
+     "ring": {
+      "title": {
+       "zh": "檢驗科來電",
+       "en": "Laboratory calling"
+      },
+      "sub": {
+       "zh": "血液培養報陽性",
+       "en": "Blood culture positive"
+      },
+      "call": true,
+      "from": "lab"
+     }
+    },
+    {
+     "id": "n2",
+     "to": "mrs-lee",
+     "guide": {
+      "zh": "看李阿嬤和李太太",
+      "en": "See Grandma Lee and Mrs Lee"
+     },
+     "lines": [
+      [
+       "grandma-lee",
+       {
+        "zh": "（睜開眼睛）……阿玲？",
+        "en": "(Opening her eyes) ...Ah-Ling?"
+       }
+      ],
+      [
+       "mrs-lee",
+       {
+        "zh": "（哭了）她叫我了。我就說，今天不是失智。",
+        "en": "(In tears) She said my name. I told you, today wasn't the dementia."
+       }
+      ]
+     ],
+     "item": "lee-name"
+    },
+    {
+     "id": "n3",
+     "to": "attending",
+     "guide": {
+      "zh": "和石主治收尾",
+      "en": "Wrap up with Dr Shih"
+     },
+     "lines": [
+      [
+       "attending",
+       {
+        "zh": "今晚兩個病人，一個要打開，一個破了洞。共同點是什麼？",
+        "en": "Two patients tonight: one needed opening, one had a hole. What do they share?"
+       }
+      ],
+      [
+       "me",
+       {
+        "zh": "都有人說「不對勁」：李太太，和照著衛教單打電話的郭先生。",
+        "en": "Both had someone say \"something is wrong\": Mrs Lee, and Mr Kuo ringing the leaflet number."
+       }
+      ],
+      [
+       "attending",
+       {
+        "zh": "（終於脫下鉛衣）聽家屬的，也聽病人的。膽管塞住，就要打開。回去睡吧。",
+        "en": "(Finally taking off the apron) Listen to families, and to patients. A blocked duct must be opened. Go and sleep."
+       }
+      ]
+     ],
+     "end": true
+    }
+   ]
+  }
+ ],
+ "ending": {
+  "title": {
+   "zh": "膽道急症夜結束",
+   "en": "Biliary night over"
+  },
+  "sub": {
+   "zh": "一支支架、一張膿的照片、一個被叫出的名字",
+   "en": "One stent, one photo of pus, one name said again"
+  },
+  "stats": [
+   "stages",
+   "drills",
+   "imaging",
+   "choices",
+   "calls",
+   "items",
+   "time"
+  ]
+ }
+}

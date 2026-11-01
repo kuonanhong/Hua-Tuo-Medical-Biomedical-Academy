@@ -1,0 +1,251 @@
+{
+ "format": "huatuo-shift-v2",
+ "department": "gynecology",
+ "case": "ectopic",
+ "caseTitle": {"zh": "月經只是晚了幾天", "en": "The period was only a few days late"},
+ "condition": {"zh": "急性腹痛 · 子宮外孕", "en": "Acute pelvic pain · ectopic pregnancy"},
+ "difficulty": 3,
+ "room": "er",
+ "title": {"zh": "婦科急診夜", "en": "A gynaecology night in the ER"},
+ "tagline": {"zh": "會懷孕的人肚子痛，先驗孕", "en": "Abdominal pain in anyone who could be pregnant: test first"},
+ "minutes": 25,
+ "roles": [
+  {"id": "resident", "zh": "婦產科住院醫師", "en": "Obstetrics & gynaecology resident",
+   "desc": {"zh": "急診的婦科會診。肚子痛、出血、昏倒。探頭在口袋，手術室在樓上。", "en": "The gynaecology consult in the ER. Pain, bleeding, fainting. Probe in your pocket, theatre upstairs."}},
+  {"id": "triage", "zh": "急診檢傷護理師", "en": "ER triage nurse",
+   "desc": {"zh": "第一個看到病人的人。生命徵象、驗孕棒、一句單獨的問話。", "en": "The first person to see every patient. Vital signs, a pregnancy test, and one question asked in private."}}
+ ],
+ "cast": {
+  "attending": {"name": {"zh": "鍾主治", "en": "Dr Chung"}, "role": {"zh": "婦產科值班主治（師傅）", "en": "On-call gynaecology attending (mentor)"}, "tag": "ATT", "color": "#9f1239", "body": "mentor",
+   "about": {"zh": "說話很輕，下刀很快。口頭禪：「肚子痛的女生，先驗孕。」", "en": "Speaks softly, operates fast. Catchphrase: 'Abdominal pain in a woman: test for pregnancy first.'"}},
+  "nurse": {"name": {"zh": "阿蓮", "en": "A-lien"}, "role": {"zh": "急診檢傷護理師", "en": "ER triage nurse"}, "tag": "RN", "color": "#3b8f6a", "body": "nurse",
+   "about": {"zh": "三秒鐘看出誰在硬撐。抽屜裡有驗孕棒，也有巧克力。", "en": "Spots who is putting a brave face on in three seconds. Her drawer holds pregnancy tests and chocolate."}},
+  "yi-ting": {"name": {"zh": "宜庭", "en": "Yi-ting"}, "role": {"zh": "病人・27 歲", "en": "Patient, 27"}, "tag": "PT1", "color": "#be185d", "body": "patient",
+   "about": {"zh": "會計，月結這週天天加班。月經晚了幾天，以為是太累。今晚痛到右肩。", "en": "An accountant in month-end week. Period a few days late; she put it down to overwork. Tonight the pain reached her right shoulder."}},
+  "boyfriend": {"name": {"zh": "阿翔", "en": "A-hsiang"}, "role": {"zh": "宜庭的男朋友", "en": "Yi-ting's boyfriend"}, "tag": "FAM", "color": "#475569", "body": "family",
+   "about": {"zh": "不知道她可能懷孕。她也不知道。一直問能不能幫忙拿什麼。", "en": "Didn't know she might be pregnant. Neither did she. Keeps asking if he can fetch anything."}},
+  "hsiao-man": {"name": {"zh": "小曼", "en": "Hsiao-man"}, "role": {"zh": "病人・15 歲", "en": "Patient, 15"}, "tag": "PT2", "color": "#7c3aed", "body": "patient",
+   "about": {"zh": "國三，籃球校隊。月經一來就十天，今天在體育課昏倒。", "en": "Year nine, school basketball team. Her periods last ten days; today she fainted in PE."}},
+  "mother": {"name": {"zh": "小曼媽媽", "en": "Hsiao-man's mother"}, "role": {"zh": "家屬", "en": "Family"}, "tag": "MUM", "color": "#b45309", "body": "family",
+   "about": {"zh": "自己的月經也一直很多，以為是遺傳的體質，「女生就是這樣」。", "en": "Her own periods were always heavy too; she thought it ran in the family: 'that's just how it is for girls'."}},
+  "anaes": {"name": {"zh": "邱醫師", "en": "Dr Chiu"}, "role": {"zh": "麻醉科醫師", "en": "Anaesthetist"}, "tag": "AN", "color": "#2f6f9f", "phoneOnly": true,
+   "about": {"zh": "只在電話裡。聽到「子宮外孕、血壓掉」就直接說：「房間開好了。」", "en": "Only on the phone. Hear 'ectopic, pressure falling' and he just says: 'Theatre's open.'"}},
+  "lab": {"name": {"zh": "檢驗科", "en": "Laboratory"}, "role": {"zh": "檢驗科醫檢師", "en": "Lab scientist"}, "tag": "LAB", "color": "#64748b", "phoneOnly": true,
+   "about": {"zh": "危急值一出來就打電話，要你複誦一次才掛。", "en": "Rings the moment a critical value appears and won't hang up until you read it back."}}
+ },
+ "places": {
+  "bed": {"name": {"zh": "急診婦科床", "en": "ER gynae bay"}, "hot": "bed"},
+  "monitor": {"name": {"zh": "監視器", "en": "Monitor"}, "hot": "monitor"},
+  "pocus": {"name": {"zh": "床邊超音波", "en": "Bedside ultrasound"}, "hot": "ultrasound"},
+  "triage-desk": {"name": {"zh": "檢傷站", "en": "Triage desk"}, "hot": "desk"},
+  "board": {"name": {"zh": "急診白板", "en": "ER whiteboard"}, "hot": "whiteboard"},
+  "theatre-door": {"name": {"zh": "往手術室", "en": "To theatre"}, "hot": "door"}
+ },
+ "glossary": [
+  {"term": {"zh": "子宮外孕", "en": "ectopic pregnancy"}, "plain": {"zh": "胚胎著床在子宮以外，大多在輸卵管。長大到撐破時會大出血，是年輕女性腹痛最危險的原因之一。", "en": "A pregnancy implanted outside the womb, usually in a fallopian tube. When it grows enough to rupture it bleeds heavily; one of the most dangerous causes of pain in young women."}},
+  {"term": {"zh": "驗孕", "en": "pregnancy test"}, "plain": {"zh": "驗尿或驗血中的 hCG。會懷孕年紀的女性腹痛或出血，不管她怎麼說，都先驗。", "en": "Detects hCG in urine or blood. Any woman of childbearing age with pain or bleeding is tested, whatever she says."}},
+  {"term": {"zh": "肩尖痛", "en": "shoulder-tip pain"}, "plain": {"zh": "肚子裡的血刺激橫膈，痛覺被「轉送」到肩膀。肚子痛加肩膀痛，要想到腹腔內出血。", "en": "Blood in the abdomen irritates the diaphragm and the pain is 'referred' to the shoulder. Belly pain plus shoulder pain means think of internal bleeding."}},
+  {"term": {"zh": "腹腔內出血", "en": "haemoperitoneum"}, "plain": {"zh": "血流到肚子裡面，外面看不到。量多時血壓會掉、會昏倒。", "en": "Blood inside the abdomen, invisible from outside. In large amounts the pressure falls and the patient faints."}},
+  {"term": {"zh": "床邊超音波", "en": "point-of-care ultrasound"}, "plain": {"zh": "醫師在病床旁自己做的快速超音波，回答一兩個關鍵問題：子宮裡有沒有胚胎？肚子裡有沒有血？", "en": "A quick scan done by the doctor at the bedside to answer one or two key questions: is there a pregnancy in the womb? Is there blood in the abdomen?"}},
+  {"term": {"zh": "莫里森氏囊", "en": "Morison's pouch"}, "plain": {"zh": "肝臟和右腎之間的空隙，躺著時腹腔的血會流到這裡。這裡看到液體，代表出血量不少。", "en": "The space between the liver and right kidney where blood collects when lying down. Fluid here means a sizeable bleed."}},
+  {"term": {"zh": "位置不明的懷孕", "en": "pregnancy of unknown location"}, "plain": {"zh": "驗孕陽性但超音波還看不到胚胎在哪裡。病人穩定時，追蹤抽血與超音波；不穩定就是急症。", "en": "A positive test but no pregnancy visible on scan yet. If she is stable, follow with blood tests and scans; if not, it is an emergency."}},
+  {"term": {"zh": "輸卵管切除", "en": "salpingectomy"}, "plain": {"zh": "把有子宮外孕的那條輸卵管切掉，止血最確實。另一側輸卵管健康時，之後仍有機會自然懷孕。", "en": "Removing the tube containing the ectopic; the surest way to stop the bleeding. With a healthy tube on the other side, natural pregnancy remains possible."}},
+  {"term": {"zh": "出血病史", "en": "bleeding history"}, "plain": {"zh": "問從初經開始月經多不多、會不會流鼻血、刷牙流血、拔牙後血流不止、家人有沒有一樣。用來篩檢凝血疾病。", "en": "Asking about heavy periods since the first one, nosebleeds, bleeding gums, prolonged bleeding after dental extraction, and family members alike. It screens for clotting disorders."}},
+  {"term": {"zh": "類血友病", "en": "von Willebrand disease"}, "plain": {"zh": "最常見的遺傳性凝血疾病，常以「月經很多」表現。很多媽媽和女兒都以為那只是體質。", "en": "The commonest inherited bleeding disorder, often showing up as heavy periods. Many mothers and daughters assume it is just how they are."}},
+  {"term": {"zh": "危急值", "en": "critical value"}, "plain": {"zh": "檢驗結果嚴重到必須立刻通知醫師的數值。接電話的人要複誦、記錄、馬上處理。", "en": "A result so abnormal the doctor must be told immediately. Whoever takes the call reads it back, records it and acts."}},
+  {"term": {"zh": "傳明酸", "en": "tranexamic acid"}, "plain": {"zh": "一種非荷爾蒙的止血藥，減少月經出血量。劑量與禁忌依醫囑。", "en": "A non-hormonal medicine that reduces menstrual bleeding. Dose and contraindications per protocol."}}
+ ],
+ "codex": [
+  {"id": "pocus", "kind": "equipment", "name": {"zh": "床邊超音波", "en": "Bedside ultrasound"}, "hot": "ultrasound", "text": {"zh": "兩個問題：子宮裡有沒有？肚子裡有沒有血？回答完就推走，不要在床邊看風景。", "en": "Two questions: is it in the womb, and is there blood in the abdomen? Answer them and wheel it away; no sightseeing."}},
+  {"id": "test-strip", "kind": "equipment", "name": {"zh": "驗孕棒", "en": "Pregnancy test strip"}, "hot": "desk", "text": {"zh": "全急診最便宜、最常救命的檢查。檢傷站的抽屜裡永遠有一盒。", "en": "The cheapest and most often life-saving test in the ER. There's always a box in the triage drawer."}},
+  {"id": "tube-specimen", "kind": "item", "name": {"zh": "宜庭的輸卵管檢體", "en": "Yi-ting's tube specimen"}, "text": {"zh": "右側輸卵管壺腹部腫脹破裂。標籤：姓名、病歷號、部位、時間，送病理確認。", "en": "Right tube, swollen and ruptured at the ampulla. Labelled with name, record number, site and time, sent to pathology to confirm."}},
+  {"id": "period-diary", "kind": "item", "name": {"zh": "小曼的月經紀錄", "en": "Hsiao-man's period diary"}, "text": {"zh": "籃球比賽行程旁邊畫著小紅點，一個月有十個。媽媽說她自己的也是這樣。", "en": "Little red dots beside the basketball fixtures, ten a month. Her mother says hers were the same."}},
+  {"id": "test-first", "kind": "concept", "name": {"zh": "會懷孕的人都先驗孕", "en": "Test everyone who could be pregnant"}, "text": {"zh": "病史會騙人：月經「才晚幾天」、「不可能」、「有避孕」、家長說「她沒有」。子宮外孕在破裂之前常常只是輕微腹痛和少量出血。所以會懷孕年紀的女性，只要腹痛、出血、昏倒，或要照 X 光、開藥、手術，就先驗孕，而且要私下問。", "en": "Histories mislead: 'only a few days late', 'impossible', 'we use contraception', a parent saying 'she doesn't'. Before it ruptures, an ectopic often shows only mild pain and a little bleeding. So any woman of childbearing age with pain, bleeding or fainting, or before X-rays, drugs or surgery, gets a pregnancy test, and is asked in private."}},
+  {"id": "positive-empty", "kind": "concept", "name": {"zh": "驗孕陽性、子宮空的", "en": "Positive test, empty uterus"}, "text": {"zh": "驗孕陽性但子宮裡看不到胚胎：可能太早、可能流產、也可能是子宮外孕。病人穩定、沒有積血，可以追蹤抽血與超音波；有腹痛、肩尖痛、腹腔積液或血壓不穩，就當子宮外孕處理：兩條靜脈、配血、通知主治與麻醉，直到證明不是。", "en": "Positive test, nothing in the womb: too early, a miscarriage, or an ectopic. If she is stable with no free fluid, follow with bloods and scans; with pain, shoulder-tip pain, free fluid or unstable pressure, treat it as ectopic until proven otherwise: two lines, crossmatch, call the attending and anaesthesia."}},
+  {"id": "heavy-since-menarche", "kind": "concept", "name": {"zh": "從初經就很多，想到凝血", "en": "Heavy since the first period: think clotting"}, "text": {"zh": "青少女月經過多，不是只想到荷爾蒙。從初經就很多、流鼻血、刷牙流血、家人也一樣，要篩檢凝血疾病，類血友病最常見。凝血相關檢查盡量在輸血或開始荷爾蒙之前抽，結果才準。", "en": "Heavy periods in a teenager are not only about hormones. Heavy from the first period, nosebleeds, bleeding gums, relatives the same: screen for a bleeding disorder, von Willebrand disease being commonest. Draw clotting tests before transfusion or hormones where possible, so the results mean something."}}
+ ],
+ "segs": [
+  {"id": "start", "name": {"zh": "接班", "en": "Taking over"}, "sub": {"zh": "17:30 · 急診白板", "en": "17:30 · ER whiteboard"}, "t": 1050, "mood": "eve",
+   "note": {"zh": "鍾主治的第一句話", "en": "Dr Chung's first sentence"},
+   "beats": [
+    {"id": "s1", "to": "attending", "guide": {"zh": "找鍾主治報到", "en": "Report to Dr Chung"},
+     "lines": [
+      ["attending", {"zh": "今晚急診的婦科會診是你。第一句話記好：肚子痛的女生，先驗孕。", "en": "You're the gynae consult in the ER tonight. Remember the first rule: abdominal pain in a woman, test for pregnancy first."}],
+      ["me", {"zh": "就算她說不可能？", "en": "Even if she says it's impossible?"}],
+      ["attending", {"zh": "尤其是她說不可能。", "en": "Especially if she says it's impossible."}]
+     ]},
+    {"id": "s2", "to": "place:pocus", "guide": {"zh": "找床邊超音波", "en": "Find the bedside ultrasound"},
+     "lines": [
+      ["nurse", {"zh": "床邊超音波充好電了，探頭兩支都在。驗孕棒在我抽屜，巧克力不准拿。", "en": "The point-of-care ultrasound is charged, both probes there. Pregnancy tests are in my drawer. The chocolate is off limits."}]
+     ],
+     "mini": {"type": "find", "hot": "ultrasound", "q": {"zh": "點一下床邊超音波，確認腹部探頭在", "en": "Tap the bedside ultrasound and check the abdominal probe is there"}}}
+   ]},
+  {"id": "yiting", "name": {"zh": "加班的會計", "en": "The accountant on overtime"}, "sub": {"zh": "18:30 · 急診婦科床", "en": "18:30 · ER gynae bay"}, "t": 1110, "mood": "eve",
+   "note": {"zh": "宜庭：驗孕陽性，子宮是空的", "en": "Yi-ting: positive test, empty uterus"},
+   "beats": [
+    {"id": "y1", "roles": ["triage"], "to": "yi-ting", "guide": {"zh": "檢傷：生命徵象與驗孕", "en": "Triage: vital signs and a test"},
+     "lines": [
+      ["yi-ting", {"zh": "我只是肚子痛，月經晚了幾天而已，應該是加班太累。", "en": "It's just a tummy ache. My period's only a few days late; I'm overworked."}],
+      ["me", {"zh": "這是每個女生都要做的：先驗孕。妳男朋友先在外面等一下好嗎？", "en": "Everyone gets this: a pregnancy test first. Could your boyfriend wait outside for a moment?"}],
+      ["sys", {"zh": "血壓偏低、心跳偏快。驗孕棒兩條線。", "en": "Blood pressure on the low side, pulse fast. Two lines on the test."}]
+     ]},
+    {"id": "y2", "to": "yi-ting", "guide": {"zh": "問清楚痛在哪裡", "en": "Where exactly does it hurt"},
+     "lines": [
+      ["yi-ting", {"zh": "……兩條線？痛了兩天，右下腹。剛才連右肩也痛，很奇怪。", "en": "...two lines? It's hurt for two days, lower right. Just now my right shoulder started hurting too. Weird."}],
+      ["me", {"zh": "不奇怪。肚子痛加肩尖痛，要想到肚子裡面在出血。", "en": "Not weird. Belly pain plus shoulder-tip pain makes me think of bleeding inside."}],
+      ["attending", {"zh": "驗孕陽性、下腹痛、肩膀痛。你的計畫？", "en": "Positive test, lower abdominal pain, shoulder pain. Your plan?"}]
+     ],
+     "mini": {"type": "choice", "q": {"zh": "驗孕陽性、腹痛加肩尖痛，下一步？", "en": "Positive test, pain and shoulder-tip pain: next?"},
+      "options": [
+       {"zh": "當子宮外孕處理：靜脈、配血、超音波", "en": "Treat as ectopic: lines, crossmatch, scan", "ok": true, "set": {"plan": "act"},
+        "why": {"zh": "對。直到證明不是，都當子宮外孕：兩條靜脈、抽血配血、床邊超音波、通知主治與麻醉。", "en": "Right. Ectopic until proven otherwise: two lines, bloods and crossmatch, bedside scan, tell the attending and anaesthesia."}},
+       {"zh": "可能太早看不到，兩天後再抽血", "en": "Probably too early; repeat bloods in two days", "ok": false, "set": {"plan": "home"},
+        "why": {"zh": "這是「位置不明的懷孕」給穩定、不痛、沒有積血的人的路徑。她有肩尖痛、心跳快，不是這一群。", "en": "The pregnancy of unknown location pathway is for women who are stable, pain-free and without free fluid. Shoulder-tip pain and a fast pulse put her outside it."}},
+       {"zh": "先止痛，痛好了再說", "en": "Painkillers first, reassess later", "ok": false, "set": {"plan": "analgesia"},
+        "why": {"zh": "止痛可以給，但不能取代找出血。", "en": "Pain relief, yes, but not instead of looking for the bleed."}}
+      ]}},
+    {"id": "y3", "roles": ["resident"], "to": "place:pocus", "guide": {"zh": "床邊超音波：骨盆", "en": "Bedside scan: the pelvis"},
+     "lines": [
+      ["attending", {"zh": "經腹先看。子宮裡有沒有？旁邊有沒有東西？後面有沒有黑黑的液體？", "en": "Transabdominal first. Anything in the uterus? Anything beside it? Dark fluid behind it?"}]
+     ],
+     "mini": {"type": "drill", "template": "gynecology", "drill": "us:pelvis"},
+     "post": [["sys", {"zh": "子宮內膜厚，裡面沒有妊娠囊。右側附件一團混濁的腫塊，子宮後方有積液。", "en": "Thick lining, no gestational sac in the uterus. A murky mass by the right ovary; fluid behind the uterus."}]]}
+   ]},
+  {"id": "collapse", "name": {"zh": "血壓掉了", "en": "The pressure falls"}, "sub": {"zh": "19:10 · 急診婦科床", "en": "19:10 · ER gynae bay"}, "t": 1150, "mood": "eve",
+   "note": {"zh": "莫里森氏囊有血，直接上手術室", "en": "Blood in Morison's pouch: straight to theatre"},
+   "beats": [
+    {"id": "c0", "when": {"flag": "plan", "is": "home"}, "to": "place:theatre-door", "guide": {"zh": "急診門口有人倒下", "en": "Someone collapses at the exit"},
+     "lines": [
+      ["nurse", {"zh": "宜庭在急診門口簽離院單的時候昏倒了！", "en": "Yi-ting collapsed at the exit while signing her discharge form!"}],
+      ["me", {"zh": "推回來！兩條大靜脈、配血，我叫主治。……是我判斷錯了。", "en": "Bring her back! Two wide lines, crossmatch, I'll call the attending. ...that was my wrong call."}]
+     ]},
+    {"id": "c1", "to": "place:monitor", "guide": {"zh": "監視器在叫", "en": "The monitor alarms"},
+     "lines": [
+      ["boyfriend", {"zh": "她臉好白，叫她都不太回答！", "en": "She's so pale, she's barely answering!"}],
+      ["sys", {"zh": "血壓往下掉，心跳很快，手腳冰冷。", "en": "Blood pressure dropping, heart racing, cold hands and feet."}]
+     ],
+     "mini": {"type": "vitals", "event": "hypotension",
+      "options": [
+       {"zh": "呼叫、兩條大靜脈、輸液輸血、通知手術室", "en": "Call, two wide lines, fluids and blood, alert theatre", "ok": true,
+        "why": {"zh": "對。子宮外孕破裂、腹腔內出血。急救的同時，真正的止血在手術室。", "en": "Right. A ruptured ectopic with haemoperitoneum. Resuscitate while you move; the real haemostasis happens in theatre."}},
+       {"zh": "再做一次完整的陰道超音波確認", "en": "A full transvaginal scan to be sure", "ok": false,
+        "why": {"zh": "診斷已經夠了。休克的病人不等完整的檢查。", "en": "You have enough for the diagnosis. A shocked patient does not wait for a complete scan."}},
+       {"zh": "等抽血的血紅素結果", "en": "Wait for the haemoglobin result", "ok": false,
+        "why": {"zh": "急性出血時，血紅素還來不及下降。看病人，不是看數字。", "en": "In acute bleeding the haemoglobin hasn't fallen yet. Treat the patient, not the number."}}
+      ]}},
+    {"id": "c2", "to": "place:pocus", "guide": {"zh": "看右上腹", "en": "Look at the right upper abdomen"},
+     "lines": [
+      ["attending", {"zh": "探頭移到右上腹。為什麼看那裡？", "en": "Move the probe to the right upper quadrant. Why there?"}]
+     ],
+     "mini": {"type": "imaging", "region": "abdomen-upper",
+      "question": {"zh": "懷疑腹腔內出血，為什麼要看莫里森氏囊？看到什麼代表什麼？", "en": "Suspected haemoperitoneum: why look at Morison's pouch, and what does a finding there mean?"},
+      "answer": {"zh": "病人躺著時，腹腔的血會往肝臟與右腎之間流。骨盆有液體可能是少量；連莫里森氏囊都有液體，代表出血量大，要馬上手術。", "en": "Lying down, blood in the abdomen tracks to the gap between the liver and the right kidney. Pelvic fluid may be a small amount; fluid reaching Morison's pouch means a large bleed and immediate surgery."}},
+     "post": [["sys", {"zh": "肝腎之間一條黑色的液體帶。", "en": "A dark band of fluid between liver and kidney."}]]},
+    {"id": "c3", "ring": {"title": {"zh": "麻醉科", "en": "Anaesthesia"}, "sub": {"zh": "邱醫師：房間開好了", "en": "Dr Chiu: theatre is open"}, "call": true, "from": "anaes"},
+     "lines": [
+      ["me", {"zh": "子宮外孕破裂、腹腔內出血、血壓掉。已經兩條靜脈，血在配。", "en": "Ruptured ectopic pregnancy, haemoperitoneum, pressure falling. Two lines in, blood being crossmatched."}],
+      ["anaes", {"zh": "房間開好了，直接推上來。血一到就給。", "en": "Theatre's open. Bring her straight up. Blood goes in as soon as it arrives."}]
+     ]}
+   ]},
+  {"id": "theatre", "name": {"zh": "鏡頭下的血", "en": "Blood through the scope"}, "sub": {"zh": "19:40 · 手術室", "en": "19:40 · operating theatre"}, "t": 1180, "mood": "eve",
+   "note": {"zh": "右側輸卵管切除，止血完成", "en": "Right salpingectomy, bleeding controlled"},
+   "beats": [
+    {"id": "o1", "to": "boyfriend", "guide": {"zh": "推進手術室之前", "en": "Before the theatre doors"},
+     "lines": [
+      ["boyfriend", {"zh": "她會不會……她還能生小孩嗎？", "en": "Will she... can she still have children?"}],
+      ["attending", {"zh": "先救她。如果要切掉一邊的輸卵管，另一邊健康的話，之後還是有機會。", "en": "First we save her. If one tube has to come out and the other is healthy, she still has a chance later."}]
+     ]},
+    {"id": "o2", "roles": ["resident"], "to": "attending", "guide": {"zh": "吸血、找到出血點", "en": "Suction, find the bleeding point"},
+     "lines": [
+      ["attending", {"zh": "肚子裡都是血。先吸，看到右邊輸卵管，夾住它下面的系膜。", "en": "The belly is full of blood. Suction first, find the right tube, clamp the mesosalpinx beneath it."}]
+     ],
+     "mini": {"type": "drill", "template": "gynecology", "drill": "haemo"},
+     "post": [["sys", {"zh": "右側輸卵管壺腹部破了一個洞。輸卵管切除。左側輸卵管看起來很健康。", "en": "A hole in the ampulla of the right tube. Salpingectomy. The left tube looks perfectly healthy."}],
+              ["attending", {"zh": "左邊很漂亮。等一下第一句就告訴他們這個。", "en": "The left side is lovely. Tell them that first."}]],
+     "item": "tube-specimen"},
+    {"id": "o3", "roles": ["triage"], "to": "boyfriend", "guide": {"zh": "陪阿翔等", "en": "Wait with A-hsiang"},
+     "lines": [
+      ["boyfriend", {"zh": "我可以做什麼？", "en": "What can I do?"}],
+      ["me", {"zh": "幫她拿手機充電、打給她家人。還有，她醒來的時候在旁邊。", "en": "Charge her phone, call her family. And be there when she wakes up."}],
+      ["sys", {"zh": "阿蓮從抽屜拿了一塊巧克力給他。", "en": "A-lien takes a chocolate from her drawer and hands it to him."}]
+     ]}
+   ]},
+  {"id": "hsiaoman", "name": {"zh": "體育課昏倒", "en": "Fainting in PE"}, "sub": {"zh": "21:15 · 急診婦科床", "en": "21:15 · ER gynae bay"}, "t": 1275, "mood": "night",
+   "note": {"zh": "小曼：從初經就很多", "en": "Hsiao-man: heavy since the very first period"},
+   "beats": [
+    {"id": "h0", "ring": {"title": {"zh": "檢傷訊息", "en": "Triage message"}, "sub": {"zh": "15 歲女孩，月經大量出血、昏倒", "en": "Girl of 15, heavy period, fainted"}, "call": false, "from": "nurse"},
+     "lines": [
+      ["nurse", {"zh": "十五歲，月經第八天還很多，體育課昏倒，臉色很白。媽媽陪著。", "en": "Fifteen, day eight of a heavy period, fainted in PE, very pale. Her mother's with her."}]
+     ]},
+    {"id": "h1", "to": "mother", "guide": {"zh": "問出血病史", "en": "Take a bleeding history"},
+     "lines": [
+      ["mother", {"zh": "女生就是這樣，我年輕的時候也一樣多。", "en": "That's just girls. Mine were just as heavy at her age."}],
+      ["me", {"zh": "那我們一起回想：小曼會不會常流鼻血？刷牙流血？拔牙後血流很久？", "en": "Let's think back together: does Hsiao-man get nosebleeds? Bleeding gums? Bleeding for ages after a tooth came out?"}],
+      ["hsiao-man", {"zh": "……都會。我以為大家都這樣。", "en": "...all of those. I thought everyone did."}]
+     ],
+     "mini": {"type": "stage", "case": "gynecology-abnormal-uterine-bleeding-palm-coein", "stage": 0},
+     "post": [["me", {"zh": "從初經就很多，加上這些出血病史，要檢查凝血，例如類血友病。", "en": "Heavy since the first period, plus that bleeding history: we test her clotting, for example for von Willebrand disease."}]],
+     "item": "period-diary"},
+    {"id": "h2", "to": "attending", "guide": {"zh": "驗孕怎麼做", "en": "What about a pregnancy test"},
+     "lines": [
+      ["mother", {"zh": "她才十五歲，驗孕就不用了吧。她沒有男朋友。", "en": "She's only fifteen. No need for a pregnancy test, surely. She doesn't have a boyfriend."}],
+      ["attending", {"zh": "你怎麼做？", "en": "What do you do?"}]
+     ],
+     "mini": {"type": "choice", "q": {"zh": "15 歲大量出血，媽媽說不用驗孕？", "en": "Fifteen, heavy bleeding, mother says no pregnancy test?"},
+      "options": [
+       {"zh": "說明人人都驗，私下問並驗", "en": "Everyone is tested; ask and test privately", "ok": true, "set": {"hcg": "done"},
+        "why": {"zh": "對。「每個女生都驗」，不是懷疑誰。請媽媽先出去一下，私下問小曼，再驗。", "en": "Right. 'Every girl is tested' is not suspicion. Ask Mum to step out, ask Hsiao-man privately, then test."}},
+       {"zh": "媽媽說沒有就不驗", "en": "Mother says no, so skip it", "ok": false, "set": {"hcg": "skipped"},
+        "why": {"zh": "家長不一定知道，青少女也不一定敢說。之後要輸血、用藥，都需要這個結果。", "en": "Parents don't always know, and teenagers don't always say. Transfusion and medicines both need this result."}},
+       {"zh": "當著媽媽問她有沒有性行為", "en": "Ask her about sex in front of Mum", "ok": false, "set": {"hcg": "public"},
+        "why": {"zh": "她只能回答「沒有」。這種問題要私下問。", "en": "She can only say 'no'. That question is asked in private."}}
+      ]},
+     "post": [["sys", {"zh": "驗孕陰性。小曼私下說：「謝謝你們讓我媽出去。我真的沒有，只是不想在她面前講。」", "en": "Test negative. Hsiao-man, in private: 'Thanks for sending Mum out. I really haven't; I just didn't want to talk about it in front of her.'"}]]},
+    {"id": "h3", "roles": ["resident"], "to": "hsiao-man", "guide": {"zh": "基本檢驗：先抽再輸", "en": "Basic tests: draw before transfusing"},
+     "lines": [
+      ["attending", {"zh": "血可能要輸。凝血的檢查什麼時候抽？", "en": "She may need blood. When do you draw the clotting tests?"}],
+      ["me", {"zh": "輸血和用荷爾蒙之前先抽，不然結果會被蓋掉。", "en": "Before any transfusion or hormones, or the results will be masked."}]
+     ],
+     "mini": {"type": "stage", "case": "gynecology-abnormal-uterine-bleeding-palm-coein", "stage": 3}}
+   ]},
+  {"id": "critical", "name": {"zh": "危急值", "en": "The critical value"}, "sub": {"zh": "22:20 · 檢傷站", "en": "22:20 · triage desk"}, "t": 1340, "mood": "night",
+   "note": {"zh": "複誦、輸血、止血藥", "en": "Read back, transfuse, tranexamic acid"},
+   "beats": [
+    {"id": "v1", "ring": {"title": {"zh": "檢驗科危急值", "en": "Lab critical value"}, "sub": {"zh": "小曼血紅素危急值", "en": "Hsiao-man: critical haemoglobin"}, "call": true, "from": "lab"},
+     "lines": [
+      ["lab", {"zh": "危急值通知：小曼的血紅素非常低。請複誦。", "en": "Critical value: Hsiao-man's haemoglobin is very low. Please read it back."}],
+      ["me", {"zh": "小曼，血紅素危急值，已複誦，我是婦科住院醫師，現在處理。", "en": "Hsiao-man, critical haemoglobin, read back; gynae resident here, acting now."}]
+     ]},
+    {"id": "v2", "to": "mother", "guide": {"zh": "說明輸血與止血", "en": "Explain transfusion and treatment"},
+     "lines": [
+      ["me", {"zh": "小曼的血太少了，要輸血。凝血檢查已經先抽了。止血先用傳明酸，依醫囑。", "en": "Hsiao-man's blood count is too low; she needs a transfusion. The clotting tests are already drawn. For the bleeding, tranexamic acid first, per protocol."}],
+      ["mother", {"zh": "所以……不是體質？我是不是也……", "en": "So... it's not just how we are? Do I have it too...?"}],
+      ["me", {"zh": "有可能是遺傳的凝血問題。血液科門診會一起幫妳們兩個看。", "en": "It may be an inherited clotting problem. The haematology clinic can see both of you."}]
+     ],
+     "mini": {"type": "stage", "case": "gynecology-heavy-menstrual-bleeding-treatment-ladder", "stage": 2}},
+    {"id": "v3", "when": {"flag": "hcg", "is": "skipped"}, "to": "attending", "guide": {"zh": "鍾主治退回醫囑", "en": "Dr Chung sends the orders back"},
+     "lines": [
+      ["attending", {"zh": "輸血同意書和止血藥都開了，驗孕呢？", "en": "Transfusion consent and tranexamic acid ordered. And the pregnancy test?"}],
+      ["me", {"zh": "……沒驗。我現在私下問她，馬上驗。", "en": "...not done. I'll ask her privately and test her now."}],
+      ["attending", {"zh": "尤其是她媽媽說不可能的時候。", "en": "Especially when her mother says it's impossible."}]
+     ]}
+   ]},
+  {"id": "debrief", "name": {"zh": "回顧", "en": "Debrief"}, "sub": {"zh": "23:30 · 急診白板", "en": "23:30 · ER whiteboard"}, "t": 1410, "mood": "night",
+   "note": {"zh": "兩個「不可能」", "en": "Two 'impossibles'"},
+   "beats": [
+    {"id": "d1", "to": "attending", "guide": {"zh": "鍾主治的回顧", "en": "Dr Chung's debrief"},
+     "lines": [
+      ["attending", {"zh": "今晚兩個「不可能」：宜庭說不可能懷孕，小曼媽媽說不可能是病。", "en": "Two 'impossibles' tonight: Yi-ting said she couldn't be pregnant; Hsiao-man's mother said it couldn't be an illness."}],
+      ["me", {"zh": "兩個都錯了，可是兩個都不是她們的錯。", "en": "Both were wrong, and neither was their fault."}],
+      ["attending", {"zh": "所以我們驗、我們問。肩膀痛你沒有放過，那一下就決定了今晚。", "en": "Which is why we test and we ask. You didn't let the shoulder pain go; that decided the night."}]
+     ]},
+    {"id": "d2", "to": "place:board", "guide": {"zh": "擦白板", "en": "Wipe the whiteboard"},
+     "lines": [
+      ["nurse", {"zh": "宜庭在恢復室醒了，第一句問左邊的輸卵管。小曼在輸血，在看籃球比賽重播。", "en": "Yi-ting woke in recovery and asked about her left tube first. Hsiao-man is being transfused and watching a basketball replay."}],
+      ["sys", {"zh": "值班未完。阿蓮抽屜裡的巧克力少了兩塊，驗孕棒少了三支。", "en": "The night goes on. Two chocolates gone from A-lien's drawer, and three pregnancy tests."}]
+     ],
+     "end": true}
+   ]}
+ ],
+ "ending": {"title": {"zh": "下班了", "en": "End of shift"}, "sub": {"zh": "尤其是她說不可能的時候", "en": "Especially when she says it's impossible"}, "stats": ["stages", "grades", "choices", "calls", "items", "time"]}
+}
